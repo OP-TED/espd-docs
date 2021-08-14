@@ -1,7 +1,7 @@
 ifndef::imagesdir[:imagesdir: images]
 
 [.text-left]
-=== Criterion
+== Criterion
 
 Criteria are at the core of the ESPD. The two main groups of Criteria relevant for the ESPD are the ones 
 required in the Directive, Exclusion and Selection criteria. This section gives a detailed view on how 
@@ -12,7 +12,7 @@ Additionally to the Exclusion and Selection Criteria, the ESPD EDM treat some da
 Economic Operator also as criteria. This is covered further on under Section "Other Criteria". 
 
 [.text-left]
-==== Core Criterion and Core Evidence Data Models and Vocabularies
+=== Core Criterion and Core Evidence Data Models and Vocabularies
 
 This document differentiates between _Data Model_ (referring to the UML conceptual diagrams) and 
 _Vocabulary_ (referring to the XSD schemas). Thus the CCV and CEV abbreviations refer to the 

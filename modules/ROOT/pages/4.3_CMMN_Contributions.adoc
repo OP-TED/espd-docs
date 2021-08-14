@@ -1,7 +1,7 @@
 ifndef::imagesdir[:imagesdir: images]
 
 [.text-left]
-=== Contributions
+== Contributions
 
 [.text-left]
 The category ''Contributions'' encompasses two criteria:

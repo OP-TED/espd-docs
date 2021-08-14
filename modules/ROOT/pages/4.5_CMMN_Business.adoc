@@ -1,7 +1,7 @@
 ifndef::imagesdir[:imagesdir: images]
 
 [.text-left]
-=== Business
+== Business
 
 The category ''Business'' encompasses the following group of criteria:
 

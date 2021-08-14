@@ -1,10 +1,10 @@
-ifndef::imagesdir[:imagesdir: images]
+= ESPD Exchange Data Model (ESPD-EDM)
 
-= *ESPD Exchange Data Model* (ESPD-EDM)
+ifndef::imagesdir[:imagesdir: images]
 
 v1.0.1
 
 :toc:
 :toclevels: 3
 
-include::index_response.adoc[]
+include::index_response.adoc[leveloffset=+1]

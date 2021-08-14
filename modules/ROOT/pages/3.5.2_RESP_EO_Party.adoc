@@ -1,7 +1,7 @@
 ifndef::imagesdir[:imagesdir: images]
 
 [.text-left]
-===== The Party component of the Economic Operator  
+== The Party component of the Economic Operator  
 
 For the Economic Operator (EO) it is the UBL class cac:Party that holds the more important part of the data.
 

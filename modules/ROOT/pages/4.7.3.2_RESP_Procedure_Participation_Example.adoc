@@ -31,5 +31,5 @@ interest due to its participation in the procurement procedure'' (file Example1-
     </ccv:Criterion>
 ----
 
-include::4.2.5_CMMN_NOTICE_THAT.adoc[]
+include::4.2.5_CMMN_NOTICE_THAT.adoc[leveloffset=+1]
 .

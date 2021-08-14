@@ -1,7 +1,7 @@
 ifndef::imagesdir[:imagesdir: images]
 
 [.text-left]
-=== Design approach
+== Design approach
 
 The ESPD Exchange Data Model (ESPD-EDM) was designed to implement the data requirements expressed in 
 the Annex 2 of the http://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32016R0007[COMMISSION IMPLEMENTING REGULATION (EU) 2016/7] of 5 January 2016 (from now 

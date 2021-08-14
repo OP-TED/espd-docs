@@ -32,5 +32,5 @@ required documents and obtained confidential information of this procedure'':
     </ccv:Criterion>
 ----
 
-include::4.2.5_CMMN_NOTICE_THAT.adoc[]
+include::4.2.5_CMMN_NOTICE_THAT.adoc[leveloffset=+1]
 .

@@ -1,7 +1,7 @@
 ifndef::imagesdir[:imagesdir: images]
 
 [.text-left]
-==== Response
+== Response
 
 The `ccv:Response` class is used by the economic operator to answer a specific Requirement issued by
 the contracting body. 

@@ -1,7 +1,7 @@
 ifndef::imagesdir[:imagesdir: images]
 
 [.text-left]
-=== Data Model overview
+== Data Model overview
 The UML Diagram below provides a simplified view of the ESPDResponse document. Notice that the classes herein represented belong to different data-packages.  
 Hence each class name is preceded by different prefixes representing their corresponding namespaces: "espd::", "ccv::", "cev::", "cac::" (see ''
 Table 1. Schemas, namespaces and prefixes used by the ESPDResponse''). footnote:[this UML was produced using the MS-Visio tool, thus the double semicolon "::" 

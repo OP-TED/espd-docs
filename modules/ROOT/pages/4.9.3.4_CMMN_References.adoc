@@ -1,7 +1,7 @@
 ifndef::imagesdir[:imagesdir: images]
 
 [.text-left]
-==== References
+== References
 
 References relate to those criteria where the Economic Operator is requested to demonstrate experience in one works execution, 
 service performance or supply delivery. In all three cases the structure is the same and, as for ''turnovers'' or ''ratio'' it also contains 

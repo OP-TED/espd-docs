@@ -1,7 +1,7 @@
 ifndef::imagesdir[:imagesdir: images]
 
 [.text-left]
-=== Suitability
+== Suitability
 
 The criteria under the category ''Suitability'' use two groups of simple data structures:
 

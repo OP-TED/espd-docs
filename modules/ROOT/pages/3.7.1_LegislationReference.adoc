@@ -1,7 +1,7 @@
 ifndef::imagesdir[:imagesdir: images]
 
 [.text-left]
-==== Legislation Reference
+== Legislation Reference
 
 [.text-center]
 [[LegislationReference]]

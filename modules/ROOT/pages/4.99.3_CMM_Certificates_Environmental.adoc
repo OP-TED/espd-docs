@@ -1,7 +1,7 @@
 ifndef::imagesdir[:imagesdir: images]
 
 [.text-left]
-===== Environmental Management
+== Environmental Management
 
 For the time being, this general category refers to only the criterion ''Certificates by independent bodies about 
 environmental management systems or standards''. The data-structure for this criterion in the ESPD Service is the one below (notice

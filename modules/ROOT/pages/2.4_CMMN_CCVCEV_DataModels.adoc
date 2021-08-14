@@ -1,7 +1,7 @@
 ifndef::imagesdir[:imagesdir: images]
 
 [.text-left]
-=== The Core Criterion and Core Evidence Data Models and Vocabularies
+== The Core Criterion and Core Evidence Data Models and Vocabularies
 
 When creating a new ESPD Request XML document, the Contracting Authority (CA) footnote:[In the ESPD-EDM, the Contracting Authority is represented by "Contracting Party", the generic term representing a Contracting Body, Authority or Entity.] specifies the series of exclusion and selection ''criteria'' that the Economic Operator (EO) has 
 to satisfy for a specific Procurement Project. In the ESPD Response, the EO MAY provide where to get evidences that prove it satisfies the criteria required by the CA.

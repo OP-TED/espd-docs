@@ -1,7 +1,7 @@
 ifndef::imagesdir[:imagesdir: images]
 
 [.text-left]
-=== Misconduct
+== Misconduct
 
 The category ''Misconduct'' encompasses two criteria that share the same structure as the one used for the ''social'' group of criteria (see sub-section 
 ''How to specify ''social'' related criteria, above).footnote:[See &#91;DOC-REF-8&#93; for the complete taxonomy of criteria and each criterion code label.]
