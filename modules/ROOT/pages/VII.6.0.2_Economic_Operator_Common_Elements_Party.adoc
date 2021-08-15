@@ -92,7 +92,7 @@ Please, remember that the elements `cac:ContractingAuthority`, `cac:ProcurementP
 |A monetary amount as a measure of this capability.
 |*Information Requirement*: http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr92-001[_tbr92-001_]  
 
-*Rule*: Use it to place here the general Turnover of the EO (for statistical purposes). Compulsory assignment of a value to the attribute currency. The default value should be set to 'EUR'. Compulsory use of the Code List link:{url-blob}/dist/cl/ods/ESPD-CodeLists-V2.0.1.ods[CurrencyCode].
+*Rule*: Use it to place here the general Turnover of the EO (for statistical purposes). Compulsory assignment of a value to the attribute currency. The default value should be set to 'EUR'. Compulsory use of the Code List link:{url-blob}/dist/cl/ods/ESPD-CodeLists-V02.00.01.ods[CurrencyCode].
 
 |*cac:CompletedTask/cbc:Description*
 |Text
@@ -133,7 +133,7 @@ Please, remember that the elements `cac:ContractingAuthority`, `cac:ProcurementP
 |1
 |Identifies the role of the economic operator in the bid.
 |*Information Requirement*: http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr92-008[_tbr92-008_]
-*Rule*: Compulsory use of the Code List link:{url-blob}/dist/cl/ods/ESPD-CodeLists-V2.0.1.ods[EORoleType].
+*Rule*: Compulsory use of the Code List link:{url-blob}/dist/cl/ods/ESPD-CodeLists-V02.00.01.ods[EORoleType].
 
 |*cbc:RoleDescription*
 |Text
@@ -141,7 +141,7 @@ Please, remember that the elements `cac:ContractingAuthority`, `cac:ProcurementP
 |The text describing the role of the economic operator in the bid.
 |*Information Requirement*: http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr92-008[_tbr92-008_]
 
-*Rule*: Software applications should retrieve and reuse the description from the Code List link:{url-blob}/dist/cl/ods/ESPD-CodeLists-V2.0.1.ods[EORoleType].
+*Rule*: Software applications should retrieve and reuse the description from the Code List link:{url-blob}/dist/cl/ods/ESPD-CodeLists-V02.00.01.ods[EORoleType].
 
 |===
 
@@ -255,7 +255,7 @@ http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr92-
 |*Information Requirement*: 
 http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr92-012[_tbr92-012_].
 
-*Rule*: The country of the contracting body must always be specified. Compulsory use of the Code List link:{url-blob}/dist/cl/ods/ESPD-CodeLists-V2.0.1.ods[CountryCodeIdentifier] (ISO 3166-1 2A:2006).
+*Rule*: The country of the contracting body must always be specified. Compulsory use of the Code List link:{url-blob}/dist/cl/ods/ESPD-CodeLists-V02.00.01.ods[CountryCodeIdentifier] (ISO 3166-1 2A:2006).
 
 |*cac:Country/cbc:Name*
 |Text
@@ -381,7 +381,7 @@ http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr070
 |*Information Requirement*: 
 http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr070-021[_tbr070-021_].
 
-*Rule*:  The country of the service provider must always be specified. Compulsory use of the Code List link:{url-blob}/dist/cl/ods/ESPD-CodeLists-V2.0.1.ods[CountryCodeIdentifier] (ISO 3166-1 2A:2006).
+*Rule*:  The country of the service provider must always be specified. Compulsory use of the Code List link:{url-blob}/dist/cl/ods/ESPD-CodeLists-V02.00.01.ods[CountryCodeIdentifier] (ISO 3166-1 2A:2006).
 
 |===
 
