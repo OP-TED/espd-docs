@@ -14,9 +14,9 @@ Therefore in the ESPD-EDM-2.1.0, and for both the *REGULATED* and the *SELF-CONT
 
 . In *criteria data structures*: following the solution adopted for Version 1.0.2 of the ESPD-EDM, the ESPD-EDM V2.1.0 defines several criteria classified as CRITERION.OTHER.EO_DATA.* (where the * refers to different branches and leaves of a different structures about the economic operator (e.g. SHELTERED_WORKSHOP, TOGETHER_WITH_OTHERS, etc.). The XML instances use criteria components (UBL-2.2 cac:TenderingCriterion) to structure these data. The sub-sections below cover both.
 
-==== XSD Schemas
+== XSD Schemas
 
-===== cac:EconomicOperatorParty 
+=== cac:EconomicOperatorParty 
 
 The UBL-2.2 `cac:EconomicOperatorParty` has three common aggregate components, the XSD Schema looks like this:
  
@@ -29,7 +29,7 @@ image::Economic_Operator_XSD.png[cac:EconomicOperatorParty XSD, global view, alt
 
 . *cac:Party*: used to place the data to identify the EO and its contact (circles #2 to #12).
 
-===== cac:QualifyingParty
+=== cac:QualifyingParty
 
 The diagram below shows the XSD element that will hold the data required by the ESPD (see mock-up 1/7, too). Beware that:
 
@@ -58,14 +58,14 @@ The diagram below shows the XSD element that will hold the data required by the 
 .cac:QualifyingParty element, XSD
 image::QualifyinParty_XSD.png[cac:QualifyingParty element-XSD, alt="cac:QualifyingParty element-XSD", align="center"]
 
-===== cac:EconomicOperatorRole
+=== cac:EconomicOperatorRole
 
 The UBL-2.2 element for the role of the economic operator is quite straightforward and typical in UBL: it provides a pair *code + description* (see Code List link:{attachmentsdir}/cl/ods/ESPD-CodeLists-V2.1.0.ods[EORoleType] for the codes and descriptions; see also the XML example below).
 
 .Role of the economic operator
 image::EO_Role_XSD.png[EO Role, alt="EO Role", align="center"]
 
-===== cac:Party
+=== cac:Party
 
 The XSD diagram below shows (in blue) the elements for which data are expected in the ESPD Response for the cac:Party element of the economic operator.
 

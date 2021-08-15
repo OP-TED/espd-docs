@@ -1,7 +1,7 @@
 
-=== V.2.1 Regulated Contributions
+== V.2.1 Regulated Contributions
 
-==== Mock-ups - contracting authority perspective
+=== Mock-ups - contracting authority perspective
 
 For a better understanding of the behavior of the Regulated 'Contributions' have a look to the two figures below. They show two different options offered by the ESPD Service GUI perspective for the economic operator:
 
@@ -10,7 +10,7 @@ The figure below represents a possible mockup for the contracting authority pers
 .Regulated 'Conviction' Payment of Taxes (ESPD Service, EO perspective) - OPTION 1 (*YES*)
 image::Regulated_ESPDRequest_Contributions_CA_mockup.png[Regulated 'Payment of Taxes' (ESPD Service, CA perspective), alt="Regulated 'Payment of Taxes' (ESPD Service, CA perspective)", width="800" align="center"]
 
-==== Mock-ups - economic operator perspective
+=== Mock-ups - economic operator perspective
 
 The next mock-up shows the view of the economic operator when it answers "Yes" to the question "Has this breach of
 obligations been established by other means....?". See the next mock-up for the negative answer. See also the
@@ -24,12 +24,12 @@ This other mock-up shows the view of the economic operator when it answers "No" 
 .Regulated 'Conviction' Payment of Taxes (ESPD Service, EO perspective) - OPTION 2 (*NO*)
 image::PaymentOfTaxes_EO_NO_mock-up.png[Regulated 'Payment of Taxes' (ESPD Service, EO perspective), alt="Regulated 'Payment of Taxes' (ESPD Service, EO perspective)", align="center"]
 
-==== Data Structure - Regulated
+=== Data Structure - Regulated
 
 .Regulated 'Contributions' criterion data structure 
 image::Regulated_ESPDRequest_Contributions_Data_Structure.png[Regulated 'Contributions' criterion data structure, alt="Regulated 'Contributions' criterion data structure",align="center"]
 
-==== XML Example - Regulated
+=== XML Example - Regulated
 
 .Regulated Payment of Taxes (PoT)
 [source,xml]
@@ -181,6 +181,7 @@ image::Regulated_ESPDRequest_Contributions_Data_Structure.png[Regulated 'Contrib
 		</cac:SubsidiaryTenderingCriterionPropertyGroup>
 	</cac:TenderingCriterionPropertyGroup>
 </cac:TenderingCriterion>
+<!--7--><!--8--><!--13-->
 ----
 <1> EU Payment of Taxes (PoT) criterion according to the Directive.
 <2> Country or Member State concerned by the conviction. This field is only shown if the the answer to the previous QUESTION was *Yes*.

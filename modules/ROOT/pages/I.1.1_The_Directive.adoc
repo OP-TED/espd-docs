@@ -1,7 +1,7 @@
-http://[.text-left]
-=== I.1 Objectives and scope
+= I.1 Objectives and scope
+[.text-left]
 
-==== I.1.1 The Directive
+== I.1.1 The Directive
 
 Article 59 of the new Public Procurement Directive 2014/24/EC (henceforth 'the Directive') introduced a new concept, the *European Single Procurement Document* (ESPD) which is a self-declaration document intended for preliminary evidence in a public procurement procedure. By mapping out equivalent certificates between MS, the ESPD replaces certificates issued by public authorities or a third party involved in a procedure. It is thus a valuable facilitator for cross-border participation
 of a greater number of potential operators in public procurement procedures and a valuable tool for integrating the European Single Market.
@@ -19,7 +19,7 @@ This guide is intended to facilitate the understanding of the model underlying t
 The content of the guide is mainly addressed to the development teams from the Member States, economic operators, information providers or any other party interested in understanding how the ESPD Exchange Data Model works and how to use it to produce XML instances of ESPD Request and ESPD Response documents.
 
 [.text-left]
-==== I.1.2 Contracts above the threshold and below the threshold
+== I.1.2 Contracts above the threshold and below the threshold
 
 The Directive (namely Article 4) regulates in detail those public procurement procedures which values of contract exceed certain amounts. These amounts, also known as 'thresholds', vary depending on the type of the contract and of the administration level of the contracting authority.
 
@@ -28,9 +28,9 @@ Those contracts that fall under this article 4 of the Directive are called contr
 The ESPD-EDM is rich and flexible enough so as to allow ESPD instances for contracts above and below the threshold. However this document is oriented exclusively to illustrate how to create ESPD electronic documents for contracts above the threshold.
 
 [[.text-left]
-=== I.1 Objectives and scope
+= I.1 Objectives and scope
 
-==== I.1.1 The Directive
+== I.1.1 The Directive
 
 Article 59 of the new Public Procurement Directive 2014/24/EC (henceforth 'the Directive') introduced a new concept, the *European Single Procurement Document* (ESPD) which is a self-declaration document intended for preliminary evidence in a public procurement procedure. By mapping out equivalent certificates between MS, the ESPD replaces certificates issued by public authorities or a third party involved in a procedure. It is thus a valuable facilitator for cross-border participation
 of a greater number of potential operators in public procurement procedures and a valuable tool for integrating the European Single Market.
@@ -48,7 +48,7 @@ This guide is intended to facilitate the understanding of the model underlying t
 The content of the guide is mainly addressed to the development teams from the Member States, economic operators, information providers or any other party interested in understanding how the ESPD Exchange Data Model works and how to use it to produce XML instances of ESPD Request and ESPD Response documents.
 
 [.text-left]
-==== I.1.2 Contracts above the threshold and below the threshold
+== I.1.2 Contracts above the threshold and below the threshold
 
 The Directive (namely Article 4) regulates in detail those public procurement procedures which values of contract exceed certain amounts. These amounts, also known as 'thresholds', vary depending on the type of the contract and of the administration level of the contracting authority.
 
