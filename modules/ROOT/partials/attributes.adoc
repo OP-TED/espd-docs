@@ -1,6 +1,6 @@
 :this-version: 3.0.0
 :this-version-tag: {this-version}
-:git-repo-url: https://github.com/ESPD/ESPD-EDM
+:git-repo-url: https://github.com/OP-TED/ESPD-EDM
 :path-to-dist: /docs/src/main/asciidoc
 :url-tree: {git-repo-url}/tree/{this-version-tag}{path-to-dist}
 :url-blob: {git-repo-url}/blob/{this-version-tag}{path-to-dist}
