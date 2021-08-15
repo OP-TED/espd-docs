@@ -5,7 +5,7 @@ include::partial$attributes.adoc[]
 
 The *Extended ESPD*  caters for two methods of evaluating criteria (the Basic ESP does not covers this aspect).
 These two methods are identified in the code list
-link:{url-blob}/dist/cl/ods/ESPD-CodeLists-V2.1.1.ods[EvaluationMethodType] as
+link:{url-blob-211}/dist/cl/ods/ESPD-CodeLists-V2.1.1.ods[EvaluationMethodType] as
 1) PASSFAIL (Pass or fail), and 2) WEIGHTED (the criterion is assigned a weight).
 
 The ''pass or fail'' method is used in open procedures and in the first stage of multi-staged procedures. In multi-staged
@@ -49,7 +49,7 @@ weighing any criterion):
 [NOTE]
 ====
 *_A complete ESPD-Response document with the examples provided in this section can be found in the file
-link:{url-blob}/dist/xml/Weights-Extended-Request_V2.1.1.xml[Weights-Extended-Request_V2.1.1.xml]_*
+link:{url-blob-211}/dist/xml/Weights-Extended-Request_V2.1.1.xml[Weights-Extended-Request_V2.1.1.xml]_*
 ====
 
 .Order of occurrence of the different blocks of data related to weights
@@ -69,7 +69,7 @@ link:#iii-4-root-elements[III.4 Root elements], see also the UBL-2.2 Schema for 
 |The expression method for the weighting of the selection criteria (numeric, percentage).
 |Element `cbc:WeightingTypeCode`, at the root of the Qualification Application Request document
 |The numeric can also be used to express percentages (in the form of ''0.x''). See also the code list
-link:{url-blob}/dist/cl/xlsx/ESPD-CodeLists-V2.1.1.xlsx[EvaluationMethodType]
+link:{url-blob-211}/dist/cl/xlsx/ESPD-CodeLists-V2.1.1.xlsx[EvaluationMethodType]
 
 |3
 |*The criterion weight value*
@@ -81,7 +81,7 @@ link:{url-blob}/dist/cl/xlsx/ESPD-CodeLists-V2.1.1.xlsx[EvaluationMethodType]
 |4
 |*The criterion evaluation method type*
 |To inform that the criterion will be weighted (WEIGHTED vs PASSFAIL). See code list
-link:{url-blob}/dist/cl/xlsx/ESPD-CodeLists-V2.1.1.xlsx[EvaluationMethodType]
+link:{url-blob-211}/dist/cl/xlsx/ESPD-CodeLists-V2.1.1.xlsx[EvaluationMethodType]
 |Element `cbc:EvaluationMethodTypeCode`, inside the `cac:TenderingCriterion` class (see section
 link:#iv-1-general-behavior[IV. Criteria, common aspects /IV.1 General behavior]
 |The weight is used in second (or subsequent) stages of the evaluation. The first stage is always a PASSFAIL selection,
@@ -403,6 +403,6 @@ xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
 <2> Method that will be used to select those selection criteria that will be weighted (used for transparency purposes).
 <3> The expression method for the weighting of the selection criteria (numeric, percentage).
 <4> To inform that the criterion will be weighted (WEIGHTED vs PASSFAIL). See code list.
-link:{url-blob}/dist/cl/xlsx/ESPD-CodeLists-V2.1.1.xlsx[EvaluationMethodType].
+link:{url-blob-211}/dist/cl/xlsx/ESPD-CodeLists-V2.1.1.xlsx[EvaluationMethodType].
 <5> The concrete value assigned by the CA to the criterion for its weighting at second-stage evaluation time.
 <6> Explanation about how this specific criterion is weighted and will be evaluated (for transparency purposes).

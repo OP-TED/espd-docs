@@ -4,5 +4,7 @@
 :path-to-dist: /docs/src/main/asciidoc/modules/ROOT
 :url-tree: {git-repo-url}/tree/{this-version-tag}{path-to-dist}
 :url-blob: {git-repo-url}/blob/{this-version-tag}{path-to-dist}
-:url-blob-202: {git-repo-url}/blob/2.0.2{path-to-dist}
-:url-blob-201: {git-repo-url}/blob/2.0.1{path-to-dist}
+:url-blob-202: {git-repo-url}/blob/v2.0.2{path-to-dist}
+:url-blob-201: {git-repo-url}/blob/v2.0.1{path-to-dist}
+:url-blob-210: {git-repo-url}/blob/v2.1.0{path-to-dist}
+:url-blob-211: {git-repo-url}/blob/v2.1.1{path-to-dist}

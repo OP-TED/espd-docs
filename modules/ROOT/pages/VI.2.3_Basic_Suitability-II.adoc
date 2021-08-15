@@ -6,7 +6,7 @@ include::partial$attributes.adoc[]
 ==== Data Structure (Service Contracts)- Basic
 
 (The figure below is defined in the the tab "Suitability-II of the
-link:{url-blob}/dist/cl/xlsx/ESPD-CriteriaTaxonomy-BASIC-V2.1.1.xlsx[ESPD-CriteriaTaxonomy] spread-sheet).
+link:{url-blob-211}/dist/cl/xlsx/ESPD-CriteriaTaxonomy-BASIC-V2.1.1.xlsx[ESPD-CriteriaTaxonomy] spread-sheet).
 
 .Basic 'Suitability' criterion data structure (for ''service contracts'')
 image::Basic_Suitability_ServiceContract_Data_Structure.png[Basic 'Suitability' criterion data structure, alt="Basic 'Suitability' criterion data structure",align="center"]

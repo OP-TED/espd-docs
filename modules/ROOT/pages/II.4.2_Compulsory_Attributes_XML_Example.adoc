@@ -37,7 +37,7 @@ Code lists contain the code identifiers that are expected as "values" for a data
 `ProjectType`, `EORoleType`, etc.
 
 However, this ESP-EDM specification also uses the code list
-link:{url-blob}/dist/cl/xlsx/ESPD-CodeLists-V2.1.1.xlsx[EOIDType]
+link:{url-blob-211}/dist/cl/xlsx/ESPD-CodeLists-V2.1.1.xlsx[EOIDType]
 with a different purpose, "the identification of the type of scheme used to identify parties, namely Economic Operators"
 (but should also used to identify the schemes used to identify Contracting Authorities, Service Providers, etc.).
 
@@ -86,7 +86,7 @@ UBL-2.2. element `cbc:Identifier`).
 the very specific QUESTION it is responding.
 <2> The element `cbc:ResponseID` is of type `Identifier`(as defined in the Core Component Type Specification library).
 The value ''VAT'' assigned to the attribute `schemeID`, taken from the code list
-link:{url-blob}/dist/cl/xlsx/ESPD-CodeLists-V2.1.1.xlsx[EOIDType],
+link:{url-blob-211}/dist/cl/xlsx/ESPD-CodeLists-V2.1.1.xlsx[EOIDType],
 is used to indicate that the type of identifier used is the Value Added Tax identifier issued by the Spanish Tax Agency (ES-AEAT).
 
 

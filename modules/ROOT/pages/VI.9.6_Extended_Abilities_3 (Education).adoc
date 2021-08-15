@@ -6,7 +6,7 @@ include::partial$attributes.adoc[]
 ==== Data Structure - Extended (Education)
 
 (The figure below is defined in the the tab ''SC_Abilities_3 (Education)'' of the
-link:{url-blob}/dist/cl/xlsx/ESPD-CriteriaTaxonomy-EXTENDED-V2.1.1.xlsx[ESPD-CriteriaTaxonomy] spread-sheet).
+link:{url-blob-211}/dist/cl/xlsx/ESPD-CriteriaTaxonomy-EXTENDED-V2.1.1.xlsx[ESPD-CriteriaTaxonomy] spread-sheet).
 
 .Extended 'Abilities (III) (Education)' criterion data structure
 image::Extended_Abilities_3_Data_Structure.png[Extended 'Abilities (III) (Education)' criterion data structure, alt="Extended 'Abilities (III)' ",align="center"]

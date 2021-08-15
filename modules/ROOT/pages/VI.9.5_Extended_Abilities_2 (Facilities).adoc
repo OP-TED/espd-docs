@@ -6,7 +6,7 @@ include::partial$attributes.adoc[]
 ==== Data Structure - Extended
 
 (The figure below is defined in the the tab ''SC_Abilities_2 (Facilities,...)'' of the
-link:{url-blob}/dist/cl/xlsx/ESPD-CriteriaTaxonomy-EXTENDED-V2.1.1.xlsx[ESPD-CriteriaTaxonomy] spread-sheet).
+link:{url-blob-211}/dist/cl/xlsx/ESPD-CriteriaTaxonomy-EXTENDED-V2.1.1.xlsx[ESPD-CriteriaTaxonomy] spread-sheet).
 
 .Extended 'Abilities (II) (Facilities, ....)' criterion data structure
 image::Extended_Abilities_2_Data_Structure.png[Extended 'Abilities (II) (Facilities, ...)' criterion data structure, alt="Extended 'Abilities (II)' ",align="center"]

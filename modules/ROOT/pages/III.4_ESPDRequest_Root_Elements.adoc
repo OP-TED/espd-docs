@@ -177,7 +177,7 @@ http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1.0-tb
 |*Information Requirement*:
 http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1.0-tbr070-007[_tbr070-007_].
 
-*Rule*: *Rule*: Compulsory use of attributes listID, listAgencyName and listVersionID. Compulsory use of the code list link:{url-blob}/dist/cl/ods/ESPD-CodeLists-V2.1.1.ods[ProcedureType] (values: `Open`, `Restricted`, `Accelerated`, `Competitive dialogue`, etc.). Do not confound with the object of the procurement project (code list `ProjectType`: Works, Supplies, Services).
+*Rule*: *Rule*: Compulsory use of attributes listID, listAgencyName and listVersionID. Compulsory use of the code list link:{url-blob-211}/dist/cl/ods/ESPD-CodeLists-V2.1.1.ods[ProcedureType] (values: `Open`, `Restricted`, `Accelerated`, `Competitive dialogue`, etc.). Do not confound with the object of the procurement project (code list `ProjectType`: Works, Supplies, Services).
 
 *Rule scope*: EXTENDED (BR-SC-10#2, BR-OTH-03, BR-OTH-01, BR-OTH-01#1)
 

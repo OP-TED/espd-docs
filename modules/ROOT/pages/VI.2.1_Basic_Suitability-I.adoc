@@ -19,7 +19,7 @@ image::Basic_Suitability_EO_mockup.png[Basic 'Suitability' criterion (EO perspec
 ==== Data Structure (Enrolments)- Basic
 
 (The figure below is defined in the the tab "Suitability-I of the
-link:{url-blob}/dist/cl/xlsx/ESPD-CriteriaTaxonomy-BASIC-V2.1.1.xlsx[ESPD-CriteriaTaxonomy] spread-sheet).
+link:{url-blob-211}/dist/cl/xlsx/ESPD-CriteriaTaxonomy-BASIC-V2.1.1.xlsx[ESPD-CriteriaTaxonomy] spread-sheet).
 
 .Basic 'Suitability' criterion data structure (for ''enrolments'')
 image::Basic_Suitability_Enrolments_Data_Structure.png[Basic 'Suitability' criterion data structure, alt="Basic 'Suitability' criterion data structure",align="center"]

@@ -147,7 +147,7 @@ Notice that:
 
 . The values expected for the name and activity are texts.
 
-. The value expected for the EO identifier is of type `Identifier`. For the identifier of the EO it is also required to specify the type of identifier, and a closed list of possible types is proposed (see Code List link:{url-blob}/dist/cl/ods/ESPD-CodeLists-V2.1.1.ods[EOIDType]. EOs must use one of the available codes, but the preferred one is the VAT number. Beware that the data structure does not keep the type of the identifier. This is because this type code is placed in the attribute `@schemeName` of the `cac:ResponseValue/cbc:ResponseID` element (and the `@schemeAgencyID` attribute must be set to the default `EU-COM-GROW`). See information requirements at the beginning of the section. See also next sections about the responses, XSD schemas and XML example.
+. The value expected for the EO identifier is of type `Identifier`. For the identifier of the EO it is also required to specify the type of identifier, and a closed list of possible types is proposed (see Code List link:{url-blob-211}/dist/cl/ods/ESPD-CodeLists-V2.1.1.ods[EOIDType]. EOs must use one of the available codes, but the preferred one is the VAT number. Beware that the data structure does not keep the type of the identifier. This is because this type code is placed in the attribute `@schemeName` of the `cac:ResponseValue/cbc:ResponseID` element (and the `@schemeAgencyID` attribute must be set to the default `EU-COM-GROW`). See information requirements at the beginning of the section. See also next sections about the responses, XSD schemas and XML example.
 
 .The user can add or delete more than one economic operator (buttons '+' and 'paper-bin').
 

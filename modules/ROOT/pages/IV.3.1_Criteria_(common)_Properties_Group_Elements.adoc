@@ -25,7 +25,7 @@ http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1.0-tb
 |*Information Requirement*: 
 http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1.0-tbr070-013[_tbr070-013_].
 
-*Rule*: Compulsory use of the UUIDs supplied by e-Certis. See also the spreadsheets link:{url-blob}/dist/cl/ods/ESPD-CriteriaTaxonomy-BASIC-V2.1.1.ods[_Criteria Taxonomy (Basic ESPD)_] and link:{url-blob}/dist/cl/ods/ESPD-CriteriaTaxonomy-EXTENDED-V2.1.1.ods[_Criteria Taxonomy (Extended ESPD)_].
+*Rule*: Compulsory use of the UUIDs supplied by e-Certis. See also the spreadsheets link:{url-blob-211}/dist/cl/ods/ESPD-CriteriaTaxonomy-BASIC-V2.1.1.ods[_Criteria Taxonomy (Basic ESPD)_] and link:{url-blob-211}/dist/cl/ods/ESPD-CriteriaTaxonomy-EXTENDED-V2.1.1.ods[_Criteria Taxonomy (Extended ESPD)_].
 
 *Rule scope*: Common (BR-TC-12, BR-OTH-02, BR-OTH-02#01)
 
