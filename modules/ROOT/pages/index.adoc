@@ -10,7 +10,7 @@ v2.0.2
 == Resources
 
 * xref:xml_guide.adoc[ESPD Exchange Data Model Implementation Guide V2.0.2]
-* link:++{disturl}/dist++[All resources in the distribution package]
+* link:++{url-tree}/dist++[All resources in the distribution package]
 * xref:release_notes.adoc[Release Notes]
 
 

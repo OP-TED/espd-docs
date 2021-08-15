@@ -36,9 +36,9 @@ that can be used in multiple business domains, e.g. the NUTS defined by EUROSTAT
 
 Codes are normally maintained in "code lists". The ESPD-EDM keeps and distributes these code lists in three different formats:
 
-. In an Office Open XML (link:{attachmentsdir}/cl/xlsx/ESPD-CodeLists-V2.0.2.xlsx[XLSX]) file,
-. In an Open Office Document (link:{distUrl}/dist/cl/ods[ODS]) file,
-. Genericode 1.0 (link:{distUrl}/dist/cl/gc[GC]) files (one `*.gc` file per code list).
+. In an Office Open XML (link:{url-blob}/dist/cl/xlsx/ESPD-CodeLists-V2.0.2.xlsx[XLSX]) file,
+. In an Open Office Document (link:{url-tree}/dist/cl/ods[ODS]) file,
+. Genericode 1.0 (link:{url-tree}/dist/cl/gc[GC]) files (one `*.gc` file per code list).
 
 ESPD-EDM Code list contain the following elements:
 

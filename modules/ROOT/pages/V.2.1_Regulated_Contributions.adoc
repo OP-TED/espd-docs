@@ -1,4 +1,6 @@
 
+include::partial$attributes.adoc[]
+
 == V.2.1 Regulated Contributions
 
 === Mock-ups - contracting authority perspective
