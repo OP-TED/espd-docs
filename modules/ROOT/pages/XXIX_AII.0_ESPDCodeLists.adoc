@@ -20,7 +20,7 @@ Additional information about the code lists can be found in:
 
 * The link:{attachmentsdir}/dist/cl/ods/[spread-sheet] distributed with this documentation;
 
-* The multilingual link:{distUrl}/dist/cl/gc[Genericode] `*.gc` files automatically produced based on these spread-sheets; and
+* The multilingual link:{url-tree}/dist/cl/gc[Genericode] `*.gc` files automatically produced based on these spread-sheets; and
 
 * The link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1.0-CodeLists[ESPDint BIS Document];
 

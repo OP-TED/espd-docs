@@ -47,7 +47,7 @@ registered in one concrete Register.
 ====
 *_Many compulsory elements and attributes of the XML example below that are not related to the subject covered in
 this section have been removed to gain clarity and brevity. For complete XML samples download the files under folder
-link:{distUrl}/dist/xml[dist/xml]._*
+link:{url-tree}/dist/xml[dist/xml]._*
 ====
 
 .'Suitability' XML example (data related to Lots in the ESPD-Response)

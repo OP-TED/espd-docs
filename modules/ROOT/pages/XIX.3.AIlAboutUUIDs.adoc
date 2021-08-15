@@ -5,7 +5,7 @@ include::partial$attributes.adoc[]
 
 
 In the Basic and Extended
-link:{distUrl}/dist/cl/xlsx[ESPD-EDM Criteria Taxonomies]
+link:{url-tree}/dist/cl/xlsx[ESPD-EDM Criteria Taxonomies]
 every element of the criterion data structures has an UUID assigned, except for the CAPTIONs, REQUIREMENT(s) and
 QUESTION(s).
 

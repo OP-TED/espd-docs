@@ -56,7 +56,7 @@ The fragment of XML code below illustrates how a mediation service, after recept
 footnote:[Received eBusiness Document should be preserved as it was sent, unaltered, before applying any enrichment, otherwise the evidence value would be lost.],
 could enrich the XML instance containing the business data with processing instruction annotations, based on the annotated data structure shown above
 (the complete example can be found in the folder
-link:{distUrl}/dist/doc/evolution/Annotations_Proposal[Annotations Proposal]
+link:{url-tree}/dist/doc/evolution/Annotations_Proposal[Annotations Proposal]
 
 .Use of annotations to decouple the business data payload from the software application processing needs
 [source,xml]
