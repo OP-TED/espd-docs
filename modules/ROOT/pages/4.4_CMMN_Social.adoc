@@ -1,7 +1,7 @@
 ifndef::imagesdir[:imagesdir: images]
 
 [.text-left]
-=== Social
+== Social
 
 The ''Social'' group of criteria refers to breaching of social obligations like the ones 
 related to social laws: 

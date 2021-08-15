@@ -1,7 +1,7 @@
 ifndef::imagesdir[:imagesdir: images]
 
 [.text-left]
-=== Economic Operator 
+== Economic Operator 
 
 The ESPDResponse was explicitly designed to hold data about one single Economic Operator.
 Thus, the ESPDResponse Exchange Data Model associates a class `EconomicOperatorParty` as 
@@ -30,7 +30,7 @@ This other figure below shows the equivalent (abbreviated) XSD schema:
 image::EO_XSD_Details.png[align="center" alt="EO details, XSD", width="600"]
 
 [.text-left]
-==== EconomicOperatorParty
+=== EconomicOperatorParty
 The table below lists the attributes and associated classes expected in an XML conformant to the ESPD Service. 
 Beware that this class associates the very rich UBL-2.1 aggregate component `cac:Party`. 
 Similarly to what happens with the `cac:ContractingParty`, the ESPDResponse `espd:EconomicOperatorParty`

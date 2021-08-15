@@ -66,7 +66,7 @@ This fragment shows the implementation of the Criterion
 <2> The EO explains the breach
 <3> The EO motivates the action undertaken to demonstrate its reliability
 
-include::4.2.5_CMMN_NOTICE_THAT.adoc[]
+include::4.2.5_CMMN_NOTICE_THAT.adoc[leveloffset=+1]
 ;
 
 * The ''Self-Cleaning'' sub-group of requirements will only be processed in case the answer to the Criterion (i.e. the answer to first requirement) is ''yes'';

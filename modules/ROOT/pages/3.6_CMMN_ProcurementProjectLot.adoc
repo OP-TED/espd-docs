@@ -1,7 +1,7 @@
 ifndef::imagesdir[:imagesdir: images]
 
 [.text-left]
-=== Procurement Project Lot
+== Procurement Project Lot
 
 The class `cac:ProcurementProjectLot` was defined in UBL-2.1 to refer to the 
 possible lots into which a procurement project has been subdivided (see complete

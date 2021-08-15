@@ -1,6 +1,6 @@
 ifndef::imagesdir[:imagesdir: images]
 
-=== 2. *SELECTION CRITERIA*
+== 2. *SELECTION CRITERIA*
 
 The range of criteria related to the selection of Economic Operators is larger and more 
 heterogeneous than the one related to the exclusion criteria. The figure below is intended to 

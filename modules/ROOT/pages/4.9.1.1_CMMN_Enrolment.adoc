@@ -1,6 +1,6 @@
 ifndef::imagesdir[:imagesdir: images]
 
-==== Enrolment
+== Enrolment
 
 The two criteria of the first group (enrolment) share the structure shown in the table below 
 (the table refers to the criterion ''Enrolment in a relevant professional register'' 

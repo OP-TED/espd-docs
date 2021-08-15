@@ -1,7 +1,7 @@
 ifndef::imagesdir[:imagesdir: images]
 
 [.text-left]
-=== Objectives and target audience
+== Objectives and target audience
 
 [.text-left]
 The European Commission (COM) has defined a Data Model and XML vocabularies to express the ESPD documents that the ESPD Service exports and imports. However, these Data Models and XML Vocabularies are also intended to be used by any other systems that will use and/or exchange ESPD documents with other systems or in need to render its content into other formats or process them otherwise. 

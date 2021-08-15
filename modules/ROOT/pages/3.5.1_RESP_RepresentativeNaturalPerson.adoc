@@ -1,7 +1,7 @@
 ifndef::imagesdir[:imagesdir: images]
 
 [.text-left]
-==== RepresentativeNaturalPerson
+== RepresentativeNaturalPerson
 
 UBL-2.1 defines a component _PowerOfAttorney_ with that is a good container for the main data about a representativefootnote[cac:PowerOfAttorney also aggregates
 the cac:AgentParty, where many data about the person can be provided.]. However the ESPD stakeholders 
@@ -59,7 +59,7 @@ NaturalPersonRegistrationCountryCode*
 
 |===
 
-===== Power of attorney
+=== Power of attorney
 The ESPD reuses only a small part of the class cac:PowerOfAttorney defined in UBL-2.1, only the component _AgentParty_ and within it the subcomponent _Person_: 
 
 [[Representative_XSD_Extended_Details]]

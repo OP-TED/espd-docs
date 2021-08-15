@@ -1,7 +1,7 @@
 ifndef::imagesdir[:imagesdir: images]
 
 [.text-left]
-=== Contracting Party
+== Contracting Party
 
 The class `cac:ContractingParty` was defined in UBL-2.1 (hence the prefix `cac:`).  
 This UBL class is a specialisation of the very rich UBL-2.1 aggregate component `cac:Party`.
@@ -16,7 +16,7 @@ the details about the `cac:Party` Common Aggregate Component.
 image::CMM_ContractingParty.png[align="center" alt="EO details, XSD", width="600", height="500"]
 
 [.text-left]
-==== Class cac:ContractingParty
+=== Class cac:ContractingParty
 
 The table below lists the attributes and associated classes expected in an XML conformant 
 to the ESPD Service. 

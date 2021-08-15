@@ -1,7 +1,7 @@
 ifndef::imagesdir[:imagesdir: images]
 
 [.text-left]
-==== Management Artefacts
+== Management Artefacts
 
 AUTHENTICATED_ARTEFACTS, NO_AUTHENTICATED_ARTEFACTS
 

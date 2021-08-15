@@ -1,7 +1,7 @@
 ifndef::imagesdir[:imagesdir: images]
 
 [.text-left]
-=== Additional Document Reference
+== Additional Document Reference
 
 The ESPD EDM reuses this UBL-2.1 component to allow both the contracting body (in the ESPDRequest) and the economic operator (in the ESPDResponse)
 to include references to documents that they might consider relevant including in the XML instances of both types of documents.

@@ -64,7 +64,7 @@ Prepare to accommodate individuals with a physical disability before Church meet
 </ccv:Criterion>
 ----
 
-include::4.2.5_CMMN_NOTICE_THAT.adoc[]
+include::4.2.5_CMMN_NOTICE_THAT.adoc[leveloffset=+1]
 ;
 
 * As for the group of ''social'' criteria no evidence is herein required.

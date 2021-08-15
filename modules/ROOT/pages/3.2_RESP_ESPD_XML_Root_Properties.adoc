@@ -1,7 +1,7 @@
 ifndef::imagesdir[:imagesdir: images]
 
 [.text-left]
-=== Root properties
+== Root properties
 The ESPDResponse main class represents the entire ESPDResponse documents. All the data (root properties) of the document "hang" directly from the class or are other classes associated to it.
 
 As for all documents designed upon the UBL-2.1 Naming and Design Rules (NDR), this main class uses several UBL-2.1 common basic components. Although most of them 

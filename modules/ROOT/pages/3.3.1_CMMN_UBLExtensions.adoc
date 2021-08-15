@@ -1,7 +1,7 @@
 ifndef::imagesdir[:imagesdir: images]
 
 [.text-left]
-==== UBLExtensions element 
+== UBLExtensions element 
 
 The UBL 2 Naming and Design Rules (NDR) establish that the first element of a 
 UBL-conformant XML document should be `ext:UBLExtensions` element. If used the 

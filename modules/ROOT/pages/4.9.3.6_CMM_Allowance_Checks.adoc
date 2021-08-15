@@ -1,7 +1,7 @@
 ifndef::imagesdir[:imagesdir: images]
 
 [.text-left]
-==== Allowance of checks
+== Allowance of checks
 The corresponding data-structure diagram would be this one:
 
 [.text-center]
