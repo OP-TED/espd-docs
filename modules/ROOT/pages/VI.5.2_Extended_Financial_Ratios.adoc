@@ -69,7 +69,7 @@ image::Extended_Financial_Ratio_Data_Structure.png[Extended 'financial ratio' cr
          <cbc:PropertyGroupTypeCode listID="PropertyGroupType"
                  listAgencyID="EU-COM-GROW" listVersionID="2.1.1"
                  >ON*</cbc:PropertyGroupTypeCode>
-         <cac:TenderingCriterionProperty> <--1-->
+         <cac:TenderingCriterionProperty> <!--1-->
                  <cbc:ID schemeID="CriteriaTaxonomy" schemeAgencyID="EU-COM-GROW"
                          schemeVersionID="2.1.1"
                          >79ae87bd-19bf-441e-9a6e-a61a315fa0c2</cbc:ID>
@@ -103,13 +103,13 @@ image::Extended_Financial_Ratio_Data_Structure.png[Extended 'financial ratio' cr
                          <cbc:ValueDataTypeCode listID="ResponseDataType"
                                  listAgencyID="EU-COM-GROW" listVersionID="2.1.1"
                                  >CODE</cbc:ValueDataTypeCode>
-                         <cbc:ExpectedCode listID="FinancialRatio" listAgencyID="BACH" listVersionID="1.0">R11</cbc:ExpectedCode><--2-->
+                         <cbc:ExpectedCode listID="FinancialRatio" listAgencyID="BACH" listVersionID="1.0">R11</cbc:ExpectedCode><!--2-->
                  </cac:TenderingCriterionProperty>
                  <cac:TenderingCriterionProperty>
                          <cbc:ID schemeID="CriteriaTaxonomy"
                                  schemeAgencyID="EU-COM-GROW" schemeVersionID="2.1.1"
                                  >47d71610-4921-4a7c-aed5-1f95149837ef</cbc:ID>
-                         <cbc:Description>Definition</cbc:Description><--3-->
+                         <cbc:Description>Definition</cbc:Description><!--3-->
                          <cbc:TypeCode listID="CriterionElementType"
                                  listAgencyID="EU-COM-GROW" listVersionID="2.1.1"
                                  >REQUIREMENT</cbc:TypeCode>
@@ -123,7 +123,7 @@ image::Extended_Financial_Ratio_Data_Structure.png[Extended 'financial ratio' cr
                          <cbc:ID schemeID="CriteriaTaxonomy"
                                  schemeAgencyID="EU-COM-GROW" schemeVersionID="2.1.1"
                                  >575681d5-8ffc-40c0-883c-14de01193096</cbc:ID>
-                         <cbc:Description>Minimum requirement</cbc:Description><--4-->
+                         <cbc:Description>Minimum requirement</cbc:Description><!--4-->
                          <cbc:TypeCode listID="CriterionElementType"
                                  listAgencyID="EU-COM-GROW" listVersionID="2.1.1"
                                  >REQUIREMENT</cbc:TypeCode>
@@ -133,7 +133,7 @@ image::Extended_Financial_Ratio_Data_Structure.png[Extended 'financial ratio' cr
                          <cbc:ExpectedValueNumeric>0.5</cbc:ExpectedValueNumeric>
                  </cac:TenderingCriterionProperty>
          </cac:SubsidiaryTenderingCriterionPropertyGroup>
-         <cac:SubsidiaryTenderingCriterionPropertyGroup><--11-->
+         <cac:SubsidiaryTenderingCriterionPropertyGroup><!--11-->
                  <cbc:ID schemeID="CriteriaTaxonomy" schemeAgencyID="EU-COM-GROW"
                          schemeVersionID="2.1.1"
                          >e9aa7763-c167-4352-8060-1a3d7d3e2662</cbc:ID>
@@ -153,13 +153,13 @@ image::Extended_Financial_Ratio_Data_Structure.png[Extended 'financial ratio' cr
                                  >QUANTITY</cbc:ValueDataTypeCode>
                  </cac:TenderingCriterionProperty>
          </cac:SubsidiaryTenderingCriterionPropertyGroup>
-			<cac:SubsidiaryTenderingCriterionPropertyGroup><--5--><--6--><--7-->
+			<cac:SubsidiaryTenderingCriterionPropertyGroup><!--5--><!--6--><!--7-->
 					<!--  Multiple types of ratios can be required by the contracting authority for this particular procurement procedure. See mock-up above. This subgroup would contain the second ratio, but has been removed for brevity. -->
 			</cac:SubsidiaryTenderingCriterionPropertyGroup
-			<cac:SubsidiaryTenderingCriterionPropertyGroup><--8--><--9--><--10-->
+			<cac:SubsidiaryTenderingCriterionPropertyGroup><!--8--><!--9--><!--10-->
 					<!--  Multiple types of ratios can be required by the contracting authority for this particular procurement procedure. See mock-up above. This subgroup would contain the second ratio, but has been removed for brevity. -->
 			</cac:SubsidiaryTenderingCriterionPropertyGroup>
-			<cac:SubsidiaryTenderingCriterionPropertyGroup><--12-->
+			<cac:SubsidiaryTenderingCriterionPropertyGroup><!--12-->
 					<!-- Structure "Is this information available electronically would follow next. Removed for brevity. See other examples in other sections. -->
 			</cac:SubsidiaryTenderingCriterionPropertyGroup
 			<cac:SubsidiaryTenderingCriterionPropertyGroup>

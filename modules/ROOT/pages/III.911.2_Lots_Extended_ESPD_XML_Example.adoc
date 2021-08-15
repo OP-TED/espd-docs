@@ -25,7 +25,7 @@ In the example below the contracting authority has specified seven Lots, hence t
 	<cbc:QualificationApplicationTypeCode listID="QualificationApplicationType" listAgencyName="EU-COM-GROW" listVersionID="2.1.1">EXTENDED</cbc:QualificationApplicationTypeCode>
 	<!-- Contracting body data left empty for the sake of brevity -->
 	<cac:ContractingParty> <cac:Party/></cac:ContractingParty>
-	<--1-->	
+	<!--1-->	
 	<!--- This procurement procedure is divided into 7 Lots -->
 	<cac:ProcurementProjectLot><cbc:ID schemeAgencyID="EU-COM-GROW">Lot1</cbc:ID></cac:ProcurementProjectLot>
 	<cac:ProcurementProjectLot><cbc:ID schemeAgencyID="EU-COM-GROW">Lot2</cbc:ID></cac:ProcurementProjectLot>
@@ -35,7 +35,7 @@ In the example below the contracting authority has specified seven Lots, hence t
 	<cac:ProcurementProjectLot><cbc:ID schemeAgencyID="EU-COM-GROW">Lot6</cbc:ID></cac:ProcurementProjectLot>
 	<cac:ProcurementProjectLot><cbc:ID schemeAgencyID="EU-COM-GROW">Lot7</cbc:ID></cac:ProcurementProjectLot>	
 	
-<--2-->
+<!--2-->
 <!-- Additional information about the Lots supplied by the contracting authority -->
 	<!-- Criterion:CA Lots -->
 	<cac:TenderingCriterion>
@@ -50,9 +50,9 @@ In the example below the contracting authority has specified seven Lots, hence t
 				<cbc:ID schemeID="CriteriaTaxonomy" schemeAgencyID="EU-COM-GROW" schemeVersionID="2.1.1">847829aa-e70a-45e1-b4d3-e11c3ffaf7a0</cbc:ID>
 				<cbc:Description>Tenders may be submitted for</cbc:Description>
 				<cbc:TypeCode listID="CriterionElementType" listAgencyID="EU-COM-GROW" listVersionID="2.1.1">REQUIREMENT</cbc:TypeCode>
-				<cbc:ValueDataTypeCode listID="ResponseDataType" listAgencyID="EU-COM-GROW" listVersionID="2.1.1">CODE</cbc:ValueDataTypeCode><--3-->
+				<cbc:ValueDataTypeCode listID="ResponseDataType" listAgencyID="EU-COM-GROW" listVersionID="2.1.1">CODE</cbc:ValueDataTypeCode><!--3-->
 				<!-- Compulsory use of the Publications Office Code List BidType -->
-				<cbc:ExpectedCode listID="BidType" listAgencyID="EU-COM-OP" listVersionID="1.0">LOT_ALL</cbc:ExpectedCode> <--4-->
+				<cbc:ExpectedCode listID="BidType" listAgencyID="EU-COM-OP" listVersionID="1.0">LOT_ALL</cbc:ExpectedCode> <!--4-->
 			</cac:TenderingCriterionProperty>
 			<cac:TenderingCriterionProperty>
 				<cbc:ID schemeID="CriteriaTaxonomy" schemeAgencyID="EU-COM-GROW" schemeVersionID="2.1.1">dceddc28-0ac8-471b-b954-c376a862ea30</cbc:ID>
