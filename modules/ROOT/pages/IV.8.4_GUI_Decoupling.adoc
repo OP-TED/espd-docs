@@ -1,5 +1,7 @@
 
-==== Business data and GUI decoupling
+include::partial$attributes.adoc[]
+
+== Business data and GUI decoupling
 
 The business domain semantics should be decoupled from its management processes. Thus eBusiness Documents footnote:[the
 link:https://ec.europa.eu/isa2/home_en[ISA2 Programme] provides this draft definition for eBusiness Document: "a set

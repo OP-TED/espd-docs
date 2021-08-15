@@ -1,7 +1,7 @@
 
 include::partial$attributes.adoc[]
 
-=== III.3 ESPD Request cardinalities
+== III.3 ESPD Request cardinalities
 
 As you can see the UBL-2.2 Schema is quite flexible as, except for a few cases practically all the elements are optional.
 

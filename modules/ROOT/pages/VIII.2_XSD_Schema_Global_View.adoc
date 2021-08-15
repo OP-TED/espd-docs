@@ -2,7 +2,7 @@
 include::partial$attributes.adoc[]
 
 [.text-left]
-=== VIII.2 ESPD Request XSD Schema
+== VIII.2 ESPD Request XSD Schema
 
 For the ESPD Response, the ESPD-EDM V2.1.0 uses the UBL-2.2 document named `QualificationApplicationResponse.xsd` XSD Schema. This schema can be found under the folder link:{disturl}/dist/xsdrt/maindoc[dist/xsdrt/maindoc] (or the equivalent documented `xsd` folder).
 

@@ -1,5 +1,6 @@
-:thisVersion: 2.0.2
+:thisVersion: 2.1.0
 :thisVersionTag: {thisversion}
 :gitRepoUrl: https://github.com/ESPD/ESPD-EDM
 :distPath: /docs/src/main/asciidoc
 :distUrl: {gitrepourl}/tree/{thisversiontag}{distpath}
+:distUrlBlob202: {gitrepourl}/blob/2.0.2{distpath}

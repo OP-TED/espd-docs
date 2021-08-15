@@ -1,9 +1,11 @@
 
-=== IX.2 All about weights
+include::partial$attributes.adoc[]
+
+== IX.2 All about weights
 
 The *SELF-CONTAINED ESPD*  caters for two methods of evaluating criteria (the REGULATED ESP does not covers this aspect).
 These two methods are identified in the code list
-link:https://github.com/ESPD/ESPD-EDM/blob/master/docs/src/main/asciidoc/dist/cl/xlsx/ESPD-CodeLists-V2.0.2.xlsx[EvaluationMethodType] as
+link:{distUrlBlob202}/dist/cl/xlsx/ESPD-CodeLists-V2.0.2.xlsx[EvaluationMethodType] as
 1) PASSFAIL (Pass or fail), and 2) WEIGHTED (the criterion is assigned a weight).
 
 The ''pass or fail'' method is used in open procedures and in the first stage of multi-staged procedures. In multi-staged
@@ -19,7 +21,7 @@ Hence the following general rule should be applied by software applications deal
 in order to limit the number of candidates, and 2) it should have the possibility of assigning a weight to any selection
 criterion (the value of the element cbc:EvaluationMethodTypeCode is to be set to `WEIGHTED`);
 
-==== Information requirement check-list
+=== Information requirement check-list
 
 . Only in *SELF-CONTAINED* ESPD-Request and ESDP-Response documents
 . Only in multi-staged procedures
@@ -114,7 +116,7 @@ This other figure shows the elements inside the class Criterion:
 .Elements related to the weight inside the 'cac:TenderingCriterion' class
 image::Criterion-weight-related-data_elements.png[Weight-related data elements, alt="Weight-related data elements", align="center"]
 
-===== Mock-up - contracting authority perspective
+==== Mock-up - contracting authority perspective
 
 The mock-up below illustrates how the contracting authority may specify weighted criteria.
 
@@ -134,7 +136,7 @@ element `cbc:WeightNumeric` (element #3 in the table above);
 . The additional information about how this specific criterion will be evaluated will be place in the element
 `cbc:WeightingConsiderationDescription` (element #5 in the table above).
 
-===== Mock-up - economic operator perspective
+==== Mock-up - economic operator perspective
 
 This mock-up illustrates how all the information specified by the contracting authority (CA), concerning
 1) the generic information about weights, and 2) the information specific of the criterion may be
@@ -143,7 +145,7 @@ presented to the economic operator (EO):
 .Self-contained 'Abilities (I)' WEIGHTED EO mock-up
 image::Selfcontained_Abilities_WEIGHTED_EO_mockup2.png[Self-contained 'Abilities (I)' WEIGHTED EO mock-up, alt="Self-contained 'Abilities (I)' WEIGHTED EO mock-up", align="center"]
 
-===== Criterion data structure
+==== Criterion data structure
 
 The following data structure represents the structure of one of the selection criteria that may be weighted in multi-stage
 procedures (''Technicians or technical bodies for quality control'').
@@ -157,7 +159,7 @@ procedures (''Technicians or technical bodies for quality control'').
 .Weighted self-contained 'Abilities (I) - Criterion 'Technicians or technical bodies for quality control'
 image::Self-contained_Weighted_Criterion.png[Weighted self-contained 'Abilities (I) criterion, alt="Weighted self-contained 'Abilities (I) criterion", align="center"]
 
-===== XML example
+==== XML example
 
 The fragment of XML code below illustrates how the elements related to the weighting are specified in an SELF-CONTAINED
 ESPD Request document.

@@ -2,7 +2,7 @@
 include::partial$attributes.adoc[]
 
 [.text-left]
-=== II.4 Codes and Identifiers
+== II.4 Codes and Identifiers
 
 A code is a shortened way (a number or a short abbreviated text), leading to the definition of a 'concept'. The code epresents the concept and is used by software applications to retrieve the definition of the concept or make automatic decisions.
 
@@ -24,7 +24,7 @@ The essential distinctive features between identifiers and codes are:
 
 .. business process-specific, i.e. ESPD-specific, such as the data type expected in the response to a criterion, or the type of a criterion property, etc.
 
-==== Codes and code lists
+=== Codes and code lists
 
 The ESPD Exchange Data Model tries to reuse as much as possible the codes that are already used for e-Procurement. In any project, like the ESPD-EDM,
 there are at least three types (or layers) of codes:

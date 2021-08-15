@@ -1,5 +1,7 @@
 
-=== IX.3 All about UUIDs
+include::partial$attributes.adoc[]
+
+== IX.3 All about UUIDs
 
 
 In the Regulated and Self-contained
@@ -12,7 +14,7 @@ structure identified with a unique identifier has always the same elements and i
 This allows *_the reuse_* of the same structure multiple times in the same criterion or in different criteria.
 These UUIDs map the ones maintained in link:https://ec.europa.eu/isa2/solutions/e-certis_en[e-Certis] for each criterion.
 
-==== Examples of data structure reuse
+=== Examples of data structure reuse
 
 * *Example 1*: There is a data structure that is reused by practically  all the criteria, the one asking whether the information
 is available electronically. You will notice that all criteria where it is used the UUIDs of the groups and
@@ -32,7 +34,7 @@ The reason for this is that each response by the economic operator (in the ESPD 
 and only one, QUESTION of the ESPD Request. See other details on criterion properties in sections
 link:#iv-4-properties[IV.4 Properties] and link:#viii-7-answering-questions[VIII.7 Answering QUESTION(s)].
 
-==== Implementation challenge
+=== Implementation challenge
 
 The fact that Criterion Properties are to be generated dynamically may pose a challenge to developers in certain
 situations. One of these situations could be when the QUESTIONs are repositoried and answered in a
@@ -53,13 +55,13 @@ enabling the decoupling of systems producing ESPD-Requests and systems keeping p
 Let's take one *_REGULATED_* criterion as an example to illustrate this proposal (this works also for *_SELF-CONTAINED
 ESPD_* criteria):
 
-==== Example: Convictions Criterion
+=== Example: Convictions Criterion
 
-===== User Story
+==== User Story
 
 _I, as a PQS, need to provide the information about an EO's convictions, so the  EO can produce a pre-filled ESPD-Response_.
 
-===== Algorithm
+==== Algorithm
 
 The algorithm to generate the first subgroup of QUESTIONs (in convictions) would be:
 
@@ -78,7 +80,7 @@ This algorithm produces a unique digital print per each data element of the _dat
 an IRI, the data element could be described in a very specific namespace and its de-referencing could provide
 back a machine-readable description of the element (name, description, examples, etc.).
 
-===== Data Structure
+==== Data Structure
 
 The figure below would represent how the criterion "Participation in a criminal organisation would look like in the
 Criteria Taxonomy if you applied the algorithm above:

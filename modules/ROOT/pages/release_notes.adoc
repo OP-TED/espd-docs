@@ -1,3 +1,6 @@
+
+include::partial$attributes.adoc[]
+
 == Release Notes
 
 === v2.1.0 (January 2019)

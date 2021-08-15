@@ -1,7 +1,7 @@
 
 include::partial$attributes.adoc[]
 
-=== III.2 ESPD Request XSD Schema
+== III.2 ESPD Request XSD Schema
 
 The ESPD-EDM V2.1.0 uses the UBL-2.2 document named `QualificationApplicationRequest.xsd` XSD Schema. This schema can be found under the folder link:{disturl}/dist/xsdrt/maindoc[dist/xsdrt/maindoc] (or the equivalent documented `xsd` folder).
 

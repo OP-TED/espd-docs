@@ -1,7 +1,9 @@
 
-==== Example 1: Suitability
+include::partial$attributes.adoc[]
 
-===== Mock-up - contracting authority perspective
+== Example 1: Suitability
+
+=== Mock-up - contracting authority perspective
 
 For each criteria regarding suitability, the CA should be able to provide: the register name, its URL and the Lots to which each requirement apply.
 
@@ -15,7 +17,7 @@ the allocation of lots to a set of 'criterion properties' make sense.
 .Self-contained 'Suitability' criterion with Lots (CA perspective)'
 image::Self-contained_Suitability_LOTS_CA_mockup_NO_BULLETS.png[Self-contained 'Suitability' criterion (CA perspective), alt="Self-contained 'Suitability' criterion (CA perspective)", align="center"]
 
-===== Mock-up - economic operator perspective
+=== Mock-up - economic operator perspective
 
 Notice that:
 
@@ -28,7 +30,7 @@ Notice that:
 .Self-contained 'Suitability' criterion (EO perspective)'
 image::Self-contained_Suitability_LOTS_EO_mockup_NO_BULLETS.png[Self-contained 'Suitability' criterion (EO perspective), alt="Self-contained 'Suitability' criterion (EO perspective)", width="800" align="center"]
 
-===== Criterion data structure
+=== Criterion data structure
 
 .'Enrolment in a relevant professional register' suitability criterion data structure (SELF-CONTAINED)
 image::Selfcontained_Suitability_Enrolment_Data_Structure.png['Enrolment in a relevant professional register' suitability criterion, alt="'Enrolment in a relevant professional register' suitability criterion",align="center"]
@@ -39,7 +41,7 @@ to refer to a subset of Lots. The REQUIREMENT_SUBGROUP, following this list of L
 constraint that affect the Lots, in this case the CA's request that the EO needs to be
 registered in one concrete Register.
 
-===== XML example
+=== XML example
 
 [NOTE]
 ====
@@ -337,7 +339,7 @@ link:{attachmentsdir}/dist/xml/Lots-SelfContained-Response_V2.1.0.xml[Lots-SelfC
 </cac:QualificationApplicationResponse>
 ----
 
-==== Note for the future
+== Note for the future
 
 Due to one strict Naming and Design Rule (NDR) in UBL, Common Basic Components (those basic data elements for which
 the `cbc:` prefix is used in UBL), cannot have multiple cardinality (of type 0..n or 1..n).

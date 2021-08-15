@@ -1,5 +1,7 @@
 
-=== IX.1 All about lots
+include::partial$attributes.adoc[]
+
+== IX.1 All about lots
 
 When a procurement procedure is divided in Lots not all the selection criteria apply to all Lots, i.e. some
 Lots need to be linked to specific criteria.
@@ -28,7 +30,7 @@ the *SELF-CONTAINED* ESPD documents.
 
 Therefore this section focuses only the SELF-CONTAINED ESPD-Response document.
 
-==== Lots: general information requirement check-list
+=== Lots: general information requirement check-list
 
 . *Criteria with references to Lots*: The current design of the UBL-2.2 `cac:TenderingCriterion` allows
  referencing Lots for any type of Criteria. However
