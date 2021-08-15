@@ -74,7 +74,7 @@ changed to 0..1 **.
 ==== UUIDs
 
 * New UUIDs have been added for the newly created Criteria, groups and sub-groups where needed. For a comprehensive list of the new UUIDs and their
-creation reason, please refer to the following link:https://github.com/ESPD/ESPD-EDM/blob/2.1.1/docs/src/main/asciidoc/assets/new_UUIDs_for_eCertis.xlsx[document].
+creation reason, please refer to the following link:{url-blob}/assets/new_UUIDs_for_eCertis.xlsx[document].
 
 === v2.1.0 (January 2019)
 
