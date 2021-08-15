@@ -33,7 +33,7 @@ Moreover, the ESPD 3.0.0 will reuse code list from EU Vocabularies. This is due 
 Codes are normally maintained in "code lists". The ESPD-EDM keeps and distributes these code lists in three different formats:
 
 [arabic]
-. In an Office Open XML (link:{url-blob}/dist/cl/xlsx/ESPD-CodeLists-V2.1.1.xlsx[XLSX]) file,
+. In an Office Open XML (link:{url-blob-211}/dist/cl/xlsx/ESPD-CodeLists-V2.1.1.xlsx[XLSX]) file,
 . In an Open Office Document (link:{url-tree-211}/dist/cl/ods[ODS]) file,
 . Genericode 1.0 (link:{url-tree-211}/dist/cl/gc[GC]) files (one *.gc file per code list).
 
