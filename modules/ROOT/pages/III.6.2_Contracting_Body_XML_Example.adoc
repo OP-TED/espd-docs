@@ -11,19 +11,19 @@ The XML snippet below shows how an example of how to supply the expected data fo
 		<cbc:WebsiteURI>www.defensa.gob.es</cbc:WebsiteURI> 
 		<cbc:EndpointID>www.defensa.gob.es/?p=3404</cbc:EndpointID>
 		<cac:PartyIdentification>
-			<cbc:ID schemeAgencyID="VIES-AEAT">B82387770</cbc:ID> <--1-->
+			<cbc:ID schemeAgencyID="VIES-AEAT">B82387770</cbc:ID> <!--1-->
 		</cac:PartyIdentification>
 		<cac:PartyName>
-			<cbc:Name>Ministerio de Defensa</cbc:Name> <--2-->
+			<cbc:Name>Ministerio de Defensa</cbc:Name> <!--2-->
 		</cac:PartyName>
 		<cac:PostalAddress>
 			<cbc:StreetName>Paseo de la Castellana, 109</cbc:StreetName>
 			<cbc:CityName>Madrid</cbc:CityName>
 			<cbc:PostalZone>28071</cbc:PostalZone>
-			<cac:Country><cbc:IdentificationCode listID="CountryCodeIdentifier" listAgencyID="EU-COM-GROW" listVersionID="02.00.00">ES</cbc:IdentificationCode></cac:Country> <--3-->
+			<cac:Country><cbc:IdentificationCode listID="CountryCodeIdentifier" listAgencyID="EU-COM-GROW" listVersionID="02.00.00">ES</cbc:IdentificationCode></cac:Country> <!--3-->
 		</cac:PostalAddress>
 		<cac:Contact>
-			<cbc:Name>Responsable de la compra pública</cbc:Name> <--4-->
+			<cbc:Name>Responsable de la compra pública</cbc:Name> <!--4-->
 			<cbc:Telephone>913955000</cbc:Telephone>
 			<cbc:ElectronicMail>comprapublica@defensa.gob.es</cbc:ElectronicMail>
 		</cac:Contact>

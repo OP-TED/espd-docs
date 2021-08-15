@@ -6,19 +6,19 @@ This fragment of XML shows how the compulsory attributes are used for the some o
 
 [source,xml]
 ----
-<cbc:UBLVersionID schemeAgencyID="OASIS-UBL-TC">2.2</cbc:UBLVersionID> <--1-->
+<cbc:UBLVersionID schemeAgencyID="OASIS-UBL-TC">2.2</cbc:UBLVersionID> <!--1-->
 
-<cbc:ID schemeAgencyID="DGPE">ESPDREQ-DGPE-3b5755dfb8</cbc:ID> <--2-->
+<cbc:ID schemeAgencyID="DGPE">ESPDREQ-DGPE-3b5755dfb8</cbc:ID> <!--2-->
 
-<cbc:UUID schemeID="ISO/IEC 9834-8:2008" schemeAgencyID="EU-COM-GROW" schemeVersionID="4">0fddbf2d-1e33-4267-b04f-52b59b72ccb6</cbc:UUID> <--3-->
+<cbc:UUID schemeID="ISO/IEC 9834-8:2008" schemeAgencyID="EU-COM-GROW" schemeVersionID="4">0fddbf2d-1e33-4267-b04f-52b59b72ccb6</cbc:UUID> <!--3-->
 
-<cbc:ContractFolderID schemeAgencyID="DGPE">PP.20170419.1024-9</cbc:ContractFolderID> <--4-->
+<cbc:ContractFolderID schemeAgencyID="DGPE">PP.20170419.1024-9</cbc:ContractFolderID> <!--4-->
 
-<cbc:VersionID schemeAgencyID="EU-COM-GROW" schemeVersionID="02.00.00">1.0</cbc:VersionID> <--5--> 
+<cbc:VersionID schemeAgencyID="EU-COM-GROW" schemeVersionID="02.00.00">1.0</cbc:VersionID> <!--5--> 
 
-<cbc:ProcedureCode listID="ProcedureType" listAgencyID="EU-COM-GROW" listVersionID="02.00.00">V</cbc:ProcedureCode> <--6-->
+<cbc:ProcedureCode listID="ProcedureType" listAgencyID="EU-COM-GROW" listVersionID="02.00.00">V</cbc:ProcedureCode> <!--6-->
 
-<cbc:QualificationApplicationTypeCode listID="QualificationApplicationType" listAgencyID="EU-COM-GROW" listVersionID="02.00.00">SELFCONTAINED</cbc:QualificationApplicationTypeCode> <--7-->
+<cbc:QualificationApplicationTypeCode listID="QualificationApplicationType" listAgencyID="EU-COM-GROW" listVersionID="02.00.00">SELFCONTAINED</cbc:QualificationApplicationTypeCode> <!--7-->
 ----
 <1> The Agency responsible for the maintenance of the UBL versioning is the OASIS UBL Technical Committee
 <2> The identifier for this document was issued by the a Spanish Central Government Directorate identified as 'DGPE'

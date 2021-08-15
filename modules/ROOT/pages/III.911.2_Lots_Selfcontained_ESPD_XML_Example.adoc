@@ -30,7 +30,7 @@ Observe that the data is
 	<cbc:QualificationApplicationTypeCode listID="QualificationApplicationType" listAgencyName="EU-COM-GROW" listVersionID="02.00.00">SELFCONTAINED</cbc:QualificationApplicationTypeCode>
 	<!-- Contracting body data left empty for the sake of brevity -->
 	<cac:ContractingParty> <cac:Party/></cac:ContractingParty>
-	<--1-->	
+	<!--1-->	
 	<!--- This procurement procedure is divided into 7 Lots -->
 	<cac:ProcurementProjectLot><cbc:ID schemeAgencyID="EU-COM-GROW">Lot1</cbc:ID></cac:ProcurementProjectLot>
 	<cac:ProcurementProjectLot><cbc:ID schemeAgencyID="EU-COM-GROW">Lot2</cbc:ID></cac:ProcurementProjectLot>
@@ -40,7 +40,7 @@ Observe that the data is
 	<cac:ProcurementProjectLot><cbc:ID schemeAgencyID="EU-COM-GROW">Lot6</cbc:ID></cac:ProcurementProjectLot>
 	<cac:ProcurementProjectLot><cbc:ID schemeAgencyID="EU-COM-GROW">Lot7</cbc:ID></cac:ProcurementProjectLot>	
 	
-<--2-->
+<!--2-->
 <!-- Additional information about the Lots supplied by the contracting authority -->
 	<!-- Criterion:CA Lots -->
 	<cac:TenderingCriterion>
@@ -76,6 +76,7 @@ Observe that the data is
 		</cac:TenderingCriterionPropertyGroup>
 	</cac:TenderingCriterion> 
 </QualificationApplicationRequest>
+<!--3--><!--4-->
 
 ----
 <1> This procedure is divided into 7 lots. Hence their automatic identification from Lot1 to Lot7.
