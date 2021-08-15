@@ -9,15 +9,15 @@ The XML snippet below illustrates how to use the `cac:AdditionalDocumentReferenc
 
 <!-- Reference to the Contract Notice published on TED -->
 	<cac:AdditionalDocumentReference>
-		<cbc:ID schemeAgencyID="EU-COM-OP">2017/S 142-293520</cbc:ID> <--1-->
-		<cbc:DocumentTypeCode listID="DocRefContentType" listAgencyID="EU-COM-GROW" listVersionID="2.0.2">TED_CN</cbc:DocumentTypeCode> <--2-->
+		<cbc:ID schemeAgencyID="EU-COM-OP">2017/S 142-293520</cbc:ID> <!--1-->
+		<cbc:DocumentTypeCode listID="DocRefContentType" listAgencyID="EU-COM-GROW" listVersionID="2.0.2">TED_CN</cbc:DocumentTypeCode> <!--2-->
 		<cac:Attachment>
 			<cac:ExternalReference>
 			<!-- Beware XML URI fields may require encoded URLs -->
-			<cbc:URI schemeAgencyID="EU-COM-OP">http://ted.europa.eu/udl?uri%3DTED:NOTICE:293520-2017:TEXT:EN:HTML%026src%3D0</cbc:URI> <--3-->
+			<cbc:URI schemeAgencyID="EU-COM-OP">http://ted.europa.eu/udl?uri%3DTED:NOTICE:293520-2017:TEXT:EN:HTML%026src%3D0</cbc:URI> <!--3-->
 			<cbc:FileName>Spain-Zamora: Repair and maintenance services</cbc:FileName>
-			<cbc:Description>Repair and maintenance services. Real estate services.</cbc:Description> <--4-->
-			<cbc:Description>293520-2017</cbc:Description>	<--5-->			
+			<cbc:Description>Repair and maintenance services. Real estate services.</cbc:Description> <!--4-->
+			<cbc:Description>293520-2017</cbc:Description>	<!--5-->			
 			</cac:ExternalReference>
 		</cac:Attachment>
 	</cac:AdditionalDocumentReference>
@@ -25,9 +25,9 @@ The XML snippet below illustrates how to use the `cac:AdditionalDocumentReferenc
 	<!-- Reference to the Contract Notice published on the Spanish Central Government eTendering Platform -->
 	<cac:AdditionalDocumentReference>
 		<!-- Contract Notice publishied on the Spanish Central eTendering Platform "PLACE" Plataforma de Contratación del Sector Público -->
-		<cbc:ID schemeAgencyID="PLACE">3.17/20830.0160</cbc:ID> <--6-->
+		<cbc:ID schemeAgencyID="PLACE">3.17/20830.0160</cbc:ID> <!--6-->
 		<!-- Contract Notice (CN) published on a National Government Official Journal -->
-		<cbc:DocumentTypeCode listID="DocRefContentType" listAgencyID="EU-COM-GROW" listVersionID="2.0.2">NOJCN</cbc:DocumentTypeCode> <--7-->
+		<cbc:DocumentTypeCode listID="DocRefContentType" listAgencyID="EU-COM-GROW" listVersionID="2.0.2">NOJCN</cbc:DocumentTypeCode> <!--7-->
 		<cac:Attachment>
 			<cac:ExternalReference>
 			<!-- Beware XML URI fields may require encoded URLs -->

@@ -63,10 +63,10 @@ image::Selfcontained_ESPDRequest_Contributions_Data_Structure.png[Self-contained
 	<cbc:ID schemeID="CriteriaTaxonomy" schemeAgencyID="EU-COM-GROW" schemeVersionID="2.0.2">b61bbeb7-690e-4a40-bc68-d6d4ecfaa3d4</cbc:ID>
 	<cbc:CriterionTypeCode listID="CriteriaTypeCode" listAgencyID="EU-COM-GROW" listVersionID="2.0.2">CRITERION.EXCLUSION.CONTRIBUTIONS.PAYMENT_OF_TAXES</cbc:CriterionTypeCode>
 	<cbc:Name>Payment of taxes</cbc:Name>
-	<cbc:Description>Has the economic operator breached its obligations relating to the payment of taxes, both in the country in which it is established and in Member State of the contracting authority or contracting entity if other than the country of establishment?</cbc:Description> <--1-->
+	<cbc:Description>Has the economic operator breached its obligations relating to the payment of taxes, both in the country in which it is established and in Member State of the contracting authority or contracting entity if other than the country of establishment?</cbc:Description> <!--1-->
 
 	<!-- Finland, in e-Certis, defines up to four different types of national exclusion ground for payment of taxes. Each one is instantiated in different national sub-criteria elements -->
-	<cac:SubTenderingCriterion> <--2--> 
+	<cac:SubTenderingCriterion> <!--2--> 
 		<cbc:ID schemeID="CriteriaTaxonomy" schemeAgencyID="EU-COM-GROW" schemeVersionID="2.0.2">e6b21867-95b5-4549-8180-f4673219b179</cbc:ID>
 		<!-- Mandatory: name and description -->
 		<cbc:Name>I. Payment of taxes ( Act on public procurement 1397/2016 81 Section 1 )</cbc:Name> 
@@ -92,7 +92,7 @@ image::Selfcontained_ESPDRequest_Contributions_Data_Structure.png[Self-contained
 		</cac:TenderingCriterionPropertyGroup>
 	</cac:SubTenderingCriterion>
 	
-	<!-- National criterion 2 --> <--3-->
+	<!-- National criterion 2 --> <!--3-->
 	<cac:SubTenderingCriterion>
 		<cbc:ID schemeID="CriteriaTaxonomy" schemeAgencyID="EU-COM-GROW" schemeVersionID="2.0.2">e6b21867-95b5-4549-8180-f4673219b179</cbc:ID>
 		<cbc:Name>II. Payment of taxes ( Act on public procurement 1397/2016 80 Section 4 )</cbc:Name>
@@ -118,7 +118,7 @@ image::Selfcontained_ESPDRequest_Contributions_Data_Structure.png[Self-contained
 			</cac:TenderingCriterionProperty>
 		</cac:TenderingCriterionPropertyGroup>
 	</cac:SubTenderingCriterion>
-	<!-- National criterion 3 --> <--4-->
+	<!-- National criterion 3 --> <!--4-->
 	<cac:SubTenderingCriterion>
 		<cbc:ID schemeID="CriteriaTaxonomy" schemeAgencyID="EU-COM-GROW" schemeVersionID="2.0.2">e6b21867-95b5-4549-8180-f4673219b179</cbc:ID>
 		<cbc:Name>III. Aggravated tax fraud ( The Criminal Code of Finland 39/1889 Chapter 29 Section 2 )</cbc:Name>
@@ -142,7 +142,7 @@ image::Selfcontained_ESPDRequest_Contributions_Data_Structure.png[Self-contained
 			</cac:TenderingCriterionProperty>
 		</cac:TenderingCriterionPropertyGroup>
 	</cac:SubTenderingCriterion>
-	<!-- National criterion 4 --> <--5-->
+	<!-- National criterion 4 --> <!--5-->
 	<cac:SubTenderingCriterion>
 		<cbc:ID schemeID="CriteriaTaxonomy" schemeAgencyID="EU-COM-GROW" schemeVersionID="2.0.2">e6b21867-95b5-4549-8180-f4673219b179</cbc:ID>
 		<cbc:Name>IV. Tax fraud ( The Criminal Code of Finland 39/1889 Chapter 29 Section 1 )</cbc:Name>
@@ -188,7 +188,7 @@ image::Selfcontained_ESPDRequest_Contributions_Data_Structure.png[Self-contained
 				<cbc:TypeCode listID="CriterionElementType" listAgencyID="EU-COM-GROW" listVersionID="2.0.2">REQUIREMENT</cbc:TypeCode>
 				<cbc:ValueDataTypeCode listID="ResponseDataType" listAgencyID="EU-COM-GROW" listVersionID="2.0.2">AMOUNT</cbc:ValueDataTypeCode>
 				<!-- No answer is expected here from the economic operator, as this is a REQUIREMENT issued by the contracting authority. Hence the element 'cbc:ValueDataTypeCode' contains the type of value of the requirement issued by the contracting authority -->
-				<cbc:ExpectedAmount currencyID="EUR">50</cbc:ExpectedAmount> <--6--><--7-->
+				<cbc:ExpectedAmount currencyID="EUR">50</cbc:ExpectedAmount> <!--6--><!--7-->
 			</cac:TenderingCriterionProperty>
 			<cac:TenderingCriterionProperty>
 				<cbc:ID schemeID="CriteriaTaxonomy" schemeAgencyID="EU-COM-GROW" schemeVersionID="2.0.2">c4421575-0f45-430e-a3d9-9f9967eafdee</cbc:ID>
@@ -197,11 +197,11 @@ image::Selfcontained_ESPDRequest_Contributions_Data_Structure.png[Self-contained
 				<cbc:TypeCode listID="CriterionElementType" listAgencyID="EU-COM-GROW" listVersionID="2.0.2">REQUIREMENT</cbc:TypeCode>
 				<cbc:ValueDataTypeCode listID="ResponseDataType" listAgencyID="EU-COM-GROW" listVersionID="2.0.2">DESCRIPTION</cbc:ValueDataTypeCode>
 				<!-- No answer is expected here from the economic operator, as this is a REQUIREMENT issued by the contracting authority. Hence the element 'cbc:ValueDataTypeCode' contains the type of value of the requirement issued by the contracting authority -->
-				<cbc:ExpectedDescription>In case of debt please fulfill your obligation before tendering.</cbc:ExpectedDescription> <--8-->
+				<cbc:ExpectedDescription>In case of debt please fulfill your obligation before tendering.</cbc:ExpectedDescription> <!--8-->
 			</cac:TenderingCriterionProperty>
 		</cac:TenderingCriterionPropertyGroup>		
 
-		<--9-->
+		<!--9-->
 		<!-- The rest of the criterion is identical than for the Regulated version -->
 
 		<cac:TenderingCriterionPropertyGroup>
