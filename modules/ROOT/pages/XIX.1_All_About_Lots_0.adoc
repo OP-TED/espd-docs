@@ -1,4 +1,6 @@
 
+include::partial$attributes.adoc[]
+
 === IX.1 All about lots
 
 When a procurement procedure is divided in Lots not all the selection criteria apply to all Lots, i.e. some
@@ -19,7 +21,7 @@ link:#vi-6-2-Extended-risk-indemnity-insurance[Extended risk indemnity insurance
 link:#vi-7-2-Extended-other-economic-or-financial-requirements[VI.7.2 Extended other economic or financial requirements], and
 link:#vi-8-2-Extended-references[VI.8.2 Extended references].
 
-The folder link:https://github.com/ESPD/ESPD-EDM/tree/2.1.1/docs/src/main/asciidoc/dist/xml[dist/xml] also contains
+The folder link:{distUrl}/dist/xml[dist/xml] also contains
 complete XML instances of both Basic and Extended ESPD-Request and ESPD-Response documents.
 
 The *Basic* ESPD documents can only define the Lots into which the procedure is divided into and the Lots to which the
@@ -33,7 +35,7 @@ Therefore this section focuses only the Extended ESPD-Response document.
 . *Criteria with references to Lots*: The current design of the UBL-2.2 `cac:TenderingCriterion` allows
  referencing Lots for any type of Criteria. However
 the current version of the ESPD-EDM only identifies this need in a reduced set of Selection Criteria (see the
-link:https://github.com/ESPD/ESPD-EDM/blob/2.1.1/docs/src/main/asciidoc/dist/cl/xlsx/ESPD-CriteriaTaxonomy-Extended-V2.1.1.xlsx[Criteria Taxonomy spread-sheets]
+link:{attachmentsdir}/dist/cl/xlsx/ESPD-CriteriaTaxonomy-Extended-V2.1.1.xlsx[Criteria Taxonomy spread-sheets]
 for more details, like the Criterion description, UUID, Code, etc.):
 
     ** *Suitability I*
@@ -61,7 +63,7 @@ and which comes first and which goes after (i.e. how they are sequenced).
 [NOTE]
 ====
 *_A complete ESPD-Response document with the examples provided in this section can be found in the file
-link:https://github.com/ESPD/ESPD-EDM/blob/2.1.1/docs/src/main/asciidoc/dist/xml/Lots-Extended-Response_V2.1.1.xml[Lots-Extended-Response_V2.1.1.xml]_*
+link:{attachmentsdir}/dist/xml/Lots-Extended-Response_V2.1.1.xml[Lots-Extended-Response_V2.1.1.xml]_*
 ====
 
 .Order of occurrence of the different blocks of data related to Lots

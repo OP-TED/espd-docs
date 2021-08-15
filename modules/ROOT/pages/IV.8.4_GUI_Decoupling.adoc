@@ -1,4 +1,6 @@
 
+include::partial$attributes.adoc[]
+
 ==== Business data and GUI decoupling
 
 The business domain semantics should be decoupled from its management processes. Thus eBusiness Documents footnote:[the
@@ -29,7 +31,7 @@ the element `cbc:PropertyGroupTypeCode` element (similarly to what is done with 
 `cac:TenderingCriterionProperty`). However for backwards compatibility reasons with the MS software applications the
 decision was made to reserve the `cbc:PropertyGroupTypeCode` to control the GUI behaviour by means of the values
 defined in the code list
-link:https://github.com/ESPD/ESPD-EDM/blob/2.1.1/docs/src/main/asciidoc/dist/cl/xlsx/ESPD-CodeLists-V2.1.1.xlsx[PropertyGroupType]
+link:{attachmentsdir}/dist/cl/xlsx/ESPD-CodeLists-V2.1.1.xlsx[PropertyGroupType]
 (codes ON*, ONTRUE and ONFALSE).
 
 The way currently used by software applications to detect whether a GROUP (or SUBGROUP) carries REQUIREMENT(s) or not is to
@@ -54,7 +56,7 @@ The fragment of XML code below illustrates how a mediation service, after recept
 footnote:[Received eBusiness Document should be preserved as it was sent, unaltered, before applying any enrichment, otherwise the evidence value would be lost.],
 could enrich the XML instance containing the business data with processing instruction annotations, based on the annotated data structure shown above
 (the complete example can be found in the folder
-link:https://github.com/ESPD/ESPD-EDM/tree/2.1.1/docs/src/main/asciidoc/dist/doc/evolution/Annotations_Proposal[Annotations Proposal]
+link:{distUrl}/dist/doc/evolution/Annotations_Proposal[Annotations Proposal]
 
 .Use of annotations to decouple the business data payload from the software application processing needs
 [source,xml]

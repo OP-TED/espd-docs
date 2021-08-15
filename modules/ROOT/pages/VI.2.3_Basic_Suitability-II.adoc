@@ -1,10 +1,12 @@
 
+include::partial$attributes.adoc[]
+
 === VI.2.3 Basic suitability (service contracts)
 
 ==== Data Structure (Service Contracts)- Basic
 
 (The figure below is defined in the the tab "Suitability-II of the
-link:https://github.com/ESPD/ESPD-EDM/blob/2.1.1/docs/src/main/asciidoc/dist/cl/xlsx/ESPD-CriteriaTaxonomy-BASIC-V2.1.1.xlsx[ESPD-CriteriaTaxonomy] spread-sheet).
+link:{attachmentsdir}/dist/cl/xlsx/ESPD-CriteriaTaxonomy-BASIC-V2.1.1.xlsx[ESPD-CriteriaTaxonomy] spread-sheet).
 
 .Basic 'Suitability' criterion data structure (for ''service contracts'')
 image::Basic_Suitability_ServiceContract_Data_Structure.png[Basic 'Suitability' criterion data structure, alt="Basic 'Suitability' criterion data structure",align="center"]

@@ -1,4 +1,4 @@
-==== XML example
+== XML example
 
 The XML snippet below shows how an example of how to supply the expected data for the contracting body.
 

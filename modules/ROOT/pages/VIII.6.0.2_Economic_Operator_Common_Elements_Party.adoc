@@ -1,4 +1,6 @@
 
+include::partial$attributes.adoc[]
+
 ==== Expected elements
 
 Please, remember that the elements `cac:ContractingAuthority`, `cac:ProcurementProject`, `cac:ProcurementProjectLot`, and `cac:AdditionalDocumentReference` are expected in the ESPD Request, too. However, for the sake of brevity, and as they are taken from the ESPD Request and 'copied' in the ESPD Response, they have not been re-explained in this section about the ESPD Response. Therefore for details on those elements please refer to the section link:#iii-the-espd-request-document[III. The ESPD Request document].
@@ -114,7 +116,7 @@ Please, remember that the elements `cac:ContractingAuthority`, `cac:ProcurementP
 |*Information Requirement*: http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1-tbr92-001[_tbr92-001_]
 
 *Rule*: The attribute `schemeAgencyID` must hold the value retrieved from eCertis that identifies unequivocally the (pre)qualification system. If, for any reason, that value is not available use the default schemeAgencyID "EU-COM-GROW" and the `cac:EconomicOperatorParty/cac:QualifyingParty/cac:Party/cac:PartyIdentificaton/cbc:ID` for the value of the identifier. Additionally you can use the data structure `CRITERION.OTHER.EO_DATA.REGISTERED_IN_OFFICIAL_LIST` to specify an alternative or additional name, identifier and description.
-The code list link:https://github.com/ESPD/ESPD-EDM/blob/2.1.1/docs/src/main/asciidoc/dist/cl/ods/ESPD-CodeLists-V2.1.1.ods[EOIDType]
+The code list link:{attachmentsdir}/dist/cl/ods/ESPD-CodeLists-V2.1.1.ods[EOIDType]
 should be used to indicate the type of identifier used as a value of the `schemeID` attribute, e.g. `schemeID="VAT"`).
 
 *Rule scope*: Extended ( BR-RESP-80-S10, BR-RESP-80-S20), Common (BR-RESP-50, BR-OTH-02)

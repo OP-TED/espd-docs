@@ -1,5 +1,8 @@
 = ESPD Exchange Data Model (ESPD-EDM)
 
+include::partial$attributes.adoc[]
+
+
 ifndef::imagesdir[:imagesdir: images]
 
 v2.1.1
@@ -7,7 +10,7 @@ v2.1.1
 == Resources
 
 * xref:xml_guide.adoc[ESPD Exchange Data Model Implementation Guide V2.1.1]
-* link:https://github.com/ESPD/ESPD-EDM/tree/2.1.1/docs/src/main/asciidoc/dist[All resources in the distribution package]
+* link:{distUrl}/dist[All resources in the distribution package]
 * xref:release_notes.adoc[Release Notes]
 
 == Requirements
