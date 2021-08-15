@@ -23,7 +23,7 @@ Additional information about the code lists can be found in:
 * The link:{attachmentsdir}/dist/cl/ods/ESPD-CodeLists-V3.0.0.ods[spread-sheet] distributed with this documentation;
 
 
-* The multilingual link:{distUrl}/dist/cl/gc[Genericode] *.gc files automatically produced based on these spread-sheets; and
+* The multilingual link:{url-tree}/dist/cl/gc[Genericode] *.gc files automatically produced based on these spread-sheets; and
 
 
 The table below lists the code lists used in the ESPD documents and where they are used.
@@ -33,7 +33,7 @@ The table below lists the code lists used in the ESPD documents and where they a
 |*Code List* |*Issuer Agency* |*Used In*
 |access-right |Publications Office of the EU |See element 'cac:Evidence/cbc:ConfidentialityLevelCode` of the UBL-2.3 XSD Schemas for QualificationApplicationResponse
 |Country |Publications Office of the EU |See element 'cac:PostalAddress/cac:Country/cbc:IdentificationCode` of the UBL-2.3 XSD Schemas, e.g. the postal address of an economic operator party)
-|CriteriaType |DG GROW (European Commission, defined in e-Certis) |See each Criterion taxonomy code in the link:{attachmentsdir}/dist/cl/ods/ESPD-CodeLists-V3.0.0.ods[Criteria Data] Structures. See also the link:{distUrlBlob211}/dist/cl/gc/ESPD-CriteriaTaxonomy_V2.1.1.gc[+++Genericode file+++].
+|CriteriaType |DG GROW (European Commission, defined in e-Certis) |See each Criterion taxonomy code in the link:{attachmentsdir}/dist/cl/ods/ESPD-CodeLists-V3.0.0.ods[Criteria Data] Structures. See also the link:{url-blob-211}/dist/cl/gc/ESPD-CriteriaTaxonomy_V2.1.1.gc[+++Genericode file+++].
 |CriterionElementType |DG GROW (European Commission) |See element cac:TenderingCriterion/cac:TenderingCriterionPropertyGroup/cac:TenderingCriterionProperty/cbc:TypeCode of the UBL-2.3 XSD QualificationApplicationRequest Schema
 |Currency |Publications Office of the EU |All UBL-2.3 elements of type cbc:Amount in its attribute @currencyID
 |docref-content-type |DG GROW (European Commission) |UBL-2.3 element cac:AdditionalDocumentReference/cbc:DocumentTypeCode. See XML example in section *2.5 EU and national publications*
