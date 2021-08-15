@@ -30,9 +30,9 @@ image::Extended_Abilities_WEIGHTED_EO_mockup.png[Extended 'Abilities (I)' WEIGHT
 ==== Data Structure - Extended
 
 (The figure below is defined in the the tab ''SC-Abilities_1 (Persons)'' of the
-link:{attachmentsdir}/dist/cl/xlsx/ESPD-CriteriaTaxonomy-EXTENDED-V2.1.1.xlsx[ESPD-CriteriaTaxonomy] spread-sheet).
+link:{url-blob}/dist/cl/xlsx/ESPD-CriteriaTaxonomy-EXTENDED-V2.1.1.xlsx[ESPD-CriteriaTaxonomy] spread-sheet).
 
-In this data structure the first REQUIREMENT set by the contracting authority is whether the criterion is to be WEIGHTED or not (the opposito to WEIGHTED is PASS/FAIL, see the Code List link:{attachmentsdir}/dist/cl/xlsx/ESPD-CriteriaTaxonomy-EXTENDED-V2.1.1.xlsx[EvaluationMethodType]).
+In this data structure the first REQUIREMENT set by the contracting authority is whether the criterion is to be WEIGHTED or not (the opposito to WEIGHTED is PASS/FAIL, see the Code List link:{url-blob}/dist/cl/xlsx/ESPD-CriteriaTaxonomy-EXTENDED-V2.1.1.xlsx[EvaluationMethodType]).
 
 Either if it is weighted or not one important aspect here is that the sub-groups of QUESTION(s), the one for the technicians and the one for the technical bodies, can be repeated several times, one time per each technician or body the economic operator decides to add (thus the cardinalities 0..n for both sub-groups).
 
@@ -49,7 +49,7 @@ Notice that the data is distributed in three places:
 
 . The criterion itself; see circled numbers and comments beneath the XML code;
 
-. The data structure (see the EXTENDED spread-sheet tab link:{attachmentsdir}/dist/cl/ods/ESPD-CriteriaTaxonomy-EXTENDED-V2.1.1.ods[SC-Abilities_1]).
+. The data structure (see the EXTENDED spread-sheet tab link:{url-blob}/dist/cl/ods/ESPD-CriteriaTaxonomy-EXTENDED-V2.1.1.ods[SC-Abilities_1]).
 
 .Criterion "Technicians or technical bodies for quality control" (EXTENDED and WEIHGTED)
 [source,xml]

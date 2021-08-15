@@ -35,7 +35,7 @@ Therefore this section focuses only the Extended ESPD-Response document.
 . *Criteria with references to Lots*: The current design of the UBL-2.2 `cac:TenderingCriterion` allows
  referencing Lots for any type of Criteria. However
 the current version of the ESPD-EDM only identifies this need in a reduced set of Selection Criteria (see the
-link:{attachmentsdir}/dist/cl/xlsx/ESPD-CriteriaTaxonomy-Extended-V2.1.1.xlsx[Criteria Taxonomy spread-sheets]
+link:{url-blob}/dist/cl/xlsx/ESPD-CriteriaTaxonomy-Extended-V2.1.1.xlsx[Criteria Taxonomy spread-sheets]
 for more details, like the Criterion description, UUID, Code, etc.):
 
     ** *Suitability I*
@@ -63,7 +63,7 @@ and which comes first and which goes after (i.e. how they are sequenced).
 [NOTE]
 ====
 *_A complete ESPD-Response document with the examples provided in this section can be found in the file
-link:{attachmentsdir}/dist/xml/Lots-Extended-Response_V2.1.1.xml[Lots-Extended-Response_V2.1.1.xml]_*
+link:{url-blob}/dist/xml/Lots-Extended-Response_V2.1.1.xml[Lots-Extended-Response_V2.1.1.xml]_*
 ====
 
 .Order of occurrence of the different blocks of data related to Lots

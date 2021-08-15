@@ -33,7 +33,7 @@ The data structure below shows how this criterion is organised. Notice the follo
 (Some columns have been hidden to enhance the readability of the image).
 
 (The figure below is defined in the the tab ''SC_Abilities_4 (Checks)'' of the
-link:{attachmentsdir}/dist/cl/xlsx/ESPD-CriteriaTaxonomy-EXTENDED-V2.1.1.xlsx[ESPD-CriteriaTaxonomy] spread-sheet).
+link:{url-blob}/dist/cl/xlsx/ESPD-CriteriaTaxonomy-EXTENDED-V2.1.1.xlsx[ESPD-CriteriaTaxonomy] spread-sheet).
 
 .Extended 'Abilities (IV) (Checks)' criterion data structure
 image::Extended_Abilities_4_Data_Structure.png[Extended 'Abilities (III) (Checks)' criterion data structure, alt="Extended 'Abilities (IV)' ",align="center"]

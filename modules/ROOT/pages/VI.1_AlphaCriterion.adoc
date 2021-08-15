@@ -54,7 +54,7 @@ image::AlphaCriterion_EO_mockup_unselected.PNG['Alpha Criterion unselected' (EO 
 ==== Data Structure (ONLY Basic-ESPD)
 
 (The figure below is defined in the the tab "ALPHA-CRITERION of the
-link:{attachmentsdir}/dist/cl/ods/ESPD-CriteriaTaxonomy-BASIC-V2.1.1.ods[ESPD-CriteriaTaxonomy] spread-sheet).
+link:{url-blob}/dist/cl/ods/ESPD-CriteriaTaxonomy-BASIC-V2.1.1.ods[ESPD-CriteriaTaxonomy] spread-sheet).
 
 .The Alpha Criterion in the Basic ESPD
 image::Basic_ALPHA_CRITERION_Data_Structure.png[Alpha Criterion data structure, alt="'Alpha Criterion data structure",align="center"]

@@ -31,7 +31,7 @@ the element `cbc:PropertyGroupTypeCode` element (similarly to what is done with 
 `cac:TenderingCriterionProperty`). However for backwards compatibility reasons with the MS software applications the
 decision was made to reserve the `cbc:PropertyGroupTypeCode` to control the GUI behaviour by means of the values
 defined in the code list
-link:{attachmentsdir}/dist/cl/xlsx/ESPD-CodeLists-V2.1.1.xlsx[PropertyGroupType]
+link:{url-blob}/dist/cl/xlsx/ESPD-CodeLists-V2.1.1.xlsx[PropertyGroupType]
 (codes ON*, ONTRUE and ONFALSE).
 
 The way currently used by software applications to detect whether a GROUP (or SUBGROUP) carries REQUIREMENT(s) or not is to
