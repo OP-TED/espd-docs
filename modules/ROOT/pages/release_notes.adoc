@@ -361,7 +361,7 @@ section ''VI.9.6 Self-contained Abilities (III) - Education'')
 ** An indentation was corrected in Criteria 52 and 53. The QUESTION tag was misplaced and hidden.
 
 * Selection Criterion #57 (CRITERION.OTHER.EO_DATA.SHELTERED_WORKSHOP)
-** Wrongly indented tag {QUESTION} has been corrected.
+** Wrongly indented tag \{QUESTION} has been corrected.
 
 * Selection Criterion #58 (CRITERION.OTHER.EO_DATA.REGISTERED_IN_OFFICIAL_LIST)
 ** The data structure has changed, the CAPTION "If the relevant documentation is available electronically, please provide it" has been removed. The use of the block "Is this information available electronically" (UUID) must be used for that specific purpose.
@@ -374,7 +374,7 @@ the role of the economic operator in the group (leader, responsible for specific
 * Selection Criteria #60 (Relied on entities, CRITERION.OTHER.EO_DATA.RELIES_ON_OTHER_CAPACITIES)
 ** In Criterion 60, the DataPropertyTypes ECONOMIC_OPERATOR_IDENTIFIER has replaced IDENTIFIER in line 8
 ** CODE has replaced DESCRIPTION in line 9
-** Wrongly indented tag {QUESTION} has also been corrected.
+** Wrongly indented tag \{QUESTION} has also been corrected.
 
 * Selection Criterion #61 (CRITERION.OTHER.EO_DATA.SUBCONTRACTS_WITH_THIRD_PARTIES. The code list to be used is the
 maintained in SIMAP for CodeLists (https://simap.ted.europa.eu/cpv)
@@ -383,7 +383,7 @@ maintained in SIMAP for CodeLists (https://simap.ted.europa.eu/cpv)
 
 * Selection Criterion #62 (CRITERION.OTHER.EO_DATA.LOTS_TENDERED, See sections ''VIII.6.1 Regulated economic operator party'' and ''VIII.6.2 Self-contained economic operator party'')
 ** The group "Is this information available electronically" has been removed
-** Wrongly indented tag {QUESTION} has been corrected.
+** Wrongly indented tag \{QUESTION} has been corrected.
 
 * Selection Criterion #63 (CRITERION.OTHER.EO_DATA.REDUCTION_OF_CANDIDATES)
 ** This criterion (named "Contributions certificates") has been removed because it was redundant: the information required therein was also asked in C#58
