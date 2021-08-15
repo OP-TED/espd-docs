@@ -43,7 +43,7 @@ This data structure is quite different from the Regulated ESPD:
 . Regarding the groups of questions, notice that the main question is addressed to get the confirmation from the economic operator that it fulfills the criterion (if "Yes" the economic operator is registered). In case of answering "No" a sub-group of one QUESTION must be shown (the one asking the economic operator to provide the reason why it is not registered in the register specified by the contracting authority).
 
 (The figure below is defined in the the tab "Suitability-I of the
-link:https://github.com/ESPD/ESPD-EDM/blob/2.1.0/docs/src/main/asciidoc/dist/cl/xlsx/ESPD-CriteriaTaxonomy-SELFCONTAINED-V2.1.0.xlsx[ESPD-CriteriaTaxonomy] spread-sheet).
+link:{attachmentsdir}/dist/cl/xlsx/ESPD-CriteriaTaxonomy-SELFCONTAINED-V2.1.0.xlsx[ESPD-CriteriaTaxonomy] spread-sheet).
 
 .Self-contained 'Suitability' criterion data structure  (enrolments)
 image::Selfcontained_Suitability_Enrolments_Data_Structure.png[Self-contained 'Suitability' criterion data structure, alt="Self-contained 'Suitability' criterion data structure",align="center"]

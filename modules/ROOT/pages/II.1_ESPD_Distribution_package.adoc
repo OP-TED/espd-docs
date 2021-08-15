@@ -1,4 +1,5 @@
 
+include::partial$attributes.adoc[]
 
 === II.1 ESPD Distribution package
 
@@ -15,5 +16,5 @@ image::Dist-structure.png[dist package, alt="dist package", width="150" align="c
 . *xml*: samples of ESPD XML instances for illustrative and testing purposes;
 . *xsd*: the UBL-2.2 XSD Schemas, documented (annotated) version;
 . *xsdrt*: the UBL-2.2 XSD Schemas, runtime version;
-. *xslt*: transformation stylesheets used to generate basic sample XML instances from the criteria defined in spreadsheets link:{attachmentsdir}/cl/ods/ESPD-CriteriaTaxonomy-REGULATED-V2.1.0.ods[*REGULATED* ESPD data structures] and link:{attachmentsdir}/cl/ods/ESPD-CriteriaTaxonomy-SELFCONTAINED-V2.1.0.ods[*SELF-CONTAINED* ESPD data structures] (see folder link:https://github.com/ESPD/ESPD-EDM/tree/2.1.0/docs/src/main/asciidoc/dist/cl[dist/cl]).
+. *xslt*: transformation stylesheets used to generate basic sample XML instances from the criteria defined in spreadsheets link:{attachmentsdir}/cl/ods/ESPD-CriteriaTaxonomy-REGULATED-V2.1.0.ods[*REGULATED* ESPD data structures] and link:{attachmentsdir}/cl/ods/ESPD-CriteriaTaxonomy-SELFCONTAINED-V2.1.0.ods[*SELF-CONTAINED* ESPD data structures] (see folder link:{disturl}/dist/cl[dist/cl]).
 

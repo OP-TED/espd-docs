@@ -28,7 +28,7 @@ image::Selfcontained_Abilities_WEIGHTED_EO_mockup.png[Self-contained 'Abilities 
 === Data Structure - Self-contained
 
 (The figure below is defined in the the tab ''SC-Abilities_1 (Persons)'' of the
-link:https://github.com/ESPD/ESPD-EDM/blob/2.1.0/docs/src/main/asciidoc/dist/cl/xlsx/ESPD-CriteriaTaxonomy-SELFCONTAINED-V2.1.0.xlsx[ESPD-CriteriaTaxonomy] spread-sheet).
+link:{attachmentsdir}/dist/cl/xlsx/ESPD-CriteriaTaxonomy-SELFCONTAINED-V2.1.0.xlsx[ESPD-CriteriaTaxonomy] spread-sheet).
 
 In this data structure the first REQUIREMENT set by the contracting authority is whether the criterion is to be WEIGHTED or not (the opposito to WEIGHTED is PASS/FAIL, see the Code List link:{attachmentsdir}/cl/ods/ESPD-CodeLists-V2.1.0[EvaluationMethodType]).
 
