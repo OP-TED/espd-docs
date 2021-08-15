@@ -1,6 +1,6 @@
-ifndef::imagesdir[:imagesdir: images]
+= ESPD Exchange Data Model (ESPD-EDM)
 
-== ESPD Exchange Data Model (ESPD-EDM)
+ifndef::imagesdir[:imagesdir: images]
 
 v2.0.1
 
