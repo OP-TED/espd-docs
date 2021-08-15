@@ -108,6 +108,7 @@ been instantiated in your ESPD-Response (pay attention to the bullets and commen
                 </cac:SubsidiaryTenderingCriterionPropertyGroup>
         </cac:TenderingCriterionPropertyGroup>
 </cac:TenderingCriterion>
+<!--1--><!--2--><!--3--><!--4--><!--5--><!--6--><!--7--><!--8-->
 <!-- ... rest of document removed for brevity -->
 ----
 <1> Here starts the first QUESTION (a criterion property of type QUESTION, the type follows below).

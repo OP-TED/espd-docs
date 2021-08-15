@@ -101,7 +101,7 @@ the its ESPD-Response document (see the second fragment of XML code below):
             </cac:TenderingCriterionProperty>
     </cac:TenderingCriterionPropertyGroup>
 </cac:TenderingCriterion>
-
+<!--1-->
 <!... rest of elements removed for brevity -->
 ----
 <1> The type of data expected by the CA, a simple `true` or false value. See the example about the EO response below.
