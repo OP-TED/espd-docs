@@ -1,3 +1,6 @@
+
+include::partial$attributes.adoc[]
+
 === 2.8 Service Provider
 
 [cols=",",]

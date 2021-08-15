@@ -1,3 +1,6 @@
+
+include::partial$attributes.adoc[]
+
 === 5.9 Abilities
 
 ==== Related information requirements

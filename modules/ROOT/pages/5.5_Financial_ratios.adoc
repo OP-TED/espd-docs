@@ -1,3 +1,6 @@
+
+include::partial$attributes.adoc[]
+
 === 5.5 Financial ratios
 
 ==== Related information requirements

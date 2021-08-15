@@ -1,3 +1,6 @@
+
+include::partial$attributes.adoc[]
+
 === 6.4 Root elements
 
 The table below lists the elements that are expected in the ESPD Response V3.0.0 and provides details on the cardinalities and usage of those elements.

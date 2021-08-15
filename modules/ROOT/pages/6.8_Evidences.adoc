@@ -1,3 +1,6 @@
+
+include::partial$attributes.adoc[]
+
 === 6.8 Evidences
 
 ==== Related information requirements
