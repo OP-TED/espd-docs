@@ -1,4 +1,6 @@
 
+include::partial$attributes.adoc[]
+
 === VII.7 Answering QUESTIONs
 
 [cols="<1,<5"]
@@ -49,7 +51,7 @@ If the need is to build a list of values, e.g. the list of Common Procurement Vo
 .cac:ResponseValue XSD element
 image::ResponseValue_XSD.png[cac:ResponseValue XSD element, alt="cac:ResponseValue XSD element", align="center"]
 
-The `cac:ApplicablePeriod` is used to hold the start date and the end-date provided by the economic operator to a QUESTION for which the expected data is of type 'PERIOD'. (See expected types in the Code List link:{attachmentsdir}/dist/cl/ods/ESPD-CodeLists-V2.0.1.ods[ResponseDataType]). 
+The `cac:ApplicablePeriod` is used to hold the start date and the end-date provided by the economic operator to a QUESTION for which the expected data is of type 'PERIOD'. (See expected types in the Code List link:{url-blob}/dist/cl/ods/ESPD-CodeLists-V2.0.1.ods[ResponseDataType]). 
 
 .Note for the future
 [IMPORTANT]

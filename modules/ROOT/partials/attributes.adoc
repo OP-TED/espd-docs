@@ -1,5 +1,6 @@
-:thisVersion: 2.0.1
-:thisVersionTag: {thisversion}
-:gitRepoUrl: https://github.com/ESPD/ESPD-EDM
-:distPath: /docs/src/main/asciidoc
-:distUrl: {gitrepourl}/tree/{thisversiontag}{distpath}
+:this-version: 2.0.1
+:this-version-tag: {this-version}
+:git-repo-url: https://github.com/ESPD/ESPD-EDM
+:path-to-dist: /docs/src/main/asciidoc
+:url-tree: {git-repo-url}/tree/{this-version-tag}{path-to-dist}
+:url-blob: {git-repo-url}/blob/{this-version-tag}{path-to-dist}

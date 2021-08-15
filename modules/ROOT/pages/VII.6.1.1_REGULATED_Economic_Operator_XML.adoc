@@ -1,4 +1,6 @@
 
+include::partial$attributes.adoc[]
+
 ==== XML Example (REGULATED economic operator)
 
 This example contains all the data about an economic operator. Beware that the basic idenTification data is placed into the `cac:EconomicOperatorParty` component, whilst the rest of the data (namely for statististical purposes) is structured in the data structures described above.
@@ -10,7 +12,7 @@ The figure below shows how the data about the economic operator looks like in a 
 .Vision of the data about the EO in a 'collapsed' Regulated ESPD 
 image::REGULATED_EO_XML_Collapsed[EO data - collapsed view, alt="EO data - collapsed view", align="center"]
 
-This fragment of XML *does not include the responses to the QUESTIONs* in the data structures, yet. This is because the Responses have to be associated to a criterion property. The fragment below shows how these criterion properties are prepared and a 'dynamic' UUID is associated to each criterion property.  Later on the response values will use these UUID to link the actual response to each QUESTION (i.e. with each `cac:TenderingCriterionProperty` element). Therefore the example does not include the data about the the EO yet. To see how the EO provides these data please see the sections below about the Response. There you will see that each element `cac:ResponseValue` is associated to a the UUID of the corresponding `cac:TenderingCriterionProperty`. For an example of a complete *REGULATED* ESPD Response XML document you can also see the file link:{attachmentsdir}/dist/xml/REGULATED-ESPDResponse-2.0.1.xml[REGULATED-ESPDResponse-2.0.1.xml].
+This fragment of XML *does not include the responses to the QUESTIONs* in the data structures, yet. This is because the Responses have to be associated to a criterion property. The fragment below shows how these criterion properties are prepared and a 'dynamic' UUID is associated to each criterion property.  Later on the response values will use these UUID to link the actual response to each QUESTION (i.e. with each `cac:TenderingCriterionProperty` element). Therefore the example does not include the data about the the EO yet. To see how the EO provides these data please see the sections below about the Response. There you will see that each element `cac:ResponseValue` is associated to a the UUID of the corresponding `cac:TenderingCriterionProperty`. For an example of a complete *REGULATED* ESPD Response XML document you can also see the file link:{url-blob}/dist/xml/REGULATED-ESPDResponse-2.0.1.xml[REGULATED-ESPDResponse-2.0.1.xml].
 
 .Economic operator data - XML example
 [source,xml]
