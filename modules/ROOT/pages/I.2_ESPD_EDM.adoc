@@ -2,7 +2,7 @@
 *_Disclaimer:_* _the current documentation is not the final version, it is an ongoing task that will be ended up by the end of implementation task._ 
 
 [.text-center]
-=== I.2. ESPD-EDM
+== I.2. ESPD-EDM
 
 [.text-left]
 As mentioned, there are two ESPD documents available:
@@ -42,7 +42,7 @@ The ESPD Response consists of:
 The information required to Economic Operators when fulfilling a Response document will depend on their role, as shown in the table below:
 
 |===	
-Table 1 |Sole Tenderer / Group Leader |Group Member |Other Entity relied upon |Subcontractor
+|Table 1 |Sole Tenderer / Group Leader |Group Member |Other Entity relied upon |Subcontractor
 
 
 |*Part I*				
