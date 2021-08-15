@@ -1,5 +1,5 @@
 :this-version: 2.0.0
-:this-version-tag: {this-version}
+:this-version-tag: v{this-version}
 :git-repo-url: https://github.com/OP-TED/ESPD-EDM
 :path-to-dist: /docs/src/main/asciidoc/modules/ROOT
 :url-tree: {git-repo-url}/tree/{this-version-tag}{path-to-dist}
