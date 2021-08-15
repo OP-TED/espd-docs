@@ -1,3 +1,6 @@
+
+include::partial$attributes.adoc[]
+
 === VI.2.1 Regulated suitability (enrolments)
 
 
@@ -16,7 +19,7 @@ image::Regulated_Suitability_EO_mockup.png[Regulated 'Suitability' criterion (EO
 ==== Data Structure (Enrolments)- Regulated
 
 (The figure below is defined in the the tab "Suitability-I of the
-link:{attachmentsdir}/dist/cl/xlsx/ESPD-CriteriaTaxonomy-REGULATED-V2.1.0.xlsx[ESPD-CriteriaTaxonomy] spread-sheet).
+link:{url-blob}/dist/cl/xlsx/ESPD-CriteriaTaxonomy-REGULATED-V2.1.0.xlsx[ESPD-CriteriaTaxonomy] spread-sheet).
 
 .Regulated 'Suitability' criterion data structure (for ''enrolments'')
 image::Regulated_Suitability_Enrolments_Data_Structure.png[Regulated 'Suitability' criterion data structure, alt="Regulated 'Suitability' criterion data structure",align="center"]

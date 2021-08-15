@@ -1,4 +1,6 @@
 
+include::partial$attributes.adoc[]
+
 === VI.1 Alpha criterion
 
 The criterion 'Global indication for all selection criteria' (a.k.a. 'Alpha Criterion') is a special feature only possible in
@@ -52,7 +54,7 @@ image::AlphaCriterion_EO_mockup_unselected.png['Alpha Criterion unselected' (EO 
 ==== Data Structure (ONLY REGULATED-ESPD)
 
 (The figure below is defined in the the tab "ALPHA-CRITERION of the
-link:{attachmentsdir}/dist/cl/xlsx/ESPD-CriteriaTaxonomy-REGULATED-V2.1.0.xlsx[ESPD-CriteriaTaxonomy] spread-sheet).
+link:{url-blob}/dist/cl/xlsx/ESPD-CriteriaTaxonomy-REGULATED-V2.1.0.xlsx[ESPD-CriteriaTaxonomy] spread-sheet).
 
 .The Alpha Criterion in the Regulated ESPD
 image::Regulated_ALPHA_CRITERION_Data_Structure.png[Alpha Criterion data structure, alt="'Alpha Criterion data structure",align="center"]

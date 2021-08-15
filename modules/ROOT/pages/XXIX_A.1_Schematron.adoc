@@ -13,7 +13,7 @@ Please visit the link:http://www.schematron.com/[ISO Schematron] web-site for th
 
 The ESPD-EDM uses Schematron to validate business rules identified in
 ESPD_TestCases_v10.docx and ESPD_TestCases_mapping_v10.docx
-link:{disturl}/dist/doc[documents].
+link:{url-tree}/dist/doc[documents].
 The business requirements taken as input for these rules are specified in the
 link:http://wiki.ds.unipi.gr/display/ESPDInt[ESPDint Business Document].
  

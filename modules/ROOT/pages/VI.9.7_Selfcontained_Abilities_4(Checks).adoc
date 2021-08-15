@@ -1,4 +1,6 @@
 
+include::partial$attributes.adoc[]
+
 === VI.9.7 Self-contained Abilities (IV) - Checks
 
 ==== Mock-ups - contracting authority perspective
@@ -31,7 +33,7 @@ The data structure below shows how this criterion is organised. Notice the follo
 (Some columns have been hidden to enhance the readability of the image).
 
 (The figure below is defined in the the tab ''SC_Abilities_4 (Checks)'' of the
-link:{attachmentsdir}/dist/cl/xlsx/ESPD-CriteriaTaxonomy-SELFCONTAINED-V2.1.0.xlsx[ESPD-CriteriaTaxonomy] spread-sheet).
+link:{url-blob}/dist/cl/xlsx/ESPD-CriteriaTaxonomy-SELFCONTAINED-V2.1.0.xlsx[ESPD-CriteriaTaxonomy] spread-sheet).
 
 .Self-contained 'Abilities (IV) (Checks)' criterion data structure
 image::Selfcontained_Abilities_4_Data_Structure.png[Self-contained 'Abilities (III) (Checks)' criterion data structure, alt="Self-contained 'Abilities (IV)' ",align="center"]

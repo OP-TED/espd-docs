@@ -47,10 +47,10 @@ registered in one concrete Register.
 ====
 *_Many compulsory elements and attributes of the XML example below that are not related to the subject covered in
 this section have been removed to gain clarity and brevity. For complete XML samples download the files under folder
-link:{disturl}/dist/xml[dist/xml]._*
+link:{url-tree}/dist/xml[dist/xml]._*
 
 *_The example presented next was extracted from the file
-link:{attachmentsdir}/dist/xml/Lots-SelfContained-Response_V2.1.0.xml[Lots-SelfContained-Response_V2.1.0.xml]_*
+link:{url-blob}/dist/xml/Lots-SelfContained-Response_V2.1.0.xml[Lots-SelfContained-Response_V2.1.0.xml]_*
 ====
 
 .'Suitability' XML example (data related to Lots in the ESPD-Response)
