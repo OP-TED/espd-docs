@@ -60,16 +60,16 @@ The fragment of XML code below illustrates how a 'Convictions' criterion looks l
 <!-- Criterion:Participation in a criminal organisation -->
 <cac:TenderingCriterion>
 	<cbc:ID schemeID="CriteriaTaxonomy" schemeAgencyID="EU-COM-GROW" schemeVersionID="2.1.0">005eb9ed-1347-4ca3-bb29-9bc0db64e1ab</cbc:ID>
-	<--14-->
-	<cbc:CriterionTypeCode listID="CriteriaTypeCode" listAgencyID="EU-COM-GROW" listVersionID="2.1.0">CRITERION.EXCLUSION.CONVICTIONS.PARTICIPATION_IN_CRIMINAL_ORGANISATION</cbc:CriterionTypeCode> <--15-->
+	<!--14-->
+	<cbc:CriterionTypeCode listID="CriteriaTypeCode" listAgencyID="EU-COM-GROW" listVersionID="2.1.0">CRITERION.EXCLUSION.CONVICTIONS.PARTICIPATION_IN_CRIMINAL_ORGANISATION</cbc:CriterionTypeCode> <!--15-->
 
-	<cbc:Name>Participation in a criminal organisation</cbc:Name> <--16-->
+	<cbc:Name>Participation in a criminal organisation</cbc:Name> <!--16-->
 	<cbc:Description>Has the economic operator itself or any person who is a member of its administrative, management or supervisory body or has powers of representation, decision or control therein been the subject of a conviction by final judgment for participation in a criminal organisation, by a conviction rendered at the most five years ago or in which an exclusion period set out directly in the conviction continues to be applicable? As defined in Article 2 of Council Framework Decision 2008/841/JHA of 24 October 2008 on the fight against organised crime (OJ L 300, 11.11.2008, p. 42).</cbc:Description>
 			
 	<cac:SubTenderingCriterion> 
 		<cbc:ID schemeID="CriteriaTaxonomy" schemeAgencyID="EU-COM-GROW" schemeVersionID="2.1.0">e6b21867-95b5-4549-8180-f4673219b179</cbc:ID>
 		<cbc:Name>Participation in the activity of an organized criminal group ( The Criminal Code of Finland 39/1889 Chapter 17 Section 1)</cbc:Name>
-		<--12-->
+		<!--12-->
 		<cbc:Description>Participation in the activity of an organized criminal group an accordance with the criminal code Chapter 17 Section 1</cbc:Description>
 		<cac:TenderingCriterionPropertyGroup>
 			<cbc:ID schemeID="CriteriaTaxonomy" schemeAgencyID="EU-COM-GROW" schemeVersionID="2.1.0">8c39b505-8abe-44fa-a3e0-f2d78b9d8224</cbc:ID>
@@ -77,15 +77,15 @@ The fragment of XML code below illustrates how a 'Convictions' criterion looks l
 			<cac:TenderingCriterionProperty>
 				<cbc:ID schemeID="CriteriaTaxonomy" schemeAgencyID="EU-COM-GROW" schemeVersionID="2.1.0">070e776e-6a83-44f2-8233-5ac8b39d3f62</cbc:ID>
 				<cbc:Name/>
-				<--13-->
+				<!--13-->
 				<cbc:Description>Extract from the Criminal Records</cbc:Description>
 				<cbc:Description>Issued By: Legal Register Centre</cbc:Description>
-				<cbc:TypeCode listID="CriterionElementType" listAgencyID="EU-COM-GROW" listVersionID="2.1.0">CAPTION</cbc:TypeCode> <--17-->
-				<cbc:ValueDataTypeCode listID="ResponseDataType" listAgencyID="EU-COM-GROW" listVersionID="2.1.0">NONE</cbc:ValueDataTypeCode> <--18-->
+				<cbc:TypeCode listID="CriterionElementType" listAgencyID="EU-COM-GROW" listVersionID="2.1.0">CAPTION</cbc:TypeCode> <!--17-->
+				<cbc:ValueDataTypeCode listID="ResponseDataType" listAgencyID="EU-COM-GROW" listVersionID="2.1.0">NONE</cbc:ValueDataTypeCode> <!--18-->
 			</cac:TenderingCriterionProperty>
 			<cac:TenderingCriterionProperty>
 				<cbc:ID schemeID="CriteriaTaxonomy" schemeAgencyID="EU-COM-GROW" schemeVersionID="2.1.0">8591244c-5a6f-4dea-92d4-bba1fc7a7d00</cbc:ID>
-				<cbc:Description>Your Answer</cbc:Description> <--19-->
+				<cbc:Description>Your Answer</cbc:Description> <!--19-->
 				<cbc:TypeCode listID="CriterionElementType" listAgencyID="EU-COM-GROW" listVersionID="2.1.0">QUESTION</cbc:TypeCode>
 				<cbc:ValueDataTypeCode listID="ResponseDataType" listAgencyID="EU-COM-GROW" listVersionID="2.1.0">INDICATOR</cbc:ValueDataTypeCode>
 			</cac:TenderingCriterionProperty>
@@ -94,47 +94,47 @@ The fragment of XML code below illustrates how a 'Convictions' criterion looks l
 	<!-- EU legislation data related to this criterion -->
 	<cac:Legislation>
 		<cbc:ID schemeID="CriteriaTaxonomy" schemeAgencyID="EU-COM-GROW" schemeVersionID="2.1.0">4ea7a10a-643e-4022-b67e-e06573b28ff5</cbc:ID>
-		<--20-->
+		<!--20-->
 		<cbc:Title languageID="en">DIRECTIVE 2014/24/EU OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL of 26 February 2014 on public procurement and repealing Directive 2004/18/EC</cbc:Title> 
-		<cbc:Description languageID="en">Directive 2014/24/EU</cbc:Description> <--21-->
-		<cbc:JurisdictionLevel languageID="en">EU Directive</cbc:JurisdictionLevel> <--22-->
-		<cbc:Article languageID="en">Article 57(1)</cbc:Article> <--23-->
+		<cbc:Description languageID="en">Directive 2014/24/EU</cbc:Description> <!--21-->
+		<cbc:JurisdictionLevel languageID="en">EU Directive</cbc:JurisdictionLevel> <!--22-->
+		<cbc:Article languageID="en">Article 57(1)</cbc:Article> <!--23-->
 		<cbc:URI>http://eur-lex.europa.eu/legal-content/ES/TXT/?uri=celex%3A32014L0024</cbc:URI>
 	</cac:Legislation>
 	
 	<cac:TenderingCriterionPropertyGroup>
 		<cbc:ID schemeID="CriteriaTaxonomy" schemeAgencyID="EU-COM-GROW" schemeVersionID="2.1.0">7c637c0c-7703-4389-ba52-02997a055bd7</cbc:ID>
-		<cbc:PropertyGroupTypeCode listID="PropertyGroupType" listAgencyID="EU-COM-GROW" listVersionID="2.1.0">ON*</cbc:PropertyGroupTypeCode> <--24-->
+		<cbc:PropertyGroupTypeCode listID="PropertyGroupType" listAgencyID="EU-COM-GROW" listVersionID="2.1.0">ON*</cbc:PropertyGroupTypeCode> <!--24-->
 		<cac:TenderingCriterionProperty>
 			<cbc:ID schemeID="CriteriaTaxonomy" schemeAgencyID="EU-COM-GROW" schemeVersionID="2.1.0">7ee6d863-8897-4e18-8a88-75b2503cc286</cbc:ID>
-			<cbc:Description>Your answer</cbc:Description> <--25-->
-			<cbc:TypeCode listID="CriterionElementType" listAgencyID="EU-COM-GROW" listVersionID="2.1.0">QUESTION</cbc:TypeCode> <--26-->
-			<cbc:ValueDataTypeCode listID="ResponseDataType" listAgencyID="EU-COM-GROW" listVersionID="2.1.0">INDICATOR</cbc:ValueDataTypeCode> <--27-->
+			<cbc:Description>Your answer</cbc:Description> <!--25-->
+			<cbc:TypeCode listID="CriterionElementType" listAgencyID="EU-COM-GROW" listVersionID="2.1.0">QUESTION</cbc:TypeCode> <!--26-->
+			<cbc:ValueDataTypeCode listID="ResponseDataType" listAgencyID="EU-COM-GROW" listVersionID="2.1.0">INDICATOR</cbc:ValueDataTypeCode> <!--27-->
 		</cac:TenderingCriterionProperty>
-		<cac:SubsidiaryTenderingCriterionPropertyGroup> <--28-->
+		<cac:SubsidiaryTenderingCriterionPropertyGroup> <!--28-->
 			<cbc:ID schemeID="CriteriaTaxonomy" schemeAgencyID="EU-COM-GROW" schemeVersionID="2.1.0">41dd2e9b-1bfd-44c7-93ee-56bd74a4334b</cbc:ID>
 			<cbc:PropertyGroupTypeCode listID="PropertyGroupType" listAgencyID="EU-COM-GROW" listVersionID="2.1.0">ONTRUE</cbc:PropertyGroupTypeCode>
 			<cac:TenderingCriterionProperty>
 				<cbc:ID schemeID="CriteriaTaxonomy" schemeAgencyID="EU-COM-GROW" schemeVersionID="2.1.0">75f31476-677c-4fa6-b48a-2e4d4f09ce82</cbc:ID>
-				<cbc:Description>Date of conviction</cbc:Description> <--1-->
+				<cbc:Description>Date of conviction</cbc:Description> <!--1-->
 				<cbc:TypeCode listID="CriterionElementType" listAgencyID="EU-COM-GROW" listVersionID="2.1.0">QUESTION</cbc:TypeCode>
 				<cbc:ValueDataTypeCode listID="ResponseDataType" listAgencyID="EU-COM-GROW" listVersionID="2.1.0">DATE</cbc:ValueDataTypeCode>
 			</cac:TenderingCriterionProperty>
 			<cac:TenderingCriterionProperty>
 				<cbc:ID schemeID="CriteriaTaxonomy" schemeAgencyID="EU-COM-GROW" schemeVersionID="2.1.0">7ea2ecf8-94a5-44bf-96ab-c8a430365811</cbc:ID>
-				<cbc:Description>Reason</cbc:Description> <--2-->
+				<cbc:Description>Reason</cbc:Description> <!--2-->
 				<cbc:TypeCode listID="CriterionElementType" listAgencyID="EU-COM-GROW" listVersionID="2.1.0">QUESTION</cbc:TypeCode>
 				<cbc:ValueDataTypeCode listID="ResponseDataType" listAgencyID="EU-COM-GROW" listVersionID="2.1.0">DESCRIPTION</cbc:ValueDataTypeCode>
 			</cac:TenderingCriterionProperty>
 			<cac:TenderingCriterionProperty>
 				<cbc:ID schemeID="CriteriaTaxonomy" schemeAgencyID="EU-COM-GROW" schemeVersionID="2.1.0">579f5614-d114-4b73-b2ff-3b7d15d19e25</cbc:ID>
-				<cbc:Description>Who has been convicted</cbc:Description> <--3-->
+				<cbc:Description>Who has been convicted</cbc:Description> <!--3-->
 				<cbc:TypeCode listID="CriterionElementType" listAgencyID="EU-COM-GROW" listVersionID="2.1.0">QUESTION</cbc:TypeCode>
 				<cbc:ValueDataTypeCode listID="ResponseDataType" listAgencyID="EU-COM-GROW" listVersionID="2.1.0">DESCRIPTION</cbc:ValueDataTypeCode>
 			</cac:TenderingCriterionProperty>
 			<cac:TenderingCriterionProperty>
 				<cbc:ID schemeID="CriteriaTaxonomy" schemeAgencyID="EU-COM-GROW" schemeVersionID="2.1.0">ef9e3534-00bd-41ef-8f07-85efe6f44d1d</cbc:ID>
-				<cbc:Description>Length of the period of exclusion</cbc:Description> <--4-->
+				<cbc:Description>Length of the period of exclusion</cbc:Description> <!--4-->
 				<cbc:TypeCode listID="CriterionElementType" listAgencyID="EU-COM-GROW" listVersionID="2.1.0">QUESTION</cbc:TypeCode>
 				<cbc:ValueDataTypeCode listID="ResponseDataType" listAgencyID="EU-COM-GROW" listVersionID="2.1.0">PERIOD</cbc:ValueDataTypeCode>
 			</cac:TenderingCriterionProperty>
@@ -143,7 +143,7 @@ The fragment of XML code below illustrates how a 'Convictions' criterion looks l
 				<cbc:PropertyGroupTypeCode listID="PropertyGroupType" listAgencyID="EU-COM-GROW" listVersionID="2.1.0">ONTRUE</cbc:PropertyGroupTypeCode>
 				<cac:TenderingCriterionProperty>
 					<cbc:ID schemeID="CriteriaTaxonomy" schemeAgencyID="EU-COM-GROW" schemeVersionID="2.1.0">c048c1bc-b280-4409-9480-1663a2fdfd13</cbc:ID>
-					<cbc:Description>Have you taken measures to demonstrate your reliability (Self-Cleaning)?</cbc:Description> <--5-->
+					<cbc:Description>Have you taken measures to demonstrate your reliability (Self-Cleaning)?</cbc:Description> <!--5-->
 					<cbc:TypeCode listID="CriterionElementType" listAgencyID="EU-COM-GROW" listVersionID="2.1.0">QUESTION</cbc:TypeCode>
 					<cbc:ValueDataTypeCode listID="ResponseDataType" listAgencyID="EU-COM-GROW" listVersionID="2.1.0">INDICATOR</cbc:ValueDataTypeCode>
 				</cac:TenderingCriterionProperty>
@@ -152,7 +152,7 @@ The fragment of XML code below illustrates how a 'Convictions' criterion looks l
 					<cbc:PropertyGroupTypeCode listID="PropertyGroupType" listAgencyID="EU-COM-GROW" listVersionID="2.1.0">ONTRUE</cbc:PropertyGroupTypeCode>
 					<cac:TenderingCriterionProperty>
 						<cbc:ID schemeID="CriteriaTaxonomy" schemeAgencyID="EU-COM-GROW" schemeVersionID="2.1.0">db33b5ae-2290-4671-aeae-fd361d6f6958</cbc:ID>
-						<cbc:Description>Please describe them</cbc:Description> <--6--><--7-->
+						<cbc:Description>Please describe them</cbc:Description> <!--6--><!--7-->
 						<cbc:TypeCode listID="CriterionElementType" listAgencyID="EU-COM-GROW" listVersionID="2.1.0">QUESTION</cbc:TypeCode>
 						<cbc:ValueDataTypeCode listID="ResponseDataType" listAgencyID="EU-COM-GROW" listVersionID="2.1.0">DESCRIPTION</cbc:ValueDataTypeCode>
 					</cac:TenderingCriterionProperty>
@@ -163,11 +163,11 @@ The fragment of XML code below illustrates how a 'Convictions' criterion looks l
 	<cac:TenderingCriterionPropertyGroup>
 		<cbc:ID schemeID="CriteriaTaxonomy" schemeAgencyID="EU-COM-GROW" schemeVersionID="2.1.0">7458d42a-e581-4640-9283-34ceb3ad4345</cbc:ID>
 		
-		<!-- CONSTANT STRUCTURE: Is this information available online --> <--29-->
+		<!-- CONSTANT STRUCTURE: Is this information available online --> <!--29-->
 		<cbc:PropertyGroupTypeCode listID="PropertyGroupType" listAgencyID="EU-COM-GROW" listVersionID="2.1.0">ON*</cbc:PropertyGroupTypeCode>
 		<cac:TenderingCriterionProperty>
 			<cbc:ID schemeID="CriteriaTaxonomy" schemeAgencyID="EU-COM-GROW" schemeVersionID="2.1.0">643ed2c5-1be5-4b4d-8103-63dcec7f5fe0</cbc:ID>
-			<cbc:Description>Is this information available electronically?</cbc:Description><--8-->
+			<cbc:Description>Is this information available electronically?</cbc:Description><!--8-->
 			<cbc:TypeCode listID="CriterionElementType" listAgencyID="EU-COM-GROW" listVersionID="2.1.0">QUESTION</cbc:TypeCode>
 			<cbc:ValueDataTypeCode listID="ResponseDataType" listAgencyID="EU-COM-GROW" listVersionID="2.1.0">INDICATOR</cbc:ValueDataTypeCode>
 		</cac:TenderingCriterionProperty>
@@ -176,9 +176,9 @@ The fragment of XML code below illustrates how a 'Convictions' criterion looks l
 			<cbc:PropertyGroupTypeCode listID="PropertyGroupType" listAgencyID="EU-COM-GROW" listVersionID="2.1.0">ONTRUE</cbc:PropertyGroupTypeCode>
 			<cac:TenderingCriterionProperty>
 				<cbc:ID schemeID="CriteriaTaxonomy" schemeAgencyID="EU-COM-GROW" schemeVersionID="2.1.0">f0651bc9-41b9-49b2-9401-ed23ed6aa12d</cbc:ID>
-				<cbc:Description>Evidence supplied</cbc:Description><--9-->
+				<cbc:Description>Evidence supplied</cbc:Description><!--9-->
 				<cbc:TypeCode listID="CriterionElementType" listAgencyID="EU-COM-GROW" listVersionID="2.1.0">QUESTION</cbc:TypeCode>
-				<cbc:ValueDataTypeCode listID="ResponseDataType" listAgencyID="EU-COM-GROW" listVersionID="2.1.0">EVIDENCE_IDENTIFIER</cbc:ValueDataTypeCode> <--10--> <--11-->
+				<cbc:ValueDataTypeCode listID="ResponseDataType" listAgencyID="EU-COM-GROW" listVersionID="2.1.0">EVIDENCE_IDENTIFIER</cbc:ValueDataTypeCode> <!--10--> <!--11-->
 			</cac:TenderingCriterionProperty>
 		</cac:SubsidiaryTenderingCriterionPropertyGroup>
 	</cac:TenderingCriterionPropertyGroup>

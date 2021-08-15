@@ -58,12 +58,12 @@ The following fragment of XML code shows how this is expressed:
                     <ID schemeID="CriteriaTaxonomy" schemeAgencyID="EU-COM-GROW" schemeVersionID="2.0.2">9c62f2c7-0c51-451d-8730-427f92ed618c</ID>
                     <Description>Select the type of requirement</Description>
                     <TypeCode listID="CriterionElementType" listAgencyID="EU-COM-GROW" listVersionID="2.0.2">REQUIREMENT</TypeCode>
-                    <ValueDataTypeCode listID="ResponseDataType" listAgencyID="EU-COM-GROW" listVersionID="2.0.2">CODE_BOOLEAN</ValueDataTypeCode><--1-->
-                    <ExpectedCode listID="BooleanGUIControlType" listAgencyID="EU-COM-OP" listVersionID="1.0">RADIO_BUTTON_TRUE</ExpectedCode><--2-->
+                    <ValueDataTypeCode listID="ResponseDataType" listAgencyID="EU-COM-GROW" listVersionID="2.0.2">CODE_BOOLEAN</ValueDataTypeCode><!--1-->
+                    <ExpectedCode listID="BooleanGUIControlType" listAgencyID="EU-COM-OP" listVersionID="1.0">RADIO_BUTTON_TRUE</ExpectedCode><!--2-->
                 </cac:TenderingCriterionProperty>
                 <cac:SubsidiaryTenderingCriterionPropertyGroup>
                     <!--...-->
-                    <PropertyGroupTypeCode listID="PropertyGroupType" listAgencyID="EU-COM-GROW" listVersionID="2.0.2">ONTRUE</PropertyGroupTypeCode><--3-->
+                    <PropertyGroupTypeCode listID="PropertyGroupType" listAgencyID="EU-COM-GROW" listVersionID="2.0.2">ONTRUE</PropertyGroupTypeCode><!--3-->
                     <cac:TenderingCriterionProperty>
                         <ID schemeID="CriteriaTaxonomy" schemeAgencyID="EU-COM-GROW" schemeVersionID="2.0.2">13728a54-21e3-4c84-8b11-48666c3d260f</ID>
                         <Description>Specify the total invoiced amount, taxes included.</Description>
@@ -76,7 +76,7 @@ The following fragment of XML code shows how this is expressed:
                         <Description>Minimum amount</Description>
                         <TypeCode listID="CriterionElementType" listAgencyID="EU-COM-GROW" listVersionID="2.0.2">REQUIREMENT</TypeCode>
                         <ValueDataTypeCode listID="ResponseDataType" listAgencyID="EU-COM-GROW" listVersionID="2.0.2">AMOUNT</ValueDataTypeCode>
-                        <MinimumAmount currencyID="EUR">100006</MinimumAmount><--4-->
+                        <MinimumAmount currencyID="EUR">100006</MinimumAmount><!--4-->
                     </cac:TenderingCriterionProperty>
                     <cac:TenderingCriterionProperty>
                         <ID schemeID="CriteriaTaxonomy" schemeAgencyID="EU-COM-GROW" schemeVersionID="2.0.2">8b4ae4f0-2849-49ea-a64b-7bb20c60bde4</ID>
@@ -94,14 +94,14 @@ The following fragment of XML code shows how this is expressed:
                         <cac:TenderingCriterionProperty>
                             <ID schemeID="CriteriaTaxonomy" schemeAgencyID="EU-COM-GROW" schemeVersionID="2.0.2">1d89c188-58d2-461e-a4f6-a17f689d87f4</ID>
                             <Description>Amount</Description>
-                            <TypeCode listID="CriterionElementType" listAgencyID="EU-COM-GROW" listVersionID="2.0.2">QUESTION</TypeCode><--5-->
-                            <ValueDataTypeCode listID="ResponseDataType" listAgencyID="EU-COM-GROW" listVersionID="2.0.2">AMOUNT</ValueDataTypeCode><--6-->
+                            <TypeCode listID="CriterionElementType" listAgencyID="EU-COM-GROW" listVersionID="2.0.2">QUESTION</TypeCode><!--5-->
+                            <ValueDataTypeCode listID="ResponseDataType" listAgencyID="EU-COM-GROW" listVersionID="2.0.2">AMOUNT</ValueDataTypeCode><!--6-->
                         </cac:TenderingCriterionProperty>
                     </cac:SubsidiaryTenderingCriterionPropertyGroup>
                 </cac:SubsidiaryTenderingCriterionPropertyGroup>
                 <cac:SubsidiaryTenderingCriterionPropertyGroup>
                     <ID schemeAgencyID="EU-COM-GROW" schemeVersionID="2.0.2">cc96aa19-a0be-4409-af58-ff3f3812741b</ID>
-                    <PropertyGroupTypeCode listID="PropertyGroupType" listAgencyID="EU-COM-GROW" listVersionID="2.0.2">ONFALSE</PropertyGroupTypeCode><--7-->
+                    <PropertyGroupTypeCode listID="PropertyGroupType" listAgencyID="EU-COM-GROW" listVersionID="2.0.2">ONFALSE</PropertyGroupTypeCode><!--7-->
                     <cac:TenderingCriterionProperty>
                         <ID schemeID="CriteriaTaxonomy" schemeAgencyID="EU-COM-GROW" schemeVersionID="2.0.2">57d4160f-20b4-4b43-967b-76b038a2fa6b</ID>
                         <Description>Minimum rating</Description>
@@ -121,7 +121,7 @@ The following fragment of XML code shows how this is expressed:
                         <cac:TenderingCriterionProperty>
                             <ID schemeID="CriteriaTaxonomy" schemeAgencyID="EU-COM-GROW" schemeVersionID="2.0.2">3bd1913b-c461-41eb-87c4-84e003785a56</ID>
                             <Description>Rating</Description>
-                            <TypeCode listID="CriterionElementType" listAgencyID="EU-COM-GROW" listVersionID="2.0.2">QUESTION</TypeCode><--8-->
+                            <TypeCode listID="CriterionElementType" listAgencyID="EU-COM-GROW" listVersionID="2.0.2">QUESTION</TypeCode><!--8-->
                             <ValueDataTypeCode listID="ResponseDataType" listAgencyID="EU-COM-GROW" listVersionID="2.0.2">QUANTITY</ValueDataTypeCode>
                         </cac:TenderingCriterionProperty>
                     </cac:SubsidiaryTenderingCriterionPropertyGroup>
@@ -148,10 +148,10 @@ The following fragment of XML code shows how this is expressed:
 <!-- ... -->
 <cac:TenderingCriterionResponse>
         <ID schemeID="ISO/IEC 9834-8:2008 - 4UUID" schemeAgencyID="EU-COM-GROW" schemeVersionID="2.0.2">76085d25-05ad-4cb3-b1e0-675558e3f43e</ID>
-        <ValidatedCriterionPropertyID schemeID="CriteriaTaxonomy" schemeAgencyID="EU-COM-GROW" schemeVersionID="2.0.2">1d89c188-58d2-461e-a4f6-a17f689d87f4</ValidatedCriterionPropertyID><--1-->
+        <ValidatedCriterionPropertyID schemeID="CriteriaTaxonomy" schemeAgencyID="EU-COM-GROW" schemeVersionID="2.0.2">1d89c188-58d2-461e-a4f6-a17f689d87f4</ValidatedCriterionPropertyID><!--1-->
         <cac:ResponseValue>
             <ID schemeID="ISO/IEC 9834-8:2008 - 4UUID" schemeAgencyID="EU-COM-GROW" schemeVersionID="2.0.2">42245674-d305-40bf-8b58-87ba51313345</ID>
-            <ResponseAmount currencyID="EUR">10025</ResponseAmount><--2--><--3--><--4-->
+            <ResponseAmount currencyID="EUR">10025</ResponseAmount><!--2--><!--3--><!--4-->
         </cac:ResponseValue>
     </cac:TenderingCriterionResponse>
 ----

@@ -28,15 +28,15 @@ image::Selfcontained_Abilities_2_Data_Structure.png[Self-contained 'Abilities (I
     <cbc:Name>Technical facilities and measures for ensuring quality</cbc:Name>
     <cbc:Description>It uses the following technical facilities and measures for ensuring quality and its study and research facilities are as follows:</cbc:Description>
     <!-- This criterion will be used in a second or subsequent evaluation stage. Its relative weight, assigned by the CA, is in this case 5%. -->
-    <cbc:WeightNumeric>0.05</cbc:WeightNumeric><--1-->
+    <cbc:WeightNumeric>0.05</cbc:WeightNumeric><!--1-->
     <!-- The fact that the criterion is weighted is announced here. -->
-    <cbc:EvaluationMethodTypeCode listID="EvaluationMethodType" listAgencyID="EU-COM-GROW" listVersionID="2.1.0">WEIGHTED</cbc:EvaluationMethodTypeCode><--2-->
+    <cbc:EvaluationMethodTypeCode listID="EvaluationMethodType" listAgencyID="EU-COM-GROW" listVersionID="2.1.0">WEIGHTED</cbc:EvaluationMethodTypeCode><!--2-->
     <!-- Additional information to help EOs improve their offer, and used also for transparency. See also chapter "Putting things together" and the XML
         example in that chapter for details on this. -->
-    <cbc:WeightingConsiderationDescription>Facilities and quality measures aligned to standards will score better, especially if those standards are European.</cbc:WeightingConsiderationDescription><--3-->
+    <cbc:WeightingConsiderationDescription>Facilities and quality measures aligned to standards will score better, especially if those standards are European.</cbc:WeightingConsiderationDescription><!--3-->
     <cac:Legislation><!-- data elements removed for brevity --></cac:Legislation>
     <!-- The main group of REQUIREMENTs and QUESTIONs start here. -->
-    <cac:TenderingCriterionPropertyGroup><--4-->
+    <cac:TenderingCriterionPropertyGroup><!--4-->
         <cbc:ID schemeAgencyID="EU-COM-GROW" schemeVersionID="2.1.0">1e73d705-9dc1-43f1-9b5c-2d0deac7bc5f</cbc:ID>
         <cbc:PropertyGroupTypeCode listID="PropertyGroupType" listAgencyID="EU-COM-GROW" listVersionID="2.1.0">ON*</cbc:PropertyGroupTypeCode>
         <!-- The following property announces that the criterion will be weigthed. It principle it had a two-fold goal: 1) to make know the EO
@@ -44,7 +44,7 @@ image::Selfcontained_Abilities_2_Data_Structure.png[Self-contained 'Abilities (I
             system proposing automated evaluation results, to use it during the evaluation phase. However it is, in fact, superfluous or redundant,
             as this information is also indicated in the `cbc:EvaluationMethodTypeCode` (type WEIGHTED) and of the relative weight value assigned to
             the element `cbc:WeightNumeric`(5% in this example). -->
-        <cac:TenderingCriterionProperty><--5-->
+        <cac:TenderingCriterionProperty><!--5-->
             <cbc:ID schemeID="CriteriaTaxonomy" schemeAgencyID="EU-COM-GROW" schemeVersionID="2.1.0">e5ca83df-73d3-4774-8621-81a7914d228c</cbc:ID>
             <cbc:Description>This criterion will be weighted</cbc:Description>
             <cbc:TypeCode listID="CriterionElementType" listAgencyID="EU-COM-GROW" listVersionID="2.1.0">REQUIREMENT</cbc:TypeCode>
@@ -52,11 +52,11 @@ image::Selfcontained_Abilities_2_Data_Structure.png[Self-contained 'Abilities (I
         </cac:TenderingCriterionProperty>
         <!-- Notice that multiple subgroups of REQUIREMENT + QUESTION can be used to specify multiple requirements -->
         <!-- This is the 1st. Subgroup of REQUIREMENT and QUESTION: Subgroup specifically used for facilities -->
-        <cac:SubsidiaryTenderingCriterionPropertyGroup><--6-->
+        <cac:SubsidiaryTenderingCriterionPropertyGroup><!--6-->
             <cbc:ID schemeAgencyID="EU-COM-GROW" schemeVersionID="2.1.0">f156d97a-9700-4ad9-8d21-e3ac57102278</cbc:ID>
             <cbc:PropertyGroupTypeCode listID="PropertyGroupType" listAgencyID="EU-COM-GROW" listVersionID="2.1.0">ON*</cbc:PropertyGroupTypeCode>
             <!-- Requirement specifically aimed to ask for details about the facility security measures. -->
-            <cac:TenderingCriterionProperty><--7-->
+            <cac:TenderingCriterionProperty><!--7-->
                 <cbc:ID schemeID="CriteriaTaxonomy" schemeAgencyID="EU-COM-GROW" schemeVersionID="2.1.0">a8b8f85e-63f3-4364-a7fa-8e8e3004d3e3</cbc:ID>
                 <cbc:Description>Requirement</cbc:Description>
                 <cbc:TypeCode listID="CriterionElementType" listAgencyID="EU-COM-GROW" listVersionID="2.1.0">REQUIREMENT</cbc:TypeCode>
@@ -67,19 +67,19 @@ image::Selfcontained_Abilities_2_Data_Structure.png[Self-contained 'Abilities (I
             </cac:TenderingCriterionProperty>
             <!-- The following subgroup contains the QUESTION that will be used in the Response as a reference for the Response
                 of the EO to theREQUIREMENT in the previous subgroup. -->
-            <cac:SubsidiaryTenderingCriterionPropertyGroup><--8-->
+            <cac:SubsidiaryTenderingCriterionPropertyGroup><!--8-->
                 <cbc:ID schemeAgencyID="EU-COM-GROW" schemeVersionID="2.1.0">488ca189-bcdb-4bf4-80c7-3ad507fd89fb</cbc:ID>
                 <cbc:PropertyGroupTypeCode listID="PropertyGroupType" listAgencyID="EU-COM-GROW" listVersionID="2.1.0">ON*</cbc:PropertyGroupTypeCode>
                 <!-- The UUID of this QUESTION will be used in the Response providing the text that will be used by the evaluators. -->
                 <cac:TenderingCriterionProperty>
-                    <cbc:ID schemeID="CriteriaTaxonomy" schemeAgencyID="EU-COM-GROW" schemeVersionID="2.1.0">4b0ddbd4-6c8e-42f1-9b39-d372d3ad878c</cbc:ID><--9-->
+                    <cbc:ID schemeID="CriteriaTaxonomy" schemeAgencyID="EU-COM-GROW" schemeVersionID="2.1.0">4b0ddbd4-6c8e-42f1-9b39-d372d3ad878c</cbc:ID><!--9-->
                     <cbc:Description>Please describe them</cbc:Description>
                     <cbc:TypeCode listID="CriterionElementType" listAgencyID="EU-COM-GROW" listVersionID="2.1.0">QUESTION</cbc:TypeCode>
                     <cbc:ValueDataTypeCode listID="ResponseDataType" listAgencyID="EU-COM-GROW" listVersionID="2.1.0">DESCRIPTION</cbc:ValueDataTypeCode>
                 </cac:TenderingCriterionProperty>
             </cac:SubsidiaryTenderingCriterionPropertyGroup>
             <!-- The EO can use this subgroup of evidences to, in the response to it (in the ESPD-Response), make the information required available online. The URL should be in the domain of the EO -->
-            <cac:SubsidiaryTenderingCriterionPropertyGroup><--10-->
+            <cac:SubsidiaryTenderingCriterionPropertyGroup><!--10-->
                 <cbc:ID schemeAgencyID="EU-COM-GROW" schemeVersionID="2.1.0">7458d42a-e581-4640-9283-34ceb3ad4345</cbc:ID>
                 <cbc:PropertyGroupTypeCode listID="PropertyGroupType" listAgencyID="EU-COM-GROW" listVersionID="2.1.0">ON*</cbc:PropertyGroupTypeCode>
                 <cac:TenderingCriterionProperty>
@@ -102,7 +102,7 @@ image::Selfcontained_Abilities_2_Data_Structure.png[Self-contained 'Abilities (I
         </cac:SubsidiaryTenderingCriterionPropertyGroup>
         <!-- Notice that multiple subgroups of REQUIREMENT + QUESTION can be used to specify multiple requirements -->
         <!-- This is the 2nd. Subgroup of REQUIREMENT and QUESTION: Subgroup specifically used for quality measures -->
-        <cac:SubsidiaryTenderingCriterionPropertyGroup><--11-->
+        <cac:SubsidiaryTenderingCriterionPropertyGroup><!--11-->
             <cbc:ID schemeAgencyID="EU-COM-GROW" schemeVersionID="2.1.0">f156d97a-9700-4ad9-8d21-e3ac57102278</cbc:ID>
             <cbc:PropertyGroupTypeCode listID="PropertyGroupType" listAgencyID="EU-COM-GROW" listVersionID="2.1.0">ON*</cbc:PropertyGroupTypeCode>
             <cac:TenderingCriterionProperty>

@@ -55,15 +55,15 @@ classification.
     <cbc:Name>Educational and professional qualifications</cbc:Name>
     <cbc:Description>The following educational and professional qualifications are held by the service provider or the contractor itself, and/or (depending on the requirements set out in the relevant notice or the in the ESPD, the relevant notice or  by its managerial staff.</cbc:Description>
     <!-- This criterion will be used in a second or subsequent evaluation stage. Its relative weight, assigned by the CA, is in this case 5%. -->
-    <cbc:WeightNumeric>0.05</cbc:WeightNumeric><--1-->
+    <cbc:WeightNumeric>0.05</cbc:WeightNumeric><!--1-->
     <!-- The fact that the criterion is weighted is announced here. -->
-    <cbc:EvaluationMethodTypeCode listID="EvaluationMethodType" listAgencyID="EU-COM-GROW" listVersionID="2.1.0">WEIGHTED</cbc:EvaluationMethodTypeCode><--2-->
+    <cbc:EvaluationMethodTypeCode listID="EvaluationMethodType" listAgencyID="EU-COM-GROW" listVersionID="2.1.0">WEIGHTED</cbc:EvaluationMethodTypeCode><!--2-->
     <!-- Additional information to help EOs improve their offer, and used also for transparency. See also chapter "Putting things together" and the XML
         example in that chapter for details on this. -->
-    <cbc:WeightingConsiderationDescription>At least three qualifications are expected be provided, but the weight will not change if more than three qualifications are provided.</cbc:WeightingConsiderationDescription><--4-->
+    <cbc:WeightingConsiderationDescription>At least three qualifications are expected be provided, but the weight will not change if more than three qualifications are provided.</cbc:WeightingConsiderationDescription><!--4-->
     <cac:Legislation><!-- data elements removed for brevity --></cac:Legislation>
     <!-- The main group of REQUIREMENTs and QUESTIONs start here. -->
-    <cac:TenderingCriterionPropertyGroup><--5-->
+    <cac:TenderingCriterionPropertyGroup><!--5-->
         <cbc:ID schemeAgencyID="EU-COM-GROW" schemeVersionID="2.1.0">d2cadc29-07e0-46b2-a74a-a0dc4bd2e5c2</cbc:ID>
         <cbc:PropertyGroupTypeCode listID="PropertyGroupType" listAgencyID="EU-COM-GROW" listVersionID="2.1.0">ON*</cbc:PropertyGroupTypeCode>
         <!-- The following property announces that the criterion will be weigthed. It principle it had a two-fold goal: 1) to make know the EO
@@ -71,7 +71,7 @@ classification.
             system proposing automated evaluation results, to use it during the evaluation phase. However it is, in fact, superfluous or redundant,
             as this information is also indicated in the `cbc:EvaluationMethodTypeCode` (type WEIGHTED) and of the relative weight value assigned to
             the element `cbc:WeightNumeric`(5% in this example). Future versions of the ESPD-EDM may deprecate this REQUIREMENT. -->
-        <cac:TenderingCriterionProperty><--6-->
+        <cac:TenderingCriterionProperty><!--6-->
             <cbc:ID schemeID="CriteriaTaxonomy" schemeAgencyID="EU-COM-GROW" schemeVersionID="2.1.0">2fe1c4be-ed09-4241-a531-366e73b33436</cbc:ID>
             <cbc:Description>This criterion will be weighted</cbc:Description>
             <cbc:TypeCode listID="CriterionElementType" listAgencyID="EU-COM-GROW" listVersionID="2.1.0">REQUIREMENT</cbc:TypeCode>
@@ -79,12 +79,12 @@ classification.
         </cac:TenderingCriterionProperty>
         <!-- This subgroup may occur multiple times. In this example it is instantiated once. -->
         <!-- Subgroup specifically used to require that the qualifications must not be older than 3 years. -->
-        <cac:SubsidiaryTenderingCriterionPropertyGroup><--7-->
+        <cac:SubsidiaryTenderingCriterionPropertyGroup><!--7-->
             <cbc:ID schemeAgencyID="EU-COM-GROW" schemeVersionID="2.1.0">1be6421a-0360-449e-ae7c-ce7fad73c2c2</cbc:ID>
             <cbc:PropertyGroupTypeCode listID="PropertyGroupType" listAgencyID="EU-COM-GROW" listVersionID="2.1.0">ON*</cbc:PropertyGroupTypeCode>
             <!-- The CA's REQUIREMENT: qualifications not older than 3 years. If no REQUIREMENT was necessary it could be replace with a CAPTION. Its
                  occurrence here is compulsory because of the cardinality imposed by the UBL-2.2 XSD Schema. -->
-            <cac:TenderingCriterionProperty><--8-->
+            <cac:TenderingCriterionProperty><!--8-->
                 <cbc:ID schemeID="CriteriaTaxonomy" schemeAgencyID="EU-COM-GROW" schemeVersionID="2.1.0">25c19a70-e4d1-42cf-aa33-20aad4faacbc</cbc:ID>
                 <cbc:Description>Requirement</cbc:Description>
                 <cbc:TypeCode listID="CriterionElementType" listAgencyID="EU-COM-GROW" listVersionID="2.1.0">REQUIREMENT</cbc:TypeCode>
@@ -92,7 +92,7 @@ classification.
                 <cbc:ExpectedDescription>The qualifications provided by the economic operator must the most recent possible, in any case not older than three years.</cbc:ExpectedDescription>
             </cac:TenderingCriterionProperty>
             <!-- The next is a "dummy" property, a CAPTION used to overcome the compulsory cardinality of the UBL-2.2 XSD Schema. -->
-            <cac:SubsidiaryTenderingCriterionPropertyGroup><--9-->
+            <cac:SubsidiaryTenderingCriterionPropertyGroup><!--9-->
                 <cbc:ID schemeAgencyID="EU-COM-GROW" schemeVersionID="2.1.0">5df40500-a9b7-4c15-8325-a9762224a3c9</cbc:ID>
                 <cbc:PropertyGroupTypeCode listID="PropertyGroupType" listAgencyID="EU-COM-GROW" listVersionID="2.1.0">ON*</cbc:PropertyGroupTypeCode>
                 <cac:TenderingCriterionProperty>
@@ -102,11 +102,11 @@ classification.
                     <cbc:ValueDataTypeCode listID="ResponseDataType" listAgencyID="EU-COM-GROW" listVersionID="2.1.0">NONE</cbc:ValueDataTypeCode>
                 </cac:TenderingCriterionProperty>
                 <!-- The group of QUESTIONs addressed to the CA start here. -->
-                <cac:SubsidiaryTenderingCriterionPropertyGroup><--10-->
+                <cac:SubsidiaryTenderingCriterionPropertyGroup><!--10-->
                     <cbc:ID schemeAgencyID="EU-COM-GROW" schemeVersionID="2.1.0">5476ec64-de1e-45d2-aaf1-a40a463ab7a9</cbc:ID>
                     <cbc:PropertyGroupTypeCode listID="PropertyGroupType" listAgencyID="EU-COM-GROW" listVersionID="2.1.0">ON*</cbc:PropertyGroupTypeCode>
                     <!-- QUESTION 1. -->
-                    <cac:TenderingCriterionProperty><--11-->
+                    <cac:TenderingCriterionProperty><!--11-->
                         <cbc:ID schemeID="CriteriaTaxonomy" schemeAgencyID="EU-COM-GROW" schemeVersionID="2.1.0">e8dbdda7-f4d3-4a79-800c-3cbe89a7785e</cbc:ID>
                         <cbc:Description>First name</cbc:Description>
                         <cbc:TypeCode listID="CriterionElementType" listAgencyID="EU-COM-GROW" listVersionID="2.1.0">QUESTION</cbc:TypeCode>
