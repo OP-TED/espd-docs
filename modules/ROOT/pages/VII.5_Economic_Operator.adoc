@@ -175,14 +175,15 @@ image::QualifyinParty_XSD.png[cac:QualifyingParty element-XSD, alt="cac:Qualifyi
 For the identification of the economic operator with the registration number assigned by the (pre)qualification system the `cac:/EconomicOperatorParty/cac:Party/PartyIdentifier` is used. Notice that this element has multiple cardinality, which is very convenient to identify parties with identifiers issued by different authorities. Each Identification element specifies which is the Agency -the (pre)qualification system, in this case- that issued the identifier (see XML example below to grasp how this is implemented). 
 
 .cac:PartyIdentification element, XSD
-image::PartyIdentification.png[PartyIdentifier element with multiple cardinality-XSD, alt="PartyIdentifier element with multiple cardinality", align="center"] 
+image::PartyIdentification.png[PartyIdentifier element with multiple cardinality-XSD, alt="PartyIdentifier element with multiple cardinality", align="center"] 
+
 The QUESTIONs relating to the rest of information on the PQS are structured in the criterion `CRITERION.OTHER.EO_DATA.REGISTERED_IN_OFFICIAL_LIST`:
 
 .Data structure for the data about the (pre)qualification system
 image::OTHER_EO_PQS_DS.png[PQS data structure, alt="PQS data structure", align="center"]
 
 ==== cac:EconomicOperatorRole
-
+link:{attachmentsdir}/cl/ods/ESPD-CodeLists-V2.0.2.ods
 The UBL-2.2 element for the role of the economic operator is quite straightforward and typical in UBL: it provides a pair code + description (see Code List link:https://github.com/ESPD/ESPD-EDM/tree/2.0.2/docs/src/main/asciidoc/dist/cl/ods/ESPD-CodeLists-V2.0.2.ods[EORoleType] for the codes and descriptions; see also the XML example below).
 
 .Role of the economic operator
