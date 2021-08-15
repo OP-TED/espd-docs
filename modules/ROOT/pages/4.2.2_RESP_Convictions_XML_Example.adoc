@@ -1,3 +1,6 @@
+
+include::partial$attributes.adoc[]
+
 ifndef::imagesdir[:imagesdir: images]
 
 [subs=+quotes]
@@ -111,10 +114,10 @@ ifndef::imagesdir[:imagesdir: images]
         </ccv:RequirementGroup>
 </ccv:Criterion>
 ----
-<1> COM UUID in table link:{attachmentsdir}/code_lists/CriteriaTaxonomy.xlsx[ESPD Criteria: Exclusion criteria] 
-<2> COM code list link:{attachmentsdir}/code_lists/PDF/CriteriaTypeCode.pdf[CriteriaTypeCode]
-<3> COM UUID in table link:{attachmentsdir}/code_lists/CriteriaTaxonomy.xlsx[ESPD Criteria: Exclusion criteria]
-<4> COM UUID in table link:{attachmentsdir}/code_lists/CriteriaTaxonomy.xlsx[ESPD Criteria: Exclusion criteria]
+<1> COM UUID in table link:{url-blob}/code_lists/CriteriaTaxonomy.xlsx[ESPD Criteria: Exclusion criteria] 
+<2> COM code list link:{url-blob}/code_lists/PDF/CriteriaTypeCode.pdf[CriteriaTypeCode]
+<3> COM UUID in table link:{url-blob}/code_lists/CriteriaTaxonomy.xlsx[ESPD Criteria: Exclusion criteria]
+<4> COM UUID in table link:{url-blob}/code_lists/CriteriaTaxonomy.xlsx[ESPD Criteria: Exclusion criteria]
 <5> Expected response of type Indicator (a boolean value _true_ or _false_)
 <6> The response (i) is of the expected type, and (2) the response answers the question in the Criterion: this EO has not participated in a criminal 
 organisation. Hence the rest of responses are empty, as the EO has not to provide any further data

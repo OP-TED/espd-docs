@@ -1,3 +1,6 @@
+
+include::partial$attributes.adoc[]
+
 ifndef::imagesdir[:imagesdir: images]
 
 [.text-left]
@@ -121,7 +124,7 @@ schemeVersionID="1.0">
 </cbc:ID>
 ----
 |*MANDATORY* (1..1) 
-|`*Rule*: Compulsory use of the UUIDs from the table link:{attachmentsdir}/code_lists/CriteriaTaxonomy.xlsx[Criteria]`
+|`*Rule*: Compulsory use of the UUIDs from the table link:{url-blob}/code_lists/CriteriaTaxonomy.xlsx[Criteria]`
 
 |*ccv-cbc:
 FulfillmentIndicator*
@@ -151,7 +154,7 @@ PARTICIPATION_IN_CRIMINAL_ORGANISATION
 </cbc:TypeCode>
 ----
 |*MANDATORY* (1..1) 
-|`*Rule*: Compulsory use of the code list link:{attachmentsdir}/code_lists/PDF/CriteriaTypeCode.pdf[CriteriaTypeCode]`
+|`*Rule*: Compulsory use of the code list link:{url-blob}/code_lists/PDF/CriteriaTypeCode.pdf[CriteriaTypeCode]`
 
 |*cbc:Name*
 |A short and descriptive name for a criterion
@@ -164,7 +167,7 @@ of trafficking in human beings
 </cbc:Name>
 ----
 |*MANDATORY* (1..1)
-|`*Comment*: The names of the criteria can be obtained from the table link:{attachmentsdir}/code_lists/CriteriaTaxonomy.xlsx[Criteria]`  
+|`*Comment*: The names of the criteria can be obtained from the table link:{url-blob}/code_lists/CriteriaTaxonomy.xlsx[Criteria]`  
 
 |*cbc:Description*
 |An extended description of the criterion
@@ -179,7 +182,7 @@ management or supervisory body ...
 </cbc:Description>
 ----
 |*MANDATORY* (1..1) 
-|`*Comment*: The descriptions of the criteria can be obtained from the table link:{attachmentsdir}/code_lists/CriteriaTaxonomy.xlsx[Criteria]`  
+|`*Comment*: The descriptions of the criteria can be obtained from the table link:{url-blob}/code_lists/CriteriaTaxonomy.xlsx[Criteria]`  
 
 5+^|*Associated classes*
 
@@ -197,6 +200,6 @@ management or supervisory body ...
 requirements that are applied at the national or sub-national level; e.g. a 
 very specific national professional misconduct criterion that is more specific 
 than the ones defined in the 
-link:{attachmentsdir}/code_lists/CriteriaTaxonomy.xlsx[EU Exclusion Criteria]`  
+link:{url-blob}/code_lists/CriteriaTaxonomy.xlsx[EU Exclusion Criteria]`  
 
 |===
