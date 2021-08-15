@@ -274,8 +274,8 @@ This release encompasses these other minor updates:
 * **Criteria data structures**
 
 ** All criteria have now one block "Is this information available electronically" with cardinality 0..n. See data structures spread-sheets for both
-the link:{url-blob}/dist/cl/ods/ESPD-CriteriaTaxonomy-REGULATED-V2.0.2.ods[REGULATED] and the
-link:{url-blob}/dist/cl/ods/ESPD-CriteriaTaxonomy-SELFCONTAINED-V2.0.2.ods[SELF-CONTAINED] flavours.
+the link:{url-blob-202}/dist/cl/ods/ESPD-CriteriaTaxonomy-REGULATED-V2.0.2.ods[REGULATED] and the
+link:{url-blob-202}/dist/cl/ods/ESPD-CriteriaTaxonomy-SELFCONTAINED-V2.0.2.ods[SELF-CONTAINED] flavours.
 
 ** In the *SELF-CONTAINED ESPD* CRITERION.SELECTION.ECONOMIC_FINANCIAL_STANDING.RISK_INDEMNITY_INSURANCE Subgroup "83e3dcc4-c9b3-47e5-9fb8-ffd8386679f1" changed its cardinality from 1 to 1..n.
 
