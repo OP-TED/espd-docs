@@ -1,11 +1,11 @@
 
-=== V.1 Convictions
+== V.1 Convictions
 
 *Information requirement*
 
 See formal requirements related to exclusion grounds criteria in the http://wiki.ds.unipi.gr/pages/viewpage.action?pageId=44367916[BIS 41 - European Single Procurement Document (Version 2.0.0)], and more specifically http://wiki.ds.unipi.gr/pages/viewpage.action?pageId=44367916#tbr070-009[_tbr070-009_], http://wiki.ds.unipi.gr/pages/viewpage.action?pageId=44367916#tbr070-004[_tbr070-004_], and http://wiki.ds.unipi.gr/pages/viewpage.action?pageId=44367916#tbr070-013[_tbr070-013_].
 
-==== Differences between Regulated and Self-contained
+=== Differences between Regulated and Self-contained
 
 .  The only difference between *REGULATED* and *SELF-CONTAINED* concerning conviction criteria is that the *SELF-CONTAINED* version allow Member States to link national sub-criteria to the EU conviction criterion. Thus:
 
@@ -23,7 +23,7 @@ See formal requirements related to exclusion grounds criteria in the http://wiki
 If you are using the https://ec.europa.eu/tools/espd/[ESPD Service] developed by the European Commission you will observe the label 'More information >>' on the left side of the mock-up. If you click on it the national criteria defined by the MS in the e-Certis will be shown. However you must be warned that, as the EC ESPD Service does only implement the Regulated ESPD V1.0.2 the national criterion will not be saved into the exported XML instance. 
 ====
 
-==== Mock-ups - economic operator perspective
+=== Mock-ups - economic operator perspective
 The figure below shows the GUI presented by the ESPD Service. Beware that the XML example we provide in this guide is based on the ESPD Request V2.0.2, which *does allow the possibility of saving the national criteria*, contrary to the ESPD V1.0.2. 
 
 [IMPORTANT]
@@ -34,18 +34,18 @@ Beware that this mock-up is not showing the national criteria. For this mock-up 
 .Conviction 'Participation in criminal organisation', mock-up (EO perspective)
 image::Convictions__EO_mock-up.png[Conviction EO mock-up, alt="Conviction EO mock-up", align="center"]
 
-==== Data structure - Regulated
+=== Data structure - Regulated
 Notice that the only difference between the Regulated and the Self-contained structures is that the Regulated one does not contain a 'national sub-criterion'.
 
 .Data Structure for all 'Regulated Conviction' exclusion grounds criteria
 image::Regulated_ESPDRequest_Convictions_Data_Structure.png[Convictions data structure, alt="Convictions data structure", align="center"]
 
-==== Data structure - Self-contained
+=== Data structure - Self-contained
 
 .Data Structure for all 'Self-contained Conviction' exclusion grounds criteria
 image::Selfcontained_ESPDRequest_Convictions_Data_Structure.png[Convictions data structure, alt="Convictions data structure", align="center"]
 
-==== XML Example - Self-contained
+=== XML Example - Self-contained
 
 The fragment of XML code below illustrates how a 'Convictions' criterion looks like in a *Self-contained ESPD Request*. See comments beneath the example.
 
@@ -180,6 +180,7 @@ The fragment of XML code below illustrates how a 'Convictions' criterion looks l
 		</cac:SubsidiaryTenderingCriterionPropertyGroup>
 	</cac:TenderingCriterionPropertyGroup>
 </cac:TenderingCriterion>
+<!--10--><!--11-->
 
 <!-- ... the rest of elements in the QualificationApplicationRequest document omitted for brevity -->
 
