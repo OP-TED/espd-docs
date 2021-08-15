@@ -1,3 +1,6 @@
+
+include::partial$attributes.adoc[]
+
 ifndef::imagesdir[:imagesdir: images]
 
 [.text-left]
@@ -77,7 +80,7 @@ a|
 </ccv-cbc:JurisdictionLevelCode>
 ----
 |*MANDATORY* (0..1) 
-|`*Rule*: Compulsory use of the code list link:{attachmentsdir}/code_lists/pdf/CriterionJurisdictionLevel.pdf[CriterionJurisdictionLevel]`
+|`*Rule*: Compulsory use of the code list link:{url-blob}/code_lists/pdf/CriterionJurisdictionLevel.pdf[CriterionJurisdictionLevel]`
 
 |*ccv-cbc:Article*
 |Textual description of the article of the Legislation; e.g. ''Article 61''

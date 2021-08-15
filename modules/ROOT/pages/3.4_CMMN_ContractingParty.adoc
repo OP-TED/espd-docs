@@ -1,3 +1,6 @@
+
+include::partial$attributes.adoc[]
+
 ifndef::imagesdir[:imagesdir: images]
 
 [.text-left]
@@ -71,7 +74,7 @@ a|
 ----
 |*MANDATORY* - (Although in the XSD Schema the cardinality is 0..n)
 |`*Rule*: The country of the contracting body MUST always be specified. Compulsory use of the 
-code list link:{attachmentsdir}/code_lists/pdf/CountryCodeIdentifier.pdf[CountryCodeIdentifier]`
+code list link:{url-blob}/code_lists/pdf/CountryCodeIdentifier.pdf[CountryCodeIdentifier]`
 
 |===
 <1> The name of the Contracting Body is mandatory but has been removed from this example to simplify the example

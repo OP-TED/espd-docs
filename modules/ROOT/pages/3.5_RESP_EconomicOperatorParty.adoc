@@ -1,3 +1,6 @@
+
+include::partial$attributes.adoc[]
+
 ifndef::imagesdir[:imagesdir: images]
 
 [.text-left]
@@ -62,7 +65,7 @@ MT
 EconomicOperatorRoleCode>
 ----
 |OPTIONAL (0..1) - Currently not used in the ESPD Service
-|`*Rule*: Compulsory use of the code list link:{attachmentsdir}/code_lists/pdf/TendererRole.pdf[TendererRole].`
+|`*Rule*: Compulsory use of the code list link:{url-blob}/code_lists/pdf/TendererRole.pdf[TendererRole].`
 
 |*espd-cbc:
 EconomicOperatorRoleDescription*
