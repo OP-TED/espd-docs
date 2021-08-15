@@ -76,6 +76,7 @@ Observe that the data is
 		</cac:TenderingCriterionPropertyGroup>
 	</cac:TenderingCriterion> 
 </QualificationApplicationRequest>
+<!--3--><!--4-->
 
 ----
 <1> This procedure is divided into 7 lots. Hence their automatic identification from Lot1 to Lot7.
