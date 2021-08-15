@@ -1,7 +1,7 @@
 
 === V.2.1 Basic Contributions
 
-==== Mock-ups - contracting authority perspective
+=== Mock-ups - contracting authority perspective
 
 For a better understanding of the behavior of the Basic 'Contributions' have a look to the two figures below. They show two different options offered by the ESPD Service GUI perspective for the economic operator:
 
@@ -10,7 +10,7 @@ The figure below represents a possible mockup for the contracting authority pers
 .Basic 'Conviction' Payment of Taxes (ESPD Service, EO perspective) - OPTION 1 (*YES*)
 image::Basic_ESPDRequest_Contributions_CA_mockup.png[Basic 'Payment of Taxes' (ESPD Service, CA perspective), alt="Basic 'Payment of Taxes' (ESPD Service, CA perspective)", width="800" align="center"]
 
-==== Mock-ups - economic operator perspective
+=== Mock-ups - economic operator perspective
 
 The next mock-up shows the view of the economic operator when it answers "Yes" to the question "Has this breach of
 obligations been established by other means....?". See the next mock-up for the negative answer. See also the
@@ -181,6 +181,7 @@ image::Basic_ESPDRequest_Contributions_Data_Structure.png[Basic 'Contributions' 
 		</cac:SubsidiaryTenderingCriterionPropertyGroup>
 	</cac:TenderingCriterionPropertyGroup>
 </cac:TenderingCriterion>
+<!--7--><!--8--><!--13-->
 ----
 <1> EU Payment of Taxes (PoT) criterion according to the Directive.
 <2> Country or Member State concerned by the conviction. This field is only shown if the the answer to the previous QUESTION was *Yes*.

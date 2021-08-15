@@ -1,5 +1,5 @@
 
-=== V.1 Convictions
+== V.1 Convictions
 
 *Information requirement*
 
@@ -23,7 +23,7 @@ See formal requirements related to exclusion grounds criteria in the http://wiki
 If you are using the https://ec.europa.eu/tools/espd/[ESPD Service] developed by the European Commission you will observe the label 'More information >>' on the left side of the mock-up. If you click on it the national criteria defined by the MS in the e-Certis will be shown. However you must be warned that, as the EC ESPD Service does only implement the Basic ESPD V1.0.2 the national criterion will not be saved into the exported XML instance. 
 ====
 
-==== Mock-ups - economic operator perspective
+=== Mock-ups - economic operator perspective
 The figure below shows the GUI presented by the ESPD Service. Beware that the XML example we provide in this guide is based on the ESPD Request V2.1.1, which *does allow the possibility of saving the national criteria*, contrary to the ESPD V1.0.2.
 
 [IMPORTANT]
@@ -183,6 +183,7 @@ The fragment of XML code below illustrates how a 'Convictions' criterion looks l
 		</cac:SubsidiaryTenderingCriterionPropertyGroup>
 	</cac:TenderingCriterionPropertyGroup>
 </cac:TenderingCriterion>
+<!--10--><!--11-->
 
 <!-- ... the rest of elements in the QualificationApplicationRequest document omitted for brevity -->
 

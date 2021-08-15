@@ -1,26 +1,26 @@
 
 === VI.9.4 Extended Abilities (I) - Persons
 
-==== Mock-ups - contracting authority perspective (PASS/FAIL, non-weighted)
+=== Mock-ups - contracting authority perspective (PASS/FAIL, non-weighted)
 
 .Extended 'Abilities (I)' CA REQUIREMENT edition mock-up 
 image::Extended_Abilities_1_CA_REQUIREMENT_Edition_mockup.png[Extended 'Abilities (I)' CA REQUIREMENT mock-up, alt="Extended 'Abilities (I)' CA REQUIREMENT mock-up", align="center"]
 
-==== Mock-ups - economic operator perspective (PASS/FAIL, non-weighted)
+=== Mock-ups - economic operator perspective (PASS/FAIL, non-weighted)
 
 As you see from the mock-up below the economic operator can add and remove technicians and bodies associated to one CA's REQUIREMENT. In this case the REQUIREMENT specified by the CA is the type of technical assistance the EO's teams must provide.
 
 .Extended 'Abilities (I)' EO mock-up 
 image::Extended_Abilities_1_EO_mockup.png[Extended 'Abilities (I)' EO mock-up, alt="Extended 'Abilities (I)' EO mock-up",  align="center"]
 
-==== Mock-ups - contracting authority perspective (WEIGHTED)
+=== Mock-ups - contracting authority perspective (WEIGHTED)
 
 In two-stages procedures the contracting authority may like to score EOs in the evaluation phase and  would like to inform the EO in a transparent way how it will weight them. The mock-up below shows a possible GUI for the CA to set this information and other additional requirements related to the weighting:
 
 .Extended 'Abilities (I)' WEIGHTED CA REQUIREMENT edition mock-up 
 image::Extended_Abilities_WEIGHTED_CA_REQ_mockup.png[Extended 'Abilities (I)' WEIGHTED CA REQUIREMENT edition mock-up, alt="Extended 'Abilities (I)' WEIGHTED CA REQUIREMENT edition mock-up", align="center"]
 
-==== Mock-ups - economic operator perspective (WEIGHTED)
+=== Mock-ups - economic operator perspective (WEIGHTED)
 
 .Extended 'Abilities (I)' WEIGHTED EO mock-up 
 image::Extended_Abilities_WEIGHTED_EO_mockup.png[Extended 'Abilities (I)' WEIGHTED EO mock-up, alt="Extended 'Abilities (I)' WEIGHTED EO mock-up", align="center"]
@@ -239,6 +239,7 @@ Notice that the data is distributed in three places:
 			</cac:SubsidiaryTenderingCriterionPropertyGroup>
 		</cac:TenderingCriterionPropertyGroup>
 </cac:TenderingCriterion>
+<!--17-->
 ----
 <1> The contracting authority (CA) selects that some criteria shall will be weighted.
 <2> The CA decides that the weights will be expressed as percentages.
