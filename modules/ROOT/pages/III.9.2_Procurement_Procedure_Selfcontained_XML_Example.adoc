@@ -17,7 +17,7 @@ This fragment of XML shows how to supply data in a Self-contained ESPD Request X
 	<cbc:IssueDate>2017-12-31</cbc:IssueDate>
 	
 	<!-- The type of procedure: 1 stands for Open Procedure. See Code List 'ProcedureType' -->
-	<cbc:ProcedureCode listID="ProcedureType" listAgencyName="EU-COM-GROW" listVersionID="2.0.1">1</cbc:ProcedureCode> <--1-->
+	<cbc:ProcedureCode listID="ProcedureType" listAgencyName="EU-COM-GROW" listVersionID="2.0.1">1</cbc:ProcedureCode> <!--1-->
 
 	<cbc:QualificationApplicationTypeCode listID="QualificationApplicationType" listAgencyName="EU-COM-GROW" listVersionID="2.0.1">SELFCONTAINED</cbc:QualificationApplicationTypeCode>
 	
@@ -26,14 +26,14 @@ This fragment of XML shows how to supply data in a Self-contained ESPD Request X
 
 	<!-- Self-contained ESPD Request. Data about the procurement procedure -->
 	<cac:ProcurementProject>
-		<cbc:Name>Spain-Aljaraque: Repair and maintenance services</cbc:Name> <--2-->
-		<cbc:Description>Repair and maintenance services. Real estate services.</cbc:Description> <--3-->
-		<cbc:ProcurementTypeCode listID="ProjectType" listAgencyID="EU-COM-GROW" listVersionID="2.0.1">Services</cbc:ProcurementTypeCode> <--4-->
+		<cbc:Name>Spain-Aljaraque: Repair and maintenance services</cbc:Name> <!--2-->
+		<cbc:Description>Repair and maintenance services. Real estate services.</cbc:Description> <!--3-->
+		<cbc:ProcurementTypeCode listID="ProjectType" listAgencyID="EU-COM-GROW" listVersionID="2.0.1">Services</cbc:ProcurementTypeCode> <!--4-->
 		
 		<!-- CPV for 'Repair and maintenance services'. -->
-		<cac:MainCommodityClassification><cbc:ItemClassificationCode>50000000</cbc:ItemClassificationCode></cac:MainCommodityClassification> <--5-->
+		<cac:MainCommodityClassification><cbc:ItemClassificationCode>50000000</cbc:ItemClassificationCode></cac:MainCommodityClassification> <!--5-->
 		<!-- CPV for 'Real estate services'. -->
-		<cac:MainCommodityClassification><cbc:ItemClassificationCode>70000000</cbc:ItemClassificationCode></cac:MainCommodityClassification> <--6-->
+		<cac:MainCommodityClassification><cbc:ItemClassificationCode>70000000</cbc:ItemClassificationCode></cac:MainCommodityClassification> <!--6-->
 	</cac:ProcurementProject>
 </QualificationApplicationRequest>
 

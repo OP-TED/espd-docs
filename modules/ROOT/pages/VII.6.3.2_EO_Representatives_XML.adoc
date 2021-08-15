@@ -52,25 +52,25 @@ Notice that this XML example contains two representatives, as in the mock-up.
 		<!-- REPRESENTATIVES of the Economic Operator -->
 		<!-- Representative 1 -->
 		<cac:PowerOfAttorney>
-		<cbc:Description>Total powers to make decisions on behalf of the company.</cbc:Description><--12-->
-		<cbc:Description>Main legal representative with power to make decisions about any aspect related to public procurement contracts with public administrations.</cbc:Description><--7-->
+		<cbc:Description>Total powers to make decisions on behalf of the company.</cbc:Description><!--12-->
+		<cbc:Description>Main legal representative with power to make decisions about any aspect related to public procurement contracts with public administrations.</cbc:Description><!--7-->
 		<cac:AgentParty>
 			<cac:Person>
-				<cbc:FirstName>Mary A.</cbc:FirstName><--1--> 
-				<cbc:FamilyName>Smith</cbc:FamilyName><--8-->
-				<cbc:BirthDate>1980-07-17</cbc:BirthDate><--2-->
-				<!-- No element for "street and number" present. The user decided not to provide it --><--3-->
-				<cbc:BirthplaceName>Brussels</cbc:BirthplaceName><--9-->
+				<cbc:FirstName>Mary A.</cbc:FirstName><!--1--> 
+				<cbc:FamilyName>Smith</cbc:FamilyName><!--8-->
+				<cbc:BirthDate>1980-07-17</cbc:BirthDate><!--2-->
+				<!-- No element for "street and number" present. The user decided not to provide it --><!--3-->
+				<cbc:BirthplaceName>Brussels</cbc:BirthplaceName><!--9-->
 				<cac:Contact>
-					<cbc:Telephone>+322124522</cbc:Telephone><--11-->
-					<cbc:ElectronicMail>masmith@everis.com</cbc:ElectronicMail><--10-->
+					<cbc:Telephone>+322124522</cbc:Telephone><!--11-->
+					<cbc:ElectronicMail>masmith@everis.com</cbc:ElectronicMail><!--10-->
 				</cac:Contact>
 				<cac:ResidenceAddress>
-					<cbc:CityName>Brussels</cbc:CityName><--5-->
-					<cbc:PostalZone>1000</cbc:PostalZone><--4-->
+					<cbc:CityName>Brussels</cbc:CityName><!--5-->
+					<cbc:PostalZone>1000</cbc:PostalZone><!--4-->
 					<cac:Country>
-						<cbc:IdentificationCode listID="CountryCodeIdentifier" listAgencyID="EU-COM-GROW" listVersionID="2.0.1">>BE</cbc:IdentificationCode><--6-->
-						<cbc:Name languageID="en">Belgium</cbc:Name><--6-->
+						<cbc:IdentificationCode listID="CountryCodeIdentifier" listAgencyID="EU-COM-GROW" listVersionID="2.0.1">>BE</cbc:IdentificationCode><!--6-->
+						<cbc:Name languageID="en">Belgium</cbc:Name><!--6-->
 					</cac:Country>
 				</cac:ResidenceAddress>					
 			</cac:Person>
