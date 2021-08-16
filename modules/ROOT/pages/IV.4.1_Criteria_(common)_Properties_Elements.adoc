@@ -63,7 +63,7 @@ http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1.0-tb
 |*Information Requirement*: 
 http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1.0-tbr070-013[_tbr070-013_].
 
-*Rule*: Compulsory use of the Code List “ResponseDataType”. Verify that the value is different to NONE for properties of type QUESTION.
+*Rule*: Compulsory use of the Code List `ResponseDataType`. Verify that the value`is different to NONE`for properties of type QUESTION.
 
 *Rule scope*: Common (BR-TC-21, BR-OTH-01, BR-OTH-03, BR-OTH-01#12, BR-OTH-03)
 
@@ -75,7 +75,7 @@ http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1.0-tb
 |*Information Requirement*: 
 http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1.0-tbr070-013[_tbr070-013_].
 
-*Rule*: Verify that the value of `cac:TypeCode` is set to QUESTION and that the `cac:ValueTypeCode` is different to NONE.
+*Rule*: Verify that the value of `+cac:TypeCode+` is set to`QUESTION`and that the `cac:ValueTypeCode` is different to NONE.
 
 *Rule scope*: EXTENDED (BR-OTH-01)
 
@@ -87,7 +87,7 @@ http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1.0-tb
 |*Information Requirement*: 
 http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1.0-tbr070-013[_tbr070-013_].
 
-*Rule*: Verify that the value of `cac:TypeCode` is set to QUESTION and that the `cac:ValueTypeCode` is different to NONE.
+*Rule*: Verify that the value of `+cac:TypeCode+` is set to`QUESTION`and that the `cac:ValueTypeCode` is different to NONE.
 
 *Rule scope*: EXTENDED (BR-OTH-01)
 
@@ -99,7 +99,7 @@ http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1.0-tb
 |*Information Requirement*: 
 http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1.0-tbr070-013[_tbr070-013_].
 
-*Rule*: Verify that the value of `cac:TypeCode` is set to QUESTION and that the `cac:ValueTypeCode` is different to NONE.
+*Rule*: Verify that the value of `+cac:TypeCode+` is set to`QUESTION`and that the `cac:ValueTypeCode` is different to NONE.
 
 *Rule scope*: EXTENDED (BR-LOT-40)
 
@@ -111,7 +111,7 @@ http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1.0-tb
 |*Information Requirement*: 
 http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1.0-tbr070-013[_tbr070-013_].
 
-*Rule*: Verify that the value of `cac:TypeCode` is set to QUESTION and that the `cac:ValueTypeCode` is different to NONE.
+*Rule*: Verify that the value of `+cac:TypeCode+` is set to`QUESTION`and that the `cac:ValueTypeCode` is different to NONE.
 
 *Rule scope*: EXTENDED (BR-OTH-01)
 
@@ -123,7 +123,7 @@ http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1.0-tb
 |*Information Requirement*: 
 http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1.0-tbr070-013[_tbr070-013_].
 
-*Rule*: Verify that the value of `cac:TypeCode` is set to QUESTION and that the `cac:ValueTypeCode` is different to NONE.
+*Rule*: Verify that the value of `+cac:TypeCode+` is set to`QUESTION`and that the `cac:ValueTypeCode` is different to NONE.
 
 |*cbc:MaximumValueNumeric*
 |Numeric
@@ -133,7 +133,7 @@ http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1.0-tb
 |*Information Requirement*: 
 http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1.0-tbr070-013[_tbr070-013_].
 
-*Rule*: Verify that the value of `cac:TypeCode` is set to QUESTION and that the `cac:ValueTypeCode` is different to NONE.
+*Rule*: Verify that the value of `+cac:TypeCode+` is set to`QUESTION`and that the `cac:ValueTypeCode` is different to NONE.
 
 |*cbc:MinimumValueNumeric*
 |Numeric
@@ -143,7 +143,7 @@ http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1.0-tb
 |*Information Requirement*: 
 http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1.0-tbr070-013[_tbr070-013_].
 
-*Rule*: Verify that the value of `cac:TypeCode` is set to QUESTION and that the `cac:ValueTypeCode` is different to NONE.
+*Rule*: Verify that the value of `+cac:TypeCode+` is set to`QUESTION`and that the `cac:ValueTypeCode` is different to NONE.
 
 |*cbc:CertificationLevelDescription*
 |Text
@@ -153,7 +153,7 @@ http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1.0-tb
 |*Information Requirement*: 
 http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1.0-tbr070-013[_tbr070-013_].
 
-*Rule*: Verify that the value of `cac:TypeCode` is set to QUESTION and that the `cac:ValueTypeCode` is different to NONE.
+*Rule*: Verify that the value of `+cac:TypeCode+` is set to`QUESTION`and that the `cac:ValueTypeCode` is different to NONE.
 
 |*cac:ApplicablePeriod*
 |Class
