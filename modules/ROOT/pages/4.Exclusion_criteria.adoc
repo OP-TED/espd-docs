@@ -2,7 +2,7 @@
 
 [cols=",",]
 |===
-|*REQUIREMENT link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-ESPD+V2.1.0#BIS41-ESPDV2.1.0-tbr092-015[_tbr092-015_], link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41-+ESPD+V2.1.0#BIS41-ESPDV2.1.0-br41-002[_br41-002_]* |*The contracting body shall provide the exclusion grounds and selection criteria for its tendering process as structured information – via ESPD template or structured list of criteria set out in a call for tender.*
+|*REQUIREMENT link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0.1[_tbr092-015_], link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0.1[_br41-002_]* |*The contracting body shall provide the exclusion grounds and selection criteria for its tendering process as structured information – via ESPD template or structured list of criteria set out in a call for tender.*
 |===
 
 [cols=",",]
