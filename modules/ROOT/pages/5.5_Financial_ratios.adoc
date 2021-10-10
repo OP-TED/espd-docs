@@ -9,12 +9,12 @@ See formal requirements related to 'Turnover' criteria ESPD in the link:http://w
 
 [cols=",",]
 |===
-|*REQUIREMENT* |The buyer  must use the link:https://www.bach.banque-france.fr/[BACH Banque France] Code List for the specification of financial ratios.
+|*REQUIREMENT* |The buyer  must use the link:https://www.bach.banque-france.fr/[BACH Banque France] Code List for the specification of financial ratios.
 |===
 
 ==== Mock-ups - buyer  perspective
 
-_‘Financial ratio' buyer mock-up_
+_'Financial ratio' buyer mock-up_
 
 The buyer  has selected the financial ratio as one of the selection criteria that will go into the ESPD Request document:
 
@@ -26,23 +26,23 @@ In ESPD the buyer  specifies procurement procedure-specific requirements, see da
 
 The economic operator does only have to provide the numeric value for the financial ratio (which should be greater than the minimum requirement specified by the buyer ):
 
-image:Financial_ratio_EO_mock-up.jpg[‘Financial ratio' EO mock-up,width=454,height=279]
+image:Financial_ratio_EO_mock-up.jpg['Financial ratio' EO mock-up,width=454,height=279]
 
-_Figure 135. ‘Financial ratio' EO mock-up_
+_Figure 135. 'Financial ratio' EO mock-up_
 
 ==== Data Structure
 
 [cols=",",]
 [NOTE]
 ====
-REQUIREMENT(s) specified by the buyers can be place outside a group of QUESTION(s) (see any other previous criteria) or *inside* a group of *QUESTION(s)*, which is the case for financial ratios, as you can see in the data structure for this criterion, below.
+REQUIREMENT(s) specified by the buyers can be place outside a group of QUESTION(s) (see any other previous criteria) or *inside* a group of *QUESTION(s)*, which is the case for financial ratios, as you can see in the data structure for this criterion, below.
 ====
 
-Notice how the spreadsheet has been used to specify the three different financial ratios of the above mock-up example: the XML example below was produced using a XSL-T transformation link:{url-blob}/dist/xslt/[style-sheet] that takes the link:{url-blob}/dist/cl/ods/[ODS spreadsheet] and produced the link:{url-blob}/dist/xml/[XML instance].
+Notice how the spreadsheet has been used to specify the three different financial ratios of the above mock-up example: the XML example below was produced using a XSL-T transformation link:{url-blob}/dist/xslt/[style-sheet] that takes the link:{url-blob}/dist/cl/ods/[ODS spreadsheet] and produced the link:{url-blob}/dist/xml/[XML instance].
 
-image:Financial_ratio_criterion_data_structure.jpg[‘Financial ratio' criterion data structure,width=526,height=293]
+image:Financial_ratio_criterion_data_structure.jpg['Financial ratio' criterion data structure,width=526,height=293]
 
-_Figure 136. ‘Financial ratio' criterion data structure_
+_Figure 136. 'Financial ratio' criterion data structure_
 
 ==== XML Example
 
@@ -130,7 +130,7 @@ _Financial Ratio_
                                         <cbc:PropertyGroupTypeCode listID="PropertyGroupType" listAgencyID="EU-COM-GROW" listVersionID="3.0.0">ONFALSE</cbc:PropertyGroupTypeCode>
                                         <cac:TenderingCriterionProperty>
                                                 <cbc:ID schemeID="criterion" schemeAgencyID="EU-COM-GROW" schemeVersionID="3.0.0">f1aec98d-5991-4119-9ffd-a95486a7ce68</cbc:ID>
-                                                <cbc:Description>In the case of no – Relied upon or not</cbc:Description>
+                                                <cbc:Description>In the case of no - Relied upon or not</cbc:Description>
                                                 <cbc:TypeCode listID="CriterionElementType" listAgencyID="EU-COM-GROW" listVersionID="3.0.0">QUESTION</cbc:TypeCode>
                                                 <cbc:ValueDataTypeCode listID="ResponseDataType" listAgencyID="EU-COM-GROW" listVersionID="3.0.0">INDICATOR</cbc:ValueDataTypeCode>
                                         </cac:TenderingCriterionProperty>                                
@@ -192,7 +192,7 @@ _Financial Ratio_
 
 
 . The period applicable for all the ratios required by the buyer . This applies to the three ratios required in the example (see mock-up above).
-. First financial ratio block: the particular ratio *required* by the buyer  is expressed as a code defined by BACH (See CodeList "FinancialRatioType").
+. First financial ratio block: the particular ratio *required* by the buyer  is expressed as a code defined by BACH (See CodeList "FinancialRatioType").
 . First financial ratio block: the description of the ratio is the one provided by BACH and should be captured from the CodeList "FinancialRatioType", which in turn is should be directly form the BACH web-site.
 . First financial ratio block: a threshold established by the buyer  as minimum requirement; the ratio provided by the economic operator shall be greater or equal to this minimum numeric value.
 . Second financial ratio block: type code required by the buyer  according to the example illustrated in the mock-up above (the buyer  may require several financial ratios; notice that the cardinality of this sub-group in the data structure and the mock-up is 1..n). The content of this block, and of the following one, have been removed for brevity, but they are similar to the first block, except that the value of the code, description and minimum requirement shall be different.
@@ -201,6 +201,6 @@ _Financial Ratio_
 . Third financial ratio block: ratio type required by the buyer  according to the example illustrated in the mock-up above.
 . Third financial ratio block: ratio definition.
 . Third financial ratio block: minimum requirement.
-. First financial ratio block: the Criterion Property used to refer to the response by the economic operator. In the ESPD Response document, the ID of this Criterion Property will be used by the element cac:ValidatedCriterionPropertyID as the means to link the response to the question. See section “Answering Questions” (under ESPD Response) for more details on this.
+. First financial ratio block: the Criterion Property used to refer to the response by the economic operator. In the ESPD Response document, the ID of this Criterion Property will be used by the element cac:ValidatedCriterionPropertyID as the means to link the response to the question. See section "Answering Questions" (under ESPD Response) for more details on this.
 . Block "Is this information available electronically". This block is constant for all criteria. It has been removed from the example for brevity. See other XML examples.
 

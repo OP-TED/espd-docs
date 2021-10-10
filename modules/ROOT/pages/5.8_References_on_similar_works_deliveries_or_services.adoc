@@ -26,9 +26,9 @@ The total amount refers to the amount of the contract, the specific refers to th
 
 ==== Mock-ups - buyer perspective
 
-As in the previous example, in this example about the references the buyer requires references for the contract, the nature of which is also about *works*.
+As in the previous example, in this example about the references the buyer requires references for the contract, the nature of which is also about *works*.
 
-For the ESPD, the buyer can specify these REQUIREMENT(s):
+For the ESPD, the buyer can specify these REQUIREMENT(s):
 
 [arabic]
 . The minimum number of references expected;
@@ -41,7 +41,7 @@ _Figure 153. 'References' buyer REQUIREMENT(s) edition mock-up_
 ==== Mock-ups - economic operator perspective
 
 [arabic]
-. In this view for the economic operator (EO) can see the lots and requirements specified by the buyer (CA), lower left side of the mock-up.
+. In this view for the economic operator (EO) can see the lots and requirements specified by the buyer (CA), lower left side of the mock-up.
 . The EO can also list those Lots it tenders to that apply to the particular reference it is providing. Software applications should validate that the Lots supplied by the EO for a reference are in the range of those specified by the buyer.
 . The EO can provide a description for the reference, the total amount of the contract in which the reference was included, the amount for the specific works referenced, the period of execution and one or more groups of data about the recipients (name/description, contact person name and contact e-mail).
 . The EO can also state that one reference is confidential, in which case the reference will only be accessible to the evaluation team.
@@ -57,7 +57,7 @@ _Non-validation of text content_
 
 *_NOTICE that the EO has made a mistake and for a "Works contracts: performance of works for the specified type" it is describing a Service. The Schematron-based validation solution cannot validate this situation as the description is a textual value._*
 
-*_For details on the Schematron-based validation solution see section 7. Validation._*
+*_For details on the Schematron-based validation solution see section 7. Validation._*
 ====
 
 ==== Data Structure

@@ -12,7 +12,7 @@ Service providers are officially recognised organisations that can supply ESPD R
 
 The ESPD allows the provision of data about the service provider who produced the ESPD Request document (and equally for the ESPD Response document, on behalf of the economic operator).
 
-Since the 2.1.1 does not include the cac:ServiceProvider as a 'document root component'. Instead, it uses the UBL-2.3 cac:ContractingParty/cac:Party associated class cac:ServiceProviderParty.
+Since the 2.1.1 does not include the cac:ServiceProvider as a 'document root component'. Instead, it uses the UBL-2.3 cac:ContractingParty/cac:Party associated class cac:ServiceProviderParty.
 
 ==== XSD Schema
 
@@ -23,8 +23,8 @@ _Figure 22. cac:ServiceProvider XSD Schema_
 *Notice that*:
 
 [arabic]
-. The cac:Party class aggregates the class cac:ServiceProviderParty; and
-. The cac:ServiceProviderParty class 'is a' Party. Hence it aggregates a cac:Party class too, and uses it to place the main data about the service provider (like name, address, end-point, etc.).
+. The cac:Party class aggregates the class cac:ServiceProviderParty; and
+. The cac:ServiceProviderParty class 'is a' Party. Hence it aggregates a cac:Party class too, and uses it to place the main data about the service provider (like name, address, end-point, etc.).
 
 image:cacServiceProvider.jpg[cac:ServiceProvider,width=514,height=217]
 
@@ -53,17 +53,17 @@ _Table 12. Service provider, expected elements_
 |*cbc:WebsiteURI* |Identifier |0..1 |The website of the service provider. a|
 *Information Requirement*: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1.0-tbr070-011[_tbr070-011_].
 
-*Rule*: Use it for the official web site of the service provider. Reserve the EndPointID for online services (e.g. web, REST, ftp services, etc.)
+*Rule*: Use it for the official web site of the service provider. Reserve the EndPointID for online services (e.g. web, REST, ftp services, etc.)
 
 |*cbc:EndpointID* |Identifier |0..1 |Electronic address of the service provider. a|
 *Information Requirement*: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1.0-tbr070-0011[_tbr070-011_].
 
-*Rule*: Use it for online services (e.g. Web Services, REST services, Delivery ID, ftp, etc. For the official web site of the Party use always the cac:Party/cbc:WebsiteURI). An end-point identifier MUST have a scheme identifier attribute (e.g.eSENSParty Identifier Scheme). Should be considered for all actors (buyer, service provider, economic operator) as an eDeliveryID.
+*Rule*: Use it for online services (e.g. Web Services, REST services, Delivery ID, ftp, etc. For the official web site of the Party use always the cac:Party/cbc:WebsiteURI). An end-point identifier MUST have a scheme identifier attribute (e.g.eSENSParty Identifier Scheme). Should be considered for all actors (buyer, service provider, economic operator) as an eDeliveryID.
 
 |*cac:PartyIdentification/cbc:ID* |Identifier |1 |The national identifier of a service provider as it is legally registered (e.g. VAT identification). a|
 *Information Requirement*: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1.0-tbr070-0011[_tbr070-011_].
 
-*Rule*: An identifier for the service provider must always be provided. Compulsory use of the attribute SchemeAgencyID. When possible use the VAT identification of the service provider (see the VIES platform for a EU cross-border national VAT number verification system). See XML example below. The code list link:{url-blob}/dist/cl/ods/ESPD-CodeLists-V3.0.0.ods[EOIDType] may be used to indicate the type of identifier used as a value of the schemeID attribute, e.g. schemeID="VAT").
+*Rule*: An identifier for the service provider must always be provided. Compulsory use of the attribute SchemeAgencyID. When possible use the VAT identification of the service provider (see the VIES platform for a EU cross-border national VAT number verification system). See XML example below. The code list link:{url-blob}/dist/cl/ods/ESPD-CodeLists-V3.0.0.ods[EOIDType] may be used to indicate the type of identifier used as a value of the schemeID attribute, e.g. schemeID="VAT").
 
 *Rule scope*: Common (BR-REQ-20#5, BR-OTH-02")
 
@@ -77,7 +77,7 @@ _Table 12. Service provider, expected elements_
 |*cac:PostalAddress/cac:Country/cbc:IdentificationCode* |Identifier |1 |The code that identifies the country of the service provider. a|
 *Information Requirement*: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1.0-tbr070-0011[_tbr070-011_].
 
-*Rule*: The country of the service provider must always be specified. Compulsory use of the code list “Country” from EU Vocabulary, which includes 3-character codes and it is based on ISO.
+*Rule*: The country of the service provider must always be specified. Compulsory use of the code list "Country" from EU Vocabulary, which includes 3-character codes and it is based on ISO.
 
 *Rule scope*: BR-REQ-20#7, BR-OTH-01, BR-OTH-01#5, BR-OTH-03
 

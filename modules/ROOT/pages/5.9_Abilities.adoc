@@ -7,7 +7,7 @@ include::partial$attributes.adoc[]
 
 See formal requirements related to selection criteria in the link:http://wiki.ds.unipi.gr/pages/viewpage.action?pageId=44367916[BIS 41 - European Single Procurement Document (Version 2.0.0)].
 
-The  ESPD, supplies data structures facilitating a greater semantic interoperability:
+The  ESPD, supplies data structures facilitating a greater semantic interoperability:
 
 
 * One data structure to define two ability criteria related to technicians:
@@ -31,7 +31,7 @@ The  ESPD, supplies data structures facilitating a greater semantic interopera
 *And one more data structure to define the allowance of checks:
 ** Special requierements check (spec-req-check)
 
-* One data structure to define two abilities related to the contractor’s staff:
+* One data structure to define two abilities related to the contractor's staff:
 
 ** Number of managerial staff (manage-staff)
 ** Average annual manpower (year-manpower)
@@ -51,7 +51,7 @@ _Figure 165. 'Abilities (I)' buyer REQUIREMENT edition mock-up_
 
 ==== Mock-ups - economic operator perspective
 
-As you see from the mock-up below the economic operator can add and remove technicians and bodies associated to one CA’s REQUIREMENT. In this case the REQUIREMENT specified by the buyer is the type of technical assistance the EO’s teams must provide.
+As you see from the mock-up below the economic operator can add and remove technicians and bodies associated to one CA's REQUIREMENT. In this case the REQUIREMENT specified by the buyer is the type of technical assistance the EO's teams must provide.
 
 image:Abilities_I_EO_mock-up.jpg['Abilities (I)' EO mock-up,width=505,height=463]
 
@@ -59,7 +59,7 @@ _Figure 166. 'Abilities (I)' EO mock-up_
 
 ==== Data Structure
 
-(The figure below is defined in the the tab ''SC-Abilities_1 (Persons)'' of the link:{url-blob}/dist/cl/xlsx/[ESPD-criterion-V3.0.0] spread-sheet).
+(The figure below is defined in the the tab ''SC-Abilities_1 (Persons)'' of the link:{url-blob}/dist/cl/xlsx/[ESPD-criterion-V3.0.0] spread-sheet).
 
 image:Abilities_Persons_criterion_data structure.jpg['Abilities (I)(Persons)' criterion data structure,width=566,height=372]
 
@@ -149,7 +149,7 @@ The XML example below shows the REQUIREMENT(s) and QUESTION(s).
                                                 <cbc:PropertyGroupTypeCode listID="PropertyGroupType" listAgencyID="EU-COM-GROW" listVersionID="3.0.0">ONFALSE</cbc:PropertyGroupTypeCode>
                                                 <cac:TenderingCriterionProperty>
                                                   <cbc:ID schemeID="criterion" schemeAgencyID="EU-COM-GROW" schemeVersionID="3.0.0">422cb36d-bbad-4140-9b60-c5e949752c7a</cbc:ID>
-                                                  <cbc:Description>In the case of no – Relied upon or not</cbc:Description>
+                                                  <cbc:Description>In the case of no - Relied upon or not</cbc:Description>
                                                   <cbc:TypeCode listID="CriterionElementType" listAgencyID="EU-COM-GROW" listVersionID="3.0.0">QUESTION</cbc:TypeCode>
                                                   <cbc:ValueDataTypeCode listID="ResponseDataType" listAgencyID="EU-COM-GROW" listVersionID="3.0.0">INDICATOR</cbc:ValueDataTypeCode>
                                                 </cac:TenderingCriterionProperty>                                        
@@ -302,11 +302,11 @@ The XML example below shows the REQUIREMENT(s) and QUESTION(s).
 
 ==== Data Structure
 
-(The figure below is defined in the the tab ''SC_Abilities_2 (Facilities,…​)'' of the link:{url-blob}/dist/cl/xlsx/[ESPD-criterion-V3.0.0] spread-sheet).
+(The figure below is defined in the the tab ''SC_Abilities_2 (Facilities,...)'' of the link:{url-blob}/dist/cl/xlsx/[ESPD-criterion-V3.0.0] spread-sheet).
 
-image:Abilities_Facilities_criterion data structure.jpg['Abilities (II) (Facilities, …​.)' criterion data structure,width=526,height=188]
+image:Abilities_Facilities_criterion data structure.jpg['Abilities (II) (Facilities, ....)' criterion data structure,width=526,height=188]
 
-_Figure 170. 'Abilities (II) (Facilities, …​.)' criterion data structure_
+_Figure 170. 'Abilities (II) (Facilities, ....)' criterion data structure_
 
 ==== XML Example
 
@@ -395,7 +395,7 @@ _Criterion "Technical facilities and measures for ensuring quality" (ESPD-Reques
                                                 <cbc:PropertyGroupTypeCode listID="PropertyGroupType" listAgencyID="EU-COM-GROW" listVersionID="3.0.0">ONFALSE</cbc:PropertyGroupTypeCode>
                                                 <cac:TenderingCriterionProperty>
                                                   <cbc:ID schemeID="criterion" schemeAgencyID="EU-COM-GROW" schemeVersionID="3.0.0">c93e53e7-5557-470c-99e6-f2ee9cf5cb41</cbc:ID>
-                                                  <cbc:Description>In the case of no – Relied upon or not</cbc:Description>
+                                                  <cbc:Description>In the case of no - Relied upon or not</cbc:Description>
                                                   <cbc:TypeCode listID="CriterionElementType" listAgencyID="EU-COM-GROW" listVersionID="3.0.0">QUESTION</cbc:TypeCode>
                                                   <cbc:ValueDataTypeCode listID="ResponseDataType" listAgencyID="EU-COM-GROW" listVersionID="3.0.0">INDICATOR</cbc:ValueDataTypeCode>
                                                 </cac:TenderingCriterionProperty>                                        
@@ -458,7 +458,7 @@ _Criterion "Technical facilities and measures for ensuring quality" (ESPD-Reques
 
 ==== Data Structure
 
-(The figure below is defined in the the tab ''SC_Abilities_3 (Education)'' of the link:{url-blob}/dist/cl/xlsx/[ESPD-criterion-V3.0.0] spread-sheet).
+(The figure below is defined in the the tab ''SC_Abilities_3 (Education)'' of the link:{url-blob}/dist/cl/xlsx/[ESPD-criterion-V3.0.0] spread-sheet).
 
 image:abilitites-education-datastructure.png.jpg[Abilities (III) (Education)' criterion data structure,width=566,height=313]
 
@@ -466,18 +466,18 @@ _Figure 171. 'Abilities (III) (Education)' criterion data structure_
 
 [NOTE]
 ====
-_Use of the EC’s ESCO Taxonomy for Skills, Competences and Occupations (and Qualifications)_
+_Use of the EC's ESCO Taxonomy for Skills, Competences and Occupations (and Qualifications)_
 
 Notice that in the Data Structure above there is the field ''If possible please indicate the ESCO identifier for this qualification'', and that the expected type of data is 'URL'.
 
-ESCO is a multilingual classification that identifies and categorises skills, competences, qualifications and occupations relevant for the EU labour market and education. It is being developed (maintained) by the European Commission since 2010. The taxonomy can be downloaded from this link:https://ec.europa.eu/esco/portal[link].
+ESCO is a multilingual classification that identifies and categorises skills, competences, qualifications and occupations relevant for the EU labour market and education. It is being developed (maintained) by the European Commission since 2010. The taxonomy can be downloaded from this link:https://ec.europa.eu/esco/portal[link].
 
 The reason why the expected type of data is a URL is because in ESCO taxonomy each concept is identified with a URI (A Uniform Resource Identifier, and URI can be used as locators, i.e. URL are URIs).
 
-ESCO is legally supported by the link:https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv%3AOJ.L_.2016.107.01.0001.01.ENG[REGULATION (EU) 2016/589] of 13 April 2016 (the EURES Regulation) and two Implementing Decisions:
+ESCO is legally supported by the link:https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv%3AOJ.L_.2016.107.01.0001.01.ENG[REGULATION (EU) 2016/589] of 13 April 2016 (the EURES Regulation) and two Implementing Decisions:
 
-* link:https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32018D1020&from=EN[Commission Implementing Decision No 2018/1020] establishes the list of skills, competences and occupations of the European classification (ESCO) to be used for the operation of the EURES common IT platform as provided for in Article 19 of Regulation (EU) 2016/589 and lays down the procedures to update and review this list.
-* link:https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32018D1021&from=EN[Commission Implementing Decision No 2018/1021] lays down the technical standards and formats necessary for the operation of the automated matching through the common IT platform using the European classification (ESCO) and the interoperability between national systems and the European classification.
+* link:https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32018D1020&from=EN[Commission Implementing Decision No 2018/1020] establishes the list of skills, competences and occupations of the European classification (ESCO) to be used for the operation of the EURES common IT platform as provided for in Article 19 of Regulation (EU) 2016/589 and lays down the procedures to update and review this list.
+* link:https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32018D1021&from=EN[Commission Implementing Decision No 2018/1021] lays down the technical standards and formats necessary for the operation of the automated matching through the common IT platform using the European classification (ESCO) and the interoperability between national systems and the European classification.
 
 ====
 
@@ -569,7 +569,7 @@ _Criterion "Educational and professional qualifications" ESPD-Request)_
                                                 <cbc:PropertyGroupTypeCode listID="PropertyGroupType" listAgencyID="EU-COM-GROW" listVersionID="3.0.0">ONFALSE</cbc:PropertyGroupTypeCode>
                                                 <cac:TenderingCriterionProperty>
                                                   <cbc:ID schemeID="criterion" schemeAgencyID="EU-COM-GROW" schemeVersionID="3.0.0">b7f2eeab-5185-4da6-a332-3879aa291d5c</cbc:ID>
-                                                  <cbc:Description>In the case of no – Relied upon or not</cbc:Description>
+                                                  <cbc:Description>In the case of no - Relied upon or not</cbc:Description>
                                                   <cbc:TypeCode listID="CriterionElementType" listAgencyID="EU-COM-GROW" listVersionID="3.0.0">QUESTION</cbc:TypeCode>
                                                   <cbc:ValueDataTypeCode listID="ResponseDataType" listAgencyID="EU-COM-GROW" listVersionID="3.0.0">INDICATOR</cbc:ValueDataTypeCode>
                                                 </cac:TenderingCriterionProperty>                                        
@@ -688,7 +688,7 @@ _Criterion "Educational and professional qualifications" ESPD-Request)_
 
 ==== Mock-ups - buyer perspective
 
-The buyer has selected the 'allowance of checks' (in link:{url-blob}/dist/cl/xlsx/[ESPD-criterion-V3.0.0] will be shown as “Special requierements check”, spec-req-check) option in a ESPD Request builder software application GUI. This software application will create a criterion of this in the ESPD Request XML instance with zero, one or more REQUIREMENT(s) by the EO.
+The buyer has selected the 'allowance of checks' (in link:{url-blob}/dist/cl/xlsx/[ESPD-criterion-V3.0.0] will be shown as "Special requierements check", spec-req-check) option in a ESPD Request builder software application GUI. This software application will create a criterion of this in the ESPD Request XML instance with zero, one or more REQUIREMENT(s) by the EO.
 
 The buyer (CA) can specify none, one or several REQUIREMENT(s). In this case a REQUIREMENT is a descriptive text provided by the buyer where the criterion is better explained or where certain conditions relating to the criterion. In this example the buyer is specifying which type of premises it wants to check and for which reasons.
 
@@ -698,7 +698,7 @@ _Figure 172.  Special requierements check buyer REQUIREMENT edition mock-up_
 
 ==== Mock-ups - economic operator perspective
 
-The EO should see as many boxes (groups) of REQUIREMENT + QUESTION as REQUIREMENT(s) specified by the CA. In this case the economic operator (EO) sees one REQUIREMENT associated to one QUESTION. The expected answer is *Yes* or *No*.
+The EO should see as many boxes (groups) of REQUIREMENT + QUESTION as REQUIREMENT(s) specified by the CA. In this case the economic operator (EO) sees one REQUIREMENT associated to one QUESTION. The expected answer is *Yes* or *No*.
 
 image:Special_requierements_check' EO_mock-up.jpg[Special requierements check' EO mock-up,width=636,height=122]
 
@@ -716,7 +716,7 @@ The data structure below shows how this criterion is organised. Notice the follo
 
 (Some columns have been hidden to enhance the readability of the image).
 
-(The figure below is defined in the the tab 'SC_Abilities_4 (Checks)' of the link:{url-blob}/dist/cl/xlsx/[ESPD-criterion-V3.0.0] spread-sheet).
+(The figure below is defined in the the tab 'SC_Abilities_4 (Checks)' of the link:{url-blob}/dist/cl/xlsx/[ESPD-criterion-V3.0.0] spread-sheet).
 
 image:Abilities_IV_Checks_criterion data_structure.jpg['Abilities (IV) (Checks)' criterion data structure,width=539,height=353]
 
@@ -798,7 +798,7 @@ _Allowance of checks criterion /Special requierements check_
                                         <cbc:PropertyGroupTypeCode listID="PropertyGroupType" listAgencyID="EU-COM-GROW" listVersionID="3.0.0">ONFALSE</cbc:PropertyGroupTypeCode>
                                         <cac:TenderingCriterionProperty>
                                                 <cbc:ID schemeID="criterion" schemeAgencyID="EU-COM-GROW" schemeVersionID="3.0.0">a4973c79-051c-4b63-be27-5d46a6c09908</cbc:ID>
-                                                <cbc:Description>In the case of no – Relied upon or not</cbc:Description>
+                                                <cbc:Description>In the case of no - Relied upon or not</cbc:Description>
                                                 <cbc:TypeCode listID="CriterionElementType" listAgencyID="EU-COM-GROW" listVersionID="3.0.0">QUESTION</cbc:TypeCode>
                                                 <cbc:ValueDataTypeCode listID="ResponseDataType" listAgencyID="EU-COM-GROW" listVersionID="3.0.0">INDICATOR</cbc:ValueDataTypeCode>
                                         </cac:TenderingCriterionProperty>                                
@@ -861,7 +861,7 @@ _Allowance of checks criterion /Special requierements check_
 
 ==== Data Structure
 
-(The figure below is defined in the the tab ''SC_Abilities_5 (Staff)'' of the link:{url-blob}/dist/cl/xlsx/[ESPD-criterion-V3.0.0] spread-sheet).
+(The figure below is defined in the the tab ''SC_Abilities_5 (Staff)'' of the link:{url-blob}/dist/cl/xlsx/[ESPD-criterion-V3.0.0] spread-sheet).
 
 image:Abilities_IV_Checks_criterion data_structure.jpg['Abilities (V) (Staff)' criterion data structure,width=566,height=362]
 
@@ -884,7 +884,7 @@ _Criterion SC-Abilities (Staff) ESPD-Request_
                 <cbc:ID schemeID="criterion" schemeAgencyID="EU-COM-GROW" schemeVersionID="3.0.0">6346959b-e097-4ea1-89cd-d1b4c131ea4d</cbc:ID>
                 <cbc:CriterionTypeCode listID="criterion" listAgencyID="EU-COM-GROW" listVersionID="3.0.0">manage-staff</cbc:CriterionTypeCode>
                 <cbc:Name>Number of managerial staff</cbc:Name>
-                <cbc:Description>The economic operator’s number of managerial staff for the last three years were as follows:</cbc:Description>
+                <cbc:Description>The economic operator's number of managerial staff for the last three years were as follows:</cbc:Description>
                 <cac:ProcurementProjectLotReference>
                         <cbc:ID schemeID="Criterion" schemeAgencyID="EU-COM-GROW" schemeVersionID="3.0.0">LOT-00000</cbc:ID>
                 </cac:ProcurementProjectLotReference>
@@ -956,7 +956,7 @@ _Criterion SC-Abilities (Staff) ESPD-Request_
                                         <cbc:PropertyGroupTypeCode listID="PropertyGroupType" listAgencyID="EU-COM-GROW" listVersionID="3.0.0">ONFALSE</cbc:PropertyGroupTypeCode>
                                         <cac:TenderingCriterionProperty>
                                                 <cbc:ID schemeID="criterion" schemeAgencyID="EU-COM-GROW" schemeVersionID="3.0.0">eb2491ad-18e7-4c79-b596-20d939e822fd</cbc:ID>
-                                                <cbc:Description>In the case of no – Relied upon or not</cbc:Description>
+                                                <cbc:Description>In the case of no - Relied upon or not</cbc:Description>
                                                 <cbc:TypeCode listID="CriterionElementType" listAgencyID="EU-COM-GROW" listVersionID="3.0.0">QUESTION</cbc:TypeCode>
                                                 <cbc:ValueDataTypeCode listID="ResponseDataType" listAgencyID="EU-COM-GROW" listVersionID="3.0.0">INDICATOR</cbc:ValueDataTypeCode>
                                         </cac:TenderingCriterionProperty>                                

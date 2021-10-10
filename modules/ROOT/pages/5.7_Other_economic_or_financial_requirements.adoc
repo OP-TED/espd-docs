@@ -10,18 +10,18 @@ The only criterion defined is classified with the code:
 
 ==== Buyer  perspective
 
-The buyer  has selected the option *other economic or financial requirements* for its inclusion in the ESPD Request.
+The buyer  has selected the option *other economic or financial requirements* for its inclusion in the ESPD Request.
 
 Additionally the buyer  can specify REQUIREMENT(s) specific to the procurement procedure. There are two situations that need to be distinguished here, when the procurement procedure is divided into Lots and when it is not.
 
 Thus, for this criterion the buyer  will be able to:
 
 [arabic]
-. Either add multiple requirements. For each requirement, the Buyer will need to provide the description of the requirement, the minimum amount and currency and the start and end date; *or* it will need to provide the minimum rating and the rating schema.
+. Either add multiple requirements. For each requirement, the Buyer will need to provide the description of the requirement, the minimum amount and currency and the start and end date; *or* it will need to provide the minimum rating and the rating schema.
 . In the ESPDResponse, the EO will be required to provide, for each requirement, the amount and currency.
 . When the procedure includes more than one Lot: The buyer  can specify the Lots the criteria applies to.
 
-Notice that in the mock-up below the first requirement is about an *economic of financial requirement* whilst the second requirement is about a *rating requirement*. See data structure and XML example for more details on this distiction.
+Notice that in the mock-up below the first requirement is about an *economic of financial requirement* whilst the second requirement is about a *rating requirement*. See data structure and XML example for more details on this distiction.
 
 ==== Mock-up - economic operator perspective
 
@@ -35,16 +35,16 @@ Note that the EO should provide an answer (ESPD Response) for every Lot that ten
 
 ==== Data Structure
 
-Notice the following aspects from the ‘other economic or financial requirements’:
+Notice the following aspects from the 'other economic or financial requirements':
 
 [arabic]
 . It allows for capturing multiple national criteria;
 . It specifies the Legislation component for the EU parent criterion. So far so good, no differences until now;
-. There’s a group of REQUIREMENT(s) and QUESTION(s).
+. There's a group of REQUIREMENT(s) and QUESTION(s).
 . The group of REQUIREMENT(s) defines a caption that is kep empty (no name, no description, no value. You will have noticed this also in other criteria. The reason for having this dummy CAPTION is that the UBL-2.3 model requires always at least one cac:TenderingCriterionProperty element instance inside a group or sub-group of properties;
-. The most important part comes now: You have a kind of choice here: one of the two subgroups the data will be shown (or not) depending on the answer of the *buyer * to the REQUIREMENT: *Select the type of requirement*. If the CA’s answer was *economic or financial requirement* the application takes it as a *true*; otherwise it is considered *false*:
-* On *true* (see the group code on the right side of the data structure) three REQUIREMENT(s) will be shown to the *economic operator*: description, minimum amount and period. For this REQUIREMENT the economic operator will see all these requirements and will have to provide an amount.
-* On *false* (see the group code on the right side of the data structure) three REQUIREMENT(s) will be shown to the *economic operator*: minimum rating and rating scheme. For this REQUIREMENT the economic operator will see all these requirements and will have to provide a rating.
+. The most important part comes now: You have a kind of choice here: one of the two subgroups the data will be shown (or not) depending on the answer of the *buyer * to the REQUIREMENT: *Select the type of requirement*. If the CA's answer was *economic or financial requirement* the application takes it as a *true*; otherwise it is considered *false*:
+* On *true* (see the group code on the right side of the data structure) three REQUIREMENT(s) will be shown to the *economic operator*: description, minimum amount and period. For this REQUIREMENT the economic operator will see all these requirements and will have to provide an amount.
+* On *false* (see the group code on the right side of the data structure) three REQUIREMENT(s) will be shown to the *economic operator*: minimum rating and rating scheme. For this REQUIREMENT the economic operator will see all these requirements and will have to provide a rating.
 
 image:Other_economic_financial_requirements_criterion_data_structur.jpg['Other economic or financial requirements' criterion data structure,width=566,height=337]
 

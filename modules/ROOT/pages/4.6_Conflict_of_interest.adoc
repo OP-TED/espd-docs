@@ -20,7 +20,7 @@ _Figure 73. 'Conflict of interest' criterion mock-up - buyer perspective_
 ==== Mock-ups - economic operator perspective
 
 [IMPORTANT]
-Beware that this mock-up is not showing the national criteria. For this mock-up it is presumed that *by answering 'Yes' to the general EU criterion all the national criteria QUESTION 'Your answer' will be also set to 'Yes'*.
+Beware that this mock-up is not showing the national criteria. For this mock-up it is presumed that *by answering 'Yes' to the general EU criterion all the national criteria QUESTION 'Your answer' will be also set to 'Yes'*.
 
 
 image:Conflict_interest_criterion_mockup_EO_perspective.jpg['Conflict of interest' criterion mock-up - EO perspective,width=642,height=202]

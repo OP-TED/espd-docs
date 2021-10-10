@@ -10,13 +10,13 @@ The only criterion defined under this data structure is classified with the code
 
 ==== Mock-ups - buyer perspective
 
-The buyer has selected the option *professional risk indemnity insurance* for its inclusion in the ESPD Request. Additionally the buyer can specify REQUIREMENT(s) specific to the procurement procedure. There are two situations that need to be distinguished here, when the procurement procedure is divided into Lots and when it is not.
+The buyer has selected the option *professional risk indemnity insurance* for its inclusion in the ESPD Request. Additionally the buyer can specify REQUIREMENT(s) specific to the procurement procedure. There are two situations that need to be distinguished here, when the procurement procedure is divided into Lots and when it is not.
 
 For both situations (Lots and Lot): The buyer can require data from the economic operator in relation to up to four types of insurances. Software applications should control that: no more groups of amount an currency data are presented to the economic operator; and that there are not two amounts referring to the same type of insurance;
 
-image:Risk_indemnity_insurance_CA_requirements_edition_oneLot.jpg[‘Risk indemnity insurance' Buyer REQUIREMENT(s) edition ,width=544,height=237]
+image:Risk_indemnity_insurance_CA_requirements_edition_oneLot.jpg['Risk indemnity insurance' Buyer REQUIREMENT(s) edition ,width=544,height=237]
 
-_Figure 140. ‘Risk indemnity insurance' Buyer REQUIREMENT(s) edition (Procedure with no lots, which actually means 1 Lot)_
+_Figure 140. 'Risk indemnity insurance' Buyer REQUIREMENT(s) edition (Procedure with no lots, which actually means 1 Lot)_
 
 When the procedure is divided into Lots: The buyer can specify the Lots one particular insurance applies to.
 
@@ -28,9 +28,9 @@ _Figure 141. 'Risk indemnity insurance' Buyer REQUIREMENT(s) edition (Procedure 
 
 The only data the economic operator needs to provide is the amount covered by the insurance and the currency for that amount:
 
-image:Economic_operator_indemnity_insurance_mock-up.jpg['Economic operator indemnity insurance’ EO mock-up,width=565,height=368]
+image:Economic_operator_indemnity_insurance_mock-up.jpg['Economic operator indemnity insurance' EO mock-up,width=565,height=368]
 
-_Figure 142. 'Economic operator indemnity insurance’ EO mock-up_
+_Figure 142. 'Economic operator indemnity insurance' EO mock-up_
 
 Note that the EO should provide an answer (ESPD Response) for every Lot that tenders. Meaning that if the Selection Criteria applies to different Lots (as can be read in the mockup), the EO should sumbit the data for the number of lots that apply.
 
@@ -53,7 +53,7 @@ _Figure 143. 'risk indemnity insurance' criterion data structure_
 
 ==== XML Example
 
-_‘Risk indemnity insurance' criterion (*Procedure with Lots*)_
+_'Risk indemnity insurance' criterion (*Procedure with Lots*)_
 
 [source,xml]
 ----
@@ -136,7 +136,7 @@ _‘Risk indemnity insurance' criterion (*Procedure with Lots*)_
                                         <cbc:PropertyGroupTypeCode listID="PropertyGroupType" listAgencyID="EU-COM-GROW" listVersionID="3.0.0">ONFALSE</cbc:PropertyGroupTypeCode>
                                         <cac:TenderingCriterionProperty>
                                                 <cbc:ID schemeID="criterion" schemeAgencyID="EU-COM-GROW" schemeVersionID="3.0.0">dbb1d777-035b-4416-a44d-8784f24f0f4a</cbc:ID>
-                                                <cbc:Description>In the case of no – Relied upon or not</cbc:Description>
+                                                <cbc:Description>In the case of no - Relied upon or not</cbc:Description>
                                                 <cbc:TypeCode listID="CriterionElementType" listAgencyID="EU-COM-GROW" listVersionID="3.0.0">QUESTION</cbc:TypeCode>
                                                 <cbc:ValueDataTypeCode listID="ResponseDataType" listAgencyID="EU-COM-GROW" listVersionID="3.0.0">INDICATOR</cbc:ValueDataTypeCode>
                                         </cac:TenderingCriterionProperty>                                

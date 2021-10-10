@@ -6,15 +6,15 @@ include::partial$attributes.adoc[]
 *Notice that*:
 
 [arabic]
-. One criterion *may* have descendent 'sub-criteria'. This is very useful to, for example, define national exclusion criteria that specialise the EU criteria defined in the Directive;
-. One criterion *may* refer to one or several pieces of legislation (EU, national, other);
-. One criterion *must* always contain at least one group of 'properties'. Properties may be informative captions; general requirements issued by the Member State or procedure-specific requirements specified by the buyer; and questions addressed to the economic operator;
-. One group of properties *must* always specify at least one 'property';
-. One group of properties *may* contain one or several 'sub-groups' of properties.
+. One criterion *may* have descendent 'sub-criteria'. This is very useful to, for example, define national exclusion criteria that specialise the EU criteria defined in the Directive;
+. One criterion *may* refer to one or several pieces of legislation (EU, national, other);
+. One criterion *must* always contain at least one group of 'properties'. Properties may be informative captions; general requirements issued by the Member State or procedure-specific requirements specified by the buyer; and questions addressed to the economic operator;
+. One group of properties *must* always specify at least one 'property';
+. One group of properties *may* contain one or several 'sub-groups' of properties.
 
 ==== XSD Schema
 
-This XSD Schema diagram shows a global view of the UBL 2.3 cac:TenderingCriterion component:
+This XSD Schema diagram shows a global view of the UBL 2.3 cac:TenderingCriterion component:
 
 image:cacTenderingCriterion_XSD_Schema.jpg[cac:TenderingCriterion - XSD Schema, global view,width=500,height=700]
 
@@ -57,18 +57,18 @@ link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1
 |*cbc:Name* |Text |1 |A short and descriptive name for a criterion. a|
 *Information Requirement*: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1.0-tbr70-010[_tbr70-010_]
 
-*Rule*: The name should match the one from e-Certis, which should be the same as in the in the spreadsheets link:{url-tree}/dist/cl/ods/[_Criterion_], e.g. 'Convictions', 'Corruption', 'Fraud', 'Financial ratio', 'Subcontracting proportion'etc.).
+*Rule*: The name should match the one from e-Certis, which should be the same as in the in the spreadsheets link:{url-tree}/dist/cl/ods/[_Criterion_], e.g. 'Convictions', 'Corruption', 'Fraud', 'Financial ratio', 'Subcontracting proportion'etc.).
 
 *Rule scope*: Common (BR-TC-05)
 
 |*cbc:Description* |Text |1..n |An extended description of the criterion. a|
 *Information Requirement*: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1.0-tbr70-010[_tbr70-010_]
 
-*Rule*: The description should match the one from e-Certis, which should be the same as in the in the spreadsheets  link:{url-tree}/dist/cl/ods/[_Criterion_], e.g. 'Has the economic operator itself or any person who is a member of its administrative, management or supervisory body or has powers of representation, decision or control therein been the subject of a conviction by final judgment for participation in a criminal organisation, by a conviction rendered at the most five years ago or in which an exclusion period set out directly in the conviction continues to be applicable? As defined in Article 2 of Council Framework Decision 2008/841/JHA of 24 October 2008 on the fight against organised crime (OJ L 300, 11.11.2008, p. 42).'.
+*Rule*: The description should match the one from e-Certis, which should be the same as in the in the spreadsheets  link:{url-tree}/dist/cl/ods/[_Criterion_], e.g. 'Has the economic operator itself or any person who is a member of its administrative, management or supervisory body or has powers of representation, decision or control therein been the subject of a conviction by final judgment for participation in a criminal organisation, by a conviction rendered at the most five years ago or in which an exclusion period set out directly in the conviction continues to be applicable? As defined in Article 2 of Council Framework Decision 2008/841/JHA of 24 October 2008 on the fight against organised crime (OJ L 300, 11.11.2008, p. 42).'.
 
 *Rule scope*: Common (BR-TC-06, BR-TC-19)
 
-*Note*: The UBL specification allows always multiple lines of text for the component cbc:Description. This feature can be used to split long descriptions into multiple lines, especially when the description contains enumerations (see the criterion "Misinterpretation" for an example).
+*Note*: The UBL specification allows always multiple lines of text for the component cbc:Description. This feature can be used to split long descriptions into multiple lines, especially when the description contains enumerations (see the criterion "Misinterpretation" for an example).
 
 |*cac:ProcurementProjectLotReference* |Text |1..n |Procurement Project Lot Reference One or more lots which the tendering criterion applies a|
 *Information Requirement*: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1.0-tbr70-003[_tbr70-003_]
@@ -88,7 +88,7 @@ link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1
 |*cbc:TenderingCriterionPropertyGroup* |Class |1..n |The first level group of properties and sub-groups of properties in the structure of a criterion. a|
 *Information Requirement*: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1.0-tbr070-013[_tbr070-013_]
 
-*Rule*: None. Beware that in previous versions of the ESPD-EDM this was termed “RequirementGroup”.
+*Rule*: None. Beware that in previous versions of the ESPD-EDM this was termed "RequirementGroup".
 
 |===
 

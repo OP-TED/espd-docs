@@ -58,64 +58,64 @@ Caption (i.e. a 'label'), specific MS or buyer requirement (e.g. 'Number of refe
 |*cbc:TypeCode* |Code |1 |The type of property. Used to verify that structure of the property is correct. a|
 *Information Requirement*: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1.0-tbr070-013[_tbr070-013_].
 
-*Rule*: Compulsory use of the link:{url-tree}/dist/cl/ods/[Code List 'CriterionElementType']. Possible types are 'CAPTION, REQUIREMENT and QUESTION'. If the type is CAPTION or REQUIREMENT no answer is expected from the economic operator and therefore the cbc:ValueDataTypeCode must be set to NONE. Otherwise this value must be set to one of the values defined in the link:{url-tree}/dist/cl/ods/[Code List 'ResponseDataType']
+*Rule*: Compulsory use of the link:{url-tree}/dist/cl/ods/[Code List 'CriterionElementType']. Possible types are 'CAPTION, REQUIREMENT and QUESTION'. If the type is CAPTION or REQUIREMENT no answer is expected from the economic operator and therefore the cbc:ValueDataTypeCode must be set to NONE. Otherwise this value must be set to one of the values defined in the link:{url-tree}/dist/cl/ods/[Code List 'ResponseDataType']
 
 *Rule scope*: BR-TC-20, BR-OTH-01, BR-OTH-01#14, BR-OTH-03
 
 |*cbc:ValueDataTypeCode* |Code |1 |The type of answer expected by the buyer in the case of a poperty of type QUESTION. a|
 *Information Requirement*: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1.0-tbr070-013[_tbr070-013_].
 
-*Rule*: Compulsory use of the Code List “ResponseDataType”. Verify that the value is different to NONE for properties of type QUESTION.
+*Rule*: Compulsory use of the Code List "ResponseDataType". Verify that the value is different to NONE for properties of type QUESTION.
 
 *Rule scope*: Common (BR-TC-21, BR-OTH-01, BR-OTH-03, BR-OTH-01#12, BR-OTH-03)
 
 |*cbc:ValueUnitCode* |Code |0..1 |The unit of measure of the numeric value as a quantity or measure in the expected response from the economic operator. a|
 *Information Requirement*: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1.0-tbr070-013[_tbr070-013_].
 
-*Rule*: Verify that the value of cac:TypeCode is set to QUESTION and that the cac:ValueTypeCode is different to NONE.
+*Rule*: Verify that the value of cac:TypeCode is set to QUESTION and that the cac:ValueTypeCode is different to NONE.
 
 *Rule scope*: BR-OTH-01
 
 |*cbc:ValueCurrencyCode* |Code |0..1 |The currency of the numeric value as an amount in the expected response from the economic operator. a|
 *Information Requirement*: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1.0-tbr070-013[_tbr070-013_].
 
-*Rule*: Verify that the value of cac:TypeCode is set to QUESTION and that the cac:ValueTypeCode is different to NONE.
+*Rule*: Verify that the value of cac:TypeCode is set to QUESTION and that the cac:ValueTypeCode is different to NONE.
 
 *Rule scope*: BR-OTH-01
 
 |*cbc:ExpectedID* |Identifier |0..1 |The expected identifier that the economic operator has to provide in the criterion response. a|
 *Information Requirement*: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1.0-tbr070-013[_tbr070-013_].
 
-*Rule*: Verify that the value of cac:TypeCode is set to QUESTION and that the cac:ValueTypeCode is different to NONE.
+*Rule*: Verify that the value of cac:TypeCode is set to QUESTION and that the cac:ValueTypeCode is different to NONE.
 
 *Rule scope*: (BR-LOT-40)
 
 |*cbc:ExpectedCode* |Code |0..1 |The expected code that the economic operator has to provide in the Criterion response. a|
 *Information Requirement*: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1.0-tbr070-013[_tbr070-013_].
 
-*Rule*: Verify that the value of cac:TypeCode is set to QUESTION and that the cac:ValueTypeCode is different to NONE.
+*Rule*: Verify that the value of cac:TypeCode is set to QUESTION and that the cac:ValueTypeCode is different to NONE.
 
 *Rule scope*:(BR-OTH-01)
 
 |*cbc:ExpectedValueNumeric* |Numeric |0..1 |The expected value that the economic operator has to provide in the Criterion response. a|
 *Information Requirement*: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1.0-tbr070-013[_tbr070-013_].
 
-*Rule*: Verify that the value of cac:TypeCode is set to QUESTION and that the cac:ValueTypeCode is different to NONE.
+*Rule*: Verify that the value of cac:TypeCode is set to QUESTION and that the cac:ValueTypeCode is different to NONE.
 
 |*cbc:MaximumValueNumeric* |Numeric |0..1 |The maximum value the response must have. a|
 *Information Requirement*: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1.0-tbr070-013[_tbr070-013_].
 
-*Rule*: Verify that the value of cac:TypeCode is set to QUESTION and that the cac:ValueTypeCode is different to NONE.
+*Rule*: Verify that the value of cac:TypeCode is set to QUESTION and that the cac:ValueTypeCode is different to NONE.
 
 |*cbc:MinimumValueNumeric* |Numeric |0..1 |The minimum value the response must have. a|
 *Information Requirement*: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1.0-tbr070-013[_tbr070-013_].
 
-*Rule*: Verify that the value of cac:TypeCode is set to QUESTION and that the cac:ValueTypeCode is different to NONE.
+*Rule*: Verify that the value of cac:TypeCode is set to QUESTION and that the cac:ValueTypeCode is different to NONE.
 
 |*cbc:CertificationLevelDescription* |Text |0..1 |The description of the level of the expected certification. a|
 *Information Requirement*: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1.0-tbr070-013[_tbr070-013_].
 
-*Rule*: Verify that the value of cac:TypeCode is set to QUESTION and that the cac:ValueTypeCode is different to NONE.
+*Rule*: Verify that the value of cac:TypeCode is set to QUESTION and that the cac:ValueTypeCode is different to NONE.
 
 |*cac:ApplicablePeriod* |Class |0..1 |The period to which this criterion property shall apply. a|
 *Information Requirement*: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1.0-tbr070-013[_tbr070-013_].
@@ -133,5 +133,5 @@ Caption (i.e. a 'label'), specific MS or buyer requirement (e.g. 'Number of refe
 
 [arabic]
 . See examples in sections about exclusion and selection criteria.
-. You will notice in the examples that the element cbc:Name is never used. Instead the cac:Description is sufficient for all the ESPD purposes.
+. You will notice in the examples that the element cbc:Name is never used. Instead the cac:Description is sufficient for all the ESPD purposes.
 

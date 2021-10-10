@@ -17,15 +17,15 @@ _Figure 14. Publications, mock-up_
 
 ==== XSD Schema
 
-The ESPD EDM uses the UBL component cac:AdditionalReferenceDocument to allow the inclusion of references to documents that they might consider relevant, and amongst them the reference to the Contract Notice on the TED (for above-the-threshold contracts) and to possible Notices on national journals and boards.
+The ESPD EDM uses the UBL component cac:AdditionalReferenceDocument to allow the inclusion of references to documents that they might consider relevant, and amongst them the reference to the Contract Notice on the TED (for above-the-threshold contracts) and to possible Notices on national journals and boards.
 
-The class used for this, cac:AdditionalDocumentReference ''is a'' cac:DocumentReference class defined in the UBL-2.3 Common Aggregate Components library).
+The class used for this, cac:AdditionalDocumentReference ''is a'' cac:DocumentReference class defined in the UBL-2.3 Common Aggregate Components library).
 
 image:cacDocumentReference_XSD diagram.jpg[cac:DocumentReference, XSD diagram,width=424,height=458]
 
 _Figure 15. cac:DocumentReference, XSD diagram_
 
-The class cac:AdditionalDocumentReference aggregates a subclass cac:Attachment that is used by ESPD to place the URI, name of the document and descriptions.
+The class cac:AdditionalDocumentReference aggregates a subclass cac:Attachment that is used by ESPD to place the URI, name of the document and descriptions.
 
 image:Associated_class cacExternalReference_XSD diagram.jpg[Associated class cac:ExternalReference XSD diagram,width=531,height=308]
 
@@ -33,7 +33,7 @@ _Figure 16. Associated class cac:ExternalReference, XSD diagram_
 
 ==== Expected elements
 
-As you can see from the XSD Schema the cac:DocumentReference class has a rich data structure. However, to refer to publications such as the TED and national publications, the ESPD most expects at most the following data:
+As you can see from the XSD Schema the cac:DocumentReference class has a rich data structure. However, to refer to publications such as the TED and national publications, the ESPD most expects at most the following data:
 
 [cols=",",options="header",]
 
@@ -65,14 +65,14 @@ _Table 6. Reference to additional documents, expected elements_
 |*cbc:DocumentTypeCode* |Code |1 |The type of document being referenced, expressed as a code. a|
 *Information Requirement*: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1.0-tbr070-007[_tbr070-007_].
 
-*Rule*: For the ESDP-EDM it is compulsory use of the Code List “docref-content-type”. See example below on how to specify the OJS Contract Notice. If, for other documents, the type of document is not available in this list, provide the code “Other” and describe the content in the element DocumentType.
+*Rule*: For the ESDP-EDM it is compulsory use of the Code List "docref-content-type". See example below on how to specify the OJS Contract Notice. If, for other documents, the type of document is not available in this list, provide the code "Other" and describe the content in the element DocumentType.
 
 *Rule scope*: Common (BR-OTH-01, BR-OTH-01#3, BR-OTH-03)
 
 |*cbc:DocumentType* |Text |0..1 |The type of document being referenced, expressed as text. a|
 *Information Requirement*: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1.0-tbr070-007[_tbr070-007_].
 
-*Rule*: Optionally use the attribute languageID to indicate the language of the text. Use the Code List “Language” for the value of the languageID attribute.
+*Rule*: Optionally use the attribute languageID to indicate the language of the text. Use the Code List "Language" for the value of the languageID attribute.
 
 *Rule scope*: Common (BR-OTH-01, BR-OTH-01#4, BR-OTH-03)
 
@@ -88,7 +88,7 @@ _Table 6. Reference to additional documents, expected elements_
 
 |===
 
-Beware that the ESPD document do not embed the content of referenced documents but instead make a reference to its source. Thus the class ‘DocumentReference’ aggregates a ‘cac:Attachment’ class that allows for embedding the content or making reference to an external source of the content, which is the preferred way in ESPD (see XSD schema above):
+Beware that the ESPD document do not embed the content of referenced documents but instead make a reference to its source. Thus the class 'DocumentReference' aggregates a 'cac:Attachment' class that allows for embedding the content or making reference to an external source of the content, which is the preferred way in ESPD (see XSD schema above):
 
 [cols=",",options="header",]
 
@@ -111,7 +111,7 @@ _Table 7. External Reference_
 |*cbc:FileName* |Text |0..1 |The title of the document. a|
 *Information Requirement*: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1.0-tbr070-007[_tbr070-007_].
 
-*Rule*: Originally this field is the placeholder for the name of the file (e.g. PLACE-ContractNotice-2017-12452.xml. However, as the UBL component does not have a placeholder for a name or title, the ESPD documents use it for a short descriptive title of the document being referenced.
+*Rule*: Originally this field is the placeholder for the name of the file (e.g. PLACE-ContractNotice-2017-12452.xml. However, as the UBL component does not have a placeholder for a name or title, the ESPD documents use it for a short descriptive title of the document being referenced.
 
 |*cbc:Description* |Text |0..n |Short description of the document. a|
 *Information Requirement*: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1.0-tbr070-007[_tbr070-007_].
@@ -124,7 +124,7 @@ _Table 7. External Reference_
 
 ==== XML Example
 
-The XML snippet below illustrates how to use the cac:AdditionalDocumentReference in the ESPDRequest XML document to refer to a Contract Notice published in TED and on a national procurement board:
+The XML snippet below illustrates how to use the cac:AdditionalDocumentReference in the ESPDRequest XML document to refer to a Contract Notice published in TED and on a national procurement board:
 
 [source,xml]
 ----
@@ -191,11 +191,11 @@ The XML snippet below illustrates how to use the cac:AdditionalDocumentReferenc
 </QualificationApplicationRequest>
 ----
 
-. For TED Notices you must use the Publications Office Official Journal Supplement number in its original format [][][][]/S [][][]-[][][][][][], e.g. 2017/S 142-293520. Notice that the schemeAgencyID is EU-COM-OP (OP standing for 'Publications Office').
-. The jurisdiction scope of this document is typified in the Code List docref-content-type (see file dist/cl/ESPD-CodeLists-V3.0.0 in the distribution package). *Beware that the name and content of this Code List has changed from the previous ESPD-EDM version 2.1.1*.
+. For TED Notices you must use the Publications Office Official Journal Supplement number in its original format [][][][]/S [][][]-[][][][][][], e.g. 2017/S 142-293520. Notice that the schemeAgencyID is EU-COM-OP (OP standing for 'Publications Office').
+. The jurisdiction scope of this document is typified in the Code List docref-content-type (see file dist/cl/ESPD-CodeLists-V3.0.0 in the distribution package). *Beware that the name and content of this Code List has changed from the previous ESPD-EDM version 2.1.1*.
 . The ESPD documents never embed the actual content. Rather the content is always referenced from its original source (alignment to the Once-Only-Principle).
 . The title of the CN has to be placed in the FileName field of the attachment. UBL does not provide a placeholder fo the title of the document.
-. In the case of publication on the TED, at ESPD Request preparation time, the procurer does not have yet the OJS number, but can receive a temporary CN identifier (Received Notice Number). To save this number in the DocumentReference component create two cbc:Description elements and use the second one to place this Received Notice Number. If you do not have a description for the CN then use a 'dummy' content for the first description, e.g. <cbc:Description>_</cbc:/Description>.
+. In the case of publication on the TED, at ESPD Request preparation time, the procurer does not have yet the OJS number, but can receive a temporary CN identifier (Received Notice Number). To save this number in the DocumentReference component create two cbc:Description elements and use the second one to place this Received Notice Number. If you do not have a description for the CN then use a 'dummy' content for the first description, e.g. <cbc:Description>_</cbc:/Description>.
 . Notice how the schemeAgencyID is used in this example to specify that the national Agency that created this reference to the national publication (e.g. "PLACE" to refer to the ID of the national electronic board where the CN was published). The pattern of the ID is the one created by the Spanish buyer.
-. In this case the code NOJCN means 'Contract Notice (CN) published on a National Government Official Journal' (see file ESPD-CodeLists-V3.0.0) in the distribution package.
+. In this case the code NOJCN means 'Contract Notice (CN) published on a National Government Official Journal' (see file ESPD-CodeLists-V3.0.0) in the distribution package.
 

@@ -75,13 +75,13 @@ The following XML example shows how it is done:
 
 <!--- Rest of the elements of the criterion have been eliminated for the sake of brevity -->
 ----
-In Economic Operator’s side it is different, as can be read in the image above there will be as many ESPD Response as Lots or Group of Lots the EO wishes to tender for. If the EO wants to participate in three Lots, the EO will need to fill in 3 ESPD Response. For more details on this, please see section ESPD Response.
+In Economic Operator's side it is different, as can be read in the image above there will be as many ESPD Response as Lots or Group of Lots the EO wishes to tender for. If the EO wants to participate in three Lots, the EO will need to fill in 3 ESPD Response. For more details on this, please see section ESPD Response.
 
 ==== 2.5.1. Lots identifiers: 
 
 The ESPD 3.0.0 changes the form to identify the Lots and Group of Lots taking the eForms format. This changes is done towards the interoperability of both models.
 
-Until version 2.1.1, the lots have been identified with the following structure “Lot1, Lot2, Lot3”. With the new approach (eForms) the Lots identifiers will be as follows: (eForms) the Lots identifiers will be as follows:
+Until version 2.1.1, the lots have been identified with the following structure "Lot1, Lot2, Lot3". With the new approach (eForms) the Lots identifiers will be as follows: (eForms) the Lots identifiers will be as follows:
 
 image:Lot_ID_schema.jpg[Lot Identifiers according to eForms schema,width=541,height=130]
 

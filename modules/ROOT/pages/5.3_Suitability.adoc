@@ -9,7 +9,7 @@ See formal requirements related to 'Suitability' criteria in the link:http://wik
 
 ==== 5.3.1 Suitability (enrolments)
 
-For each criteria regarding suitability, the buyer should be able to provide: the register type (Occupations code list, see ESPD-CodeLists.xlsx) in case of criterion “Enrolement in a relevant professional register”, and the name and its URL and for other criteria related to registries.
+For each criteria regarding suitability, the buyer should be able to provide: the register type (Occupations code list, see ESPD-CodeLists.xlsx) in case of criterion "Enrolement in a relevant professional register", and the name and its URL and for other criteria related to registries.
 
 ==== Data Structure
 
@@ -20,7 +20,7 @@ Few details regarding data structure for Suitability selection criteria
 . It also allows the buyer to speciy multiple groups of REQUIREMENT(s) (in this case to specify which registers the economic operator should be registered in).
 . Regarding the groups of questions, notice that the main question is addressed to get the confirmation from the economic operator that it fulfills the criterion (if "Yes" the economic operator is registered). In case of answering "No" a sub-group of one QUESTION must be shown (the one asking the economic operator to provide the reason why it is not registered in the register specified by the buyer).
 
-(The figure below is defined in the the tab "Suitability-I of the link:{url-blob}/dist/cl/xlsx/[ESPD Criterion Data Structure] spread-sheet).
+(The figure below is defined in the the tab "Suitability-I of the link:{url-blob}/dist/cl/xlsx/[ESPD Criterion Data Structure] spread-sheet).
 
 image:SC_Suitability_enrolement.jpg[SC Suitability enrolement,width=506,height=331]
 
@@ -113,7 +113,7 @@ _'Enrolment in a relevant professional register' suitability criterion_
                                         <cbc:PropertyGroupTypeCode listID="PropertyGroupType" listAgencyID="EU-COM-GROW" listVersionID="3.0.0">ONFALSE</cbc:PropertyGroupTypeCode>
                                         <cac:TenderingCriterionProperty>
                                                 <cbc:ID schemeID="criterion" schemeAgencyID="EU-COM-GROW" schemeVersionID="3.0.0">27109f66-df32-4f7b-afd3-98d3079cf358</cbc:ID>
-                                                <cbc:Description>In the case of no – Relied upon or not</cbc:Description>
+                                                <cbc:Description>In the case of no - Relied upon or not</cbc:Description>
                                                 <cbc:TypeCode listID="CriterionElementType" listAgencyID="EU-COM-GROW" listVersionID="3.0.0">QUESTION</cbc:TypeCode>
                                                 <cbc:ValueDataTypeCode listID="ResponseDataType" listAgencyID="EU-COM-GROW" listVersionID="3.0.0">INDICATOR</cbc:ValueDataTypeCode>
                                         </cac:TenderingCriterionProperty>                                
@@ -201,7 +201,7 @@ The code list 'occupation' is used to determine the area to which the EO should 
 
 ==== Data Structure (service contracts)
 
-(The figure below is defined in the the tab "Suitability-II" of the link:{url-blob}/dist/cl/xlsx/[ESPD-criterion-V3.0.0] spread-sheet).
+(The figure below is defined in the the tab "Suitability-II" of the link:{url-blob}/dist/cl/xlsx/[ESPD-criterion-V3.0.0] spread-sheet).
 
 image:Suitability criterion_data structure_service contracts.jpg[Suitability criterion data structure (service contracts),width=566,height=438]
 
@@ -307,7 +307,7 @@ _Example of suitability criterion_
                                         <cbc:PropertyGroupTypeCode listID="PropertyGroupType" listAgencyID="EU-COM-GROW" listVersionID="3.0.0">ONFALSE</cbc:PropertyGroupTypeCode>
                                         <cac:TenderingCriterionProperty>
                                                 <cbc:ID schemeID="criterion" schemeAgencyID="EU-COM-GROW" schemeVersionID="3.0.0">67f22f88-4fc4-416c-9287-be8ea5b610d0</cbc:ID>
-                                                <cbc:Description>In the case of no – Relied upon or not</cbc:Description>
+                                                <cbc:Description>In the case of no - Relied upon or not</cbc:Description>
                                                 <cbc:TypeCode listID="CriterionElementType" listAgencyID="EU-COM-GROW" listVersionID="3.0.0">QUESTION</cbc:TypeCode>
                                                 <cbc:ValueDataTypeCode listID="ResponseDataType" listAgencyID="EU-COM-GROW" listVersionID="3.0.0">INDICATOR</cbc:ValueDataTypeCode>
                                         </cac:TenderingCriterionProperty>                                
@@ -388,10 +388,10 @@ _Example of suitability criterion_
 [cols=",",options="header",]
 
 . A CAPTION, software applications can use it to document the GUI.
-. As a CAPTION no value is expected to be provided by the buyer (thus the absence of a cbc:Expected…​ element) nor by the Economic Operator (thus the value NONE`for the element `cac:ValueDataTypeCode)
+. As a CAPTION no value is expected to be provided by the buyer (thus the absence of a cbc:Expected... element) nor by the Economic Operator (thus the value NONE`for the element `cac:ValueDataTypeCode)
 . The name of the organisation issuing the authorisation: the Spanish food safety agency.
-. Notice the use of the attribute languageID meaning, in this example, that the name is expressed in Spanish.
-. A "choice" structure is coming now: A true/false QUESTION is asked ("Your answer" to the question contained in the Criterion "Is a particular membership of a particular organisation needed in order to be able to perform the service …​". If the user (the EO) answers "Yes" (true) then it has to provide the registration number of the authorisation. Otherwise the EO will have to provide a justification about why the authorisation is not registered.
-. If yes…​ provide the registration number for the authorisation.
-. If no…​ provide a justification for not having this authorisation issued by the required organisation.
+. Notice the use of the attribute languageID meaning, in this example, that the name is expressed in Spanish.
+. A "choice" structure is coming now: A true/false QUESTION is asked ("Your answer" to the question contained in the Criterion "Is a particular membership of a particular organisation needed in order to be able to perform the service ...". If the user (the EO) answers "Yes" (true) then it has to provide the registration number of the authorisation. Otherwise the EO will have to provide a justification about why the authorisation is not registered.
+. If yes... provide the registration number for the authorisation.
+. If no... provide a justification for not having this authorisation issued by the required organisation.
 

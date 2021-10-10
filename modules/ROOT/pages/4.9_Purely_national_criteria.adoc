@@ -8,7 +8,7 @@ Other requirements related specifically to purely national criteria are:
 
 [cols=",",]
 |===
-|*REQUIREMENT* |The Member State must be able to specify in e-Certis individual national criteria, and the economic operator must be able to answer *to each individual purely national exclusion grounds criterion*.
+|*REQUIREMENT* |The Member State must be able to specify in e-Certis individual national criteria, and the economic operator must be able to answer *to each individual purely national exclusion grounds criterion*.
 |===
 
 [cols=",",]
@@ -16,11 +16,11 @@ Other requirements related specifically to purely national criteria are:
 |*REQUIREMENT* |For the purely national exclusion grounds that have evidences related in e-Certis, the required evidences should be displayed. When the criterion has no related evidences, the text "No evidence required for this criterion" should be displayed. Per each national criterion the EO needs to be able to provide one or more evidences.
 |===
 
-The ESPD-EDM V2.1.1 *Extended ESPD* introduced and important feature: the MS can specify and save in the XML individual national criteria. The mock-ups, data structure and XML example below show how. In the ESPD-EDM V3.0.0, it is kept as the only version of the ESPD is the equivalent to the EXTENDED that was introduced in V2.1.1.
+The ESPD-EDM V2.1.1 *Extended ESPD* introduced and important feature: the MS can specify and save in the XML individual national criteria. The mock-ups, data structure and XML example below show how. In the ESPD-EDM V3.0.0, it is kept as the only version of the ESPD is the equivalent to the EXTENDED that was introduced in V2.1.1.
 
 ==== Mock-up - economic operator perspective
 
-The figure below shows a fragment of a list of national criteria that a software application has captured from e-Certis. *Per each criterion* the economic operator has to specify whether it fulfills the Criterion or not and eventually provide references to online evidences.
+The figure below shows a fragment of a list of national criteria that a software application has captured from e-Certis. *Per each criterion* the economic operator has to specify whether it fulfills the Criterion or not and eventually provide references to online evidences.
 
 image:Purely_national_criteria_mockup_CA_perspective.jpg['Purely national criteria' mock-up - buyer perspective,width=500,height=350]
 

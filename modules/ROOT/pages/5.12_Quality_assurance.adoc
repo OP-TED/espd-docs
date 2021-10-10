@@ -2,7 +2,7 @@
 
 ==== Related information requirements
 
-See formal requirements related to selection criteria in the link:http://wiki.ds.unipi.gr/pages/viewpage.action?pageId=44367916[BIS 41 - European Single Procurement Document (Version 2.0.0)].
+See formal requirements related to selection criteria in the link:http://wiki.ds.unipi.gr/pages/viewpage.action?pageId=44367916[BIS 41 - European Single Procurement Document (Version 2.0.0)].
 
 ==== Mock-ups - buyer perspective
 
@@ -14,9 +14,9 @@ _Figure 187. 'Quality Assurance schemes and environmental management standards' 
 
 ==== Mock-ups - economic operator perspective
 
-Notice that, as for the ESPD the economic operator (EO) has to answer *Yes* or *No*. In the case the EO answers *No* the box with the text "If not, please explain why and specify which other means …​" is shown. This box is not shown for the *Yes* answer. This behaviour can be controlled with the ONFALSE code of the sub-group of QUESTION(s) (see data structure and XML example below, too).
+Notice that, as for the ESPD the economic operator (EO) has to answer *Yes* or *No*. In the case the EO answers *No* the box with the text "If not, please explain why and specify which other means ..." is shown. This box is not shown for the *Yes* answer. This behaviour can be controlled with the ONFALSE code of the sub-group of QUESTION(s) (see data structure and XML example below, too).
 
-When the EO answers *Yes* it will be asked whether online evidences are available online or not. This is controlled by the code ONTRUE assigned to the sub-group of QUESTION(s) about the evidence (see data structure and XML example).
+When the EO answers *Yes* it will be asked whether online evidences are available online or not. This is controlled by the code ONTRUE assigned to the sub-group of QUESTION(s) about the evidence (see data structure and XML example).
 
 image:Quality_Assurance schemes_environmental_management_stand.jpg[Quality Assurance schemes and environmental management standards' EO mock-up,width=500,height=293]
 
@@ -28,8 +28,8 @@ Notice the following:
 
 [arabic]
 . In principle the buyer  has to provide at least one REQUIREMENT. But it might decide not to provide any requirement at all. In this case do not to alter the data structure (e.g. not to remove the REQUIREMENT_GROUP) and to provide a text for REQUIREMENT such as, for example, 'No specific requirements'.
-. The ONFALSE code for the sub-group containing the sentence thats starts with 'If not, please explain why…​' means: if the answer to the previous question was *No* then this sub-group must be shown/processed.
-. If ONTRUE (answer to previous QUESTION = *Yes*) then the question about the online evidences is shown/processed.
+. The ONFALSE code for the sub-group containing the sentence thats starts with 'If not, please explain why...' means: if the answer to the previous question was *No* then this sub-group must be shown/processed.
+. If ONTRUE (answer to previous QUESTION = *Yes*) then the question about the online evidences is shown/processed.
 
 (Some columns have been hidden to enhance the readability of the image).
 
@@ -113,7 +113,7 @@ _'Certificates by quality control institutes' criterion_
                                         <cbc:PropertyGroupTypeCode listID="PropertyGroupType" listAgencyID="EU-COM-GROW" listVersionID="3.0.0">ONFALSE</cbc:PropertyGroupTypeCode>
                                         <cac:TenderingCriterionProperty>
                                                 <cbc:ID schemeID="criterion" schemeAgencyID="EU-COM-GROW" schemeVersionID="3.0.0">1daa45dc-2247-4d4c-a726-8a887fff42ca</cbc:ID>
-                                                <cbc:Description>In the case of no – Relied upon or not</cbc:Description>
+                                                <cbc:Description>In the case of no - Relied upon or not</cbc:Description>
                                                 <cbc:TypeCode listID="CriterionElementType" listAgencyID="EU-COM-GROW" listVersionID="3.0.0">QUESTION</cbc:TypeCode>
                                                 <cbc:ValueDataTypeCode listID="ResponseDataType" listAgencyID="EU-COM-GROW" listVersionID="3.0.0">INDICATOR</cbc:ValueDataTypeCode>
                                         </cac:TenderingCriterionProperty>                                

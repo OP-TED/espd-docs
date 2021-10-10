@@ -12,11 +12,11 @@ The list below details the different changes included in the current release 3.0
 ==== Online documentation
 
 The following changes have been introduced: 
-* Online documentation has been split between business and technical documentation in order to ensure a better understanding of the ESPD by targeting each area. *_‘Business Handbook’_* and *_‘Technical Handbook’_* are now available.
+* Online documentation has been split between business and technical documentation in order to ensure a better understanding of the ESPD by targeting each area. *_'Business Handbook'_* and *_'Technical Handbook'_* are now available.
 
-* *_‘Business Handbook’_* is focused on providing business domain information for the ESPD-EDM, helping non-technical profiles to better understand the rationale to use the ESPD and its context. 
+* *_'Business Handbook'_* is focused on providing business domain information for the ESPD-EDM, helping non-technical profiles to better understand the rationale to use the ESPD and its context. 
 
-* *_‘Technical Handbook’_* includes information related to the implementation of the ESPD and how it works technically. The technical part of the previous “ESPD Implementation Guide” has been updated with the required changes due to the evolution of the model. 
+* *_'Technical Handbook'_* includes information related to the implementation of the ESPD and how it works technically. The technical part of the previous "ESPD Implementation Guide" has been updated with the required changes due to the evolution of the model. 
 It also must be taken into account that the current version of the ESPD-EDM is using a single model, the former EXTENDED model. Therefore, all information related to the BASIC model has been removed, and information related to the EXTENDED model has been updated according to the improvements included in the last version of the ESPD-EDM. 
 
 
@@ -30,7 +30,7 @@ You can also access issue link:https://github.com/ESPD/ESPD-EDM/issues/277[#277]
 
 Taking into account the need for alignment with eForms, the different code lists used by the ESPD-EDM have been updated and adapted accordingly. The maintenance of these code lists will fall under the Publications Office in most of the cases. 
 EU Vocabularies used also by eForms have been adopted when needed, for example in the cases of country, economic-operator-size, currency, language, etc.
-Other code lists have been removed since the information will be provided by eForms and, therefore, users will not need to provide this information into ESPD. Instead, the information shall be gathered from eForms’ notices and placed, when needed, into the proper placeholder. This is the case of the following code lists, which have been removed from ESPD:
+Other code lists have been removed since the information will be provided by eForms and, therefore, users will not need to provide this information into ESPD. Instead, the information shall be gathered from eForms' notices and placed, when needed, into the proper placeholder. This is the case of the following code lists, which have been removed from ESPD:
 
 * BidType
 * ProcedureType
@@ -40,7 +40,7 @@ Other code lists have been removed since the information will be provided by eFo
 * EvaluationMethodType (version 3.0.0 of the ESPD does not include weights, in order to keep the model as simple as possible)
 * CPVCodes 
 
-A new code list has been added related to the requirement of being enrolled in a professional register (criterion #25 Suitability I ‘Abilities’ – “prof-regist”): 
+A new code list has been added related to the requirement of being enrolled in a professional register (criterion #25 Suitability I 'Abilities' - "prof-regist"): 
 
 * Occupation
 
@@ -51,7 +51,7 @@ It is worth to note that this code list is based on link:https://ec.europa.eu/es
 The first change applied to the former Criteria Taxonomy is that from version 3.0.0 and on it will be named ESPD Criterion. 
 As already explained, version 3.0.0 of the ESPD-EDM does not distinguish between EXTENDED or BASIC. Therefore, there is only a single document for the definition of criteria data structures. 
 
-Codes have been modified in order to make them business agnostic and allow their reuse across sectors (see ‘criterion’ tab within ESPD-CodeLists-V.3.0.0). Also, codes per all criteria have been adapted accordingly (see column ‘ElementType’).
+Codes have been modified in order to make them business agnostic and allow their reuse across sectors (see 'criterion' tab within ESPD-CodeLists-V.3.0.0). Also, codes per all criteria have been adapted accordingly (see column 'ElementType').
 
 The following criteria have been removed from the file *_ESPD-Criterion-V.3.0.0_*: 
 
@@ -69,8 +69,8 @@ New UUIDs have been added for the newly created Criteria, groups and sub-groups 
 
 The ESPD 3.0.0 includes changes in the business rules used to validate the ESPD requests and responses: 
 
-* ‘Context’ element has been removed since it was referring to EXTENDED or BASIC, and ESPD-EDM 3.0.0 includes only on single type; 
-* Weightings’ validations have been removed because the ESPD-EDM 3.0.0 does not include weights to simplify the model;
+* 'Context' element has been removed since it was referring to EXTENDED or BASIC, and ESPD-EDM 3.0.0 includes only on single type; 
+* Weightings' validations have been removed because the ESPD-EDM 3.0.0 does not include weights to simplify the model;
 * BR related to the CRITERIA removed have been removed accordingly;
 * BR related to Code list not used in ESPD-EDM have been removed accordingly; 
 * A rule has been added to ensure the proper development of the new Lot Management approach *_(1 Lot/Group of Lots per ESPD Response)_*. ESPD Request includes exclusion and selection criteria for ALL lots while EOs will need to produce an ESPD per Lot tendered. 
@@ -408,7 +408,7 @@ The release contains a definition of all relevant
 business rules and corresponding schematron files to validate Regulate and Self-Contained ESPD Request and Response XML instances
 (including the validation of the criteria taxonomy). The corresponding TestBed for version 2.1.1 has been set up.
 The specifications for version 2.0.2 contain an updated distribution of the ESPD Exchange Data Model and include a corresponding implementation guideline
-which clarifies the ESPD validation architecture in Annex I. Also, the BIS 41 – ESPD version 2.0.2 was updated accordingly.
+which clarifies the ESPD validation architecture in Annex I. Also, the BIS 41 - ESPD version 2.0.2 was updated accordingly.
 
 This release encompasses these other minor updates:
 
@@ -437,7 +437,7 @@ This has been corrected and now all criteria have one block "Is this information
 
 The changes specified herein have been applied in both (1) the link:++https://github.com/ESPD/ESPD-EDM++[ESPD-EDM specification], version 2.1.1 published in this Github repository; and (2) the link:++http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.1++[ESPDInt BIS document].
 
-See also details in: link:++{url-blob}dist/rn/Release Notes-2.1.1.ods++[Release Notes Details] and in this Github "Issues" section.
+See also details in: link:{url-blob}dist/rn/Release%20Notes-2.1.1.ods[Release Notes Details] and in this Github "Issues" section.
 
 * *Code Lists*:
 

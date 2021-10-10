@@ -2,7 +2,7 @@
 
 ==== Related information requirements
 
-See formal requirements related to selection criteria in the link:http://wiki.ds.unipi.gr/pages/viewpage.action?pageId=44367916[BIS 41 - European Single Procurement Document (Version 2.0.0)].
+See formal requirements related to selection criteria in the link:http://wiki.ds.unipi.gr/pages/viewpage.action?pageId=44367916[BIS 41 - European Single Procurement Document (Version 2.0.0)].
 
 There is only one criterion with a simple data structure, classified as:
 
@@ -46,7 +46,7 @@ _'Subcontracting proportion' criterion_
                 <cbc:ID schemeID="criterion" schemeAgencyID="EU-COM-GROW" schemeVersionID="3.0.0">612a1625-118d-4ea4-a6db-413184e7c0a8</cbc:ID>
                 <cbc:CriterionTypeCode listID="criterion" listAgencyID="EU-COM-GROW" listVersionID="3.0.0">suncont-port</cbc:CriterionTypeCode>
                 <cbc:Name>Subcontracting proportion</cbc:Name>
-                <cbc:Description>The economic operator intends possibly to subcontract the following proportion (i.e. percentage) of the contract. Please note that if the economic operator has decided to subcontract a part of the contract and relies on the subcontractor’s capacities to perform that part, then please fill in a separate ESPD for such subcontractors, see Part II, Section C above.</cbc:Description>
+                <cbc:Description>The economic operator intends possibly to subcontract the following proportion (i.e. percentage) of the contract. Please note that if the economic operator has decided to subcontract a part of the contract and relies on the subcontractor's capacities to perform that part, then please fill in a separate ESPD for such subcontractors, see Part II, Section C above.</cbc:Description>
                 <cac:ProcurementProjectLotReference>
                         <cbc:ID schemeID="Criterion" schemeAgencyID="EU-COM-GROW" schemeVersionID="3.0.0">LOT-00000</cbc:ID>
                 </cac:ProcurementProjectLotReference>
@@ -99,7 +99,7 @@ _'Subcontracting proportion' criterion_
                                 <cbc:PropertyGroupTypeCode listID="PropertyGroupType" listAgencyID="EU-COM-GROW" listVersionID="3.0.0">ONFALSE</cbc:PropertyGroupTypeCode>
                                 <cac:TenderingCriterionProperty>
                                         <cbc:ID schemeID="criterion" schemeAgencyID="EU-COM-GROW" schemeVersionID="3.0.0">fff67658-7990-4173-a28a-9b51c3bb2cc2</cbc:ID>
-                                        <cbc:Description>In the case of no – Relied upon or not</cbc:Description>
+                                        <cbc:Description>In the case of no - Relied upon or not</cbc:Description>
                                         <cbc:TypeCode listID="CriterionElementType" listAgencyID="EU-COM-GROW" listVersionID="3.0.0">QUESTION</cbc:TypeCode>
                                         <cbc:ValueDataTypeCode listID="ResponseDataType" listAgencyID="EU-COM-GROW" listVersionID="3.0.0">INDICATOR</cbc:ValueDataTypeCode>
                                 </cac:TenderingCriterionProperty>

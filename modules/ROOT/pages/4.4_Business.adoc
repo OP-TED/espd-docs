@@ -14,7 +14,7 @@ _Figure 65. 'Bankruptcy' criterion mock-up - buyer perspective_
 
 
 [IMPORTANT]
-Beware that this mock-up is not showing the national criteria. For this mock-up it is presumed that *by answering 'Yes' to the general EU criterion all the national criteria QUESTION 'Your answer' will be also set to 'Yes'*.
+Beware that this mock-up is not showing the national criteria. For this mock-up it is presumed that *by answering 'Yes' to the general EU criterion all the national criteria QUESTION 'Your answer' will be also set to 'Yes'*.
 
 
 image:Bankruptcy_criterion_mockup_EO_perspective.jpg['Bankruptcy' criterion mock-up - economic operator perspective,width=554,height=312]
