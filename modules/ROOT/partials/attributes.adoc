@@ -1,4 +1,4 @@
-:this-version: 1.0.1
+:this-version: 1.0.2
 :this-version-tag: v{this-version}
 :git-repo-url: https://github.com/OP-TED/ESPD-EDM
 :path-to-dist: /docs/src/main/asciidoc/modules/ROOT
