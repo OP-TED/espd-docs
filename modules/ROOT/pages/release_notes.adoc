@@ -196,9 +196,9 @@ instances at testing and integration time.
 
 * Other new resources:
 
-** link:{url-tree}/dist/doc/evolution/Annotations_Proposal[Examples]
+** link:{url-tree-211}/dist/doc/evolution/Annotations_Proposal[Examples]
 related to the proposal on _how to decouple the GUI from the data structures_ in future versions of the ESPD-EDM;
-** link:{url-tree}/dist/doc/evolution/StaticPropertyUUIDGeneration_Proposal[Examples]
+** link:{url-tree-211}/dist/doc/evolution/StaticPropertyUUIDGeneration_Proposal[Examples]
 on how to assign _constant_ UUIDs to the Properties of a Criterion, instead of using dynamically generated UUIDs (a method that
 is currently under discussion: see the link:https://github.com/ESPD/ESPD-EDM/issues/226[Issue #226]);
 ** link:{url-tree}/dist/xml[Examples]
@@ -437,7 +437,6 @@ This has been corrected and now all criteria have one block "Is this information
 
 The changes specified herein have been applied in both (1) the link:++https://github.com/ESPD/ESPD-EDM++[ESPD-EDM specification], version 2.1.1 published in this Github repository; and (2) the link:++http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0++[ESPDInt BIS document].
 
-See also details in: link:{url-blob}dist/rn/Release%20Notes-2.1.1.ods[Release Notes Details] and in this Github "Issues" section.
 
 * *Code Lists*:
 

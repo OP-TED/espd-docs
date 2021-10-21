@@ -153,7 +153,7 @@ In the ESPD Response it is also compulsory to make reference to the ESPD Request
 
 ==== XML example
 
-The XML snippet below shows how the beginning of an ESPD Response XML instance looks like. For a complete instance of an ESPD Response XML document see the the example files in the dist/xml folder: or link:{url-blob}/dist/xml/ESPDResponse-v3.0.0.xml[ESPDResponse-v.3.0.0.xml].
+The XML snippet below shows how the beginning of an ESPD Response XML instance looks like. For a complete instance of an ESPD Response XML document see the the example files in the dist/xml folder: or link:{url-blob}/dist/xml/ESPD-Response-v3.0.0.xml[ESPDResponse-v.3.0.0.xml].
 
 [source,xml]
 ---- 
