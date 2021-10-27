@@ -5,7 +5,7 @@ include::partial$attributes.adoc[]
 
 [cols=",",]
 |===
-|*REQUIREMENT* |*The economic operator must include int its ESPD Response document the information from the ESPD Request about the official journals or gazettes where the procurement procedure is announced. For procurement projects above the threshold it is compulsory to refer to the Contract Notice published in link:http://ted.europa.eu/TED/[TED] by the buyer.*
+|*REQUIREMENT* |*The economic operator must include int its ESPD Response document the information from the ESPD Request about the official journals or gazettes where the procurement procedure is announced. For procurement projects above the threshold it is compulsory to refer to the Contract Notice published in link:https://ted.europa.eu/TED/[TED] by the buyer.*
 |===
 
 For EU and national publications that need to be included in the ESPD Response. See the section "2.6 EU and national publications" where this information is presented in detail and illustrated with examples.

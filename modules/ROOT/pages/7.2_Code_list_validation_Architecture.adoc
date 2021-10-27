@@ -40,7 +40,7 @@ image:CVA_example.jpg[CVA example,width=600,height=258]
 As a basis of the implementation, it has been taken into account:
 
 [arabic]
-. Schematron implementation of CVA files for validation from link:https://www.cranesoftwrights.com/resources/ubl/[CRANE SOFTWRIGHTS LTD]
+. Schematron implementation of CVA files for validation from link:https://cranesoftwrights.github.io/resources/ubl/index.htm#cva2sch[CRANE SOFTWRIGHTS LTD]
 
 image:CodeList_Validation_Execution_files.jpg[Code List Validation Execution files,width=600,height=210]
 
