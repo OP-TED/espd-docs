@@ -55,7 +55,7 @@ Document provided by a buyer defining the exclusion and selection criteria for a
 
 *Rule scope*: Common (BR-OTH-07, BR-OTH-02)
 
-|*cbc:ProfileExecutionID* |Identifier |1 |The identification and version of the ESPD Exchange Data Model used to create the to XML instance. The identification may include the exact version of the specification. a|
+|*cbc:ProfileExecutionID* |Identifier |1 |The identification and version of the ESPD Exchange Data Model used to create the XML instance. The identification may include the exact version of the specification. a|
 *Information Requirement*: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1.0-tbr070-002[_tbr070-002_].
 
 *Rule*: Compulsory use of the CodeList ProfileExecutionID. Use the value "EU-COM-GROW" for th SchemeAgencyID attribute.
@@ -110,7 +110,7 @@ This number in combination with a registered buyer ID (e.g. the VAT number) resu
 
 *Rule*: None
 
-|*cbc:ProcedureCode* |Code |0..1 |The type of the procurement administrative procedure according to the EU Directives. a|
+|*cbc:ProcedureCode* |Code |1 |The type of the procurement administrative procedure according to the EU Directives. a|
 *Information Requirement*: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1.0-tbr070-007[_tbr070-007_].
 
 *Rule*: For the ESPD V3.0.0, this information will be linked to eForms. And ESPD should include the same procedure code as the one stated in eForms notices.
@@ -122,7 +122,7 @@ This number in combination with a registered buyer ID (e.g. the VAT number) resu
 
 In ESPD v3.0.0 the contracting party information will come from eForms. Which also uses cac:ContractingParty to specify the information about buyer.
 
-|*cac:ProcurementProject* |Associated class |0..1 |An overall definition of the procurement procedure. |This information is not required for the ESPD 3.0.0 since the information related to the procedure will come from eForms.
+|*cac:ProcurementProject* |Associated class |1 |An overall definition of the procurement procedure. |This information is not required to be provided from the ESPD 3.0.0 since the information related to the procedure can be provided by eForms.
 |*cac:ProcurementProjectLot* |Associated class |0..1 |One of the procurement project lots into which this contract can be divided. a|
 *Information Requirement*: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1.0-tbr070-008[_tbr70-008_].
 
