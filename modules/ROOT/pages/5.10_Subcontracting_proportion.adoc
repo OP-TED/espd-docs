@@ -1,6 +1,7 @@
-=== 5.10 Subcontracting proportion
+= Subcontracting proportion
+include::partial$attributes.adoc[]
 
-==== Related information requirements
+== Related information requirements
 
 See formal requirements related to selection criteria in the link:http://wiki.ds.unipi.gr/pages/viewpage.action?pageId=44367916[BIS 41 - European Single Procurement Document (Version 2.0.0)].
 
@@ -8,7 +9,7 @@ There is only one criterion with a simple data structure, classified as:
 
 * suncont-port
 
-==== Mock-ups - buyer perspective
+== Mock-ups - buyer perspective
 
 The buyer selects the criterion to be included in the ESPD Request:
 
@@ -16,7 +17,7 @@ image:Subcontracting proportion_CA_mock-up.jpg['Subcontracting proportion' buyer
 
 _Figure 176. 'Subcontracting proportion' buyer mock-up_
 
-==== Mock-ups - economic operator perspective
+== Mock-ups - economic operator perspective
 
 The economic operator has to provide a descriptive response in a free-text field:
 
@@ -24,7 +25,7 @@ image:Subcontracting proportion_EO_mock-up.jpg['Subcontracting proportion' EO mo
 
 _Figure 177. 'Subcontracting proportion' EO mock-up_
 
-==== Data Structure
+== Data Structure
 
 (Some columns have been hidden to enhance the readability of the image).
 
@@ -32,7 +33,7 @@ image:Subcontracting proportion_criterion_data_structure.jpg[Subcontracting prop
 
 _Figure 179. 'Subcontracting proportion' criterion data structure_
 
-==== XML Example
+== XML Example
 
 _'Subcontracting proportion' criterion_
 

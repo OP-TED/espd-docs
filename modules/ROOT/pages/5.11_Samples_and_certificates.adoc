@@ -1,6 +1,7 @@
-=== 5.11 Samples and certificates
+= Samples and certificates
+include::partial$attributes.adoc[]
 
-==== Related information requirements
+== Related information requirements
 
 See formal requirements related to selection criteria in the link:http://wiki.ds.unipi.gr/pages/viewpage.action?pageId=44367916[BIS 41 - European Single Procurement Document (Version 2.0.0)].
 
@@ -9,7 +10,7 @@ There are two criteria that share the same data structure, classified as:
 * wo-autent
 * w-autent
 
-==== Mock-ups - buyer perspective
+== Mock-ups - buyer perspective
 
 The buyer selects the criteria that have to be included in the ESPD Request, e.g.:
 
@@ -17,7 +18,7 @@ image:Samples_certificates_CA mock-up.jpg['Samples and certificates' buyer mock-
 
 _Figure 180. 'Samples and certificates' buyer mock-up_
 
-==== Mock-ups - economic operator perspective
+== Mock-ups - economic operator perspective
 
 The economic operator only has to answer *Yes* or *No*. The GUI does not react in any way either the EO clicks one or the other (which is not the case for other criteria, see for example the behaviour of the criteria about 'quality assurance' below in further sections).
 
@@ -25,7 +26,7 @@ image:Samples_certificates_EO_mock-up.jpg['Samples and certificates' EO mock-up,
 
 _Figure 181. 'Samples and certificates' EO mock-up_
 
-==== Data Structure
+== Data Structure
 
 (Some columns have been hidden to enhance the readability of the image).
 
@@ -33,7 +34,7 @@ image:Samples_certificates_criteria_data_structure.jpg[Samples and certificates 
 
 _Figure 183. 'Samples and certificates' criteria data structure_
 
-==== XML Example
+== XML Example
 
 _'Samples and certificates' criterion_
 [source,xml]

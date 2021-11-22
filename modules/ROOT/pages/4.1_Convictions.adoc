@@ -1,7 +1,5 @@
-
+= Convictions
 include::partial$attributes.adoc[]
-
-=== 4.1 Convictions
 
 *Information requirement*
 
@@ -20,13 +18,13 @@ In an initial phase, the European Commission provided an ESPD service to support
 
 
 
-==== Data structure
+== Data structure
 
 image:Convictions_data_structure.jpg[Convictions data structure,width=576,height=235]
 
 _Figure 52. Data Structure for all 'Conviction' exclusion grounds criteria_
 
-==== XML Example
+== XML Example
 
 The fragment of XML code below illustrates how a 'Convictions' criterion looks like in *ESPD Request*. See comments beneath the example.
 

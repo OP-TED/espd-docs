@@ -1,4 +1,11 @@
 name: ESPD-EDM
 title: ESPD EDM
-version: 3.0.0
+version: &ver '3.0.0' # don't remove the &ver anchor
 start_page: ROOT:index.adoc
+nav:
+- modules/ROOT/nav.adoc
+asciidoc:
+  attributes:
+    this-version: *ver # used in modules/ROOT/partials/attributes.adoc
+    git-repo-url: https://github.com/OP-TED/ESPD-EDM
+    path-to-dist: /docs/src/main/asciidoc/modules/ROOT

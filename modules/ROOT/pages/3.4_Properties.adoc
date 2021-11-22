@@ -1,7 +1,5 @@
-
+= Properties
 include::partial$attributes.adoc[]
-
-=== 3.4 Properties
 
 [cols=",",]
 |===
@@ -20,7 +18,7 @@ image:cacSubTenderingCriterion_XSD_Schema.jpg[cac:SubTenderingCriterion- XSD Sch
 
 _Figure 39. cac:SubTenderingCriterion- XSD Schema_
 
-==== Expected elements
+== Expected elements
 
 The following table lists the elements of a criterion property. Beware that the majority of the elements are the possible types of responses that the buyer can specify. The economic operator, in the ESPDResponse, must provide values that are consistent with the type specified by the buyer.
 
@@ -129,7 +127,7 @@ Caption (i.e. a 'label'), specific MS or buyer requirement (e.g. 'Number of refe
 
 |===
 
-==== XML Examples
+== XML Examples
 
 [arabic]
 . See examples in sections about exclusion and selection criteria.

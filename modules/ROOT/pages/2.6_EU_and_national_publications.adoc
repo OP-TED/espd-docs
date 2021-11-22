@@ -1,4 +1,5 @@
-=== 2.6 EU and national publications
+= EU and national publications
+include::partial$attributes.adoc[]
 
 [cols=",",]
 |===
@@ -7,7 +8,7 @@
 
 ESPD conformant software applications will have to provide the means for the user to supply references to EU and national publications about the procurement procedure, and notably about the Notices to which the ESPD is related.
 
-==== Mock-up
+== Mock-up
 
 The Figure below is a mock-up representation of how to collect the data expected to reference publications on official gazettes or journals. This mechanism can also be used for contracts below the threshold, obviously.
 
@@ -15,7 +16,7 @@ image:Publications_mock-up.jpg[Publications mock-up,width=500,height=459]
 
 _Figure 14. Publications, mock-up_
 
-==== XSD Schema
+== XSD Schema
 
 The ESPD EDM uses the UBL component cac:AdditionalReferenceDocument to allow the inclusion of references to documents that they might consider relevant, and amongst them the reference to the Contract Notice on the TED (for above-the-threshold contracts) and to possible Notices on national journals and boards.
 
@@ -31,7 +32,7 @@ image:Associated_class cacExternalReference_XSD diagram.jpg[Associated class cac
 
 _Figure 16. Associated class cac:ExternalReference, XSD diagram_
 
-==== Expected elements
+== Expected elements
 
 As you can see from the XSD Schema the cac:DocumentReference class has a rich data structure. However, to refer to publications such as the TED and national publications, the ESPD most expects at most the following data:
 
@@ -122,7 +123,7 @@ _Table 7. External Reference_
 
 |===
 
-==== XML Example
+== XML Example
 
 The XML snippet below illustrates how to use the cac:AdditionalDocumentReference in the ESPDRequest XML document to refer to a Contract Notice published in TED and on a national procurement board:
 

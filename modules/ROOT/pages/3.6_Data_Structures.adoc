@@ -1,7 +1,5 @@
-
+= Data Structures
 include::partial$attributes.adoc[]
-
-=== 3.6 Data Structures
 
 The ESPD-EDM 'criterion' entity is a very flexible and business-agnostic structure. This flexibility provides a convenient way to represent any type of criteria. The counterpart is that the semantics of the criteria needs to be delimited based on codes, identifiers and design rules.
 

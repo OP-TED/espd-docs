@@ -1,7 +1,6 @@
-
+= ESPD Distribution package
 include::partial$attributes.adoc[]
 
-=== 1.1 ESPD Distribution package
 
 All the semantic assets needed to implement ESPD electronic documents are organised in a link:{url-tree}/dist[distribution package]. The content of this folder is organised as follows:
 

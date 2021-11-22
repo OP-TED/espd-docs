@@ -1,4 +1,5 @@
-=== 5.1 Lot Management approach for Selection Criteria
+= Lot Management approach for Selection Criteria
+include::partial$attributes.adoc[]
 
 As already explained in previous sections (see ESPD Request chapter) the Lot Management logic has been adapted to be ensure the alignment with eForms.
 

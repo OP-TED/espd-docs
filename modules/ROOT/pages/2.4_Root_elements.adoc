@@ -1,7 +1,5 @@
-
+= Root elements
 include::partial$attributes.adoc[]
-
-=== 2.4 Root elements
 
 The table below lists the elements that are expected in the ESPD Request V3.0.0 and provides details on the cardinalities and usage of those elements.
 

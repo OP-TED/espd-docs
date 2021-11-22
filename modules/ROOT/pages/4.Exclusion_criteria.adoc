@@ -1,4 +1,5 @@
-==  4. Exclusion criteria
+= Exclusion criteria
+include::partial$attributes.adoc[]
 
 [cols=",",]
 |===
@@ -18,3 +19,12 @@ image:Exclusion_criteria_clasification.jpg[Exclusion criteria clasification,widt
 
 _Figure 49. Exclusion criteria clasification_
 
+include::4.1_Convictions.adoc[leveloffset=+1]
+include::4.2_Contributions.adoc[leveloffset=+1]
+include::4.3_Environment_Social_Labour_Law.adoc[leveloffset=+1]
+include::4.4_Business.adoc[leveloffset=+1]
+include::4.5_Misconduct.adoc[leveloffset=+1]
+include::4.6_Conflict_of_interest.adoc[leveloffset=+1]
+include::4.7_Early_termination.adoc[leveloffset=+1]
+include::4.8_Misinterpretation.adoc[leveloffset=+1]
+include::4.9_Purely_national_criteria.adoc[leveloffset=+1]

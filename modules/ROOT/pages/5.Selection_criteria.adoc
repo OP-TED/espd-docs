@@ -1,7 +1,5 @@
-
+= Selection criteria
 include::partial$attributes.adoc[]
-
-== 5. Selection criteria
 
 '_The contracting body shall provide the exclusion grounds and selection criteria for its tendering process as structured information - via ESPD template or structured list of criteria set out in a call for tender._"
 
@@ -15,3 +13,16 @@ image:Selection_criteria_classification.jpg[Selection criteria classification,wi
 
 _Figure 90. Selection criteria classification_
 
+include::5.1_Lot_Management_approach_for_SelectionCriteria.adoc[leveloffset=+1]
+include::5.2_Initial_question_for_the_EO_to_fulfill_or_not_the_criteria.adoc[leveloffset=+1]
+include::5.3_Suitability.adoc[leveloffset=+1]
+include::5.4_Turnovers.adoc[leveloffset=+1]
+include::5.5_Financial_ratios.adoc[leveloffset=+1]
+include::5.6_Risk_indemnity_insurance.adoc[leveloffset=+1]
+include::5.7_Other_economic_or_financial_requirements.adoc[leveloffset=+1]
+include::5.8_References_on_similar_works_deliveries_or_services.adoc[leveloffset=+1]
+include::5.9_Abilities.adoc[leveloffset=+1]
+include::5.10_Subcontracting_proportion.adoc[leveloffset=+1]
+include::5.11_Samples_and_certificates.adoc[leveloffset=+1]
+include::5.12_Quality_assurance.adoc[leveloffset=+1]
+include::5.13_Other_aspects_of_participation_and_selection.adoc[leveloffset=+1]

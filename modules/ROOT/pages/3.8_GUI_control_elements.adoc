@@ -1,7 +1,5 @@
-
+= GUI control elements
 include::partial$attributes.adoc[]
-
-=== 3.8 GUI control elements
 
 The ESPD-EDM specification includes two sets of data elements (codes) that help software applications control how to show the Graphic User Interfaces (GUI) dealing with ESPD Documents. These elements can be seen as ''processing instructions''.
 
@@ -40,7 +38,7 @@ image:Case4_GUI_Control.jpg[Case 4: When all the QUESTION(s) that are INDICATORS
 
 _Figure 46. Case 4: When all the QUESTION(s) that are INDICATORS are set to true_
 
-==== Radio-Button and Check-box controls
+== Radio-Button and Check-box controls
 
 In version 2.1.0 a new code list named link:{url-blob}/dist/cl/xlsx/ESPD-CodeLists-V3.0.0.xlsx[BooleanGUIControlType] was added to help software application process REQUIREMENT(s) issued by the buyer when drafting ESPD documents. For the time being this need is only present in one Criterion of ESPD: 'Other economic or financial requirements' (finan-requ). The figure below shows the data structure for that Criterion:
 
@@ -288,7 +286,7 @@ _<!-- ... -->_
 . Beware that, contrary to other numeric types of data, AMOUNT is not semantised and mapped to cbc:ResponseMinimumAmount nor cbc:ResponseMaximumAmount`, as in the current ESPD-EDM specification all monetary thresholds are always "minimum" (and similarly for QUANTITY or QUANTITY_INTEGER, e.g. see the REQUIREMENT ''Minimum number of years'' in criterion #49 (tab _SC-Abilities_5 (Staff)_ in the link:{url-blob}/dist/cl/ods/[ESPD-criteion-V3.0.0] spread-sheet).
 
 
-==== Use of CAPTION
+== Use of CAPTION
 
 As explained in section *3.6 Data Structures* (see from ''Table 25. Mapping between the ESPD-EDM criterion data structure spread-sheets and the UBL-2.3 vocabulary ESDP-EDM Spread-sheet vocabulary'' on, the term CAPTION is used in the Criteria data structures to inform software applications about the presence of a text label. Applications could use it to label boxes containing groups of REQUIREMENT(s) or of QUESTION(s). But in general software applications should know how to present the contents of the XML instances without having to recur to such resources (see the ''Note for the future: eBusiness Documents should not convey Process Instructions'' just below).
 
@@ -296,7 +294,7 @@ A CAPTION is mapped to the UBL element cbc:TenderingCriterionProperty. This is t
 
 For software applications, the implication can be reduced to a very simple rule: **when encountering a **cac:TenderingCriterionProperty** which **cbc:TypeCode* value equals CAPTION just skip it!*
 
-==== Business data and GUI decoupling
+== Business data and GUI decoupling
 
 The business domain semantics should be decoupled from its management processes. Thus eBusiness Documents should not contain processing instructions but just data about the business domain. One counter-example for this statement are those cases when the XML instances contain processing instructions for a software GUI solution to manage how the layout must behave or how the data must be presented.
 
