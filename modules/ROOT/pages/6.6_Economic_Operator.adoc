@@ -1,9 +1,7 @@
-
+= Economic Operator
 include::partial$attributes.adoc[]
 
-=== 6.6 Economic Operator
-
-==== Related information requirements
+== Related information requirements
 
 See formal requirements related to the economic operators in the e-Sens site: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1-tbr092-001[(_tbr092-001, _tbr092-008_)].
 
@@ -64,7 +62,7 @@ Therefore in the ESPD-EDM-3.0.0, the information about the economic operator is 
 . The UBL-2.3 *cac:EconomicOperatorParty* component; and
 . In *criteria data structures*: following the solution adopted for Version ESPD-EDM V3.0.0, the ESPD-EDM V3.0.0 defines several criteria classified as CRITERION.OTHER.EO_DATA.* (where the * refers to different branches and leaves of a different structures about the economic operator (e.g. SHELTERED_WORKSHOP, TOGETHER_WITH_OTHERS, etc.). The XML instances use criteria components (UBL-2.3 cac:TenderingCriterion) to structure these data. The sub-sections below cover both.
 
-==== XSD Schemas
+== XSD Schemas
 
 cac:EconomicOperatorParty
 
@@ -79,7 +77,7 @@ _Figure 197. cac:EconomicOperatorParty XSD, global view_
 . *cac:EconomicOperatorRole*: use to place the role of the economic operator;
 . *cac:Party*: used to place the data to identify the EO and its contact.
 
-===== cac:QualifyingParty
+=== cac:QualifyingParty
 
 The diagram below shows the XSD element that will hold the data required by the ESPD (see mock-up 1/7, too). Beware that:
 
@@ -99,7 +97,7 @@ image:Qualifying_Party.jpg[Qualifying Party,width=404,height=337]
 
 _Figure 198. cac:QualifyingParty element, XSD_
 
-===== cac:EconomicOperatorRole
+=== cac:EconomicOperatorRole
 
 The UBL-2.3 element for the role of the economic operator is quite straightforward and typical in UBL: it provides a pair *code + description* (see Code List link:{url-tree}/dist/cl/ods/[eo-role-type] for the codes and descriptions; see also the XML example below).
 
@@ -107,7 +105,7 @@ image:eo-role-type.jpg[Role of the economic operator,width=403,height=126]
 
 _Figure 199. Role of the economic operator_
 
-===== cac:Party
+=== cac:Party
 
 The XSD diagram below shows (in blue) the elements for which data are expected in the ESPD Response for the cac:Party element of the economic operator.
 
@@ -679,7 +677,7 @@ _Economic operator data - XML example_
 . Indicative turnover of the EO's company (for statistical purposes).
 ====
 
-==== 6.6.1 Economic operator representatives
+==== Economic operator representatives
 
 ==== Related information requirements
 

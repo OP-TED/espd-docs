@@ -1,13 +1,13 @@
+= Evidences
 
 include::partial$attributes.adoc[]
 
-=== 6.8 Evidences
 
-==== Related information requirements
+== Related information requirements
 
 See formal requirements related to evidences in the e-Sens site: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1-tbr092-017[(_tbr092-017_)].
 
-==== XSD Schema
+== XSD Schema
 
 Remember that evidences are indirectly linked to responses based on the identifier of the evidence: in the response, the element cac:EvidenceSupplied/cbc:ID contains the identifier set in /QualificationApplicationResponse/cac:Evidence/cbc:ID. See XML example below; see also the example XML file "link:{url-blob}/dist/xml/[ESPD-Response-v3.0.0.xml]" for an example.
 
@@ -23,7 +23,7 @@ image:cacDocumentReference_inside cacEvidence_XSD_diagram.jpg[cac:DocumentRefere
 
 _Figure 242. cac:DocumentReference inside cac:Evidence XSD diagram_
 
-==== Mock-ups and data structures
+== Mock-ups and data structures
 
 In principle only a few elements are kept in the ESPD Response document about an evidence: its Identifier, a URL from where to access its content, a Reference/Code, a Confidentiality indicator, and the Issuer.
 
@@ -42,7 +42,7 @@ _Duplicity of the Issuer_
 The ESPD-EDM V3.0.0 uses always the one inside the document reference to refer to the issuer of the evidence (and of the document that 'is' the evidence). Thus the element used in the ESPD is cac:Evidence/cac:DocumentReference/cac:IssuerParty.
 ====
 
-==== Expected (and other) Elements
+== Expected (and other) Elements
 
 This list below enumerates the elements of cac:Evidence that could be used in (that make sense for) an ESPD Response. Notice though that the current versions of the ESPD-EDM only use the few elements mentioned above: ID, URL, Reference/Code, Confidentiality level and Issuer.
 
@@ -147,13 +147,13 @@ _Table 45. Elements expected from the 'cac:Evidence/cac:DocumentReference' eleme
 
 |===
 
-==== XML Examples
+== XML Examples
 
 *Example 1: Two different evidences for two criteria*
 
 The following snippet uses the same two criteria shown in the XML example snippet 1.a): hence the values of the cac:ValidatedCriterionPropertyID are 'd8d5478e-cc65-48c9-a189-19bbe87a9bfd' (criterion property 'participation in a criminal organisation') and '7c7fb445-c5f9-4f92-8b58-7f06a541951f' (criterion property 'contributions certificates').
 
-===== XML snippet 2 different evidentiary documents per response
+=== XML snippet 2 different evidentiary documents per response
 
 _XML snippet 1.b) different evidentiary documents per response_
 

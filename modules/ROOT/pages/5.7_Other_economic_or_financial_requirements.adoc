@@ -1,6 +1,7 @@
-=== 5.7 Other economic or financial requirements
+= Other economic or financial requirements
+include::partial$attributes.adoc[]
 
-==== Related information requirements
+== Related information requirements
 
 See formal requirements related to selection criteria in the link:http://wiki.ds.unipi.gr/pages/viewpage.action?pageId=44367916[BIS 41 - European Single Procurement Document (Version 2.0.0)].
 
@@ -8,7 +9,7 @@ The only criterion defined is classified with the code:
 
 * finan-requ
 
-==== Buyer  perspective
+== Buyer perspective
 
 The buyer  has selected the option *other economic or financial requirements* for its inclusion in the ESPD Request.
 
@@ -23,7 +24,7 @@ Thus, for this criterion the buyer  will be able to:
 
 Notice that in the mock-up below the first requirement is about an *economic of financial requirement* whilst the second requirement is about a *rating requirement*. See data structure and XML example for more details on this distiction.
 
-==== Mock-up - economic operator perspective
+== Mock-up - economic operator perspective
 
 The economic operator, in its view, sees all the requirements defined by the buyer  and responds to this requirements with an amount and currency. See XML example below to identify where these data are placed in the XML instance.
 
@@ -33,7 +34,7 @@ _Figure 148. 'Other economic or financial requirements' EO mock-up_
 
 Note that the EO should provide an answer (ESPD Response) for every Lot that tenders. Meaning that if the Selection Criteria applies to different Lots (as can be read in the mockup), the EO should sumbit the data for the number of lots that apply.
 
-==== Data Structure
+== Data Structure
 
 Notice the following aspects from the 'other economic or financial requirements':
 
@@ -50,7 +51,7 @@ image:Other_economic_financial_requirements_criterion_data_structur.jpg['Other e
 
 _Figure 149. 'Other economic or financial requirements' criterion data structure_
 
-==== XML Example
+== XML Example
 
 _'Other economic or financial requirements' criterion_
 

@@ -1,6 +1,7 @@
-=== 5.6 Risk indemnity insurance
+= Risk indemnity insurance
+include::partial$attributes.adoc[]
 
-==== Related information requirements
+== Related information requirements
 
 See formal requirements related to selection criteria in the link:http://wiki.ds.unipi.gr/pages/viewpage.action?pageId=44367916[BIS 41 - European Single Procurement Document (Version 2.0.0)].
 
@@ -8,7 +9,7 @@ The only criterion defined under this data structure is classified with the code
 
 * indem-ins
 
-==== Mock-ups - buyer perspective
+== Mock-ups - buyer perspective
 
 The buyer has selected the option *professional risk indemnity insurance* for its inclusion in the ESPD Request. Additionally the buyer can specify REQUIREMENT(s) specific to the procurement procedure. There are two situations that need to be distinguished here, when the procurement procedure is divided into Lots and when it is not.
 
@@ -24,7 +25,7 @@ image:Risk_indemnity_insurance_CA_requirements_edition_Lots.jpg[Risk indemnity i
 
 _Figure 141. 'Risk indemnity insurance' Buyer REQUIREMENT(s) edition (Procedure with more than one Lot)._
 
-==== Mock-up - economic operator perspective
+== Mock-up - economic operator perspective
 
 The only data the economic operator needs to provide is the amount covered by the insurance and the currency for that amount:
 
@@ -34,7 +35,7 @@ _Figure 142. 'Economic operator indemnity insurance' EO mock-up_
 
 Note that the EO should provide an answer (ESPD Response) for every Lot that tenders. Meaning that if the Selection Criteria applies to different Lots (as can be read in the mockup), the EO should sumbit the data for the number of lots that apply.
 
-==== Data Structure
+== Data Structure
 
 This structure is quite particular. Notice that:
 
@@ -51,7 +52,7 @@ image:risk_indemnity_insurance_criterion_data_structure.jpg[risk indemnity insur
 
 _Figure 143. 'risk indemnity insurance' criterion data structure_
 
-==== XML Example
+== XML Example
 
 _'Risk indemnity insurance' criterion (*Procedure with Lots*)_
 

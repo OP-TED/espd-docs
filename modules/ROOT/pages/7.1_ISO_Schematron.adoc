@@ -1,8 +1,9 @@
-=== 7.1 ISO Schematron
+= ISO Schematron
+include::partial$attributes.adoc[]
 
 Schematron is a rule-based validation language to specify validation processes against XML documents. ISO Schematron is an ISO (ISO/IEC 19757-3:2006) and open standard. Please visit the link:http://www.schematron.com/[ISO Schematron] web-site for the technical specification and details.
 
-==== ESPD Business Rules
+== ESPD Business Rules
 
 The ESPD-EDM uses Schematron to validate business rules, the business requirements taken as input for these rules are specified in the link:http://wiki.ds.unipi.gr/display/ESPDInt[ESPDint Business Document].
 
@@ -20,7 +21,7 @@ image:Non-codelist_business_rules.jpg[Non-code list business rules,width=591,hei
 
 The validation of code lists is explained in sections below.
 
-==== Schematron Architecture
+== Schematron Architecture
 
 ISO Schematron executes the validations in two stages:
 
@@ -33,7 +34,7 @@ ISO Schematron executes the validations in two stages:
 
 image:Architecture_non-codelist_validation.jpg[Architecture for non-code list validation,width=567,height=284]
 
-==== What does the SCH file contain?
+== What does the SCH file contain?
 
 [arabic]
 . *Set of rules* specifying the context (the element(s) and/or attribute(s) which the assertions affect);
@@ -41,7 +42,7 @@ image:Architecture_non-codelist_validation.jpg[Architecture for non-code list va
 
 image:SCH_file_example.jpg[SCH file example,width=617,height=194]
 
-==== Execution
+== Execution
 
 As a basis of the implementation, it has been taken into account:
 

@@ -1,6 +1,7 @@
-=== 5.8 References on similar works, deliveries or services
+= References on similar works, deliveries or services
+include::partial$attributes.adoc[]
 
-==== Related information requirements
+== Related information requirements
 
 See formal requirements related to selection criteria in the link:http://wiki.ds.unipi.gr/pages/viewpage.action?pageId=44367916[BIS 41 - European Single Procurement Document (Version 2.0.0)].
 
@@ -24,7 +25,7 @@ The total amount refers to the amount of the contract, the specific refers to th
 ====
 
 
-==== Mock-ups - buyer perspective
+== Mock-ups - buyer perspective
 
 As in the previous example, in this example about the references the buyer requires references for the contract, the nature of which is also about *works*.
 
@@ -38,7 +39,7 @@ image:References_CA_REQUIREMENT-edition mock-up.jpg[References' buyer REQUIREMEN
 
 _Figure 153. 'References' buyer REQUIREMENT(s) edition mock-up_
 
-==== Mock-ups - economic operator perspective
+== Mock-ups - economic operator perspective
 
 [arabic]
 . In this view for the economic operator (EO) can see the lots and requirements specified by the buyer (CA), lower left side of the mock-up.
@@ -60,7 +61,7 @@ _Non-validation of text content_
 *_For details on the Schematron-based validation solution see section 7. Validation._*
 ====
 
-==== Data Structure
+== Data Structure
 
 The data structure for references caters for:
 
@@ -74,7 +75,7 @@ image:References_criterion_data_structure.jpg['References' criterion data struct
 
 _Figure 155.'References' criterion data structure_
 
-==== XML Example
+== XML Example
 
 _'References for a works contract' criterion_
 [source,xml]

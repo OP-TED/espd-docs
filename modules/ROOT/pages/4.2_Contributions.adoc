@@ -1,7 +1,5 @@
-
+= Contributions
 include::partial$attributes.adoc[]
-
-=== 4.2 Contributions
 
 Related information requirements
 
@@ -14,7 +12,7 @@ See formal requirements related to exclusion grounds criteria in the link:http:/
 
 See also the REQUIREMENT link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#tbr070-015[_tbr070-015_] about economic thresholds regarding unpaid taxes or social security obligations.
 
-==== Mock-ups - buyer perspective
+== Mock-ups - buyer perspective
 
 This other screen-capture below represents a possible mock-up, from the buyer perspective, for the edition of requirements in 'Contributions' criterion (Payment of Taxes).
 
@@ -22,7 +20,7 @@ image:Payment_Taxes_REQUIREMENT_edition_CA.jpg['Payment of Taxes', REQUIREMENT e
 
 _Figure 58. 'Payment of Taxes', REQUIREMENT edition (Buyer Perspective)_
 
-==== Mock-ups - economic operator perspective
+== Mock-ups - economic operator perspective
 
 This other mock-up illustrates what the economic operator sees.
 
@@ -35,13 +33,13 @@ image:Payment_Taxes_EO_perspective.jpg['Payment of Taxes', EO perspective,width=
 
 _Figure 59. 'Payment of Taxes', (EO perspective)_
 
-==== Data structure
+== Data structure
 
 image:Contributions_criterion_data_structure.jpg['Contributions' criterion data structure,width=656,height=357]
 
 _Figure 60. 'Contributions' criterion data structure_
 
-==== XML Example
+== XML Example
 _Payment of Taxes (PoT)_
 
 [source,xml]

@@ -1,17 +1,15 @@
-
+= Suitability
 include::partial$attributes.adoc[]
 
-=== 5.3 Suitability
-
-==== Related information requirements
+== Related information requirements
 
 See formal requirements related to 'Suitability' criteria in the link:http://wiki.ds.unipi.gr/pages/viewpage.action?pageId=44367916[BIS 41 - European Single Procurement Document (Version 2.0.0)], and more specifically the requirement link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#tbr070-003[_tbr070-003_]
 
-==== 5.3.1 Suitability (enrolments)
+== Suitability (enrolments)
 
 For each criteria regarding suitability, the buyer should be able to provide: the register type (Occupations code list, see ESPD-CodeLists.xlsx) in case of criterion "Enrolement in a relevant professional register", and the name and its URL and for other criteria related to registries.
 
-==== Data Structure
+== Data Structure
 
 Few details regarding data structure for Suitability selection criteria
 
@@ -26,7 +24,7 @@ image:SC_Suitability_enrolement.jpg[SC Suitability enrolement,width=506,height=3
 
 _Figure 100. 'Suitability' criterion data structure (enrolments)_
 
-==== XML Example
+== XML Example
 
 The following XML example illustrates how the ESPD would look like when the Lots are specified.
 
@@ -197,9 +195,9 @@ The code list 'occupation' is used to determine the area to which the EO should 
 ====
 
 
-==== 5.3.2 Suitability (service contracts)
+== Suitability (service contracts)
 
-==== Data Structure (service contracts)
+== Data Structure (service contracts)
 
 (The figure below is defined in the the tab "Suitability-II" of the link:{url-blob}/dist/cl/xlsx/[ESPD-criterion-V3.0.0] spread-sheet).
 
@@ -207,7 +205,7 @@ image:Suitability criterion_data structure_service contracts.jpg[Suitability cri
 
 _Figure 102. 'Suitability' criterion data structure (service contracts)_
 
-==== XML Example (service contracts)
+== XML Example (service contracts)
 
 _Example of suitability criterion_
 

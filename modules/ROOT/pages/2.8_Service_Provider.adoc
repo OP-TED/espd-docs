@@ -1,7 +1,5 @@
-
+= Service Provider
 include::partial$attributes.adoc[]
-
-=== 2.8 Service Provider
 
 [cols=",",]
 |===
@@ -14,7 +12,7 @@ The ESPD allows the provision of data about the service provider who produced th
 
 Since the 2.1.1 does not include the cac:ServiceProvider as a 'document root component'. Instead, it uses the UBL-2.3 cac:ContractingParty/cac:Party associated class cac:ServiceProviderParty.
 
-==== XSD Schema
+== XSD Schema
 
 image:cacServiceProvider_XSD_Schema.jpg[cac:ServiceProvider XSD Schema,width=566,height=453]
 
@@ -34,7 +32,7 @@ image:cacService_provider_Party_elements.jpg[service provider's 'Party' elements
 
 _Figure 23. cac:ServiceProvider/cac:Party elements expected for the service provider_
 
-==== Expected elements
+== Expected elements
 
 [cols=",",options="header",]
 
@@ -83,7 +81,7 @@ _Table 12. Service provider, expected elements_
 
 |===
 
-==== XML example
+== XML example
 
 The XML snippet below shows how an example of how to supply the expected data for the service provider.
 

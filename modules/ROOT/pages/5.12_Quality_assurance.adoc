@@ -1,10 +1,11 @@
-=== 5.12 Quality assurance
+= Quality assurance
+include::partial$attributes.adoc[]
 
-==== Related information requirements
+== Related information requirements
 
 See formal requirements related to selection criteria in the link:http://wiki.ds.unipi.gr/pages/viewpage.action?pageId=44367916[BIS 41 - European Single Procurement Document (Version 2.0.0)].
 
-==== Mock-ups - buyer perspective
+== Mock-ups - buyer perspective
 
 In ESPD the buyer can specify a REQUIREMENT. In this example it provides the name of the ISO it expects the economic operator to be conformant to.
 
@@ -12,7 +13,7 @@ image:Quality_Assurance schemes_environmental_management_stand_CA.jpg['Quality A
 
 _Figure 187. 'Quality Assurance schemes and environmental management standards' buyer mock-up_
 
-==== Mock-ups - economic operator perspective
+== Mock-ups - economic operator perspective
 
 Notice that, as for the ESPD the economic operator (EO) has to answer *Yes* or *No*. In the case the EO answers *No* the box with the text "If not, please explain why and specify which other means ..." is shown. This box is not shown for the *Yes* answer. This behaviour can be controlled with the ONFALSE code of the sub-group of QUESTION(s) (see data structure and XML example below, too).
 
@@ -22,7 +23,7 @@ image:Quality_Assurance schemes_environmental_management_stand.jpg[Quality Assur
 
 _Figure 188.'Quality Assurance schemes and environmental management standards' EO mock-up_
 
-==== Data Structure
+== Data Structure
 
 Notice the following:
 
@@ -37,7 +38,7 @@ image:Quality Assurance schemes_environmental_data_struc.jpg['Quality Assurance 
 
 _Figure 189. 'Quality Assurance schemes and environmental management standards' criteria data structure_
 
-==== XML Example
+== XML Example
 
 _'Certificates by quality control institutes' criterion_
 [source,xml]

@@ -1,4 +1,5 @@
-== 3. Common aspects for criteria
+= Common aspects for criteria
+include::partial$attributes.adoc[]
 
 [cols="<1,<4"]
 |===
@@ -13,4 +14,11 @@ image:Criterion_UML_diagram.jpg[Criterion - UML diagram,width=518,height=345]
 
 _Figure 33. Criterion - UML diagram_
 
-
+include::3.1_General_behavior.adoc[leveloffset=+1]
+include::3.2_Legislation.adoc[leveloffset=+1]
+include::3.3_Groups_of_properties.adoc[leveloffset=+1]
+include::3.4_Properties.adoc[leveloffset=+1]
+include::3.5_Mock-ups.adoc[leveloffset=+1]
+include::3.6_Data_Structures.adoc[leveloffset=+1]
+include::3.7_XML_examples_and_tools.adoc[leveloffset=+1]
+include::3.8_GUI_control_elements.adoc[leveloffset=+1]

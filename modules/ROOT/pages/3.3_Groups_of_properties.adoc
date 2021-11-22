@@ -1,7 +1,5 @@
-
+= Groups of properties
 include::partial$attributes.adoc[]
-
-=== 3.3 Groups of properties
 
 This XSD diagram shows the sub-components of a group of criteria:
 
@@ -17,7 +15,7 @@ image:cacSubsidiaryTenderingCriterionGroup_XSD_Schema.jpg[cac:SubsidiaryTenderin
 
 _Figure 37. cac:SubsidiaryTenderingCriterionGroup- XSD Schema_
 
-==== Expected elements
+== Expected elements
 
 [cols=",",options="header",]
 _Table 22. Groups of properties, expected elements_
@@ -65,7 +63,7 @@ See also the spreadsheet link:{url-blob}/dist/cl/xlsx/ESPD-criterion-V3.0.0.xlsx
 
 |===
 
-==== XML Examples
+== XML Examples
 
 [arabic]
 . See examples in sections about exclusion and selection criteria. Study:

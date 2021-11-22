@@ -1,4 +1,5 @@
-=== 7.3 ESPD Validation Architecture
+= ESPD Validation Architecture
+include::partial$attributes.adoc[]
 
 The validation of a ESPD XML has the following life-cycle:
 
@@ -13,7 +14,7 @@ image:ESPD_Schematorn_lyfe-cycle.jpg[ESPD Schematorn lyfe-cycle,width=370,height
 
 image:Validation_Process.jpg[Validation Process,width=600,height=416]
 
-==== ESPD Request
+== ESPD Request
 
 [arabic]
 . *XSD Validation* against QualificationApplicationRequest-2.3.xsd
@@ -33,7 +34,7 @@ image:Validation_Process.jpg[Validation Process,width=600,height=416]
 .. Business rules related to the procurer: 05 ESPD Req Procurer BR.sch
 .. Specific business rules: 05 ESPD Req Specific BR.sch
 
-==== ESPD Response
+== ESPD Response
 
 [arabic]
 . *XSD Validation* against UBL-QualificationApplicationResponse-2.3.xsd

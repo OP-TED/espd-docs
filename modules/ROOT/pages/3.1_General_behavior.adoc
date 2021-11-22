@@ -1,7 +1,5 @@
-
+= General behavior
 include::partial$attributes.adoc[]
-
-=== 3.1 General behavior
 
 *Notice that*:
 
@@ -12,7 +10,7 @@ include::partial$attributes.adoc[]
 . One group of properties *must* always specify at least one 'property';
 . One group of properties *may* contain one or several 'sub-groups' of properties.
 
-==== XSD Schema
+== XSD Schema
 
 This XSD Schema diagram shows a global view of the UBL 2.3 cac:TenderingCriterion component:
 
@@ -20,7 +18,7 @@ image:cacTenderingCriterion_XSD_Schema.jpg[cac:TenderingCriterion - XSD Schema, 
 
 _Figure 34. cac:TenderingCriterion - XSD Schema, global view_
 
-==== Expected elements
+== Expected elements
 
 [cols=",",options="header",]
 
@@ -92,7 +90,7 @@ link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1
 
 |===
 
-==== XML Examples
+== XML Examples
 
 See XML examples in the sections about exclusion and selection criteria.
 

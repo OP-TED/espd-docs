@@ -1,14 +1,12 @@
-
+= Code list validation Architecture
 include::partial$attributes.adoc[]
-
-=== 7.2 Code list validation Architecture
 
 Business rules related to code list validates:
 
 image:Codelist_business_rules.jpg[Code list business rules,width=600,height=325]
 
 
-==== Architecture for Code List validation
+== Architecture for Code List validation
 
 The validation of the code lists needs an extra step on the process before executing the Schematron process. This is because it needs link:https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=codelist[Genericode] (GC) as input files.
 
@@ -25,7 +23,7 @@ The validation of the code lists needs an extra step on the process before execu
 
 image:Architecture_codelist_validation.jpg[Architecture for code list validation,width=750,height=350]
 
-==== What does the SCH file contain?
+== What does the SCH file contain?
 
 [arabic]
 . Association between one or more elements of the XML and one or more code list (specified in the Genericodes).
@@ -35,7 +33,7 @@ The implementation of the CVA file has the following structure:
 
 image:CVA_example.jpg[CVA example,width=600,height=258]
 
-==== Execution
+== Execution
 
 As a basis of the implementation, it has been taken into account:
 

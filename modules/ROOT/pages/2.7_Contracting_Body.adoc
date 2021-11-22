@@ -1,13 +1,11 @@
-
+= Contracting Body
 include::partial$attributes.adoc[]
 
-=== 2.7 Contracting Body
-
-==== Related information requirements
+== Related information requirements
 
 See formal requirements related to the contracting authorities in the e-Sens site: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1.0-tbr070-001[_tbr070-001_]*
 
-==== Mock-up
+== Mock-up
 
 In principle, the ESPD-EDM asks for a few data about the procurer (i.e. the buyer, body or entity). The essential (compulsory) data for the contracting body are namely the one aimed to identify it, i.e. its official name and the country. The figure below represents a possible GUI interface for these two data. However the UBL specification provides many other data elements some of which may be interesting to include in the ESPD, notably data about the means to contact the contracting body (see below the list of elements possible in the ESPD).
 
@@ -17,7 +15,7 @@ image:Procurer_identification_mockup.jpg[Procurer identification,width=600,heigh
 
 _Figure 17. Data about the procurer, mock-up_
 
-==== XSD Schema
+== XSD Schema
 
 The UBL-2.3 model provides a component that fits the purpose of holding data about the procurer: the common aggregate component cac:ContractingParty.
 
@@ -43,7 +41,7 @@ image:cacContact_XSD_Schema.jpg[cac:Contact, XSD Schema,width=407,height=253]
 
 _Figure 21. cac:Contact, XSD Schema_
 
-==== Expected elements
+== Expected elements
 
 [cols=",",options="header",]
 

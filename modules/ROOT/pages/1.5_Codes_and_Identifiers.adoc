@@ -1,7 +1,6 @@
-
+= Codes and Identifiers
 include::partial$attributes.adoc[]
 
-=== 1.5 Codes and Identifiers
 
 A code is a shortened way (a number or a short abbreviated text), leading to the definition of a 'concept'. The code represents the concept and is used by software applications to retrieve the definition of the concept or make automatic decisions.
 
@@ -19,7 +18,7 @@ The essential distinctive features between identifiers and codes are:
 .. business-specific domain (i.e. procurement specific, like codes representing contract types, procurement procedure types, criteria types, etc.); and
 .. business process-specific, i.e. ESPD-specific, such as the data type expected in the response to a criterion, or the type of a criterion property, etc.
 
-==== 1.5.1 Codes and code lists
+== Codes and code lists
 
 The ESPD Exchange Data Model tries to reuse as much as possible the codes that are already used for e-Procurement. In any project, like the ESPD-EDM, there are at least three types (or layers) of codes:
 
@@ -59,7 +58,7 @@ _Figure 6. Elements and metadata of an ESPD code list_
 The *_Annex I_* of this document lists all the code lists used by the ESPD and in which context or element it is used.
 
 
-==== Compulsory attributes
+== Compulsory attributes
 
 [cols=",",options="header",]
 
@@ -128,7 +127,7 @@ _Table 4. UBL attributes for identifiers_
 
 And its corresponding definitions, as provided by OASIS UBL (ISO/IEC 19845):
 
-==== XML Example
+== XML Example
 
 This fragment of XML shows how the compulsory attributes are used for the some of the root elements of an ESPD Request document.
 
@@ -155,7 +154,7 @@ This fragment of XML shows how the compulsory attributes are used for the some o
 . Beware that the codes may be numbers, text or combinations of both. These code labels are the ones that are specified in the codelist spreadsheets and XML Genericode files distributed jointly with this specification (in the folder dist/cl of the link:{url-tree}/dist[distribution package].
 
 
-==== 1.5.2 Code list that IS NOT used for CODE values
+== Code list that IS NOT used for CODE values
 
 Code lists contain the code identifiers that are expected as "values" for a data element of type CODE (i.e. a UBL-2.3. cbc:CodeType element). This is case of code lists such as _eo-role-type_, or _docref-content-type_, etc.
 
