@@ -3,7 +3,7 @@ include::partial$attributes.adoc[]
 
 As you can see the UBL-2.3 Schema is quite flexible as, except for a few cases practically all the elements are optional.
 
-The ESPD-EDM model, however, adds a few more restrictions regarding the cardinalities of some elements. These can be seen in the diagram below, which presents the ESPD-EDM V3.0.0 structure for the ESPD Request with its own cardinality restrictions. Notice that ESPD-EDM does not change anything else from the UBL-2.3 Schema.
+The ESPD-EDM model, however, adds a few more restrictions regarding the cardinalities of some elements. These can be seen in the diagram below, which presents the ESPD-EDM V3.0.0 structure for the ESPD Request with its own cardinality restrictions.
 
 image:Qualification_ApplicationRequest_UML_diagram.jpg[QualificationApplicationRequest', UML diagram,width=394,height=430]
 

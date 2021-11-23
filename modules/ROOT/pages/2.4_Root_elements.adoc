@@ -120,11 +120,7 @@ This number in combination with a registered buyer ID (e.g. the VAT number) resu
 
 In ESPD v3.0.0 the contracting party information will come from eForms. Which also uses cac:ContractingParty to specify the information about buyer.
 
-|*cac:ProcurementProject* |Associated class |1 |An overall definition of the procurement procedure. |This information is not required to be provided from the ESPD 3.0.0 since the information related to the procedure can be provided by eForms.
-|*cac:ProcurementProjectLot* |Associated class |0..1 |One of the procurement project lots into which this contract can be divided. a|
-*Information Requirement*: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1.0-tbr070-008[_tbr70-008_].
-
-*Rule*: If there is only one single procurement project lot specified, the ESPD refers then to a procurement procedure a lots, as eForms does.
+|*cac:ProcurementProject/cbc:Description* |Text |1 |Text describing this procurement project. |This element is required in the ESPD, however it should be identical to that provided in eForms. In general the corresponding eForm should feed the corresponding ESPD with the corresponding data.
 
 |*cac:TenderingCriterion* |Associated class |1..n |A tendering criterion describes a rule or a condition that is used by the contracting body to evaluate and compare tenders by economic operators and which will be used for the exclusion and the selection of candidates to the award decision. a|
 *Information Requirement*: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1.0-tbr70-003[_tbr70-003, tbr70-009_].

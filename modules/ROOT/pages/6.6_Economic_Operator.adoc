@@ -261,10 +261,10 @@ _Table 35. (Qualifying) economic operator party, expected elements_
 [cols=",,,,",options="header",]
 |===
 |*Components* |*Type* |*Card* |*Description* |*Requirements*
-|*cac:PartyIdentification/cbc:Identifier* |Identifier |1 |An identifier that identifies the economic operator, such as a the VAT number, the company registration number in a Business Register, other. a|
+|*cac:PartyIdentification/cbc:Identifier* |Identifier |1 |An identifier that identifies the economic operator, such as the VAT number, the company registration number in a Business Register, other. a|
 *Information Requirement*: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1-tbr92-001[_tbr92-001_].
 
-*Rule*: More than one identifier can be specified. Compulsory use of the attribute schemeAgencyID and highly recommended the use of the attribute schemeAgencyID. The preferred identifier is the national VAT number. Additional identifiers may be used. For a very complete way of identification of the Party it is highly recommended to, additionally to the cac:Party/cac:Identification/cbc:ID, use the UBL-2.3 component cac:PartyLegalEntity: this element is the perfect placeholder for the data officially registered in a Business Register (see UBL-2.3 model, and XSD diagram above).
+*Rule*: When possible use the VAT identification of the contracting body (see the link:https://ec.europa.eu/taxation_customs/vies/[VIES] platform for a EU cross-border national VAT number verification system). When not possible a different identifier maybe used. For a very complete way of identification of the Party it is highly recommended to, additionally to the cac:Party/cac:Identification/cbc:ID, use the UBL-2.3 component cac:PartyLegalEntity: this element is the perfect placeholder for the data officially registered in a Business Register (see UBL-2.3 model, and XSD diagram above).
 
 *Rule scope*: Common (BR-OTH-02)
 

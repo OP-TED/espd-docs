@@ -60,7 +60,7 @@ Preliminary evidence certificates in the form of a self-declaration submitted by
 
 *Rule*: It is a good practice to use the CopyIndicator component if the same document is forwarded several times to the same or to different destinations. Use it in combination with the UUID identifier: copies of an ESPD document should be identified with distinct UUIDs.
 
-|*cbc:UUID* |Identifier |0..1 |A universally unique identifier that can be used to reference this ESPD document instance. a|
+|*cbc:UUID* |Identifier |1 |A universally unique identifier that can be used to reference this ESPD document instance. a|
 *Information Requirement*: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1-tbr92-020[_tbr92-019_].
 
 *Rule*: Other documents, e.g. the tender, might refer to the ESPD Response using this identifier (thus its compulsoriness). Copies of a document must be identified with a different UUID. Compulsory use of schemeAgencyID attribute.
@@ -104,12 +104,12 @@ Preliminary evidence certificates in the form of a self-declaration submitted by
 
 *Rule*: For the ESPD V3.0.0, this information will be linked to eForms. And ESPD should include the same procedure code as the one stated in eForms notices.
 
-|*cac:ContractingParty* |Associated class |1 |The buyer or contracting entity who is buying supplies, services or public works using a tendering procedure as described in the applicable directive (Directives 2014/24/EU, 2014/25/EU). a|
+|*cac:ContractingParty* |Associated class |1 |The buyer or contracting entity who is buying supplies, services or public works using a tendering procedure as described in the applicable directive (Directives 2014/24/EU, 2014/25/EU). See section <<2.7_Contracting_Body>> for more specification details. a|
 *Information Requirement*: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1-tbr92-020[_tbr92-011_].
 
 *Rule*: UBL-2.3 defines multiple cardinality ContractingParties presumably to allow *joint procurements*. However the ESPD only expects data about one buyer. The decision was made that in case of joint procurement the data collected in the ESPD would be about *the leader* of the joint procurement procedure.
 
-|*cac:EconomicOperator* |Associated class |0..1 |Any natural or legal person or public entity which offers the execution of works and/or a work, the supply of products or the provision of services on the market. Information about the party submitting the qualification. a|
+|*cac:EconomicOperatorParty* |Associated class |1 |Any natural or legal person or public entity which offers the execution of works and/or a work, the supply of products or the provision of services on the market. Information about the party submitting the qualification. a|
 *Information Requirement*: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1-tbr92-020[_tbr92-001_].
 
 *Rule*: The ESPD Response only refers to one, and only one, economic operator.
