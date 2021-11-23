@@ -1,7 +1,6 @@
 = Release Notes
 include::partial$attributes.adoc[]
 
-= Release Notes
 
 == v3.0.1 (early 2022)
 
