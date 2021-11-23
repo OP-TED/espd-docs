@@ -1,14 +1,14 @@
 = Release Notes
 include::partial$attributes.adoc[]
 
-== Release Notes
+= Release Notes
 
-=== v3.0.1 (early 2022)
+== v3.0.1 (early 2022)
 
-==== Online documentation
+=== Online documentation
 Documentation updated as follow:
 
-===== Technical Handbook
+==== Technical Handbook
 . *Section 2.3 ESPD Request cardinalities.*
 * Removed sentence _'Notice that ESPD-EDM does not change anything else from the UBL-2.3 Schema.'_ because it did not help understanding what is kept from *UBL-2.3* and what is changed.
 
@@ -53,7 +53,7 @@ Type changed from Identifier to Code.
 ** _cac:Attachment/cac:ExternalReference/cbc:URI_. _Requirement_ text changed to _'*Rule*: None. No rule is applied.'_ because previous text was misleading.
 
 
-=== v3.0.0 (January 2021)
+== v3.0.0 (January 2021)
 
 The ESPD-EDM version 3.0.0 focuses on its evolution for the alignment with eForms to ensure the maximum interoperability between models. It also includes fixed errors and changes suggested by the Member States and other Stakeholders within the Github repositories (issues workspace).  
 The list below details the different changes included in the current release 3.0.0 of the ESPD-EDM: 
@@ -67,6 +67,8 @@ The following changes have been introduced:
 
 * *_'Technical Handbook'_* includes information related to the implementation of the ESPD and how it works technically. The technical part of the previous "ESPD Implementation Guide" has been updated with the required changes due to the evolution of the model. 
 It also must be taken into account that the current version of the ESPD-EDM is using a single model, the former EXTENDED model. Therefore, all information related to the BASIC model has been removed, and information related to the EXTENDED model has been updated according to the improvements included in the last version of the ESPD-EDM. 
+
+It also must be taken into account that the current version of the ESPD-EDM is using a single model, the former EXTENDED model. Therefore, all information related to the BASIC model has been removed, and information related to the EXTENDED model has been updated according to the improvements included in the last version of the ESPD-EDM.
 
 
 === TOOP Requirements in ESPD-EDM (UBL2.2) Schema
