@@ -83,6 +83,10 @@ _Table 27. Reference to the ESPD Request, expected elements_
 *Rule*: Format "YYYY-MM-DD". If available in the referenced document place here the data of publication by the buyer.
 
 |*cbc:IssueTime* |Time |0..1 |Time when the document was issued by the buyer. |*Information Requirement*: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1-tbr070-002[_tbr92-013_]. *Rule*: If available in the referenced document place here the time of publication by the buyer.
+
+|*cbc:DocumentDescription* |Text |0..1 |Text describing the referenced document. |*Information Requirement*: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1-tbr070-002[_tbr92-013_]. *Rule*: Use the attribute languageID to indicate the language of the text. Use the Code List LanguageCodeEU for the value of the languageID attribute.
+
+*Rule scope*: Common (BR-OTH-01, BR-OTH-01#4, BR-OTH-03)
 |===
 
 Beware that the ESPD document does not embed the content of referenced documents but instead make a reference to its source. Thus the class DocumentReference aggregates a `cac:Attachment`class that allows for making reference to an external source of the content, which is the preferred way in the ESPD-EDM (see XSD schema above).

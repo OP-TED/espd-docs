@@ -32,21 +32,44 @@ _Requirement_ text changed to _'This element is required in the ESPD, however it
 
 . *Section 2.7 Contracting Body.* 
 * *Table 9.* Contracting body party, expected elements.
-** _cac:PartyIdentification/cbc:Identifier_. _Requirement_ text changed to _'When possible use the VAT identification of the contracting body (see the link:https://ec.europa.eu/taxation_customs/vies/[VIES] platform for a EU cross-border national VAT number verification system). When not possible a different identifier maybe used.'_ because previous text was ambiguous.
+** _cac:PartyIdentification/cbc:Identifier_. _Requirement_ text changed to _'When possible use the VAT identification of the contracting body (see the link:https://ec.europa.eu/taxation_customs/vies/[VIES] platform for a EU cross-border national VAT number verification system). When not possible a different identifier may be used.'_ because previous text was ambiguous.
 
 . *Section 3. Common aspects for criteria.*
 * *Figure 33.* Criterion - UML diagram.
 ** Changed all cardinalities present as _1..*..*_ to _1..*_ because previous notation was wrong.
 
 . *Section 6.3 ESPD Response cardinalities.*
-* *Table 26.* Class QualificationApplicationResponse, components required by the ESPD-EDM V3.0.0.
-** _cbc:ProcedureCode_ Cardinality changed to from _0..1_ to _1_ in accordance to _Figure 193. ESPD-EDM 'QualificationApplicationResponse', UML diagram._. 
-Type changed from Identifier to Code.
 * *Figure 193.* ESPD-EDM 'QualificationApplicationResponse', UML diagram.
+** _cac:ProcurementProject_. Element replaced by _cac:ProcurementProject/cbc:Description_ because this is the information that is provided from eForms.
+** _cac:ProcurementProjectLot_. Element removed because in its place _cac:TenderingCriterion/cac:ProcurementProjectLotReference_ is used.
+** _cbc:ProfileExecutionID_. Cardinality changed from _0..1_ to _1_.
 ** _cbc:QualificationApplicationTypeCode_. Element removed because it is not used in *ESPD-EDM v3.0.x*.
 ** _cbc:WeightScoringMethodNote_. Element removed because it is not used in *ESPD-EDM v3.0.x*.
 ** _cbc:WightingTypeCode_. Element removed because it is not used in *ESPD-EDM v3.0.x*.
 
+. *Section 6.4 Root elements.*
+* *Table 26.* Class QualificationApplicationResponse, components required by the ESPD-EDM V3.0.0.
+** _cac:ContractingParty_. Text added in _Desciption_ directing to *Section 2.7. Contracting Body* where this element is described.
+** _cac:EconomicOperator_. Name changed to _cac:EconomicOperatorParty_ according to _Figure 193. ESPD-EDM 'QualificationApplicationResponse', UML diagram._.
+Cardinality changed from _0..1_ to _1_.
+** _cac:ProcurementProjectLot_. Element removed because in its place _cac:TenderingCriterion/cac:ProcurementProjectLotReference_ is used.
+** _cbc:ProcedureCode_ Cardinality changed to from _0..1_ to _1_ in accordance to _Figure 193. ESPD-EDM 'QualificationApplicationResponse', UML diagram._. 
+Type changed from Identifier to Code.
+** _cbc:ProfileExecutionID_. Added missing attribute with cardinality _1_.
+** _cbc:UUID_. Changed cardinality from _0..1_ to _1_.
+
+. *Section 6.5 Reference to publications and to the ESPD Request.*
+* *Table 27.* Reference to the ESPD Request, expected elements.
+** _cbc:DocumentDescription_. Element added with cardinality _0..1_.
+
+. *Section 6.6 Economic Operator.*
+* *Table 35.* (Qualifying) economic operator party, expected elements.
+** _cac:PartyIdentification/cbc:Identifier_. _Requirement_ text changed to _'When possible use the VAT identification of the contracting body (see the link:https://ec.europa.eu/taxation_customs/vies/[VIES] platform for a EU cross-border national VAT number verification system). When not possible a different identifier may be used.'_ because previous text was ambiguous.
+
 . *Section 6.8 Evidences.*
-* *Table 44.* Elements expected in an Evidence.
+* *Table 44*. Elements expected in an Evidence.
+** _cbc:CandidateStatement_. _Requirement_ text changed to _'*Rule*: None. No rule is applied.'_ because previous text was misleading.
+
+* *Table 45.* Elements expected from the 'cac:Evidence/cac:DocumentReference' element.
 ** _cac:Attachment/cac:ExternalReference/cbc:URI_. _Requirement_ text changed to _'*Rule*: None. No rule is applied.'_ because previous text was misleading.
+** _cac:IssuerParty/cbc:WebsiteURI_. _Requirement_ text changed to _'*Rule*: None. No rule is applied.'_ because previous text was misleading.

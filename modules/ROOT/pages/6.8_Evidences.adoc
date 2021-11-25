@@ -88,7 +88,7 @@ _Table 44. Elements expected in an Evidence_
 |*cbc:CandidateStatement* |Text |0..1 |Information about a candidate statement that the buyer accepts as a sufficient response. a|
 *Information Requirement*: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1-tbr092-017[_tbr092-017, tbr092-007, tbr092-006_]
 
-*Rule*: None. Not currently used in ESPD.
+*Rule*: None. No rule is applied.
 
 |*cbc:ConfidentialityLevelCode* |Code |0..1 |A code specifying the confidentiality level of this evidence. a|
 *Information Requirement*: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1-tbr092-017[_tbr092-017_]
@@ -143,7 +143,7 @@ _Table 45. Elements expected from the 'cac:Evidence/cac:DocumentReference' eleme
 |*cac:IssuerParty/cbc:WebsiteURI* |URI |0..1 |The website of the party issuer of the documentary evidence. a|
 *Information Requirement*: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1-tbr092-017[_tbr092-017, tbr092-007, tbr092-006_]
 
-*Rule*: None. Not currently used in ESPD-EDM
+*Rule*: None. No rule is applied.
 
 |===
 

@@ -121,13 +121,6 @@ Preliminary evidence certificates in the form of a self-declaration submitted by
 
 *Rule*: Use this component to identify and describe the procurement administrative procedure. If the procurement procedure is divided into lots use the ProcurementProjectLot component to provide details specific to the lot and reserve the ProcurementProject component to describe the global characteristics of the procedure.
 
-|*cac:ProcurementProjectLot* |Associated class |0..1 |One of the procurement project lots into which this contract can be divided. a|
-*Information Requirement*: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1-tbr92-020[_tbr92-014_].
-
-*Rule*: The economic operator has to specify the Procurement Project Lot the ESPD refers to.
-
-*Rule scope*: (BR-LOT-30)
-
 |*cac:TenderingCriterion* |Associated class |1..n |A tendering criterion describes a rule or a condition that is used by the contracting body to evaluate and compare tenders by economic operators and which will be used for the exclusion and the selection of candidates to the award decision. a|
 *Information Requirement*: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1-tbr92-020[_tbr92-015,tbr92-016_].
 
