@@ -1,6 +1,7 @@
 name: ESPD-EDM
 title: ESPD EDM
-version: &ver '3.0.0' # don't remove the &ver anchor
+version: &ver '3.0.1' # don't remove the &ver anchor
+prerelease: '-draft'
 start_page: ROOT:index.adoc
 nav:
 - modules/ROOT/nav.adoc
