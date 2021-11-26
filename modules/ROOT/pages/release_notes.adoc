@@ -54,7 +54,7 @@ _Requirement_ text changed to _'This element is required in the ESPD, however it
 Cardinality changed from _0..1_ to _1_.
 ** _cac:ProcurementProject_. Element change for _cac:ProcurementProject/cbc:Description_ because this is the information that is provided from eForms.
 _Type_ changed from _Associated class_ to _Text_ in accordance to the type in eForms.
-Cardinality changed from _0..1_ to _1_ in accordance to _Figure 12. ESPD-EDM 'QualificationApplicationRequest', UML diagram_. 
+Cardinality changed from _0..1_ to _1_ in accordance to _Figure 193. ESPD-EDM 'QualificationApplicationResponse', UML diagram._. 
 _Requirement_ text changed to _'This element is required in the ESPD, however it should be identical to that provided in eForms. In general the corresponding eForm should feed the corresponding ESPD with the corresponding data.'_.
 ** _cac:ProcurementProjectLot_. Element removed because in its place _cac:TenderingCriterion/cac:ProcurementProjectLotReference_ is used.
 ** _cbc:ProcedureCode_ Cardinality changed to from _0..1_ to _1_ in accordance to _Figure 193. ESPD-EDM 'QualificationApplicationResponse', UML diagram._. 
