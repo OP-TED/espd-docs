@@ -116,10 +116,10 @@ Preliminary evidence certificates in the form of a self-declaration submitted by
 
 *Rule scope*: Common (BR-RESP-10)
 
-|*cac:ProcurementProject* |Associated class |0..1 |An overall definition of the procurement procedure. a|
+|*cac:ProcurementProject/cbc:Description* |Text |1 |Text describing this procurement project. |This element is required in the ESPD, however it should be identical to that provided in eForms. In general the corresponding eForm should feed the corresponding ESPD with the corresponding data.
 *Information Requirement*: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1-tbr92-020[_tbr92-013_].
 
-*Rule*: Use this component to identify and describe the procurement administrative procedure. If the procurement procedure is divided into lots use the ProcurementProjectLot component to provide details specific to the lot and reserve the ProcurementProject component to describe the global characteristics of the procedure.
+*Rule*: Use this component to identify and describe the procurement administrative procedure.
 
 |*cac:TenderingCriterion* |Associated class |1..n |A tendering criterion describes a rule or a condition that is used by the contracting body to evaluate and compare tenders by economic operators and which will be used for the exclusion and the selection of candidates to the award decision. a|
 *Information Requirement*: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1-tbr92-020[_tbr92-015,tbr92-016_].
