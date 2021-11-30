@@ -50,7 +50,7 @@ Therefore, in the context of the ESPD the definition of economic operator has be
 * One tender submitted by a Consortium composed of three economic operators, two of which rely on two sub-contracted entities and the third one relies on five sub-contracted entities, will have to include 3 + 2 + 5 (ten) ESPD Requests.
 * Note that both examples are made to represent who should provide an ESPD Response. But it is also worth to note that all the participants have to provide an ESPD per Lot to which tender.
 
-The information that the economic operator (EO) has to provide is relatively abundant, especially if the EO is the lead entity of a group. UBL does provide a class cac:EconomicOperator with sufficient data elements to identify the economic operator, its role, its representatives, physical location, officially registered address and other.
+The information that the economic operator (EO) has to provide is relatively abundant, especially if the EO is the lead entity of a group. UBL does provide a class cac:EconomicOperatorParty with sufficient data elements to identify the economic operator, its role, its representatives, physical location, officially registered address and other.
 
 As the whole ESDP-EDM V3.0.0 is based entirely on the UBL-2.3 XSD (W3C) Schemas, these schemas are to be used for ESPD.
 
@@ -300,7 +300,7 @@ _Table 36. Economic operator postal address, expected elements_
 |*Definition*: |Postal address information.
 |*Business rule(s)*: |None
 |*File*: |dist/common/xsdrt/UBL-CommonAggregateComponents-2.3.xsd
-|*Path*: |/QualificationApplicationResponse/{zwsp}cac:EconomicOperator/{zwsp}cac:Party/{zwsp}cac:PostalAddress
+|*Path*: |/QualificationApplicationResponse/{zwsp}cac:EconomicOperatorParty/{zwsp}cac:Party/{zwsp}cac:PostalAddress
 |===
 
 [cols=",,,,",options="header",]

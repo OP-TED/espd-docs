@@ -47,7 +47,7 @@ _Figure 21. cac:Contact, XSD Schema_
 
 _Table 8. Contracting body, expected elements_
 |===
-|*Class name*: |cac:ContractParty
+|*Class name*: |cac:ContractingParty
 |*Definition*: |The buyer or contracting entity who is buying supplies, services or public works using a tendering procedure as described in the applicable directive (e.g. Directives 2014/24/EU, 2014/25/EU).
 |*Business rule(s)*: |Common (BR-REQ-20#1)
 |*File*: |dist/common/xsdrt/UBL-CommonAggregateComponents-2.3.xsd
