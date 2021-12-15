@@ -11,6 +11,7 @@ v3.0.0
 
 * xref:xml_business_handbook.adoc[ESPD BUSINESS HANDBOOK V3.0.0]
 * xref:xml_technical_handbook.adoc[ESPD TECHNICAL HANDBOOK V3.0.0]
+* link:{attachmentsdir}/ESPD-data-model-html/index.html[ESPD-EDM DATA MODEL]
 * link:{url-tree}/dist[All resources in the distribution package]
 * xref:release_notes.adoc[Release Notes]
 
