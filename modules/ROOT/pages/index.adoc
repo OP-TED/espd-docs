@@ -5,7 +5,7 @@ include::partial$attributes.adoc[]
 
 ifndef::imagesdir[:imagesdir: images]
 
-v3.0.0
+v3.0.1
 
 == Resources
 
