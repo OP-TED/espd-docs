@@ -11,7 +11,7 @@ image:Overview_new_lot_management_approach.jpg[Overview of new lot management ap
 
 _Figure 13. Overview of new lot management approach._
 
-The ESPD request include selection criteria that are general for all the Lots in which the procedure is divided in. However, for Selection Criteria is different since in the procedure is possible to have Lots with different selection criteria. Therefore, in the ESPD request the different Selection Criteria will have to include the reference to the lots which applies. It will be done using the UBL 2.3 cac:ProcurementLotReference that includes cbc:TenderingCriterion.
+The ESPD request include selection criteria that are general for all the Lots in which the procedure is divided in. However, for Selection Criteria is different since in the procedure is possible to have Lots with different selection criteria. Therefore, in the ESPD request the different Selection Criteria will have to include the reference to the lots which applies. It will be done using the UBL 2.3 cac:ProcurementProjectLotReference that includes cbc:TenderingCriterion.
 
 The following XML example shows how it is done:
 
