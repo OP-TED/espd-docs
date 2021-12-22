@@ -9,6 +9,7 @@ The ESPD-EDM v3.0.0 focuses on the ESPD-EDM alignment with eForms. This version 
 The list below details the updates included in this release.
 
 ### Online documentation
+
 * Online documentation has been split in business and technical documentation to give a clearer view of each ESPD-EDM domain.
 
 * **_‘Business Handbook’_** provides business domain information for the ESPD-EDM to help non-technical audiences to better understand ESPD-EDM and its context. 
