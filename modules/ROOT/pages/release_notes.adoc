@@ -22,7 +22,7 @@ Documentation updated as follow:
 *** _Component_: removed because it is not used in *ESPD-EDM v3.0.x*.
 ** _cbc:WeightScoringMethodNote_
 *** _Component_: removed because it is not used in *ESPD-EDM v3.0.x*.
-** _cbc:WightingTypeCode_ 
+** _cbc:WeightingTypeCode_ 
 *** _Component_: removed because it is not used in *ESPD-EDM v3.0.x*.
 
 . *Section 2.4 Root elements.*
@@ -35,7 +35,7 @@ Documentation updated as follow:
 ** _cac:ProcurementProjectLot_
 *** _Component_: replaced by _cac:TenderingCriterion/cac:ProcurementProjectLotReference_.
 ** _cbc:ProcedureCode_
-*** _Cardinality_: updated from _0..1_ to _1_ in accordance to _Figure 12. ESPD-EDM 'QualificationApplicationRequest', UML diagram_.
+*** _Cardinality_: updated from _0..1_ to _1_ according to _Figure 12. ESPD-EDM 'QualificationApplicationRequest', UML diagram_.
 
 . *Section 2.5 Lot Management.*
 * _cac:ProcurementLotReference_
@@ -48,6 +48,9 @@ Documentation updated as follow:
 * *Table 6.* Reference to additional documents, expected elements
 ** _cac:AdditionalDocumentReference_
 *** _Path_: replaced _/QualificationApplicationRequest/cac:AdditionalReferenceDocument_ by _/QualificationApplicationRequest/cac:AdditionalDocumentReference_.
+* *Table 7.* External Reference
+** _cac:AdditionalDocumentReference_
+*** _Path_: replaced _/QualificationApplicationRequest/cac:AdditionalReferenceDocument/cac:Attachment/cac:ExternalReference_ by _/QualificationApplicationRequest/cac:AdditionalDocumentReference/cac:Attachment/cac:ExternalReference_.
 
 . *Section 2.7 Contracting Body.* 
 * *Table 8.* Contracting body, expected elements
@@ -61,6 +64,18 @@ Documentation updated as follow:
 . *Section 3. Common aspects for criteria.*
 * *Figure 33.* Criterion - UML diagram
 ** Updated all cardinalities from _1..*..*_ to _1..*_ because previous notation was wrong.
+** _cac:EconomicOperatorParty_ 
+*** _Component_: removed because it is not used in the *ESPD Request*.
+** _cac:ProcurementProject_
+*** _Component_: replaced by _cac:ProcurementProject/cbc:Description_ in alignment with *eForms*.
+** _cac:ProcurementProjectLot_
+*** _Component_: replaced by _cac:TenderingCriterion/cac:ProcurementProjectLotReference_.
+** _cbc:QualificationApplicationTypeCode_
+*** _Component_: removed because it is not used in *ESPD-EDM v3.0.x*.
+** _cbc:WeightScoringMethodNote_
+*** _Component_: removed because it is not used in *ESPD-EDM v3.0.x*.
+** _cbc:WeightingTypeCode_ 
+*** _Component_: removed because it is not used in *ESPD-EDM v3.0.x*.
 
 . *Section 5.1 Lot Management approach for Selection Criteria.*
 * _cac:ProcurementLotReference_
@@ -71,19 +86,18 @@ Documentation updated as follow:
 * _cac:ContractingAuthorityParty_ 
 *** _Component_: replaced by _cac:ContractingParty_ according to _Figure 191. QualificationApplicationResponse XSD Schema, global view_.
 
+
 . *Section 6.3 ESPD Response cardinalities.*
 * *Figure 193.* ESPD-EDM 'QualificationApplicationResponse', UML diagram
 ** _cac:ProcurementProject_
 *** _Component_: replaced by _cac:ProcurementProject/cbc:Description_ in alignment with *eForms*.
-** _cac:ProcurementProjectLot_ 
-*** _Component_: removed because it is replaced by _cac:TenderingCriterion/cac:ProcurementProjectLotReference_.
-** _cbc:ProfileExecutionID_. 
+** _cbc:ProfileExecutionID_
 *** _Cardinality_: updated from _0..1_ to _1_.
 ** _cbc:QualificationApplicationTypeCode_
 *** _Component_: removed because it is not used in *ESPD-EDM v3.0.x*.
 ** _cbc:WeightScoringMethodNote_
 *** _Component_: removed because it is not used in *ESPD-EDM v3.0.x*.
-** _cbc:WightingTypeCode_ 
+** _cbc:WeightingTypeCode_ 
 *** _Component_: removed because it is not used in *ESPD-EDM v3.0.x*.
 
 . *Section 6.4 Root elements.*
@@ -96,12 +110,12 @@ Documentation updated as follow:
 ** _cac:ProcurementProject_ 
 *** _Component_: replaced by _cac:ProcurementProject/cbc:Description_ in alignment with *eForms*.
 *** _Type_: updated from _Associated class_ to _Text_ in alignment with *eForms*.
-*** _Cardinality_: updated from _0..1_ to _1_ in accordance to _Figure 193. ESPD-EDM 'QualificationApplicationResponse', UML diagram._. 
+*** _Cardinality_: updated from _0..1_ to _1_ according to _Figure 193. ESPD-EDM 'QualificationApplicationResponse', UML diagram._. 
 *** _Requirement_: updated from _'Use this component to identify and describe the procurement administrative procedure. If the procurement procedure is divided into lots use the ProcurementProjectLot component to provide details specific to the lot and reserve the ProcurementProject component to describe the global characteristics of the procedure.'_ to _'This element is required in the ESPD, however it should be identical to that provided in eForms. In general the corresponding eForm should feed the corresponding ESPD with the corresponding data.'_.
 ** _cac:ProcurementProjectLot_ 
-*** _Component_: removed because it is replaced by _cac:TenderingCriterion/cac:ProcurementProjectLotReference_.
+*** _Cardinality_: updated from _0..1_ to _1..n_ according to _Figure 193. ESPD-EDM 'QualificationApplicationResponse', UML diagram._.
 ** _cbc:ProcedureCode_ 
-*** _Cardinality_: updated from _0..1_ to _1_ in accordance to _Figure 193. ESPD-EDM 'QualificationApplicationResponse', UML diagram._. 
+*** _Cardinality_: updated from _0..1_ to _1_ according to _Figure 193. ESPD-EDM 'QualificationApplicationResponse', UML diagram._. 
 *** _Type_: updated from _Identifier_ to _Code_.
 ** _cbc:ProfileExecutionID_ 
 *** _Component_: added.
@@ -114,6 +128,12 @@ Documentation updated as follow:
 ** _cbc:DocumentDescription_
 *** _Component_: added.
 *** _Cardinality_: added _0..1_.
+** _cac:AdditionalDocumentReference_
+***_Path:_ replaced _/QualificationApplicationResponse/cac:AdditionalReferenceDocument_ by _/QualificationApplicationResponse/cac:AdditionalDocumentReference_.
+
+* *Table 28.* External Reference
+** _cac:ExternalReference_
+***_Path:_ replaced _/QualificationApplicationResponse/cac:AdditionalReferenceDocument_ by _/QualificationApplicationResponse/cac:AdditionalDocumentReference_.
 
 . *Section 6.6 Economic Operator.*
 * _cac:EconomicOperator_

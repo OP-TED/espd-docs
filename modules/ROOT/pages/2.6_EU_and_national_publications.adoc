@@ -98,7 +98,7 @@ _Table 7. External Reference_
 |*Component name*: |cac:ExternalReference
 |*Definition*: |A reference to the authentic source of content of this document.
 |*File*: |dist/common/xsdrt/UBL-CommonAggregateComponents-2.3.xsd
-|*Path*: |/QualificationApplicationRequest/cac:AdditionalReferenceDocument/cac:Attachment/cac:ExternalReference
+|*Path*: |/QualificationApplicationRequest/cac:AdditionalDocumentReference/cac:Attachment/cac:ExternalReference
 |===
 
 [cols=",,,,",options="header",]
