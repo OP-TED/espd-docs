@@ -68,7 +68,7 @@ link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1
 
 *Note*: The UBL specification allows always multiple lines of text for the component cbc:Description. This feature can be used to split long descriptions into multiple lines, especially when the description contains enumerations (see the criterion "Misinterpretation" for an example).
 
-|*cac:ProcurementProjectLotReference* |Text |1..n |Procurement Project Lot Reference One or more lots which the tendering criterion applies a|
+|*cac:ProcurementProjectLotReference* |Class |1..n |Procurement Project Lot Reference One or more lots which the tendering criterion applies a|
 *Information Requirement*: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1.0-tbr70-003[_tbr70-003_]
 
 *Rule:* The new lots management that eases the alignment with eForms, requires that the buyer expresses using this element to which Lot or Group of Lots apply each Selection Criteria. This element only applies to Selection Criteria since all the Exclusion grounds apply to all lots in a procurement procedure.

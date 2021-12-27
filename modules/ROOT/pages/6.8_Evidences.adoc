@@ -39,7 +39,7 @@ _Duplicity of the Issuer_
 
 *Beware that* the current modeel of UBL-2.3 provides two elements for the Issuer, one for the issuer of the evidence and another for the issuer of the document reference.
 
-The ESPD-EDM V3.0.0 uses always the one inside the document reference to refer to the issuer of the evidence (and of the document that 'is' the evidence). Thus the element used in the ESPD is cac:Evidence/cac:DocumentReference/cac:IssuerParty.
+The ESPD-EDM V3.0.0 uses always the one inside the document reference to refer to the issuer of the evidence (and of the document that 'is' the evidence). Thus the element used in the ESPD is cac:Evidence/cac:DocumentReference/cac:IssuerParty/cac:Party/cac:PartyIdentification/cbc:ID.
 ====
 
 == Expected (and other) Elements
@@ -135,12 +135,12 @@ _Table 45. Elements expected from the 'cac:Evidence/cac:DocumentReference' eleme
 
 *Rule scope*: BR-OTH-02
 
-|*cac:IssuerParty/cbc:Name* |Text |0..1 |The name of the party issuer of the documentary evidence. a|
+|*cac:IssuerParty/cac:Party/cac:PartyName/cbc:Name* |Text |0..1 |The name of the party issuer of the documentary evidence. a|
 *Information Requirement*: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1-tbr092-017[_tbr092-017, tbr092-007, tbr092-006_]
 
 *Rule*: ESPD-EDM uses this element to keep the name of the evidence issuer in the ESPD Response XML instance.
 
-|*cac:IssuerParty/cbc:WebsiteURI* |URI |0..1 |The website of the party issuer of the documentary evidence. a|
+|*cac:IssuerParty/cac:Party/cac:PartyName/cbc:Name* |URI |0..1 |The website of the party issuer of the documentary evidence. a|
 *Information Requirement*: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1-tbr092-017[_tbr092-017, tbr092-007, tbr092-006_]
 
 *Rule*: None. No rule is applied.

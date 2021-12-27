@@ -21,7 +21,7 @@ _Figure 195. Elements expected to reference the ESPD Request from the ESPD Respo
 
 If the buyer publishes the ESPD Request on a public journal, the economic operator must specify the URI from where the ESPD Response was downloaded to draft its ESPD Response (see for instance how this is done for the publications on the TED or national journals; and see also the XML example below).
 
-This URI should be specified in the field cac:AdditionalDocumentReference/cac:Attachment/cac:ExternalRefernce/cbc:URI:
+This URI should be specified in the field cac:AdditionalDocumentReference/cac:Attachment/cac:ExternalReference/cbc:URI:
 
 image:URI_Reference_ESPD_Request.jpg[URI_Reference to ESPD Request,width=510,height=288]
 

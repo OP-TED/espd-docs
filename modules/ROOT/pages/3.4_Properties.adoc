@@ -81,6 +81,10 @@ Caption (i.e. a 'label'), specific MS or buyer requirement (e.g. 'Number of refe
 
 *Rule scope*: BR-OTH-01
 
+|*cbc:ExpectedAmount* |Amount |0..1 |The amount in the expected response from the economic operator. a|
+*Information Requirement*: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1.0-tbr070-013[_tbr070-013_].
+
+
 |*cbc:ExpectedID* |Identifier |0..1 |The expected identifier that the economic operator has to provide in the criterion response. a|
 *Information Requirement*: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1.0-tbr070-013[_tbr070-013_].
 
@@ -99,6 +103,11 @@ Caption (i.e. a 'label'), specific MS or buyer requirement (e.g. 'Number of refe
 *Information Requirement*: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1.0-tbr070-013[_tbr070-013_].
 
 *Rule*: Verify that the value of cac:TypeCode is set to QUESTION and that the cac:ValueTypeCode is different to NONE.
+
+|*cbc:ExpectedDescription* |Text |0..1 |The description of the expected evidence that the economic operator has to provide in the Criterion response. a|
+*Information Requirement*: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1.0-tbr070-013[_tbr070-013_].
+
+*Rule*:
 
 |*cbc:MaximumValueNumeric* |Numeric |0..1 |The maximum value the response must have. a|
 *Information Requirement*: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1.0-tbr070-013[_tbr070-013_].

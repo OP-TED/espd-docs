@@ -82,7 +82,7 @@ Preliminary evidence certificates in the form of a self-declaration submitted by
 
 *Rule*: Format "hh:mm:ss".
 
-|*cbc:EconomicOperatorGroupName* |Code |0..1 |The name of the group that presents a tender to which this economic operator belongs (e.g. the name of a consortium, a joint venture, etc.). a|
+|*cbc:EconomicOperatorGroupName* |Text |0..1 |The name of the group that presents a tender to which this economic operator belongs (e.g. the name of a consortium, a joint venture, etc.). a|
 *Information Requirement*: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1-tbr92-020[_tbr92-008_].
 
 *Rule*: The leader of the group must take care of ensuring that the name of the group is identical in all the ESPDs of the tender.
