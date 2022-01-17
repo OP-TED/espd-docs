@@ -91,10 +91,11 @@ Documentation updated as follow:
 * *Table 21.* Legislation, expected elements
 ** _cbc:ID_
 *** _Component_: added.
-** _cbc:LegislationTitle_
-*** _Component_: replaced by _cbc:Title_.
 ** _cbc:Description_
 *** _Type_: updated from _Code_ to _Text_.
+** _cbc:LegislationTitle_
+*** _Component_: replaced by _cbc:Title_.
+
 
 . *Section 3.4 Properties*
 * *Table 23.* Properties, expected elements
@@ -140,6 +141,8 @@ Documentation updated as follow:
 *** _Requirement_: updated from _'Use this component to identify and describe the procurement administrative procedure. If the procurement procedure is divided into lots use the ProcurementProjectLot component to provide details specific to the lot and reserve the ProcurementProject component to describe the global characteristics of the procedure.'_ to _'This element is required in the ESPD, however it should be identical to that provided in eForms. In general the corresponding eForm should feed the corresponding ESPD with the corresponding data.'_.
 ** _cac:ProcurementProjectLot_ 
 *** _Cardinality_: updated from _0..1_ to _1..n_ according to _Figure 193. ESPD-EDM 'QualificationApplicationResponse', UML diagram._.
+** _cbc:EconomicOperatorGroupName_ 
+*** _Type_: updated from _Code_ to _Text_.
 ** _cbc:ProcedureCode_ 
 *** _Cardinality_: updated from _0..1_ to _1_ according to _Figure 193. ESPD-EDM 'QualificationApplicationResponse', UML diagram._. 
 *** _Type_: updated from _Identifier_ to _Code_.
@@ -148,16 +151,16 @@ Documentation updated as follow:
 *** _Cardinality_: added _1_.
 ** _cbc:UUID_ 
 *** _Cardinality_: updated from _0..1_ to _1_.
-** _cbc:EconomicOperatorGroupName_ 
-*** _Type_: updated from _Code_ to _Text_.
+
 
 . *Section 6.5 Reference to publications and to the ESPD Request*
 * *Table 27.* Reference to the ESPD Request, expected elements
+** _cac:AdditionalDocumentReference_
+***_Path:_ replaced _/QualificationApplicationResponse/cac:AdditionalReferenceDocument_ by _/QualificationApplicationResponse/cac:AdditionalDocumentReference_.
 ** _cbc:DocumentDescription_
 *** _Component_: added.
 *** _Cardinality_: added _0..1_.
-** _cac:AdditionalDocumentReference_
-***_Path:_ replaced _/QualificationApplicationResponse/cac:AdditionalReferenceDocument_ by _/QualificationApplicationResponse/cac:AdditionalDocumentReference_.
+
 
 * *Table 28.* External Reference
 ** _cac:ExternalReference_
