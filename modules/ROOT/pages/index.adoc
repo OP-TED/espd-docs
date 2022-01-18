@@ -1,0 +1,5 @@
+= ESPD-EDM Open User Community Reports
+
+This section contains the OUC meeting reports and the Annual Seminar documents.
+
+Meeting Reports previous to 2022 can be found in link:{url-tree}/wgm-reports/modules/ROOT/wgm-reports[espd-docs/wgm-reports].

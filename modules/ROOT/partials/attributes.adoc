@@ -1,0 +1,2 @@
+:url-tree: {git-repo-url}/tree
+:url-blob: {git-repo-url}/blob
