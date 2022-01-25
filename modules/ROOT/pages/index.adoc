@@ -8,5 +8,5 @@ include::partial$attributes.adoc[]
 
 * xref:xml_business_handbook.adoc[ESPD BUSINESS HANDBOOK]
 * xref:xml_technical_handbook.adoc[ESPD TECHNICAL HANDBOOK]
-* link:{attachmentsdir}/ESPD-data-model-html/index.html[ESPD-EDM DATA MODEL]
+* link:{attachmentsdir}/ESPD-data-model-html/index.html[ESPD-EDM DATA MODEL HTML]
 * xref:release_notes.adoc[Release Notes]
