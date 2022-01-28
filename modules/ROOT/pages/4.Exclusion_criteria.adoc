@@ -3,7 +3,7 @@ include::partial$attributes.adoc[]
 
 [cols=",",]
 |===
-|*REQUIREMENT* pass:macros[http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0.1[tbr092-015\]], pass:macros[http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0.1[br41-002\]] |*The contracting body shall provide the exclusion grounds and selection criteria for its tendering process as structured information - via ESPD template or structured list of criteria set out in a call for tender.*
+|*REQUIREMENT link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0.1[_tbr092-015_], link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0.1[_br41-002_]* |*The contracting body shall provide the exclusion grounds and selection criteria for its tendering process as structured information - via ESPD template or structured list of criteria set out in a call for tender.*
 |===
 
 [cols=",",]

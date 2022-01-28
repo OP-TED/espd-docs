@@ -9,7 +9,7 @@ See formal requirements related to evidences in the e-Sens site: link:http://wik
 
 == XSD Schema
 
-Remember that evidences are indirectly linked to responses based on the identifier of the evidence: in the response, the element cac:EvidenceSupplied/cbc:ID contains the identifier set in /QualificationApplicationResponse/cac:Evidence/cbc:ID. See XML example below; see also the example XML file "link:{url-tree}/xml-examples/ESPD-Response.xml[ESPD-Response.xml]" for an example.
+Remember that evidences are indirectly linked to responses based on the identifier of the evidence: in the response, the element cac:EvidenceSupplied/cbc:ID contains the identifier set in /QualificationApplicationResponse/cac:Evidence/cbc:ID. See XML example below; see also the example XML file "link:{url-blob}/dist/xml/[ESPD-Response-v3.0.0.xml]" for an example.
 
 The figure below shows the XSD Diagram for the UBL-2.3 component cac:Evidence (elements in blue are the expected ones in ESPD-EDM V3.0.0):
 
@@ -53,7 +53,7 @@ _Table 44. Elements expected in an Evidence_
 |*Class name*: |cac:Evidence
 |*Definition*: |A class to describe an item of evidentiary support for representations of capabilities or the ability to meet tendering requirements, which an economic operator must provide for acceptance into a tendering process.
 |*Business rule(s)*: |None
-|*File*: |ubl-2.3/xsdrt/common/UBL-CommonAggregateComponents-2.3.xsd
+|*File*: |dist/common/xsdrt/UBL-CommonAggregateComponents-2.3.xsd
 |*Path*: |/QualificationApplicationResponse/cac:Evidence
 |*Context of use*: |The economic operator uses it in the ESPD Response document to provide evidentiary support to one or more criteria link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1-tbr092-017[(_tbr092-017_)].
 |===
@@ -93,7 +93,7 @@ _Table 44. Elements expected in an Evidence_
 |*cbc:ConfidentialityLevelCode* |Code |0..1 |A code specifying the confidentiality level of this evidence. a|
 *Information Requirement*: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1-tbr092-017[_tbr092-017_]
 
-*Rule*: Compulsory use of the Code List link:{url-tree}/codelists/gc/access-right.gc[access-right]. Software application should set this code to CONFIDENTIAL automatically when the confidentiality level code of at least one criterion to which this evidence is associated is set to CONFIDENTIAL.
+*Rule*: Compulsory use of the Code List link:{url-blob}/dist/cl/ods/ESPD-CodeLists-V3.0.0.ods[access-right]. Software application should set this code to CONFIDENTIAL automatically when the confidentiality level code of at least one criterion to which this evidence is associated is set to CONFIDENTIAL.
 
 *Rule scope*: BR-TCR-02, BR-OTH-01, BR-OTH-01#18, BR-OTH-03
 
@@ -108,7 +108,7 @@ _Table 45. Elements expected from the 'cac:Evidence/cac:DocumentReference' eleme
 |*Class name*: |cac:DocumentReference
 |*Definition*: |A reference to the evidentiary document.
 |*Business rule(s)*: |None
-|*File*: |ubl-2.3/xsdrt/common/UBL-CommonAggregateComponents-2.3.xsd
+|*File*: |dist/common/xsdrt/UBL-CommonAggregateComponents-2.3.xsd
 |*Path*: |/QualificationApplicationResponse/cac:Evidence/cac:DocumentReference
 |*Context of use*: |The economic operator uses it in the ESPD Response document to supply the URL of the evidence and the party who issued the evidentiary document. link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1-tbr092-017[(_tbr092-017, tbr092-022, tbr092-006, tbr092-007_)].
 |===

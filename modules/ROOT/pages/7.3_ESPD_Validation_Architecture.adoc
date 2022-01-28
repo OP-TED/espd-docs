@@ -6,7 +6,7 @@ The validation of a ESPD XML has the following life-cycle:
 image:ESPD_Schematorn_lyfe-cycle.jpg[ESPD Schematorn lyfe-cycle,width=370,height=436]
 
 [arabic]
-. The validation of the XML starts by ensuring that the input XML follows the *structure defined by the XSD*: QualificationApplicationRequest.xsd XSD Schema or QualificationApplicationResponse.xsd XSD Schema. These schemas can be found under the folder ubl-2.3/xsdrt/maindoc (or the equivalent documented xsd folder).
+. The validation of the XML starts by ensuring that the input XML follows the *structure defined by the XSD*: QualificationApplicationRequest.xsd XSD Schema or QualificationApplicationResponse.xsd XSD Schema. These schemas can be found under the folder dist/xsdrt/maindoc (or the equivalent documented xsd folder).
 [loweralpha]
 .. If the validation of the structure is not successful, the process stops and sends the report with the list of errors.
 .. If the validation of the structure is successful, the process continues with the code list validations and business rules. All errors found (if any) are listed in the report.

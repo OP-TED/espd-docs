@@ -18,7 +18,7 @@ Few details regarding data structure for Suitability selection criteria
 . It also allows the buyer to speciy multiple groups of REQUIREMENT(s) (in this case to specify which registers the economic operator should be registered in).
 . Regarding the groups of questions, notice that the main question is addressed to get the confirmation from the economic operator that it fulfills the criterion (if "Yes" the economic operator is registered). In case of answering "No" a sub-group of one QUESTION must be shown (the one asking the economic operator to provide the reason why it is not registered in the register specified by the buyer).
 
-(The figure below is defined in the the tab "Suitability-I of the link:{url-tree}/codelists/ESPD-criterion.xlsx[ESPD-criterion] spread-sheet).
+(The figure below is defined in the the tab "Suitability-I of the link:{url-blob}/dist/cl/xlsx/[ESPD Criterion Data Structure] spread-sheet).
 
 image:SC_Suitability_enrolement.jpg[SC Suitability enrolement,width=506,height=331]
 
@@ -199,7 +199,7 @@ The code list 'occupation' is used to determine the area to which the EO should 
 
 == Data Structure (service contracts)
 
-(The figure below is defined in the the tab "Suitability-II" of the link:{url-tree}/codelists/ESPD-criterion.xlsx[ESPD-criterion] spread-sheet).
+(The figure below is defined in the the tab "Suitability-II" of the link:{url-blob}/dist/cl/xlsx/[ESPD-criterion-V3.0.0] spread-sheet).
 
 image:Suitability criterion_data structure_service contracts.jpg[Suitability criterion data structure (service contracts),width=566,height=438]
 
