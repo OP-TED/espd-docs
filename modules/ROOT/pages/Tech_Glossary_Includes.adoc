@@ -1,1 +1,0 @@
-include::Tech_12.Glossary.adoc[]
