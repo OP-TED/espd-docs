@@ -1,4 +1,5 @@
-== Glossary
+= Glossary
+include::partial$attributes.adoc[]
 
 [[abies,Aggregate Business Information Entities (ABIEs)]]
 *Aggregate Business Information Entities (ABIEs).* Root nodes and top-level structures of UBL documents. Children of document ABIEs may be <<bbies>> or <<asbies>>, never ABIEs. All UBL document ABIEs (and only UBL document ABIEs) are defined within individual namespaces specific to each document as both elements and types. (https://docs.oasis-open.org/ubl/os-UBL-2.3/UBL-2.3.html#S-BUSINESS-INFORMATION-ENTITIES)
