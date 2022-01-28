@@ -22,7 +22,7 @@ The following features *are NOT implemented* in the first set of transformation 
 * The publications and document references requested in the business requirements are not generated; but the XML examples provided in the distribution do contain examples of TED and national publications (for the ESPDRequest.xml and ESPDResponse.xml, in the link:{url-tree}/xml-examples[xml-examples folder].
 * The response value and cardinality are shown for informative purposes. No functionality is currently implemented based on them, but could be used in future improved versions of the prototype;
 
-The following features *are implemented* in the second set of transformation XSL-T style-sheet (From-REQUEST_to_RESPONSE.xslt files):
+The following features *are implemented* in the second set of transformation XSL-T style-sheet (From-REQUEST-to-RESPONSE.xslt files):
 
 * All the root elements are created and commented;
 * An empty buyer is created (no data about any buyeris supplied); just the necessary for the XML to be validated against the XSD schema;
