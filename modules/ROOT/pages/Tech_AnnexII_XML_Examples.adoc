@@ -6,7 +6,7 @@ include::partial$attributes.adoc[]
 [[access-right-xml-example,access-right xml Example]]
 === AII.1.. access-right
 
-The following xml code is an example of use of code list <<access-right-table>> in a _cac:Evidence_ element of ESPDRequest.
+The following xml code is an example of use of code list xref:Tech_AnnexI_Code_Lists_Catalogue.adoc#access-right-table[access-right] in a _cac:Evidence_ element of ESPDRequest.
 
 
 [source,xml,linenums]
@@ -33,19 +33,13 @@ The following xml code is an example of use of code list <<access-right-table>> 
 
 The element _cbc:ConfidentialityLevelCode_ is of type code with the following attribute values:
 
-* _listID_=*"access-right"*. Informing this code is provided in  the code list <<access-right-table>>.
-* value *_CONFIDENTIAL_* is one of the valid codes defined in the code list <<access-right-table>>.
+* _listID_=*"access-right"*. Informing this code is provided in  the code list xref:Tech_AnnexI_Code_Lists_Catalogue.adoc#access-right-table[access-right].
+* value *_CONFIDENTIAL_* is one of the valid codes defined in the code list xref:Tech_AnnexI_Code_Lists_Catalogue.adoc#access-right-table[access-right].
 
 [[boolean-gui-control-type-xml-example,boolean-gui-control-type xml Example]]
 === AII.1.. boolean-gui-control-type
 
-The following is an example of use of code list <<boolean-gui-control-type-table>> in 'Other economic or financial requirements' (*_finan-requ_*).
-
-The xml code reflects an implementation of this criterion specification.
-
-[#img-criterion_boolean-gui-control]
-.criteria - use of boolean-gui-control
-image::criterion_finan_requ.JPG["criteria - use of boolean-gui-control"]
+The following is an example of use of code list xref:Tech_AnnexI_Code_Lists_Catalogue.adoc#boolean-gui-control-type-table[boolean-gui-control-type] in 'Other economic or financial requirements' (*_finan-requ_*).
 
 The xml code implemented for this criterion in the ESPDRequest is:
 
@@ -107,7 +101,7 @@ This case of use has to be interpreted by the software application that displays
 [[country-xml-example,country xml Example]]
 === AII.1.. country
 
-The following xml code is an example of use of code list <<country>> in a _cac:ContractingParty_ element of ESPDRequest.
+The following xml code is an example of use of code list xref:Tech_AnnexI_Code_Lists_Catalogue.adoc#country-table[country] in a _cac:ContractingParty_ element of ESPDRequest.
 
 
 [source,xml,linenums]
@@ -126,12 +120,12 @@ The following xml code is an example of use of code list <<country>> in a _cac:C
 </cac:Party>
 ----
 
-The code list <<country>> is used to define the value of element cbc:IdentificationCode in class cac:Country.
+The code list xref:Tech_AnnexI_Code_Lists_Catalogue.adoc#country-table[country] is used to define the value of element cbc:IdentificationCode in class cac:Country.
 
 [[criterion-xml-example,criterion xml Example]]
 === AII.1.. criterion
 
-The following xml code is an example of use of code list <<criterion>> in a _cac:TenderingCriterion_ element of *ESPDRequest*.
+The following xml code is an example of use of code list xref:Tech_AnnexI_Code_Lists_Catalogue.adoc#criterion-table[criterion] in a _cac:TenderingCriterion_ element of *ESPDRequest*.
 
 
 [source,xml,linenums]
@@ -152,18 +146,12 @@ The following xml code is an example of use of code list <<criterion>> in a _cac
 </cac:TenderingCriterion>
 ----
 
-The code list <<criterion>> is used to define the value of element _cbc:CriterionTypeCode_ for any class _cac:TenderingCriterion_ present in the *ESPDRequest* document.
+The code list xref:Tech_AnnexI_Code_Lists_Catalogue.adoc#criterion-table[criterion] is used to define the value of element _cbc:CriterionTypeCode_ for any class _cac:TenderingCriterion_ present in the *ESPDRequest* document.
 
 [[criterion-element-type-xml-example,criterion-element-type xml Example]]
 === AII.1.. criterion-element-type
 
-This is an example of use of code list <<criterion-element-type>> in criterion 'Participation in a criminal organisation' (*_crim-org_*) _cac:TenderingCriterion_ element of *ESPDRequest*.
-
-The xml code reflects an implementation of this criterion specification.
-
-[#img-criterion_criterion-element-type]
-.criteria - use of criterion-element-type
-image::criterion_crime-org.JPG["criteria - use of criterion-element-type"]
+This is an example of use of code list xref:Tech_AnnexI_Code_Lists_Catalogue.adoc#criterion-element-type-table[criterion-element-type] in criterion 'Participation in a criminal organisation' (*_crim-org_*) _cac:TenderingCriterion_ element of *ESPDRequest*.
 
 The xml code implemented for this criterion in the ESPDRequest is:
 
@@ -206,11 +194,12 @@ Code list _criterion-element-type_ is used to specify the value of class _cbc:Ty
 * _cac:TenderingCriterionProperty_ with _cbc:ID_=ae5e864a-f3ba-489b-ba17-b87af8b10138 is defined as _cbc:TypeCode_=*CAPTION*
 * _cac:TenderingCriterionProperty_ with _cbc:ID_=c31b6447-bf88-4172-901a-f9b105205391 is defined as _cbc:TypeCode_=*QUESTION*
 
+[[currency-xml-example,currency xml Example]]
 === AII.1.. currency
 
-The following xml code are examples of use of code list <<currency-table>> in an ESPDRequest.
+The following xml code are examples of use of code list xref:Tech_AnnexI_Code_Lists_Catalogue.adoc#currency-table[currency] in an ESPDRequest.
 
-Code list <<currency>> can be used to specify the code for class _cbc:ValueCurrencyCode_ inside an element _cac:TenderingCriterionProperty_ as shown below:
+Code list xref:Tech_AnnexI_Code_Lists_Catalogue.adoc#currency-table[currency] can be used to specify the code for class _cbc:ValueCurrencyCode_ inside an element _cac:TenderingCriterionProperty_ as shown below:
 
 [source,xml,linenums]
 ----
@@ -224,7 +213,7 @@ Code list <<currency>> can be used to specify the code for class _cbc:ValueCurre
 </cac:TenderingCriterionProperty>
 ----
 
-Code list <<currency>> also can be used to specify the currency of a quantity amount in a *REQUIREMENT* for as shown below:
+Code list xref:Tech_AnnexI_Code_Lists_Catalogue.adoc#currency-table[currency] also can be used to specify the currency of a quantity amount in a *REQUIREMENT* for as shown below:
 
 [source,xml,linenums]
 ----
@@ -247,7 +236,7 @@ Code list is used to define attribute _currencyID_ of element _cbc:ExpectedAmoun
 [[docrefcontent-type-xml-example,docrefcontent-type xml Example]]
 === AII.1.. docrefcontent-type
 
-The following xml code is an example of use of code list <<docrefcontent-type-table>> in a _cac:AdditionalDocumentReference_ specifing its _cbc:DocumentTypeCode_ value in a ESPDRequest.
+The following xml code is an example of use of code list xref:Tech_AnnexI_Code_Lists_Catalogue.adoc#docrefcontent-type-table[docrefcontent-type] in a _cac:AdditionalDocumentReference_ specifing its _cbc:DocumentTypeCode_ value in a ESPDRequest.
 
 
 [source,xml,linenums]
@@ -276,7 +265,7 @@ This _cac:AdditionalDocumentReference_ specifies a <<ted>> Notice as it is decla
 [[economic-operator-size-xml-example,economic-operator-size xml Example]]
 === AII.1.. economic-operator-size
 
-The following xml code is an example of use of code list <<economic-operator-size-table>> in a _cac:EconomicOperatorParty_ specifing its _cbc:IndustryClassificationCode_ value in a ESPDResponse.
+The following xml code is an example of use of code list xref:Tech_AnnexI_Code_Lists_Catalogue.adoc#economic-operator-size-table[economic-operator-size] in a _cac:EconomicOperatorParty_ specifing its _cbc:IndustryClassificationCode_ value in a ESPDResponse.
 
 
 [source,xml,linenums]
@@ -303,7 +292,7 @@ The <<eo>> in this example has a size classification of 'Micro, small, or medium
 [[eoid-type-xml-example,eoid-type xml Example]]
 === AII.1.. eoid-type
 
-The following xml code is an example of use of code list <<eoid-type-table>> in a _cac:TenderingCriterionResponse_ element of ESPDResponse.
+The following xml code is an example of use of code list xref:Tech_AnnexI_Code_Lists_Catalogue.adoc#eoid-type-table[eoid-type] in a _cac:TenderingCriterionResponse_ element of ESPDResponse.
 
 [source,xml,linenums]
 ----
@@ -318,13 +307,13 @@ The following xml code is an example of use of code list <<eoid-type-table>> in 
 
 The element _cbc:ResponseID_ is of type _Identifier_ with the following attribute values:
 
-* _schemeID_=*"VAT"*. Informing this identifier follows the _Value Added Tax identifier_ format. This is a valid value defined in the code list <<eoid-type-table>>.
+* _schemeID_=*"VAT"*. Informing this identifier follows the _Value Added Tax identifier_ format. This is a valid value defined in the code list xref:Tech_AnnexI_Code_Lists_Catalogue.adoc#eoid-type-table[eoid-type].
 * _schemeAgencyID_=*"ES-AEAT"*. Informing this identifier is issued by the *Spanish Tax Agency (ES-AEAT)*.
 
 [[eo-role-type-xml-example,eo-role-type xml Example]]
 === AII.1.. eo-role-type
 
-The following xml code is an example of use of code list <<eo-role-type-table>> in a _cac:EconomicOperatorParty_ element of ESPDResponse.
+The following xml code is an example of use of code list xref:Tech_AnnexI_Code_Lists_Catalogue.adoc#eo-role-type-table[eo-role-type] in a _cac:EconomicOperatorParty_ element of ESPDResponse.
 
 [source,xml,linenums]
 ----
@@ -345,11 +334,7 @@ The example <<eo>> is declared with element _cac:EconomicOperatorParty_ and its
 [[financial-ratio-type-xml-example,financial-ratio-type xml Example]]
 === AII.1.. financial-ratio-type
 
-The following xml code is an example of use of code list <<financial-ratio-type-table>> in a _cac:TenderingCriterion_ element of ESPDRequest for criterion _finan-rat_.
-
-[#img-criterion_financial-ratio-type]
-.criteria - use of financial-ratio-type
-image::criterion_finan_rat.JPG["criteria - use of financial-ratio-type"]
+The following xml code is an example of use of code list xref:Tech_AnnexI_Code_Lists_Catalogue.adoc#financial-ratio-type-table[financial-ratio-type] in a _cac:TenderingCriterion_ element of ESPDRequest for criterion _finan-rat_.
 
 [source,xml,linenums]
 ----
@@ -386,7 +371,7 @@ In criterion _finan-rat_, value for _REQUIREMENT_ with description 'Ratio Type' 
 [[language-xml-example,language xml Example]]
 === AII.1.. language
 
-The following xml code is an example of use of code list <<language-table>> in a _cac:TenderingCriterion_ element of ESPDRequest for criterion _finan-rat_.
+The following xml code is an example of use of code list xref:Tech_AnnexI_Code_Lists_Catalogue.adoc#language-table[language] in a _cac:TenderingCriterion_ element of ESPDRequest for criterion _finan-rat_.
 
 [source,xml,linenums]
 ----
@@ -408,7 +393,7 @@ Language used in class _cac:Legislation_ is defined in element _cac:Language_ as
 [[occupation-xml-example,occupation xml Example]]
 === AII.1.. occupation
 
-The following xml code is an example of use of code list <<occupation-table>> in a _cac:TenderingCriterion_ element of ESPDRequest for criterion _prof-regist_.
+The following xml code is an example of use of code list xref:Tech_AnnexI_Code_Lists_Catalogue.adoc#occupation-table[occupation] in a _cac:TenderingCriterion_ element of ESPDRequest for criterion _prof-regist_.
 
 [source,xml,linenums]
 ----
