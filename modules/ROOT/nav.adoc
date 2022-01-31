@@ -3,8 +3,8 @@
 ** **Annual Seminar**
 
 *** 2021:
-**** xref:{attachmentsdir}/annual-seminar/ESPD_Seminar_Report_20211202.pdf[ESPD Annual Seminar Report]
-**** xref:https://www.youtube.com/watch?v=42wnvaMihvI[ESPD Annual Seminar Video]
+**** link:{attachmentsdir}/annual-seminar/ESPD_Seminar_Report_20211202.pdf[ESPD Annual Seminar Report]
+**** link:https://www.youtube.com/watch?v=42wnvaMihvI[ESPD Annual Seminar Video]
 **** xref:attachment$annual-seminar/2021_ESPD_Annual_Seminar_Presentation.pdf[ESPD Annual Seminar Presentation]
 
 *** 2020:
