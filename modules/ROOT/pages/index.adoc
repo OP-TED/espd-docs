@@ -2,4 +2,4 @@
 
 This section contains the OUC meeting reports and the Annual Seminar documents.
 
-Meeting Reports previous to 2022 can be found in link:https://github.com/OP-TED/espd-docs/tree/wgm-reports/modules/ROOT/attachments[wgm-reports/modules/ROOT/attachments].
+Meeting Reports previous to 2022 can be found in link:{attachmentsdir}[wgm-reports/modules/ROOT/attachments].
