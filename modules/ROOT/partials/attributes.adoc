@@ -1,2 +1,4 @@
 :url-tree: {git-repo-url}/tree
 :url-blob: {git-repo-url}/blob
+:git-docs-url: {https://github.com/OP-TED/espd-docs}
+:url-ouc-attachments-url: {git-docs-url}/tree/wgm-reports/modules/ROOT/attachments
