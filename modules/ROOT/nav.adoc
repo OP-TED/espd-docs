@@ -3,7 +3,7 @@
 ** **Annual Seminar**
 
 *** 2021:
-**** link:https://github.com/OP-TED/espd-docs/tree/wgm-reports/modules/ROOT/attachments/annual-seminar/ESPD_Seminar_Report_20211202.pdf[ESPD Annual Seminar Report]
+**** link:{url-ouc-attachments-url}/annual-seminar/ESPD_Seminar_Report_20211202.pdf[ESPD Annual Seminar Report]
 **** link:https://www.youtube.com/watch?v=42wnvaMihvI[ESPD Annual Seminar Video]
 **** xref:attachment$annual-seminar/2021_ESPD_Annual_Seminar_Presentation.pdf[ESPD Annual Seminar Presentation]
 
