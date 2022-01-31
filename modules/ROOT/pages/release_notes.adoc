@@ -20,9 +20,9 @@ Documentation updated as follow:
 *** _Component_: replaced by _cac:TenderingCriterion/cac:ProcurementProjectLotReference_.
 ** _cbc:QualificationApplicationTypeCode_
 *** _Component_: removed because it is not used in *ESPD-EDM v3.0.x*.
-** _cbc:WeightScoringMethodNote_
+** _cbc:WeightScoringMethodologyDescription_
 *** _Component_: removed because it is not used in *ESPD-EDM v3.0.x*.
-** _cbc:WeightingTypeCode_ 
+** _cbc:WeightingType_ 
 *** _Component_: removed because it is not used in *ESPD-EDM v3.0.x*.
 
 . *Section 2.4 Root elements*
