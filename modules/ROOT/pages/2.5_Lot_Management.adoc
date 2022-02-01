@@ -1,3 +1,4 @@
+[[lot_management, Lot Management]]
 = Lot Management
 include::partial$attributes.adoc[]
 

@@ -34,6 +34,7 @@ Documentation updated as follow:
 *** _Requirement_: updated from _'This information is not required for the ESPD 3.0.0 since the information related to the procedure will come from eForms.'_ to _'This element is required in the ESPD, however it should be identical to that provided in eForms. In general the corresponding eForm should feed the corresponding ESPD with the corresponding data.'_.
 ** _cac:ProcurementProjectLot_
 *** _Component_: replaced by _cac:TenderingCriterion/cac:ProcurementProjectLotReference_.
+*** _Cardinality_: 0..n.
 ** _cbc:ProcedureCode_
 *** _Cardinality_: updated from _0..1_ to _1_ according to _Figure 12. ESPD-EDM 'QualificationApplicationRequest', UML diagram_.
 
