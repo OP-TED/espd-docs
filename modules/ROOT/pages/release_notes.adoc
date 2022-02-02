@@ -119,6 +119,8 @@ Documentation updated as follow:
 * *Figure 193.* ESPD-EDM 'QualificationApplicationResponse', UML diagram
 ** _cac:ProcurementProject_
 *** _Component_: replaced by _cac:ProcurementProject/cbc:Description_ in alignment with *eForms*.
+** _cac:ProcurementProjectLot_
+*** _Cardinality_: updated from _1..n_ to _1_.
 ** _cbc:ProfileExecutionID_
 *** _Cardinality_: updated from _0..1_ to _1_.
 ** _cbc:QualificationApplicationTypeCode_
@@ -141,7 +143,8 @@ Documentation updated as follow:
 *** _Cardinality_: updated from _0..1_ to _1_ according to _Figure 193. ESPD-EDM 'QualificationApplicationResponse', UML diagram._. 
 *** _Requirement_: updated from _'Use this component to identify and describe the procurement administrative procedure. If the procurement procedure is divided into lots use the ProcurementProjectLot component to provide details specific to the lot and reserve the ProcurementProject component to describe the global characteristics of the procedure.'_ to _'This element is required in the ESPD, however it should be identical to that provided in eForms. In general the corresponding eForm should feed the corresponding ESPD with the corresponding data.'_.
 ** _cac:ProcurementProjectLot_ 
-*** _Cardinality_: updated from _0..1_ to _1..n_ according to _Figure 193. ESPD-EDM 'QualificationApplicationResponse', UML diagram._.
+*** _Cardinality_: updated from _0..1_ to _1_ according to _Figure 193. ESPD-EDM 'QualificationApplicationResponse', UML diagram._.
+*** _Description_: updated from _'One of the procurement project lots into which this contract can be divided.'_ to _'The procurement project lot or group of lots this ESPD Response tenders to.'.'
 ** _cbc:EconomicOperatorGroupName_ 
 *** _Type_: updated from _Code_ to _Text_.
 ** _cbc:ProcedureCode_ 
