@@ -1,5 +1,4 @@
 :sectnums:
-[[code-list-catalogue,Annex I. Code List Catalogue]]
 = Annex I. Code List Catalogue
 include::partial$attributes.adoc[]
 
@@ -7,7 +6,7 @@ This section collects all code lists used in *ESPD-EDM v3.0.0* with its classifi
 
 [[access-right-table,access-right]]
 == access-right
-An example of how to use this code list can be found in xref:Tech_AnnexII_XML_Examples.adoc#access-right-xml-example[access-right xml Example].
+An example of how to use this code list can be found in <<access-right-xml-example>>.
 
 [cols="1,2a"]
 |===
@@ -34,7 +33,7 @@ An example of how to use this code list can be found in xref:Tech_AnnexII_XML_Ex
 
 [[boolean-gui-control-type-table,boolean-gui-control-type]]
 == boolean-gui-control-type 
-An example of how to use this code list can be found in xref:Tech_AnnexII_XML_Examples.adoc#boolean-gui-control-type-xml-example[boolean-gui-control-type xml Example].
+An example of how to use this code list can be found in <<boolean-gui-control-xml-example>>.
 
 [cols="1,2a"]
 |===
@@ -52,7 +51,7 @@ Contains values to be use by software implementations to display graphic control
 !*Version* !3.0.1
 !*CanonicalUri* !https://github.com/ESPD/ESPD-EDM
 !*CanonicalVersionUri* !https://github.com/ESPD/ESPD-EDM/tree/3.0.1
-!*LocationUri* !https://raw.githubusercontent.com/ESPD/ESPD-EDM/3.0.1/codelists/gc/BooleanGUIControlType.gc
+!*LocationUri* !https://raw.githubusercontent.com/ESPD/ESPD-EDM/3.0.1/docs/src/main/asciidoc/dist/cl/gc/BooleanGUIControlType.gc
 !*AgencyLongName* !
 !*AgencyIdentifier* !
 
@@ -62,7 +61,7 @@ Contains values to be use by software implementations to display graphic control
 
 [[country-table,country]]
 == country
-An example of how to use this code list can be found in xref:Tech_AnnexII_XML_Examples.adoc#country-xml-example[country xml Example].
+An example of how to use this code list can be found in <<country-xml-example>>.
 
 [cols="1,2a"]
 |===
@@ -89,7 +88,7 @@ An example of how to use this code list can be found in xref:Tech_AnnexII_XML_Ex
 
 [[criterion-table,criterion]]
 == criterion
-An example of how to use this code list can be found in xref:Tech_AnnexII_XML_Examples.adoc#criterion-xml-example[criterion xml Example].
+An example of how to use this code list can be found in <<criterion-xml-example>>.
 
 [cols="1,2a"]
 |===
@@ -116,7 +115,7 @@ An example of how to use this code list can be found in xref:Tech_AnnexII_XML_Ex
 
 [[criterion-element-type-table,criterion-element-type]]
 == criterion-element-type 
-An example of how to use this code list can be found in xref:Tech_AnnexII_XML_Examples.adoc#criterion-element-type-xml-example[criterion-element-type xml Example].
+An example of how to use this code list can be found in <<criterion-element-type-xml-example>>.
 
 [cols="1,2a"]
 |===
@@ -132,8 +131,8 @@ An example of how to use this code list can be found in xref:Tech_AnnexII_XML_Ex
 !*ListID* !criterion-element-type 
 !*Version* !3.0.1
 !*CanonicalUri* !https://github.com/ESPD/ESPD-EDM
-!*CanonicalVersionUri* !https://github.com/ESPD/ESPD-EDM/tree/3.0.1
-!*LocationUri* !https://github.com/ESPD/ESPD-EDM/tree/3.0.1/codelists/gc/CriterionElementType.gc
+!*CanonicalVersionUri* !https://github.com/ESPD/ESPD-EDM/tree/3.0.0
+!*LocationUri* !https://github.com/ESPD/ESPD-EDM/tree/3.0.0/docs/src/main/asciidoc/dist/cl/gc/CriterionElementType.gc
 !*AgencyLongName* !
 !*AgencyIdentifier* !
 
@@ -141,9 +140,9 @@ An example of how to use this code list can be found in xref:Tech_AnnexII_XML_Ex
 
 |===
 
-[[currency-table,currency]]
+[[currency-type-table,currency-type]]
 == currency
-An example of how to use this code list can be found in xref:Tech_AnnexII_XML_Examples.adoc#currency-xml-example[currency xml Example].
+An example of how to use this code list can be found in <<currency-xml-example>>.
 
 [cols="1,2a"]
 |===
@@ -170,7 +169,7 @@ An example of how to use this code list can be found in xref:Tech_AnnexII_XML_Ex
 
 [[docrefcontent-type-table,docrefcontent-type]]
 == docrefcontent-type 
-An example of how to use this code list can be found in xref:Tech_AnnexII_XML_Examples.adoc#docrefcontent-type-xml-example[docrefcontent-type xml Example].
+An example of how to use this code list can be found in <<docrefcontent-type-xml-example>>.
 
 [cols="1,2a"]
 |===
@@ -188,7 +187,7 @@ This code list is maintained as technical for the time being. In the future it m
 !*Version* !3.0.1
 !*CanonicalUri* !https://github.com/ESPD/ESPD-EDM
 !*CanonicalVersionUri* !https://github.com/ESPD/ESPD-EDM/tree/3.0.1
-!*LocationUri* !https://raw.githubusercontent.com/ESPD/ESPD-EDM/3.0.1/codelists/gc/DocRefContentType.gc
+!*LocationUri* !https://raw.githubusercontent.com/ESPD/ESPD-EDM/3.0.1/docs/src/main/asciidoc/dist/cl/gc/DocRefContentType.gc
 !*AgencyLongName* !
 !*AgencyIdentifier* !
 
@@ -198,7 +197,7 @@ This code list is maintained as technical for the time being. In the future it m
 
 [[economic-operator-size-table,economic-operator-size]]
 == economic-operator-size
-An example of how to use this code list can be found in xref:Tech_AnnexII_XML_Examples.adoc#economic-operator-size-xml-example[economic-operator-size xml Example].
+An example of how to use this code list can be found in <<economic-operator-size-xml-example>>.
 
 [cols="1,2a"]
 |===
@@ -225,7 +224,7 @@ An example of how to use this code list can be found in xref:Tech_AnnexII_XML_Ex
 
 [[eoid-type-table,eoid-type]]
 == eoid-type 
-An example of how to use this code list can be found in xref:Tech_AnnexII_XML_Examples.adoc#eoid-type-xml-example[eoid-type xml Example].
+An example of how to use this code list can be found in <<eoid-type-xml-example>>.
 
 [cols="1,2a"]
 |===
@@ -243,7 +242,7 @@ This code list is maintained as technical for the time being. In the future it m
 !*Version* !3.0.1
 !*CanonicalUri* !https://github.com/ESPD/ESPD-EDM
 !*CanonicalVersionUri* !https://github.com/ESPD/ESPD-EDM/tree/3.0.1
-!*LocationUri* !https://raw.githubusercontent.com/ESPD/ESPD-EDM/3.0.1/codelists/gc/EOIDType.gc
+!*LocationUri* !https://raw.githubusercontent.com/ESPD/ESPD-EDM/3.0.1/docs/src/main/asciidoc/dist/cl/gc/EOIDType.gc
 !*AgencyLongName* !
 !*AgencyIdentifier* !
 
@@ -253,7 +252,7 @@ This code list is maintained as technical for the time being. In the future it m
 
 [[eo-role-type-table,eo-role-type]]
 == eo-role-type
-An example of how to use this code list can be found in xref:Tech_AnnexII_XML_Examples.adoc#eo-role-type-xml-example[eo-role-type xml Example].
+An example of how to use this code list can be found in <<eo-role-type-xml-example>>.
 
 [cols="1,2a"]
 |===
@@ -280,7 +279,7 @@ An example of how to use this code list can be found in xref:Tech_AnnexII_XML_Ex
 
 [[financial-ratio-type-table,financial-ratio-type]]
 == financial-ratio-type 
-An example of how to use this code list can be found in xref:Tech_AnnexII_XML_Examples.adoc#financial-ratio-type-xml-example[financial-ratio-type xml Example].
+An example of how to use this code list can be found in <<financial-ratio-type-xml-example>>.
 
 [cols="1,2a"]
 |===
@@ -298,7 +297,7 @@ This code list is maintained by the ESPD Team and codes are collected from Banqu
 !*Version* !1.0
 !*CanonicalUri* !https://www.bach.banque-france.fr/
 !*CanonicalVersionUri* !https://www.bach.banque-france.fr/
-!*LocationUri* !https://github.com/ESPD/ESPD-EDM/tree/3.0.0/codelists/gc/FinancialRatioType.gc
+!*LocationUri* !https://github.com/ESPD/ESPD-EDM/tree/3.0.0/docs/src/main/asciidoc/dist/cl/gc/FinancialRatioType.gc
 !*AgencyLongName* !BACH Banque de France
 !*AgencyIdentifier* !BACH
 
@@ -308,7 +307,7 @@ This code list is maintained by the ESPD Team and codes are collected from Banqu
 
 [[language-table,language]]
 == language
-An example of how to use this code list can be found in xref:Tech_AnnexII_XML_Examples.adoc#language-xml-example[language xml Example].
+An example of how to use this code list can be found in <<language-xml-example>>.
 
 [cols="1,2a"]
 |===
@@ -336,7 +335,7 @@ The concepts included are correlated with the ISO 639 international standard.
 
 [[occupation-table,occupation]]
 == occupation
-An example of how to use this code list can be found in xref:Tech_AnnexII_XML_Examples.adoc#occupation-xml-example[occupation xml Example].
+An example of how to use this code list can be found in <<occupation-xml-example>>.
 
 [cols="1,2a"]
 |===
@@ -355,7 +354,7 @@ The data type expected for this code is URL following the *ESCO* taxonomy identi
 !*Version* !3.0.1
 !*CanonicalUri* !https://github.com/ESPD/ESPD-EDM
 !*CanonicalVersionUri* !https://github.com/ESPD/ESPD-EDM/tree/3.0.1
-!*LocationUri* !https://raw.githubusercontent.com/ESPD/ESPD-EDM/3.0.1/codelists/gc/occupation.gc
+!*LocationUri* !https://raw.githubusercontent.com/ESPD/ESPD-EDM/3.0.1/docs/src/main/asciidoc/dist/cl/gc/occupation.gc
 !*AgencyLongName* !
 !*AgencyIdentifier* !
 
@@ -379,7 +378,7 @@ The data type expected for this code is URL following the *ESCO* taxonomy identi
 !*Version* !3.0.1
 !*CanonicalUri* !https://github.com/ESPD/ESPD-EDM
 !*CanonicalVersionUri* !https://github.com/ESPD/ESPD-EDM/tree/3.0.1
-!*LocationUri* !https://raw.githubusercontent.com/ESPD/ESPD-EDM/3.0.1/codelists/gc/ProfileExecutionID.gc
+!*LocationUri* !https://raw.githubusercontent.com/ESPD/ESPD-EDM/3.0.1/docs/src/main/asciidoc/dist/cl/gc/ProfileExecutionID.gc
 !*AgencyLongName* !
 !*AgencyIdentifier* !
 
@@ -403,7 +402,7 @@ The data type expected for this code is URL following the *ESCO* taxonomy identi
 !*Version* !3.0.1
 !*CanonicalUri* !https://github.com/ESPD/ESPD-EDM
 !*CanonicalVersionUri* !https://github.com/ESPD/ESPD-EDM/tree/3.0.1
-!*LocationUri* !https://raw.githubusercontent.com/ESPD/ESPD-EDM/3.0.1/codelists/gc/PropertyGroupType.gc
+!*LocationUri* !https://raw.githubusercontent.com/ESPD/ESPD-EDM/3.0.1/docs/src/main/asciidoc/dist/cl/gc/PropertyGroupType.gc
 !*AgencyLongName* !
 !*AgencyIdentifier* !
 
@@ -427,7 +426,7 @@ The data type expected for this code is URL following the *ESCO* taxonomy identi
 !*Version* !3.0.1
 !*CanonicalUri* !https://github.com/ESPD/ESPD-EDM
 !*CanonicalVersionUri* !https://github.com/ESPD/ESPD-EDM/tree/3.0.1
-!*LocationUri* !https://raw.githubusercontent.com/ESPD/ESPD-EDM/3.0.1/codelists/gc/ResponseDataType.gc
+!*LocationUri* !https://raw.githubusercontent.com/ESPD/ESPD-EDM/3.0.1/docs/src/main/asciidoc/dist/cl/gc/ResponseDataType.gc
 !*AgencyLongName* !
 !*AgencyIdentifier* !
 

@@ -32,7 +32,7 @@ Caption (i.e. a 'label'), specific MS or buyer requirement (e.g. 'Number of refe
 *Information Requirement*: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1.0-tbr070-013[_tbr070-013_]
 
 |*Business rule(s)*: |BR-SC-20
-|*File*: |ubl-2.3/xsdrt/common/UBL-CommonAggregateComponents-2.3.xsd
+|*File*: |dist/common/xsdrt/UBL-CommonAggregateComponents-2.3.xsd
 |*Path*: |/QualificationApplicationRequest/cac:TenderingCriterion/cac:TenderingCriterionProperty
 |===
 
@@ -56,7 +56,7 @@ Caption (i.e. a 'label'), specific MS or buyer requirement (e.g. 'Number of refe
 |*cbc:TypeCode* |Code |1 |The type of property. Used to verify that structure of the property is correct. a|
 *Information Requirement*: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1.0-tbr070-013[_tbr070-013_].
 
-*Rule*: Compulsory use of the link:{url-tree}/codelists/gc/CriterionElementType.gc[Code List 'CriterionElementType']. Possible types are 'CAPTION, REQUIREMENT and QUESTION'. If the type is CAPTION or REQUIREMENT no answer is expected from the economic operator and therefore the cbc:ValueDataTypeCode must be set to NONE. Otherwise this value must be set to one of the values defined in the link:{url-tree}/codelists/gc/ResponseDataType.gc[Code List 'ResponseDataType']
+*Rule*: Compulsory use of the link:{url-tree}/dist/cl/ods/[Code List 'CriterionElementType']. Possible types are 'CAPTION, REQUIREMENT and QUESTION'. If the type is CAPTION or REQUIREMENT no answer is expected from the economic operator and therefore the cbc:ValueDataTypeCode must be set to NONE. Otherwise this value must be set to one of the values defined in the link:{url-tree}/dist/cl/ods/[Code List 'ResponseDataType']
 
 *Rule scope*: BR-TC-20, BR-OTH-01, BR-OTH-01#14, BR-OTH-03
 

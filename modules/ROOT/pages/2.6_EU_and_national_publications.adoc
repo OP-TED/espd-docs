@@ -43,7 +43,7 @@ _Table 6. Reference to additional documents, expected elements_
 |*Class name*: |cac:AdditionalDocumentReference
 |*Definition*: |A reference to an additional document associated with this document.
 |*Business rule(s)*: |Common (BR-COM-10)
-|*File*: |ubl-2.3/xsdrt/common/UBL-CommonAggregateComponents-2.3.xsd
+|*File*: |dist/common/xsdrt/UBL-CommonAggregateComponents-2.3.xsd
 |*Path*: |/QualificationApplicationRequest/cac:AdditionalDocumentReference
 |*Context of Use*: |In this case this reference points at a document published on the Supplement of the European Official Journal or on a national journal.
 |===
@@ -97,7 +97,7 @@ _Table 7. External Reference_
 |===
 |*Component name*: |cac:ExternalReference
 |*Definition*: |A reference to the authentic source of content of this document.
-|*File*: |ubl-2.3/xsdrt/common/UBL-CommonAggregateComponents-2.3.xsd
+|*File*: |dist/common/xsdrt/UBL-CommonAggregateComponents-2.3.xsd
 |*Path*: |/QualificationApplicationRequest/cac:AdditionalDocumentReference/cac:Attachment/cac:ExternalReference
 |===
 
@@ -193,10 +193,10 @@ The XML snippet below illustrates how to use the cac:AdditionalDocumentReference
 ----
 
 . For TED Notices you must use the Publications Office Official Journal Supplement number in its original format [][][][]/S [][][]-[][][][][][], e.g. 2017/S 142-293520. Notice that the schemeAgencyID is EU-COM-OP (OP standing for 'Publications Office').
-. The jurisdiction scope of this document is typified in the Code List docref-content-type (see file /codelists/gc/docref-content-type.gc in the distribution package). *Beware that the name and content of this Code List has changed from the previous ESPD-EDM version 2.1.1*.
+. The jurisdiction scope of this document is typified in the Code List docref-content-type (see file dist/cl/ESPD-CodeLists-V3.0.0 in the distribution package). *Beware that the name and content of this Code List has changed from the previous ESPD-EDM version 2.1.1*.
 . The ESPD documents never embed the actual content. Rather the content is always referenced from its original source (alignment to the Once-Only-Principle).
 . The title of the CN has to be placed in the FileName field of the attachment. UBL does not provide a placeholder fo the title of the document.
 . In the case of publication on the TED, at ESPD Request preparation time, the procurer does not have yet the OJS number, but can receive a temporary CN identifier (Received Notice Number). To save this number in the DocumentReference component create two cbc:Description elements and use the second one to place this Received Notice Number. If you do not have a description for the CN then use a 'dummy' content for the first description, e.g. <cbc:Description>_</cbc:/Description>.
 . Notice how the schemeAgencyID is used in this example to specify that the national Agency that created this reference to the national publication (e.g. "PLACE" to refer to the ID of the national electronic board where the CN was published). The pattern of the ID is the one created by the Spanish buyer.
-. In this case the code NOJCN means 'Contract Notice (CN) published on a National Government Official Journal' (see file docref-content-type.gc in the distribution package).
+. In this case the code NOJCN means 'Contract Notice (CN) published on a National Government Official Journal' (see file ESPD-CodeLists-V3.0.0) in the distribution package.
 
