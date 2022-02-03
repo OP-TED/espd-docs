@@ -86,7 +86,8 @@ Documentation updated as follow:
 . *Section 3.1 General behavior*
 * *Table 20.* Criterion, expected elements
 ** _cac:ProcurementProjectLotReference_
-*** Type: updated from _Text_ to _Class_.
+*** _Type_: updated from _Text_ to _Class_.
+*** _Cardinality_: updated from _1..n_ to _0..n_.
 
 . *Section 3.2 Legislation*
 * *Table 21.* Legislation, expected elements
@@ -180,7 +181,7 @@ Documentation updated as follow:
 
 * *Table 34.* Economic operator role, expected elements
 ** _cbc:RoleDescription_
-*** Cardinality: updated from _0..n_ to _0..1_.
+*** _Cardinality_: updated from _0..n_ to _0..1_.
 
 * *Table 35.* (Qualifying) economic operator party, expected elements
 ** _cac:PartyIdentification/cbc:Identifier_ 
@@ -201,7 +202,10 @@ Documentation updated as follow:
 * *Table 45.* Elements expected from the 'cac:Evidence/cac:DocumentReference' element
 ** _cac:Attachment/cac:ExternalReference/cbc:URI_ 
 *** _Requirement_: updated from _'None. Not currently used in ESPD.'_ to _'None. No rule is applied.'_ because previous text was misleading.
+** _cac:IssuerParty/cbc:ID_
+*** _Component_: replaced by _cac:IssuerParty/cac:PartyIdentification/cbc:ID_.
 ** _cac:IssuerParty/cbc:Name_
 *** _Component_: replaced by _cac:IssuerParty/cac:PartyName/cbc:Name_.
 ** _cac:IssuerParty/cbc:WebsiteURI_
+*** _Type_: updated from _URI_ to _Identifier_.
 *** _Requirement_: updated from _'None. Not currently used in ESPD.'_ to _'None. No rule is applied.'_ because previous text was misleading.

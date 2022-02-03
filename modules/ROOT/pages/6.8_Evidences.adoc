@@ -128,7 +128,7 @@ _Table 45. Elements expected from the 'cac:Evidence/cac:DocumentReference' eleme
 
 *Rule*: None. No rule is applied.
 
-|*cac:IssuerParty/cbc:ID* |Identifier |0..1 |The identifier of the party issuer of the documentary evidence. a|
+|*cac:IssuerParty/cac:PartyIdentification/cbc:ID* |Identifier |0..1 |The identifier of the party issuer of the documentary evidence. a|
 *Information Requirement*: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1-tbr092-017[_tbr092-017, tbr092-007, tbr092-006_]
 
 *Rule*: Not currently used in ESPD, but if you decide to use it try to use the VAT number whenever possible.
@@ -140,7 +140,7 @@ _Table 45. Elements expected from the 'cac:Evidence/cac:DocumentReference' eleme
 
 *Rule*: ESPD-EDM uses this element to keep the name of the evidence issuer in the ESPD Response XML instance.
 
-|*cac:IssuerParty/cac:Party/cac:PartyName/cbc:Name* |URI |0..1 |The website of the party issuer of the documentary evidence. a|
+|*cac:IssuerParty/cbc:WebsiteURI* |Identifier |0..1 |The website of the party issuer of the documentary evidence. a|
 *Information Requirement*: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1-tbr092-017[_tbr092-017, tbr092-007, tbr092-006_]
 
 *Rule*: None. No rule is applied.
