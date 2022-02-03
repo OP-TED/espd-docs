@@ -31,7 +31,7 @@ A tendering criterion describes a fact or a condition that is used by the contra
 link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1.0-tbr070-009[_tbr070-009_]
 
 |*Business rule(s)*: |BR-LOT-20, BR-LOT-30, BR-LOT-30-S20, Common (BR-TC-01)
-|*File*: |dist/common/xsdrt/UBL-CommonAggregateComponents-Components-2.3.xsd.xsd
+|*File*: |ubl-2.3/xsdrt/common/UBL-CommonAggregateComponents-Components-2.3.xsd.xsd
 |*Path*: |/QualificationApplicationRequest/cac:TenderingCriterion
 |===
 
@@ -41,28 +41,28 @@ link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1
 |*cbc:ID* |Identifier |1 |A language-independent token, e.g., a number, that allows to identify a criterion uniquely as well as allows to reference the criterion in other documents. a|
 *Information Requirement*: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1.0-tbr070-010[_tbr070-010_].
 
-*Rule*: Each Criterion is defined in e-Certis and must use the UUID supplied by e-Certis. See also the spreadsheets link:{url-tree}/dist/cl/ods/[_Criterion_].
+*Rule*: Each Criterion is defined in e-Certis and must use the UUID supplied by e-Certis. See also the spreadsheets link:{url-tree}/codelists/ESPD-criterion.xlsx[_ESPD-criterion_].
 
 *Rule scope*: Common (BR-TC-02, BR-TC-12, BR-TC-13, BR-OTH-02)
 
 |*cbc:CriterionTypeCode* |Code |1 |A classification code defined by the ESPD-EDM to represent the criterion in the ESPD taxonomy of criteria. a|
 *Information Requirement*: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1.0-tbr070-013[_tbr070-013_]
 
-*Rule*: Compulsory use of codes coming from e-Certis, which are also used in the spreadsheets link:{url-tree}/dist/cl/ods/[_Criterion_], e.g. crime-org, corruption, chain-manage)
+*Rule*: Compulsory use of codes coming from e-Certis, which are also used in the spreadsheets link:{url-tree}/codelists/ESPD-criterion.xlsx[_ESPD-criterion_], e.g. crime-org, corruption, chain-manage)
 
 *Rule scope*: Common (BR-REQ-30, BR-REQ-30-S10, BR-REQ-30-S20, BR-REQ-40, BR-TC-03, BR-TC-04, BR-OTH-01, BR-OTH-01#7, BR-OTH-03)
 
 |*cbc:Name* |Text |1 |A short and descriptive name for a criterion. a|
 *Information Requirement*: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1.0-tbr70-010[_tbr70-010_]
 
-*Rule*: The name should match the one from e-Certis, which should be the same as in the in the spreadsheets link:{url-tree}/dist/cl/ods/[_Criterion_], e.g. 'Convictions', 'Corruption', 'Fraud', 'Financial ratio', 'Subcontracting proportion'etc.).
+*Rule*: The name should match the one from e-Certis, which should be the same as in the in the spreadsheets link:{url-tree}/codelists/ESPD-criterion.xlsx[_ESPD-criterion_]], e.g. 'Convictions', 'Corruption', 'Fraud', 'Financial ratio', 'Subcontracting proportion'etc.).
 
 *Rule scope*: Common (BR-TC-05)
 
 |*cbc:Description* |Text |1..n |An extended description of the criterion. a|
 *Information Requirement*: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1.0-tbr70-010[_tbr70-010_]
 
-*Rule*: The description should match the one from e-Certis, which should be the same as in the in the spreadsheets  link:{url-tree}/dist/cl/ods/[_Criterion_], e.g. 'Has the economic operator itself or any person who is a member of its administrative, management or supervisory body or has powers of representation, decision or control therein been the subject of a conviction by final judgment for participation in a criminal organisation, by a conviction rendered at the most five years ago or in which an exclusion period set out directly in the conviction continues to be applicable? As defined in Article 2 of Council Framework Decision 2008/841/JHA of 24 October 2008 on the fight against organised crime (OJ L 300, 11.11.2008, p. 42).'.
+*Rule*: The description should match the one from e-Certis, which should be the same as in the in the spreadsheets  link:{url-tree}/codelists/ESPD-criterion.xlsx[_ESPD-criterion_]], e.g. 'Has the economic operator itself or any person who is a member of its administrative, management or supervisory body or has powers of representation, decision or control therein been the subject of a conviction by final judgment for participation in a criminal organisation, by a conviction rendered at the most five years ago or in which an exclusion period set out directly in the conviction continues to be applicable? As defined in Article 2 of Council Framework Decision 2008/841/JHA of 24 October 2008 on the fight against organised crime (OJ L 300, 11.11.2008, p. 42).'.
 
 *Rule scope*: Common (BR-TC-06, BR-TC-19)
 
