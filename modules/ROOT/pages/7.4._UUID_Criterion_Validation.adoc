@@ -7,7 +7,7 @@ Each Criterion is defined in e-Certis and must use the *Universally Unique Ident
 . These UUIDs are 'constant', meaning that they are maintained by DG GROW and need to be used compulsory as they were issued by DG GROW.
 . The value of each UUID are defined in the spreadsheets:
 [loweralpha]
-.. link:{url-blob}/dist/cl/xlsx/[ESPD-criterion-V3.0.0]
+.. link:{url-tree-tmp}/dist/cl/xlsx/[ESPD-criterion-V3.0.0]
 
 ESPD validates that the UUID defined in the ESPDRequest XML or ESPDResponse XML are the ones supplied by e-Certis:
 

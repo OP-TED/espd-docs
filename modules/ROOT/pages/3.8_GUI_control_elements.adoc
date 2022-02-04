@@ -5,7 +5,7 @@ The ESPD-EDM specification includes two sets of data elements (codes) that help 
 
 ONTRUE/ONFALSE codes for GROUP and SUBGROUP control
 
-Three codes concerning the GROUPS or SUBGROUPS of REQUIREMENT(s) and QUESTION(s) are defined in the code list link:{url-blob}/tree}codelists/gc/PropertyGroupType.gc[PropertyGroupType]:
+Three codes concerning the GROUPS or SUBGROUPS of REQUIREMENT(s) and QUESTION(s) are defined in the code list link:{url-tree-tmp}/codelists/gc/PropertyGroupType.gc[PropertyGroupType]:
 
 [arabic]
 . ON*, meaning that the GROUP or SUBGROUP has to be processed always;
