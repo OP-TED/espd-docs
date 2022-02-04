@@ -188,8 +188,12 @@ Documentation updated as follow:
 *** _Requirement_: updated from _'More than one identifier can be specified. Compulsory use of the attribute schemeAgencyID and highly recommended the use of the attribute schemeAgencyID. The preferred identifier is the national VAT number. Additional identifiers may be used'_ to _'When possible use the VAT identification of the contracting body (see the link:https://ec.europa.eu/taxation_customs/vies/[VIES] platform for a EU cross-border national VAT number verification system). When not possible a different identifier may be used.'_ because previous text was ambiguous.
 
 * *Table 36.* Economic operator postal address, expected elements
-** _cac:EconomicOperator_
+** _cac:PostalAddress_
 *** _Path_: updated from _/QualificationApplicationResponse/​cac:EconomicOperator/​cac:Party/​cac:PostalAddress_ to _/QualificationApplicationResponse/​cac:EconomicOperatorParty/​cac:Party/​cac:PostalAddress_ according to _Figure 198. cac:QualifyingParty element, XSD_.
+
+* *Table 38.* Service provider, expected elements
+** _cac:PostalAddress/cac:Country/cbc:IdentificationCode_
+*** _Type_: updated from _Identifier_ to _Code_.
 
 . *Section 6.8 Evidences*
 * _cac:Evidence/cac:DocumentReference/cac:IssuerParty_
@@ -207,5 +211,4 @@ Documentation updated as follow:
 ** _cac:IssuerParty/cbc:Name_
 *** _Component_: replaced by _cac:IssuerParty/cac:PartyName/cbc:Name_.
 ** _cac:IssuerParty/cbc:WebsiteURI_
-*** _Type_: updated from _URI_ to _Identifier_.
 *** _Requirement_: updated from _'None. Not currently used in ESPD.'_ to _'None. No rule is applied.'_ because previous text was misleading.
