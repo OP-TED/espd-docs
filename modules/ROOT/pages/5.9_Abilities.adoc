@@ -57,7 +57,7 @@ _Figure 166. 'Abilities (I)' EO mock-up_
 
 == Data Structure
 
-(The figure below is defined in the the tab ''SC-Abilities_1 (Persons)'' of the link:{url-blob}/dist/cl/xlsx/[ESPD-criterion-V3.0.0] spread-sheet).
+(The figure below is defined in the the tab ''SC-Abilities_1 (Persons)'' of the link:{url-tree-tmp}/codelists/ESPD-criterion.xlsx[ESPD-criterion] spread-sheet).
 
 image:Abilities_Persons_criterion_data structure.jpg['Abilities (I)(Persons)' criterion data structure,width=566,height=372]
 
@@ -300,7 +300,7 @@ The XML example below shows the REQUIREMENT(s) and QUESTION(s).
 
 == Data Structure
 
-(The figure below is defined in the the tab ''SC_Abilities_2 (Facilities,...)'' of the link:{url-blob}/dist/cl/xlsx/[ESPD-criterion-V3.0.0] spread-sheet).
+(The figure below is defined in the the tab ''SC_Abilities_2 (Facilities,...)'' of the link:{url-tree-tmp}/codelists/ESPD-criterion.xlsx[ESPD-criterion] spread-sheet).
 
 image:Abilities_Facilities_criterion data structure.jpg['Abilities (II) (Facilities, ....)' criterion data structure,width=526,height=188]
 
@@ -456,7 +456,7 @@ _Criterion "Technical facilities and measures for ensuring quality" (ESPD-Reques
 
 == Data Structure
 
-(The figure below is defined in the the tab ''SC_Abilities_3 (Education)'' of the link:{url-blob}/dist/cl/xlsx/[ESPD-criterion-V3.0.0] spread-sheet).
+(The figure below is defined in the the tab ''SC_Abilities_3 (Education)'' of the link:{url-tree-tmp}/codelists/ESPD-criterion.xlsx[ESPD-criterion] spread-sheet).
 
 image:abilitites-education-datastructure.png.jpg[Abilities (III) (Education)' criterion data structure,width=566,height=313]
 
@@ -686,7 +686,7 @@ _Criterion "Educational and professional qualifications" ESPD-Request)_
 
 == Mock-ups - buyer perspective
 
-The buyer has selected the 'allowance of checks' (in link:{url-blob}/dist/cl/xlsx/[ESPD-criterion-V3.0.0] will be shown as "Special requierements check", spec-req-check) option in a ESPD Request builder software application GUI. This software application will create a criterion of this in the ESPD Request XML instance with zero, one or more REQUIREMENT(s) by the EO.
+The buyer has selected the 'allowance of checks' (in link:{url-tree-tmp}/codelists/ESPD-criterion.xlsx[ESPD-criterion] will be shown as "Special requierements check", spec-req-check) option in a ESPD Request builder software application GUI. This software application will create a criterion of this in the ESPD Request XML instance with zero, one or more REQUIREMENT(s) by the EO.
 
 The buyer (CA) can specify none, one or several REQUIREMENT(s). In this case a REQUIREMENT is a descriptive text provided by the buyer where the criterion is better explained or where certain conditions relating to the criterion. In this example the buyer is specifying which type of premises it wants to check and for which reasons.
 
@@ -714,7 +714,7 @@ The data structure below shows how this criterion is organised. Notice the follo
 
 (Some columns have been hidden to enhance the readability of the image).
 
-(The figure below is defined in the the tab 'SC_Abilities_4 (Checks)' of the link:{url-blob}/dist/cl/xlsx/[ESPD-criterion-V3.0.0] spread-sheet).
+(The figure below is defined in the the tab 'SC_Abilities_4 (Checks)' of the link:{url-tree-tmp}/codelists/ESPD-criterion.xlsx[ESPD-criterion] spread-sheet).
 
 image:Abilities_IV_Checks_criterion data_structure.jpg['Abilities (IV) (Checks)' criterion data structure,width=539,height=353]
 
@@ -859,7 +859,7 @@ _Allowance of checks criterion /Special requierements check_
 
 == Data Structure
 
-(The figure below is defined in the the tab ''SC_Abilities_5 (Staff)'' of the link:{url-blob}/dist/cl/xlsx/[ESPD-criterion-V3.0.0] spread-sheet).
+(The figure below is defined in the the tab ''SC_Abilities_5 (Staff)'' of the link:{url-tree-tmp}/codelists/ESPD-criterion.xlsx[ESPD-criterion] spread-sheet).
 
 image:Abilities_IV_Checks_criterion data_structure.jpg['Abilities (V) (Staff)' criterion data structure,width=566,height=362]
 
