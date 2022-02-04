@@ -41,7 +41,7 @@ _Table 27. Reference to the ESPD Request, expected elements_
 |*Class name*: |cac:AdditionalDocumentReference
 |*Definition*: |A reference to an additional document associated with this document.
 |*Business rule(s)*: |None
-|*File*: |dist/common/xsdrt/UBL-CommonAggregateComponents-2.3xsd
+|*File*: |ubl-2.3/xsdrt/common/UBL-CommonAggregateComponents-2.3xsd
 |*Path*: |/QualificationApplicationResponse/cac:AdditionalDocumentReference
 |*Context of Use*: |In this case this reference points at the ESPD Request XML instance that was used to produce the ESPD Response XML document.
 |===
@@ -66,14 +66,14 @@ _Table 27. Reference to the ESPD Request, expected elements_
 |*cbc:DocumentTypeCode* |Code |1 |The type of document being referenced, expressed as a code. a|
 *Information Requirement*: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1-tbr92-013[_tbr92-013_].
 
-*Rule*: For the ESDP-EDM it is compulsory use of the value ESPD_REQUEST from the Code List link:{url-tree-tmp}/dist/cl/ods/[_doc-ref-content-type_]. See also the XML example below on how to specify the ESPD Request.
+*Rule*: For the ESDP-EDM it is compulsory use of the value ESPD_REQUEST from the Code List link:{url-tree-tmp}/codelists/gc/docref-content-type.gc[_doc-ref-content-type_]. See also the XML example below on how to specify the ESPD Request.
 
 *Rule scope*: Common (BR-OTH-01, BR-COM-10#3, BR-OTH-01#3, BR-OTH-03)
 
 |*cbc:DocumentType* |Text |0..1 |The type of document being referenced, expressed as text. a|
 *Information Requirement*: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1-tbr92-013[_tbr92-013_].
 
-*Rule*: Optionally use the attribute languageID to indicate the language of the text. Use the Code List link:{url-tree-tmp}/dist/cl/ods/[_Language_] for the value of the languageID attribute.
+*Rule*: Optionally use the attribute languageID to indicate the language of the text. Use the Code List link:{url-tree-tmp}/codelists/gc/Language.gc[_Language_] for the value of the languageID attribute.
 
 *Rule scope*: Common (BR-OTH-01, BR-OTH-01#4, BR-OTH-03)
 
@@ -99,7 +99,7 @@ _Table 28. External Reference_
 |===
 |*Component name*: |*cac:ExternalReference*
 |*Definition*: |A reference to the authentic source of content of this document.
-|*File*: |dist/common/xsdrt/UBL-CommonAggregateComponents-2.3.xsd
+|*File*: |ubl-2.3/xsdrt/common/UBL-CommonAggregateComponents-2.3.xsd
 |*Path*: |/QualificationApplicationResponse/cac:AdditionalDocumentReference/cac:Attachment/cac:ExternalReference
 |*Context of use*: |Reference to the URI location where the ESPD Request XML instance can be downloaded from.
 |===
