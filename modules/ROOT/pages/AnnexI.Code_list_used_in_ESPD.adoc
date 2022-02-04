@@ -20,10 +20,10 @@ Beware that in the ESPD documents codes can be used in different places, e.g.:
 Additional information about the code lists can be found in:
 
 
-* The link:{url-tree-tmp}/dist/cl/ods/ESPD-CodeLists-V3.0.0.ods[spread-sheet] distributed with this documentation;
+* The <<code-list-catalogue>> on this documentation;
 
 
-* The multilingual link:{url-tree-tmp}/dist/cl/gc[Genericode] *.gc files automatically produced based on these spread-sheets; and
+* The multilingual link:{url-tree}/codelists/gc/[Genericode] *.gc files automatically produced based on these spread-sheets; and
 
 
 The table below lists the code lists used in the ESPD documents and where they are used.
@@ -40,7 +40,7 @@ The table below lists the code lists used in the ESPD documents and where they a
 |EOIDType |DG GROW (European Commission) |Attribute cac:PartyIdentification/cbc:ID@SchemeID. See 'Requirement" boxes in section *6.6 Economic Operator*
 |economic-operator-size |Publications Office of the EU |Used in the UBL-2.3 element cac:EconomicOperatorParty/{zwsp}cac:QualifyingParty/{zwsp}cbc:IndustryClassificationCode to specify the size of the economic operator.
 |eo-role-type |DG GROW (European Commission) |Element cac:EconomicOperatorRole/{zwsp}cbc:RoleCode.
-|FinancialRatioType |BACH Banque de France |Used in the REQUIREMENT "Ratio Type" of the Criterion  *finan-rat*. See data structure for this criterion in the ESPD Request link:{url-tree-tmp}/dist/cl/ods/ESPD-CodeLists-V3.0.0.ods[+++spread-sheet+++].
+|FinancialRatioType |BACH Banque de France |Used in the REQUIREMENT "Ratio Type" of the Criterion  *finan-rat*. See data structure for this criterion in the ESPD Request link:{url-tree-tmp}/codelists/ESPD-criterion.xlsx[ESPD-criterion].
 |Language |Publications Office of the EU |e.g. in cac:Legislation/{zwsp}cac:Language/{zwsp}cbc:LocaleCode. See for instance XML example in section *4. 7 Early termination*
 |ProfileExecutionID |DG GROW (European Commission) |Element cbc:ProfileExecutionID used at the root of the UBL-2.3 QualificationApplicationRequest and QualificationApplicationResponse documents. See table of expected elements in section *2.4 Root elements*
 |PropertyGroupType |DG GROW (European Commission) |Element cac:TenderingCriterion/{zwsp}cac:TenderingCriterionPropertyGroup/{zwsp}cbc:PropertyGroupTypeCode.

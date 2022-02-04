@@ -134,7 +134,7 @@ Documentation updated as follow:
 . *Section 6.4 Root elements*
 * *Table 26.* Class QualificationApplicationResponse, components required by the ESPD-EDM V3.0.0
 ** _cac:ContractingParty_ 
-*** _Desciption_: updated with text _'See section <<2.7_Contracting_Body>> for more specification details.'_ where this element is described.
+*** _Desciption_: updated with text _'See section xref:2.7_Contracting_Body.adoc[Contracting Body] for more specification details.'_ where this element is described.
 ** _cac:EconomicOperator_
 *** _Component_: replaced by _cac:EconomicOperatorParty_ according to _Figure 193. ESPD-EDM 'QualificationApplicationResponse', UML diagram._.
 *** _Cardinality_: updated from _0..1_ to _1_.
