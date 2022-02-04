@@ -23,7 +23,7 @@ Additional information about the code lists can be found in:
 * The link:{url-blob}/dist/cl/ods/ESPD-CodeLists-V3.0.0.ods[spread-sheet] distributed with this documentation;
 
 
-* The multilingual link:{url-tree}/dist/cl/gc[Genericode] *.gc files automatically produced based on these spread-sheets; and
+* The multilingual link:{url-tree-tmp}/dist/cl/gc[Genericode] *.gc files automatically produced based on these spread-sheets; and
 
 
 The table below lists the code lists used in the ESPD documents and where they are used.
