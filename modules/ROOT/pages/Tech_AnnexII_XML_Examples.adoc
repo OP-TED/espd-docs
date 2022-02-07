@@ -13,7 +13,7 @@ The following xml code is an example of use of code list xref:Tech_AnnexI_Code_L
 ----
 <cac:Evidence>
     <cbc:ID schemeAgencyID="OP">EVIDENCE-00001</cbc:ID>
-    <cbc:ConfidentialityLevelCode listID="http://publications.europa.eu/resource/authority/access-right" listAgencyID="" listVersionID="20210317-0">CONFIDENTIAL</cbc:ConfidentialityLevelCode>
+    <cbc:ConfidentialityLevelCode listID="http://publications.europa.eu/resource/authority/access-right" listAgencyID="OP" listVersionID="20211208-0">CONFIDENTIAL</cbc:ConfidentialityLevelCode>
     <cac:DocumentReference>
         <cbc:ID schemeAgencyID="OP">SAT-11121233</cbc:ID>
         <cac:Attachment>
@@ -113,7 +113,7 @@ The following xml code is an example of use of code list xref:Tech_AnnexI_Code_L
         <cbc:CityName>DummyValue</cbc:CityName>
         <cbc:PostalZone>DummyValue</cbc:PostalZone>
         <cac:Country>
-                <cbc:IdentificationCode listID="http://publications.europa.eu/resource/authority/country" listAgencyID="OP" listVersionID="20210929-0">AND</cbc:IdentificationCode>
+                <cbc:IdentificationCode listID="http://publications.europa.eu/resource/authority/country" listAgencyID="OP" listVersionID="20211208-0">AND</cbc:IdentificationCode>
         </cac:Country>
 </cac:PostalAddress>
 (...)
@@ -208,7 +208,7 @@ Code list xref:Tech_AnnexI_Code_Lists_Catalogue.adoc#currency-table[currency] ca
         <cbc:Description>Additional Information</cbc:Description>
         <cbc:TypeCode listID="criterion-element-type" listVersionID="3.0.1">REQUIREMENT</cbc:TypeCode>
         <cbc:ValueDataTypeCode listID="response-data-type" listVersionID="3.0.1">DESCRIPTION</cbc:ValueDataTypeCode>
-        <cbc:ValueCurrencyCode listID="http://publications.europa.eu/resource/authority/currency" listAgencyID="OP" listVersionID="20210929-0">EUR</cbc:ValueCurrencyCode>
+        <cbc:ValueCurrencyCode listID="http://publications.europa.eu/resource/authority/currency" listAgencyID="OP" listVersionID="20211208-0">EUR</cbc:ValueCurrencyCode>
         (...)
 </cac:TenderingCriterionProperty>
 ----
@@ -274,7 +274,7 @@ The following xml code is an example of use of code list xref:Tech_AnnexI_Code_L
         (...)       
         <cac:Party>
                 <cbc:WebsiteURI>www.Procurer.com</cbc:WebsiteURI>
-                <cbc:IndustryClassificationCode listID="http://publications.europa.eu/resource/authority/economic-operator-size" listAgencyID="" listVersionID="20210317-0">sme</cbc:IndustryClassificationCode>
+                <cbc:IndustryClassificationCode listID="http://publications.europa.eu/resource/authority/economic-operator-size" listAgencyID="OP" listVersionID="20210317-0">sme</cbc:IndustryClassificationCode>
                 <cac:PartyIdentification>
                         <cbc:ID schemeAgencyID="OP">AD123456789</cbc:ID>
                 </cac:PartyIdentification>
@@ -320,7 +320,7 @@ The following xml code is an example of use of code list xref:Tech_AnnexI_Code_L
 (...)
 <cac:EconomicOperatorParty>
         <cac:EconomicOperatorRole>
-                <cbc:RoleCode listID="http://publications.europa.eu/resource/authority/eo-role-type" listAgencyID="OP" listVersionID="20210616-0">group-mem</cbc:RoleCode>
+                <cbc:RoleCode listID="http://publications.europa.eu/resource/authority/eo-role-type" listAgencyID="OP" listVersionID="20211208-0">group-mem</cbc:RoleCode>
         </cac:EconomicOperatorRole>
         <cac:Party>
                 (...)
@@ -358,7 +358,7 @@ The following xml code is an example of use of code list xref:Tech_AnnexI_Code_L
                 'cbc:ValueDataTypeCode' contains the type of value of the requirement issued by the
                 buyer -->
                         <cbc:ExpectedCode listID=
-                        "financial-ratio-type" listAgencyID="BACH" listVersionID="1.0">R11</cbc:ExpectedCode>
+                        "financial-ratio-type" listVersionID="3.0.1">R11</cbc:ExpectedCode>
                 </cac:TenderingCriterionProperty>
                 (...)
         </cac:SubsidiaryTenderingCriterionPropertyGroup>
@@ -383,7 +383,7 @@ The following xml code is an example of use of code list xref:Tech_AnnexI_Code_L
         <cbc:Article>[Article, e.g. Article 2.I.a]</cbc:Article>
         <cbc:URI>http://eur-lex.europa.eu/</cbc:URI>
         <cac:Language>
-                <cbc:LocaleCode listID="http://publications.europa.eu/resource/authority/language" listAgencyName="OP" listVersionID="20210929-0">ENG</cbc:LocaleCode>
+                <cbc:LocaleCode listID="http://publications.europa.eu/resource/authority/language" listAgencyName="OP" listVersionID="20211208-0">ENG</cbc:LocaleCode>
         </cac:Language>
 </cac:Legislation>
 ----

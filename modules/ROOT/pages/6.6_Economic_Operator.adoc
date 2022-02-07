@@ -577,7 +577,7 @@ _Economic operator data - XML example_
 
 <!-- This EO company is NOT an SME -->
 
-<cbc:IndustryClassificationCode listID="economic-operator-size" listAgencyID="EU-COM-OP" listVersionID="20200923-0">LARGE</cbc:IndustryClassificationCode>
+<cbc:IndustryClassificationCode listID="economic-operator-size" listAgencyID="OP" listVersionID="20210317-0">LARGE</cbc:IndustryClassificationCode>
 
 <!-- Notice that the ID and Name of the Pre-Qualification System is in the attributes. They would be captured from e-Certis. -->
 
@@ -593,7 +593,7 @@ _Economic operator data - XML example_
 
 <cac:EconomicOperatorRole>
 
-<cbc:RoleCode listID="eo-role-type" listAgencyID="EU-COM-GROW" listVersionID="3.0.0">group-lead</cbc:RoleCode>
+<cbc:RoleCode listID="eo-role-type" listAgencyID="OP" listVersionID="20211208-0">group-lead</cbc:RoleCode>
 
 <cbc:RoleDescription>Sole entity or, in case of Consortium, Joint Venture or other types of groups, the leader of the group.</cbc:RoleDescription>
 
@@ -826,7 +826,7 @@ _Economic operator's representatives_
 
 <!-- This EO company is NOT an SME -->
 
-<cbc:IndustryClassificationCode listID="economic-operator-size" listAgencyID="EU-COM-OP" listVersionID="20200923-0">large</cbc:IndustryClassificationCode>
+<cbc:IndustryClassificationCode listID="economic-operator-size" listAgencyID="OP" listVersionID="20210317-0">large</cbc:IndustryClassificationCode>
 
 <!-- Notice that the ID and Name of the Pre-Qualification System is in the attributes. They would be captured from e-Certis. -->
 
@@ -842,7 +842,7 @@ _Economic operator's representatives_
 
 <cac:EconomicOperatorRole>
 
-<cbc:RoleCode listID="eo-role-type" listAgencyID="EU-COM-OP" listVersionID="3.0.0">sole-tenderer</cbc:RoleCode>
+<cbc:RoleCode listID="eo-role-type" listAgencyID="OP" listVersionID="20211208-0">sole-tenderer</cbc:RoleCode>
 
 <cbc:RoleDescription>Sole entity or, in case of Consortium, Joint Venture or other types of groups, the leader of the group.</cbc:RoleDescription>
 
@@ -874,7 +874,7 @@ _Economic operator's representatives_
 
 <cac:Country>
 
-<cbc:IdentificationCode listID="Country" listAgencyID="EU-COM-OP" listVersionID=" 20201216-0">ESP</cbc:IdentificationCode>
+<cbc:IdentificationCode listID="Country" listAgencyID="OP" listVersionID="20211208-0">ESP</cbc:IdentificationCode>
 
 <cbc:Name>Spain</cbc:Name>
 
@@ -932,7 +932,7 @@ _Economic operator's representatives_
 
 <cac:Country>
 
-<cbc:IdentificationCode listID="Country" listAgencyID="EU-COM-OP" listVersionID=" 20201216-0">BEL</cbc:IdentificationCode>
+<cbc:IdentificationCode listID="Country" listAgencyID="OP" listVersionID="20211208-0">BEL</cbc:IdentificationCode>
 
 <cbc:Name languageID="en">Belgium</cbc:Name>
 
@@ -982,7 +982,7 @@ _Economic operator's representatives_
 
 <cac:Country>
 
-<cbc:IdentificationCode listID="Country" listAgencyID="EU-COM-OP" listVersionID=" 20201216-0">>ESP</cbc:IdentificationCode>
+<cbc:IdentificationCode listID="Country" listAgencyID="OP" listVersionID="20211208-0">>ESP</cbc:IdentificationCode>
 
 <cbc:Name languageID="en">Spain</cbc:Name>
 

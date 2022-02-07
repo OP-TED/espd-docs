@@ -21,12 +21,12 @@ An example of how to use this code list can be found in xref:Tech_AnnexII_XML_Ex
 !*ShortName* !AccessRight
 !*LongName* !access-right
 !*ListID* !http://publications.europa.eu/resource/authority/access-right
-!*Version* !20210317-0
+!*Version* !20211208-0
 !*CanonicalUri* !http://publications.europa.eu/resource/dataset/access-right
-!*CanonicalVersionUri* !http://publications.europa.eu/resource/dataset/access-right/20210317-0
-!*LocationUri* !http://publications.europa.eu/resource/distribution/access-right/20210317-0/xml/gc/AccessRight.gc
+!*CanonicalVersionUri* !http://publications.europa.eu/resource/dataset/access-right/20211208-0
+!*LocationUri* !http://publications.europa.eu/resource/distribution/access-right/20211208-0/xml/gc/AccessRight.gc
 !*AgencyLongName* !Publications Office of the European Union
-!*AgencyIdentifier* !
+!*AgencyIdentifier* !OP
 
 !===
 
@@ -38,7 +38,7 @@ An example of how to use this code list can be found in xref:Tech_AnnexII_XML_Ex
 
 [cols="1,2a"]
 |===
-|*Name* |*_boolean-gui-control-type _*
+|*Name* |*_boolean-gui-control-type_*
 |*Code list type* |Technical
 |*Maintainer* |ESPD Team
 |*Description* |This code list is only used in criterion 'Other economic or financial requirements' (*_finan-requ_*).
@@ -51,8 +51,8 @@ Contains values to be use by software implementations to display graphic control
 !*ListID* !boolean-gui-control-type 
 !*Version* !3.0.1
 !*CanonicalUri* !https://github.com/ESPD/ESPD-EDM
-!*CanonicalVersionUri* !https://github.com/ESPD/ESPD-EDM/tree/3.0.1
-!*LocationUri* !https://raw.githubusercontent.com/ESPD/ESPD-EDM/3.0.1/codelists/gc/BooleanGUIControlType.gc
+!*CanonicalVersionUri* !https://github.com/ESPD/ESPD-EDM/tree/v3.0.1
+!*LocationUri* !https://github.com/ESPD/ESPD-EDM/tree/v3.0.1/codelists/gc/BooleanGUIControlType.gc
 !*AgencyLongName* !
 !*AgencyIdentifier* !
 
@@ -76,10 +76,10 @@ An example of how to use this code list can be found in xref:Tech_AnnexII_XML_Ex
 !*ShortName* !Country
 !*LongName* !country
 !*ListID* !http://publications.europa.eu/resource/authority/country
-!*Version* !20210929-0
+!*Version* !20211208-0
 !*CanonicalUri* !http://publications.europa.eu/resource/dataset/country
-!*CanonicalVersionUri* !http://publications.europa.eu/resource/dataset/country/20210929-0
-!*LocationUri* !http://publications.europa.eu/resource/distribution/country/20210929-0/xml/gc/Country.gc
+!*CanonicalVersionUri* !http://publications.europa.eu/resource/dataset/country/20211208-0
+!*LocationUri* !http://publications.europa.eu/resource/distribution/country/20211208-0/xml/gc/Country.gc
 !*AgencyLongName* !Publications Office of the European Union
 !*AgencyIdentifier* !OP
 
@@ -96,7 +96,7 @@ An example of how to use this code list can be found in xref:Tech_AnnexII_XML_Ex
 |*Name* |*_criterion_*
 |*Code list type* |Procurement specific
 |*Maintainer* |EU Vocabularies
-|*Description* |Contains coded criteria used for public procurement procedures.
+|*Description* |Contains coded exclusion and selection  criteria used for public procurement procedures.
 |*Metadata* |
 [cols=","]
 !===
@@ -128,15 +128,11 @@ An example of how to use this code list can be found in xref:Tech_AnnexII_XML_Ex
 [cols=","]
 !===
 !*ShortName* !CriterionElementType
-!*LongName* !
 !*ListID* !criterion-element-type 
 !*Version* !3.0.1
 !*CanonicalUri* !https://github.com/ESPD/ESPD-EDM
-!*CanonicalVersionUri* !https://github.com/ESPD/ESPD-EDM/tree/3.0.1
-!*LocationUri* !https://github.com/ESPD/ESPD-EDM/tree/3.0.1/codelists/gc/CriterionElementType.gc
-!*AgencyLongName* !
-!*AgencyIdentifier* !
-
+!*CanonicalVersionUri* !https://github.com/ESPD/ESPD-EDM/tree/v3.0.1
+!*LocationUri* !https://github.com/ESPD/ESPD-EDM/tree/v3.0.1/codelists/gc/CriterionElementType.gc
 !===
 
 |===
@@ -157,10 +153,10 @@ An example of how to use this code list can be found in xref:Tech_AnnexII_XML_Ex
 !*ShortName* !Currency
 !*LongName* !currency
 !*ListID* !http://publications.europa.eu/resource/authority/currency
-!*Version* !20210929-0
+!*Version* !20211208-0
 !*CanonicalUri* !http://publications.europa.eu/resource/dataset/currency
-!*CanonicalVersionUri* !http://publications.europa.eu/resource/dataset/currency/20210929-0
-!*LocationUri* !http://publications.europa.eu/resource/distribution/currency/20210929-0/xml/gc/Currency.gc
+!*CanonicalVersionUri* !http://publications.europa.eu/resource/dataset/currency/20211208-0
+!*LocationUri* !http://publications.europa.eu/resource/distribution/currency/20211208-0/xml/gc/Currency.gc
 !*AgencyLongName* !Publications Office of the European Union
 !*AgencyIdentifier* !OP
 
@@ -187,8 +183,8 @@ This code list is maintained as technical for the time being. In the future it m
 !*ListID* !docrefcontent-type 
 !*Version* !3.0.1
 !*CanonicalUri* !https://github.com/ESPD/ESPD-EDM
-!*CanonicalVersionUri* !https://github.com/ESPD/ESPD-EDM/tree/3.0.1
-!*LocationUri* !https://raw.githubusercontent.com/ESPD/ESPD-EDM/3.0.1/codelists/gc/DocRefContentType.gc
+!*CanonicalVersionUri* !https://github.com/ESPD/ESPD-EDM/tree/v3.0.1
+!*LocationUri* !https://raw.githubusercontent.com/ESPD/ESPD-EDM/tree/v3.0.1/codelists/gc/DocRefContentType.gc
 !*AgencyLongName* !
 !*AgencyIdentifier* !
 
@@ -205,7 +201,7 @@ An example of how to use this code list can be found in xref:Tech_AnnexII_XML_Ex
 |*Name* |*_economic-operator-size_*
 |*Code list type* |Business-agnostic
 |*Maintainer* |EU Vocabularies
-|*Description* |Contains different categories in which the tenderers to whom a contract can be awarded are classified, according to their size (using as criteria the number of employees).
+|*Description* |Contains different categories in which the operators are classified, according to their size (using as criteria the number of employees).
 |*Metadata* |
 [cols=","]
 !===
@@ -217,7 +213,7 @@ An example of how to use this code list can be found in xref:Tech_AnnexII_XML_Ex
 !*CanonicalVersionUri* !http://publications.europa.eu/resource/dataset/economic-operator-size/20210317-0
 !*LocationUri* !http://publications.europa.eu/resource/distribution/economic-operator-size/20210317-0/xml/gc/EconomicOperatorSize.gc
 !*AgencyLongName* !Publications Office of the European Union
-!*AgencyIdentifier* !
+!*AgencyIdentifier* !OP
 
 !===
 
@@ -230,7 +226,7 @@ An example of how to use this code list can be found in xref:Tech_AnnexII_XML_Ex
 [cols="1,2a"]
 |===
 |*Name* |*_eoid-type _*
-|*Code list type* |Business-agnostic
+|*Code list type* |Technical
 |*Maintainer* |ESPD Team
 |*Description* |Contains coded partys identification type used in *_cac:PartyIdentification_*.
 This code list is maintained as technical for the time being. In the future it may be removed or published on EU Vocabularies.
@@ -238,15 +234,11 @@ This code list is maintained as technical for the time being. In the future it m
 [cols=","]
 !===
 !*ShortName* !EOIDType
-!*LongName* !
 !*ListID* !eoid-type 
 !*Version* !3.0.1
 !*CanonicalUri* !https://github.com/ESPD/ESPD-EDM
-!*CanonicalVersionUri* !https://github.com/ESPD/ESPD-EDM/tree/3.0.1
-!*LocationUri* !https://raw.githubusercontent.com/ESPD/ESPD-EDM/3.0.1/codelists/gc/EOIDType.gc
-!*AgencyLongName* !
-!*AgencyIdentifier* !
-
+!*CanonicalVersionUri* !https://github.com/ESPD/ESPD-EDM/tree/v3.0.1
+!*LocationUri* !https://raw.githubusercontent.com/ESPD/ESPD-EDM/tree/v3.0.1/codelists/gc/EOIDType.gc
 !===
 
 |===
@@ -260,17 +252,17 @@ An example of how to use this code list can be found in xref:Tech_AnnexII_XML_Ex
 |*Name* |*_eo-role-type_*
 |*Code list type* |Procurement specific
 |*Maintainer* |EU Vocabularies
-|*Description* |Contains codes identifying the role of the economic operator in the procurement.
+|*Description* |Contains codes identifying the role of the economic operator in each procurement procedure.
 |*Metadata* |
 [cols=","]
 !===
 !*ShortName* !EoRoleType
 !*LongName* !eo-role-type
 !*ListID* !http://publications.europa.eu/resource/authority/eo-role-type
-!*Version* !20210616-0
+!*Version* !20211208-0
 !*CanonicalUri* !http://publications.europa.eu/resource/dataset/eo-role-type
-!*CanonicalVersionUri* !http://publications.europa.eu/resource/dataset/eo-role-type/20210616-0
-!*LocationUri* !http://publications.europa.eu/resource/distribution/eo-role-type/20210616-0/xml/gc/EoRoleType.gc
+!*CanonicalVersionUri* !http://publications.europa.eu/resource/dataset/eo-role-type/20211208-0
+!*LocationUri* !http://publications.europa.eu/resource/distribution/eo-role-type/20211208-0/xml/gc/EoRoleType.gc
 !*AgencyLongName* !Publications Office of the European Union
 !*AgencyIdentifier* !OP
 
@@ -293,12 +285,11 @@ This code list is maintained by the ESPD Team and codes are collected from Banqu
 [cols=","]
 !===
 !*ShortName* !FinancialRatioType
-!*LongName* !financial-ratio-type 
 !*ListID* !FinancialRatioType
-!*Version* !1.0
-!*CanonicalUri* !https://www.bach.banque-france.fr/
-!*CanonicalVersionUri* !https://www.bach.banque-france.fr/
-!*LocationUri* !https://github.com/ESPD/ESPD-EDM/tree/3.0.0/codelists/cl/gc/FinancialRatioType.gc
+!*Version* !3.0.1
+!*CanonicalUri* !https://github.com/ESPD/ESPD-EDM
+!*CanonicalVersionUri* !https://github.com/ESPD/ESPD-EDM/tree/v3.0.1
+!*LocationUri* !https://github.com/ESPD/ESPD-EDM/tree/v3.0.1/codelists/gc/FinancialRatioType.gc
 !*AgencyLongName* !BACH Banque de France
 !*AgencyIdentifier* !BACH
 
@@ -323,10 +314,10 @@ The concepts included are correlated with the ISO 639 international standard.
 !*ShortName* !Language
 !*LongName* !language
 !*ListID* !http://publications.europa.eu/resource/authority/language
-!*Version* !20210929-0
+!*Version* !20211208-0
 !*CanonicalUri* !http://publications.europa.eu/resource/dataset/language
-!*CanonicalVersionUri* !http://publications.europa.eu/resource/dataset/language/20210929-0
-!*LocationUri* !http://publications.europa.eu/resource/distribution/language/20210929-0/xml/gc/Language.gc
+!*CanonicalVersionUri* !http://publications.europa.eu/resource/dataset/language/20211208-0
+!*LocationUri* !http://publications.europa.eu/resource/distribution/language/20211208-0/xml/gc/Language.gc
 !*AgencyLongName* !Publications Office of the European Union
 !*AgencyIdentifier* !OP
 
@@ -350,15 +341,11 @@ The data type expected for this code is URL following the *ESCO* taxonomy identi
 [cols=","]
 !===
 !*ShortName* !occupation
-!*LongName* !
 !*ListID* !occupation
 !*Version* !3.0.1
 !*CanonicalUri* !https://github.com/ESPD/ESPD-EDM
-!*CanonicalVersionUri* !https://github.com/ESPD/ESPD-EDM/tree/3.0.1
-!*LocationUri* !https://raw.githubusercontent.com/ESPD/ESPD-EDM/3.0.1/codelists/cl/gc/occupation.gc
-!*AgencyLongName* !
-!*AgencyIdentifier* !
-
+!*CanonicalVersionUri* !https://github.com/ESPD/ESPD-EDM/tree/v3.0.1
+!*LocationUri* !https://github.com/ESPD/ESPD-EDM/tree/v3.0.1/codelists/gc/occupation.gc
 !===
 
 |===
@@ -374,15 +361,11 @@ The data type expected for this code is URL following the *ESCO* taxonomy identi
 [cols=","]
 !===
 !*ShortName* !ProfileExecutionID
-!*LongName* !
 !*ListID* !profile-execution-id 
 !*Version* !3.0.1
 !*CanonicalUri* !https://github.com/ESPD/ESPD-EDM
-!*CanonicalVersionUri* !https://github.com/ESPD/ESPD-EDM/tree/3.0.1
-!*LocationUri* !https://raw.githubusercontent.com/ESPD/ESPD-EDM/3.0.1/codelists/gc/ProfileExecutionID.gc
-!*AgencyLongName* !
-!*AgencyIdentifier* !
-
+!*CanonicalVersionUri* !https://github.com/ESPD/ESPD-EDM/tree/v3.0.1
+!*LocationUri* !https://github.com/ESPD/ESPD-EDM/tree/v3.0.1/codelists/gc/ProfileExecutionID.gc
 !===
 
 |===
@@ -398,15 +381,11 @@ The data type expected for this code is URL following the *ESCO* taxonomy identi
 [cols=","]
 !===
 !*ShortName* !PropertyGroupType
-!*LongName* !
 !*ListID* !property-group-type 
 !*Version* !3.0.1
 !*CanonicalUri* !https://github.com/ESPD/ESPD-EDM
-!*CanonicalVersionUri* !https://github.com/ESPD/ESPD-EDM/tree/3.0.1
-!*LocationUri* !https://raw.githubusercontent.com/ESPD/ESPD-EDM/3.0.1/codelists/gc/PropertyGroupType.gc
-!*AgencyLongName* !
-!*AgencyIdentifier* !
-
+!*CanonicalVersionUri* !https://github.com/ESPD/ESPD-EDM/tree/v3.0.1
+!*LocationUri* !https://github.com/ESPD/ESPD-EDM/tree/v3.0.1/codelists/gc/PropertyGroupType.gc
 !===
 
 |===
@@ -422,15 +401,11 @@ The data type expected for this code is URL following the *ESCO* taxonomy identi
 [cols=","]
 !===
 !*ShortName* !ResponseDataType
-!*LongName* !
 !*ListID* !response-data-type 
 !*Version* !3.0.1
 !*CanonicalUri* !https://github.com/ESPD/ESPD-EDM
-!*CanonicalVersionUri* !https://github.com/ESPD/ESPD-EDM/tree/3.0.1
-!*LocationUri* !https://raw.githubusercontent.com/ESPD/ESPD-EDM/3.0.1/codelists/gc/ResponseDataType.gc
-!*AgencyLongName* !
-!*AgencyIdentifier* !
-
+!*CanonicalVersionUri* !https://github.com/ESPD/ESPD-EDM/tree/v3.0.1
+!*LocationUri* !https://github.com/ESPD/ESPD-EDM/tree/v3.0.1/codelists/gc/ResponseDataType.gc
 !===
 
 |===

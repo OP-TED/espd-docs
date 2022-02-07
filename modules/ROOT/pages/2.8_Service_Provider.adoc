@@ -99,7 +99,7 @@ _<!--- Root elements eliminated for the sake of brevity -->_
 
 <cac:PartyName><cbc:Name>Ministerio de Defensa</cbc:Name></cac:PartyName>
 
-<cac:PostalAddress><cac:Country><cbc:IdentificationCode listID="Country" listAgencyID="EU-COM-OP" listVersionID="20201216-0">ES</cbc:IdentificationCode></cac:Country></cac:PostalAddress>
+<cac:PostalAddress><cac:Country><cbc:IdentificationCode listID="Country" listAgencyID="OP" listVersionID="20211208-0">ES</cbc:IdentificationCode></cac:Country></cac:PostalAddress>
 
 <cac:ServiceProviderParty>
 
@@ -121,7 +121,7 @@ _<!--- Root elements eliminated for the sake of brevity -->_
 
 <cac:PostalAddress>
 
-<cac:Country><cbc:IdentificationCode listID="Country" listAgencyID="EU-COM-OP" listVersionID=" 20201216-0">ESP</cbc:IdentificationCode></cac:Country>
+<cac:Country><cbc:IdentificationCode listID="Country" listAgencyID="OP" listVersionID="20211208-0">ESP</cbc:IdentificationCode></cac:Country>
 
 </cac:PostalAddress>
 
