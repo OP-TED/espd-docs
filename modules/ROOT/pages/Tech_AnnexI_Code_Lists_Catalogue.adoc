@@ -120,7 +120,7 @@ An example of how to use this code list can be found in xref:Tech_AnnexII_XML_Ex
 
 [cols="1,2a"]
 |===
-|*Name* |*_criterion-element-type _*
+|*Name* |*_criterion-element-type_*
 |*Code list type* |Technical
 |*Maintainer* |ESPD Team
 |*Description* |Contains coding for each type of structural element to render the ESPDRequest and ESPDResponse.
@@ -170,7 +170,7 @@ An example of how to use this code list can be found in xref:Tech_AnnexII_XML_Ex
 
 [cols="1,2a"]
 |===
-|*Name* |*_docrefcontent-type _*
+|*Name* |*_docrefcontent-type_*
 |*Code list type* |Technical
 |*Maintainer* |ESPD Team
 |*Description* |Contains coded possible document types referenced from the actual document.
@@ -225,7 +225,7 @@ An example of how to use this code list can be found in xref:Tech_AnnexII_XML_Ex
 
 [cols="1,2a"]
 |===
-|*Name* |*_eoid-type _*
+|*Name* |*_eoid-type_*
 |*Code list type* |Technical
 |*Maintainer* |ESPD Team
 |*Description* |Contains coded partys identification type used in *_cac:PartyIdentification_*.
@@ -276,7 +276,7 @@ An example of how to use this code list can be found in xref:Tech_AnnexII_XML_Ex
 
 [cols="1,2a"]
 |===
-|*Name* |*_financial-ratio-type _*
+|*Name* |*_financial-ratio-type_*
 |*Code list type* |Procurement specific
 |*Maintainer* |ESPD Team
 |*Description* |Contains codes of the possible financial ratios to declare in selection criteria *_finan-rat_*.
@@ -354,7 +354,7 @@ The data type expected for this code is URL following the *ESCO* taxonomy identi
 == profile-execution-id 
 [cols="1,2a"]
 |===
-|*Name* |*_profile-execution-id _*
+|*Name* |*_profile-execution-id_*
 |*Code list type* |Technical
 |*Maintainer* |ESPD Team
 |*Description* |Contains coded identification and version the ESPD-EDM used to create the to <<xml>> instance. The identification may include the exact version of the specification.
@@ -374,7 +374,7 @@ The data type expected for this code is URL following the *ESCO* taxonomy identi
 == property-group-type 
 [cols="1,2a"]
 |===
-|*Name* |*_property-group-type _*
+|*Name* |*_property-group-type_*
 |*Code list type* |Technical
 |*Maintainer* |ESPD Team
 |*Description* |Contains coded types to be used by software implementations to control which elements to be rendered in the displayed user interface. 
@@ -394,7 +394,7 @@ The data type expected for this code is URL following the *ESCO* taxonomy identi
 == response-data-type 
 [cols="1,2a"]
 |===
-|*Name* |*_response-data-type _*
+|*Name* |*_response-data-type_*
 |*Code list type* |Technical
 |*Maintainer* |ESPD Team
 |*Description* |Contains identifiers used to descrive data type expected in criteria elements.
