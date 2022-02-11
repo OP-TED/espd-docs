@@ -47,14 +47,11 @@ Contains values to be use by software implementations to display graphic control
 [cols=","]
 !===
 !*ShortName* !BooleanGUIControlType
-!*LongName* !
 !*ListID* !boolean-gui-control-type 
 !*Version* !3.0.1
 !*CanonicalUri* !https://github.com/ESPD/ESPD-EDM
 !*CanonicalVersionUri* !https://github.com/ESPD/ESPD-EDM/tree/v3.0.1
 !*LocationUri* !https://github.com/ESPD/ESPD-EDM/tree/v3.0.1/codelists/gc/BooleanGUIControlType.gc
-!*AgencyLongName* !
-!*AgencyIdentifier* !
 
 !===
 
@@ -184,9 +181,7 @@ This code list is maintained as technical for the time being. In the future it m
 !*Version* !3.0.1
 !*CanonicalUri* !https://github.com/ESPD/ESPD-EDM
 !*CanonicalVersionUri* !https://github.com/ESPD/ESPD-EDM/tree/v3.0.1
-!*LocationUri* !https://raw.githubusercontent.com/ESPD/ESPD-EDM/tree/v3.0.1/codelists/gc/DocRefContentType.gc
-!*AgencyLongName* !
-!*AgencyIdentifier* !
+!*LocationUri* !https://github.com/ESPD/ESPD-EDM/tree/v3.0.1/codelists/gc/DocRefContentType.gc
 
 !===
 
@@ -238,7 +233,7 @@ This code list is maintained as technical for the time being. In the future it m
 !*Version* !3.0.1
 !*CanonicalUri* !https://github.com/ESPD/ESPD-EDM
 !*CanonicalVersionUri* !https://github.com/ESPD/ESPD-EDM/tree/v3.0.1
-!*LocationUri* !https://raw.githubusercontent.com/ESPD/ESPD-EDM/tree/v3.0.1/codelists/gc/EOIDType.gc
+!*LocationUri* !https://github.com/ESPD/ESPD-EDM/tree/v3.0.1/codelists/gc/EOIDType.gc
 !===
 
 |===
