@@ -71,7 +71,7 @@ Documentation updated as follow:
 
 . *Section 3. Common aspects for criteria*
 * *Figure 33.* Criterion - UML diagram
-** Updated all cardinalities from _1..*..*_ to _1..*_ because previous notation was wrong.
+** Updated wrong cardinalities _1..*..*_ to _1..*_ to fix the typo. Cardinalities corrected are: _cac:TenderingCriterionPropertyGroup_, _cac:TenderingCriterionProperty_ and _cac:ProcurementProjectLotReference_.
 ** _cac:EconomicOperatorParty_ 
 *** _Component_: removed because it is not used in the *ESPD Request*.
 ** _cac:ProcurementProject_
@@ -110,6 +110,7 @@ Documentation updated as follow:
 *** _Component_: added.
 
 . *Section 5.1 Lot Management approach for Selection Criteria*
+* Text updated from _'The buyer may specify the criteria that each selection criteria apply by using the element cac:ProcurementProjectLotReference that includes cbc:TenderingCriterion.'_ to _'The buyer may specify the criteria that each selection criteria apply by using the element cac:TenderingCriterion that includes cac:ProcurementProjectLotReference.'_.
 * _cac:ProcurementLotReference_
 ** Element replaced by _cac:ProcurementProjectLotReference_.
 
