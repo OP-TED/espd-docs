@@ -1,11 +1,11 @@
 = Root elements
 include::partial$attributes.adoc[]
 
-The table below lists the elements that are expected in the ESPD Response V3.0.0 and provides details on the cardinalities and usage of those elements.
+The table below lists the elements that are expected in the ESPD Response and provides details on the cardinalities and usage of those elements.
 
 [cols=",",options="header",]
 
-_Table 26. Class QualificationApplicationResponse, components required by the ESPD-EDM V3.0.0_ 
+_Table 26. Class QualificationApplicationResponse, components required by the ESPD-EDM_ 
 |===
 |*Document name:* |*QualificationApplicationResponse*
 |*Definition*: a|
@@ -102,7 +102,7 @@ Preliminary evidence certificates in the form of a self-declaration submitted by
 |*cbc:ProcedureCode* |Code |1 |The type of the procurement administrative procedure according to the EU Directives. a|
 *Information Requirement*: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1-tbr92-020[_tbr070-007_].
 
-*Rule*: For the ESPD V3.0.0, this information will be linked to eForms. And ESPD should include the same procedure code as the one stated in eForms notices.
+*Rule*: For the ESPD, this information will be linked to eForms. And ESPD should include the same procedure code as the one stated in eForms notices.
 
 |*cac:ContractingParty* |Associated class |1 |The buyer or contracting entity who is buying supplies, services or public works using a tendering procedure as described in the applicable directive (Directives 2014/24/EU, 2014/25/EU). See section xref:2.7_Contracting_Body.adoc[Contracting Body] for more specification details. a|
 *Information Requirement*: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1-tbr92-020[_tbr92-011_].
@@ -184,15 +184,15 @@ xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:util="java:jav
 
 xsi:schemaLocation="urn:oasis:names:specification:ubl:schema:xsd:QualificationApplicationResponse-2 ../xsdrt/maindoc/UBL-QualificationApplicationResponse-2.3.xsd">
 
-<!-- The ESPD-EDM-V3.0.0 is entirely based on OASIS UBL-2.3 -->
+<!-- The ESPD-EDM is entirely based on OASIS UBL-2.3 -->
 
 <cbc:UBLVersionID schemeAgencyID="OASIS-UBL-TC">2.3</cbc:UBLVersionID>
 
-<!-- How ESPD-EDM-V3.0.0 uses the UBL-2.3 schemas whilst keeping conformance -->
+<!-- How ESPD-EDM uses the UBL-2.3 schemas whilst keeping conformance -->
 
 <cbc:CustomizationID schemeAgencyID="CEN-BII" schemeVersionID="3.0">urn:www.cenbii.eu:transaction:biitrdm092:ver3.0</cbc:CustomizationID>
 
-<!-- The transactional profile where the ESPD is used. ESPD-EDM-V3.0.0 refers to the CEN profile -->
+<!-- The transactional profile where the ESPD is used. ESPD-EDM refers to the CEN profile -->
 
 <cbc:ProfileID schemeAgencyID="CEN-BII" schemeVersionID="2.0">4.1</cbc:ProfileID>
 

@@ -27,7 +27,7 @@ The ESPD Exchange Data Model tries to reuse as much as possible the codes that a
 . *Business domain-related*, maintained by international or European authorities, e.g. the ones defined by UNECE (as unit codes), or by the Publications Office of the European Union (OP), e.g. types of procurement procedures (based on the EU Directives);
 . *Project-specific* (or application-specific), i.e. those codes that are particular of the project. Types (taxonomy) of exclusion and selection criteria, types of evaluation method, etc. in the case of the ESPD-EDM.
 
-Moreover, the ESPD 3.0.0 will reuse code list from EU Vocabularies. This is due to the alignment between both models, ESPD and eForms to ensure the maximum interoperability. With this purpose ESPD will align the use of certain code lists.
+Moreover, the ESPD will reuse code list from EU Vocabularies. This is due to the alignment between both models, ESPD and eForms to ensure the maximum interoperability. With this purpose ESPD will align the use of certain code lists.
 
 Codes are normally maintained in "code lists". The ESPD-EDM keeps and distributes these code lists in Genericode 1.0 (link:{url-tree-tmp}/codelists/gc/[GC]) files (one *.gc file per code list).
 
@@ -60,14 +60,14 @@ The *_Annex I_* of this document lists all the code lists used by the ESPD and i
 _Table 1. ESPD Requirement regarding codes_
 
 |===
-|*REQUIREMENT*: |**For codes, this ESPD V3.0.0 specification requires always three mandatory attributes: **listID**, **listAgencyID**, and **listVersionID.
+|*REQUIREMENT*: |**For codes, this ESPD specification requires always three mandatory attributes: **listID**, **listAgencyID**, and **listVersionID.
 |===
 
 [cols=",",options="header",]
 
 _Table 2. ESPD Requirement regarding identifiers_
 |===
-|*REQUIREMENT*: |**For identifiers, this ESPD V3.0.0 specification requires at least (and always) the mandatory attribute **schemeAgencyID. When identifying parties, like the Economic Operator, the Buyer, etc., the attribute schemeID SHOULD also be used (for this use the code list link:{url-tree-tmp}/codelists/gc/EOIDType.gc[EOIDType]).
+|*REQUIREMENT*: |**For identifiers, this ESPD specification requires at least (and always) the mandatory attribute **schemeAgencyID. When identifying parties, like the Economic Operator, the Buyer, etc., the attribute schemeID SHOULD also be used (for this use the code list link:{url-tree-tmp}/codelists/gc/EOIDType.gc[EOIDType]).
 |===
 
 In UBL Codes and identifiers are based on ebXML Core components (UBL conforms to link:https://docs.oasis-open.org/ubl/UBL-conformance-to-CCTS/v1.0/UBL-conformance-to-CCTS-v1.0.html[ebXML CCTS ISO/TS 15000-5:2005] currently maintained by UN/CEFACT).
@@ -89,11 +89,11 @@ And its corresponding definitions, as provided by OASIS UBL (ISO/IEC 19845):
 _Table 3. UBL attributes for codes_
 |===
 |*Attribute* |*Definition*
-|*listID* |The identification of a list of codes (*MANDATORY in ESPD V3.0.0*).
+|*listID* |The identification of a list of codes (*MANDATORY in this version of ESPD*).
 |*listAgencyID* |An agency that maintains one or more lists of codes.
-|*listAgencyName* |The name of the agency that maintains the list of codes (*MANDATORY in ESPD V3.0.0*).
+|*listAgencyName* |The name of the agency that maintains the list of codes (*MANDATORY in this version of ESPD*).
 |*listName* |The name of a list of codes.
-|*listVersionID* |The version of the list of codes (*MANDATORY in ESPD V3.0.0*).
+|*listVersionID* |The version of the list of codes (*MANDATORY in this version of ESPD*).
 |*name* |The textual equivalent of the code content component.
 |*languageID* |The identifier of the language used in the code name.
 |*listURI* |The Uniform Resource Identifier that identifies where the code list is located.
@@ -113,7 +113,7 @@ _Table 4. UBL attributes for identifiers_
 |*Attribute* |*Definition*
 |*schemeID* |The identification of the identification scheme.
 |*schemeName* |The name of the identification scheme.
-|*schemeAgencyID* |The identification of the agency that maintains the identification scheme (*MANDATORY in ESPD V3.0.0*).
+|*schemeAgencyID* |The identification of the agency that maintains the identification scheme (*MANDATORY in this version of ESPD*).
 |*schemeAgencyName* |The name of the agency that maintains the identification scheme.
 |*schemeVersionID* |The version of the identification scheme.
 |*schemeDataURI* |The Uniform Resource Identifier that identifies where the identification scheme data is located.

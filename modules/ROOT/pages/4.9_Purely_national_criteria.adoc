@@ -17,7 +17,7 @@ Other requirements related specifically to purely national criteria are:
 |*REQUIREMENT* |For the purely national exclusion grounds that have evidences related in e-Certis, the required evidences should be displayed. When the criterion has no related evidences, the text "No evidence required for this criterion" should be displayed. Per each national criterion the EO needs to be able to provide one or more evidences.
 |===
 
-The ESPD-EDM V2.1.1 *Extended ESPD* introduced and important feature: the MS can specify and save in the XML individual national criteria. The mock-ups, data structure and XML example below show how. In the ESPD-EDM V3.0.0, it is kept as the only version of the ESPD is the equivalent to the EXTENDED that was introduced in V2.1.1.
+The ESPD-EDM V2.1.1 *Extended ESPD* introduced and important feature: the MS can specify and save in the XML individual national criteria. The mock-ups, data structure and XML example below show how. In the ESPD-EDM, it is kept as the only version of the ESPD is the equivalent to the EXTENDED that was introduced in V2.1.1.
 
 == Mock-up - economic operator perspective
 

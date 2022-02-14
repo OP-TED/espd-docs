@@ -1,7 +1,7 @@
 = Root elements
 include::partial$attributes.adoc[]
 
-The table below lists the elements that are expected in the ESPD Request V3.0.0 and provides details on the cardinalities and usage of those elements.
+The table below lists the elements that are expected in the ESPD Request and provides details on the cardinalities and usage of those elements.
 
 [cols=",",options="header",]
 
@@ -17,7 +17,7 @@ Beware that *all theses documents do share the same business rule identifiers* (
 ====
 
 
-_Table 5. Class QualificationApplicationRequest, components required by the ESPD-EDM V3.0.0_ 
+_Table 5. Class QualificationApplicationRequest, components required by the ESPD-EDM_ 
 |===
 |*Document name:* |*QualificationApplicationRequest*
 |*Definition 1*: a|
@@ -111,14 +111,14 @@ This number in combination with a registered buyer ID (e.g. the VAT number) resu
 |*cbc:ProcedureCode* |Code |1 |The type of the procurement administrative procedure according to the EU Directives. a|
 *Information Requirement*: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1.0-tbr070-007[_tbr070-007_].
 
-*Rule*: For the ESPD V3.0.0, this information will be linked to eForms. And ESPD should include the same procedure code as the one stated in eForms notices.
+*Rule*: For the ESPD, this information will be linked to eForms. And ESPD should include the same procedure code as the one stated in eForms notices.
 
 |*cac:ContractingParty* |Associated class |1 |The buyer or contracting entity who is buying supplies, services or public works using a tendering procedure as described in the applicable directive (Directives 2014/24/EU, 2014/25/EU). a|
 *Information Requirement*: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1.0-tbr070-01[_tbr070-01_].
 
 *Rule*: UBL-2.3 defines multiple cardinality ContractingParties presumably to allow *joint procurements*. However the ESPD only expects data about one buyer. The decision was made that in case of joint procurement the data collected in the ESPD would be about *the leader* of the joint procurement procedure.
 
-In ESPD v3.0.0 the contracting party information will come from eForms. Which also uses cac:ContractingParty to specify the information about buyer.
+In ESPD the contracting party information will come from eForms. Which also uses cac:ContractingParty to specify the information about buyer.
 
 |*cac:ProcurementProject/cbc:Description* |Text |1 |Text describing this procurement project. |This element is required in the ESPD, however it should be identical to that provided in eForms. In general the corresponding eForm should feed the corresponding ESPD with the corresponding data.
 

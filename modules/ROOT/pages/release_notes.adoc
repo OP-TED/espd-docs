@@ -27,7 +27,7 @@ Documentation updated as follow:
 *** _Component_: removed because it is not used in *ESPD-EDM v3.0.x*.
 
 . *Section 2.4 Root elements*
-* *Table 5.* Class QualificationApplicationRequest, components required by the ESPD-EDM V3.0.0
+* *Table 5.* Class QualificationApplicationRequest, components required by the ESPD-EDM
 ** _cac:ProcurementProject_
 *** _Component_: replaced by _cac:ProcurementProject/cbc:Description_ in alignment with *eForms*.
 *** _Type_: updated from _Associated class_ to _Text_ in alignment with *eForms*.
@@ -136,7 +136,7 @@ Documentation updated as follow:
 *** _Component_: removed because it is not used in *ESPD-EDM v3.0.x*.
 
 . *Section 6.4 Root elements*
-* *Table 26.* Class QualificationApplicationResponse, components required by the ESPD-EDM V3.0.0
+* *Table 26.* Class QualificationApplicationResponse, components required by the ESPD-EDM
 ** _cac:ContractingParty_ 
 *** _Desciption_: updated with text _'See section xref:2.7_Contracting_Body.adoc[Contracting Body] for more specification details.'_ where this element is described.
 ** _cac:EconomicOperator_

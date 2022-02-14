@@ -9,7 +9,7 @@ See formal requirements related to the economic operators in the e-Sens site: li
 _Table 29. Information requirement about the ESPD Response and the economic operators_ 
 |===
 |*REQUIREMENT* a|
-*One ESPD Response per economic operator*. The ESPD-EDM-3.0.0, as all the previous versions of the ESPD, requires that every economic operator that participates in one tender provide its own ESDP Response document. This affects sole traders that rely on other entities for the execution of the contract (e.g. subcontractors) and groups of economic operators, e.g. a Joint Venture or a Consortium, and all the sub-contractors on which each economic operator of the group relies on to meet the selection criteria.
+*One ESPD Response per economic operator*. The ESPD-EDM, as all the previous versions of the ESPD, requires that every economic operator that participates in one tender provide its own ESDP Response document. This affects sole traders that rely on other entities for the execution of the contract (e.g. subcontractors) and groups of economic operators, e.g. a Joint Venture or a Consortium, and all the sub-contractors on which each economic operator of the group relies on to meet the selection criteria.
 
 Moreover, each EO should submit an ESPD Response per lot or group of Lots which tenders to.
 
@@ -35,7 +35,7 @@ _Table 31. Information requirement about the groups of economic operators_
 | a|
 _About the definition of economic operator_
 
-*Beware* that this ESPD-EDM V3.0.0 specification defines economic operator based on the one provided by the 2014 Directives, where an economic operator is "any natural or legal person or public entity, including any temporary association of undertakings, which offers the execution of works and/or a work, the supply of products or the provision of services on the market. Information about the party submitting the qualification".
+*Beware* that this ESPD-EDM specification defines economic operator based on the one provided by the 2014 Directives, where an economic operator is "any natural or legal person or public entity, including any temporary association of undertakings, which offers the execution of works and/or a work, the supply of products or the provision of services on the market. Information about the party submitting the qualification".
 
 According to this definition one group of suppliers associated in a Joint Venture or in a Consortium, or any other type of undertaking is also an economic operator.
 
@@ -52,15 +52,15 @@ Therefore, in the context of the ESPD the definition of economic operator has be
 
 The information that the economic operator (EO) has to provide is relatively abundant, especially if the EO is the lead entity of a group. UBL does provide a class cac:EconomicOperatorParty with sufficient data elements to identify the economic operator, its role, its representatives, physical location, officially registered address and other.
 
-As the whole ESDP-EDM V3.0.0 is based entirely on the UBL-2.3 XSD (W3C) Schemas, these schemas are to be used for ESPD.
+As the whole ESDP-EDM is based entirely on the UBL-2.3 XSD (W3C) Schemas, these schemas are to be used for ESPD.
 
 Nonetheless some data requested in the ESPD are not modeled in UBL-2.3, namely those aiming at purposes going beyond the identification of the economic operator; e.g. data with statistical purposes; or to ensure the transparency of the procurement procedure; other.
 
-Therefore in the ESPD-EDM-3.0.0, the information about the economic operator is spread in two different places:
+Therefore in the ESPD-EDM, the information about the economic operator is spread in two different places:
 
 [arabic]
 . The UBL-2.3 *cac:EconomicOperatorParty* component; and
-. In *criteria data structures*: following the solution adopted for Version ESPD-EDM V3.0.0, the ESPD-EDM V3.0.0 defines several criteria classified as CRITERION.OTHER.EO_DATA.* (where the * refers to different branches and leaves of a different structures about the economic operator (e.g. SHELTERED_WORKSHOP, TOGETHER_WITH_OTHERS, etc.). The XML instances use criteria components (UBL-2.3 cac:TenderingCriterion) to structure these data. The sub-sections below cover both.
+. In *criteria data structures*: following the solution adopted for Version ESPD-EDM, the ESPD-EDM defines several criteria classified as CRITERION.OTHER.EO_DATA.* (where the * refers to different branches and leaves of a different structures about the economic operator (e.g. SHELTERED_WORKSHOP, TOGETHER_WITH_OTHERS, etc.). The XML instances use criteria components (UBL-2.3 cac:TenderingCriterion) to structure these data. The sub-sections below cover both.
 
 == XSD Schemas
 
@@ -86,8 +86,8 @@ The diagram below shows the XSD element that will hold the data required by the 
 ** The (pre)qualification system is perfectly identified (and trusted, as it is registered in eCertis); and
 ** The economic operator, identified with the number used in that (pre)qualification system, is linked inequivocally to that (pre)qualification system.
 * *References and classification*: The references linked to the classification of the EO are place in the component cac:QualifyingParty/cac:CompletedTask.
-** For V3.0.0 of the ESPD the only expected data about the reference is a short description identifying the task as described in the (pre)qualification system. However if you take a look at this common aggregate component you will observe that it caters for other relevant data.
-** Similarly, ESPD-EDM V3.0.0, does not expect a complex representation of possible (optional) classification schemes. However the component cac:BusinessClassificationScheme, associated to cac:QualifyingParty allows complex hierarchical classifications.
+** For this version of the ESPD the only expected data about the reference is a short description identifying the task as described in the (pre)qualification system. However if you take a look at this common aggregate component you will observe that it caters for other relevant data.
+** Similarly, this version of the ESPD-EDM, does not expect a complex representation of possible (optional) classification schemes. However the component cac:BusinessClassificationScheme, associated to cac:QualifyingParty allows complex hierarchical classifications.
 * *SME and number of employees*: The number of employees determine the classification of the company as Micro, Small, Medium or Large company. The cac:QualifyingParty component provides two place-holders that are used by this ESPD-EDM (see also mock-ups above) :
 ** *cac:QualifyingParty/cbc:EmployeeQuantity*, for the number of employees; and
 ** *cac:QualifyingParty/cac:Party/cbc:IndustryClassificationCode* to indicate whether the EO is a micro, small, medium or large company (or simply an SME). This code is defined in the Code List link:{url-tree-tmp}/codelists/gc/EconomicOperatorSize.gc[economic-operator-size]. See also sections "Expected Elements" and "XML example" for more details.
@@ -158,14 +158,14 @@ _Table 32. Economic operator, expected elements_
 |*cac:QualifyingParty* |Associated class |1 |The distinctive features or characteristics qualifying an economic operator to be a party in a tendering process (e.g., number of employees, number of operating units, type of business, technical and financial capabilities, completed projects). a|
 *Information Requirement*: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1-tbr92-001[_tbr92-001_]
 
-*Rule*: This element is compulsory in the ESPD-EDM V3.0.0 as it is the natural placeholder for several relevant data about the Economic Operator.
+*Rule*: This element is compulsory in the ESPD-EDM as it is the natural placeholder for several relevant data about the Economic Operator.
 
 *Rule scope*: BR-RESP-10-01
 
 |*cac:EconomnicOperatorRole* |Associated class |1 |The function of the economic operator when bidding from a consortium (Sole tenderer, member of a group, etc.). a|
 *Information Requirement*:
 
-*Rule*: This element is compulsory in the ESPD-EDM V3.0.0 because depending on it different sets of data will be required or not, shown or hidden, processed or skipped.
+*Rule*: This element is compulsory in the ESPD-EDM because depending on it different sets of data will be required or not, shown or hidden, processed or skipped.
 
 |*cac:Party* |Associated class |1 |Main set of data used to identify and contact the economic operator, such as official identifiers, name, address, contact person, representatives, etc. a|
 *Information Requirement*:
@@ -428,7 +428,7 @@ As you will see next, the information required about the economic operators vari
 . Does the economic operator rely on other entities to fulfill the selection criteria?
 . Is the procurement procedure divided into lots?
 
-One relevant aspect is the *Role* of the economic operator. The ESPD-EDM V3.0.0 defines five different roles for the EO. The information to be provided by each role varies depending on whether the EO is:
+One relevant aspect is the *Role* of the economic operator. The ESPD-EDM defines five different roles for the EO. The information to be provided by each role varies depending on whether the EO is:
 
 [arabic]
 . *Sole tenderer / Group Leader*: Sole entity or, in case of Consortium, Joint Venture or other types of groups, the leader of the group. In this case:
@@ -516,7 +516,7 @@ _Figure 227. Contributions certificates_
 
 ==== Mock-up: Information about reliance on the capacities of the other entities
 
-As explained above, the Sole tenderer or the Leader of a group will have to provide information about the entities it relies on in order to meet the selection criteria. The mock-up below shows the set of data the ESPD-EDM V3.0.0 expects from this role. Remember that this information does not need to be supplied by the members of a group or other entities.
+As explained above, the Sole tenderer or the Leader of a group will have to provide information about the entities it relies on in order to meet the selection criteria. The mock-up below shows the set of data the ESPD-EDM expects from this role. Remember that this information does not need to be supplied by the members of a group or other entities.
 
 image:EO_Roles_entities_relied_on.jpg[EO Roles-entities relied on,width=600,height=372]
 
@@ -695,7 +695,7 @@ _Figure 233. EO representatives, mock-up_
 
 ==== XSD Schema
 
-In the The ESPD-EDM V3.0.0 all the data regarding the representative of the economic operators is placed in the UBL-2.3 component cac:EconomicOperatorParty/cac:Party/cac:PowerOfAttorney. In principle the elements expected by the ESPD-EDM are very few, only the ones represented in the mock-up above. However this UBL element provides other possibilities that may be used in the future or for other purposes (or as a national extension of the ESPD).
+In the The ESPD-EDM all the data regarding the representative of the economic operators is placed in the UBL-2.3 component cac:EconomicOperatorParty/cac:Party/cac:PowerOfAttorney. In principle the elements expected by the ESPD-EDM are very few, only the ones represented in the mock-up above. However this UBL element provides other possibilities that may be used in the future or for other purposes (or as a national extension of the ESPD).
 
 Thus, additionally to the expected elements, the cac:PowerOfAttorney component caters also for, at least, two other data could be required at some point (e.g. cac:MandateDocumentReference, see figure below):
 

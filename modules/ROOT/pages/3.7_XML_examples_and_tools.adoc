@@ -9,7 +9,7 @@ For this, you can use the following method: Rename the .ods files as .ods.zip an
 
 Beware that this solution is a simple prototype aimed at generating the complete list of criteria that may occur in an ESDP Request and the responses (but not the the criteria properties) in an ESPD Response.
 
-The following features *are implemented* in the first set of transformation XSL-T style-sheet (ESPDRequest-Annotated-V3.0.0.xslt):
+The following features *are implemented* in the first set of transformation XSL-T style-sheet (ESPDRequest-Annotated.xslt):
 
 * All the root elements are created and commented;
 * An empty buyer is created in the ESPD Request and ESPD Response (no data about any buyeris supplied); just the necessary for the XML to be validated against the XSD schema;
@@ -17,7 +17,7 @@ The following features *are implemented* in the first set of transformation XSL-
 * All the exclusion and selection criteria in the spread-sheets are created;
 * Per each criterion a complete Legislation object is instantiated with 'dummy' values.
 
-The following features *are NOT implemented* in the first set of transformation XSL-T style-sheet (ESPDRequest-Annotated-V3.0.0.xslt):
+The following features *are NOT implemented* in the first set of transformation XSL-T style-sheet (ESPDRequest-Annotated.xslt):
 
 * The publications and document references requested in the business requirements are not generated; but the XML examples provided in the distribution do contain examples of TED and national publications (for the ESPDRequest.xml and ESPDResponse.xml, in the link:{url-tree-tmp}/dist/xml-examples[xml-examples folder].
 * The response value and cardinality are shown for informative purposes. No functionality is currently implemented based on them, but could be used in future improved versions of the prototype;
@@ -29,7 +29,7 @@ The following features *are implemented* in the second set of transformation XSL
 * An empty economic operator is created (no data about any EO is supplied); just the necessary for the XML to be validated against the XSD schema;
 * A cac:TenderingCriterionResponse per cac:TenderingCriterionProperty in the ESPD Request document is created with 'dummy' values. The cac:ResponseValue elements are of the data type expected as specified in the ESPD Request cac:TenderingCriterionProperty/cac:ValueDataTypeCode element.
 
-The following feature *is NOT implemented* in the first set of transformation XSL-T style-sheet (ESPDRequest-Annotated-V3.0.0.xslt):
+The following feature *is NOT implemented* in the first set of transformation XSL-T style-sheet (ESPDRequest-Annotated.xslt):
 
 * The Criteria from the ESPD Request *are not* copied in the ESPD Response document. But the XML examples in the link:{url-tree-tmp}/dist/xml-examples/[xml-examples folder].
 

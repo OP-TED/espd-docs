@@ -38,7 +38,7 @@ The  ESPD, supplies data structures facilitating a greater semantic interoperabi
 
 [NOTE]
 ====
-Note that in ESPD V3.0.0 there are not weights to keep the model as simple as possible.
+Note that in this version of ESPD there are not weights to keep the model as simple as possible.
 ====
 
 == Mock-ups - buyer perspective
