@@ -3,7 +3,7 @@
 = Annex I. Code List Catalogue
 include::partial$attributes.adoc[]
 
-This section collects all code lists used in *ESPD-EDM v3.0.0* with its classification, description and meta-data.
+This section collects all code lists used in *ESPD-EDM* with its classification, description and meta-data.
 
 [[access-right-table,access-right]]
 == access-right
