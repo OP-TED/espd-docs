@@ -43,7 +43,7 @@ Documentation updated as follow:
 * _cac:ProcurementLotReference_
 ** Element replaced by _cac:ProcurementProjectLotReference_.
 
-. *Section 2.6 EU and national publications*
+. *Section 2.6 EU and notice publications*
 * *XSD Schema* 
 ** _cac:AdditionalReferenceDocument_ 
 *** _Component_: replaced by _cac:AdditionalDocumentReference_.

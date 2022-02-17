@@ -1,4 +1,4 @@
-= EU and national publications
+= EU and notice publications
 include::partial$attributes.adoc[]
 
 [cols=",",]
@@ -6,7 +6,7 @@ include::partial$attributes.adoc[]
 |*REQUIREMENT* link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1.0-tbr070-007[_tbr070-007_] |*The Buyer must be able to provide information about official journals or gazettes where the procurement procedure is announced. For procurement projects above the threshold it is compulsory to refer to the Contract Notice published in link:https://ted.europa.eu/TED/[TED].*
 |===
 
-ESPD conformant software applications will have to provide the means for the user to supply references to EU and national publications about the procurement procedure, and notably about the Notices to which the ESPD is related.
+ESPD conformant software applications will have to provide the means for the user to supply references to EU and notice publications about the procurement procedure, and notably about the Notices to which the ESPD is related.
 
 == Mock-up
 
