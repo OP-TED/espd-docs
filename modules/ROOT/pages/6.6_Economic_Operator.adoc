@@ -324,7 +324,7 @@ _Table 36. Economic operator postal address, expected elements_
 |*cac:Country/cbc:IdentificationCode* |Code |1 |A code that identifies the country. a|
 *Information Requirement*: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1-tbr92-012[_tbr92-012_].
 
-*Rule*: The country of the contracting body must always be specified. Compulsory use of the Code List link:{url-tree-tmp}/codelists/gc/Country.gc[Country from EU Vocabularies, which is based on ISO.]  
+*Rule*: The country of the contracting body must always be specified. Compulsory use of the Code List link:{url-tree-tmp}/codelists/gc/Country.gc[Country].
 
 *Rule scope*: Common (BR-RESP-10-07, BR-OTH-01, BR-OTH-01#5, BR-OTH-03)
 
@@ -411,7 +411,7 @@ _Table 38. Service provider, expected elements_
 |*cac:PostalAddress/cac:Country/cbc:IdentificationCode* |Code |1 |The code that identifies the country of the service provider. a|
 *Information Requirement*: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1-tbr070-021[_tbr070-021_].
 
-*Rule*: The country of the service provider must always be specified. Compulsory use of the Code List link:{url-tree-tmp}/codelists/gc/Country.gc[Country from EU Vocabularies, which is based in ISO].
+*Rule*: The country of the service provider must always be specified. Compulsory use of the Code List link:{url-tree-tmp}/codelists/gc/Country.gc[Country].
 
 *Rule scope*: (BR-RESP-10-10, BR-OTH-01, BR-OTH-01#5, BR-OTH-03)
 

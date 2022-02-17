@@ -18,7 +18,7 @@ The columns of the tables are to be interpreted as follows:
 * Column 21: *Cardinality*, indicates whether the element is mandatory or optional and its multiplicity
 * Column 22: *PropertyDataType*, the type of data expected according to the types defined in the code list ResponseDataType
 * Column 23: *ElementUUID*, The Universal Unique Identifier assigned to identify unambiguously a criterion, group or subgroup. These UUID are kept in e-Certis, except for those that have to be generated dynamically (e.g. UUIDs for Questions, Captions and Requirements). See also the special note "Criteria Taxonomy/Data Structures and the use of UUIDS" below
-* Column 24: *Element Code*; in the case of Criterion it contains the code that categorises the criterion in the taxonomy of exclusion and selection criteria (it maps to the taxonomy drawn in the online documentation and in the spread-sheet files "ESPD-criterion" in folder /codelists). For the rest of elements there are three types of codes (see also section:
+* Column 24: *Element Code*; in the case of Criterion it contains the code that categorises the criterion in the taxonomy of exclusion and selection criteria (it maps to the taxonomy drawn in the online documentation and in the spread-sheet files "ESPD-criterion" in folder /codelists). For the rest of elements there are three types of codes
 ** ON*, meaning "process always" (e.g. show always or read and extract data always")
 ** ONTRUE, meaning "process this group only if the previous parent question (always an INDICATOR) has been answered affirmatively"
 ** ONFALSE, meaning "process this group only if the previous parent question (always an INDICATOR) has been answered negatively"

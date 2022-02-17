@@ -76,7 +76,8 @@ Documentation updated as follow:
 ** _cac:ProcurementProject_
 *** _Component_: replaced by _cac:ProcurementProject/cbc:Description_ in alignment with *eForms*.
 ** _cac:ProcurementProjectLot_
-*** _Component_: replaced by _cac:TenderingCriterion/cac:ProcurementProjectLotReference/cbc:ID_.
+*** _Component_: removed because it is replaced by _cac:TenderingCriterion/cac:ProcurementProjectLotReference_ in the same figure.
+** _cac:TenderingCriterion/cac:ProcurementProjectLotReference_
 *** _Cardinality_: update from _1..n_ to _0..n_.
 ** _cbc:QualificationApplicationTypeCode_
 *** _Component_: removed because it is not used in *ESPD-EDM v3.0.x*.
