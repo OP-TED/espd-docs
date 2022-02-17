@@ -1,22 +1,19 @@
-
+= ESPD Distribution package
 include::partial$attributes.adoc[]
 
-=== 1.1 ESPD Distribution package
 
-All the semantic assets needed to implement ESPD electronic documents are organised in a link:{url-tree}/dist[distribution package]. The content of this folder is organised as follows:
+All the semantic assets needed to implement ESPD electronic documents are organised in a link:{url-tree-tmp}[distribution package]. The content of this folder is organised as follows:
 
-image:Distribution_package.jpg[Distribution (dist) package,width=100,height=220]
+image:Distribution_package.jpg[Distribution package,width=100,height=220]
 
-_Figure 5. Distribution (dist) package_
+_Figure 5. Distribution package_
 
 [arabic]
-. *art*: contains graphical resources used to document the distribution;
-. *cl*: reference data (codelists) used by the XML instances. It also contains a spread-sheet with all the ESPD criteria structured. This spread-sheet can be used to automatically generate ESPD XML instances.
-. *doc*: contains this document (and other documents to support developers);
-. *mod*: UBL-2.3 model specified in spread-sheets;
-. *val*: validation artefacts (eg. ISO Schematron and OASIS Genericode CVA files);
-. *xml*: samples of ESPD XML instances for illustrative and testing purposes;
-. *xsd*: the UBL-2.3 XSD Schemas, documented (annotated) version;
-. *xsdrt*: the UBL-2.3 XSD Schemas, runtime version;
-. *xslt*: transformation stylesheets used to generate basic sample XML instances from the criteria defined in spreadsheets (see folder link:{url-tree}/dist/cl[dist/cl]).
+. *__ESPDTeam__*: contains files for ESPD Team internal use in maintenance tasks of the ESPD-EDM;
+. *codelists*: contains the different code lists used in ESPD in Genericode format and the criterion structure definition.
+. *conceptual-model*: contains the UML conceptual model of the ESPD in .eap, .xmi and HTML format.
+. *java-library*: contains the XML schemas used to generate the JAXB annotated Java classes.
+. *ubl-2.3*: contains a redistribution package from UBL 2.3.
+. *validation*: contains business rules validation files for Schematron and Testbed.
+. *xml-examples*: contains default ESPDRequest and ESPDResponse xml samples and the criterion xml schema.
 

@@ -1,7 +1,5 @@
-
+= Properties
 include::partial$attributes.adoc[]
-
-=== 3.4 Properties
 
 [cols=",",]
 |===
@@ -20,7 +18,7 @@ image:cacSubTenderingCriterion_XSD_Schema.jpg[cac:SubTenderingCriterion- XSD Sch
 
 _Figure 39. cac:SubTenderingCriterion- XSD Schema_
 
-==== Expected elements
+== Expected elements
 
 The following table lists the elements of a criterion property. Beware that the majority of the elements are the possible types of responses that the buyer can specify. The economic operator, in the ESPDResponse, must provide values that are consistent with the type specified by the buyer.
 
@@ -34,7 +32,7 @@ Caption (i.e. a 'label'), specific MS or buyer requirement (e.g. 'Number of refe
 *Information Requirement*: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1.0-tbr070-013[_tbr070-013_]
 
 |*Business rule(s)*: |BR-SC-20
-|*File*: |dist/common/xsdrt/UBL-CommonAggregateComponents-2.3.xsd
+|*File*: |ubl-2.3/xsdrt/common/UBL-CommonAggregateComponents-2.3.xsd
 |*Path*: |/QualificationApplicationRequest/cac:TenderingCriterion/cac:TenderingCriterionProperty
 |===
 
@@ -58,7 +56,7 @@ Caption (i.e. a 'label'), specific MS or buyer requirement (e.g. 'Number of refe
 |*cbc:TypeCode* |Code |1 |The type of property. Used to verify that structure of the property is correct. a|
 *Information Requirement*: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1.0-tbr070-013[_tbr070-013_].
 
-*Rule*: Compulsory use of the link:{url-tree}/dist/cl/ods/[Code List 'CriterionElementType']. Possible types are 'CAPTION, REQUIREMENT and QUESTION'. If the type is CAPTION or REQUIREMENT no answer is expected from the economic operator and therefore the cbc:ValueDataTypeCode must be set to NONE. Otherwise this value must be set to one of the values defined in the link:{url-tree}/dist/cl/ods/[Code List 'ResponseDataType']
+*Rule*: Compulsory use of the link:{url-tree-tmp}/codelists/gc/CriterionElementType.gc[CriterionElementType]. Possible types are 'CAPTION, REQUIREMENT and QUESTION'. If the type is CAPTION or REQUIREMENT no answer is expected from the economic operator and therefore the cbc:ValueDataTypeCode must be set to NONE. Otherwise this value must be set to one of the values defined in the link:{url-tree-tmp}/codelists/gc/ResponseDataType.gc[ResponseDataType]
 
 *Rule scope*: BR-TC-20, BR-OTH-01, BR-OTH-01#14, BR-OTH-03
 
@@ -83,6 +81,10 @@ Caption (i.e. a 'label'), specific MS or buyer requirement (e.g. 'Number of refe
 
 *Rule scope*: BR-OTH-01
 
+|*cbc:ExpectedAmount* |Amount |0..1 |The amount in the expected response from the economic operator. a|
+*Information Requirement*: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1.0-tbr070-013[_tbr070-013_].
+
+
 |*cbc:ExpectedID* |Identifier |0..1 |The expected identifier that the economic operator has to provide in the criterion response. a|
 *Information Requirement*: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1.0-tbr070-013[_tbr070-013_].
 
@@ -101,6 +103,11 @@ Caption (i.e. a 'label'), specific MS or buyer requirement (e.g. 'Number of refe
 *Information Requirement*: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1.0-tbr070-013[_tbr070-013_].
 
 *Rule*: Verify that the value of cac:TypeCode is set to QUESTION and that the cac:ValueTypeCode is different to NONE.
+
+|*cbc:ExpectedDescription* |Text |0..1 |The description of the expected evidence that the economic operator has to provide in the Criterion response. a|
+*Information Requirement*: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1.0-tbr070-013[_tbr070-013_].
+
+*Rule*:
 
 |*cbc:MaximumValueNumeric* |Numeric |0..1 |The maximum value the response must have. a|
 *Information Requirement*: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1.0-tbr070-013[_tbr070-013_].
@@ -129,7 +136,7 @@ Caption (i.e. a 'label'), specific MS or buyer requirement (e.g. 'Number of refe
 
 |===
 
-==== XML Examples
+== XML Examples
 
 [arabic]
 . See examples in sections about exclusion and selection criteria.

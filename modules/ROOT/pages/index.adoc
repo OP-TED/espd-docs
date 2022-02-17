@@ -2,62 +2,11 @@
 
 include::partial$attributes.adoc[]
 
-
-ifndef::imagesdir[:imagesdir: images]
-
-v3.0.0
+= v3.0.1
 
 == Resources
 
-* xref:xml_business_handbook.adoc[ESPD BUSINESS HANDBOOK V3.0.0]
-* xref:xml_technical_handbook.adoc[ESPD TECHNICAL HANDBOOK V3.0.0]
-* link:{url-tree}/dist[All resources in the distribution package]
+* xref:xml_business_handbook.adoc[ESPD BUSINESS HANDBOOK]
+* xref:xml_technical_handbook.adoc[ESPD TECHNICAL HANDBOOK]
+* link:{attachmentsdir}/ESPD_CM_html/index.html[ESPD-EDM CONCEPTUAL MODEL HTML]
 * xref:release_notes.adoc[Release Notes]
-
-== Requirements
-
- * Java 8
- * Maven 3
-
-=== Installation
-
-=== With Maven
-
-The recommended way to get started using the `exchange-model` in your Java project is with a dependency management system.
-
-[source,xml]
-.pom.xml
-----
-<dependency>
-  <groupId>eu.europa.ec.grow.espd</groupId>
-  <artifactId>exchange-model3</artifactId>
-  <version>3.0.0</version>
-</dependency>
-----
-
-[NOTE]
-====
-Version 3 of the `Exchange Model` has a different `artifactId`, i.e. `exchange-model3`, in order to
-support the usage of both versions at the same time inside a `Java` Maven project.
-====
-
-[NOTE]
-====
-In order to use the snapshot version, you might have to enable the `Maven` snapshot repository.
-
-[source,xml]
-.pom.xml
-----
-<repositories>
-  <repository>
-    <id>oss-sonatype</id>
-    <name>oss-sonatype</name>
-    <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
-    <snapshots>
-      <enabled>true</enabled>
-    </snapshots>
-  </repository>
-</repositories>
-----
-====
-

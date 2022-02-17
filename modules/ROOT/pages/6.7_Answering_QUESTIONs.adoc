@@ -1,7 +1,5 @@
-
+= Answering QUESTIONs
 include::partial$attributes.adoc[]
-
-=== 6.7 Answering QUESTIONs
 
 [cols=",",]
 |===
@@ -31,9 +29,9 @@ In the same data structures *REQUIREMENT*(s) and *QUESTION*(s) do not have a UUI
 . In the UBL-2.3 model the answers are separated from inside the criterion. This differs from the previous models of the ESPD-EDM. The motivation for this separation was to allow drafting *QualificationApplicationResponse* documents without having to copy every criterion from the *QualificationApplicationRequest*, having in mind other scenarios different to the *European* Single Procurement Document. This could be used, perhaps, by public administrations that would like to use the UBL-2.3 XSDs for "under-the-threshold contract" ESPDs. Even in that situation the *QualificationApplicationResponse* would need to refer to the specific *QualificationApplicationRequest* instance (so the UUIDs are exactly the ones that were automatically generated for that instance). Remember that this is not possible in the ESPD-EDM, as there is a specific requirement asking to *copy* every criterion from the QualificationApplicationRequest into the QualificationApplicationResponse; see this business requirement at the beginning of the section.
 . If the UUID of cac:TenderingCriterionProperty was 'fixed' (as are the groups and subgroups) one answer could refer to more than one REQUIREMENT or QUESTION; and this is not permissible (see business requirement above, one criterion property → one answer, one answer → one criterion property).
 
-==== XSD Schema
+== XSD Schema
 
-To answer a QUESTION the ESPD-EDM V3.0.0 uses the UBL-2.3 component cac:TenderingCriterionResponse. The expected elements are highlighted in blue in the figure below:
+To answer a QUESTION the ESPD-EDM uses the UBL-2.3 component cac:TenderingCriterionResponse. The expected elements are highlighted in blue in the figure below:
 
 image:cacTendering_Criterion_Response_XSD_element.jpg[cac:TenderingCriterionResponse XSD element,width=500,height=384]
 
@@ -47,7 +45,7 @@ image:cacResponse_Value_XSD_element.jpg[cac:ResponseValue XSD element,width=350,
 
 _Figure 238. cac:ResponseValue XSD element_
 
-The cac:ApplicablePeriod is used to hold the start date and the end-date provided by the economic operator to a QUESTION for which the expected data is of type 'PERIOD'. (See expected types in the Code List link:{url-tree}/dist/cl/ods/[ResponseDataType]).
+The cac:ApplicablePeriod is used to hold the start date and the end-date provided by the economic operator to a QUESTION for which the expected data is of type 'PERIOD'. (See expected types in the Code List link:{url-tree-tmp}/codelists/gc/ResponseDataType.gc[ResponseDataType]).
 
 [cols=",",]
 [IMPORTANT]
@@ -70,13 +68,13 @@ image:cacEvidenceSupplied_XSD_element.jpg[cac:EvidenceSupplied XSD element,width
 
 _Figure 240. cac:EvidenceSupplied XSD element_
 
-==== Mock-ups and data structures
+== Mock-ups and data structures
 
 The answers to QUESTION(s) are provided in the example mock-ups of the previous sections about how the buyer specify REQUIREMENT(s) and QUESTION(s), and how the economic operator adds or removes instances of elements (such as data on the economic operator, references to similar works and services, etc. Please refer to those mock-ups and compare the values shown in the fields reserved for the EO to answer and compare those values with the ones in the example XML snippets below.
 
 Responses are not associated to ESPD custom data structures. All the values regarding an answer are always placed in one instance of the UBL-2.3 data element cac:TenderingCriterionResponse.
 
-==== Expected Elements
+== Expected Elements
 
 [cols=",",options="header",]
 
@@ -85,7 +83,7 @@ _Table 40. Elements expected in an answer to a criterion property_
 |*Class name*: |cac:TenderingCriterionResponse
 |*Definition*: |A class to describe a response to a criterion property.
 |*Business rule(s)*: |BR-RESP-80, BR-RESP-80-S10, BR-RESP-80-S20, Common (BR-LEAD-10)
-|*File*: |dist/common/xsdrt/UBL-CommonAggregateComponents-2.3.xsd
+|*File*: |ubl-2.3/xsdrt/common/UBL-CommonAggregateComponents-2.3.xsd
 |*Path*: |/QualificationApplicationResponse/cac:TenderingCriterionResponse
 |*Context of use*: |The economic operator uses it in the ESPD Response document to answer a QUESTION. link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1-tbr92-018[_tbr92-018, tbr92-007, tbr92-005, tbr92-006_].
 |===
@@ -143,7 +141,7 @@ _Disjointness of the elements inside cac:ResponseValue_
 
 Thus, for example, if in the ESPD Request the expected type is DESCRIPTION the cac:ResponseValue must use the element cbc:Description, if INDICATOR cbc:ResponseIndicator, if IDENTIFIER cbc:ResponseID, etc.
 
-See the codes used for cac:ValueDataTypeCode in the Code List link:{url-tree}/dist/cl/ods/[ResponseDataType]. For the different possible values in the response see the XSD diagrams above and the list of the expected elements in cac:ResponseValue in the table below.
+See the codes used for cac:ValueDataTypeCode in the Code List link:{url-tree-tmp}/codelists/gc/ResponseDataType.gc[ResponseDataType]. For the different possible values in the response see the XSD diagrams above and the list of the expected elements in cac:ResponseValue in the table below.
 
 This disjointness rule applies to the *type* of the value, but *not to the values of the same type*. Thus, for lists of values that constitute the actual answer (e.g. the list of LotIDs the economic operator tenders to, or a list of CPV codes to describe with granularity an activity), a sequence of cac:ResponseValues shall be instantiated in the XML. See the XML examples below.
 ====
@@ -153,7 +151,7 @@ _Table 41. Elements expected in the 'cac:ApplicablePeriod' class_
 |*Class name*: |cac:Period
 |*Definition*: |A class to describe a period of time.
 |*Business rule(s)*: |None
-|*File*: |dist/common/xsdrt/UBL-CommonAggregateComponents-2.3.xsd
+|*File*: |ubl-2.3/xsdrt/common/UBL-CommonAggregateComponents-2.3.xsd
 |*Path*: |/QualificationApplicationResponse/cac:TenderingCriterionResponse/cac:ApplicablePeriod
 |*Context of use*: |A class for the economic operator to specify the start date and the end-date when the expected answer to a criterion property is a lapse of time; link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1-tbr92-018[_tbr92-018_].
 |===
@@ -179,7 +177,7 @@ _Table 41. Elements expected in the 'cac:ApplicablePeriod' class_
 |*Class name*: |cac:EvidenceSupplied
 |*Definition*: |A reference to the evidence supporting this criterion property response.
 |*Business rule(s)*: |None
-|*File*: |dist/common/xsdrt/UBL-CommonAggregateComponents-2.3.xsd
+|*File*: |ubl-2.3/xsdrt/common/UBL-CommonAggregateComponents-2.3.xsd
 |*Path*: |/QualificationApplicationResponse/cac:TenderingCriterionResponse/cac:EvidenceSupplied
 |*Context of use*: |Used to refer to one ore more evidences that are present in the QualificationApplicationResponse XML instance; link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1-tbr92-017[_tbr92-017_].
 |===
@@ -205,7 +203,7 @@ _Table 43. Elements expected in the 'cac:ResponseValue' class_
 |*Class name*: |cac:ResponseValue
 |*Definition*: |A class to describe the criterion property response value.
 |*Business rule(s)*: |Common (BR-TCR-08, BR-TCR-04)
-|*File*: |dist/common/xsdrt/UBL-CommonAggregateComponents-2.3.xsd
+|*File*: |ubl-2.3/xsdrt/common/UBL-CommonAggregateComponents-2.3.xsd
 |*Path*: |/QualificationApplicationResponse/cac:TenderingCriterionResponse/cac:ResponseValue
 |*Context of use*: |Used to specify one value or a collection of values (in the case of a list) as a response to one, and only one, cac:TenderingCriterionProperty that is typified as a QUESTION.
 |===
@@ -283,7 +281,7 @@ _Table 43. Elements expected in the 'cac:ResponseValue' class_
 
 |===
 
-==== Request/Response XML Example
+== Request/Response XML Example
 
 To start with a simple example let us re-take the last case presented in section *_Reduction of candidates_*.
 
@@ -302,53 +300,53 @@ _Reduction of Candidates - (QUESTION(s) in the ESPD-Request)_
 
 <!-- Criterion:Reduction of the number of qualified candidates -->
         <cac:TenderingCriterion>
-                <cbc:ID schemeID="criterion" schemeAgencyID="EU-COM-GROW" schemeVersionID="3.0.0">51c39ba9-0444-4967-afe9-36f753b30175</cbc:ID>
-                <cbc:CriterionTypeCode listID="criterion" listAgencyID="EU-COM-GROW" listVersionID="3.0.0">staff-red</cbc:CriterionTypeCode>
+                <cbc:ID schemeID="criterion" schemeAgencyID="EU-COM-GROW" schemeVersionID="3.0.1">51c39ba9-0444-4967-afe9-36f753b30175</cbc:ID>
+                <cbc:CriterionTypeCode listID="criterion" listAgencyID="OP" listVersionID="20210616-0">staff-red</cbc:CriterionTypeCode>
                 <cbc:Name>Reduction of the number of qualified candidates</cbc:Name>
                 <cbc:Description>The economic operator declares that It meets the objective and non discriminatory criteria or rules to be applied in order to limit the number of candidates in the following way:</cbc:Description>
                 <cac:ProcurementProjectLotReference>
-                        <cbc:ID schemeID="Criterion" schemeAgencyID="EU-COM-GROW" schemeVersionID="3.0.0">LOT-00000</cbc:ID>
+                        <cbc:ID schemeID="Criterion" schemeAgencyID="EU-COM-GROW" schemeVersionID="3.0.1">LOT-00000</cbc:ID>
                 </cac:ProcurementProjectLotReference>
                 <cac:ProcurementProjectLotReference>
-                        <cbc:ID schemeID="Criterion" schemeAgencyID="EU-COM-GROW" schemeVersionID="3.0.0">LOT-00001</cbc:ID>
+                        <cbc:ID schemeID="Criterion" schemeAgencyID="EU-COM-GROW" schemeVersionID="3.0.1">LOT-00001</cbc:ID>
                 </cac:ProcurementProjectLotReference>
                 <cac:TenderingCriterionPropertyGroup>
-                        <cbc:ID schemeID="criterion" schemeAgencyID="EU-COM-GROW" schemeVersionID="3.0.0">ecc69670-f428-4446-908f-689568ca0d0d</cbc:ID>
-                        <cbc:PropertyGroupTypeCode listID="PropertyGroupType" listAgencyID="EU-COM-GROW" listVersionID="3.0.0">ON*</cbc:PropertyGroupTypeCode>
+                        <cbc:ID schemeID="criterion" schemeAgencyID="EU-COM-GROW" schemeVersionID="3.0.1">ecc69670-f428-4446-908f-689568ca0d0d</cbc:ID>
+                        <cbc:PropertyGroupTypeCode listID="PropertyGroupType" listAgencyID="EU-COM-GROW" listVersionID="3.0.1">ON*</cbc:PropertyGroupTypeCode>
                         <cac:TenderingCriterionProperty>
-                                <cbc:ID schemeID="criterion" schemeAgencyID="EU-COM-GROW" schemeVersionID="3.0.0">de82e45f-a0f6-43a6-9761-bfae3385fd1d</cbc:ID>
+                                <cbc:ID schemeID="criterion" schemeAgencyID="EU-COM-GROW" schemeVersionID="3.0.1">de82e45f-a0f6-43a6-9761-bfae3385fd1d</cbc:ID>
                                 <cbc:Description>Your answer?</cbc:Description>
-                                <cbc:TypeCode listID="CriterionElementType" listAgencyID="EU-COM-GROW" listVersionID="3.0.0">QUESTION</cbc:TypeCode>
-                                <cbc:ValueDataTypeCode listID="ResponseDataType" listAgencyID="EU-COM-GROW" listVersionID="3.0.0">INDICATOR</cbc:ValueDataTypeCode>
+                                <cbc:TypeCode listID="CriterionElementType" listAgencyID="EU-COM-GROW" listVersionID="3.0.1">QUESTION</cbc:TypeCode>
+                                <cbc:ValueDataTypeCode listID="ResponseDataType" listAgencyID="EU-COM-GROW" listVersionID="3.0.1">INDICATOR</cbc:ValueDataTypeCode>
                         </cac:TenderingCriterionProperty>
                         <cac:SubsidiaryTenderingCriterionPropertyGroup>
-                                <cbc:ID schemeID="criterion" schemeAgencyID="EU-COM-GROW" schemeVersionID="3.0.0">f13754df-7e15-4155-aaa6-7ca6407baa47</cbc:ID>
-                                <cbc:PropertyGroupTypeCode listID="PropertyGroupType" listAgencyID="EU-COM-GROW" listVersionID="3.0.0">ONTRUE</cbc:PropertyGroupTypeCode>
+                                <cbc:ID schemeID="criterion" schemeAgencyID="EU-COM-GROW" schemeVersionID="3.0.1">f13754df-7e15-4155-aaa6-7ca6407baa47</cbc:ID>
+                                <cbc:PropertyGroupTypeCode listID="PropertyGroupType" listAgencyID="EU-COM-GROW" listVersionID="3.0.1">ONTRUE</cbc:PropertyGroupTypeCode>
                                 <cac:TenderingCriterionProperty>
-                                        <cbc:ID schemeID="criterion" schemeAgencyID="EU-COM-GROW" schemeVersionID="3.0.0">ffc141f8-5ffe-4492-9066-7ff5dd633583</cbc:ID>
+                                        <cbc:ID schemeID="criterion" schemeAgencyID="EU-COM-GROW" schemeVersionID="3.0.1">ffc141f8-5ffe-4492-9066-7ff5dd633583</cbc:ID>
                                         <cbc:Description>Please describe them</cbc:Description>
-                                        <cbc:TypeCode listID="CriterionElementType" listAgencyID="EU-COM-GROW" listVersionID="3.0.0">QUESTION</cbc:TypeCode>
-                                        <cbc:ValueDataTypeCode listID="ResponseDataType" listAgencyID="EU-COM-GROW" listVersionID="3.0.0">DESCRIPTION</cbc:ValueDataTypeCode>
+                                        <cbc:TypeCode listID="CriterionElementType" listAgencyID="EU-COM-GROW" listVersionID="3.0.1">QUESTION</cbc:TypeCode>
+                                        <cbc:ValueDataTypeCode listID="ResponseDataType" listAgencyID="EU-COM-GROW" listVersionID="3.0.1">DESCRIPTION</cbc:ValueDataTypeCode>
                                 </cac:TenderingCriterionProperty>
                         </cac:SubsidiaryTenderingCriterionPropertyGroup>
                 </cac:TenderingCriterionPropertyGroup>
                 <cac:TenderingCriterionPropertyGroup>
-                        <cbc:ID schemeID="criterion" schemeAgencyID="EU-COM-GROW" schemeVersionID="3.0.0">7458d42a-e581-4640-9283-34ceb3ad4345</cbc:ID>
-                        <cbc:PropertyGroupTypeCode listID="PropertyGroupType" listAgencyID="EU-COM-GROW" listVersionID="3.0.0">ON*</cbc:PropertyGroupTypeCode>
+                        <cbc:ID schemeID="criterion" schemeAgencyID="EU-COM-GROW" schemeVersionID="3.0.1">7458d42a-e581-4640-9283-34ceb3ad4345</cbc:ID>
+                        <cbc:PropertyGroupTypeCode listID="PropertyGroupType" listAgencyID="EU-COM-GROW" listVersionID="3.0.1">ON*</cbc:PropertyGroupTypeCode>
                         <cac:TenderingCriterionProperty>
-                                <cbc:ID schemeID="criterion" schemeAgencyID="EU-COM-GROW" schemeVersionID="3.0.0">01a08984-328f-4bc8-88d9-56634e66ca3c</cbc:ID>
+                                <cbc:ID schemeID="criterion" schemeAgencyID="EU-COM-GROW" schemeVersionID="3.0.1">01a08984-328f-4bc8-88d9-56634e66ca3c</cbc:ID>
                                 <cbc:Description>Is this information available electronically?</cbc:Description>
-                                <cbc:TypeCode listID="CriterionElementType" listAgencyID="EU-COM-GROW" listVersionID="3.0.0">QUESTION</cbc:TypeCode>
-                                <cbc:ValueDataTypeCode listID="ResponseDataType" listAgencyID="EU-COM-GROW" listVersionID="3.0.0">INDICATOR</cbc:ValueDataTypeCode>
+                                <cbc:TypeCode listID="CriterionElementType" listAgencyID="EU-COM-GROW" listVersionID="3.0.1">QUESTION</cbc:TypeCode>
+                                <cbc:ValueDataTypeCode listID="ResponseDataType" listAgencyID="EU-COM-GROW" listVersionID="3.0.1">INDICATOR</cbc:ValueDataTypeCode>
                         </cac:TenderingCriterionProperty>
                         <cac:SubsidiaryTenderingCriterionPropertyGroup>
-                                <cbc:ID schemeID="criterion" schemeAgencyID="EU-COM-GROW" schemeVersionID="3.0.0">41dd2e9b-1bfd-44c7-93ee-56bd74a4334b</cbc:ID>
-                                <cbc:PropertyGroupTypeCode listID="PropertyGroupType" listAgencyID="EU-COM-GROW" listVersionID="3.0.0">ONTRUE</cbc:PropertyGroupTypeCode>
+                                <cbc:ID schemeID="criterion" schemeAgencyID="EU-COM-GROW" schemeVersionID="3.0.1">41dd2e9b-1bfd-44c7-93ee-56bd74a4334b</cbc:ID>
+                                <cbc:PropertyGroupTypeCode listID="PropertyGroupType" listAgencyID="EU-COM-GROW" listVersionID="3.0.1">ONTRUE</cbc:PropertyGroupTypeCode>
                                 <cac:TenderingCriterionProperty>
-                                        <cbc:ID schemeID="criterion" schemeAgencyID="EU-COM-GROW" schemeVersionID="3.0.0">fe61b9a7-9e60-45eb-98c9-cd7102a86013</cbc:ID>
+                                        <cbc:ID schemeID="criterion" schemeAgencyID="EU-COM-GROW" schemeVersionID="3.0.1">fe61b9a7-9e60-45eb-98c9-cd7102a86013</cbc:ID>
                                         <cbc:Description>Evidence Supplied</cbc:Description>
-                                        <cbc:TypeCode listID="CriterionElementType" listAgencyID="EU-COM-GROW" listVersionID="3.0.0">QUESTION</cbc:TypeCode>
-                                        <cbc:ValueDataTypeCode listID="ResponseDataType" listAgencyID="EU-COM-GROW" listVersionID="3.0.0">EVIDENCE_IDENTIFIER</cbc:ValueDataTypeCode>
+                                        <cbc:TypeCode listID="CriterionElementType" listAgencyID="EU-COM-GROW" listVersionID="3.0.1">QUESTION</cbc:TypeCode>
+                                        <cbc:ValueDataTypeCode listID="ResponseDataType" listAgencyID="EU-COM-GROW" listVersionID="3.0.1">EVIDENCE_IDENTIFIER</cbc:ValueDataTypeCode>
                                 </cac:TenderingCriterionProperty>
                         </cac:SubsidiaryTenderingCriterionPropertyGroup>
                 </cac:TenderingCriterionPropertyGroup>
@@ -367,7 +365,7 @@ _Reduction of Candidates - (QUESTION(s) in the ESPD-Request)_
 . The type of data expected here is a free text bythe EO (for the Response, a DESCRIPTION maps to the UBL-2.3 element cbc:Description, which is an extension of the xsd:String).
 
 
-==== XML example (Responses to the QUESTION(s))
+== XML example (Responses to the QUESTION(s))
 
 This other XML snippet below shows the responses to the two QUESTION(s) expressed in the ESPD-Request for this criterion (the block related to evidences is omitted for the sake of clarity and brevity):
 
@@ -380,13 +378,13 @@ _Reduction of Candidates - (answers in the ESPD-Response)_
 
 <cac:TenderingCriterionResponse>
 
-<cbc:ID schemeID="ISO/IEC 9834-8:2008 - 4UUID" schemeAgencyID="EU-COM-GROW" schemeVersionID="3.0.0">d47daca4-4a27-4461-9db9-f483d3b7a114</cbc:ID>
+<cbc:ID schemeID="ISO/IEC 9834-8:2008 - 4UUID" schemeAgencyID="EU-COM-GROW" schemeVersionID="3.0.1">d47daca4-4a27-4461-9db9-f483d3b7a114</cbc:ID>
 
-<cbc:ValidatedCriterionPropertyID schemeID="criterion" schemeAgencyID="EU-COM-GROW" schemeVersionID="3.0.0">c110177c-aa9a-4acd-809a-79a2353a41ef</cbc:ValidatedCriterionPropertyID>
+<cbc:ValidatedCriterionPropertyID schemeID="criterion" schemeAgencyID="EU-COM-GROW" schemeVersionID="3.0.1">c110177c-aa9a-4acd-809a-79a2353a41ef</cbc:ValidatedCriterionPropertyID>
 
 <cac:ResponseValue>
 
-<cbc:ID schemeID="ISO/IEC 9834-8:2008 - 4UUID" schemeAgencyID="EU-COM-GROW" schemeVersionID="3.0.0">de6f1bdd-abce-42f7-b9b8-30c4e7c4c94d</cbc:ID>
+<cbc:ID schemeID="ISO/IEC 9834-8:2008 - 4UUID" schemeAgencyID="EU-COM-GROW" schemeVersionID="3.0.1">de6f1bdd-abce-42f7-b9b8-30c4e7c4c94d</cbc:ID>
 
 <cbc:ResponseIndicator>true</cbc:ResponseIndicator>
 
@@ -396,13 +394,13 @@ _Reduction of Candidates - (answers in the ESPD-Response)_
 
 <cac:TenderingCriterionResponse>
 
-<cbc:ID schemeID="ISO/IEC 9834-8:2008 - 4UUID" schemeAgencyID="EU-COM-GROW" schemeVersionID="3.0.0">d47daca4-4a27-4461-9db9-f483d3b7a114</cbc:ID>
+<cbc:ID schemeID="ISO/IEC 9834-8:2008 - 4UUID" schemeAgencyID="EU-COM-GROW" schemeVersionID="3.0.1">d47daca4-4a27-4461-9db9-f483d3b7a114</cbc:ID>
 
-<cbc:ValidatedCriterionPropertyID schemeID="criterion" schemeAgencyID="EU-COM-GROW" schemeVersionID="3.0.0">e437cac1-3a89-4f36-bcc7-3219dda49d30</cbc:ValidatedCriterionPropertyID>
+<cbc:ValidatedCriterionPropertyID schemeID="criterion" schemeAgencyID="EU-COM-GROW" schemeVersionID="3.0.1">e437cac1-3a89-4f36-bcc7-3219dda49d30</cbc:ValidatedCriterionPropertyID>
 
 <cac:ResponseValue>
 
-<cbc:ID schemeID="ISO/IEC 9834-8:2008 - 4UUID" schemeAgencyID="EU-COM-GROW" schemeVersionID="3.0.0">de6f1bdd-abce-42f7-b9b8-30c4e7c4c94d</cbc:ID>
+<cbc:ID schemeID="ISO/IEC 9834-8:2008 - 4UUID" schemeAgencyID="EU-COM-GROW" schemeVersionID="3.0.1">de6f1bdd-abce-42f7-b9b8-30c4e7c4c94d</cbc:ID>
 
 <cbc:Description>This Consortium fulfills all the conditions defined by the buyer in the contract notice, and notably
 

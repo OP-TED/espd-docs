@@ -1,7 +1,5 @@
-
+= Service Provider
 include::partial$attributes.adoc[]
-
-=== 2.8 Service Provider
 
 [cols=",",]
 |===
@@ -14,7 +12,7 @@ The ESPD allows the provision of data about the service provider who produced th
 
 Since the 2.1.1 does not include the cac:ServiceProvider as a 'document root component'. Instead, it uses the UBL-2.3 cac:ContractingParty/cac:Party associated class cac:ServiceProviderParty.
 
-==== XSD Schema
+== XSD Schema
 
 image:cacServiceProvider_XSD_Schema.jpg[cac:ServiceProvider XSD Schema,width=566,height=453]
 
@@ -34,7 +32,7 @@ image:cacService_provider_Party_elements.jpg[service provider's 'Party' elements
 
 _Figure 23. cac:ServiceProvider/cac:Party elements expected for the service provider_
 
-==== Expected elements
+== Expected elements
 
 [cols=",",options="header",]
 
@@ -43,7 +41,7 @@ _Table 12. Service provider, expected elements_
 |*Class name*: |cac:Party
 |*Definition*: |Main information about the service provider.
 |*Business rule(s)*: |None
-|*File*: |dist/common/xsdrt/UBL-CommonAggregateComponents-2.3.xsd
+|*File*: |ubl-2.3/xsdrt/common/UBL-CommonAggregateComponents-2.3.xsd
 |*Path*: |/QualificationApplicationRequest/cac:ContractingParty/cac:Party/cac:ServiceProviderParty/cac:Party
 |===
 
@@ -63,7 +61,7 @@ _Table 12. Service provider, expected elements_
 |*cac:PartyIdentification/cbc:ID* |Identifier |1 |The national identifier of a service provider as it is legally registered (e.g. VAT identification). a|
 *Information Requirement*: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1.0-tbr070-0011[_tbr070-011_].
 
-*Rule*: An identifier for the service provider must always be provided. Compulsory use of the attribute SchemeAgencyID. When possible use the VAT identification of the service provider (see the VIES platform for a EU cross-border national VAT number verification system). See XML example below. The code list link:{url-blob}/dist/cl/ods/ESPD-CodeLists-V3.0.0.ods[EOIDType] may be used to indicate the type of identifier used as a value of the schemeID attribute, e.g. schemeID="VAT").
+*Rule*: An identifier for the service provider must always be provided. Compulsory use of the attribute SchemeAgencyID. When possible use the VAT identification of the service provider (see the VIES platform for a EU cross-border national VAT number verification system). See XML example below. The code list link:{url-tree-tmp}/codelists/gc/EOIDType.gc[EOIDType] may be used to indicate the type of identifier used as a value of the schemeID attribute, e.g. schemeID="VAT").
 
 *Rule scope*: Common (BR-REQ-20#5, BR-OTH-02")
 
@@ -74,7 +72,7 @@ _Table 12. Service provider, expected elements_
 
 *Rule scope*: Common (BR-REQ-20#6)
 
-|*cac:PostalAddress/cac:Country/cbc:IdentificationCode* |Identifier |1 |The code that identifies the country of the service provider. a|
+|*cac:PostalAddress/cac:Country/cbc:IdentificationCode* |Code |1 |The code that identifies the country of the service provider. a|
 *Information Requirement*: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1.0-tbr070-0011[_tbr070-011_].
 
 *Rule*: The country of the service provider must always be specified. Compulsory use of the code list "Country" from EU Vocabulary, which includes 3-character codes and it is based on ISO.
@@ -83,7 +81,7 @@ _Table 12. Service provider, expected elements_
 
 |===
 
-==== XML example
+== XML example
 
 The XML snippet below shows how an example of how to supply the expected data for the service provider.
 
@@ -101,7 +99,7 @@ _<!--- Root elements eliminated for the sake of brevity -->_
 
 <cac:PartyName><cbc:Name>Ministerio de Defensa</cbc:Name></cac:PartyName>
 
-<cac:PostalAddress><cac:Country><cbc:IdentificationCode listID="Country" listAgencyID="EU-COM-OP" listVersionID="20201216-0">ES</cbc:IdentificationCode></cac:Country></cac:PostalAddress>
+<cac:PostalAddress><cac:Country><cbc:IdentificationCode listID="Country" listAgencyID="OP" listVersionID="20211208-0">ES</cbc:IdentificationCode></cac:Country></cac:PostalAddress>
 
 <cac:ServiceProviderParty>
 
@@ -123,7 +121,7 @@ _<!--- Root elements eliminated for the sake of brevity -->_
 
 <cac:PostalAddress>
 
-<cac:Country><cbc:IdentificationCode listID="Country" listAgencyID="EU-COM-OP" listVersionID=" 20201216-0">ESP</cbc:IdentificationCode></cac:Country>
+<cac:Country><cbc:IdentificationCode listID="Country" listAgencyID="OP" listVersionID="20211208-0">ESP</cbc:IdentificationCode></cac:Country>
 
 </cac:PostalAddress>
 

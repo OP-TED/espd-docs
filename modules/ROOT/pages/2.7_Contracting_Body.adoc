@@ -1,13 +1,11 @@
-
+= Contracting Body
 include::partial$attributes.adoc[]
 
-=== 2.7 Contracting Body
-
-==== Related information requirements
+== Related information requirements
 
 See formal requirements related to the contracting authorities in the e-Sens site: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1.0-tbr070-001[_tbr070-001_]*
 
-==== Mock-up
+== Mock-up
 
 In principle, the ESPD-EDM asks for a few data about the procurer (i.e. the buyer, body or entity). The essential (compulsory) data for the contracting body are namely the one aimed to identify it, i.e. its official name and the country. The figure below represents a possible GUI interface for these two data. However the UBL specification provides many other data elements some of which may be interesting to include in the ESPD, notably data about the means to contact the contracting body (see below the list of elements possible in the ESPD).
 
@@ -17,7 +15,7 @@ image:Procurer_identification_mockup.jpg[Procurer identification,width=600,heigh
 
 _Figure 17. Data about the procurer, mock-up_
 
-==== XSD Schema
+== XSD Schema
 
 The UBL-2.3 model provides a component that fits the purpose of holding data about the procurer: the common aggregate component cac:ContractingParty.
 
@@ -43,16 +41,16 @@ image:cacContact_XSD_Schema.jpg[cac:Contact, XSD Schema,width=407,height=253]
 
 _Figure 21. cac:Contact, XSD Schema_
 
-==== Expected elements
+== Expected elements
 
 [cols=",",options="header",]
 
 _Table 8. Contracting body, expected elements_
 |===
-|*Class name*: |cac:ContractParty
+|*Class name*: |cac:ContractingParty
 |*Definition*: |The buyer or contracting entity who is buying supplies, services or public works using a tendering procedure as described in the applicable directive (e.g. Directives 2014/24/EU, 2014/25/EU).
 |*Business rule(s)*: |Common (BR-REQ-20#1)
-|*File*: |dist/common/xsdrt/UBL-CommonAggregateComponents-2.3.xsd
+|*File*: |ubl-2.3/xsdrt/common/UBL-CommonAggregateComponents-2.3.xsd
 |*Path*: |/QualificationApplicationRequest/cac:ContractingParty
 |===
 
@@ -72,7 +70,7 @@ _Table 9. Contracting body party, expected elements_
 |===
 |*Class name*: |cac:Party
 |*Definition*: |Main data placeholder structure for, in this case, the contracting body.
-|*File*: |dist/common/xsdrt/UBL-CommonAggregateComponents-2.3.xsd
+|*File*: |ubl-2.3/xsdrt/common/UBL-CommonAggregateComponents-2.3.xsd
 |*Path*: |/QualificationApplicationRequest/cac:ContractingParty/cac:Party
 |===
 
@@ -82,7 +80,7 @@ _Table 9. Contracting body party, expected elements_
 |*cac:PartyIdentification/cbc:Identifier* |Identifier |0..1 |The national identifier of a contracting body as it is legally registered (e.g. VAT identification). a|
 *Information Requirement*: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1.0-tbr070-001[_tbr070-001_].
 
-*Rule*: More than one identifier can be specified. When possible use the VAT identification of the contracting body (see the link:https://ec.europa.eu/taxation_customs/vies/[VIES] platform for a EU cross-border national VAT number verification system). The code list link:{url-blob}/dist/cl/ods/[EOIDType] may be used to indicate the type of identifier used as a value of the schemeID attribute, e.g. schemeID="VAT").
+*Rule*: When possible use the VAT identification of the contracting body (see the link:https://ec.europa.eu/taxation_customs/vies/[VIES] platform for a EU cross-border national VAT number verification system). When not possible a different identifier may be used. The code list link:{url-tree-tmp}/codelists/gc/EOIDType.gc[EOIDType] may be used to indicate the type of identifier used as a value of the schemeID attribute, e.g. schemeID="VAT").
 
 *Rule scope*: Common (BR-REQ-20#4, BR-OTH-02)
 
@@ -112,7 +110,7 @@ _Table 10. Contracting body postal address, expected elements_
 |*Class name*: |cac:PostalAddress
 |*Definition*: |Contractinng body address information.
 |*Business rule(s)*: |None
-|*File*: |dist/common/xsdrt/UBL-CommonAggregateComponents-2.3.xsd
+|*File*: |ubl-2.3/xsdrt/common/UBL-CommonAggregateComponents-2.3.xsd
 |*Path*: |/QualificationApplicationRequest/cac:ContractingParty/cac:Party/cac:PostalAddress
 |===
 
@@ -154,7 +152,7 @@ _Table 11. Contact of the contracting body, expected elements_
 |===
 |*Class name*: |cac:Contact
 |*Definition*: |Used to provide contacting information for a party in general or a person.
-|*File*: |dist/common/xsdrt/UBL-CommonAggregateComponents-2.3.xsd
+|*File*: |ubl-2.3/xsdrt/common/UBL-CommonAggregateComponents-2.3.xsd
 |*Path*: |/QualificationApplicationRequest/cac:ContractingParty/cac:Party/cac:Contact
 |===
 
