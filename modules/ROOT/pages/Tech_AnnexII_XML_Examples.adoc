@@ -1,3 +1,4 @@
+:sectnums:
 = Annex II. XML Examples
 include::partial$attributes.adoc[]
 
