@@ -176,7 +176,6 @@ This code list is maintained as technical for the time being. In the future it m
 [cols=","]
 !===
 !*ShortName* !DocRefContentType
-!*LongName* !
 !*ListID* !docrefcontent-type 
 !*Version* !3.0.1
 !*CanonicalUri* !https://github.com/ESPD/ESPD-EDM

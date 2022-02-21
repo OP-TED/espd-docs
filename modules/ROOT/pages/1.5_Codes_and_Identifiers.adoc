@@ -175,9 +175,9 @@ _TenderingCriterionProperty (a QUESTION) asking for the identifier of the Econom
 
 <cbc:Description>ID of the economic operator</cbc:Description>
 
-<cbc:TypeCode listID="CriterionElementType" listAgencyID="EU-COM-GROW" listVersionID="3.0.1">QUESTION</cbc:TypeCode>
+<cbc:TypeCode listID="criterion-element-type" listAgencyID="EU-COM-GROW" listVersionID="3.0.1">QUESTION</cbc:TypeCode>
 
-<cbc:ValueDataTypeCode listID="ResponseDataType" listAgencyID="EU-COM-GROW" listVersionID="3.0.1">ECONOMIC_OPERATOR_IDENTIFIER</cbc:ValueDataTypeCode>
+<cbc:ValueDataTypeCode listID="response-data-type" listAgencyID="EU-COM-GROW" listVersionID="3.0.1">ECONOMIC_OPERATOR_IDENTIFIER</cbc:ValueDataTypeCode>
 
 </cac:TenderingCriterionProperty>
 

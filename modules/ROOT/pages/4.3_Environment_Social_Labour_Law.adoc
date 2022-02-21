@@ -43,7 +43,7 @@ _'Environmental Law'_
 <!-- Criterion:Breaching of obligations in the fields of environmental law -->
         <cac:TenderingCriterion>
                 <cbc:ID schemeID="criterion" schemeAgencyID="EU-COM-GROW" schemeVersionID="3.0.1">a80ddb62-d25b-4e4e-ae22-3968460dc0a9</cbc:ID>
-                <cbc:CriterionTypeCode listID="criterion" listAgencyID="OP" listVersionID="20210616-0">envir-law</cbc:CriterionTypeCode>
+                <cbc:CriterionTypeCode listID="http://publications.europa.eu/resource/authority/criterion" listAgencyID="OP" listVersionID="20210616-0">envir-law</cbc:CriterionTypeCode>
                 <cbc:Name>Breaching of obligations in the fields of environmental law</cbc:Name>
                 <cbc:Description>Has the economic operator, to its knowledge, breached its obligations in the fields of environmental law? As referred to for the purposes of this procurement in national law, in the ESPD, the relevant notice or the in the ESPD, the relevant notice or , in Article 18(2) of Directive 2014/24/EU or in the ESPD.</cbc:Description>
 
@@ -53,18 +53,18 @@ _'Environmental Law'_
                         <cbc:Description>[Description of the National Criterion ]</cbc:Description>
                         <cac:TenderingCriterionPropertyGroup>
                                 <cbc:ID schemeID="criterion" schemeAgencyID="EU-COM-GROW" schemeVersionID="3.0.1">8c39b505-8abe-44fa-a3e0-f2d78b9d8224</cbc:ID>
-                                <cbc:PropertyGroupTypeCode listID="PropertyGroupType" listAgencyID="EU-COM-GROW" listVersionID="3.0.1">ON*</cbc:PropertyGroupTypeCode>
+                                <cbc:PropertyGroupTypeCode listID="property-group-type" listAgencyID="EU-COM-GROW" listVersionID="3.0.1">ON*</cbc:PropertyGroupTypeCode>
                                 <cac:TenderingCriterionProperty>
                                         <cbc:ID schemeID="criterion" schemeAgencyID="EU-COM-GROW" schemeVersionID="3.0.1">0be59e53-a54b-4d55-919f-27c43ddf0a7a</cbc:ID>
                                         <cbc:Description>[Additional information; e.g. no evidences online]</cbc:Description>
-                                        <cbc:TypeCode listID="CriterionElementType" listAgencyID="EU-COM-GROW" listVersionID="3.0.1">CAPTION</cbc:TypeCode>
-                                        <cbc:ValueDataTypeCode listID="ResponseDataType" listAgencyID="EU-COM-GROW" listVersionID="3.0.1">NONE</cbc:ValueDataTypeCode>
+                                        <cbc:TypeCode listID="criterion-element-type" listAgencyID="EU-COM-GROW" listVersionID="3.0.1">CAPTION</cbc:TypeCode>
+                                        <cbc:ValueDataTypeCode listID="response-data-type" listAgencyID="EU-COM-GROW" listVersionID="3.0.1">NONE</cbc:ValueDataTypeCode>
                                 </cac:TenderingCriterionProperty>
                                 <cac:TenderingCriterionProperty>
                                         <cbc:ID schemeID="criterion" schemeAgencyID="EU-COM-GROW" schemeVersionID="3.0.1">926641b9-c06b-400a-965b-bfebf0b37265</cbc:ID>
                                         <cbc:Description>Your Answer</cbc:Description>
-                                        <cbc:TypeCode listID="CriterionElementType" listAgencyID="EU-COM-GROW" listVersionID="3.0.1">QUESTION</cbc:TypeCode>
-                                        <cbc:ValueDataTypeCode listID="ResponseDataType" listAgencyID="EU-COM-GROW" listVersionID="3.0.1">INDICATOR</cbc:ValueDataTypeCode>
+                                        <cbc:TypeCode listID="criterion-element-type" listAgencyID="EU-COM-GROW" listVersionID="3.0.1">QUESTION</cbc:TypeCode>
+                                        <cbc:ValueDataTypeCode listID="response-data-type" listAgencyID="EU-COM-GROW" listVersionID="3.0.1">INDICATOR</cbc:ValueDataTypeCode>
                                 </cac:TenderingCriterionProperty>
                         </cac:TenderingCriterionPropertyGroup>
                 </cac:SubTenderingCriterion>
@@ -81,51 +81,51 @@ _'Environmental Law'_
                 </cac:Legislation>
                 <cac:TenderingCriterionPropertyGroup>
                         <cbc:ID schemeID="criterion" schemeAgencyID="EU-COM-GROW" schemeVersionID="3.0.1">976b5acb-c00f-46ca-8f83-5ce6abfdfe43</cbc:ID>
-                        <cbc:PropertyGroupTypeCode listID="PropertyGroupType" listAgencyID="EU-COM-GROW" listVersionID="3.0.1">ON*</cbc:PropertyGroupTypeCode>
+                        <cbc:PropertyGroupTypeCode listID="property-group-type" listAgencyID="EU-COM-GROW" listVersionID="3.0.1">ON*</cbc:PropertyGroupTypeCode>
                         <cac:TenderingCriterionProperty>
                                 <cbc:ID schemeID="criterion" schemeAgencyID="EU-COM-GROW" schemeVersionID="3.0.1">823a071e-8a30-4746-a49d-819beba42d2a</cbc:ID>
                                 <cbc:Description>Your answer</cbc:Description>
-                                <cbc:TypeCode listID="CriterionElementType" listAgencyID="EU-COM-GROW" listVersionID="3.0.1">QUESTION</cbc:TypeCode>
-                                <cbc:ValueDataTypeCode listID="ResponseDataType" listAgencyID="EU-COM-GROW" listVersionID="3.0.1">INDICATOR</cbc:ValueDataTypeCode>
+                                <cbc:TypeCode listID="criterion-element-type" listAgencyID="EU-COM-GROW" listVersionID="3.0.1">QUESTION</cbc:TypeCode>
+                                <cbc:ValueDataTypeCode listID="response-data-type" listAgencyID="EU-COM-GROW" listVersionID="3.0.1">INDICATOR</cbc:ValueDataTypeCode>
                         </cac:TenderingCriterionProperty>
                         <cac:SubsidiaryTenderingCriterionPropertyGroup>
                                 <cbc:ID schemeID="criterion" schemeAgencyID="EU-COM-GROW" schemeVersionID="3.0.1">64a2102c-4af1-4ecb-97b3-0c41907ec0f6</cbc:ID>
-                                <cbc:PropertyGroupTypeCode listID="PropertyGroupType" listAgencyID="EU-COM-GROW" listVersionID="3.0.1">ONTRUE</cbc:PropertyGroupTypeCode>
+                                <cbc:PropertyGroupTypeCode listID="property-group-type" listAgencyID="EU-COM-GROW" listVersionID="3.0.1">ONTRUE</cbc:PropertyGroupTypeCode>
                                 <cac:TenderingCriterionProperty>
                                         <cbc:ID schemeID="criterion" schemeAgencyID="EU-COM-GROW" schemeVersionID="3.0.1">2c555ed7-b410-42f5-8349-aeffdb71a5cc</cbc:ID>
                                         <cbc:Description>Have you taken measures to demonstrate your reliability (Self-Cleaning)?</cbc:Description>
-                                        <cbc:TypeCode listID="CriterionElementType" listAgencyID="EU-COM-GROW" listVersionID="3.0.1">QUESTION</cbc:TypeCode>
-                                        <cbc:ValueDataTypeCode listID="ResponseDataType" listAgencyID="EU-COM-GROW" listVersionID="3.0.1">INDICATOR</cbc:ValueDataTypeCode>
+                                        <cbc:TypeCode listID="criterion-element-type" listAgencyID="EU-COM-GROW" listVersionID="3.0.1">QUESTION</cbc:TypeCode>
+                                        <cbc:ValueDataTypeCode listID="response-data-type" listAgencyID="EU-COM-GROW" listVersionID="3.0.1">INDICATOR</cbc:ValueDataTypeCode>
                                 </cac:TenderingCriterionProperty>
                                 <cac:SubsidiaryTenderingCriterionPropertyGroup>
                                         <cbc:ID schemeID="criterion" schemeAgencyID="EU-COM-GROW" schemeVersionID="3.0.1">74e6c7b4-757b-4b40-ada6-fad6a997c310</cbc:ID>
-                                        <cbc:PropertyGroupTypeCode listID="PropertyGroupType" listAgencyID="EU-COM-GROW" listVersionID="3.0.1">ONTRUE</cbc:PropertyGroupTypeCode>
+                                        <cbc:PropertyGroupTypeCode listID="property-group-type" listAgencyID="EU-COM-GROW" listVersionID="3.0.1">ONTRUE</cbc:PropertyGroupTypeCode>
                                         <cac:TenderingCriterionProperty>
                                                 <cbc:ID schemeID="criterion" schemeAgencyID="EU-COM-GROW" schemeVersionID="3.0.1">c0bc6c22-d74c-47c9-ad3e-9966aefcf7f0</cbc:ID>
                                                 <cbc:Description>Please describe them</cbc:Description>
-                                                <cbc:TypeCode listID="CriterionElementType" listAgencyID="EU-COM-GROW" listVersionID="3.0.1">QUESTION</cbc:TypeCode>
-                                                <cbc:ValueDataTypeCode listID="ResponseDataType" listAgencyID="EU-COM-GROW" listVersionID="3.0.1">DESCRIPTION</cbc:ValueDataTypeCode>
+                                                <cbc:TypeCode listID="criterion-element-type" listAgencyID="EU-COM-GROW" listVersionID="3.0.1">QUESTION</cbc:TypeCode>
+                                                <cbc:ValueDataTypeCode listID="response-data-type" listAgencyID="EU-COM-GROW" listVersionID="3.0.1">DESCRIPTION</cbc:ValueDataTypeCode>
                                         </cac:TenderingCriterionProperty>
                                 </cac:SubsidiaryTenderingCriterionPropertyGroup>
                         </cac:SubsidiaryTenderingCriterionPropertyGroup>
                 </cac:TenderingCriterionPropertyGroup>
                 <cac:TenderingCriterionPropertyGroup>
                         <cbc:ID schemeID="criterion" schemeAgencyID="EU-COM-GROW" schemeVersionID="3.0.1">7458d42a-e581-4640-9283-34ceb3ad4345</cbc:ID>
-                        <cbc:PropertyGroupTypeCode listID="PropertyGroupType" listAgencyID="EU-COM-GROW" listVersionID="3.0.1">ON*</cbc:PropertyGroupTypeCode>
+                        <cbc:PropertyGroupTypeCode listID="property-group-type" listAgencyID="EU-COM-GROW" listVersionID="3.0.1">ON*</cbc:PropertyGroupTypeCode>
                         <cac:TenderingCriterionProperty>
                                 <cbc:ID schemeID="criterion" schemeAgencyID="EU-COM-GROW" schemeVersionID="3.0.1">98c3450f-f8cd-466f-acfe-2c6dc940c6f0</cbc:ID>
                                 <cbc:Description>Is this information available electronically?</cbc:Description>
-                                <cbc:TypeCode listID="CriterionElementType" listAgencyID="EU-COM-GROW" listVersionID="3.0.1">QUESTION</cbc:TypeCode>
-                                <cbc:ValueDataTypeCode listID="ResponseDataType" listAgencyID="EU-COM-GROW" listVersionID="3.0.1">INDICATOR</cbc:ValueDataTypeCode>
+                                <cbc:TypeCode listID="criterion-element-type" listAgencyID="EU-COM-GROW" listVersionID="3.0.1">QUESTION</cbc:TypeCode>
+                                <cbc:ValueDataTypeCode listID="response-data-type" listAgencyID="EU-COM-GROW" listVersionID="3.0.1">INDICATOR</cbc:ValueDataTypeCode>
                         </cac:TenderingCriterionProperty>
                         <cac:SubsidiaryTenderingCriterionPropertyGroup>
                                 <cbc:ID schemeID="criterion" schemeAgencyID="EU-COM-GROW" schemeVersionID="3.0.1">41dd2e9b-1bfd-44c7-93ee-56bd74a4334b</cbc:ID>
-                                <cbc:PropertyGroupTypeCode listID="PropertyGroupType" listAgencyID="EU-COM-GROW" listVersionID="3.0.1">ONTRUE</cbc:PropertyGroupTypeCode>
+                                <cbc:PropertyGroupTypeCode listID="property-group-type" listAgencyID="EU-COM-GROW" listVersionID="3.0.1">ONTRUE</cbc:PropertyGroupTypeCode>
                                 <cac:TenderingCriterionProperty>
                                         <cbc:ID schemeID="criterion" schemeAgencyID="EU-COM-GROW" schemeVersionID="3.0.1">eeeb0915-bff0-4b54-94e6-7974ef4d2090</cbc:ID>
                                         <cbc:Description>Evidence Supplied</cbc:Description>
-                                        <cbc:TypeCode listID="CriterionElementType" listAgencyID="EU-COM-GROW" listVersionID="3.0.1">QUESTION</cbc:TypeCode>
-                                        <cbc:ValueDataTypeCode listID="ResponseDataType" listAgencyID="EU-COM-GROW" listVersionID="3.0.1">EVIDENCE_IDENTIFIER</cbc:ValueDataTypeCode>
+                                        <cbc:TypeCode listID="criterion-element-type" listAgencyID="EU-COM-GROW" listVersionID="3.0.1">QUESTION</cbc:TypeCode>
+                                        <cbc:ValueDataTypeCode listID="response-data-type" listAgencyID="EU-COM-GROW" listVersionID="3.0.1">EVIDENCE_IDENTIFIER</cbc:ValueDataTypeCode>
                                 </cac:TenderingCriterionProperty>
                         </cac:SubsidiaryTenderingCriterionPropertyGroup>
                 </cac:TenderingCriterionPropertyGroup>

@@ -137,7 +137,7 @@ The XML snippet below illustrates how to use the cac:AdditionalDocumentReference
 
 <cbc:ID schemeAgencyID="EU-COM-OP">2017/S 142-293520</cbc:ID>
 
-<cbc:DocumentTypeCode listID="docref-content-type" listAgencyID="EU-COM-GROW" listVersionID="3.0.1">TED_CN</cbc:DocumentTypeCode>
+<cbc:DocumentTypeCode listID="docrefcontent-type" listAgencyID="EU-COM-GROW" listVersionID="3.0.1">TED_CN</cbc:DocumentTypeCode>
 
 <cac:Attachment>
 
@@ -169,7 +169,7 @@ The XML snippet below illustrates how to use the cac:AdditionalDocumentReference
 
 <!-- Contract Notice (CN) published on a National Government Official Journal -->
 
-<cbc:DocumentTypeCode listID="docref-content-type" listAgencyID="EU-COM-GROW" listVersionID="3.0.1">NOJCN</cbc:DocumentTypeCode>
+<cbc:DocumentTypeCode listID="docrefcontent-type" listAgencyID="EU-COM-GROW" listVersionID="3.0.1">NOJCN</cbc:DocumentTypeCode>
 
 <cac:Attachment>
 

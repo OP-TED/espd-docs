@@ -593,7 +593,7 @@ _Economic operator data - XML example_
 
 <cac:EconomicOperatorRole>
 
-<cbc:RoleCode listID="eo-role-type" listAgencyID="OP" listVersionID="20211208-0">group-lead</cbc:RoleCode>
+<cbc:RoleCode listID="http://publications.europa.eu/resource/authority/eo-role-type" listAgencyID="OP" listVersionID="20211208-0">group-lead</cbc:RoleCode>
 
 <cbc:RoleDescription>Sole entity or, in case of Consortium, Joint Venture or other types of groups, the leader of the group.</cbc:RoleDescription>
 
@@ -627,7 +627,7 @@ _Economic operator data - XML example_
 
 <cac:Country>
 
-<cbc:IdentificationCode listID="CountryCodeIdentifier" listName="ISO-1-ALPHA-2" listAgencyID="ISO" listVersionID="1.0">ES</cbc:IdentificationCode>
+<cbc:IdentificationCode listID="http://publications.europa.eu/resource/authority/country" listAgencyID="OP" listVersionID="20211208-0">ES</cbc:IdentificationCode>
 
 <cbc:Name>Spain</cbc:Name>
 
@@ -842,7 +842,7 @@ _Economic operator's representatives_
 
 <cac:EconomicOperatorRole>
 
-<cbc:RoleCode listID="eo-role-type" listAgencyID="OP" listVersionID="20211208-0">sole-tenderer</cbc:RoleCode>
+<cbc:RoleCode listID="http://publications.europa.eu/resource/authority/eo-role-type" listAgencyID="OP" listVersionID="20211208-0">sole-tenderer</cbc:RoleCode>
 
 <cbc:RoleDescription>Sole entity or, in case of Consortium, Joint Venture or other types of groups, the leader of the group.</cbc:RoleDescription>
 
@@ -874,7 +874,7 @@ _Economic operator's representatives_
 
 <cac:Country>
 
-<cbc:IdentificationCode listID="Country" listAgencyID="OP" listVersionID="20211208-0">ESP</cbc:IdentificationCode>
+<cbc:IdentificationCode listID="http://publications.europa.eu/resource/authority/country" listAgencyID="OP" listVersionID="20211208-0">ESP</cbc:IdentificationCode>
 
 <cbc:Name>Spain</cbc:Name>
 
@@ -932,7 +932,7 @@ _Economic operator's representatives_
 
 <cac:Country>
 
-<cbc:IdentificationCode listID="Country" listAgencyID="OP" listVersionID="20211208-0">BEL</cbc:IdentificationCode>
+<cbc:IdentificationCode listID="http://publications.europa.eu/resource/authority/country" listAgencyID="OP" listVersionID="20211208-0">BEL</cbc:IdentificationCode>
 
 <cbc:Name languageID="en">Belgium</cbc:Name>
 
@@ -982,7 +982,7 @@ _Economic operator's representatives_
 
 <cac:Country>
 
-<cbc:IdentificationCode listID="Country" listAgencyID="OP" listVersionID="20211208-0">>ESP</cbc:IdentificationCode>
+<cbc:IdentificationCode listID="http://publications.europa.eu/resource/authority/country" listAgencyID="OP" listVersionID="20211208-0">>ESP</cbc:IdentificationCode>
 
 <cbc:Name languageID="en">Spain</cbc:Name>
 

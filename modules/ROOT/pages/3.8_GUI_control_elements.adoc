@@ -93,7 +93,7 @@ _<!--...-->_
 
 <ID schemeAgencyID="EU-COM-GROW" schemeVersionID="3.0.1">26ece6a2-b360-46c1-890d-8338913b8719</ID>
 
-<PropertyGroupTypeCode listID="PropertyGroupType" listAgencyID="EU-COM-GROW" listVersionID="3.0.1">ON*</PropertyGroupTypeCode>
+<PropertyGroupTypeCode listID="property-group-type" listAgencyID="EU-COM-GROW" listVersionID="3.0.1">ON*</PropertyGroupTypeCode>
 
 <cac:TenderingCriterionProperty>
 
@@ -103,7 +103,7 @@ _<!--...-->_
 
 <TypeCode listID="CriterionElementType" listAgencyID="EU-COM-GROW" listVersionID="3.0.1">REQUIREMENT</TypeCode>
 
-<ValueDataTypeCode listID="ResponseDataType" listAgencyID="EU-COM-GROW" listVersionID="3.0.1">CODE_BOOLEAN</ValueDataTypeCode>
+<ValueDataTypeCode listID="response-data-type" listAgencyID="EU-COM-GROW" listVersionID="3.0.1">CODE_BOOLEAN</ValueDataTypeCode>
 
 <ExpectedCode listID="BooleanGUIControlType" listAgencyID="EU-COM-GROW" listVersionID="3.0.1">RADIO_BUTTON_TRUE</ExpectedCode>
 
@@ -113,7 +113,7 @@ _<!--...-->_
 
 _<!--...-->_
 
-<PropertyGroupTypeCode listID="PropertyGroupType" listAgencyID="EU-COM-GROW" listVersionID="3.0.1">ONTRUE</PropertyGroupTypeCode>
+<PropertyGroupTypeCode listID="property-group-type" listAgencyID="EU-COM-GROW" listVersionID="3.0.1">ONTRUE</PropertyGroupTypeCode>
 
 <cac:TenderingCriterionProperty>
 
@@ -123,7 +123,7 @@ _<!--...-->_
 
 <TypeCode listID="CriterionElementType" listAgencyID="EU-COM-GROW" listVersionID="3.0.1">REQUIREMENT</TypeCode>
 
-<ValueDataTypeCode listID="ResponseDataType" listAgencyID="EU-COM-GROW" listVersionID="3.0.1">DESCRIPTION</ValueDataTypeCode>
+<ValueDataTypeCode listID="response-data-type" listAgencyID="EU-COM-GROW" listVersionID="3.0.1">DESCRIPTION</ValueDataTypeCode>
 
 <ExpectedDescription>__FinReqsDescription</ExpectedDescription>
 
@@ -137,7 +137,7 @@ _<!--...-->_
 
 <TypeCode listID="CriterionElementType" listAgencyID="EU-COM-GROW" listVersionID="3.0.1">REQUIREMENT</TypeCode>
 
-<ValueDataTypeCode listID="ResponseDataType" listAgencyID="EU-COM-GROW" listVersionID="3.0.1">AMOUNT</ValueDataTypeCode>
+<ValueDataTypeCode listID="response-data-type" listAgencyID="EU-COM-GROW" listVersionID="3.0.1">AMOUNT</ValueDataTypeCode>
 
 <MinimumAmount currencyID="EUR">100006</MinimumAmount>
 
@@ -151,7 +151,7 @@ _<!--...-->_
 
 <TypeCode listID="CriterionElementType" listAgencyID="EU-COM-GROW" listVersionID="3.0.1">REQUIREMENT</TypeCode>
 
-<ValueDataTypeCode listID="ResponseDataType" listAgencyID="EU-COM-GROW" listVersionID="3.0.1">PERIOD</ValueDataTypeCode>
+<ValueDataTypeCode listID="response-data-type" listAgencyID="EU-COM-GROW" listVersionID="3.0.1">PERIOD</ValueDataTypeCode>
 
 <cac:ApplicablePeriod>
 
@@ -167,7 +167,7 @@ _<!--...-->_
 
 <ID schemeAgencyID="EU-COM-GROW" schemeVersionID="3.0.1">9b3a04ff-e36d-4d4f-b47c-82ad402b9b02</ID>
 
-<PropertyGroupTypeCode listID="PropertyGroupType" listAgencyID="EU-COM-GROW" listVersionID="3.0.1"></PropertyGroupTypeCode>
+<PropertyGroupTypeCode listID="property-group-type" listAgencyID="EU-COM-GROW" listVersionID="3.0.1"></PropertyGroupTypeCode>
 
 <cac:TenderingCriterionProperty>
 
@@ -177,7 +177,7 @@ _<!--...-->_
 
 <TypeCode listID="CriterionElementType" listAgencyID="EU-COM-GROW" listVersionID="3.0.1">QUESTION</TypeCode>
 
-<ValueDataTypeCode listID="ResponseDataType" listAgencyID="EU-COM-GROW" listVersionID="3.0.1">AMOUNT</ValueDataTypeCode>
+<ValueDataTypeCode listID="response-data-type" listAgencyID="EU-COM-GROW" listVersionID="3.0.1">AMOUNT</ValueDataTypeCode>
 
 </cac:TenderingCriterionProperty>
 
@@ -189,7 +189,7 @@ _<!--...-->_
 
 <ID schemeAgencyID="EU-COM-GROW" schemeVersionID="3.0.1">cc96aa19-a0be-4409-af58-ff3f3812741b</ID>
 
-<PropertyGroupTypeCode listID="PropertyGroupType" listAgencyID="EU-COM-GROW" listVersionID="3.0.1">ONFALSE</PropertyGroupTypeCode>
+<PropertyGroupTypeCode listID="property-group-type" listAgencyID="EU-COM-GROW" listVersionID="3.0.1">ONFALSE</PropertyGroupTypeCode>
 
 <cac:TenderingCriterionProperty>
 
@@ -199,7 +199,7 @@ _<!--...-->_
 
 <TypeCode listID="CriterionElementType" listAgencyID="EU-COM-GROW" listVersionID="3.0.1">REQUIREMENT</TypeCode>
 
-<ValueDataTypeCode listID="ResponseDataType" listAgencyID="EU-COM-GROW" listVersionID="3.0.1">QUANTITY</ValueDataTypeCode>
+<ValueDataTypeCode listID="response-data-type" listAgencyID="EU-COM-GROW" listVersionID="3.0.1">QUANTITY</ValueDataTypeCode>
 
 </cac:TenderingCriterionProperty>
 
@@ -211,7 +211,7 @@ _<!--...-->_
 
 <TypeCode listID="CriterionElementType" listAgencyID="EU-COM-GROW" listVersionID="3.0.1">REQUIREMENT</TypeCode>
 
-<ValueDataTypeCode listID="ResponseDataType" listAgencyID="EU-COM-GROW" listVersionID="3.0.1">DESCRIPTION</ValueDataTypeCode>
+<ValueDataTypeCode listID="response-data-type" listAgencyID="EU-COM-GROW" listVersionID="3.0.1">DESCRIPTION</ValueDataTypeCode>
 
 <ExpectedDescription></ExpectedDescription>
 
@@ -221,7 +221,7 @@ _<!--...-->_
 
 <ID schemeAgencyID="EU-COM-GROW" schemeVersionID="3.0.1">5fe93344-ed91-4f97-bcab-b6720a131798</ID>
 
-<PropertyGroupTypeCode listID="PropertyGroupType" listAgencyID="EU-COM-GROW" listVersionID="3.0.1"></PropertyGroupTypeCode>
+<PropertyGroupTypeCode listID="property-group-type" listAgencyID="EU-COM-GROW" listVersionID="3.0.1"></PropertyGroupTypeCode>
 
 <cac:TenderingCriterionProperty>
 
@@ -231,7 +231,7 @@ _<!--...-->_
 
 <TypeCode listID="CriterionElementType" listAgencyID="EU-COM-GROW" listVersionID="3.0.1">QUESTION</TypeCode>
 
-<ValueDataTypeCode listID="ResponseDataType" listAgencyID="EU-COM-GROW" listVersionID="3.0.1">QUANTITY</ValueDataTypeCode>
+<ValueDataTypeCode listID="response-data-type" listAgencyID="EU-COM-GROW" listVersionID="3.0.1">QUANTITY</ValueDataTypeCode>
 
 </cac:TenderingCriterionProperty>
 
