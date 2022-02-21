@@ -83,7 +83,7 @@ link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1
 
 *Rule*: None. See table below with the elements of this class.
 
-|*cbc:TenderingCriterionPropertyGroup* |Class |1..n |The first level group of properties and sub-groups of properties in the structure of a criterion. a|
+|*cac:TenderingCriterionPropertyGroup* |Class |1..n |The first level group of properties and sub-groups of properties in the structure of a criterion. a|
 *Information Requirement*: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1.0-tbr070-013[_tbr070-013_]
 
 *Rule*: None. Beware that in previous versions of the ESPD-EDM this was termed "RequirementGroup".
