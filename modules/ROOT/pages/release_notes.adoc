@@ -61,6 +61,8 @@ Documentation updated as follow:
 
 * *Table 9.* Contracting body party, expected elements
 ** _cac:PartyIdentification/cbc:Identifier_ 
+*** _Component_: Replaced by _cac:PartyIdentification/cbc:ID_ because _cac:PartyIdentification/cbc:Identifier_ does not exist in *UBL-2.3*.
+*** _Cardinality_: Updated from _0..1_ to _1_. 
 *** _Requirement_: updated from _'More than one identifier can be specified. When possible use the VAT identification of the contracting body (see the VIES platform for a EU cross-border national VAT number verification system). '_ to _'When possible use the VAT identification of the contracting body (see the link:https://ec.europa.eu/taxation_customs/vies/[VIES] platform for a EU cross-border national VAT number verification system). When not possible a different identifier may be used.'_ because previous text was ambiguous.
 
 . *Section 2.8. Service Provider*
@@ -182,6 +184,7 @@ Documentation updated as follow:
 * *Table 33.* Qualifying Party, expected elements
 ** _cac:Party/cac:PartyIdentifier/cbc:ID_
 *** _Component_: repleaced by _cac:Party/cac:PartyIdentification/cbc:ID_.
+*** _Cardinality_: Updated from _0..1_ to _1_.
 
 * *Table 34.* Economic operator role, expected elements
 ** _cbc:RoleDescription_
@@ -189,6 +192,7 @@ Documentation updated as follow:
 
 * *Table 35.* (Qualifying) economic operator party, expected elements
 ** _cac:PartyIdentification/cbc:Identifier_ 
+*** _Component_: Replaced by _cac:PartyIdentification/cbc:ID_ because _cac:PartyIdentification/cbc:Identifier_ does not exist in *UBL-2.3*.
 *** _Requirement_: updated from _'More than one identifier can be specified. Compulsory use of the attribute schemeAgencyID and highly recommended the use of the attribute schemeAgencyID. The preferred identifier is the national VAT number. Additional identifiers may be used'_ to _'When possible use the VAT identification of the contracting body (see the link:https://ec.europa.eu/taxation_customs/vies/[VIES] platform for a EU cross-border national VAT number verification system). When not possible a different identifier may be used.'_ because previous text was ambiguous.
 
 * *Table 36.* Economic operator postal address, expected elements
