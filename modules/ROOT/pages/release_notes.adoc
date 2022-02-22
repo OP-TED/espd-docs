@@ -176,6 +176,7 @@ Documentation updated as follow:
 * *Table 28.* External Reference
 ** _cac:ExternalReference_
 ***_Path:_ replaced _/QualificationApplicationResponse/cac:AdditionalReferenceDocument_ by _/QualificationApplicationResponse/cac:AdditionalDocumentReference_.
+*** _Component_: added _cbc:FileName_ and _cbc:Description_.
 
 . *Section 6.6 Economic Operator*
 * _cac:EconomicOperator_

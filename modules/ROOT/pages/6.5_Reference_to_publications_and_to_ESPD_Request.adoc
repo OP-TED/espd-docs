@@ -112,5 +112,17 @@ _Table 28. External Reference_
 
 *Rule*: If the document exists at a remote location, then the value should be the URL pointing to the document.
 
+|*cbc:FileName* |Text |0..1 |The title of the document. a|
+*Information Requirement*: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1.0-tbr070-007[_tbr070-007_].
+
+*Rule*: Originally this field is the placeholder for the name of the file (e.g. PLACE-ContractNotice-2017-12452.xml. However, as the UBL component does not have a placeholder for a name or title, the ESPD documents use it for a short descriptive title of the document being referenced.
+
+|*cbc:Description* |Text |0..n |Short description of the document. a|
+*Information Requirement*: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1.0-tbr070-007[_tbr070-007_].
+
+*Rule*: If the document being referenced is a Notice being published on TED, use two description lines. Use the second description line to place therein the temporary number received from TED. See example and comments below.
+
+*Rule scope*: Common (BR-COM-10#2, BR-COM-10-S10, BR-COM-10-S20, BR-COM-10-S30)
+
 |===
 
