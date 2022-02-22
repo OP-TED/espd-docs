@@ -36,7 +36,7 @@ _Figure 135. 'Financial ratio' EO mock-up_
 REQUIREMENT(s) specified by the buyers can be place outside a group of QUESTION(s) (see any other previous criteria) or *inside* a group of *QUESTION(s)*, which is the case for financial ratios, as you can see in the data structure for this criterion, below.
 ====
 
-Notice how the spreadsheet has been used to specify the three different financial ratios of the above mock-up example: the XML example below was produced using a XSL-T transformation link:{url-tree-tmp}/xml-examples/\\__xslt__/ods-data-structures-to-ESPD-xml/ESPDRequest-Annotated.xslt[ESPDRequest-Annotated] that takes the link:{url-tree-tmp}/xml-examples/ESPD-criterion.xml[ESPD-criterion] and produced the link:{url-tree-tmp}/xml-examples/ESPD-Request.xml[ESPD-Request].
+Notice how the spreadsheet has been used to specify the three different financial ratios of the above mock-up example: the XML example below was produced using a XSL-T transformation link:{url-tree-tmp}/xml-examples/\\__xslt__/ODS-Data-Structures-to-ESPD-XML/ESPDRequest-Annotated.xslt[ESPDRequest-Annotated] that takes the link:{url-tree-tmp}/xml-examples/ESPD-criterion.xml[ESPD-criterion] and produced the link:{url-tree-tmp}/xml-examples/ESPD-Request.xml[ESPD-Request].
 
 image:Financial_ratio_criterion_data_structure.jpg['Financial ratio' criterion data structure,width=526,height=293]
 

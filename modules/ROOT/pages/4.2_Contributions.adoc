@@ -3,7 +3,7 @@ include::partial$attributes.adoc[]
 
 Related information requirements
 
-See formal requirements related to exclusion grounds criteria in the link:http://wiki.ds.unipi.gr/pages/viewpage.action?pageId=44367916[BIS 41 - European Single Procurement Document (Version 2.0.0)], and more specifically _tbr070-009_, _tbr070-004_, _tbr070-013_.
+See formal requirements related to exclusion grounds criteria in the link:http://wiki.ds.unipi.gr/pages/viewpage.action?pageId=44367916[BIS 41 - European Single Procurement Document (Version 2.0.0)], and more specifically *_tbr070-009_*, *_tbr070-004_*, *_tbr070-013_*.
 
 [cols=",",]
 |===
