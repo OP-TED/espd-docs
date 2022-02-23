@@ -7,7 +7,7 @@ This chapter on selection criteria provides details on how to implement the form
 
 As for the exclusion criteria (and following requirement link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#tbr070-013[_tbr070-013_]) we have grouped the selection criteria under different categories. The figure below is intended to identify and list these categories for the selection criteria (branches in text boxes), and specific subgroups within each category.
 
-Each branch in this 'criteria classification' corresponds to one data structure that is identical for all the leaves under that branch (e.g. compare the names of the boxes with the tabs and ElementType column of the spreadsheets containing link:{url-tree}/codelists/ESPD-criterion.xlsx[ESPD-criterion data structures]).
+Each branch in this 'criteria classification' corresponds to one data structure that is identical for all the leaves under that branch (e.g. compare the names of the boxes with the tabs and ElementType column of the spreadsheets containing link:{url-tree-tmp}/codelists/ESPD-criterion.xlsx[ESPD-criterion data structures]).
 
 image:Selection_criteria_classification.jpg[Selection criteria classification,width=464,height=465]
 
