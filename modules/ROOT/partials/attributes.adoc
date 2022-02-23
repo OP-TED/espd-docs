@@ -5,4 +5,3 @@
 :url-blob-211: {git-repo-url}/blob/v2.1.1{path-to-dist}
 :url-tree-211: {git-repo-url}/tree/v2.1.1{path-to-dist}
 :url-blob-210: {git-repo-url}/blob/v2.1.0{path-to-dist}
-:url-tree-tmp: {git-repo-url}/tree/master
