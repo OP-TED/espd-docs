@@ -8,7 +8,7 @@ include::partial$attributes.adoc[]
 
 image:Distribution_package.jpg[Distribution package,width=100,height=220]
 
-* **\_\_ESPDTeam__**: contains files for ESPD Team internal use in maintenance tasks of the ESPD-EDM;
+* **\\__ESPDTeam__**: contains files for ESPD Team internal use in maintenance tasks of the ESPD-EDM;
 * **codelists**: contains the different code lists used in ESPD in Genericode format and the criterion structure definition.
 * **conceptual-model**: contains the UML conceptual model of the ESPD in .eap, .xmi and HTML format.
 * **java-library**: contains the XML schemas used to generate the JAXB annotated Java classes.
