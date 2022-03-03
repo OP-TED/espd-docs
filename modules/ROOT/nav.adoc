@@ -19,7 +19,7 @@
 ***** link:https://github.com/OP-TED/espd-docs/tree/wgm-reports/modules/ROOT/attachments/ESPD_Minutes_OUC_Meetings_20220127.pdf[19th OUC Report]
 
 *** 2021
-**** 2021-10-28:
+**** 2021-10-28
 ***** link:https://github.com/OP-TED/espd-docs/tree/wgm-reports/modules/ROOT/attachments/ESPD_OUC_Meetings_20211028_v1.0.pdf[18th OUC Presentation]
 ***** link:https://github.com/OP-TED/espd-docs/tree/wgm-reports/modules/ROOT/attachments/ESPD_Minutes_OUC_Meetings_20211028_fv.pdf[18th OUC Report]
 
