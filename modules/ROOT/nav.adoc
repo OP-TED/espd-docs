@@ -1,3 +1,4 @@
+* <<home.adoc#, Home>>
 * <<xml_business_handbook.adoc#, Business Handbook>>
 * Technical Handbook
 ** <<1.UBL_Based_and_distribution_package.adoc#, UBL Based and distribution package>>
@@ -8,4 +9,5 @@
 ** <<6.ESPD_Response_Document.adoc#, The ESPD Response Document>>
 ** <<7.Validation.adoc#, Validation>>
 ** <<AnnexI.Code_list_used_in_ESPD.adoc#, Codelists used in ESPD>>
+* link:{attachmentsdir}/ESPD_CM_html/index.html[ESPD-EDM CONCEPTUAL MODEL HTML]
 * <<release_notes.adoc#, Release Notes>>
