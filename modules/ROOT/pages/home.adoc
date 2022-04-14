@@ -6,7 +6,7 @@ The European Commission (EC) has developed a data model and 'semantic assets' fo
 
 ## Road Map
 
-image:home_roadmap.png[Roadmap,width=100,height=220]
+image:home_roadmap.png[Roadmap,align=center,pdfwidth=50%,scaledwidth=50%]
 
 
 ### v3.0.1 Release (February 2022)
