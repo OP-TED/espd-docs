@@ -44,7 +44,7 @@ ESPD-EDM Code list contain the following elements:
 
 The figure below illustrate how these elements are organised in the code lists maintained in spread-sheets:
 
-image:Elements_metadata_of_ESPD_codelist.jpg[Elements and metadata of an ESPD code list,width=600,height=202]
+image:Elements_metadata_of_ESPD_codelist.jpg[Elements and metadata of an ESPD code list,align="center",pdfwidth=50%,scaledwidth=50%]
 
 _Figure 6. Elements and metadata of an ESPD code list_
 
