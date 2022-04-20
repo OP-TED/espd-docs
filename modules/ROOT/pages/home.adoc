@@ -1,6 +1,6 @@
 
 ## Introduction
-Article 59 of the new * link:https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32014L0024[Public Procurement Directive 2014/24/EC] introduced a new concept, the **European Single Procurement Document** (ESPD) which is a self-declaration document intended for preliminary evidence in a public procurement procedure. By mapping out equivalent certificates between Member States, the ESPD replaces certificates issued by public authorities or a third party involved in a procedure. It is thus a valuable facilitator for cross-border participation of a greater number of potential operators in public procurement procedures and a valuable tool for integrating the European Single Market.
+Article 59 of the new link:https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32014L0024[Public Procurement Directive 2014/24/EC] introduced a new concept, the **European Single Procurement Document** (ESPD) which is a self-declaration document intended for preliminary evidence in a public procurement procedure. By mapping out equivalent certificates between Member States, the ESPD replaces certificates issued by public authorities or a third party involved in a procedure. It is thus a valuable facilitator for cross-border participation of a greater number of potential operators in public procurement procedures and a valuable tool for integrating the European Single Market.
 
 The European Commission (EC) has developed a data model and 'semantic assets' for the exchange of the ESPD between any Procurement stakeholder’s system. This Wiki aims to be a first landing point for organisations interested in using the model and assets in compliance with the Directive.
 
@@ -12,6 +12,7 @@ image:home_roadmap.png[Roadmap,align=center,pdfwidth=50%,scaledwidth=50%]
 ### v3.0.1 Release (February 2022)
 
 This new version of the ESPD-EDM is a patch release which focuses on:
+
 * reorganisation of the GitHub repository
 * updating the online documentation as well as the xml example files
 * provide a conceptual model specification

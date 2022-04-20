@@ -3,8 +3,8 @@ title: ESPD EDM
 version: &ver '3.0.1' # don't remove the &ver anchor
 start_page: ROOT:index.adoc
 # ommited while we work in the specific navigation menu
-# nav:
-# - modules/ROOT/nav.adoc
+nav:
+- modules/ROOT/nav.adoc
 asciidoc:
   attributes:
     this-version: *ver # used in modules/ROOT/partials/attributes.adoc
