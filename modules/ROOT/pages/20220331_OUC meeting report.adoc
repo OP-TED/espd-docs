@@ -1,0 +1,118 @@
+= Open User Community Draft Meeting Report
+
+== Publications Office – ESPD EDM
+
+
+[cols=",",",]
+|===
+|Meeting Date/Time: |2022-03-031, 10.00 - 11.30
+|===
+
+[cols=",",options="header",]
+|===
+|*Attendee Name* |*Organisation / Country*
+|Paloma ARILLO |OP
+|Natalie MURIC |OP
+|Marc Christopher SCHMIDT |DG GROW
+|Andreea ANGHEL |Romania
+|Beata BALOGOVA |Slovakia
+|Jerry DIMITRIOU |Greece
+|Stefano FALÀ |
+|Anna FRANTZEN |Norway
+|Linda HANNISDAL |Norway
+|Paul HUMANN |Austria
+|Delia IONICA |Romania
+|Uroš IZLAKAR |Ukraine
+|Arunas JANKAUSKAS |
+|Juris KALEJS |Latvia
+|Hilde KJØLSET |Norway
+|Ajda KOSTANJSEK |Slovenia
+|Marika LACCARINI |Italy
+|Ferdinand Junior MADDELA |Italy
+|Jil MOSAR |Luxembourg
+|Marc NOSBUSCH |Luxembourg
+|Pietro PALERMO |Italy
+|Nuno PERALTA |Ireland
+|Michele PIZZICONI |ANAC
+|Andriana PRENTZA |Greece
+|Laima PUJATE |Latvia
+|Konstantinos RAPTIS |Greece
+|Viviana SANFRANCESCO |Italy
+|Andreas SCHMITZ |Germany
+|Maria SIAPERA |UPRC
+|Giampaolo SELLITTO |Italy
+|Akós ZÁMBÓ | Hungary
+|Alba COLOMER |NTT Data
+|Pedro SOTO |NTT Data
+|Juan Carlos DELGADO |NTT Data
+|Pascaline Laure TCHIENEHOM |NTT Data
+|===
+
+:sectnums:
+:sectnumlevels: 4
+
+== Meeting Agenda
+. Problem statement
+. Business requirements
+. Example of the current situation
+. Proposed solution
+. Topics to be discussed
+. Next meetings
+. Any other business
+
+== Problem statement
+
+* Currently, Universally Unique Identifiers (UUIDs) are dynamically generated for questions within criteria for each new ESPD document and therefore cannot be reused in other procurement procedures.
+
+== Business requirements
+
+* Ensure that each criterion in the ESPD Request matches the same criterion in the ESPD Response.
+
+* Ensure reusability of criteria across procurement procedures.
+
+* Ensure traceability and respect the Once-Only Principle (OOP).
+
+== Example of the current situation
+
+* A brief summary of the current UUID is provided in slide 4 of the presentation available link:https://github.com/OP-TED/espd-docs/blob/wgm-reports/modules/ROOT/attachments/ESPD_OUC_Meetings_20220331.pdf[here].
+
+== Proposed solution
+
+* A summary of the alternative approach proposed by INTERPROC to the use of the UUID was provided in the OUC meeting of January and is available link:https://github.com/OP-TED/espd-docs/blob/wgm-reports/modules/ROOT/attachments/ESPD_OUC_Meetings_20220127.pdf[here]  (slides 11-29).
+
+== Topics discussed
+
+* UUIDs already available in the excel file will be kept. The new solution proposes new identifiers only for those cases that are currently being dynamically created in the ESPD.
+
+* A question is raised regarding whether the concept of the UUID is changed with the proposed solution, since the first part of the new proposed code is an identifier such as _crime-org_. It is explained that Question Group UUID is preserved, however a solution for providing identifiers for the different parts of the criteria currently created as dynamic UUIDs is provided.
+
+* Concatenation of parts 1, 2 and 3 of the proposed identifier provide the criteria structure and ensure traceability: with the proposed solution, a certain identifier points always to a certain position in the Question Group structure:
+
+image::New_identifier_parts.png[]
+
+* Suffixes are used for the identification of answers (part 3 of the proposed new identifier).
+
+* A question is raised regarding the repetition of the same identifier for different Question Groups. It is explained that each question is identified with the full path that includes all Subquestion Groups:
+
+image::New_identifier_example.png[]
+
+* A question is raised regarding how the proposed solution provides coverage to purely national exclusion grounds. It is explained that  the proposed solution works also for purely national exclusion grounds, since national exclusion grounds have their own UUID which is also part of eCertis.
+
+* Currently, eCertis allows only one criterion per country under purely national exclusion grounds. It is also mentioned that this is not correct and will have to be reviewed in eCertis.
+
+* A question is raised regarding how changes in questions are dealt with (for example, if a question is removed from a Question Group, are all remaining questions reordered?). It is explained that  with the proposed solution, if a question is added or removed from a Question Group, or if there is any change in the criteria structure, the identifier is no longer valid.
+
+* An alternative approach is proposed which minimises the impact related to changes in the criteria structure by using identifiers that are not so strongly linked to the criteria structure (for example, in case of adding a new criterion between Q1 and Q2, providing this new criterion a code such as Q1A would keep the validity of the previous codes and a change of the previous codes would not be necessary; in the case of removing a criterion, the corresponding code could be deprecated without updating the numbering of the codes of all other criteria). An update methodology which ensures usability would be necessary.
+
+* An approach based on eForms Business Terms is also suggested, where business groups are defined with Business Terms so they can be reused. It is agreed that using the same codes than eForms would be helpful.
+
+OP will take the above points into consideration and discuss any findings with INTERPROC before coming to the OUC with a solution.
+
+== Next meetings
+
+* April 28th, 10.00 – 11.30.  
+* June 16th, 10.00 – 11.30.
+
+== Any other business
+
+* The OP comments that a new excel file with the data structure for criteria will be provided with the new ESPD release, which will not be before the end of the year.
