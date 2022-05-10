@@ -1,0 +1,148 @@
+= Open User Community Draft Meeting Report
+
+== Publications Office – ESPD EDM
+
+
+[cols=",",",]
+|===
+|Meeting Date/Time: |2022-04-28, 10.00 - 11.00
+|===
+
+[cols=",",options="header",]
+|===
+|*Attendee Name* |*Organisation / Country*
+|Paloma ARILLO |OP
+|Andreea ANGHEL |Romania
+|Gunilla BOHMAN |Sweden
+|José Luis CUEVA |Spain
+|Robin DE MOL |Belgium
+|Michaël DE WINNE |Belgium
+|Bertalan FABIAN |Hungary
+|Anna FRANTZEN |Norway
+|Linda HANNISDAL |Norway
+|Ben HUBERT |Luxembourg
+|Paul HUMANN |Austria
+|Delia IONICA |Romania
+|Arunas JANKAUSKAS |Lithuania
+|Hilde KJØLSET |Norway
+|Ajda KOSTANJSEK |Slovenia
+|Werner JACOBS |Belgium
+|Ole MADSEN |Denmark
+|Veronika MARINOVA |Bulgaria
+|Pietro PALERMO |Italy
+|Nuno PERALTA |Portugal
+|Timo RANTANEN |Finland
+|Andreas SCHMITZ |Germany
+|Giampaolo SELLITTO |Italy
+|Justina ZALTAUSKAITE | Lithuania
+|Nikanoras ZAVADSKIJ | 
+|Alba COLOMER |NTT Data
+|Pedro SOTO |NTT Data
+|Juan Carlos DELGADO |NTT Data
+|Pascaline Laure TCHIENEHOM |NTT Data
+|===
+
+:sectnums:
+:sectnumlevels: 4
+
+== Meeting Agenda
+. Summary of last meeting on 31st March 2022
+. Changes on the ESPD-EDM webpages
+. Code list DocRefContentType
+. GitHub issues
+. ESPD versions used
+. Next ESPD release
+. Next meetings
+. Any other business
+
+== Summary of last meeting on 31st March 2022
+
+* The link:https://docs.ted.europa.eu/espd-ouc/20220331_OUC%20meeting%20report.html[link] to the last meeting report is provided and the maing topics discussed are summarised.
+
+* Participants are requested to review the meeting report in detail and provide their feedback before the next OUC meeting (scheduled for the 16th of June).
+
+== Changes on the ESPD-EDM webpages
+
+* The navigation menu of the link:https://docs.ted.europa.eu/ESPD-EDM/3.0.1/index.html[ESPD-EDM  webpage] has been updated for v3.0.1.
+
+* The structure of the new menu is homogeneous with those of other OP-TED projects and will be used also for future ESPD versions.
+
+* Currently, the change affects only v3.0.1. Access to previous versions is available through a drop-down menu, and access to other OP-TED projects is available through the "Home" option.
+
+* The navigation menu of the link:https://docs.ted.europa.eu/espd-ouc/index.html[ESPD-EDM Open User Community Documents webpage] has also been updated so submenus for Annual Seminar and for OUC meeting are expanded, facilitating the search of the information that the user wants to consult.
+
+* A live demo of the new menu and its different options, as well as access to previous ESPD versions and to other OP-TED projects, has been conducted.
+
+== Code list DocRefContentType
+
+* It has been identified that code list DocRefContentType, or several of the elements of this code list, might not be used and therefore could be removed.
+
+* Participants were requested in advance to review it and provide their feedback.
+
+* It is commented that only those elements of the code list related to the publication of contract notices and of prior information notices should be kept (for TED and also at national, regional and local level):
+
+** Contract notice published in TED (Tenders Electronic Daily).
+
+** Contract notice published on a national government official journal.
+
+** Contract notice published on a regional government official journal.
+
+** Contract notice published on a local government official journal.
+
+** Prior information notice published in TED (Tenders Electronic Daily).
+
+** Prior information notice published on a national government official journal.
+
+** Prior information notice published on a regional government official journal.
+
+** Prior information notice published on a local government official journal.
+
+
+* All other elements could be removed, in particular those related to contract award notices which make no sense in the ESPD context and can lead to confusion. 
+
+* Participants are requested to review the list in detail and confirm that the options listed above are the only ones that are necessary.
+
+== GitHub issues
+
+* A list of the recently closed GitHub issues and of the currently open issues is provided.
+
+* Currently there are 10 open GitHub issues.
+
+== ESPD versions used
+
+* A list of the countries using the different ESPD versions is provided, based on information available link:https://webgate.ec.europa.eu/fpfis/wikis/pages/viewpage.action?spaceKey=EPROC&title=eProc+Matrix+mid-2021[here].
+
+* Participants were requested in advance to review the list and provide their feedback.
+
+* Several participa confirm that information is up to date for certain countries. Confirmation after the meeting is requested for the remaining countries.
+
+* It is commented that priority is eForms, will become mandatory in 2023, rather than the ESPD.
+
+* Belgium and Norway plan to start using v3 of the ESPD by 2023.
+
+== Next ESPD release
+
+* So far, the scope planned for the next ESPD request includes:
+
+** New metadata validation rules for technical code lists
+
+** Validation of all mandatory fields 
+
+** Use of ESCO occupation codes as genericodes in EU Vocabularies
+
+** Update of online documentation
+
+** Removal of external references from online documentation and release files
+
+** Fixes related to issues
+
+== Next meetings
+
+* June 16th, 10.00 – 11.30.  
+* September, 10.00 – 11.30. The day is yet to be confirmed, since the 22nd is national holiday in Bulgaria and several participants would not be able to attend.
+
+It is agreed that no OUC meeting will be scheduled during Summer.
+
+== Any other business
+
+* It is agreed that from now on a draft of the PPT presentation will be provided before the meeting so participants can review it in advance and prepare the meeting.

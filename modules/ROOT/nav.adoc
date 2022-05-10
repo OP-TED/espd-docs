@@ -12,7 +12,8 @@
 * **OUC Meetings**
 * 2022
 ** 2022-04-28
-*** link:https://github.com/OP-TED/espd-docs/blob/wgm-reports/modules/ROOT/attachments/ESPD_OUC_Meetings_20220428_corrected.pdf[22nd OUC Presentation (DRAFT)]
+*** link:https://github.com/OP-TED/espd-docs/blob/wgm-reports/modules/ROOT/attachments/ESPD_OUC_Meetings_20220428_corrected.pdf[22nd OUC Presentation]
+*** xref:20220428_OUC meeting report.adoc[22nd OUC Report]
 
 ** 2022-03-31
 *** link:https://github.com/OP-TED/espd-docs/blob/wgm-reports/modules/ROOT/attachments/ESPD_OUC_Meetings_20220331.pdf[21st OUC Presentation]
