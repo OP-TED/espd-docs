@@ -2,4 +2,13 @@
 
 This section contains the OUC meeting reports and the Annual Seminar documents.
 
+You have access to all the documentation by expanding the different options of the navigation menu on the left.
+
+Next OUC meetings:
+
+* June 16, 2022
+
+* September 22, 2022
+
+
 //Meeting Reports previous to 2022 can be found in link:https://github.com/OP-TED/espd-docs/tree/wgm-reports/modules/ROOT/attachments[espd-docs/wgm-reports].
