@@ -78,7 +78,7 @@ link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1
 
 *Rule*: None. Beware that a sub-criterion 'is a' criterion, therefore no need to list these elements at new. See XML examples in the section about exclusion criteria about how to define a sub-criterion.
 
-|*cbc:Legislation* |Class |0..n |A reference to the legislation related to the Criterion. a|
+|*cac:Legislation* |Class |0..n |A reference to the legislation related to the Criterion. a|
 *Information Requirement*: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1.0-tbr070-013[_tbr070-013_]
 
 *Rule*: None. See table below with the elements of this class.

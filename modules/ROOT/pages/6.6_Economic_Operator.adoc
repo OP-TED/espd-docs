@@ -162,7 +162,7 @@ _Table 32. Economic operator, expected elements_
 
 *Rule scope*: BR-RESP-10-01
 
-|*cac:EconomnicOperatorRole* |Associated class |1 |The function of the economic operator when bidding from a consortium (Sole tenderer, member of a group, etc.). a|
+|*cac:EconomicOperatorRole* |Associated class |1 |The function of the economic operator when bidding from a consortium (Sole tenderer, member of a group, etc.). a|
 *Information Requirement*:
 
 *Rule*: This element is compulsory in the ESPD-EDM because depending on it different sets of data will be required or not, shown or hidden, processed or skipped.
