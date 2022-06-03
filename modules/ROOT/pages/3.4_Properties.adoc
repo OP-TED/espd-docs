@@ -60,7 +60,7 @@ Caption (i.e. a 'label'), specific MS or buyer requirement (e.g. 'Number of refe
 
 *Rule scope*: BR-TC-20, BR-OTH-01, BR-OTH-01#14, BR-OTH-03
 
-|*cbc:ValueDataTypeCode* |Code |1 |The type of answer expected by the buyer in the case of a poperty of type QUESTION. a|
+|*cbc:ValueDataTypeCode* |Code |1 |The type of answer expected by the buyer in the case of a property of type QUESTION. a|
 *Information Requirement*: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1.0-tbr070-013[_tbr070-013_].
 
 *Rule*: Compulsory use of the Code List "ResponseDataType". Verify that the value is different to NONE for properties of type QUESTION.

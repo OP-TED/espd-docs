@@ -90,8 +90,8 @@ _Table 3. UBL attributes for codes_
 |===
 |*Attribute* |*Definition*
 |*listID* |The identification of a list of codes (*MANDATORY in this version of ESPD*).
-|*listAgencyID* |An agency that maintains one or more lists of codes.
-|*listAgencyName* |The name of the agency that maintains the list of codes (*MANDATORY in this version of ESPD*).
+|*listAgencyID* |An agency that maintains one or more lists of codes (*MANDATORY in this version of ESPD*).
+|*listAgencyName* |The name of the agency that maintains the list of codes.
 |*listName* |The name of a list of codes.
 |*listVersionID* |The version of the list of codes (*MANDATORY in this version of ESPD*).
 |*name* |The textual equivalent of the code content component.
