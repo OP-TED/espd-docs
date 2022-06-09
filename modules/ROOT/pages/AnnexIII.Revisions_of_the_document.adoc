@@ -1,0 +1,21 @@
+
+include::partial$attributes.adoc[]
+
+== Annex III. Revisions of the Document.
+
+[cols=",,,,,",options="header",]
+|======
+|*Section* |*Original Text* |*Corrected Text* |*Description*|*GitHub Issue #*|*Publication Date*
+|1.5 Codes and Identifiers|*listAgencyID*
+An agency that maintains one or more lists of codes
+
+*listAgencyName*
+The name of the agency that maintains the list of codes #(MANDATORY in this version of ESPD)#. |*listAgencyID*
+An agency that maintains one or more lists of codes #(MANDATORY in this version of ESPD)#.
+
+*listAgencyName*
+The name of the agency that maintains the list of codes.
+|Mandatory attribute wrong|link:https://github.com/OP-TED/ESPD-EDM/issues/330.html[330]|2022-06-09
+|2.5 Lot Management|The ESPD request include #selection criteria# that are general…|The ESPD request include #Exclusion Grounds# criteria that are general…|Wording / Spelling issues|link:https://github.com/OP-TED/ESPD-EDM/issues/329.html[329]|2022-06-09|6.6 Economic Operator
+|#cac:EconomnicOperatorRole#|#cac:EconomicOperatorRole#|Wording / Spelling issues|link:https://github.com/OP-TED/ESPD-EDM/issues/329.html[329]|2022-06-09|3.1 General behaviour|#cbc:Legislation#|#cac:Legislation#|Wording / Spelling issues|link:https://github.com/OP-TED/ESPD-EDM/issues/329.html[329]|2022-06-09|3.4 Properties|The type of answer expected by the buyer in the case of a #poperty# of type QUESTION…|The type of answer expected by the buyer in the case of a #property# of type QUESTION…|Wording / Spelling issues|link:https://github.com/OP-TED/ESPD-EDM/issues/329.html[329]|2022-06-09|5.1 Lot Management approach for Selection Criteria|The buyer may specify the #criteria# that each selection criteria apply…|The buyer may specify the #Lots# that each selection criteria apply…|Wording / Spelling issues|link:https://github.com/OP-TED/ESPD-EDM/issues/329.html[329]|2022-06-09
+|======
