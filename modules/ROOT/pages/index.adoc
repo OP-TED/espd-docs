@@ -13,6 +13,6 @@ include::partial$attributes.adoc[]
 == Resources
 
 * xref:xml_business_handbook.adoc[ESPD BUSINESS HANDBOOK]
-* xref:xml_technical_handbook.adoc[ESPD TECHNICAL HANDBOOK] (_last reviewed on 2022-06-09_)
+* xref:xml_technical_handbook.adoc[ESPD TECHNICAL HANDBOOK] (_last updated on 2022-06-09_)
 * link:{attachmentsdir}/ESPD_CM_html/index.html[ESPD-EDM CONCEPTUAL MODEL HTML]
 * xref:release_notes.adoc[Release Notes]
