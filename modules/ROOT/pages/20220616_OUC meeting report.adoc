@@ -1,0 +1,148 @@
+= Open User Community Meeting Report
+== Publications Office – ESPD EDM
+
+
+[cols=",",",]
+|===
+|Meeting Date/Time: |2022-06-16, 10.00 - 11.00
+|===
+
+[cols=",",options="header",]
+|===
+|*Attendee Name* |*Organisation / Country*
+|Paloma ARILLO |OP
+|Natalie MURIC |OP
+|Marc Christopher SCHMIDT |DG GROW
+|Andreea ANGHEL |Romania
+|Simona BAJANARU |Romania
+|Michaël De Winne BOSA |Belgium
+|Marilena CRISTEA |Romania
+|José Luis CUEVA |Spain
+|Bertalan FABIAN |Hungary
+|Jostein FRØMYR |Norway
+|Linda HANNISDAL |Norway
+|Pierre HOULLEMARE |France
+|Britt JOHNSEN |Norway
+|Hilde KJØLSET |Norway
+|Kardos LILLA |Hungary
+|Foteini MICHAILIDOU |Greece
+|Konstantinos RAPTIS |Greece
+|Alexandra RODRIGUES |Portugal
+|Joao SANTOS |Portugal
+|Sonia SERAFIMOVICI |Romania
+|Giampaolo SELLITTO |Italy
+|Maria SIAPERA |UPRC
+|Justina ZALTAUSKAITE | Lithuania
+|Alba COLOMER |NTT Data
+|Pedro SOTO |NTT Data
+|Hector RICO |NTT Data
+|Juan Carlos DELGADO |NTT Data
+|Pascaline Laure TCHIENEHOM |NTT Data
+|===
+
+:sectnums:
+:sectnumlevels: 4
+
+== Meeting Agenda
+. Summary of last meeting on 28th April 2022
+. Code list DocRefContentType
+. Occupation code list (ESCO)
+. UUID
+. Documentation update
+. GitHub issues
+. Next meetings
+. AOB
+
+== Summary of last meeting on 28th April 2022
+
+* The link:https://docs.ted.europa.eu/espd-ouc/20220428_OUC%20meeting%20report.html[link] to the last meeting report is provided and the maing topics discussed are summarised.
+
+== Code list DocRefContentType
+
+* In the previous OUC meeting (28 April 2022), it was agreed to remove codes from the  DocRefContentType code list that are not used, based on the feedback from the OUC.
+
+* The aim is to publish the updated list in the September release of EU Vocabularies.
+
+* If no objection is received before mid July, the following elements will either be  kept or removed from the code list:
+
+a) Elements that will be kept:
+[cols=",",options="header",]
+|===
+|*Code* |*Label*
+|ESPD_REQUEST |European Single Procurement Document Request issued by a contracting authority
+|TED_CN |Contract notice published in TED (Tenders Electronic Daily)
+|NOJCN |Contract notice published on a national government official journal
+|ROJCN |Contract notice published on a regional government official journal
+|LOJCN |Contract notice published on a local government official journal
+|TED_PIN |Prior information notice published in TED (Tenders Electronic Daily)
+|NOJPIN |Prior information notice published on a national government official journal
+|ROJPIN |Prior information notice published on a regional government official journal
+|LOJPIN |Prior information notice published on a local government official journal
+|===
+
+
+b) Elements that will be removed:
+[cols=",",options="header",]
+|===
+|*Code* |*Label*
+|TECC016 |Letter of intent
+|TECC017 |Status of the legal entity
+|TECC018 |Notice of appointment of the persons authorised to represent the tenderer
+|TECC019 |VAT registration document
+|TECC020 |Identity document
+|TECC021 |Reason for VAT exemption
+|TECC022 |Subcontracting justification
+|TECC024 |Power of attorney
+|NOJCAN |Contract award notice published on a national government official journal
+|ROJCAN |Contract award notice published on a regional government official journal
+|other |Other
+|===
+
+
+== Occupation code list (ESCO)
+
+* A technical code list “Occupation” was included in ESPD v3.0.0 (April 2021), based on ESCO (Multilingualclassification of European Skills, Competences, Qualifications and Occupations), but since then ESCO has been updated.
+
+* During June 2022, EU Vocabularies will provide the genericode file and a link to point to the ESCO website, which will be available in the next ESPD release and will replace the current one.
+
+== UUID
+
+* The definition and analysis of the proposed solution for the UUID is ongoing.
+
+* An internal meeting was held with INTERPROC on the 7 June 2022 to discuss the overall approach and the details of the solution.
+
+* Currently, request and response samples are being tested to validate the solution with regard to question groups containing variable cardinality.
+
+* Requirements linked to Selection Criteria will be addressed after the question group solution is ensured.  Changing values of a requirement will have an effect on validation, therefore a suitable solution with regard to reusability needs to be found. 
+
+* The goal is to include the changes in the UUID in a release during 2023 after validation by the OUC and the change management board.
+
+== Documentation update
+
+* Since the release of the v3.0.0 of the ESPD, online documentation can be updated without the need of a release.
+
+* link:https://docs.ted.europa.eu/ESPD-EDM/3.0.1/index.html[Developer docs] provide information on how to use the artifacts available in GitHub. Technical artifacts only change with an ESPD release, but documentation can be improved without a release.
+
+* In the link:https://docs.ted.europa.eu/espd-ouc/20220428_OUC%20meeting%20report.html[ESPD Exchange Data Model (ESPD-EDM) webpage], information is provided on the last update of each reviewed document. Within the document (in the example presented in the meeting, the Technical Handbook) a final section provides detailed information on the specific changes.
+
+== GitHub issues
+
+* The recently closed GitHub issues (4 issues) and the currently open issues (10 issues) are discussed.
+
+* Issue link:https://github.com/OP-TED/ESPD-EDM/issues/334[#334], regarding the purely national Exclusion Grounds in ESPD-EDM v3.x.x, will not be solved within the next few months and require a change request on eCertis side. 
+
+* Issue link:https://github.com/OP-TED/ESPD-EDM/issues/287[#287], regarding the request to add a new non-mandatory requirement, Subcontracting Proportion, within several selection criteria, is discussed. If no objections are received before mid July 2022, the requirement will be added in the next ESPD release.
+
+== Next meetings
+
+* *Next OUC meeting*: 22 September 2022, 10.00 – 11.30. 
+
+*  *eProcurement Ontology version 3.0.0 beta meeting*: 28 June 2022, 14.00-17.00 (link:https://ecconf.webex.com/ecconf/j.php?MTID=mb4c23055d10fa536be6b046b50d1d518[link])
+
+* The *ESPD Annual Seminar* is foreseen for the end of November or beginning of December, together with the eSender annual seminar. The date and time will be shared with the OUC as soon as the date is set.
+
+== Any other business
+
+* It is requested that a log of the changes of the ESPD-EDM in the different releases is provided, in order to facilitate the decision on whether to develop a new tool or to evolve the current one within the process of upgrading the ESPD version. The requested log is available in the link:https://github.com/OP-TED/ESPD-EDM/releases[GitHub].
+
+* A release planning is requested with information on the type of release (patch, minor or major), the estimated date of the release, the GitHub issues that will be included in the release and implementation requirements for developers.
