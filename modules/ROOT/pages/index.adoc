@@ -6,7 +6,7 @@ You have access to all the documentation by expanding the different options of t
 
 Next OUC meetings:
 
-* September 22, 2022
+* September 29, 2022
 
 
 //Meeting Reports previous to 2022 can be found in link:https://github.com/OP-TED/espd-docs/tree/wgm-reports/modules/ROOT/attachments[espd-docs/wgm-reports].
