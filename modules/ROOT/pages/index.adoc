@@ -8,5 +8,7 @@ Next OUC meetings:
 
 * September 28, 2022, 10.00-11.30
 
+* October 27, 2022, 10.00-11.30
+
 
 //Meeting Reports previous to 2022 can be found in link:https://github.com/OP-TED/espd-docs/tree/wgm-reports/modules/ROOT/attachments[espd-docs/wgm-reports].
