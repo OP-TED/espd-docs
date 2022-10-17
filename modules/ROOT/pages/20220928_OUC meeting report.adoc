@@ -1,0 +1,153 @@
+= Open User Community Draft Meeting Report
+
+== Publications Office – ESPD EDM
+
+
+[cols=",",",]
+|===
+|Meeting Date/Time: |2022-09-28, 10.00 - 11.30
+|===
+
+[cols=",",options="header",]
+|===
+|*Attendee Name* |*Organisation / Country*
+|Paloma ARILLO |OP
+|Natalie MURIC |OP
+|Marc Christopher SCHMIDT |DG GROW
+|Andreea ANGHEL |Romania
+|Claire BRONNER |Luxembourg
+|Bladislav BUDNIKOV |Bulgaria
+|Marilena CRISTEA |Romania
+|Michaël De WINNE |Belgium
+|Bertalan FABIAN |Hungary
+|Anna FRANTZEN |Norway
+|Jostein FRØMYR |Norway
+|Pierre HOULLEMARE |France
+|Paul HUMANN |Austria
+|Aurimas JANKAUSKAS |Lithuania
+|Ajda KOSTANJSEK |Slovenia
+|Wenche LUDVIKSEN |Norway
+|Pietro PALERMO |Italy
+|Nuno PERALTA |Portugal
+|Timo RANTANEN |Finland
+|Konstantinos RAPTIS |Greece
+|Alexandra RODRIGUES |Portugal
+|Joao SANTOS |Portugal
+|Giampaolo SELLITTO |Italy
+|Sonia SERAFIMOVICI |Romania
+|Justina ZALTAUSKAITE |Lithuania
+|Nikanoras ZAVADSKIJ |Lithuania
+|Alba COLOMER |NTT Data
+|Juan Carlos DELGADO |NTT Data
+|Pascaline Laure TCHIENEHOM |NTT Data
+|===
+
+:sectnums:
+:sectnumlevels: 4
+
+== Meeting Agenda
+. Summary of last meeting on 16th June 2022
+. UUID
+. ESPD-EDM future releases
+. GitHub issues
+. Next meetings
+. AOB
+
+== Summary of last meeting on 16th June 2022
+
+* The link:https://docs.ted.europa.eu/espd-ouc/20220616_OUC%20meeting%20report.html[link] to the last meeting report is provided and the main topics discussed are summarised.
+
+== UUID
+
+* A brief description of the UUID is provided and the types of UUID used in the ESPD are presented.
+
+* An issue identified in ESPD v3 related to the UUID is presented: 
+** In the last major release, ESPD v3.0.0 which was released in April 2021, the ESPD was aligned with eForms from both the business and technical perspective;
+** This alignment caused that, although from a business point of view there are selection criteria that can implement different requirements per lot, the current technical implementation does not allow multiple and different requirements and, therefore, all lots share the same requirements within a given criterion;
+** This affects only selection criteria, since exclusion grounds are common to all lots and specific requirements per lot are not allowed;
+** This issue affects only ESPD v3;
+** Examples of the AS-IS situation and the proposed TO-BE data structure are provided for a better understanding.
+
+* Two proposals for an improved management of the UUID are presented. These proposals solve the aforementioned issue related to requirements and lots, and also provide relevant benefits:
+** The link between an ESPD Request and its related ESPD Responses (one or several) is consistent;
+** Same structures use the same UUID;
+** There is no ambiguity when addressing structures represented by the same UUID;  
+** The same data structure can be reused in different procedures;
+** ESPD Responses can be easily read and mapped;
+** Content of the ESPD can be reused when requirements are compatible.
+
+*Proposal 1 (XML path-like)*
+
+* It is a variant proposal of the proposal presented in the OUC meeting of January 2022 (see link:https://github.com/OP-TED/espd-docs/blob/wgm-reports/modules/ROOT/attachments/ESPD_Minutes_OUC_Meetings_20220127.pdf[report] and link:https://github.com/OP-TED/espd-docs/blob/wgm-reports/modules/ROOT/attachments/ESPD_OUC_Meetings_20220127.pdf[presentation]).
+
+* •	The proposal is based on a pre-defined short tag name for each element and a numbering according to the position within the tree structure, and it provides a path to a target criterion element. For example:
+
+image::UUID_Proposal1.png[]
+
+* The mapping between the criterion element short tag name used in the proposal, the criterion element, and the UBL element, is provided.
+
+ * Several examples for the management of questions and the management of requirements are provided for a better understanding.
+ 
+ * A summary of the implications of implementing this proposal is provided.  
+
+
+*Proposal 2 (UUID variant)*
+
+* This proposal keeps the current framework of the UUID, but the link between the ESPD Request and the ESPD Responses is managed differently.
+* A direct link between the ESPD Request and its related ESPD Responses (one or several) is provided by reusing the same UUID from the ESPD Request, which will be fixed, for all the occurrences of the target element (Question) in the related ESPD Responses.
+* The semantics of occurrences are added to the description of the target element (Question or Requirement) to distinguish among the different occurrences. For example:
+
+image::UUID_Proposal2.png[]
+
+ * The goal is to avoid the use of a dynamic UUID randomly generated, and use instead a fixed UUID to link the ESPD Request and the related ESPD Responses.
+
+ * Several examples for the management of questions and the management of requirements are provided for a better understanding.
+ 
+ * A summary of the implications of implementing this proposal is provided.
+
+*Feedback and conclusions*
+
+* The feedback of the participants to the presented proposals is positive. Time to review them in detail and compare them is requested.
+
+* The presented proposals are almost identical and both have pros and cons: 
+** The first proposal (XML path-like) is more simple and easier to read and understand, but its implementation is more complex since it replaces the current UUID by tags for the different elements of the path; 
+** The second proposal (UUID variant) is machine-oriented and thus it is not human readable, but it provides better reusability since it is not so closely linked to the data structure, and it is easier to implement since it sticks to the use of UUID. 
+
+* It is agreed that in the next OUC meeting (27th October 2022) the proposals will be voted, and a final decision will be made on which proposal to implement.
+
+== ESPD-EDM future releases
+
+* A list of all issues and related tasks identified for future releases is presented, together with the type of change (major or minor) and the current percentage of resolution of each of them.
+
+* First, major changes are presented: 
+** 3 GitHub issues have been already completed and are ready to be released (it must be taken into account that, for one of them, all tasks are completed on ESPD side, but tasks on eCertis side are still pending);
+** 2 GitHub issues are at 50% (one related to code lists with a dependency on a future EU Vocabularies release; and the other related to the UUID, which depends on the final decision on the solution to implement);
+** 2 tasks related to code lists management have not been initiated yet. 
+
+* Afterwards, minor changes are presented:
+** 11 GitHub issues have been already completed and are ready to be released;
+** A task related to code lists management is ongoing (25%);
+** 2 GitHub issues related to code lists have not been initiated yet.
+
+* There is also a GitHub issue related to the link between eCertis and ESPD, which has a strong dependency on the eCertis team. The eCertis team is currently collecting requirements and it is expected that, during the second quarter of 2023, eCertis will be updated according to these requirements, including those related to the link with the ESPD.
+
+* The initial proposal is that the next ESPD release is a major release scheduled for the first quarter of 2023. However, a quicker release is requested by the OUC, so it is agreed that a minor release will be scheduled by the end of 2022, and a major release will be scheduled for the first quarter of 2023. 
+
+
+== GitHub issues
+
+* The list of the GitHub issues closed since the last OUC meeting (9 issues) and the list of currently open issues (12 issues) are presented.
+
+* Due to lack of time, the detail of the closed issues and the provided solutions is not presented in the meeting, but the information is provided as an annex to the presentation and is also available in the GitHub.
+
+== Next meetings
+
+* *Next OUC meeting*: 27 October 2022, 10.00 – 11.30. 
+
+* *ESPD Annual Seminar*: 30 November 2022, 9.30 - 12.30. (initial proposal was 1st of December, but it is agreed to move it to the previous date due to the 1st of December being festive in some countries)
+
+== Any other business
+
+* The response time to the GitHub issues is reported to be too long. OP comments that an initial answer should be provided by the ESPD team within a week after the reception of the issue, and updated information should be provided afterwards upon the completion of the analysis and implementation tasks. 
+
+* A meeting will be scheduled the first week of October to discuss the link between eCertis and ESPD and its consequencues.
