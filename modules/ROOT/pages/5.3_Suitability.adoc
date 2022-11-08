@@ -188,12 +188,12 @@ _'Enrolment in a relevant professional register' suitability criterion_
 
 <!--... rest of elements removed for brevity... -->
 ----
-
+//// 
 [NOTE]
 ====
 The code list 'occupation' is used to determine the area to which the EO should be registered in. It comes from the ESCO classification, in case the Buyer do not find the appropiate code to define the type of professional enrolement it can select code '0000.0' which stands for other. Then would be able to include the type using a text box.
 ====
-
+////  
 
 == Suitability (service contracts)
 
