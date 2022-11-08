@@ -1,0 +1,426 @@
+:sectnums:
+= Annex II. XML Examples
+include::partial$attributes.adoc[]
+
+== Code List Examples
+
+[[access-right-xml-example,access-right xml Example]]
+=== access-right
+
+The following xml code is an example of use of code list xref:Tech_AnnexI_Code_Lists_Catalogue.adoc#access-right-table[access-right] in a _cac:Evidence_ element of ESPDRequest.
+
+
+[source,xml,linenums]
+----
+<cac:Evidence>
+    <cbc:ID schemeAgencyID="OP">EVIDENCE-00001</cbc:ID>
+    <cbc:ConfidentialityLevelCode listID="http://publications.europa.eu/resource/authority/access-right" listAgencyID="OP" listVersionID="20211208-0">CONFIDENTIAL</cbc:ConfidentialityLevelCode>
+    <cac:DocumentReference>
+        <cbc:ID schemeAgencyID="OP">SAT-11121233</cbc:ID>
+        <cac:Attachment>
+            <cac:ExternalReference>
+                <cbc:URI>http:dod.gov.usa/sat/it/soft/prk?id=11121233</cbc:URI>
+            </cac:ExternalReference>
+        </cac:Attachment>
+        <cac:IssuerParty>
+            <cac:PartyName>
+                <cbc:Name>USA DoD</cbc:Name>
+            </cac:PartyName>
+        </cac:IssuerParty>
+    </cac:DocumentReference>
+</cac:Evidence>
+----
+
+
+The element _cbc:ConfidentialityLevelCode_ is of type code with the following attribute values:
+
+* _listID_=*"access-right"*. Informing this code is provided in  the code list xref:Tech_AnnexI_Code_Lists_Catalogue.adoc#access-right-table[access-right].
+* value *_CONFIDENTIAL_* is one of the valid codes defined in the code list xref:Tech_AnnexI_Code_Lists_Catalogue.adoc#access-right-table[access-right].
+
+[[boolean-gui-control-type-xml-example,boolean-gui-control-type xml Example]]
+=== boolean-gui-control-type
+
+The following is an example of use of code list xref:Tech_AnnexI_Code_Lists_Catalogue.adoc#boolean-gui-control-type-table[boolean-gui-control-type] in 'Other economic or financial requirements' (*_finan-requ_*).
+
+The xml code implemented for this criterion in the ESPDRequest is:
+
+[source,xml,linenums]
+----
+(...)
+<cac:TenderingCriterionProperty>
+        <cbc:ID schemeID="criterion" schemeAgencyID="OP" schemeVersionID="20210616-0">977149e9-9a91-4aa6-acb6-6928a0dd6609</cbc:ID>
+        <cbc:Description>Select the type of requirement</cbc:Description>
+        <cbc:TypeCode listID="criterion-element-type" listVersionID="3.0.1">REQUIREMENT</cbc:TypeCode>
+        <cbc:ValueDataTypeCode listID="response-data-type" listVersionID="3.0.1">CODE_BOOLEAN</cbc:ValueDataTypeCode>
+        <!-- No answer is expected
+here from the economic operator, as this is a REQUIREMENT issued by the contracting
+authority. Hence the element 'cbc:ValueDataTypeCode' contains the type of value of
+the requirement issued by the contracting authority -->
+        <cbc:ExpectedCode listID="BooleanGUIControlType" listVersionID="3.0.1">RADIO_BUTTON_TRUE</cbc:ExpectedCode>
+</cac:TenderingCriterionProperty>
+<cac:SubsidiaryTenderingCriterionPropertyGroup>
+    <cbc:ID schemeID="criterion" schemeAgencyID="OP" schemeVersionID="20210929-0">ca15c15f-110e-4a10-8d6e-5e41cf5f9098</cbc:ID>
+    <cbc:PropertyGroupTypeCode listID="property-group-type" listVersionID="3.0.1">ONTRUE</cbc:PropertyGroupTypeCode>
+    <cac:TenderingCriterionProperty>
+            <cbc:ID schemeID="criterion" schemeAgencyID="OP" schemeVersionID="20210929-0">4d879427-f3e8-431b-a516-1c0f22edd56a</cbc:ID>
+            <cbc:Description>Description of the economic or financial requirement</cbc:Description>
+            <cbc:TypeCode listID="criterion-element-type" listVersionID="3.0.1">REQUIREMENT</cbc:TypeCode>
+            <cbc:ValueDataTypeCode listID="response-data-type" listVersionID="3.0.1">DESCRIPTION</cbc:ValueDataTypeCode>
+            <!-- No answer is expected
+here from the economic operator, as this is a REQUIREMENT issued by the contracting
+authority. Hence the element 'cbc:ValueDataTypeCode' contains the type of value of
+the requirement issued by the contracting authority -->
+            <cbc:ExpectedDescription>[Description]</cbc:ExpectedDescription>
+    </cac:TenderingCriterionProperty>   
+    (...) 
+</cac:SubsidiaryTenderingCriterionPropertyGroup>
+(...)
+<cac:SubsidiaryTenderingCriterionPropertyGroup>
+        <cbc:ID schemeID="criterion" schemeAgencyID="OP" schemeVersionID="20210616-0">cc96aa19-a0be-4409-af58-ff3f3812741b</cbc:ID>
+        <cbc:PropertyGroupTypeCode listID="property-group-type" listVersionID="3.0.1">ONFALSE</cbc:PropertyGroupTypeCode>
+        <cac:TenderingCriterionProperty>
+                <cbc:ID schemeID="criterion" schemeAgencyID="OP" schemeVersionID="20210616-0">d996223a-3f54-4803-bf05-39019c843e94</cbc:ID>
+                <cbc:Description>Minimum rating</cbc:Description>
+                <cbc:TypeCode listID="criterion-element-type" listVersionID="3.0.1">REQUIREMENT</cbc:TypeCode>
+                <cbc:ValueDataTypeCode listID="response-data-type" listVersionID="3.0.1">QUANTITY</cbc:ValueDataTypeCode>
+                <!-- No answer is expected
+here from the economic operator, as this is a REQUIREMENT issued by the contracting
+authority. Hence the element 'cbc:ValueDataTypeCode' contains the type of value of
+the requirement issued by the contracting authority -->
+                <cbc:ExpectedValueNumeric>0.33</cbc:ExpectedValueNumeric>
+        </cac:TenderingCriterionProperty>
+        (...)
+</cac:SubsidiaryTenderingCriterionPropertyGroup>
+(...)
+----
+
+This case of use has to be interpreted by the software application that displays the ESPDRequest document so the <<eo>> can select which _REQUIREMENT_SUBGROUP_ is shown and provide an answer to it. Taking this into consideration:
+
+. The value of _boolean-gui-control_ will be used by the application software to display either the REQUIREMENT for "Description of the economic or financial requirement" or the REQUIREMENT for "Minimum rating".
+. In this case the value for _boolean-gui-control_ is _RADIO_BUTTON_TRUE_. This will display REQUIREMENT for "Description of the economic or financial requirement" as defaul since the following _cac:SubsidiaryTenderingCriterionPropertyGroup_ is defined with _cbc:PropertyGroupTypeCode_ value=*ONTRUE*.
+
+[[country-xml-example,country xml Example]]
+=== country
+
+The following xml code is an example of use of code list xref:Tech_AnnexI_Code_Lists_Catalogue.adoc#country-table[country] in a _cac:ContractingParty_ element of ESPDRequest.
+
+
+[source,xml,linenums]
+----
+<cac:Party>
+(...)
+<cac:PostalAddress>
+        <cbc:StreetName>DummyValue</cbc:StreetName>
+        <cbc:CityName>DummyValue</cbc:CityName>
+        <cbc:PostalZone>DummyValue</cbc:PostalZone>
+        <cac:Country>
+                <cbc:IdentificationCode listID="http://publications.europa.eu/resource/authority/country" listAgencyID="OP" listVersionID="20211208-0">AND</cbc:IdentificationCode>
+        </cac:Country>
+</cac:PostalAddress>
+(...)
+</cac:Party>
+----
+
+The code list xref:Tech_AnnexI_Code_Lists_Catalogue.adoc#country-table[country] is used to define the value of element cbc:IdentificationCode in class cac:Country.
+
+[[criterion-xml-example,criterion xml Example]]
+=== criterion
+
+The following xml code is an example of use of code list xref:Tech_AnnexI_Code_Lists_Catalogue.adoc#criterion-table[criterion] in a _cac:TenderingCriterion_ element of *ESPDRequest*.
+
+
+[source,xml,linenums]
+----
+<!-- Criterion:Participation in a criminal organisation -->
+<cac:TenderingCriterion>
+        (...)
+        <cbc:CriterionTypeCode listID="http://publications.europa.eu/resource/authority/criterion" listAgencyID="OP" listVersionID="20210616-0">crime-org</cbc:CriterionTypeCode>
+        <cbc:Name>Participation in a criminal organisation</cbc:Name>
+        <cbc:Description>Has the economic operator itself or any person who is a member of its administrative, management or supervisory body or has powers of representation, decision or control therein been the subject of a conviction by final judgment for participation in a criminal organisation, by a conviction rendered at the most five years ago or in which an exclusion period set out directly in the conviction continues to be applicable? As defined in Article 2 of Council Framework Decision 2008/841/JHA of 24 October 2008 on the fight against organised crime (OJ L 300, 11.11.2008, p. 42).</cbc:Description>
+        <cac:SubTenderingCriterion>
+        (...)
+        </cac:SubTenderingCriterion>
+        <cac:Legislation>
+        (...)
+        </cac:Legislation>
+        (...)
+</cac:TenderingCriterion>
+----
+
+The code list xref:Tech_AnnexI_Code_Lists_Catalogue.adoc#criterion-table[criterion] is used to define the value of element _cbc:CriterionTypeCode_ for any class _cac:TenderingCriterion_ present in the *ESPDRequest* document.
+
+[[criterion-element-type-xml-example,criterion-element-type xml Example]]
+=== criterion-element-type
+
+This is an example of use of code list xref:Tech_AnnexI_Code_Lists_Catalogue.adoc#criterion-element-type-table[criterion-element-type] in criterion 'Participation in a criminal organisation' (*_crim-org_*) _cac:TenderingCriterion_ element of *ESPDRequest*.
+
+The xml code implemented for this criterion in the ESPDRequest is:
+
+[source,xml,linenums]
+----
+<!-- Criterion:Participation in a criminal organisation -->
+<cac:TenderingCriterion>
+        (...)
+        <cbc:CriterionTypeCode listID="http://publications.europa.eu/resource/authority/criterion" schemeAgencyID="OP" schemeVersionID="20210616-0">crime-org</cbc:CriterionTypeCode>
+        (...)
+        <cac:SubTenderingCriterion>
+        (...)
+                <cac:TenderingCriterionPropertyGroup>
+                (...)
+                <cac:TenderingCriterionProperty>
+                        <cbc:ID schemeID="criterion" schemeAgencyID="OP" schemeVersionID="20210616-0">ae5e864a-f3ba-489b-ba17-b87af8b10138</cbc:ID>
+                        <cbc:Description>[Additional information; e.g. no evidences online]</cbc:Description>
+                        <cbc:TypeCode listID="criterion-element-type"  listVersionID="3.0.1">CAPTION</cbc:TypeCode>
+                        <cbc:ValueDataTypeCode listID="response-data-type" listVersionID="3.0.1">NONE</cbc:ValueDataTypeCode>
+                </cac:TenderingCriterionProperty>
+                (...)
+                </cac:TenderingCriterionPropertyGroup>
+        </cac:SubTenderingCriterion>
+        (...)
+        <cac:TenderingCriterionPropertyGroup>
+                (...)
+                <cac:TenderingCriterionProperty>
+                        <cbc:ID schemeID="criterion" schemeAgencyID="OP" schemeVersionID="20210616-0">c31b6447-bf88-4172-901a-f9b105205391</cbc:ID>
+                        <cbc:Description>Your answer</cbc:Description>
+                        <cbc:TypeCode listID="criterion-element-type" listVersionID="3.0.1">QUESTION</cbc:TypeCode>
+                        <cbc:ValueDataTypeCode listID="response-data-type" listVersionID="3.0.1">INDICATOR</cbc:ValueDataTypeCode>
+                </cac:TenderingCriterionProperty>
+                (...)
+        </cac:TenderingCriterionPropertyGroup>
+        (...)
+</cac:TenderingCriterion>
+----
+
+Code list _criterion-element-type_ is used to specify the value of class _cbc:TypeCode_ of element _cac:TenderingCriterionProperty_. _cbc:TypeCode_ corresponds to values in columns 3 to 5 in the schema shown in <<img-criterion_criterion-element-type>>:
+* _cac:TenderingCriterionProperty_ with _cbc:ID_=ae5e864a-f3ba-489b-ba17-b87af8b10138 is defined as _cbc:TypeCode_=*CAPTION*
+* _cac:TenderingCriterionProperty_ with _cbc:ID_=c31b6447-bf88-4172-901a-f9b105205391 is defined as _cbc:TypeCode_=*QUESTION*
+
+[[currency-xml-example,currency xml Example]]
+=== currency
+
+The following xml code are examples of use of code list xref:Tech_AnnexI_Code_Lists_Catalogue.adoc#currency-table[currency] in an ESPDRequest.
+
+Code list xref:Tech_AnnexI_Code_Lists_Catalogue.adoc#currency-table[currency] can be used to specify the code for class _cbc:ValueCurrencyCode_ inside an element _cac:TenderingCriterionProperty_ as shown below:
+
+[source,xml,linenums]
+----
+<cac:TenderingCriterionProperty>
+        (...)
+        <cbc:Description>Additional Information</cbc:Description>
+        <cbc:TypeCode listID="criterion-element-type" listVersionID="3.0.1">REQUIREMENT</cbc:TypeCode>
+        <cbc:ValueDataTypeCode listID="response-data-type" listVersionID="3.0.1">DESCRIPTION</cbc:ValueDataTypeCode>
+        <cbc:ValueCurrencyCode listID="http://publications.europa.eu/resource/authority/currency" listAgencyID="OP" listVersionID="20211208-0">EUR</cbc:ValueCurrencyCode>
+        (...)
+</cac:TenderingCriterionProperty>
+----
+
+Code list xref:Tech_AnnexI_Code_Lists_Catalogue.adoc#currency-table[currency] also can be used to specify the currency of a quantity amount in a *REQUIREMENT* for as shown below:
+
+[source,xml,linenums]
+----
+<cac:TenderingCriterionProperty>
+        (...)
+        <cbc:Description>Minimum requirement</cbc:Description>
+        <cbc:TypeCode listID="criterion-element-type" listVersionID="3.0.1">REQUIREMENT</cbc:TypeCode>
+        <cbc:ValueDataTypeCode listID="response-data-type" listVersionID="3.0.1">AMOUNT</cbc:ValueDataTypeCode>
+        <!-- No answer is expected
+        here from the economic operator, as this is a REQUIREMENT issued by the contracting
+        authority. Hence the element 'cbc:ValueDataTypeCode' contains the type of value of
+        the requirement issued by the contracting authority -->
+        <cbc:ExpectedAmount currencyID="EUR">100000</cbc:ExpectedAmount>
+</cac:TenderingCriterionProperty>
+----
+
+Code list is used to define attribute _currencyID_ of element _cbc:ExpectedAmount_ inside _cac:TenderingCriterionProperty_ corresponding to a *REQUIREMENT* expressed as a monetary amount in currency "EUR".
+
+
+[[docrefcontent-type-xml-example,docrefcontent-type xml Example]]
+=== docrefcontent-type
+
+The following xml code is an example of use of code list xref:Tech_AnnexI_Code_Lists_Catalogue.adoc#docrefcontent-type-table[docrefcontent-type] in a _cac:AdditionalDocumentReference_ specifing its _cbc:DocumentTypeCode_ value in a ESPDRequest.
+
+
+[source,xml,linenums]
+----
+<cac:AdditionalDocumentReference>
+        <cbc:ID schemeAgencyID="OP">2017/S 142-293520</cbc:ID>
+        <cbc:DocumentTypeCode listID="docrefcontent-type" 
+        listVersionID="3.0.1">TED_CN</cbc:DocumentTypeCode>
+        <cac:Attachment>
+        <cac:ExternalReference>
+        <!-- Beware XML URI fields may require encoded URLs -->
+        <cbc:URI schemeAgencyID="OP">http://ted.europa.eu/udl?uri%3DTED:NOTICE:293520-
+        2017:TEXT:EN:HTML%026src%3D0</cbc:URI>
+        <cbc:FileName>Spain-Zamora: Repair and maintenance services</cbc:FileName>
+        <cbc:Description>Repair and maintenance services. Real estate
+        services.</cbc:Description>
+        <cbc:Description>293520-2017</cbc:Description>
+        </cac:ExternalReference>
+        </cac:Attachment>
+</cac:AdditionalDocumentReference>
+----
+
+This _cac:AdditionalDocumentReference_ specifies a <<ted>> Notice as it is declared in element _cbc:DocumentTypeCode_ with code "TED_CN".
+
+
+[[economic-operator-size-xml-example,economic-operator-size xml Example]]
+=== economic-operator-size
+
+The following xml code is an example of use of code list xref:Tech_AnnexI_Code_Lists_Catalogue.adoc#economic-operator-size-table[economic-operator-size] in a _cac:EconomicOperatorParty_ specifing its _cbc:IndustryClassificationCode_ value in a ESPDResponse.
+
+
+[source,xml,linenums]
+----
+<cac:EconomicOperatorParty>
+        (...)       
+        <cac:Party>
+                <cbc:WebsiteURI>www.Procurer.com</cbc:WebsiteURI>
+                <cbc:IndustryClassificationCode listID="http://publications.europa.eu/resource/authority/economic-operator-size" listAgencyID="OP" listVersionID="20210317-0">sme</cbc:IndustryClassificationCode>
+                <cac:PartyIdentification>
+                        <cbc:ID schemeAgencyID="OP">AD123456789</cbc:ID>
+                </cac:PartyIdentification>
+                <cac:PartyName>
+                        <cbc:Name>__ProcurerName</cbc:Name>
+                </cac:PartyName>
+                (...)
+        </cac:Party>
+</cac:EconomicOperatorParty>
+----
+
+The <<eo>> in this example has a size classification of 'Micro, small, or medium' (_sme_) as it is specified in attribute _cbc:IndustryClassificationCode_ of class _cac:Party_.
+
+
+[[eoid-type-xml-example,eoid-type xml Example]]
+=== eoid-type
+
+The following xml code is an example of use of code list xref:Tech_AnnexI_Code_Lists_Catalogue.adoc#eoid-type-table[eoid-type] in a _cac:TenderingCriterionResponse_ element of ESPDResponse.
+
+[source,xml,linenums]
+----
+(...)
+<cac:TenderingCriterionResponse>
+    <cbc:ID schemeID="ISO/IEC 9834-8:2008 - 4UUID" schemeAgencyID="OP" schemeVersionID="3.0.1">acb58f0e-0fe4-4372-aa08-60d0c36bfcfe</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID schemeID="criterion" schemeAgencyID="OP" schemeVersionID="20210616-0">1fa05728-308f-43b0-b547-c903ffb0a8af</cbc:ValidatedCriterionPropertyID>
+    <cbc:ResponseID schemeID="VAT" schemeAgencyID="ES-AEAT">B82387770</cbc:ResponseID>
+</cac:TenderingCriterionResponse>
+(...)
+----
+
+The element _cbc:ResponseID_ is of type _Identifier_ with the following attribute values:
+
+* _schemeID_=*"VAT"*. Informing this identifier follows the _Value Added Tax identifier_ format. This is a valid value defined in the code list xref:Tech_AnnexI_Code_Lists_Catalogue.adoc#eoid-type-table[eoid-type].
+* _schemeAgencyID_=*"ES-AEAT"*. Informing this identifier is issued by the *Spanish Tax Agency (ES-AEAT)*.
+
+[[eo-role-type-xml-example,eo-role-type xml Example]]
+=== eo-role-type
+
+The following xml code is an example of use of code list xref:Tech_AnnexI_Code_Lists_Catalogue.adoc#eo-role-type-table[eo-role-type] in a _cac:EconomicOperatorParty_ element of ESPDResponse.
+
+[source,xml,linenums]
+----
+(...)
+<cac:EconomicOperatorParty>
+        <cac:EconomicOperatorRole>
+                <cbc:RoleCode listID="http://publications.europa.eu/resource/authority/eo-role-type" listAgencyID="OP" listVersionID="20211208-0">group-mem</cbc:RoleCode>
+        </cac:EconomicOperatorRole>
+        <cac:Party>
+                (...)
+        </cac:Party>
+</cac:EconomicOperatorParty>
+(...)
+----
+
+The example <<eo>> is declared with element _cac:EconomicOperatorParty_ and its role specified in element _cbc:RoleCode_ as 'Group member' with code list value _group-mem_.
+
+[[financial-ratio-type-xml-example,financial-ratio-type xml Example]]
+=== financial-ratio-type
+
+The following xml code is an example of use of code list xref:Tech_AnnexI_Code_Lists_Catalogue.adoc#financial-ratio-type-table[financial-ratio-type] in a _cac:TenderingCriterion_ element of ESPDRequest for criterion _finan-rat_.
+
+[source,xml,linenums]
+----
+<cac:TenderingCriterion>
+        (...)
+        <cac:SubsidiaryTenderingCriterionPropertyGroup>
+                <cbc:ID schemeID="criterion" schemeAgencyID="OP"
+                        schemeVersionID="20210616-0">ee486082-93fa-4c17-8920-fdf01b890bd1</cbc:ID>
+                <cbc:PropertyGroupTypeCode listID="property-group-type" listVersionID="3.0.1">ON*</cbc:PropertyGroupTypeCode>
+                <cac:TenderingCriterionProperty>
+                        <cbc:ID schemeID="criterion" schemeAgencyID=
+                        "OP" schemeVersionID="20210616-0">96df5f9f-f458-40cf-818f-a2beade58b1a</cbc:ID>
+                        <cbc:Description>Ratio Type</cbc:Description>
+                        <cbc:TypeCode listID="criterion-element-type"
+                        listVersionID="3.0.1">REQUIREMENT</cbc:TypeCode>
+                        <cbc:ValueDataTypeCode listID=
+                        "response-data-type" listVersionID="3.0.1">
+                        CODE</cbc:ValueDataTypeCode>
+                        <!-- No answer is expected here from the
+                economic operator, as this is a REQUIREMENT issued by the buyer. Hence the element
+                'cbc:ValueDataTypeCode' contains the type of value of the requirement issued by the
+                buyer -->
+                        <cbc:ExpectedCode listID=
+                        "financial-ratio-type" listVersionID="3.0.1">R11</cbc:ExpectedCode>
+                </cac:TenderingCriterionProperty>
+                (...)
+        </cac:SubsidiaryTenderingCriterionPropertyGroup>
+        (...)
+</cac:TenderingCriterion>
+----
+
+In criterion _finan-rat_, value for _REQUIREMENT_ with description 'Ratio Type' (_96df5f9f-f458-40cf-818f-a2beade58b1a_) is provided in _cbc:ExpectedCode_ with code *R11* from code list _financial-ratio-type_.
+
+[[language-xml-example,language xml Example]]
+=== language
+
+The following xml code is an example of use of code list xref:Tech_AnnexI_Code_Lists_Catalogue.adoc#language-table[language] in a _cac:TenderingCriterion_ element of ESPDRequest for criterion _finan-rat_.
+
+[source,xml,linenums]
+----
+<cac:Legislation>
+        <cbc:ID schemeID="http://publications.europa.eu/resource/authority/criterion" schemeAgencyID="OP" schemeVersionID="20210616-0">32f66226-56f3-48e1-87c0-3d8917957fea</cbc:ID>
+        <cbc:Title>[Legislation title]</cbc:Title>
+        <cbc:Description>[Legislation description]</cbc:Description>
+        <cbc:JurisdictionLevel>EU</cbc:JurisdictionLevel>
+        <cbc:Article>[Article, e.g. Article 2.I.a]</cbc:Article>
+        <cbc:URI>http://eur-lex.europa.eu/</cbc:URI>
+        <cac:Language>
+                <cbc:LocaleCode listID="http://publications.europa.eu/resource/authority/language" listAgencyName="OP" listVersionID="20211208-0">ENG</cbc:LocaleCode>
+        </cac:Language>
+</cac:Legislation>
+----
+
+Language used in class _cac:Legislation_ is defined in element _cac:Language_ assigning _cbc:LocaleCode_ with value *"ENG"* from code list _language_.
+
+[[occupation-xml-example,occupation xml Example]]
+=== occupation
+
+The following xml code is an example of use of code list xref:Tech_AnnexI_Code_Lists_Catalogue.adoc#occupation-table[occupation] in a _cac:TenderingCriterion_ element of ESPDRequest for criterion _prof-regist_.
+
+[source,xml,linenums]
+----
+<!-- Criterion:Enrolment in a relevant professional register -->
+<cac:TenderingCriterion>
+ <cbc:ID schemeID="criterion" schemeAgencyID="OP" schemeVersionID="3.0.1">6ee55a59-6adb-4c3a-b89f-e62a7ad7be7f</cbc:ID>
+        <cbc:CriterionTypeCode listID="http://publications.europa.eu/resource/authority/criterion" listAgencyID="OP" listVersionID="20210616-0">prof-regist</cbc:CriterionTypeCode>
+        <cbc:Name>Enrolment in a relevant professional register</cbc:Name>
+        <cbc:Description>It is enrolled in relevant professional registers kept in the Member State of its establishment as described in Annex XI of Directive 2014/24/EU; economic operators from certain Member States may have to comply with other requirements set out in that Annex.</cbc:Description>                
+        (...)
+        <cac:TenderingCriterionPropertyGroup>
+        <cbc:ID schemeID="criterion" schemeAgencyID="OP" schemeVersionID="20210616-0">b01d8f8f-ceac-4b47-b7aa-88cdeb630465</cbc:ID>
+        <cbc:PropertyGroupTypeCode listID="property-group-type" listVersionID="3.0.1">ON*</cbc:PropertyGroupTypeCode>
+        <cac:TenderingCriterionProperty>
+                <cbc:ID schemeID="criterion" schemeAgencyID="OP" schemeVersionID="20210616-0">53fe9bf5-38c9-4281-b8a9-7250b75a9407</cbc:ID>
+                <cbc:Description>occupation</cbc:Description>
+                <cbc:TypeCode listID="criterion-element-type" listVersionID="3.0.1">REQUIREMENT</cbc:TypeCode>
+                <cbc:ValueDataTypeCode listID="response-data-type" listVersionID="3.0.1">CODE</cbc:ValueDataTypeCode>
+                <!-- No answer is expected
+                here from the economic operator, as this is a REQUIREMENT issued by the contracting
+                authority. Hence the element 'cbc:ValueDataTypeCode' contains the type of value of
+                the requirement issued by the contracting authority -->
+                <cbc:ExpectedCode listID="occupation" listVersionID="3.0.1">http://data.europa.eu/esco/occupation/4d5bd738-9202-4fd7-bd8c-7dbe914048de</cbc:ExpectedCode>
+        </cac:TenderingCriterionProperty>
+        (...)
+</cac:TenderingCriterionPropertyGroup>
+----
+
+The expected occupation for criterion _prof-regist_ is defined in element _cac:TenderingCriterionProperty_ with value _cbc:ExpectedCode_ *http://data.europa.eu/esco/occupation/4d5bd738-9202-4fd7-bd8c-7dbe914048de* that corresponds to _occupation_ label *"agricultural engineer"*.
