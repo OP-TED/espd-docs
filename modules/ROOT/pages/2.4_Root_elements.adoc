@@ -56,7 +56,7 @@ Document provided by a buyer defining the exclusion and selection criteria for a
 |*cbc:ProfileExecutionID* |Identifier |1 |The identification and version of the ESPD Exchange Data Model used to create the XML instance. The identification may include the exact version of the specification. a|
 *Information Requirement*: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1.0-tbr070-002[_tbr070-002_].
 
-*Rule*: Compulsory use of the CodeList ProfileExecutionID. Use the value "EU-COM-GROW" for th SchemeAgencyID attribute.
+*Rule*: Compulsory use of the CodeList ProfileExecutionID. Use the value "OP" for th SchemeAgencyID attribute.
 
 *Rule scope*: Common (BR-OTH-01, BR-OTH-01#13, BR-OTH-03)
 

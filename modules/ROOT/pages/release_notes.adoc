@@ -2,7 +2,7 @@
 = Release Notes
 include::partial$attributes.adoc[]
 
-== v3.0.1 (February 2022)
+== v3.1.0 (February 2022)
 === ESPD-EDM GitHub
 ==== Reorganisation of the distribution package folders
 
@@ -19,14 +19,14 @@ image:Distribution_package.jpg[Distribution package,width=100,height=220]
 === ESPD-EDM conceptual model
 ESPD-EDM coneptual model provided as follows:
 
-* link:https://github.com/OP-TED/ESPD-EDM/tree/v3.0.1/conceptual-model[_.eap_ and _.xmi_ files] with two views and diagrams: 
+* link:https://github.com/OP-TED/ESPD-EDM/tree/v3.1.0/conceptual-model[_.eap_ and _.xmi_ files] with two views and diagrams: 
 ** **Business oriented view (BOV)** aimed at facilitating the understanding of the model and the business context, with references to the technical model, and;
 ** **Technically oriented view (TOV)** providing an UBL based schema with references to business oriented view and aligned with the eProcurement ontology.
 
-* link:https://github.com/OP-TED/ESPD-EDM/tree/v3.0.1/conceptual-model/ESPD_CM_html[_HTML_ version] of the UML conceptual model.If you do not want to download the folder to view the model you can view it on the documentation page under link:https://docs.ted.europa.eu/ESPD-EDM/3.0.1/_attachments/ESPD_CM_html/index.html[ESPD-EDM CONCEPTUAL MODEL HTML].
+* link:https://github.com/OP-TED/ESPD-EDM/tree/v3.1.0/conceptual-model/ESPD_CM_html[_HTML_ version] of the UML conceptual model.If you do not want to download the folder to view the model you can view it on the documentation page under link:https://docs.ted.europa.eu/ESPD-EDM/3.1.0/_attachments/ESPD_CM_html/index.html[ESPD-EDM CONCEPTUAL MODEL HTML].
 
 === Code list
-EU Vocabularies code lists version updated (specific files can be found in folder link:https://github.com/OP-TED/ESPD-EDM/tree/v3.0.1/codelists/gc[codelists/gc])
+EU Vocabularies code lists version updated (specific files can be found in folder link:https://github.com/OP-TED/ESPD-EDM/tree/v3.1.0/codelists/gc[codelists/gc])
 
 * **access-right** version updated to	20211208-0.
 * **country**	version updated to 20211208-0.
@@ -39,7 +39,7 @@ EU Vocabularies code lists version updated (specific files can be found in folde
 === Interoperability Testbed
 Update of Interoperability Testbed link:https://www.itb.ec.europa.eu/espd/upload[ESPD validator]
 
-* Updated v3.0.1 on the validator.
+* Updated v3.1.0 on the validator.
 * Removed v3.0.0 from the validator.
 
 === Online documentation

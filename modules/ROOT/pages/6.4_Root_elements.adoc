@@ -44,7 +44,7 @@ Preliminary evidence certificates in the form of a self-declaration submitted by
 |*cbc:ProfileExecutionID* |Identifier |1 |The identification and version of the ESPD Exchange Data Model used to create the XML instance. The identification may include the exact version of the specification. a|
 *Information Requirement*: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1-tbr70-002[_tbr070-002_].
 
-*Rule*: Compulsory use of the CodeList ProfileExecutionID. Use the value "EU-COM-GROW" for th SchemeAgencyID attribute.
+*Rule*: Compulsory use of the CodeList ProfileExecutionID. Use the value "OP" for th SchemeAgencyID attribute.
 
 *Rule scope*: Common (BR-OTH-01, BR-OTH-01#13, BR-OTH-03)
 
@@ -206,7 +206,7 @@ xsi:schemaLocation="urn:oasis:names:specification:ubl:schema:xsd:QualificationAp
 
 <!-- The unique identifier for this instance of the document. Copies of this document should have different UUIDs -->
 
-<cbc:UUID schemeID="ISO/IEC 9834-8:2008 - 4UUID" schemeAgencyID="EU-COM-GROW" schemeVersionID="2.0">43afa3db-fbed-4565-9ef7-cd7089698836</cbc:UUID>
+<cbc:UUID schemeID="ISO/IEC 9834-8:2008 - 4UUID" schemeAgencyID="OP" schemeVersionID="2.0">43afa3db-fbed-4565-9ef7-cd7089698836</cbc:UUID>
 
 <!-- The reference number the buyer assigns to this procurement procedure -->
 
@@ -218,7 +218,7 @@ xsi:schemaLocation="urn:oasis:names:specification:ubl:schema:xsd:QualificationAp
 
 <!-- The version of the content of this document. If the document is modified the element cbc:PreviousVersionID should be instantiated -->
 
-<cbc:VersionID schemeAgencyID="EU-COM-GROW" schemeVersionID="2.0">1.0</cbc:VersionID>
+<cbc:VersionID schemeAgencyID="OP" schemeVersionID="2.0">1.0</cbc:VersionID>
 
 <!-- The type of the procurement procedure; this information is provided by eForms and the concret notice per procedure. e.g. open = In open procedures any interested economic operator may submit a tender in response to a call for competition.-->
 
