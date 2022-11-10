@@ -36,6 +36,7 @@ _Table a. Correspondence between "criterion element", "UBL element" and "Short T
 |===
 |*ESDP-EDM Criterion Spread-sheet vocabulary* |*UBL-2.3 vocabulary* |*Short Tag Name*  
 |CRITERION |cac:TenderingCriterion | C 
+|ADDITIONAL_DESCRIPTION_LINE |cbc:Description | ADL 
 |SUBCRITERION |cac:SubTenderingCriterion | SBC 
 |LEGISLATION |cac:Legislation | L 
 |REQUIREMENT_GROUP |cac:TenderingCriterionPropertyGroup | RG 
