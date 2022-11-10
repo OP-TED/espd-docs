@@ -4,13 +4,12 @@ This section contains the OUC meeting reports and the Annual Seminar documents.
 
 You have access to all the documentation by expanding the different options of the navigation menu on the left.
 
-Next OUC meetings:
-
-* October 27, 2022, 10.00-11.30
-
 ESPD Annual Seminar 2022:
 
 * November 30, 2022, 9.30-12.30
 
+Next OUC meetings:
+
+* January 26, 2023, 10.00-11.30
 
 //Meeting Reports previous to 2022 can be found in link:https://github.com/OP-TED/espd-docs/tree/wgm-reports/modules/ROOT/attachments[espd-docs/wgm-reports].

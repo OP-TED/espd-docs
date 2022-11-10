@@ -1,0 +1,121 @@
+= Open User Community Meeting Report
+
+== Publications Office – ESPD EDM
+
+
+[cols=",",",]
+|===
+|Meeting Date/Time: |2022-10-27, 10.00 - 11.30
+|===
+
+[cols=",",options="header",]
+|===
+|*Attendee Name* |*Organisation / Country*
+|Paloma ARILLO |OP
+|Marc Christopher SCHMIDT |DG GROW
+|Andreea ANGHEL |Romania
+|Beata BALOGOVA |Slovakia
+|Jenny BOBILLE |Sweden
+|Bladislav BUDNIKOV |Bulgaria
+|Hristina DIMITROVA |Bulgaria
+|Jana FAFEJTOVA |Chequia
+|Jostein FRØMYR |Norway
+|Pierre HOULLEMARE |France
+|Katia INFANTE |
+|Aurimas JANKAUSKAS |Lithuania
+|Aleksandra JESENOVEC |Slovenia
+|Rune KJORLAUG |Norway
+|Wenche LUDVIKSEN |Norway
+|Maja MARINCEK |Slovenia
+|Georgi MITOV |Bulgaria
+|Jil MOSAR |Luxembourg
+|Pietro PALERMO |Italy
+|Nuno PERALTA |Portugal
+|Andriana PRENTZA |Greece
+|Konstantinos RAPTIS |Greece
+|Alexandra RODRIGUES |Portugal
+|Joao SANTOS |Portugal
+|Giampaolo SELLITTO |Italy
+|Sonia SERAFIMOVICI |Romania
+|Maria SIAPERA |Greece
+|Lora VAN LOOVEREN |Belgium
+|Nikanoras ZAVADSKIJ |Lithuania
+|Alba COLOMER |NTT Data
+|Hector RICO |NTT Data
+|Juan Carlos DELGADO |NTT Data
+|Pascaline Laure TCHIENEHOM |NTT Data
+|===
+
+:sectnums:
+:sectnumlevels: 4
+
+== Meeting Agenda
+. Summary of last meeting on 28th September 2022
+. Final decision on the new management of the UUID
+. ESPD-EDM v3.1.0
+. Conceptual model
+. ESPD Test Cases Mapping Documentation
+. GitHub issues
+. Next meetings
+. AOB
+
+== Summary of last meeting on 28th September 2022
+
+* The link:https://docs.ted.europa.eu/espd-ouc/20220928_OUC%20meeting%20report.html[link] to the last meeting report is provided and the main topics discussed are summarised.
+
+== Final decision on the new management of the UUID
+
+* A brief description is provided of the two proposals presented in detail in the last OUC meeting: 
+** Proposal 1 (XML path-like); 
+** Proposal 2 (UUID variant).
+
+* The main pros and cons of the two proposals are discussed with the participation of several users of the Open User Community:
+** Proposal 1 (XML path-like) provides an easier access to attributes and facilitates the link with eCertis. Nevertheless, having semantics in the identifier is a bad practice since it is likely to break at some point of time;
+** Proposal 2 (UUID variant) keeps the purity of identifiers and is less complex, but it is machine-oriented and it is more difficult to link to the different Directives in eCertis and to information in national databases.
+
+
+* Since no consensus is reached, participants vote the option they prefer, with one vote per institution or working group, with the following result: 7 votes for proposal 1 (XML path-like) and 4 votes for proposal 2 (UUID variant).
+
+* It is agreed that proposal 1 will be implemented and included in the next major release (ESPD-EDM v4.0.0), scheduled for the end of the first quarter of 2023. 
+
+== ESPD-EDM v3.1.0
+
+* In the last OUC meeting it was agreed that a minor release would be scheduled by the end of 2022, ESPD-EDM v3.1.0.
+
+* ESPD-EDM v3.1.0 will be available by mid December.
+
+* The scope of the minor release is presented, with the list of GitHub issues that will be included in the release.
+
+== Conceptual model
+
+* An update of the conceptual model, for which the revision phase has been conducted during the last months, will also be included in the next minor release (ESPD-EDM v3.1.0).
+
+* Both the Business-Oriented View (BOV) and the Technical-Oriented View (TOV) have been reviewed in detail, and consistency with the changes for the new ESPD release (ESPD-EDM v3.1.0) has also been checked.
+
+* The conceptual model will be shared with the eProcurement Ontology Working Group to get their input and expert advice, and to ensure that data are properly represented and accurately linked in the model.
+
+== ESPD Test Cases Mapping Documentation
+
+* As requested in link:https://docs.ted.europa.eu/espd-ouc/20220928_OUC%20meeting%20report.html[GitHub issue #331], an annex will be provided in the Technical Handbook with a simplified version of the document “ESPD Test Cases Mapping”.
+
+* This annex will provide information regarding business rules and it is expected to be a helpful tool for technical implementation.
+
+== GitHub issues
+
+* The list of the GitHub issues closed since the last OUC meeting (7 issues) and the list of currently open issues (10 issues) are presented.
+
+* Due to lack of time, the detail of the closed issues and the provided solutions is not presented in the meeting, but the information is provided as an annex to the presentation and is also available in the GitHub.
+
+== Next meetings
+
+* *ESPD Annual Seminar*: 30 November 2022, 9.30 - 12.30. 
+
+* *Next OUC meeting*: 26 January 2023, 10.00 – 11.30. 
+
+== Any other business
+
+* Currently, the eCertis working group is identifying all issues and improvements that require an update of eCertis.
+
+* After the major release of the ESPD (ESPD-EDM v4.0.0) by the end of Q1 2023, it will be necessary to update eCertis accordingly.
+
+* The eCertis Annual Seminar will be scheduled in February.
