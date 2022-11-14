@@ -13,26 +13,11 @@ When we use a second letter from the same word, it is to avoid ambiguity with an
 
 Tags are also very useful for documentation purposes. They are like shortcuts to their initial very long name. 
 
-////
-The columns of the tables are to be interpreted as follows:
-
-* Column 1: an ordinal number to sort sequentially the criteria
-* Column 2: contains always the opening and closing tag for Criterion
-* Column 24: *Element Code*; in the case of Criterion it contains the code that categorises the criterion in the taxonomy of exclusion and selection criteria (it maps to the taxonomy drawn in the online documentation and in the spread-sheet files "ESPD-criterion" in folder /codelists). For the rest of elements there are three types of codes
-** ON*, meaning "process always" (e.g. show always or read and extract data always")
-** ONTRUE, meaning "process this group only if the previous parent question (always an INDICATOR) has been answered affirmatively"
-** ONFALSE, meaning "process this group only if the previous parent question (always an INDICATOR) has been answered negatively"
-
-image:Contributions_criterion_data_structure.jpg[Contributions' criterion data structure,width=566,height=308]
-
-_Figure 41. 'Contributions' criterion data structure_
-//// 
-
 The following table is describing the correspondence between "criterion element", "UBL element" and "Short Tag Name". 
 
 [cols=",,",options="header",]
 
-_Table a. Correspondence between "criterion element", "UBL element" and "Short Tag Name"_
+_Table 25. Correspondence between "criterion element", "UBL element" and "Short Tag Name"_
 |===
 |*ESDP-EDM Criterion Spread-sheet vocabulary* |*UBL-2.3 vocabulary* |*Short Tag Name*  
 |CRITERION |cac:TenderingCriterion | C 
@@ -70,8 +55,8 @@ The following images are illustrating the use of both "short tag name" and "numb
 
 image:Short_Tag_Name_and_Numbering_for_Criterion_C1_EG_crime-org.jpg[Short Tag Name and Numbering for Criterion C1 EG crime-org,width=566,height=308]
 
-_Figure a. Short Tag Name and Numbering for Criterion C1 EG crime-org_
+_Figure 49. Short Tag Name and Numbering for Criterion C1 EG crime-org_
 
 image:Short_Tag_Name_and_Numbering_for_Criterion_C32_SC_spec-year-to.jpg[Short Tag Name and Numbering for Criterion C32 SC spec-year-to,width=566,height=308]
 
-_Figure b. Short Tag Name and Numbering for Criterion C32 SC spec-year-to_
+_Figure 50. Short Tag Name and Numbering for Criterion C32 SC spec-year-to_
