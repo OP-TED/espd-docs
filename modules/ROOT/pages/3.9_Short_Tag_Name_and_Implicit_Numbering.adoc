@@ -60,3 +60,4 @@ _Figure 49. Short Tag Name and Numbering for Criterion C1 EG crime-org_
 image:Short_Tag_Name_and_Numbering_for_Criterion_C32_SC_spec-year-to.jpg[Short Tag Name and Numbering for Criterion C32 SC spec-year-to,width=566,height=308]
 
 _Figure 50. Short Tag Name and Numbering for Criterion C32 SC spec-year-to_
+
