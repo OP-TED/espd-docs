@@ -39,20 +39,6 @@ Document provided by a buyer defining the exclusion and selection criteria for a
 
 *Rule scope*: Common (BR-OTH-05, 2.BR-OTH-02)
 
-|*cbc:CustomizationID* |Identifier |1 |Identifies a user-defined customization of UBL for a specific use. link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1-tbr070-001[_tbr070-001_]. a|
-*Information Requirement*:
-
-*Rule*: For the ESPD we use the value "urn:www.cenbii.eu:transaction:biitrdm070:ver3.0". Compulsory use of the value "CEN-BII" for the schemeAgencyID attribute.
-
-*Rule scope*: Common (BR-OTH-02, BR-OTH-06)
-
-|*cbc:ProfileID* |Identifier |0..1 |An identification of the specification containing the total set of rules regarding semantic content, cardinalities and business rules to which the data contained in the instance document conforms. The identification may include the version of the specification as well as any customizations applied. a|
-*Information Requirement*: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1.0-tbr070-002[_tbr070-002_].
-
-*Rule*: Use the value "41". Use also "CEN-BII" for the scheme AgencyID attribute.
-
-*Rule scope*: Common (BR-OTH-07, BR-OTH-02)
-
 |*cbc:ProfileExecutionID* |Identifier |1 |The identification and version of the ESPD Exchange Data Model used to create the XML instance. The identification may include the exact version of the specification. a|
 *Information Requirement*: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1.0-tbr070-002[_tbr070-002_].
 
