@@ -50,7 +50,7 @@ _Table 24. Mapping between the ESPD-EDM criterion data structure spread-sheets a
 The ESPD-EDM data structures vocabulary is defined in the Code List "link:{url-tree-301}/codelists/gc/CriterionElementType.gc[CriterionElementType]". Her you have the definitions provided therein:
 
 * *CRITERION*: A criterion (in the case of the the ESPD an Exclusion or Selection criterion); maps to a UBL-2.3 cac:TenderingCriterion class
-* *SUBCRITERION*: Used to define national sub-criteria; maps to a UBL-2.3 cac:SubTenderingCriterion class
+* *SUBCRITERION*: Used to define national sub-criteria; maps to a UBL-2.3 cac:SubTenderingCriterion class. It is currently used only for purely national criteria, to be able to establish the mapping from eCertis
 * *REQUIREMENT_GROUP*: Group of requirements or remarks issued by a MS or a CA; maps to a UBL-2.3 cac:TenderingCriterionPropertyGroup
 * *REQUIREMENT_SUBGROUP*: A subgroup of requirements or remarks inside a group or subgroup of requirements; maps to a UBL-2.3 cac:SubsidiaryTenderingCriterionPropertyGroup
 * *REQUIREMENT*: Requirement, remark, rule, restriction or additional information to which the EO needs to conform or comply with; maps to a cac:TenderingCriterionProperty class (one data type must be specified for the value supplied by the buyer; see see codes in the Code List "link:{url-tree-301}/codelists/gc/ResponseDataType.gc[ResponseDataType]")

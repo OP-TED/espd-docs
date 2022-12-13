@@ -12,7 +12,7 @@ _Figure 5. Distribution package_
 . *__ESPDTeam__*: contains files for ESPD Team internal use in maintenance tasks of the ESPD-EDM;
 . *codelists*: contains the different code lists used in ESPD in Genericode format and the criterion structure definition.
 . *conceptual-model*: contains the UML conceptual model of the ESPD in .eap, .xmi and HTML format.
-. *java-library*: contains the XML schemas used to generate the JAXB annotated Java classes.
+. *java-library*: contains the XML schemas used to generate the JAXB annotated Java classes. *__This artefac is not mantained for this release__*
 . *ubl-2.3*: contains a redistribution package from UBL 2.3.
 . *validation*: contains business rules validation files for Schematron and Testbed.
 . *xml-examples*: contains default ESPDRequest and ESPDResponse xml samples and the criterion xml schema.

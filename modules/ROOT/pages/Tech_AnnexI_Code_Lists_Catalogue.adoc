@@ -11,7 +11,7 @@ An example of how to use this code list can be found in xref:Tech_AnnexII_XML_Ex
 
 [cols="1,2a"]
 |===
-|*Name* |*_access-right_*
+|*Name* |*_AccessRight_*
 |*Code list type* |Business-agnostic
 |*Maintainer* |EU Vocabularies
 |*Description* |Contains controlled vocabulary listing the access rights or restrictions to resources. It is designed for but not limited to DCAT descriptions of datasets.
@@ -21,10 +21,10 @@ An example of how to use this code list can be found in xref:Tech_AnnexII_XML_Ex
 !*ShortName* !AccessRight
 !*LongName* !access-right
 !*ListID* !http://publications.europa.eu/resource/authority/access-right
-!*Version* !20211208-0
+!*Version* !20220316-0
 !*CanonicalUri* !http://publications.europa.eu/resource/dataset/access-right
-!*CanonicalVersionUri* !http://publications.europa.eu/resource/dataset/access-right/20211208-0
-!*LocationUri* !http://publications.europa.eu/resource/distribution/access-right/20211208-0/xml/gc/AccessRight.gc
+!*CanonicalVersionUri* !http://publications.europa.eu/resource/dataset/access-right/20220316-0
+!*LocationUri* !https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/access-right
 !*AgencyLongName* !Publications Office of the European Union
 !*AgencyIdentifier* !OP
 
@@ -38,7 +38,7 @@ An example of how to use this code list can be found in xref:Tech_AnnexII_XML_Ex
 
 [cols="1,2a"]
 |===
-|*Name* |*_boolean-gui-control-type_*
+|*Name* |*_BooleanGUIControlType_*
 |*Code list type* |Technical
 |*Maintainer* |ESPD Team
 |*Description* |This code list is only used in criterion 'Other economic or financial requirements' (*_finan-requ_*).
@@ -63,7 +63,7 @@ An example of how to use this code list can be found in xref:Tech_AnnexII_XML_Ex
 
 [cols="1,2a"]
 |===
-|*Name* |*_country_*
+|*Name* |*_Country_*
 |*Code list type* |Business-agnostic
 |*Maintainer* |EU Vocabularies
 |*Description* |Contains controlled vocabulary that lists concepts associated with names of countries and territories with a three letter coding.
@@ -73,10 +73,10 @@ An example of how to use this code list can be found in xref:Tech_AnnexII_XML_Ex
 !*ShortName* !Country
 !*LongName* !country
 !*ListID* !http://publications.europa.eu/resource/authority/country
-!*Version* !20211208-0
+!*Version* !20220928-0
 !*CanonicalUri* !http://publications.europa.eu/resource/dataset/country
-!*CanonicalVersionUri* !http://publications.europa.eu/resource/dataset/country/20211208-0
-!*LocationUri* !http://publications.europa.eu/resource/distribution/country/20211208-0/xml/gc/Country.gc
+!*CanonicalVersionUri* !http://publications.europa.eu/resource/dataset/country/20220928-0
+!*LocationUri* !http://publications.europa.eu/resource/distribution/country/20220928-0/xml/gc/Country.gc
 !*AgencyLongName* !Publications Office of the European Union
 !*AgencyIdentifier* !OP
 
@@ -90,7 +90,7 @@ An example of how to use this code list can be found in xref:Tech_AnnexII_XML_Ex
 
 [cols="1,2a"]
 |===
-|*Name* |*_criterion_*
+|*Name* |*_Criterion_*
 |*Code list type* |Procurement specific
 |*Maintainer* |EU Vocabularies
 |*Description* |Contains coded exclusion and selection  criteria used for public procurement procedures.
@@ -117,7 +117,7 @@ An example of how to use this code list can be found in xref:Tech_AnnexII_XML_Ex
 
 [cols="1,2a"]
 |===
-|*Name* |*_criterion-element-type_*
+|*Name* |*_CriterionElementType_*
 |*Code list type* |Technical
 |*Maintainer* |ESPD Team
 |*Description* |Contains coding for each type of structural element to render the ESPDRequest and ESPDResponse.
@@ -140,7 +140,7 @@ An example of how to use this code list can be found in xref:Tech_AnnexII_XML_Ex
 
 [cols="1,2a"]
 |===
-|*Name* |*_currency_*
+|*Name* |*_Currency_*
 |*Code list type* |Business-agnostic
 |*Maintainer* |EU Vocabularies
 |*Description* |Contains controlled vocabulary that lists concepts associated with currencies and currency subunits. The concepts included are correlated with the ISO 4217 international standard.
@@ -150,10 +150,10 @@ An example of how to use this code list can be found in xref:Tech_AnnexII_XML_Ex
 !*ShortName* !Currency
 !*LongName* !currency
 !*ListID* !http://publications.europa.eu/resource/authority/currency
-!*Version* !20211208-0
+!*Version* !20220928-0
 !*CanonicalUri* !http://publications.europa.eu/resource/dataset/currency
-!*CanonicalVersionUri* !http://publications.europa.eu/resource/dataset/currency/20211208-0
-!*LocationUri* !http://publications.europa.eu/resource/distribution/currency/20211208-0/xml/gc/Currency.gc
+!*CanonicalVersionUri* !http://publications.europa.eu/resource/dataset/currency/20220928-0
+!*LocationUri* !http://publications.europa.eu/resource/distribution/currency/20220928-0/xml/gc/Currency.gc
 !*AgencyLongName* !Publications Office of the European Union
 !*AgencyIdentifier* !OP
 
@@ -167,9 +167,9 @@ An example of how to use this code list can be found in xref:Tech_AnnexII_XML_Ex
 
 [cols="1,2a"]
 |===
-|*Name* |*_docrefcontent-type_*
+|*Name* |*_DocRefContentType_*
 |*Code list type* |Technical
-|*Maintainer* |ESPD Team
+|*Maintainer* |EU Vocabularies
 |*Description* |Contains coded possible document types referenced from the actual document.
 This code list is maintained as technical for the time being. In the future it may be removed or published on EU Vocabularies.
 |*Metadata* |
@@ -177,10 +177,11 @@ This code list is maintained as technical for the time being. In the future it m
 !===
 !*ShortName* !DocRefContentType
 !*ListID* !docrefcontent-type 
-!*Version* !3.1.0
-!*CanonicalUri* !https://github.com/ESPD/ESPD-EDM
-!*CanonicalVersionUri* !https://github.com/ESPD/ESPD-EDM/tree/v3.1.0
-!*LocationUri* !https://github.com/ESPD/ESPD-EDM/tree/v3.1.0/codelists/gc/DocRefContentType.gc
+!*Version* !20220928-0
+!*ListID* !http://publications.europa.eu/resource/authority/docrefcontent-type
+!*CanonicalUri* !http://publications.europa.eu/resource/dataset/docrefcontent-type
+!*CanonicalVersionUri* !http://publications.europa.eu/resource/dataset/docrefcontent-type/20220928-0
+!*LocationUri* !http://publications.europa.eu/resource/distribution/docrefcontent-type/20220928-0/xml/gc/DocrefcontentType.gc
 
 !===
 
@@ -192,7 +193,7 @@ An example of how to use this code list can be found in xref:Tech_AnnexII_XML_Ex
 
 [cols="1,2a"]
 |===
-|*Name* |*_economic-operator-size_*
+|*Name* |*_EconomicOperatorSize_*
 |*Code list type* |Business-agnostic
 |*Maintainer* |EU Vocabularies
 |*Description* |Contains different categories in which the operators are classified, according to their size (using as criteria the number of employees).
@@ -202,10 +203,10 @@ An example of how to use this code list can be found in xref:Tech_AnnexII_XML_Ex
 !*ShortName* !EconomicOperatorSize
 !*LongName* !economic-operator-size
 !*ListID* !http://publications.europa.eu/resource/authority/economic-operator-size
-!*Version* !20210317-0
+!*Version* !20220316-0
 !*CanonicalUri* !http://publications.europa.eu/resource/dataset/economic-operator-size
-!*CanonicalVersionUri* !http://publications.europa.eu/resource/dataset/economic-operator-size/20210317-0
-!*LocationUri* !http://publications.europa.eu/resource/distribution/economic-operator-size/20210317-0/xml/gc/EconomicOperatorSize.gc
+!*CanonicalVersionUri* !http://publications.europa.eu/resource/dataset/economic-operator-size/20220316-0
+!*LocationUri* !http://publications.europa.eu/resource/distribution/economic-operator-size/20220316-0/xml/gc/EconomicOperatorSize.gc
 !*AgencyLongName* !Publications Office of the European Union
 !*AgencyIdentifier* !OP
 
@@ -243,7 +244,7 @@ An example of how to use this code list can be found in xref:Tech_AnnexII_XML_Ex
 
 [cols="1,2a"]
 |===
-|*Name* |*_eo-role-type_*
+|*Name* |*_EoRoleType_*
 |*Code list type* |Procurement specific
 |*Maintainer* |EU Vocabularies
 |*Description* |Contains codes identifying the role of the economic operator in each procurement procedure.
@@ -297,7 +298,7 @@ An example of how to use this code list can be found in xref:Tech_AnnexII_XML_Ex
 
 [cols="1,2a"]
 |===
-|*Name* |*_language_*
+|*Name* |*_Language_*
 |*Code list type* |Business-agnostic
 |*Maintainer* |EU Vocabularies
 |*Description* |Contains controlled vocabulary that lists concepts associated with languages.
@@ -308,10 +309,10 @@ The concepts included are correlated with the ISO 639 international standard.
 !*ShortName* !Language
 !*LongName* !language
 !*ListID* !http://publications.europa.eu/resource/authority/language
-!*Version* !20211208-0
+!*Version* !20220928-0
 !*CanonicalUri* !http://publications.europa.eu/resource/dataset/language
-!*CanonicalVersionUri* !http://publications.europa.eu/resource/dataset/language/20211208-0
-!*LocationUri* !http://publications.europa.eu/resource/distribution/language/20211208-0/xml/gc/Language.gc
+!*CanonicalVersionUri* !http://publications.europa.eu/resource/dataset/language/20220928-0
+!*LocationUri* !http://publications.europa.eu/resource/distribution/language/20220928-0/xml/gc/Language.gc
 !*AgencyLongName* !Publications Office of the European Union
 !*AgencyIdentifier* !OP
 
@@ -325,7 +326,7 @@ An example of how to use this code list can be found in xref:Tech_AnnexII_XML_Ex
 
 [cols="1,2a"]
 |===
-|*Name* |*_occupation_*
+|*Name* |*_Occupation_*
 |*Code list type* |Technical
 |*Maintainer* |ESPD Team
 |*Description* |Contains codes for professional enrolment areas in which the Economic Operator must be registered in.
@@ -334,13 +335,15 @@ The data type expected for this code is URL following the *ESCO* taxonomy identi
 |*Metadata* |
 [cols=","]
 !===
-!*ShortName* !occupation
+!*ShortName* !Occupation
+!*LongName* !occupation
 !*ListID* !occupation
-!*Version* !3.1.0
-!*CanonicalUri* !https://github.com/ESPD/ESPD-EDM
-!*CanonicalVersionUri* !https://github.com/ESPD/ESPD-EDM/tree/v3.1.0
-!*LocationUri* !https://github.com/ESPD/ESPD-EDM/tree/v3.1.0/codelists/gc/occupation.gc
-!===
+!*Version* !20220615-0
+!*CanonicalUri* !http://publications.europa.eu/resource/dataset/occupation
+!*CanonicalVersionUri* !http://publications.europa.eu/resource/dataset/occupation/20220615-0
+!*LocationUri* !http://publications.europa.eu/resource/distribution/occupation/20220615-0/xml/gc/Occupation.gc
+!*AgencyLongName* !Directorate-General for Employment, Social Affairs and Inclusion
+!*AgencyIdentifier* !EMPL
 
 |===
 
@@ -348,7 +351,7 @@ The data type expected for this code is URL following the *ESCO* taxonomy identi
 == profile-execution-id 
 [cols="1,2a"]
 |===
-|*Name* |*_profile-execution-id_*
+|*Name* |*_ProfileExecutionID_*
 |*Code list type* |Technical
 |*Maintainer* |ESPD Team
 |*Description* |Contains coded identification and version the ESPD-EDM used to create the to <<xml>> instance. The identification may include the exact version of the specification.
@@ -368,7 +371,7 @@ The data type expected for this code is URL following the *ESCO* taxonomy identi
 == property-group-type 
 [cols="1,2a"]
 |===
-|*Name* |*_property-group-type_*
+|*Name* |*_PropertyGroupType_*
 |*Code list type* |Technical
 |*Maintainer* |ESPD Team
 |*Description* |Contains coded types to be used by software implementations to control which elements to be rendered in the displayed user interface. 
@@ -388,7 +391,7 @@ The data type expected for this code is URL following the *ESCO* taxonomy identi
 == response-data-type 
 [cols="1,2a"]
 |===
-|*Name* |*_response-data-type_*
+|*Name* |*_ResponseDataType_*
 |*Code list type* |Technical
 |*Maintainer* |ESPD Team
 |*Description* |Contains identifiers used to descrive data type expected in criteria elements.

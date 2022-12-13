@@ -861,7 +861,7 @@ _Allowance of checks criterion /Special requierements check_
 
 (The figure below is defined in the the tab ''SC_Abilities_5 (Staff)'' of the link:{url-tree-301}/codelists/ESPD-criterion.xlsx[ESPD-criterion] spread-sheet).
 
-image:Abilities_IV_Checks_criterion data_structure.jpg['Abilities (V) (Staff)' criterion data structure,width=566,height=362]
+image:Abilities_V_Checks_criterion data_structure.jpg['Abilities (V) (Staff)' criterion data structure,width=566,height=362]
 
 _Figure 175. 'Abilities (V) (Staff)' criterion data structure_
 
