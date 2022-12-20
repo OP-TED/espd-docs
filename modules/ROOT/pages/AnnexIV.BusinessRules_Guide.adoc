@@ -1,439 +1,14 @@
-[width="100%",cols="51%,49%",options="header",]
-|===
-|image:media/image1.jpeg[image,width=153,height=106] a|
-*European Commission*
 
-*DIRECTORATE GENERAL*
+:sectnums:
+[[business-rules-guide,Annex IV. Business Rules Guide]]
 
-*GROWTH*
+= Annex IV. Business Rules Guide.
 
-|===
+== Purpose of the Annex
 
-ESPD Test Cases Mapping
+The objective of this Annex is to guide on how Business Rules are applied and which ones are applied in each case. And with this in mind, it can be used to: 
 
-* +
-*
-
-Table of Contents
-
-==
-
-link:#structure-of-the-document[1 Structure of the Document link:#structure-of-the-document[10]]
-
-link:#introduction[1.1 Introduction link:#introduction[10]]
-
-link:#input-documents[1.2 Input Documents link:#input-documents[10]]
-
-link:#process[1.3 Process link:#process[10]]
-
-link:#tables[1.4 Tables link:#tables[10]]
-
-link:#espdrequest[2 ESPDRequest link:#espdrequest[12]]
-
-link:#list-of-test-cases[2.1 List of Test Cases link:#list-of-test-cases[12]]
-
-link:#test-cases[2.2 Test Cases link:#test-cases[12]]
-
-link:#rq-10[2.2.1 RQ-10 link:#rq-10[12]]
-
-link:#rq-20[2.2.2 RQ-20 link:#rq-20[13]]
-
-link:#rq-30[2.2.3 RQ-30 link:#rq-30[14]]
-
-link:#rq-40[2.2.4 RQ-40 link:#rq-40[14]]
-
-link:#rq-50[2.2.5 RQ-50 link:#rq-50[16]]
-
-link:#rq-60[2.2.6 RQ-60 link:#rq-60[17]]
-
-link:#list-of-business-rules[2.3 List of Business Rules link:#list-of-business-rules[18]]
-
-link:#espdresponse[3 ESPDResponse link:#espdresponse[19]]
-
-link:#list-of-test-cases-1[3.1 List of Test Cases link:#list-of-test-cases-1[19]]
-
-link:#test-cases-1[3.2 Test Cases link:#test-cases-1[19]]
-
-link:#rs-10[3.2.1 RS-10 link:#rs-10[19]]
-
-link:#rs-20[3.2.2 RS-20 link:#rs-20[20]]
-
-link:#rs-30[3.2.3 RS-30 link:#rs-30[21]]
-
-link:#rs-40[3.2.4 RS-40 link:#rs-40[22]]
-
-link:#rs-50[3.2.5 RS-50 link:#rs-50[23]]
-
-link:#rs-60[3.2.6 RS-60 link:#rs-60[23]]
-
-link:#rs-70[3.2.7 RS-70 link:#rs-70[25]]
-
-link:#rs-80[3.2.8 RS-80 link:#rs-80[26]]
-
-link:#rs-90[3.2.9 RS-90 link:#rs-90[27]]
-
-link:#rs-100[3.2.10 RS-100 link:#rs-100[28]]
-
-link:#rs-110[3.2.11 RS-110 link:#rs-110[30]]
-
-link:#rs-120[3.2.12 RS-120 link:#rs-120[31]]
-
-link:#rs-130[3.2.13 RS-130 link:#rs-130[33]]
-
-link:#rs-140[3.2.14 RS-140 link:#rs-140[33]]
-
-link:#rs-150[3.2.15 RS-150 link:#rs-150[34]]
-
-link:#rs-160[3.2.16 RS-160 link:#rs-160[35]]
-
-link:#rs-170[3.2.17 RS-170 link:#rs-170[36]]
-
-link:#rs-180[3.2.18 RS-180 link:#rs-180[37]]
-
-link:#rs-190[3.2.19 RS-190 link:#rs-190[38]]
-
-link:#rs-200[3.2.20 RS-200 link:#rs-200[39]]
-
-link:#rs-210[3.2.21 RS-210 link:#rs-210[40]]
-
-link:#rs-220[3.2.22 RS-220 link:#rs-220[41]]
-
-link:#rs-230[3.2.23 RS-230 link:#rs-230[42]]
-
-link:#rs-240[3.2.24 RS-240 link:#rs-240[42]]
-
-link:#rs-250[3.2.25 RS-250 link:#rs-250[44]]
-
-link:#rs-260[3.2.26 RS-260 link:#rs-260[44]]
-
-link:#rs-270[3.2.27 RS-270 link:#rs-270[45]]
-
-link:#rs-280[3.2.28 RS-280 link:#rs-280[46]]
-
-link:#rs-290[3.2.29 RS-290 link:#rs-290[47]]
-
-link:#rs-300[3.2.30 RS-300 link:#rs-300[47]]
-
-link:#list-of-business-rules-1[3.3 List of Business Rules link:#list-of-business-rules-1[48]]
-
-link:#common-business-rules[4 Common Business Rules link:#common-business-rules[50]]
-
-link:#br-com-10[4.1 BR-COM-10 link:#br-com-10[50]]
-
-link:#br-com-10-s10[4.1.1 BR-COM-10-S10 link:#br-com-10-s10[50]]
-
-link:#br-com-10-s20[4.1.2 BR-COM-10-S20 link:#br-com-10-s20[51]]
-
-link:#br-com-10-s30[4.1.3 BR-COM-10-S30 link:#br-com-10-s30[51]]
-
-link:#common-espdrequest-rules[5 Common ESPDRequest Rules link:#common-espdrequest-rules[52]]
-
-link:#br-req-20[5.1 BR-REQ-20 link:#br-req-20[52]]
-
-link:#br-req-30[5.2 BR-REQ-30 link:#br-req-30[53]]
-
-link:#br-req-30-s10[5.2.1 BR-REQ-30-S10 link:#br-req-30-s10[53]]
-
-link:#br-req-30-s20[5.2.2 BR-REQ-30-S20 link:#br-req-30-s20[53]]
-
-link:#br-req-40[5.3 BR-REQ-40 link:#br-req-40[54]]
-
-link:#_Toc121990870[6 Common Rules link:#_Toc121990870[55]]
-
-link:#br-sc-10[6.1 BR-SC-10 link:#br-sc-10[55]]
-
-link:#br-sc-20[6.2 BR-SC-20 link:#br-sc-20[55]]
-
-link:#br-sc-30[6.3 BR-SC-30 link:#br-sc-30[55]]
-
-link:#two-phased-procedures-rules[7 Two-phased Procedures Rules link:#two-phased-procedures-rules[57]]
-
-link:#br-2p-10[7.1 BR-2P-10 link:#br-2p-10[57]]
-
-link:#br-2p-10-s10[7.1.1 BR-2P-10-S10 link:#br-2p-10-s10[57]]
-
-link:#br-2p-10-s20[7.1.2 BR-2P-10-S20 link:#br-2p-10-s20[58]]
-
-link:#common-espdresponse-rules[8 Common ESPDResponse Rules link:#common-espdresponse-rules[59]]
-
-link:#br-resp-10[8.1 BR-RESP-10 link:#br-resp-10[59]]
-
-link:#br-resp-20[8.2 BR-RESP-20 link:#br-resp-20[60]]
-
-link:#not-registered-pre-qualification-system-rules[9 Not registered pre-qualification system Rules link:#not-registered-pre-qualification-system-rules[62]]
-
-link:#br-resp-30[9.1 BR-RESP-30 link:#br-resp-30[62]]
-
-link:#br-resp-40-role-different-to-oenron[9.2 BR-RESP-40 (role different to OENRON) link:#br-resp-40-role-different-to-oenron[62]]
-
-link:#registered-pre-qualification-system-rules[10 Registered pre-qualification system Rules link:#registered-pre-qualification-system-rules[64]]
-
-link:#br-resp-50[10.1 BR-RESP-50 link:#br-resp-50[64]]
-
-link:#br-resp-60[10.2 BR-RESP-60 link:#br-resp-60[64]]
-
-link:#br-resp-60-s10[10.2.1 BR-RESP-60-S10 link:#br-resp-60-s10[65]]
-
-link:#br-resp-60-s20[10.2.2 BR-RESP-60-S20 link:#br-resp-60-s20[65]]
-
-link:#br-resp-70[10.3 BR-RESP-70 link:#br-resp-70[65]]
-
-link:#br-resp-70-s10[10.3.1 BR-RESP-70-S10 link:#br-resp-70-s10[66]]
-
-link:#br-resp-70-s20[10.3.2 BR-RESP-70-S20 link:#br-resp-70-s20[66]]
-
-link:#br-resp-80[10.4 BR-RESP-80 link:#br-resp-80[66]]
-
-link:#br-resp-80-s10[10.4.1 BR-RESP-80-S10 link:#br-resp-80-s10[67]]
-
-link:#br-resp-80-s20[10.4.2 BR-RESP-80-S20 link:#br-resp-80-s20[68]]
-
-link:#lots-rules[11 Lots Rules link:#lots-rules[70]]
-
-link:#br-lot-10[11.1 BR-LOT-10 link:#br-lot-10[70]]
-
-link:#br-lot-20[11.2 BR-LOT-20 link:#br-lot-20[70]]
-
-link:#br-lot-30[11.3 BR-LOT-30 link:#br-lot-30[71]]
-
-link:#br-lot-30-s10[11.3.1 BR-LOT-30-S10 link:#br-lot-30-s10[71]]
-
-link:#br-lot-30-s20[11.3.2 BR-LOT-30-S20 link:#br-lot-30-s20[71]]
-
-link:#br-lot-40[11.4 BR-LOT-40 link:#br-lot-40[72]]
-
-link:#specific-lead-role-rules[12 Specific Lead Role Rules link:#specific-lead-role-rules[72]]
-
-link:#br-lead-10[12.1 BR-LEAD-10 link:#br-lead-10[72]]
-
-link:#br-lead-10-s10[12.1.1 BR-LEAD-10-S10 link:#br-lead-10-s10[73]]
-
-link:#br-lead-10-s20[12.1.2 BR-LEAD-10-S20 link:#br-lead-10-s20[73]]
-
-link:#br-lead-10-s30[12.1.3 BR-LEAD-10-S30 link:#br-lead-10-s30[74]]
-
-link:#tendering-criterion-general-rules[13 Tendering Criterion General Rules link:#tendering-criterion-general-rules[75]]
-
-link:#level-1-tendering-criterion[13.1 Level 1: Tendering Criterion link:#level-1-tendering-criterion[76]]
-
-link:#level-2-legislation[13.2 Level 2: Legislation link:#level-2-legislation[77]]
-
-link:#tendering-criterion-property-group[13.3 Tendering Criterion Property Group link:#tendering-criterion-property-group[78]]
-
-link:#tendering-criterion-property[13.4 Tendering Criterion Property link:#tendering-criterion-property[79]]
-
-link:#tendering-criterion-self-contained-rules[14 Tendering Criterion Self-contained Rules link:#tendering-criterion-self-contained-rules[82]]
-
-link:#tendering-criterion-response-rules[15 Tendering Criterion Response Rules link:#tendering-criterion-response-rules[83]]
-
-link:#level-1-tendering-criterion-response[15.1 Level 1: Tendering Criterion Response link:#level-1-tendering-criterion-response[83]]
-
-link:#level-2-response-value[15.2 Level 2: Response Value link:#level-2-response-value[83]]
-
-link:#level-2-evidence-supplied[15.3 Level 2: Evidence Supplied link:#level-2-evidence-supplied[86]]
-
-link:#other-common-rules[16 Other Common Rules link:#other-common-rules[87]]
-
-Table of Figures
-
-link:#_Toc120898494[Table 1: List of Input documents link:#_Toc120898494[10]]
-
-link:#_Toc120898495[Table 2: Test Case ID example link:#_Toc120898495[11]]
-
-link:#_Toc120898496[Table 3: Mapping rule ID example link:#_Toc120898496[11]]
-
-link:#_Toc120898497[Table 4: ESPDRequest - List of test cases link:#_Toc120898497[12]]
-
-link:#_Toc120898498[Table 5: Test Case RQ-10 link:#_Toc120898498[13]]
-
-link:#_Toc120898499[Table 6: Test Case RQ-20 link:#_Toc120898499[14]]
-
-link:#_Toc120898500[Table 7: Test Case RQ-30 link:#_Toc120898500[14]]
-
-link:#_Toc120898501[Table 8: Test Case RQ-40 link:#_Toc120898501[16]]
-
-link:#_Toc120898502[Table 9: Test Case RQ-50 link:#_Toc120898502[17]]
-
-link:#_Toc120898503[Table 10: Test Case RQ-60 link:#_Toc120898503[18]]
-
-link:#_Toc120898504[Table 11: ESPDRequest - Test Cases and Business Rules link:#_Toc120898504[18]]
-
-link:#_Toc120898505[Table 12: ESPDResponse - List of test cases link:#_Toc120898505[19]]
-
-link:#_Toc120898506[Table 13: Test Case RS-10 link:#_Toc120898506[20]]
-
-link:#_Toc120898507[Table 14: Test Case RS-20 link:#_Toc120898507[21]]
-
-link:#_Toc120898508[Table 15: Test Case RS-30 link:#_Toc120898508[22]]
-
-link:#_Toc120898509[Table 16: Test Case RS-40 link:#_Toc120898509[23]]
-
-link:#_Toc120898510[Table 17: Test Case RS-50 link:#_Toc120898510[23]]
-
-link:#_Toc120898511[Table 18: Test Case RS-60 link:#_Toc120898511[25]]
-
-link:#_Toc120898512[Table 19: Test Case RS-70 link:#_Toc120898512[26]]
-
-link:#_Toc120898513[Table 20: Test Case RS-80 link:#_Toc120898513[27]]
-
-link:#_Toc120898514[Table 21: Test Case RS-90 link:#_Toc120898514[28]]
-
-link:#_Toc120898515[Table 22: Test Case RS-100 link:#_Toc120898515[30]]
-
-link:#_Toc120898516[Table 23: Test Case RS-110 link:#_Toc120898516[31]]
-
-link:#_Toc120898517[Table 24: Test Case RS-120 link:#_Toc120898517[33]]
-
-link:#_Toc120898518[Table 25: Test Case RS-130 link:#_Toc120898518[33]]
-
-link:#_Toc120898519[Table 26: Test Case RS-140 link:#_Toc120898519[34]]
-
-link:#_Toc120898520[Table 27: Test Case RS-150 link:#_Toc120898520[35]]
-
-link:#_Toc120898521[Table 28: Test Case RS-160 link:#_Toc120898521[36]]
-
-link:#_Toc120898522[Table 29: Test Case RS-170 link:#_Toc120898522[37]]
-
-link:#_Toc120898523[Table 30: Test Case RS-180 link:#_Toc120898523[38]]
-
-link:#_Toc120898524[Table 31: Test Case RS-190 link:#_Toc120898524[39]]
-
-link:#_Toc120898525[Table 32: Test Case RS-200 link:#_Toc120898525[40]]
-
-link:#_Toc120898526[Table 33: Test Case RS-210 link:#_Toc120898526[41]]
-
-link:#_Toc120898527[Table 34: Test Case RS-220 link:#_Toc120898527[42]]
-
-link:#_Toc120898528[Table 35: Test Case RS-230 link:#_Toc120898528[42]]
-
-link:#_Toc120898529[Table 36: Test Case RS-240 link:#_Toc120898529[44]]
-
-link:#_Toc120898530[Table 37: Test Case RS-250 link:#_Toc120898530[44]]
-
-link:#_Toc120898531[Table 38: Test Case RS-260 link:#_Toc120898531[45]]
-
-link:#_Toc120898532[Table 39: Test Case RS-270 link:#_Toc120898532[46]]
-
-link:#_Toc120898533[Table 40: Test Case RS-280 link:#_Toc120898533[47]]
-
-link:#_Toc120898534[Table 41: Test Case RS-290 link:#_Toc120898534[47]]
-
-link:#_Toc120898535[Table 42: Test Case RS-300 link:#_Toc120898535[48]]
-
-link:#_Toc120898536[Table 43: ESPDResponse - Test Cases and Business Rules link:#_Toc120898536[49]]
-
-link:#_Toc120898537[Table 44: BR-COM-10 link:#_Toc120898537[50]]
-
-link:#_Toc120898538[Table 45: BR-COM-10-S10 link:#_Toc120898538[51]]
-
-link:#_Toc120898539[Table 46: BR-COM-10-S20 link:#_Toc120898539[51]]
-
-link:#_Toc120898540[Table 47: BR-COM-10-S30 link:#_Toc120898540[51]]
-
-link:#_Toc120898541[Table 48: BR-REQ-20 link:#_Toc120898541[53]]
-
-link:#_Toc120898542[Table 49: BR-REQ-30 link:#_Toc120898542[53]]
-
-link:#_Toc120898543[Table 50: BR-REQ-30-S10 link:#_Toc120898543[53]]
-
-link:#_Toc120898544[Table 51: BR-REQ-30-S20 link:#_Toc120898544[54]]
-
-link:#_Toc120898545[Table 52: BR-REQ-40 link:#_Toc120898545[54]]
-
-link:#_Toc120898546[Table 55: BR-SC-10 link:#_Toc120898546[55]]
-
-link:#_Toc120898547[Table 56: BR-SC-20 link:#_Toc120898547[55]]
-
-link:#_Toc120898548[Table 57: BR-SC-30 link:#_Toc120898548[56]]
-
-link:#_Toc120898549[Table 58: BR-2P-10 link:#_Toc120898549[57]]
-
-link:#_Toc120898550[Table 59: BR-2P-10-S10 link:#_Toc120898550[58]]
-
-link:#_Toc120898551[Table 60: BR-2P-10-S10 link:#_Toc120898551[58]]
-
-link:#_Toc120898552[Table 61: BR-RESP-10 link:#_Toc120898552[60]]
-
-link:#_Toc120898553[Table 62: BR-RESP-20 link:#_Toc120898553[61]]
-
-link:#_Toc120898554[Table 63: BR-RESP-30 link:#_Toc120898554[62]]
-
-link:#_Toc120898555[Table 64: BR-RESP-40 link:#_Toc120898555[63]]
-
-link:#_Toc120898556[Table 65: BR-RESP-50 link:#_Toc120898556[64]]
-
-link:#_Toc120898557[Table 66: BR-RESP-60 link:#_Toc120898557[65]]
-
-link:#_Toc120898558[Table 67: BR-RESP-60-S10 link:#_Toc120898558[65]]
-
-link:#_Toc120898559[Table 68: BR-RESP-60-S20 link:#_Toc120898559[65]]
-
-link:#_Toc120898560[Table 69: BR-RESP-70 link:#_Toc120898560[66]]
-
-link:#_Toc120898561[Table 70: BR-RESP-70-S10 link:#_Toc120898561[66]]
-
-link:#_Toc120898562[Table 71: BR-RESP-70-S20 link:#_Toc120898562[66]]
-
-link:#_Toc120898563[Table 72: BR-RESP-80 link:#_Toc120898563[67]]
-
-link:#_Toc120898564[Table 73: BR-RESP-80-S10 link:#_Toc120898564[68]]
-
-link:#_Toc120898565[Table 74: BR-RESP-80-S20 link:#_Toc120898565[69]]
-
-link:#_Toc120898566[Table 75: BR-LOT-10 link:#_Toc120898566[70]]
-
-link:#_Toc120898567[Table 76: BR-LOT-20 link:#_Toc120898567[71]]
-
-link:#_Toc120898568[Table 77: BR-LOT-30 link:#_Toc120898568[71]]
-
-link:#_Toc120898569[Table 78: BR-LOT-30-S10 link:#_Toc120898569[71]]
-
-link:#_Toc120898570[Table 79: BR-LOT-30-S20 link:#_Toc120898570[72]]
-
-link:#_Toc120898571[Table 80: BR-LOT-40 link:#_Toc120898571[72]]
-
-link:#_Toc120898572[Table 81: BR-LEAD-10 link:#_Toc120898572[73]]
-
-link:#_Toc120898573[Table 82: BR-LEAD-10-S10 link:#_Toc120898573[73]]
-
-link:#_Toc120898574[Table 83: BR-LEAD-10-S20 link:#_Toc120898574[74]]
-
-link:#_Toc120898575[Table 84: BR-LEAD-10-S30 link:#_Toc120898575[74]]
-
-link:#_Toc120898576[Table 85: Tendering Criterion - Regulated structure link:#_Toc120898576[75]]
-
-link:#_Toc120898577[Table 86: Tendering Criterion structure and XSD link:#_Toc120898577[76]]
-
-link:#_Toc120898578[Table 87: Tendering Criterion Business Rules link:#_Toc120898578[77]]
-
-link:#_Toc120898579[Table 88: Legislation Business Rules link:#_Toc120898579[78]]
-
-link:#_Toc120898580[Table 89: Tendering Criterion Property Group Business Rules link:#_Toc120898580[79]]
-
-link:#_Toc120898581[Table 90: Tendering Criterion Property Business Rules link:#_Toc120898581[81]]
-
-link:#_Toc120898582[Table 91: Tendering Criterion - Self-contained structure link:#_Toc120898582[82]]
-
-link:#_Toc120898583[Table 92: Tendering Criterion structure and XSD link:#_Toc120898583[82]]
-
-link:#_Toc120898584[Table 93: Tendering Criterion Response Business Rules link:#_Toc120898584[83]]
-
-link:#_Toc120898585[Table 94: Response Value Business Rules link:#_Toc120898585[85]]
-
-link:#_Ref511148508[Table 95: Matching between data type and response link:#_Ref511148508[86]]
-
-link:#_Toc120898587[Table 96: Evidence Supplied Business Rules link:#_Toc120898587[86]]
-
-link:#_Toc120898588[Table 97: Other business rules link:#_Toc120898588[87]]
-
-== Structure of the Document
-
-=== Introduction
-
-The objective of this document is:
-
-* To map the test cases identified in the document [ESPD_Testcases_V01];
-* For each test case, identify the business rules and describe the Schematron rules and map them with UBL-2.2 XSD;
+* For each test case, identify the business rules and describe the Schematron rules and map them with UBL-2.3 XSD;
 * To validate the criteria taxonomy.
 
 === Input Documents
@@ -449,20 +24,11 @@ a|
 [start=2]
 .
 
-|XML Implementation Guide footnote:[XML Implementation Guide URL: https://espd.github.io/ESPD-EDM/v2.0.1/xml_guide.html[https://espd.github.io/ESPD-EDM/v2.0.2/xml_guide.html]] |2.0.2 |Understanding of the model underlying the implementation of the ESPD Request and ESPD Response XML documents.
+|XML Implementation Guide (current document) link:https://docs.ted.europa.eu/ESPD-EDM/latest/index.html[Technical HandBook] |3.1.0 |Understanding of the model underlying the implementation of the ESPD Request and ESPD Response XML documents.
 a|
-[start=3]
-.
-
-|Data Structures Regulated [multiblock footnote omitted] |2.0.2 |List of exclusion and selection criterion groups and subgroups.
-a|
-[start=4]
-.
-
-|Data Structures Self-contained [multiblock footnote omitted] |2.0.2 |List of exclusion and selection criterion groups and subgroups.
 |===
 
-[#_Toc120898494 .anchor]####Table 1: List of Input documents
+.Table 1: List of Input documents
 
 === Process
 
@@ -472,8 +38,8 @@ The process to identify the business rules is the following one:
 . *List the test cases ID and test case rule ID* from [RD01]. These rules are common among the test cases; which means that each rule ID must have a unique identifier within the current document (Mapping Rule ID).
 . For each *Mapping Rule ID*:
 [loweralpha]
-.. Map each of the rules to UBL-2.2 XSD as description;
-.. Identify the whole path within UBL-2.2 XSD;
+.. Map each of the rules to UBL-2.3 XSD as description;
+.. Identify the whole path within UBL-2.3 XSD;
 .. List the business rules coming from the XML implementation guide [RD02] and those ones coming from ESPD_TestCases [RD01].
 . Identify the rules coming from Data Structures Regulated spreadsheet [RD03] and Self-contained [RD04].
 . Identify other rules coming from the XML implementation guide [RD02].
@@ -483,7 +49,7 @@ The process to identify the business rules is the following one:
 The process described above uses the following auxiliary tables.
 
 [arabic]
-. Identification of the test cases from [RD01] and mapping it into the UBL-2.2 XSD.
+. Identification of the test cases from [RD01] and mapping it into the UBL-2.3 XSD.
 
 [width="100%",cols="22%,11%,11%,24%,32%",options="header",]
 |===
@@ -503,7 +69,7 @@ UBL-QualificationApplicationRequest-2.2-Pre-award.xsd (ESPD Request) or UBL-Qual
 |Test Case Rule ID (from [RD01]) and Mapping Rule ID |Description of the rule and mapping to Mapping Rule ID (current document) | |Scenario ID (from [RD01]) and Mapping Scenario ID |Description of the scenario and mapping to Mapping Scenario ID (current document)
 |===
 
-[#_Toc120898495 .anchor]####Table 2: Test Case ID example
+.Table 2: Test Case ID example
 
 [arabic, start=2]
 . For each of the rules identified in document [RD01], the following table describes its mapping in natural language:
@@ -523,7 +89,7 @@ Business rules can be classified as WARNING (user information) or ERROR (fatal e
 
 |===
 
-[#_Toc120898496 .anchor]####Table 3: Mapping rule ID example
+.Table 3: Mapping rule ID example
 
 == ESPDRequest
 
@@ -542,7 +108,7 @@ List of use cases regarding the ESPD request transaction, which 0 means false an
 |link:#rq-60[RQ-60] |1 |1 |1
 |===
 
-[#_Toc120898497 .anchor]####Table 4: ESPDRequest - List of test cases
+.Table 4: ESPDRequest - List of test cases
 
 === Test Cases
 
@@ -573,7 +139,7 @@ RQ-10-R10-S10
 |RQ-10-R50 (link:#br-req-40[BR-REQ-40]) |Selection criteria CAN be provided | |N/A |N/A
 |===
 
-[#_Toc120898498 .anchor]####Table 5: Test Case RQ-10
+.Table 5: Test Case RQ-10
 
 ==== RQ-20
 
@@ -602,7 +168,7 @@ RQ-20-R10-S10
 |RQ-20-R50 (link:#br-req-40[BR-REQ-40]) |Selection criteria CAN be provided | |N/A |N/A
 |===
 
-[#_Toc120898499 .anchor]####Table 6: Test Case RQ-20
+.Table 6: Test Case RQ-20
 
 ==== RQ-30
 
@@ -632,7 +198,7 @@ RQ-30-R10-S10
 |RQ-30-R60 (link:#br-sc-20[BR-SC-20]) |When selection criteria is provided, specific requirements for each criteria CAN be provided | |N/A |N/A
 |===
 
-[#_Toc120898500 .anchor]####Table 7: Test Case RQ-30
+.Table 7: Test Case RQ-30
 
 ==== RQ-40
 
@@ -660,11 +226,11 @@ RQ-40-R10-S10
 | | | |RQ-40-R40-S20 (link:#br-req-30-s20[BR-REQ-30-S20]) |Information for national exclusion grounds (section D) MUST be retrieved from e-Certis.
 |RQ-40-R50 (link:#br-req-40[BR-REQ-40]) |Selection criteria CAN be provided | |N/A |N/A
 |RQ-40-R60 (link:#br-sc-20[BR-SC-20]) |When selection criteria is provided, specific requirements for each criteria CAN be provided | |N/A |N/A
-|RQ-40-R70 (link:#br-2p-10[BR-2P-10]) |Information about weighting MUST be provided | |RQ-40-R70-S10 (link:#br-2p-10-s10[BR-2P-10-S10]) |For two-phased procedure with weighted criteria the information about weighting for each criteria within �ǣTechnical and professional ability��� MUST be provided
+|RQ-40-R70 (link:#br-2p-10[BR-2P-10]) |Information about weighting MUST be provided | |RQ-40-R70-S10 (link:#br-2p-10-s10[BR-2P-10-S10]) |For two-phased procedure with weighted criteria the information about weighting for each criteria within �ǣTechnical and professional ability MUST be provided
 | | | |RQ-40-R70-S20 (link:#br-2p-10-s20[BR-2P-10-S20]) |For two-phased procedure without weighted criteria, additional information regarding weighting IS NOT required
 |===
 
-[#_Toc120898501 .anchor]####Table 8: Test Case RQ-40
+.Table 8: Test Case RQ-40
 
 ==== RQ-50
 
@@ -697,7 +263,7 @@ RQ-50-R10-S10
 |RQ-50-R80 (link:#br-sc-20[BR-SC-20]) |When selection criteria is provided, specific requirements for each criteria CAN be provided | |N/A |N/A
 |===
 
-[#_Toc120898502 .anchor]####Table 9: Test Case RQ-50
+.Table 9: Test Case RQ-50
 
 ==== RQ-60
 
@@ -728,11 +294,11 @@ RQ-60-R10-S10
 |RQ-60-R60 (link:#br-req-40[BR-REQ-40]) |Selection criteria CAN be provided | |N/A |N/A
 |RQ-60-R70 (link:#br-lot-40[BR-LOT-40]) |When selection criteria is provided, the lots each criteria applies to MUST be provided | |N/A |N/A
 |RQ-60-R80 (link:#br-sc-20[BR-SC-20]) |When selection criteria is provided, specific requirements for each criteria CAN be provided | |N/A |N/A
-|RQ-60-R90 (link:#br-2p-10[BR-2P-10]) |Information about weighting MUST be provided | |RQ-60-R90-S10 (link:#br-2p-10-s10[BR-2P-10-S10]) |For two-phased procedure with weighted criteria the information about weighting for each criteria within �ǣTechnical and professional ability��� MUST be provided
+|RQ-60-R90 (link:#br-2p-10[BR-2P-10]) |Information about weighting MUST be provided | |RQ-60-R90-S10 (link:#br-2p-10-s10[BR-2P-10-S10]) |For two-phased procedure with weighted criteria the information about weighting for each criteria within �ǣTechnical and professional ability MUST be provided
 | | | |RQ-60-R90-S20 (link:#br-2p-10-s20[BR-2P-10-S20]) |For two-phased procedure without weighted criteria, additional information regarding weighting IS NOT required
 |===
 
-[#_Toc120898503 .anchor]####Table 10: Test Case RQ-60
+.Table 10: Test Case RQ-60
 
 === List of Business Rules
 
@@ -798,7 +364,7 @@ ____
 |link:#rq-60[*RQ-60*] | | | | |- | | | | |
 |===
 
-[#_Toc120898504 .anchor]####Table 11: ESPDRequest - Test Cases and Business Rules
+.Table 11: ESPDRequest - Test Cases and Business Rules
 
 == ESPDResponse
 
@@ -839,7 +405,7 @@ ____
 |link:#rs-300[RS-300] |1 |1 |1 |Other entity (not relied upon)
 |===
 
-[#_Toc120898505 .anchor]####Table 12: ESPDResponse - List of test cases
+.Table 12: ESPDResponse - List of test cases
 
 === Test Cases
 
@@ -863,7 +429,7 @@ ____
 |RS-10-R50 (link:#_BR-REG-10[BR-REG-20]) |Information about the procurement procedure MIGHT be provided | |N/A |N/A
 |===
 
-[#_Toc120898506 .anchor]####Table 13: Test Case RS-10
+.Table 13: Test Case RS-10
 
 ==== RS-20
 
@@ -888,7 +454,7 @@ ____
 |RS-20-R60 (link:#_BR-REG-10[BR-REG-20]) |Information about the procurement procedure MIGHT be provided | |N/A |N/A
 |===
 
-[#_Toc120898507 .anchor]####Table 14: Test Case RS-20
+.Table 14: Test Case RS-20
 
 ==== RS-30
 
@@ -910,7 +476,7 @@ ____
 |RS-30-R50 (link:#br-sc-30[BR-SC-30]) |Information about the procurement procedure MIGHT be provided | |N/A |N/A
 |===
 
-[#_Toc120898508 .anchor]####Table 15: Test Case RS-30
+.Table 15: Test Case RS-30
 
 ==== RS-40
 
@@ -935,7 +501,7 @@ ____
 |RS-40-R60 (link:#br-sc-30[BR-SC-30]) |Information about the procurement procedure MIGHT be provided | |N/A |N/A
 |===
 
-[#_Toc120898509 .anchor]####Table 16: Test Case RS-40
+.Table 16: Test Case RS-40
 
 ==== RS-50
 
@@ -959,7 +525,7 @@ ____
 |RS-50-R70 (link:#br-sc-30[BR-SC-30]) |Information about the procurement procedure MIGHT be provided | |N/A |N/A
 |===
 
-[#_Toc120898510 .anchor]####Table 17: Test Case RS-50
+.Table 17: Test Case RS-50
 
 ==== RS-60
 
@@ -986,7 +552,7 @@ ____
 |RS-60-R80 (link:#br-sc-30[BR-SC-30]) |Information about the procurement procedure MIGHT be provided | |N/A |N/A
 |===
 
-[#_Toc120898511 .anchor]####Table 18: Test Case RS-60
+.Table 18: Test Case RS-60
 
 ==== RS-70
 
@@ -1016,7 +582,7 @@ ____
 |RS-70-R60 (link:#_BR-REG-10[BR-REG-20]) |Information about the procurement procedure MIGHT be provided | |N/A |N/A
 |===
 
-[#_Toc120898512 .anchor]####Table 19: Test Case RS-70
+.Table 19: Test Case RS-70
 
 ==== RS-80
 
@@ -1049,7 +615,7 @@ ____
 |RS-80-R70 (link:#_BR-REG-10[BR-REG-20]) |Information about the procurement procedure MIGHT be provided | |N/A |N/A
 |===
 
-[#_Toc120898513 .anchor]####Table 20: Test Case RS-80
+.Table 20: Test Case RS-80
 
 ==== RS-90
 
@@ -1079,7 +645,7 @@ ____
 |RS-90-R60 (link:#br-sc-30[BR-SC-30]) |Information about the procurement procedure MIGHT be provided | |N/A |N/A
 |===
 
-[#_Toc120898514 .anchor]####Table 21: Test Case RS-90
+.Table 21: Test Case RS-90
 
 ==== RS-100
 
@@ -1112,7 +678,7 @@ ____
 |RS-100-R70 (link:#br-sc-30[BR-SC-30]) |Information about the procurement procedure MIGHT be provided | |N/A |N/A
 |===
 
-[#_Toc120898515 .anchor]####Table 22: Test Case RS-100
+.Table 22: Test Case RS-100
 
 ==== RS-110
 
@@ -1144,7 +710,7 @@ ____
 |RS-110-R80 (link:#br-sc-30[BR-SC-30]) |Information about the procurement procedure MIGHT be provided | |N/A |N/A
 |===
 
-[#_Toc120898516 .anchor]####Table 23: Test Case RS-110
+.Table 23: Test Case RS-110
 
 ==== RS-120
 
@@ -1179,7 +745,7 @@ ____
 |RS-120-R90 (link:#br-sc-30[BR-SC-30]) |Information about the procurement procedure MIGHT be provided | |N/A |N/A
 |===
 
-[#_Toc120898517 .anchor]####Table 24: Test Case RS-120
+.Table 24: Test Case RS-120
 
 ==== RS-130
 
@@ -1206,7 +772,7 @@ ____
 |RS-130-R50 (link:#_BR-REG-10[BR-REG-20]) |Information about the procurement procedure MIGHT be provided | |N/A |N/A
 |===
 
-[#_Toc120898518 .anchor]####Table 25: Test Case RS-130
+.Table 25: Test Case RS-130
 
 ==== RS-140
 
@@ -1236,7 +802,7 @@ ____
 |RS-140-R60 (link:#_BR-REG-10[BR-REG-20]) |Information about the procurement procedure MIGHT be provided | |N/A |N/A
 |===
 
-[#_Toc120898519 .anchor]####Table 26: Test Case RS-140
+.Table 26: Test Case RS-140
 
 ==== RS-150
 
@@ -1263,7 +829,7 @@ ____
 |RS-150-R50 (link:#br-sc-30[BR-SC-30]) |Information about the procurement procedure MIGHT be provided | |N/A |N/A
 |===
 
-[#_Toc120898520 .anchor]####Table 27: Test Case RS-150
+.Table 27: Test Case RS-150
 
 ==== RS-160
 
@@ -1293,7 +859,7 @@ ____
 |RS-160-R60 (link:#br-sc-30[BR-SC-30]) |Information about the procurement procedure MIGHT be provided | |N/A |N/A
 |===
 
-[#_Toc120898521 .anchor]####Table 28: Test Case RS-160
+.Table 28: Test Case RS-160
 
 ==== RS-170
 
@@ -1322,7 +888,7 @@ ____
 |RS-170-R70 (link:#br-sc-30[BR-SC-30]) |Information about the procurement procedure MIGHT be provided | |N/A |N/A
 |===
 
-[#_Toc120898522 .anchor]####Table 29: Test Case RS-170
+.Table 29: Test Case RS-170
 
 ==== RS-180
 
@@ -1354,7 +920,7 @@ ____
 |RS-180-R80 (link:#br-sc-30[BR-SC-30]) |Information about the procurement procedure MIGHT be provided | |N/A |N/A
 |===
 
-[#_Toc120898523 .anchor]####Table 30: Test Case RS-180
+.Table 30: Test Case RS-180
 
 ==== RS-190
 
@@ -1381,7 +947,7 @@ Other entity (relied upon): Entity on which the main contractor, the group or an
 |RS-190-R50 (link:#_BR-REG-10[BR-REG-20]) |Information about the procurement procedure MIGHT be provided | |N/A |N/A
 |===
 
-[#_Toc120898524 .anchor]####Table 31: Test Case RS-190
+.Table 31: Test Case RS-190
 
 ==== RS-200
 
@@ -1411,7 +977,7 @@ Other entity (relied upon): Entity on which the main contractor, the group or an
 |RS-200-R60 (link:#_BR-REG-10[BR-REG-20]) |Information about the procurement procedure MIGHT be provided | |N/A |N/A
 |===
 
-[#_Toc120898525 .anchor]####Table 32: Test Case RS-200
+.Table 32: Test Case RS-200
 
 ==== RS-210
 
@@ -1440,7 +1006,7 @@ Other entity (relied upon): Entity on which the main contractor, the group or an
 |RS-210-R70 (link:#br-sc-30[BR-SC-30]) |Information about the procurement procedure MIGHT be provided | |N/A |N/A
 |===
 
-[#_Toc120898526 .anchor]####Table 33: Test Case RS-210
+.Table 33: Test Case RS-210
 
 ==== RS-220
 
@@ -1470,7 +1036,7 @@ Other entity (relied upon): Entity on which the main contractor, the group or an
 |RS-220-R60 (link:#br-sc-30[BR-SC-30]) |Information about the procurement procedure MIGHT be provided | |N/A |N/A
 |===
 
-[#_Toc120898527 .anchor]####Table 34: Test Case RS-220
+.Table 34: Test Case RS-220
 
 ==== RS-230
 
@@ -1499,7 +1065,7 @@ Other entity (relied upon): Entity on which the main contractor, the group or an
 |RS-230-R70 (link:#br-sc-30[BR-SC-30]) |Information about the procurement procedure MIGHT be provided | |N/A |N/A
 |===
 
-[#_Toc120898528 .anchor]####Table 35: Test Case RS-230
+.Table 35: Test Case RS-230
 
 ==== RS-240
 
@@ -1531,7 +1097,7 @@ Other entity (relied upon): Entity on which the main contractor, the group or an
 |RS-240-R80 (link:#br-sc-30[BR-SC-30]) |Information about the procurement procedure MIGHT be provided | |N/A |N/A
 |===
 
-[#_Toc120898529 .anchor]####Table 36: Test Case RS-240
+.Table 36: Test Case RS-240
 
 ==== RS-250
 
@@ -1557,7 +1123,7 @@ Other entity (not relied upon): Entity on which the main contractor, the group o
 |RS-250-R40 (link:#_BR-REG-10[BR-REG-20]) |Information about the procurement procedure MIGHT be provided | |N/A |N/A
 |===
 
-[#_Toc120898530 .anchor]####Table 37: Test Case RS-250
+.Table 37: Test Case RS-250
 
 ==== RS-260
 
@@ -1585,7 +1151,7 @@ Other entity (not relied upon): Entity on which the main contractor, the group o
 |RS-260-R50 (link:#_BR-REG-10[BR-REG-20]) |Information about the procurement procedure MIGHT be provided | |N/A |N/A
 |===
 
-[#_Toc120898531 .anchor]####Table 38: Test Case RS-260
+.Table 38: Test Case RS-260
 
 ==== RS-270
 
@@ -1612,7 +1178,7 @@ Other entity (not relied upon): Entity on which the main contractor, the group o
 |RS-270-R50 (link:#br-sc-30[BR-SC-30]) |Information about the procurement procedure MIGHT be provided | |N/A |N/A
 |===
 
-[#_Toc120898532 .anchor]####Table 39: Test Case RS-270
+.Table 39: Test Case RS-270
 
 ==== RS-280
 
@@ -1640,7 +1206,7 @@ Other entity (not relied upon): Entity on which the main contractor, the group o
 |RS-280-R50 (link:#br-sc-30[BR-SC-30]) |Information about the procurement procedure MIGHT be provided | |N/A |N/A
 |===
 
-[#_Toc120898533 .anchor]####Table 40: Test Case RS-280
+.Table 40: Test Case RS-280
 
 ==== RS-290
 
@@ -1667,7 +1233,7 @@ Other entity (not relied upon): Entity on which the main contractor, the group o
 |RS-290-R50 (link:#br-sc-30[BR-SC-30]) |Information about the procurement procedure MIGHT be provided | |N/A |N/A
 |===
 
-[#_Toc120898534 .anchor]####Table 41: Test Case RS-290
+.Table 41: Test Case RS-290
 
 ==== RS-300
 
@@ -1696,7 +1262,7 @@ Other entity (not relied upon): Entity on which the main contractor, the group o
 |RS-300-R60 (link:#br-sc-30[BR-SC-30]) |Information about the procurement procedure MIGHT be provided | |N/A |N/A
 |===
 
-[#_Toc120898535 .anchor]####Table 42: Test Case RS-300
+.Table 42: Test Case RS-300
 
 === List of Business Rules
 
@@ -1801,7 +1367,7 @@ ____
 |link:#rs-300[*RS-300*] | | |- |- | | |- |- |- | | |- |-
 |===
 
-[#_Toc120898536 .anchor]####Table 43: ESPDResponse - Test Cases and Business Rules
+.Table 43: ESPDResponse - Test Cases and Business Rules
 
 == Common Business Rules
 
@@ -1818,7 +1384,7 @@ ____
 |Rule description |Information about publication CAN be provided |
 |Mapping description |Publications are implemented as Document Reference components |
 |XSD Path |/cac:AdditionalDocumentReference[0..n] |
-|Business requirement |http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr070-007[_[.underline]#tbr070-007#_] |
+|Business requirement |link:wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr070-007[_[.underline]#tbr070-007#_] |
 |XSD Business Rule description | |XSD Business Rule Schematron
 |If the document referenced is a *Contract Notice published on TED* the ID must follow the scheme defined by the Publications Office: *[][][][]/S [][][]-[][][][][][]* (e.g. 2015/S 252-461137). If at the time of drafting the ESPD document the Publication Office has not published yet the Contract Notice the value 0000/S 000-000000 value must be used to indicate that a temporary identifier is being used. | a|
 * Severity: ERROR
@@ -1838,7 +1404,7 @@ Then
 
 |===
 
-[#_Toc120898537 .anchor]####Table 44: BR-COM-10
+.Table 44: BR-COM-10
 
 ==== BR-COM-10-S10
 
@@ -1854,12 +1420,12 @@ Then
 |Rule description |Above the threshold, information about the publication of the contract notice in TED MUST be provided (when it is available). |
 |Mapping description |ESPD does not carry information about the value of the contract. Therefore, the threshold cannot be calculated. |
 |XSD Path |- |
-|Business requirement |http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr070-007[_[.underline]#tbr070-007#_] |
+|Business requirement |link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr070-007[_[.underline]#tbr070-007#_] |
 |XSD Business Rule description | |XSD Business Rule Schematron
 |- | |*No Schematron rule can be implemented.*
 |===
 
-[#_Toc120898538 .anchor]####Table 45: BR-COM-10-S10
+.Table 45: BR-COM-10-S10
 
 ==== BR-COM-10-S20
 
@@ -1875,12 +1441,12 @@ Then
 |Rule description |Below the threshold, information about the publication of the contract notice in TED MIGHT be provided (when it is available). |
 |Mapping description |ESPD does not carry information about the value of the contract. Therefore, the threshold cannot be calculated. |
 |XSD Path |- |
-|Business requirement |http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr070-007[_[.underline]#tbr070-007#_] |
+|Business requirement |link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr070-007[_[.underline]#tbr070-007#_] |
 |XSD Business Rule description | |XSD Business Rule Schematron
 |- | |*No Schematron rule can be implemented.*
 |===
 
-[#_Toc120898539 .anchor]####Table 46: BR-COM-10-S20
+.Table 46: BR-COM-10-S20
 
 ==== BR-COM-10-S30
 
@@ -1896,12 +1462,12 @@ Then
 |Rule description |Information about the publication of the contract notice in other official gazettes or journals MIGHT be provided. |
 |Mapping description |No specific rules should be applied. |
 |XSD Path |- |
-|Business requirement |http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr070-007[_[.underline]#tbr070-007#_] |
+|Business requirement |link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr070-007[_[.underline]#tbr070-007#_] |
 |XSD Business Rule description | |XSD Business Rule Schematron
 |- | |*No Schematron rule can be implemented.*
 |===
 
-[#_Toc120898540 .anchor]####Table 47: BR-COM-10-S30
+.Table 47: BR-COM-10-S30
 
 == Common ESPDRequest Rules
 
@@ -1917,7 +1483,7 @@ Then
 |Rule description |Information about the procurer MUST be provided |
 |Mapping description |Procurers are implemented as Contracting Party components. |
 |XSD Path |/cac:ContractingParty[1..n]/cac:Party[1] |
-|Business requirement |http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr070-01[_[.underline]#tbr070-01#_] |
+|Business requirement |link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr070-01[_[.underline]#tbr070-01#_] |
 |XSD Business Rule description | |XSD Business Rule Schematron
 |Information about the procurer MUST be provided. | |No Schematron rule can be implemented, as Contracting party is already compulsory.
 |The ESPD only expects data about one buyer. | a|
@@ -1945,7 +1511,7 @@ ____
 ____
 
 a|
-Business requirement: http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr070-006[_[.underline]#tbr070-006#_]
+Business requirement: link:wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr070-006[_[.underline]#tbr070-006#_]
 
 The country of the contracting body must always be specified.
 
@@ -1974,7 +1540,7 @@ If at least one element: /cac:ContractingParty/cac:Party /cac:PartyIdentificatio
 ____
 
 |_/cac:ContractingParty/cac:Party/cac:ServiceProviderParty[0..n]_ | |
-|Business requirement: http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr070-0011[_[.underline]#tbr070-011#_] | |
+|Business requirement: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr070-0011[_[.underline]#tbr070-011#_] | |
 |An identifier for the service provider must always be provided. | a|
 * {blank}
 +
@@ -2013,7 +1579,7 @@ ____
 
 |===
 
-[#_Toc120898541 .anchor]####Table 48: BR-REQ-20
+.Table 48: BR-REQ-20
 
 === BR-REQ-30
 
@@ -2031,10 +1597,10 @@ ____
 
 And,
 
-/cac:TenderingCriterion/cbc:CriterionTypeCode starts with �ǣCRITERION.EXCLUSION.��� (They are exclusion criteria).
+/cac:TenderingCriterion/cbc:CriterionTypeCode starts with �ǣCRITERION.EXCLUSION. (They are exclusion criteria).
 
 |
-|Business requirement |http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr070-009[_[.underline]#tbr070-009#_] |
+|Business requirement |link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr070-009[_[.underline]#tbr070-009#_] |
 |XSD Business Rule description | |XSD Business Rule Schematron
 |Exclusion grounds MUST be retrieved from e-Certis. | a|
 * {blank}
@@ -2045,13 +1611,13 @@ ____
 * {blank}
 +
 ____
-All criterion code starting �ǣCRITERION.EXCLUSION.��� from [RD03] must be implemented within /cac:TenderingCriterion.
+All criterion code starting �ǣCRITERION.EXCLUSION. from [RD03] must be implemented within /cac:TenderingCriterion.
 ____
 
-|The Business Rules listed within �ǣ14 Tendering Criterion General Rules��� are general to all TenderingCriterion. | |
+|The Business Rules listed within �ǣ14 Tendering Criterion General Rules are general to all TenderingCriterion. | |
 |===
 
-[#_Toc120898542 .anchor]####Table 49: BR-REQ-30
+.Table 49: BR-REQ-30
 
 ==== BR-REQ-30-S10
 
@@ -2065,12 +1631,12 @@ ____
 |Rule description |Information for common exclusion grounds (sections A, B and C) MUST be retrieved from e-Certis. |
 |Mapping description |The spreadsheets [RD03] carries the information from e-Certis. No additional business rules are needed in this scenario. |
 |XSD Path |- |
-|Business requirement |http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr070-009[_[.underline]#tbr070-009#_] |
+|Business requirement |link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr070-009[_[.underline]#tbr070-009#_] |
 |XSD Business Rule description | |XSD Business Rule Schematron
 |- | |*No Schematron rule can be implemented*
 |===
 
-[#_Toc120898543 .anchor]####Table 50: BR-REQ-30-S10
+.Table 50: BR-REQ-30-S10
 
 ==== BR-REQ-30-S20
 
@@ -2084,12 +1650,12 @@ ____
 |Rule description |Information for national exclusion grounds (section D) MUST be retrieved from e-Certis. |
 |Mapping description |No additional business rules are needed in this scenario. |
 |XSD Path |- |
-|Business requirement |http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr070-009[_[.underline]#tbr070-009#_] |
+|Business requirement |link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr070-009[_[.underline]#tbr070-009#_] |
 |XSD Business Rule description | |XSD Business Rule Schematron
 |- | |*No Schematron rule can be implemented*
 |===
 
-[#_Toc120898544 .anchor]####Table 51: BR-REQ-30-S20
+.Table 51: BR-REQ-30-S20
 
 === BR-REQ-40
 
@@ -2107,10 +1673,10 @@ ____
 
 And,
 
-/cac:TenderingCriterion/cbc:CriterionTypeCode starts with �ǣCRITERION.SELECTION.��� (They are selection criteria).
+/cac:TenderingCriterion/cbc:CriterionTypeCode starts with �ǣCRITERION.SELECTION. (They are selection criteria).
 
 |
-|Business requirement |http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr070-010[_[.underline]#tbr070-010#_] |
+|Business requirement |link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr070-010[_[.underline]#tbr070-010#_] |
 |XSD Business Rule description | |XSD Business Rule Schematron
 |Selection criteria CAN be provided. | a|
 * {blank}
@@ -2121,13 +1687,13 @@ ____
 * {blank}
 +
 ____
-All criterion code starting �ǣCRITERION.SELECTION.��� from [RD03] must be implemented within /cac:TenderingCriterion.
+All criterion code starting �ǣCRITERION.SELECTION. from [RD03] must be implemented within /cac:TenderingCriterion.
 ____
 
-|The Business Rules listed within �ǣ14 Tendering Criterion General Rules��� are general to all TenderingCriterion. | |
+|The Business Rules listed within �ǣ14 Tendering Criterion General Rules are general to all TenderingCriterion. | |
 |===
 
-[#_Toc120898545 .anchor]####Table 52: BR-REQ-40
+.Table 52: BR-REQ-40
 
 [#_BR-REG-10 .anchor]##
 
@@ -2153,10 +1719,10 @@ ____
 * /cbc:ContractFolderID[1]
 
 | |
-|Business requirement |http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr070-007[_[.underline]#tbr070-007#_] | |
+|Business requirement |link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr070-007[_[.underline]#tbr070-007#_] | |
 |XSD Business Rule description | |XSD Business Rule Schematron |
 a|
-* The ���type of the procurement��� administrative procedure according to the EU Directives.
+* The type of the procurement administrative procedure according to the EU Directives.
 
 | a|
 * {blank}
@@ -2175,7 +1741,7 @@ ____
 |
 |===
 
-[#_Toc120898546 .anchor]####Table 55: BR-SC-10
+.Table 55: BR-SC-10
 
 === BR-SC-20
 
@@ -2196,12 +1762,12 @@ ____
 * /cac:TenderingCriterionResponse[0..n]
 
 | |
-|Business requirement |_http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr092-018[[.underline]#tbr92-018#], http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr092-007[[.underline]#tbr92-007#]_, _[.underline]#tbr92-005#_, http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr092-006[_[.underline]#tbr92-006#_] | |
+|Business requirement |_ link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr092-018[[.underline]#tbr92-018#], link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr092-007[[.underline]#tbr92-007#]_, _[.underline]#tbr92-005#_, link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr092-006[_[.underline]#tbr92-006#_] | |
 |XSD Business Rule description | |XSD Business Rule Schematron |
 |- | |*No Schematron rule can be implemented* |
 |===
 
-[#_Toc120898547 .anchor]####Table 56: BR-SC-20
+.Table 56: BR-SC-20
 
 === BR-SC-30
 
@@ -2239,12 +1805,12 @@ ____
 * /cbc:ContractFolderID[1]
 
 | |
-|Business requirement |http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr070-007[_[.underline]#tbr070-007#_] | |
+|Business requirement |link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr070-007[_[.underline]#tbr070-007#_] | |
 |XSD Business Rule description | |XSD Business Rule Schematron |
 |Same business rules as BR-SC-10. | | |
 |===
 
-[#_Toc120898548 .anchor]####Table 57: BR-SC-30
+.Table 57: BR-SC-30
 
 == Two-phased Procedures Rules
 
@@ -2265,12 +1831,12 @@ ____
 * /cbc:WeightingType[0..1]
 
 |
-|Business requirement |http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr070-016[_[.underline]#tbr070-016#_] |
+|Business requirement |link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr070-016[_[.underline]#tbr070-016#_] |
 |XSD Business Rule description | |XSD Business Rule Schematron
 |Defining the type of weighting and description is mandatory when it is two-phased procedure. | |*No Schematron rule can be implemented*
 |===
 
-[#_Toc120898549 .anchor]####Table 58: BR-2P-10
+.Table 58: BR-2P-10
 
 ==== BR-2P-10-S10
 
@@ -2282,7 +1848,7 @@ ____
 * RQ-60-R90
 
 |
-|Rule description |For two-phased procedure with weighted criteria the information about weighting for each criteria within �ǣTechnical and professional ability��� MUST be provided |
+|Rule description |For two-phased procedure with weighted criteria the information about weighting for each criteria within �ǣTechnical and professional ability MUST be provided |
 |Mapping description a|
 Common information about weighting is implemented as in link:#br-2p-10[BR-2P-10].
 
@@ -2294,7 +1860,7 @@ Specific information about weighting within each criteria is implemented as Tend
 * /cac:TenderingCriterion/cbc:WeightNumeric[0..1]
 
 |
-|Business requirement |http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr070-016[_[.underline]#tbr070-016#_] |
+|Business requirement |link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr070-016[_[.underline]#tbr070-016#_] |
 |XSD Business Rule description | |XSD Business Rule Schematron
 |For two stage procedures it [.underline]#should be possible# to weight the "Technical and professional ability". Weighting can be done either using percentage or points for one procedure. The CA should have a free text where they can describe the scoring methodology. | a|
 * {blank}
@@ -2330,7 +1896,7 @@ Then, /cac:TenderingCriterion /cbc:EvaluationMethodTypeCode != WEIGHTED or not i
 
 |===
 
-[#_Toc120898550 .anchor]####Table 59: BR-2P-10-S10
+.Table 59: BR-2P-10-S10
 
 ==== BR-2P-10-S20
 
@@ -2348,7 +1914,7 @@ Then, /cac:TenderingCriterion /cbc:EvaluationMethodTypeCode != WEIGHTED or not i
 * /cac:TenderingCriterion /cbc:EvaluationMethodTypeCode[0..1]
 
 |
-|Business requirement |http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr070-016[_[.underline]#tbr070-016#_] |
+|Business requirement |link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr070-016[_[.underline]#tbr070-016#_] |
 |XSD Business Rule description | |XSD Business Rule Schematron
 |If evaluation method is pass/fail, weighting is not required. | a|
 * {blank}
@@ -2366,7 +1932,7 @@ Then, Weight value cannot be provided: /cac:TenderingCriterion/cbc:WeightNumeric
 
 |===
 
-[#_Toc120898551 .anchor]####Table 60: BR-2P-10-S10
+.Table 60: BR-2P-10-S10
 
 == Common ESPDResponse Rules
 
@@ -2394,7 +1960,7 @@ See BR-COM-10
 ____
 
 |_/cac:EconomicOperatorParty/cac:QualifyingParty_ | |
-|Business requirement: http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr92-001[_[.underline]#tbr92-001#_] | |
+|Business requirement: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr92-001[_[.underline]#tbr92-001#_] | |
 |*Qualifying party* is *compulsory* in the ESPD-EDM V3.1.0 as it is the natural placeholder for several relevant data about the Economic Operator. | a|
 * {blank}
 +
@@ -2420,11 +1986,11 @@ ____
 * {blank}
 +
 ____
-schemeAgencyID attribute from Party identifier is always mandatory. The current version of eCertis does not allow for this feature yet. Therefore, the logic expected schemeAgencyID defaults to �ǣEU-COM-GROW���. This will not be validated in version 2.0.2.
+schemeAgencyID attribute from Party identifier is always mandatory. The current version of eCertis does not allow for this feature yet. Therefore, the logic expected schemeAgencyID defaults to "OP". This will not be validated in version 2.0.2.
 ____
 
 |_/cac:EconomicOperatorParty/cac:EconomicOperatorRole_ | |
-|Business requirement: http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr92-008[_[.underline]#tbr92-008#_] | |
+|Business requirement: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr92-008[_[.underline]#tbr92-008#_] | |
 |This element is compulsory in the ESPD-EDM V3.1.0 because depending on it different sets of data will be required or not, shown or hidden, processed or skipped. | a|
 * {blank}
 +
@@ -2454,7 +2020,7 @@ ____
 /cac:EconomicOperatorParty /cac:EconomicOperatorRole /cbc:RoleCode
 
 |_/cac:EconomicOperatorParty/cac:Party_ | |
-|Business requirement: http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr92-001[_[.underline]#tbr92-001#_] | |
+|Business requirement: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr92-001[_[.underline]#tbr92-001#_] | |
 |An identifier that identifies the economic operator is mandatory. | a|
 * {blank}
 +
@@ -2480,7 +2046,7 @@ Compulsory use of the element: /cac:PartyName/cbc:Name
 ____
 
 a|
-Business requirement: http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr92-004[_[.underline]#tbr92-004#_]
+Business requirement: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr92-004[_[.underline]#tbr92-004#_]
 
 *Industrial classification*: Compulsory use of the element.
 
@@ -2497,7 +2063,7 @@ Compulsory use of the element: /cbc:IndustryClassificationCode
 ____
 
 a|
-Business requirement: http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr92-012[_[.underline]#tbr92-012#_]
+Business requirement: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr92-012[_[.underline]#tbr92-012#_]
 
 *Country*: The country of the contracting body must always be specified.
 
@@ -2514,7 +2080,7 @@ Country of the contracting body is mandatory: /cac:EconomicOperatorParty /cac:Pa
 ____
 
 |_/cac:EconomicOperatorParty/cac:Party/cac:ServiceProviderParty/cac:Party_ | |
-|Business requirement: http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr070-021[_[.underline]#tbr070-021#_] | |
+|Business requirement: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr070-021[_[.underline]#tbr070-021#_] | |
 |*End point identifier*: An end-point identifier MUST have a scheme identifier attribute. | a|
 * {blank}
 +
@@ -2573,7 +2139,7 @@ ____
 
 |===
 
-[#_Toc120898552 .anchor]####Table 61: BR-RESP-10
+.Table 61: BR-RESP-10
 
 === BR-RESP-20
 
@@ -2585,12 +2151,12 @@ ____
 
 |
 |Rule description |Information about representatives of the economic operator CAN be provided |
-|Mapping description |All the data regarding the representative of the economic operators is placed in the UBL-2.2 component cac:EconomicOperatorParty/cac:Party/cac:PowerOfAttorney. |
+|Mapping description |All the data regarding the representative of the economic operators is placed in the UBL-2.3 component cac:EconomicOperatorParty/cac:Party/cac:PowerOfAttorney. |
 |XSD Path a|
 * /cac:EconomicOperatorParty/cac:Party /cac:PowerOfAttorney
 
 |
-|Business requirement |_[.underline]#-�http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr092-009[tbr92-009]#_ |
+|Business requirement | link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr092-009[tbr92-009] |
 |XSD Business Rule description | |XSD Business Rule Schematron
 |Name, Family name and country of the natural person are mandatory | a|
 * {blank}
@@ -2621,7 +2187,7 @@ ____
 
 |===
 
-[#_Toc120898553 .anchor]####Table 62: BR-RESP-20
+.Table 62: BR-RESP-20
 
 == Not registered pre-qualification system Rules
 
@@ -2665,13 +2231,13 @@ ____
 * {blank}
 +
 ____
-All /cac:TenderingCriterion /cbc:CriterionTypeCode starts with �ǣCRITERION.EXCLUSION.��� (They are exclusion criteria) must have its /cbc:ID as response within /cac:TenderingCriterionResponse /cbc:ValidatedCriterionPropertyID
+All /cac:TenderingCriterion /cbc:CriterionTypeCode starts with �ǣCRITERION.EXCLUSION. (They are exclusion criteria) must have its /cbc:ID as response within /cac:TenderingCriterionResponse /cbc:ValidatedCriterionPropertyID
 ____
 
 |
 |===
 
-[#_Toc120898554 .anchor]####Table 63: BR-RESP-30
+.Table 63: BR-RESP-30
 
 === BR-RESP-40 (role different to OENRON)
 
@@ -2705,7 +2271,7 @@ Response to the specific requirements related to selection criteria of the ESPDR
 * /cac:TenderingCriterionResponse[0..n]
 
 | |
-|Business requirement |_http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr092-018[[.underline]#tbr92-018#], http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr092-007[[.underline]#tbr92-007#]_, _[.underline]#tbr92-005#_, http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr092-006[_[.underline]#tbr92-006#_] | |
+|Business requirement |_ link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr092-018[tbr92-018], link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr092-007[#tbr92-007#]_, _[.underline]#tbr92-005#_, link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr092-006[tbr92-006] | |
 |XSD Business Rule description | |XSD Business Rule Schematron |
 |Information about compliance of selection criteria MUST be provided. | a|
 * {blank}
@@ -2716,13 +2282,13 @@ ____
 * {blank}
 +
 ____
-All /cac:TenderingCriterion /cbc:CriterionTypeCode starts with �ǣCRITERION.SELECTION.��� (They are selection criteria) must have its /cbc:ID as response within /cac:TenderingCriterionResponse /cbc:ValidatedCriterionPropertyID
+All /cac:TenderingCriterion /cbc:CriterionTypeCode starts with �ǣCRITERION.SELECTION. (They are selection criteria) must have its /cbc:ID as response within /cac:TenderingCriterionResponse /cbc:ValidatedCriterionPropertyID
 ____
 
 |
 |===
 
-[#_Toc120898555 .anchor]####Table 64: BR-RESP-40
+.Table 64: BR-RESP-40
 
 [#_BR-RESP-90_(role_OENRON) .anchor]##
 
@@ -2759,12 +2325,12 @@ ____
 * Additional information as Other Criterion /cac:TenderingCriterionResponse
 
 | |
-|Business requirement |_http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr092-018[[.underline]#tbr92-018#], http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr092-007[[.underline]#tbr92-007#]_, _[.underline]#tbr92-005#_, http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr092-006[_[.underline]#tbr92-006#_] | |
+|Business requirement |_ link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr092-018[[.underline]#tbr92-018#], link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr092-007[[.underline]#tbr92-007#]_, _[.underline]#tbr92-005#_, link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr092-006[_[.underline]#tbr92-006#_] | |
 |XSD Business Rule description | |XSD Business Rule Schematron |
 |Same business rules as BR-RESP-30 as it works as a Criterion. | | |
 |===
 
-[#_Toc120898556 .anchor]####Table 65: BR-RESP-50
+.Table 65: BR-RESP-50
 
 === BR-RESP-60
 
@@ -2795,12 +2361,12 @@ ____
 * /cac:TenderingCriterionResponse[0..n]
 
 | |
-|Business requirement |_http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr092-018[[.underline]#tbr92-018#], http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr092-007[[.underline]#tbr92-007#]_, _[.underline]#tbr92-005#_, http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr092-006[_[.underline]#tbr92-006#_] | |
+|Business requirement |_ link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr092-018[tbr92-018], link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr092-007[tbr92-007]_, _[.underline]#tbr92-005#_, link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr092-006[tbr92-006] | |
 |XSD Business Rule description | |XSD Business Rule Schematron |
 |Same business rules as BR-RESP-30 | | |
 |===
 
-[#_Toc120898557 .anchor]####Table 66: BR-RESP-60
+.Table 66: BR-RESP-60
 
 ==== BR-RESP-60-S10
 
@@ -2832,7 +2398,7 @@ ____
 |*No Schematron rule can be implemented* | | |
 |===
 
-[#_Toc120898558 .anchor]####Table 67: BR-RESP-60-S10
+.Table 67: BR-RESP-60-S10
 
 ==== BR-RESP-60-S20
 
@@ -2864,7 +2430,7 @@ ____
 |*No Schematron rule can be implemented* | | |
 |===
 
-[#_Toc120898559 .anchor]####Table 68: BR-RESP-60-S20
+.Table 68: BR-RESP-60-S20
 
 === BR-RESP-70
 
@@ -2885,12 +2451,12 @@ ____
 * /cac:TenderingCriterionResponse[0..n]
 
 | |
-|Business requirement |_http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr092-018[[.underline]#tbr92-018#], http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr092-007[[.underline]#tbr92-007#]_, _[.underline]#tbr92-005#_, http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr092-006[_[.underline]#tbr92-006#_] | |
+|Business requirement |_ link:wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr092-018[tbr92-018], link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr092-007[tbr92-007]_, _[.underline]#tbr92-005#_, link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr092-006[tbr92-006] | |
 |XSD Business Rule description | |XSD Business Rule Schematron |
 |Same business rules as BR-RESP-30 | | |
 |===
 
-[#_Toc120898560 .anchor]####Table 69: BR-RESP-70
+.Table 69: BR-RESP-70
 
 ==== BR-RESP-70-S10
 
@@ -2912,7 +2478,7 @@ ____
 |*No Schematron rule can be implemented* | | |
 |===
 
-[#_Toc120898561 .anchor]####Table 70: BR-RESP-70-S10
+.Table 70: BR-RESP-70-S10
 
 ==== BR-RESP-70-S20
 
@@ -2934,7 +2500,7 @@ ____
 |*No Schematron rule can be implemented* | | |
 |===
 
-[#_Toc120898562 .anchor]####Table 71: BR-RESP-70-S20
+.Table 71: BR-RESP-70-S20
 
 === BR-RESP-80
 
@@ -2959,12 +2525,12 @@ ____
 * /cac:TenderingCriterionResponse[0..n]
 
 | |
-|Business requirement |http://wiki.ds.unipi.gr/pages/viewpage.action?pageId=44367916#br41-002[br41-002], http://wiki.ds.unipi.gr/pages/viewpage.action?pageId=44367916#tbr070-010[tbr070-010], http://wiki.ds.unipi.gr/pages/viewpage.action?pageId=44367916#tbr070-013[tbr070-013], http://wiki.ds.unipi.gr/pages/viewpage.action?pageId=44367916#tbr070-016[tbr070-016], and http://wiki.ds.unipi.gr/pages/viewpage.action?pageId=44367916#tbr070-018[tbr070-018]. | |
+|Business requirement |link:http://wiki.ds.unipi.gr/pages/viewpage.action?pageId=44367916#br41-002[br41-002], link:http://wiki.ds.unipi.gr/pages/viewpage.action?pageId=44367916#tbr070-010[tbr070-010], link:http://wiki.ds.unipi.gr/pages/viewpage.action?pageId=44367916#tbr070-013[tbr070-013], link:http://wiki.ds.unipi.gr/pages/viewpage.action?pageId=44367916#tbr070-016[tbr070-016], and link:http://wiki.ds.unipi.gr/pages/viewpage.action?pageId=44367916#tbr070-018[tbr070-018]. | |
 |XSD Business Rule description | |XSD Business Rule Schematron |
-|See scenarios �ǣBR-RESP-80-S10��� and �ǣBR-RESP-80-S20���. | | |
+|See scenarios �ǣBR-RESP-80-S10 and �ǣBR-RESP-80-S20. | | |
 |===
 
-[#_Toc120898563 .anchor]####Table 72: BR-RESP-80
+.Table 72: BR-RESP-80
 
 ==== BR-RESP-80-S10
 
@@ -3007,14 +2573,14 @@ This rule is accomplished when:
 |XSD Business Rule description | |XSD Business Rule Schematron |
 |When the pre-qualification system the EO is registered on does not cover all the selection criteria, information about compliance of selection criteria MUST be provided. | a|
 * Severity: WARNING
-* If PQS exists (/cac:EconomicOperatorParty /cac:QualifyingParty/cac:Party /cac:PartyIdentification/cbc:ID), Service Provider exists (cac:ContractingParty /cac:Party/cac:ServiceProviderParty), /cbc:RoleCode != ���OENRON��� and /cbc:QualificationApplicationTypeCode = SELFCONTAINED
+* If PQS exists (/cac:EconomicOperatorParty /cac:QualifyingParty/cac:Party /cac:PartyIdentification/cbc:ID), Service Provider exists (cac:ContractingParty /cac:Party/cac:ServiceProviderParty), /cbc:RoleCode != OENRON and /cbc:QualificationApplicationTypeCode = SELFCONTAINED
 +
 Then, all selection criterion must have responses.
 
 |
 |===
 
-[#_Toc120898564 .anchor]####Table 73: BR-RESP-80-S10
+.Table 73: BR-RESP-80-S10
 
 ==== BR-RESP-80-S20
 
@@ -3057,14 +2623,14 @@ This rule is accomplished when:
 |XSD Business Rule description | |XSD Business Rule description |
 |When the pre-qualification system the EO is registered on covers all the selection criteria, information about compliance of selection criteria IS NOT required. | a|
 * Severity: WARNING
-* If PQS exists (/cac:EconomicOperatorParty /cac:QualifyingParty/cac:Party /cac:PartyIdentification/cbc:ID), Service Provider does not exists not(cac:ContractingParty /cac:Party/cac:ServiceProviderParty), /cbc:RoleCode != ���OENRON��� and /cbc:QualificationApplicationTypeCode = SELFCONTAINED
+* If PQS exists (/cac:EconomicOperatorParty /cac:QualifyingParty/cac:Party /cac:PartyIdentification/cbc:ID), Service Provider does not exists not(cac:ContractingParty /cac:Party/cac:ServiceProviderParty), /cbc:RoleCode != OENRON and /cbc:QualificationApplicationTypeCode = SELFCONTAINED
 +
 Then, selection criterion does not need to have responses.
 
 |
 |===
 
-[#_Toc120898565 .anchor]####Table 74: BR-RESP-80-S20
+.Table 74: BR-RESP-80-S20
 
 == Lots Rules
 
@@ -3101,7 +2667,7 @@ Lots EO tenders to, are specified as Tendering criterion of type CRITERION.OTHER
 * /cac:TenderingCriterion[0..n]
 
 | |
-|Business requirement |http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr92-014[_[.underline]#tbr92-014#_] | |
+|Business requirement |link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr92-014[_[.underline]#tbr92-014#_] | |
 |XSD Business Rule description | |XSD Business Rule Schematron |
 |The list of lots the EO tenders for MUST be provided. | a|
 * {blank}
@@ -3112,7 +2678,7 @@ ____
 * {blank}
 +
 ____
-If /cac:ProcurementProjectLot/cbc:ID is not 0 and the /cac:TenderingCriterion type is ���CRITERION.OTHER.EO_DATA.LOTS_TENDERED���
+If /cac:ProcurementProjectLot/cbc:ID is not 0 and the /cac:TenderingCriterion type is CRITERION.OTHER.EO_DATA.LOTS_TENDERED
 ____
 +
 Then, its /cac:TenderingCriterionResponse /cbc:ResponseID must exist within /cac:ProcurementProjectLot /cbc:ID
@@ -3120,7 +2686,7 @@ Then, its /cac:TenderingCriterionResponse /cbc:ResponseID must exist within /cac
 |
 |===
 
-[#_Toc120898566 .anchor]####Table 75: BR-LOT-10
+.Table 75: BR-LOT-10
 
 === BR-LOT-20
 
@@ -3146,12 +2712,12 @@ Then, its /cac:TenderingCriterionResponse /cbc:ResponseID must exist within /cac
 * /cac:TenderingCriterion[0..n]
 
 | |
-|Business requirement |http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr070-010[_[.underline]#tbr070-010#_] | |
+|Business requirement |link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr070-010[_[.underline]#tbr070-010#_] | |
 |XSD Business Rule description | |XSD Business Rule description |
-|The Business Rules listed within �ǣ15 Tendering Criterion Self-contained Rules��� are general to all TenderingCriterion in self-contained qualification applications. | | |
+|The Business Rules listed within �ǣ15 Tendering Criterion Self-contained Rules are general to all TenderingCriterion in self-contained qualification applications. | | |
 |===
 
-[#_Toc120898567 .anchor]####Table 76: BR-LOT-20
+.Table 76: BR-LOT-20
 
 === BR-LOT-30
 
@@ -3176,12 +2742,12 @@ Information about lots specified is two different sets of the XSD schema in orde
 * /cac:TenderingCriterion[0..n], CRITERION.OTHER.CA_DATA.LOTS_SUBMISSION
 
 | |
-|Business requirement |http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr070-008[_[.underline]#tbr070-008#_] | |
+|Business requirement |link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr070-008[tbr070-008] | |
 |XSD Business Rule description | |XSD Business Rule Schematron |
 |See link:#br-lot-30-s10[BR-LOT-30-S10] and link:#br-lot-30-s20[BR-LOT-30-S20] | | |
 |===
 
-[#_Toc120898568 .anchor]####Table 77: BR-LOT-30
+.Table 77: BR-LOT-30
 
 ==== BR-LOT-30-S10
 
@@ -3199,9 +2765,9 @@ Information about lots specified is two different sets of the XSD schema in orde
 * /cac:ProcurementProjectLot[0..n] /cbc:ID[1]
 
 | |
-|Business requirement |http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr070-008[_[.underline]#tbr070-008#_] | |
+|Business requirement |link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr070-008[_[.underline]#tbr070-008#_] | |
 |XSD Business Rule description | |XSD Business Rule Schematron |
-|Convention: Lots should always be identified with a sequential number, as in the examples: Lot1, Lot2 �Ǫ���Lot7. | a|
+|Convention: Lots should always be identified with a sequential number, as in the examples: Lot1, Lot2 Lot7. | a|
 * {blank}
 +
 ____
@@ -3216,7 +2782,7 @@ ____
 |
 |===
 
-[#_Toc120898569 .anchor]####Table 78: BR-LOT-30-S10
+.Table 78: BR-LOT-30-S10
 
 ==== BR-LOT-30-S20
 
@@ -3234,12 +2800,12 @@ ____
 * /cac:TenderingCriterion[0..n] as CRITERION.OTHER.CA_DATA.LOTS_SUBMISSION
 
 | |
-|Business requirement |http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr070-008[_[.underline]#tbr070-008#_] | |
+|Business requirement |link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr070-008[_[.underline]#tbr070-008#_] | |
 |XSD Business Rule description | |XSD Business Rule Schematron |
 |- | |*No Schematron rule can be implemented as it works as any other Tendering Criterion.* |
 |===
 
-[#_Toc120898570 .anchor]####Table 79: BR-LOT-30-S20
+.Table 79: BR-LOT-30-S20
 
 === BR-LOT-40
 
@@ -3257,19 +2823,19 @@ ____
 * /cac:TenderingCriterion[0..n]
 
 | |
-|Business requirement |http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr070-010[_[.underline]#tbr070-010#_] | |
+|Business requirement |link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr070-010[_[.underline]#tbr070-010#_] | |
 |XSD Business Rule description | |XSD Business Rule description |
-|The Business Rules listed within �ǣ15 Tendering Criterion Self-contained Rules��� are general to all TenderingCriterion in self-contained qualification applications. | | |
+|The Business Rules listed within 15 Tendering Criterion Self-contained Rules are general to all TenderingCriterion in self-contained qualification applications. | | |
 |The lots each criteria applies to MUST be provided. | a|
 * Severity: ERROR
-* When cac:TenderingCriterionPropertyGroup is ���a53561d5-6614-4dbe-987e-b96f35387f46��� and its cac:TenderingCriterionProperty is REQUIREMENT and IDENTIFIER;
+* When cac:TenderingCriterionPropertyGroup is a53561d5-6614-4dbe-987e-b96f35387f46 and its cac:TenderingCriterionProperty is REQUIREMENT and IDENTIFIER;
 +
 If, cbc:ExpectedID is included, it must be one of the Lots identified within /cac:ProcurementProjectLot/cbc:ID
 
 |
 |===
 
-[#_Toc120898571 .anchor]####Table 80: BR-LOT-40
+.Table 80: BR-LOT-40
 
 == Specific Lead Role Rules
 
@@ -3294,7 +2860,7 @@ If, cbc:ExpectedID is included, it must be one of the Lots identified within /ca
 * /cac:TenderingCriterionResponse[0..n]
 
 | |
-|Business requirement |http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr092-008[_[.underline]#tbr092-008#_] | |
+|Business requirement |link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr092-008[_[.underline]#tbr092-008#_] | |
 |XSD Business Rule description | |XSD Business Rule Schematron |
 |Information about the other participants MUST be provided | a|
 * {blank}
@@ -3305,7 +2871,7 @@ ____
 * {blank}
 +
 ____
-At least one /cac:TenderingCriterionResponse /cbc:ValidatedCriterionPropertyID must match an ID���s criterion within /cac:TenderingCriterionProperty /cbc:ID which /cac:TenderingCriterion/cbc:CriterionTypeCode is _CRITERION.OTHER.EO_DATA.TOGETHER_WITH_OTHERS_
+At least one /cac:TenderingCriterionResponse /cbc:ValidatedCriterionPropertyID must match an IDs criterion within /cac:TenderingCriterionProperty /cbc:ID which /cac:TenderingCriterion/cbc:CriterionTypeCode is _CRITERION.OTHER.EO_DATA.TOGETHER_WITH_OTHERS_
 ____
 * {blank}
 +
@@ -3321,7 +2887,7 @@ ____
 |
 |===
 
-[#_Toc120898572 .anchor]####Table 81: BR-LEAD-10
+.Table 81: BR-LEAD-10
 
 ==== BR-LEAD-10-S10
 
@@ -3344,7 +2910,7 @@ ____
 * /cbc:EconomicOperatorGroupName[0..1]
 
 | |
-|Business requirement |http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr092-008[_[.underline]#tbr092-008#_] | |
+|Business requirement |link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr092-008[_[.underline]#tbr092-008#_] | |
 |XSD Business Rule description | |XSD Business Rule Schematron |
 |Information about the group MUST be provided | a|
 * {blank}
@@ -3361,7 +2927,7 @@ ____
 |
 |===
 
-[#_Toc120898573 .anchor]####Table 82: BR-LEAD-10-S10
+.Table 82: BR-LEAD-10-S10
 
 ==== BR-LEAD-10-S20
 
@@ -3384,7 +2950,7 @@ ____
 * /cac:TenderingCriterionResponse[0..n]
 
 | |
-|Business requirement |http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr092-008[_[.underline]#tbr092-008#_] | |
+|Business requirement |link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr092-008[_[.underline]#tbr092-008#_] | |
 |XSD Business Rule description | |XSD Business Rule Schematron |
 |Information about all the entities the EO relies on MUST be provided | a|
 * {blank}
@@ -3395,13 +2961,13 @@ ____
 * {blank}
 +
 ____
-At least one /cac:TenderingCriterionResponse /cbc:ValidatedCriterionPropertyID must match an ID���s criterion within /cac:TenderingCriterion/cbc:ID which /cac:TenderingCriterion/cbc:CriterionTypeCode is _CRITERION.OTHER.EO_DATA.RELIES_ON_OTHER_CAPACITIES_
+At least one /cac:TenderingCriterionResponse /cbc:ValidatedCriterionPropertyID must match an IDs criterion within /cac:TenderingCriterion/cbc:ID which /cac:TenderingCriterion/cbc:CriterionTypeCode is _CRITERION.OTHER.EO_DATA.RELIES_ON_OTHER_CAPACITIES_
 ____
 
 |
 |===
 
-[#_Toc120898574 .anchor]####Table 83: BR-LEAD-10-S20
+.Table 83: BR-LEAD-10-S20
 
 ==== BR-LEAD-10-S30
 
@@ -3424,7 +2990,7 @@ ____
 * /cac:TenderingCriterionResponse[0..n]
 
 | |
-|Business requirement |http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr092-008[_[.underline]#tbr092-008#_] | |
+|Business requirement |link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr092-008[_[.underline]#tbr092-008#_] | |
 |XSD Business Rule description | |XSD Business Rule Schematron |
 |Information about all subcontractors MUST be provided | a|
 * {blank}
@@ -3435,7 +3001,7 @@ ____
 * {blank}
 +
 ____
-At least one /cac:TenderingCriterionResponse /cbc:ValidatedCriterionPropertyID must match an ID���s criterion within /cac:TenderingCriterion/cbc:ID which /cac:TenderingCriterion/cbc:CriterionTypeCode is _CRITERION.OTHER.EO_DATA.SUBCONTRACTS_WITH_THIRD_PARTIES_
+At least one /cac:TenderingCriterionResponse /cbc:ValidatedCriterionPropertyID must match an IDs criterion within /cac:TenderingCriterion/cbc:ID which /cac:TenderingCriterion/cbc:CriterionTypeCode is _CRITERION.OTHER.EO_DATA.SUBCONTRACTS_WITH_THIRD_PARTIES_
 ____
 * {blank}
 +
@@ -3446,7 +3012,7 @@ ____
 |
 |===
 
-[#_Toc120898575 .anchor]####Table 84: BR-LEAD-10-S30
+.Table 84: BR-LEAD-10-S30
 
 == Tendering Criterion General Rules
 
@@ -3458,7 +3024,7 @@ This structure is also validated within the XML:
 
 image:media/image2.emf[image,width=567,height=158]
 
-[#_Toc120898576 .anchor]####Table 85: Tendering Criterion - Regulated structure
+.Table 85: Tendering Criterion - Regulated structure
 
 There are four type of rows:
 
@@ -3502,7 +3068,7 @@ cac:TenderingCriterion/cac:TenderingCriterionPropertyGroup
 
 |===
 
-[#_Toc120898577 .anchor]####Table 86: Tendering Criterion structure and XSD
+.Table 86: Tendering Criterion structure and XSD
 
 === Level 1: Tendering Criterion
 
@@ -3520,7 +3086,7 @@ Figure 1: Tendering Criterion elements
 a|
 _Level 1: /TenderingCriterion_
 
-Business requirement: http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr070-009[_[.underline]#tbr070-009#_]
+Business requirement: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr070-009[_[.underline]#tbr070-009#_]
 
 | |
 a|
@@ -3543,7 +3109,7 @@ a|
 . {blank}
 
 a|
-Business requirement: http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr070-010[_[.underline]#tbr070-010#_]
+Business requirement: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr070-010[_[.underline]#tbr070-010#_]
 
 Each Criterion is defined in e-Certis and must use the UUID supplied by e-Certis.
 
@@ -3561,7 +3127,7 @@ ____
 * {blank}
 +
 ____
-/cac:TenderingCriterion/cbc:ID must match the �ǣElement UUID��� column from [RD03].
+/cac:TenderingCriterion/cbc:ID must match the �ǣElement UUID column from [RD03].
 ____
 
 a|
@@ -3603,7 +3169,7 @@ ____
 * {blank}
 +
 ____
-/cac:TenderingCriterion /cbc:CriterionTypeCode must match the �ǣElement Code��� column from [RD03].
+/cac:TenderingCriterion /cbc:CriterionTypeCode must match the �ǣElement Code column from [RD03].
 ____
 
 a|
@@ -3691,24 +3257,18 @@ ____
 
 |===
 
-[#_Toc120898578 .anchor]####Table 87: Tendering Criterion Business Rules
+.Table 87: Tendering Criterion Business Rules
 
 === Level 2: Legislation
 
 A class to make reference to the legislation related to the criterion.
-
-The following figure highlights, in green, the elements which has a business rule:
-
-image:media/image4.png[image,width=290,height=308]
-
-Figure 2: Legislation elements
 
 [width="100%",cols="13%,36%,51%",options="header",]
 |===
 a|
 _Level 2: /TenderingCriterion/cac:Legislation_
 
-Business requirement: http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr070-013[_[.underline]#tbr070-013#_]
+Business requirement: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr070-013[_[.underline]#tbr070-013#_]
 
 | |
 a|
@@ -3766,7 +3326,7 @@ ____
 
 |===
 
-[#_Toc120898579 .anchor]####Table 88: Legislation Business Rules
+.Table 88: Legislation Business Rules
 
 === Tendering Criterion Property Group
 
@@ -3785,7 +3345,7 @@ _/cac:TenderingCriterionPropertyGroup, independently of the level_
 
 _/cac:SubsidiaryTenderingCriterionPropertyGroup, independently of the level_
 
-Business requirement: http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr070-013[_[.underline]#tbr070-013#_]
+Business requirement: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr070-013[_[.underline]#tbr070-013#_]
 
 | |
 a|
@@ -3886,7 +3446,7 @@ ____
 
 |===
 
-[#_Toc120898580 .anchor]####Table 89: Tendering Criterion Property Group Business Rules
+.Table 89: Tendering Criterion Property Group Business Rules
 
 === Tendering Criterion Property
 
@@ -3903,7 +3463,7 @@ Figure 4: Tendering Criterion elements
 a|
 _cac:TenderingCriterionProperty, independently of the level_
 
-Business requirement: http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr070-013[_[.underline]#tbr070-013#_]
+Business requirement: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr070-013[_[.underline]#tbr070-013#_]
 
 | |
 a|
@@ -3998,17 +3558,17 @@ ____
 
 |===
 
-[#_Toc120898581 .anchor]####Table 90: Tendering Criterion Property Business Rules
+.Table 90: Tendering Criterion Property Business Rules
 
 == Tendering Criterion Self-contained Rules
 
 This is the list of rules common to Tendering Criterion elements of both, ESPDRequest and ESPDResponse, which procurement procedure type is self-contained.
 
-Additionally to the rules listed in section �ǣ14 Tendering Criterion General Rules���, self-contained procedures add the following information:
+Additionally to the rules listed in section �ǣ14 Tendering Criterion General Rules, self-contained procedures add the following information:
 
 image:media/image7.png[image,width=567,height=328]
 
-[#_Toc120898582 .anchor]####Table 91: Tendering Criterion - Self-contained structure
+.Table 91: Tendering Criterion - Self-contained structure
 
 There are one additional type of row:
 
@@ -4032,7 +3592,7 @@ Information about the national sub-criteria defined by the Member States.
 
 |===
 
-[#_Toc120898583 .anchor]####Table 92: Tendering Criterion structure and XSD
+.Table 92: Tendering Criterion structure and XSD
 
 == Tendering Criterion Response Rules
 
@@ -4048,7 +3608,7 @@ A tendering criterion response describes a response to a criterion property from
 a|
 _Level 1: /cac:TenderingCriterionResponse_
 
-Business requirement: _http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr092-018[[.underline]#tbr92-018#], http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr092-007[[.underline]#tbr92-007#]_, _[.underline]#tbr92-005#_, http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr092-006[_[.underline]#tbr92-006#_]
+Business requirement: _ link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr092-018[[.underline]#tbr92-018#], link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr092-007[[.underline]#tbr92-007#]_, _[.underline]#tbr92-005#_, link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr092-006[_[.underline]#tbr92-006#_]
 
 | |
 a|
@@ -4099,7 +3659,7 @@ ____
 
 |===
 
-[#_Toc120898584 .anchor]####Table 93: Tendering Criterion Response Business Rules
+.Table 93: Tendering Criterion Response Business Rules
 
 === Level 2: Response Value
 
@@ -4111,7 +3671,7 @@ This element describes the criterion property response value:
 a|
 _Level 2: /cac:ResponseValue_
 
-Business requirement: http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr92-018[_[.underline]#tbr92-018#_]
+Business requirement: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr92-018[_[.underline]#tbr92-018#_]
 
 | |
 a|
@@ -4153,7 +3713,7 @@ ____
 * {blank}
 +
 ____
-If /cac:TenderingCriterionResponse /cac:ResponseValue /cbc:ResponseIndicator = true and /cac:TenderingCriterionResponse /cbc:ValidatedCriterionPropertyID matches one of the IDs within /cac:TenderingCriterionGroupPropertyGroup /cbc:ID, and its /cbc:PropertyGroupTypeCode = ���ONTRUE���
+If /cac:TenderingCriterionResponse /cac:ResponseValue /cbc:ResponseIndicator = true and /cac:TenderingCriterionResponse /cbc:ValidatedCriterionPropertyID matches one of the IDs within /cac:TenderingCriterionGroupPropertyGroup /cbc:ID, and its /cbc:PropertyGroupTypeCode = ONTRUE
 ____
 +
 Then, its /cac: SubsidiaryTenderingCriterionPropertyGroup /cbc:ID must exist within /cac:TenderingCriterionResponse /cbc:ValidatedCriterionPropertyID
@@ -4167,7 +3727,7 @@ ____
 * {blank}
 +
 ____
-If /cac:TenderingCriterionResponse /cac:ResponseValue /cbc:ResponseIndicator = false and /cac:TenderingCriterionResponse /cbc:ValidatedCriterionPropertyID matches one of the IDs within /cac:TenderingCriterionGroupPropertyGroup /cbc:ID, and its /cbc:PropertyGroupTypeCode = ���ONTRUE���
+If /cac:TenderingCriterionResponse /cac:ResponseValue /cbc:ResponseIndicator = false and /cac:TenderingCriterionResponse /cbc:ValidatedCriterionPropertyID matches one of the IDs within /cac:TenderingCriterionGroupPropertyGroup /cbc:ID, and its /cbc:PropertyGroupTypeCode = ONTRUE
 ____
 +
 Then, its /cac: SubsidiaryTenderingCriterionPropertyGroup /cbc:ID cannot exist within /cac:TenderingCriterionResponse /cbc:ValidatedCriterionPropertyID
@@ -4185,7 +3745,7 @@ ____
 * {blank}
 +
 ____
-If /cac:TenderingCriterionResponse /cac:ResponseValue /cbc:ResponseIndicator = false and /cac:TenderingCriterionResponse /cbc:ValidatedCriterionPropertyID matches one of the IDs within /cac:TenderingCriterionGroupPropertyGroup /cbc:ID, and its /cbc:PropertyGroupTypeCode = ���ONFALSE���
+If /cac:TenderingCriterionResponse /cac:ResponseValue /cbc:ResponseIndicator = false and /cac:TenderingCriterionResponse /cbc:ValidatedCriterionPropertyID matches one of the IDs within /cac:TenderingCriterionGroupPropertyGroup /cbc:ID, and its /cbc:PropertyGroupTypeCode = ONFALSE
 ____
 +
 Then, its /cac: SubsidiaryTenderingCriterionPropertyGroup /cbc:ID must exist within /cac:TenderingCriterionResponse /cbc:ValidatedCriterionPropertyID
@@ -4199,14 +3759,14 @@ ____
 * {blank}
 +
 ____
-If /cac:TenderingCriterionResponse /cac:ResponseValue /cbc:ResponseIndicator = true and /cac:TenderingCriterionResponse /cbc:ValidatedCriterionPropertyID matches one of the IDs within /cac:TenderingCriterionGroupPropertyGroup /cbc:ID, and its /cbc:PropertyGroupTypeCode = ���ONFALSE���
+If /cac:TenderingCriterionResponse /cac:ResponseValue /cbc:ResponseIndicator = true and /cac:TenderingCriterionResponse /cbc:ValidatedCriterionPropertyID matches one of the IDs within /cac:TenderingCriterionGroupPropertyGroup /cbc:ID, and its /cbc:PropertyGroupTypeCode = ONFALSE
 ____
 +
 Then, its /cac: SubsidiaryTenderingCriterionPropertyGroup /cbc:ID cannot exist within /cac:TenderingCriterionResponse /cbc:ValidatedCriterionPropertyID
 
 |===
 
-[#_Toc120898585 .anchor]####Table 94: Response Value Business Rules
+.Table 94: Response Value Business Rules
 
 [start=8]
 . This table lists the relationship between data type and response data type:
@@ -4223,9 +3783,9 @@ Then, its /cac: SubsidiaryTenderingCriterionPropertyGroup /cbc:ID cannot exist w
 |INDICATOR |../cac:ResponseValue/cbc:ResponseIndicator
 |PERCENTAGE |../cac:ResponseValue/cbc:ResponseNumeric
 |PERIOD |../cac:ApplicablePeriod
-|QUANTITY_INTEGER |../cac:ResponseValue/cbc:ResponseQuantity /@unitCode=���QUANTITY_INTEGER���
-|QUANTITY_YEAR |../cac:ResponseValue/cbc:ResponseQuantity /@unitCode=���QUANTITY_YEAR���
-|QUANTITY |../cac:ResponseValue/cbc:ResponseQuantity /@unitCode=���QUANTITY���
+|QUANTITY_INTEGER |../cac:ResponseValue/cbc:ResponseQuantity /@unitCode=QUANTITY_INTEGER
+|QUANTITY_YEAR |../cac:ResponseValue/cbc:ResponseQuantity /@unitCode=QUANTITY_YEAR
+|QUANTITY |../cac:ResponseValue/cbc:ResponseQuantity /@unitCode=QUANTITY
 |NONE |No response is required
 |IDENTIFIER |../cac:ResponseValue/cbc:ResponseID
 |URL |../cac:ResponseValue/cbc:ResponseURI
@@ -4251,7 +3811,7 @@ This element describes the evidence supporting this criterion property response:
 a|
 _Level 2: /cac:EvidenceSupplied_
 
-Business requirement: http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr92-017[_[.underline]#tbr92-017#_]
+Business requirement: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr92-017[_[.underline]#tbr92-017#_]
 
 | |
 a|
@@ -4272,7 +3832,7 @@ ____
 
 |===
 
-[#_Toc120898587 .anchor]####Table 96: Evidence Supplied Business Rules
+.Table 96: Evidence Supplied Business Rules
 
 == Other Common Rules
 
@@ -4306,7 +3866,7 @@ a|
 
 |Compulsory use of the code list identified within the document [RD02]. a|
 * Severity: ERROR
-* Compulsory use of the code list identified within the �ǣ18 Annex I: XSD���s elements and Code Lists���
+* Compulsory use of the code list identified within the �ǣ18 Annex I: XSDs elements and Code Lists
 
 a|
 [start=4]
@@ -4314,14 +3874,14 @@ a|
 
 |There are cardinality constraints added by the ESPD which are not defined in the XSD Schema. a|
 * Severity: ERROR
-* Compulsory use of the elements listed within �ǣ19 Annex II: Compulsory XSD���s elements���
+* Compulsory use of the elements listed within �ǣ19 Annex II: Compulsory XSDs elements
 
 a|
 [start=5]
 . {blank}
 
 a|
-Business requirement:-�http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr070-002[_[.underline]#tbr070-002#_]
+Business requirement: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr070-002[_[.underline]#tbr070-002#_]
 
 Identifies the earliest version of the UBL 2 schema.
 
@@ -4335,14 +3895,13 @@ a|
 . {blank}
 +
 ____
-/cbc:UBLVersionID is �ǣ2.3���
+/cbc:UBLVersionID is 2.3
 ____
 . {blank}
 +
 ____
-/cbc:UBLVersionID /@schemeAgencyID is �ǣOASIS-UBL-TC���
+/cbc:UBLVersionID /@schemeAgencyID is OASIS-UBL-TC
 ____
 
 |===
 
-[#_Toc120898588 .anchor]####Table 97: Other business rules
