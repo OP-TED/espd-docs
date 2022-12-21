@@ -1,6 +1,10 @@
 * **Annual Seminar**
 * 2022
-** link:https://github.com/OP-TED/espd-docs/tree/wgm-reports/modules/ROOT/attachments/annual-seminar/2022_ESPD_Annual_Seminar_Presentation.pdf[ESPD Annual Seminar Presentation]
+** xref:2022_ESPD Annual Seminar report.adoc[ESPD Annual Seminar Report]
+** link:https://www.youtube-nocookie.com/embed/L71pr8VwiS4[ESPD Annual Seminar Video]
+** link:https://github.com/OP-TED/espd-docs/blob/wgm-reports/modules/ROOT/attachments/SlidoResults.pdf[Slido Results]
+** link:https://github.com/OP-TED/espd-docs/blob/wgm-reports/modules/ROOT/attachments/2022%20ESPD%20Annual%20Seminar.pdf[ESPD Annual Seminar Presentation]
+
 
 * 2021
 ** link:https://github.com/OP-TED/espd-docs/tree/wgm-reports/modules/ROOT/attachments/annual-seminar/ESPD_Seminar_Report_20211202.pdf[ESPD Annual Seminar Report]

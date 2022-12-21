@@ -1,0 +1,219 @@
+= TED ESPD Annual Seminar Report
+
+== Publications Office – ESPD EDM
+
+
+[cols=",",",]
+|===
+|Seminar Date/Time: |2022-11-30, 9.30 - 12.30
+|===
+
+:sectnums:
+:sectnumlevels: 4
+
+== Summary of Seminar Objectives
+* Introduce the ESPD-DM evolution during 2022
+* Introduce the ESPD next steps, in particular the major EPSD-EDM release scheduled for Q1 2023
+
+== Seminar Agenda
+
+. Introduction
+. ESPD-EDM v3.0.1 (2022 Q1)
+. ESPD-EDM v3.1.0 (2022 Q4)
+. ESPD-EDM v4.0.0 (2023 Q1)
+. Replacement of UUIDs (ESPD-EDM v4.0.0)
+. Update of the ESPD-EDM webpages and documentation
+. Questions and answers (Q&A)
+
+
+== Seminar Report 
+
+=== Introduction
+The main milestones of 2022, as well as the major version of the ESPD-EDM (v4.0.0) that will be released in the first quarter of 2023, were presented.
+
+A summary of the involvement and participation of the Open User Community through both the Open User Community meetings and the GitHub was provided.
+
+=== ESPD-EDM v3.0.1 (2022 Q1)
+The main updates included in the patch release ESPD-EDM v3.0.1, released in February 2022, were briefly presented:
+
+* Reorganisation of the GitHub repository (editorial change):
+
+** Reorganisation of the distribution package folders:
+*** Improvement of the navigation 
+*** Clearer labels of the folders  
+*** Additional information on the content of the different folders available in the release notes
+
+** Update of the ESPD-EDM conceptual model
+** Handbook migration to link:https://docs.ted.europa.eu/home/index.html[Ted Developer Docs], which provides access to:
+***  Information regarding the latest and previous releases 
+*** The ESPD-EDM conceptual model
+***  The ESPD-EDM Open User Community Documents 
+
+** Update of the link:https://github.com/OP-TED/ESPD-EDM/wiki[wiki homepage]
+
+
+* Update of cardinalities in the online documentation (small bug fix):
+** Update cardinalities according to the online documentation review feedback
+** Coordinated with the conceptual model specification
+** Update code lists to the latest EU Vocabularies version, which implies the creation of TestBed new branch.
+
+* Update of cardinalities in the xml example files (small bug fix), consisting in updating the xml examples according to the online documentation update.
+
+=== ESPD-EDM v3.1.0 (2022 Q4)
+The main updates that will be included in the minor release ESPD-EDM v3.1.0, scheduled for December 2022, were briefly presented, together with the related GitHub issues:
+
+* Subcontracting proportion:
+** A new optional requirement section has been added to the criterion 51 with cardinality 0..n
+** A new UUID has been generated
+
+* Occupation code list (ESCO):
+** The current technical code list is replaced by the link:https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/occupation[Occupation code list] released in June by EU Vocabularies (20220615-0) with the updated values from ESCO (link:https://esco.ec.europa.eu/[Multilingualclassification of European Skills, Competences, Qualifications and Occupations])
+** The ESPD-EDM v3.1.0 includes the gc generated and published on June by EU Vocabularies and maintains the metadata on the repository; the validation rules have been updated accordingly
+** Removal of the option “Other occupations” from the data structure and documentation, since this code list does not include the code "0000.0“ - other occupations, which was a customisation in the technical code list
+
+* Corrections in the data structure:
+** Data misplacement in several lines in Criteria 35, 52 and 53
+** Incorrect or missing cardinalities
+** Incorrect use of the UUID
+** New requirement within a requirement group to show the number of fiscal years to be covered
+
+* Schematron rules
+** Incorrect validation related to the ProfileID version
+
+* Corrections in code lists:
+** Data Type: date format in code list Criterion
+** Financial ratio type: inconsistency between the language label and the actual language
+
+* Revision of the conceptual model:
+** The link:https://docs.ted.europa.eu/ESPD-EDM/latest/_attachments/ESPD_CM_html/index.html[link] to the conceptual model was provided
+** The revision phase of the conceptual model has been undertaken during the last months by the ESPD Team 
+** Both the business-oriented view (BOV) and the technical-oriented view (TOV) have been reviewed in detail to ensure the stability and correctness of the model
+** Consistency with the changes for the new ESPD-EDM release (v3.1.0) has also been reviewed
+** The conceptual model will be shared with the eProcurement Ontology Working Group
+
+* ESPD Test Cases Mapping Documentation:
+** For ESPD-EDM v2, the document “ESPD Test Cases Mapping” was provided with detailed information regarding business rules
+** In link:https://github.com/OP-TED/ESPD-EDM/issues/331[GitHub issue #331] it was reported that this document was a helpful tool for technical implementation and requested a similar document for v3
+** A simplified version of the ESPD Test Cases Mapping Documentation is being elaborated and will be provided as an annex to the Technical Handbook for ESPD-EDM v3.1.0
+
+The link to the the link:https://github.com/OP-TED/ESPD-EDM[master branch], wich includes all changes of the release, was provided. 
+
+*Questions and answers*
+
+*  Could other issues still be included in ESPD-EDM v3.1.0?
+
+Implementation tasks for ESPD-EDM v3.1.0 have already been completed and are under test process, so new issues that require implementation will not be included in v3.1.0 but in future ESPD-EDM versions instead.
+
+GitHub issues that only require clarifications (without implementation), will be solved as usual since they have no impact on the release.
+
+=== ESPD-EDM v4.0.0 (2023 Q1)
+The main updates that will be included in the major release ESPD-EDM v4.0.0, scheduled for March 2023, were presented, together with the related GitHub issues:
+
+* Different requirements for different lots:
+** Correction of an issue so different requirements can be set for different lots within a selection criterion (the current technical implementation in ESPD-EDM v3 does not allow multiple and different requirement per lot) 
+
+* Update of the current UUID for repeatable subgroups:
+** Update excel criterion files and generation of xml samples files
+** XSLT updates: transformation from Excel to XML ESPD 
+
+* Purely National Exclusion Grounds:
+** Creation of an xml file test that includes question subgroup with multiple cardinality "1..n" replicated twice, allowing to provide more than one Purely National Exclusion Ground criterion
+** o	Update of the Data Structure, aimed at a more natural (semantic) way of providing evidences, the whole Criteria Excel file (not only Purely National Exclusion Grounds)
+
+* Corrections in code lists:
+** Revision of description texts to ensure consistency between eCertis and the Taxonomy
+** Correction of a duplicated code in the Occupations codelist and other possible ESCO updates
+
+* Validation rules:
+** Create validation rules for mandatory fields 
+** Create validation rules for all ESPD code lists 
+
+
+The final scope of the ESPD-EDM v4.0.0 is pending formal approval from the Change Management Board. 
+
+*Questions and answers*
+
+*  Tasks for link:https://github.com/OP-TED/ESPD-EDM/issues/334[GitHub issue #334], with questions regarding purely nation exclusion grounds, have been completed on ESPD side, but tasks on eCertis side are still pending. What is the impact of this?
+
+ESPD can be used separately from eCertis. It is not possible, at this point of time, to retrieve information from eCertis. Therefore, for the time being, it is necessary to work separately. Changes will be implemented in eCertis in the course of next year, and then it will be possible to retrieve all information from eCertis.
+
+*  Is there a portal or webpage with information on all eCertis requests and issues?
+
+Not currently, but it should be available. One option would be to use the ESPD GitHub, labeling those issues that are relevant for eCertis. This option would allow users to have access to all issues for both eCertis and ESPD from a single place.
+
+*  Management of changes in code lists
+
+Changes in code lists are not immediately published in EU Vocabularies. There is a dependency on the release schedule of EU Vocabularies, which can be consulted in their webpage.
+In the case of the Occupation code list, the list depends on ESCO, this is, EU Vocabularies provides the genericode with the values provided by ESCO. Therefore, change requirements do not depend on the ESPD team, and must be requested to ESCO.
+
+* Will link:https://github.com/OP-TED/ESPD-EDM/issues/348[GitHub issue #348], related to a duplicate code in the Occupation code list, be included in ESPD-EDM v3.1.0?
+
+Since EU Vocabularies will publish on the same day of the ESPD release, it is not possible to include this issue in ESPD-EDM v3.1.0 and it will be included in v4.0.0 (although in the meantime it will be possible to download and use the file published by EU Vocabularies).
+
+=== Replacement of UUIDs (ESPD-EDM v4.0.0)
+* The final solution that will be implemented in ESPD-EDM v4.0.0, as was agreed in the last Open User Community meeting held in October, is presented. 
+
+* As an introduction, a brief description of the UUID is provided and the types of UUID used in the ESPD are presented, as well as:
+** The *problem statement*: Currently, questions in criteria need to be instantiated for each procurement procedure instead of reusing criteria from earlier procurement procedures 
+** The *business requirements*:
+*** Ensure the connection for each criterion between ESPD Request and Response
+*** Ensure reusability of criteria both in the Request and the Response across procurement procedures
+*** Facilitate traceability and The Once-Only Principle (TOOP)
+** The *proposed solution*: Reduce the randomness on the ESPD Request by no longer using dynamic UUIDs and defining fixed identifiers for requirements and questions 
+
+* The solution is aimed at the replacement of UUIDs. Only the UUID of the criteria, which is a fix UUID, will be preserved as a link to eCertis, while UUIDs for question groups and subgroups, requirements and questions, will be removed. 
+
+* UUIDs will be replaced by a pre-defined short tag name for each element and a numbering according to the position within the tree structure, providing a path to a target criterion element. For example:
+
+image::UUID_Proposal1.png[]
+
+* The mapping between the criterion element short tag name proposed, the criterion element, and the UBL element, was provided.
+
+ * Several examples for the management of questions and the management of requirements were provided for a better understanding.
+ 
+ * A summary of the implications of implementing this solution was provided, as well as the main expected benefits:
+** The link between an ESPD Request and its related ESPD Responses (one or several) will be consistent
+** Same structures will use the same identifier
+** There will no ambiguity when addressing structures represented by the same identifier
+** It will be possible to reuse the same data structure in different procedures
+** It will be possible to easily read and mapp ESPD Responses
+** It will be possible to reuse content of the ESPD when requirements are compatible
+
+*Questions and answers*
+
+*  Would it be better to use a more semantic identifier instead of ordinals for the labels? What happens if the order changes?
+
+This was discussed in detail in the last OUC meeting and it was decided to use elements with numbering reflecting the data structure. We have seen in the last years that the current structure and ordering is very stable, so this dependency on the structure should not be a problem.
+
+
+=== Update of the ESPD-EDM webpages and documentation
+* The navigation menu of the link:https://docs.ted.europa.eu/ESPD-EDM/latest/index.html[ESPD-EDM  webpage] was updated for v3.0.1.
+
+* The updated structure of the menu is homogeneous with those of other OP-TED projects and will be used also for future ESPD versions.
+
+* Currently, the change affects only v3.0.1. Access to previous versions is available through a drop-down menu, and access to other OP-TED projects is available through the "Home" option.
+
+* In the link:https://docs.ted.europa.eu/ESPD-EDM/latest/index.html[ESPD Exchange Data Model (ESPD-EDM) webpage], information is provided on the last update of each reviewed document, since from ESPD-EDM v3.0.0 on online documentation can be updated without the need of a release. Technical artifacts only change with an ESPD release, but documentation can be improved without a release.
+
+* Within an updated document, a final section is added to provide detailed information on the specific changes.
+
+* A live demo of the new menu and its different options, as well as access to previous ESPD versions and to other OP-TED projects, and of updated documentation, was conducted.
+
+=== Questions and answers (Q&A)
+
+*  Related to the link:https://github.com/OP-TED/ESPD-EDM/issues/353[GitHub issue #353], with questions regarding lots and group of lots concepts, clarifications are requested and it is highlighted that the main issue is if there is any way to represent in the ESPD the lots that are within a group of lots.
+
+In eForms it is possible define what lots go together (concept of "group of lots") and to set different criteria for different groups of lots.
+In ESPD, the idea is to use this same logic and the same structure as it is in eForms, so there is a direct link to the lots and groups of lots defined in eForms matching the ones in ESPD. In the ESPD Response, it should be possible for the economic operator to indicate wether the EO participates for a lot or for a group of lots. 
+Clarifications will be provided in the GitHub issue, and this topic will be discussed in detail in a future OUC meeting.
+
+*  Which lots are included in a group of lots? It must be taken into account that dependencies between eForms and ESPD should be avoided; they should be linked but they should not be dependant on each other.
+
+This is defined in eForms. Currently, implementation of ESPD is dependant of the implementation of eForms. To smooth the transition, ESPD-EDM v3 was aligned with eForms for the management of lots, and no changes are expected in this regard in the short term. This should be discussed as well with the OUC.
+
+=== Slido
+The information on the Slido is available link:https://github.com/OP-TED/espd-docs/tree/wgm-reports/modules/ROOT/attachments/annual-seminar/SlidoResults.pdf[here]
+
+
+
+
