@@ -1,0 +1,117 @@
+= Open User Community Meeting Report
+
+== Publications Office – ESPD EDM
+
+
+[cols=",",",]
+|===
+|Meeting Date/Time: |2023-01-26, 10.00 - 11.30
+|===
+
+[cols=",",options="header",]
+|===
+|*Attendee Name* |*Organisation / Country*
+|Paloma ARILLO |OP
+|Natalie MURIC |OP
+|Marketa VELOVSKI |OP
+|George VERNARDOS |OP
+|Marc Christopher SCHMIDT |DG GROW
+|Laurent SCHOONJANS |DG GROW
+|Beata BALOGOVA |Slovakia
+|Claire BRONNER |Luxembourg
+|Bertalan FABIAN |Hungary
+|Jostein FRØMYR |Norway
+|Pierre HOULLEMARE |France
+|Uroš IZLAKAR |Ukraine
+|Aurimas JANKAUSKAS |Lithuania
+|Aleksandra JESENOVEC |Slovenia
+|Marija JOVANOSKA |North Macedonia
+|Ajda KOSTANJSEK |Slovenia
+|Wenche LUDVIKSEN |Norway
+|Foteini MICHAILIDOU |Greece
+|Jil MOSAR |Luxembourg
+|Pietro PALERMO |Italy
+|Nuno PERALTA |Portugal
+|Andriana PRENTZA |Greece
+|Konstantinos RAPTIS |Greece
+|Giampaolo SELLITTO |Italy
+|Maria SIAPERA |Greece
+|Andrej TRDINA |Slovenia
+|Justina ZALTAUSKAITE |Lithuania
+|Nikanoras ZAVADSKIJ |Lithuania
+|Alba COLOMER |NTT Data
+|Juan Carlos DELGADO |NTT Data
+|===
+
+:sectnums:
+:sectnumlevels: 4
+
+== Meeting Agenda
+. Summary of last meeting on 27th October 2022
+. Summary of 2022 ESPD Annual Seminar on 30th November
+. ESPD-EDM v3.1.0
+. ESPD-EDM v3.1.1
+. ESPD-EDM v4.0.0
+. GitHub issues
+. Next meetings
+. AOB
+
+== Summary of last meeting on 27th October 2022
+
+* The link:https://docs.ted.europa.eu/espd-ouc/20221027_OUC%20meeting%20report.html[link] to the last meeting report is provided and the main topics discussed are summarised.
+
+== Summary of 2022 ESPD Annual Seminar on 30th November
+
+* The links to the link:https://docs.ted.europa.eu/espd-ouc/2022_ESPD%20Annual%20Seminar%20report.html[Seminar Report] and the link:https://www.youtube-nocookie.com/embed/L71pr8VwiS4[video] are provided and the main topics discussed are summarised.
+
+== ESPD-EDM v3.1.0
+
+* ESPD-EDM v3.1.0 (minor release) was released in December 2022 as requested by the Open User Community.
+
+* The links to the link:https://docs.ted.europa.eu/ESPD-EDM/latest/index.html[online documentation] and the link:https://github.com/OP-TED/ESPD-EDM[release notes] are provided.
+
+* The scope of the minor release is presented, with the list of GitHub issues included in the release.
+
+* An link:https://docs.ted.europa.eu/ESPD-EDM/latest/xml_technical_handbook.html#business-rules-guide[annex] has been provided in the Technical Handbook with information regarding business rules, as a simplified versions of former document “ESPD Test Cases Mapping”. The index and structure of this annex are very similar to the original document, and content has been updated to the lastest ESPD-EDM version.
+
+* The link to the updated link:https://docs.ted.europa.eu/ESPD-EDM/latest/_attachments/ESPD_CM_html/index.html[conceptual model] is provided.
+
+== ESPD-EDM v3.1.1
+
+*  The Open User Community has requested a patch release (ESPD-EDM v3.1.1) with some bug fixes. The ESPD Team is working on it, and it is planned to be released in the beginning of February.
+
+* The scope of the patch release is presented, with the list of GitHub issues that will be included in the release. (_Note: GitHub issues 340, 374 and 378 will also be included in the patch release._)
+
+== ESPD-EDM v4.0.0
+
+*  A major release is scheduled for the end of March of 2023 (ESPD-EDM v4.0.0).
+
+* The scope of the major release is presented, with the list of GitHub issues that will be included in the release.
+
+== GitHub issues
+
+* The list of the GitHub issues closed since the last OUC meeting (19 issues) is presented.
+
+* Currently, there are 17 open GitHub issues. The ESPD Team is working on 9 of them; for the rest, there is a dependency on third parties such as the eCertis Team or the eForms Team.
+
+* link:https://github.com/OP-TED/ESPD-EDM/issues/362[GitHub issue #362] (SC-References: performance of works / deliveries / services of the specified type). Currently, requirements are not explicitly linked with questions, question groups or question subgroups. The ESPD Team will review this issue in detail and provide a solution proposal in a future OUC meeting. This issue will not be included in ESPD-EDM v4.0.0.
+
+== Next meetings
+
+* *Next OUC meetings*: 
+** 23 February 2023, 10.00 – 11.30
+** 23 March 2023, 10.00 – 11.30
+
+* Participants are invited to share their experiences and issues related to the ESPD in future OUC meetings
+
+== Any other business
+
+* *Changes in the Criterion excel file*. The taxonomy is being fine-tuned and adapted to the replacement of UUIDs, but the general structure and contents of the file will not change in ESPD-EDM v4.0.0 (except mistakes that will be corrected in the structure of the elements). The new version of the excel file that is being updated is showed for a better understanding. Before presenting it to the OUC, the file(s) will also be shared with a small group of users for discussion and for a better understanding.
+
+* *Scope of patch release ESPD-EDM v3.1.1*. The patch release will only include fixes to ESPD-EDM v3 (no improvements or new requirements). No more patch releases are expected before the major release. Further changes will be tackled in v4 or future ESPD-EDM releases.
+
+* link:https://github.com/OP-TED/ESPD-EDM/issues/340[GitHub issue #340] (General yearly turnover - differences in taxonomy and mock-ups from ESPD-EDM) has been reopened and will be reviewed in detail by the ESPD Team to assess the feasibility of including it in the patch release ESPD-EDM v3.1.1. (_Note: GitHub issues 340 will finally be included in the patch release ESPD-EDM v3.1.1._)
+
+* *Management of releases*. It is difficult for implementors to cope with many ESPD-EDM versions. It is agreed that, before a new version is in production, there is a pilot with a standstill period so users can test and eventual issues can be fixed before the actual release, in order to minimize the need of future patch releases.
+
+
