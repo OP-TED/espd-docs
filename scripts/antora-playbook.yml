@@ -8,7 +8,7 @@ content:
 
   ### Local content
   - url: ..
-    start_path: .
+    start_path: .   
     branches: HEAD
 
 urls:
