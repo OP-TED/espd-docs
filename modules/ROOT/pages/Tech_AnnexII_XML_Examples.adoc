@@ -50,22 +50,22 @@ The xml code implemented for this criterion in the ESPDRequest is:
 <cac:TenderingCriterionProperty>
         <cbc:ID schemeID="criterion" schemeAgencyID="OP" schemeVersionID="20210616-0">977149e9-9a91-4aa6-acb6-6928a0dd6609</cbc:ID>
         <cbc:Description>Select the type of requirement</cbc:Description>
-        <cbc:TypeCode listID="criterion-element-type" listVersionID="3.1.0">REQUIREMENT</cbc:TypeCode>
-        <cbc:ValueDataTypeCode listID="response-data-type" listVersionID="3.1.0">CODE_BOOLEAN</cbc:ValueDataTypeCode>
+        <cbc:TypeCode listID="criterion-element-type" listVersionID="3.2.0">REQUIREMENT</cbc:TypeCode>
+        <cbc:ValueDataTypeCode listID="response-data-type" listVersionID="3.2.0">CODE_BOOLEAN</cbc:ValueDataTypeCode>
         <!-- No answer is expected
 here from the economic operator, as this is a REQUIREMENT issued by the contracting
 authority. Hence the element 'cbc:ValueDataTypeCode' contains the type of value of
 the requirement issued by the contracting authority -->
-        <cbc:ExpectedCode listID="BooleanGUIControlType" listVersionID="3.1.0">RADIO_BUTTON_TRUE</cbc:ExpectedCode>
+        <cbc:ExpectedCode listID="BooleanGUIControlType" listVersionID="3.2.0">RADIO_BUTTON_TRUE</cbc:ExpectedCode>
 </cac:TenderingCriterionProperty>
 <cac:SubsidiaryTenderingCriterionPropertyGroup>
     <cbc:ID schemeID="criterion" schemeAgencyID="OP" schemeVersionID="20210929-0">ca15c15f-110e-4a10-8d6e-5e41cf5f9098</cbc:ID>
-    <cbc:PropertyGroupTypeCode listID="property-group-type" listVersionID="3.1.0">ONTRUE</cbc:PropertyGroupTypeCode>
+    <cbc:PropertyGroupTypeCode listID="property-group-type" listVersionID="3.2.0">ONTRUE</cbc:PropertyGroupTypeCode>
     <cac:TenderingCriterionProperty>
             <cbc:ID schemeID="criterion" schemeAgencyID="OP" schemeVersionID="20210929-0">4d879427-f3e8-431b-a516-1c0f22edd56a</cbc:ID>
             <cbc:Description>Description of the economic or financial requirement</cbc:Description>
-            <cbc:TypeCode listID="criterion-element-type" listVersionID="3.1.0">REQUIREMENT</cbc:TypeCode>
-            <cbc:ValueDataTypeCode listID="response-data-type" listVersionID="3.1.0">DESCRIPTION</cbc:ValueDataTypeCode>
+            <cbc:TypeCode listID="criterion-element-type" listVersionID="3.2.0">REQUIREMENT</cbc:TypeCode>
+            <cbc:ValueDataTypeCode listID="response-data-type" listVersionID="3.2.0">DESCRIPTION</cbc:ValueDataTypeCode>
             <!-- No answer is expected
 here from the economic operator, as this is a REQUIREMENT issued by the contracting
 authority. Hence the element 'cbc:ValueDataTypeCode' contains the type of value of
@@ -77,12 +77,12 @@ the requirement issued by the contracting authority -->
 (...)
 <cac:SubsidiaryTenderingCriterionPropertyGroup>
         <cbc:ID schemeID="criterion" schemeAgencyID="OP" schemeVersionID="20210616-0">cc96aa19-a0be-4409-af58-ff3f3812741b</cbc:ID>
-        <cbc:PropertyGroupTypeCode listID="property-group-type" listVersionID="3.1.0">ONFALSE</cbc:PropertyGroupTypeCode>
+        <cbc:PropertyGroupTypeCode listID="property-group-type" listVersionID="3.2.0">ONFALSE</cbc:PropertyGroupTypeCode>
         <cac:TenderingCriterionProperty>
                 <cbc:ID schemeID="criterion" schemeAgencyID="OP" schemeVersionID="20210616-0">d996223a-3f54-4803-bf05-39019c843e94</cbc:ID>
                 <cbc:Description>Minimum rating</cbc:Description>
-                <cbc:TypeCode listID="criterion-element-type" listVersionID="3.1.0">REQUIREMENT</cbc:TypeCode>
-                <cbc:ValueDataTypeCode listID="response-data-type" listVersionID="3.1.0">QUANTITY</cbc:ValueDataTypeCode>
+                <cbc:TypeCode listID="criterion-element-type" listVersionID="3.2.0">REQUIREMENT</cbc:TypeCode>
+                <cbc:ValueDataTypeCode listID="response-data-type" listVersionID="3.2.0">QUANTITY</cbc:ValueDataTypeCode>
                 <!-- No answer is expected
 here from the economic operator, as this is a REQUIREMENT issued by the contracting
 authority. Hence the element 'cbc:ValueDataTypeCode' contains the type of value of
@@ -170,8 +170,8 @@ The xml code implemented for this criterion in the ESPDRequest is:
                 <cac:TenderingCriterionProperty>
                         <cbc:ID schemeID="criterion" schemeAgencyID="OP" schemeVersionID="20210616-0">ae5e864a-f3ba-489b-ba17-b87af8b10138</cbc:ID>
                         <cbc:Description>[Additional information; e.g. no evidences online]</cbc:Description>
-                        <cbc:TypeCode listID="criterion-element-type"  listVersionID="3.1.0">CAPTION</cbc:TypeCode>
-                        <cbc:ValueDataTypeCode listID="response-data-type" listVersionID="3.1.0">NONE</cbc:ValueDataTypeCode>
+                        <cbc:TypeCode listID="criterion-element-type"  listVersionID="3.2.0">CAPTION</cbc:TypeCode>
+                        <cbc:ValueDataTypeCode listID="response-data-type" listVersionID="3.2.0">NONE</cbc:ValueDataTypeCode>
                 </cac:TenderingCriterionProperty>
                 (...)
                 </cac:TenderingCriterionPropertyGroup>
@@ -182,8 +182,8 @@ The xml code implemented for this criterion in the ESPDRequest is:
                 <cac:TenderingCriterionProperty>
                         <cbc:ID schemeID="criterion" schemeAgencyID="OP" schemeVersionID="20210616-0">c31b6447-bf88-4172-901a-f9b105205391</cbc:ID>
                         <cbc:Description>Your answer</cbc:Description>
-                        <cbc:TypeCode listID="criterion-element-type" listVersionID="3.1.0">QUESTION</cbc:TypeCode>
-                        <cbc:ValueDataTypeCode listID="response-data-type" listVersionID="3.1.0">INDICATOR</cbc:ValueDataTypeCode>
+                        <cbc:TypeCode listID="criterion-element-type" listVersionID="3.2.0">QUESTION</cbc:TypeCode>
+                        <cbc:ValueDataTypeCode listID="response-data-type" listVersionID="3.2.0">INDICATOR</cbc:ValueDataTypeCode>
                 </cac:TenderingCriterionProperty>
                 (...)
         </cac:TenderingCriterionPropertyGroup>
@@ -207,8 +207,8 @@ Code list xref:Tech_AnnexI_Code_Lists_Catalogue.adoc#currency-table[currency] ca
 <cac:TenderingCriterionProperty>
         (...)
         <cbc:Description>Additional Information</cbc:Description>
-        <cbc:TypeCode listID="criterion-element-type" listVersionID="3.1.0">REQUIREMENT</cbc:TypeCode>
-        <cbc:ValueDataTypeCode listID="response-data-type" listVersionID="3.1.0">DESCRIPTION</cbc:ValueDataTypeCode>
+        <cbc:TypeCode listID="criterion-element-type" listVersionID="3.2.0">REQUIREMENT</cbc:TypeCode>
+        <cbc:ValueDataTypeCode listID="response-data-type" listVersionID="3.2.0">DESCRIPTION</cbc:ValueDataTypeCode>
         <cbc:ValueCurrencyCode listID="http://publications.europa.eu/resource/authority/currency" listAgencyID="OP" listVersionID="20211208-0">EUR</cbc:ValueCurrencyCode>
         (...)
 </cac:TenderingCriterionProperty>
@@ -221,8 +221,8 @@ Code list xref:Tech_AnnexI_Code_Lists_Catalogue.adoc#currency-table[currency] al
 <cac:TenderingCriterionProperty>
         (...)
         <cbc:Description>Minimum requirement</cbc:Description>
-        <cbc:TypeCode listID="criterion-element-type" listVersionID="3.1.0">REQUIREMENT</cbc:TypeCode>
-        <cbc:ValueDataTypeCode listID="response-data-type" listVersionID="3.1.0">AMOUNT</cbc:ValueDataTypeCode>
+        <cbc:TypeCode listID="criterion-element-type" listVersionID="3.2.0">REQUIREMENT</cbc:TypeCode>
+        <cbc:ValueDataTypeCode listID="response-data-type" listVersionID="3.2.0">AMOUNT</cbc:ValueDataTypeCode>
         <!-- No answer is expected
         here from the economic operator, as this is a REQUIREMENT issued by the contracting
         authority. Hence the element 'cbc:ValueDataTypeCode' contains the type of value of
@@ -245,7 +245,7 @@ The following xml code is an example of use of code list xref:Tech_AnnexI_Code_L
 <cac:AdditionalDocumentReference>
         <cbc:ID schemeAgencyID="OP">2017/S 142-293520</cbc:ID>
         <cbc:DocumentTypeCode listID="docrefcontent-type" 
-        listVersionID="3.1.0">TED_CN</cbc:DocumentTypeCode>
+        listVersionID="3.2.0">TED_CN</cbc:DocumentTypeCode>
         <cac:Attachment>
         <cac:ExternalReference>
         <!-- Beware XML URI fields may require encoded URLs -->
@@ -299,7 +299,7 @@ The following xml code is an example of use of code list xref:Tech_AnnexI_Code_L
 ----
 (...)
 <cac:TenderingCriterionResponse>
-    <cbc:ID schemeID="ISO/IEC 9834-8:2008 - 4UUID" schemeAgencyID="OP" schemeVersionID="3.1.0">acb58f0e-0fe4-4372-aa08-60d0c36bfcfe</cbc:ID>
+    <cbc:ID schemeID="ISO/IEC 9834-8:2008 - 4UUID" schemeAgencyID="OP" schemeVersionID="3.2.0">acb58f0e-0fe4-4372-aa08-60d0c36bfcfe</cbc:ID>
     <cbc:ValidatedCriterionPropertyID schemeID="criterion" schemeAgencyID="OP" schemeVersionID="20210616-0">1fa05728-308f-43b0-b547-c903ffb0a8af</cbc:ValidatedCriterionPropertyID>
     <cbc:ResponseID schemeID="VAT" schemeAgencyID="ES-AEAT">B82387770</cbc:ResponseID>
 </cac:TenderingCriterionResponse>
@@ -344,22 +344,22 @@ The following xml code is an example of use of code list xref:Tech_AnnexI_Code_L
         <cac:SubsidiaryTenderingCriterionPropertyGroup>
                 <cbc:ID schemeID="criterion" schemeAgencyID="OP"
                         schemeVersionID="20210616-0">ee486082-93fa-4c17-8920-fdf01b890bd1</cbc:ID>
-                <cbc:PropertyGroupTypeCode listID="property-group-type" listVersionID="3.1.0">ON*</cbc:PropertyGroupTypeCode>
+                <cbc:PropertyGroupTypeCode listID="property-group-type" listVersionID="3.2.0">ON*</cbc:PropertyGroupTypeCode>
                 <cac:TenderingCriterionProperty>
                         <cbc:ID schemeID="criterion" schemeAgencyID=
                         "OP" schemeVersionID="20210616-0">96df5f9f-f458-40cf-818f-a2beade58b1a</cbc:ID>
                         <cbc:Description>Ratio Type</cbc:Description>
                         <cbc:TypeCode listID="criterion-element-type"
-                        listVersionID="3.1.0">REQUIREMENT</cbc:TypeCode>
+                        listVersionID="3.2.0">REQUIREMENT</cbc:TypeCode>
                         <cbc:ValueDataTypeCode listID=
-                        "response-data-type" listVersionID="3.1.0">
+                        "response-data-type" listVersionID="3.2.0">
                         CODE</cbc:ValueDataTypeCode>
                         <!-- No answer is expected here from the
                 economic operator, as this is a REQUIREMENT issued by the buyer. Hence the element
                 'cbc:ValueDataTypeCode' contains the type of value of the requirement issued by the
                 buyer -->
                         <cbc:ExpectedCode listID=
-                        "financial-ratio-type" listVersionID="3.1.0">R11</cbc:ExpectedCode>
+                        "financial-ratio-type" listVersionID="3.2.0">R11</cbc:ExpectedCode>
                 </cac:TenderingCriterionProperty>
                 (...)
         </cac:SubsidiaryTenderingCriterionPropertyGroup>
@@ -400,24 +400,24 @@ The following xml code is an example of use of code list xref:Tech_AnnexI_Code_L
 ----
 <!-- Criterion:Enrolment in a relevant professional register -->
 <cac:TenderingCriterion>
- <cbc:ID schemeID="criterion" schemeAgencyID="OP" schemeVersionID="3.1.0">6ee55a59-6adb-4c3a-b89f-e62a7ad7be7f</cbc:ID>
+ <cbc:ID schemeID="criterion" schemeAgencyID="OP" schemeVersionID="3.2.0">6ee55a59-6adb-4c3a-b89f-e62a7ad7be7f</cbc:ID>
         <cbc:CriterionTypeCode listID="http://publications.europa.eu/resource/authority/criterion" listAgencyID="OP" listVersionID="20210616-0">prof-regist</cbc:CriterionTypeCode>
         <cbc:Name>Enrolment in a relevant professional register</cbc:Name>
         <cbc:Description>It is enrolled in relevant professional registers kept in the Member State of its establishment as described in Annex XI of Directive 2014/24/EU; economic operators from certain Member States may have to comply with other requirements set out in that Annex.</cbc:Description>                
         (...)
         <cac:TenderingCriterionPropertyGroup>
         <cbc:ID schemeID="criterion" schemeAgencyID="OP" schemeVersionID="20210616-0">b01d8f8f-ceac-4b47-b7aa-88cdeb630465</cbc:ID>
-        <cbc:PropertyGroupTypeCode listID="property-group-type" listVersionID="3.1.0">ON*</cbc:PropertyGroupTypeCode>
+        <cbc:PropertyGroupTypeCode listID="property-group-type" listVersionID="3.2.0">ON*</cbc:PropertyGroupTypeCode>
         <cac:TenderingCriterionProperty>
                 <cbc:ID schemeID="criterion" schemeAgencyID="OP" schemeVersionID="20210616-0">53fe9bf5-38c9-4281-b8a9-7250b75a9407</cbc:ID>
                 <cbc:Description>occupation</cbc:Description>
-                <cbc:TypeCode listID="criterion-element-type" listVersionID="3.1.0">REQUIREMENT</cbc:TypeCode>
-                <cbc:ValueDataTypeCode listID="response-data-type" listVersionID="3.1.0">CODE</cbc:ValueDataTypeCode>
+                <cbc:TypeCode listID="criterion-element-type" listVersionID="3.2.0">REQUIREMENT</cbc:TypeCode>
+                <cbc:ValueDataTypeCode listID="response-data-type" listVersionID="3.2.0">CODE</cbc:ValueDataTypeCode>
                 <!-- No answer is expected
                 here from the economic operator, as this is a REQUIREMENT issued by the contracting
                 authority. Hence the element 'cbc:ValueDataTypeCode' contains the type of value of
                 the requirement issued by the contracting authority -->
-                <cbc:ExpectedCode listID="occupation" listVersionID="3.1.0">http://data.europa.eu/esco/occupation/4d5bd738-9202-4fd7-bd8c-7dbe914048de</cbc:ExpectedCode>
+                <cbc:ExpectedCode listID="occupation" listVersionID="3.2.0">http://data.europa.eu/esco/occupation/4d5bd738-9202-4fd7-bd8c-7dbe914048de</cbc:ExpectedCode>
         </cac:TenderingCriterionProperty>
         (...)
 </cac:TenderingCriterionPropertyGroup>

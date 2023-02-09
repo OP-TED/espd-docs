@@ -2,19 +2,19 @@
 = Release Notes
 include::partial$attributes.adoc[]
 
-== ESPD-EDM v3.1.0 (December 2022)
+== ESPD-EDM v3.2.0 (December 2022)
 
-The ESPD-EDM v3.0.1 was focused on the ESPD-EDM online documentation updates. This current version v3.1.0 provides changes and fixes suggested by the Member States and stakeholders via the GitHub repositories issues workspace, mostly related to the data structure. 
+The ESPD-EDM v3.0.1 was focused on the ESPD-EDM online documentation updates. This current version v3.2.0 provides changes and fixes suggested by the Member States and stakeholders via the GitHub repositories issues workspace, mostly related to the data structure. 
 
 The list below details the updates included in this release. 
 
 ### ESPD-EDM conceptual model
 
-* link:https://github.com/OP-TED/ESPD-EDM/tree/v3.1.0/conceptual-model[_.eap_ and _.xmi_ files] with two views and diagrams: 
+* link:https://github.com/OP-TED/ESPD-EDM/tree/v3.2.0/conceptual-model[_.eap_ and _.xmi_ files] with two views and diagrams: 
   * **Business oriented view (BOV)** aimed at facilitating the understanding of the model and the business context, with references to the technical model, and;
   * **Technically oriented view (TOV)** providing an UBL-based schema with references to business-oriented view and aligned with the eProcurement ontology.
 
-* link:https://github.com/OP-TED/ESPD-EDM/tree/v3.1.0/conceptual-model/ESPD_CM_html[_HTML_ version] of the UML conceptual model.If you do not want to download the folder to view the model you can view it on the documentation page under link:https://docs.ted.europa.eu/ESPD-EDM/3.1.0/_attachments/ESPD_CM_html/index.html[ESPD-EDM CONCEPTUAL MODEL HTML].
+* link:https://github.com/OP-TED/ESPD-EDM/tree/v3.2.0/conceptual-model/ESPD_CM_html[_HTML_ version] of the UML conceptual model.If you do not want to download the folder to view the model you can view it on the documentation page under link:https://docs.ted.europa.eu/ESPD-EDM/3.2.0/_attachments/ESPD_CM_html/index.html[ESPD-EDM CONCEPTUAL MODEL HTML].
 
 ### ESPD-EDM Criterion file - Data Structure 
 
@@ -104,11 +104,11 @@ Several issues have been resolved related to the data structure of the ESPD-EDM 
     
         *** SchemeAgencyID value is “XXXAGENCYXXX” whenever the ID comes from an external Agency like for the element “cac:Evidence”.  
 
-        *** SchemeVersionID value is “3.1.0” and not “3.0.0”.
+        *** SchemeVersionID value is “3.2.0” and not “3.0.0”.
 
         *** ListAgencyID value is “OP” and not “EU-COM-GROW/EU-COM-OP”.
 
-        *** ListVersionID value is “3.1.0” and not “3.0.0”.
+        *** ListVersionID value is “3.2.0” and not “3.0.0”.
     
         *** The right ESPD version in the comments is ESPD-V3.x.x 
    
@@ -120,7 +120,7 @@ The resulting updated XSLT files have been used to generate the XML samples avai
 
 ### ESPD-EDM Code Lists
 
-EU Vocabularies code lists version updated (specific files can be found in the folder link:https://github.com/OP-TED/ESPD-EDM/tree/v3.1.0/codelists/gc[codelists/gc])
+EU Vocabularies code lists version updated (specific files can be found in the folder link:https://github.com/OP-TED/ESPD-EDM/tree/v3.2.0/codelists/gc[codelists/gc])
 
 * **AccessRight** version updated to	 20220316-0.
 * **country**	version updated to  20221019-0.
@@ -144,7 +144,7 @@ ESPD version has also been updated in the related files to match the current ver
 
 Update of Interoperability Testbed link:https://www.itb.ec.europa.eu/espd/upload[ESPD validator]
 
-* Updated v3.1.0 on the validator.
+* Updated v3.2.0 on the validator.
 * Removed v3.0.1 from the validator.
 
 ### ESPD-EDM Online documentation - espd-docs GitHub 

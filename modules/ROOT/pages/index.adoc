@@ -7,7 +7,7 @@ ifeval::[{espd_latest_version} == {this-version}]
 endif::[]
 ifndef::imagesdir[:imagesdir: images]
 
-== v3.1.0
+== v3.2.0
 
 == Resources
 

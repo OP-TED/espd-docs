@@ -1,6 +1,6 @@
 name: ESPD-EDM
 title: ESPD EDM
-version: &ver '3.1.0' # don't remove the &ver anchor
+version: &ver '3.2.0' # don't remove the &ver anchor
 start_page: ROOT:index.adoc
 # ommited while we work in the specific navigation menu
 nav:

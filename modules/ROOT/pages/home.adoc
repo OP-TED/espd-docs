@@ -9,7 +9,7 @@ The European Commission (EC) has developed a data model and 'semantic assets' fo
 image:home_roadmap.png[Roadmap,align=center,pdfwidth=50%,scaledwidth=50%]
 
 
-### v3.1.0 Release (February 2022)
+### v3.2.0 Release (February 2022)
 
 This new version of the ESPD-EDM is a patch release which focuses on:
 
@@ -17,7 +17,7 @@ This new version of the ESPD-EDM is a patch release which focuses on:
 * updating the online documentation as well as the xml example files
 * provide a conceptual model specification
 
-For more information regarding the release, please refer to the link:https://docs.ted.europa.eu/ESPD-EDM/3.1.0/release_notes.html[release notes]. 
+For more information regarding the release, please refer to the link:https://docs.ted.europa.eu/ESPD-EDM/3.2.0/release_notes.html[release notes]. 
 
 ## The Directive
 

@@ -169,9 +169,9 @@ _XML snippet 1.b) different evidentiary documents per response_
 
 <cac:TenderingCriterionResponse>
 
-<cbc:ID schemeID="ISO/IEC 9834-8:2008 - 4UUID" schemeAgencyID="OP" schemeVersionID="3.1.0">219949a1-b7bb-4d7e-8c3b-cc8ca695e15b</cbc:ID> 
+<cbc:ID schemeID="ISO/IEC 9834-8:2008 - 4UUID" schemeAgencyID="OP" schemeVersionID="3.2.0">219949a1-b7bb-4d7e-8c3b-cc8ca695e15b</cbc:ID> 
 
-<cbc:ValidatedCriterionPropertyID schemeID="criterion" schemeAgencyID="OP" schemeVersionID="3.1.0">d8d5478e-cc65-48c9-a189-19bbe87a9bfd</cbc:ValidatedCriterionPropertyID> <1>
+<cbc:ValidatedCriterionPropertyID schemeID="criterion" schemeAgencyID="OP" schemeVersionID="3.2.0">d8d5478e-cc65-48c9-a189-19bbe87a9bfd</cbc:ValidatedCriterionPropertyID> <1>
 
 <cbc:ConfidentialityLevelCode listID="http://publications.europa.eu/resource/authority/access-right" listAgencyID="OP" listVersionID="20211208-0">PUBLIC</cbc:ConfidentialityLevelCode> <2>
 
@@ -189,9 +189,9 @@ _XML snippet 1.b) different evidentiary documents per response_
 
 <cac:TenderingCriterionResponse>
 
-<cbc:ID schemeID="ISO/IEC 9834-8:2008 - 4UUID" schemeAgencyID="OP" schemeVersionID="3.1.0">7c7fb445-c5f9-4f92-8b58-7f06a541951f</cbc:ID>
+<cbc:ID schemeID="ISO/IEC 9834-8:2008 - 4UUID" schemeAgencyID="OP" schemeVersionID="3.2.0">7c7fb445-c5f9-4f92-8b58-7f06a541951f</cbc:ID>
 
-<cbc:ValidatedCriterionPropertyID schemeID="criterion" schemeAgencyID="OP" schemeVersionID="3.1.0">191b34a8-5af0-4d53-b431-4ecd624218ea</cbc:ValidatedCriterionPropertyID> <4>
+<cbc:ValidatedCriterionPropertyID schemeID="criterion" schemeAgencyID="OP" schemeVersionID="3.2.0">191b34a8-5af0-4d53-b431-4ecd624218ea</cbc:ValidatedCriterionPropertyID> <4>
 
 <cbc:ConfidentialityLevelCode listID="http://publications.europa.eu/resource/authority/access-right" listAgencyID="OP" listVersionID="20211208-0">CONFIDENTIAL</cbc:ConfidentialityLevelCode> <5>
 
