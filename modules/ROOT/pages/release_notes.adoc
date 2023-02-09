@@ -2,178 +2,67 @@
 = Release Notes
 include::partial$attributes.adoc[]
 
-== ESPD-EDM v3.2.0 (December 2022)
+== v3.2.0 (February 2023) 
 
-The ESPD-EDM v3.0.1 was focused on the ESPD-EDM online documentation updates. This current version v3.2.0 provides changes and fixes suggested by the Member States and stakeholders via the GitHub repositories issues workspace, mostly related to the data structure. 
+The ESPD-EDM v3.1.0 was focused on the ESPD-EDM changes and fixes mostly related to the data structure. The ESPD-EDM version 3.2.0 focuses mainly on correcting minor errors in the data structure, as suggested by the Member States and stakeholders via the GitHub repositories issues workspace.
+The list below details exhaustively every change introduced since the publication of the previous release (3.1.0) of the ESPD-EDM. 
 
-The list below details the updates included in this release. 
+=== ESPD-EDM Criterion file - Data Structure
 
-### ESPD-EDM conceptual model
+Several issues have been resolved related to the data structure of the ESPD-EDM Criterion file.
 
-* link:https://github.com/OP-TED/ESPD-EDM/tree/v3.2.0/conceptual-model[_.eap_ and _.xmi_ files] with two views and diagrams: 
-  * **Business oriented view (BOV)** aimed at facilitating the understanding of the model and the business context, with references to the technical model, and;
-  * **Technically oriented view (TOV)** providing an UBL-based schema with references to business-oriented view and aligned with the eProcurement ontology.
+    * **Indentation Issues and elements closure in the Criterion Excel file** 
+        ** Indentation has been corrected in criteria C40, C41, C42, C43, C44, C45, C46, C47 for element “./RG1/RSG1/QSG1”.
+        ** Closure element issue has been corrected in criterion C50 for element "./RG1/RSG1".
 
-* link:https://github.com/OP-TED/ESPD-EDM/tree/v3.2.0/conceptual-model/ESPD_CM_html[_HTML_ version] of the UML conceptual model.If you do not want to download the folder to view the model you can view it on the documentation page under link:https://docs.ted.europa.eu/ESPD-EDM/3.2.0/_attachments/ESPD_CM_html/index.html[ESPD-EDM CONCEPTUAL MODEL HTML].
+    * **Fix GitHub issue #340 - General yearly turnover - differences in taxonomy and mock-ups from ESPD-EDM**
+        ** Cardinality is fixed to 1 in line 11 of criterion 29
+        ** Cardinality is fixed to 1..n in line 14 of criterion 29
 
-### ESPD-EDM Criterion file - Data Structure 
+    * **Fix GitHub issue #368 - Typo's in taxonomy #interproc** 
+        ** Typo errors such as double spaces and duplicated words, as well as spelling issues, are fixed.
 
-Several issues have been resolved related to the data structure of the ESPD-EDM Criterion file. 
+    * **Fix GitHub issue #369 - The same "ElementUUID" is associated to different questions. #interproc** 
+        ** A new UUID is generated and assigned to criterion 34 (line 22): 78b2e0e6-1bfe-43f5-a061-d9cf4e6e6ecc.
 
-  * **Zooming, Bolding first 2 lines, Missing the first line, and Indentation Issue in the Criterion Excel file** 
-      ** The following Criterion Excel sheets have been zoomed in at 100%: “SC-Abilities_1 (Persons)” that contains C41, “SC_Abilities_3 (Education)” that contains C47. 
-      ** Title rows 1 and 2 have been put in bold for the following sheets: “SC-Professional_risk_insurance” which contains C35, “SC-Other_economic_or_financial” which contains C36. 
-      ** Indentation issue has been corrected:  in criteria related to turnover C29, C30, C31, C32 for element: “./RG1/QSG4”, and in criteria C40, C41, C42, C44, C45, C46, C47 for element “./RG1/RSG1/QSG1”.  
-      ** Numbered first line has been added in the Criterion Excel file for Criterion C65 SC SME. 
+    * **Fix GitHub issue #371 - "Special requierements check" criteria has closing tags for subgroups on the same levels in taxonomy #interproc** 
+        ** Indentation issue is fixed in criterion 48.
 
-  * **UUID and Cardinality to be removed from closing Requirement Group element** 
-      ** The UUID and the Cardinality have been removed from the closing Requirement Group of criterion C30. 
+    * **Fix GitHub issue #374 - Missing cardinalities values in ESPD-Criterion.xlsx v3.1.0 #interproc** 
+        ** Question sub-groups with no values have been populated to 1 for all the ocurrences of the following UUID: 0e50931d-4d39-4f1d-9fdc-b2cf16c0807a, 9b3a04ff-e36d-4d4f-b47c-82ad402b9b02 and 5fe93344-ed91-4f97-bcab-b6720a131798.
 
-  * **Confusing Evidence Group or Subgroup relation with Question Subgroup (QSG) in criteria** 
-      ** In criterion C36, the evidence subgroup has been moved as a child of the parent Requirement Subgroup for the 2 related Question Subgroups. So, it is common to the 2 related QSG. 
-      ** In criteria C37, C38, C39 (SC-References), the Evidence Subgroup has been kept as linked to "Reference".
+=== ESPD-EDM XSLT files
 
-  * **Updating description of Requirement in criteria C49, C50** 
-      ** In the description of requirement 1, there was a misspelling of the word "minimum" which was written "minum" in criteria C49 and C50. The misspelling has been corrected. 
+The following changes has been performed related to the ESPD-EDM XSLT files:
 
-  * **Why cardinality of the Requirement "Business Domain" of criterion C31 spec-aver-to is multiple?** 
-      ** Cardinality of Requirement "Business Domain" of criterion C31 spec-aver-to should be aligned with the cardinality of Requirement "Business Domain" of criterion C32 spec-year-to. 
-      ** Cardinality of Requirement "Business Domain" of criterion C31 spec-aver-to has been updated to 1. 
+    * **Fix GitHub issue #378 - Clarification on date and time format #interproc** : a wrong time format with miliseconds in the “issue date” column of the XML example has been fixed to remove these miliseconds.
 
-  * **Legislation UUID** 
-      ** Legislation UUID should be different all over the Criterion Excel file since it is a structural terminal element that holds value. 
-      ** The Legislation UUID is now different for each criterion in the criterion excel file. 
+    * **Updating attributes values in the xslt files for the xml samples**
+    ** SchemeVersionID value is “3.2.0” and not “3.1.0”.
+    ** ListVersionID value is “3.2.0” and not “3.1.0”.
+    ** The right ESPD version in comments is ESPD-V3.x.x
 
-  * **Fix GitHub issue link:https://github.com/OP-TED/ESPD-EDM/issues/287[#287] - Part IV: Selection criteria, C: Technical and professional ability (CA`s)** 
-      ** At the user´s request, a new optional requirement section has been added to criterion 51 with cardinality 0..n. 
-      ** A new UUID has been generated for this new requirement section:  75b14cf3-c30f-4b8f-b9ab-549ff5ba595a
+    * **Converting samples from Excel to XML format with the Updated XSLT**
 
-  * **Fix GitHub issue link:https://github.com/OP-TED/ESPD-EDM/issues/320[#320] - Duplicate "Question Group UUID" in the same Criterion and the Question Groups have different structures** 
-      ** UUID used in Criterions 40 and 41 for question subgroup structures: "Technician" and "Technical body" were the same but the structures were different. 
-      ** A new UUID has been generated in Criterion 40 and 41 for structure "Technical body" to avoid this issue: 70e28455-d0e1-47e7-9caa-ead3b7df7644. 
+The resulting updated XSLT files have been used to generate the XML samples available in the GitHub folder xml-examples. 
 
-  * **Fix GitHub issue link:https://github.com/OP-TED/ESPD-EDM/issues/326[#326] - EVIDENCE_IDENTIFIER with different cardinality** 
-      ** EVIDENCE_IDENTIFIER: 0a166f0a-0c5f-42b0-81e9-0fc9fa598a48 cardinality fixed to 1..n in criteria 40 and 41 in ESPD-criterion.xlsx file
+=== Code list
 
-  * **Fix GitHub issue link:https://github.com/OP-TED/ESPD-EDM/issues/327[#327] - Groups with same UUID and different cardinality** 
-      ** 10822ddd-9ba6-42d5-9339-de0845aeafc9: different cardinality are 1 and 1..n: different structures, a new UUID has been generated and assigned to criterion 50: add786b6-7e75-4303-8b9a-3d477331abd9.
-      ** 289f39b3-2a15-421a-8050-a29858031f35: different cardinality are 1 and 1..n: the issue no longer exists since version 3.0.1 and older versions are not under support, so no changes are necessary.
-      ** 5f9f09f7-f701-432c-9fdc-c22c124a74c9: different cardinality are 1 and 0..1: cardinality is wrong in criterion 22, it has been updated to 1.
-      ** 74e6c7b4-757b-4b40-ada6-fad6a997c310: different cardinality are 0..1 and [empty]: empty cardinality is wrong in criteria 18 and 19, it has been updated to 0..1.
-      ** 9026e403-3eb6-4705-a9e9-e21a1efc867d: different cardinality are 1 and 0..1: cardinalities 0..1 in criteria 40 and 41 are wrong, have been updated to 1
-      ** a53561d5-6614-4dbe-987e-b96f35387f46: different cardinality are 0..n and 1..n: cardinality is wrong in criterion 26, it has been updated to 0..n
-      ** c0cd9c1c-e90a-4ff9-bce3-ac0fe31abf16: different cardinality are 1 and 1..n: cardinality is correct as this criterion is for Yearly Turnovers (more than one value, usually 3 years) while Average Turnover is just one single value, so no changes are necessary.
-      ** cc1da737-6c4e-4f4e-821d-c260029058f6: different cardinality are 0..1 and 1..n: UUID has been removed as it´s a structure close line.
+ESPD version has been updated in the technical codelist files to match the current version (specific files can be found in the folder codelists/gc)
 
-  * **Fix GitHub issue link:https://github.com/OP-TED/ESPD-EDM/issues/333[#333] - Same requirement group UUID with different content** 
-      ** The same UUID: 53c9aad8-dc80-48f8-85d9-755c2aab8e95 is re-used for exclusion grounds (criterions 7 and 8) and selection criteria (criterions 37, 38 and 39) and they have different structures in the file, therefore, one of the two requires a different UUID.  
-      ** A new UUID has been generated: c7d60cb5-b6fc-4e1a-a6b0-e0d91a09c80a and assigned to the criterions 7 and 8 that were previously using the UUID: 53c9aad8-dc80-48f8-85d9-755c2aab8e95.
+=== Validation - Interoperability Testbed
 
-  * **Fix GitHub issue link:https://github.com/OP-TED/ESPD-EDM/issues/338[#338] - Invalid text in Taxonomy in SC-Professional_risk_insurance tab** 
-      ** There was an error in Criterion 25 (tab SC-Professional_risk_insurance tab): the values in the Codelist column needed to be moved to the Comment column, one to the right.
+Update of Interoperability Testbed ESPD validator
 
-  * **Fix GitHub issue link:https://github.com/OP-TED/ESPD-EDM/issues/340[#340] - General yearly turnover - differences in taxonomy and mock-ups from ESPD-EDM** 
-      ** it was missing an intermediate requirement that represents the selection of "threshold per year".
-      ** It has been added in the data structures a new requirement that allows selecting when it should apply per year or all years together.
-      ** If it is per year, the question_subgroup that has 1..n and it is marked in yellow, would be replicated as many times as years asked.
-      ** Since no other data structure is equal, a new UUID has been generated to cover this data structure.
+    * Updated v3.2.0 on the validator.
+    * Removed v3.1.0 from the validator.
 
-  * **Fix GitHub issue link:https://github.com/OP-TED/ESPD-EDM/issues/347[#347] - Missing "0000.0" code in Occupation codelist** 
-      ** Updating the data structure by removing the requirement "other register" in criterion C25 SC prof-regist. 
-      ** The Note where the code "0000.0" was mentioned has been deleted. The note was in the online documentation "Technical handbook", section "Selection criteria", subsection "Suitability" and finally sub-subsection "XML example". 
- 
-  * **Fix GitHub issue link:https://github.com/OP-TED/ESPD-EDM/issues/350[#350] - SC Suitability: EO side. Question_subgroup: Your answer?** 
-      ** There was a mistake in the cardinality of the question subgroup, which should be 1.
-      ** Although it is possible to have several requirement groups within criteria within Suitability, prof-regist allowing here to define different occupations, we can have only one set of answers per requirement group meaning per occupation.
+=== Online documentation - espd-docs GitHub
 
+Documented handbook migration to Ted Developer Docs.
 
-### ESPD-EDM XSLT files
+**Attribute value updates**
 
-* **Refactoring the XSLT files** 
-    ** Generation of UUID only in the main XSLT files available in the GitHub folder link:https://github.com/OP-TED/ESPD-EDM/tree/master/xml-examples/__xslt__/ODS-Data-Structures-to-ESPD-XML[ODS-Data-Structures-to-ESPD-XML]
-    * Different use cases for exclusion ground and selection criteria 
-    * Refactoring of templates (or functions) position in the XSLT files 
+Attributes value for ESPD version has been updated all over the online documentation.
 
-* **Updating attributes values in the xslt files for the xml samples** 
-
-    ** The value of some attributes is not correct (schemeAgencyID, schemeVersionID, listAgencyID, listVersionID) and hence has been updated:
-
-        *** SchemeAgencyID value is “OP” and not “EU-COM-GROW/EU-COM-OP” for groups or subgroups ID.
-
-        *** SchemeAgencyID value is “XXXESPD-SERVICEXXX” (a given espd-service) and not “EU-COM-GROW/EU-COM-OP for questions and requirements ID.
-    
-        *** SchemeAgencyID value is “XXXAGENCYXXX” whenever the ID comes from an external Agency like for the element “cac:Evidence”.  
-
-        *** SchemeVersionID value is “3.2.0” and not “3.0.0”.
-
-        *** ListAgencyID value is “OP” and not “EU-COM-GROW/EU-COM-OP”.
-
-        *** ListVersionID value is “3.2.0” and not “3.0.0”.
-    
-        *** The right ESPD version in the comments is ESPD-V3.x.x 
-   
-        *** XMLs that were still referring to v2.2 of UBL has been updated to v2.3 
- 
-* **Converting samples from Excel to XML format with the Updated XSLT** 
-
-The resulting updated XSLT files have been used to generate the XML samples available in the GitHub folder link:https://github.com/OP-TED/ESPD-EDM/tree/master/xml-examples[xml-examples].  
-
-### ESPD-EDM Code Lists
-
-EU Vocabularies code lists version updated (specific files can be found in the folder link:https://github.com/OP-TED/ESPD-EDM/tree/v3.2.0/codelists/gc[codelists/gc])
-
-* **AccessRight** version updated to	 20220316-0.
-* **country**	version updated to  20221019-0.
-* **criterion**	version updated to 20210616-0.
-* **currency** version updated to 20220928-0.
-* **EconomicOperatorSize** version updated to 20220316-0.
-* **EoRoleType** version updated to 20211208-0.
-* **language** version updated to 20220928-0.
-
-ESPD version has also been updated in the related files to match the current version. 
-
-  * **Fix GitHub issue link:https://github.com/OP-TED/ESPD-EDM/issues/332[#332] - Question regarding the DATE Response Data Type** 
-      ** There was a mistake in the codelist ResponseDataType with one date format YYYY-DD-MM.
-      ** The codelist was updated to the right date format YYYY-MM-DD.
-
-  * **Fix GitHub issue link:https://github.com/OP-TED/ESPD-EDM/issues/337[#337] - Financial ratio type translations** 
-      ** There were some errors in the translations in the FinancialRatioType codelist, due to some problems in the XLST transformation file and in the Excel Codelists file.
-      ** The XLST transformation file and Excel Codelists file has been updated to fix the errors.
-
-### ESPD-EDM Interoperability Testbed
-
-Update of Interoperability Testbed link:https://www.itb.ec.europa.eu/espd/upload[ESPD validator]
-
-* Updated v3.2.0 on the validator.
-* Removed v3.0.1 from the validator.
-
-### ESPD-EDM Online documentation - espd-docs GitHub 
-
-
-* **Fix issue link:https://github.com/OP-TED/ESPD-EDM/issues/347[#347] - "0000.0" code in Occupation codelist**
-
-The Note where the code "0000.0" is mentioned is in the "Technical handbook", section "Selection criteria", subsection "Suitability" and finally sub-subsection "XML example". This note has been deleted. 
-
-* **Fix issue link:https://github.com/OP-TED/ESPD-EDM/issues/335[#335] - Short Tag Name and Implicit Numbering**
-
-Guidelines and recommendations about short tag names and implicit numbering of criterion elements are provided in the online documentation for users and developers of the ESPD project. 
-
- * **Section added "3.9 Short Tag Name and Implicit Numbering"** 
- 
-     ** **Short Tag Name** 
-         *** Description 
-         *** _Table 25. Correspondence between "criterion element", "UBL element" and "Short Tag Name" 
-         
-     ** **Implicit Numbering** 
-         *** Description 
-         *** _Figure 49. Short Tag Name and Numbering for Criterion C1 EG crime-org_ 
-         *** _Figure 50. Short Tag Name and Numbering for Criterion C32 SC spec-year-to_ 
-         
-* **Attribute value updates**
-
-Attributes value has been updated all over the online documentation. 
-
-* version value for attributes schemeVersionID, listVersionID 
-* agency value for attributes schemeAgencyID, listAgencyID 
-* value EU-COM-GROW or EU-COM-OP has been replaced by "OP" 
-    
+    * version value for attributes schemeVersionID, listVersionID.
