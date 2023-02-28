@@ -1,0 +1,108 @@
+= Open User Community Meeting Report
+
+== Publications Office – ESPD EDM
+
+
+[cols=",",",]
+|===
+|Meeting Date/Time: |2023-02-23, 10.00 - 11.00
+|===
+
+[cols=",",options="header",]
+|===
+|*Attendee Name* |*Organisation / Country*
+|Manuela CRUZ |OP
+|Paloma ARILLO |OP
+|Natalie MURIC |OP
+|Marc Christopher SCHMIDT |DG GROW
+|Laurent SCHOONJANS |DG GROW
+|Andreea ANGHEL |Romania
+|Simona BAJANARU |Romania
+|José Luis CUEVA |Spain
+|Michaël De WINNE (BOSA) |Belgium
+|Zofia DUDAS |
+|Georgiana DUMITRU |Romania
+|Bertalan FABIAN |Hungary
+|Jostein FRØMYR |Norway
+|Paul HUMANN |Austria
+|Aleksandra JESENOVEC |Slovenia
+|Ajda KOSTANJSEK |Slovenia
+|Simona MANOLE |
+|Cristea MARILENA |Romania
+|Foteini MICHAILIDOU |Greece
+|Jil MOSAR |Luxembourg
+|Constantin NITA |ADR
+|Pietro PALERMO |Italy
+|Lavinia  PANTAZI |Greece
+|Andreea PASARE |Romania
+|Nuno PERALTA |Portugal
+|Sverre RAMM |Norway
+|Konstantinos RAPTIS |Greece
+|Alexandra RODRIGUES |Portugal
+|Joao SANTOS |Portugal
+|Giampaolo SELLITTO |Italy
+|Sonia SERAFIMOVICI |Romania
+|Maria SIAPERA |Greece
+|Stein SKOGSETHA |Norway
+|Nikanoras ZAVADSKIJ |Lithuania
+|Alba COLOMER |NTT Data
+|Juan Carlos DELGADO |NTT Data
+|===
+
+:sectnums:
+:sectnumlevels: 4
+
+== Meeting Agenda
+. Summary of last meeting on 26th January 2023
+. ESPD-EDM v3.2.0
+. Developments of eCertis
+. GitHub issues
+. Next meetings
+. AOB
+
+== Summary of last meeting on 26th January 2023
+
+* The link:https://docs.ted.europa.eu/espd-ouc/20230126_OUC%20meeting%20report.html[link] to the last meeting report is provided and the main topics discussed are summarised.
+
+== ESPD-EDM v3.2.0
+
+* The Open User Community requested in January a patch release with some bug fixes. A detailed revision of the GitHub issues to be included in the release revealed that several fixes in cardinalities were necessary, which in some cases required to update the cardinality to a more restrictive one. Therefore, it was not possible to have a patch release, and a major release was needed instead.
+
+* Since there is another major release scheduled for 2023 (ESPD-EDM v4.0.0), it has been decided to exceptionally have ESPD-EDM v3.2.0 (instead of patch release ESPD-EDM v3.1.1).
+
+* ESPD-EDM v3.2.0 has not been released yet due to technical issues that are being tackled.
+
+* The final scope of ESPD-EDM v3.2.0 is presented, with the list of GitHub issues included in the release (see the link:https://github.com/OP-TED/espd-docs/blob/wgm-reports/modules/ROOT/attachments/ESPD_OUC_Meetings_20230223.pdf[presentation] used in the meeting for more detail).
+
+== Developments of eCertis
+
+* The main changes, new features and updates planned for eCertis are presented, as well as the timeline (see the link:https://github.com/OP-TED/espd-docs/blob/wgm-reports/modules/ROOT/attachments/ESPD_OUC_Meetings_20230223.pdf[presentation] used in the meeting for more detail).
+
+== GitHub issues
+
+* The list of the GitHub issues closed since the last OUC meeting (4 issues) is presented.
+
+* Currently, there are 15 open GitHub issues. The ESPD Team is working on 7 of them; for the rest, there is a dependency on third parties such as the eCertis Team or the eForms Team.
+
+* link:https://github.com/OP-TED/ESPD-EDM/issues/379[GitHub issue #379] (Question regarding the mandatory presence of at least one property in property groups #interproc). 
+
+** It is proposed that CAPTION elements within question groups are removed.
+
+** As Italy is currently using this CAPTION element in Purely National Exclusion Grounds, it is agreed that, for the moment, the CAPTION element will be kept within this criterion (in the future, Purely National Exclusion Grounds should be retrieved from eCertis and this will be reviewed).
+
+** Participants are invited to review in detail if there is any other case where they are using CAPTION elements within question groups, and to report it in the GitHub issue if this is the case.
+
+** This issue will not be included in ESPD-EDM v4.0.0.
+
+== Next meetings
+
+* Next OUC meetings: 
+** 23 March 2023, 10.00 – 11.30
+
+* Participants are invited to express their availability and interest in having an OUC meeting in April. Finding a date can be difficult due to different Easter holiday in different countries.
+
+== Any other business
+
+* A draft of the taxonomy file for ESPD-EDM v4.0.0 will be ready and available by the second half of March. Afterwards, users will be able to review it in detail and test during a standstill period, as requested by the Open User Community in the last OUC meeting, and report any eventual issue so it can be fixed before the actual release, which is planned for summer. Other ongoing issues different to the taxonomy will be added to the prerelease.
+
+
