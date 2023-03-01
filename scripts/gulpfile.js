@@ -48,7 +48,7 @@ const serverConfig = { name: 'Preview Site', livereload, port: 5000, root: outpu
 
 const watchPatterns = playbook.content.sources.filter((source) => !source.url.includes(':')).reduce((accum, source) => {
   accum.push(`${source.url}/${source.start_path ? source.start_path + '/' : ''}antora.yml`)
-  accum.push(`${source.url}/${source.start_path ? source.start_path + '/' : ''}**/*.adoc`)
+  accum.push(`${source.url}/${source.start_path ? source.start_path + '/' : ''}modules`)
   return accum
 }, [])
 
