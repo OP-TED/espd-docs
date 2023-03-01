@@ -1,6 +1,10 @@
 site:
   title: ESPD Documentation
-  start_page: home::index.adoc
+  start_page: ESPD-EDM::index.adoc
+
+asciidoc:
+  attributes:
+    espd_latest_version: '-1'
 
 content:
   edit_url: false
@@ -13,7 +17,6 @@ content:
 
 urls:
   redirect_facility: static
-  # html_extension_style: indexify
   latest_version_segment: latest
 
 ui:
