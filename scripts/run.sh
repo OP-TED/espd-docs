@@ -1,6 +1,19 @@
 #!/usr/bin/env bash
 
-npm install --prefix .node corepack
-.node/node_modules/.bin/corepack enable --install-directory .node
-.node/yarn install
-.node/yarn run "${@}"
+SCRIPT_DIR="$(readlink -f "$(dirname "${0}")")"
+NODE_DIR="${SCRIPT_DIR}/.node"
+
+export YARN_HTTP_PROXY="${http_proxy}"
+export YARN_HTTPS_PROXY="${YARN_HTTP_PROXY}"
+
+export PATH="${NODE_DIR}:${NODE_DIR}/node_modules/.bin:${PATH}"
+
+npm install --prefix "${NODE_DIR}" corepack
+corepack enable --install-directory "${NODE_DIR}"
+
+pushd "${SCRIPT_DIR}" 1>/dev/null
+
+yarn install
+SITE_DIR="${SCRIPT_DIR}/build/site/ESPD-EDM/latest" yarn run "${@}"
+
+popd 1>/dev/null
