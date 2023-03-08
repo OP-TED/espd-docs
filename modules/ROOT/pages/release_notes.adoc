@@ -35,20 +35,36 @@ Several issues have been resolved related to the data structure of the ESPD-EDM 
 
 The following changes has been performed related to the ESPD-EDM XSLT files:
 
-    * **Fix GitHub issue #378 - Clarification on date and time format #interproc** : a wrong time format with miliseconds in the “issue date” column of the XML example has been fixed to remove these miliseconds.
+* **Fix GitHub issue #378 - Clarification on date and time format #interproc** : a wrong time format with miliseconds in the “issue date” column of the XML example has been fixed to remove these miliseconds.
 
-    * **Updating attributes values in the xslt files for the xml samples**
+* **Updating attributes values in the xslt files for the xml samples**
     ** SchemeVersionID value is “3.2.0” and not “3.1.0”.
     ** ListVersionID value is “3.2.0” and not “3.1.0”.
     ** The right ESPD version in comments is ESPD-V3.x.x
 
-    * **Converting samples from Excel to XML format with the Updated XSLT**
+* **Updating the xslt file "ContractingAuthorityData-RequestResponse.xslt"**
+    ** Country listVersionID = 20220928-0
+    ** cbc:EndpointID/@schemeID
+
+* **Updating the xslt file "EconomicOperatorData.xslt"**
+    ** EconomicOperatorRole, RoleCode, ID, Name, IndustryClassificationCode, IdentificationCode
+
+* **Updating the xslt file "From-REQUEST-to-RESPONSE.xslt"**
+    ** "cbc:ResponseID"
+    ** "cac:Evidence/cbc:ConfidentialityLevelCode"
+    ** "cac:Evidence/cbc:ConfidentialityLevelCode/@listVersionID"
+
+* **Converting samples from Excel to XML format with the Updated XSLT**
 
 The resulting updated XSLT files have been used to generate the XML samples available in the GitHub folder xml-examples. 
 
 === Code list
 
-ESPD version has been updated in the technical codelist files to match the current version (specific files can be found in the folder codelists/gc)
+ESPD version has been updated in the technical codelist files to match the current version (specific files can be found in the folder codelists/gc), for tags : Version, CanonicalURI, CanonicalVersionURI.
+
+The label "ESPD-EDMv3.2.0" has been added in the related sheet "ProfileExecutionID" from the excel file ESPD-CodeLists.xlsx (https://github.com/OP-TED/ESPD-EDM/blob/master/\\__ESPDTeam__/ESPD-CodeLists.xlsx). 
+
+The corresponding generic code files have been generated.
 
 === Validation - Interoperability Testbed
 
@@ -66,3 +82,7 @@ Documented handbook migration to Ted Developer Docs.
 Attributes value for ESPD version has been updated all over the online documentation.
 
     * version value for attributes schemeVersionID, listVersionID.
+
+**Release Notes** 
+
+Release Notes have been updated for the online documentation as well.
