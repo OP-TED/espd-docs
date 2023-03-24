@@ -1,3 +1,5 @@
+target
 antora-playbook-local.yml
 build
-modules/ROOT/pages/release_notes test.adoc
+node_modules
+.vscode
