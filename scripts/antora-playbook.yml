@@ -1,0 +1,25 @@
+site:
+  title: ESPD Documentation
+  start_page: ESPD-EDM::index.adoc
+
+asciidoc:
+  attributes:
+    espd_latest_version: '-1'
+
+content:
+  edit_url: false
+  sources:
+
+  ### Local content
+  - url: ..
+    start_path: .   
+    branches: HEAD
+
+urls:
+  redirect_facility: static
+  latest_version_segment: latest
+
+ui:
+  bundle:
+    url: https://github.com/OP-TED/antora-eui/releases/download/ui-bundle/eForms-SDK-customisations/ui-bundle.zip
+    snapshot: true
