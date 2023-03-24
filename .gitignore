@@ -1,3 +1,5 @@
-build
+target
 antora-playbook-local.yml
-modules/ROOT/pages/20020331_OUC meeting report.adoc
+build
+node_modules
+.vscode
