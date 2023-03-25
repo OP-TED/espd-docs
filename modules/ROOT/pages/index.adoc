@@ -1,7 +1,4 @@
 = ESPD Exchange Data Model (ESPD-EDM)
-// The following lines create a redirection from "/eforms/latest/" to this page
-// if the {eforms_latest_version} as specified in the antora-playbook.yml 
-// is equal to the {eforms_version} as specified in antora.yml.
 
 include::partial$attributes.adoc[]
 
