@@ -1,6 +1,5 @@
 [[lot_management, Lot Management]]
 = Lot Management
-include::partial$attributes.adoc[]
 
 The ESPD includes a change regarding how lots are managed. This is the outcome of the alignment with eForms.
 

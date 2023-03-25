@@ -1,5 +1,4 @@
 = ESPD Validation Architecture
-include::partial$attributes.adoc[]
 
 The validation of a ESPD XML has the following life-cycle:
 

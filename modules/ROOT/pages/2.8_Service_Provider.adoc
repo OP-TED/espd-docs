@@ -1,5 +1,4 @@
 = Service Provider
-include::partial$attributes.adoc[]
 
 [cols=",",]
 |===
@@ -61,7 +60,7 @@ _Table 12. Service provider, expected elements_
 |*cac:PartyIdentification/cbc:ID* |Identifier |1 |The national identifier of a service provider as it is legally registered (e.g. VAT identification). a|
 *Information Requirement*: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1.0-tbr070-0011[_tbr070-011_].
 
-*Rule*: An identifier for the service provider must always be provided. Compulsory use of the attribute SchemeAgencyID. When possible use the VAT identification of the service provider (see the VIES platform for a EU cross-border national VAT number verification system). See XML example below. The code list link:{url-tree-301}/codelists/gc/EOIDType.gc[EOIDType] may be used to indicate the type of identifier used as a value of the schemeID attribute, e.g. schemeID="VAT").
+*Rule*: An identifier for the service provider must always be provided. Compulsory use of the attribute SchemeAgencyID. When possible use the VAT identification of the service provider (see the VIES platform for a EU cross-border national VAT number verification system). See XML example below. The code list link:{url-tree}/codelists/gc/EOIDType.gc[EOIDType] may be used to indicate the type of identifier used as a value of the schemeID attribute, e.g. schemeID="VAT").
 
 *Rule scope*: Common (BR-REQ-20#5, BR-OTH-02")
 

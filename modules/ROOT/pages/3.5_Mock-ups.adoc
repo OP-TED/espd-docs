@@ -1,5 +1,4 @@
 = Mock-ups
-include::partial$attributes.adoc[]
 
 Chapters *4 Exclusion Criteria* and *5. Selection Criteria* describe in detail the different *types* of exclusion and selection criteria defined and used in the ESPD-EDM. By *type* of criterion we refer to criteria that share common characteristics, namely how they are structured. Each type of criterion is presented from three perspectives:
 

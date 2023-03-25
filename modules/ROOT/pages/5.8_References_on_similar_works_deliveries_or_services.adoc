@@ -1,5 +1,4 @@
 = References on similar works, deliveries or services
-include::partial$attributes.adoc[]
 
 == Related information requirements
 

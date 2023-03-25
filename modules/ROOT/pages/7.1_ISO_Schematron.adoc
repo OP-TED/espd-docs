@@ -1,5 +1,4 @@
 = ISO Schematron
-include::partial$attributes.adoc[]
 
 Schematron is a rule-based validation language to specify validation processes against XML documents. ISO Schematron is an ISO (ISO/IEC 19757-3:2006) and open standard. Please visit the link:http://www.schematron.com/[ISO Schematron] web-site for the technical specification and details.
 

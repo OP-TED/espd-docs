@@ -17,7 +17,7 @@ This new version of the ESPD-EDM is a patch release which focuses on:
 * updating the online documentation as well as the xml example files
 * provide a conceptual model specification
 
-For more information regarding the release, please refer to the link:https://docs.ted.europa.eu/ESPD-EDM/3.2.0/release_notes.html[release notes]. 
+For more information regarding the release, please refer to the xref:release_notes.adoc[release notes]. 
 
 ## The Directive
 

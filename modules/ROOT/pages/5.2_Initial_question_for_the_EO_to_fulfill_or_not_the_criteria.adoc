@@ -1,5 +1,4 @@
 = Initial question for the EO to fulfil or not the criteria 
-include::partial$attributes.adoc[]
 
 In this version of ESPD, a new data structure has been added to the selection criteria to get more information about the EO and the fulfilment of the selection criteria. The UUID identifying the group is 0e50931d-4d39-4f1d-9fdc-b2cf16c0807a. It is a common structured reused over selection criteria.
 

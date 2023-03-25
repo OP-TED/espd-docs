@@ -1,5 +1,4 @@
 = Root elements
-include::partial$attributes.adoc[]
 
 The table below lists the elements that are expected in the ESPD Response and provides details on the cardinalities and usage of those elements.
 
@@ -14,7 +13,7 @@ _Table 26. Class QualificationApplicationResponse, components required by the ES
 Preliminary evidence certificates in the form of a self-declaration submitted by the economic operator during the tendering phase. On awarding, the winning party has to supply the real attestations and certificates.
 
 |*Business rule(s)*: |None
-|*File*: |link:{url-tree-301}/ubl-2.3/xsdrt/maindoc/UBL-QualificationApplicationResponse-2.3.xsd[ubl-2.3/xsdrt/maindoc/UBL-QualificationApplicationResponse-2.3.xsd]
+|*File*: |link:{url-tree}/ubl-2.3/xsdrt/maindoc/UBL-QualificationApplicationResponse-2.3.xsd[ubl-2.3/xsdrt/maindoc/UBL-QualificationApplicationResponse-2.3.xsd]
 |===
 
 [cols=",,,,",options="header",]
@@ -144,7 +143,7 @@ In the ESPD Response it is also compulsory to make reference to the ESPD Request
 
 == XML example
 
-The XML snippet below shows how the beginning of an ESPD Response XML instance looks like. For a complete instance of an ESPD Response XML document see the the example files in the dist/xml folder: or link:{url-tree-301}/xml-examples/ESPD-Response.xml[ESPD-Response.xml].
+The XML snippet below shows how the beginning of an ESPD Response XML instance looks like. For a complete instance of an ESPD Response XML document see the the example files in the dist/xml folder: or link:{url-tree}/xml-examples/ESPD-Response.xml[ESPD-Response.xml].
 
 [source,xml]
 ---- 

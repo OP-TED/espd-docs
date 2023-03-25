@@ -1383,7 +1383,7 @@ ____
 |Rule description |Information about publication CAN be provided |
 |Mapping description |Publications are implemented as Document Reference components |
 |XSD Path |/cac:AdditionalDocumentReference[0..n] |
-|Business requirement |link:wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr070-007[_[.underline]#tbr070-007#_] |
+|Business requirement |link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr070-007[_[.underline]#tbr070-007#_] |
 |XSD Business Rule description | |XSD Business Rule Schematron
 |If the document referenced is a *Contract Notice published on TED* the ID must follow the scheme defined by the Publications Office: *[][][][]/S [][][]-[][][][][][]* (e.g. 2015/S 252-461137). If at the time of drafting the ESPD document the Publication Office has not published yet the Contract Notice the value 0000/S 000-000000 value must be used to indicate that a temporary identifier is being used. | a|
 * Severity: ERROR
@@ -1510,7 +1510,7 @@ ____
 ____
 
 a|
-Business requirement: link:wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr070-006[_[.underline]#tbr070-006#_]
+Business requirement: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr070-006[_[.underline]#tbr070-006#_]
 
 The country of the contracting body must always be specified.
 
@@ -2450,7 +2450,7 @@ ____
 * /cac:TenderingCriterionResponse[0..n]
 
 | |
-|Business requirement |_ link:wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr092-018[tbr92-018], link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr092-007[tbr92-007]_, _[.underline]#tbr92-005#_, link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr092-006[tbr92-006] | |
+|Business requirement |_ link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr092-018[tbr92-018], link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr092-007[tbr92-007]_, _[.underline]#tbr92-005#_, link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr092-006[tbr92-006] | |
 |XSD Business Rule description | |XSD Business Rule Schematron |
 |Same business rules as BR-RESP-30 | | |
 |===

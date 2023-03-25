@@ -1,5 +1,4 @@
 = Code list validation Architecture
-include::partial$attributes.adoc[]
 
 Business rules related to code list validates:
 
@@ -13,7 +12,7 @@ The validation of the code lists needs an extra step on the process before execu
 [arabic]
 . The first step is the *generation of Genericode (GC) files*. These files contains information about the values and identifiers of each code list.
 [loweralpha]
-.. GC files are found in the link:{url-tree-301}/codelists/gc/[/codelists/gc folder].
+.. GC files are found in the link:{url-tree}/codelists/gc/[/codelists/gc folder].
 . *Design and implementation of the CVA files*. link:http://docs.oasis-open.org/codelist/ns/ContextValueAssociation/1.0/[CVA] stands for Context and Value Association:
 . *Execution of the implemented validations* in the CVA files:
 [loweralpha]

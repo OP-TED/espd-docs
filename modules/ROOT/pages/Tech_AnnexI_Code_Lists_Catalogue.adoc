@@ -1,7 +1,6 @@
 :sectnums:
 [[code-list-catalogue,Annex I. Code List Catalogue]]
 = Annex I. Code List Catalogue
-include::partial$attributes.adoc[]
 
 This section collects all code lists used in *ESPD-EDM* with its classification, description and meta-data.
 
@@ -50,8 +49,8 @@ Contains values to be use by software implementations to display graphic control
 !*ListID* !boolean-gui-control-type 
 !*Version* !3.2.0
 !*CanonicalUri* !https://github.com/ESPD/ESPD-EDM
-!*CanonicalVersionUri* !https://github.com/ESPD/ESPD-EDM/tree/v3.2.0
-!*LocationUri* !https://github.com/ESPD/ESPD-EDM/tree/v3.2.0/codelists/gc/BooleanGUIControlType.gc
+!*CanonicalVersionUri* !{url-tree}
+!*LocationUri* !{url-tree}/codelists/gc/BooleanGUIControlType.gc
 
 !===
 
@@ -128,8 +127,8 @@ An example of how to use this code list can be found in xref:Tech_AnnexII_XML_Ex
 !*ListID* !criterion-element-type 
 !*Version* !3.2.0
 !*CanonicalUri* !https://github.com/ESPD/ESPD-EDM
-!*CanonicalVersionUri* !https://github.com/ESPD/ESPD-EDM/tree/v3.2.0
-!*LocationUri* !https://github.com/ESPD/ESPD-EDM/tree/v3.2.0/codelists/gc/CriterionElementType.gc
+!*CanonicalVersionUri* !{url-tree}
+!*LocationUri* !{url-tree}/codelists/gc/CriterionElementType.gc
 !===
 
 |===
@@ -232,8 +231,8 @@ This code list is maintained as technical for the time being. In the future it m
 !*ListID* !eoid-type 
 !*Version* !3.2.0
 !*CanonicalUri* !https://github.com/ESPD/ESPD-EDM
-!*CanonicalVersionUri* !https://github.com/ESPD/ESPD-EDM/tree/v3.2.0
-!*LocationUri* !https://github.com/ESPD/ESPD-EDM/tree/v3.2.0/codelists/gc/EOIDType.gc
+!*CanonicalVersionUri* !{url-tree}
+!*LocationUri* !{url-tree}/codelists/gc/EOIDType.gc
 !===
 
 |===
@@ -283,8 +282,8 @@ This code list is maintained by the ESPD Team and codes are collected from Banqu
 !*ListID* !FinancialRatioType
 !*Version* !3.2.0
 !*CanonicalUri* !https://github.com/ESPD/ESPD-EDM
-!*CanonicalVersionUri* !https://github.com/ESPD/ESPD-EDM/tree/v3.2.0
-!*LocationUri* !https://github.com/ESPD/ESPD-EDM/tree/v3.2.0/codelists/gc/FinancialRatioType.gc
+!*CanonicalVersionUri* !{url-tree}
+!*LocationUri* !{url-tree}/codelists/gc/FinancialRatioType.gc
 !*AgencyLongName* !BACH Banque de France
 !*AgencyIdentifier* !BACH
 
@@ -361,8 +360,8 @@ The data type expected for this code is URL following the *ESCO* taxonomy identi
 !*ListID* !profile-execution-id 
 !*Version* !3.2.0
 !*CanonicalUri* !https://github.com/ESPD/ESPD-EDM
-!*CanonicalVersionUri* !https://github.com/ESPD/ESPD-EDM/tree/v3.2.0
-!*LocationUri* !https://github.com/ESPD/ESPD-EDM/tree/v3.2.0/codelists/gc/ProfileExecutionID.gc
+!*CanonicalVersionUri* !{url-tree}
+!*LocationUri* !{url-tree}/codelists/gc/ProfileExecutionID.gc
 !===
 
 |===
@@ -381,8 +380,8 @@ The data type expected for this code is URL following the *ESCO* taxonomy identi
 !*ListID* !property-group-type 
 !*Version* !3.2.0
 !*CanonicalUri* !https://github.com/ESPD/ESPD-EDM
-!*CanonicalVersionUri* !https://github.com/ESPD/ESPD-EDM/tree/v3.2.0
-!*LocationUri* !https://github.com/ESPD/ESPD-EDM/tree/v3.2.0/codelists/gc/PropertyGroupType.gc
+!*CanonicalVersionUri* !{url-tree}
+!*LocationUri* !{url-tree}/codelists/gc/PropertyGroupType.gc
 !===
 
 |===
@@ -401,8 +400,8 @@ The data type expected for this code is URL following the *ESCO* taxonomy identi
 !*ListID* !response-data-type 
 !*Version* !3.2.0
 !*CanonicalUri* !https://github.com/ESPD/ESPD-EDM
-!*CanonicalVersionUri* !https://github.com/ESPD/ESPD-EDM/tree/v3.2.0
-!*LocationUri* !https://github.com/ESPD/ESPD-EDM/tree/v3.2.0/codelists/gc/ResponseDataType.gc
+!*CanonicalVersionUri* !{url-tree}
+!*LocationUri* !{url-tree}/codelists/gc/ResponseDataType.gc
 !===
 
 |===

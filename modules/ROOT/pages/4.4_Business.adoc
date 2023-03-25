@@ -1,5 +1,4 @@
 = Business
-include::partial$attributes.adoc[]
 
 == Related information requirements
 

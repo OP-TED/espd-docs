@@ -1,5 +1,4 @@
 = Environment, Social, Labour Law
-include::partial$attributes.adoc[]
 
 == Related information requirements
 

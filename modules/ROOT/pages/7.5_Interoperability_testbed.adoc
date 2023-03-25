@@ -1,5 +1,4 @@
 = Interoperability testbed
-include::partial$attributes.adoc[]
 
 The European Commission (EC) link:https://ec.europa.eu/isa2/awards_en[ISA2 Programme] provides an link:https://joinup.ec.europa.eu/asset/itb/description[Interoperability Testbed] where Stakeholders can freely test these validation artefacts.
 

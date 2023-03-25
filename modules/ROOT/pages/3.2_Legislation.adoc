@@ -1,5 +1,4 @@
 = Legislation
-include::partial$attributes.adoc[]
 
 The XSD schema below shows, in blue, the elements of the component cac:Legislation used to point at the legislation related to the criterion.
 
