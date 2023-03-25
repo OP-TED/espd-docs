@@ -1,5 +1,4 @@
 = Purely national criteria
-include::partial$attributes.adoc[]
 
 == Related information requirements
 

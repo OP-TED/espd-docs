@@ -1,5 +1,4 @@
 = UBL-2.3 and TOOP Requirements
-include::partial$attributes.adoc[]
 
 During the development of ESPD-EDM some requirements arose from TOOP related to the Evidence class. The aforementioned requirements that can be found in the following GitHub link:https://github.com/ESPD/ESPD-EDM/issues/277[issue], are fully mappable to the UBL 2.3 Schema.
 

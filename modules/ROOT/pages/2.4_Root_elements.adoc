@@ -1,5 +1,4 @@
 = Root elements
-include::partial$attributes.adoc[]
 
 The table below lists the elements that are expected in the ESPD Request and provides details on the cardinalities and usage of those elements.
 
@@ -26,7 +25,7 @@ _Table 5. Class QualificationApplicationRequest, components required by the ESPD
 Document provided by a buyer defining the exclusion and selection criteria for a given procurement procedure.
 
 |*Business rule(s)*: |None
-|*File*: |link:{url-tree-301}/ubl-2.3/xsd/maindoc/[/ubl-2.3/xsd/maindoc/UBL-QualificationApplicationRequest-2.3.xsd]
+|*File*: |link:{url-tree}/ubl-2.3/xsd/maindoc/[/ubl-2.3/xsd/maindoc/UBL-QualificationApplicationRequest-2.3.xsd]
 |===
 
 [cols=",,,,",options="header",]

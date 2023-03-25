@@ -1,6 +1,5 @@
 :sectnums:
 = Release Notes
-include::partial$attributes.adoc[]
 
 == ESPD-EDM v3.1.0 (December 2022)
 

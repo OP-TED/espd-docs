@@ -1,5 +1,4 @@
 = Other economic or financial requirements
-include::partial$attributes.adoc[]
 
 == Related information requirements
 

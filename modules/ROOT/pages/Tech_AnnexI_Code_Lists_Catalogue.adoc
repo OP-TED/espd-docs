@@ -1,7 +1,6 @@
 :sectnums:
 [[code-list-catalogue,Annex I. Code List Catalogue]]
 = Annex I. Code List Catalogue
-include::partial$attributes.adoc[]
 
 This section collects all code lists used in *ESPD-EDM* with its classification, description and meta-data.
 

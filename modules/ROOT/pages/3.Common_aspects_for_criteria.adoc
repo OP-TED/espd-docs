@@ -1,5 +1,4 @@
 = Common aspects for criteria
-include::partial$attributes.adoc[]
 
 [cols="<1,<4"]
 |===

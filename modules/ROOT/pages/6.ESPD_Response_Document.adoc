@@ -1,5 +1,4 @@
 = The ESPD Response Document
-include::partial$attributes.adoc[]
 
 include::6.1_Business_requirements_specification.adoc[leveloffset=+1]
 include::6.2_ESPD_Response_XSD_Schema.adoc[leveloffset=+1]

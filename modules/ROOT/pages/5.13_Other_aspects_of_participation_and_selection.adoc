@@ -1,5 +1,4 @@
 = Other aspects of participation and selection
-include::partial$attributes.adoc[]
 
 == Reduction of candidates
 

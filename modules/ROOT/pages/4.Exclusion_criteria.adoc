@@ -1,5 +1,4 @@
 = Exclusion criteria
-include::partial$attributes.adoc[]
 
 [cols=",",]
 |===

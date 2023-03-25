@@ -1,5 +1,4 @@
 = Risk indemnity insurance
-include::partial$attributes.adoc[]
 
 == Related information requirements
 

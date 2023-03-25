@@ -1,5 +1,4 @@
 = Short Tag Name and Implicit Numbering 
-include::partial$attributes.adoc[]
 
 == Short Tag Name 
 

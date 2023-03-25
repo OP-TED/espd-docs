@@ -1,5 +1,4 @@
 = Validation 
-include::partial$attributes.adoc[]
 
 include::7.1_ISO_Schematron.adoc[leveloffset=+1]
 include::7.2_Code_list_validation_Architecture.adoc[leveloffset=+1]
