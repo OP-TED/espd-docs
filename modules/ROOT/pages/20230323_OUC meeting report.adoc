@@ -1,0 +1,110 @@
+= Open User Community Meeting Report
+
+== Publications Office – ESPD EDM
+
+
+[cols=",",",]
+|===
+|Meeting Date/Time: |2023-03-23, 10.00 - 11.30
+|===
+
+[cols=",",options="header",]
+|===
+|*Attendee Name* |*Organisation / Country*
+|Manuela CRUZ |OP
+|Paloma ARILLO |OP
+|Natalie MURIC |OP
+|Lamya RAFES |OP
+|Marc Christopher SCHMIDT |DG GROW
+|Laurent SCHOONJANS |DG GROW
+|Andreea ANGHEL |Romania
+|Simona BAJANARU |Romania
+|Alexander COLLIEANDER-STAHL |
+|Georgiana DUMITRU |Romania
+|Bertalan FABIAN |Hungary
+|Arne FISMEN ARTIFIK |
+|Jostein FRØMYR |Norway
+|Pierre HOULLEMARE |France
+|Paul HUMANN |Austria
+|Arunas JANKAUSKAS |Lithuania
+|Aleksandra JESENOVEC |Slovenia
+|Rune KJORLAUG  |Norway
+|Ajda KOSTANJSEK |Slovenia
+|Simona MANOLE |
+|Jil MOSAR |Luxembourg
+|Constantin NITA |ADR
+|Pietro PALERMO |Italy
+|Lavinia  PANTAZI |Greece
+|Nuno PERALTA |Portugal
+|Andriana PRENTZA |Greece
+|Konstantinos RAPTIS |Greece
+|Joao SANTOS |Portugal
+|Andreas SCHMITZ |Germany
+|Sonia SERAFIMOVICI |Romania
+|Maria SIAPERA |Greece
+|Lora VAN LOOVEREN |Belgium
+|Alba COLOMER |NTT Data
+|Juan Carlos DELGADO |NTT Data
+|Pascaline Laure TCHIENEHOM |NTT Data
+|===
+
+:sectnums:
+:sectnumlevels: 4
+
+== Meeting Agenda
+. Summary of last meeting on 23rd February 2023
+. ESPD-EDM v3.2.0
+. ESPD-EDM v4.0.0 - Taxonomy
+. GitHub issues
+. Russian sanctions
+. Next meetings
+. AOB
+
+
+== Summary of last meeting on 23rd February 2023
+
+* The link:https://docs.ted.europa.eu/espd-ouc/20230223_OUC%20meeting%20report.html[link] to the last meeting report is provided and the main topics discussed are summarised.
+
+== ESPD-EDM v3.2.0
+
+* The proposed final scope of ESPD-EDM v3.2.0 is presented, with the list of the GitHub issues included in the release, which are reviewed in detail.
+
+* Regarding link:https://github.com/OP-TED/ESPD-EDM/issues/375[GitHub issue #375] (Technical Handbook v3.1.0 inconsistencies - cbc:CustomizationID is missing from root element table in section 2.4 #interproc), it is agreed that elements CustomizationID and ProfileID will be provided again in ESPD-EDM v3.2.0, since they are being used, but without the reference to CEN-BII.
+
+* Regarding link:https://github.com/OP-TED/ESPD-EDM/issues/379[GitHub issue #379] (Question regarding the mandatory presence of at least one property in property groups #interproc), it is agreed that all CAPTION elements will be kept in the taxonomy for the time being. This GitHub issue will not be included in ESPD-EDM v3.2.0, and it will be analysed in detailed by the ESPD Team and discussed again with the OUC in a future meeting.
+
+== ESPD-EDM v4.0.0 - Taxonomy
+
+* A first draft of the proposed taxonomy for ESPD-EDM v4.0.0 is presented.
+
+* The file is available in link:https://github.com/OP-TED/ESPD-EDM/blob/v4.0.0-uuid/criterion/ESPD-criterion-request-multiple-C25-C32.xlsx[GitHub] so OUC members can check it in detail and provide their comments and questions.
+
+== GitHub issues
+
+* Currently, there are 16 open GitHub issues. The ESPD Team is working on 6 of them; for the rest, there is a dependency on third parties such as the eCertis Team or the eForms Team.
+
+* link:https://github.com/OP-TED/ESPD-EDM/issues/362[GitHub issue #362] (SC-References: performance of works / deliveries / services of the specified type). The results of the analysis conducted by the ESPD Team are presented, and different options to solve the issue are exposed. This issue will be reviewed in detail in a future OUC meeting, and it will not be included in ESPD-EDM v3.2.0. 
+
+== Russian sanctions
+
+* A proposal for the management of Russian sanctions in the ESPD is presented.
+
+* Russian sanctions will be included in “Part II: Information concerning the economic operator” of the ESPD and will be managed as OTHER_EO criteria, not as exclusion grounds.
+
+* Russian sanctions should be implemented in ESPD-EDM v4.0.0, but should be included from v1. The necessary open-source code will be provided.
+
+* The ESPD regulation will not be updated with the Russian sanctions, which will not be mandatory.
+
+== Next meetings
+
+* Next OUC meetings: 
+
+** 27 April 2023, 10.00 – 11.30
+
+** 22 June 2023, 10.00 – 11.30
+
+== Any other business
+
+* Users will have the opportunity in future OUC meetings to present their doubts and questions regarding previous ESPD-EDM versions.
+
+
