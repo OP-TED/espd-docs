@@ -30,6 +30,11 @@ Several issues have been resolved related to the data structure of the ESPD-EDM 
     * **Fix GitHub issue #374 - Missing cardinalities values in ESPD-Criterion.xlsx v3.1.0 #interproc** 
         ** Question sub-groups with no values have been populated to 1 for all the ocurrences of the following UUID: 0e50931d-4d39-4f1d-9fdc-b2cf16c0807a, 9b3a04ff-e36d-4d4f-b47c-82ad402b9b02 and 5fe93344-ed91-4f97-bcab-b6720a131798.
 
+    * **GitHub issue [#375](https://github.com/OP-TED/ESPD-EDM/issues/375) - Technical Handbook v3.1.0 inconsistencies - cbc:CustomizationID is missing from root element table in section 2.4** 
+        ** Element "cbc:CustomizationID" was removed from the xml samples, the documentation and the conceptual model, in version v3.1.0 of the ESPD-EDM. Its re-introduction will be discussed for the next ESPD-EDM release. 
+        ** Element "cbc:ProfileID" was removed from the xml samples and from the documentation but not from the conceptual model, in version v3.1.0 of the ESPD-EDM. In this current version v3.2.0, the element "cbc:ProfileID" has been removed from the conceptual model for consistency purpose. Its re-introduction will be discussed for the next ESPD-EDM release. 
+        ** Element "cbc:ProcedureCode" was removed from the conceptual model but not from the xml samples and the documentation, in version v3.1.0 of the ESPD-EDM. In this current version v3.2.0, the element "cbc:ProcedureCode" has been put back in the conceptual model for consistency purpose with a "Dummy" value for the codelist attribute "listID" and also for future alignment with eForms. 
+
 === ESPD-EDM XSLT files
 
 The following changes has been performed related to the ESPD-EDM XSLT files:
@@ -62,6 +67,12 @@ The resulting updated XSLT files have been used to generate the XML samples avai
 ESPD version has been updated in the technical codelist files to match the current version (specific files can be found in the folder codelists/gc), for tags : Version, CanonicalURI, CanonicalVersionURI.
 
 The label "ESPD-EDMv3.2.0" has been added in the related sheet "ProfileExecutionID" from the excel file ESPD-CodeLists.xlsx (https://github.com/OP-TED/ESPD-EDM/blob/master/\\__ESPDTeam__/ESPD-CodeLists.xlsx). 
+
+* **Fix GitHub issue [#380](https://github.com/OP-TED/ESPD-EDM/issues/380) - Question regarding the correct listID values** 
+This github issue has led to a broader review of the codelists related to the value of the attributes "listID". The updates have been made at three different levels : XSL file, XSLT files and Schematron file. 
+     ** XSL file : excel-to-gc-multilang-v1.0.xsl 
+     ** XSLT files :  RootElements-Annotated.xslt, From-REQUEST-to-RESPONSE.xslt, ESPDRequest-Annotated.xslt, Legislation.xslt, EconomicOperatorData.xslt, Request-Root-Elements.xslt, BASIC-RootElements-annotated.xslt 
+     ** Schematron file : "./common/sch/01-ESPD-common-cl-attributes.sch" 
 
 The corresponding generic code files have been generated.
 
