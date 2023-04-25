@@ -7,7 +7,7 @@ You have access to all the documentation by expanding the different options of t
 Next OUC meetings:
 
 * April 27, 2023, 10.00-11.30
-* June 22, 2023, 10.00-11.30
+* June 29, 2023, 10.00-11.30
 
 
 //Meeting Reports previous to 2022 can be found in link:https://github.com/OP-TED/espd-docs/tree/wgm-reports/modules/ROOT/attachments[espd-docs/wgm-reports].
