@@ -1,0 +1,114 @@
+= Open User Community Meeting Report
+
+== Publications Office – ESPD EDM
+
+
+[cols=",",",]
+|===
+|Meeting Date/Time: |2023-04-27, 10.00 - 11.30
+|===
+
+[cols=",",options="header",]
+|===
+|*Attendee Name* |*Organisation / Country*
+|Paloma ARILLO |OP
+|Andreea ANGHEL |Romania
+|Jostein FRØMYR |Norway
+|Arunas JANKAUSKAS |Lithuania
+|Arnis KRAUZE |
+|Vinay KUMAR |
+|Vriti MAHAJAN |
+|Jil MOSAR | Luxembourg 
+|Pietro PALERMO | Italy 
+|Nuno PERALTA |Portugal 
+|Laima PUJATE (SRDA) |Latvia 
+|Konstantinos RAPTIS (UPRC) |Greece 
+|Joao SANTOS | Portugal 
+|Francesco SCATTARETICO |Italy 
+|Giampaolo SELLITO (ANAC) | Italy 
+|Maria SIAPERA (UPCR) |Greece 
+|Sanjeev SINHA | 
+|Michaël De WINNE (BOSA) | Belgium 
+|Nikanoras ZAVADSKIJ (Mercell) |Lithuania 
+|Pascaline Laure TCHIENEHOM |NTT Data
+|===
+
+:sectnums:
+:sectnumlevels: 4
+
+== Meeting Agenda 
+
+. Summary of last meeting on 23rd March 2023
+. ESPD-EDM v3.2.0 
+. GitHub issues
+. Discussion: 3.1.0 – 4.0.0
+. Next meetings
+. AOB
+
+== Summary of last meeting on 23rd March 2023
+
+* The links to the https://github.com/OP-TED/espd-docs/blob/wgm-reports/modules/ROOT/attachments/ESPD_OUC_Meetings_20230323.pdf[last presentation] and https://docs.ted.europa.eu/espd-ouc/20230323_OUC%20meeting%20report.html[meeting report] are provided and the main topics discussed are summarised: 
+
+** ESPD-EDM v3.2.0 – issues related, mainly: 
+
+*** GitHub issue https://github.com/OP-TED/ESPD-EDM/issues/375[#375] Technical Handbook v3.1.0 inconsistencies - cbc:CustomizationID is missing from root element table in section 2.4:  in March was decided to put back cbc:CustomizationID and ProfileID in the model for v3.2.0 (NB: after further discussion this decision has not been adopted). 
+
+*** GitHub issue https://github.com/OP-TED/ESPD-EDM/issues/379[#379] Question regarding the mandatory presence of at least one property in property groups #interproc: it was agreed that all CAPTION elements will be kept for the time being. 
+
+** ESPD-EDM v4.0.0 – Criterion Data structure ongoing example: 
+
+*** A first draft of the proposed taxonomy for ESPD-EDM v4.0.0 was presented.  
+
+** EU sanctions against Russia – proposed modifications for the ESPD. It was proposed to include them Part II: Information concerning the economic operator” of the ESPD and will be managed as OTHER_EO criteria, not as exclusion grounds. (NB: the modification is under discussion with GROW to have a broader scope of EU sanctions). 
+
+== ESPD-EDM v3.2.0
+
+* The final changes done for ESPD-EDM v3.2.0 are presented, with the list of the GitHub issues included in the release, which are reviewed in detail with the community. 
+
+* GitHub issue https://github.com/OP-TED/ESPD-EDM/issues/380[#380] Question regarding the correct listID values #interproc, it is explained that this issue leads to update of the xsl, xslt and schematron files which involved relevant changes for several code lists. The task is performed for the v3.2.0. 
+
+* Regarding GitHub issue https://github.com/OP-TED/ESPD-EDM/issues/375[#375] Technical Handbook v3.1.0 inconsistencies - cbc:CustomizationID is missing from root element table in section 2.4 #interproc, it is agreed that elements CustomizationID and ProfileID are not be added back in ESPD-EDM v3.2.0. Further discussion with the OUC is necessary to understand the use of these elements by eForms and the option to reintroduce them in the ESPD-EDM in a later release. 
+
+* The addition in v3.2.0 of the last versions of code lists ‘occupation’ and ‘criterion’ has as consequence a delay in the release (validation of files have to be run again before the release is available). 
+
+* The release will be available on 3rd May 2023. For the time being the changes are available in GitHub in the https://github.com/OP-TED/ESPD-EDM/tree/master[master branch]. 
+
+== GitHub issues 
+
+* Currently, there are 15 open GitHub issues. The ESPD Team is working on 7 of them; for the rest, there is a dependency on third parties such as the eCertis Team or the eForms Team. 
+
+* GitHub issue https://github.com/OP-TED/ESPD-EDM/issues/355[#355] Regarding the translations for criteris #interproc. The issue is related the translation of the criteria Description in the Taxonomy file. The Publications Office has to decide if it can provide those translations as normally only translations for code lists and eForms labels are provided by OP. 
+
+* GitHub issue https://github.com/OP-TED/ESPD-EDM/issues/375[#375] Technical Handbook v3.1.0 inconsistencies - cbc:CustomizationID is missing from root element table in section 2.4 #interproc. The elements CustomizationID and ProfileID are removed in v3.2.0 from the documentation to keep it consistent with the Model and the samples.  The issue is not closed: further discussion is required for the use of the elements in the ESPD to be aligned with  eForms. 
+
+* GitHub issue https://github.com/OP-TED/ESPD-EDM/issues/380[#380] Question regarding the correct listID values #interproc is still open but not included in the list of open issues as it will be closed as soon as the v3.2.0 is online. 
+
+== Discussion: 3.1.0 – 4.0.0 
+
+* Italy presents some issues found in v. 3.1.0 and proposes solutions to be implemented in v.4.0.0. Some of the issues have already been solved in v3.2.0. 
+
+** Dynamic UUIDs requirement makes impossible to reuse an ESPD response in other tenders even in the same platform – Solution proposed: use a fix tag to reuse an ESPD response in different tenders as already presented by the ESPD Team on 23rd March 2023. 
+
+** The question “Is this information available electronically?” is present, even if the EO has answered NO to the very first question he is compelled to answer to this question as well – Solution proposed: the subgroup can be put in the correct position in the Taxonomy as already presented by the ESPD Team on 23rd March 2023. 
+
+** The question “Is this information available electronically?” is present in the taxonomy even if it is not present in the regulation form – **Solution proposed**: the subgroup can be dropped to be in line with the legal from. 
+
+** Impossible to have different SCs for different lots in the same procedure as the lot ID is not present in the Taxonomy although it was in v2.1.1. – Solution proposed: the lotID can be included in v4.0.0 as already presented by the ESPD Team on 23rd March 2023. 
+
+* The ESPD Team proposes to open GitHub issues for the four entries above and the correspondent solutions to receive feedback from the community. A meeting will be called during May with the users interested in exchanging ideas to present them in the OUC meeting in June.  
+
+== Next meetings
+
+* Next OUC meetings: 
+
+** May – break 
+
+** 29 June 2023, 10.00 – 11.30 
+
+** July-August – summer break 
+
+== Any other business
+
+* Meetings will be called during May to discuss the changes proposed for 4.0.0. 
+
+
