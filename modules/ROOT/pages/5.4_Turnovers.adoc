@@ -107,7 +107,7 @@ _General yearly turnover_
                         <cbc:Article>[Article, e.g. Article 2.I.a]</cbc:Article>
                         <cbc:URI>http://eur-lex.europa.eu/</cbc:URI>
                         <cac:Language>
-                                <cbc:LocaleCode listID="language" listAgencyName="OP" listVersionID="20211208-0">ENG</cbc:LocaleCode>
+                                <cbc:LocaleCode listID="http://publications.europa.eu/resource/authority/language" listAgencyName="OP" listVersionID="20211208-0">ENG</cbc:LocaleCode>
                         </cac:Language>
                 </cac:Legislation>
                 <cac:TenderingCriterionPropertyGroup>
@@ -312,7 +312,7 @@ _Average yearly turnover_
                         <cbc:Article>[Article, e.g. Article 2.I.a]</cbc:Article>
                         <cbc:URI>http://eur-lex.europa.eu/</cbc:URI>
                         <cac:Language>
-                                <cbc:LocaleCode listID="language" listAgencyName="OP" listVersionID="20211208-0">ENG</cbc:LocaleCode>
+                                <cbc:LocaleCode listID="http://publications.europa.eu/resource/authority/language" listAgencyName="OP" listVersionID="20211208-0">ENG</cbc:LocaleCode>
                         </cac:Language>
                 </cac:Legislation>
                 <cac:TenderingCriterionPropertyGroup>
@@ -539,7 +539,7 @@ _Specific yearly turnover_
                         <cbc:Article>[Article, e.g. Article 2.I.a]</cbc:Article>
                         <cbc:URI>http://eur-lex.europa.eu/</cbc:URI>
                         <cac:Language>
-                                <cbc:LocaleCode listID="language" listAgencyName="OP" listVersionID="20211208-0">ENG</cbc:LocaleCode>
+                                <cbc:LocaleCode listID="http://publications.europa.eu/resource/authority/language" listAgencyName="OP" listVersionID="20211208-0">ENG</cbc:LocaleCode>
                         </cac:Language>
                 </cac:Legislation>
                 <cac:TenderingCriterionPropertyGroup>
@@ -750,7 +750,7 @@ _Specific average turnover_
                         <cbc:Article>[Article, e.g. Article 2.I.a]</cbc:Article>
                         <cbc:URI>http://eur-lex.europa.eu/</cbc:URI>
                         <cac:Language>
-                                <cbc:LocaleCode listID="language" listAgencyName="OP" listVersionID="20211208-0">ENG</cbc:LocaleCode>
+                                <cbc:LocaleCode listID="http://publications.europa.eu/resource/authority/language" listAgencyName="OP" listVersionID="20211208-0">ENG</cbc:LocaleCode>
                         </cac:Language>
                 </cac:Legislation>
                 <cac:TenderingCriterionPropertyGroup>

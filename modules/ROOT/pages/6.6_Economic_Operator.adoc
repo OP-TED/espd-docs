@@ -576,7 +576,7 @@ _Economic operator data - XML example_
 
 <!-- This EO company is NOT an SME -->
 
-<cbc:IndustryClassificationCode listID="economic-operator-size" listAgencyID="OP" listVersionID="20210317-0">LARGE</cbc:IndustryClassificationCode>
+<cbc:IndustryClassificationCode listID="http://publications.europa.eu/resource/authority/economic-operator-size" listAgencyID="OP" listVersionID="20210317-0">LARGE</cbc:IndustryClassificationCode>
 
 <!-- Notice that the ID and Name of the Pre-Qualification System is in the attributes. They would be captured from e-Certis. -->
 
@@ -825,7 +825,7 @@ _Economic operator's representatives_
 
 <!-- This EO company is NOT an SME -->
 
-<cbc:IndustryClassificationCode listID="economic-operator-size" listAgencyID="OP" listVersionID="20210317-0">large</cbc:IndustryClassificationCode>
+<cbc:IndustryClassificationCode listID="http://publications.europa.eu/resource/authority/economic-operator-size" listAgencyID="OP" listVersionID="20210317-0">large</cbc:IndustryClassificationCode>
 
 <!-- Notice that the ID and Name of the Pre-Qualification System is in the attributes. They would be captured from e-Certis. -->
 

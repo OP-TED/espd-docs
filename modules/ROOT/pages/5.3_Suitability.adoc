@@ -74,7 +74,7 @@ _'Enrolment in a relevant professional register' suitability criterion_
                         <cbc:Article>[Article, e.g. Article 2.I.a]</cbc:Article>
                         <cbc:URI>http://eur-lex.europa.eu/</cbc:URI>
                         <cac:Language>
-                                <cbc:LocaleCode listID="language" listAgencyName="OP" listVersionID="20211208-0">ENG</cbc:LocaleCode>
+                                <cbc:LocaleCode listID="http://publications.europa.eu/resource/authority/language" listAgencyName="OP" listVersionID="20211208-0">ENG</cbc:LocaleCode>
                         </cac:Language>
                 </cac:Legislation>
                 <cac:TenderingCriterionPropertyGroup>
@@ -86,7 +86,7 @@ _'Enrolment in a relevant professional register' suitability criterion_
                                 <cbc:TypeCode listID="criterion-element-type" listAgencyID="OP" listVersionID="3.2.0">REQUIREMENT</cbc:TypeCode>
                                 <cbc:ValueDataTypeCode listID="response-data-type" listAgencyID="OP" listVersionID="3.2.0">CODE</cbc:ValueDataTypeCode>
                                 <!-- No answer is expected here from the economic operator, as this is a REQUIREMENT issued by the buyer. Hence the element 'cbc:ValueDataTypeCode' contains the type of value of the requirement issued by the buyer -->
-                                <cbc:ExpectedCode listID="PleaseSelectTheCorrectOne" listAgencyID="OP" listVersionID="3.2.0">[occupation Code]</cbc:ExpectedCode>
+                                <cbc:ExpectedCode listID="http://publications.europa.eu/resource/authority/occupation" listAgencyID="OP" listVersionID="3.2.0">[occupation Code]</cbc:ExpectedCode>
                         </cac:TenderingCriterionProperty>
                         <cac:TenderingCriterionProperty>
                                 <cbc:ID schemeID="criterion" schemeAgencyID="OP" schemeVersionID="3.2.0">1d497f55-150a-4b96-b8c3-300e63401a02</cbc:ID>
@@ -269,7 +269,7 @@ _Example of suitability criterion_
                         <cbc:Article>[Article, e.g. Article 2.I.a]</cbc:Article>
                         <cbc:URI>http://eur-lex.europa.eu/</cbc:URI>
                         <cac:Language>
-                                <cbc:LocaleCode listID="language" listAgencyName="OP" listVersionID="20211208-0">ENG</cbc:LocaleCode>
+                                <cbc:LocaleCode listID="http://publications.europa.eu/resource/authority/language" listAgencyName="OP" listVersionID="20211208-0">ENG</cbc:LocaleCode>
                         </cac:Language>
                 </cac:Legislation>
                 <cac:TenderingCriterionPropertyGroup>

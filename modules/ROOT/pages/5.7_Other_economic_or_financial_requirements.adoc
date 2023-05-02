@@ -99,7 +99,7 @@ _'Other economic or financial requirements' criterion_
                         <cbc:Article>[Article, e.g. Article 2.I.a]</cbc:Article>
                         <cbc:URI>http://eur-lex.europa.eu/</cbc:URI>
                         <cac:Language>
-                                <cbc:LocaleCode listID="language" listAgencyName="OP" listVersionID="20211208-0">ENG</cbc:LocaleCode>
+                                <cbc:LocaleCode listID="http://publications.europa.eu/resource/authority/language" listAgencyName="OP" listVersionID="20211208-0">ENG</cbc:LocaleCode>
                         </cac:Language>
                 </cac:Legislation>
                 <cac:TenderingCriterionPropertyGroup>
@@ -120,7 +120,7 @@ _'Other economic or financial requirements' criterion_
                                         <cbc:TypeCode listID="criterion-element-type" listAgencyID="OP" listVersionID="3.2.0">REQUIREMENT</cbc:TypeCode>
                                         <cbc:ValueDataTypeCode listID="response-data-type" listAgencyID="OP" listVersionID="3.2.0">CODE_BOOLEAN</cbc:ValueDataTypeCode>
                                         <!-- No answer is expected here from the economic operator, as this is a REQUIREMENT issued by the buyer. Hence the element 'cbc:ValueDataTypeCode' contains the type of value of the requirement issued by the buyer -->
-                                        <cbc:ExpectedCode listID="BooleanGUIControlType" listAgencyID="OP" listVersionID="3.2.0">RADIO_BUTTON_TRUE</cbc:ExpectedCode>
+                                        <cbc:ExpectedCode listID="boolean-gui-control-type" listAgencyID="OP" listVersionID="3.2.0">RADIO_BUTTON_TRUE</cbc:ExpectedCode>
                                 </cac:TenderingCriterionProperty>
                                 <cac:SubsidiaryTenderingCriterionPropertyGroup>
                                         <cbc:ID schemeID="criterion" schemeAgencyID="OP" schemeVersionID="3.2.0">ca15c15f-110e-4a10-8d6e-5e41cf5f9098</cbc:ID>

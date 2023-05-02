@@ -55,7 +55,7 @@ The xml code implemented for this criterion in the ESPDRequest is:
 here from the economic operator, as this is a REQUIREMENT issued by the contracting
 authority. Hence the element 'cbc:ValueDataTypeCode' contains the type of value of
 the requirement issued by the contracting authority -->
-        <cbc:ExpectedCode listID="BooleanGUIControlType" listVersionID="3.2.0">RADIO_BUTTON_TRUE</cbc:ExpectedCode>
+        <cbc:ExpectedCode listID="boolean-gui-control-type" listVersionID="3.2.0">RADIO_BUTTON_TRUE</cbc:ExpectedCode>
 </cac:TenderingCriterionProperty>
 <cac:SubsidiaryTenderingCriterionPropertyGroup>
     <cbc:ID schemeID="criterion" schemeAgencyID="OP" schemeVersionID="20210929-0">ca15c15f-110e-4a10-8d6e-5e41cf5f9098</cbc:ID>
@@ -243,7 +243,7 @@ The following xml code is an example of use of code list xref:Tech_AnnexI_Code_L
 ----
 <cac:AdditionalDocumentReference>
         <cbc:ID schemeAgencyID="OP">2017/S 142-293520</cbc:ID>
-        <cbc:DocumentTypeCode listID="docrefcontent-type" 
+        <cbc:DocumentTypeCode listID="http://publications.europa.eu/resource/authority/docrefcontent-type" 
         listVersionID="3.2.0">TED_CN</cbc:DocumentTypeCode>
         <cac:Attachment>
         <cac:ExternalReference>
@@ -416,7 +416,7 @@ The following xml code is an example of use of code list xref:Tech_AnnexI_Code_L
                 here from the economic operator, as this is a REQUIREMENT issued by the contracting
                 authority. Hence the element 'cbc:ValueDataTypeCode' contains the type of value of
                 the requirement issued by the contracting authority -->
-                <cbc:ExpectedCode listID="occupation" listVersionID="3.2.0">http://data.europa.eu/esco/occupation/4d5bd738-9202-4fd7-bd8c-7dbe914048de</cbc:ExpectedCode>
+                <cbc:ExpectedCode listID="http://publications.europa.eu/resource/authority/occupation" listVersionID="3.2.0">http://data.europa.eu/esco/occupation/4d5bd738-9202-4fd7-bd8c-7dbe914048de</cbc:ExpectedCode>
         </cac:TenderingCriterionProperty>
         (...)
 </cac:TenderingCriterionPropertyGroup>

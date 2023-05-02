@@ -109,7 +109,7 @@ The XML example below shows the REQUIREMENT(s) and QUESTION(s).
                         <cbc:Article>[Article, e.g. Article 2.I.a]</cbc:Article>
                         <cbc:URI>http://eur-lex.europa.eu/</cbc:URI>
                         <cac:Language>
-                                <cbc:LocaleCode listID="language" listAgencyName="OP" listVersionID="20211208-0">ENG</cbc:LocaleCode>
+                                <cbc:LocaleCode listID="http://publications.europa.eu/resource/authority/language" listAgencyName="OP" listVersionID="20211208-0">ENG</cbc:LocaleCode>
                         </cac:Language>
                 </cac:Legislation>
                 <cac:TenderingCriterionPropertyGroup>
@@ -355,7 +355,7 @@ _Criterion "Technical facilities and measures for ensuring quality" (ESPD-Reques
                         <cbc:Article>[Article, e.g. Article 2.I.a]</cbc:Article>
                         <cbc:URI>http://eur-lex.europa.eu/</cbc:URI>
                         <cac:Language>
-                                <cbc:LocaleCode listID="language" listAgencyName="OP" listVersionID="20211208-0">ENG</cbc:LocaleCode>
+                                <cbc:LocaleCode listID="http://publications.europa.eu/resource/authority/language" listAgencyName="OP" listVersionID="20211208-0">ENG</cbc:LocaleCode>
                         </cac:Language>
                 </cac:Legislation>
                 <cac:TenderingCriterionPropertyGroup>
@@ -529,7 +529,7 @@ _Criterion "Educational and professional qualifications" ESPD-Request)_
                         <cbc:Article>[Article, e.g. Article 2.I.a]</cbc:Article>
                         <cbc:URI>http://eur-lex.europa.eu/</cbc:URI>
                         <cac:Language>
-                                <cbc:LocaleCode listID="language" listAgencyName="OP" listVersionID="20211208-0">ENG</cbc:LocaleCode>
+                                <cbc:LocaleCode listID="http://publications.europa.eu/resource/authority/language" listAgencyName="OP" listVersionID="20211208-0">ENG</cbc:LocaleCode>
                         </cac:Language>
                 </cac:Legislation>
                 <cac:TenderingCriterionPropertyGroup>
@@ -767,7 +767,7 @@ _Allowance of checks criterion /Special requierements check_
                         <cbc:Article>[Article, e.g. Article 2.I.a]</cbc:Article>
                         <cbc:URI>http://eur-lex.europa.eu/</cbc:URI>
                         <cac:Language>
-                                <cbc:LocaleCode listID="language" listAgencyName="OP" listVersionID="20211208-0">ENG</cbc:LocaleCode>
+                                <cbc:LocaleCode listID="http://publications.europa.eu/resource/authority/language" listAgencyName="OP" listVersionID="20211208-0">ENG</cbc:LocaleCode>
                         </cac:Language>
                 </cac:Legislation>
                 <cac:TenderingCriterionPropertyGroup>
@@ -917,7 +917,7 @@ _Criterion SC-Abilities (Staff) ESPD-Request_
                         <cbc:Article>[Article, e.g. Article 2.I.a]</cbc:Article>
                         <cbc:URI>http://eur-lex.europa.eu/</cbc:URI>
                         <cac:Language>
-                                <cbc:LocaleCode listID="language" listAgencyName="OP" listVersionID="20211208-0">ENG</cbc:LocaleCode>
+                                <cbc:LocaleCode listID="http://publications.europa.eu/resource/authority/language" listAgencyName="OP" listVersionID="20211208-0">ENG</cbc:LocaleCode>
                         </cac:Language>
                 </cac:Legislation>
                 <cac:TenderingCriterionPropertyGroup>

@@ -199,7 +199,7 @@ xsi:schemaLocation="urn:oasis:names:specification:ubl:schema:xsd:QualificationAp
 
 <!-- The type of the procurement procedure; this information is provided by eForms and the concret notice per procedure. e.g. open = In open procedures any interested economic operator may submit a tender in response to a call for competition.-->
 
-<cbc:ProcedureCode listID="procurement-procedure-type" listAgencyID="" listVersionID="">open</cbc:ProcedureCode>
+<cbc:ProcedureCode listID="Dummy_procurement-procedure-type" listAgencyID="" listVersionID="">open</cbc:ProcedureCode>
 
 _<!-- ... rest of document removed for brevity -->_
 ----

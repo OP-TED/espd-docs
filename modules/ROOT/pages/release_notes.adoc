@@ -1,9 +1,9 @@
 :sectnums:
 = Release Notes
 
-== v3.2.0 (February 2023) 
+== v3.2.0 (May 2023) 
 
-The ESPD-EDM v3.1.0 was focused on the ESPD-EDM changes and fixes mostly related to the data structure. The ESPD-EDM version 3.2.0 focuses mainly on correcting minor errors in the data structure, as suggested by the Member States and stakeholders via the GitHub repositories issues workspace.
+The ESPD-EDM v3.1.0 was focused on the ESPD-EDM changes and fixes mostly related to the data structure. The ESPD-EDM version 3.2.0 focuses mainly on correcting minor errors in the data structure and the codelists, as suggested by the Member States and stakeholders via the GitHub repositories issues workspace. 
 The list below details exhaustively every change introduced since the publication of the previous release (3.1.0) of the ESPD-EDM. 
 
 === ESPD-EDM Criterion file - Data Structure
@@ -14,46 +14,46 @@ Several issues have been resolved related to the data structure of the ESPD-EDM 
         ** Indentation has been corrected in criteria C40, C41, C42, C43, C44, C45, C46, C47 for element “./RG1/RSG1/QSG1”.
         ** Closure element issue has been corrected in criterion C50 for element "./RG1/RSG1".
 
-    * **Fix GitHub issue #340 - General yearly turnover - differences in taxonomy and mock-ups from ESPD-EDM**
+* **Fix GitHub issue https://github.com/OP-TED/ESPD-EDM/issues/371[#371] - "Special requierements check" criteria has closing tags for subgroups on the same levels in taxonomy #interproc** 
+        ** Indentation issue is fixed in criterion 48.
+        
+    * **Fix GitHub issue https://github.com/OP-TED/ESPD-EDM/issues/340[#340] - General yearly turnover - differences in taxonomy and mock-ups from ESPD-EDM**
         ** Cardinality is fixed to 1 in line 11 of criterion 29
         ** Cardinality is fixed to 1..n in line 14 of criterion 29
 
-    * **Fix GitHub issue #368 - Typo's in taxonomy #interproc** 
+    * **Fix GitHub issue https://github.com/OP-TED/ESPD-EDM/issues/368[#368] - Typo's in taxonomy #interproc** 
         ** Typo errors such as double spaces and duplicated words, as well as spelling issues, are fixed.
 
-    * **Fix GitHub issue #369 - The same "ElementUUID" is associated to different questions. #interproc** 
+ * **Fix GitHub issue https://github.com/OP-TED/ESPD-EDM/issues/369[#369] - The same "ElementUUID" is associated to different Question subgroup. #interproc** 
         ** A new UUID is generated and assigned to criterion 34 (line 22): 78b2e0e6-1bfe-43f5-a061-d9cf4e6e6ecc.
 
-    * **Fix GitHub issue #371 - "Special requierements check" criteria has closing tags for subgroups on the same levels in taxonomy #interproc** 
-        ** Indentation issue is fixed in criterion 48.
+    * **Fix GitHub issue https://github.com/OP-TED/ESPD-EDM/issues/374[#374] - Missing cardinalities values in ESPD-Criterion.xlsx v3.1.0 #interproc** 
+        ** Question subgroups with no values have been populated to 1 for all the ocurrences of the following UUID: 0e50931d-4d39-4f1d-9fdc-b2cf16c0807a, 9b3a04ff-e36d-4d4f-b47c-82ad402b9b02 and 5fe93344-ed91-4f97-bcab-b6720a131798.
 
-    * **Fix GitHub issue #374 - Missing cardinalities values in ESPD-Criterion.xlsx v3.1.0 #interproc** 
-        ** Question sub-groups with no values have been populated to 1 for all the ocurrences of the following UUID: 0e50931d-4d39-4f1d-9fdc-b2cf16c0807a, 9b3a04ff-e36d-4d4f-b47c-82ad402b9b02 and 5fe93344-ed91-4f97-bcab-b6720a131798.
-
-    * **Fix GitHub issue [#375](https://github.com/OP-TED/ESPD-EDM/issues/375) - Technical Handbook v3.1.0 inconsistencies - cbc:CustomizationID is missing from root element table in section 2.4** 
-        ** Element "cbc:CustomizationID" was removed from the xml samples, the documentation and the conceptual model, in version v3.1.0 of the ESPD-EDM. Its re-introduction will be discussed for the next ESPD-EDM release. 
-        ** Element "cbc:ProfileID" was removed from the xml samples and from the documentation but not from the conceptual model, in version v3.1.0 of the ESPD-EDM. In this current version v3.2.0, the element "cbc:ProfileID" has been removed from the conceptual model for consistency purpose. Its re-introduction will be discussed for the next ESPD-EDM release. 
+    * **Fix GitHub issue https://github.com/OP-TED/ESPD-EDM/issues/375[#375] - Technical Handbook v3.1.0 inconsistencies - cbc:CustomizationID is missing from root element table in section 2.4** 
+        ** Element "cbc:CustomizationID" was removed from the xml samples, the documentation (except an image in section 2.3), and the conceptual model, in version v3.1.0 of the ESPD-EDM. In this current version v3.2.0, this element has been removed from the documentation image where it appeared in section "2.3 ESPD Request Cardinalities". Its re-introduction in all the ESPD artefacts will be discussed for a future ESPD-EDM release. 
+        ** Element "cbc:ProfileID" was removed from the xml samples and from the documentation (except an image in section 2.3), but not from the conceptual model, in version v3.1.0 of the ESPD-EDM. In this current version v3.2.0, the element "cbc:ProfileID" has been removed from the conceptual model for consistency purpose. This element has been also removed from the documentation image where it appeared in section "2.3 ESPD Request Cardinalities". Its re-introduction in all the ESPD artefacts will be discussed for a future ESPD-EDM release. 
         ** Element "cbc:ProcedureCode" was removed from the conceptual model but not from the xml samples and the documentation, in version v3.1.0 of the ESPD-EDM. In this current version v3.2.0, the element "cbc:ProcedureCode" has been put back in the conceptual model for consistency purpose with a "Dummy" value for the codelist attribute "listID" and also for future alignment with eForms. 
 
 === ESPD-EDM XSLT files
 
 The following changes has been performed related to the ESPD-EDM XSLT files:
 
-* **Fix GitHub issue #378 - Clarification on date and time format #interproc** : a wrong time format with miliseconds in the “issue date” column of the XML example has been fixed to remove these miliseconds.
+* **Fix GitHub issue https://github.com/OP-TED/ESPD-EDM/issues/378[#378] - Clarification on date and time format #interproc** : a wrong time format with miliseconds in the “issue date” column of the XML example has been fixed to remove these miliseconds.
 
 * **Updating attributes values in the xslt files for the xml samples**
     ** SchemeVersionID value is “3.2.0” and not “3.1.0”.
     ** ListVersionID value is “3.2.0” and not “3.1.0”.
     ** The right ESPD version in comments is ESPD-V3.x.x
 
-* **Updating the xslt file "ContractingAuthorityData-RequestResponse.xslt" (missing element or incorrect value)**
+* **Updating the xslt file "ContractingAuthorityData-RequestResponse.xslt" (missing element/attribute or incorrect value)**
     ** Country listVersionID = 20220928-0
     ** cbc:EndpointID/@schemeID
 
 * **Updating the xslt file "EconomicOperatorData.xslt" (missing element)**
     ** EconomicOperatorRole, RoleCode, ID, Name, IndustryClassificationCode, IdentificationCode
 
-* **Updating the xslt file "From-REQUEST-to-RESPONSE.xslt" (missing element)**
+* **Updating the xslt file "From-REQUEST-to-RESPONSE.xslt" (missing element/attribute)**
     ** "cbc:ResponseID"
     ** "cac:Evidence/cbc:ConfidentialityLevelCode"
     ** "cac:Evidence/cbc:ConfidentialityLevelCode/@listVersionID"
@@ -66,41 +66,44 @@ The resulting updated XSLT files have been used to generate the XML samples avai
 
 ESPD version has been updated in the technical codelist files to match the current version (specific files can be found in the folder codelists/gc), for tags : Version, CanonicalURI, CanonicalVersionURI.
 
-The label "ESPD-EDMv3.2.0" has been added in the related sheet "ProfileExecutionID" from the excel file ESPD-CodeLists.xlsx (https://github.com/OP-TED/ESPD-EDM/blob/master/\\__ESPDTeam__/ESPD-CodeLists.xlsx). 
+The label "ESPD-EDMv3.2.0" has been added in the related sheet "ProfileExecutionID" (in the last row of the table) of the excel file ESPD-CodeLists.xlsx (https://github.com/OP-TED/ESPD-EDM/blob/master/\\__ESPDTeam__/ESPD-CodeLists.xlsx). 
 
-* **Fix GitHub issue [#380](https://github.com/OP-TED/ESPD-EDM/issues/380) - Question regarding the correct listID values** 
-This github issue has led to a broader review of the codelists related to the value of the attributes "listID". The updates have been made at three different levels : XSL file, XSLT files and Schematron file. 
+* **Fix GitHub issue https://github.com/OP-TED/ESPD-EDM/issues/380[#380] - Question regarding the correct listID values** 
+This github issue has led to a broader review of the codelists related to the value of the attribute "listID". This attribute value was indeed missing or incorrect for several codelists in various artefacts (XSL, Generic code, XSLT, XML, Schematron). The updates have been made at three different levels : XSL file, XSLT files and Schematron file. 
      ** XSL file : excel-to-gc-multilang-v1.0.xsl 
      ** XSLT files :  RootElements-Annotated.xslt, From-REQUEST-to-RESPONSE.xslt, ESPDRequest-Annotated.xslt, Legislation.xslt, EconomicOperatorData.xslt, Request-Root-Elements.xslt, BASIC-RootElements-annotated.xslt 
      ** Schematron file : "./common/sch/01-ESPD-common-cl-attributes.sch" 
 
-* **Fix GitHub issue [#348](https://github.com/OP-TED/ESPD-EDM/issues/348) - Two different occupations have same ID in occupations codelist** 
+* **Fix GitHub issue https://github.com/OP-TED/ESPD-EDM/issues/348[#348] - Two different occupations have same ID in occupations codelist** 
      ** The latest version of the codelist "Occupation" has been downloaded from EU Vocabularies. 
      ** All the related artefacts ( ESPD-Codelists, XSLT files) have been updated with the corresponding new version. 
 
-* **Fix GitHub issue [#325 ](https://github.com/OP-TED/ESPD-EDM/issues/325) - Incorrect element code in ESPD-criterion.xlsx v3.0.1 for Criterion #27** 
+* **Fix GitHub issue https://github.com/OP-TED/ESPD-EDM/issues/325[#325 ] - Incorrect element code in ESPD-criterion.xlsx v3.0.1 for Criterion #27** 
      ** The latest version of the codelist "Criterion" has been downloaded from EU Vocabularies. 
      ** All the related artefacts ( ESPD-Codelists, XSLT files) have been updated with the corresponding new version. 
 
 
-The corresponding generic code files have been generated.
+The corresponding generic code and the corresponding XML files have been generated. 
 
 === Validation - Interoperability Testbed
 
 Update of Interoperability Testbed ESPD validator
 
-    * Updated v3.2.0 on the validator.
-    * Removed v3.1.0 from the validator.
+    * Generating the ESPD validator, for the Request and the Response, for v3.2.0 with the latest entry files (generic code files for codelists, xml files for the ESPD Request and the ESPD Response). 
 
 === Online documentation - espd-docs GitHub
 
-Documented handbook migration to Ted Developer Docs.
+Update of the online documentation available at https://docs.ted.europa.eu/home/index.html[Ted Developer Docs].
 
 **Attribute value updates**
 
-Attributes value for ESPD version has been updated all over the online documentation.
+Attribute value for ESPD version has been updated all over the online documentation.
 
     * version value for attributes schemeVersionID, listVersionID.
+
+Attribute value for "listID" has been updated all over the online documentation.
+
+    * following the fix of GitHub issue #380 .
 
 **Release Notes** 
 

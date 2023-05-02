@@ -100,11 +100,11 @@ _<!--...-->_
 
 <Description>Select the type of requirement</Description>
 
-<TypeCode listID="CriterionElementType" listAgencyID="OP" listVersionID="3.2.0">REQUIREMENT</TypeCode>
+<TypeCode listID="criterion-element-type" listAgencyID="OP" listVersionID="3.2.0">REQUIREMENT</TypeCode>
 
 <ValueDataTypeCode listID="response-data-type" listAgencyID="OP" listVersionID="3.2.0">CODE_BOOLEAN</ValueDataTypeCode>
 
-<ExpectedCode listID="BooleanGUIControlType" listAgencyID="OP" listVersionID="3.2.0">RADIO_BUTTON_TRUE</ExpectedCode>
+<ExpectedCode listID="boolean-gui-control-type" listAgencyID="OP" listVersionID="3.2.0">RADIO_BUTTON_TRUE</ExpectedCode>
 
 </cac:TenderingCriterionProperty>
 
@@ -120,7 +120,7 @@ _<!--...-->_
 
 <Description>Specify the total invoiced amount, taxes included.</Description>
 
-<TypeCode listID="CriterionElementType" listAgencyID="OP" listVersionID="3.2.0">REQUIREMENT</TypeCode>
+<TypeCode listID="criterion-element-type" listAgencyID="OP" listVersionID="3.2.0">REQUIREMENT</TypeCode>
 
 <ValueDataTypeCode listID="response-data-type" listAgencyID="OP" listVersionID="3.2.0">DESCRIPTION</ValueDataTypeCode>
 
@@ -134,7 +134,7 @@ _<!--...-->_
 
 <Description>Minimum amount</Description>
 
-<TypeCode listID="CriterionElementType" listAgencyID="OP" listVersionID="3.2.0">REQUIREMENT</TypeCode>
+<TypeCode listID="criterion-element-type" listAgencyID="OP" listVersionID="3.2.0">REQUIREMENT</TypeCode>
 
 <ValueDataTypeCode listID="response-data-type" listAgencyID="OP" listVersionID="3.2.0">AMOUNT</ValueDataTypeCode>
 
@@ -148,7 +148,7 @@ _<!--...-->_
 
 <Description>Start date; End date</Description>
 
-<TypeCode listID="CriterionElementType" listAgencyID="OP" listVersionID="3.2.0">REQUIREMENT</TypeCode>
+<TypeCode listID="criterion-element-type" listAgencyID="OP" listVersionID="3.2.0">REQUIREMENT</TypeCode>
 
 <ValueDataTypeCode listID="response-data-type" listAgencyID="OP" listVersionID="3.2.0">PERIOD</ValueDataTypeCode>
 
@@ -174,7 +174,7 @@ _<!--...-->_
 
 <Description>Amount</Description>
 
-<TypeCode listID="CriterionElementType" listAgencyID="OP" listVersionID="3.2.0">QUESTION</TypeCode>
+<TypeCode listID="criterion-element-type" listAgencyID="OP" listVersionID="3.2.0">QUESTION</TypeCode>
 
 <ValueDataTypeCode listID="response-data-type" listAgencyID="OP" listVersionID="3.2.0">AMOUNT</ValueDataTypeCode>
 
@@ -196,7 +196,7 @@ _<!--...-->_
 
 <Description>Minimum rating</Description>
 
-<TypeCode listID="CriterionElementType" listAgencyID="OP" listVersionID="3.2.0">REQUIREMENT</TypeCode>
+<TypeCode listID="criterion-element-type" listAgencyID="OP" listVersionID="3.2.0">REQUIREMENT</TypeCode>
 
 <ValueDataTypeCode listID="response-data-type" listAgencyID="OP" listVersionID="3.2.0">QUANTITY</ValueDataTypeCode>
 
@@ -208,7 +208,7 @@ _<!--...-->_
 
 <Description>Rating scheme</Description>
 
-<TypeCode listID="CriterionElementType" listAgencyID="OP" listVersionID="3.2.0">REQUIREMENT</TypeCode>
+<TypeCode listID="criterion-element-type" listAgencyID="OP" listVersionID="3.2.0">REQUIREMENT</TypeCode>
 
 <ValueDataTypeCode listID="response-data-type" listAgencyID="OP" listVersionID="3.2.0">DESCRIPTION</ValueDataTypeCode>
 
@@ -228,7 +228,7 @@ _<!--...-->_
 
 <Description>Rating</Description>
 
-<TypeCode listID="CriterionElementType" listAgencyID="OP" listVersionID="3.2.0">QUESTION</TypeCode>
+<TypeCode listID="criterion-element-type" listAgencyID="OP" listVersionID="3.2.0">QUESTION</TypeCode>
 
 <ValueDataTypeCode listID="response-data-type" listAgencyID="OP" listVersionID="3.2.0">QUANTITY</ValueDataTypeCode>
 
