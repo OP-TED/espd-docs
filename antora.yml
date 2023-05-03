@@ -6,4 +6,4 @@ nav:
 - modules/ROOT/nav.adoc
 asciidoc:
   attributes:
-    url-tree: https://github.com/OP-TED/ESPD-EDM/tree/v3.1.0
+    url-tree: https://github.com/OP-TED/ESPD-EDM/tree/v3.2.0
