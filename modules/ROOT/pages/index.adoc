@@ -8,6 +8,6 @@ ifndef::imagesdir[:imagesdir: images]
 
 * xref:xml_business_handbook.adoc[ESPD BUSINESS HANDBOOK]
 * xref:xml_technical_handbook.adoc[ESPD TECHNICAL HANDBOOK] (last updated on 2023-05-02)
-//* link:{attachmentsdir}/ESPD_CM_html/index.html[ESPD-EDM CONCEPTUAL MODEL HTML]
-* xref:attachments$ESPD_CM_html/index.html[ESPD-EDM CONCEPTUAL MODEL HTML]
+* link:{attachmentsdir}/ESPD_CM_html/index.html[ESPD-EDM CONCEPTUAL MODEL HTML]
+//* xref:attachments$ESPD_CM_html/index.html[ESPD-EDM CONCEPTUAL MODEL HTML]
 * xref:release_notes.adoc[Release Notes]
