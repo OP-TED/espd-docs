@@ -47,7 +47,7 @@ Contains values to be use by software implementations to display graphic control
 !===
 !*ShortName* !BooleanGUIControlType
 !*ListID* !boolean-gui-control-type 
-!*Version* !3.2.0
+!*Version* !3.3.0
 !*CanonicalUri* !https://github.com/ESPD/ESPD-EDM
 !*CanonicalVersionUri* !{url-tree}
 !*LocationUri* !{url-tree}/codelists/gc/BooleanGUIControlType.gc
@@ -125,7 +125,7 @@ An example of how to use this code list can be found in xref:Tech_AnnexII_XML_Ex
 !===
 !*ShortName* !CriterionElementType
 !*ListID* !criterion-element-type 
-!*Version* !3.2.0
+!*Version* !3.3.0
 !*CanonicalUri* !https://github.com/ESPD/ESPD-EDM
 !*CanonicalVersionUri* !{url-tree}
 !*LocationUri* !{url-tree}/codelists/gc/CriterionElementType.gc
@@ -229,7 +229,7 @@ This code list is maintained as technical for the time being. In the future it m
 !===
 !*ShortName* !EOIDType
 !*ListID* !eoid-type 
-!*Version* !3.2.0
+!*Version* !3.3.0
 !*CanonicalUri* !https://github.com/ESPD/ESPD-EDM
 !*CanonicalVersionUri* !{url-tree}
 !*LocationUri* !{url-tree}/codelists/gc/EOIDType.gc
@@ -280,7 +280,7 @@ This code list is maintained by the ESPD Team and codes are collected from Banqu
 !===
 !*ShortName* !FinancialRatioType
 !*ListID* !financial-ratio-type
-!*Version* !3.2.0
+!*Version* !3.3.0
 !*CanonicalUri* !https://github.com/ESPD/ESPD-EDM
 !*CanonicalVersionUri* !{url-tree}
 !*LocationUri* !{url-tree}/codelists/gc/FinancialRatioType.gc
@@ -358,7 +358,7 @@ The data type expected for this code is URL following the *ESCO* taxonomy identi
 !===
 !*ShortName* !ProfileExecutionID
 !*ListID* !profile-execution-id 
-!*Version* !3.2.0
+!*Version* !3.3.0
 !*CanonicalUri* !https://github.com/ESPD/ESPD-EDM
 !*CanonicalVersionUri* !{url-tree}
 !*LocationUri* !{url-tree}/codelists/gc/ProfileExecutionID.gc
@@ -378,7 +378,7 @@ The data type expected for this code is URL following the *ESCO* taxonomy identi
 !===
 !*ShortName* !PropertyGroupType
 !*ListID* !property-group-type 
-!*Version* !3.2.0
+!*Version* !3.3.0
 !*CanonicalUri* !https://github.com/ESPD/ESPD-EDM
 !*CanonicalVersionUri* !{url-tree}
 !*LocationUri* !{url-tree}/codelists/gc/PropertyGroupType.gc
@@ -398,7 +398,7 @@ The data type expected for this code is URL following the *ESCO* taxonomy identi
 !===
 !*ShortName* !ResponseDataType
 !*ListID* !response-data-type 
-!*Version* !3.2.0
+!*Version* !3.3.0
 !*CanonicalUri* !https://github.com/ESPD/ESPD-EDM
 !*CanonicalVersionUri* !{url-tree}
 !*LocationUri* !{url-tree}/codelists/gc/ResponseDataType.gc

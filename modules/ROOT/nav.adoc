@@ -10,7 +10,7 @@
 ** <<7.Validation.adoc#, Validation>>
 ** <<AnnexI.Code_list_used_in_ESPD.adoc#, Codelists used in ESPD>>
 * link:{attachmentsdir}/ESPD_CM_html/index.html[ESPD-EDM Conceptual Model HTML] 
-//* link:https://docs.ted.europa.eu/ESPD-EDM/3.2.0/_attachments/ESPD_CM_html/index.html[ESPD-EDM Conceptual Model HTML] 
+//* link:https://docs.ted.europa.eu/ESPD-EDM/3.3.0/_attachments/ESPD_CM_html/index.html[ESPD-EDM Conceptual Model HTML] 
 //* xref:attachments$ESPD_CM_html/index.html[ESPD-EDM Conceptual Model HTML] 
 * <<release_notes.adoc#, Release Notes>>
 * xref:espd-ouc::index.adoc[Open User Community Documents]

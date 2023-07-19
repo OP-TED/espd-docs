@@ -1,9 +1,9 @@
 :sectnums:
 = Release Notes
 
-== v3.2.0 (May 2023) 
+== v3.3.0 (May 2023) 
 
-The ESPD-EDM v3.1.0 was focused on the ESPD-EDM changes and fixes mostly related to the data structure. The ESPD-EDM version 3.2.0 focuses mainly on correcting minor errors in the data structure and the codelists, as suggested by the Member States and stakeholders via the GitHub repositories issues workspace. 
+The ESPD-EDM v3.1.0 was focused on the ESPD-EDM changes and fixes mostly related to the data structure. The ESPD-EDM version 3.3.0 focuses mainly on correcting minor errors in the data structure and the codelists, as suggested by the Member States and stakeholders via the GitHub repositories issues workspace. 
 The list below details exhaustively every change introduced since the publication of the previous release (3.1.0) of the ESPD-EDM. 
 
 === ESPD-EDM Criterion file - Data Structure
@@ -31,9 +31,9 @@ Several issues have been resolved related to the data structure of the ESPD-EDM 
         ** Question subgroups with no values have been populated to 1 for all the ocurrences of the following UUID: 0e50931d-4d39-4f1d-9fdc-b2cf16c0807a, 9b3a04ff-e36d-4d4f-b47c-82ad402b9b02 and 5fe93344-ed91-4f97-bcab-b6720a131798.
 
     * **Fix GitHub issue https://github.com/OP-TED/ESPD-EDM/issues/375[#375] - Technical Handbook v3.1.0 inconsistencies - cbc:CustomizationID is missing from root element table in section 2.4** 
-        ** Element "cbc:CustomizationID" was removed from the xml samples, the documentation (except an image in section 2.3), and the conceptual model, in version v3.1.0 of the ESPD-EDM. In this current version v3.2.0, this element has been removed from the documentation image where it appeared in section "2.3 ESPD Request Cardinalities". Its re-introduction in all the ESPD artefacts will be discussed for a future ESPD-EDM release. 
-        ** Element "cbc:ProfileID" was removed from the xml samples and from the documentation (except an image in section 2.3), but not from the conceptual model, in version v3.1.0 of the ESPD-EDM. In this current version v3.2.0, the element "cbc:ProfileID" has been removed from the conceptual model for consistency purpose. This element has been also removed from the documentation image where it appeared in section "2.3 ESPD Request Cardinalities". Its re-introduction in all the ESPD artefacts will be discussed for a future ESPD-EDM release. 
-        ** Element "cbc:ProcedureCode" was removed from the conceptual model but not from the xml samples and the documentation, in version v3.1.0 of the ESPD-EDM. In this current version v3.2.0, the element "cbc:ProcedureCode" has been put back in the conceptual model for consistency purpose with a "Dummy" value for the codelist attribute "listID" and also for future alignment with eForms. 
+        ** Element "cbc:CustomizationID" was removed from the xml samples, the documentation (except an image in section 2.3), and the conceptual model, in version v3.1.0 of the ESPD-EDM. In this current version v3.3.0, this element has been removed from the documentation image where it appeared in section "2.3 ESPD Request Cardinalities". Its re-introduction in all the ESPD artefacts will be discussed for a future ESPD-EDM release. 
+        ** Element "cbc:ProfileID" was removed from the xml samples and from the documentation (except an image in section 2.3), but not from the conceptual model, in version v3.1.0 of the ESPD-EDM. In this current version v3.3.0, the element "cbc:ProfileID" has been removed from the conceptual model for consistency purpose. This element has been also removed from the documentation image where it appeared in section "2.3 ESPD Request Cardinalities". Its re-introduction in all the ESPD artefacts will be discussed for a future ESPD-EDM release. 
+        ** Element "cbc:ProcedureCode" was removed from the conceptual model but not from the xml samples and the documentation, in version v3.1.0 of the ESPD-EDM. In this current version v3.3.0, the element "cbc:ProcedureCode" has been put back in the conceptual model for consistency purpose with a "Dummy" value for the codelist attribute "listID" and also for future alignment with eForms. 
 
 === ESPD-EDM XSLT files
 
@@ -42,8 +42,8 @@ The following changes has been performed related to the ESPD-EDM XSLT files:
 * **Fix GitHub issue https://github.com/OP-TED/ESPD-EDM/issues/378[#378] - Clarification on date and time format #interproc** : a wrong time format with miliseconds in the “issue date” column of the XML example has been fixed to remove these miliseconds.
 
 * **Updating attributes values in the xslt files for the xml samples**
-    ** SchemeVersionID value is “3.2.0” and not “3.1.0”.
-    ** ListVersionID value is “3.2.0” and not “3.1.0”.
+    ** SchemeVersionID value is “3.3.0” and not “3.1.0”.
+    ** ListVersionID value is “3.3.0” and not “3.1.0”.
     ** The right ESPD version in comments is ESPD-V3.x.x
 
 * **Updating the xslt file "ContractingAuthorityData-RequestResponse.xslt" (missing element/attribute or incorrect value)**
@@ -66,7 +66,7 @@ The resulting updated XSLT files have been used to generate the XML samples avai
 
 ESPD version has been updated in the technical codelist files to match the current version (specific files can be found in the folder codelists/gc), for tags : Version, CanonicalURI, CanonicalVersionURI.
 
-The label "ESPD-EDMv3.2.0" has been added in the related sheet "ProfileExecutionID" (in the last row of the table) of the excel file ESPD-CodeLists.xlsx (https://github.com/OP-TED/ESPD-EDM/blob/master/\\__ESPDTeam__/ESPD-CodeLists.xlsx). 
+The label "ESPD-EDMv3.3.0" has been added in the related sheet "ProfileExecutionID" (in the last row of the table) of the excel file ESPD-CodeLists.xlsx (https://github.com/OP-TED/ESPD-EDM/blob/master/\\__ESPDTeam__/ESPD-CodeLists.xlsx). 
 
 * **Fix GitHub issue https://github.com/OP-TED/ESPD-EDM/issues/380[#380] - Question regarding the correct listID values** 
 This github issue has led to a broader review of the codelists related to the value of the attribute "listID". This attribute value was indeed missing or incorrect for several codelists in various artefacts (XSL, Generic code, XSLT, XML, Schematron). The updates have been made at three different levels : XSL file, XSLT files and Schematron file. 
@@ -89,7 +89,7 @@ The corresponding generic code and the corresponding XML files have been generat
 
 Update of Interoperability Testbed ESPD validator
 
-    * Generating the ESPD validator, for the Request and the Response, for v3.2.0 with the latest entry files (generic code files for codelists, xml files for the ESPD Request and the ESPD Response). 
+    * Generating the ESPD validator, for the Request and the Response, for v3.3.0 with the latest entry files (generic code files for codelists, xml files for the ESPD Request and the ESPD Response). 
 
 === Online documentation - espd-docs GitHub
 

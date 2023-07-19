@@ -24,7 +24,7 @@ a|
 [start=2]
 .
 
-|XML Implementation Guide (current document) link:https://docs.ted.europa.eu/ESPD-EDM/latest/index.html[Technical HandBook] |3.2.0 |Understanding of the model underlying the implementation of the ESPD Request and ESPD Response XML documents.
+|XML Implementation Guide (current document) link:https://docs.ted.europa.eu/ESPD-EDM/latest/index.html[Technical HandBook] |3.3.0 |Understanding of the model underlying the implementation of the ESPD Request and ESPD Response XML documents.
 a|
 |===
 
@@ -1960,7 +1960,7 @@ ____
 
 |_/cac:EconomicOperatorParty/cac:QualifyingParty_ | |
 |Business requirement: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr92-001[_[.underline]#tbr92-001#_] | |
-|*Qualifying party* is *compulsory* in the ESPD-EDM V3.2.0 as it is the natural placeholder for several relevant data about the Economic Operator. | a|
+|*Qualifying party* is *compulsory* in the ESPD-EDM V3.3.0 as it is the natural placeholder for several relevant data about the Economic Operator. | a|
 * {blank}
 +
 ____
@@ -1990,7 +1990,7 @@ ____
 
 |_/cac:EconomicOperatorParty/cac:EconomicOperatorRole_ | |
 |Business requirement: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr92-008[_[.underline]#tbr92-008#_] | |
-|This element is compulsory in the ESPD-EDM V3.2.0 because depending on it different sets of data will be required or not, shown or hidden, processed or skipped. | a|
+|This element is compulsory in the ESPD-EDM V3.3.0 because depending on it different sets of data will be required or not, shown or hidden, processed or skipped. | a|
 * {blank}
 +
 ____

@@ -135,7 +135,7 @@ This fragment of XML shows how the compulsory attributes are used for the some o
 
 <cbc:ContractFolderID schemeAgencyID="DGPE">PP.20170419.1024-9</cbc:ContractFolderID>
 
-<cbc:VersionID schemeAgencyID="OP" schemeVersionID="3.2.0">1.0</cbc:VersionID>
+<cbc:VersionID schemeAgencyID="OP" schemeVersionID="3.3.0">1.0</cbc:VersionID>
 ----
 
 [cols=",",options="header",]
@@ -170,13 +170,13 @@ _TenderingCriterionProperty (a QUESTION) asking for the identifier of the Econom
 
 <cac:TenderingCriterionProperty>
 
-<cbc:ID schemeID="Criterion" schemeAgencyID="OP" schemeVersionID="3.2.0">1fa05728-308f-43b0-b547-c903ffb0a8af</cbc:ID>
+<cbc:ID schemeID="Criterion" schemeAgencyID="OP" schemeVersionID="3.3.0">1fa05728-308f-43b0-b547-c903ffb0a8af</cbc:ID>
 
 <cbc:Description>ID of the economic operator</cbc:Description>
 
-<cbc:TypeCode listID="criterion-element-type" listAgencyID="OP" listVersionID="3.2.0">QUESTION</cbc:TypeCode>
+<cbc:TypeCode listID="criterion-element-type" listAgencyID="OP" listVersionID="3.3.0">QUESTION</cbc:TypeCode>
 
-<cbc:ValueDataTypeCode listID="response-data-type" listAgencyID="OP" listVersionID="3.2.0">ECONOMIC_OPERATOR_IDENTIFIER</cbc:ValueDataTypeCode>
+<cbc:ValueDataTypeCode listID="response-data-type" listAgencyID="OP" listVersionID="3.3.0">ECONOMIC_OPERATOR_IDENTIFIER</cbc:ValueDataTypeCode>
 
 </cac:TenderingCriterionProperty>
 
@@ -193,8 +193,8 @@ _TenderingCriterionResponse (the answer to the previous QUESTION)_
 ----
 ...
 <cac:TenderingCriterionResponse>
-<cbc:ID schemeID="ISO/IEC 9834-8:2008 - 4UUID" schemeAgencyID="OP" schemeVersionID="3.2.0">acb58f0e-0fe4-4372-aa08-60d0c36bfcfe</cbc:ID>
-<cbc:ValidatedCriterionPropertyID schemeID="Criterion" schemeAgencyID="OP" schemeVersionID="3.2.0">1fa05728-308f-43b0-b547-c903ffb0a8af</cbc:ValidatedCriterionPropertyID>
+<cbc:ID schemeID="ISO/IEC 9834-8:2008 - 4UUID" schemeAgencyID="OP" schemeVersionID="3.3.0">acb58f0e-0fe4-4372-aa08-60d0c36bfcfe</cbc:ID>
+<cbc:ValidatedCriterionPropertyID schemeID="Criterion" schemeAgencyID="OP" schemeVersionID="3.3.0">1fa05728-308f-43b0-b547-c903ffb0a8af</cbc:ValidatedCriterionPropertyID>
 <cbc:ResponseID schemeID="VAT" schemeAgencyID="ES-AEAT">B82387770</cbc:ResponseID>
 </cac:TenderingCriterionResponse>
 ...

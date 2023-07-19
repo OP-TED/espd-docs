@@ -9,7 +9,7 @@ The European Commission (EC) has developed a data model and 'semantic assets' fo
 image:home_roadmap.png[Roadmap,align=center,pdfwidth=50%,scaledwidth=50%]
 
 
-### v3.2.0 Release (May 2023)
+### v3.3.0 Release (July 2023)
 
 This new version of the ESPD-EDM is a minor release which focuses on:
 

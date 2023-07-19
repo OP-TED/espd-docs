@@ -2,13 +2,13 @@
 
 ifndef::imagesdir[:imagesdir: images]
 
-== v3.2.0
+== v3.3.0
 
 == Resources
 
 * xref:xml_business_handbook.adoc[ESPD BUSINESS HANDBOOK]
-* xref:xml_technical_handbook.adoc[ESPD TECHNICAL HANDBOOK] (last updated on 2023-05-02)
+* xref:xml_technical_handbook.adoc[ESPD TECHNICAL HANDBOOK] (last updated on 2023-07-25)
 * link:{attachmentsdir}/ESPD_CM_html/index.html[ESPD-EDM CONCEPTUAL MODEL HTML] 
-//* link:https://docs.ted.europa.eu/ESPD-EDM/3.2.0/_attachments/ESPD_CM_html/index.html[ESPD-EDM CONCEPTUAL MODEL HTML]  
+//* link:https://docs.ted.europa.eu/ESPD-EDM/3.3.0/_attachments/ESPD_CM_html/index.html[ESPD-EDM CONCEPTUAL MODEL HTML]  
 //* xref:attachments$ESPD_CM_html/index.html[ESPD-EDM CONCEPTUAL MODEL HTML]
 * xref:release_notes.adoc[Release Notes]

@@ -4,7 +4,7 @@ ifndef::downloaddir[:downloaddir: download]
 
 = *The European Single Procurement Document*
 
-== *Business Handbook v3.2.0*
+== *Business Handbook v3.3.0*
 
 :toc:
 :toclevels: 5

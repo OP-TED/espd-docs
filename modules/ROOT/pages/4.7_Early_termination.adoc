@@ -34,34 +34,34 @@ _Early termination conflict of interest_
 
 <!-- Criterion:Early termination, damages or other comparable sanctions -->
         <cac:TenderingCriterion>
-                <cbc:ID schemeID="criterion" schemeAgencyID="OP" schemeVersionID="3.2.0">3293e92b-7f3e-42f1-bee6-a7641bb04251</cbc:ID>
+                <cbc:ID schemeID="criterion" schemeAgencyID="OP" schemeVersionID="3.3.0">3293e92b-7f3e-42f1-bee6-a7641bb04251</cbc:ID>
                 <cbc:CriterionTypeCode listID="http://publications.europa.eu/resource/authority/criterion" listAgencyID="OP" listVersionID="20210616-0">sanction</cbc:CriterionTypeCode>
                 <cbc:Name>Early termination, damages or other comparable sanctions</cbc:Name>
                 <cbc:Description>Has the economic operator experienced that a prior public contract, a prior contract with a contracting entity or a prior concession contract was terminated early, or that damages or other comparable sanctions were imposed in connection with that prior contract?</cbc:Description>
 
                 <cac:SubTenderingCriterion>
-                        <cbc:ID schemeID="criterion" schemeAgencyID="OP" schemeVersionID="3.2.0">e6b21867-95b5-4549-8180-f4673219b179</cbc:ID>
+                        <cbc:ID schemeID="criterion" schemeAgencyID="OP" schemeVersionID="3.3.0">e6b21867-95b5-4549-8180-f4673219b179</cbc:ID>
                         <cbc:Name>[Name of the National Criterion]</cbc:Name>
                         <cbc:Description>[Description of the National Criterion ]</cbc:Description>
                         <cac:TenderingCriterionPropertyGroup>
-                                <cbc:ID schemeID="criterion" schemeAgencyID="OP" schemeVersionID="3.2.0">8c39b505-8abe-44fa-a3e0-f2d78b9d8224</cbc:ID>
-                                <cbc:PropertyGroupTypeCode listID="property-group-type" listAgencyID="OP" listVersionID="3.2.0">ON*</cbc:PropertyGroupTypeCode>
+                                <cbc:ID schemeID="criterion" schemeAgencyID="OP" schemeVersionID="3.3.0">8c39b505-8abe-44fa-a3e0-f2d78b9d8224</cbc:ID>
+                                <cbc:PropertyGroupTypeCode listID="property-group-type" listAgencyID="OP" listVersionID="3.3.0">ON*</cbc:PropertyGroupTypeCode>
                                 <cac:TenderingCriterionProperty>
-                                        <cbc:ID schemeID="criterion" schemeAgencyID="OP" schemeVersionID="3.2.0">1887885e-9783-4563-a44f-9c3fec26f3c7</cbc:ID>
+                                        <cbc:ID schemeID="criterion" schemeAgencyID="OP" schemeVersionID="3.3.0">1887885e-9783-4563-a44f-9c3fec26f3c7</cbc:ID>
                                         <cbc:Description>[Additional information; e.g. no evidences online]</cbc:Description>
-                                        <cbc:TypeCode listID="criterion-element-type" listAgencyID="OP" listVersionID="3.2.0">CAPTION</cbc:TypeCode>
-                                        <cbc:ValueDataTypeCode listID="response-data-type" listAgencyID="OP" listVersionID="3.2.0">NONE</cbc:ValueDataTypeCode>
+                                        <cbc:TypeCode listID="criterion-element-type" listAgencyID="OP" listVersionID="3.3.0">CAPTION</cbc:TypeCode>
+                                        <cbc:ValueDataTypeCode listID="response-data-type" listAgencyID="OP" listVersionID="3.3.0">NONE</cbc:ValueDataTypeCode>
                                 </cac:TenderingCriterionProperty>
                                 <cac:TenderingCriterionProperty>
-                                        <cbc:ID schemeID="criterion" schemeAgencyID="OP" schemeVersionID="3.2.0">849a83f3-d4f8-4b67-8124-2c8133137b42</cbc:ID>
+                                        <cbc:ID schemeID="criterion" schemeAgencyID="OP" schemeVersionID="3.3.0">849a83f3-d4f8-4b67-8124-2c8133137b42</cbc:ID>
                                         <cbc:Description>Your Answer</cbc:Description>
-                                        <cbc:TypeCode listID="criterion-element-type" listAgencyID="OP" listVersionID="3.2.0">QUESTION</cbc:TypeCode>
-                                        <cbc:ValueDataTypeCode listID="response-data-type" listAgencyID="OP" listVersionID="3.2.0">INDICATOR</cbc:ValueDataTypeCode>
+                                        <cbc:TypeCode listID="criterion-element-type" listAgencyID="OP" listVersionID="3.3.0">QUESTION</cbc:TypeCode>
+                                        <cbc:ValueDataTypeCode listID="response-data-type" listAgencyID="OP" listVersionID="3.3.0">INDICATOR</cbc:ValueDataTypeCode>
                                 </cac:TenderingCriterionProperty>
                         </cac:TenderingCriterionPropertyGroup>
                 </cac:SubTenderingCriterion>
                 <cac:Legislation>
-                        <cbc:ID schemeID="criterion" schemeAgencyID="OP" schemeVersionID="3.2.0">bc28f42c-999f-41ec-8280-751e9dfc672c</cbc:ID>
+                        <cbc:ID schemeID="criterion" schemeAgencyID="OP" schemeVersionID="3.3.0">bc28f42c-999f-41ec-8280-751e9dfc672c</cbc:ID>
                         <cbc:Title>[Legislation title]</cbc:Title>
                         <cbc:Description>[Legislation description]</cbc:Description>
                         <cbc:JurisdictionLevel>EU</cbc:JurisdictionLevel>
@@ -72,62 +72,62 @@ _Early termination conflict of interest_
                         </cac:Language>
                 </cac:Legislation>
                 <cac:TenderingCriterionPropertyGroup>
-                        <cbc:ID schemeID="criterion" schemeAgencyID="OP" schemeVersionID="3.2.0">67362ec7-cec3-4cb8-a38e-5d7a2a31e6d8</cbc:ID>
-                        <cbc:PropertyGroupTypeCode listID="property-group-type" listAgencyID="OP" listVersionID="3.2.0">ON*</cbc:PropertyGroupTypeCode>
+                        <cbc:ID schemeID="criterion" schemeAgencyID="OP" schemeVersionID="3.3.0">67362ec7-cec3-4cb8-a38e-5d7a2a31e6d8</cbc:ID>
+                        <cbc:PropertyGroupTypeCode listID="property-group-type" listAgencyID="OP" listVersionID="3.3.0">ON*</cbc:PropertyGroupTypeCode>
                         <cac:TenderingCriterionProperty>
-                                <cbc:ID schemeID="criterion" schemeAgencyID="OP" schemeVersionID="3.2.0">70f55a26-19ca-4b3a-9ce4-d6e6394e08ea</cbc:ID>
+                                <cbc:ID schemeID="criterion" schemeAgencyID="OP" schemeVersionID="3.3.0">70f55a26-19ca-4b3a-9ce4-d6e6394e08ea</cbc:ID>
                                 <cbc:Description>Your answer</cbc:Description>
-                                <cbc:TypeCode listID="criterion-element-type" listAgencyID="OP" listVersionID="3.2.0">QUESTION</cbc:TypeCode>
-                                <cbc:ValueDataTypeCode listID="response-data-type" listAgencyID="OP" listVersionID="3.2.0">INDICATOR</cbc:ValueDataTypeCode>
+                                <cbc:TypeCode listID="criterion-element-type" listAgencyID="OP" listVersionID="3.3.0">QUESTION</cbc:TypeCode>
+                                <cbc:ValueDataTypeCode listID="response-data-type" listAgencyID="OP" listVersionID="3.3.0">INDICATOR</cbc:ValueDataTypeCode>
                         </cac:TenderingCriterionProperty>
                         <cac:SubsidiaryTenderingCriterionPropertyGroup>
-                                <cbc:ID schemeID="criterion" schemeAgencyID="OP" schemeVersionID="3.2.0">73f0fe4c-4ed9-4343-8096-d898cf200146</cbc:ID>
-                                <cbc:PropertyGroupTypeCode listID="property-group-type" listAgencyID="OP" listVersionID="3.2.0">ONTRUE</cbc:PropertyGroupTypeCode>
+                                <cbc:ID schemeID="criterion" schemeAgencyID="OP" schemeVersionID="3.3.0">73f0fe4c-4ed9-4343-8096-d898cf200146</cbc:ID>
+                                <cbc:PropertyGroupTypeCode listID="property-group-type" listAgencyID="OP" listVersionID="3.3.0">ONTRUE</cbc:PropertyGroupTypeCode>
                                 <cac:TenderingCriterionProperty>
-                                        <cbc:ID schemeID="criterion" schemeAgencyID="OP" schemeVersionID="3.2.0">5934f108-1682-472e-be9c-8717c51bca3b</cbc:ID>
+                                        <cbc:ID schemeID="criterion" schemeAgencyID="OP" schemeVersionID="3.3.0">5934f108-1682-472e-be9c-8717c51bca3b</cbc:ID>
                                         <cbc:Description>Please describe them</cbc:Description>
-                                        <cbc:TypeCode listID="criterion-element-type" listAgencyID="OP" listVersionID="3.2.0">QUESTION</cbc:TypeCode>
-                                        <cbc:ValueDataTypeCode listID="response-data-type" listAgencyID="OP" listVersionID="3.2.0">DESCRIPTION</cbc:ValueDataTypeCode>
+                                        <cbc:TypeCode listID="criterion-element-type" listAgencyID="OP" listVersionID="3.3.0">QUESTION</cbc:TypeCode>
+                                        <cbc:ValueDataTypeCode listID="response-data-type" listAgencyID="OP" listVersionID="3.3.0">DESCRIPTION</cbc:ValueDataTypeCode>
                                 </cac:TenderingCriterionProperty>
                                 <cac:SubsidiaryTenderingCriterionPropertyGroup>
-                                        <cbc:ID schemeID="criterion" schemeAgencyID="OP" schemeVersionID="3.2.0">5f9f09f7-f701-432c-9fdc-c22c124a74c9</cbc:ID>
-                                        <cbc:PropertyGroupTypeCode listID="property-group-type" listAgencyID="OP" listVersionID="3.2.0">ON*</cbc:PropertyGroupTypeCode>
+                                        <cbc:ID schemeID="criterion" schemeAgencyID="OP" schemeVersionID="3.3.0">5f9f09f7-f701-432c-9fdc-c22c124a74c9</cbc:ID>
+                                        <cbc:PropertyGroupTypeCode listID="property-group-type" listAgencyID="OP" listVersionID="3.3.0">ON*</cbc:PropertyGroupTypeCode>
                                         <cac:TenderingCriterionProperty>
-                                                <cbc:ID schemeID="criterion" schemeAgencyID="OP" schemeVersionID="3.2.0">55207fdf-803e-46ef-a096-1c8ea17911cd</cbc:ID>
+                                                <cbc:ID schemeID="criterion" schemeAgencyID="OP" schemeVersionID="3.3.0">55207fdf-803e-46ef-a096-1c8ea17911cd</cbc:ID>
                                                 <cbc:Description>Have you taken measures to demonstrate your reliability (Self-Cleaning)?</cbc:Description>
-                                                <cbc:TypeCode listID="criterion-element-type" listAgencyID="OP" listVersionID="3.2.0">QUESTION</cbc:TypeCode>
-                                                <cbc:ValueDataTypeCode listID="response-data-type" listAgencyID="OP" listVersionID="3.2.0">INDICATOR</cbc:ValueDataTypeCode>
+                                                <cbc:TypeCode listID="criterion-element-type" listAgencyID="OP" listVersionID="3.3.0">QUESTION</cbc:TypeCode>
+                                                <cbc:ValueDataTypeCode listID="response-data-type" listAgencyID="OP" listVersionID="3.3.0">INDICATOR</cbc:ValueDataTypeCode>
                                         </cac:TenderingCriterionProperty>
                                         <cac:SubsidiaryTenderingCriterionPropertyGroup>
-                                                <cbc:ID schemeID="criterion" schemeAgencyID="OP" schemeVersionID="3.2.0">74e6c7b4-757b-4b40-ada6-fad6a997c310</cbc:ID>
-                                                <cbc:PropertyGroupTypeCode listID="property-group-type" listAgencyID="OP" listVersionID="3.2.0">ONTRUE</cbc:PropertyGroupTypeCode>
+                                                <cbc:ID schemeID="criterion" schemeAgencyID="OP" schemeVersionID="3.3.0">74e6c7b4-757b-4b40-ada6-fad6a997c310</cbc:ID>
+                                                <cbc:PropertyGroupTypeCode listID="property-group-type" listAgencyID="OP" listVersionID="3.3.0">ONTRUE</cbc:PropertyGroupTypeCode>
                                                 <cac:TenderingCriterionProperty>
-                                                  <cbc:ID schemeID="criterion" schemeAgencyID="OP" schemeVersionID="3.2.0">1556d05c-84b8-4a23-91dc-6d0ddb09aa2b</cbc:ID>
+                                                  <cbc:ID schemeID="criterion" schemeAgencyID="OP" schemeVersionID="3.3.0">1556d05c-84b8-4a23-91dc-6d0ddb09aa2b</cbc:ID>
                                                   <cbc:Description>Please describe them</cbc:Description>
-                                                  <cbc:TypeCode listID="criterion-element-type" listAgencyID="OP" listVersionID="3.2.0">QUESTION</cbc:TypeCode>
-                                                  <cbc:ValueDataTypeCode listID="response-data-type" listAgencyID="OP" listVersionID="3.2.0">DESCRIPTION</cbc:ValueDataTypeCode>
+                                                  <cbc:TypeCode listID="criterion-element-type" listAgencyID="OP" listVersionID="3.3.0">QUESTION</cbc:TypeCode>
+                                                  <cbc:ValueDataTypeCode listID="response-data-type" listAgencyID="OP" listVersionID="3.3.0">DESCRIPTION</cbc:ValueDataTypeCode>
                                                 </cac:TenderingCriterionProperty>
                                         </cac:SubsidiaryTenderingCriterionPropertyGroup>
                                 </cac:SubsidiaryTenderingCriterionPropertyGroup>
                         </cac:SubsidiaryTenderingCriterionPropertyGroup>
                 </cac:TenderingCriterionPropertyGroup>
                 <cac:TenderingCriterionPropertyGroup>
-                        <cbc:ID schemeID="criterion" schemeAgencyID="OP" schemeVersionID="3.2.0">7458d42a-e581-4640-9283-34ceb3ad4345</cbc:ID>
-                        <cbc:PropertyGroupTypeCode listID="property-group-type" listAgencyID="OP" listVersionID="3.2.0">ON*</cbc:PropertyGroupTypeCode>
+                        <cbc:ID schemeID="criterion" schemeAgencyID="OP" schemeVersionID="3.3.0">7458d42a-e581-4640-9283-34ceb3ad4345</cbc:ID>
+                        <cbc:PropertyGroupTypeCode listID="property-group-type" listAgencyID="OP" listVersionID="3.3.0">ON*</cbc:PropertyGroupTypeCode>
                         <cac:TenderingCriterionProperty>
-                                <cbc:ID schemeID="criterion" schemeAgencyID="OP" schemeVersionID="3.2.0">dcb433c0-8de4-40ad-b70e-1daaea91bcc8</cbc:ID>
+                                <cbc:ID schemeID="criterion" schemeAgencyID="OP" schemeVersionID="3.3.0">dcb433c0-8de4-40ad-b70e-1daaea91bcc8</cbc:ID>
                                 <cbc:Description>Is this information available electronically?</cbc:Description>
-                                <cbc:TypeCode listID="criterion-element-type" listAgencyID="OP" listVersionID="3.2.0">QUESTION</cbc:TypeCode>
-                                <cbc:ValueDataTypeCode listID="response-data-type" listAgencyID="OP" listVersionID="3.2.0">INDICATOR</cbc:ValueDataTypeCode>
+                                <cbc:TypeCode listID="criterion-element-type" listAgencyID="OP" listVersionID="3.3.0">QUESTION</cbc:TypeCode>
+                                <cbc:ValueDataTypeCode listID="response-data-type" listAgencyID="OP" listVersionID="3.3.0">INDICATOR</cbc:ValueDataTypeCode>
                         </cac:TenderingCriterionProperty>
                         <cac:SubsidiaryTenderingCriterionPropertyGroup>
-                                <cbc:ID schemeID="criterion" schemeAgencyID="OP" schemeVersionID="3.2.0">41dd2e9b-1bfd-44c7-93ee-56bd74a4334b</cbc:ID>
-                                <cbc:PropertyGroupTypeCode listID="property-group-type" listAgencyID="OP" listVersionID="3.2.0">ONTRUE</cbc:PropertyGroupTypeCode>
+                                <cbc:ID schemeID="criterion" schemeAgencyID="OP" schemeVersionID="3.3.0">41dd2e9b-1bfd-44c7-93ee-56bd74a4334b</cbc:ID>
+                                <cbc:PropertyGroupTypeCode listID="property-group-type" listAgencyID="OP" listVersionID="3.3.0">ONTRUE</cbc:PropertyGroupTypeCode>
                                 <cac:TenderingCriterionProperty>
-                                        <cbc:ID schemeID="criterion" schemeAgencyID="OP" schemeVersionID="3.2.0">d7977bf6-67d2-4fb1-8d1e-bc19a3943fc3</cbc:ID>
+                                        <cbc:ID schemeID="criterion" schemeAgencyID="OP" schemeVersionID="3.3.0">d7977bf6-67d2-4fb1-8d1e-bc19a3943fc3</cbc:ID>
                                         <cbc:Description>Evidence Supplied</cbc:Description>
-                                        <cbc:TypeCode listID="criterion-element-type" listAgencyID="OP" listVersionID="3.2.0">QUESTION</cbc:TypeCode>
-                                        <cbc:ValueDataTypeCode listID="response-data-type" listAgencyID="OP" listVersionID="3.2.0">EVIDENCE_IDENTIFIER</cbc:ValueDataTypeCode>
+                                        <cbc:TypeCode listID="criterion-element-type" listAgencyID="OP" listVersionID="3.3.0">QUESTION</cbc:TypeCode>
+                                        <cbc:ValueDataTypeCode listID="response-data-type" listAgencyID="OP" listVersionID="3.3.0">EVIDENCE_IDENTIFIER</cbc:ValueDataTypeCode>
                                 </cac:TenderingCriterionProperty>
                         </cac:SubsidiaryTenderingCriterionPropertyGroup>
                 </cac:TenderingCriterionPropertyGroup>
