@@ -65,7 +65,7 @@ link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1
 
 *Rule scope*: Common (BR-TC-06, BR-TC-19)
 
-*Note*: The UBL specification allows always multiple lines of text for the component cbc:Description. This feature can be used to split long descriptions into multiple lines, especially when the description contains enumerations (see the criterion "Misinterpretation" for an example).
+*Note*: The UBL specification allows always multiple lines of text for the component cbc:Description. This feature can be used to split long descriptions into multiple lines, especially when the description contains enumerations (see the criterion "Misrepresentation" for an example).
 
 |*cac:ProcurementProjectLotReference* |Class |0..n |One or more of the procurement project lots to which this criterion can be related to. a|
 *Information Requirement*: (see section <<lot_management>>)

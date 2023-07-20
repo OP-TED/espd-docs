@@ -215,7 +215,7 @@ _Example of suitability criterion_
 <!-- Criterion:For service contracts: authorisation of particular organisation needed -->
         <cac:TenderingCriterion>
                 <cbc:ID schemeID="criterion" schemeAgencyID="OP" schemeVersionID="3.3.0">9eeb6d5c-0eb8-48e8-a4c5-5087a7c095a4</cbc:ID>
-                <cbc:CriterionTypeCode listID="http://publications.europa.eu/resource/authority/criterion" listAgencyID="OP" listVersionID="20210616-0">autorisation</cbc:CriterionTypeCode>
+                <cbc:CriterionTypeCode listID="http://publications.europa.eu/resource/authority/criterion" listAgencyID="OP" listVersionID="20210616-0">authorisation</cbc:CriterionTypeCode>
                 <cbc:Name>For service contracts: authorisation of particular organisation needed</cbc:Name>
                 <cbc:Description>Is a particular authorisation of a particular organisation needed in order to be able to perform the service in question in the country of establishment of the economic operator?</cbc:Description>
                 <cac:ProcurementProjectLotReference>
