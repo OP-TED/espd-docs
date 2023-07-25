@@ -263,7 +263,8 @@ _Table 43. Elements expected in the 'cac:ResponseValue' class_
 
 *Rule*: None.
 
-|*cbc:ResponseNumeric* |Numeric |0..1 |A number used as a reply to the criterion property. a|
+|*cbc:ResponseNumeric* |Numeric |0..1 |A number used as a reply to the criterion property. 
+More precisely, a number, rate or percent used as a reply to the criterion requirement. a|
 *Information Requirement*: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1-tbr92-018[_tbr92-018_]
 
 *Rule*: Do not format the percentage with the "%" symbol, just provide a float value like in the example (e.g. 0.4).
