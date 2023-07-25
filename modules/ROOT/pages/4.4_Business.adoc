@@ -38,7 +38,7 @@ _<!-- ... the rest of elements in the QualificationApplicationRequest document o
 <!-- Criterion:Bankruptcy -->
         <cac:TenderingCriterion>
                 <cbc:ID schemeID="criterion" schemeAgencyID="OP" schemeVersionID="3.3.0">d3732c09-7d62-4edc-a172-241da6636e7c</cbc:ID>
-                <cbc:CriterionTypeCode listID="http://publications.europa.eu/resource/authority/criterion" listAgencyID="OP" listVersionID="20210616-0">bankruptcy</cbc:CriterionTypeCode>
+                <cbc:CriterionTypeCode listID="http://publications.europa.eu/resource/authority/criterion" listAgencyID="OP" listVersionID="20230315-0">bankruptcy</cbc:CriterionTypeCode>
                 <cbc:Name>Bankruptcy</cbc:Name>
                 <cbc:Description>Is the economic operator bankrupt? This information needs not be given if exclusion of economic operators in this case has been made mandatory under the applicable national law without any possibility of derogation where the economic operator is nevertheless able to perform the contract.</cbc:Description>
 
@@ -71,7 +71,7 @@ _<!-- ... the rest of elements in the QualificationApplicationRequest document o
                         <cbc:Article>[Article, e.g. Article 2.I.a]</cbc:Article>
                         <cbc:URI>http://eur-lex.europa.eu/</cbc:URI>
                         <cac:Language>
-                                <cbc:LocaleCode listID="http://publications.europa.eu/resource/authority/language" listAgencyName="OP" listVersionID="20211208-0">ENG</cbc:LocaleCode>
+                                <cbc:LocaleCode listID="http://publications.europa.eu/resource/authority/language" listAgencyName="OP" listVersionID="20220928-0">ENG</cbc:LocaleCode>
                         </cac:Language>
                 </cac:Legislation>
                 <cac:TenderingCriterionPropertyGroup>

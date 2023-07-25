@@ -301,7 +301,7 @@ _Reduction of Candidates - (QUESTION(s) in the ESPD-Request)_
 <!-- Criterion:Reduction of the number of qualified candidates -->
         <cac:TenderingCriterion>
                 <cbc:ID schemeID="criterion" schemeAgencyID="OP" schemeVersionID="3.3.0">51c39ba9-0444-4967-afe9-36f753b30175</cbc:ID>
-                <cbc:CriterionTypeCode listID="http://publications.europa.eu/resource/authority/criterion" listAgencyID="OP" listVersionID="20210616-0">staff-red</cbc:CriterionTypeCode>
+                <cbc:CriterionTypeCode listID="http://publications.europa.eu/resource/authority/criterion" listAgencyID="OP" listVersionID="20230315-0">staff-red</cbc:CriterionTypeCode>
                 <cbc:Name>Reduction of the number of qualified candidates</cbc:Name>
                 <cbc:Description>The economic operator declares that It meets the objective and non discriminatory criteria or rules to be applied in order to limit the number of candidates in the following way:</cbc:Description>
                 <cac:ProcurementProjectLotReference>

@@ -62,7 +62,7 @@ _'Risk indemnity insurance' criterion (*Procedure with Lots*)_
  <!-- Criterion:Professional risk indemnity insurance -->
         <cac:TenderingCriterion>
                 <cbc:ID schemeID="criterion" schemeAgencyID="OP" schemeVersionID="3.3.0">7604bd40-4462-4086-8763-a50da51a869c</cbc:ID>
-                <cbc:CriterionTypeCode listID="http://publications.europa.eu/resource/authority/criterion" listAgencyID="OP" listVersionID="20210616-0">indem-insu</cbc:CriterionTypeCode>
+                <cbc:CriterionTypeCode listID="http://publications.europa.eu/resource/authority/criterion" listAgencyID="OP" listVersionID="20230315-0">indem-insu</cbc:CriterionTypeCode>
                 <cbc:Name>Professional risk indemnity insurance</cbc:Name>
                 <cbc:Description>The insured amount in its professional risk indemnity insurance is the following:</cbc:Description>
                 <cac:ProcurementProjectLotReference>
@@ -100,7 +100,7 @@ _'Risk indemnity insurance' criterion (*Procedure with Lots*)_
                         <cbc:Article>[Article, e.g. Article 2.I.a]</cbc:Article>
                         <cbc:URI>http://eur-lex.europa.eu/</cbc:URI>
                         <cac:Language>
-                                <cbc:LocaleCode listID="http://publications.europa.eu/resource/authority/language" listAgencyName="OP" listVersionID="20211208-0">ENG</cbc:LocaleCode>
+                                <cbc:LocaleCode listID="http://publications.europa.eu/resource/authority/language" listAgencyName="OP" listVersionID="20220928-0">ENG</cbc:LocaleCode>
                         </cac:Language>
                 </cac:Legislation>
                 <cac:TenderingCriterionPropertyGroup>

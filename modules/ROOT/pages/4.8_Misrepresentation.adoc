@@ -43,7 +43,7 @@ _'Misrepresentation' conflict of interest_
 <!-- Criterion:Guilty of misrepresentation, withheld information, unable to provide required documents and obtained confidential information of this procedure -->
         <cac:TenderingCriterion>
                 <cbc:ID schemeID="criterion" schemeAgencyID="OP" schemeVersionID="3.3.0">696a75b2-6107-428f-8b74-82affb67e184</cbc:ID>
-                <cbc:CriterionTypeCode listID="http://publications.europa.eu/resource/authority/criterion" listAgencyID="OP" listVersionID="20210616-0">misrepresent</cbc:CriterionTypeCode>
+                <cbc:CriterionTypeCode listID="http://publications.europa.eu/resource/authority/criterion" listAgencyID="OP" listVersionID="20230315-0">misrepresent</cbc:CriterionTypeCode>
                 <cbc:Name>Guilty of misrepresentation, withheld information, unable to provide required documents and obtained confidential information of this procedure</cbc:Name>
                 <cbc:Description>Can the economic operator confirm that:</cbc:Description>
 
@@ -76,7 +76,7 @@ _'Misrepresentation' conflict of interest_
                         <cbc:Article>[Article, e.g. Article 2.I.a]</cbc:Article>
                         <cbc:URI>http://eur-lex.europa.eu/</cbc:URI>
                         <cac:Language>
-                                <cbc:LocaleCode listID="http://publications.europa.eu/resource/authority/language" listAgencyName="OP" listVersionID="20211208-0">ENG</cbc:LocaleCode>
+                                <cbc:LocaleCode listID="http://publications.europa.eu/resource/authority/language" listAgencyName="OP" listVersionID="20220928-0">ENG</cbc:LocaleCode>
                         </cac:Language>
                 </cac:Legislation>
                 <cac:TenderingCriterionPropertyGroup>

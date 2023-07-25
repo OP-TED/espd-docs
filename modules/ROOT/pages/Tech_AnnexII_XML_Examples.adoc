@@ -13,7 +13,7 @@ The following xml code is an example of use of code list xref:Tech_AnnexI_Code_L
 ----
 <cac:Evidence>
     <cbc:ID schemeAgencyID="OP">EVIDENCE-00001</cbc:ID>
-    <cbc:ConfidentialityLevelCode listID="http://publications.europa.eu/resource/authority/access-right" listAgencyID="OP" listVersionID="20211208-0">CONFIDENTIAL</cbc:ConfidentialityLevelCode>
+    <cbc:ConfidentialityLevelCode listID="http://publications.europa.eu/resource/authority/access-right" listAgencyID="OP" listVersionID="20220316-0">CONFIDENTIAL</cbc:ConfidentialityLevelCode>
     <cac:DocumentReference>
         <cbc:ID schemeAgencyID="OP">SAT-11121233</cbc:ID>
         <cac:Attachment>
@@ -113,7 +113,7 @@ The following xml code is an example of use of code list xref:Tech_AnnexI_Code_L
         <cbc:CityName>DummyValue</cbc:CityName>
         <cbc:PostalZone>DummyValue</cbc:PostalZone>
         <cac:Country>
-                <cbc:IdentificationCode listID="http://publications.europa.eu/resource/authority/country" listAgencyID="OP" listVersionID="20211208-0">AND</cbc:IdentificationCode>
+                <cbc:IdentificationCode listID="http://publications.europa.eu/resource/authority/country" listAgencyID="OP" listVersionID="20220928-0">AND</cbc:IdentificationCode>
         </cac:Country>
 </cac:PostalAddress>
 (...)
@@ -133,7 +133,7 @@ The following xml code is an example of use of code list xref:Tech_AnnexI_Code_L
 <!-- Criterion:Participation in a criminal organisation -->
 <cac:TenderingCriterion>
         (...)
-        <cbc:CriterionTypeCode listID="http://publications.europa.eu/resource/authority/criterion" listAgencyID="OP" listVersionID="20210616-0">crime-org</cbc:CriterionTypeCode>
+        <cbc:CriterionTypeCode listID="http://publications.europa.eu/resource/authority/criterion" listAgencyID="OP" listVersionID="20230315-0">crime-org</cbc:CriterionTypeCode>
         <cbc:Name>Participation in a criminal organisation</cbc:Name>
         <cbc:Description>Has the economic operator itself or any person who is a member of its administrative, management or supervisory body or has powers of representation, decision or control therein been the subject of a conviction by final judgment for participation in a criminal organisation, by a conviction rendered at the most five years ago or in which an exclusion period set out directly in the conviction continues to be applicable? As defined in Article 2 of Council Framework Decision 2008/841/JHA of 24 October 2008 on the fight against organised crime (OJ L 300, 11.11.2008, p. 42).</cbc:Description>
         <cac:SubTenderingCriterion>
@@ -160,7 +160,7 @@ The xml code implemented for this criterion in the ESPDRequest is:
 <!-- Criterion:Participation in a criminal organisation -->
 <cac:TenderingCriterion>
         (...)
-        <cbc:CriterionTypeCode listID="http://publications.europa.eu/resource/authority/criterion" schemeAgencyID="OP" schemeVersionID="20210616-0">crime-org</cbc:CriterionTypeCode>
+        <cbc:CriterionTypeCode listID="http://publications.europa.eu/resource/authority/criterion" schemeAgencyID="OP" schemeVersionID="20230315-0">crime-org</cbc:CriterionTypeCode>
         (...)
         <cac:SubTenderingCriterion>
         (...)
@@ -208,7 +208,7 @@ Code list xref:Tech_AnnexI_Code_Lists_Catalogue.adoc#currency-table[currency] ca
         <cbc:Description>Additional Information</cbc:Description>
         <cbc:TypeCode listID="criterion-element-type" listVersionID="3.3.0">REQUIREMENT</cbc:TypeCode>
         <cbc:ValueDataTypeCode listID="response-data-type" listVersionID="3.3.0">DESCRIPTION</cbc:ValueDataTypeCode>
-        <cbc:ValueCurrencyCode listID="http://publications.europa.eu/resource/authority/currency" listAgencyID="OP" listVersionID="20211208-0">EUR</cbc:ValueCurrencyCode>
+        <cbc:ValueCurrencyCode listID="http://publications.europa.eu/resource/authority/currency" listAgencyID="OP" listVersionID="20220928-0">EUR</cbc:ValueCurrencyCode>
         (...)
 </cac:TenderingCriterionProperty>
 ----
@@ -244,7 +244,7 @@ The following xml code is an example of use of code list xref:Tech_AnnexI_Code_L
 <cac:AdditionalDocumentReference>
         <cbc:ID schemeAgencyID="OP">2017/S 142-293520</cbc:ID>
         <cbc:DocumentTypeCode listID="http://publications.europa.eu/resource/authority/docrefcontent-type" 
-        listVersionID="3.3.0">TED_CN</cbc:DocumentTypeCode>
+        listVersionID="20220928-0">TED_CN</cbc:DocumentTypeCode>
         <cac:Attachment>
         <cac:ExternalReference>
         <!-- Beware XML URI fields may require encoded URLs -->
@@ -274,7 +274,7 @@ The following xml code is an example of use of code list xref:Tech_AnnexI_Code_L
         (...)       
         <cac:Party>
                 <cbc:WebsiteURI>www.Procurer.com</cbc:WebsiteURI>
-                <cbc:IndustryClassificationCode listID="http://publications.europa.eu/resource/authority/economic-operator-size" listAgencyID="OP" listVersionID="20210317-0">sme</cbc:IndustryClassificationCode>
+                <cbc:IndustryClassificationCode listID="http://publications.europa.eu/resource/authority/economic-operator-size" listAgencyID="OP" listVersionID="20220316-0">sme</cbc:IndustryClassificationCode>
                 <cac:PartyIdentification>
                         <cbc:ID schemeAgencyID="OP">AD123456789</cbc:ID>
                 </cac:PartyIdentification>
@@ -383,7 +383,7 @@ The following xml code is an example of use of code list xref:Tech_AnnexI_Code_L
         <cbc:Article>[Article, e.g. Article 2.I.a]</cbc:Article>
         <cbc:URI>http://eur-lex.europa.eu/</cbc:URI>
         <cac:Language>
-                <cbc:LocaleCode listID="http://publications.europa.eu/resource/authority/language" listAgencyName="OP" listVersionID="20211208-0">ENG</cbc:LocaleCode>
+                <cbc:LocaleCode listID="http://publications.europa.eu/resource/authority/language" listAgencyName="OP" listVersionID="20220928-0">ENG</cbc:LocaleCode>
         </cac:Language>
 </cac:Legislation>
 ----
@@ -400,7 +400,7 @@ The following xml code is an example of use of code list xref:Tech_AnnexI_Code_L
 <!-- Criterion:Enrolment in a relevant professional register -->
 <cac:TenderingCriterion>
  <cbc:ID schemeID="criterion" schemeAgencyID="OP" schemeVersionID="3.3.0">6ee55a59-6adb-4c3a-b89f-e62a7ad7be7f</cbc:ID>
-        <cbc:CriterionTypeCode listID="http://publications.europa.eu/resource/authority/criterion" listAgencyID="OP" listVersionID="20210616-0">prof-regist</cbc:CriterionTypeCode>
+        <cbc:CriterionTypeCode listID="http://publications.europa.eu/resource/authority/criterion" listAgencyID="OP" listVersionID="20230315-0">prof-regist</cbc:CriterionTypeCode>
         <cbc:Name>Enrolment in a relevant professional register</cbc:Name>
         <cbc:Description>It is enrolled in relevant professional registers kept in the Member State of its establishment as described in Annex XI of Directive 2014/24/EU; economic operators from certain Member States may have to comply with other requirements set out in that Annex.</cbc:Description>                
         (...)
@@ -416,7 +416,7 @@ The following xml code is an example of use of code list xref:Tech_AnnexI_Code_L
                 here from the economic operator, as this is a REQUIREMENT issued by the contracting
                 authority. Hence the element 'cbc:ValueDataTypeCode' contains the type of value of
                 the requirement issued by the contracting authority -->
-                <cbc:ExpectedCode listID="http://publications.europa.eu/resource/authority/occupation" listVersionID="3.3.0">http://data.europa.eu/esco/occupation/4d5bd738-9202-4fd7-bd8c-7dbe914048de</cbc:ExpectedCode>
+                <cbc:ExpectedCode listID="http://publications.europa.eu/resource/authority/occupation" listVersionID="20221214-0">http://data.europa.eu/esco/occupation/4d5bd738-9202-4fd7-bd8c-7dbe914048de</cbc:ExpectedCode>
         </cac:TenderingCriterionProperty>
         (...)
 </cac:TenderingCriterionPropertyGroup>

@@ -576,7 +576,7 @@ _Economic operator data - XML example_
 
 <!-- This EO company is NOT an SME -->
 
-<cbc:IndustryClassificationCode listID="http://publications.europa.eu/resource/authority/economic-operator-size" listAgencyID="OP" listVersionID="20210317-0">LARGE</cbc:IndustryClassificationCode>
+<cbc:IndustryClassificationCode listID="http://publications.europa.eu/resource/authority/economic-operator-size" listAgencyID="OP" listVersionID="20220316-0">LARGE</cbc:IndustryClassificationCode>
 
 <!-- Notice that the ID and Name of the Pre-Qualification System is in the attributes. They would be captured from e-Certis. -->
 
@@ -626,7 +626,7 @@ _Economic operator data - XML example_
 
 <cac:Country>
 
-<cbc:IdentificationCode listID="http://publications.europa.eu/resource/authority/country" listAgencyID="OP" listVersionID="20211208-0">ES</cbc:IdentificationCode>
+<cbc:IdentificationCode listID="http://publications.europa.eu/resource/authority/country" listAgencyID="OP" listVersionID="20220928-0">ES</cbc:IdentificationCode>
 
 <cbc:Name>Spain</cbc:Name>
 
@@ -825,7 +825,7 @@ _Economic operator's representatives_
 
 <!-- This EO company is NOT an SME -->
 
-<cbc:IndustryClassificationCode listID="http://publications.europa.eu/resource/authority/economic-operator-size" listAgencyID="OP" listVersionID="20210317-0">large</cbc:IndustryClassificationCode>
+<cbc:IndustryClassificationCode listID="http://publications.europa.eu/resource/authority/economic-operator-size" listAgencyID="OP" listVersionID="20220316-0">large</cbc:IndustryClassificationCode>
 
 <!-- Notice that the ID and Name of the Pre-Qualification System is in the attributes. They would be captured from e-Certis. -->
 
@@ -873,7 +873,7 @@ _Economic operator's representatives_
 
 <cac:Country>
 
-<cbc:IdentificationCode listID="http://publications.europa.eu/resource/authority/country" listAgencyID="OP" listVersionID="20211208-0">ESP</cbc:IdentificationCode>
+<cbc:IdentificationCode listID="http://publications.europa.eu/resource/authority/country" listAgencyID="OP" listVersionID="20220928-0">ESP</cbc:IdentificationCode>
 
 <cbc:Name>Spain</cbc:Name>
 
@@ -931,7 +931,7 @@ _Economic operator's representatives_
 
 <cac:Country>
 
-<cbc:IdentificationCode listID="http://publications.europa.eu/resource/authority/country" listAgencyID="OP" listVersionID="20211208-0">BEL</cbc:IdentificationCode>
+<cbc:IdentificationCode listID="http://publications.europa.eu/resource/authority/country" listAgencyID="OP" listVersionID="20220928-0">BEL</cbc:IdentificationCode>
 
 <cbc:Name languageID="en">Belgium</cbc:Name>
 
@@ -981,7 +981,7 @@ _Economic operator's representatives_
 
 <cac:Country>
 
-<cbc:IdentificationCode listID="http://publications.europa.eu/resource/authority/country" listAgencyID="OP" listVersionID="20211208-0">>ESP</cbc:IdentificationCode>
+<cbc:IdentificationCode listID="http://publications.europa.eu/resource/authority/country" listAgencyID="OP" listVersionID="20220928-0">>ESP</cbc:IdentificationCode>
 
 <cbc:Name languageID="en">Spain</cbc:Name>
 

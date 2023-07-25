@@ -36,7 +36,7 @@ _'Enrolment in a relevant professional register' suitability criterion_
 <!-- Criterion:Enrolment in a relevant professional register -->
         <cac:TenderingCriterion>
                 <cbc:ID schemeID="criterion" schemeAgencyID="OP" schemeVersionID="3.3.0">6ee55a59-6adb-4c3a-b89f-e62a7ad7be7f</cbc:ID>
-                <cbc:CriterionTypeCode listID="http://publications.europa.eu/resource/authority/criterion" listAgencyID="OP" listVersionID="20210616-0">prof-regist</cbc:CriterionTypeCode>
+                <cbc:CriterionTypeCode listID="http://publications.europa.eu/resource/authority/criterion" listAgencyID="OP" listVersionID="20230315-0">prof-regist</cbc:CriterionTypeCode>
                 <cbc:Name>Enrolment in a relevant professional register</cbc:Name>
                 <cbc:Description>It is enrolled in relevant professional registers kept in the Member State of its establishment as described in Annex XI of Directive 2014/24/EU; economic operators from certain Member States may have to comply with other requirements set out in that Annex.</cbc:Description>
                 <cac:ProcurementProjectLotReference>
@@ -74,7 +74,7 @@ _'Enrolment in a relevant professional register' suitability criterion_
                         <cbc:Article>[Article, e.g. Article 2.I.a]</cbc:Article>
                         <cbc:URI>http://eur-lex.europa.eu/</cbc:URI>
                         <cac:Language>
-                                <cbc:LocaleCode listID="http://publications.europa.eu/resource/authority/language" listAgencyName="OP" listVersionID="20211208-0">ENG</cbc:LocaleCode>
+                                <cbc:LocaleCode listID="http://publications.europa.eu/resource/authority/language" listAgencyName="OP" listVersionID="20220928-0">ENG</cbc:LocaleCode>
                         </cac:Language>
                 </cac:Legislation>
                 <cac:TenderingCriterionPropertyGroup>
@@ -86,7 +86,7 @@ _'Enrolment in a relevant professional register' suitability criterion_
                                 <cbc:TypeCode listID="criterion-element-type" listAgencyID="OP" listVersionID="3.3.0">REQUIREMENT</cbc:TypeCode>
                                 <cbc:ValueDataTypeCode listID="response-data-type" listAgencyID="OP" listVersionID="3.3.0">CODE</cbc:ValueDataTypeCode>
                                 <!-- No answer is expected here from the economic operator, as this is a REQUIREMENT issued by the buyer. Hence the element 'cbc:ValueDataTypeCode' contains the type of value of the requirement issued by the buyer -->
-                                <cbc:ExpectedCode listID="http://publications.europa.eu/resource/authority/occupation" listAgencyID="OP" listVersionID="3.3.0">[occupation Code]</cbc:ExpectedCode>
+                                <cbc:ExpectedCode listID="http://publications.europa.eu/resource/authority/occupation" listAgencyID="OP" listVersionID="20221214-0">[occupation Code]</cbc:ExpectedCode>
                         </cac:TenderingCriterionProperty>
                         <cac:TenderingCriterionProperty>
                                 <cbc:ID schemeID="criterion" schemeAgencyID="OP" schemeVersionID="3.3.0">1d497f55-150a-4b96-b8c3-300e63401a02</cbc:ID>
@@ -215,7 +215,7 @@ _Example of suitability criterion_
 <!-- Criterion:For service contracts: authorisation of particular organisation needed -->
         <cac:TenderingCriterion>
                 <cbc:ID schemeID="criterion" schemeAgencyID="OP" schemeVersionID="3.3.0">9eeb6d5c-0eb8-48e8-a4c5-5087a7c095a4</cbc:ID>
-                <cbc:CriterionTypeCode listID="http://publications.europa.eu/resource/authority/criterion" listAgencyID="OP" listVersionID="20210616-0">authorisation</cbc:CriterionTypeCode>
+                <cbc:CriterionTypeCode listID="http://publications.europa.eu/resource/authority/criterion" listAgencyID="OP" listVersionID="20230315-0">authorisation</cbc:CriterionTypeCode>
                 <cbc:Name>For service contracts: authorisation of particular organisation needed</cbc:Name>
                 <cbc:Description>Is a particular authorisation of a particular organisation needed in order to be able to perform the service in question in the country of establishment of the economic operator?</cbc:Description>
                 <cac:ProcurementProjectLotReference>
@@ -269,7 +269,7 @@ _Example of suitability criterion_
                         <cbc:Article>[Article, e.g. Article 2.I.a]</cbc:Article>
                         <cbc:URI>http://eur-lex.europa.eu/</cbc:URI>
                         <cac:Language>
-                                <cbc:LocaleCode listID="http://publications.europa.eu/resource/authority/language" listAgencyName="OP" listVersionID="20211208-0">ENG</cbc:LocaleCode>
+                                <cbc:LocaleCode listID="http://publications.europa.eu/resource/authority/language" listAgencyName="OP" listVersionID="20220928-0">ENG</cbc:LocaleCode>
                         </cac:Language>
                 </cac:Legislation>
                 <cac:TenderingCriterionPropertyGroup>
