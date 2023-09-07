@@ -7,7 +7,7 @@ ifndef::imagesdir[:imagesdir: images]
 == Resources
 
 * xref:xml_business_handbook.adoc[ESPD BUSINESS HANDBOOK]
-* xref:xml_technical_handbook.adoc[ESPD TECHNICAL HANDBOOK] (last updated on 2023-07-25)
+* xref:xml_technical_handbook.adoc[ESPD TECHNICAL HANDBOOK] (last updated on 2023-09-07)
 * link:{attachmentsdir}/ESPD_CM_html/index.html[ESPD-EDM CONCEPTUAL MODEL HTML] 
 //* link:https://docs.ted.europa.eu/ESPD-EDM/3.3.0/_attachments/ESPD_CM_html/index.html[ESPD-EDM CONCEPTUAL MODEL HTML]  
 //* xref:attachments$ESPD_CM_html/index.html[ESPD-EDM CONCEPTUAL MODEL HTML]
