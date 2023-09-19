@@ -45,7 +45,7 @@
 |Lora VAN LOOVEREN |Belgium
 |Alba COLOMER |NTT Data
 |Juan Carlos DELGADO |NTT Data
-|Pascaline Laure TCHIENEHOM |NTT Data
+|Pascaline Laure TCHIENEHOM |France, NTT Data
 |===
 
 :sectnums:
