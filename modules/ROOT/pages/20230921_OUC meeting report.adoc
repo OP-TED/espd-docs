@@ -1,0 +1,130 @@
+= Open User Community Meeting Report
+
+== Publications Office – ESPD EDM
+
+
+[cols=",",",]
+|===
+|Meeting Date/Time: |2023-06-29, 10.00 - 11.30
+|===
+
+[cols=",",options="header",]
+|===
+|*Attendee Name* |*Organisation / Country*
+|Paloma ARILLO |OP
+|Natalie MURIC |OP
+|Nicole PATERSON-JONES |OP
+|Jostein FRØMYR |Norway 
+|Andreea ANGHEL |Romania - ANAP 
+|Cristea MARILENA |Romania - ANAP 
+|Alexandra JESENOVEC LJUBOJEVIC |Slovenia 
+|Ajda KOSTANJSEK |Slovenia 
+|Amadeos LAZRI |Luxembourg 
+|Jil MOSAR |Luxembourg 
+|Foteini MICHAILIDOU | Greece - DigitalGovernance 
+|Konstantinos RAPTIS |Greece - UPRC 
+|Maria SIAPERA |Greece - UPRC 
+|Nuno PERALTA |Portugal 
+|Alexandra RODRIGUES |Portugal 
+|Francesco SCATTARETICO |Italy 
+|Claudia TRIBO |Italy - DXC Technology 
+|Michaël De WINNE |Belgium - BOSA 
+|Pascaline Laure TCHIENEHOM |France, NTT Data 
+|Andreea PASARE | Meaningfy 
+|===
+
+:sectnums:
+:sectnumlevels: 4
+
+
+== Meeting Agenda 
+
+. Summary of last meeting on 29th June 2023 
+. ESPD-EDM 3.3.0  
+. GitHub issues 
+. ESPD-EDM & ePO: TemplateEvidence 
+. Next meetings 
+. AOB 
+
+
+== Summary of last meeting on 29th June 2023 
+
+* The links to the https://github.com/OP-TED/espd-docs/blob/wgm-reports/modules/ROOT/attachments/ESPD_OUC_Meetings_20230629.pdf[last presentation] and https://docs.ted.europa.eu/espd-ouc/20230629_OUC%20meeting%20report.html[meeting report] are provided.  
+
+
+* The main topics discussed are summarised: 
+
+** ESPD-EDM v3.2.0 – main changes related to: 
+
+*** Data structure corrections, 
+*** Element ProcurementCode added back with a dummy value, 
+*** Last version of two code lists: occupation and criterion, 
+***  Correction of listID values and Codelists updates.  
+
+** Scope of version 3.3.0 before release on July 2023 is explained, 
+
+** Overview of the Scripts developed to generate the XML path like identifier is presented and several examples are provided. 
+ 
+
+== ESPD-EDM 3.3.0 
+
+* The final changes made to the ESPD-EDM v3.3.0 (July 2023) are presented, with the list of the GitHub issues adressed in the release: 
+
+** https://github.com/OP-TED/ESPD-EDM/issues/368[#368]: Typos in taxonomy: remaining typos are corrected, 
+** https://github.com/OP-TED/ESPD-EDM/issues/387[#387]: Improper listVersionID attribute value in cbc documentTypeCode: validation rules are corrected, 
+** https://github.com/OP-TED/ESPD-EDM/issues/390[#390]: PERCENTAGE Questions: Artifact Examples and Shematrons Inconsistency: for 'Percentage' the datatype is changed from 'ResponseQuantity' to 'ResponseNumeric', 
+
+The usual release tasks are briefly described. 
+
+
+== GitHub issues 
+  
+* Currently, there are 18 open GitHub issues: 
+** Nine of them are being analysed by the ESPD-EDM team to present proposals in future OUC meetings.  
+** Nine of these open issues have a dependency on third parties such as the eCertis or the eForms Teams. 
+
+It is proposed to discuss about four of the 18 open issues during the meeting of October 2023: 
+
+** https://github.com/OP-TED/ESPD-EDM/issues/389[#389]: Pre-qualification systems and classification of EOs (Economic Operators)->In Part II of the ESPD-EDMthe prequalification is added for the Response (declaration). However, in some countries, such as Slovenia, a pre-qualification section is not mandatory, which implies this section is often not used.  In Italy for example the prequalification is used only for procurement concerning 'works'. The ESPD-EDM Team will check if the pre-qualification section is mandatory and if not, make it optional for a later release (maybe 4.X.X). It is proposed to have a dedicated meeting to discuss this issue.
+** https://github.com/OP-TED/ESPD-EDM/issues/388[#388]: Other economic or financial requirements->v2 of the ESPD-EDM offers the buyer the possibility to be very specific e.g ‘turnover’ In the financial section it is possible to provide a ratio. In Slovenia the buyer uses this section to add information that is not possible to be filled in any other field. It is proposed to make the field optional. The OUC proposes to have a dedicated meeting to discuss this issue. 
+** https://github.com/OP-TED/ESPD-EDM/issues/381[#381]: Subcontractors not relied upon have to provide information about Selection Criteria->Following the legislation, entities not relied upon (subcontractors) do not need to fill in the Selection Criteria. However, following the ESPD model the Selection Criteria must be filled in also for the entities not relied upon (subcontractors). The ESPD-EDM team has to come with proposals to modify the model and align it to the legislation and user needs. 
+** https://github.com/OP-TED/ESPD-EDM/issues/334[#334]: Questions regarding the purely national exlusion grounds (EG) in ESPD-EDM v3.x.x à in v1 of the ESPD-EDM all exclusion grounds are to be answered yes/no. In v3.x.x a buyer can request an answer for an exclusion ground but not for another. It seems the issue and or solution should come from eCertis (maybe during Q2-Q3 2024). The evidence requirements are not the same in all the Member StatesIn general this has no impact on the Request. It is proposed to discuss this again in a dedicated meeting with the OUC 
+
+
+== ESPD-EDM & ePO: TemplateEvidence 
+
+The eProcurement Ontology team is working now on eAccess, which includes the ESPD Request. The ESPD Response will be treated later under eSubmission. The  ePO and ESPD teams are working closely together to ensure a common understanding and the completeness of both models. Some questions have arisen concerning the concept  TemplateEvidence. 
+
+The OUC are asked whether anyone implements TemplateEvidence in the ESPDRequest and if so what for, as it has no attributes. Italy has previously confirmed that they do not use the TemplateEvidence.. 
+
+The element TemplateEvidence is a Requirement. 
+
+The attendees will investigate with their implementation colleagues if and how this element is used. The Publications Office on its side will open a GitHub issue to allow users to provide their answers. 
+
+** In the Response there are two classes used to provide evidences:  Evidence and EvidenceSupplied: Evidence: which is the super class of TemplateEvidence. This class is linked to the root element of the response and also to the class DocumentReference allowing by that to attach a document.
+
+** Evidence Supplied: has one attribute identifier, which is used to identify the Evidence provided separately, or it could be a URL. It can then be used in combination with the Evidence element so as to be able to attach an evidence file.
+
+The TemplateEvidence is used in the Request and in the Response and it inherits the attributes of the Evidence which is not shown in the Request model. A trick in Enterprise Architect will permit the identification of the super class this should be considered in the future to ensure clarity. 
+
+
+== Next meetings
+
+* Next OUC meetings: 
+
+** 26 October 2023, 10.00 - 11.30
+
+** December - no meeting   
+
+* Annual Seminal 2023: 
+
+** 30 November 2023, 9:30 - 12:30 
+
+
+== Any other business
+
+* Some users have already shown their interest in presenting the work done on their countries and organisations for the ESPD implementation and their concerns during the Annual Seminar. The attendees are invited to propose their own presentations. 
+
+* Some users have left the project and the attendees are welcome to send to OP the list of new colleagues so that they can get the monthly invitations.  
+
+

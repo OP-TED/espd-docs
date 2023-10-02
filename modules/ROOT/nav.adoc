@@ -21,7 +21,7 @@
 
 ** 2023-09-21
 *** link:https://github.com/OP-TED/espd-docs/blob/wgm-reports/modules/ROOT/attachments/ESPD_OUC_Meetings_Slides_20230921.pdf[31st OUC Presentation] 
-//*** xref:20230921_OUC meeting report.adoc[31st OUC Report]
+*** xref:20230921_OUC meeting report.adoc[31st OUC Report]
 
 ** 2023-06-29
 *** link:https://github.com/OP-TED/espd-docs/blob/wgm-reports/modules/ROOT/attachments/ESPD_OUC_Meetings_20230629.pdf[30th OUC Presentation] 
