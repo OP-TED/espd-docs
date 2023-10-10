@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="506d41f3-406c-4825-9294-adb3b4ed8652" name="Default Changelist" comment="added feedback and attributes partials">
+    <list default="true" id="506d41f3-406c-4825-9294-adb3b4ed8652" name="Default Changelist" comment="added feedback and attributes partials, added css for wysiwyg">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -33,13 +33,13 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/modules/ROOT" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\paterni\Code\espd-docs\modules\ROOT" />
-      <recent name="C:\Users\paterni\Code\espd-docs\modules\ROOT\partials" />
       <recent name="C:\Users\paterni\Code\espd-docs" />
+      <recent name="C:\Users\paterni\Code\espd-docs\modules\ROOT\partials" />
+      <recent name="C:\Users\paterni\Code\espd-docs\modules\ROOT" />
       <recent name="C:\Users\paterni\Code\espd-docs\asciidoctorconfigdir" />
       <recent name="C:\Users\paterni\Code\espd-docs\.asciidoctor" />
     </key>
@@ -191,7 +191,14 @@
       <option name="project" value="LOCAL" />
       <updated>1696939820346</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="added feedback and attributes partials, added css for wysiwyg">
+      <created>1696941493772</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1696941493772</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -214,6 +221,7 @@
     <MESSAGE value="deleted scripts folder" />
     <MESSAGE value="updated .gitignore" />
     <MESSAGE value="added feedback and attributes partials" />
-    <option name="LAST_COMMIT_MESSAGE" value="added feedback and attributes partials" />
+    <MESSAGE value="added feedback and attributes partials, added css for wysiwyg" />
+    <option name="LAST_COMMIT_MESSAGE" value="added feedback and attributes partials, added css for wysiwyg" />
   </component>
 </project>
