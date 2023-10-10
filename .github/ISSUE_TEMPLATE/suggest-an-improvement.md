@@ -1,6 +1,6 @@
 ---
 name: Suggest an improvement
-about: Describe this issue template's purpose here.
+about: Collects suggestions on how we could improve the documentation
 title: ''
 labels: ''
 assignees: ''
