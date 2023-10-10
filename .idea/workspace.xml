@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="506d41f3-406c-4825-9294-adb3b4ed8652" name="Default Changelist" comment="added feedback and attributes partials">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="ProjectId" id="2RmyPiXtjxTUC2WOJyLPvRxIiUF" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/modules/ROOT" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\paterni\Code\espd-docs\modules\ROOT" />
+      <recent name="C:\Users\paterni\Code\espd-docs\modules\ROOT\partials" />
+      <recent name="C:\Users\paterni\Code\espd-docs" />
+      <recent name="C:\Users\paterni\Code\espd-docs\asciidoctorconfigdir" />
+      <recent name="C:\Users\paterni\Code\espd-docs\.asciidoctor" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\paterni\Code\espd-docs\.asciidoctor" />
+      <recent name="C:\Users\paterni\Code\espd-docs" />
+      <recent name="C:\Users\paterni\Code\espd-docs\scripts" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="506d41f3-406c-4825-9294-adb3b4ed8652" name="Default Changelist" comment="" />
+      <created>1687869532328</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1687869532328</updated>
+    </task>
+    <task id="LOCAL-00001" summary="added yml playbook local">
+      <created>1687870564276</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1687870564276</updated>
+    </task>
+    <task id="LOCAL-00002" summary="added yml playbook local">
+      <created>1687870617518</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1687870617518</updated>
+    </task>
+    <task id="LOCAL-00003" summary="added local css">
+      <created>1687873672497</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1687873672497</updated>
+    </task>
+    <task id="LOCAL-00004" summary="added local css">
+      <created>1687873682104</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1687873682104</updated>
+    </task>
+    <task id="LOCAL-00005" summary="added local css">
+      <created>1687934941813</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1687934941813</updated>
+    </task>
+    <task id="LOCAL-00006" summary="added local css">
+      <created>1687935135525</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1687935135525</updated>
+    </task>
+    <task id="LOCAL-00007" summary="added local css">
+      <created>1687935193528</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1687935193528</updated>
+    </task>
+    <task id="LOCAL-00008" summary="updated readmap graphic">
+      <created>1696489286201</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1696489286201</updated>
+    </task>
+    <task id="LOCAL-00009" summary="deleted scripts folder">
+      <created>1696491414395</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1696491414395</updated>
+    </task>
+    <task id="LOCAL-00010" summary="deleted scripts folder">
+      <created>1696932014554</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1696932014554</updated>
+    </task>
+    <task id="LOCAL-00011" summary="updated .gitignore">
+      <created>1696932201910</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1696932201910</updated>
+    </task>
+    <task id="LOCAL-00012" summary="updated .gitignore">
+      <created>1696932280714</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1696932280714</updated>
+    </task>
+    <task id="LOCAL-00013" summary="added feedback and attributes partials">
+      <created>1696934713474</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1696934713474</updated>
+    </task>
+    <task id="LOCAL-00014" summary="added feedback and attributes partials">
+      <created>1696934929212</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1696934929212</updated>
+    </task>
+    <task id="LOCAL-00015" summary="added feedback and attributes partials">
+      <created>1696934986073</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1696934986073</updated>
+    </task>
+    <task id="LOCAL-00016" summary="added feedback and attributes partials">
+      <created>1696935026079</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1696935026079</updated>
+    </task>
+    <task id="LOCAL-00017" summary="added feedback and attributes partials">
+      <created>1696939489271</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1696939489271</updated>
+    </task>
+    <task id="LOCAL-00018" summary="added feedback and attributes partials">
+      <created>1696939771110</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1696939771110</updated>
+    </task>
+    <task id="LOCAL-00019" summary="added feedback and attributes partials">
+      <created>1696939820346</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1696939820346</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="added yml playbook local" />
+    <MESSAGE value="added local css" />
+    <MESSAGE value="updated readmap graphic" />
+    <MESSAGE value="deleted scripts folder" />
+    <MESSAGE value="updated .gitignore" />
+    <MESSAGE value="added feedback and attributes partials" />
+    <option name="LAST_COMMIT_MESSAGE" value="added feedback and attributes partials" />
+  </component>
+</project>
