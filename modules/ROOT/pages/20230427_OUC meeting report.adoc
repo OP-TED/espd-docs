@@ -30,7 +30,7 @@
 |Sanjeev SINHA | 
 |Michaël De WINNE (BOSA) | Belgium 
 |Nikanoras ZAVADSKIJ (Mercell) |Lithuania 
-|Pascaline Laure TCHIENEHOM |NTT Data
+|Pascaline Laure TCHIENEHOM |France, NTT Data
 |===
 
 :sectnums:

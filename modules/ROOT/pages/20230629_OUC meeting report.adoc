@@ -1,0 +1,147 @@
+= Open User Community Meeting Report
+
+== Publications Office – ESPD EDM
+
+
+[cols=",",",]
+|===
+|Meeting Date/Time: |2023-06-29, 10.00 - 11.30
+|===
+
+[cols=",",options="header",]
+|===
+|*Attendee Name* |*Organisation / Country*
+|Paloma ARILLO |OP
+|Nicole PATERSON-JONES |OP
+|Marc Christopher SCHMIDT |DG GROW 
+|Laurent SCHOONJANS |DG GROW 
+|Andreea ANGHEL |Romania 
+|Bertalan FABIAN |Hungary 
+|Jostein FRØMYR |Norway 
+|Juris KALÉJS |Latvia 
+|Arnis KRAUZE |Latvia 
+|Ole MADSEN |Denmark 
+|Jan MAEROE |Norway 
+|Cristea MARILENA |Romania 
+|Maja MARINCEK |Slovenia 
+|Foteini MICHAILIDOU | Greece 
+|Jil MOSAR |Luxembourg 
+|Nuno PERALTA |Portugal 
+|Laima PUJATE (SRDA) |Latvia 
+|Konstantinos RAPTIS (UPRC) |Greece 
+|Francesco SCATTARETICO |Italy 
+|Giampaolo SELLITO (ANAC) |Italy 
+|Michaël De WINNE (BOSA) |Belgium 
+|Pascaline Laure TCHIENEHOM |France, NTT Data
+|===
+
+:sectnums:
+:sectnumlevels: 4
+
+
+== Meeting Agenda 
+
+. Summary of last meeting on 27th April 2023
+. Main points of ESPD-EDM v3.2.0 
+. ESPD v4.0.0: VBA Scripts to generate XML Path Like IDs 
+. GitHub issues 
+. ESPD 3.3.0 
+. Next meetings 
+. AOB 
+
+
+== Summary of last meeting on 27th April 2023
+
+* The links to the https://github.com/OP-TED/espd-docs/blob/wgm-reports/modules/ROOT/attachments/ESPD_OUC_Meetings_20230427.pdf[last presentation] and https://docs.ted.europa.eu/espd-ouc/20230427_OUC%20meeting%20report.html[meeting report] are provided and the main topics discussed are summarised: 
+
+** ESPD-EDM v3.2.0 - issues related, mainly:
+***     GitHub issue https://github.com/OP-TED/ESPD-EDM/issues/375[#375] Technical Handbook v3.1.0 inconsistencies - cbc:CustomizationID is missing from root element table in section 2.4: Removal of CustomizationID and ProfileID elements from all the relevant ESPD artefacts. 
+*** https://github.com/OP-TED/ESPD-EDM/issues/368[#368], https://github.com/OP-TED/ESPD-EDM/issues/371[#371], https://github.com/OP-TED/ESPD-EDM/issues/369[#369], https://github.com/OP-TED/ESPD-EDM/issues/340[#340], https://github.com/OP-TED/ESPD-EDM/issues/374[#374]: Several corrections in the data structure 
+*** Correction of listID values and Codelists updates 
+
+** Open GitHub issues. 
+** Discussion: 3.1.0 - 4.0.0 
+ 
+
+== ESPD-EDM v3.2.0
+
+* The final changes done for ESPD-EDM v3.2.0 are presented, with the list of the GitHub issues included in the release: 
+
+** https://github.com/OP-TED/ESPD-EDM/issues/368[#368], https://github.com/OP-TED/ESPD-EDM/issues/371[#371], https://github.com/OP-TED/ESPD-EDM/issues/369[#369], https://github.com/OP-TED/ESPD-EDM/issues/340[#340], https://github.com/OP-TED/ESPD-EDM/issues/374[#374]: Corrections in the data structure. 
+** GitHub issue https://github.com/OP-TED/ESPD-EDM/issues/380[#380] Question regarding the correct listID values #interproc, reintroduction of the element "ProcedureCode" with the attribute "listID" assigned to a Dummy value. 
+** Regarding GitHub issue https://github.com/OP-TED/ESPD-EDM/issues/375[#375] Technical Handbook v3.1.0 inconsistencies - cbc:CustomizationID is missing from root element table in section 2.4 #interproc, it is agreed that elements CustomizationID and ProfileID have not be added back in ESPD-EDM v3.2.0. Further discussion with the OUC is necessary to understand the use of these elements by eForms and the option to reintroduce them in the ESPD-EDM in a later release. 
+** GitHub issue https://github.com/OP-TED/ESPD-EDM/issues/378[#378]: Correction of date and time format in the XSLT files. 
+** Addition in v3.2.0 of the last versions of code lists 'occupation' and 'criterion'. 
+** Correction of listID values. 
+** XSLT files updates due to validation errors - missing or incorrect information. 
+** The new version was released on 3rd May 2023 and it is available in GitHub in the https://github.com/OP-TED/ESPD-EDM/releases/tag/v3.2.0[tag v3.2.0]. 
+
+== ESPD v4.0.0: VBA Scripts to generate XML Path Like IDs 
+
+* A description of the scripts developed to generate the two new criterion templates (Request, Response) is presented. 
+
+* The scripts allow handling multiple occurrences and automatic generation and validation of the new IDs proposal. 
+
+* The generated templates allow: Customization of the XML files generation versus Default single generation. 
+
+* It is reminded the Taxonomy - Criterion Data structure that will be adopted for the XML Path Like IDs replacing the current UUIDs. 
+
+* The XML Path Like IDs Criterion elements' short tags and their corresponding UBL element are listed in a table. 
+
+* The VBA Scripts history and list of functions and brief summary are presented: 
+
+* Request functions: 
+** Call variables_reset - Call column_selection - Call type_selection - Call xmlpath_crequest - Call xmlpath_bve - Call column_number 
+** Call randomvariable_setup - Call row_selection - Call lvl_setup - Call requirementlot_list 
+** Call variables_setup 
+** Call level_start 
+** Call tag_identifier - Call coloring - Call xmlpath_request - Call xmlpath_occurrence - Call requirementlot 
+** Call level_end 
+
+* Response functions: 
+** Call randomvariable_setup - Call variables_reset - Call column_selection - Call type_selection - Call xmlpath_cresponse - Call column_number 
+** Call row_selection - Call lvl_setup 
+** Call variables_setup 
+** Call level_start 
+** Call xmlpath_responsestructure - Call xmlpath_responsecontent 
+** Call level_end 
+
+* Several examples are presented. 
+
+* As version 3.2.0 does not cover all needs to carry out the ESPD service development ongoing by certain users, a new version is required for the summer 2023 and the ESPD-EDM Team is working on it (see point 6. ESPD-EDM v3.3.0). 
+
+
+== GitHub issues 
+
+* Currently, there are 21 open GitHub issues: 
+** The ESPD-EDM Team is working with three of them for release 3.3.0 and the freeze date for comments is 30 June. 
+** Nine of these open issues have a dependency on third parties such as the eCertis or the eForms Teams. 
+** Three of them are presented in further detail for open discussion during the meeting: 
+*** GitHub issue https://github.com/OP-TED/ESPD-EDM/issues/389[#389]: Pre-qualification systems and classification of Eos ->in Part II the prequalification is added for the Response. However, in some countries, such as Slovenia, a prequalification system is not mandatory, which implies this section is not used.  In Italy for example the prequalification is used only in the sector 'works'. It is proposed to use it on the side of the evidences rather than in the declaration. The ESPD-EDM Team will check if the section is mandatory and if not, make it optional for a later release (maybe 4.X.X). The OUC proposes to have a dedicated meeting to discuss this issue. 
+*** GitHub issue https://github.com/OP-TED/ESPD-EDM/issues/388[#388]: Other economic or financial requirements->v2 offers the buyer the possibility to be very specific e.g 'turnover' In the financial section it is possible to provide a ratio. In Slovenia the contracting authority uses this section to add information that is not possible to be filled in any other field. It is proposed to make the field optional. The OUC proposes to have a dedicated meeting to discuss this issue. 
+*** GitHub issue https://github.com/OP-TED/ESPD-EDM/issues/334[#334]: Questions regarding the purely national EG in ESPD-EDM v3.x.x à in v1 all exclusion grounds are to be answered yes/no. Currently a contracting authority can request an answer for an exclusion ground but not for other. It seems the issue and/or solution should come from eCertis (maybe during Q2-Q3 2024). It has to be distinguished between evidences and a part of exclusion grounds in the declaration. The evidence is different in different countries: for example, Italy needs an additional evidence that an economic operator does not belong to the mafia. In general this has no impact in the Request. It is proposed to discuss this again in a dedicated meeting with the OUC: how could eCertis improve to the way it is used today and then how to improve/evolve the ESPD Model. 
+
+* Special remark is done concerning two open issues: 
+** GitHub issue https://github.com/OP-TED/ESPD-EDM/issues/355[#355] Regarding the translations for criteria  #interproc. The issue is related to the translation of the criteria Description in the Taxonomy file. The Publications Office will try to provide those translations as normally only translations for code lists and eForms labels are provided by OP. 
+** GitHub issue https://github.com/OP-TED/ESPD-EDM/issues/375[#375] Technical Handbook v3.1.0 inconsistencies - cbc:CustomizationID is missing from root element table in section 2.4 #interproc. The elements CustomizationID and ProfileID were removed in v3.2.0 from the documentation to keep it consistent with the Model and the samples. The issue is not closed: further discussion is required for the use of the elements in the ESPD to be aligned with eForms. 
+
+
+== ESPD-EDM v3.3.0 
+
+A new release is needed by users before end of July 2023. The freeze date to request changes is 30 June. It is foreseen to have it online by 25 July. It is decided not to go for 3.2.1 as the XML files are updated, it will be a minor release v3.3.0. 
+
+
+== Next meetings
+
+* Next OUC meetings: 
+
+** July-August - summer break 
+
+** 21 September 2023, 10.00 - 11.30 
+
+
+== Any other business
+
+* Meeting suggested in April to be held during May 2023 to discuss the changes proposed for 4.0.0 did not take place to concentrate the efforts in the release 3.3.0. A new meeting will be proposed for October 2023 or Q1 2024.  
+
+
