@@ -6,3 +6,7 @@ node_modules
 .node
 .yarn
 yarn.lock
+.idea
+.asciidoctorconfig
+.asciidoctor
+scripts
