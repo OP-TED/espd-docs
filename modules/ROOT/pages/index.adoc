@@ -12,7 +12,7 @@
 ****
 The eProcurement Ontology v3.1.0 was released on the 16 December 2022 introducing a new module, eOrdering,a combined glossary, updates, and various fixes as planned for the 2022 Q4 milestone.
 
-xref:3.1@EPO::index.adoc[Click here to read the version 3.3.0 details]
+xref:espd::release-notes.adoc[Click here to read the version 3.3.0 details]
 
 Information on 4.0.0-rc.1 can also be found on this page.
 ****
@@ -23,7 +23,7 @@ Information on 4.0.0-rc.1 can also be found on this page.
 ****
 Information on past releases, versions 1.0.0 through to 3.0.1, of the eProcurement Ontology can be found via the link below. The information includes a brief description of each release. A full description of each release can be found following the links on the Past Releases page.
 
-xref:past-releases.adoc[Information on past releases can be found here.]
+xref:espd-home::history.adoc[Information on past releases can be found here.]
 ****
 
 [.tile]
