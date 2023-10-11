@@ -1,5 +1,5 @@
-name: ESPD-EDM
-version: new_main
+name: espd-home
+version: ~
 title: European Single Procurement Document - Exchange Data Model
 start_page: ROOT:index.adoc
 nav:
