@@ -1,16 +1,20 @@
-* <<home.adoc#, Home>>
-* <<xml_business_handbook.adoc#, Business Handbook>>
-* Technical Handbook
-** <<1.UBL_Based_and_distribution_package.adoc#, UBL Based and distribution package>>
-** <<2.ESPD_Request.adoc#, The ESPD Request Document>>
-** <<3.Common_aspects_for_criteria.adoc#, Common aspects for criteria>>
-** <<4.Exclusion_criteria.adoc#, Exclusion criteria>>
-** <<5.Selection_criteria.adoc#, Selection criteria>>
-** <<6.ESPD_Response_Document.adoc#, The ESPD Response Document>>
-** <<7.Validation.adoc#, Validation>>
-** <<AnnexI.Code_list_used_in_ESPD.adoc#, Codelists used in ESPD>>
-* link:{attachmentsdir}/ESPD_CM_html/index.html[ESPD-EDM Conceptual Model HTML] 
-//* link:https://docs.ted.europa.eu/ESPD-EDM/3.3.0/_attachments/ESPD_CM_html/index.html[ESPD-EDM Conceptual Model HTML] 
-//* xref:attachments$ESPD_CM_html/index.html[ESPD-EDM Conceptual Model HTML] 
-* <<release_notes.adoc#, Release Notes>>
-* xref:espd-ouc::index.adoc[Open User Community Documents]
+:doctitle: Navigation
+:doccode: espd-v3.3.0-prod-004
+:author: NPJ
+:authoremail: nicole-anne.paterson-jones@ext.ec.europa.eu
+:docdate: October 2023
+
+* xref:espd-home::index.adoc[Home]
+* xref:espd::release-notes.adoc[Release Notes]
+* xref:espd::conceptual.adoc[Conceptual Models]
+
+
+* [.separated]#**General Reference**#
+* xref:espd-home::history.adoc[History and Planned Developments]
+* xref:espd-home::external.adoc[External Resources]
+* xref:espd-home::supporting.adoc[Supporting and related projects]
+* xref:espd-home::laws.adoc[Laws and Directives]
+
+* [.separated]#**Open User Community Reports**#
+* xref:espd-wgm::monthly.adoc[Monthly Reports]
+* xref:espd-wgm::annual.adoc[Annual Reports]
