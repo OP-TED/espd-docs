@@ -1,4 +1,6 @@
-name: ESPD-EDM
-title: ESPD EDM
-version: 1.0.1
+name: espd-home
+version: ~
+title: European Single Procurement Document - Exchange data Model
 start_page: ROOT:index.adoc
+nav:
+  - modules/ROOT/nav.adoc

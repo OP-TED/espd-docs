@@ -1,0 +1,10 @@
+= ESPD Exchange Data Model (ESPD-EDM)
+
+ifndef::imagesdir[:imagesdir: images]
+
+v1.0.1
+
+:toc:
+:toclevels: 3
+
+include::index_response.adoc[]

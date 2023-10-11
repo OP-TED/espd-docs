@@ -1,10 +1,48 @@
-= ESPD Exchange Data Model (ESPD-EDM)
+:doctitle: ESPD Documentation
+:doccode: epo-main-prod-001
+:author: NPJ
+:authoremail: nicole-anne.paterson-jones@ext.ec.europa.eu
+:docdate: October 2023
 
-ifndef::imagesdir[:imagesdir: images]
+[.tile-container]
+--
 
-v1.0.1
+[.tile]
+.ESPD 3.3.0: Latest Production Release
+****
+The eProcurement Ontology v3.1.0 was released on the 16 December 2022 introducing a new module, eOrdering,a combined glossary, updates, and various fixes as planned for the 2022 Q4 milestone.
 
-:toc:
-:toclevels: 3
+xref:3.1@EPO::index.adoc[Click here to read the version 3.3.0 details]
 
-include::index_response.adoc[]
+Information on 4.0.0-rc.1 can also be found on this page.
+****
+
+
+[.tile]
+.ESPD Past Releases
+****
+Information on past releases, versions 1.0.0 through to 3.0.1, of the eProcurement Ontology can be found via the link below. The information includes a brief description of each release. A full description of each release can be found following the links on the Past Releases page.
+
+xref:past-releases.adoc[Information on past releases can be found here.]
+****
+
+[.tile]
+.Open User Community Documents
+****
+This section contains minutes and reports of the annual and monthly Open User Community activities and meetings.
+
+xref:epo-wgm::index.adoc[Click here to read the OUC reports]
+****
+
+
+////
+[.tile]
+.model2owl Documentation (to be hidden until content ready)
+****
+The model2owl Project consists of a set of tools for transforming a UML v2.5 model from its XMI v2.5.1 serialisation into a formal ontology.
+
+//xref:xxx@EPO::model2owl.adoc[update when ready]
+Updated documents coming soon.
+****
+////
+--

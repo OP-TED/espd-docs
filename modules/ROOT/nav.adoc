@@ -1,0 +1,21 @@
+:doctitle: Navigation
+:doccode: espd-main-prod-004
+:author: NPJ
+:authoremail: nicole-anne.paterson-jones@ext.ec.europa.eu
+:docdate: October 2023
+
+* xref:espd-home::index.adoc[Home]
+* xref:espd::release-notes.adoc[Release Notes]
+* xref:espd::conceptual.adoc[Conceptual Models]
+
+
+* [.separated]#**General Reference**#
+* xref:espd-home::history.adoc[History and Planned Developments]
+* xref:espd-home::external.adoc[External Resources]
+* xref:espd-home::supporting.adoc[Supporting and related projects]
+* xref:espd-home::laws.adoc[Laws and Directives]
+
+* [.separated]#**Open User Community Reports**#
+* xref:espd-wgm::monthly.adoc[Monthly Reports]
+* xref:espd-wgm::annual.adoc[Annual Reports]
+
