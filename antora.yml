@@ -1,6 +1,6 @@
 name: espd-ouc
 title: ESPD OUC
-version: master
+version: ~
 start_page: ROOT:index.adoc
 nav:
 - modules/ROOT/nav.adoc
