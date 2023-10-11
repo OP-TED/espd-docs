@@ -1,13 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="506d41f3-406c-4825-9294-adb3b4ed8652" name="Default Changelist" comment="added feedback and attributes partials, added css for wysiwyg">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="506d41f3-406c-4825-9294-adb3b4ed8652" name="Default Changelist" comment="added new pages for new main branch">
+      <change afterPath="$PROJECT_DIR$/modules/ROOT/pages/annual.adoc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/ROOT/pages/monthly.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_05_10_2023_08_55__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_05_10_2023_08_55__Default_Changelist_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/ROOT/nav.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/modules/ROOT/nav.adoc" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Empty" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -30,6 +40,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DefaultPlantUmlFileTemplate" value="Empty" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -38,10 +49,10 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\paterni\Code\espd-docs" />
+      <recent name="C:\Users\paterni\Code\espd-docs\modules\ROOT\pages" />
       <recent name="C:\Users\paterni\Code\espd-docs\modules\ROOT\partials" />
       <recent name="C:\Users\paterni\Code\espd-docs\modules\ROOT" />
       <recent name="C:\Users\paterni\Code\espd-docs\asciidoctorconfigdir" />
-      <recent name="C:\Users\paterni\Code\espd-docs\.asciidoctor" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\paterni\Code\espd-docs\.asciidoctor" />
@@ -198,7 +209,105 @@
       <option name="project" value="LOCAL" />
       <updated>1696941493772</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="added feedback and attributes partials, added css for wysiwyg">
+      <created>1696941604382</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1696941604382</updated>
+    </task>
+    <task id="LOCAL-00022" summary="updated feedback partial">
+      <created>1696941714492</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1696941714492</updated>
+    </task>
+    <task id="LOCAL-00023" summary="updated feedback partial">
+      <created>1696941763753</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1696941763753</updated>
+    </task>
+    <task id="LOCAL-00024" summary="updated feedback partial">
+      <created>1696941807274</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1696941807274</updated>
+    </task>
+    <task id="LOCAL-00025" summary="updated feedback partial">
+      <created>1696941882170</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1696941882170</updated>
+    </task>
+    <task id="LOCAL-00026" summary="updated feedback partial">
+      <created>1696941917777</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1696941917777</updated>
+    </task>
+    <task id="LOCAL-00027" summary="updated feedback partial">
+      <created>1696941951324</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1696941951324</updated>
+    </task>
+    <task id="LOCAL-00028" summary="added feedback partial &amp; wysiwyg css, updated .gitignore">
+      <created>1696942277273</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1696942277273</updated>
+    </task>
+    <task id="LOCAL-00029" summary="added feedback partial &amp; wysiwyg css, updated .gitignore">
+      <created>1696942428143</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1696942428143</updated>
+    </task>
+    <task id="LOCAL-00030" summary="added feedback partial &amp; wysiwyg css, updated .gitignore">
+      <created>1696945052966</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1696945052966</updated>
+    </task>
+    <task id="LOCAL-00031" summary="added feedback partial &amp; wysiwyg css, updated .gitignore">
+      <created>1696947065123</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1696947065123</updated>
+    </task>
+    <task id="LOCAL-00032" summary="added new pages for new main branch">
+      <created>1697026459965</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1697026459965</updated>
+    </task>
+    <task id="LOCAL-00033" summary="added new pages for new main branch">
+      <created>1697029188635</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1697029188635</updated>
+    </task>
+    <task id="LOCAL-00034" summary="added new pages for new main branch">
+      <created>1697033492470</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1697033492470</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -222,6 +331,9 @@
     <MESSAGE value="updated .gitignore" />
     <MESSAGE value="added feedback and attributes partials" />
     <MESSAGE value="added feedback and attributes partials, added css for wysiwyg" />
-    <option name="LAST_COMMIT_MESSAGE" value="added feedback and attributes partials, added css for wysiwyg" />
+    <MESSAGE value="updated feedback partial" />
+    <MESSAGE value="added feedback partial &amp; wysiwyg css, updated .gitignore" />
+    <MESSAGE value="added new pages for new main branch" />
+    <option name="LAST_COMMIT_MESSAGE" value="added new pages for new main branch" />
   </component>
 </project>

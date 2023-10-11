@@ -18,5 +18,4 @@
 * [.separated]#**Open User Community Reports**#
 * xref:espd-wgm::monthly.adoc[Monthly Reports]
 * xref:espd-wgm::annual.adoc[Annual Reports]
-** 2019-07-01
-*** link:https://github.com/OP-TED/espd-docs/tree/wgm-reports/modules/ROOT/attachments/FwC10649_ESPD_MS_Meetings_20190701_v1.0.pdf[1st OUC Report]
+
