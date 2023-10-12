@@ -21,7 +21,7 @@ xref:espd::release-notes.adoc[Click here to read the version 3.3.0 details]
 [.tile]
 .ESPD Past Releases
 ****
-Information on past releases, versions 1.0.0 through to 3.0.1, of the eProcurement Ontology can be found via the link below. The information includes a brief description of each release. A full description of each release can be found following the links on the Past Releases page.
+Information on past releases can be found via the link below. The information includes a brief description of each release. A full description of each release can be found following the links on the Past Releases page.
 
 xref:espd-home::history.adoc[Information on past releases can be found here.]
 ****
