@@ -1,4 +1,4 @@
-:doctitle: The Development Package
+:doctitle: The Distribution Package
 :doccode: espd-v3.3.0-prod-010
 :author: NPJ
 :authoremail: nicole-anne.paterson-jones@ext.ec.europa.eu
