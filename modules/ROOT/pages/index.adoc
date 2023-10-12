@@ -10,11 +10,11 @@
 [.tile]
 .ESPD 3.3.0: Latest Release
 ****
-The eProcurement Ontology v3.1.0 was released on the 16 December 2022 introducing a new module, eOrdering,a combined glossary, updates, and various fixes as planned for the 2022 Q4 milestone.
+The ESPD etc...
 
 xref:espd::release-notes.adoc[Click here to read the version 3.3.0 details]
 
-Information on 4.0.0-rc.1 can also be found on this page.
+
 ****
 
 
