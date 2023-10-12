@@ -7,7 +7,7 @@
 * xref:espd-home::index.adoc[Home]
 * xref:espd::release-notes.adoc[Release Notes]
 * xref:espd::conceptual.adoc[Conceptual Models]
-
+* xref:espd::devpack.adoc[The Development Package]
 
 * [.separated]#**General Reference**#
 * xref:espd-home::history.adoc[History and Planned Developments]
