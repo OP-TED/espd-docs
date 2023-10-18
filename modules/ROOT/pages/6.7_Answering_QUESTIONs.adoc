@@ -45,7 +45,7 @@ image:cacResponse_Value_XSD_element.jpg[cac:ResponseValue XSD element,width=350,
 
 _Figure 238. cac:ResponseValue XSD element_
 
-The cac:ApplicablePeriod is used to hold the start date and the end-date provided by the economic operator to a QUESTION for which the expected data is of type 'PERIOD'. (See expected types in the Code List link:{url-tree-301}/codelists/gc/ResponseDataType.gc[ResponseDataType]).
+The cac:ApplicablePeriod is used to hold the start date and the end-date provided by the economic operator to a QUESTION for which the expected data is of type 'PERIOD'. (See expected types in the Code List link:{url-tree}/codelists/gc/ResponseDataType.gc[ResponseDataType]).
 
 [cols=",",]
 [IMPORTANT]
@@ -141,7 +141,7 @@ _Disjointness of the elements inside cac:ResponseValue_
 
 Thus, for example, if in the ESPD Request the expected type is DESCRIPTION the cac:ResponseValue must use the element cbc:Description, if INDICATOR cbc:ResponseIndicator, if IDENTIFIER cbc:ResponseID, etc.
 
-See the codes used for cac:ValueDataTypeCode in the Code List link:{url-tree-301}/codelists/gc/ResponseDataType.gc[ResponseDataType]. For the different possible values in the response see the XSD diagrams above and the list of the expected elements in cac:ResponseValue in the table below.
+See the codes used for cac:ValueDataTypeCode in the Code List link:{url-tree}/codelists/gc/ResponseDataType.gc[ResponseDataType]. For the different possible values in the response see the XSD diagrams above and the list of the expected elements in cac:ResponseValue in the table below.
 
 This disjointness rule applies to the *type* of the value, but *not to the values of the same type*. Thus, for lists of values that constitute the actual answer (e.g. the list of LotIDs the economic operator tenders to, or a list of CPV codes to describe with granularity an activity), a sequence of cac:ResponseValues shall be instantiated in the XML. See the XML examples below.
 ====

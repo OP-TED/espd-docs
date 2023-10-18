@@ -33,14 +33,14 @@ The table below lists the code lists used in the ESPD documents and where they a
 |*Code List* |*Issuer Agency* |*Used In*
 |access-right |Publications Office of the EU |See element 'cac:Evidence/{zwsp}cbc:ConfidentialityLevelCode` of the UBL-2.3 XSD Schemas for QualificationApplicationResponse
 |Country |Publications Office of the EU |See element 'cac:PostalAddress/{zwsp}cac:Country/{zwsp}cbc:IdentificationCode` of the UBL-2.3 XSD Schemas, e.g. the postal address of an economic operator party)
-|CriteriaType |DG GROW (European Commission, defined in e-Certis) |See each Criterion taxonomy code in the link:{url-tree-301}/__ESPDTeam__/ESPD-CodeLists.xlsx[Criteria Data] Structures. See also the link:{url-tree-301}/codelists/ESPD-criterion.xlsx[+++Genericode file+++].
+|CriteriaType |DG GROW (European Commission, defined in e-Certis) |See each Criterion taxonomy code in the link:{url-tree}/__ESPDTeam__/ESPD-CodeLists.xlsx[Criteria Data] Structures. See also the link:{url-tree}/codelists/ESPD-criterion.xlsx[+++Genericode file+++].
 |CriterionElementType |DG GROW (European Commission) |See element cac:TenderingCriterion/{zwsp}cac:TenderingCriterionPropertyGroup/{zwsp}cac:TenderingCriterionProperty/{zwsp}cbc:TypeCode of the UBL-2.3 XSD QualificationApplicationRequest Schema
 |Currency |Publications Office of the EU |All UBL-2.3 elements of type cbc:Amount in its attribute @currencyID
 |docref-content-type |DG GROW (European Commission) |UBL-2.3 element cac:AdditionalDocumentReference/{zwsp}cbc:DocumentTypeCode. See XML example in section *2.5 EU and notice publications*
 |EOIDType |DG GROW (European Commission) |Attribute cac:PartyIdentification/cbc:ID@SchemeID. See 'Requirement" boxes in section *6.6 Economic Operator*
 |economic-operator-size |Publications Office of the EU |Used in the UBL-2.3 element cac:EconomicOperatorParty/{zwsp}cac:QualifyingParty/{zwsp}cbc:IndustryClassificationCode to specify the size of the economic operator.
 |eo-role-type |DG GROW (European Commission) |Element cac:EconomicOperatorRole/{zwsp}cbc:RoleCode.
-|FinancialRatioType |BACH Banque de France |Used in the REQUIREMENT "Ratio Type" of the Criterion  *finan-rat*. See data structure for this criterion in the ESPD Request link:{url-tree-301}/codelists/ESPD-criterion.xlsx[ESPD-criterion].
+|FinancialRatioType |BACH Banque de France |Used in the REQUIREMENT "Ratio Type" of the Criterion  *finan-rat*. See data structure for this criterion in the ESPD Request link:{url-tree}/codelists/ESPD-criterion.xlsx[ESPD-criterion].
 |Language |Publications Office of the EU |e.g. in cac:Legislation/{zwsp}cac:Language/{zwsp}cbc:LocaleCode. See for instance XML example in section *4. 7 Early termination*
 |ProfileExecutionID |DG GROW (European Commission) |Element cbc:ProfileExecutionID used at the root of the UBL-2.3 QualificationApplicationRequest and QualificationApplicationResponse documents. See table of expected elements in section *2.4 Root elements*
 |PropertyGroupType |DG GROW (European Commission) |Element cac:TenderingCriterion/{zwsp}cac:TenderingCriterionPropertyGroup/{zwsp}cbc:PropertyGroupTypeCode.
