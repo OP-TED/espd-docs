@@ -33,7 +33,7 @@ The table below lists the code lists used in the ESPD documents and where they a
 |*Code List* |*Issuer Agency* |*Used In*
 |access-right |Publications Office of the EU |See element 'cac:Evidence/{zwsp}cbc:ConfidentialityLevelCode` of the UBL-2.3 XSD Schemas for QualificationApplicationResponse
 |Country |Publications Office of the EU |See element 'cac:PostalAddress/{zwsp}cac:Country/{zwsp}cbc:IdentificationCode` of the UBL-2.3 XSD Schemas, e.g. the postal address of an economic operator party)
-|CriteriaType |DG GROW (European Commission, defined in e-Certis) |See each Criterion taxonomy code in the link:{url-tree}/\\__ESPDTeam__/ESPD-CodeLists.xlsx[Criteria Data] Structures. See also the link:{url-tree}/codelists/ESPD-criterion.xlsx[+++Genericode file+++].
+|CriteriaType |DG GROW (European Commission, defined in e-Certis) |See each Criterion taxonomy code in the link:{url-tree}/\__ESPDTeam__/ESPD-CodeLists.xlsx[Criteria Data] Structures. See also the link:{url-tree}/codelists/ESPD-criterion.xlsx[+++Genericode file+++].
 |CriterionElementType |DG GROW (European Commission) |See element cac:TenderingCriterion/{zwsp}cac:TenderingCriterionPropertyGroup/{zwsp}cac:TenderingCriterionProperty/{zwsp}cbc:TypeCode of the UBL-2.3 XSD QualificationApplicationRequest Schema
 |Currency |Publications Office of the EU |All UBL-2.3 elements of type cbc:Amount in its attribute @currencyID
 |docref-content-type |DG GROW (European Commission) |UBL-2.3 element cac:AdditionalDocumentReference/{zwsp}cbc:DocumentTypeCode. See XML example in section *2.5 EU and notice publications*
