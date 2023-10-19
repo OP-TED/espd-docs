@@ -30,8 +30,8 @@ Document provided by a buyer defining the exclusion and selection criteria for a
 |*File*: |link:{url-tree}/ubl-2.3/xsd/maindoc/[/ubl-2.3/xsd/maindoc/UBL-QualificationApplicationRequest-2.3.xsd]
 |===
 
-
-[cols="1,1,1,2,2"]
+[%autowidth]
+//[cols="1,1,1,2,2"]
 |===
 |*Components* |*Type* |*Card* |*Description* |*Requirements*
 
