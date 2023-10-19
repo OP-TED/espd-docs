@@ -30,8 +30,8 @@ Document provided by a buyer defining the exclusion and selection criteria for a
 |*File*: |link:{url-tree}/ubl-2.3/xsd/maindoc/[/ubl-2.3/xsd/maindoc/UBL-QualificationApplicationRequest-2.3.xsd]
 |===
 
-[%autowidth]
-//[cols="1,1,1,2,2"]
+
+[cols="1,1,1,2,2"]
 |===
 |*Components* |*Type* |*Card* |*Description* |*Requirements*
 
@@ -126,19 +126,24 @@ This number in combination with a registered buyer ID (e.g. the VAT number) resu
 
 In ESPD the contracting party information will come from eForms. Which also uses cac:ContractingParty to specify the information about buyer.
 
-|*cac:ProcurementProject/cbc:Description* |Text |1 |Text describing this procurement project. |This element is required in the ESPD, however it should be identical to that provided in eForms. In general the corresponding eForm should feed the corresponding ESPD with the corresponding data.
+|*cac:ProcurementProject/
+cbc:Description* |Text |1 |Text describing this procurement project. |This element is required in the ESPD, however it should be identical to that provided in eForms. In general the corresponding eForm should feed the corresponding ESPD with the corresponding data.
 
 |*cac:TenderingCriterion* |Associated class |1..n |A tendering criterion describes a rule or a condition that is used by the contracting body to evaluate and compare tenders by economic operators and which will be used for the exclusion and the selection of candidates to the award decision. a|
 *Information Requirement*: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1.0-tbr70-003[_tbr70-003, tbr70-009_].
 
 *Rule*: (see examples further below in this document)
 
-|*cac:TenderingCriterion/cac:ProcurementProjectLotReference/cbc:ID* |Identifier |0..n |One or more of the procurement project lots Identifier to which this criterion can be related to. a|
+|*cac:TenderingCriterion/
+cac:ProcurementProject
+LotReference/
+cbc:ID* |Identifier |0..n |One or more of the procurement project lots Identifier to which this criterion can be related to. a|
 *Information Requirement*: (see section <<lot_management>>)
 
 *Rule*: This element is mandatory for all Selection Criteria with cardinality 1..n because different Selection Criteria can be associated with different procurement lots. This element is not necessary for exclusion grounds because exclusion grounds are applied to all procurements.
 
-|*cac:AdditionalDocumentReference* |Associated class |0..n |A reference to an additional document associated with this document. a|
+|*cac:AdditionalDocument
+Reference* |Associated class |0..n |A reference to an additional document associated with this document. a|
 *Information Requirement*: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1.0-tbr70-007[_tbr70-007_].
 
 *Rule*: *For procurement procedures above the threshold it is compulsory to make reference to the Contract Notice of the procedure published in TED*. See section "Reference to the Contract Notice" for a complete example.
