@@ -35,8 +35,11 @@ Document provided by a buyer defining the exclusion and selection criteria for a
 |===
 |*Components* |*Type* |*Card* |*Description* |*Requirements*
 
-|*cbc:UBLVersionID* |Identifier |1 |Identifies the earliest version of the UBL 2 schema for this document type that defines all of the elements that might be encountered in the current instance. a|
-*Information Requirement*: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1.0-tbr070-002[_tbr070-002_].
+|*cbc:UBLVersionID*
+|Identifier
+|1
+|Identifies the earliest version of the UBL 2 schema for this document type that defines all of the elements that might be encountered in the current instance.
+a|*Information Requirement*: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1.0-tbr070-002[_tbr070-002_].
 
 *Rule*: Use the value "2.3". Use also "OASIS-UBL-TC" for the schemeAgencyID attribute.
 
