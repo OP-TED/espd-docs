@@ -19,6 +19,7 @@ Beware that *all theses documents do share the same business rule identifiers* (
 _Table 5. Class QualificationApplicationRequest, components required by the ESPD-EDM_ 
 |===
 |*Document name:* |*QualificationApplicationRequest*
+
 |*Definition 1*: a|
 "_A structured electronic business document for requesting qualification information through an ESPD (conform to an ESPD template). Directive 2014/24/EU, Art. 59._" (source: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1.0-BusinessRequirements:ESPDrequesttransaction(Trdm070)[_ESPD Request transaction (Trdm070)_]).
 
@@ -28,9 +29,10 @@ Document provided by a buyer defining the exclusion and selection criteria for a
 |*File*: |link:{url-tree}/ubl-2.3/xsd/maindoc/[/ubl-2.3/xsd/maindoc/UBL-QualificationApplicationRequest-2.3.xsd]
 |===
 
-[cols=",,,,",options="header",]
+[cols="1,1,1,2,2"]
 |===
 |*Components* |*Type* |*Card* |*Description* |*Requirements*
+
 |*cbc:UBLVersionID* |Identifier |1 |Identifies the earliest version of the UBL 2 schema for this document type that defines all of the elements that might be encountered in the current instance. a|
 *Information Requirement*: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1.0-tbr070-002[_tbr070-002_].
 
@@ -105,14 +107,17 @@ This number in combination with a registered buyer ID (e.g. the VAT number) resu
 
 In ESPD the contracting party information will come from eForms. Which also uses cac:ContractingParty to specify the information about buyer.
 
-|*cac:ProcurementProject/cbc:Description* |Text |1 |Text describing this procurement project. |This element is required in the ESPD, however it should be identical to that provided in eForms. In general the corresponding eForm should feed the corresponding ESPD with the corresponding data.
+|*cac:ProcurementProject/
+cbc:Description* |Text |1 |Text describing this procurement project. |This element is required in the ESPD, however it should be identical to that provided in eForms. In general the corresponding eForm should feed the corresponding ESPD with the corresponding data.
 
 |*cac:TenderingCriterion* |Associated class |1..n |A tendering criterion describes a rule or a condition that is used by the contracting body to evaluate and compare tenders by economic operators and which will be used for the exclusion and the selection of candidates to the award decision. a|
 *Information Requirement*: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1.0-tbr70-003[_tbr70-003, tbr70-009_].
 
 *Rule*: (see examples further below in this document)
 
-|*cac:TenderingCriterion/cac:ProcurementProjectLotReference/cbc:ID* |Identifier |0..n |One or more of the procurement project lots Identifier to which this criterion can be related to. a|
+|*cac:TenderingCriterion/
+cac:ProcurementProject
+LotReference/cbc:ID* |Identifier |0..n |One or more of the procurement project lots Identifier to which this criterion can be related to. a|
 *Information Requirement*: (see section <<lot_management>>)
 
 *Rule*: This element is mandatory for all Selection Criteria with cardinality 1..n because different Selection Criteria can be associated with different procurement lots. This element is not necessary for exclusion grounds because exclusion grounds are applied to all procurements.
