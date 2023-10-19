@@ -20,6 +20,7 @@ Beware that *all theses documents do share the same business rule identifiers* (
 _Table 5. Class QualificationApplicationRequest, components required by the ESPD-EDM_ 
 |===
 |*Document name:* |*QualificationApplicationRequest*
+
 |*Definition 1*: a|
 "_A structured electronic business document for requesting qualification information through an ESPD (conform to an ESPD template). Directive 2014/24/EU, Art. 59._" (source: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1.0-BusinessRequirements:ESPDrequesttransaction(Trdm070)[_ESPD Request transaction (Trdm070)_]).
 
