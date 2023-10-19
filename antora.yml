@@ -10,3 +10,4 @@ asciidoc:
     this-version: *ver # used in modules/ROOT/partials/attributes.adoc
     git-repo-url: https://github.com/OP-TED/ESPD-EDM
     path-to-dist: /docs/src/main/asciidoc/modules/ROOT
+    url-tree: https://github.com/OP-TED/ESPD-EDM/tree/v3.0.1
