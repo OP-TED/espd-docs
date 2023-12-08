@@ -1,6 +1,7 @@
 name: ESPD-EDM
 title: ESPD EDM
-version: '3.1.0'
+version:
+# '3.1.0'
 start_page: ROOT:index.adoc
 nav:
 - modules/ROOT/nav.adoc
