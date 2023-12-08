@@ -10,6 +10,124 @@ ifndef::downloaddir[:downloaddir: download]
 :toclevels: 5
 
 [.text-left]
-include::I.1_ESPD_Introduction.adoc[]
-include::I.2_ESPD_EDM.adoc[]
-include::I.3_ESPD_Main_Goals_and_Benefits.adoc[]
+[.text-center]
+=== I.1 ESPD Introduction
+[.text-left]
+The purpose of this document is to introduce the European Single Procurement Document (ESPD) from a business perspective and to provide high-level information about the two ESPD documents (the Request and the Response documents) and their related users, business processes and contents, as well as to highlight the main goals and benefits of using ESPD.
+For implementation purposes, please see the xref:xml_technical_handbook.adoc[ESPD Technical HandBook] , which is focused on providing technical guidance for the implementation of the ESPD Exchange Data Model (henceforth ESPD-EDM).
+
+==== I.1.1 Legal framework and context
+[.text-left]
+Article 59 of the Public Procurement Directive 2014/24/EC  (henceforth ''the Directive'') introduced a new concept, the European Single Procurement Document (ESPD), which is a self-declaration document intended for preliminary evidence in a public procurement procedure. By mapping out equivalent certificates between Member States, the ESPD replaces certificates issued by public authorities or a third party involved in a procedure. It is thus a valuable facilitator for cross-border participation of a greater number of potential operators in public procurement procedures and a valuable tool for integrating the European Single Market.
+[.text-left]
+In order to make use of the ESPD concept, the European Commission established an on-line service available for both Buyers and Economic Operators.
+[.text-left]
+The ESPD Service tool allows Buyers and Economic Operators to create, edit, export and import electronic documents in XML format (eESPD) for the exchange of criteria, requirements, statements and references to evidences.
+Article 4 of the Directive regulates in detail those public procurement procedures in which the value of the contract exceeds a certain amount. These amounts, also known as 'thresholds', vary depending on the type of the contract and the administration level of the Buyer. Those contracts that fall under article 4 of the Directive are called contracts 'above the threshold', and the rest are known as contracts 'below the threshold'. The ESPD Service is rich and flexible enough so as to provide coverage to procurement procedures both above and below the threshold.
+[.text-left]
+The main objective of the ESPD is to reduce the administrative burden and lead to considerable simplification of participation in public procurement procedures for Economic Operators and Buyers by removing the need to produce a substantial number of certificates and documentation related to exclusion and selection criteria. This will answer to obstacles reported by many suppliers and especially small and medium-sized enterprises (SMEs).
+As shown in the image below, the first version of the digital ESPD was set up in 2016 (version 1.0.1). Since then, a number of new developments and enhancements have been implemented in order to produce a more efficient ESPD Service, taking into account Member States' requirements and needs and in compliance with the Directive. Major releases (from 1.0.2 to 2.0.1, in 2018, and the from 2.1.1 to 3.0.0, in 2021) have implied relevant changes to the ESPD-EDM.
+
+
+.ESPD Roadmap
+image::ESPDRoadmap.jpg[roadmap, alt="ESPD-roadmap", width="750" align="center"]
+
+Figure 1: ESPD-EDM Roadmap
+[.text-left]
+Focusing on the last evolution of the ESPD, it is worth to note that it has been developed emphasizing the alignment with eForms . This alignment has followed three main principles: (1) ensure the interoperability between models; (2) the simplification of data processing and (3) to ease the fulfilment of the ESPD in both sides (Buyers and Economic Operators).
+Currently, the European Commission is no longer maintaining the ESPD service , and it is on Member States to implement the last version available.
+
+[.text-left]
+*_Disclaimer:_* _the current documentation is not the final version, it is an ongoing task that will be ended up by the end of implementation task._
+
+[.text-center]
+== I.2. ESPD-EDM
+
+[.text-left]
+As mentioned, there are two ESPD documents available:
+[.text-left]
+•	The *Request document*, which is used by Buyers to express the Exclusion and Selection criteria, as well as particular requirements, that the Economic Operators will need to fulfil in the context of a tender;
+•	The *Response document*, which is used by Economic Operators to answer the questions and provide references to evidences in response to the criteria and requirements expressed by the Buyer in the Request document.
+Therefore, the ESPD Service is oriented to two main types of users:
+•	Buyers, which are State, regional or local authorities, bodies governed by public law or associations formed by one or more such authorities or one or more such bodies governed by public law (as defined in Article 2 of the Directive);
+•	Economic Operators, which are any natural or legal person or public entity or group of such persons and/or entities, including any temporary association of undertakings, which offers the execution of works and/or a work, the supply of products or the provision of services on the market (as defined in Article 2 of the Directive).
+Economic Operators can play different roles (that are contemplated by the ESPD-EDM) within a procurement procedure:
+•	*Sole Tenderer:* sole economic operator participating in the procurement procedure by itself;
+•	*Group Member:* In case of Consortium, Joint Venture or other type of groups, the economic operator can participate as a:
+o	*Group Leader:* the leader of the group;
+o	*Group Member (not leader)* of the group.
+•	*Other entity (relied upon):* Entity on which the main contractor, the group or another subcontractor relies in order to meet the selection criteria;
+•	*Other entity (not relied upon) or Subcontractor*: entity on which the main contractor, the group or another subcontractor does not rely in order to meet the selection criteria.
+
+
+[.text-left]
+The ESPD Request consists of:
+[.text-left]
+•	*Part I:* Information concerning the procurement procedure and the Buyer or contracting entity, where the Buyer is required to provide information about publication, about the identity of the procurer and about the procurement procedure;
+•	*Part III:* Exclusion grounds, where the Buyer is required to review the A: grounds relating to criminal convictions; B: Grounds relating to the payment of taxes or social security contributions; C: Grounds relating to insolvency, conflicts of interests or professional misconduct; and D: Purely national exclusion grounds that apply to the procurement procedure;
+•	*Part IV:* Selection criteria, where the Buyer must indicate which selection criteria will be applied regarding A: Suitability; B: Economic and financial standing; C. Technical and professional ability; and D: Quality assurance schemes and environmental management standards
+•	*Part VI:* Concluding statements.
+Part II and Part V are not available in the ESPD Request since they apply only to the Response document.
+[.text-left]
+The ESPD Response consists of:
+[.text-left]
+•	*Part I:* Information concerning the procurement procedure and the Buyer or contracting entity, where the Economic Operator is required to identify the ESPD Request to which is creating a response, by providing information about publication, about the identity of the procurer and about the procurement procedure;
+•	*Part II:* Information concerning the economic operator, where the Economic Operator is required to provide A: Information about the economic operator; B: Information about representatives of the economic operator; C: Information about reliance on the capacities of other entities; and D: Information concerning subcontractors on whose capacity the economic operator does not rely.
+•	*Part III:* Exclusion grounds, where the Economic Operator is required to review A: grounds relating to criminal convictions; B: Grounds relating to the payment of taxes or social security contributions; C: Grounds relating to insolvency, conflicts of interests or professional misconduct; and D: Purely national exclusion grounds, and to answer individually to each exclusion ground;
+•	*Part IV:* Selection criteria, where the Economic Operator should only provide information where the selection criteria concerned have been required by the Buyer or contracting entity in the relevant notice or in the procurement documents referred to in the notice, regarding A: Suitability; B: Economic and financial standing; C. Technical and professional ability; and D: Quality assurance schemes and environmental management standards;
+•	*Part V:* Reduction of the number of qualified candidates, where the Economic Operator should only provide information where the Buyer or contracting entity has specified the objective and non-discriminatory criteria or rules to be applied in order to limit the number of candidates that will be invited to tender or to conduct a dialogue within a two-phased procedure;
+•	*Part VI:* Concluding statements, where the Economic Operator declares that the information stated under Parts II - V is accurate and correct, that is able to provide the certificates and other forms of documentary evidence referred to it, and consents to grant access to documents supporting the information which has been provided in the ESPD to the Buyer.
+[.text-left]
+The information required to Economic Operators when fulfilling a Response document will depend on their role, as shown in the table below:
+
+|===
+|Table 1 |Sole Tenderer / Group Leader |Group Member |Other Entity relied upon |Subcontractor
+
+
+|*Part I*
+Identify ESPD request and other procurement information
+
+|X	|X	|X	|X
+
+|*Part II*
+
+Information about the economic operator	|X	|X	|X	|X
+
+|Information about representatives of the economic operator	  |X	|X	|X	|X
+
+|Information about reliance on the capacities of other entities	|X	|  | |
+
+|Information concerning subcontractors on whose capacity the economic operator does not rely	|X	| | |
+
+|*Part III*
+Exclusion grounds	|X	|X	|X	|X
+
+|*Part IV*
+Selection Criteria	| |X	|X	|X
+
+|*Part V*
+Reduction of the number of qualified candidates	|Adhoc	|Adhoc	|Adhoc	|
+
+|*Part VI* Concluding statements	|X	|X	|X	|X
+|===
+
+_Table 1: Information to provide in the ESPD Response per role_
+
+[.text-left]
+It is not necessary for Buyers and Economic Operators to create a new ESPD document for each procedure. Instead, it is possible to re-use an ESPD in different procurement procedures, facilitating the tasks of users.
+
+[.text-left]
+*_Disclaimer:_* _the current documentation is not the final version, it is an ongoing task that will be ended up by the end of implementation task._
+[.text-center]
+== I.3. ESPD Main goals and benefits
+[.text-left]
+The main goals and benefits of the ESPD are:
+[.text-left]
+•	Reduce the administrative burden;
+•	Facilitate participation in public procurement;
+•	Together with other models or initiatives (like eCertis), the ESPD fosters the cross-border participation in procurement, increasing competition and supporting economic growth;
+•	Harmonise and optimise selection criteria;
+•	Support and foster the development of the Digital Single Market;
+•	Facilitate the participation of small and medium-sized enterprises (SMEs) in public procurement;
+•	Provide transparency and more clarity about requested evidences;
+•	Ensure compliance with EU and national procurement regulation.
