@@ -1,6 +1,6 @@
-* xref:pages/home.adoc[Home]
-* xref:pages/xml_business_handbook.adoc[Business Handbook]
-* xref:pages/xml_technical_handbook.adoc[Technical Handbook]
+* xref::home.adoc[Home]
+* xref::xml_business_handbook.adoc[Business Handbook]
+* xref::xml_technical_handbook.adoc[Technical Handbook]
 
 ////
 ** <<1.UBL_Based_and_distribution_package.adoc#, UBL Based and distribution package>>
@@ -13,5 +13,5 @@
 ** <<AnnexI.Code_list_used_in_ESPD.adoc#, Codelists used in ESPD>>
 * link:{attachmentsdir}/ESPD_CM_html/index.html[Conceptual Model HTML]
 ////
-* xref:pages/release_notes.adoc[Release Notes]
+* xref::release_notes.adoc[Release Notes]
 * xref:espd-ouc::index.adoc[Open User Community Documents]
