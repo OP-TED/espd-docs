@@ -4,7 +4,7 @@
 :authoremail: nicole-anne.paterson-jones@ext.ec.europa.eu
 :docdate: October 2023
 
-* xref:espd-home::index.adoc[Home]
+* xref:espd::index.adoc[Home]
 * xref:espd::release-notes.adoc[Release Notes]
 * xref:espd::conceptual.adoc[Conceptual Models]
 * xref:espd::devpack.adoc[The Distribution Package]
