@@ -6,7 +6,7 @@
 
 * xref:espd-home::index.adoc[Home]
 * xref:espd::release_notes.adoc[Release Notes]
-* xref:espd::conceptual.adoc[Conceptual Models]
+* link:{attachmentsdir}/ESPD_CM_html/index.html[Conceptual Model]
 * xref:espd::devpack.adoc[The Distribution Package]
 
 * [.separated]#**General Reference**#
