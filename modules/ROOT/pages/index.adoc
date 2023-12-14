@@ -1,14 +1,31 @@
 = ESPD Exchange Data Model (ESPD-EDM)
 
-ifndef::imagesdir[:imagesdir: images]
+[.tile-container]
+--
 
-== v3.3.0
+[.tile]
+.ESPD 3.3.0: Latest Release
+****
+ESPD-EDM version 3.3.0 corrected minor errors in the data structure and code lists, as requested by the Member States and other stakeholders.
 
-== Resources
+xref:espd::release_notes.adoc[Click here to read the version 3.3.0 details]
 
-* xref:xml_business_handbook.adoc[ESPD BUSINESS HANDBOOK]
-* xref:xml_technical_handbook.adoc[ESPD TECHNICAL HANDBOOK] (last updated on 2023-09-07)
-* link:{attachmentsdir}/ESPD_CM_html/index.html[ESPD-EDM CONCEPTUAL MODEL HTML] 
-//* link:https://docs.ted.europa.eu/ESPD-EDM/3.3.0/_attachments/ESPD_CM_html/index.html[ESPD-EDM CONCEPTUAL MODEL HTML]  
-//* xref:attachments$ESPD_CM_html/index.html[ESPD-EDM CONCEPTUAL MODEL HTML]
-* xref:release_notes.adoc[Release Notes]
+
+****
+
+
+[.tile]
+.ESPD Past Releases
+****
+Information on past releases can be found via the link below. The information includes a brief description of each release. A full description of each release can be found following the links on the Past Releases page.
+
+xref:espd-home::history.adoc[Information on past releases can be found here.]
+****
+
+[.tile]
+.Open User Community Documents
+****
+This section contains minutes and reports of the annual and monthly Open User Community activities and meetings.
+
+xref:espd-wgm::index.adoc[Click here to read the OUC reports]
+****
