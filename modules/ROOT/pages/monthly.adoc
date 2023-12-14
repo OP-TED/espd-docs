@@ -3,3 +3,128 @@
 :author: NPJ
 :authoremail: nicole-anne.paterson-jones@ext.ec.europa.eu
 :docdate: October 2023
+
+== 2023
+
+=== 2023-09-21
+*** link:https://github.com/OP-TED/espd-docs/blob/wgm-reports/modules/ROOT/attachments/ESPD_OUC_Meetings_Slides_20230921.pdf[31st OUC Presentation]
+*** xref:20230921_OUC meeting report.adoc[31st OUC Report]
+
+=== 2023-06-29
+*** link:https://github.com/OP-TED/espd-docs/blob/wgm-reports/modules/ROOT/attachments/ESPD_OUC_Meetings_20230629.pdf[30th OUC Presentation]
+*** xref:20230629_OUC meeting report.adoc[30th OUC Report]
+
+=== 2023-04-27
+*** link:https://github.com/OP-TED/espd-docs/blob/wgm-reports/modules/ROOT/attachments/ESPD_OUC_Meetings_20230427.pdf[29th OUC Presentation]
+*** xref:20230427_OUC meeting report.adoc[29th OUC Report]
+
+=== 2023-03-23
+*** link:https://github.com/OP-TED/espd-docs/blob/wgm-reports/modules/ROOT/attachments/ESPD_OUC_Meetings_20230323.pdf[28th OUC Presentation]
+*** xref:20230323_OUC meeting report.adoc[28th OUC Report]
+
+=== 2023-02-23
+*** link:https://github.com/OP-TED/espd-docs/blob/wgm-reports/modules/ROOT/attachments/ESPD_OUC_Meetings_20230223.pdf[27th OUC Presentation]
+*** xref:20230223_OUC meeting report.adoc[27th OUC Report]
+
+=== 2023-01-26
+*** link:https://github.com/OP-TED/espd-docs/blob/wgm-reports/modules/ROOT/attachments/ESPD_OUC_Meetings_20230126.pdf[26th OUC Presentation]
+*** xref:20230126_OUC meeting report.adoc[26th OUC Report]
+
+== 2022
+=== 2022-10-27
+*** link:https://github.com/OP-TED/espd-docs/blob/wgm-reports/modules/ROOT/attachments/ESPD_OUC_Meetings_20221027.pdf[25th OUC Presentation]
+*** xref:20221027_OUC meeting report.adoc[25th OUC Report]
+
+=== 2022-09-28
+*** link:https://github.com/OP-TED/espd-docs/blob/wgm-reports/modules/ROOT/attachments/ESPD_OUC_Meetings_20220928.pdf[24th OUC Presentation]
+*** xref:20220928_OUC meeting report.adoc[24th OUC Report]
+
+=== 022-06-16
+*** link:https://github.com/OP-TED/espd-docs/blob/wgm-reports/modules/ROOT/attachments/ESPD_OUC_Meetings_20220616.pdf[23rd OUC Presentation]
+*** xref:20220616_OUC meeting report.adoc[23rd OUC Report]
+
+=== 2022-04-28
+*** link:https://github.com/OP-TED/espd-docs/blob/wgm-reports/modules/ROOT/attachments/ESPD_OUC_Meetings_20220428_corrected.pdf[22nd OUC Presentation]
+*** xref:20220428_OUC meeting report.adoc[22nd OUC Report]
+
+=== 2022-03-31
+*** link:https://github.com/OP-TED/espd-docs/blob/wgm-reports/modules/ROOT/attachments/ESPD_OUC_Meetings_20220331.pdf[21st OUC Presentation]
+*** xref:20220331_OUC meeting report.adoc[21st OUC Report]
+
+=== 2022-02-24
+*** link:https://github.com/OP-TED/espd-docs/blob/wgm-reports/modules/ROOT/attachments/ESPD_OUC_Meetings_20220224.pdf[20th OUC Presentation]
+*** link:https://github.com/OP-TED/espd-docs/blob/wgm-reports/modules/ROOT/attachments/ESPD_Report_OUC_Meetings_20220224.pdf[20th OUC Report]
+=== 2022-01-27
+*** link:https://github.com/OP-TED/espd-docs/tree/wgm-reports/modules/ROOT/attachments/ESPD_OUC_Meetings_20220127.pdf[19th OUC Presentation]
+*** link:https://github.com/OP-TED/espd-docs/tree/wgm-reports/modules/ROOT/attachments/ESPD_Minutes_OUC_Meetings_20220127.pdf[19th OUC Report]
+
+== 2021
+=== 2021-10-28
+*** link:https://github.com/OP-TED/espd-docs/tree/wgm-reports/modules/ROOT/attachments/ESPD_OUC_Meetings_20211028_v1.0.pdf[18th OUC Presentation]
+*** link:https://github.com/OP-TED/espd-docs/tree/wgm-reports/modules/ROOT/attachments/ESPD_Minutes_OUC_Meetings_20211028_fv.pdf[18th OUC Report]
+
+=== 2021-10-07
+*** link:https://github.com/OP-TED/espd-docs/tree/wgm-reports/modules/ROOT/attachments/ESPD_OUC_Meetings_20211007_v1.0.pdf[17th OUC Presentation]
+*** link:https://github.com/OP-TED/espd-docs/tree/wgm-reports/modules/ROOT/attachments/ESPD_Minutes_OUC_Meetings_20211007_v1.0.pdf[17th OUC Report]
+
+=== 2021-09-02
+*** link:https://github.com/OP-TED/espd-docs/tree/wgm-reports/modules/ROOT/attachments/ESPD_OUC_Meetings_20210902_v1.0.pdf[16th OUC Presentation]
+*** link:https://github.com/OP-TED/espd-docs/tree/wgm-reports/modules/ROOT/attachments/ESPD_Minutes_OUC_Meetings_20210902_v1.0.pdf[16th OUC Report]
+
+=== 2021-06-30
+*** link:https://github.com/OP-TED/espd-docs/tree/wgm-reports/modules/ROOT/attachments/ESPD_OUC_Meetings_20210630_v1.0.pdf[15th OUC Presentation]
+*** link:https://github.com/OP-TED/espd-docs/tree/wgm-reports/modules/ROOT/attachments/ESPD_Minutes_OUC_Meetings_20210630_v4.0.pdf[15th OUC Report]
+
+=== 021-03-31
+*** link:https://github.com/OP-TED/espd-docs/tree/wgm-reports/modules/ROOT/attachments/ESPD_OUC_Meetings_20210331_v1.0.pdf[14th OUC Presentation]
+*** link:https://github.com/OP-TED/espd-docs/tree/wgm-reports/modules/ROOT/attachments/ESPD_Minutes_OUC_Meetings_20210331_v1.0.pdf[14th OUC Report]
+
+=== 2021-03-03
+*** link:https://github.com/OP-TED/espd-docs/tree/wgm-reports/modules/ROOT/attachments/ESPD_OUC_Meetings_20210303_v1.0.pdf[13th OUC Presentation]
+*** link:https://github.com/OP-TED/espd-docs/tree/wgm-reports/modules/ROOT/attachments/ESPD_Minutes_OUC_Meetings_20210303_v1.0.pdf[13th OUC Report]
+*** link:https://github.com/OP-TED/espd-docs/tree/wgm-reports/modules/ROOT/attachments/ESCO_ESPD_OUC_meeting_3-3-21.pptx[ESCO 13th WGM Presentation]
+
+=== 2021-02-03
+*** link:https://github.com/OP-TED/espd-docs/tree/wgm-reports/modules/ROOT/attachments/ESPD_OUC_Meetings_20210203_v1.2.pdf[12th OUC Presentation]
+*** link:https://github.com/OP-TED/espd-docs/tree/wgm-reports/modules/ROOT/attachments/ESPD_Minutes_OUC_Meetings_20210203_v1.0.pdf[12th OUC Report]
+
+== 2020
+=== 2020-10-29
+*** link:https://github.com/OP-TED/espd-docs/tree/wgm-reports/modules/ROOT/attachments/ESPD_OUC_Meetings_20201029_v1.0.pdf[11th OUC Presentation]
+*** link:https://github.com/OP-TED/espd-docs/tree/wgm-reports/modules/ROOT/attachments/ESPD_Minutes_OUC_Meetings_20201029_v1.0.pdf[11th OUC Report]
+
+=== 2020-10-01
+*** link:https://github.com/OP-TED/espd-docs/tree/wgm-reports/modules/ROOT/attachments/ESPD_OUC_Meetings_20201001_v1.0.pdf[10th OUC Presentation]
+*** link:https://github.com/OP-TED/espd-docs/tree/wgm-reports/modules/ROOT/attachments/ESPD_Minutes_OUC_Meetings_20201001_v1.0.pdf[10th OUC Report]
+
+=== 2020-09-03
+*** link:https://github.com/OP-TED/espd-docs/tree/wgm-reports/modules/ROOT/attachments/ESPD_OUC_Meetings_20200903_v1.0.pdf[9th OUC Presentation]
+*** link:https://github.com/OP-TED/espd-docs/tree/wgm-reports/modules/ROOT/attachments/ESPD_Minutes_OUC_Meetings_20200903_v1.1.pdf[9th OUC Report]
+
+=== 2020-07-09
+*** link:https://github.com/OP-TED/espd-docs/tree/wgm-reports/modules/ROOT/attachments/ESPD_OUC_Meetings_20200709_v1.0.pdf[8th OUC Presentation]
+*** link:https://github.com/OP-TED/espd-docs/tree/wgm-reports/modules/ROOT/attachments/ESPD_Minutes_OUC_Meetings_20200709_v1.1.pdf[8th OUC Report]
+
+=== 2020-06-17
+*** link:https://github.com/OP-TED/espd-docs/tree/wgm-reports/modules/ROOT/attachments/ESPD_OUC_Meetings_20200617_v1.0.1.pdf[7th OUC Presentation]
+*** link:https://github.com/OP-TED/espd-docs/tree/wgm-reports/modules/ROOT/attachments/ESPD_Minutes_OUC_Meetings_20200617_v1.0.pdf[7th OUC Report]
+
+=== 2020-05-19
+*** link:https://github.com/OP-TED/espd-docs/tree/wgm-reports/modules/ROOT/attachments/FwC10649_ESPD_MS_Meetings_20200519_v1.0.pdf[6th OUC Presentation]
+*** link:https://github.com/OP-TED/espd-docs/tree/wgm-reports/modules/ROOT/attachments/ESPD_Minutes_MS_Meetings_20200519_v1.0.pdf[6th OUC Report]
+
+=== 2019
+** 2019-11-28
+*** link:https://github.com/OP-TED/espd-docs/tree/wgm-reports/modules/ROOT/attachments/FwC10649_ESPD_MS_Meetings_20191128_v1.0.pdf[5th OUC Report]
+
+=== 2019-09-27
+*** link:https://github.com/OP-TED/espd-docs/tree/wgm-reports/modules/ROOT/attachments/FwC10649_ESPD_MS_Meetings_20190927_v1.0.pdf[4th OUC Report]
+
+=== 2019-09-10
+*** link:https://github.com/OP-TED/espd-docs/tree/wgm-reports/modules/ROOT/attachments/FwC10649_ESPD_MS_Meetings_20190910_v1.0.pdf[3rd OUC Report]
+
+=== 2019-09-05
+*** link:https://github.com/OP-TED/espd-docs/tree/wgm-reports/modules/ROOT/attachments/FwC10649_ESPD_MS_Meetings_20190905_v1.0.pdf[2nd OUC Report]
+
+=== 2019-07-01
+*** link:https://github.com/OP-TED/espd-docs/tree/wgm-reports/modules/ROOT/attachments/FwC10649_ESPD_MS_Meetings_20190701_v1.0.pdf[1st OUC Report]
