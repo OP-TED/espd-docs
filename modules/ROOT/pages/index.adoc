@@ -1,8 +1,6 @@
 = ESPD-EDM Open User Community Documents
 
-This section contains the OUC Meeting Reportsand Annual Seminar documents.
-
-All the documentation can be accessed by expanding the different options in the navigation menu on the left.
+This section contains the OUC Meeting Reportsand Annual Seminar documents. All the documentation can be accessed by expanding the different options in the navigation menu on the left.
 
 Most recent or planned OUC monthly meetings:
 
@@ -11,6 +9,34 @@ Most recent or planned OUC monthly meetings:
 
 Most recent or planned Annual Seminar:
 
-* November 30th, 2023, 09.30-12.30 
+* November 30th, 2023, 09.30-12.30
 
-//Meeting Reports previous to 2022 can be found in link:https://github.com/OP-TED/espd-docs/tree/wgm-reports/modules/ROOT/attachments[espd-docs/wgm-reports].
+[.tile-container]
+--
+
+[.tile]
+.eESPD Open User Community Annual Seminar Reports
+****
+The cumulative annual reports are a collation of minutes from all the ePO related meetings in a year. Reports from the years 2019 to 2023 are currently available.
+
+xref:annual.adoc[Click here to access the annual seminar reports]
+
+****
+
+[.tile]
+.ESPD Open User Community Monthly Meeting Reports
+****
+These reports contain the minutes from the general meetings, and outline project progress, changes implements since the last meeting, and future development plans for the next period.
+
+xref:monthly.adoc[Click here to access the monthly meeting reports]
+****
+////
+[.tile]
+.ePO Reports from the Working Group Individual Meetings
+****
+This page contains all the indivivual meetings minutes from the general, eCatalogue, eFulfillment, and eOrdering meetings.
+
+xref:indiv.adoc[Working Group Individual Meetings Reports]
+****
+////
+--
