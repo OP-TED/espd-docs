@@ -11,8 +11,8 @@
 
 
 * [.separated]#**General Reference**#
-* xref:espd::xml_business_handbook[An Introduction for Business Users]
-* xref:espd::xml_technical_handbook[An In-depth View for Technical Users]
+* xref:espd::xml_business_handbook.adoc[An Introduction for Business Users]
+* xref:espd::xml_technical_handbook.adoc[An In-depth View for Technical Users]
 * xref:espd-home::history.adoc[History and Planned Developments]
 * xref:espd-home::external.adoc[External Resources]
 * xref:espd-home::supporting.adoc[Supporting and related projects]
