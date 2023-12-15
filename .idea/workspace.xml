@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="506d41f3-406c-4825-9294-adb3b4ed8652" name="Default Changelist" comment="updated index.adoc">
-      <change afterPath="$PROJECT_DIR$/modules/ROOT/pages/2020.adoc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/ROOT/pages/2021.adoc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/ROOT/pages/2022.adoc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/ROOT/pages/2023.adoc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/ROOT/pages/annual.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/modules/ROOT/pages/annual.adoc" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -225,7 +220,49 @@
       <option name="project" value="LOCAL" />
       <updated>1702558255480</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="updated index.adoc">
+      <created>1702563843337</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1702563843337</updated>
+    </task>
+    <task id="LOCAL-00024" summary="updated index.adoc">
+      <created>1702564001184</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1702564001184</updated>
+    </task>
+    <task id="LOCAL-00025" summary="updated index.adoc">
+      <created>1702564772181</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1702564772181</updated>
+    </task>
+    <task id="LOCAL-00026" summary="updated index.adoc">
+      <created>1702565750705</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1702565750705</updated>
+    </task>
+    <task id="LOCAL-00027" summary="updated index.adoc">
+      <created>1702566322780</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1702566322780</updated>
+    </task>
+    <task id="LOCAL-00028" summary="updated index.adoc">
+      <created>1702566448335</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1702566448335</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
