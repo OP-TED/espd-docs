@@ -15,9 +15,9 @@ xref:espd::release_notes.adoc[Click here to read the version 3.3.0 details]
 
 
 [.tile]
-.ESPD Past Releases
+.ESPD Release Timelines
 ****
-Information on past releases can be found via the link below. The information includes a brief description of each release. A full description of each release can be found following the links on the Past Releases page.
+Information on past releases and planned future releases can be found via the link below. The information includes a brief description of each release and links to the full release documentation.
 
 xref:espd-home::history.adoc[Information on past releases can be found here.]
 ****
