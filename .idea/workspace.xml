@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="506d41f3-406c-4825-9294-adb3b4ed8652" name="Default Changelist" comment="updated index.adoc">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="506d41f3-406c-4825-9294-adb3b4ed8652" name="Default Changelist" comment="updated nav.adoc">
+      <change beforePath="$PROJECT_DIR$/modules/ROOT/nav.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/modules/ROOT/nav.adoc" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -269,7 +269,14 @@
       <option name="project" value="LOCAL" />
       <updated>1702626595774</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="updated nav.adoc">
+      <created>1702633340328</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1702633340328</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -294,6 +301,7 @@
     <MESSAGE value="added feedback and attributes partials" />
     <MESSAGE value="added feedback and attributes partials, added css for wysiwyg" />
     <MESSAGE value="updated index.adoc" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated index.adoc" />
+    <MESSAGE value="updated nav.adoc" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated nav.adoc" />
   </component>
 </project>
