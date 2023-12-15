@@ -13,7 +13,6 @@
 * [.separated]#**General Reference**#
 * xref:espd::xml_business_handbook.adoc[An Introduction for Business Users]
 * xref:espd::xml_technical_handbook.adoc[An In-depth View for Technical Users]
-* xref:espd-home::index_old.adoc[Index_old - what is this]
 * xref:espd-home::history.adoc[History and Planned Developments]
 * xref:espd-home::external.adoc[External Resources]
 * xref:espd-home::supporting.adoc[Supporting and related projects]
