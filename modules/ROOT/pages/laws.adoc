@@ -3,3 +3,9 @@
 :author: NPJ
 :authoremail: nicole-anne.paterson-jones@ext.ec.europa.eu
 :docdate: October 2023
+
+
+https://eur-lex.europa.eu/legal-content/EN/LSU/?uri=celex%3A32014L0024[The  2014/24/EC Directive on Public Procurement(Article 59)]
+
+https://eur-lex.europa.eu/eli/reg_impl/2016/7/oj[Regulation (EU) 2016/7]
+
