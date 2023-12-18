@@ -4,6 +4,8 @@
 :authoremail: nicole-anne.paterson-jones@ext.ec.europa.eu
 :docdate: October 2023
 
+image:espd timeline.png[ESPD-EDM Release Timeline]
+
 == Version 1.0.2
 Version 1.0.0 of the ESPD was developed in response to the https://eur-lex.europa.eu/legal-content/EN/LSU/?uri=celex%3A32014L0024[2014/24/EC Directive on Public Procurement], which introduced the concept of the ESPD. Initially, the European Commission developed an online ESPD service for buyers and suppliers which was subsequently discontinued as member states started to develop and bring online their own ESPD services. The latest 1.x version is v1.0.2, released in July 2016, the documentation for which can be found via the menu on the left.
 
