@@ -1,9 +1,17 @@
 * **Annual Seminar**
+
+* 2023
+//** xref:2023_ESPD Annual Seminar report.adoc[ESPD Annual Seminar Report]
+//** link:https://www.youtube-nocookie.com/embed/L71pr8VwiS4[ESPD Annual Seminar Video]
+//** link:https://github.com/OP-TED/espd-docs/blob/wgm-reports/modules/ROOT/attachments/SlidoResults.pdf[Slido Results]
+** link:https://github.com/OP-TED/espd-docs/blob/wgm-reports/modules/ROOT/attachments/annual-seminar/2023_ESPD_Annual_Seminar_Presentation.pdf[ESPD Annual Seminar Presentation]
+
+
 * 2022
 ** xref:2022_ESPD Annual Seminar report.adoc[ESPD Annual Seminar Report]
 ** link:https://www.youtube-nocookie.com/embed/L71pr8VwiS4[ESPD Annual Seminar Video]
 ** link:https://github.com/OP-TED/espd-docs/blob/wgm-reports/modules/ROOT/attachments/SlidoResults.pdf[Slido Results]
-** link:https://github.com/OP-TED/espd-docs/blob/wgm-reports/modules/ROOT/attachments/2022%20ESPD%20Annual%20Seminar.pdf[ESPD Annual Seminar Presentation]
+** link:https://github.com/OP-TED/espd-docs/blob/wgm-reports/modules/ROOT/attachments/annual-seminar/2022_ESPD_Annual_Seminar_Presentation.pdf[ESPD Annual Seminar Presentation] 
 
 
 * 2021
@@ -18,6 +26,11 @@
 
 * **OUC Meetings**
 * 2023
+
+** 2023-10-26
+*** link:https://github.com/OP-TED/espd-docs/blob/wgm-reports/modules/ROOT/attachments/ESPD_OUC_Meetings_Slides_20231026.pdf[32nd OUC Presentation] 
+//*** xref:20231026_OUC meeting report.adoc[32nd OUC Report]
+
 
 ** 2023-09-21
 *** link:https://github.com/OP-TED/espd-docs/blob/wgm-reports/modules/ROOT/attachments/ESPD_OUC_Meetings_Slides_20230921.pdf[31st OUC Presentation] 

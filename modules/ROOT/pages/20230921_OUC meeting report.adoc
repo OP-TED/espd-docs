@@ -97,7 +97,7 @@ The eProcurement Ontology team is working now on eAccess, which includes the ESP
 
 The OUC are asked whether anyone implements TemplateEvidence in the ESPDRequest and if so what for, as it has no attributes. Italy has previously confirmed that they do not use the TemplateEvidence.. 
 
-The element TemplateEvidence is a Requirement. 
+The element TemplateEvidence is related to a Requirement. 
 
 The attendees will investigate with their implementation colleagues if and how this element is used. The Publications Office on its side will open a GitHub issue to allow users to provide their answers. 
 
