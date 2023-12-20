@@ -29,7 +29,7 @@
 :sectnumlevels: 4
 
 
-== Meeting Agenda 
+== Meeting Agenda
 
 . Summary of last meeting on 21 September 2023
 . GitHub issues 
@@ -62,9 +62,25 @@
 
 **Seven of them are being analysed by the ESPD-EDM team to present proposals in future OUC meetings.
 ** Nine of these open issues have a dependency on third parties such as the eCertis or the eForms Teams.
-** Three of them will be presented during this meeting in order to propose solutions for the meeting in January:
+** Four of them will be presented during this meeting in order to propose solutions for the meeting in January:
 
 *** https://github.com/OP-TED/ESPD-EDM/issues/389[#389]: Pre-qualification systems and classification of EOs (Economic Operators). In Part II of the ESPD-EDM the prequalification is added for the Response (declaration). However, in some countries, such as Slovenia, a pre-qualification section is not mandatory, which implies this section is often not used.  In Italy for example the prequalification is used only for procurement concerning 'works'.  
+
+*** https://github.com/OP-TED/ESPD-EDM/issues/388[#388]: Other economic or financial requirements. Part IV Selection Criteria : ESPD-EDM v 2 offers the buyer the possibility to be very specific e.g 'turnover'.  
+
+Discussion on this criterion held with ESPD group is to be found in https://github.com/OP-TED/ESPD-EDM/issues/14[#14]. 
+
+*** https://github.com/OP-TED/ESPD-EDM/issues/381[#381]: Subcontractors not relied upon have to provide information about Selection Criteria. 
+
+In the Regulation entities not relied upon (subcontractors) do not need to fill in the Selection Criteria. 
+
+*** https://github.com/OP-TED/ESPD-EDM/issues/386[#386] Can the evidence group or subgroup be dropped to follow the ESPD regulation? 
+
+The https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32016R0007[Regulation] does not require evidence for some criteria. Discussion to be dealt with in the next OUC meeting. 
+
+== January 2024: issues to be discussed   
+
+* https://github.com/OP-TED/ESPD-EDM/issues/389[#389]: Pre-qualification systems and classification of EOs (Economic Operators). In Part II of the ESPD-EDM the prequalification is added for the Response (declaration). However, in some countries, such as Slovenia, a pre-qualification section is not mandatory, which implies this section is often not used.  In Italy for example the prequalification is used only for procurement concerning 'works'.  
 
 The Regulation allows three answers: yes, no, not applicable. 
 
@@ -74,24 +90,17 @@ eCertis will in the future allow Member States to indicate if a country has qual
 
 The ESPD-EDM Team will check if the pre-qualification section is mandatory and if not, make it optional for a later release (maybe 4.X.X). 'Not applicable' means the country does not have a prequalification system so it does not apply. We should add this option in the ESPD model and maybe create a new code list. 
 
-*** https://github.com/OP-TED/ESPD-EDM/issues/388[#388]: Other economic or financial requirements. Part IV Selection Criteria : ESPD-EDM v 2 offers the buyer the possibility to be very specific e.g 'turnover'. In the financial section it is possible to provide a ratio. In Slovenia the buyer uses this section to add information that is not possible to be filled in any other field. It is proposed to make the field optional. The solution is to add a third option 'Other requirement' for the description.  
+* https://github.com/OP-TED/ESPD-EDM/issues/388[#388]: Other economic or financial requirements. Part IV Selection Criteria : ESPD-EDM v 2 offers the buyer the possibility to be very specific e.g 'turnover'. In the financial section it is possible to provide a ratio. In Slovenia the buyer uses this section to add information that is not possible to be filled in any other field. It is proposed to make the field optional. The solution is to add a third option 'Other requirement' for the description.  
 
 Discussion on this criterion held with ESPD group is to be found in https://github.com/OP-TED/ESPD-EDM/issues/14[#14]. 
 
-*** https://github.com/OP-TED/ESPD-EDM/issues/381[#381]: Subcontractors not relied upon have to provide information about Selection Criteria. 
+* https://github.com/OP-TED/ESPD-EDM/issues/381[#381]: Subcontractors not relied upon have to provide information about Selection Criteria. 
 
 In the Regulation entities not relied upon (subcontractors) do not need to fill in the Selection Criteria. 
 
 In the ESPD model the Selection Criteria must be filled in also for the entities not relied upon (subcontractors). 
 
 The ESPD-EDM team has to come with proposals to modify the model and align it to the legislation and user needs. 
-
-*** https://github.com/OP-TED/ESPD-EDM/issues/386[#386] Can the evidence group or subgroup be dropped to follow the ESPD regulation? 
-
-The https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32016R0007[Regulation] does not require evidence for some criteria. Discussion to be dealt with in the next OUC meeting. 
-
-== January 2024: issues to be discussed   
-
 
 
 == ESPD-EDM & ePO: TemplateEvidence  
