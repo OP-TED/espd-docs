@@ -1,6 +1,6 @@
 = ESPD Exchange Data Model (ESPD-EDM)
 
-include::partial$attributes.adoc[]
+
 
 
 ifndef::imagesdir[:imagesdir: images]
