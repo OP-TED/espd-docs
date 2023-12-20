@@ -5,7 +5,7 @@
 
 [cols=",",",]
 |===
-|Meeting Date/Time: |2023-06-29, 10.00 - 11.30
+|Meeting Date/Time: |2023-09-21, 10.00 - 11.30
 |===
 
 [cols=",",options="header",]
