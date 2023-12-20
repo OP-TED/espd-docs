@@ -18,9 +18,9 @@
 * xref:espd-home::laws.adoc[Laws and Directives]
 
 * [.separated]#**Implementing the ESPD**#
-* xref:espd::imp_roadmap.adoc[Road Map for Implementers]
-* xref:espd::upgrading.adoc[Upgrading your ESPD Version]
-* xref:espd::demo.adoc[Demo ESPD Service Online]
+* xref:espd-home::imp_roadmap.adoc[Road Map for Implementers]
+* xref:espd-home::upgrading.adoc[Upgrading your ESPD Version]
+* xref:espd-home::demo.adoc[Demo ESPD Service Online]
 
 * [.separated]#**Open User Community Reports**#
 * xref:espd-wgm::monthly.adoc[Monthly Reports]
