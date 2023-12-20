@@ -10,4 +10,4 @@ scripts
 .idea/workspace.xml
 .asciidoctor
 .asciidoctorconfig
-workspace.xml
+.workspace.xml
