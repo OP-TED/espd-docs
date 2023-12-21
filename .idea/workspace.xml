@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="506d41f3-406c-4825-9294-adb3b4ed8652" name="Default Changelist" comment="updated .gitignore" />
+    <list default="true" id="506d41f3-406c-4825-9294-adb3b4ed8652" name="Default Changelist" comment="updated business_info docs" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -345,7 +345,21 @@
       <option name="project" value="LOCAL" />
       <updated>1703156488948</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="updated business_info docs">
+      <created>1703169707221</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1703169707221</updated>
+    </task>
+    <task id="LOCAL-00042" summary="updated business_info docs">
+      <created>1703170251860</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1703170251860</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -371,6 +385,7 @@
     <MESSAGE value="updated index.adoc" />
     <MESSAGE value="updated nav.adoc" />
     <MESSAGE value="updated .gitignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated .gitignore" />
+    <MESSAGE value="updated business_info docs" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated business_info docs" />
   </component>
 </project>
