@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="506d41f3-406c-4825-9294-adb3b4ed8652" name="Default Changelist" comment="updated nav.adoc">
+    <list default="true" id="506d41f3-406c-4825-9294-adb3b4ed8652" name="Default Changelist" comment="updated .gitignore">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -290,7 +290,56 @@
       <option name="project" value="LOCAL" />
       <updated>1703062203804</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="updated nav.adoc">
+      <created>1703085013117</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1703085013117</updated>
+    </task>
+    <task id="LOCAL-00034" summary="updated .gitignore">
+      <created>1703085050484</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1703085050484</updated>
+    </task>
+    <task id="LOCAL-00035" summary="updated .gitignore">
+      <created>1703086425799</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1703086425799</updated>
+    </task>
+    <task id="LOCAL-00036" summary="updated .gitignore">
+      <created>1703148246895</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1703148246895</updated>
+    </task>
+    <task id="LOCAL-00037" summary="updated .gitignore">
+      <created>1703148308155</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1703148308155</updated>
+    </task>
+    <task id="LOCAL-00038" summary="updated .gitignore">
+      <created>1703148359010</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1703148359010</updated>
+    </task>
+    <task id="LOCAL-00039" summary="updated .gitignore">
+      <created>1703156356877</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1703156356877</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -311,11 +360,11 @@
     <MESSAGE value="added local css" />
     <MESSAGE value="updated readmap graphic" />
     <MESSAGE value="deleted scripts folder" />
-    <MESSAGE value="updated .gitignore" />
     <MESSAGE value="added feedback and attributes partials" />
     <MESSAGE value="added feedback and attributes partials, added css for wysiwyg" />
     <MESSAGE value="updated index.adoc" />
     <MESSAGE value="updated nav.adoc" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated nav.adoc" />
+    <MESSAGE value="updated .gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated .gitignore" />
   </component>
 </project>
