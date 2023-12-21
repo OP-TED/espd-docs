@@ -9,7 +9,7 @@
 * link:{attachmentsdir}/ESPD_CM_html/index.html[Conceptual Model]
 * xref:espd::devpack.adoc[The Distribution Package]
 
-.separated]#**Information for Business Users**#
+* [.separated]#**Information for Business Users**#
 * xref:espd::business_info.adoc[Introduction]
 * xref:espd::service.adoc[The ESPD Service]
 * xref:espd::service.adoc[Using an ESPD Service]
