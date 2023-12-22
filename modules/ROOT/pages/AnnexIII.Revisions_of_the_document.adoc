@@ -1,0 +1,8 @@
+
+:sectnums:
+[[revisions-of-document,Annex III. Revisions of the Document]]
+
+= Annex III. Revisions of the Document.
+
+Online documentation has been updated according to the changes performed in the release 3.3.0. For more details on the changes included link:https://github.com/OP-TED/ESPD-EDM/releases/tag/untagged-89088af5e114ce1f82f7[Release notes] can be checked.
+

@@ -1,0 +1,27 @@
+= Selection criteria
+
+'_The contracting body shall provide the exclusion grounds and selection criteria for its tendering process as structured information - via ESPD template or structured list of criteria set out in a call for tender._"
+
+This chapter on selection criteria provides details on how to implement the formal requirements set in the link:http://wiki.ds.unipi.gr/pages/viewpage.action?pageId=44367916[eSens ESPD BIS 41 - Single European Document] (Version 2.0.0) document. See specifically these global requirements related to selection criteria: *_br41-002_*, *_tbr070-010_*, *_tbr070-013_*, *_tbr070-018_*.
+
+As for the exclusion criteria (and following requirement link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#tbr070-013[_tbr070-013_]) we have grouped the selection criteria under different categories. The figure below is intended to identify and list these categories for the selection criteria (branches in text boxes), and specific subgroups within each category.
+
+Each branch in this 'criteria classification' corresponds to one data structure that is identical for all the leaves under that branch (e.g. compare the names of the boxes with the tabs and ElementType column of the spreadsheets containing link:{url-tree}/codelists/ESPD-criterion.xlsx[ESPD-criterion data structures]).
+
+image:Selection_criteria_classification.jpg[Selection criteria classification,width=464,height=465]
+
+_Figure 90. Selection criteria classification_
+
+include::5.1_Lot_Management_approach_for_SelectionCriteria.adoc[leveloffset=+1]
+include::5.2_Initial_question_for_the_EO_to_fulfill_or_not_the_criteria.adoc[leveloffset=+1]
+include::5.3_Suitability.adoc[leveloffset=+1]
+include::5.4_Turnovers.adoc[leveloffset=+1]
+include::5.5_Financial_ratios.adoc[leveloffset=+1]
+include::5.6_Risk_indemnity_insurance.adoc[leveloffset=+1]
+include::5.7_Other_economic_or_financial_requirements.adoc[leveloffset=+1]
+include::5.8_References_on_similar_works_deliveries_or_services.adoc[leveloffset=+1]
+include::5.9_Abilities.adoc[leveloffset=+1]
+include::5.10_Subcontracting_proportion.adoc[leveloffset=+1]
+include::5.11_Samples_and_certificates.adoc[leveloffset=+1]
+include::5.12_Quality_assurance.adoc[leveloffset=+1]
+include::5.13_Other_aspects_of_participation_and_selection.adoc[leveloffset=+1]
