@@ -14,11 +14,12 @@
 * xref:espd::service.adoc[The ESPD Service]
 * xref:espd::using.adoc[Using an ESPD Service]
 * xref:espd-home::creating_upgrading.adoc[Creating or upgrading an ESPD Service]
+* xref:espd-home::overview_upgrades.adoc[Overview for Upgrading your Version]
 
 * [.separated]#**Technical Implementation**#
 * xref:espd::xml_technical_handbook.adoc[Technical Information]
 * xref:espd-home::imp_roadmap.adoc[Road Map for Implementers]
-* xref:espd-home::upgrading.adoc[Upgrading your ESPD Version]
+* xref:espd-home::tech_upgrades.adoc[Upgrading your ESPD Version]
 * xref:espd-home::demo.adoc[Demo ESPD Service Online]
 
 * [.separated]#**General Reference**#
