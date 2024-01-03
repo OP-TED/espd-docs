@@ -15,30 +15,69 @@ xref:espd-tech::conceptual.adoc[Click here for the Conceptual Model]
 
 ****
 [.tile]
-.Implementation Road Map
+.The Distribution Package
 ****
-This section describes the Implementation Road Map
+This section describes the Distribution Package
 
-xref:tech_imp_roadmap.adoc[Click here to view the recommended implementation road map]
+xref:tech_dist_pack.adoc[Click here for a description of the Distribution Package]
 
-****
-
-[.tile]
-.Creating an ESPD Service
-****
-A technical guide for creating your ESPD Service
-
-xref:creating.adoc[Click here for information and resources for implementing an ESPD Service ]
 ****
 
 [.tile]
-.Upgrading an ESPD Service
+.The ESPD Request
 ****
-This section contains detailed technical guides and resources for upgrading your ESPD Service
+A technical description of the ESPD Request
 
-xref:tech_upgrades.adoc.adoc[Upgrading your ESPD Version]
+xref:tech_request.adoc[Click here for the ESPD Request ]
 ****
 
+[.tile]
+.Exclusion Criteria
+****
+This section contains detailed technical description of the Exclusion Criteria
+
+xref:tech_exclusion_criteria.adoc[The ESPD Exclusion Criteria]
+****
+
+[.tile]
+.Selection Criteria
+****
+This section contains detailed technical description of the Selection Criteria
+
+xref:tech_selection_criteria.adoc[The ESPD Selection Criteria]
+****
+
+[.tile]
+.Validation
+****
+This section contains detailed technical information on the tools provided and methods of validating your ESPD Service implementation
+
+xref:tech_validation.adoc[Validating an ESPD Service Implementation]
+****
+
+[.tile]
+.Code Lists Catalog
+****
+This section provides information on codelists used in the ESPD and some code list examples.
+
+xref:tech_codelist.adoc[Code Lists used in the ESPD Service]
+****
+
+[.tile]
+.Business Rules
+****
+This section contains information on the relevant Business rules
+
+xref:tech_busrules.adoc[The ESPD Business Rules]
+****
+
+[.tile]
+.Technical Glossary
+****
+This section contains a Technical Glossary
+
+xref:tech_glossary[Technical Glossary]
+****
 --
 
 
