@@ -1,4 +1,4 @@
-:doctitle: The European Single Procurement Document
+doctitle: The European Single Procurement Document
 ifndef::imagesdir[:imagesdir: images]
 ifndef::downloaddir[:downloaddir: download]
 //:toc:
