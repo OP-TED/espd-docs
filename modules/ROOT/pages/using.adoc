@@ -2,7 +2,7 @@
 
 Filling in the forms: Buyers/ Sellers
 
-Reusing data: downloading an uploading documents
+Reusing data: downloading and uploading documents
 
 Locations for supporting documents/ evidence
 
