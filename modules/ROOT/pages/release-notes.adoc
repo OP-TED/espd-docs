@@ -1,4 +1,4 @@
-:doctitle: Release Notes
+doctitle: Release Notes
 :doccode: espd-v3.3.0-prod-002
 :author: NPJ
 :authoremail: nicole-anne.paterson-jones@ext.ec.europa.eu

@@ -1,9 +1,0 @@
-:doctitle: How to use the ESPD
-
-Filling in the forms: Buyers/ Sellers
-
-Reusing data: downloading an uploading documents
-
-Locations for supporting documents/ evidence
-
-Managing Supplier groups
