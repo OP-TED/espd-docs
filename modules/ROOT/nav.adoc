@@ -17,8 +17,8 @@
 * xref:espd-bus::overview_upgrades.adoc[Overview for Upgrading your Version]
 
 * [.separated]#**Technical Implementation**#
-* xref:espd-tech::xml_technical_handbook.adoc[Technical Information]
-* xref:espd-tech::imp_roadmap.adoc[Road Map for Implementers]
+* xref:espd-tech::index.adoc[Technical Information]
+* xref:espd-tech::tech_imp_roadmap.adoc[Road Map for Implementers]
 * xref:espd-tech::tech_upgrades.adoc[Upgrading an ESPD Version]
 * xref:espd-tech::demo.adoc[Demo ESPD Service Online]
 
