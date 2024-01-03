@@ -1,5 +1,9 @@
 :doctitle: The ESPD Service
 
+== What is an ESPD Service?
+
+An ESPD srvice is an online portal that public buyers in the EU use, to publish their purchasing requirements (criteria) and collect responses and evidence from prospective suppliers of their suitability to supply. It is designed to enforce compliance with EU procurement legislation and , streamline the process,while enabling participation in public procurement by different types of suppliers.
+
 == What does an ESPD Service look like?
 
 === Examples of current ESPDs:
