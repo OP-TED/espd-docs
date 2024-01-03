@@ -2,8 +2,21 @@
 
 Filling in the forms: Buyers/ Sellers
 
+* screen shots from internal training
+* searching for eNotice number
+
+
 Reusing data: downloading and uploading documents
+
+* Saving an espd request/ response locally
+* uploading and reusing an espd request/ response
+
 
 Locations for supporting documents/ evidence
 
+* where to store evidence files
+* file formats?
+
 Managing Supplier Groups
+
+* form filling in and evidence upload.

@@ -1,12 +1,20 @@
 :doctitle: The ESPD Service
 
-=== What does an ESPD Service look like?
+== What does an ESPD Service look like?
 
-Examples of current ESPDs
+=== Examples of current ESPDs:
 
-What is seen on the page(s)?
+There are a number of ESPD Services available, provided by EU member states or commercial ESPD service providers. The list can be accessed https://forum-vergabe.de/wp-content/uploads/Downloads/espd_service_provider_list_v21.pdf[here].
 
-What goes on in the background?
+=== What needs to be filled in on the ESPD Service page(s)?
+
+Firstly, what is filled in depends on whether you are a Buyer or a Supplier. In both cases, you have the option of filling in everything from scratch, or uploading a mostly filled in XML document in which you only need to add or change the details of anything different to the previously saved document you are uploading. The first time you interact with an ESPD service, you can save the document locally and use it in subsequent procedures. This applies to both Buyers and Suppliers.
+
+Buyers will fill in your requirements according to  needs and EU (and national) laws and directives; Prospective suppliers will respond.
+
+The information in the ESPD service will be linked to an eForms notice by a number which is generated when a Buyer fills in the eNotice publishing their wish to purchase goods or services (tender). The Buyer fills in the details in the ESPD service and prospective Suppliers then respond, having found the number by searching the tender notices for buyers who want the kinds of service and goods they are qualified to provide.
+
+=== What goes on in the background?
 
 
 

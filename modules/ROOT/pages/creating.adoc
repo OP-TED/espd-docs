@@ -1,14 +1,29 @@
 :doctitle: Creating/ upgrading an ESPD Service
 
-There are several ESPD Services available in the EU, why would my country need its own one?
+*There are several ESPD Services available in the EU, why would my country need its own one?*
 
-Where do I start?
+* national criteria over and above EU ones
+* language: ESPD in local language: participation for everyone
 
-What skills do I need?
+*Where do I start?*
 
-What support and resources are available to me?
+* read resources/ TED ESPD GitHub and Documentation
+* Join the OUC
 
-Why should I upgrade to a later version?
+*What skills do I need?*
 
-How much time will it take and how much will it cost? (financial support/ funds available?)
+* team/ programmers?
+
+*What support and resources are available to me?*
+
+* TED Resources
+* Funding?
+
+*Why should I upgrade to a later version?*
+
+* later versions are more comprehensive, detailed, flexible, relect up to date EU laws/ directives.
+
+*How much time will it take and how much will it cost to implement an ESPD Service?*
+
+* depends on team size and skill level?
 
