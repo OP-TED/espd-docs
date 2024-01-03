@@ -9,9 +9,9 @@
 
 ////
 [.tile]
-.model2owl Documentation (to be hidden until content ready)
+.Part 1 (to be hidden until content ready)
 ****
-The model2owl Project consists of a set of tools for transforming a UML v2.5 model from its XMI v2.5.1 serialisation into a formal ontology.
+Part 1...
 
 //xref:xxx@EPO::model2owl.adoc[update when ready]
 Updated documents coming soon.
