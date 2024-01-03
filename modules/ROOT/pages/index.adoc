@@ -48,6 +48,14 @@ xref:tech_selection_criteria.adoc[The ESPD Selection Criteria]
 ****
 
 [.tile]
+.The ESPD Response
+****
+A technical description of the ESPD Response
+
+xref:tech_response.adoc[Click here for the ESPD Response]
+****
+
+[.tile]
 .Validation
 ****
 This section contains detailed technical information on the tools provided and methods of validating your ESPD Service implementation
@@ -76,7 +84,7 @@ xref:tech_busrules.adoc[The ESPD Business Rules]
 ****
 This section contains a Technical Glossary
 
-xref:tech_glossary[Technical Glossary]
+xref:tech_glossary.adoc[Technical Glossary]
 ****
 --
 
