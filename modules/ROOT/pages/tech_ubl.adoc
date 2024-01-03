@@ -1,0 +1,32 @@
+= Adoption of UBL-2.3
+
+UBL, developed by the Organization for the Advancement of Structured Information Standards, is a royalty-free library of standard electronic Extensible Markup Language (XML) business documents. It is designed to plug directly into existing business, legal, auditing, and records management practices, and to operate within a standard business framework such as ISO 15000 (ebXML) to provide a complete, standards-based infrastructure that can extend the benefits of existing Electronic Data Interchange (EDI) systems to businesses of all sizes.
+
+UBL is also included in the ICT Standards for Procurement (link:https://joinup.ec.europa.eu/collection/ict-standards-procurement[ICT Standards for Procurement]): the rules on European standardisation allow the European Commission to identify information and communication technology (ICT) technical specifications - that are not national, European or international standards - to be eligible for referencing in public procurement.
+
+UBL is a specific used in some Member States and by the EU institutions, namely the European Commision. UBL is also referred to in the Commission implementing decision of 31 October 2014 on the identification of Universal Business Language version 2.1 for referencing in public procurement (link:https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32014D0771&from=EN[COM Decision 2014/771/EU]).
+
+Technical resources and tools are freely available for its use and repurpose by the Member States, Service Providers, EC and any other stakeholders. Especially interesting and largely used are the open source tools and artefacts referred by the OASIS UBL-TC, such as link:https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=codelist[Genericode] , link:https://schematron.com/[ISO Schematron] and link:https://www.cranesoftwrights.com/[Crane Softwright].
+
+The adoption of the new UBL version (UBL 2.3) is related to the alignment between ESPD and eForms, which will ensure and improve the interoperability between models.
+
+= UBL-2.3 Documents and libraries
+
+UBL-2.3 defines thousands of different information components and dozens of documents. This guide describes and illustrates only those elements from UBL-2.3 that are actually used by the eESPD. Thus the ESPD-EDM reuses only a small set of those components and only 2 documents: *QualificationApplicationRequest* (for the ESPD Request) and *QualificationApplicationResponse* (for the ESPD Response).
+
+UBL-2.3 distributes two sets of XSD schemas: see folders xsd and xsdrt of the UBL distribution package. The xsd folder contains the schemata fully documented (with dictionary entry names, definitions, examples, etc.); whilst the xsdrt schemata are not likewise documented and are frequently used in production environments (*rt* stands for "run-time").
+
+The previous ESPD-EDM versions used its own libraries where Criterion and Evidence-related aggregate and components were defined (components prefixed with cac-ccv:, cac-cev, cbc-ccv and cbc-cev).
+
+This new version uses components exclusively defined by UBL-2.3 in two main libraries: Common Aggregate Components (file UBL-CommonAggregateComponents-2.3.xsd.xsd) and Common Basic Components (UBL-CommonBasicComponents-2.3.xsd.xsd).
+
+The usual prefix used to identify Common Aggregate Components is cac:. The prefix for Common Basic Components is cbc:.
+
+All the materials developed by UBL-2.3 Technical Committee can be accessed here: link:https://github.com/oasis-tcs/ubl-2.3-artefacts[here].
+
+= UBL-2.3 and TOOP Requirements
+
+During the development of ESPD-EDM some requirements arose from TOOP related to the Evidence class. The aforementioned requirements that can be found in the following GitHub link:https://github.com/ESPD/ESPD-EDM/issues/277[issue], are fully mappable to the UBL 2.3 Schema.
+
+To check the mapping, please access to these link:{attachmentsdir}/assets/TOOPRequirements_UBL_2.3.xlsx[TOOPRequirements_UBL_2.3.xlsx] or link:{attachmentsdir}/assets/TOOPRequirements_UBL_2.3.ods[TOOPRequirements_UBL_2.3.ods].
+
