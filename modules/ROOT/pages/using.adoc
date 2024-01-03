@@ -6,4 +6,4 @@ Reusing data: downloading and uploading documents
 
 Locations for supporting documents/ evidence
 
-Managing Supplier groups
+Managing Supplier Groups
