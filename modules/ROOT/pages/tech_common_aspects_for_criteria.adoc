@@ -13,7 +13,7 @@ image:Criterion_UML_diagram.jpg[Criterion - UML diagram,width=518,height=345]
 
 _Figure 33. Criterion - UML diagram_
 
-= General behavior
+== General behavior
 
 *Notice that*:
 
@@ -109,7 +109,7 @@ link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1
 See XML examples in the sections about exclusion and selection criteria.
 
 
-= Legislation
+== Legislation
 
 The XSD schema below shows, in blue, the elements of the component cac:Legislation used to point at the legislation related to the criterion.
 
@@ -180,7 +180,7 @@ link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41ESPDV2.1.
 
 See examples in sections about exclusion and selection criteria.
 
-== XML Example
+=== XML Example
 
 [source,xml]
 ----
@@ -215,7 +215,7 @@ _<!-- ... elements omitted for brevity -->_
 . The official long title of the legislation is expected in the Title.
 . The short name that is commonly used to refer to the legislation is expected in the Description.
 
-= Groups of properties
+== Groups of properties
 
 This XSD diagram shows the sub-components of a group of criteria:
 
@@ -287,7 +287,7 @@ See also the spreadsheet link:{url-tree}/codelists/ESPD-criterion.xlsx[ESPD-crit
 * How the codes ON*, ONTRUE and ONFALSE are used.
 . You will notice in the examples that the elements cbc:Name and cbc:Description of groups and subgroups of properties are never used. As a common practice the ESPD documents use instead a first cac:TenderingCriterionProperty of type CAPTION (i.e. an informative property that act as a 'label').
 
-= Properties
+== Properties
 
 [cols=",",]
 |===
@@ -430,7 +430,7 @@ Caption (i.e. a 'label'), specific MS or buyer requirement (e.g. 'Number of refe
 . See examples in sections about exclusion and selection criteria.
 . You will notice in the examples that the element cbc:Name is never used. Instead the cac:Description is sufficient for all the ESPD purposes.
 
-= Mock-ups
+== Mock-ups
 
 Chapters *4 Exclusion Criteria* and *5. Selection Criteria* describe in detail the different *types* of exclusion and selection criteria defined and used in the ESPD-EDM. By *type* of criterion we refer to criteria that share common characteristics, namely how they are structured. Each type of criterion is presented from three perspectives:
 
@@ -441,7 +441,7 @@ Chapters *4 Exclusion Criteria* and *5. Selection Criteria* describe in detail t
 . *XML Implementation*: Each mock-up (or pair of Buyer + EO mock-ups) represent the structure represented in the data structure spread-sheet and in the supplied XML example. Whilst the mock-up and XML example are quite self-explanatory, to understand the value of the data structure spread-sheet needs to be explained; which is the mission of this very next sub-section below.
 
 
-= Data Structures
+== Data Structures
 
 The ESPD-EDM 'criterion' entity is a very flexible and business-agnostic structure. This flexibility provides a convenient way to represent any type of criteria. The counterpart is that the semantics of the criteria needs to be delimited based on codes, identifiers and design rules.
 
@@ -520,7 +520,7 @@ If you examine any of the XML examples provided in this document you will observ
 ** A REQUIREMENT_GROUP or REQUIREMENT-SUBGROUP may contain either REQUIREMENT_SUBGROUPS and/or QUESTION_SUBGROUPS;
 ** The only possibility in the UBL-2.3 model to distinguish whether a group or a subgroup of criterion properties contains REQUIREMENT(s) or QUESTION(s) is to look into the value of the cac:TenderingCriterionProperty/cbc:TypeCode. The list of possible codes are the ones of the above mentioned Code List "link:{url-tree}/codelists/gc/CriterionElementType.gc[CriterionElementType]".
 
-= XML examples and tools
+== XML examples and tools
 
 The fact of presenting the data structures as a spread-sheet book had an additional reason: *to use the spread-sheet as an elementary prototype tool to generate the XML instances of the criteria for the ESPD Request and ESDP Response documents*.
 
@@ -554,7 +554,7 @@ The following feature *is NOT implemented* in the first set of transformation XS
 
 * The Criteria from the ESPD Request *are not* copied in the ESPD Response document. But the XML examples in the link:{url-tree}/xml-examples/[xml-examples folder].
 
-= GUI control elements
+== GUI control elements
 
 The ESPD-EDM specification includes two sets of data elements (codes) that help software applications control how to show the Graphic User Interfaces (GUI) dealing with ESPD Documents. These elements can be seen as ''processing instructions''.
 
@@ -869,9 +869,9 @@ image:Use_CAPTION.jpg[Annotation with processing instructions of one Criterion D
 
 _Figure 48. Annotation with processing instructions of one Criterion Data Structures_
 
-= Short Tag Name and Implicit Numbering
+== Short Tag Name and Implicit Numbering
 
-== Short Tag Name
+=== Short Tag Name
 
 Tag Name is made of capital letters only.
 
@@ -911,7 +911,7 @@ _Table 25. Correspondence between "criterion element", "UBL element" and "Short 
 |ADDITIONAL_DESCRIPTION_LINE |cbc:Description (namely in cac:TenderingCriterion)
 ////
 
-== Implicit Numbering
+=== Implicit Numbering
 
 There is no explicit numbering of criterion descriptive elements in the ESPD project.
 

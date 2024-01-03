@@ -1,10 +1,10 @@
 = The ESPD Request Document
 
-= ESPD Request Business Requirements
+== ESPD Request Business Requirements
 
 The ESPD-EDM models the business and information requirements in alignment with the works developed by e-Sens, which uses the identifier *Trdm070* to refer to the business requirements regarding the ESPD Request transaction. See formal information requirements related to the ESPD Request transaction in the document link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1.0-BusinessRequirements:ESPDrequesttransaction(Trdm070)[_Business Requirements: ESPD request transaction (Trdm070)_], by e-Sens.
 
-= ESPD Request XSD Schema
+== ESPD Request XSD Schema
 
 The ESPD-EDM uses the UBL-2.3 document named QualificationApplicationRequest.xsd XSD Schema. This schema can be found under the folder link:{url-tree}/ubl-2.3/xsdrt/maindoc[ubl-2.3/xsdrt/maindoc] (or the equivalent documented xsd folder).
 
@@ -16,7 +16,7 @@ image:Qualification_Application_Request-2.3.jpg[QualificationApplicationRequest-
 
 _Figure 11: QualificationApplicationRequest-2.3 main elements._
 
-= ESPD Request cardinalities
+== ESPD Request cardinalities
 
 As you can see the UBL-2.3 Schema is quite flexible as, except for a few cases practically all the elements are optional.
 
@@ -34,7 +34,7 @@ If you compare both figures you will observe that:
 
 The cardinality constraints added by the ESPD are not defined in the XSD Schema. In order to control these constraints the ESPD-EDM uses link:https://schematron.com/[ISO Schematron] assertions. The ESPD-EDM distribution package provides Schematron schemata and CVA files for the validation of the XML instances (folder link:{url-tree}/validation[_/validation_]).
 
-= Root elements
+== Root elements
 
 The table below lists the elements that are expected in the ESPD Request and provides details on the cardinalities and usage of those elements.
 
@@ -162,7 +162,7 @@ In ESPD the contracting party information will come from eForms. Which also uses
 
 
 [[lot_management, Lot Management]]
-= Lot Management
+== Lot Management
 
 The ESPD includes a change regarding how lots are managed. This is the outcome of the alignment with eForms.
 
@@ -238,7 +238,9 @@ The following XML example shows how it is done:
 </cac:TenderingCriterionProperty>
 
 <!--- Rest of the elements of the criterion have been eliminated for the sake of brevity -->
+
 ----
+
 In Economic Operator's side it is different, as can be read in the image above there will be as many ESPD Response as Lots or Group of Lots the EO wishes to tender for. If the EO wants to participate in three Lots, the EO will need to fill in 3 ESPD Response. For more details on this, please see section ESPD Response.
 
 == Lots identifiers:
@@ -251,7 +253,7 @@ image:Lot_ID_schema.jpg[Lot Identifiers according to eForms schema,width=541,hei
 
 _Figure 14: Lot Identifiers according to eForms schema_
 
-= EU and notice publications
+== EU and notice publications
 
 [cols=",",]
 |===
@@ -452,7 +454,7 @@ The XML snippet below illustrates how to use the cac:AdditionalDocumentReference
 . Notice how the schemeAgencyID is used in this example to specify that the national Agency that created this reference to the national publication (e.g. "PLACE" to refer to the ID of the national electronic board where the CN was published). The pattern of the ID is the one created by the Spanish buyer.
 . In this case the code NOJCN means 'Contract Notice (CN) published on a National Government Official Journal' (see file link:{url-tree}/codelists/gc/DocRefContentType.gc[/codelists/gc/DocRefContentType.gc] in the distribution package).
 
-= Contracting Body
+== Contracting Body
 
 == Related information requirements
 
@@ -635,7 +637,7 @@ _Table 11. Contact of the contracting body, expected elements_
 |===
 
 
-= Service Provider
+== Service Provider
 
 [cols=",",]
 |===
