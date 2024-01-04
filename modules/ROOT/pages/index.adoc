@@ -6,7 +6,7 @@
 [.tile]
 .ESPD 3.3.0: Latest Release
 ****
-ESPD-EDM version 3.3.0 corrected minor errors in the data structure and code lists, as requested by the Member States and other stakeholders.
+ESPD-EDM version 3.3.0 corrected minor errors in the data structure and code lists, as requested by Member States and other stakeholders.
 
 xref:espd::release_notes.adoc[Click here to read the version 3.3.0 details]
 
