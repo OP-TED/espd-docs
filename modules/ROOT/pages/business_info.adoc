@@ -116,7 +116,7 @@ The Supplier responds to each of the above criteria.
 
 NOTE: The Buyer does not fill in this section.
 
-The Supplier provides information where the Buyer or contracting entity has specified objective and non-discriminatory criteria or rules, in part 4,to be applied. This serves to limit the number of candidates invited to tender, or to take part in a dialogue within a two-phased procedure.
+The Supplier provides information where the Buyer or contracting entity has specified objective and non-discriminatory criteria or rules, in part 4, to be applied. This serves to limit the number of candidates invited to tender, or to take part in a dialogue within a two-phased procedure.
 
 === Part 6: Concluding statements
 
