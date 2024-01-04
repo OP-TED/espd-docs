@@ -1,6 +1,6 @@
 = The ESPD Response Document
 
-= Business requirements specification
+== Business requirements specification
 
 The ESPD-EDM models the business and information requirements in alignment with the works developed by e-Sens, which uses the identifier *Trdm092* to refer to the business requirements regarding the ESPD Response transaction. See formal information requirements related to the ESPD Response transaction in the document link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1-ESPDResponsetransaction(Trdm092)[_BIS 41 - European Single Procurement Document (Version 2.0.0)_], by e-Sens.
 
@@ -14,7 +14,7 @@ This last requirement has a technical reason: each response of an economic opera
 Examples: the buyer requires a minimum of 3 references to works similar to the ones being procured, but the EO decides to add 5. The ESPD REquest will contain a criterion "For works contracts: performance of works of the specified type" with the structure prepared for three references. The ESPD Response will add two more structures to contain the additional references to that criterion. The ESPD will add (at the end of the file) five responses related to the same criterion, each response will point at five different properties of the criterion. This is described and illustrated in more detail in the section "Providing additional responses" below.
 
 
-= ESPD Response XSD Schema
+== ESPD Response XSD Schema
 
 For the ESPD Response, the ESPD-EDM uses the UBL-2.3 document named QualificationApplicationResponse.xsd XSD Schema. This schema can be found under the folder link:{url-tree}/ubl-2.3/xsdrt/maindoc[ubl-2.3/xsdrt/maindoc] (or the equivalent documented xsd folder).
 
@@ -32,7 +32,7 @@ image:Qualification_Application_Response_XSD_Schema.jpg[QualificationApplication
 _Figure 191. QualificationApplicationResponse XSD Schema, global view_
 
 
-= ESPD Response cardinalities
+== ESPD Response cardinalities
 
 As you can see the UBL-2.3 Schema is quite flexible as, except for a few cases practically all the elements are optional.
 
@@ -53,7 +53,7 @@ The cardinality constraints added by the ESPD are not defined in the XSD Schema.
 The European Commission (EC) link:https://ec.europa.eu/isa2/awards_en[ISA2 Programme] provides an link:https://joinup.ec.europa.eu/asset/itb/description[Interoperability Testbed] where Stakeholders can freely test these validation artefacts.
 
 
-= Root elements
+=== Root elements
 
 The table below lists the elements that are expected in the ESPD Response and provides details on the cardinalities and usage of those elements.
 
@@ -196,7 +196,7 @@ In the ESPD Response it is also compulsory to make reference to the ESPD Request
 
 |===
 
-== XML example
+=== XML example
 
 The XML snippet below shows how the beginning of an ESPD Response XML instance looks like. For a complete instance of an ESPD Response XML document see the the example files in the dist/xml folder: or link:{url-tree}/xml-examples/ESPD-Response.xml[ESPD-Response.xml].
 
@@ -260,7 +260,7 @@ _<!-- ... rest of document removed for brevity -->_
 ----
 
 
-= Reference to publications and to the ESPD Request
+== Reference to publications and to the ESPD Request
 
 [cols=",",]
 |===
@@ -293,7 +293,7 @@ In the ESPD Response you may also add references to:
 * Evidences that are global for the whole Response. This is not recommended though. Evidences should be as much particular of the Criterion as possible.
 * Other documents, e.g. maps, diagrams, or descriptive documents to complement the references about works, supplies or services.
 
-== Expected elements
+=== Expected elements
 
 [cols=",",options="header",]
 
@@ -388,9 +388,9 @@ _Table 28. External Reference_
 |===
 
 
-= Economic Operator
+== Economic Operator
 
-== Related information requirements
+=== Related information requirements
 
 See formal requirements related to the economic operators in the e-Sens site: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1-tbr092-001[(_tbr092-001, _tbr092-008_)].
 
@@ -451,7 +451,7 @@ Therefore in the ESPD-EDM, the information about the economic operator is spread
 . The UBL-2.3 *cac:EconomicOperatorParty* component; and
 . In *criteria data structures*: following the solution adopted for Version ESPD-EDM, the ESPD-EDM defines several criteria classified as CRITERION.OTHER.EO_DATA.* (where the * refers to different branches and leaves of a different structures about the economic operator (e.g. SHELTERED_WORKSHOP, TOGETHER_WITH_OTHERS, etc.). The XML instances use criteria components (UBL-2.3 cac:TenderingCriterion) to structure these data. The sub-sections below cover both.
 
-== XSD Schemas
+=== XSD Schemas
 
 cac:EconomicOperatorParty
 
@@ -1408,7 +1408,7 @@ _Economic operator's representatives_
 . Firts line of the cac:Description element reserved to hold the 'representation' role the natural person plays for this economic operator.
 
 
-= Answering QUESTIONs
+== Answering QUESTIONs
 
 [cols=",",]
 |===
@@ -1438,7 +1438,7 @@ In the same data structures *REQUIREMENT*(s) and *QUESTION*(s) do not have a UUI
 . In the UBL-2.3 model the answers are separated from inside the criterion. This differs from the previous models of the ESPD-EDM. The motivation for this separation was to allow drafting *QualificationApplicationResponse* documents without having to copy every criterion from the *QualificationApplicationRequest*, having in mind other scenarios different to the *European* Single Procurement Document. This could be used, perhaps, by public administrations that would like to use the UBL-2.3 XSDs for "under-the-threshold contract" ESPDs. Even in that situation the *QualificationApplicationResponse* would need to refer to the specific *QualificationApplicationRequest* instance (so the UUIDs are exactly the ones that were automatically generated for that instance). Remember that this is not possible in the ESPD-EDM, as there is a specific requirement asking to *copy* every criterion from the QualificationApplicationRequest into the QualificationApplicationResponse; see this business requirement at the beginning of the section.
 . If the UUID of cac:TenderingCriterionProperty was 'fixed' (as are the groups and subgroups) one answer could refer to more than one REQUIREMENT or QUESTION; and this is not permissible (see business requirement above, one criterion property → one answer, one answer → one criterion property).
 
-== XSD Schema
+=== XSD Schema
 
 To answer a QUESTION the ESPD-EDM uses the UBL-2.3 component cac:TenderingCriterionResponse. The expected elements are highlighted in blue in the figure below:
 
@@ -1477,13 +1477,13 @@ image:cacEvidenceSupplied_XSD_element.jpg[cac:EvidenceSupplied XSD element,width
 
 _Figure 240. cac:EvidenceSupplied XSD element_
 
-== Mock-ups and data structures
+=== Mock-ups and data structures
 
 The answers to QUESTION(s) are provided in the example mock-ups of the previous sections about how the buyer specify REQUIREMENT(s) and QUESTION(s), and how the economic operator adds or removes instances of elements (such as data on the economic operator, references to similar works and services, etc. Please refer to those mock-ups and compare the values shown in the fields reserved for the EO to answer and compare those values with the ones in the example XML snippets below.
 
 Responses are not associated to ESPD custom data structures. All the values regarding an answer are always placed in one instance of the UBL-2.3 data element cac:TenderingCriterionResponse.
 
-== Expected Elements
+=== Expected Elements
 
 [cols=",",options="header",]
 
@@ -1691,7 +1691,7 @@ More precisely, a number, rate or percent used as a reply to the criterion requi
 
 |===
 
-== Request/Response XML Example
+=== Request/Response XML Example
 
 To start with a simple example let us re-take the last case presented in section *_Reduction of candidates_*.
 
@@ -1775,7 +1775,7 @@ _Reduction of Candidates - (QUESTION(s) in the ESPD-Request)_
 . The type of data expected here is a free text bythe EO (for the Response, a DESCRIPTION maps to the UBL-2.3 element cbc:Description, which is an extension of the xsd:String).
 
 
-== XML example (Responses to the QUESTION(s))
+=== XML example (Responses to the QUESTION(s))
 
 This other XML snippet below shows the responses to the two QUESTION(s) expressed in the ESPD-Request for this criterion (the block related to evidences is omitted for the sake of clarity and brevity):
 
@@ -1834,15 +1834,15 @@ all the information about its classification and documentation about its financi
 
 
 
-= Evidences
+== Evidences
 
 
 
-== Related information requirements
+=== Related information requirements
 
 See formal requirements related to evidences in the e-Sens site: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1-tbr092-017[(_tbr092-017_)].
 
-== XSD Schema
+=== XSD Schema
 
 Remember that evidences are indirectly linked to responses based on the identifier of the evidence: in the response, the element cac:EvidenceSupplied/cbc:ID contains the identifier set in /QualificationApplicationResponse/cac:Evidence/cbc:ID. See XML example below; see also the example XML file link:{url-tree}/xml-examples/ESPD-Response.xml[ESPD-Response.xml] for an example.
 
@@ -1858,7 +1858,7 @@ image:cacDocumentReference_inside cacEvidence_XSD_diagram.jpg[cac:DocumentRefere
 
 _Figure 242. cac:DocumentReference inside cac:Evidence XSD diagram_
 
-== Mock-ups and data structures
+=== Mock-ups and data structures
 
 In principle only a few elements are kept in the ESPD Response document about an evidence: its Identifier, a URL from where to access its content, a Reference/Code, a Confidentiality indicator, and the Issuer.
 
@@ -1877,7 +1877,7 @@ _Duplicity of the Issuer_
 The ESPD-EDM uses always the one inside the document reference to refer to the issuer of the evidence (and of the document that 'is' the evidence). Thus the element used in the ESPD is cac:Evidence/cac:DocumentReference/cac:IssuerParty/cac:PartyIdentification/cbc:ID.
 ====
 
-== Expected (and other) Elements
+=== Expected (and other) Elements
 
 This list below enumerates the elements of cac:Evidence that could be used in (that make sense for) an ESPD Response. Notice though that the current versions of the ESPD-EDM only use the few elements mentioned above: ID, URL, Reference/Code, Confidentiality level and Issuer.
 
@@ -1982,7 +1982,7 @@ _Table 45. Elements expected from the 'cac:Evidence/cac:DocumentReference' eleme
 
 |===
 
-== XML Examples
+=== XML Examples
 
 *Example 1: Two different evidences for two criteria*
 

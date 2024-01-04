@@ -1,10 +1,10 @@
 = Validation
 
-= ISO Schematron
+== ISO Schematron
 
 Schematron is a rule-based validation language to specify validation processes against XML documents. ISO Schematron is an ISO (ISO/IEC 19757-3:2006) and open standard. Please visit the link:http://www.schematron.com/[ISO Schematron] web-site for the technical specification and details.
 
-== ESPD Business Rules
+=== ESPD Business Rules
 
 The ESPD-EDM uses Schematron to validate business rules, the business requirements taken as input for these rules are specified in the link:http://wiki.ds.unipi.gr/display/ESPDInt[ESPDint Business Document].
 
@@ -22,7 +22,7 @@ image:Non-codelist_business_rules.jpg[Non-code list business rules,width=591,hei
 
 The validation of code lists is explained in sections below.
 
-== Schematron Architecture
+=== Schematron Architecture
 
 ISO Schematron executes the validations in two stages:
 
@@ -35,7 +35,7 @@ ISO Schematron executes the validations in two stages:
 
 image:Architecture_non-codelist_validation.jpg[Architecture for non-code list validation,width=567,height=284]
 
-== What does the SCH file contain?
+=== What does the SCH file contain?
 
 [arabic]
 . *Set of rules* specifying the context (the element(s) and/or attribute(s) which the assertions affect);
@@ -43,7 +43,7 @@ image:Architecture_non-codelist_validation.jpg[Architecture for non-code list va
 
 image:SCH_file_example.jpg[SCH file example,width=617,height=194]
 
-== Execution
+=== Execution
 
 As a basis of the implementation, it has been taken into account:
 
@@ -57,14 +57,14 @@ This example describes the execution of the validation process using the link:ht
 image:Execution_validation_process.jpg[Execution of the validation process,width=528,height=284]
 
 
-= Code list validation Architecture
+== Code list validation Architecture
 
 Business rules related to code list validates:
 
 image:Codelist_business_rules.jpg[Code list business rules,width=600,height=325]
 
 
-== Architecture for Code List validation
+=== Architecture for Code List validation
 
 The validation of the code lists needs an extra step on the process before executing the Schematron process. This is because it needs link:https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=codelist[Genericode] (GC) as input files.
 
@@ -81,7 +81,7 @@ The validation of the code lists needs an extra step on the process before execu
 
 image:Architecture_codelist_validation.jpg[Architecture for code list validation,width=750,height=350]
 
-== What does the SCH file contain?
+=== What does the SCH file contain?
 
 [arabic]
 . Association between one or more elements of the XML and one or more code list (specified in the Genericodes).
@@ -91,7 +91,7 @@ The implementation of the CVA file has the following structure:
 
 image:CVA_example.jpg[CVA example,width=600,height=258]
 
-== Execution
+=== Execution
 
 As a basis of the implementation, it has been taken into account:
 
@@ -105,7 +105,7 @@ This example describes the execution of the validation process using the link:ht
 image:Execution _validation process_codelists.jpg[Execution of the validation process in code lists,width=600,height=279]
 
 
-= ESPD Validation Architecture
+== ESPD Validation Architecture
 
 The validation of a ESPD XML has the following life-cycle:
 
@@ -120,7 +120,7 @@ image:ESPD_Schematorn_lyfe-cycle.jpg[ESPD Schematorn lyfe-cycle,width=370,height
 
 image:Validation_Process.jpg[Validation Process,width=600,height=416]
 
-== ESPD Request
+=== ESPD Request
 
 [arabic]
 . *XSD Validation* against QualificationApplicationRequest-2.3.xsd
@@ -140,7 +140,7 @@ image:Validation_Process.jpg[Validation Process,width=600,height=416]
 .. Business rules related to the procurer: 05 ESPD Req Procurer BR.sch
 .. Specific business rules: 05 ESPD Req Specific BR.sch
 
-== ESPD Response
+=== ESPD Response
 
 [arabic]
 . *XSD Validation* against UBL-QualificationApplicationResponse-2.3.xsd
@@ -162,7 +162,7 @@ image:Validation_Process.jpg[Validation Process,width=600,height=416]
 .. Specific business rules for economic operators registered in a pre-qualification system: 05 ESPD Resp Qualification BR.sch
 .. Specific business rules depending on the role: 05 ESPD Resp Role BR.sch
 
-= UUID Criterion Validation
+== UUID Criterion Validation
 
 Each Criterion is defined in e-Certis and must use the *Universally Unique Identifier (UUID)* supplied by e-Certis:
 
@@ -211,7 +211,7 @@ The validation of Tendering Criterion Property (cac:TenderingCriterionProperty e
 . cbc:ID and cbc:Description elements are mandatory, although their values are not validated;
 . If cbc:TypeCode value is "CAPTION" or "REQUIREMENT", cbc:ValueDataTypeCode value must be "NONE".
 
-= Interoperability testbed
+== Interoperability testbed
 
 The European Commission (EC) link:https://ec.europa.eu/isa2/awards_en[ISA2 Programme] provides an link:https://joinup.ec.europa.eu/asset/itb/description[Interoperability Testbed] where Stakeholders can freely test these validation artefacts.
 
