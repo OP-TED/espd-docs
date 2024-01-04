@@ -3,23 +3,23 @@
 
 == v3.3.0 (July 2023) 
 
-The ESPD-EDM version 3.2.0 focused mainly on correcting minor errors in the data structure and code lists, as suggested by the Member States and stakeholders via the GitHub repositories issues workspace.
+ESPD-EDM version 3.2.0 focused on correcting minor errors in the data structure and code lists, as suggested by the Member States and stakeholders via the GitHub repositories issues workspace.
 
-The ESPD-EDM version 3.3.0 continues the correction of minor errors in the data structure and code lists.
+ESPD-EDM version 3.3.0 continued in the same vein, in the correction of minor errors in the data structure and code lists.
 
 
 === ESPD-EDM Criterion file - Data Structure 
 
 Several issues relating to the data structure of the ESPD-EDM Criterion (taxonomy) file were resolved.
 
- * **Fix Jira issue - "Update criterion files with codes of EU Vocabularies for v3.3.0"**
+ * **Fixed Jira issue - "Update criterion files with codes of EU Vocabularies for v3.3.0"**
      ** In criterion C27, the element code "autorisation" has been replaced with the code "authorisation".
      ** In criterion C23, the element code "misinterpr" has been replaced with the code "misrepresent". 
      ** In criterion C23, the Name contents have been updated as well. "Guilty of misinterpretation" has been replaced by "Guilty of misrepresentation". 
      ** The worksheet "EG-Misinterpretation" has been renamed "EG-Misrepresentation". 
 
-  * **Fix GitHub issue https://github.com/OP-TED/ESPD-EDM/issues/368[#368] - Typing errors in taxonomy**
-      ** Typing errors such as double spaces, duplicated words, and spelling issues, have been fixed.
+  * **Fixed GitHub issue https://github.com/OP-TED/ESPD-EDM/issues/368[#368] - Typing errors in taxonomy**
+      ** Typing errors such as double spaces, duplicated words, and spelling issues, were corrected.
 
 
 === ESPD-EDM XSLT files
@@ -27,8 +27,8 @@ Several issues relating to the data structure of the ESPD-EDM Criterion (taxonom
 Changes to the ESPD-EDM XSLT files:
 
 * ** Attributes values in the xslt files for the xml samples updated**
-        ** SchemeVersionID value updated to “3.3.0” from “3.2.0”.
-        ** ListVersionID value updated to “3.3.0” from “3.2.0”.
+        ** SchemeVersionID value updated from “3.2.0” to “3.3.0”.
+        ** ListVersionID value updated from “3.2.0” to “3.3.0”.
         ** The ESPD version in all comments updated to ESPD-V3.x.x
 
 * **Updates to the "ESPDRequest-Annotated.xslt" file (missing element/attribute or incorrect value)**
@@ -47,8 +47,8 @@ Changes to the ESPD-EDM XSLT files:
       ** **Fixed GitHub issue https://github.com/OP-TED/ESPD-EDM/issues/390[#390] - PERCENTAGE Questions: Artifact Examples and Shematrons Inconsistency**: cbc:ResponseQuantity/@unitCode replaced by cbc:ResponseNumeric/@format
       ** cbc:ResponseCode/@listAgencyID for  the codelist "occupation" 
 
- * **Updating the xslt file "EconomicOperatorData.xslt" (missing element/attribute or incorrect value)** 
-       ** **Fix GitHub issue https://github.com/OP-TED/ESPD-EDM/issues/387[#387] - Improper listVersionID attribute value in cbc:DocumentTypeCode**: cac:Party/cbc:IndustryClassificationCode/@listVersionID for  the codelist "economic-operator-size" 
+ * **Updated the xslt file "EconomicOperatorData.xslt" (missing element/attribute or incorrect value)**
+       ** **Fixed GitHub issue https://github.com/OP-TED/ESPD-EDM/issues/387[#387] - Improper listVersionID attribute value in cbc:DocumentTypeCode**: cac:Party/cbc:IndustryClassificationCode/@listVersionID for  the codelist "economic-operator-size"
 
 * **Updated the "Legislation.xslt" file (missing element/attribute or incorrect value)**
 
@@ -57,18 +57,18 @@ Changes to the ESPD-EDM XSLT files:
      
 * **Converted samples from Excel to XML format with the Updated XSLT**
 
-The resulting updated XSLT files were then used to generate the XML samples now available in the GitHub folder https://github.com/OP-TED/ESPD-EDM/tree/master/xml-examples[xml-examples].
+The updated XSLT files were then used to generate the XML samples now available in the GitHub folder https://github.com/OP-TED/ESPD-EDM/tree/master/xml-examples[xml-examples].
 
 
 === Code Lists
 
 ESPD version was updated in the technical code list files to match the current version (specific files can be found in the folder https://github.com/OP-TED/ESPD-EDM/tree/v3.3.0/codelists/gc[codelists/gc]), for tags: Version, CanonicalURI, CanonicalVersionURI, LocationURI.
 
-The label "ESPD-EDMv3.3.0" was added to the related sheet "ProfileExecutionID" (in the last row of the table) of the Excel file https://github.com/OP-TED/ESPD-EDM/blob/master/\_\_ESPDTeam\_\_/ESPD-CodeLists.xlsx[ESPD-CodeLists.xlsx] .
+The label "ESPD-EDMv3.3.0" was added to the related sheet, "ProfileExecutionID", (in the last row of the table) of the Excel file https://github.com/OP-TED/ESPD-EDM/blob/master/\_\_ESPDTeam\_\_/ESPD-CodeLists.xlsx[ESPD-CodeLists.xlsx] .
 
 * **Fixed GitHub issue https://github.com/OP-TED/ESPD-EDM/issues/387[#387] - Improper listVersionID attribute value in cbc:DocumentTypeCode**
 
-This github issue led to a broader review of the code lists relating to the value of the attribute "listVersionID". This attribute value was found to be incorrect in several code lists (DocRefContentType, Language, EoRoleType, Country, EconomicOperatorSize), and in various artefacts (CodeLists, XSLT, XML, Schematron). The updates were made in both the XSLT, and Schematron, files:
+This GitHub issue led to a broader review of the code lists relating to the value of the attribute "listVersionID". This attribute value was found to be incorrect in several code lists (DocRefContentType, Language, EoRoleType, Country, EconomicOperatorSize), and in various artefacts (CodeLists, XSLT, XML, Schematron). Updates were made in both the XSLT and Schematron files:
 
      ** XSLT files:  RootElements-Annotated.xslt, From-REQUEST-to-RESPONSE.xslt, ESPDRequest-Annotated.xslt, Legislation.xslt, EconomicOperatorData.xslt, ContractingAuthorityData-RequestResponse.xslt
      ** Schematron files: "./common/sch/01-ESPD-common-cl-attributes.sch", "./common/sch/01-ESPD-codelist-values.sch", "./common/sch/04-ESPD-common-other-br" 
@@ -99,7 +99,7 @@ The updated online documentation is available at https://docs.ted.europa.eu/home
 
 * The attribute value for "listVersionID" has been updated across the online documentation for the relevant code lists following the fix of GitHub issue https://github.com/OP-TED/ESPD-EDM/issues/387[#387] .
 
-* Datatype "Percentage" relating to UBL element "ResponseQuantity" has been updated across the online documentation now relating to the UBL element "ResponseNumeric" following the fix of GitHub issue https://github.com/OP-TED/ESPD-EDM/issues/390[#390].
+* Datatype "Percentage" relating to UBL element "ResponseQuantity" has been updated across the online documentation, now relating to the UBL element "ResponseNumeric", following the fix of GitHub issue https://github.com/OP-TED/ESPD-EDM/issues/390[#390].
 
 * The code value or text relating to "autorisation" was updated to "authorisation" across the online documentation.
 
