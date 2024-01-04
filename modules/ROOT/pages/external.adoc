@@ -5,8 +5,27 @@
 :docdate: October 2023
 
 
-EU Vocabularies
+:doctitle: External Resources
+:doccode: espd-main-prod-006
+:author: NPJ
+:authoremail: nicole-anne.paterson-jones@ext.ec.europa.eu
+:docdate: October 2023
 
-Validation: the online testbed
+
+== EU Vocabularies
+
+EU Vocabularies. EuroVoc is a multilingual, multidisciplinary thesaurus covering the activities of the EU, the European Parliament in particular. It contains terms in 23 official EU languages, plus in three languages of countries which are candidates for EU accession. (https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/eurovoc)
+
+== Validation: the online Testbed
+
+Validation is the process by which xml files are tested for compliance against the schematron rules (and ultimately the Directive). Essentially, If the directive asks for specific information to be provided, there is a rule that checks whether the ESPDRequest includes this and determines whether the document is (compliant) or not. There are two options that member state developers can use to validate their xml documents:
+
+Using the online validation facility, the https://www.itb.ec.europa.eu/espd/upload[“testbed”], can used by developers to upload and check their documents.
+
+Note: The testbed link is also in the validation GitHub folder readme.md.
+
+image:form/testbed.png[]]
+
+
 
 
