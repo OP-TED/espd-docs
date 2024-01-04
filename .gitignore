@@ -10,5 +10,5 @@ scripts
 .idea/workspace.xml
 .asciidoctor
 .asciidoctorconfig
-.workspace.*
+workspace
 .idea
