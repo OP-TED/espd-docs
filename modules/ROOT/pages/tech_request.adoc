@@ -238,12 +238,11 @@ The following XML example shows how it is done:
 </cac:TenderingCriterionProperty>
 
 <!--- Rest of the elements of the criterion have been eliminated for the sake of brevity -->
-
 ----
 
 In Economic Operator's side it is different, as can be read in the image above there will be as many ESPD Response as Lots or Group of Lots the EO wishes to tender for. If the EO wants to participate in three Lots, the EO will need to fill in 3 ESPD Response. For more details on this, please see section ESPD Response.
 
-== Lots identifiers:
+=== Lot identifiers
 
 This version of the ESPD changes the form to identify the Lots and Group of Lots taking the eForms format. This changes is done towards the interoperability of both models.
 
@@ -262,7 +261,7 @@ _Figure 14: Lot Identifiers according to eForms schema_
 
 ESPD conformant software applications will have to provide the means for the user to supply references to EU and notice publications about the procurement procedure, and notably about the Notices to which the ESPD is related.
 
-== Mock-up
+=== Mock-up
 
 The Figure below is a mock-up representation of how to collect the data expected to reference publications on official gazettes or journals. This mechanism can also be used for contracts below the threshold, obviously.
 
@@ -270,7 +269,7 @@ image:Publications_mock-up.jpg[Publications mock-up,width=500,height=459]
 
 _Figure 14. Publications, mock-up_
 
-== XSD Schema
+=== XSD Schema
 
 The ESPD EDM uses the UBL component cac:AdditionalDocumentReference to allow the inclusion of references to documents that they might consider relevant, and amongst them the reference to the Contract Notice on the TED (for above-the-threshold contracts) and to possible Notices on national journals and boards.
 
@@ -286,7 +285,7 @@ image:Associated_class cacExternalReference_XSD diagram.jpg[Associated class cac
 
 _Figure 16. Associated class cac:ExternalReference, XSD diagram_
 
-== Expected elements
+=== Expected elements
 
 As you can see from the XSD Schema the cac:DocumentReference class has a rich data structure. However, to refer to publications such as the TED and national publications, the ESPD most expects at most the following data:
 
@@ -377,7 +376,7 @@ _Table 7. External Reference_
 
 |===
 
-== XML Example
+=== XML Example
 
 The XML snippet below illustrates how to use the cac:AdditionalDocumentReference in the ESPDRequest XML document to refer to a Contract Notice published in TED and on a national procurement board:
 
@@ -456,11 +455,11 @@ The XML snippet below illustrates how to use the cac:AdditionalDocumentReference
 
 == Contracting Body
 
-== Related information requirements
+=== Related information requirements
 
 See formal requirements related to the contracting authorities in the e-Sens site: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1.0-tbr070-001[_tbr070-001_]*
 
-== Mock-up
+=== Mock-up
 
 In principle, the ESPD-EDM asks for a few data about the procurer (i.e. the buyer, body or entity). The essential (compulsory) data for the contracting body are namely the one aimed to identify it, i.e. its official name and the country. The figure below represents a possible GUI interface for these two data. However the UBL specification provides many other data elements some of which may be interesting to include in the ESPD, notably data about the means to contact the contracting body (see below the list of elements possible in the ESPD).
 
@@ -470,7 +469,7 @@ image:Procurer_identification_mockup.jpg[Procurer identification,width=600,heigh
 
 _Figure 17. Data about the procurer, mock-up_
 
-== XSD Schema
+=== XSD Schema
 
 The UBL-2.3 model provides a component that fits the purpose of holding data about the procurer: the common aggregate component cac:ContractingParty.
 
@@ -496,7 +495,7 @@ image:cacContact_XSD_Schema.jpg[cac:Contact, XSD Schema,width=407,height=253]
 
 _Figure 21. cac:Contact, XSD Schema_
 
-== Expected elements
+=== Expected elements
 
 [cols=",",options="header",]
 
@@ -650,7 +649,7 @@ The ESPD allows the provision of data about the service provider who produced th
 
 Since the 2.1.1 does not include the cac:ServiceProvider as a 'document root component'. Instead, it uses the UBL-2.3 cac:ContractingParty/cac:Party associated class cac:ServiceProviderParty.
 
-== XSD Schema
+=== XSD Schema
 
 image:cacServiceProvider_XSD_Schema.jpg[cac:ServiceProvider XSD Schema,width=566,height=453]
 
@@ -670,7 +669,7 @@ image:cacService_provider_Party_elements.jpg[service provider's 'Party' elements
 
 _Figure 23. cac:ServiceProvider/cac:Party elements expected for the service provider_
 
-== Expected elements
+=== Expected elements
 
 [cols=",",options="header",]
 
@@ -719,7 +718,7 @@ _Table 12. Service provider, expected elements_
 
 |===
 
-== XML example
+=== XML example
 
 The XML snippet below shows how an example of how to supply the expected data for the service provider.
 
