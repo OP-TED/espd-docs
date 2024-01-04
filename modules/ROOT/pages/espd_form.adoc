@@ -2,7 +2,7 @@
 
 The ESPD form is divided into sections. For orientation in the form filling process, progress tracking is provided so the user always knows what parts are already completed and what parts are still missing:
 
-image::../images/form/of1.png[]
+image::form/of1.png[]
 
 The ESPD form is divided into the following sections:
 
@@ -135,12 +135,12 @@ image::../images/form/of25.png[]
 
 Part V applies only for the response document (ESPD Response) that the EO needs to fulfil (except when the EO is an entity, the lead entity does not rely on in order to meet the selection criteria). Furthermore, the economic operator should only provide information where the contracting authority or contracting entity has specified the objective and non-discriminatory criteria or rules to be applied in order to limit the number of candidates that will be invited to tender or to conduct a dialogue.
 
-image::../images/form/of26.png[]
+image::form/of26.png[]
 
 == Part 6: Concluding statements, which contain the legal statements of the document.
 CA and EO view: In the response document, the EO shall also provide the date, place and signature.
 
-image::../images/form/of27.png[]
+image::form/of27.png[]
 
 Once the form is filled in, the user has several options:
 
