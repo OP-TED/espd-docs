@@ -4,17 +4,61 @@
 :authoremail: nicole-anne.paterson-jones@ext.ec.europa.eu
 :docdate: October 2023
 
-include::business_info.adoc[]
-
-
-////
-[.tile]
-.model2owl Documentation (to be hidden until content ready)
-****
-The model2owl Project consists of a set of tools for transforming a UML v2.5 model from its XMI v2.5.1 serialisation into a formal ontology.
-
-//xref:xxx@EPO::model2owl.adoc[update when ready]
-Updated documents coming soon.
-****
-////
+[.tile-container]
 --
+[.tile]
+.Introduction to the ESPD for Business Users
+****
+The ESPD...
+
+xref:espd-bus::business_info.adoc[Information for Business Users]
+
+****
+[.tile]
+.The ESPD Service
+****
+This section introduces the ESPD Service
+
+xref:espd-bus::service.adoc[Click here to read about the ESPD service]
+
+****
+
+[.tile]
+.The ESPD online form
+****
+This section runs through the ESPD online form from both the buyer and the supplier perspectives
+
+xref:espd-bus::espd_form.adoc[Click here to view the ESPD online form]
+****
+
+[.tile]
+.Using the ESPD Service
+****
+This section describes how to the ESPD is used by buyers and suppliers for a tender
+
+xref:using.adoc[See how to use an ESPD Service]
+****
+
+[.tile]
+.Creating an ESPD Service
+****
+This section gives a rationale for creating an ESPD service and explains the advantages
+
+xref:creating.adoc[See the advantages of creating an ESPD Service]
+****
+
+[.tile]
+.Upgrading an ESPD Service version
+****
+A business overview for upgrading your ESPD Service version
+
+xref:overview_upgrades.adoc[Click here for upgrading your ESPD version]
+****
+--
+
+
+
+
+
+
+

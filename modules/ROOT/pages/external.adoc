@@ -11,6 +11,12 @@ EU Vocabularies. EuroVoc is a multilingual, multidisciplinary thesaurus covering
 
 == Validation: the online Testbed
 
+Validation is the process by which xml files are tested for compliance against the schematron rules (and ultimately the Directive). Essentially, If the directive asks for specific information to be provided, there is a rule that checks whether the ESPDRequest includes this and determines whether the document is (compliant) or not. There are two options that member state developers can use to validate their xml documents:
 
+Using the online validation facility, the https://www.itb.ec.europa.eu/espd/upload[“testbed”], can used by developers to upload and check their documents.
+
+Note: The testbed link is also in the validation GitHub folder readme.md.
+
+image:form/testbed.png[]]
 
 
