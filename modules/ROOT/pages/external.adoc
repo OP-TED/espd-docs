@@ -5,8 +5,12 @@
 :docdate: October 2023
 
 
-EU Vocabularies
+== EU Vocabularies
 
-Validation: the online testbed
+EU Vocabularies. EuroVoc is a multilingual, multidisciplinary thesaurus covering the activities of the EU, the European Parliament in particular. It contains terms in 23 official EU languages, plus in three languages of countries which are candidates for EU accession. (https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/eurovoc)
+
+== Validation: the online Testbed
+
+
 
 
