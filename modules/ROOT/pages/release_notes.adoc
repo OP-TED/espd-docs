@@ -55,16 +55,16 @@ Changes to the ESPD-EDM XSLT files:
       ** **Fixed GitHub issue https://github.com/OP-TED/ESPD-EDM/issues/387[#387] - Improper listVersionID attribute value in cbc:DocumentTypeCode**: cac:Language/cbc:LocaleCode/@listVersionID for  the codelist "language"
       ** cac:Language/cbc:LocaleCode/@listAgencyID for  the codelist "language" 
      
-* **Converted samples from Excel to XML format with the Updated XSLT**
+* **Converted samples from Excel to XML format with the updated XSLT**
 
-The updated XSLT files were then used to generate the XML samples now available in the GitHub folder https://github.com/OP-TED/ESPD-EDM/tree/master/xml-examples[xml-examples].
+The updated XSLT files were then used to generate the XML samples now available in the GitHub folder, https://github.com/OP-TED/ESPD-EDM/tree/master/xml-examples[xml-examples].
 
 
 === Code Lists
 
 ESPD version was updated in the technical code list files to match the current version (specific files can be found in the folder https://github.com/OP-TED/ESPD-EDM/tree/v3.3.0/codelists/gc[codelists/gc]), for tags: Version, CanonicalURI, CanonicalVersionURI, LocationURI.
 
-The label "ESPD-EDMv3.3.0" was added to the related sheet, "ProfileExecutionID", (in the last row of the table) of the Excel file https://github.com/OP-TED/ESPD-EDM/blob/master/\_\_ESPDTeam\_\_/ESPD-CodeLists.xlsx[ESPD-CodeLists.xlsx] .
+The label "ESPD-EDMv3.3.0" was added to the sheet, "ProfileExecutionID", (in the last row of the table) of the Excel file https://github.com/OP-TED/ESPD-EDM/blob/master/\_\_ESPDTeam\_\_/ESPD-CodeLists.xlsx[ESPD-CodeLists.xlsx] .
 
 * **Fixed GitHub issue https://github.com/OP-TED/ESPD-EDM/issues/387[#387] - Improper listVersionID attribute value in cbc:DocumentTypeCode**
 
