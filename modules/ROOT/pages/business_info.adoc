@@ -6,9 +6,23 @@ ifndef::downloaddir[:downloaddir: download]
 
 
 == An Introduction for Business Users
+The three main phases of the public procurement process are:
+
+* Pre-tendering, which includes the preparation and planning of the procedure;
+* Tendering, which includes:
+** The publication of the contract notice by the Contracting Authority (CA) or buyer;
+** The submission of tenders by the Economic Operators (EOs) or suppliers;
+** The opening of tenders;
+** The qualification of suppliers by applying the exclusion grounds and selecting suitable tenderers based on the selection criteria set by the CA during the preparation of the procedure and published in the contract notice;
+** The evaluation of bids, based on the award criteria set by the CA;
+** The award of the contract.
+* Post-tendering, with the contract implementation.
+
+The ESPD is specifically concerned with qualification of suppliers step above.
+
+The European Single Procurement Document (ESPD) is a electronic form for preliminary evidence in a public procurement procedure and is used in the EU eProcurement process. The form enables buyers to state the selection criteria suppliers have to meet, and evidence of lawfulness and integrity they must provide, for their tender to be considered by the buyer. The ESPD has two parts, a request and a response.
 
 
-The European Single Procurement Document (ESPD) is a electronic form for preliminary evidence in a public procurement procedure and is used in one of the steps of the EU eProcurement process. The form enables Buyers to state the selection criteria Suppliers (Economic Operators) have to meet, and evidence of lawfulness and integrity they must provide, for their tender to be considered by the Buyer. The ESPD has two parts, a request and a response.
 
 == Legal framework
 [.text-left]
@@ -52,8 +66,8 @@ The ESPD Service is oriented therefore to these two types of users:
 
 Economic Operators can play different roles, catered for in the ESPD-EDM, within a procurement procedure:
 
-* *Sole Tenderer:* sole Economic Operator participating in the procurement procedure by itself;
-* *Group Member:* In case of Consortium, Joint Venture or other type of groups, the Economic Operator can participate as a:
+* *Sole Tenderer:* sole economic operator participating in the procurement procedure by itself;
+* *Group Member:* In case of Consortium, Joint Venture or other type of groups, the economic operator can participate as a:
 **	*Group Leader:* the leader of the group;
 ** *Group Member (not leader)* of the group.
 ** *Other entity (relied upon):* An entity upon which the main contractor, the group, or another subcontractor, relies on order to meet the selection criteria;
@@ -63,7 +77,7 @@ Economic Operators can play different roles, catered for in the ESPD-EDM, within
 == Parts of the ESPD
 
 
-Each section is filled in by one or both parties, and in the case of a response involving a Supplier group, each Supplier entity within the group might be required to fill in a part of the response.
+Each section is filled in by one or both parties, and in the case of a response involving a supplier group, each supplier entity within the group might be required to fill in a part of the response.
 
 === Part 1: Buyer and procedure information
 
@@ -81,19 +95,18 @@ NOTE: The Buyer does not fill in this section.
 
 *The Supplier fills in:*
 
-Information concerning the Economic Operator, where they are required to provide:
+Information concerning the economic operator, where they are required to provide:
 
-* Information about the Economic Operator;
-* Information about representatives of the Economic Operator;
+* Information about the economic operator;
+* Information about representatives of the economic operator;
 * Information about reliance on the capacities of other entities;
-* Information concerning subcontractors on whose capacity the Economic Operator does not rely.
+* Information concerning subcontractors on whose capacity the economic operator does not rely.
 
 === Part 3: Mandatory information on Exclusion Grounds (required by law)
 
 *The Buyer fills in:*
 
 Exclusion grounds, where the Buyer is required to review
-
 * Grounds relating to criminal convictions;
 * Grounds relating to the payment of taxes or social security contributions;
 * Grounds relating to insolvency, conflicts of interests or professional misconduct;
@@ -103,7 +116,7 @@ NOTE: The Supplier must respond to all the above questions.
 
 === Part 4: Selection criteria
 
-The Buyer indicates which selection criteria will be applied regarding Supplier:
+The Buyer indicates which selection criteria will be applied regarding supplier:
 
 * suitability;
 * economic and financial standing;
@@ -114,18 +127,18 @@ The Supplier responds to each of the above criteria.
 
 === Part 5: Reduction of qualified candidates
 
-NOTE: The Buyer does not fill in this section.
+NOTE: The buyer does not fill in this section.
 
-The Supplier provides information where the Buyer or contracting entity has specified objective and non-discriminatory criteria or rules, in part 4, to be applied. This serves to limit the number of candidates invited to tender, or to take part in a dialogue within a two-phased procedure.
+The Supplier provides information where the buyer or contracting entity has specified objective and non-discriminatory criteria or rules, in part 4,to be applied. This serves to limit the number of candidates invited to tender, or to take part in a dialogue within a two-phased procedure.
 
 === Part 6: Concluding statements
 
-The Supplier declares that the information submitted under Parts 2 - 5 is accurate and true, that they are able to provide certificates and/ or other forms of documentary evidence listed for verification, and consents to grant the Buyer access to the online location where this evidence is stored.
+The Supplier declares that the information submitted under Parts 2 - 5 is accurate and true, that is able to provide certificates and/ or other forms of documentary evidence listed, for verification, and consents to grant the buyer access to where the documentary evidence is stored.
 
-The information required in the response document from Economic Operators depends on their role. This is summarised in the table below:
+The information required in the response document from economic operators depends on their role. This is summarised in the table below:
 
 |===
-| |Sole Tenderer / Group Leader |Group Member |Other Entity relied upon |Subcontractor
+|Table 1 |Sole Tenderer / Group Leader |Group Member |Other Entity relied upon |Subcontractor
 
 
 |*Part 1*
@@ -135,13 +148,13 @@ Identify ESPD request and other procurement information
 
 |*Part 2*
 
-Information about the Economic Operator	|X	|X	|X	|X
+Information about the economic operator	|X	|X	|X	|X
 
-|Information about representatives of the Economic Operator	  |X	|X	|X	|X
+|Information about representatives of the economic operator	  |X	|X	|X	|X
 
 |Information about reliance on the capacities of other entities	|X	|  | |
 
-|Information concerning subcontractors on whose capacity the Economic Operator does not rely	|X	| | |
+|Information concerning subcontractors on whose capacity the economic operator does not rely	|X	| | |
 
 |*Part 3*
 Exclusion grounds	|X	|X	|X	|X
