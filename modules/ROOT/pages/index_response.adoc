@@ -1,4 +1,4 @@
-ifndef::imagesdir[:imagesdir: images]
+fndef::imagesdir[:imagesdir: images]
 
 == *ESPD Response XML Instantiation Guide*
 '''

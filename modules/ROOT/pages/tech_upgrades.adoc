@@ -1,1 +1,1 @@
-:doctitle: Detailed Technical Guides for Version Upgrades
+doctitle: Detailed Technical Guides for Version Upgrades

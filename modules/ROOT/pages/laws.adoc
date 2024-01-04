@@ -9,3 +9,5 @@ https://eur-lex.europa.eu/legal-content/EN/LSU/?uri=celex%3A32014L0024[The  2014
 
 The Commission Implementing https://eur-lex.europa.eu/eli/reg_impl/2016/7/oj[Regulation (EU) 2016/7] established the standard form for the ESPD.
 
+The electronic version of the ESPD became mandatory in April 2018.
+

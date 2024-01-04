@@ -1,4 +1,4 @@
-:doctitle: The ESPD Service
+doctitle: The ESPD Service
 
 === What does an ESPD Service look like?
 
