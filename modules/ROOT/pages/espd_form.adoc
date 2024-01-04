@@ -12,33 +12,33 @@ The ESPD form is divided into the following sections:
 
 * Information about publication
 
-image::../images/form/of2.png[]
+image::form/of2.png[]
 
 * Identity of the procurer
 
-image::../images/form/of3.png[]
+image::form/of3.png[]
 
 * Information about the procurement procedure
 
-image::../images/form/of4.png[]
+image::form/of4.png[]
 
 == Part 2: Information concerning the economic operator, which contains:
 
 * Information about the economic operator, including whether it is a Micro, a Small or a Medium-Sized Enterprise, whether it is registered on an official list of approved economic operators or does it have an equivalent certificate, whether it is participating in the procurement procedure together with others, etc.
 
-image::../images/form/of5.png[]
+image::form/of5.png[]
 
 * Information about representatives of the economic operator
 
-image::../images/form/of6.png[]
+image::form/of6.png[]
 
 * Information about reliance on the capacities of other entities in order to meet the selection criteria.
 
-image::../images/form/of7.png[]
+image::form/of7.png[]
 
 * Information concerning subcontractors on whose capacity the EO does not rely (this is, when the EO intends to subcontract any share of the contract to third parties but does not rely on the capacities of these third parties in order to meet the selection criteria)
 
-image::../images/form/of8.png[]
+image::form/of8.png[]
 
 Part 2 applies only to the response document (ESPD Response) that the EO needs to fulfil.
 
@@ -50,86 +50,86 @@ Part 2 applies only to the response document (ESPD Response) that the EO needs t
 
 CA view: All options are ticked by default and the CA cannot remove the ticks, since they come from the Directive.
 
-image::../images/form/of9.png[]
+image::form/of9.png[]
 
 EO view:
 
-image::../images/form/of10.png[]
+image::form/of10.png[]
 
 * B: Grounds relating to the payment of taxes or social security contributions (based on Article 57(2) of Directive 2014/24/EU)
 
 CA view: All options are ticked by default and the CA cannot remove the ticks, since they come from the Directive.
 
-image::../images/form/of11.png[]
+image::form/of11.png[]
 
 EO view:
 
-image::../images/form/of12.png[]
+image::form/of12.png[]
 
 * C: Grounds relating to insolvency, conflicts of interests or professional misconduct (based on Article 57(4) of Directive 2014/24/EU)
 
 CA view: All options are ticked by default, but the CA can remove the ticks in case any of the options is not required for this specific procedure.
 
-image::../images/form/of13.png[]
+image::form/of13.png[]
 
 EO view:
 
-image::../images/form/of14.png[]
+image::form/of14.png[]
 
 * D: Purely national exclusion grounds, which depend on the regulation of each country.
 
 CA view: Where there are national exclusion grounds, the CA has to decide whether to include them or not in each procedure. By default, options related to purely national exclusion ground are not ticket, and the CA needs to manually select those that have to be included.
 
-image::../images/form/of15.png[]
+image::form/of15.png[]
 
 * EO view:
 
-image::../images/form/of16.png[]
+image::form/of16.png[]
 
 == Part 4: Selection criteria, which contains:
 * A: Suitability (based on Article 58(2) of Directive 2014/24/EU)
 
 CA view: All options are ticked by default, but the CA can manually remove the ticks of the options not required for this specific procedure.
 
-image::../images/form/of17.png[]
+image::form/of17.png[]
 
 EO view:
 
-image::../images/form/of18.png[]
+image::form/of18.png[]
 
 * B: Economic and financial standing (based on Article 58(3) of Directive 2014/24/EU)
 
 CA view: All options are ticked by default, but the CA can manually remove the ticks of the options not required for this specific procedure.
 
-image::../images/form/of19.png[]
+image::form/of19.png[]
 
 EO view:
 
-image::../images/form/of20.png[]
+image::form/of20.png[]
 
 * C: Technical and professional ability (based on Article 58(4) of Directive 2014/24/EU)
 
 CA view: All options are ticked by default, but the CA can manually remove the ticks of the options not required for this specific procedure.
 
-image::../images/form/of21.png[]
+image::form/of21.png[]
 
 EO view:
 
-image::../images/form/of22.png[]
+image::form/of22.png[]
 
 * D: Quality assurance schemes and environmental management standards (based on Article 62(2) of Directive 2014/24/EU)
 
 CA view: All options are ticked by default, but the CA can manually remove the ticks of the options not required for this specific procedure.
 
-image::../images/form/of23.png[]
+image::form/of23.png[]
 
 EO view:
 
-image::../images/form/of24.png[]
+image::form/of24.png[]
 
 Global indication for all selection criteria (instead of options A-D):
 
-image::../images/form/of25.png[]
+image::form/of25.png[]
 
 == Part 5: Reduction of the number of qualified candidates.
 
@@ -144,8 +144,8 @@ image::form/of27.png[]
 
 Once the form is filled in, the user has several options:
 
-image::../images/form/of28.png[]
+image::form/of28.png[]
 
 There is an “Overview” option available to both the CA when preparing the ESPD Request and the EO when preparing the ESPD Response, which allows the user to review from a single page all the information provided in the form. If everything is correct, the ESDP document can be downloaded:
 
-image::../images/form/of29.png[]
+image::form/of29.png[]
