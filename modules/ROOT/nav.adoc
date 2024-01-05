@@ -10,7 +10,7 @@
 * link:https://github.com/OP-TED/ESPD-EDM/tree/master[The Distribution Package]
 
 * [.separated]#**Information for Business Users**#
-* xref:espd-bus::index.adoc[Home]
+* xref:espd-bus::index.adoc[Business Information]
 * xref:espd-bus::service.adoc[The ESPD Service]
 * xref:espd-bus::using.adoc[Using an ESPD Service]
 * xref:espd-bus::creating.adoc[Creating an ESPD Service]
