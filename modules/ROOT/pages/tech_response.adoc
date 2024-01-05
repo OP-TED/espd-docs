@@ -1417,7 +1417,7 @@ _Economic operator's representatives_
 
 == Answering QUESTIONs
 
-[cols=",",]
+[cols="1,2",]
 |===
 |*REQUIREMENT* a|
 The ESPD Response must include one criterion response (one answer), and only one, linked to one, and only one, criterion property (one QUESTION) copied from the ESPD Request into the ESPD Response document; and to each criterion property added by the economic operator to the ESDP Response.
@@ -1426,7 +1426,7 @@ One criterion response, though, may contain a list of response values of the *sa
 
 |===
 
-[cols=",",]
+[cols="1,2",]
 |===
 |*REQUIREMENT* |If the response to a criterion property is marked as *confidential* the evidences linked to this criterion property must also be treated as confidential.
 |===
@@ -1504,7 +1504,7 @@ _Table 40. Elements expected in an answer to a criterion property_
 |*Context of use*: |The economic operator uses it in the ESPD Response document to answer a QUESTION. link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1-tbr92-018[_tbr92-018, tbr92-007, tbr92-005, tbr92-006_].
 |===
 
-[cols=",,,,",options="header",]
+[cols="1,1,1,3,3"]
 |===
 |*Components* |*Type* |*Card* |*Description* |*Requirements*
 |*cbc:ID* |Identifier |0..1 |A language-independent token, e.g., a number, that allows to identify a criterion response uniquely as well as allows to reference the criterion response in other documents. A criterion response describes how an economic operators fulfills an specific criterion. a|
@@ -1514,14 +1514,16 @@ _Table 40. Elements expected in an answer to a criterion property_
 
 *Rule scope*: Common (BR-TCR-05, BR-OTH-02)
 
-|*cbc:ValidatedCriterionPropertyID* |Identifier |1 |A cross-reference to the criterion propertys which is validated thorugh this response expressed as an identifier. a|
+|*cbc:ValidatedCriterion
+PropertyID* |Identifier |1 |A cross-reference to the criterion properties which is validated through this response expressed as an identifier. a|
 *Information Requirement*: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1-tbr92-018[_tbr92-018, tbr92-007, tbr92-005, tbr92-006_]
 
 *Rule*: This ID MUST point at one of the TenderingCriterionProperty/cbc:ID that were included in the Request document.
 
 *Rule scope*: Common (BR-RESP-30, BR-RESP-40, BR-RESP-60, BR-RESP-60-S10, BR-RESP-60-S20, BR-TCR-01, BR-TCR-03, BR-LEAD-10-S20, BR-LEAD-10-S30)
 
-|*cbc:ConfidentialityLevelCode* |Code |0..1 |A code specifying the confidentiality level of the given response for this criterion. a|
+|*cbc:Confidentiality
+LevelCode* |Code |0..1 |A code specifying the confidentiality level of the given response for this criterion. a|
 *Information Requirement*: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1-tbr92-018[_tbr92-018, tbr92-007, tbr92-005, tbr92-006_]
 
 *Rule*: If the value is true, all the evidences associated to this response becomes also confidential.
@@ -1572,7 +1574,7 @@ _Table 41. Elements expected in the 'cac:ApplicablePeriod' class_
 |*Context of use*: |A class for the economic operator to specify the start date and the end-date when the expected answer to a criterion property is a lapse of time; link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1-tbr92-018[_tbr92-018_].
 |===
 
-[cols=",,,,",options="header",]
+[cols="1,1,1,3,3",options="header",]
 |===
 |*Components* |*Type* |*Card* |*Description* |*Requirements*
 |*cbc:StartDate* |Date |0..1 |The date on which this period begins. a|
@@ -1594,11 +1596,12 @@ _Table 41. Elements expected in the 'cac:ApplicablePeriod' class_
 |*Definition*: |A reference to the evidence supporting this criterion property response.
 |*Business rule(s)*: |None
 |*File*: |ubl-2.3/xsdrt/common/UBL-CommonAggregateComponents-2.3.xsd
-|*Path*: |/QualificationApplicationResponse/cac:TenderingCriterionResponse/cac:EvidenceSupplied
+|*Path*: |/QualificationApplicationResponse/
+cac:TenderingCriterionResponse/cac:EvidenceSupplied
 |*Context of use*: |Used to refer to one ore more evidences that are present in the QualificationApplicationResponse XML instance; link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1-tbr92-017[_tbr92-017_].
 |===
 
-[cols=",,,,",options="header",]
+[cols="1,1,1,3,3"]
 |===
 |*Components* |*Type* |*Card* |*Description* |*Requirements*
 |*cbc:ID* |Identifier |1 |The identifier of the referenced evidence. a|
@@ -1620,11 +1623,13 @@ _Table 43. Elements expected in the 'cac:ResponseValue' class_
 |*Definition*: |A class to describe the criterion property response value.
 |*Business rule(s)*: |Common (BR-TCR-08, BR-TCR-04)
 |*File*: |ubl-2.3/xsdrt/common/UBL-CommonAggregateComponents-2.3.xsd
-|*Path*: |/QualificationApplicationResponse/cac:TenderingCriterionResponse/cac:ResponseValue
-|*Context of use*: |Used to specify one value or a collection of values (in the case of a list) as a response to one, and only one, cac:TenderingCriterionProperty that is typified as a QUESTION.
+|*Path*: |/QualificationApplicationResponse
+/cac:TenderingCriterionResponse/cac:ResponseValue
+|*Context of use*: |Used to specify one value or a collection of values
+(in the case of a list) as a response to one, and only one, cac:TenderingCriterionProperty that is typified as a QUESTION.
 |===
 
-[cols=",,,,",options="header",]
+[cols="1,1,1,3,3"]
 |===
 |*Components* |*Type* |*Card* |*Description* |*Requirements*
 |*cbc:ID* |Identifier |0..1 |An identifier to refer to this criterion response value. a|
@@ -1900,10 +1905,10 @@ _Table 44. Elements expected in an Evidence_
 |*Context of use*: |The economic operator uses it in the ESPD Response document to provide evidentiary support to one or more criteria link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1-tbr092-017[(_tbr092-017_)].
 |===
 
-[cols=",,,,",options="header",]
+[cols="1,1,1,3,3",options="header",]
 |===
 |*Components* |*Type* |*Card* |*Description* |*Requirements*
-|*cbc:ID* |Identifier |1 |An identifier for this item of evidentiary support. a|
+|*cbc:ID* |Identifier |1 |An identifier for this item of evidential support. a|
 *Information Requirement*: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1-tbr092-017[_tbr092-017_]
 
 *Rule*: The Evidence ID MUST be unique in the ESPD Response XML instance (i.e. two evidences cannot have the same ID value). It is recommended to use always a UUID UUID of version 4 (random generated UUID).
@@ -1932,7 +1937,8 @@ _Table 44. Elements expected in an Evidence_
 
 *Rule*: None. No rule is applied.
 
-|*cbc:ConfidentialityLevelCode* |Code |0..1 |A code specifying the confidentiality level of this evidence. a|
+|*cbc:Confidentiality
+LevelCode* |Code |0..1 |A code specifying the confidentiality level of this evidence. a|
 *Information Requirement*: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1-tbr092-017[_tbr092-017_]
 
 *Rule*: Compulsory use of the Code List link:{url-tree}/codelists/gc/AccessRight.gc[AccessRight]. Software application should set this code to CONFIDENTIAL automatically when the confidentiality level code of at least one criterion to which this evidence is associated is set to CONFIDENTIAL.
@@ -1955,7 +1961,7 @@ _Table 45. Elements expected from the 'cac:Evidence/cac:DocumentReference' eleme
 |*Context of use*: |The economic operator uses it in the ESPD Response document to supply the URL of the evidence and the party who issued the evidentiary document. link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1-tbr092-017[(_tbr092-017, tbr092-022, tbr092-006, tbr092-007_)].
 |===
 
-[cols=",,,,",options="header",]
+[cols="1,1,1,3,3"]
 |===
 |*Components* |*Type* |*Card* |*Description* |*Requirements*
 |*cbc:ID* |Identifier |1 |An identifier for the referenced document. a|
@@ -1965,24 +1971,28 @@ _Table 45. Elements expected from the 'cac:Evidence/cac:DocumentReference' eleme
 
 *Rule scope*: BR-OTH-02
 
-|*cac:Attachment/cac:ExternalReference/cbc:URI* |Identifier |1 |The Uniform Resource Identifier (URI) that identifies the external object as an Internet resource. a|
+|*cac:Attachment/cac:
+ExternalReference/cbc:URI* |Identifier |1 |The Uniform Resource Identifier (URI) that identifies the external object as an Internet resource. a|
 *Information Requirement*: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1-tbr092-017[_tbr092-017, tbr092-022, tbr092-006, tbr092-007_]
 
 *Rule*: None. No rule is applied.
 
-|*cac:IssuerParty/cac:PartyIdentification/cbc:ID* |Identifier |0..1 |The identifier of the party issuer of the documentary evidence. a|
+|*cac:IssuerParty/cac:
+PartyIdentification/cbc:ID* |Identifier |0..1 |The identifier of the party issuer of the documentary evidence. a|
 *Information Requirement*: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1-tbr092-017[_tbr092-017, tbr092-007, tbr092-006_]
 
 *Rule*: Not currently used in ESPD, but if you decide to use it try to use the VAT number whenever possible.
 
 *Rule scope*: BR-OTH-02
 
-|*cac:IssuerParty/cac:PartyName/cbc:Name* |Text |0..1 |The name of the party issuer of the documentary evidence. a|
+|*cac:IssuerParty/cac:
+PartyName/cbc:Name* |Text |0..1 |The name of the party issuer of the documentary evidence. a|
 *Information Requirement*: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1-tbr092-017[_tbr092-017, tbr092-007, tbr092-006_]
 
 *Rule*: ESPD-EDM uses this element to keep the name of the evidence issuer in the ESPD Response XML instance.
 
-|*cac:IssuerParty/cbc:WebsiteURI* |URI |0..1 |The website of the party issuer of the documentary evidence. a|
+|*cac:IssuerParty/cbc:
+WebsiteURI* |URI |0..1 |The website of the party issuer of the documentary evidence. a|
 *Information Requirement*: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1-tbr092-017[_tbr092-017, tbr092-007, tbr092-006_]
 
 *Rule*: None. No rule is applied.
