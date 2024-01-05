@@ -5,7 +5,7 @@ ifndef::downloaddir[:downloaddir: download]
 = The European Single Procurement Document
 :sectnumlevels: 2
 
-== Technical Handbook
+== The Distribution Package
 
 Semantic assets have been defined by link:https://lov.linkeddata.es/dataset/lov/vocabs/adms[ISA] as "a collection of highly reusable metadata (e.g. xml schemata, generic data models) and reference data (e.g. code lists, taxonomies, dictionaries, vocabularies) which are used for e-Government system development".
 
