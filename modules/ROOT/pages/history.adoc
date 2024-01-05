@@ -42,4 +42,10 @@ Some inaccuracies in the documentation were corrected, relevant sections added a
 
 Details can be found in the release notes of each version.
 
+== Version 4.0.0
 
+Version 4.0.0's release is planned for November 2024. The significant changes in this version will be:
+
+* UUIDs replaced by ...
+
+* ...
