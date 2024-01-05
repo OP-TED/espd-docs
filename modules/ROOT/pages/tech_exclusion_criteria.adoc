@@ -1244,12 +1244,12 @@ See formal requirements related to exclusion grounds in the link:http://wiki.ds.
 
 Other requirements related specifically to purely national criteria are:
 
-[cols=",",]
+[cols="1,2",]
 |===
 |*REQUIREMENT* |The Member State must be able to specify in e-Certis individual national criteria, and the economic operator must be able to answer *to each individual purely national exclusion grounds criterion*.
 |===
 
-[cols=",",]
+[cols="1,2",]
 |===
 |*REQUIREMENT* |For the purely national exclusion grounds that have evidences related in e-Certis, the required evidences should be displayed. When the criterion has no related evidences, the text "No evidence required for this criterion" should be displayed. Per each national criterion the EO needs to be able to provide one or more evidences.
 |===

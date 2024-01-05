@@ -411,11 +411,18 @@ ____
 [width="100%",cols="18%,5%,48%,15%,14%",options="header",]
 |===
 |*Pre-conditions* | | | |
-|XSD Schema | |UBL-QualificationApplicationResponse-2.2-Pre-award.xsd (ESPD Response) | |
-|Regulated or Self-contained ESPD | |/cbc:QualificationApplicationTypeCode is REGULATED | |
-|Divided into lots | |/cac:ProcurementProjectLot /cbc:ID is 0 (not divided into lots) | |
-|Pre-qualification system | |/cac:EconomicOperatorParty/cac:QualifyingParty/cac:Party /cac:PartyIdentification not exist (not registered on a national pre-qualification system) | |
-|EO Role | |/cac:EconomicOperatorParty/cac:EconomicOperatorRole/cbc:RoleCode is SCLE (Sole contractor) | |
+|XSD Schema | |UBL-QualificationApplicationResponse-2.2
+-Pre-award.xsd (ESPD Response) | |
+|Regulated or Self-contained ESPD | |/cbc:QualificationApplicationTypeCode is
+REGULATED | |
+|Divided into lots | |/cac:ProcurementProjectLot /cbc:ID is 0 (not divided
+into lots) | |
+|Pre-qualification system | |/cac:EconomicOperatorParty/cac:
+QualifyingParty/cac:Party /cac:PartyIdentification not exist (not registered on a
+national pre-qualification system) | |
+|EO Role | |/cac:EconomicOperator
+Party/cac:EconomicOperatorRole/cbc:
+RoleCode is SCLE (Sole contractor) | |
 
 |*List of rules* | | | |
 |*Rule ID* |*Rule* | |*Scenario ID* |*Scenarios*
@@ -529,11 +536,15 @@ ____
 [width="100%",cols="18%,11%,15%,20%,36%",options="header",]
 |===
 |*Pre-conditions* | | | |
-|XSD Schema | |UBL-QualificationApplicationResponse-2.2-Pre-award.xsd (ESPD Response) | |
+|XSD Schema | |UBL-QualificationApplicationResponse-2.2-
+Pre-award.xsd (ESPD Response) | |
 |Regulated or Self-contained ESPD | |/cbc:QualificationApplicationTypeCode is SELFCONTAINED | |
-|Divided into lots | |/cac:ProcurementProjectLot /cbc:ID is not 0 (divided into lots) | |
-|Pre-qualification system | |/cac:EconomicOperatorParty/cac:QualifyingParty/cac:Party /cac:PartyIdentification exist (registered on a national pre-qualification system) | |
-|EO Role | |/cac:EconomicOperatorParty/cac:EconomnicOperatorRole /cbc:RoleCode is SCLE (Sole contractor) | |
+|Divided into lots | |/cac:ProcurementProjectLot /cbc:
+ID is not 0 (divided into lots) | |
+|Pre-qualification system | |/cac:EconomicOperatorParty/cac:QualifyingParty/cac:Party
+/cac:PartyIdentification exist (registered on a national pre-qualification system) | |
+|EO Role | |/cac:EconomicOperatorParty/cac:EconomnicOperator
+Role /cbc:RoleCode is SCLE (Sole contractor) | |
 
 |*List of rules* | | | |
 |*Rule ID* |*Rule* | |*Scenario ID* |*Scenarios*
@@ -556,12 +567,16 @@ ____
 [width="100%",cols="18%,5%,23%,20%,34%",options="header",]
 |===
 |*Pre-conditions* | | | |
-|XSD Schema | |UBL-QualificationApplicationResponse-2.2-Pre-award.xsd (ESPD Response) | |
+|XSD Schema | |UBL-QualificationApplicationResponse-2.2-
+Pre-award.xsd (ESPD Response) | |
 |Regulated or Self-contained ESPD | |/cbc:QualificationApplicationTypeCode is REGULATED | |
-|Divided into lots | |/cac:ProcurementProjectLot /cbc:ID is 0 (not divided into lots) | |
-|Pre-qualification system | |/cac:EconomicOperatorParty/cac:QualifyingParty/cac:Party /cac:PartyIdentification not exist (not registered on a national pre-qualification system) | |
+|Divided into lots | |/cac:ProcurementProjectLot /cbc:ID
+is 0 (not divided into lots) | |
+|Pre-qualification system | |/cac:EconomicOperatorParty/cac:QualifyingParty/cac:Party /cac:PartyIdentification not exist (not registered on a
+national pre-qualification system) | |
 |EO Role | a|
-/cac:EconomicOperatorParty/cac:EconomnicOperatorRole /cbc:RoleCode is SCLE (Lead entity)
+/cac:EconomicOperatorParty/cac:EconomnicOperatorRole
+/cbc:RoleCode is SCLE (Lead entity)
 
 /cbc:EconomicOperatorGroupName becomes compulsory
 
@@ -586,12 +601,17 @@ ____
 [width="100%",cols="18%,5%,21%,20%,36%",options="header",]
 |===
 |*Pre-conditions* | | | |
-|XSD Schema | |UBL-QualificationApplicationResponse-2.2-Pre-award.xsd (ESPD Response) | |
+|XSD Schema | |UBL-QualificationApplicationResponse-2.2-
+Pre-award.xsd (ESPD Response) | |
 |Regulated or Self-contained ESPD | |/cbc:QualificationApplicationTypeCode is REGULATED | |
-|Divided into lots | |/cac:ProcurementProjectLot /cbc:ID is 0 (not divided into lots) | |
-|Pre-qualification system | |/cac:EconomicOperatorParty/cac:QualifyingParty/cac:Party /cac:PartyIdentification exist (registered on a national pre-qualification system) | |
+|Divided into lots | |/cac:ProcurementProjectLot /cbc:ID
+is 0 (not divided into lots) | |
+|Pre-qualification system | |/cac:EconomicOperatorParty/cac:QualifyingParty/cac:
+Party /cac:PartyIdentification exist (registered on a
+national pre-qualification system) | |
 |EO Role | a|
-/cac:EconomicOperatorParty/cac:EconomnicOperatorRole /cbc:RoleCode is SCLE (Lead entity)
+/cac:EconomicOperatorParty/cac:EconomnicOperatorRole
+/cbc:RoleCode is SCLE (Lead entity)
 
 /cbc:EconomicOperatorGroupName becomes compulsory
 
@@ -619,12 +639,16 @@ ____
 [width="100%",cols="18%,5%,23%,20%,34%",options="header",]
 |===
 |*Pre-conditions* | | | |
-|XSD Schema | |UBL-QualificationApplicationResponse-2.2-Pre-award.xsd (ESPD Response) | |
+|XSD Schema | |UBL-QualificationApplicationResponse-2.2-
+Pre-award.xsd (ESPD Response) | |
 |Regulated or Self-contained ESPD | |/cbc:QualificationApplicationTypeCode is SELFCONTAINED | |
-|Divided into lots | |/cac:ProcurementProjectLot /cbc:ID is 0 (not divided into lots) | |
-|Pre-qualification system | |/cac:EconomicOperatorParty/cac:QualifyingParty/cac:Party /cac:PartyIdentification not exist (not registered on a national pre-qualification system) | |
+|Divided into lots | |/cac:ProcurementProjectLot /cbc:ID
+is 0 (not divided into lots) | |
+|Pre-qualification system | |/cac:EconomicOperatorParty/cac:QualifyingParty/cac:Party /cac:PartyIdentification not exist (not registered on
+a national pre-qualification system) | |
 |EO Role | a|
-/cac:EconomicOperatorParty/cac:EconomnicOperatorRole /cbc:RoleCode is SCLE (Lead entity)
+/cac:EconomicOperatorParty/cac:EconomnicOperatorRole
+/cbc:RoleCode is SCLE (Lead entity)
 
 /cbc:EconomicOperatorGroupName becomes compulsory
 
@@ -649,12 +673,15 @@ ____
 [width="100%",cols="18%,3%,25%,20%,34%",options="header",]
 |===
 |*Pre-conditions* | | | |
-|XSD Schema | |UBL-QualificationApplicationResponse-2.2-Pre-award.xsd (ESPD Response) | |
+|XSD Schema | |UBL-QualificationApplicationResponse-2.2-
+Pre-award.xsd (ESPD Response) | |
 |Regulated or Self-contained ESPD | |/cbc:QualificationApplicationTypeCode is SELFCONTAINED | |
-|Divided into lots | |/cac:ProcurementProjectLot /cbc:ID is 0 (not divided into lots) | |
+|Divided into lots | |/cac:ProcurementProjectLot /cbc:ID
+is 0 (not divided into lots) | |
 |Pre-qualification system | |/cac:EconomicOperatorParty/cac:QualifyingParty/cac:Party /cac:PartyIdentification exist (registered on a national pre-qualification system) | |
 |EO Role | a|
-/cac:EconomicOperatorParty/cac:EconomnicOperatorRole /cbc:RoleCode is SCLE (Lead entity)
+/cac:EconomicOperatorParty/cac:EconomnicOperatorRole
+/cbc:RoleCode is SCLE (Lead entity)
 
 /cbc:EconomicOperatorGroupName becomes compulsory
 
@@ -682,12 +709,16 @@ ____
 [width="100%",cols="18%,3%,25%,20%,34%",options="header",]
 |===
 |*Pre-conditions* | | | |
-|XSD Schema | |UBL-QualificationApplicationResponse-2.2-Pre-award.xsd (ESPD Response) | |
+|XSD Schema | |UBL-QualificationApplicationResponse-2.2-
+Pre-award.xsd (ESPD Response) | |
 |Regulated or Self-contained ESPD | |/cbc:QualificationApplicationTypeCode is SELFCONTAINED | |
-|Divided into lots | |/cac:ProcurementProjectLot /cbc:ID is not 0 (divided into lots) | |
-|Pre-qualification system | |/cac:EconomicOperatorParty/cac:QualifyingParty/cac:Party /cac:PartyIdentification not exist (not registered on a national pre-qualification system) | |
+|Divided into lots | |/cac:ProcurementProjectLot /cbc:ID
+is not 0 (divided into lots) | |
+|Pre-qualification system | |/cac:EconomicOperatorParty/cac:QualifyingParty/cac:Party /cac:PartyIdentification not exist (not registered o
+n a national pre-qualification system) | |
 |EO Role | a|
-/cac:EconomicOperatorParty/cac:EconomnicOperatorRole /cbc:RoleCode is SCLE (Lead entity)
+/cac:EconomicOperatorParty/cac:EconomnicOperatorRole
+/cbc:RoleCode is SCLE (Lead entity)
 
 /cbc:EconomicOperatorGroupName becomes compulsory
 
@@ -714,12 +745,15 @@ ____
 [width="100%",cols="18%,3%,26%,20%,33%",options="header",]
 |===
 |*Pre-conditions* | | | |
-|XSD Schema | |UBL-QualificationApplicationResponse-2.2-Pre-award.xsd (ESPD Response) | |
+|XSD Schema | |UBL-QualificationApplicationResponse-2.2-
+Pre-award.xsd (ESPD Response) | |
 |Regulated or Self-contained ESPD | |/cbc:QualificationApplicationTypeCode is SELFCONTAINED | |
-|Divided into lots | |/cac:ProcurementProjectLot /cbc:ID is not 0 (divided into lots) | |
+|Divided into lots | |/cac:ProcurementProjectLot /cbc:ID
+is not 0 (divided into lots) | |
 |Pre-qualification system | |/cac:EconomicOperatorParty/cac:QualifyingParty/cac:Party /cac:PartyIdentification exist (registered on a national pre-qualification system) | |
 |EO Role | a|
-/cac:EconomicOperatorParty/cac:EconomnicOperatorRole /cbc:RoleCode is SCLE (Lead entity)
+/cac:EconomicOperatorParty/cac:EconomnicOperatorRole
+/cbc:RoleCode is SCLE (Lead entity)
 
 /cbc:EconomicOperatorGroupName becomes compulsory
 
@@ -776,12 +810,15 @@ ____
 [width="100%",cols="17%,4%,21%,20%,38%",options="header",]
 |===
 |*Pre-conditions* | | | |
-|XSD Schema | |UBL-QualificationApplicationResponse-2.2-Pre-award.xsd (ESPD Response) | |
+|XSD Schema | |UBL-QualificationApplicationResponse-2.2-
+Pre-award.xsd (ESPD Response) | |
 |Regulated or Self-contained ESPD | |/cbc:QualificationApplicationTypeCode is REGULATED | |
-|Divided into lots | |/cac:ProcurementProjectLot /cbc:ID is 0 (not divided into lots) | |
+|Divided into lots | |/cac:ProcurementProjectLot /cbc:ID
+is 0 (not divided into lots) | |
 |Pre-qualification system | |/cac:EconomicOperatorParty/cac:QualifyingParty/cac:Party /cac:PartyIdentification exist (registered on a national pre-qualification system) | |
 |EO Role | a|
-/cac:EconomicOperatorParty/cac:EconomnicOperatorRole /cbc:RoleCode is GM (Group member)
+/cac:EconomicOperatorParty/cac:EconomnicOperatorRole
+/cbc:RoleCode is GM (Group member)
 
 /cbc:EconomicOperatorGroupName becomes compulsory
 
@@ -833,12 +870,15 @@ ____
 [width="100%",cols="17%,3%,21%,20%,39%",options="header",]
 |===
 |*Pre-conditions* | | | |
-|XSD Schema | |UBL-QualificationApplicationResponse-2.2-Pre-award.xsd (ESPD Response) | |
+|XSD Schema | |UBL-QualificationApplicationResponse-2.2-
+Pre-award.xsd (ESPD Response) | |
 |Regulated or Self-contained ESPD | |/cbc:QualificationApplicationTypeCode is SELFCONTAINED | |
-|Divided into lots | |/cac:ProcurementProjectLot /cbc:ID is 0 (not divided into lots) | |
+|Divided into lots | |/cac:ProcurementProjectLot /cbc:ID
+is 0 (not divided into lots) | |
 |Pre-qualification system | |/cac:EconomicOperatorParty/cac:QualifyingParty/cac:Party /cac:PartyIdentification exists (registered on a national pre-qualification system) | |
 |EO Role | a|
-/cac:EconomicOperatorParty/cac:EconomnicOperatorRole /cbc:RoleCode is GM (Group member)
+/cac:EconomicOperatorParty/cac:EconomnicOperatorRole
+/cbc:RoleCode is GM (Group member)
 
 /cbc:EconomicOperatorGroupName becomes compulsory
 
@@ -892,12 +932,15 @@ ____
 [width="100%",cols="17%,6%,21%,20%,36%",options="header",]
 |===
 |*Pre-conditions* | | | |
-|XSD Schema | |UBL-QualificationApplicationResponse-2.2-Pre-award.xsd (ESPD Response) | |
+|XSD Schema | |UBL-QualificationApplicationResponse-2.2-
+Pre-award.xsd (ESPD Response) | |
 |Regulated or Self-contained ESPD | |/cbc:QualificationApplicationTypeCode is SELFCONTAINED | |
-|Divided into lots | |/cac:ProcurementProjectLot /cbc:ID is not 0 (divided into lots) | |
+|Divided into lots | |/cac:ProcurementProjectLot /cbc:ID
+is not 0 (divided into lots) | |
 |Pre-qualification system | |/cac:EconomicOperatorParty/cac:QualifyingParty/cac:Party /cac:PartyIdentification exists (registered on a national pre-qualification system) | |
 |EO Role | a|
-/cac:EconomicOperatorParty/cac:EconomnicOperatorRole /cbc:RoleCode is GM (Group member)
+/cac:EconomicOperatorParty/cac:EconomnicOperatorRole
+/cbc:RoleCode is GM (Group member)
 
 /cbc:EconomicOperatorGroupName becomes compulsory
 
@@ -951,12 +994,15 @@ Other entity (relied upon): Entity on which the main contractor, the group or an
 [width="100%",cols="17%,4%,21%,20%,38%",options="header",]
 |===
 |*Pre-conditions* | | | |
-|XSD Schema | |UBL-QualificationApplicationResponse-2.2-Pre-award.xsd (ESPD Response) | |
+|XSD Schema | |UBL-QualificationApplicationResponse-2.2-
+Pre-award.xsd (ESPD Response) | |
 |Regulated or Self-contained ESPD | |/cbc:QualificationApplicationTypeCode is REGULATED | |
-|Divided into lots | |/cac:ProcurementProjectLot /cbc:ID is 0 (not divided into lots) | |
+|Divided into lots | |/cac:ProcurementProjectLot /cbc:ID
+is 0 (not divided into lots) | |
 |Pre-qualification system | |/cac:EconomicOperatorParty/cac:QualifyingParty/cac:Party /cac:PartyIdentification exists (registered on a national pre-qualification system) | |
 |EO Role | a|
-/cac:EconomicOperatorParty/cac:EconomnicOperatorRole /cbc:RoleCode is OERON (Other entity (relied upon))
+/cac:EconomicOperatorParty/cac:EconomnicOperatorRole
+/cbc:RoleCode is OERON (Other entity (relied upon))
 
 Other entity (relied upon): Entity on which the main contractor, the group or another subcontractor relies in order to meet the selection criteria.
 
@@ -1010,12 +1056,15 @@ Other entity (relied upon): Entity on which the main contractor, the group or an
 [width="100%",cols="17%,4%,23%,20%,36%",options="header",]
 |===
 |*Pre-conditions* | | | |
-|XSD Schema | |UBL-QualificationApplicationResponse-2.2-Pre-award.xsd (ESPD Response) | |
+|XSD Schema | |UBL-QualificationApplicationResponse-2.2-
+Pre-award.xsd (ESPD Response) | |
 |Regulated or Self-contained ESPD | |/cbc:QualificationApplicationTypeCode is SELFCONTAINED | |
-|Divided into lots | |/cac:ProcurementProjectLot /cbc:ID is 0 (not divided into lots) | |
+|Divided into lots | |/cac:ProcurementProjectLot /cbc:ID
+is 0 (not divided into lots) | |
 |Pre-qualification system | |/cac:EconomicOperatorParty/cac:QualifyingParty/cac:Party /cac:PartyIdentification exists (registered on a national pre-qualification system) | |
 |EO Role | a|
-/cac:EconomicOperatorParty/cac:EconomnicOperatorRole /cbc:RoleCode is OERON (Other entity (relied upon))
+/cac:EconomicOperatorParty/cac:EconomnicOperatorRole
+/cbc:RoleCode is OERON (Other entity (relied upon))
 
 Other entity (relied upon): Entity on which the main contractor, the group or another subcontractor relies in order to meet the selection criteria.
 
@@ -1069,12 +1118,15 @@ Other entity (relied upon): Entity on which the main contractor, the group or an
 [width="100%",cols="17%,4%,26%,20%,33%",options="header",]
 |===
 |*Pre-conditions* | | | |
-|XSD Schema | |UBL-QualificationApplicationResponse-2.2-Pre-award.xsd (ESPD Response) | |
+|XSD Schema | |UBL-QualificationApplicationResponse-2.2-
+Pre-award.xsd (ESPD Response) | |
 |Regulated or Self-contained ESPD | |/cbc:QualificationApplicationTypeCode is SELFCONTAINED | |
-|Divided into lots | |/cac:ProcurementProjectLot /cbc:ID is not 0 (divided into lots) | |
+|Divided into lots | |/cac:ProcurementProjectLot /cbc:ID
+is not 0 (divided into lots) | |
 |Pre-qualification system | |/cac:EconomicOperatorParty/cac:QualifyingParty/cac:Party /cac:PartyIdentification exists (registered on a national pre-qualification system) | |
 |EO Role | a|
-/cac:EconomicOperatorParty/cac:EconomnicOperatorRole /cbc:RoleCode is OERON (Other entity (relied upon))
+/cac:EconomicOperatorParty/cac:EconomnicOperatorRole
+/cbc:RoleCode is OERON (Other entity (relied upon))
 
 Other entity (relied upon): Entity on which the main contractor, the group or another subcontractor relies in order to meet the selection criteria.
 
@@ -1127,12 +1179,15 @@ Other entity (not relied upon): Entity on which the main contractor, the group o
 [width="100%",cols="17%,4%,21%,20%,38%",options="header",]
 |===
 |*Pre-conditions* | | | |
-|XSD Schema | |UBL-QualificationApplicationResponse-2.2-Pre-award.xsd (ESPD Response) | |
+|XSD Schema | |UBL-QualificationApplicationResponse-2.2-
+Pre-award.xsd (ESPD Response) | |
 |Regulated or Self-contained ESPD | |/cbc:QualificationApplicationTypeCode is REGULATED | |
-|Divided into lots | |/cac:ProcurementProjectLot /cbc:ID is 0 (not divided into lots) | |
+|Divided into lots | |/cac:ProcurementProjectLot /cbc:ID
+is 0 (not divided into lots) | |
 |Pre-qualification system | |/cac:EconomicOperatorParty/cac:QualifyingParty/cac:Party /cac:PartyIdentification exists (registered on a national pre-qualification system) | |
 |EO Role | a|
-/cac:EconomicOperatorParty/cac:EconomnicOperatorRole /cbc:RoleCode is OENRON (Other entity (not relied upon))
+/cac:EconomicOperatorParty/cac:EconomnicOperatorRole
+/cbc:RoleCode is OENRON (Other entity (not relied upon))
 
 Other entity (not relied upon): Entity on which the main contractor, the group or another subcontractor does not rely in order to meet the selection criteria.
 
@@ -1182,12 +1237,15 @@ Other entity (not relied upon): Entity on which the main contractor, the group o
 [width="100%",cols="17%,6%,26%,20%,31%",options="header",]
 |===
 |*Pre-conditions* | | | |
-|XSD Schema | |UBL-QualificationApplicationResponse-2.2-Pre-award.xsd (ESPD Response) | |
+|XSD Schema | |UBL-QualificationApplicationResponse-2.2-
+Pre-award.xsd (ESPD Response) | |
 |Regulated or Self-contained ESPD | |/cbc:QualificationApplicationTypeCode is SELFCONTAINED | |
-|Divided into lots | |/cac:ProcurementProjectLot /cbc:ID is 0 (not divided into lots) | |
+|Divided into lots | |/cac:ProcurementProjectLot /cbc:ID
+is 0 (not divided into lots) | |
 |Pre-qualification system | |/cac:EconomicOperatorParty/cac:QualifyingParty/cac:Party /cac:PartyIdentification exists (registered on a national pre-qualification system) | |
 |EO Role | a|
-/cac:EconomicOperatorParty/cac:EconomnicOperatorRole /cbc:RoleCode is OENRON (Other entity (not relied upon))
+/cac:EconomicOperatorParty/cac:EconomnicOperatorRole
+/cbc:RoleCode is OENRON (Other entity (not relied upon))
 
 Other entity (not relied upon): Entity on which the main contractor, the group or another subcontractor does not rely in order to meet the selection criteria.
 
@@ -1237,12 +1295,15 @@ Other entity (not relied upon): Entity on which the main contractor, the group o
 [width="100%",cols="17%,4%,28%,20%,31%",options="header",]
 |===
 |*Pre-conditions* | | | |
-|XSD Schema | |UBL-QualificationApplicationResponse-2.2-Pre-award.xsd (ESPD Response) | |
+|XSD Schema | |UBL-QualificationApplicationResponse-2.2-
+Pre-award.xsd (ESPD Response) | |
 |Regulated or Self-contained ESPD | |/cbc:QualificationApplicationTypeCode is SELFCONTAINED | |
-|Divided into lots | |/cac:ProcurementProjectLot /cbc:ID is not 0 (divided into lots) | |
+|Divided into lots | |/cac:ProcurementProjectLot /cbc:ID
+is not 0 (divided into lots) | |
 |Pre-qualification system | |/cac:EconomicOperatorParty/cac:QualifyingParty/cac:Party /cac:PartyIdentification exists (registered on a national pre-qualification system) | |
 |EO Role | a|
-/cac:EconomicOperatorParty/cac:EconomnicOperatorRole /cbc:RoleCode is OENRON (Other entity (not relied upon))
+/cac:EconomicOperatorParty/cac:EconomnicOperatorRole
+/cbc:RoleCode is OENRON (Other entity (not relied upon))
 
 Other entity (not relied upon): Entity on which the main contractor, the group or another subcontractor does not rely in order to meet the selection criteria.
 
@@ -1479,7 +1540,8 @@ Then
 |
 |Rule description |Information about the procurer MUST be provided |
 |Mapping description |Procurers are implemented as Contracting Party components. |
-|XSD Path |/cac:ContractingParty[1..n]/cac:Party[1] |
+|XSD Path |/cac:ContractingParty
+[1..n]/cac:Party[1] |
 |Business requirement |link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr070-01[_[.underline]#tbr070-01#_] |
 |XSD Business Rule description | |XSD Business Rule Schematron
 |Information about the procurer MUST be provided. | |No Schematron rule can be implemented, as Contracting party is already compulsory.
@@ -1536,7 +1598,8 @@ ____
 If at least one element: /cac:ContractingParty/cac:Party /cac:PartyIdentification/cbc:ID is not present, there is a warning.
 ____
 
-|_/cac:ContractingParty/cac:Party/cac:ServiceProviderParty[0..n]_ | |
+|_/cac:ContractingParty/cac:Party/cac:
+ServiceProviderParty[0..n]_ | |
 |Business requirement: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr070-0011[_[.underline]#tbr070-011#_] | |
 |An identifier for the service provider must always be provided. | a|
 * {blank}
@@ -1853,8 +1916,10 @@ Specific information about weighting within each criteria is implemented as Tend
 
 |
 |XSD Path a|
-* /cac:TenderingCriterion /cbc:EvaluationMethodTypeCode[0..1]
-* /cac:TenderingCriterion/cbc:WeightNumeric[0..1]
+* /cac:TenderingCriterion
+/cbc:EvaluationMethodTypeCode[0..1]
+* /cac:TenderingCriterion
+/cbc:WeightNumeric[0..1]
 
 |
 |Business requirement |link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr070-016[_[.underline]#tbr070-016#_] |
@@ -1868,10 +1933,12 @@ ____
 * {blank}
 +
 ____
-If /cac:TenderingCriterion /cbc:CriterionTypeCode is within 'CRITERION.SELECTION.TECHNICAL_PROFESSIONAL_ABILITY.TECHNICAL.*' group
+If /cac:TenderingCriterion /cbc:CriterionTypeCode is within 'CRITERION.SELECTION.TECHNICAL_PROFESSIONAL
+_ABILITY.TECHNICAL.*' group
 ____
 +
-And, /cac:TenderingCriterion /cbc:EvaluationMethodTypeCode = WEIGHTED
+And, /cac:TenderingCriterion
+/cbc:EvaluationMethodTypeCode = WEIGHTED
 
 ____
 Then, it is mandatory to provide a numeric Weight value: /cac:TenderingCriterion /cbc:WeightNumeric
@@ -1886,7 +1953,8 @@ ____
 * {blank}
 +
 ____
-If /cac:TenderingCriterion /cbc:CriterionTypeCode is *NOT* within 'CRITERION.SELECTION.TECHNICAL_PROFESSIONAL_ABILITY.TECHNICAL.*' group
+If /cac:TenderingCriterion /cbc:CriterionTypeCode is *NOT* within 'CRITERION.SELECTION.TECHNICAL_
+PROFESSIONAL_ABILITY.TECHNICAL.*' group
 ____
 +
 Then, /cac:TenderingCriterion /cbc:EvaluationMethodTypeCode != WEIGHTED or not included.
@@ -1956,7 +2024,8 @@ ____
 See BR-COM-10
 ____
 
-|_/cac:EconomicOperatorParty/cac:QualifyingParty_ | |
+|_/cac:EconomicOperatorParty/cac:
+QualifyingParty_ | |
 |Business requirement: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr92-001[_[.underline]#tbr92-001#_] | |
 |*Qualifying party* is *compulsory* in the ESPD-EDM V3.3.0 as it is the natural placeholder for several relevant data about the Economic Operator. | a|
 * {blank}
@@ -1986,7 +2055,8 @@ ____
 schemeAgencyID attribute from Party identifier is always mandatory. The current version of eCertis does not allow for this feature yet. Therefore, the logic expected schemeAgencyID defaults to "OP". This will not be validated in version 2.0.2.
 ____
 
-|_/cac:EconomicOperatorParty/cac:EconomicOperatorRole_ | |
+|_/cac:EconomicOperatorParty/cac:
+EconomicOperatorRole_ | |
 |Business requirement: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr92-008[_[.underline]#tbr92-008#_] | |
 |This element is compulsory in the ESPD-EDM V3.3.0 because depending on it different sets of data will be required or not, shown or hidden, processed or skipped. | a|
 * {blank}
@@ -2076,7 +2146,8 @@ ____
 Country of the contracting body is mandatory: /cac:EconomicOperatorParty /cac:Party/cac:PostalAddress /cac:Country /cbc:IdentificationCode
 ____
 
-|_/cac:EconomicOperatorParty/cac:Party/cac:ServiceProviderParty/cac:Party_ | |
+|_/cac:EconomicOperatorParty/cac:
+Party/cac:ServiceProviderParty/cac:Party_ | |
 |Business requirement: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr070-021[_[.underline]#tbr070-021#_] | |
 |*End point identifier*: An end-point identifier MUST have a scheme identifier attribute. | a|
 * {blank}
@@ -2148,7 +2219,8 @@ ____
 
 |
 |Rule description |Information about representatives of the economic operator CAN be provided |
-|Mapping description |All the data regarding the representative of the economic operators is placed in the UBL-2.3 component cac:EconomicOperatorParty/cac:Party/cac:PowerOfAttorney. |
+|Mapping description |All the data regarding the representative of the economic operators is placed in the UBL-2.3 component cac:EconomicOperatorParty/cac:
+Party/cac:PowerOfAttorney. |
 |XSD Path a|
 * /cac:EconomicOperatorParty/cac:Party /cac:PowerOfAttorney
 
@@ -2265,7 +2337,7 @@ Response to the specific requirements related to selection criteria of the ESPDR
 | |
 |Mapping description |Criterion responses are implemented as Tendering Criterion response components | |
 |XSD Path a|
-* /cac:TenderingCriterionResponse[0..n]
+/cac:TenderingCriterionResponse[0..n]
 
 | |
 |Business requirement |_ link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr092-018[tbr92-018], link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr092-007[#tbr92-007#]_, _[.underline]#tbr92-005#_, link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr092-006[tbr92-006] | |
@@ -2287,7 +2359,7 @@ ____
 
 .Table 64: BR-RESP-40
 
-[#_BR-RESP-90_(role_OENRON) .anchor]##
+//[#_BR-RESP-90_(role_OENRON) .anchor]##
 
 == Registered pre-qualification system Rules
 
@@ -2563,7 +2635,8 @@ This rule is accomplished when:
 * PQS: /cac:EconomicOperatorParty /cac:QualifyingParty/cac:Party /cac:PartyIdentification/cbc:ID
 * Responses: /cac:TenderingCriterionResponse
 * Service provider: /cac:ContractingParty /cac:Party/cac:ServiceProviderParty
-* Application type: /cbc:QualificationApplicationTypeCode
+* Application type: /cbc:Qualification
+ApplicationTypeCode
 * Role: /cbc:RoleCode
 
 | |
@@ -2620,7 +2693,8 @@ This rule is accomplished when:
 |XSD Business Rule description | |XSD Business Rule description |
 |When the pre-qualification system the EO is registered on covers all the selection criteria, information about compliance of selection criteria IS NOT required. | a|
 * Severity: WARNING
-* If PQS exists (/cac:EconomicOperatorParty /cac:QualifyingParty/cac:Party /cac:PartyIdentification/cbc:ID), Service Provider does not exists not(cac:ContractingParty /cac:Party/cac:ServiceProviderParty), /cbc:RoleCode != OENRON and /cbc:QualificationApplicationTypeCode = SELFCONTAINED
+* If PQS exists (/cac:EconomicOperatorParty /cac:QualifyingParty/cac:Party /cac:PartyIdentification/cbc:ID), Service Provider does not exists not(cac:ContractingParty /cac:Party/cac:ServiceProviderParty), /cbc:RoleCode != OENRON and /cbc:QualificationApplication
+TypeCode = SELFCONTAINED
 +
 Then, selection criterion does not need to have responses.
 
@@ -2656,7 +2730,8 @@ Then, selection criterion does not need to have responses.
 |Mapping description a|
 The procurement procedure is divided into lots, the ProcurementProjectLot component provides details specific to the lot.
 
-Lots EO tenders to, are specified as Tendering criterion of type CRITERION.OTHER.EO_DATA.LOTS_TENDERED.
+Lots EO tenders to, are specified as Tendering criterion of type CRITERION.OTHER.
+EO_DATA.LOTS_TENDERED.
 
 | |
 |XSD Path a|
@@ -2868,17 +2943,23 @@ ____
 * {blank}
 +
 ____
-At least one /cac:TenderingCriterionResponse /cbc:ValidatedCriterionPropertyID must match an IDs criterion within /cac:TenderingCriterionProperty /cbc:ID which /cac:TenderingCriterion/cbc:CriterionTypeCode is _CRITERION.OTHER.EO_DATA.TOGETHER_WITH_OTHERS_
+At least one /cac:TenderingCriterionResponse /cbc:ValidatedCriterionPropertyID must match
+an IDs criterion within /cac:TenderingCriterionProperty
+/cbc:ID which /cac:TenderingCriterion/cbc:CriterionTypeCode is _CRITERION.OTHER.EO_DATA.
+TOGETHER_WITH_OTHERS_
 ____
 * {blank}
 +
 ____
-/cac:TenderingCriterionResponse /cac:ResponseValue/cbc:ResponseIndicator is true; meaning that the EO is participating with others.
+/cac:TenderingCriterionResponse /cac:ResponseValue
+/cbc:ResponseIndicator is true; meaning that the EO
+is participating with others.
 ____
 * {blank}
 +
 ____
-Each of the criterion subgroups identified within: /cac:TenderingCriterion /cac:TenderingCriterionPropertyGroup /cac:SubsidiaryTenderingCriterionPropertyGroup/cac:TenderingCriterionProperty, must be answered.
+Each of the criterion subgroups identified within: /cac:TenderingCriterion
+/cac:TenderingCriterionPropertyGroup /cac:SubsidiaryTenderingCriterionPropertyGroup/cac:TenderingCriterionProperty, must be answered.
 ____
 
 |
@@ -2907,7 +2988,8 @@ ____
 * /cbc:EconomicOperatorGroupName[0..1]
 
 | |
-|Business requirement |link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr092-008[_[.underline]#tbr092-008#_] | |
+|Business requirement |link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-
+ESPDV2.0-tbr092-008[_[.underline]#tbr092-008#_] | |
 |XSD Business Rule description | |XSD Business Rule Schematron |
 |Information about the group MUST be provided | a|
 * {blank}
@@ -2958,7 +3040,9 @@ ____
 * {blank}
 +
 ____
-At least one /cac:TenderingCriterionResponse /cbc:ValidatedCriterionPropertyID must match an IDs criterion within /cac:TenderingCriterion/cbc:ID which /cac:TenderingCriterion/cbc:CriterionTypeCode is _CRITERION.OTHER.EO_DATA.RELIES_ON_OTHER_CAPACITIES_
+At least one /cac:TenderingCriterionResponse /cbc:ValidatedCriterionPropertyID must match
+an IDs criterion within /cac:TenderingCriterion/cbc:ID which /cac:TenderingCriterion/cbc:CriterionTypeCode
+is _CRITERION.OTHER.EO_DATA.RELIES_ON_OTHER_CAPACITIES_
 ____
 
 |
@@ -2998,12 +3082,16 @@ ____
 * {blank}
 +
 ____
-At least one /cac:TenderingCriterionResponse /cbc:ValidatedCriterionPropertyID must match an IDs criterion within /cac:TenderingCriterion/cbc:ID which /cac:TenderingCriterion/cbc:CriterionTypeCode is _CRITERION.OTHER.EO_DATA.SUBCONTRACTS_WITH_THIRD_PARTIES_
+At least one /cac:TenderingCriterionResponse /cbc:ValidatedCriterionPropertyID must match
+an IDs criterion within /cac:TenderingCriterion/cbc:ID which /cac:TenderingCriterion/cbc:CriterionTypeCode
+is _CRITERION.OTHER.EO_DATA.SUBCONTRACTS_
+WITH_THIRD_PARTIES_
 ____
 * {blank}
 +
 ____
-If the response cac:TenderingCriterionResponse /cac:ResponseValue/cbc:ResponseIndicator is true; each of the criterion subgroups identified within: /cac:TenderingCriterion /cac:TenderingCriterionPropertyGroup /cac:SubsidiaryTenderingCriterionPropertyGroup/cac:TenderingCriterionProperty, must be answered
+If the response cac:TenderingCriterionResponse /cac:ResponseValue/cbc:ResponseIndicator is
+true; each of the criterion subgroups identified within: /cac:TenderingCriterion /cac:TenderingCriterionPropertyGroup /cac:SubsidiaryTenderingCriterionPropertyGroup/cac:TenderingCriterionProperty, must be answered
 ____
 
 |
@@ -3324,7 +3412,8 @@ The first level group of properties and sub-groups of properties in the structur
 a|
 _/cac:TenderingCriterionPropertyGroup, independently of the level_
 
-_/cac:SubsidiaryTenderingCriterionPropertyGroup, independently of the level_
+_/cac:SubsidiaryTenderingCriterion
+PropertyGroup, independently of the level_
 
 Business requirement: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr070-013[_[.underline]#tbr070-013#_]
 
@@ -3406,7 +3495,8 @@ ____
 * {blank}
 +
 ____
-The number of ../cac:TenderingCriterionProperty must match the number of QUESTION from [RD03].
+The number of ../cac:TenderingCriterionProperty
+must match the number of QUESTION from [RD03].
 ____
 
 a|
@@ -3422,7 +3512,9 @@ ____
 * {blank}
 +
 ____
-The number of ../cac:SubsidiaryTenderingCriterionPropertyGroup must match the number of QUESTION_SUBGROUP from [RD03].
+The number of ../cac:SubsidiaryTenderingCriterion
+PropertyGroup must match the number of
+QUESTION_SUBGROUP from [RD03].
 ____
 
 |===
@@ -3573,7 +3665,8 @@ A tendering criterion response describes a response to a criterion property from
 |===
 |Identifier |XSD Business Rule description |XSD Business Rule Schematron
 a|
-_Level 1: /cac:TenderingCriterionResponse_
+_Level 1: /cac:TenderingCriterion
+Response_
 
 Business requirement: _ link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr092-018[[.underline]#tbr92-018#], link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr092-007[[.underline]#tbr92-007#]_, _[.underline]#tbr92-005#_, link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr092-006[_[.underline]#tbr92-006#_]
 

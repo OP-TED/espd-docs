@@ -61,17 +61,18 @@ The *_Annex I_* of this document lists all the code lists used by the ESPD and i
 
 === Compulsory attributes
 
-[cols=",",options="header",]
+
 
 _Table 1. ESPD Requirement regarding codes_
-
+[cols="1,2"]
 |===
 |*REQUIREMENT*: |**For codes, this ESPD specification requires always three mandatory attributes: **listID**, **listAgencyID**, and **listVersionID.
 |===
 
-[cols=",",options="header",]
+
 
 _Table 2. ESPD Requirement regarding identifiers_
+[cols="1,2"]
 |===
 |*REQUIREMENT*: |**For identifiers, this ESPD specification requires at least (and always) the mandatory attribute **schemeAgencyID. When identifying parties, like the Economic Operator, the Buyer, etc., the attribute schemeID SHOULD also be used (for this use the code list link:{url-tree}/codelists/gc/EOIDType.gc[EOIDType]).
 |===
@@ -90,9 +91,10 @@ _Figure 7. Code attributes_
 
 And its corresponding definitions, as provided by OASIS UBL (ISO/IEC 19845):
 
-[cols=",",options="header",]
+
 
 _Table 3. UBL attributes for codes_
+[cols="1,2"]
 |===
 |*Attribute* |*Definition*
 |*listID* |The identification of a list of codes (*MANDATORY in this version of ESPD*).
@@ -115,6 +117,7 @@ _Figure 8. Identifier attributes_
 [cols=",",options="header",]
 
 _Table 4. UBL attributes for identifiers_
+[cols="1,2"]
 |===
 |*Attribute* |*Definition*
 |*schemeID* |The identification of the identification scheme.
@@ -279,9 +282,12 @@ An example of how to use this code list can be found in xref:Tech_AnnexII_XML_Ex
 |*Code list type* |Business-agnostic
 |*Maintainer* |EU Vocabularies
 |*Description* |Contains controlled vocabulary that lists concepts associated with names of countries and territories with a three letter coding.
+
 |*Metadata* |
 [cols=","]
 !===
+
+
 !*ShortName* !Country
 !*LongName* !country
 !*ListID* !http://publications.europa.eu/resource/authority/country
@@ -586,7 +592,8 @@ The data type expected for this code is URL following the *ESCO* taxonomy identi
 |*Name* |*_PropertyGroupType_*
 |*Code list type* |Technical
 |*Maintainer* |ESPD Team
-|*Description* |Contains coded types to be used by software implementations to control which elements to be rendered in the displayed user interface. 
+|*Description* |Contains coded types to be used by software implementations to control which elements to be rendered in the displayed user interface.
+|*Metadata* |
 [cols=","]
 !===
 !*ShortName* !PropertyGroupType
@@ -607,6 +614,7 @@ The data type expected for this code is URL following the *ESCO* taxonomy identi
 |*Code list type* |Technical
 |*Maintainer* |ESPD Team
 |*Description* |Contains identifiers used to descrive data type expected in criteria elements.
+|*Metadata* |
 [cols=","]
 !===
 !*ShortName* !ResponseDataType
