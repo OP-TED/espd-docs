@@ -358,10 +358,12 @@ _Table 7. External Reference_
 |*Component name*: |cac:ExternalReference
 |*Definition*: |A reference to the authentic source of content of this document.
 |*File*: |ubl-2.3/xsdrt/common/UBL-CommonAggregateComponents-2.3.xsd
-|*Path*: |/QualificationApplicationRequest/cac:AdditionalDocumentReference/cac:Attachment/cac:ExternalReference
+|*Path*: |/QualificationApplicationRequest
+/cac:AdditionalDocumentReference
+/cac:Attachment/cac:ExternalReference
 |===
 
-[cols=",,,,",options="header",]
+[cols="1,1,1,3,3"]
 |===
 |*Components* |*Type* |*Card* |*Description* |*Requirements*
 |*cbc:URI* |Identifier |0..1 |The Uniform Resource Identifier (URI) that identifies where the document is located. a|
@@ -515,7 +517,7 @@ _Table 8. Contracting body, expected elements_
 |*Path*: |/QualificationApplicationRequest/cac:ContractingParty
 |===
 
-[cols=",,,,",options="header",]
+[cols="1,1,1,3,3"]
 |===
 |*Components* |*Type* |*Card* |*Description* |*Requirements*
 |*cbc:BuyerProfileURI* |Identifier |0..1 |URL of the web section, in the contracting body web site, that contains information about the contracting body, the norms it applies when contracting, published calls for tenders, Prior Information Notices and Contract Notices as well as the related procurement documents, contract award notices, etc. a|
@@ -535,7 +537,7 @@ _Table 9. Contracting body party, expected elements_
 |*Path*: |/QualificationApplicationRequest/cac:ContractingParty/cac:Party
 |===
 
-[cols=",,,,",options="header",]
+[cols="1,1,1,3,3"]
 |===
 |*Components* |*Type* |*Card* |*Description* |*Requirements*
 |*cac:PartyIdentification/cbc:ID* |Identifier |1 |The national identifier of a contracting body as it is legally registered (e.g. VAT identification). a|
@@ -572,10 +574,11 @@ _Table 10. Contracting body postal address, expected elements_
 |*Definition*: |Contractinng body address information.
 |*Business rule(s)*: |None
 |*File*: |ubl-2.3/xsdrt/common/UBL-CommonAggregateComponents-2.3.xsd
-|*Path*: |/QualificationApplicationRequest/cac:ContractingParty/cac:Party/cac:PostalAddress
+|*Path*: |/QualificationApplicationRequest/
+cac:ContractingParty/cac:Party/cac:PostalAddress
 |===
 
-[cols=",,,,",options="header",]
+[cols="1,1,1,3,3"]
 |===
 |*Components* |*Type* |*Card* |*Description* |*Requirements*
 |*cbc:StreetName* |Text |0..1 |The main address line in an address. Usually the street name and number or post office box. a|
@@ -593,7 +596,8 @@ _Table 10. Contracting body postal address, expected elements_
 
 *Rule*: None.
 
-|*cac:Country/cbc:IdentificationCode* |Code |1 |A code that identifies the country. a|
+|*cac:Country/cbc:
+IdentificationCode* |Code |1 |A code that identifies the country. a|
 *Information Requirement*: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1.0-tbr070-006[_tbr070-006_].
 
 *Rule*: The country of the contracting body must always be specified. Compulsory use of the code list Country from EU Vocabularies).
@@ -614,10 +618,11 @@ _Table 11. Contact of the contracting body, expected elements_
 |*Class name*: |cac:Contact
 |*Definition*: |Used to provide contacting information for a party in general or a person.
 |*File*: |ubl-2.3/xsdrt/common/UBL-CommonAggregateComponents-2.3.xsd
-|*Path*: |/QualificationApplicationRequest/cac:ContractingParty/cac:Party/cac:Contact
+|*Path*: |/QualificationApplicationRequest/
+cac:ContractingParty/cac:Party/cac:Contact
 |===
 
-[cols=",,,,",options="header",]
+[cols="1,11,3,3,"]
 |===
 |*Components* |*Type* |*Card* |*Description* |*Requirements*
 |*cbc:Name* |Text |0..1 |The name of the contact point. a|
@@ -686,10 +691,12 @@ _Table 12. Service provider, expected elements_
 |*Definition*: |Main information about the service provider.
 |*Business rule(s)*: |None
 |*File*: |ubl-2.3/xsdrt/common/UBL-CommonAggregateComponents-2.3.xsd
-|*Path*: |/QualificationApplicationRequest/cac:ContractingParty/cac:Party/cac:ServiceProviderParty/cac:Party
+|*Path*: |/QualificationApplicationRequest/
+cac:ContractingParty/cac:Party/cac:ServiceProviderParty/
+cac:Party
 |===
 
-[cols=",,,,",options="header",]
+[cols="1,1,1,3,3",options="header",]
 |===
 |*Components* |*Type* |*Card* |*Description* |*Requirements*
 |*cbc:WebsiteURI* |Identifier |0..1 |The website of the service provider. a|
@@ -716,7 +723,9 @@ _Table 12. Service provider, expected elements_
 
 *Rule scope*: Common (BR-REQ-20#6)
 
-|*cac:PostalAddress/cac:Country/cbc:IdentificationCode* |Code |1 |The code that identifies the country of the service provider. a|
+|*cac:PostalAddress/
+cac:Country/cbc:
+IdentificationCode* |Code |1 |The code that identifies the country of the service provider. a|
 *Information Requirement*: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1.0-tbr070-0011[_tbr070-011_].
 
 *Rule*: The country of the service provider must always be specified. Compulsory use of the code list "Country" from EU Vocabulary, which includes 3-character codes and it is based on ISO.
