@@ -66,7 +66,7 @@ Document provided by a buyer defining the exclusion and selection criteria for a
 
 
 
-//[cols=",,,,",options="header",]
+//[cols="10h,10h,10h,35h,~"]
 //[%autowidth]
 |===
 s|Components|Type|Card|Description|Requirements
@@ -151,7 +151,9 @@ In ESPD the contracting party information will come from eForms. Which also uses
 
 *Rule*: (see examples further below in this document)
 
-|*cac:TenderingCriterion/cac:ProcurementProjectLotReference/cbc:ID* |Identifier |0..n |One or more of the procurement project lots Identifier to which this criterion can be related to. a|
+|*cac:TenderingCriterion/cac:
+ProcurementProject
+LotReference/cbc:ID* |Identifier |0..n |One or more of the procurement project lots Identifier to which this criterion can be related to. a|
 *Information Requirement*: (see section <<lot_management>>)
 
 *Rule*: This element is mandatory for all Selection Criteria with cardinality 1..n because different Selection Criteria can be associated with different procurement lots. This element is not necessary for exclusion grounds because exclusion grounds are applied to all procurements.
