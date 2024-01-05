@@ -24,7 +24,7 @@ Using the online validation facility, the https://www.itb.ec.europa.eu/espd/uplo
 
 Note: The testbed link is also in the validation GitHub folder readme.md.
 
-image:testbed.png[]]
+image:testbed.png[]
 
 
 
