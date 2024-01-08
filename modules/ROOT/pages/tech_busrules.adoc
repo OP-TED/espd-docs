@@ -464,83 +464,98 @@ RoleCode is SCLE (Sole contractor)
 
 ==== RS-40
 
-[width="100%",cols="18%,11%,15%,20%,36%",options="header",]
-|===
-|*Pre-conditions* | | | |
-|XSD Schema | |UBL-QualificationApplicationResponse-2.2-Pre-award.xsd (ESPD Response) | |
-|Regulated or Self-contained ESPD | |/cbc:QualificationApplicationTypeCode is SELFCONTAINED | |
-|Divided into lots | |/cac:ProcurementProjectLot /cbc:ID is 0 (not divided into lots) | |
-|Pre-qualification system | |/cac:EconomicOperatorParty/cac:QualifyingParty/cac:Party /cac:PartyIdentification exist (registered on a national pre-qualification system) | |
-|EO Role | |/cac:EconomicOperatorParty/cac:EconomnicOperatorRole /cbc:RoleCode is SCLE (Sole contractor) | |
-
-|*List of rules* | | | |
-|*Rule ID* |*Rule* | |*Scenario ID* |*Scenarios*
-|RS-40-R10 (<<BR-RESP-10,BR-RESP-10>>) |Information about the economic operator MUST be provided | |N/A |N/A
-|RS-40-R20 (<<BR-RESP-50,BR-RESP-50_role-OENRON>>) |Information about the pre-qualification system the EO is registered on MUST be provided | |N/A |N/A
-|RS-40-R30 (<<BR-RESP-20,BR-RESP-20>>) |Information about representatives of the economic operator CAN be provided | |N/A |N/A
-|RS-40-R40 (<<BR-RESP-60,BR-RESP-60>>) |Information about compliance of exclusion grounds CAN be provided | |RS-40-R40-S10 (<<BR-RESP-60-S10,BR-RESP-60-S10>>) |When the pre-qualification system the EO is registered on does not cover all the exclusion criteria, information about compliance of exclusion grounds MUST be provided.
-| | | |RS-40-R40-S20 (<<BR-RESP-60-S20,BR-RESP-60-S20>>) |When the pre-qualification system the EO is registered on covers all the exclusion criteria, information about compliance of exclusion grounds IS NOT required.
-|RS-40-R50 (<<BR-RESP-80,BR-RESP-80>>) |Response to the specific requirements related to selection criteria of the ESPDRequest CAN be provided | |RS-40-R50-S10 (<<BR-RESP-80-S10,BR-RESP-80-S10>>) |When the pre-qualification system the EO is registered on does not cover all the selection criteria, information about compliance of selection criteria MUST be provided.
-| | | |RS-40-R50-S20 (<<BR-RESP-80-S20,BR-RESP-80-S20>>) |When the pre-qualification system the EO is registered on covers all the selection criteria, information about compliance of selection criteria IS NOT required.
-|RS-40-R60 (<<BR-SC-30,BR-SC-30>>) |Information about the procurement procedure MIGHT be provided | |N/A |N/A
+.Test Case RS-40
+===== *Pre-conditions*
+[cols="1,3"]
 |===
 
-.Table 16: Test Case RS-40
+|XSD Schema | UBL-QualificationApplicationResponse-2.2-Pre-award.xsd (ESPD Response)
+|Regulated or Self-contained ESPD |/cbc:QualificationApplicationTypeCode is SELFCONTAINED
+|Divided into lots | /cac:ProcurementProjectLot /cbc:ID is 0 (not divided into lots)
+|Pre-qualification system | /cac:EconomicOperatorParty/cac:QualifyingParty/cac:Party /cac:PartyIdentification exist (registered on a national pre-qualification system)
+|EO Role | /cac:EconomicOperatorParty/cac:EconomnicOperatorRole /cbc:RoleCode is SCLE (Sole contractor)
+|===
+
+===== *List of rules*
+[cols="1,2,1,3"]
+|===
+|*Rule ID* |*Rule* | *Scenario ID* |*Scenarios*
+|RS-40-R10 (<<BR-RESP-10,BR-RESP-10>>) |Information about the economic operator MUST be provided | N/A |N/A
+|RS-40-R20 (<<BR-RESP-50,BR-RESP-50_role-OENRON>>) |Information about the pre-qualification system the EO is registered on MUST be provided | N/A |N/A
+|RS-40-R30 (<<BR-RESP-20,BR-RESP-20>>) |Information about representatives of the economic operator CAN be provided | N/A |N/A
+|RS-40-R40 (<<BR-RESP-60,BR-RESP-60>>) |Information about compliance of exclusion grounds CAN be provided | RS-40-R40-S10 (<<BR-RESP-60-S10,BR-RESP-60-S10>>) |When the pre-qualification system the EO is registered on does not cover all the exclusion criteria, information about compliance of exclusion grounds MUST be provided.
+| | |RS-40-R40-S20 (<<BR-RESP-60-S20,BR-RESP-60-S20>>) |When the pre-qualification system the EO is registered on covers all the exclusion criteria, information about compliance of exclusion grounds IS NOT required.
+|RS-40-R50 (<<BR-RESP-80,BR-RESP-80>>) |Response to the specific requirements related to selection criteria of the ESPDRequest CAN be provided |RS-40-R50-S10 (<<BR-RESP-80-S10,BR-RESP-80-S10>>) |When the pre-qualification system the EO is registered on does not cover all the selection criteria, information about compliance of selection criteria MUST be provided.
+| | | RS-40-R50-S20 (<<BR-RESP-80-S20,BR-RESP-80-S20>>) |When the pre-qualification system the EO is registered on covers all the selection criteria, information about compliance of selection criteria IS NOT required.
+|RS-40-R60 (<<BR-SC-30,BR-SC-30>>) |Information about the procurement procedure MIGHT be provided | N/A |N/A
+|===
+
+
 
 ==== RS-50
 
-[width="100%",cols="19%,11%,41%,15%,14%",options="header",]
-|===
-|*Pre-conditions* | | | |
-|XSD Schema | |UBL-QualificationApplicationResponse-2.2-Pre-award.xsd (ESPD Response) | |
-|Regulated or Self-contained ESPD | |/cbc:QualificationApplicationTypeCode is SELFCONTAINED | |
-|Divided into lots | |/cac:ProcurementProjectLot /cbc:ID is not 0 (divided into lots) | |
-|Pre-qualification system | |/cac:EconomicOperatorParty/cac:QualifyingParty/cac:Party /cac:PartyIdentification not exist (not registered on a national pre-qualification system) | |
-|EO Role | |/cac:EconomicOperatorParty/cac:EconomnicOperatorRole /cbc:RoleCode is SCLE (Sole contractor) | |
-
-|*List of rules* | | | |
-|*Rule ID* |*Rule* | |*Scenario ID* |*Scenarios*
-|RS-50-R10 (<<BR-RESP-10,BR-RESP-10>>) |Information about the economic operator MUST be provided | |N/A |N/A
-|RS-50-R20 (<<BR-LOT-10,BR-LOT-10>>) |The list of lots the EO tenders for MUST be provided | |N/A |N/A
-|RS-50-R30 (<<BR-RESP-20,BR-RESP-20>>) |Information about representatives of the economic operator CAN be provided | |N/A |N/A
-|RS-50-R40 (<<BR-RESP-30,BR-RESP-30>>) |Information about compliance of exclusion grounds MUST be provided | |N/A |N/A
-|RS-50-R50 (<<BR-RESP-40,BR-RESP-40_role-different-to-OENRON>>) |Response to the specific requirements related to selection criteria of the ESPDRequest MUST be provided | |N/A |N/A
-|RS-50-R60 (<<BR-LOT-20,BR-LOT-20>>) |The set of lots that apply to the information provided in response to the requirements for each selection criterion MUST be provided | |N/A |N/A
-|RS-50-R70 (<<BR-SC-30,BR-SC-30>>) |Information about the procurement procedure MIGHT be provided | |N/A |N/A
+.Test Case RS-50
+===== *Pre-conditions*
+[cols="1,3"]
 |===
 
-.Table 17: Test Case RS-50
+|XSD Schema | UBL-QualificationApplicationResponse-2.2-Pre-award.xsd (ESPD Response)
+|Regulated or Self-contained ESPD | /cbc:QualificationApplicationTypeCode is SELFCONTAINED
+|Divided into lots | /cac:ProcurementProjectLot /cbc:ID is not 0 (divided into lots)
+|Pre-qualification system | /cac:EconomicOperatorParty/cac:QualifyingParty/cac:Party /cac:PartyIdentification not exist (not registered on a national pre-qualification system)
+|EO Role | /cac:EconomicOperatorParty/cac:EconomnicOperatorRole /cbc:RoleCode is SCLE (Sole contractor)
+|===
+
+===== *List of rules*
+[cols="1,2,1,3"]
+|===
+|*Rule ID* |*Rule* | *Scenario ID* |*Scenarios*
+|RS-50-R10 (<<BR-RESP-10,BR-RESP-10>>) |Information about the economic operator MUST be provided | N/A |N/A
+|RS-50-R20 (<<BR-LOT-10,BR-LOT-10>>) |The list of lots the EO tenders for MUST be provided | N/A |N/A
+|RS-50-R30 (<<BR-RESP-20,BR-RESP-20>>) |Information about representatives of the economic operator CAN be provided | N/A |N/A
+|RS-50-R40 (<<BR-RESP-30,BR-RESP-30>>) |Information about compliance of exclusion grounds MUST be provided | N/A |N/A
+|RS-50-R50 (<<BR-RESP-40,BR-RESP-40_role-different-to-OENRON>>) |Response to the specific requirements related to selection criteria of the ESPDRequest MUST be provided | N/A |N/A
+|RS-50-R60 (<<BR-LOT-20,BR-LOT-20>>) |The set of lots that apply to the information provided in response to the requirements for each selection criterion MUST be provided | N/A |N/A
+|RS-50-R70 (<<BR-SC-30,BR-SC-30>>) |Information about the procurement procedure MIGHT be provided | N/A |N/A
+|===
+
+
 
 ==== RS-60
 
-[width="100%",cols="18%,11%,15%,20%,36%",options="header",]
-|===
-|*Pre-conditions* | | | |
-|XSD Schema | |UBL-QualificationApplicationResponse-2.2-
-Pre-award.xsd (ESPD Response) | |
-|Regulated or Self-contained ESPD | |/cbc:QualificationApplicationTypeCode is SELFCONTAINED | |
-|Divided into lots | |/cac:ProcurementProjectLot /cbc:
-ID is not 0 (divided into lots) | |
-|Pre-qualification system | |/cac:EconomicOperatorParty/cac:QualifyingParty/cac:Party
-/cac:PartyIdentification exist (registered on a national pre-qualification system) | |
-|EO Role | |/cac:EconomicOperatorParty/cac:EconomnicOperator
-Role /cbc:RoleCode is SCLE (Sole contractor) | |
-
-|*List of rules* | | | |
-|*Rule ID* |*Rule* | |*Scenario ID* |*Scenarios*
-|RS-60-R10 (<<BR-RESP-10,BR-RESP-10>>) |Information about the economic operator MUST be provided | |N/A |N/A
-|RS-60-R20 (<<BR-RESP-50,BR-RESP-50_role-OENRON>>) |Information about the pre-qualification system the EO is registered on MUST be provided | |N/A |N/A
-|RS-60-R30 (<<BR-LOT-10,BR-LOT-10>>) |The list of lots the EO tenders for MUST be provided | |N/A |N/A
-|RS-60-R40 (<<BR-RESP-20,BR-RESP-20>>) |Information about representatives of the economic operator CAN be provided | |N/A |N/A
-|RS-60-R50 (<<BR-RESP-60,BR-RESP-60>>) |Information about compliance of exclusion grounds CAN be provided | |RS-60-R50-S10 (<<BR-RESP-60-S10,BR-RESP-60-S10>>) |When the pre-qualification system the EO is registered on does not cover all the exclusion criteria, information about compliance of exclusion grounds MUST be provided.
-| | | |RS-60-R50-S20 (<<BR-RESP-60-S20,BR-RESP-60-S20>>) |When the pre-qualification system the EO is registered on covers all the exclusion criteria, information about compliance of exclusion grounds IS NOT required.
-|RS-60-R60 (<<BR-RESP-80,BR-RESP-80>>) |Response to the specific requirements related to selection criteria of the ESPDRequest CAN be provided | |RS-60-R60-S10 (<<BR-RESP-80-S10,BR-RESP-80-S10>>) |When the pre-qualification system the EO is registered on does not cover all the selection criteria, information about compliance of selection criteria MUST be provided.
-| | | |RS-60-R60-S20 (<<BR-RESP-80-S20,BR-RESP-80-S20>>) |When the pre-qualification system the EO is registered on covers all the selection criteria, information about compliance of selection criteria IS NOT required.
-|RS-60-R70 (<<BR-LOT-20,BR-LOT-20>>) |The set of lots that apply to the information provided in response to the requirements for each selection criterion MUST be provided (when information about compliance of selection criteria is provided) | |N/A |N/A
-|RS-60-R80 (<<BR-SC-30,BR-SC-30>>) |Information about the procurement procedure MIGHT be provided | |N/A |N/A
+.Test Case RS-60
+===== *Pre-conditions*
+[cols="1,3"]
 |===
 
-.Table 18: Test Case RS-60
+|XSD Schema | UBL-QualificationApplicationResponse-2.2-
+Pre-award.xsd (ESPD Response)
+|Regulated or Self-contained ESPD | /cbc:QualificationApplicationTypeCode is SELFCONTAINED
+|Divided into lots | /cac:ProcurementProjectLot /cbc:
+ID is not 0 (divided into lots)
+|Pre-qualification system | /cac:EconomicOperatorParty/cac:QualifyingParty/cac:Party
+/cac:PartyIdentification exist (registered on a national pre-qualification system)
+|EO Role | /cac:EconomicOperatorParty/cac:EconomnicOperator
+Role /cbc:RoleCode is SCLE (Sole contractor)
+|===
+
+===== *List of rules*
+[cols="1,2,1,3"]
+|===
+|*Rule ID* |*Rule* | *Scenario ID* |*Scenarios*
+|RS-60-R10 (<<BR-RESP-10,BR-RESP-10>>) |Information about the economic operator MUST be provided | N/A |N/A
+|RS-60-R20 (<<BR-RESP-50,BR-RESP-50_role-OENRON>>) |Information about the pre-qualification system the EO is registered on MUST be provided | N/A |N/A
+|RS-60-R30 (<<BR-LOT-10,BR-LOT-10>>) |The list of lots the EO tenders for MUST be provided | N/A |N/A
+|RS-60-R40 (<<BR-RESP-20,BR-RESP-20>>) |Information about representatives of the economic operator CAN be provided | N/A |N/A
+|RS-60-R50 (<<BR-RESP-60,BR-RESP-60>>) |Information about compliance of exclusion grounds CAN be provided  |RS-60-R50-S10 (<<BR-RESP-60-S10,BR-RESP-60-S10>>) |When the pre-qualification system the EO is registered on does not cover all the exclusion criteria, information about compliance of exclusion grounds MUST be provided.
+| | | RS-60-R50-S20 (<<BR-RESP-60-S20,BR-RESP-60-S20>>) |When the pre-qualification system the EO is registered on covers all the exclusion criteria, information about compliance of exclusion grounds IS NOT required.
+|RS-60-R60 (<<BR-RESP-80,BR-RESP-80>>) |Response to the specific requirements related to selection criteria of the ESPDRequest CAN be provided | RS-60-R60-S10 (<<BR-RESP-80-S10,BR-RESP-80-S10>>) |When the pre-qualification system the EO is registered on does not cover all the selection criteria, information about compliance of selection criteria MUST be provided.
+| | | RS-60-R60-S20 (<<BR-RESP-80-S20,BR-RESP-80-S20>>) |When the pre-qualification system the EO is registered on covers all the selection criteria, information about compliance of selection criteria IS NOT required.
+|RS-60-R70 (<<BR-LOT-20,BR-LOT-20>>) |The set of lots that apply to the information provided in response to the requirements for each selection criterion MUST be provided (when information about compliance of selection criteria is provided) | N/A |N/A
+|RS-60-R80 (<<BR-SC-30,BR-SC-30>>) |Information about the procurement procedure MIGHT be provided | N/A |N/A
+|===
+
+
 
 ==== RS-70
 
