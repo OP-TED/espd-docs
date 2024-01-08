@@ -10,10 +10,10 @@ This guide explains how Business Rules are implemented, and which ones apply in 
 
 === Input Documents
 
-.Table 1: List of Input documents
-[width="100%",cols="13%,31%,11%,45%",options="header",]
+.List of Input documents
+[cols="1,2,1,3,]
 |===
-|*ID* |*Filename* |*Version* |*Description*
+s|*ID* |*Filename* |*Version* |*Description*
 a|
 
 
@@ -47,9 +47,10 @@ The process described above uses the following auxiliary tables.
 [arabic]
 . Identification of the test cases from [RD01] and mapping it into the UBL-2.3 XSD.
 
-[width="100%",cols="22%,11%,11%,24%,32%",options="header",]
+.Test Case ID example
+[cols="1,1,3,1,2"]
 |===
-|*Pre-conditions (from [RD01])* | | | |
+s|||Pre-conditions (from [RD01])| |
 |XSD Schema | a|
 XSD filename. It could be ESPD request or ESPD response.
 
@@ -65,14 +66,15 @@ UBL-QualificationApplicationRequest-2.2-Pre-award.xsd (ESPD Request) or UBL-Qual
 |Test Case Rule ID (from [RD01]) and Mapping Rule ID |Description of the rule and mapping to Mapping Rule ID (current document) | |Scenario ID (from [RD01]) and Mapping Scenario ID |Description of the scenario and mapping to Mapping Scenario ID (current document)
 |===
 
-.Table 2: Test Case ID example
+
 
 [arabic, start=2]
 . For each of the rules identified in document [RD01], the following table describes its mapping in natural language:
 
-[width="100%",cols="36%,13%,51%",options="header",]
+.Mapping rule ID example
+[cols="2,1,3"]
 |===
-|*Mapping Rule ID* | |
+s|Mapping Rule ID | |
 |Test Case Rule ID |Identifier of the Rule from [RD01] |
 |Rule description |Description of the business rule |
 |Mapping description |Description of the mapping between the rule and the XSD |
@@ -85,7 +87,7 @@ Business rules can be classified as WARNING (user information) or ERROR (fatal e
 
 |===
 
-.Table 3: Mapping rule ID example
+
 
 == ESPDRequest
 
@@ -93,7 +95,8 @@ Business rules can be classified as WARNING (user information) or ERROR (fatal e
 
 List of use cases regarding the ESPD request transaction, which 0 means false and 1 means true:
 
-[width="100%",cols="25%,25%,25%,25%",options="header",]
+.ESPDRequest - List of test cases
+[cols="1,1,1,1"]
 |===
 |*Test Case ID* |*Self-Contained* |*Divided into lots* |*Two-phased procedure*
 a|<<RQ-10,RQ-10>> |0 |0 |0
@@ -104,214 +107,231 @@ a|<<RQ-50,RQ-50>> |1 |1 |0
 a|<<RQ-60,RQ-60>> |1 |1 |1
 |===
 
-.Table 4: ESPDRequest - List of test cases
+
 
 === Test Cases
 
 ==== RQ-10
 
-[width="100%",cols="18%,11%,18%,20%,33%",options="header",]
+===== *Pre-conditions*
+
+.Test Case RQ-10
+[cols="1,3"]
 |===
-|*Pre-conditions* | | | |
-|XSD Schema | |UBL-QualificationApplicationRequest-2.2-Pre-award.xsd (ESPD Request) | |
-|Regulated or Self-contained ESPD | |/cbc:QualificationApplicationTypeCode is REGULATED | |
-|Divided into lots | |/cac:ProcurementProjectLot /cbc:ID is 0 (not divided into lots) | |
-|Two-phased procedure | |/cbc:ProcedureCode = OPEN (Open procedure, a single-phased procedure) | |
+|XSD Schema |UBL-QualificationApplicationRequest-2.2-Pre-award.xsd (ESPD Request)
+|Regulated or Self-contained ESPD |/cbc:QualificationApplicationTypeCode is REGULATED
+|Divided into lots |/cac:Procurement
+ProjectLot /cbc:ID is 0 (not divided into lots)
+|Two-phased procedure |/cbc:ProcedureCode = OPEN (Open procedure, a single-phased procedure)
+|===
 
-|*List of rules* | | | |
-|*Rule ID* |*Rule* | |*Scenario ID* |*Scenarios*
-|RQ-10-R10 (<<BR-COM-10,BR-COM-10>>) |Information about publication CAN be provided | a|
-RQ-10-R10-S10
+===== *List of rules*
+[cols="1,2,1,3"]
+|===
 
-(<<BR-COM-10-S10,BR-COM-10-S10>>)
+|*Rule ID* |*Rule* |*Scenario ID* |*Scenarios*
+|RQ-10-R10 (<<BR-COM-10,BR-COM-10>>) |Information about publication CAN be provided
+a|RQ-10-R10-S10 (<<BR-COM-10-S10,BR-COM-10-S10>>)
+
 
 |Above the threshold, information about the publication of the contract notice in TED MUST be provided (when it is available)
-| | | |RQ-10-R10-S20 (<<BR-COM-10-S20,BR-COM-10-S20>>) |Below the threshold, information about the publication of the contract notice in TED MIGHT be provided (when it is available)
-| | | |RQ-10-R10-S30 (<<BR-COM-10-S30,BR-COM-10-S30>>) |Information about the publication of the contract notice in other official gazettes or journals MIGHT be provided
-|RQ-10-R20 (<<BR-REQ-20,BR-REQ-20>>) |Information about the procurer MUST be provided | |N/A |N/A
-|RQ-10-R30 (<<BR-COM-10,BR-COM-10>>) |Information about the procurement procedure MUST be provided | |N/A |N/A
-|RQ-10-R40 (<<BR-REQ-30,BR-REQ-30>>) |Exclusion grounds MUST be retrieved from e-Certis | |RQ-10-R40-S10 (<<BR-REQ-30-S10,BR-REQ-30-S10>>) |Information for common exclusion grounds (sections A, B and C) MUST be retrieved from e-Certis.
-| | | |RQ-10-R40-S20 (<<BR-REQ-30-S20,BR-REQ-30-S20>>) |Information for national exclusion grounds (section D) MUST be retrieved from e-Certis.
-|RQ-10-R50 (<<BR-REQ-40,BR-REQ-40>>) |Selection criteria CAN be provided | |N/A |N/A
+| | |RQ-10-R10-S20 (<<BR-COM-10-S20,BR-COM-10-S20>>) |Below the threshold, information about the publication of the contract notice in TED MIGHT be provided (when it is available)
+| | |RQ-10-R10-S30 (<<BR-COM-10-S30,BR-COM-10-S30>>) |Information about the publication of the contract notice in other official gazettes or journals MIGHT be provided
+|RQ-10-R20 (<<BR-REQ-20,BR-REQ-20>>) |Information about the procurer MUST be provided | N/A |N/A
+|RQ-10-R30 (<<BR-COM-10,BR-COM-10>>) |Information about the procurement procedure MUST be provided | N/A |N/A
+|RQ-10-R40 (<<BR-REQ-30,BR-REQ-30>>) |Exclusion grounds MUST be retrieved from e-Certis | RQ-10-R40-S10 (<<BR-REQ-30-S10,BR-REQ-30-S10>>) |Information for common exclusion grounds (sections A, B and C) MUST be retrieved from e-Certis.
+| | |RQ-10-R40-S20 (<<BR-REQ-30-S20,BR-REQ-30-S20>>) |Information for national exclusion grounds (section D) MUST be retrieved from e-Certis.
+|RQ-10-R50 (<<BR-REQ-40,BR-REQ-40>>) |Selection criteria CAN be provided | N/A |N/A
 |===
 
-.Table 5: Test Case RQ-10
+
 
 ==== RQ-20
 
-[width="100%",cols="19%,11%,16%,20%,34%",options="header",]
+.Test Case RQ-20
+===== *Pre-conditions*
+[cols="1,3"]
 |===
-|*Pre-conditions* | | | |
-|XSD Schema | |UBL-QualificationApplicationRequest-2.2-Pre-award.xsd (ESPD Request) | |
-|Divided into lots | |/cac:ProcurementProjectLot /cbc:ID is 0 (not divided into lots) | |
-|Two-phased procedure | |/cbc:ProcedureCode != OPEN (a procedure different to Open procedure, it is a two-phased procedure) | |
+|XSD Schema |UBL-QualificationApplicationRequest-2.2-Pre-award.xsd (ESPD Request)
+|Divided into lots | /cac:ProcurementProjectLot /cbc:ID is 0 (not divided into lots)
+|Two-phased procedure | /cbc:ProcedureCode != OPEN (a procedure different to Open procedure, it is a two-phased procedure)
+|===
 
-|*List of rules* | | | |
-|*Rule ID* |*Rule* | |*Scenario ID* |*Scenarios*
-|RQ-20-R10 (<<BR-COM-10,BR-COM-10>>) |Information about publication CAN be provided | a|
+===== *List of rules*
+[cols="1,2,1,3"]
+|===
+
+
+|*Rule ID* |*Rule* |*Scenario ID* |*Scenarios*
+|RQ-20-R10 (<<BR-COM-10,BR-COM-10>>) |Information about publication CAN be provided a|
 RQ-20-R10-S10
 
 (<<BR-COM-10-S10,BR-COM-10-S10>>)
 
 |Above the threshold, information about the publication of the contract notice in TED MUST be provided (when it is available)
-| | | |RQ-20-R10-S20 (<<BR-COM-10-S20,BR-COM-10-S20>>) |Below the threshold, information about the publication of the contract notice in TED MIGHT be provided (when it is available)
-| | | |RQ-20-R10-S30 (<<BR-COM-10-S30,BR-COM-10-S30>>) |Information about the publication of the contract notice in other official gazettes or journals MIGHT be provided
-|RQ-20-R20 (<<BR-REQ-20,BR-REQ-20>>) |Information about the procurer MUST be provided | |N/A |N/A
-|RQ-20-R30 (<<BR-COM-10,BR-COM-10>>) |Information about the procurement procedure MUST be provided | |N/A |N/A
-|RQ-20-R40 (<<BR-REQ-30,BR-REQ-30>>) |Exclusion grounds MUST be retrieved from e-Certis | |RQ-20-R40-S10 (<<BR-REQ-30-S10,BR-REQ-30-S10>>) |Information for common exclusion grounds (sections A, B and C) MUST be retrieved from e-Certis.
-| | | |RQ-20-R40-S20 (<<BR-REQ-30-S20,BR-REQ-30-S20>>) |Information for national exclusion grounds (section D) MUST be retrieved from e-Certis.
-|RQ-20-R50 (<<BR-REQ-40,BR-REQ-40>>) |Selection criteria CAN be provided | |N/A |N/A
+| | |RQ-20-R10-S20 (<<BR-COM-10-S20,BR-COM-10-S20>>) |Below the threshold, information about the publication of the contract notice in TED MIGHT be provided (when it is available)
+| | |RQ-20-R10-S30 (<<BR-COM-10-S30,BR-COM-10-S30>>) |Information about the publication of the contract notice in other official gazettes or journals MIGHT be provided
+|RQ-20-R20 (<<BR-REQ-20,BR-REQ-20>>) |Information about the procurer MUST be provided |N/A |N/A
+|RQ-20-R30 (<<BR-COM-10,BR-COM-10>>) |Information about the procurement procedure MUST be provided |N/A |N/A
+|RQ-20-R40 (<<BR-REQ-30,BR-REQ-30>>) |Exclusion grounds MUST be retrieved from e-Certis |RQ-20-R40-S10 (<<BR-REQ-30-S10,BR-REQ-30-S10>>) |Information for common exclusion grounds (sections A, B and C) MUST be retrieved from e-Certis.
+| | |RQ-20-R40-S20 (<<BR-REQ-30-S20,BR-REQ-30-S20>>) |Information for national exclusion grounds (section D) MUST be retrieved from e-Certis.
+|RQ-20-R50 (<<BR-REQ-40,BR-REQ-40>>) |Selection criteria CAN be provided |N/A |N/A
 |===
 
-.Table 6: Test Case RQ-20
+
 
 ==== RQ-30
 
-[width="100%",cols="19%,11%,16%,20%,34%",options="header",]
-|===
-|*Pre-conditions* | | | |
-|XSD Schema | |UBL-QualificationApplicationRequest-2.2-Pre-award.xsd (ESPD Request) | |
-|Regulated or Self-contained ESPD | |/cbc:QualificationApplicationTypeCode is SELFCONTAINED | |
-|Divided into lots | |/cac:ProcurementProjectLot /cbc:ID is 0 (not divided into lots) | |
-|Two-phased procedure | |/cbc:ProcedureCode = OPEN (Open procedure, a single-phased procedure) | |
-
-|*List of rules* | | | |
-|*Rule ID* |*Rule* | |*Scenario ID* |*Scenarios*
-|RQ-30-R10 (<<BR-COM-10,BR-COM-10>>) |Information about publication CAN be provided | a|
-RQ-30-R10-S10
-
-(<<BR-COM-10-S10,BR-COM-10-S10>>)
-
-|Above the threshold, information about the publication of the contract notice in TED MUST be provided (when it is available)
-| | | |RQ-30-R10-S20 (<<BR-COM-10-S20,BR-COM-10-S20>>) |Below the threshold, information about the publication of the contract notice in TED MIGHT be provided (when it is available)
-| | | |RQ-30-R10-S30 (<<BR-COM-10-S30,BR-COM-10-S30>>) |Information about the publication of the contract notice in other official gazettes or journals MIGHT be provided
-|RQ-30-R20 (<<BR-REQ-20,BR-REQ-20>>) |Information about the procurer MUST be provided | |N/A |N/A
-|RQ-30-R30 (<<BR-SC-10,BR-SC-10>>) |Information about the procurement procedure MUST be provided | |N/A |N/A
-|RQ-30-R40 (<<BR-REQ-30,BR-REQ30>>) |Exclusion grounds MUST be retrieved from e-Certis | |RQ-30-R40-S10 (<<BR-REQ-30-S10,BR-REQ30-S10>>) |Information for common exclusion grounds (sections A, B and C) MUST be retrieved from e-Certis.
-| | | |RQ-30-R40-S20 (<<BR-REQ-30-S20,BR-REQ-30-S20>>) |Information for national exclusion grounds (section D) MUST be retrieved from e-Certis.
-|RQ-30-R50 (<<BR-REQ-40,BR-REQ-40>>) |Selection criteria CAN be provided | |N/A |N/A
-|RQ-30-R60 (<<BR-SC-20,BR-SC-20>>) |When selection criteria is provided, specific requirements for each criteria CAN be provided | |N/A |N/A
+.Test Case RQ-30
+===== *Pre-conditions*
+[cols="1,3"]
 |===
 
-.Table 7: Test Case RQ-30
+|XSD Schema | UBL-QualificationApplicationRequest-2.2-Pre-award.xsd (ESPD Request)
+|Regulated or Self-contained ESPD |/cbc:QualificationApplicationTypeCode is SELFCONTAINED
+|Divided into lots | /cac:ProcurementProjectLot /cbc:ID is 0 (not divided into lots)
+|Two-phased procedure | /cbc:ProcedureCode = OPEN (Open procedure, a single-phased procedure)
+|===
+
+
+
+===== *List of rules*
+[cols="1,2,1,3"]
+|===
+|*Rule ID* |*Rule* | *Scenario ID* |*Scenarios*
+|RQ-30-R10 (<<BR-COM-10,BR-COM-10>>) |Information about publication CAN be provided a|RQ-30-R10-S10 (<<BR-COM-10-S10,BR-COM-10-S10>>) |Above the threshold, information about the publication of the contract notice in TED MUST be provided (when it is available)
+| | | RQ-30-R10-S20 (<<BR-COM-10-S20,BR-COM-10-S20>>) |Below the threshold, information about the publication of the contract notice in TED MIGHT be provided (when it is available)
+| | | Q-30-R10-S30 (<<BR-COM-10-S30,BR-COM-10-S30>>) |Information about the publication of the contract notice in other official gazettes or journals MIGHT be provided
+|RQ-30-R20 (<<BR-REQ-20,BR-REQ-20>>) |Information about the procurer MUST be provided | N/A |N/A
+|RQ-30-R30 (<<BR-SC-10,BR-SC-10>>) |Information about the procurement procedure MUST be provided | N/A |N/A
+|RQ-30-R40 (<<BR-REQ-30,BR-REQ30>>) |Exclusion grounds MUST be retrieved from e-Certis | RQ-30-R40-S10 (<<BR-REQ-30-S10,BR-REQ30-S10>>) |Information for common exclusion grounds (sections A, B and C) MUST be retrieved from e-Certis.
+| | | RQ-30-R40-S20 (<<BR-REQ-30-S20,BR-REQ-30-S20>>) |Information for national exclusion grounds (section D) MUST be retrieved from e-Certis.
+|RQ-30-R50 (<<BR-REQ-40,BR-REQ-40>>) |Selection criteria CAN be provided | N/A |N/A
+|RQ-30-R60 (<<BR-SC-20,BR-SC-20>>) |When selection criteria is provided, specific requirements for each criteria CAN be provided | N/A |N/A
+|===
+
+
 
 ==== RQ-40
 
-[width="100%",cols="18%,11%,15%,20%,36%",options="header",]
+.Test Case RQ-40
+===== *Pre-conditions*
+[cols="1,3"]
 |===
-|*Pre-conditions* | | | |
-|XSD Schema | |UBL-QualificationApplicationRequest-2.2-Pre-award.xsd (ESPD Request) | |
-|Regulated or Self-contained ESPD | |/cbc:QualificationApplicationTypeCode is SELFCONTAINED | |
-|Divided into lots | |/cac:ProcurementProjectLot /cbc:ID is not 0 (divided into lots) | |
-|Two-phased procedure | |/cbc:ProcedureCode != OPEN (a procedure different to Open procedure, it is a two-phased procedure) | |
-
-|*List of rules* | | | |
-|*Rule ID* |*Rule* | |*Scenario ID* |*Scenarios*
-|RQ-40-R10 (<<BR-COM-10,BR-COM-10>>) |Information about publication CAN be provided | a|
-RQ-40-R10-S10
-
-(<<BR-COM-10-S10,BR-COM-10-S10>>)
-
-|Above the threshold, information about the publication of the contract notice in TED MUST be provided (when it is available)
-| | | |RQ-40-R10-S20 (<<BR-COM-10-S20,BR-COM-10-S20>>) |Below the threshold, information about the publication of the contract notice in TED MIGHT be provided (when it is available)
-| | | |RQ-40-R10-S30 (<<BR-COM-10-S30,BR-COM-10-S30>>) |Information about the publication of the contract notice in other official gazettes or journals MIGHT be provided
-|RQ-40-R20 (<<BR-REQ-20,BR-REQ-20>>) |Information about the procurer MUST be provided | |N/A |N/A
-|RQ-40-R30 (<<BR-SC-10,BR-SC-10>>) |Information about the procurement procedure MUST be provided | |N/A |N/A
-|RQ-40-R40 (<<BR-REQ-30,BR-REQ-30>>) |Exclusion grounds MUST be retrieved from e-Certis | |RQ-40-R40-S10 (<<BR-REQ-30-S10,BR-REQ30-S10>>) |Information for common exclusion grounds (sections A, B and C) MUST be retrieved from e-Certis.
-| | | |RQ-40-R40-S20 (<<BR-REQ-30-S20,BR-REQ-30-S20>>) |Information for national exclusion grounds (section D) MUST be retrieved from e-Certis.
-|RQ-40-R50 (<<BR-REQ-40,BR-REQ-40>>) |Selection criteria CAN be provided | |N/A |N/A
-|RQ-40-R60 (<<BR-SC-20,BR-SC-20>>) |When selection criteria is provided, specific requirements for each criteria CAN be provided | |N/A |N/A
-|RQ-40-R70 (<<BR-2P-10,BR-2P-10>>) |Information about weighting MUST be provided | |RQ-40-R70-S10 (<<BR-2P-10-S10,BR-2P-10-S10>>) |For two-phased procedure with weighted criteria the information about weighting for each criteria within Technical and professional ability MUST be provided
-| | | |RQ-40-R70-S20 (<<BR-2P-10-S20,BR-2P-10-S20>>) |For two-phased procedure without weighted criteria, additional information regarding weighting IS NOT required
+|XSD Schema | UBL-QualificationApplicationRequest-2.2-Pre-award.xsd (ESPD Request) |
+Regulated or Self-contained ESPD  |/cbc:QualificationApplicationTypeCode is SELFCONTAINED
+|Divided into lots  |/cac:ProcurementProjectLot /cbc:ID is not 0 (divided into lots)
+|Two-phased procedure | /cbc:ProcedureCode != OPEN (a procedure different to Open procedure, it is a two-phased procedure)
 |===
 
-.Table 8: Test Case RQ-40
+===== *List of rules*
+[cols="1,2,1,3"]
+|===
+
+|*Rule ID* |*Rule* |*Scenario ID* |*Scenarios*
+|RQ-40-R10 (<<BR-COM-10,BR-COM-10>>) |Information about publication CAN be provided a|RQ-40-R10-S10
+(<<BR-COM-10-S10,BR-COM-10-S10>>)|Above the threshold, information about the publication of the contract notice in TED MUST be provided (when it is available)
+
+| | | RQ-40-R10-S20 (<<BR-COM-10-S20,BR-COM-10-S20>>) |Below the threshold, information about the publication of the contract notice in TED MIGHT be provided (when it is available)
+| | | RQ-40-R10-S30 (<<BR-COM-10-S30,BR-COM-10-S30>>) |Information about the publication of the contract notice in other official gazettes or journals MIGHT be provided
+|RQ-40-R20 (<<BR-REQ-20,BR-REQ-20>>) |Information about the procurer MUST be provided | N/A |N/A
+|RQ-40-R30 (<<BR-SC-10,BR-SC-10>>) |Information about the procurement procedure MUST be provided | N/A |N/A
+|RQ-40-R40 (<<BR-REQ-30,BR-REQ-30>>) |Exclusion grounds MUST be retrieved from e-Certis | RQ-40-R40-S10 (<<BR-REQ-30-S10,BR-REQ30-S10>>) |Information for common exclusion grounds (sections A, B and C) MUST be retrieved from e-Certis.
+| | | RQ-40-R40-S20 (<<BR-REQ-30-S20,BR-REQ-30-S20>>) |Information for national exclusion grounds (section D) MUST be retrieved from e-Certis.
+|RQ-40-R50 (<<BR-REQ-40,BR-REQ-40>>) |Selection criteria CAN be provided | N/A |N/A
+|RQ-40-R60 (<<BR-SC-20,BR-SC-20>>) |When selection criteria is provided, specific requirements for each criteria CAN be provided | N/A |N/A
+|RQ-40-R70 (<<BR-2P-10,BR-2P-10>>) |Information about weighting MUST be provided | RQ-40-R70-S10 (<<BR-2P-10-S10,BR-2P-10-S10>>) |For two-phased procedure with weighted criteria the information about weighting for each criteria within Technical and professional ability MUST be provided
+| | | RQ-40-R70-S20 (<<BR-2P-10-S20,BR-2P-10-S20>>) |For two-phased procedure without weighted criteria, additional information regarding weighting IS NOT required
+|===
+
 
 ==== RQ-50
 
-[width="100%",cols="19%,11%,16%,20%,34%",options="header",]
+.Test Case RQ-50
+===== *Pre-conditions*
+[cols="1,3"]
 |===
-|*Pre-conditions* | | | |
-|XSD Schema | |UBL-QualificationApplicationRequest-2.2-Pre-award.xsd (ESPD Request) | |
-|Regulated or Self-contained ESPD | |/cbc:QualificationApplicationTypeCode is SELFCONTAINED | |
-|Divided into lots | |/cac:ProcurementProjectLot /cbc:ID is not 0 (divided into lots) | |
-|Two-phased procedure | |/cbc:ProcedureCode = OPEN (Open procedure, a single-phased procedure) | |
+|XSD Schema | UBL-QualificationApplicationRequest-2.2-Pre-award.xsd (ESPD Request)
+|Regulated or Self-contained ESPD |/cbc:QualificationApplicationTypeCode is SELFCONTAINED
+|Divided into lots | /cac:ProcurementProjectLot /cbc:ID is not 0 (divided into lots)
+|Two-phased procedure | /cbc:ProcedureCode = OPEN (Open procedure, a single-phased procedure) | |
+|===
 
-|*List of rules* | | | |
-|*Rule ID* |*Rule* | |*Scenario ID* |*Scenarios*
-|RQ-50-R10 (<<BR-COM-10,BR-COM-10>>) |Information about publication CAN be provided | a|
-RQ-50-R10-S10
-
+===== *List of rules*
+[cols="1,2,1,3"]
+|===
+|*Rule ID* |*Rule* | *Scenario ID* |*Scenarios*
+|RQ-50-R10 (<<BR-COM-10,BR-COM-10>>) |Information about publication CAN be provided a|RQ-50-R10-S10
 (<<BR-COM-10-S10,BR-COM-10-S10>>)
-
 |Above the threshold, information about the publication of the contract notice in TED MUST be provided (when it is available)
-| | | |RQ-50-R10-S20 (<<BR-COM-10-S20,BR-COM-10-S20>>) |Below the threshold, information about the publication of the contract notice in TED MIGHT be provided (when it is available)
-| | | |RQ-50-R10-S30 (<<BR-COM-10-S30,BR-COM-10-S30>>) |Information about the publication of the contract notice in other official gazettes or journals MIGHT be provided
-|RQ-50-R20 (<<BR-REQ-20,BR-REQ-20>>) |Information about the procurer MUST be provided | |N/A |N/A
-|RQ-50-R30 (<<BR-SC-10,BR-SC-10>>) |Information about the procurement procedure MUST be provided | |N/A |N/A
-|RQ-50-R40 (<<BR-LOT-30,BR-LOT-30>>) |Information about lots MUST be provided | |RQ-50-R40-S10 (<<BR-LOT-30-S10,BR-LOT-30-S10>>) |The number of lots into which the procurement procedure is divided MUST be provided.
-| | | |RQ-50-R40-S20 (<<BR-LOT-30-S20,BR-LOT-30-S20>>) |Additional information regarding lots CAN be provided.
-|RQ-50-R50 (<<BR-REQ-30,BR-REQ-30>>) |Exclusion grounds MUST be retrieved from e-Certis | |RQ-50-R50-S10 (<<BR-REQ-30-S10,BR-REQ-30-S10>>) |Information for common exclusion grounds (sections A, B and C) MUST be retrieved from e-Certis.
-| | | |RQ-50-R50-S20 (<<BR-REQ-30-S20,BR-REQ-30-S20>>) |Information for national exclusion grounds (section D) MUST be retrieved from e-Certis.
-|RQ-50-R60 (<<BR-REQ-40,BR-REQ-40>>) |Selection criteria CAN be provided | |N/A |N/A
-|RQ-50-R70 (<<BR-LOT-40,BR-LOT-40>>) |When selection criteria is provided, the lots each criteria applies to MUST be provided | |N/A |N/A
-|RQ-50-R80 (<<BR-SC-20,BR-SC-20>>) |When selection criteria is provided, specific requirements for each criterion CAN be provided | |N/A |N/A
+| | | RQ-50-R10-S20 (<<BR-COM-10-S20,BR-COM-10-S20>>) |Below the threshold, information about the publication of the contract notice in TED MIGHT be provided (when it is available)
+| | | RQ-50-R10-S30 (<<BR-COM-10-S30,BR-COM-10-S30>>) |Information about the publication of the contract notice in other official gazettes or journals MIGHT be provided
+|RQ-50-R20 (<<BR-REQ-20,BR-REQ-20>>) |Information about the procurer MUST be provided | N/A |N/A
+|RQ-50-R30 (<<BR-SC-10,BR-SC-10>>) |Information about the procurement procedure MUST be provided | N/A |N/A
+|RQ-50-R40 (<<BR-LOT-30,BR-LOT-30>>) |Information about lots MUST be provided | RQ-50-R40-S10 (<<BR-LOT-30-S10,BR-LOT-30-S10>>) |The number of lots into which the procurement procedure is divided MUST be provided.
+| | | RQ-50-R40-S20 (<<BR-LOT-30-S20,BR-LOT-30-S20>>) |Additional information regarding lots CAN be provided.
+|RQ-50-R50 (<<BR-REQ-30,BR-REQ-30>>) |Exclusion grounds MUST be retrieved from e-Certis | RQ-50-R50-S10 (<<BR-REQ-30-S10,BR-REQ-30-S10>>) |Information for common exclusion grounds (sections A, B and C) MUST be retrieved from e-Certis.
+| | | RQ-50-R50-S20 (<<BR-REQ-30-S20,BR-REQ-30-S20>>) |Information for national exclusion grounds (section D) MUST be retrieved from e-Certis.
+|RQ-50-R60 (<<BR-REQ-40,BR-REQ-40>>) |Selection criteria CAN be provided | N/A |N/A
+|RQ-50-R70 (<<BR-LOT-40,BR-LOT-40>>) |When selection criteria is provided, the lots each criteria applies to MUST be provided | N/A |N/A
+|RQ-50-R80 (<<BR-SC-20,BR-SC-20>>) |When selection criteria is provided, specific requirements for each criterion CAN be provided | N/A |N/A
 |===
 
-.Table 9: Test Case RQ-50
+
 
 ==== RQ-60
 
-[width="100%",cols="19%,11%,16%,20%,34%",options="header",]
-|===
-|*Pre-conditions* | | | |
-|XSD Schema | |UBL-QualificationApplicationRequest-2.2-Pre-award.xsd (ESPD Request) | |
-|Regulated or Self-contained ESPD | |/cbc:QualificationApplicationTypeCode is SELFCONTAINED | |
-|Divided into lots | |/cac:ProcurementProjectLot /cbc:ID is not 0 (divided into lots) | |
-|Two-phased procedure | |/cbc:ProcedureCode != OPEN (a procedure different to Open procedure, it is a two-phased procedure) | |
-
-|*List of rules* | | | |
-|*Rule ID* |*Rule* | |*Scenario ID* |*Scenarios*
-|RQ-60-R10 (<<BR-COM-10,BR-COM-10>>) |Information about publication CAN be provided | a|
-RQ-60-R10-S10
-
-(<<BR-COM-10-S10,BR-COM-10-S10>>)
-
-|Above the threshold, information about the publication of the contract notice in TED MUST be provided (when it is available)
-| | | |RQ-60-R10-S20 (<<BR-COM-10-S20,BR-COM-10-S20>>) |Below the threshold, information about the publication of the contract notice in TED MIGHT be provided (when it is available)
-| | | |RQ-60-R10-S30 (<<BR-COM-10-S30,BR-COM-10-S30>>) |Information about the publication of the contract notice in other official gazettes or journals MIGHT be provided
-|RQ-60-R20 (<<BR-REQ-20,BR-REQ-20>>) |Information about the procurer MUST be provided | |N/A |N/A
-|RQ-60-R30 (<<BR-SC-10,BR-SC-10>>) |Information about the procurement procedure MUST be provided | |N/A |N/A
-|RQ-60-R40 (<<BR-LOT-30,BR-LOT-30>>) |Information about lots MUST be provided | |RQ-60-R40-S10 (<<BR-LOT-30-S10,BR-LOT-30-S10>>) |The number of lots into which the procurement procedure is divided MUST be provided.
-| | | |RQ-60-R40-S20 (<<BR-LOT-30-S20,BR-LOT-30-S20>>) |Additional information regarding lots CAN be provided.
-|RQ-60-R50 (<<BR-REQ-30,BR-REQ-30>>) |Exclusion grounds MUST be retrieved from e-Certis | |RQ-50-R50-S10 (<<BR-REQ-30-S10,BR-REQ-30-S10>>) |Information for common exclusion grounds (sections A, B and C) MUST be retrieved from e-Certis.
-| | | |RQ-50-R50-S20 (<<BR-REQ-30-S20,BR-REQ30-S20>>) |Information for national exclusion grounds (section D) MUST be retrieved from e-Certis.
-|RQ-60-R60 (<<BR-REQ-40,BR-REQ40>>) |Selection criteria CAN be provided | |N/A |N/A
-|RQ-60-R70 (<<BR-LOT-40,BR-LOT-40>>) |When selection criteria is provided, the lots each criterion applies to MUST be provided | |N/A |N/A
-|RQ-60-R80 (<<BR-SC-20,BR-SC-20>>) |When selection criteria is provided, specific requirements for each criterion CAN be provided | |N/A |N/A
-|RQ-60-R90 (<<BR-2P-10,BR-2P-10>>) |Information about weighting MUST be provided | |RQ-60-R90-S10 (<<BR-2P-10-S10,BR-2P-10-S10>>) |For two-phased procedure with weighted criteria the information about weighting for each criterion within Technical and professional ability MUST be provided
-| | | |RQ-60-R90-S20 (<<BR-2P-10-S20,BR-2P-10-S20>>) |For two-phased procedure without weighted criteria, additional information regarding weighting IS NOT required
+.Test Case RQ-60
+===== *Pre-conditions*
+[cols="1,3"]
 |===
 
-.Table 10: Test Case RQ-60
+|XSD Schema | UBL-QualificationApplicationRequest-2.2-Pre-award.xsd (ESPD Request)
+|Regulated or Self-contained ESPD |/cbc:QualificationApplicationTypeCode is SELFCONTAINED
+|Divided into lots |/cac:ProcurementProjectLot /cbc:ID is not 0 (divided into lots)
+|Two-phased procedure | /cbc:ProcedureCode != OPEN (a procedure different to Open procedure, it is a two-phased procedure)
+|===
+
+===== *List of rules*
+[cols="1,2,1,3"]
+|===
+|*Rule ID* |*Rule* | *Scenario ID* |*Scenarios*
+|RQ-60-R10 (<<BR-COM-10,BR-COM-10>>) |Information about publication CAN be provided  a|RQ-60-R10-S10 (<<BR-COM-10-S10,BR-COM-10-S10>>)|Above the threshold, information about the publication of the contract notice in TED MUST be provided (when it is available)
+| | | RQ-60-R10-S20 (<<BR-COM-10-S20,BR-COM-10-S20>>) |Below the threshold, information about the publication of the contract notice in TED MIGHT be provided (when it is available)
+| | | RQ-60-R10-S30 (<<BR-COM-10-S30,BR-COM-10-S30>>) |Information about the publication of the contract notice in other official gazettes or journals MIGHT be provided
+|RQ-60-R20 (<<BR-REQ-20,BR-REQ-20>>) |Information about the procurer MUST be provided | N/A |N/A
+|RQ-60-R30 (<<BR-SC-10,BR-SC-10>>) |Information about the procurement procedure MUST be provided | N/A |N/A
+|RQ-60-R40 (<<BR-LOT-30,BR-LOT-30>>) |Information about lots MUST be provided | RQ-60-R40-S10 (<<BR-LOT-30-S10,BR-LOT-30-S10>>) |The number of lots into which the procurement procedure is divided MUST be provided.
+| | | RQ-60-R40-S20 (<<BR-LOT-30-S20,BR-LOT-30-S20>>) |Additional information regarding lots CAN be provided.
+|RQ-60-R50 (<<BR-REQ-30,BR-REQ-30>>) |Exclusion grounds MUST be retrieved from e-Certis | RQ-50-R50-S10 (<<BR-REQ-30-S10,BR-REQ-30-S10>>) |Information for common exclusion grounds (sections A, B and C) MUST be retrieved from e-Certis.
+| | | RQ-50-R50-S20 (<<BR-REQ-30-S20,BR-REQ30-S20>>) |Information for national exclusion grounds (section D) MUST be retrieved from e-Certis.
+|RQ-60-R60 (<<BR-REQ-40,BR-REQ40>>) |Selection criteria CAN be provided | N/A |N/A
+|RQ-60-R70 (<<BR-LOT-40,BR-LOT-40>>) |When selection criteria is provided, the lots each criterion applies to MUST be provided | N/A |N/A
+|RQ-60-R80 (<<BR-SC-20,BR-SC-20>>) |When selection criteria is provided, specific requirements for each criterion CAN be provided | N/A |N/A
+|RQ-60-R90 (<<BR-2P-10,BR-2P-10>>) |Information about weighting MUST be provided | RQ-60-R90-S10 (<<BR-2P-10-S10,BR-2P-10-S10>>) |For two-phased procedure with weighted criteria the information about weighting for each criterion within Technical and professional ability MUST be provided
+| | | RQ-60-R90-S20 (<<BR-2P-10-S20,BR-2P-10-S20>>) |For two-phased procedure without weighted criteria, additional information regarding weighting IS NOT required
+|===
+
+
 
 === List of Business Rules
 
 List of business rules and its applications to the test cases:
 
+.ESPDRequest - Test Cases and Business Rules
 [width="100%",cols="10%,9%,9%,9%,9%,9%,9%,9%,9%,9%,9%",options="header",]
 |===
 | s|<<BR-COM-10,BR-COM-10>>|<<BR-REQ-20,BR-REQ-20>>|<<BR-REQ-30,BR-REQ-30>>|<<BR-REQ-40,BR-REQ-40>>|<<BR-COM-10,BR-COM-10>>|<<BR-SC-10,BR-SC-10>>|<<BR-SC-20,BR-SC-20>>|<<BR-LOT-30,BR-LOT-30>>|<<BR-LOT-40,BR-LOT-40>>|<<BR-2P-10,BR-2P-10>>
 
-|<<RQ-10,RQ-10>> | | | | | |- |- |- |- |-
-|<<RQ-20,RQ-20>> | | | | | |- |- |- |- |-
-|<<RQ-30,RQ-30>> | | | | |- | | |- |- |
-|<<RQ-40,RQ-40>> | | | | |- | | |- |- |
-|<<RQ-50,RQ-50>> | | | | |- | | | | |
-|<<RQ-60,RQ-60>> | | | | |- | | | | |
+|<<RQ-10,RQ-10>> | | | | | |x |x |x |x |x
+|<<RQ-20,RQ-20>> | | | | | |x |x |x |x |x
+|<<RQ-30,RQ-30>> | | | | |x | | |x |x |
+|<<RQ-40,RQ-40>> | | | | |x | | |x |x |
+|<<RQ-50,RQ-50>> | | | | |x | | | | |
+|<<RQ-60,RQ-60>> | | | | |x | | | | |
 |===
 
-.Table 11: ESPDRequest - Test Cases and Business Rules
+
 
 == ESPDResponse
 
@@ -358,79 +378,89 @@ List of business rules and its applications to the test cases:
 
 ==== RS-10
 
-[width="100%",cols="18%,5%,48%,15%,14%",options="header",]
+.Test Case RS-10
+===== *Pre-conditions*
+[cols="1,3"]
 |===
-|*Pre-conditions* | | | |
-|XSD Schema | |UBL-QualificationApplicationResponse-2.2
--Pre-award.xsd (ESPD Response) | |
-|Regulated or Self-contained ESPD | |/cbc:QualificationApplicationTypeCode is
+|XSD Schema | UBL-QualificationApplicationResponse-2.2
+-Pre-award.xsd (ESPD Response)
+|Regulated or Self-contained ESPD |/cbc:QualificationApplicationTypeCode is
 REGULATED | |
-|Divided into lots | |/cac:ProcurementProjectLot /cbc:ID is 0 (not divided
-into lots) | |
-|Pre-qualification system | |/cac:EconomicOperatorParty/cac:
-QualifyingParty/cac:Party /cac:PartyIdentification not exist (not registered on a
-national pre-qualification system) | |
-|EO Role | |/cac:EconomicOperator
+|Divided into lots | /cac:ProcurementProjectLot /cbc:ID is 0 (not divided
+into lots)
+|Pre-qualification system |/cac:EconomicOperatorParty/cac:
+QualifyingParty/cac:Party /cac:PartyIdentification not exist (not registered on a national pre-qualification system)
+|EO Role | /cac:EconomicOperator
 Party/cac:EconomicOperatorRole/cbc:
-RoleCode is SCLE (Sole contractor) | |
-
-|*List of rules* | | | |
-|*Rule ID* |*Rule* | |*Scenario ID* |*Scenarios*
-|RS-10-R10 (<<BR-RESP-10,BR-RESP-10>>) |Information about the economic operator MUST be provided | |N/A |N/A
-|RS-10-R20 (<<BR-RESP-20,BR-RESP-20>>) |Information about representatives of the economic operator CAN be provided | |N/A |N/A
-|RS-10-R30 (<<BR-RESP-30,BR-RESP-30>>) |Information about compliance of exclusion grounds MUST be provided | |N/A |N/A
-|RS-10-R40 (<<BR-RESP-40,BR-RESP-40_role-different-to-OENRON>>) |Information about compliance of selection criteria MUST be provided | |N/A |N/A
-|RS-10-R50 (<<BR-COM-10,BR-REG-20>>) |Information about the procurement procedure MIGHT be provided | |N/A |N/A
+RoleCode is SCLE (Sole contractor)
+|===
+===== *List of rules*
+[cols="1,2,1,3"]
+|===
+|*Rule ID* |*Rule* | *Scenario ID* |*Scenarios*
+|RS-10-R10 (<<BR-RESP-10,BR-RESP-10>>) |Information about the economic operator MUST be provided | N/A |N/A
+|RS-10-R20 (<<BR-RESP-20,BR-RESP-20>>) |Information about representatives of the economic operator CAN be provided | N/A |N/A
+|RS-10-R30 (<<BR-RESP-30,BR-RESP-30>>) |Information about compliance of exclusion grounds MUST be provided | N/A |N/A
+|RS-10-R40 (<<BR-RESP-40,BR-RESP-40_role-different-to-OENRON>>) |Information about compliance of selection criteria MUST be provided | N/A |N/A
+|RS-10-R50 (<<BR-COM-10,BR-REG-20>>) |Information about the procurement procedure MIGHT be provided | N/A |N/A
 |===
 
-.Table 13: Test Case RS-10
+
 
 ==== RS-20
 
-[width="100%",cols="18%,11%,13%,20%,38%",options="header",]
+.Test Case RS-20
+===== *Pre-conditions*
+[cols="1,3"]
 |===
-|*Pre-conditions* | | | |
-|XSD Schema | |UBL-QualificationApplicationResponse-2.2-Pre-award.xsd (ESPD Response) | |
-|Regulated or Self-contained ESPD | |/cbc:QualificationApplicationTypeCode is REGULATED | |
-|Divided into lots | |/cac:ProcurementProjectLot /cbc:ID is 0 (not divided into lots) | |
-|Pre-qualification system | |/cac:EconomicOperatorParty/cac:QualifyingParty/cac:Party /cac:PartyIdentification exist (registered on a national pre-qualification system) | |
-|EO Role | |/cac:EconomicOperatorParty/cac:EconomnicOperatorRole /cbc:RoleCode is SCLE (Sole contractor) | |
-
-|*List of rules* | | | |
-|*Rule ID* |*Rule* | |*Scenario ID* |*Scenarios*
-|RS-20-R10 (<<BR-RESP-10,BR-RESP-10>>) |Information about the economic operator MUST be provided | |N/A |N/A
-|RS-20-R20 (<<BR-RESP-50,BR-RESP-50_role-OENRON>>) |Information about the pre-qualification system the EO is registered on MUST be provided | |N/A |N/A
-|RS-20-R30 (<<BR-RESP-20,BR-RESP-20>>) |Information about representatives of the economic operator CAN be provided | |N/A |N/A
-|RS-20-R40 (<<BR-RESP-60,BR-RESP-60>>) |Information about compliance of exclusion grounds CAN be provided | |RS-20-R40-S10 (<<BR-RESP-60-S10,BR-RESP-60-S10>>) |When the pre-qualification system the EO is registered on does not cover all the exclusion criteria, information about compliance of exclusion grounds MUST be provided.
-| | | |RS-20-R40-S20 (<<BR-RESP-60-S20,BR-RESP-60-S20>>) |When the pre-qualification system the EO is registered on covers all the exclusion criteria, information about compliance of exclusion grounds IS NOT required.
-|RS-20-R50 (<<BR-RESP-70,BR-RESP-70>>) |Information about compliance of selection criteria CAN be provided | |RS-20-R50-S10 (<<BR-RESP-70-S10,BR-RESP-70-S10>>) |When the pre-qualification system the EO is registered on does not cover all the selection criteria, information about compliance of selection criteria MUST be provided.
-| | | |RS-20-R50-S20 (<<BR-RESP-70-S20,BR-RESP-70-S20>>) |When the pre-qualification system the EO is registered on covers all the selection criteria, information about compliance of selection criteria IS NOT required.
-|RS-20-R60 (<<BR-COM-10,BR-COM-20>>) |Information about the procurement procedure MIGHT be provided | |N/A |N/A
+|XSD Schema | UBL-QualificationApplicationResponse-2.2-Pre-award.xsd (ESPD Response)
+|Regulated or Self-contained ESPD  |/cbc:QualificationApplicationTypeCode is REGULATED
+|Divided into lots | /cac:ProcurementProjectLot /cbc:ID is 0 (not divided into lots)
+|Pre-qualification system  |/cac:EconomicOperatorParty/cac:QualifyingParty/cac:Party /cac:PartyIdentification exist (registered on a national pre-qualification system)
+|EO Role | /cac:EconomicOperatorParty/cac:EconomnicOperatorRole /cbc:RoleCode is SCLE (Sole contractor)
 |===
 
-.Table 14: Test Case RS-20
+
+
+===== *List of rules*
+[cols="1,2,1,3"]
+|===
+|*Rule ID* |*Rule* | *Scenario ID* |*Scenarios*
+|RS-20-R10 (<<BR-RESP-10,BR-RESP-10>>) |Information about the economic operator MUST be provided | N/A |N/A
+|RS-20-R20 (<<BR-RESP-50,BR-RESP-50_role-OENRON>>) |Information about the pre-qualification system the EO is registered on MUST be provided | N/A |N/A
+|RS-20-R30 (<<BR-RESP-20,BR-RESP-20>>) |Information about representatives of the economic operator CAN be provided | N/A |N/A
+|RS-20-R40 (<<BR-RESP-60,BR-RESP-60>>) |Information about compliance of exclusion grounds CAN be provided  |RS-20-R40-S10 (<<BR-RESP-60-S10,BR-RESP-60-S10>>) |When the pre-qualification system the EO is registered on does not cover all the exclusion criteria, information about compliance of exclusion grounds MUST be provided.
+| | | RS-20-R40-S20 (<<BR-RESP-60-S20,BR-RESP-60-S20>>) |When the pre-qualification system the EO is registered on covers all the exclusion criteria, information about compliance of exclusion grounds IS NOT required.
+|RS-20-R50 (<<BR-RESP-70,BR-RESP-70>>) |Information about compliance of selection criteria CAN be provided  |RS-20-R50-S10 (<<BR-RESP-70-S10,BR-RESP-70-S10>>) |When the pre-qualification system the EO is registered on does not cover all the selection criteria, information about compliance of selection criteria MUST be provided.
+| | | RS-20-R50-S20 (<<BR-RESP-70-S20,BR-RESP-70-S20>>) |When the pre-qualification system the EO is registered on covers all the selection criteria, information about compliance of selection criteria IS NOT required.
+|RS-20-R60 (<<BR-COM-10,BR-COM-20>>) |Information about the procurement procedure MIGHT be provided | N/A |N/A
+|===
 
 ==== RS-30
 
-[width="100%",cols="18%,11%,40%,15%,16%",options="header",]
+.Test Case RS-30
+===== *Pre-conditions*
+[cols="1,3"]
 |===
-|*Pre-conditions* | | | |
-|XSD Schema | |UBL-QualificationApplicationResponse-2.2-Pre-award.xsd (ESPD Response) | |
-|Regulated or Self-contained ESPD | |/cbc:QualificationApplicationTypeCode is SELFCONTAINED | |
-|Divided into lots | |/cac:ProcurementProjectLot /cbc:ID is 0 (not divided into lots) | |
-|Pre-qualification system | |/cac:EconomicOperatorParty/cac:QualifyingParty/cac:Party /cac:PartyIdentification not exist (not registered on a national pre-qualification system) | |
-|EO Role | |/cac:EconomicOperatorParty/cac:EconomnicOperatorRole /cbc:RoleCode is SCLE (Sole contractor) | |
-
-|*List of rules* | | | |
-|*Rule ID* |*Rule* | |*Scenario ID* |*Scenarios*
-|RS-30-R10 (<<BR-RESP-10,BR-RESP-10>>) |Information about the economic operator MUST be provided | |N/A |N/A
-|RS-30-R20 (<<BR-RESP-20,BR-RESP-20>>) |Information about representatives of the economic operator CAN be provided | |N/A |N/A
-|RS-30-R30 (<<BR-RESP-30,BR-RESP-30>>) |Information about compliance of exclusion grounds MUST be provided | |N/A |N/A
-|RS-30-R40 (<<BR-RESP-40,BR-RESP-40_role-different-to-OENRON>>) |Response to the specific requirements related to selection criteria of the ESPDRequest MUST be provided | |N/A |N/A
-|RS-30-R50 (<<BR-SC-30,BR-SC-30>>) |Information about the procurement procedure MIGHT be provided | |N/A |N/A
+|XSD Schema | UBL-QualificationApplicationResponse-2.2-Pre-award.xsd (ESPD Response)
+|Regulated or Self-contained ESPD  |/cbc:QualificationApplicationTypeCode is SELFCONTAINED
+|Divided into lots | /cac:ProcurementProjectLot /cbc:ID is 0 (not divided into lots)
+|Pre-qualification system  |/cac:EconomicOperatorParty/cac:QualifyingParty/cac:Party /cac:PartyIdentification not exist (not registered on a national pre-qualification system)
+|EO Role | /cac:EconomicOperatorParty/cac:EconomnicOperatorRole /cbc:RoleCode is SCLE (Sole contractor)
 |===
 
-.Table 15: Test Case RS-30
+===== *List of rules*
+[cols="1,2,1,3"]
+|===
+|*Rule ID* |*Rule* | *Scenario ID* |*Scenarios*
+|RS-30-R10 (<<BR-RESP-10,BR-RESP-10>>) |Information about the economic operator MUST be provided | N/A |N/A
+|RS-30-R20 (<<BR-RESP-20,BR-RESP-20>>) |Information about representatives of the economic operator CAN be provided | N/A |N/A
+|RS-30-R30 (<<BR-RESP-30,BR-RESP-30>>) |Information about compliance of exclusion grounds MUST be provided | N/A |N/A
+|RS-30-R40 (<<BR-RESP-40,BR-RESP-40_role-different-to-OENRON>>) |Response to the specific requirements related to selection criteria of the ESPDRequest MUST be provided | N/A |N/A
+|RS-30-R50 (<<BR-SC-30,BR-SC-30>>) |Information about the procurement procedure MIGHT be provided | N/A |N/A
+|===
+
+
 
 ==== RS-40
 
@@ -1390,7 +1420,7 @@ Then
 |Rule description |Below the threshold, information about the publication of the contract notice in TED MIGHT be provided (when it is available). |
 |Mapping description |ESPD does not carry information about the value of the contract. Therefore, the threshold cannot be calculated. |
 |XSD Path |- |
-|Business requirement# |link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr070-007[_[.underline]#tbr070-007#_] |
+|#Business requirement# |link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr070-007[_[.underline]#tbr070-007#_] |
 |XSD Business Rule description | |XSD Business Rule Schematron
 |- | |*No Schematron rule can be implemented.*
 |===
@@ -1411,7 +1441,7 @@ Then
 |Rule description |Information about the publication of the contract notice in other official gazettes or journals MIGHT be provided. |
 |Mapping description |No specific rules should be applied. |
 |XSD Path |- |
-|Business requirement# |link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr070-007[_[.underline]#tbr070-007#_] |
+|#Business requirement# |link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr070-007[_[.underline]#tbr070-007#_] |
 |XSD Business Rule description | |XSD Business Rule Schematron
 |- | |*No Schematron rule can be implemented.*
 |===
