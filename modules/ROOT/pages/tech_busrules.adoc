@@ -98,9 +98,9 @@ List of use cases regarding the ESPD request transaction, which 0 means false an
 |*Test Case ID* |*Self-Contained* |*Divided into lots* |*Two-phased procedure*
 a|<<RQ-10,RQ-10>> |0 |0 |0
 a|<<RQ-20,RQ-20>> |0 |0 |1
-|link:#rq-30[RQ-30] |1 |0 |0
-|link:#rq-40[RQ-40] |1 |0 |1
-|link:#rq-50[RQ-50] |1 |1 |0
+a|<<RQ-30,RQ-30>> |1 |0 |0
+a|<<RQ-40,RQ-40>> |1 |0 |1
+a|<<RQ-50,RQ-50>> |1 |1 |0
 a|<<RQ-60,RQ-60>> |1 |1 |1
 |===
 
