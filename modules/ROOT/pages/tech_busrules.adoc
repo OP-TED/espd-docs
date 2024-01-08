@@ -1,46 +1,44 @@
 :doctitle: Business Rules Guide
 :sectnums:
-[[business-rules-guide,Annex IV. Business Rules Guide]]
 
 == Purpose
 
-The objective of this guide is to explain how Business Rules are applied and which ones are applied in each case. And with this in mind, it can be used to:
+This guide explains how Business Rules are implemented, and which ones apply in each case. The guide can be used to:
 
-* For each test case, identify the business rules and describe the Schematron rules and map them with UBL-2.3 XSD;
-* To validate the criteria taxonomy.
+* Identify the business rules, and describe and map the Schematron rules with UBL-2.3 XSD, for each test case;
+* Validate the criteria taxonomy.
 
 === Input Documents
 
+.Table 1: List of Input documents
 [width="100%",cols="13%,31%,11%,45%",options="header",]
 |===
 |*ID* |*Filename* |*Version* |*Description*
 a|
-.
+
 
 |ESPD_Testcases |01 |Identification of the different test cases for the ESPDRequest and the ESPDResponse.
 a|
 [start=2]
-.
 
-|XML Implementation Guide (current document) link:https://docs.ted.europa.eu/ESPD-EDM/latest/index.html[Technical HandBook] |3.3.0 |Understanding of the model underlying the implementation of the ESPD Request and ESPD Response XML documents.
+
+|xref:index.adoc[Technical Implementation Guide] |3.3.0 |Understanding of the model underlying the implementation of the ESPD Request and ESPD Response XML documents.
 a|
 |===
 
-.Table 1: List of Input documents
-
-=== Process
+=== The Business Rules Identification Process
 
 The process to identify the business rules is the following one:
 
 [arabic]
-. *List the test cases ID and test case rule ID* from [RD01]. These rules are common among the test cases; which means that each rule ID must have a unique identifier within the current document (Mapping Rule ID).
+. *List the test case ID and test case rule ID* from #[RD01]#. These rules are common across test cases, which means that each rule ID must have a unique identifier within the current document (Mapping Rule ID).
 . For each *Mapping Rule ID*:
 [loweralpha]
 .. Map each of the rules to UBL-2.3 XSD as description;
 .. Identify the whole path within UBL-2.3 XSD;
-.. List the business rules coming from the XML implementation guide [RD02] and those ones coming from ESPD_TestCases [RD01].
-. Identify the rules coming from Data Structures Regulated spreadsheet [RD03] and Self-contained [RD04].
-. Identify other rules coming from the XML implementation guide [RD02].
+.. List the business rules coming from the XML implementation guide #[RD02]# and those coming from ESPD_TestCases #[RD01]#.
+. Identify the rules coming from Data Structures Regulated spreadsheet #[RD03]# and Self-contained #[RD04]#.
+. Identify other rules coming from the XML implementation guide #[RD02]#.
 
 === Tables
 
@@ -98,12 +96,12 @@ List of use cases regarding the ESPD request transaction, which 0 means false an
 [width="100%",cols="25%,25%,25%,25%",options="header",]
 |===
 |*Test Case ID* |*Self-Contained* |*Divided into lots* |*Two-phased procedure*
-|link:#rq-10[RQ-10] |0 |0 |0
-|link:#rq-20[RQ-20] |0 |0 |1
+a|<<RQ-10,RQ-10>> |0 |0 |0
+a|<<RQ-20,RQ-20>> |0 |0 |1
 |link:#rq-30[RQ-30] |1 |0 |0
 |link:#rq-40[RQ-40] |1 |0 |1
 |link:#rq-50[RQ-50] |1 |1 |0
-|link:#rq-60[RQ-60] |1 |1 |1
+a|<<RQ-60,RQ-60>> |1 |1 |1
 |===
 
 .Table 4: ESPDRequest - List of test cases
