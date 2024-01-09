@@ -9,9 +9,9 @@
 [.tile]
 .The Conceptual Model
 ****
-The Conceptual Model...
+The Conceptual Model can be viewed via the link below
 
-xref:espd-tech::conceptual.adoc[Click here for the Conceptual Model]
+link:{attachmentsdir}/ESPD_CM_html/index.html[ESPD-EDM Conceptual Model HTML]
 
 ****
 [.tile]
