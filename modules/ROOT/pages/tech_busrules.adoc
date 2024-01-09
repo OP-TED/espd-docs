@@ -10,7 +10,7 @@ This guide explains how Business Rules are implemented, and which ones apply in 
 
 === Input Documents
 
-.List of Input documents (first developed current with the ESPD EDM v2.0.2 and UBL 2.2)
+.List of Input documents developed concurrently with ESPD-EDM v2.0.2 and UBL 2.2.
 [cols="1,1,1,3"]
 |===
 s|*ID* |*Filename* |*Version* |*Description*
@@ -29,17 +29,17 @@ RD04|Data Structures Self-contained|2.0.2|List of exclusion and selection criter
 
 === The Business Rules Identification Process
 
-The process to identify the business rules is the following:
+The process of identifying the business rules is as follows:
 
 [arabic]
-. *List the test case ID and test case rule ID* from RD01. These rules are common across test cases, which means that each rule ID must have a unique identifier within the current document (Mapping Rule ID).
+. *List the test case ID and test case rule ID* from RD01. These rules are common across test cases, which means that each rule ID must have a unique identifier (Mapping Rule ID) within the current document.
 . For each *Mapping Rule ID*:
 [loweralpha]
 .. Map each of the rules to UBL-2.3 XSD as a description;
-.. Identify the whole path within UBL-2.3 XSD;
-.. List the business rules coming from the XML implementation guide RD02 and those coming from ESPD_TestCases RD01.
-. Identify the rules coming from Data Structures Regulated spreadsheet RD03 and Self-contained RD04.
-. Identify other rules coming from the XML implementation guide RD02.
+.. Identify the complete path within the UBL-2.3 XSD;
+.. List the business rules that come from the XML implementation guide RD02, and those that come from ESPD_TestCases RD01.
+. Identify the rules that come from the Data Structures Regulated spreadsheet RD03, and the Data Structures Self-contained spreadsheet RD04.
+. Identify any other rules that come from the XML implementation guide RD02.
 
 === Tables
 
@@ -82,7 +82,7 @@ s|Mapping Rule ID | |
 |Mapping description |Description of the mapping between the rule and the XSD |
 |XSD Path |UB-2.2 XSD path |
 |XSD Business Rule description | |XSD Business Rule Schematron
-|Description of the business rule, which applies the XSD (see document [RD02]) | a|
+|*Description of the business rule, which applies the XSD (see document [RD02])* | s|
 Description of the business rule from Schematron point of view.
 
 Business rules can be classified as WARNING (user information) or ERROR (fatal error which stops the validation).
