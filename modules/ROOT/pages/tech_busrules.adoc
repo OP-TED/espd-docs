@@ -95,7 +95,7 @@ Business rules can be classified as WARNING (user information) or ERROR (fatal e
 
 === List of Test Cases
 
-List of use cases regarding the ESPD request transaction, which 0 means false and 1 means true:
+The list of use cases relating to the ESPD request transaction, in which 0 means false and 1 means true:
 
 .ESPDRequest - List of test cases
 [cols="1,1,1,1"]
@@ -242,7 +242,7 @@ Regulated or Self-contained ESPD  |/cbc:QualificationApplicationTypeCode is SELF
 | | | RQ-40-R40-S20 (<<BR-REQ-30-S20,BR-REQ-30-S20>>) |Information for national exclusion grounds (section D) MUST be retrieved from e-Certis.
 |RQ-40-R50 (<<BR-REQ-40,BR-REQ-40>>) |Selection criteria CAN be provided | N/A |N/A
 |RQ-40-R60 (<<BR-SC-20,BR-SC-20>>) |When selection criteria is provided, specific requirements for each criteria CAN be provided | N/A |N/A
-|RQ-40-R70 (<<BR-2P-10,BR-2P-10>>) |Information about weighting MUST be provided | RQ-40-R70-S10 (<<BR-2P-10-S10,BR-2P-10-S10>>) |For two-phased procedure with weighted criteria the information about weighting for each criteria within Technical and professional ability MUST be provided
+|RQ-40-R70 (<<BR-2P-10,BR-2P-10>>) |Information about weighting MUST be provided | RQ-40-R70-S10 (<<BR-2P-10-S10,BR-2P-10-S10>>) |For two-phased procedure with weighted criteria, the information about weighting for each criterion within Technical and professional ability MUST be provided
 | | | RQ-40-R70-S20 (<<BR-2P-10-S20,BR-2P-10-S20>>) |For two-phased procedure without weighted criteria, additional information regarding weighting IS NOT required
 |===
 
@@ -310,7 +310,7 @@ Regulated or Self-contained ESPD  |/cbc:QualificationApplicationTypeCode is SELF
 |RQ-60-R60 (<<BR-REQ-40,BR-REQ40>>) |Selection criteria CAN be provided | N/A |N/A
 |RQ-60-R70 (<<BR-LOT-40,BR-LOT-40>>) |When selection criteria is provided, the lots each criterion applies to MUST be provided | N/A |N/A
 |RQ-60-R80 (<<BR-SC-20,BR-SC-20>>) |When selection criteria is provided, specific requirements for each criterion CAN be provided | N/A |N/A
-|RQ-60-R90 (<<BR-2P-10,BR-2P-10>>) |Information about weighting MUST be provided | RQ-60-R90-S10 (<<BR-2P-10-S10,BR-2P-10-S10>>) |For two-phased procedure with weighted criteria the information about weighting for each criterion within Technical and professional ability MUST be provided
+|RQ-60-R90 (<<BR-2P-10,BR-2P-10>>) |Information about weighting MUST be provided | RQ-60-R90-S10 (<<BR-2P-10-S10,BR-2P-10-S10>>) |For two-phased procedure with weighted criteria, the information about weighting for each criterion within Technical and professional ability MUST be provided
 | | | RQ-60-R90-S20 (<<BR-2P-10-S20,BR-2P-10-S20>>) |For two-phased procedure without weighted criteria, additional information regarding weighting IS NOT required
 |===
 
