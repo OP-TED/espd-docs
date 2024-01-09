@@ -51,7 +51,7 @@ The process described above uses the following auxiliary tables.
 .Test Case ID example
 [cols="1,1,3,1,2"]
 |===
-s|||Pre-conditions (from [RD01])| |
+s|||Pre-conditions (from RD01)| |
 |XSD Schema | a|
 XSD filename. It could be ESPD request or ESPD response.
 
@@ -1686,7 +1686,7 @@ ____
 * {blank}
 +
 ____
-All criterion code starting CRITERION.EXCLUSION. from [RD03] must be implemented within /cac:TenderingCriterion.
+All criterion code starting CRITERION.EXCLUSION. from RD03 must be implemented within /cac:TenderingCriterion.
 ____
 
 |The Business Rules listed within 14 Tendering Criterion General Rules are general to all TenderingCriterion. | |
@@ -1705,7 +1705,7 @@ ____
 
 |
 |Rule description |Information for common exclusion grounds (sections A, B and C) MUST be retrieved from e-Certis. |
-|Mapping description |The spreadsheets [RD03] carries the information from e-Certis. No additional business rules are needed in this scenario. |
+|Mapping description |The spreadsheets RD03 carries the information from e-Certis. No additional business rules are needed in this scenario. |
 |XSD Path |- |
 |Business requirement# |link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr070-009[_[.underline]#tbr070-009#_] |
 |XSD Business Rule description | |XSD Business Rule Schematron
@@ -1766,7 +1766,7 @@ ____
 * {blank}
 +
 ____
-All criterion code starting CRITERION.SELECTION. from [RD03] must be implemented within /cac:TenderingCriterion.
+All criterion code starting CRITERION.SELECTION. from RD03 must be implemented within /cac:TenderingCriterion.
 ____
 
 |The Business Rules listed within 14 Tendering Criterion General Rules are general to all TenderingCriterion. | |
@@ -3152,7 +3152,7 @@ ____
 
 This is the list of rules common to Tendering Criterion elements of both, ESPDRequest and ESPDResponse. They do not depend on the test cases.
 
-The tendering criterion is based on the document [RD03], this means that the Tendering Criterion complex element is implemented following the structure of the file.
+The tendering criterion is based on the document RD03, this means that the Tendering Criterion complex element is implemented following the structure of the file.
 
 There are four types of rows:
 
@@ -3251,7 +3251,7 @@ ____
 * {blank}
 +
 ____
-/cac:TenderingCriterion/cbc:ID must match the Element UUID column from [RD03].
+/cac:TenderingCriterion/cbc:ID must match the Element UUID column from RD03.
 ____
 
 a|
@@ -3293,7 +3293,7 @@ ____
 * {blank}
 +
 ____
-/cac:TenderingCriterion /cbc:CriterionTypeCode must match the Element Code column from [RD03].
+/cac:TenderingCriterion /cbc:CriterionTypeCode must match the Element Code column from RD03.
 ____
 
 a|
@@ -3324,7 +3324,7 @@ ____
 * {blank}
 +
 ____
-/cac:TenderingCriterion/cbc:Name should match the Name column from [RD03].
+/cac:TenderingCriterion/cbc:Name should match the Name column from RD03.
 ____
 
 a|
@@ -3355,7 +3355,7 @@ ____
 * {blank}
 +
 ____
-/cac:TenderingCriterion /cbc:Description should match the Description column from [RD03].
+/cac:TenderingCriterion /cbc:Description should match the Description column from RD03.
 ____
 
 a|
@@ -3376,7 +3376,7 @@ ____
 * {blank}
 +
 ____
-The number of /cac:TenderingCriterion/cac:TenderingCriterionPropertyGroup must match the number of QUESTION_GROUP from [RD03].
+The number of /cac:TenderingCriterion/cac:TenderingCriterionPropertyGroup must match the number of QUESTION_GROUP from RD03.
 ____
 
 |===
@@ -3499,7 +3499,7 @@ ____
 * {blank}
 +
 ____
-../cbc:ID must match the Element UUID column from [RD03].
+../cbc:ID must match the Element UUID column from RD03.
 ____
 
 a|
@@ -3531,7 +3531,7 @@ ____
 * {blank}
 +
 ____
-../cbc:PropertyGroupTypeCode must match the Element Code column from [RD03].
+../cbc:PropertyGroupTypeCode must match the Element Code column from RD03.
 ____
 
 a|
@@ -3548,7 +3548,7 @@ ____
 +
 ____
 The number of ../cac:TenderingCriterionProperty
-must match the number of QUESTION from [RD03].
+must match the number of QUESTION from RD03.
 ____
 
 a|
@@ -3566,7 +3566,7 @@ ____
 ____
 The number of ../cac:SubsidiaryTenderingCriterion
 PropertyGroup must match the number of
-QUESTION_SUBGROUP from [RD03].
+QUESTION_SUBGROUP from RD03.
 ____
 
 |===
@@ -3641,7 +3641,7 @@ ____
 * {blank}
 +
 ____
-../cbc:TypeCode must match the Element Code column from [RD03].
+../cbc:TypeCode must match the Element Code column from RD03.
 ____
 
 a|
@@ -3662,7 +3662,7 @@ ____
 * {blank}
 +
 ____
-../cbc:ValueDataTypeCode must match the Element Code column from [RD03].
+../cbc:ValueDataTypeCode must match the Element Code column from RD03.
 ____
 * {blank}
 +
@@ -3975,7 +3975,7 @@ a|
 [start=3]
 . {blank}
 
-|Compulsory use of the code list identified within the document [RD02]. a|
+|Compulsory use of the code list identified within the document RD02. a|
 * Severity: ERROR
 * Compulsory use of the code list identified within the 18 Annex I: XSDs elements and Code Lists
 
