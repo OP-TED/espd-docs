@@ -3201,7 +3201,7 @@ cac:TenderingCriterion/cac:TenderingCriterionPropertyGroup
 
 A tendering criterion describes a fact or a condition that is used by the contracting body to evaluate and compare tenders by economic operators and which will be used for the exclusion and the selection of candidate tenderers to the award decision.
 
-.Tendering Criterion Business Rules
+.Business Rules: Tendering Criterion
 [width="100%",cols="13%,36%,51%",options="header",]
 |===
 |Identifier |XSD Business Rule description |XSD Business Rule Schematron
@@ -3385,7 +3385,7 @@ ____
 
 A class to make reference to the legislation related to the criterion.
 
-.Legislation Business Rules
+.Business Rules: Legislation
 [width="100%",cols="13%,36%,51%",options="header",]
 |===
 a|
@@ -3456,7 +3456,7 @@ ____
 
 The first level group of properties and sub-groups of properties in the structure of a criterion.
 
-.Tendering Criterion Property Group Business Rules
+.Business Rules: Tendering Criterion Property Group
 [width="100%",cols="13%,36%,51%",options="header",]
 |===
 a|
@@ -3575,7 +3575,7 @@ ____
 
 Caption (i.e. a 'label'), specific MS or contracting authority requirement (e.g. 'Number of references expected: 5' or a question addressed to the economic operator (e.g. 'your average yearly turnover for the past three years?').
 
-.Tendering Criterion Property Business Rules
+.Business Rules: Tendering Criterion Property
 [width="100%",cols="13%,36%,51%",options="header",]
 |===
 a|
@@ -3713,7 +3713,7 @@ This is the list of rules common to Tendering Criterion Response elements of ESP
 
 A tendering criterion response describes a response to a criterion property from tendering criterion.
 
-.Tendering Criterion Response Business Rules
+.Business Rules: Tendering Criterion Response
 [width="100%",cols="14%,33%,53%",options="header",]
 |===
 |Identifier |XSD Business Rule description |XSD Business Rule Schematron
@@ -3778,7 +3778,7 @@ ____
 
 This element describes the criterion property response value:
 
-.Response Value Business Rules
+.Business Rules: Response Value
 [width="100%",cols="14%,33%,53%",options="header",]
 |===
 |Identifier |XSD Business Rule description |XSD Business Rule Schematron
@@ -3911,14 +3911,11 @@ Then, its /cac: SubsidiaryTenderingCriterionPropertyGroup /cbc:ID cannot exist w
 |TIME |../cac:ResponseValue/cbc:ResponseTime
 |===
 
-
-
-
 === Level 2: Evidence Supplied
 
 This element describes the evidence supporting this criterion property response:
 
-.Evidence Supplied Business Rules
+.Business Rules: Evidence Supplied
 [width="100%",cols="14%,33%,53%",options="header",]
 |===
 |Identifier |XSD Business Rule description |XSD Business Rule Schematron
