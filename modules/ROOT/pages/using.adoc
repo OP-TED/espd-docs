@@ -2,23 +2,21 @@
 
 
 
-Filling in the forms: Buyers/ Sellers
+== Filling in the forms: Buyers/ Sellers
 
-* screen shots from internal training
-* searching for eNotice number
+To see how to xref:espd_form.adoc[fill in a form on an online ESPD-Service from the perspectives of both a buyer and suppliers], click on the linked text. This will demonstrate the use of an ESPD-Service for the "first time".
+
+== Finding an eNotice to respond to in an ESPD-Service (for suppliers)
+To see how to find a suitable eNotice number that as a supplier you might want to respond to, follow #these instructions#. You will need a number to start your process.
+
+== Save information needed in the ESPD online form for future use.
+After filling in information in an ESPD-Service for the first time, you will be able to save what you filled in and change only the information that is different for the next response. This will save you a lot of typing. Most of your information will stay the same over time. See how to xref:reuse.adoc[Save the completed form and upload it next time] you respond to a tender.
 
 
-Reusing data: downloading and uploading documents
+== Suitable Locations for supporting documents/ evidence
 
-* Saving an espd request/ response locally
-* uploading and reusing an espd request/ response
+As a supplier, you will need to provide evidence like certificates, etc, and will have to provide an online storage location where the buyer can access them. Here are some #best practices for saving/ storing# these.
 
+== Managing Supplier Groups
 
-Locations for supporting documents/ evidence
-
-* where to store evidence files
-* file formats?
-
-Managing Supplier Groups
-
-* form filling in and evidence upload.
+If you are tendering as the head of or a participant in a tender, here is some information on how to #manage the upload of subcontractor evidence and coordinating subcontractors filling in their part of the response form#.
