@@ -4,19 +4,23 @@
 
 == Filling in the forms: Buyers/ Sellers
 
-To see how to xref:espd_form.adoc[fill in a form on an online ESPD-Service from the perspectives of both a buyer and suppliers], click on the linked text. This will demonstrate the use of an ESPD-Service for the "first time".
+To see how to xref:espd_form.adoc[fill in a form on an online ESPD-Service from the perspectives of both a buyer and suppliers], click on the linked text. This will demonstrate the use of an ESPD-Service from scratch (first time).
 
 == Finding an eNotice to respond to in an ESPD-Service (for suppliers)
-To see how to find a suitable eNotice number that as a supplier you might want to respond to, follow #these instructions#. You will need a number to start your process.
+To see how to xref:number.adoc[find a suitable eNotice number] that a supplier might want to respond to. A number is needed to start the process.
 
 == Save information needed in the ESPD online form for future use.
-After filling in information in an ESPD-Service for the first time, you will be able to save what you filled in and change only the information that is different for the next response. This will save you a lot of typing. Most of your information will stay the same over time. See how to xref:reuse.adoc[Save the completed form and upload it next time] you respond to a tender.
+This applies to both buyers and suppliers.
+
+After filling in information in an ESPD-Service for the first time, the completed form can be downloaded and saved  for future use. The next time an ESPD form needs filling in, the saved form can be uploaded and only the information that is different changed. This makes the process more efficient as most of the information will stay the same over time.
+
+See how to xref:reuse.adoc[save the completed form and upload it next time] you use an ESPD Service.
 
 
 == Suitable Locations for supporting documents/ evidence
 
-As a supplier, you will need to provide evidence like certificates, etc, and will have to provide an online storage location where the buyer can access them. Here are some #best practices for saving/ storing# these.
+Supplier need to provide evidence like certificates, etc, and will have to xref:evidence.adoc[provide an online storage location] where the buyer can access them. Here are some best practices for saving/ storing these.
 
 == Managing Supplier Groups
 
-If you are tendering as the head of or a participant in a tender, here is some information on how to #manage the upload of subcontractor evidence and coordinating subcontractors filling in their part of the response form#.
+If you are tendering as the head of, or a participant in, a tender, here is some information on how to xref:subcon.adoc[manage the upload of subcontractor evidence and coordinating subcontractors filling in their part of the response form].
