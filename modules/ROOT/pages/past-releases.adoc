@@ -1,5 +1,0 @@
-:doctitle: Past Releases
-:doccode: espd-main-prod-009
-:author: NPJ
-:authoremail: nicole-anne.paterson-jones@ext.ec.europa.eu
-:docdate: October 2023
