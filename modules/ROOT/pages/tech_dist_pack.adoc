@@ -24,6 +24,6 @@ _Figure 5. Distribution package_
 . *validation*: contains business rules validation files for Schematron and Testbed.
 . *xml-examples*: contains default ESPDRequest and ESPDResponse xml samples and the criterion xml schema.
 
-
+include::partial$feedback.adoc[]
 
 

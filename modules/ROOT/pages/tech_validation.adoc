@@ -1,4 +1,8 @@
-= Validation
+:doctitle: Validation
+:doccode: espd-tech-prod-018
+:author: NPJ
+:authoremail: nicole-anne.paterson-jones@ext.ec.europa.eu
+:docdate: January 2024
 
 == ISO Schematron
 
@@ -219,4 +223,4 @@ All the ESPD-EDM artefacts necessary to perform the validation are set up in the
 
 Use this URL to upload and execute the validations: link:https://www.itb.ec.europa.eu/espd/upload[Upload].
 
-
+include::partial$feedback.adoc[]

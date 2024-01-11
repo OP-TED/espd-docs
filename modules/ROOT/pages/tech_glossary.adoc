@@ -1,5 +1,8 @@
-
-= Glossary
+:doctitle: Glossary
+:doccode: espd-tech-prod-012
+:author: NPJ
+:authoremail: nicole-anne.paterson-jones@ext.ec.europa.eu
+:docdate: January 2024
 
 [[abies,Aggregate Business Information Entities (ABIEs)]]
 *Aggregate Business Information Entities (ABIEs).* Root nodes and top-level structures of UBL documents. Children of document ABIEs may be <<bbies>> or <<asbies>>, never ABIEs. All UBL document ABIEs (and only UBL document ABIEs) are defined within individual namespaces specific to each document as both elements and types. (https://docs.oasis-open.org/ubl/os-UBL-2.3/UBL-2.3.html#S-BUSINESS-INFORMATION-ENTITIES)
@@ -70,3 +73,5 @@ list as a whole, as well as explicit code list data – codes and associated val
 
 [[xslt,XSLT (Extensible Stylesheet Language Transformations)]]
 *XSLT (Extensible Stylesheet Language Transformations).* Language for transforming XML documents into other XML documents or other formats, such as HTML for web pages or plain text. (https://www.w3.org/TR/xslt-30/)
+
+include::partial$feedback.adoc[]

@@ -1,4 +1,8 @@
 = Exclusion criteria
+:doccode: espd-tech-prod-010
+:author: NPJ
+:authoremail: nicole-anne.paterson-jones@ext.ec.europa.eu
+:docdate: January 2024
 
 [cols=",",]
 |===
@@ -1352,4 +1356,6 @@ _'Purely national criteria'_
 
 _<!-- ... the rest of elements in the QualificationApplicationRequest document omitted for brevity -->_
 ----
+
+include::partial$feedback.adoc[]
 

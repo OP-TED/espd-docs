@@ -1,8 +1,8 @@
 :doctitle: Navigation
-:doccode: espd-main-prod-004
+:doccode: espd-tech-prod-004
 :author: NPJ
 :authoremail: nicole-anne.paterson-jones@ext.ec.europa.eu
-:docdate: October 2023
+:docdate: January 2024
 
 * xref:espd::index.adoc[Home]
 * xref:espd::release_notes.adoc[Release Notes]

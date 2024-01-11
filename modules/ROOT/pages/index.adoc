@@ -1,8 +1,8 @@
 :doctitle: ESPD Documentation for Technical Implementers
-:doccode: epo-main-prod-001
+:doccode: espd-tech-prod-001
 :author: NPJ
 :authoremail: nicole-anne.paterson-jones@ext.ec.europa.eu
-:docdate: October 2023
+:docdate: January 2024
 
 [.tile-container]
 --

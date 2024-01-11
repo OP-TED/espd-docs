@@ -1,4 +1,8 @@
 :doctitle: Business Rules Guide
+:doccode: espd-tech-prod-005
+:author: NPJ
+:authoremail: nicole-anne.paterson-jones@ext.ec.europa.eu
+:docdate: January 2024
 :sectnums:
 
 == Purpose

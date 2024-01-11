@@ -1,4 +1,8 @@
-= Adoption of UBL-2.3
+:doctitle: The Adoption of UBL-2.3
+:doccode: espd-tech-prod-017
+:author: NPJ
+:authoremail: nicole-anne.paterson-jones@ext.ec.europa.eu
+:docdate: January 2024
 
 UBL, developed by the Organization for the Advancement of Structured Information Standards, is a royalty-free library of standard electronic Extensible Markup Language (XML) business documents. It is designed to plug directly into existing business, legal, auditing, and records management practices, and to operate within a standard business framework such as ISO 15000 (ebXML) to provide a complete, standards-based infrastructure that can extend the benefits of existing Electronic Data Interchange (EDI) systems to businesses of all sizes.
 
@@ -30,3 +34,4 @@ During the development of ESPD-EDM some requirements arose from TOOP related to 
 
 To check the mapping, please access to these link:{attachmentsdir}/assets/TOOPRequirements_UBL_2.3.xlsx[TOOPRequirements_UBL_2.3.xlsx] or link:{attachmentsdir}/assets/TOOPRequirements_UBL_2.3.ods[TOOPRequirements_UBL_2.3.ods].
 
+include::partial$feedback.adoc[]

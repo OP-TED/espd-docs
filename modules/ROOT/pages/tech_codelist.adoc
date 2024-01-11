@@ -1,4 +1,8 @@
 :doctitle: Code List Catalogue
+:doccode: espd-tech-prod-007
+:author: NPJ
+:authoremail: nicole-anne.paterson-jones@ext.ec.europa.eu
+:docdate: January 2024
 :sectnums:
 
 == General Information

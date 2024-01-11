@@ -1,4 +1,8 @@
 :doctitle: XML Code List Examples
+:doccode: espd-tech-prod-006
+:author: NPJ
+:authoremail: nicole-anne.paterson-jones@ext.ec.europa.eu
+:docdate: January 2024
 :sectnums:
 
 

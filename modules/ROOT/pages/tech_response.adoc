@@ -1,4 +1,8 @@
-= The ESPD Response Document
+:doctitle: The ESPD Response Document
+:doccode: espd-tech-prod-016
+:author: NPJ
+:authoremail: nicole-anne.paterson-jones@ext.ec.europa.eu
+:docdate: January 2024
 
 == Business requirements specification
 
@@ -2151,3 +2155,4 @@ _XML snippet 1.b) different evidentiary documents per response_
 . URL from where to get the document.
 . The name of the issuer of the second evidenciary document.
 
+include::partial$feedback.adoc[]

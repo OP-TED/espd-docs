@@ -45,3 +45,5 @@ The table below lists the code lists used in the ESPD documents and where they a
 |ResponseDataType |DG GROW (European Commission) |Element cac:TenderingCriterion/{zwsp}cac:TenderingCriterionPropertyGroup/{zwsp}cac:TenderingCriterionProperty/{zwsp}cbc:ValueDataTypeCode.
 |Occupation |Publications Office of the EU |Element cac:TenderingCriterion/{zwsp}cac:TenderingCriterionPropertyGroup/{zwsp}cac:TenderingCriterionProperty/{zwsp}cbc:ExpectedCode
 |===
+
+include::partial$feedback.adoc[]

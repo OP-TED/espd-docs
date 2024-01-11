@@ -1,4 +1,8 @@
-= Common aspects for criteria
+:doctitle: Common aspects for criteria
+:doccode: espd-tech-prod-008
+:author: NPJ
+:authoremail: nicole-anne.paterson-jones@ext.ec.europa.eu
+:docdate: January 2024
 
 [cols="<1,<4"]
 |===

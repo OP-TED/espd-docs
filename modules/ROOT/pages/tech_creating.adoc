@@ -1,5 +1,5 @@
 :doctitle: Implementing an ESPD Service
-:doccode: epo-main-prod-001
+:doccode: espd-tech-prod-009
 :author: NPJ
 :authoremail: nicole-anne.paterson-jones@ext.ec.europa.eu
-:docdate: October 2023
+:docdate: January 2024
