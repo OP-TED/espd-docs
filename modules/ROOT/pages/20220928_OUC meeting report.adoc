@@ -1,4 +1,8 @@
-= Open User Community Draft Meeting Report
+:doctitle: Open User Community Meeting Report
+:doccode: espd-ouc-prod-012
+:author: NPJ
+:authoremail: nicole-anne.paterson-jones@ext.ec.europa.eu
+:docdate: January 2024
 
 == Publications Office – ESPD EDM
 
@@ -150,4 +154,6 @@ image::UUID_Proposal2.png[]
 
 * The response time to the GitHub issues is reported to be too long. OP comments that an initial answer should be provided by the ESPD team within a week after the reception of the issue, and updated information should be provided afterwards upon the completion of the analysis and implementation tasks. 
 
-* A meeting will be scheduled the first week of October to discuss the link between eCertis and ESPD and its consequencues.
+* A meeting will be scheduled the first week of October to discuss the link between eCertis and ESPD and its consequences.
+
+include::partial$feedback.adoc[]

@@ -1,4 +1,8 @@
-= TED ESPD Annual Seminar Report
+:doctitle: TED ESPD Annual Seminar Report
+:doccode: espd-ouc-prod-002
+:author: NPJ
+:authoremail: nicole-anne.paterson-jones@ext.ec.europa.eu
+:docdate: January 2024
 
 == Publications Office – ESPD EDM
 
@@ -214,6 +218,5 @@ This is defined in eForms. Currently, implementation of ESPD is dependant of the
 === Slido
 The information on the Slido is available link:https://github.com/OP-TED/espd-docs/tree/wgm-reports/modules/ROOT/attachments/annual-seminar/SlidoResults.pdf[here]
 
-
-
+include::partial$feedback.adoc[]
 

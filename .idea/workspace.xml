@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="506d41f3-406c-4825-9294-adb3b4ed8652" name="Default Changelist" comment="updated tech docs" />
+    <list default="true" id="506d41f3-406c-4825-9294-adb3b4ed8652" name="Default Changelist" comment="updated tech docs">
+      <change beforePath="$PROJECT_DIR$/modules/ROOT/pages/index.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/modules/ROOT/pages/index.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/ROOT/pages/monthly.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/modules/ROOT/pages/monthly.adoc" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

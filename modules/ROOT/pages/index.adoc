@@ -1,4 +1,9 @@
-= ESPD-EDM Open User Community Documents
+:doctitle: ESPD-EDM Open User Community Documents
+:doccode: espd-ouc-prod-001
+:author: NPJ
+:authoremail: nicole-anne.paterson-jones@ext.ec.europa.eu
+:docdate: January 2024
+
 
 This section contains the OUC Meeting Reportsand Annual Seminar documents. All the documentation can be accessed by expanding the different options in the navigation menu on the left.
 

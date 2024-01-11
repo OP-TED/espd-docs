@@ -1,4 +1,8 @@
-= Open User Community Meeting Report
+:doctitle: Open User Community Meeting Report
+:doccode: espd-ouc-prod-018
+:author: NPJ
+:authoremail: nicole-anne.paterson-jones@ext.ec.europa.eu
+:docdate: January 2024
 
 == Publications Office – ESPD EDM
 
@@ -142,6 +146,6 @@ A new release is needed by users before end of July 2023. The freeze date to req
 
 == Any other business
 
-* Meeting suggested in April to be held during May 2023 to discuss the changes proposed for 4.0.0 did not take place to concentrate the efforts in the release 3.3.0. A new meeting will be proposed for October 2023 or Q1 2024.  
+* Meeting suggested in April to be held during May 2023 to discuss the changes proposed for 4.0.0 did not take place to concentrate the efforts in the release 3.3.0. A new meeting will be proposed for October 2023 or Q1 2024.
 
-
+include::partial$feedback.adoc[]

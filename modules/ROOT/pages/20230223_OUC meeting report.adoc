@@ -1,4 +1,8 @@
-= Open User Community Meeting Report
+:doctitle: Open User Community Meeting Report
+:doccode: espd-ouc-prod-015
+:author: NPJ
+:authoremail: nicole-anne.paterson-jones@ext.ec.europa.eu
+:docdate: January 2024
 
 == Publications Office – ESPD EDM
 
@@ -105,4 +109,4 @@
 
 * A draft of the taxonomy file for ESPD-EDM v4.0.0 will be ready and available by the second half of March. Afterwards, users will be able to review it in detail and test during a standstill period, as requested by the Open User Community in the last OUC meeting, and report any eventual issue so it can be fixed before the actual release, which is planned for summer. Other ongoing issues different to the taxonomy will be added to the prerelease.
 
-
+include::partial$feedback.adoc[]

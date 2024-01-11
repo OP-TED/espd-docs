@@ -1,4 +1,8 @@
-= Open User Community Meeting Report
+:doctitle: Open User Community Meeting Report
+:doccode: espd-ouc-prod-019
+:author: NPJ
+:authoremail: nicole-anne.paterson-jones@ext.ec.europa.eu
+:docdate: January 2024
 
 == Publications Office – ESPD EDM
 
@@ -125,6 +129,6 @@ The TemplateEvidence is used in the Request and in the Response and it inherits 
 
 * Some users have already shown their interest in presenting the work done on their countries and organisations for the ESPD implementation and their concerns during the Annual Seminar. The attendees are invited to propose their own presentations. 
 
-* Some users have left the project and the attendees are welcome to send to OP the list of new colleagues so that they can get the monthly invitations.  
+* Some users have left the project and the attendees are welcome to send to OP the list of new colleagues so that they can get the monthly invitations.
 
-
+include::partial$feedback.adoc[]

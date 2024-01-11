@@ -49,3 +49,5 @@ xref:indiv.adoc[Working Group Individual Meetings Reports]
 ****
 ////
 --
+
+include::partial$feedback.adoc[]

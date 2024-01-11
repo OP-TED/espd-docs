@@ -1,4 +1,8 @@
-= Open User Community Meeting Report
+:doctitle: Open User Community Meeting Report
+:doccode: espd-ouc-prod-014
+:author: NPJ
+:authoremail: nicole-anne.paterson-jones@ext.ec.europa.eu
+:docdate: January 2024
 
 == Publications Office – ESPD EDM
 
@@ -114,4 +118,4 @@
 
 * *Management of releases*. It is difficult for implementors to cope with many ESPD-EDM versions. It is agreed that, before a new version is in production, there is a pilot with a standstill period so users can test and eventual issues can be fixed before the actual release, in order to minimize the need of future patch releases.
 
-
+include::partial$feedback.adoc[]

@@ -1,4 +1,9 @@
-= Open User Community Meeting Report
+:doctitle: Open User Community Meeting Report
+:doccode: espd-ouc-prod-011
+:author: NPJ
+:authoremail: nicole-anne.paterson-jones@ext.ec.europa.eu
+:docdate: January 2024
+
 == Publications Office – ESPD EDM
 
 
@@ -146,3 +151,5 @@ b) Elements that will be removed:
 * It is requested that a log of the changes of the ESPD-EDM in the different releases is provided, in order to facilitate the decision on whether to develop a new tool or to evolve the current one within the process of upgrading the ESPD version. The requested log is available in the link:https://github.com/OP-TED/ESPD-EDM/releases[GitHub].
 
 * A release planning is requested with information on the type of release (patch, minor or major), the estimated date of the release, the GitHub issues that will be included in the release and implementation requirements for developers.
+
+include::partial$feedback.adoc[]

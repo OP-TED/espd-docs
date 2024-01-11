@@ -1,5 +1,8 @@
-= Open User Community Draft Meeting Report
-
+:doctitle: Open User Community Draft Meeting Report
+:doccode: espd-ouc-prod-009
+:author: NPJ
+:authoremail: nicole-anne.paterson-jones@ext.ec.europa.eu
+:docdate: October 2023
 == Publications Office – ESPD EDM
 
 
@@ -116,3 +119,5 @@ OP will take the above points into consideration and discuss any findings with I
 == Any other business
 
 * The OP comments that a new excel file with the data structure for criteria will be provided with the new ESPD release, which will not be before the end of the year.
+
+include::partial$feedback.adoc[]
