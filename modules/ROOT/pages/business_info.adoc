@@ -1,4 +1,9 @@
 :doctitle: The European Single Procurement Document
+:doccode: espd-bus-prod-001
+:author: NPJ
+:authoremail: nicole-anne.paterson-jones@ext.ec.europa.eu
+:docdate: January 2024
+
 ifndef::imagesdir[:imagesdir: images]
 ifndef::downloaddir[:downloaddir: download]
 //:toc:
@@ -187,3 +192,4 @@ The main goals and benefits of the ESPD are to:
 *	facilitate the participation of small and medium-sized enterprises (SMEs) in public procurement.
 
 
+include::partial$feedback.adoc[]

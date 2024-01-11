@@ -1,8 +1,8 @@
 :doctitle: External Resources
-:doccode: espd-main-prod-006
+:doccode: epo-bus-prod-007
 :author: NPJ
 :authoremail: nicole-anne.paterson-jones@ext.ec.europa.eu
-:docdate: October 2023
+:docdate: January 2024
 
 
 == EU Vocabularies
@@ -17,6 +17,8 @@ Using the online validation facility, the https://www.itb.ec.europa.eu/espd/uplo
 
 Note: The testbed link is also in the validation GitHub folder readme.md.
 
-image:form/testbed.png[]]
+image:form/testbed.png[]
+
+include::partial$feedback.adoc[]
 
 
