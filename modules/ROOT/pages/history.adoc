@@ -1,8 +1,9 @@
 :doctitle: History
-:doccode: espd-main-prod-005
+:doccode: espd-main-prod-003
 :author: NPJ
 :authoremail: nicole-anne.paterson-jones@ext.ec.europa.eu
-:docdate: October 2023
+:docdate: January 2024
+
 
 
 == The ESPD-EDM Development Timeline
@@ -42,6 +43,7 @@ Some inaccuracies in the documentation were corrected, relevant sections added a
 
 Details can be found in the release notes of each version.
 
+////
 == Version 4.0.0
 
 Version 4.0.0's release is planned for November 2024. The significant changes in this version will be:
@@ -49,3 +51,6 @@ Version 4.0.0's release is planned for November 2024. The significant changes in
 * UUIDs replaced by ...
 
 * ...
+////
+
+include::partial$feedback.adoc[]

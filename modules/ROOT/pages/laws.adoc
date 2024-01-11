@@ -1,8 +1,8 @@
 :doctitle: Laws and Directives
-:doccode: espd-main-prod-008
+:doccode: espd-main-prod-004
 :author: NPJ
 :authoremail: nicole-anne.paterson-jones@ext.ec.europa.eu
-:docdate: October 2023
+:docdate: January 2024
 
 
 https://eur-lex.europa.eu/legal-content/EN/LSU/?uri=celex%3A32014L0024[The  2014/24/EC Directive on Public Procurement(Article 59)] introduced the European Single Procurement Document (ESPD).
@@ -11,3 +11,4 @@ The Commission Implementing https://eur-lex.europa.eu/eli/reg_impl/2016/7/oj[Reg
 
 The electronic version of the ESPD became mandatory in April 2018.
 
+include::partial$feedback.adoc[]

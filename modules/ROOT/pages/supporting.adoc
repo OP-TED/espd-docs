@@ -1,8 +1,8 @@
 :doctitle: Supporting and Related Projects
-:doccode: espd-main-prod-007
+:doccode: espd-main-prod-005
 :author: NPJ
 :authoremail: nicole-anne.paterson-jones@ext.ec.europa.eu
-:docdate: October 2023
+:docdate: January 2024
 
 The ESPD is related to two further projects:
 
@@ -36,3 +36,5 @@ If a member state or contracting authority wishes to publish their criteria (whi
 
 
 Registration of the ESPD criteria in eCertis: All the criteria used in the ESPD, including exclusion grounds, are registered in eCertis with a unique identifier or code and the process of registering these, and the associated identifier, is coordinated carefully with eCertis. All criteria are published on eCertis with reference information such as the corresponding legislation, descriptions, and translations so that it is available to all participants in EU eProcurement.
+
+include::partial$feedback.adoc[]
