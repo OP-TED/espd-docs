@@ -1,5 +1,8 @@
 :doctitle: The Distribution Package
-
+:doccode: espd-v3.3.x-prod-005
+:author: NPJ
+:authoremail: nicole-anne.paterson-jones@ext.ec.europa.eu
+:docdate: January 2024
 
 The latest distribution package can be found on link:https://github.com/OP-TED/ESPD-EDM/tree/master[OP TED GitHub]
 
@@ -81,5 +84,5 @@ This tab contains all the questions and issues submitted to the ESPD team by the
 
 The ESPD team also raises issues here to inform the OUC of any decision and to open discussion for topics that do not need to, or cannot wait for, a monthly meeting.
 
-
+include::partial$feedback.adoc[]
 

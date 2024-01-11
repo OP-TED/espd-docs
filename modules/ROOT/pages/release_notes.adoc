@@ -1,5 +1,11 @@
+:doctitle: Release Notes
+:doccode: espd-v3.3.x-prod-003
+:author: NPJ
+:authoremail: nicole-anne.paterson-jones@ext.ec.europa.eu
+:docdate: January 2024
+
 :sectnums:
-= Release Notes
+
 
 == v3.3.0 (July 2023) 
 
@@ -114,3 +120,4 @@ Release Notes were updated in the online documentation.
 
 The Readme file in the GitHub repository was updated for v3.3.0.
 
+include::partial$feedback.adoc[]
