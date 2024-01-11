@@ -23,6 +23,7 @@ xref:espd-bus::service.adoc[Click here to read about the ESPD service]
 
 ****
 
+
 [.tile]
 .The ESPD online form
 ****
@@ -31,6 +32,7 @@ This section runs through the ESPD online form from both the buyer and the suppl
 xref:espd-bus::espd_form.adoc[Click here to view the ESPD online form]
 ****
 
+////
 [.tile]
 .Using the ESPD Service
 ****
@@ -55,6 +57,7 @@ A business overview for upgrading your ESPD Service version
 xref:overview_upgrades.adoc[Click here for upgrading your ESPD version]
 ****
 --
+////
 
 include::partial$feedback.adoc[]
 
