@@ -12,7 +12,7 @@ An ESPD service is an online portal that public buyers in the EU use, to publish
 
 === Examples of current ESPDs:
 
-There are a number of ESPD Services available, provided by EU member states or commercial ESPD service providers. The list can be accessed https://forum-vergabe.de/wp-content/uploads/Downloads/espd_service_provider_list_v21.pdf[here].
+There are https://forum-vergabe.de/wp-content/uploads/Downloads/espd_service_provider_list_v21.pdf[a number of ESPD Services available], provided by EU member states or commercial ESPD service providers. The list can be accessed https://forum-vergabe.de/wp-content/uploads/Downloads/espd_service_provider_list_v21.pdf[here].
 
 === What needs to be filled in on the ESPD Service page(s)?
 
@@ -24,7 +24,7 @@ The information in the ESPD service is linked to an eForms notice by a number wh
 
 === A run through of an online ESPD Service
 
-xref:espd_form.adoc[Click here for a run through tof an ESPD Service]
+xref:espd_form.adoc[Click here for a run through of an ESPD Service]
 
 include::partial$feedback.adoc[]
 
