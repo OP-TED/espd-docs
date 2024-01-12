@@ -10,6 +10,8 @@
 
 To see how to xref:espd_form.adoc[fill in a form on an online ESPD-Service from the perspectives of both a buyer and suppliers], click on the linked text. This will demonstrate the use of an ESPD-Service from scratch (first time).
 
+////
+
 == Finding an eNotice to respond to in an ESPD-Service (for suppliers)
 To see how to xref:number.adoc[find a suitable eNotice number] that a supplier might want to respond to. A number is needed to start the process.
 
@@ -28,5 +30,7 @@ Supplier need to provide evidence like certificates, etc, and will have to xref:
 == Managing Supplier Groups
 
 If you are tendering as the head of, or a participant in, a tender, here is some information on how to xref:subcon.adoc[manage the upload of subcontractor evidence and coordinating subcontractors filling in their part of the response form].
+
+////
 
 include::partial$feedback.adoc[]
