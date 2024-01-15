@@ -112,6 +112,7 @@ Information concerning the economic operator, where they are required to provide
 *The Buyer fills in:*
 
 Exclusion grounds, where the Buyer is required to review
+
 * Grounds relating to criminal convictions;
 * Grounds relating to the payment of taxes or social security contributions;
 * Grounds relating to insolvency, conflicts of interests or professional misconduct;
