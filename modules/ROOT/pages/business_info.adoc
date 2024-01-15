@@ -67,7 +67,7 @@ As already mentioned, there are two ESPD parts or documents making up the ESPD:
 The ESPD Service is oriented therefore to these two types of users:
 
 •	Buyers or Contracting Authorities, who are state, regional or local authorities, bodies governed by public law or associations formed by one or more of such authorities, or one or more such bodies governed by public law (as defined in Article 2 of the Directive);
-•	Suppliers or Economic Operators, whoare any natural or legal person or public entity or group of such persons and/or entities, including any temporary association of undertakings, who offer the execution of works and/or a work, the supply of products, or the provision of services on the market (as defined in Article 2 of the Directive).
+•	Suppliers or Economic Operators, who are any natural or legal person or public entity or group of such persons and/or entities, including any temporary association of undertakings, who offer the execution of works and/or a work, the supply of products, or the provision of services on the market (as defined in Article 2 of the Directive).
 
 Economic Operators can play different roles, catered for in the ESPD-EDM, within a procurement procedure:
 
@@ -82,7 +82,7 @@ Economic Operators can play different roles, catered for in the ESPD-EDM, within
 == Parts of the ESPD
 
 
-Each section is filled in by one or both parties, and in the case of a response involving a supplier group, each supplier entity within the group might be required to fill in a part of the response.
+Each section is filled in by one or both parties, and in the case of a response involving a supplier group, the group leader must fill in information related to group members in the response.
 
 === Part 1: Buyer and procedure information
 
