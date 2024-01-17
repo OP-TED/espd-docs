@@ -4,17 +4,48 @@
 :authoremail: nicole-anne.paterson-jones@ext.ec.europa.eu
 :docdate: January 2024
 
+The European Single Procurement Document (ESPD) is a electronic form for preliminary evidence in a public procurement procedure and is used in the EU eProcurement process. The form enables buyers to state the selection criteria suppliers have to meet, and evidence of lawfulness and integrity they must provide, for their tender to be considered by the buyer.
 
+The following topics are included in this version of the ESPD documentation:
 
+== Release Documentation
+* xref:espd::release_notes.adoc[Release Notes] +
+The release notes for this version.
+* link:{attachmentsdir}/ESPD_CM_html/index.html[Conceptual Model] +
+The conceptual model for this version
+//* xref:espd::dist_pack.adoc[The Distribution Package]
 
-////
-[.tile]
-.title (to be hidden until content ready)
-****
-Description
+== Information for Business Users
+* xref:espd-bus::index.adoc[Business Information] +
+An overview of the ESPD for business users
+* xref:espd-bus::service.adoc[The ESPD Service] +
+An overview of the ESPD service for technical users
+* xref:espd-bus::using.adoc[Using an ESPD Service] +
+A run through and explanation of an ESPD service
+//* xref:espd-bus::creating.adoc[Creating an ESPD Service]
+//* xref:espd-bus::overview_upgrades.adoc[Overview for Upgrading your Version]
 
-//xref:xxx@EPO::example.adoc[update when ready]
-Updated documents coming soon.
-****
-////
---
+== Technical Implementation
+* xref:espd-tech::index.adoc[Technical Information] +
+Information for technical implementors
+//* xref:espd-tech::tech_imp_roadmap.adoc[Road Map for Implementers]
+//* xref:espd-tech::tech_upgrades.adoc[Upgrading an ESPD Version]
+//* xref:espd-tech::demo.adoc[Demo ESPD Service Online]
+
+== General Reference
+* xref:espd-home::history.adoc[History and Planned Developments] +
+A road map of the ESPD project
+* xref:espd-home::external.adoc[External Resources] +
+External resources that support the ESPD
+* xref:espd-home::supporting.adoc[Supporting and related projects] +
+Other projects that align with and support the ESPD
+* xref:espd-home::laws.adoc[Laws and Directives] +
+Laws and directives that inform the ESPD
+
+== Open User Community Reports
+* xref:espd-wgm::monthly.adoc[Monthly Reports] +
+Minutes and documents from the open user community monthly meetings
+* xref:espd-wgm::annual.adoc[Annual Reports] +
+Minutes and documents from the open user community annual meetings
+
+include::partial$feedback.adoc[]
