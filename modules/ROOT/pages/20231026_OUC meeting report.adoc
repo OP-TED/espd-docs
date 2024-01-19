@@ -5,7 +5,7 @@
 
 [cols=",",",]
 |===
-|Meeting Date/Time: |2023-10-29, 10.00 - 11.30
+|Meeting Date/Time: |2023-10-26, 10.00 - 11.30
 |===
 
 [cols=",",options="header",]
@@ -55,6 +55,7 @@
 
 ** Issues proposed for discussion for OUC on January 2024.
 ** ESPD-EDM & ePO - eAccess: TemplateEvidence - Request / Response. 
+
 
 == GitHub issues
 
