@@ -59,7 +59,7 @@ The European Commission (EC) link:https://ec.europa.eu/isa2/awards_en[ISA2 Progr
 
 === Root elements
 
-The table below lists the elements that are expected in the ESPD Response and provides details on the cardinalities and usage of those elements.
+The tables below establish a mapping between the business requirements, the logic layer of the ESPD-EDM and the UBL-2.3 physical layer. They list the elements that are expected in the ESPD Response and provide details on the cardinalities and usage of those elements.
 
 
 

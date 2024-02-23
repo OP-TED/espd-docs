@@ -1,13 +1,13 @@
 
 == Annex I. Code list used in ESPD
 
-Note that some code list used in ESPD have been updated accordingly to the alignment with eForms carried out for ESPD.
+NOTE: Some code lists used in ESPD were modified to align with those of the eForms.
 
-In some cases code list have been removed from ESPD since the information is going to be provided in eForms CN, therefore it will not be needed in ESPD.
+In some cases, code lists were removed from ESPD since the information will be retrieved from eForms.
 
-For more details on Code list removed check Release Notes.
+For more details on the code list removed, consult the #Release Notes#.
 
-Beware that in the ESPD documents codes can be used in different places, e.g.:
+In ESPD documents, codes can be used in different contexts e.g.,:
 
 . Outside the criteria, in UBL components of type "Code Type";
 
@@ -18,13 +18,13 @@ Beware that in the ESPD documents codes can be used in different places, e.g.:
 Additional information about the code lists can be found in:
 
 
-* The <<code-list-catalogue>> on this documentation;
+* The <<code-list-catalogue>> in this documentation;
 
 
-* The multilingual link:{url-tree}/codelists/gc/[Genericode] *.gc files automatically produced based on these spread-sheets; and
+* The multilingual link:{url-tree}/codelists/gc/[Genericode] *.gc files automatically produced based on these spread-sheets; #and#?
 
 
-The table below lists the code lists used in the ESPD documents and where they are used.
+The table below lists the code lists used in the ESPD documents and the locations where they are used.
 
 [cols=",,",options="header",]
 |===

@@ -40,7 +40,7 @@ The cardinality constraints added by the ESPD are not defined in the XSD Schema.
 
 == Root elements
 
-The table below lists the elements that are expected in the ESPD Request and provides details on the cardinalities and usage of those elements.
+The tables below establish a mapping between the business requirements, the logic layer of the ESPD-EDM and the UBL-2.3 physical layer. They list the elements that are expected in the ESPD Request and provide details on the cardinalities and usage of those elements.
 
 [cols=",",options="header",]
 
@@ -298,7 +298,7 @@ _Figure 16. Associated class cac:ExternalReference, XSD diagram_
 
 === Expected elements
 
-As you can see from the XSD Schema the cac:DocumentReference class has a rich data structure. However, to refer to publications such as the TED and national publications, the ESPD most expects at most the following data:
+ As can be seen from the XSD Schema, the cac:DocumentReference class has a rich data structure. However, to refer to publications such as the TED and national publications, the ESPD most expects at most the following data:
 
 [cols=",",options="header",]
 
@@ -356,6 +356,7 @@ _Table 6. Reference to additional documents, expected elements_
 Beware that the ESPD document do not embed the content of referenced documents but instead make a reference to its source. Thus the class 'DocumentReference' aggregates a 'cac:Attachment' class that allows for embedding the content or making reference to an external source of the content, which is the preferred way in ESPD (see XSD schema above):
 
 [cols=",",options="header",]
+
 
 _Table 7. External Reference_
 |===

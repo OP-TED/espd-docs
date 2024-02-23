@@ -1,6 +1,6 @@
 :doctitle: Glossary
 :doccode: espd-tech-prod-012
-:author: NPJ
+:author:
 :authoremail: nicole-anne.paterson-jones@ext.ec.europa.eu
 :docdate: January 2024
 
@@ -13,12 +13,25 @@
 [[bbies,Basic Business Information Entities (BBIEs)]]
 *Basic Business Information Entities (BBIEs).* Leaf nodes of every UBL document structure. These are ordinary data fields such as one would expect to find in any business form, and they are realized in the schemas as individual XML elements at the bottom level of the document tree with simple content representing amounts, codes, quantities, and so on. All UBL BBIE elements (and only UBL BBIE elements) are members of the UBL common basic components namespace, conventionally denoted in UBL schemas by the cbc: prefix. (Since all namespace prefixes in XML are assigned on a per-instance basis according to namespace declarations in the individual instance, prefixes such as cbc: may be replaced with arbitrarily different namespace prefixes in actual UBL documents.) (https://docs.oasis-open.org/ubl/os-UBL-2.3/UBL-2.3.html#S-BUSINESS-INFORMATION-ENTITIES)
 
+[[CodeLists, Code Lists]]
+*Code lists*
+A code list is an artifact or element listing the codes relevant to specific terms, grouped by semantic meaning, e.g., a code list for country or language. It may be general e.g., country, or very specific to, e.g., the notification of an economic rebate. Some relate specifically to procurement e.g., contract type. xref:tech_codelist.adoc[Code Lists used in the ESPD Service]
+
 [[code-list-document,code list document]]
 *code list document.* A code list document has the root element <gc:CodeList>. It contains metadata describing the code
 list as a whole, as well as explicit code list data – codes and associated values. (http://docs.oasis-open.org/codelist/approved/genericode/oasis-code-list-representation-genericode.html)
 
 [[cva,CVA]]
 *Context/value association (CVA).* File that specifies the relationship from information items found in different document contexts to one or more external genericode files for each item. (http://docs.oasis-open.org/codelist/ContextValueAssociation/doc/context-value-association.html)
+
+[[Criterion, Criterion]]
+*Criteria*, in the context of the ESPD, either selection or exclusion, are those applied to each supplier on application to tender to validate qualification. Buyers stipulate criteria, and suppliers provide evidence that they comply to them.
+
+[[Components, Components]]
+*Components* prefixed with cac-ccv:, cac-cev, cbc-ccv and cbc-cev:
+
+* cbc: common basic component is a leaf elements/ data nodes corresponding to the ubl specification, basic business information entity (BBIE).
+* cac= common aggregate component is one that can contain more cac or cbc elements/ data nodes corresponding to the ubl specification, aggregate business information entity (ABIE).
 
 [[ecertis,eCertis]]
 *eCertis.* Information system that helps identify different certificates requested in procurement procedures across the EU. (https://ec.europa.eu/tools/ecertis/#/about)
@@ -35,6 +48,10 @@ list as a whole, as well as explicit code list data – codes and associated val
 [[eu-vocs,EU Vocabularies]]
 *EU Vocabularies.* EuroVoc is a multilingual, multidisciplinary thesaurus covering the activities of the EU, the European Parliament in particular. It contains terms in 23 official EU languages, plus in three languages of countries which are candidates for EU accession. (https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/eurovoc)
 
+[[eSens, eSens]]
+*eSens*
+https://cordis.europa.eu/article/id/191247-the-building-blocks-for-digital-governments-revolution[eSens] was a project that ran from 2013 to 2017 to deliver a generic e-infrastructure used across a range of public services. Its aim was to make digital government services simpler and more cost-effective to implement for the benefit ofcitizens, businesses and public organisations.
+
 [[espd,European Single Procurement Document (ESPD)]]
 *European Single Procurement Document (ESPD).* Self-declaration document intended for preliminary evidence in a public procurement procedure introduced in the Article 59 of the new Public Procurement Directive 2014/24/EC. (https://github.com/ESPD/ESPD-EDM/tree/master)
 
@@ -43,6 +60,22 @@ list as a whole, as well as explicit code list data – codes and associated val
 
 [[gc,genericode]]
 *genericode.* Single model and XML format (with a W3C XML Schema)  defined by <<oasis>> that can encode a broad range of code list information. Note that genericode is not designed as a run-time format for accessing code list information, and is not optimized for such usage.  Rather, it is designed as an interchange format that can be transformed into formats suitable for run-time usage, or loaded into systems that perform run-time processing using code list information. (http://docs.oasis-open.org/codelist/approved/genericode/oasis-code-list-representation-genericode.html)
+
+[[Genericode_Format,Genericode Format]]
+*Genericode Format*: see <<gc>>
+
+[[ICT_Standards_for_Procurement,ICT Standards for Procurement]]
+Developed in 2011 by the <<Joinup>> initiative, the *ICT Standards for Procurement* prescribe the standards for EU interoperable solutions to which new initiatives must comply.
+
+
+[[ISA², ISA²]]
+The *ISA^2^ Programme*, now https://ec.europa.eu/isa2/news/new-level-cooperation-isa-building-interoperable-europe_en/[Interoperable Europe], was a funding programme of the European Union that supported the development of digital solutions, which enable public administrations, businesses, and citizens in Europe to benefit from interoperable cross-border and cross-sector public services. The programme ran until 31 December 2020.
+
+[[Joinup,Joinup]]
+*The Joinup platform* is the European Commission's one-stop shop for interoperable, open, and free digital government ICT solutions and an online space for e-Government professionals and enthusiasts to share and learn about digital public services and initiatives.
+
+[[Namespace Prefixes, Namespace Prefixes]]
+*Namespace prefixes* are used in XML to avoid element name conflicts. See the https://www.w3schools.com/XML/xml_namespaces.asp[W3schools definition and description].
 
 [[oasis,Organization for the Advancement of Structured Information Standards (OASIS)]]
 *Organization for the Advancement of Structured Information Standards (OASIS).* Company that offers standardization and de jure approval for reference in international policy and procurement. (https://www.oasis-open.org/org/)
@@ -53,11 +86,16 @@ list as a whole, as well as explicit code list data – codes and associated val
 [[op,The Publications Office of the European Union (OP)]]
 *The Publications Office of the European Union (OP).* Interinstitutional office whose task is to publish the publications of the institutions of the European Union (Decision 2009/496/EC, Euratom). (https://op.europa.eu/en/home)
 
+[[Semantic_Assets,Semantic Assets]] Semantic assets (metadata or reference data) are maintained as part of the actions for semantic interoperability by the ISA² Programme, which aims at improving semantic interoperability in European eGovernment systems by providing solutions to help European public administrations perform seamless and meaningful cross-border and cross-domain data exchanges. The ISA² Programme has developed a number of semantic specifications and interoperability solutions which are available to public administrations, namely: Core Vocabularies, the DCAT Application Profile for Data Portals in Europe (DCAT-AP) and the Asset Description Metadata Schema (ADMS). The SEMIC action is also funding the development of solutions managed by other services, such as VocBench3 which is managed by the Publications Office of the EU. https://ec.europa.eu/isa2/actions/improving-semantic-interoperability-european-egovernment-systems_en/[More Information]
+
 [[sch,Schematron]]
 *Schematron.* Rule-based validation language for making assertions about the presence or absence of patterns in XML trees. It is a structural schema language expressed in XML using a small number of elements and XPath. (https://www.schematron.com/)
 
 [[ted,TED]]
 *Tenders Electronic Daily (TED).* Online version of the 'Supplement to the Official Journal' of the EU, dedicated to European public procurement. (https://ted.europa.eu/TED/main/HomePage.do)
+
+[[Testbed, Testbed]] The https://www.itb.ec.europa.eu/espd/upload["testbed"] is an online tool provided to developers of ESPD Services that enables them to validate their XML ESPD Request and Response documents. Validation is the process by which xml files are tested for compliance against the schematron rules (and the Directive).
+
 
 [[toop,The Once-Only Principle Project (TOOP)]]
 *The Once-Only Principle Project (TOOP).* The TOOP exchange data model specification describes a process providing electronic messaging support for requesting specific data elements or documents and providing adequate data responses or document responses. (http://wiki.ds.unipi.gr/display/CCTF/TOOP+Exchange+Data+Model+Specification+v1.40)
@@ -73,5 +111,8 @@ list as a whole, as well as explicit code list data – codes and associated val
 
 [[xslt,XSLT (Extensible Stylesheet Language Transformations)]]
 *XSLT (Extensible Stylesheet Language Transformations).* Language for transforming XML documents into other XML documents or other formats, such as HTML for web pages or plain text. (https://www.w3.org/TR/xslt-30/)
+
+[[ebXML_CCTS_ISO_TS_15000-5:2005,ebXML CCTS ISO/TS 15000-5:2005]]
+*ISO/TS 15000-5:2005* forms the basis for standards development work of business analysts, business users and information technology specialists supplying the content of and implementing applications that will employ the UN/CEFACT Core Component Library (CCL). Latest version ISO 15000-5:2014, confirmed 2019. (https://www.iso.org/standard/61433.html)
 
 include::partial$feedback.adoc[]
