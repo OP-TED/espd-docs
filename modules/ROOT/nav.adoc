@@ -1,14 +1,14 @@
 * **Annual Seminar**
 
 * 2023
-** xref:annual_seminar_report/2023_ESPD Annual Seminar report.adoc[ESPD Annual Seminar Report]
+** xref:2023_ESPD Annual Seminar report.adoc[ESPD Annual Seminar Report]
 ** link:https://www.youtube-nocookie.com/embed/gox6hMfZZXU[ESPD Annual Seminar Video]
 ** link:https://github.com/OP-TED/espd-docs/blob/wgm-reports/modules/ROOT/attachments/annual_seminar_2023/2023_ESPD_Annual_Seminar_Presentation.pdf[ESPD Annual Seminar Presentation]
 ** link:https://github.com/OP-TED/espd-docs/blob/wgm-reports/modules/ROOT/attachments/annual_seminar_2023/20231130_ecertis_annual_meeting.pdf[ESPD eCertis Presentation]
 ** link:https://github.com/OP-TED/espd-docs/blob/wgm-reports/modules/ROOT/attachments/annual_seminar_2023/ESPD-Slido-Results-2023.pdf[Slido Results]
 
 * 2022
-** xref:annual_seminar_report/2022_ESPD Annual Seminar report.adoc[ESPD Annual Seminar Report]
+** xref:2022_ESPD Annual Seminar report.adoc[ESPD Annual Seminar Report]
 ** link:https://www.youtube-nocookie.com/embed/L71pr8VwiS4[ESPD Annual Seminar Video]
 ** link:https://github.com/OP-TED/espd-docs/blob/wgm-reports/modules/ROOT/attachments/SlidoResults.pdf[Slido Results]
 ** link:https://github.com/OP-TED/espd-docs/blob/wgm-reports/modules/ROOT/attachments/annual-seminar/2022_ESPD_Annual_Seminar_Presentation.pdf[ESPD Annual Seminar Presentation] 
