@@ -1,27 +1,27 @@
 * **Annual Seminar**
 
 * 2023
-** xref:2023_ESPD Annual Seminar report.adoc[ESPD Annual Seminar Report]
 ** link:https://www.youtube-nocookie.com/embed/gox6hMfZZXU[ESPD Annual Seminar Video]
 ** link:https://github.com/OP-TED/espd-docs/blob/wgm-reports/modules/ROOT/attachments/annual_seminar_2023/2023_ESPD_Annual_Seminar_Presentation.pdf[ESPD Annual Seminar Presentation]
 ** link:https://github.com/OP-TED/espd-docs/blob/wgm-reports/modules/ROOT/attachments/annual_seminar_2023/20231130_ecertis_annual_meeting.pdf[ESPD eCertis Presentation]
+** xref:2023_ESPD Annual Seminar report.adoc[ESPD Annual Seminar Report]
 ** link:https://github.com/OP-TED/espd-docs/blob/wgm-reports/modules/ROOT/attachments/annual_seminar_2023/ESPD-Slido-Results-2023.pdf[Slido Results]
 
 * 2022
-** xref:2022_ESPD Annual Seminar report.adoc[ESPD Annual Seminar Report]
 ** link:https://www.youtube-nocookie.com/embed/L71pr8VwiS4[ESPD Annual Seminar Video]
-** link:https://github.com/OP-TED/espd-docs/blob/wgm-reports/modules/ROOT/attachments/SlidoResults.pdf[Slido Results]
 ** link:https://github.com/OP-TED/espd-docs/blob/wgm-reports/modules/ROOT/attachments/annual-seminar/2022_ESPD_Annual_Seminar_Presentation.pdf[ESPD Annual Seminar Presentation] 
+** xref:2022_ESPD Annual Seminar report.adoc[ESPD Annual Seminar Report]
+** link:https://github.com/OP-TED/espd-docs/blob/wgm-reports/modules/ROOT/attachments/SlidoResults.pdf[Slido Results]
 
 * 2021
-** link:https://github.com/OP-TED/espd-docs/tree/wgm-reports/modules/ROOT/attachments/annual-seminar/ESPD_Seminar_Report_20211202.pdf[ESPD Annual Seminar Report]
 ** link:https://www.youtube.com/watch?v=42wnvaMihvI[ESPD Annual Seminar Video]
 ** link:https://github.com/OP-TED/espd-docs/tree/wgm-reports/modules/ROOT/attachments/annual-seminar/2021_ESPD_Annual_Seminar_Presentation.pdf[ESPD Annual Seminar Presentation]
+** link:https://github.com/OP-TED/espd-docs/tree/wgm-reports/modules/ROOT/attachments/annual-seminar/ESPD_Seminar_Report_20211202.pdf[ESPD Annual Seminar Report]
 
 * 2020
-** link:https://github.com/OP-TED/espd-docs/tree/wgm-reports/modules/ROOT/attachments/annual-seminar/ESPD_TED_Annual_Seminar_Minutes_20200312_v1.0.pdf[ESPD Annual Seminar Report]
 ** link:https://github.com/OP-TED/espd-docs/tree/wgm-reports/modules/ROOT/attachments/annual-seminar/ESPD_2020_Seminar_Full_Presentation_v1.0.pptx[ESPD Evolution Presentation]
 ** link:https://github.com/OP-TED/espd-docs/tree/wgm-reports/modules/ROOT/attachments/annual-seminar/20201203_annual_espd_seminar_ecertis.pptx[eCertis Presentation]
+** link:https://github.com/OP-TED/espd-docs/tree/wgm-reports/modules/ROOT/attachments/annual-seminar/ESPD_TED_Annual_Seminar_Minutes_20200312_v1.0.pdf[ESPD Annual Seminar Report]
 
 
 * **OUC Meetings**
