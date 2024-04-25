@@ -1,5 +1,6 @@
-= Open User Community Meeting Report
 :hardbreaks-option:
+= Open User Community Meeting Report
+
 == Publications Office - ESPD EDM
 
 
@@ -107,7 +108,7 @@ The possible future workflow was also presented and can be consulted in the pres
 * TED eSender workshops OP-EVENTS@publications.europa.eu. 
 *** 20 March (Q1)
 *** 20 June (Q2) 
-* *Transparency* https://op.europa.eu/en/web/public-procurement-data-superpowers/agenda-2024-04-29[Transparency in public procurement data agenda]
+* *Transparency* https://op.europa.eu/en/web/public-procurement-data-superpowers/agenda-2024-04-29[Transparency in public procurement data]
 ** 29 – 30 April
 
 

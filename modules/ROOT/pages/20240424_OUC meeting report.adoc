@@ -1,0 +1,121 @@
+:hardbreaks-option:
+
+= Open User Community Meeting Report
+
+== Publications Office - ESPD EDM
+
+
+[cols=",",",]
+|===
+|Meeting Date/Time: |2024-04-24, 10.00 - 11.00 
+|===
+
+[cols=",",options="header",]
+|===
+|*Attendee Name* |*Organisation / Country*
+|Andreea ANGHEL	|ANAP - Romania
+|Paloma ARILLO	|OP
+|Simona BAJANARU	|ADR - Romania
+|Michaël DE WINNE	|BOSA - Belgium
+|Bertalan FABIAN	|Hungary
+|Jana FAFEJTOVA	|Czechia
+|Johanna GÖSCHLEBERGER	|Austria
+|Alexandra JESENOVEC LJUBOJEVIC	|Slovenia
+|Ajda KONSTANJSEK	|Slovenia
+|Arnis KRAUZE	|VRAA - Latvia
+|Foteini MICHALIDOU	|Greece
+|Jil MOSAR	|Luxembourg
+|Constantin NIȚĂ	|Romania
+|Christian OLSEN	|Denmark
+|Pietro PALERMO	|Italy
+|Nicole PATERSON-JONES	|OP
+|Nuno PERALTA	|Portugal
+|Francesco SCATERETTICO	|Italy
+|Sonia SERAFIMOVICI	|ADR - Romania
+|Marc Christopher SCHMIDT	|DG GROW
+|Laurent SCHONJAANS	|DG GROW
+|State Regional Development Agency	|SRDA
+|Dragoș STOICA	|OP
+|Pascaline Laure TCHIENEHOM	|NTT Data – France 
+|Martin UTOFT	|Denmark
+|===
+
+:sectnums:
+:sectnumlevels: 4
+
+
+== Meeting Agenda
+
+.   Summary OUC on 29 February 2024
+.	Immediate GitHub issues
+.	V4.0.0-rc: Highlights
+.	New features
+.	Future roadmap & timeline
+.	Next meetings
+
+
+
+== Summary OUC on 29 February 2024 
+
+* The link to the https://docs.ted.europa.eu/espd-ouc/index.html[main documents] related to the Open User Community meeting held on 29 February 2024 is provided:  in the index the user can navigate to the corresponding event at get the Presentation and the Report.
+* The main topics discussed are summarised:
+**	Specific GitHub issues – solutions: _Economic Operator descriptive requirements_ and _National pre-qualification system_ solutions discussed during bilateral meetings with the colleagues from Slovenia.
+**	ESPD-EDM & ePO – model evolution: _eAccess & eSubmission_, the eProcurement Ontology colleagues gave an overview of the evolution and alignment of both models, ePO and ESPD-EDM concerning the modules eAccess, corresponding to the ESPD Request, and eSubmission, corresponding to the ESPD Response.
+**	ESPD, eForms & eCertis  – interaction: _integration & possible workflow_, colleagues from GROW gave an overview of the current situation of the three systems and presented ideas for a future possible workflow to integrate the three of them. This will be used as a basis for bilateral meetings.
+
+
+
+== Immediate GitHub issues
+
+* A new procedure to deal with GitHub issues is presented:
+**	Unabelled issues will be considered as needing an immediate discussion and will be treated in short terms. Their status and scope will be also presented to the users during the OUC meetings.
+** Labelled  issues will be considered as no immediate: not blocking issues, or issues needing a deep analysis and discussion with the users and other procurement teams. They will be dealt with by and by and might be reassigned to another team, such as eForms or eCertis. 
+* Four open immediate issues are briefly summarised:
+**	https://github.com/OP-TED/ESPD-EDM/issues/415[#415] – _General and Specific Turnover_: clarification is provided to the colleagues form Belgium implementing v3.3.0,
+**	https://github.com/OP-TED/ESPD-EDM/issues/414[#414] – _UBL-UnqualifiedDataTypes-2.2.xsd in ubl-2.3 directory_: clarification is provided to the colleagues form Belgium implementing v3.3.0,
+**	https://github.com/OP-TED/ESPD-EDM/issues/382[#382] - _Incomplete ESPD example artifacts description in criterion 23_ released with v4.0.0-rc and to be closed, and 
+**	https://github.com/OP-TED/ESPD-EDM/issues/312[#312] - _UUID for Repeatable Question Sub Group_, the ESPD team is dealing with it and will be delivered with v4.0.0.
+*	The filters in GitHub to follow unlabeled issues is shown.
+
+
+== V4.0.0-rc: Highlights   
+
+* Version 4.0.0-release candidate is announced and the https://github.com/OP-TED/ESPD-EDM/tree/v4.0.0-rc[link] to OP-TED GitHub is provided. The main change, replacement of all UUIDs with XML-path-like IDs is quickly presented as this has been subject of discussion and detailed presentations during 2023.
+* The new distribution of folders and their content are presented live:
+** GitHub folders refactoring: new folders distribution and removed folders, such as the java-library and \\__ESPDTeam__;
+** https://github.com/OP-TED/ESPD-EDM/tree/v4.0.0-rc/criterion[Criterion folder] contents: new folder created containing the VBA-Scripts_Export and new Excel criterion files, for the Request and for the Response;
+** https://github.com/OP-TED/ESPD-EDM/tree/v4.0.0-rc/xml-examples[XML samples folder contents]: new updated files;
+** Other folders: https://github.com/OP-TED/ESPD-EDM/tree/v4.0.0-rc/codelists[Codelists], to which files from \\__ESPDTeam__ folder are moved, https://github.com/OP-TED/ESPD-EDM/tree/v4.0.0-rc/conceptual-model[Conceptual model] and its updates, https://github.com/OP-TED/ESPD-EDM/tree/v4.0.0-rc/ubl-2.3[UBL] with no changes, and https://github.com/OP-TED/ESPD-EDM/tree/v4.0.0-rc/validation[Validation] whose update is ongoing.
+
+
+
+== New features  
+
+* Two new features provided in the espd-demo site are presented: 
+** _UUID migration tool_: a new tool which helps migration and upgrade from previous ESPD-EDM versions is presented. It is useful to identify the UUID used in eCertis for a given criterion and the corresponding name of the criterion in the ESPD-EDM Excel file. The https://docs.ted.europa.eu/espd-demo/[link to the tool]. Users are invited to send their feedback and suggestions for further enhancements.
+** _GitHub template_:  https://github.com/OP-TED/espd-demo/issues[new templates] to open GitHub issues are proposed to the users. To facilitate the understanding and analysis of GitHub issues opened by the ESPD users for the ESPD Team three new templates are created in the espd demo site and the user can https://github.com/OP-TED/espd-demo/issues/new/choose[choose the different] options: _Questions about the ESPD-EDM_, _Idea for a New Feature_, and _Other Request_. Each template has a list of suggestions for the details that a user can provide to the ESPD Team. Also the ESPD version that the issue refers to can be selected. The users have always the possibility to open a https://github.com/OP-TED/espd-demo/issues/new[blank issue]. The Users Community is invited to start using these templates and provide the ESPD Team with their feedback and suggestions.
+
+
+
+== Future roadmap & timeline 
+
+The next steps for 2024 are presented:
+
+* on 24 April 2024:  release candidate 4.0.0 is announced;
+* from April 2024 April to September 2024 feedback from the Users Community for v4.0.0-rc. Bilateral meetings will be organised;
+* v4.0.0 planned to be released end of Q3 2024 / beginning Q4 2024;
+* v4.0.0 support starting on Q4 2024
+* v3.3.0 support ongoing since Q2 2023
+* Q3 2024 start alignement ESPD / eCertis
+
+== Next meetings  
+
+* 27 June 2024, 10:00 – 11:30
+* 19 September, 10.00 – 11.30 (planned)
+* Bilateral meeting starting on May 2024
+
+These bilateral meetings will help the Publications Office to provide support for and clarify questions to implementers who are moving to a new version of the ESPD model and to get feedback concerning version 4.0.0-rc. The meetings can also be proposed by own initiative of the User Community. Please contact us at OPESPD@publications.europa.eu.
+
+
+
+
