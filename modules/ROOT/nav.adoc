@@ -27,11 +27,6 @@
 * **OUC Meetings**
 
 * 2024
-
-//** 2024-??-??
-//*** link:https://github.com/OP-TED/espd-docs/blob/wgm-reports/modules/ROOT/attachments/ESPD_OUC_Meetings_Slides_2024????.pdf[35th OUC Presentation] 
-//*** xref:2024????_OUC meeting report.adoc[35th OUC Report]
-
 ** 2024-04-24
 *** link:https://github.com/OP-TED/espd-docs/blob/wgm-reports/modules/ROOT/attachments/ESPD_OUC_Meetings_Slides_20240424.pdf[34th OUC Presentation] 
 *** xref:20240424_OUC meeting report.adoc[34th OUC Report]
