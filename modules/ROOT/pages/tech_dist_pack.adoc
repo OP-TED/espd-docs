@@ -4,7 +4,7 @@
 :authoremail: nicole-anne.paterson-jones@ext.ec.europa.eu
 :docdate: January 2024
 
-The latest distribution package can be found on link:https://github.com/OP-TED/ESPD-EDM/tree/master[OP TED GitHub]
+The latest distribution package can be found on https://github.com/OP-TED/ESPD-EDM/tree/master[OP TED GitHub]
 
 == The Code tab
 === Subfolders in the ESPD-EDM Repository

@@ -11,7 +11,7 @@
 [[access-right-xml-example,access-right xml Example]]
 == access-right
 
-The following xml code is an example of use of code list xref:Tech_AnnexI_Code_Lists_Catalogue.adoc#access-right-table[access-right] in a _cac:Evidence_ element of ESPDRequest.
+The following xml code is an example of use of the code list xref:Tech_AnnexI_Code_Lists_Catalogue.adoc#access-right-table[access-right] in a _cac:Evidence_ element of ESPDRequest.
 
 
 [source,xml,linenums]

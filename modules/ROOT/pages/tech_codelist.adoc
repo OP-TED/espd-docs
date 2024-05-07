@@ -20,7 +20,7 @@ The essential distinctive features between identifiers and codes are:
 
 [arabic]
 . Identifiers point at specific occurrences of objects (instances); codes replace concepts;
-. Identifiers are virtually limitless while codes are finite. In other words, identifier lists are "open" (the lists may grow) and code list are "closed" (practically never updated, once consolidated). Hence codes are maintained in 'Codelists' whilst identifiers are usually kept in databases.
+. Identifiers are virtually limitless while codes are finite. In other words, identifier lists are "open" (the lists may grow) and code list are "closed" (practically never updated once consolidated). Hence codes are maintained in 'Codelists' whilst identifiers are usually kept in databases.
 . Identifiers are in principle maintained in the business domain, e.g. buyer identifiers, economic operator identifiers, exclusion or selection criteria identifiers, etc.
 . Codes may belong to three different domains:
 [loweralpha]
@@ -30,22 +30,20 @@ The essential distinctive features between identifiers and codes are:
 
 === Codes and code lists
 
-The ESPD Exchange Data Model tries to reuse as much as possible the codes that are already used for e-Procurement. In any project, like the ESPD-EDM, there are at least three types (or layers) of codes:
+The ESPD Exchange Data Model tries to reuse as the codes that are already used for e-Procurement much as possible. In any project, like the ESPD-EDM, there are at least three types (or layers) of codes:
 
 [arabic]
 . *Cross-sector*, common, codes, like the ones defined and maintained by the ISO for currencies, languages, countries, etc.; or the ones defined by the European Commission that can be used in multiple business domains, e.g. the NUTS defined by EUROSTAT; the ones defined by BACH (Banque de France), etc.;
 . *Business domain-related*, maintained by international or European authorities, e.g. the ones defined by UNECE (as unit codes), or by the Publications Office of the European Union (OP), e.g. types of procurement procedures (based on the EU Directives);
 . *Project-specific* (or application-specific), i.e. those codes that are particular of the project. Types (taxonomy) of exclusion and selection criteria, types of evaluation method, etc. in the case of the ESPD-EDM.
 
-Moreover, the ESPD will reuse code list from EU Vocabularies. This is due to the alignment between both models, ESPD and eForms to ensure the maximum interoperability. With this purpose ESPD will align the use of certain code lists.
-
 Codes are normally maintained in "code lists". The ESPD-EDM keeps and distributes these code lists in Genericode 1.0 (link:{url-tree}/codelists/gc/[GC]) files (one *.gc file per code list).
 
-However, it is worth to note that those code list that are reused from EU Vocabularies in alignment with eForms are not completely shown in excel and ods files. Instead, the metadata and the location of them in EU Vocabularies is provided.
+The ESPD reuses code lists from EU Vocabularies. This is to facilitate alignment between the ESPD and eForms models, ensuring maximum interoperability. The excel and ods code list files themselves are not provided, their metadata and their location in EU Vocabularies is given.
 
-For the genericodes is different, in this version ESPD will provide the gc files from EU Vocabularies to ensure its use and the validation. In future versions of the ESPD, only will be provided these GC of the code list purely used and maintained by ESPD.
+#Genericodes is different, in this version ESPD will provide the gc files from EU Vocabularies to ensure its use and the validation. In future versions of the ESPD, only will be provided these GC of the code list purely used and maintained by ESPD.#
 
-ESPD-EDM Code list contain the following elements:
+ESPD-EDM Code #list contains# the following elements:
 
 * *Metadata*: information about the code list, e.g. its identifier, the identifier and name of the agency responsible for defining and maintaining the list, the version of the list, etc.
 * *Code identifier*: the literal (a label composed of characters, numbers and symbols like '_');

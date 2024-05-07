@@ -19,10 +19,10 @@ _Figure 33. Criterion - UML diagram_
 
 == General behavior
 
-*Notice that*:
+*Note that*:
 
 [arabic]
-. One criterion *may* have descendent 'sub-criteria'. This is very useful to, for example, define national exclusion criteria that specialise the EU criteria defined in the Directive;
+. One criterion *may* have descendent 'sub-criteria'. This is very useful, for example, to define national exclusion criteria that specialise in the EU criteria defined in the Directive;
 . One criterion *may* refer to one or several pieces of legislation (EU, national, other);
 . One criterion *must* always contain at least one group of 'properties'. Properties may be informative captions; general requirements issued by the Member State or procedure-specific requirements specified by the buyer; and questions addressed to the economic operator;
 . One group of properties *must* always specify at least one 'property';
