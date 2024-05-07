@@ -21,7 +21,7 @@ The three main phases of the public procurement process are:
 ** The qualification of suppliers by applying the exclusion grounds and selecting suitable tenderers based on the selection criteria set by the CA during the preparation of the procedure and published in the contract notice;
 ** The evaluation of bids, based on the award criteria set by the CA;
 ** The award of the contract.
-* Post-tendering, with the contract implementation.
+* Post-tendering, or contract implementation.
 
 The ESPD is specifically concerned with qualification of suppliers step above.
 
