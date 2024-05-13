@@ -9,7 +9,7 @@
 [.tile]
 .Introduction to the ESPD for Business Users
 ****
-The ESPD...
+This section gives an overview of the ESPD for business users.
 
 xref:espd-bus::business_info.adoc[Information for Business Users]
 
