@@ -4,4 +4,12 @@
 :authoremail: nicole-anne.paterson-jones@ext.ec.europa.eu
 :docdate: January 2024
 
-Will be updated shortly
+https://www.youtube-nocookie.com/embed/gox6hMfZZXU[ESPD Annual Seminar Video]
+
+https://github.com/OP-TED/espd-docs/blob/wgm-reports/modules/ROOT/attachments/annual_seminar_2023/2023_ESPD_Annual_Seminar_Presentation.pdf[ESPD Annual Seminar Presentation]
+
+https://github.com/OP-TED/espd-docs/blob/wgm-reports/modules/ROOT/attachments/annual_seminar_2023/20231130_ecertis_annual_meeting.pdf[ESPD eCertis Presentation]
+
+https://docs.ted.europa.eu/espd-ouc/2023_ESPD%20Annual%20Seminar%20report.html[ESPD Annual Seminar Report]
+
+https://github.com/OP-TED/espd-docs/blob/wgm-reports/modules/ROOT/attachments/annual_seminar_2023/ESPD-Slido-Results-2023.pdf[Slido Results]
