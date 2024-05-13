@@ -4,7 +4,17 @@
 :authoremail: nicole-anne.paterson-jones@ext.ec.europa.eu
 :docdate: October 2023
 
+== 2024
+** 2024-02-29
+*** link:https://github.com/OP-TED/espd-docs/blob/wgm-reports/modules/ROOT/attachments/ESPD_OUC_Meetings_Slides_20240229.pdf[33rd OUC Presentation] 
+*** xref:20240229_OUC meeting report.adoc[33rd OUC Report] 
+
+
 == 2023
+
+** 2023-10-26
+*** link:https://github.com/OP-TED/espd-docs/blob/wgm-reports/modules/ROOT/attachments/ESPD_OUC_Meetings_Slides_20231026.pdf[32nd OUC Presentation] 
+*** xref:20231026_OUC meeting report.adoc[32nd OUC Report]
 
 === 2023-09-21
 *** link:https://github.com/OP-TED/espd-docs/blob/wgm-reports/modules/ROOT/attachments/ESPD_OUC_Meetings_Slides_20230921.pdf[31st OUC Presentation]

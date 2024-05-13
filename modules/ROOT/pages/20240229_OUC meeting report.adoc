@@ -1,0 +1,114 @@
+= Open User Community Meeting Report
+:hardbreaks-option:
+== Publications Office - ESPD EDM
+
+
+[cols=",",",]
+|===
+|Meeting Date/Time: |2024-02-29, 10.00 - 11.30
+|===
+
+[cols=",",options="header",]
+|===
+|*Attendee Name* |*Organisation / Country*
+|Paloma ARILLO	|OP
+|Andreea ANGHEL	|ANAP - Romania
+|Michaël De Winne	|BOSA - Belgium
+|Giovanni Del Lungo	|ANAC - Italy
+|Jason GRECH	|Malta
+|Alexandra JESENOVEC LJUBOJEVIC	|Slovenia
+|Uros IZLAKAR	|Slovenia
+|Ajda KONSTANJSEK	|Slovenia
+|Cristea MARILENA	|ANAP - Romania
+|Jil MOSAR	|Luxembourg
+|Christian OLSEN	|Denmark
+|Pietro PALERMO	|Italy
+|Andreea PASARE	|Meaningfy
+|Nicole PATERSON-JONES	|OP
+|Konstantinos RAPTIS |UPRC -Greece
+|Alexandra RODRIGUES	|Portugal
+|Joao SANTOS	|Portugal
+|Giampaolo SELLITO	|ANAC - Italy
+|Marc Christopher SCHMIDT	|DG GROW
+|Dragos STOICA	|OP
+|Pascaline Laure TCHIENEHOM	|NTT Data – France 
+|===
+
+:sectnums:
+:sectnumlevels: 4
+
+
+== Meeting Agenda
+
+.	Summary Annual Seminar on 30 November 2023
+.	GitHub issues ongoing
+.	Specific GitHub issues: solutions.
+.	ESPD-EDM & ePO 
+.	ESPD-EDM, eForms & eCertis 
+.	Next meetings
+
+
+== Summary Annual Seminar on 30 November 2023 
+
+*	The link to the  https://docs.ted.europa.eu/espd-ouc/index.html[main documents] related to the Annual Seminar 2023 is provided. The page displays also the recording of the Seminar.
+*	The main topics discussed are summarised:
+**	ESPD-EDM v3.X – Q4 2022 to Q3 2023: participants are invited to read the presentation or watch the video. No detailed information is needed during this summary as the matter has been deeply discussed before the Seminar.
+**	v3.X implementation – interproc consortium: participants are also invited to watch the https://www.youtube-nocookie.com/embed/gox6hMfZZXU[live presentation] kindly provided by the interproc colleagues during the Seminar. It gave a flavour of how v3 looks like once implemented. 
+**	v4.0.0-rc + v4.X 2024: during the Seminar it was explained the planning for release 4 and the changes to be provided. A release candidate planned for Q2 2024, most probably end of April, and a v4.0.0 planned for Q4 2024 after a feedback period of about four months for the users.
+**	ePO eAccess & ESPD-EDM Request: the eProcurement Ontology colleagues gave an overview of the evolution and alignment of both models, ePO and ESPD-EDM concerning the module eAccess, corresponding to the Request.
+**	eCertis - an Outlook: during the Seminar GROW presented the eCertis planning for 2024. Attendees are invited to watch https://www.youtube-nocookie.com/embed/gox6hMfZZXU[video] or read the https://github.com/OP-TED/espd-docs/blob/wgm-reports/modules/ROOT/attachments/annual_seminar_2023/20231130_ecertis_annual_meeting.pdf[eCertis presentation].
+
+
+== GitHub issues ongoing
+
+Currently, there are 20 open GitHub issues:
+
+* five of them will be analysed by the ESPD-EDM team to present proposals to the OUC before providing solutions for a future _release after-4.0.0_. They are not blocking issues;
+* four of them are ongoing at the ESPD team:
+** two planned for release v4.0.0-rc  https://github.com/OP-TED/ESPD-EDM/issues/382[#382] - _Incomplete ESPD example artifacts description in criterion 23_ and https://github.com/OP-TED/ESPD-EDM/issues/312[#312] - _UUID for Repeatable Question Sub Group_, and
+** two under revision: https://github.com/OP-TED/ESPD-EDM/issues/386[#386] - _Drop evidence group or subgroup be ESPD regulation_ and https://github.com/OP-TED/ESPD-EDM/issues/355[#355] – _Translations for criteria_;
+* 11 depend on third parties, such as the eCertis or the eForms Teams. Six of them do not have a direct impact on an ESPD release. Concerning https://github.com/OP-TED/ESPD-EDM/issues/381[#381] - _Subcontractors not relied upon have to provide information about Selection Criteria_ users are informed about the possibility of solving the issue by moving to version 3. Once the concerned code lists (eo-role-type, organisation-role and organisation-subrole) are discussed with the eForms and Ontology Teams the ESPD Team will come with proposals to modify the model and a further solution will be provided for a future release.
+ 
+
+== Specific GitHub issues: solutions   
+
+* https://github.com/OP-TED/ESPD-EDM/issues/388[#388]: _Other economic or financial requirements_. Annex 2, Part IV, Section B.6 of the Regulation (EU) 2016/7: the buyer the possibility to be very specific e.g 'turnover'. In the financial section it is possible to provide a ratio. ESPD EDM affected versions: 1.X, 2.X, 3.X. 
+Slovenia's question was what to do if the Contracting Authority only wants to specify a descriptive requirement in this field and does not require an amount or rating.  
+The solution to be delivered in v4.0.0 was presented: a third option 'Descriptive requirement' will be provided in 'Other requirement' in version 4.0.0. 
+
+* https://github.com/OP-TED/ESPD-EDM/issues/389#[389]: _Pre-qualification systems and classification of EOs_ (Economic Operators). In Part II of the ESPD the prequalification is added for the Response (declaration). However, in some countries, such as Slovenia, a pre-qualification section is not mandatory, which implies this section is often not used.  While the ESPD Regulation allows three answers: yes, no, not applicable, the ESPD model allows only two answers: yes, no.
+A top-level question will be added for version 4.0.0: Does the country of the economic have an official list of approved economic operators or an equivalent certificate (e.g. under a national (pre)qualification system)? Only when choosing 'yes' new list of questions/options will be displayed.
+* https://github.com/OP-TED/ESPD-EDM/issues/408[#408]: _UBL term: cbc:CopyIndicator definition_. During the eProcurement Ontology Working Group meeting about Collecting eSubmission requirements for ePO on 16/1/2024, it was discovered that there was a contradiction between the two definitions of the UBL term: cbc:CopyIndicator, while going through UBL terms from https://docs.ted.europa.eu/ESPD-EDM/latest/_attachments/ESPD_CM_html/index.html[ESPD-EDM Response Technical Overview].  In order to link the original document to its copies, all documents should have the same UUID. The CopyIndicator for the original is 0 and the CopyIndicator for the various copies is 1. Hence, the ESPD documentation has to be updated accordingly in various artefacts: online documentation, conceptual model. No ESPD service will be affected. The agreed definition was: *cbc:CopyIndicator* - Indicates whether this document is a copy (true) or not (false). This component enables to keep track of the event of having forwarded the same document several times to the same or to different destinations. Additional comments: copies of an ESPD document should be identified with same UUIDs. The documentation v3.3.0 has been updated by the ESPD Team.
+
+
+== ESPD-EDM & ePO  
+
+The eProcurement Ontology team is currently working on the  eSubmission module, which includes the ESPD Response. The  ePO and ESPD teams are working closely together to ensure a common understanding and the completeness of both models.
+During the OUC meeting the ePO team presented the last conclusions concerning the Criterion and Evidence type and Legislation, both included in eAccess.
+Also the Economic Operator roles and Other Pre-qualification Systems models were presented.
+The series of ePO/ESPD meetings will conclude during March 2024. However the Working Group meeting for other Ontology modules carry on taking place Tuesdays and Thursdays. The participants are invited to follow those meetings.
+
+
+== Integration of ESPD-EDM, eForms & eCertis 
+
+GROW presented the current situation and next steps in the coming months to integrate ESPD Model, eForms and eCertis. Currently the three services have a life on their own nd it is needed to define how they could work together. 
+The main goal is that the buyer would only need to provide the information in the ESPD, and it could be taken over for eForms. This integration would make it easier for buyers although not mandatory.
+While eCertis and eForms are based in all Directives (23, 24, 25 and 81) ESPD uses only the 24. There is also a difference in the use of code lists. 
+Ideally ESPD should fully follow eCertis and all three services should use the same code lists. 
+The possible future workflow was also presented and can be consulted in the presentation.
+
+
+== Next meetings  
+
+* 24 January 2024, 10:00 – 11:00. Due to public holiday on 25 April in several countries the meeting is moved to Wednesday 24 January.
+* 27 June 2024, 10:00 – 11:30.
+* The regularity of the OUC meeting has been reduced for 2024. More bilateral meetings will be called to discuss issues affecting users moving to new versions of the ESPD.
+* Other meetings organised by the Publications Office related to public procurement: 
+* TED eSender workshops OP-EVENTS@publications.europa.eu. 
+*** 20 March (Q1)
+*** 20 June (Q2) 
+* *Transparency* https://op.europa.eu/en/web/public-procurement-data-superpowers/agenda-2024-04-29[Transparency in public procurement data agenda]
+** 29 – 30 April
+
+
+include::partial$feedback.adoc[]
