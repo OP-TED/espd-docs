@@ -1,0 +1,15 @@
+= XML Path Like ID  
+
+From the version 4.0.0 of the ESPD, a new identifier format is used to replace the UUID in the 
+data structure of the Request or the Response for the various descriptive elements 
+(criterion, group, subgroup, requirement, question, caption). The new identifier is structure-based and 
+is called "XML Path Like ID". 
+
+== Problem statement 
+
+
+== XML Path Like ID general structure 
+
+
+== Different formats of XML Path Like IDs in the ESPD data structure 
+

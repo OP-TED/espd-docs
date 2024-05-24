@@ -6,18 +6,23 @@ The European Commission (EC) has developed a data model and 'semantic assets' fo
 
 ## Road Map
 
-image:home_roadmap.png[Roadmap,align=center,pdfwidth=50%,scaledwidth=50%]
+image:home_roadmap_2024.png[Roadmap,align=center,pdfwidth=50%,scaledwidth=50%]
 
 
-### v3.3.0 Release (July 2023)
+### v4.0.0 Release (October 2024)
 
-This new version of the ESPD-EDM is a minor release which focuses on:
+This new version of the ESPD-EDM is a major release which focuses on the various following changes:
 
-* updating the data structure 
-* updating the codelists files 
-* updating the xml examples files 
-* updating the schematron files for codelists validation 
-* updating the online documentation 
+* XML Path like IDs for replacing UUIDs in ESPD data structure elements 
+* Extension of the lot management to different requirements (applicable to set of lots) 
+* Misplacement of evidence group 
+* General data structure updates : Descriptive requirement added to Part IV (Selection criteria), Other economic or financial requirements Part B(6), Possibility to exclude Pre-qualification system section where it does not apply, etc. 
+* General codelists updates 
+* Validation and Schematron Rules updates 
+* Conceptual model updates 
+* Github folders updates 
+* Online documentation updates 
+
 
 For more information regarding the release, please refer to the xref:release_notes.adoc[release notes]. 
 
@@ -25,4 +30,4 @@ For more information regarding the release, please refer to the xref:release_not
 
 The model, named ESPD-EDM (standing for European Single Procurement Document - Exchange Data Model) is regulated by the above-mentioned link:https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32014L0024[Public Procurement Directive 2014/24/EC] and the link:https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32016R0007[Commission Implementing Regulation (EU) 2016/7].
 
-This Wiki is intended to facilitate the understanding of the model underlying the implementation of the ESPD Request and ESPD Response XML documents. For that purpose, examples and rules relating to how the content of ESPD XML document should look like and be processed are provided.
+This Wiki is intended to facilitate the understanding of the model underlying the implementation of the ESPD Request and ESPD Response XML documents. For that purpose, examples and rules relating to how the content of ESPD XML document should look like and be processed are provided. 
