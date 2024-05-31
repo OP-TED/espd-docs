@@ -1,7 +1,6 @@
 = Evidences
 
 
-
 == Related information requirements
 
 See formal requirements related to evidences in the e-Sens site: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1-tbr092-017[(_tbr092-017_)].
@@ -206,7 +205,7 @@ _XML snippet 1.b) different evidentiary documents per response_
 
 <cac:Evidence>
 
-<cbc:UUID schemeID="ISO/IEC 9834-8:2008 - 4UUID" schemeAgencyID="OP" schemeVersionID="2.0">7dea9283-f8a2-481f-9ea6-41438e25fdd4</cbc:UUID> <7>
+<cbc:ID schemeID="ISO/IEC 9834-8:2008 - 4UUID" schemeAgencyID="OP" schemeVersionID="2.0">7dea9283-f8a2-481f-9ea6-41438e25fdd4</cbc:UUID> <7>
 
 <cbc:ConfidentialityLevelCode listID="http://publications.europa.eu/resource/authority/access-right" listAgencyID="OP" listVersionID="20220316-0">PUBLIC</cbc:ConfidentialityLevelCode> <8>
 
@@ -242,7 +241,7 @@ _XML snippet 1.b) different evidentiary documents per response_
 
 <cac:Evidence>
 
-<cbc:UUID schemeID="ISO/IEC 9834-8:2008 - 4UUID" schemeAgencyID="OP" schemeVersionID="2.0">3b3be32e-3b7f-4a17-a0bb-a84210f61bb8</cbc:UUID><12>
+<cbc:ID schemeID="ISO/IEC 9834-8:2008 - 4UUID" schemeAgencyID="OP" schemeVersionID="2.0">3b3be32e-3b7f-4a17-a0bb-a84210f61bb8</cbc:UUID><12>
 
 <cbc:ConfidentialityLevelCode listID="http://publications.europa.eu/resource/authority/access-right" listAgencyID="OP" listVersionID="20220316-0">CONFIDENTIAL</cbc:ConfidentialityLevelCode> <13>
 
@@ -280,7 +279,6 @@ _XML snippet 1.b) different evidentiary documents per response_
 ----
 
 
-
 . ID value of the first criterion property (QUESTION) for which this response value is the answer.
 . The criteron is to be treated as 'PUBLIC': it could be published.
 . Identifier of the first evidence object that is used for this criterion: it must match the value provided for the cac:Evidence/cbc:ID element of the evidence.
@@ -298,3 +296,12 @@ _XML snippet 1.b) different evidentiary documents per response_
 . URL from where to get the document.
 . The name of the issuer of the second evidenciary document.
 
+== Handling the Evidence (sub)group close to the related element in the data structure 
+
+An evidence is provided as proof for a given QUESTION answer or QUESTION_SUBGROUP answers. The link with 
+the related answer should be maintained in the data structure. For example, in the figure below, 
+the evidence is included inside the QUESTION_SUBGROUP related to a specific occurrence of conviction. 
+
+image:Evidence_for_Criterion_C1_EG_crime-org.jpg[Evidence for Criterion C1 EG crime-org,width=650,height=500]
+
+_Figure 244. Evidence for Criterion C1 EG crime-org_

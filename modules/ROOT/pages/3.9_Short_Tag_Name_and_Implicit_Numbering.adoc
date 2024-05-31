@@ -19,7 +19,7 @@ The following table is describing the correspondence between "criterion element"
 _Table 25. Correspondence between "criterion element", "UBL element" and "Short Tag Name"_
 |===
 |*ESDP-EDM Criterion Spread-sheet vocabulary* |*UBL-2.3 vocabulary* |*Short Tag Name*  
-|CRITERION |cac:TenderingCriterion | C 
+|CRITERION (Exclusion Ground "EG", Selection Criterion "SC", OTHER "OT") |cac:TenderingCriterion | C 
 |ADDITIONAL_DESCRIPTION_LINE |cbc:Description | ADL 
 |SUBCRITERION |cac:SubTenderingCriterion | SBC 
 |LEGISLATION |cac:Legislation | L 
@@ -46,17 +46,18 @@ There is no explicit numbering of criterion descriptive elements in the ESPD pro
 
 The numbering is rather implicit according to the position of the element in the description.  
 
-The numbering increases for element of same type (Question Group, Question Subgroup, Question, Requirement Group, Requirement Subgroup, Requirement, Caption) at the same level. 
+The numbering increases for element of same type (Requirement Group, Requirement Subgroup, Requirement, Question Group, Question Subgroup, Question, Caption) at the same level. 
 
-The implicit numbering is more often used for terminal structural elements (Question 1, Question 2, Requirement 1, Requirement 2, etc.).  
+The implicit numbering is more often used for terminal structural elements (Requirement 1, Requirement 2, Question 1, Question 2, etc.).  
 
-The following images are illustrating the use of both "short tag name" and "numbering" on ESPD Criterion samples. 
+The following images are illustrating the use of both "short tag name" and "numbering" on ESPD Criterion samples, in green color. 
 
-image:Short_Tag_Name_and_Numbering_for_Criterion_C1_EG_crime-org.jpg[Short Tag Name and Numbering for Criterion C1 EG crime-org,width=566,height=308]
+image:Short_Tag_Name_and_Numbering_for_Criterion_C1_EG_crime-org.jpg[Short Tag Name and Numbering for Criterion C1 EG crime-org,width=650,height=500]
 
 _Figure 49. Short Tag Name and Numbering for Criterion C1 EG crime-org_
 
-image:Short_Tag_Name_and_Numbering_for_Criterion_C32_SC_spec-year-to.jpg[Short Tag Name and Numbering for Criterion C32 SC spec-year-to,width=566,height=308]
+image:Short_Tag_Name_and_Numbering_for_Criterion_C32_SC_spec-year-to.jpg[Short Tag Name and Numbering for Criterion C32 SC spec-year-to,width=650,height=500]
+//width=566,height=308 
 
 _Figure 50. Short Tag Name and Numbering for Criterion C32 SC spec-year-to_
 
