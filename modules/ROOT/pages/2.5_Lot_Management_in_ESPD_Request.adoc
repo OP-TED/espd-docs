@@ -1,17 +1,21 @@
 [[lot_management, Lot Management]]
-= Lot Management
+= Lot Management in ESPD Request 
 
-The ESPD includes a change regarding how lots are managed. This is the outcome of the alignment with eForms.
+== ESPD version 3.0.0 
 
-In this new version the ESPD will have the following logic:
+The ESPD version 3.0.0 includes a change regarding how lots are managed. This is the outcome of the alignment with eForms.
 
-There will be 1 ESPD request stating the Exclusion Criteria and the Selection Criteria, but with differences respect version 2.1.1. The figure below shows the logic:
+In the version 3.0.0, the ESPD have the following logic:
+
+There will be 1 ESPD request stating the Exclusion Grounds Criteria and the Selection Criteria. The figure below shows the logic:
 
 image:Overview_new_lot_management_approach.jpg[Overview of new lot management approach.,width=497,height=129]
 
 _Figure 13. Overview of new lot management approach._
 
-The ESPD request include exclusion grounds that are general for all the Lots in which the procedure is divided in. However, for Selection Criteria is different since in the procedure is possible to have Lots with different selection criteria. Therefore, in the ESPD request the different Selection Criteria will have to include the reference to the lots which applies. It will be done using the UBL 2.3 cac:ProcurementProjectLotReference that includes cbc:TenderingCriterion.
+The ESPD request includes Exclusion Grounds that are general for all the Lots in which the procedure is divided in. However, for Selection Criteria it is different since in the procedure it is possible to have different Lots for different Selection Criteria. 
+
+Therefore, in the ESPD Request the different Selection Criteria will have to include the references to the lots to which they apply. It will be done using the UBL 2.3 element *cac:ProcurementProjectLotReference* that is defined for the parent element *cac:TenderingCriterion*.
 
 The following XML example shows how it is done:
 
@@ -76,15 +80,32 @@ The following XML example shows how it is done:
 
 <!--- Rest of the elements of the criterion have been eliminated for the sake of brevity -->
 ----
-In Economic Operator's side it is different, as can be read in the image above there will be as many ESPD Response as Lots or Group of Lots the EO wishes to tender for. If the EO wants to participate in three Lots, the EO will need to fill in 3 ESPD Response. For more details on this, please see section ESPD Response.
+
+In the Economic Operator's side it is different, as it can be read in the image above there will be as many ESPD Response as Lots or Group of Lots the EO wishes to tender for. If the EO wants to participate in three Lots, the EO will need to fill in 3 ESPD Response. 
+
+For more details on this, please see section "xref:6.9_Lot_Management_in_ESPD_Response.adoc[6.9 Lot Management in ESPD Response]". 
 
 == Lots identifiers: 
 
-This version of the ESPD changes the form to identify the Lots and Group of Lots taking the eForms format. This changes is done towards the interoperability of both models.
+From version 3.0.0 of the ESPD, the form to identify the Lots and Group of Lots has changed taking the eForms format. This changes are done towards the interoperability of both models.
 
-Until version 2.1.1, the lots have been identified with the following structure "Lot1, Lot2, Lot3". With the new approach (eForms) the Lots identifiers will be as follows: (eForms) the Lots identifiers will be as follows:
+Until version 2.1.1, the lots have been identified with the following structure "Lot1, Lot2, Lot3". With the new approach (eForms), the Lots identifiers will be as follows: 
 
 image:Lot_ID_schema.jpg[Lot Identifiers according to eForms schema,width=541,height=130]
 
-_Figure 14: Lot Identifiers according to eForms schema_
+_Figure 13_b: Lot Identifiers according to eForms schema_
+
+== ESPD version 4.0.0 
+
+The ESPD version 4.0.0 includes additionnal changes regarding how lots are managed. 
+
+In fact, there is also a business rule that requires to be able to define different lots for different requirements (REQUIREMENT_GROUP) in a given Selection Criteria. To address this need, the image below illustrates the solution provided and implemented. 
+
+image:Lot_Management_in_ESPD_4.jpg[Lot Management in ESPD 4.0.0,width=650,height=500]
+
+_Figure 13_c. Lot Management in ESPD 4.0.0 
+
+An extra-level of REQUIREMENT_GROUP of multiple cardinality has been added to all Selection Criteria. This level contains a REQUIREMENT element of multiple cardinality as well that is used to define a set of lots (datatype LOT_IDENTIFIER). The specific requirements bound to the set of lots appear right below in a REQUIREMENT_SUBGROUP element. That way, the duplication of the extra-level of REQUIREMENT_GROUP allows to define different specific requirements (REQUIREMENT_SUBGROUP) for different lots or set of lots (REQUIREMENT of datatype LOT_IDENTIFIER). 
+
+Hence, the ESPD 3.0.0 allows different lots for different Selection Criteria, whereas the ESPD 4.0.0 allows in addition different lots (or set of lots) for different requirements. 
 
