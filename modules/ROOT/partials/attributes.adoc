@@ -8,11 +8,12 @@
 //:docdate: docdate
 
 //these are the same in each branch, just edit and then include partial:
+//master, main 
 
-:this-version: main
+:this-version: 4.0.0
 :this-version-tag: v{this-version}
-:git-repo-url: https://github.com/OP-TED/ePO
 :path-to-dist: /ascii_doc/modules/ROOT
-:url-tree: {git-repo-url}/tree/{this-version-tag}{path-to-dist}
+:git-repo-url: https://github.com/OP-TED/ESPD-EDM
+:url-tree: {git-repo-url}/tree/{this-version-tag}
 :url-blob: {git-repo-url}/blob/{this-version-tag}{path-to-dist}
 

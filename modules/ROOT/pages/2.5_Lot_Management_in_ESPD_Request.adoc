@@ -101,7 +101,7 @@ The ESPD version 4.0.0 includes additionnal changes regarding how lots are manag
 
 In fact, there is also a business rule that requires to be able to define different lots for different requirements (REQUIREMENT_GROUP) in a given Selection Criteria. To address this need, the image below illustrates the solution provided and implemented. 
 
-image:Lot_Management_in_ESPD_4.jpg[Lot Management in ESPD 4.0.0,width=650,height=500]
+image:Lot_Management_in_ESPD_v4.jpg[Lot Management in ESPD 4.0.0,width=650,height=500]
 
 _Figure 13_c. Lot Management in ESPD 4.0.0 
 

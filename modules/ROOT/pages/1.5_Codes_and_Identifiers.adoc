@@ -1,6 +1,5 @@
 = Codes and Identifiers
 
-
 A code is a shortened way (a number or a short abbreviated text), leading to the definition of a 'concept'. The code represents the concept and is used by software applications to retrieve the definition of the concept or make automatic decisions.
 
 An Identifier, in turn, can be defined as "a value (represented as a short text, a number or a combination of both) used to establish the identity of, and distinguish uniquely, one occurrence of an object following a pattern".
@@ -14,7 +13,7 @@ The essential distinctive features between identifiers and codes are:
 . Codes may belong to three different domains:
 [loweralpha]
 .. they can be somehow 'business-agnostic' and be used cross-domain (e.g. country codes, currency codes, language codes, etc.);
-.. business-specific domain (i.e. procurement specific, like codes representing contract types, procurement procedure types, criteria types, etc.); and
+.. business-specific domain (i.e. procurement specific, like codes representing contract types, procurement procedure types, criteria types, etc.); 
 .. business process-specific, i.e. ESPD-specific, such as the data type expected in the response to a criterion, or the type of a criterion property, etc.
 
 == Codes and code lists
@@ -26,15 +25,15 @@ The ESPD Exchange Data Model tries to reuse as much as possible the codes that a
 . *Business domain-related*, maintained by international or European authorities, e.g. the ones defined by UNECE (as unit codes), or by the Publications Office of the European Union (OP), e.g. types of procurement procedures (based on the EU Directives);
 . *Project-specific* (or application-specific), i.e. those codes that are particular of the project. Types (taxonomy) of exclusion and selection criteria, types of evaluation method, etc. in the case of the ESPD-EDM.
 
-Moreover, the ESPD will reuse code list from EU Vocabularies. This is due to the alignment between both models, ESPD and eForms to ensure the maximum interoperability. With this purpose ESPD will align the use of certain code lists.
+Moreover, the ESPD will reuse code list from (link:https://op.europa.eu/en/web/eu-vocabularies/e-procurement/tables[EU Vocabularies]). This is due to the alignment between ESPD and eForms to ensure the maximum interoperability. With this purpose ESPD will align the use of certain code lists. 
 
-Codes are normally maintained in "code lists". The ESPD-EDM keeps and distributes these code lists in Genericode 1.0 (link:{url-tree}/codelists/gc/[GC]) files (one *.gc file per code list).
+Codes are normally maintained in "code lists". The ESPD-EDM keeps and distributes these code lists in Genericode 1.0 (link:{url-tree}/codelists/gc[GC]) files (one *.gc file per code list).
 
-However, it is worth to note that those code list that are reused from EU Vocabularies in alignment with eForms are not completely shown in excel and ods files. Instead, the metadata and the location of them in EU Vocabularies is provided.
+However, it is worth to note that those code list that are reused from EU Vocabularies in alignment with eForms are not completely shown in data structure (excel and ods) files. Instead, the metadata and the location of them in EU Vocabularies is provided.
 
-For the genericodes is different, in this version ESPD will provide the gc files from EU Vocabularies to ensure its use and the validation. In future versions of the ESPD, only will be provided these GC of the code list purely used and maintained by ESPD.
+For the genericodes it is different, ESPD will provide the gc files from EU Vocabularies to ensure its use and the validation. In addition, ESPD will also provide GC of the code list purely used and maintained by ESPD.
 
-ESPD-EDM Code list contain the following elements:
+ESPD-EDM Code lists contain the following elements:
 
 * *Metadata*: information about the code list, e.g. its identifier, the identifier and name of the agency responsible for defining and maintaining the list, the version of the list, etc.
 * *Code identifier*: the literal (a label composed of characters, numbers and symbols like '_');
@@ -43,9 +42,11 @@ ESPD-EDM Code list contain the following elements:
 
 The figure below illustrate how these elements are organised in the code lists maintained in spread-sheets:
 
-image:Elements_metadata_of_ESPD_codelist.jpg[Elements and metadata of an ESPD code list,align="center",pdfwidth=50%,scaledwidth=50%]
+image:Values_schemeID_Party_Identifiers.jpg[Elements and metadata of an ESPD code list,width=600,height=264] 
 
-_Figure 6. Elements and metadata of an ESPD code list_
+//image:Elements_metadata_of_ESPD_codelist.jpg[Elements and metadata of an ESPD code list,align="center",pdfwidth=50%,scaledwidth=50%]
+
+_Figure 6. Elements and metadata of a ESPD code list_
 
 
 [NOTE]
