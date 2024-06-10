@@ -20,20 +20,20 @@ Most recent or planned Annual Seminar:
 --
 
 [.tile]
-.eESPD Open User Community Annual Seminar Reports
+.eESPD Open User Community Annual Seminar Documents
 ****
 The cumulative annual reports are a collation of minutes from all the ePO related meetings in a year. Reports from the years 2019 to 2023 are currently available.
 
-xref:annual.adoc[Click here to access the annual seminar reports]
+xref:annual.adoc[Click here to access the annual seminar documents]
 
 ****
 
 [.tile]
-.ESPD Open User Community Monthly Meeting Reports
+.ESPD Open User Community Regular Meeting Documents
 ****
 These reports contain the minutes from the general meetings, and outline project progress, changes implements since the last meeting, and future development plans for the next period.
 
-xref:monthly.adoc[Click here to access the monthly meeting reports]
+xref:monthly.adoc[Click here to access the regular meeting reports]
 ****
 ////
 [.tile]

@@ -30,7 +30,7 @@
 * xref:espd-home::supporting.adoc[Supporting and related projects]
 * xref:espd-home::laws.adoc[Laws and Directives]
 
-* [.separated]#**Open User Community Reports**#
-* xref:espd-wgm::monthly.adoc[Monthly Reports]
-* xref:espd-wgm::annual.adoc[Annual Reports]
+* [.separated]#**Open User Community Documents**#
+* xref:espd-wgm::monthly.adoc[Regular Meetings]
+* xref:espd-wgm::annual.adoc[Annual Seminars]
 
