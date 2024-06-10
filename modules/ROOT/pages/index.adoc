@@ -33,7 +33,7 @@ xref:annual.adoc[Click here to access the annual seminar documents]
 ****
 These reports contain the minutes from the general meetings, and outline project progress, changes implements since the last meeting, and future development plans for the next period.
 
-xref:monthly.adoc[Click here to access the regular meeting reports]
+xref:monthly.adoc[Click here to access the regular meeting documents]
 ****
 ////
 [.tile]
