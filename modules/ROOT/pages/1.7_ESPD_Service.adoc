@@ -1,0 +1,47 @@
+= ESPD Service 
+
+== ESPD Service Implementations 
+
+The European Commission has implemented and deployed the ESPD Service for ESPD-EDM version 1.0.2: 
+
+* The service is available at link:https://espd.eop.bg/espd-web/[European Commission ESPD Service]. 
+
+* The github space is published at link:https://github.com/ESPD/ESPD-Service[European Commission ESPD Service Github]. 
+
+* The related documentation is provided at link:http://espd.github.io/ESPD-Service/docs/html/espd.html[European Commission ESPD Service Documentation]. 
+
+Currently, the European Commission is no longer maintaining the ESPD service, and it is on Member States to implement the last version available. 
+
+The ESPD Service is available for ESPD-EDM *version 1* and *version 2*.  
+
+The ESPD Service implemented for ESPD-EDM version 2 are: 
+
+* Slovenia : link:https://ejn.gov.si/espd/[Slovenia ESPD Service].
+
+* Greece : link:https://espd.eprocurement.gov.gr/#/start[Greece ESPD Service].
+
+
+== ESPD Service Structure 
+
+The ESPD Service is divided into 6 parts: 
+
+* *Part 1* _Information concerning the procurement procedure and the contracting authority or contracting entity_. 
+
+* *Part 2* _Information concerning the economic operator_. This part is filled in only for the Response. 
+
+* *Part 3* _Exclusion grounds_. 
+
+* *Part 4* _Selection criteria_. 
+
+* *Part 5* _Reduction of the number of qualified candidates_. This part is filled in only for the Response. 
+
+* *Part 6* _Concluding statements_. 
+
+
+== ESPD-EDM specific notifications for ESPD Service 
+
+* A Subcontractor (entity not relied upon) should not fill in a ESPD form for Exclusion Grounds and Selection Criteria.  
+
+//* Mockups for each ESPD-EDM criterion are available in an interactive criterion viewer at link:https://docs.ted.europa.eu/espd-demo/[ESPD Criterion Viewer]. 
+
+

@@ -1,10 +1,10 @@
 = ESPD Distribution Package
 
-All the semantic assets needed to implement ESPD electronic documents are organised in a link:{url-tree}[distribution package]. The content of this folder is organised as follows:
+All the semantic assets needed to implement ESPD electronic documents are organised in a link:{url-tree}[distribution package] as follows: 
 
 image:ESPD_Distribution_Package_v4.jpg[Distribution package,align="center",pdfwidth=50%,scaledwidth=50%]
 
-_Figure 5. Distribution package_
+_Figure 1. Distribution package_
 
 [arabic]
 . *criterion* folder contains the data structure of the ESPD taxonomy criterion files for the Request and the Response, as well as a sub-folder of the VBA scripts used to update the criterion files automatically for XML Path IDs generation. It also contains a sub-folder with a default ESPD Request and ESPD Response criterion files that do not illustrate multiple occurrences. 

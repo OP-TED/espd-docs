@@ -1,9 +1,16 @@
 = ESPD distribution package and UBL 
 
-Semantic assets have been defined by link:https://lov.linkeddata.es/dataset/lov/vocabs/adms[ISA] as "a collection of highly reusable metadata (e.g. xml schema, generic data models) and reference data (e.g. code lists, taxonomies, dictionaries, vocabularies) which are used for e-Government system development".
+The European Single Procurement Document (ESPD) follows the link:https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32014L0024[Directive 2014/24/EU] and the link:https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32016R0007[Regulation (EU) 2016/7]. It also relies on various assets used for European Commission Projects. 
+
+Semantic assets have been defined by link:https://lov.linkeddata.es/dataset/lov/vocabs/adms[ISA] as "a collection of highly reusable metadata (e.g. xml schema, generic data models) and reference data (e.g. code lists, taxonomies, dictionaries, vocabularies) which are used for e-Government system development". 
+
+The github space of the EDPD-EDM project is available at link:https://github.com/OP-TED/ESPD-EDM[ESPD-EDM Github]. 
 
 include::1.1_ESPD_distribution_package.adoc[leveloffset=+1]
 include::1.2_UBL.adoc[leveloffset=+1]
 include::1.3_UBL-2.3_Documents_and_libraries.adoc[leveloffset=+1]
 include::1.4_UBL-2.3_and_TOOP_Requirements.adoc[leveloffset=+1]
 include::1.5_Codes_and_Identifiers.adoc[leveloffset=+1] 
+include::1.6_ESPD_Architecture_and_Procurement_Procedure_Steps.adoc[leveloffset=+1] 
+include::1.7_ESPD_Service.adoc[leveloffset=+1] 
+

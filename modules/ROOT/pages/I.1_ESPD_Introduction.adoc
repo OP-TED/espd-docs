@@ -31,4 +31,4 @@ Figure 1: ESPD-EDM Roadmap
 
 
 [.text-left]
-Currently, the European Commission is no longer maintaining the ESPD service , and it is on Member States to implement the last version available.
+Currently, the European Commission is no longer maintaining the ESPD service, and it is on Member States to implement the last version available. 
