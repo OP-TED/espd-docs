@@ -10,7 +10,7 @@ is called "XML Path Like ID".
 
 
 
-== Problem statement 
+== Problem statement and proposals 
 
 
 
