@@ -5,6 +5,11 @@ data structure of the Request or the Response for the various descriptive elemen
 (criterion, group, subgroup, requirement, question, caption). The new identifier is structure-based and 
 is called "XML Path Like ID". 
 
+
+== UUID in the ESPD 
+
+
+
 == Problem statement 
 
 
@@ -12,5 +17,11 @@ is called "XML Path Like ID".
 == XML Path Like ID general structure 
 
 
+
 == Different formats of XML Path Like IDs in the ESPD data structure 
+
+
+
+== XML Path Like ID Algorithm 
+
 

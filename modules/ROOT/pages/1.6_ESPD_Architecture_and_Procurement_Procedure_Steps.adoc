@@ -33,25 +33,25 @@ The whole procurement procedure is a set of tasks that can be summarised by the 
 
 The Buyer or the Contracting Authority (CA) initiates a procurement procedure. 
 
-image:ESPD_Procurement_Procedure_Buyer_Plan.jpg[Buyer Planning,align="center",width=650,height=500]
+image:ESPD_Buyer_Plan.jpg[Buyer Planning,align="center",width=650,height=500]
 
 _Figure 10_a. Buyer Planning_
 
 Then, the Buyer launch a Request. 
 
-image:ESPD_Procurement_Procedure_Buyer.jpg[Buyer Planning,align="center",width=650,height=500]
+image:ESPD_Buyer_Request.jpg[Buyer Request,align="center",width=650,height=500]
 
 _Figure 10_b. Buyer Request_
 
 Afterwards, Economic Operators (EO) respond to the official published Request. 
 
-image:ESPD_Procurement_Procedure_EO.jpg[Buyer Planning,align="center",width=650,height=500]
+image:ESPD_EO_Response.jpg[EO Response,align="center",width=650,height=500]
 
 _Figure 10_c. Economic Operator (EO) Response_
 
 Finally, the Buyer and the EO interact to conclude the procurement procedure. 
 
-image:ESPD_Procurement_Procedure_Buyer_EO.jpg[Buyer Planning,align="center",width=650,height=500]
+image:ESPD_Buyer_EO.jpg[Buyer and EO,align="center",width=650,height=500]
 
 _Figure 10_d. Buyer and EO_
 

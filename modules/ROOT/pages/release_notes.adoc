@@ -1,17 +1,17 @@
 :sectnums:
 = Release Notes
 
-== v3.3.0 (July 2023) 
+== v4.4.0 (July 2023) 
 
 The ESPD-EDM version 3.2.0 was focused mainly on correcting minor errors in the data structure and the codelists, as suggested by the Member States and stakeholders via the GitHub repositories issues workspace.
-The ESPD-EDM version 3.3.0 focuses also on correcting other minor errors in the data structure and the codelists.   
+The ESPD-EDM version 4.4.0 focuses also on correcting other minor errors in the data structure and the codelists.   
 
 
 === ESPD-EDM Criterion file - Data Structure 
 
 Several issues have been resolved related to the data structure of the ESPD-EDM Criterion (taxonomy) file. 
 
- * **Fix Jira issue - "Update criterion files with codes of EU Vocabularies for v3.3.0**
+ * **Fix Jira issue - "Update criterion files with codes of EU Vocabularies for v4.4.0**
      ** In criterion C27, the element code "autorisation" has been replaced with the code "authorisation".
      ** In criterion C23, the element code "misinterpr" has been replaced with the code "misrepresent". 
      ** In criterion C23, the Name contents have been updated as well. "Guilty of misinterpretation" has been replaced by "Guilty of misrepresentation". 
@@ -26,8 +26,8 @@ Several issues have been resolved related to the data structure of the ESPD-EDM 
 The following changes have been performed related to the ESPD-EDM XSLT files:
 
 * **Updating attributes values in the xslt files for the xml samples** 
-        ** SchemeVersionID value is “3.3.0” and not “3.2.0”.
-        ** ListVersionID value is “3.3.0” and not “3.2.0”. 
+        ** SchemeVersionID value is “4.4.0” and not “3.2.0”.
+        ** ListVersionID value is “4.4.0” and not “3.2.0”. 
         ** The right ESPD version in comments is ESPD-V3.x.x 
 
 * **Updating the xslt file "ESPDRequest-Annotated.xslt" (missing element/attribute or incorrect value)** 
@@ -56,9 +56,9 @@ The resulting updated XSLT files have been used to generate the XML samples avai
 
 === Code Lists
 
-ESPD version has been updated in the technical codelist files to match the current version (specific files can be found in the folder https://github.com/OP-TED/ESPD-EDM/tree/v3.3.0/codelists/gc[codelists/gc]), for tags: Version, CanonicalURI, CanonicalVersionURI, LocationURI. 
+ESPD version has been updated in the technical codelist files to match the current version (specific files can be found in the folder https://github.com/OP-TED/ESPD-EDM/tree/v4.4.0/codelists/gc[codelists/gc]), for tags: Version, CanonicalURI, CanonicalVersionURI, LocationURI. 
 
-The label "ESPD-EDMv3.3.0" has been added in the related sheet "ProfileExecutionID" (in the last row of the table) of the excel file https://github.com/OP-TED/ESPD-EDM/blob/master/\_\_ESPDTeam\_\_/ESPD-CodeLists.xlsx[ESPD-CodeLists.xlsx] . 
+The label "ESPD-EDMv4.4.0" has been added in the related sheet "ProfileExecutionID" (in the last row of the table) of the excel file https://github.com/OP-TED/ESPD-EDM/blob/master/\_\_ESPDTeam\_\_/ESPD-CodeLists.xlsx[ESPD-CodeLists.xlsx] . 
 
 * **Fix GitHub issue https://github.com/OP-TED/ESPD-EDM/issues/387[#387] - Improper listVersionID attribute value in cbc:DocumentTypeCode** 
 This github issue has led to a broader review of the codelists related to the value of the attribute "listVersionID". This attribute value was indeed incorrect for several codelists (DocRefContentType, Language, EoRoleType, Country, EconomicOperatorSize) in various artefacts (CodeLists, XSLT, XML, Schematron). The updates have been made at different levels: XSLT files and Schematron files. 
@@ -78,7 +78,7 @@ Update of Interoperability Testbed https://www.itb.ec.europa.eu/espd/upload[ESPD
 * **Fix GitHub issue https://github.com/OP-TED/ESPD-EDM/issues/390[#390] - PERCENTAGE Questions: Artifact Examples and Shematrons Inconsistency** 
      ** Schematron file: "./common/sch/03-ESPD-resp-criterion-br.sch"
 
-* Generating the ESPD validator, for the Request and the Response, for v3.3.0 with the latest entry files (generic code files for codelists, xml files for the ESPD Request and the ESPD Response). 
+* Generating the ESPD validator, for the Request and the Response, for v4.4.0 with the latest entry files (generic code files for codelists, xml files for the ESPD Request and the ESPD Response). 
 
 
 === Online documentation - espd-docs GitHub Repository 
@@ -107,5 +107,5 @@ Release Notes have been updated for the online documentation.
 
 **Readme file** 
 
-The Readme file for v3.3.0 has been updated as well. 
+The Readme file for v4.4.0 has been updated as well. 
 
