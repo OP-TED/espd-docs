@@ -2,7 +2,7 @@
 
 == ESPD Architecture Overview 
 
-The ESPD-EDM goal is to produce the ESPD Request and the ESPD Response files that are going to be used to develop the ESPD Service. To produce those files there are key components that are used (UBL, UML, data structure, XSL(T), XML), with regards to the other related projects in the area of European Procurement (EU Vocabulary, eCertis, etc.). 
+The ESPD-EDM goal is to produce the ESPD Request and the ESPD Response files that are going to be used to develop the ESPD Service. To produce those files there are key components that are used (UBL, UML, data structure, XSL(T), XML), with regards to the other related projects in the area of european procurement (EU Vocabulary, eCertis, etc.). 
 
 Below is the figure of the general ESPD Architecture Overview. 
 
