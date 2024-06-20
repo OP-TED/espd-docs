@@ -1,8 +1,8 @@
 = Lot Management in ESPD Response  
 
-For the lot management in the ESPD Response, a Response is provided for one Economic Operator (EO) and for one lot or group of lots. Hence, an EO will fill in as many ESPD Responses as there are lots or groups of lots he is participating to. 
+In the ESPD, a Response is provided for one Economic Operator (EO) and for one lot or group of lots. Hence, an EO will fill in as many ESPD Responses as there are lots or groups of lots he is participating to. 
 
-In the ESPD Response, the UBL 2.3 element *cac:ProcurementProjectLot* will be used under the root element *QualificationApplicationResponse* to define the related lot or group of lots the EO is answering to for a given Response. Therefore, the corresponding list of Selection Criteria and QUESTION_SUBGROUP (of REQUIREMENT_GROUP) will be extracted from the Request accordingly. 
+In the ESPD Response, the UBL 2.3 element *cac:ProcurementProjectLot* is used under the root element *QualificationApplicationResponse* to define the related lot or group of lots the EO is answering to for a given Response. Therefore, the corresponding list of Selection Criteria and QUESTION_SUBGROUP (of REQUIREMENT_GROUP) will be extracted from the Request accordingly. 
 
 See also section "xref:2.5_Lot_Management_in_ESPD_Request.adoc[2.5 Lot Management in ESPD Request]". 
 

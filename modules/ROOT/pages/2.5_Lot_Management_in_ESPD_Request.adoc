@@ -87,7 +87,7 @@ For more details on this, please see section "xref:6.9_Lot_Management_in_ESPD_Re
 
 == Lots identifiers: 
 
-From version 3.0.0 of the ESPD, the form to identify the Lots and Group of Lots has changed taking the eForms format. This changes are done towards the interoperability of both models.
+From version 3.0.0 of the ESPD, the form to identify the Lots and Group of Lots has changed taking the eForms format. These changes are done towards the interoperability of both models.
 
 Until version 2.1.1, the lots have been identified with the following structure "Lot1, Lot2, Lot3". With the new approach (eForms), the Lots identifiers will be as follows: 
 
