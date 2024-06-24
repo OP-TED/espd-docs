@@ -64,7 +64,7 @@ xref:tech_validation.adoc[Validating an ESPD Service Implementation]
 ****
 
 [.tile]
-.Code Lists Catalog
+.Code Lists Catalogue
 ****
 This section provides information on codelists used in the ESPD and some code list examples.
 
