@@ -10,6 +10,6 @@ Next OUC meetings:
 
 Next Annual Seminar:
 
-* December 3th-4th, 2024, full day TED event 
+* December 3rd-4th, 2024, full day TED event 
 
 //Meeting Reports previous to 2022 can be found in link:https://github.com/OP-TED/espd-docs/tree/wgm-reports/modules/ROOT/attachments[espd-docs/wgm-reports].
