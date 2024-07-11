@@ -36,7 +36,7 @@
 
 == Meeting Agenda
 
-. Summary OUC on 27 June 2024 
+. Summary OUC on 24 April 2024 
 . Visualisation of criteria – interactive tool 
 . Interactive creation of examples 
 . Documentation – towards a new UX 
