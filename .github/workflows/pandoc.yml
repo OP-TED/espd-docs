@@ -1,10 +1,7 @@
-name: Word to ASCIIDoc converter
+name: Word default template
 
 on: 
-  workflow_dispatch:
-  push:
-    branches:
-      - pandoc
+  workflow_dispatch
 
 jobs:
   convert_via_pandoc:
@@ -17,7 +14,7 @@ jobs:
       - name: export default Word template
       - uses: docker://pandoc/latex:latest
         with:
-          args: --output=output/custom-reference.docx --print-default-data-file reference.docx          
+          args: --output=custom-reference.docx --print-default-data-file reference.docx          
       - uses: actions/upload-artifact@v4.3.4
         with:
           name: docx_template
