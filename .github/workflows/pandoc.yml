@@ -14,21 +14,11 @@ jobs:
         with:
           ref: pandoc
           # use pandoc branch for storing the input Word file and to collect all output files
-      - name: create file list
-        id: files_list
-        run: |
-          echo "Lorem ipsum" > lorem_1.md  # create two example files
-          echo "dolor sit amet" > lorem_2.md
-          mkdir output  # create output dir
-          # this will also include README.md
-          echo "files=$(printf '"%s" ' *.md)" > $GITHUB_OUTPUT
+      - name: transform Word to ASCIIDoc
       - uses: docker://pandoc/latex:latest
         with:
-          args: --output=output/result.pdf ${{ steps.files_list.outputs.files }}
-      - uses: docker://pandoc/latex:latest
-        with:
-          args: --output=output/custom-reference.docx --print-default-data-file reference.docx          
+          args: --reference-doc=pandoc-reference.docx --from=docx --to=asciidoc --output=meeting_minutes.adoc ESPD*.docx          
       - uses: actions/upload-artifact@v4.3.4
         with:
-          name: output
+          name: asciidoc
           path: output
