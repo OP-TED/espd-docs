@@ -14,7 +14,6 @@ jobs:
         with:
           ref: pandoc
           # use pandoc branch for storing the input Word file and to collect all output files
-      - name: transform Word to ASCIIDoc
       - uses: docker://pandoc/latex:latest
         with:
           args: --reference-doc=pandoc-reference.docx --from=docx --to=asciidoc --output=meeting_minutes.adoc ESPD*.docx          
