@@ -14,7 +14,6 @@ jobs:
         with:
           ref: pandoc
           # use pandoc branch for storing the input Word file and to collect all output files
-      - name: export default Word template
       - uses: docker://pandoc/latex:latest
         with:
           args: --output=custom-reference.docx --print-default-data-file reference.docx          
