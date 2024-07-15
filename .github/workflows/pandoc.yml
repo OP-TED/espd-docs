@@ -16,7 +16,7 @@ jobs:
           # use pandoc branch for storing the input Word file and to collect all output files
       - uses: docker://pandoc/latex:latest
         with:
-          args: --reference-doc=pandoc-reference.docx --from=docx --to=asciidoc --output=meeting_minutes.adoc ESPD*.docx          
+          args: --reference-doc=pandoc-reference.docx --from=docx --to=asciidoc --output=meeting_minutes.adoc ESPD_test.docx          
       - uses: actions/upload-artifact@v4.3.4
         with:
           name: asciidoc
