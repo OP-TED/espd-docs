@@ -1,7 +1,10 @@
-name: Word default template
+name: Word to ASCIIDoc converter
 
 on: 
-  workflow_dispatch
+  workflow_dispatch:
+  push:
+    branches:
+      - pandoc
 
 jobs:
   convert_via_pandoc:
