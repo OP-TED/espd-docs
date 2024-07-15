@@ -1,6 +1,10 @@
 name: Word to ASCIIDoc converter
 
-on: workflow_dispatch
+on: 
+  workflow_dispatch:
+  push:
+    branches:
+      - pandoc
 
 jobs:
   convert_via_pandoc:
