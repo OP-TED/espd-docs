@@ -14,10 +14,16 @@ jobs:
         with:
           ref: pandoc
           # use pandoc branch for storing the input Word file and to collect all output files
+      - name: list files to conver
+        id: files_list
+        run: |
+          mkdir output  # create output dir
+          # list all ESPD*.docx files as input argumets for conversion
+          echo "files=$(printf '"%s" ' ESPD*.docx)" > $GITHUB_OUTPUT
       - uses: docker://pandoc/latex:latest
         with:
-          args: --output=custom-reference.docx --print-default-data-file reference.docx          
+          args: --reference-doc=pandoc-reference.docx --from=docx --to=asciidoc --output=output/meeting_minutes.adoc ${{ steps.files_list.outputs.files }}         
       - uses: actions/upload-artifact@v4.3.4
         with:
-          name: docx_template
+          name: asciidoc
           path: output
