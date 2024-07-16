@@ -19,7 +19,7 @@ jobs:
           echo "files=$(printf '"%s" ' ESPD*.docx)" > $GITHUB_OUTPUT
       - uses: docker://pandoc/latex:latest
         with:
-          args: --standalone --reference-doc=pandoc-reference.docx --from=docx --to=asciidoc --output=output/meeting_minutes.adoc ${{ steps.files_list.outputs.files }}         
+          args: --standalone --reference-doc=pandoc-reference.docx --wrap=none --markdown-headings=atx --extract-media=output/extracted-media --from=docx --to=asciidoc --output=output/meeting_minutes.adoc ${{ steps.files_list.outputs.files }}         
       - uses: actions/upload-artifact@v4.3.4
         with:
           name: asciidoc
