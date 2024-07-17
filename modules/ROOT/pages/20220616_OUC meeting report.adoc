@@ -1,4 +1,5 @@
 = Open User Community Meeting Report
+
 == Publications Office – ESPD EDM
 
 
@@ -40,9 +41,6 @@
 |Pascaline Laure TCHIENEHOM |NTT Data
 |===
 
-:sectnums:
-:sectnumlevels: 4
-
 == Meeting Agenda
 . Summary of last meeting on 28th April 2022
 . Code list DocRefContentType
@@ -52,6 +50,9 @@
 . GitHub issues
 . Next meetings
 . AOB
+
+:sectnums:
+:sectnumlevels: 4
 
 == Summary of last meeting on 28th April 2022
 

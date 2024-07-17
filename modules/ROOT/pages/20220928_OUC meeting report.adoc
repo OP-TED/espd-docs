@@ -42,9 +42,6 @@
 |Pascaline Laure TCHIENEHOM |NTT Data
 |===
 
-:sectnums:
-:sectnumlevels: 4
-
 == Meeting Agenda
 . Summary of last meeting on 16th June 2022
 . UUID
@@ -52,6 +49,9 @@
 . GitHub issues
 . Next meetings
 . AOB
+
+:sectnums:
+:sectnumlevels: 4
 
 == Summary of last meeting on 16th June 2022
 

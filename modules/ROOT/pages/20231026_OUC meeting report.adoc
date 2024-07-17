@@ -25,10 +25,6 @@
 |Pascaline Laure TCHIENEHOM |France, NTT Data 
 |===
 
-:sectnums:
-:sectnumlevels: 4
-
-
 == Meeting Agenda
 
 . Summary of last meeting on 21 September 2023
@@ -40,6 +36,8 @@
 . Next meetings 
 . AOB 
 
+:sectnums:
+:sectnumlevels: 4
 
 == Summary of last meeting on 21st September 2023 
 

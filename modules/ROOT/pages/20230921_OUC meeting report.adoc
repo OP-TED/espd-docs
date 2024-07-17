@@ -33,10 +33,6 @@
 |Andreea PASARE | Meaningfy 
 |===
 
-:sectnums:
-:sectnumlevels: 4
-
-
 == Meeting Agenda 
 
 . Summary of last meeting on 29th June 2023 
@@ -46,6 +42,8 @@
 . Next meetings 
 . AOB 
 
+:sectnums:
+:sectnumlevels: 4
 
 == Summary of last meeting on 29th June 2023 
 

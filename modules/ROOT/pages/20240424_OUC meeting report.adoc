@@ -1,5 +1,3 @@
-:hardbreaks-option:
-
 = Open User Community Meeting Report
 
 == Publications Office - ESPD EDM
@@ -40,10 +38,6 @@
 |Martin UTOFT	|Denmark
 |===
 
-:sectnums:
-:sectnumlevels: 4
-
-
 == Meeting Agenda
 
 .   Summary OUC on 29 February 2024
@@ -53,7 +47,8 @@
 .	Future roadmap & timeline
 .	Next meetings
 
-
+:sectnums:
+:sectnumlevels: 4
 
 == Summary OUC on 29 February 2024 
 

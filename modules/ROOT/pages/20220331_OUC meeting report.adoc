@@ -48,9 +48,6 @@
 |Pascaline Laure TCHIENEHOM |NTT Data
 |===
 
-:sectnums:
-:sectnumlevels: 4
-
 == Meeting Agenda
 . Problem statement
 . Business requirements
@@ -59,6 +56,9 @@
 . Topics to be discussed
 . Next meetings
 . Any other business
+
+:sectnums:
+:sectnumlevels: 4
 
 == Problem statement
 

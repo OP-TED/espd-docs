@@ -43,9 +43,6 @@
 |Juan Carlos DELGADO |NTT Data
 |===
 
-:sectnums:
-:sectnumlevels: 4
-
 == Meeting Agenda
 . Summary of last meeting on 27th October 2022
 . Summary of 2022 ESPD Annual Seminar on 30th November
@@ -55,6 +52,9 @@
 . GitHub issues
 . Next meetings
 . AOB
+
+:sectnums:
+:sectnumlevels: 4
 
 == Summary of last meeting on 27th October 2022
 

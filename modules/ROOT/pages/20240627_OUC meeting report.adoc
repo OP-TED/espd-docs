@@ -1,5 +1,4 @@
 :hardbreaks-option:
-
 = Open User Community Meeting Report
 
 == Publications Office - ESPD EDM
@@ -30,10 +29,6 @@
 |George VERNARDOS 	|OP
 |===
 
-:sectnums:
-:sectnumlevels: 4
-
-
 == Meeting Agenda
 
 . Summary OUC on 24 April 2024 
@@ -43,7 +38,8 @@
 . eCertis planning 
 . Next meetings 
 
-
+:sectnums:
+:sectnumlevels: 4
 
 == Summary OUC on 24 April 2024 
 
@@ -77,13 +73,13 @@ A new tool, https://docs.ted.europa.eu/espd-demo/[Model viewer], is presented. I
 
 It explained as a reference, testing and feedback tool. 
 
-A live demo is carried out during the presentation. The tool is still under development: for v 3.3.0 is still being finetuned before the Team starts with the viewer for v4.0.0-rc. The attendees’ feedback is very positive during the meeting.  
+A live demo is carried out during the presentation. The tool is still under development: for v 3.3.0 is still being finetuned before the Team starts with the viewer for v4.0.0-rc. The attendees' feedback is very positive during the meeting.  
 
 == Interactive creation of examples 
 
 A new tool, https://docs.ted.europa.eu/espd-demo/[ESPD examples generator], is presented. The tool allows the interactive creation of the ESPD Documents, Request and Response,  in different use cases. The user can create his specific XML examples, which gives him a broader view not restricted to the examples provided together with the ESPD Model. The tool is explained as playground before adoption and implementation of a new ESPD EDM version. 
 
-A live demo is carried out during the presentation. Considered as a reference for testing and feedback, the attendees’ feedback is very positive during the meeting. 
+A live demo is carried out during the presentation. Considered as a reference for testing and feedback, the attendees' feedback is very positive during the meeting. 
 
 == Documentation – towards a new UX 
 
@@ -107,7 +103,7 @@ After clicking on "New issue":
 
 ** The release done in March 2020, 2024.01, explains the use of UUIDs and improves the search bar. Data can be marked as inactive using the new filter.  
 
-** The release 2024.02 was planned for Q2 or beginning of Q3 2024. However, this plan has to be changed and the new schedule will be provided. This release foresees to provide generic evidence linking the evidence to a specific scenario. The release includes the creation of  ‘subcriteria’ for purely national exclusion grounds. Concerning the user the release provides the use of hash-value for user personal data and the possibility to assign a ‘super-admin’ for each Member State. 
+** The release 2024.02 was planned for Q2 or beginning of Q3 2024. However, this plan has to be changed and the new schedule will be provided. This release foresees to provide generic evidence linking the evidence to a specific scenario. The release includes the creation of  'subcriteria' for purely national exclusion grounds. Concerning the user the release provides the use of hash-value for user personal data and the possibility to assign a 'super-admin' for each Member State. 
 
 ** Release 2024.03 covers corrective manteinance after previous releases. Planned for Q4 2024 this release has to be reschedule. 
 
