@@ -61,7 +61,7 @@ The European Commission (EC) link:https://ec.europa.eu/isa2/awards_en[ISA2 Progr
 
 The tables below establish a mapping between the business requirements, the logic layer of the ESPD-EDM and the UBL-2.3 physical layer. They list the elements that are expected in the ESPD Response and provide details on the cardinalities and usage of those elements.
 
-
+The mapping between the business requirements, the logic layer of the ESPD-EDM and the UBL-2.3 physical layer:
 
 _Table 26. Class QualificationApplicationResponse, components required by the ESPD-EDM_
 [cols="1,2"]
@@ -306,6 +306,8 @@ In the ESPD Response you may also add references to:
 
 === Expected elements
 
+The mapping between the business requirements, the logic layer of the ESPD-EDM and the UBL-2.3 physical layer:
+
 [cols=",",options="header",]
 
 _Table 27. Reference to the ESPD Request, expected elements_
@@ -364,6 +366,8 @@ _Table 27. Reference to the ESPD Request, expected elements_
 Beware that the ESPD document does not embed the content of referenced documents but instead make a reference to its source. Thus the class DocumentReference aggregates a `cac:Attachment`class that allows for making reference to an external source of the content, which is the preferred way in the ESPD-EDM (see XSD schema above).
 
 In the case of the reference to the ESPD Request from the ESPD Response, the only data expected here is the URI where the ESPD Request XML instance was published:
+
+The mapping between the business requirements, the logic layer of the ESPD-EDM and the UBL-2.3 physical layer:
 
 [cols=",",options="header",]
 
@@ -537,6 +541,8 @@ _Figure 204. The UBL-2.3 Legal Entity Party_
 
 Please, remember that the elements cac:ContractingAuthority, cac:ProcurementProject, cac:ProcurementProjectLot and cac:AdditionalDocumentReference are expected in the ESPD Request, too. However, for the sake of brevity, and as they are taken from the ESPD Request and 'copied' in the ESPD Response, they have not been re-explained in this section about the ESPD Response. Therefore for details on those elements please refer to the section *2. The ESPD Request document*.
 
+The mapping between the business requirements, the logic layer of the ESPD-EDM and the UBL-2.3 physical layer:
+
 [cols=",",options="header",]
 [IMPORTANT]
 ====
@@ -573,6 +579,8 @@ _Table 32. Economic operator, expected elements_
 *Rule*: (See expected elements and rules below in the table about this Party).
 
 |===
+
+The mapping between the business requirements, the logic layer of the ESPD-EDM and the UBL-2.3 physical layer:
 
 [cols=",",options="header",]
 
@@ -622,6 +630,8 @@ _Table 33. Qualifying Party, expected elements_
 
 |===
 
+The mapping between the business requirements, the logic layer of the ESPD-EDM and the UBL-2.3 physical layer:
+
 [cols=",",options="header",]
 _Table 34. Economic operator role, expected elements_
 |===
@@ -648,6 +658,8 @@ _Table 34. Economic operator role, expected elements_
 *Rule scope*: Common (BR-RESP-10-02)
 
 |===
+
+The mapping between the business requirements, the logic layer of the ESPD-EDM and the UBL-2.3 physical layer:
 
 [cols=",",options="header",]
 _Table 35. (Qualifying) economic operator party, expected elements_
@@ -692,6 +704,8 @@ _Table 35. (Qualifying) economic operator party, expected elements_
 
 |===
 
+The mapping between the business requirements, the logic layer of the ESPD-EDM and the UBL-2.3 physical layer:
+
 [cols=",",options="header",]
 
 _Table 36. Economic operator postal address, expected elements_
@@ -734,6 +748,8 @@ _Table 36. Economic operator postal address, expected elements_
 *Rule*: None.
 |===
 
+The mapping between the business requirements, the logic layer of the ESPD-EDM and the UBL-2.3 physical layer:
+
 [cols=",",options="header",]
 _Table 37. Contact of the economic operator, expected elements_
 |===
@@ -768,6 +784,8 @@ _Table 37. Contact of the economic operator, expected elements_
 *Rule*: None.
 
 |===
+
+The mapping between the business requirements, the logic layer of the ESPD-EDM and the UBL-2.3 physical layer:
 
 [cols=",",options="header",]
 _Table 38. Service provider, expected elements_
@@ -1119,6 +1137,8 @@ image:EO_representatives_Contact_Person.jpg[EO representatives - element Contact
 _Figure 236. EO representatives - element Contact, inside Person, XSD Schema_
 
 ==== Expected Elements
+
+The mapping between the business requirements, the logic layer of the ESPD-EDM and the UBL-2.3 physical layer:
 
 [cols=",",options="header",]
 
@@ -1496,6 +1516,8 @@ Responses are not associated to ESPD custom data structures. All the values rega
 
 === Expected Elements
 
+The mapping between the business requirements, the logic layer of the ESPD-EDM and the UBL-2.3 physical layer:
+
 [cols=",",options="header",]
 
 _Table 40. Elements expected in an answer to a criterion property_
@@ -1568,6 +1590,8 @@ See the codes used for cac:ValueDataTypeCode in the Code List link:{url-tree}/co
 This disjointness rule applies to the *type* of the value, but *not to the values of the same type*. Thus, for lists of values that constitute the actual answer (e.g. the list of LotIDs the economic operator tenders to, or a list of CPV codes to describe with granularity an activity), a sequence of cac:ResponseValues shall be instantiated in the XML. See the XML examples below.
 ====
 
+The mapping between the business requirements, the logic layer of the ESPD-EDM and the UBL-2.3 physical layer:
+
 _Table 41. Elements expected in the 'cac:ApplicablePeriod' class_
 |===
 |*Class name*: |cac:Period
@@ -1592,6 +1616,8 @@ _Table 41. Elements expected in the 'cac:ApplicablePeriod' class_
 *Rule*: Expected format 'YYYY-MM-DD'.
 
 |===
+
+The mapping between the business requirements, the logic layer of the ESPD-EDM and the UBL-2.3 physical layer:
 
 [cols=",",options="header",]
 |===
@@ -1618,6 +1644,8 @@ cac:TenderingCriterionResponse/cac:EvidenceSupplied
 |===
 
 The table below lists the elements expected in the sub-class cac:ResponseValue. Remember that the elements of distinct types are all *disjoint* amongst themselves: i.e. you cannot associate one amount AND one indicator to the same cac:TenderingCriterionProperty element (but several values for elements of one type may be used to build up lists, e.g. lists of Lots and lists of CPV codes).
+
+The mapping between the business requirements, the logic layer of the ESPD-EDM and the UBL-2.3 physical layer:
 
 [cols=",",options="header",]
 
@@ -1897,6 +1925,8 @@ The ESPD-EDM uses always the one inside the document reference to refer to the i
 
 This list below enumerates the elements of cac:Evidence that could be used in (that make sense for) an ESPD Response. Notice though that the current versions of the ESPD-EDM only use the few elements mentioned above: ID, URL, Reference/Code, Confidentiality level and Issuer.
 
+The mapping between the business requirements, the logic layer of the ESPD-EDM and the UBL-2.3 physical layer:
+
 [cols=",",options="header",]
 
 _Table 44. Elements expected in an Evidence_
@@ -1952,6 +1982,8 @@ LevelCode* |Code |0..1 |A code specifying the confidentiality level of this evid
 |===
 
 This other table lists the elements from cac:Evidence/cac:DocumentReference used in the ESPD-EDM:
+
+The mapping between the business requirements, the logic layer of the ESPD-EDM and the UBL-2.3 physical layer:
 
 [cols=",",options="header",]
 

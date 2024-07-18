@@ -55,6 +55,7 @@ Information requirement:
 Beware that *all theses documents do share the same business rule identifiers* (e.g. tbrxx-yyy for Business Requirement Identifiers in ESPDInt, and BR-Type-Id#n for the Test Cases technical rules).
 ====
 
+The mapping between the business requirements, the logic layer of the ESPD-EDM and the UBL-2.3 physical layer:
 
 _Table 5. Class QualificationApplicationRequest, components required by the ESPD-EDM_
 |===
@@ -298,7 +299,9 @@ _Figure 16. Associated class cac:ExternalReference, XSD diagram_
 
 === Expected elements
 
- As can be seen from the XSD Schema, the cac:DocumentReference class has a rich data structure. However, to refer to publications such as the TED and national publications, the ESPD most expects at most the following data:
+As can be seen from the XSD Schema, the cac:DocumentReference class has a rich data structure. However, to refer to publications such as the TED and national publications, the ESPD most expects at most the following data:
+
+The mapping between the business requirements, the logic layer of the ESPD-EDM and the UBL-2.3 physical layer:
 
 [cols=",",options="header",]
 
@@ -354,6 +357,8 @@ _Table 6. Reference to additional documents, expected elements_
 |===
 
 Beware that the ESPD document do not embed the content of referenced documents but instead make a reference to its source. Thus the class 'DocumentReference' aggregates a 'cac:Attachment' class that allows for embedding the content or making reference to an external source of the content, which is the preferred way in ESPD (see XSD schema above):
+
+The mapping between the business requirements, the logic layer of the ESPD-EDM and the UBL-2.3 physical layer:
 
 [cols=",",options="header",]
 
@@ -511,6 +516,8 @@ _Figure 21. cac:Contact, XSD Schema_
 
 === Expected elements
 
+The mapping between the business requirements, the logic layer of the ESPD-EDM and the UBL-2.3 physical layer:
+
 [cols=",",options="header",]
 
 _Table 8. Contracting body, expected elements_
@@ -531,6 +538,8 @@ _Table 8. Contracting body, expected elements_
 *Rule*: Notices published at national level shall not contain information other than that contained in the notices dispatched to the Publications Office of the European Union or published on a buyer profile, but shall indicate the date of dispatch of the notice to the Publications Office of the European Union or its publication on the buyer profile (Directive link:https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32014L0024&from=ES[2014/24/EU, Art. 52.2]).
 
 |===
+
+The mapping between the business requirements, the logic layer of the ESPD-EDM and the UBL-2.3 physical layer:
 
 [cols=",",options="header",]
 
@@ -570,6 +579,8 @@ _Table 9. Contracting body party, expected elements_
 *Rule scope*: Common (BR-REQ-20#2)
 
 |===
+
+The mapping between the business requirements, the logic layer of the ESPD-EDM and the UBL-2.3 physical layer:
 
 [cols=",",options="header",]
 
@@ -615,6 +626,8 @@ IdentificationCode* |Code |1 |A code that identifies the country. a|
 *Rule*: None.
 
 |===
+
+The mapping between the business requirements, the logic layer of the ESPD-EDM and the UBL-2.3 physical layer:
 
 [cols=",",options="header",]
 
@@ -687,6 +700,8 @@ image:cacService_provider_Party_elements.jpg[service provider's 'Party' elements
 _Figure 23. cac:ServiceProvider/cac:Party elements expected for the service provider_
 
 === Expected elements
+
+The mapping between the business requirements, the logic layer of the ESPD-EDM and the UBL-2.3 physical layer:
 
 [cols=",",options="header",]
 
