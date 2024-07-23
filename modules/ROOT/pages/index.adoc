@@ -19,9 +19,9 @@ The conceptual model for this version
 * xref:espd-bus::index.adoc[Business Information] +
 An overview of the ESPD for business users
 * xref:espd-bus::service.adoc[The ESPD Service] +
-An overview of the ESPD service for technical users
+What an ESPD service is and what it looks like
 * xref:espd-bus::using.adoc[Using an ESPD Service] +
-A run through and explanation of an ESPD service
+Using an online ESPD form from both buyer and supplier perspectives
 //* xref:espd-bus::creating.adoc[Creating an ESPD Service]
 //* xref:espd-bus::overview_upgrades.adoc[Overview for Upgrading your Version]
 
