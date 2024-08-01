@@ -18,8 +18,8 @@ jobs:
           # list all ESPD*.docx files as input argumets for conversion
           # echo "files=$(printf '"%s" ' ESPD*.docx)" > $GITHUB_OUTPUT
           last_file=$(ls -t ESPD*.docx | grep -v "TEMPLATE" | head -n 1)
-          echo "files="$last_file > $GITHUB_OUTPUT
-          echo "fn=${last_file%%.*}" > $GITHUB_OUTPUT
+          echo "files=$last_file" >> $GITHUB_OUTPUT
+          echo "fn=${last_file%%.*}" >> $GITHUB_OUTPUT
       - uses: docker://pandoc/latex:latest
         with:
           args: --standalone --wrap=none --markdown-headings=atx --extract-media=output/extracted-media --from=docx --to=asciidoc --output=output/${{steps.files_list.outputs.fn}}.adoc ${{ steps.files_list.outputs.files }}         
