@@ -16,10 +16,11 @@ jobs:
         run: |
           mkdir output  # create output dir
           # list all ESPD*.docx files as input argumets for conversion
-          echo "files=$(printf '"%s" ' ESPD*.docx)" > $GITHUB_OUTPUT
+          # echo "files=$(printf '"%s" ' ESPD*.docx)" > $GITHUB_OUTPUT
+          echo "files=$(ls -t ESPD*.docx | grep -v "TEMPLATE" | head -n 1)" > $GITHUB_OUTPUT
       - uses: docker://pandoc/latex:latest
         with:
-          args: --standalone --reference-doc=pandoc-reference.docx --wrap=none --markdown-headings=atx --extract-media=output/extracted-media --from=docx --to=asciidoc --output=output/meeting_minutes.adoc ${{ steps.files_list.outputs.files }}         
+          args: --standalone --wrap=none --markdown-headings=atx --extract-media=output/extracted-media --from=docx --to=asciidoc --output=output/${{steps.files_list.outputs.files}}.adoc ${{ steps.files_list.outputs.files }}         
       - name: fix format
         id: sed_script
         run: |
@@ -29,6 +30,9 @@ jobs:
            # fix second table
            sed -i 's/== Summary/:sectnums:\n:sectnumlevels: 4\n\n== Summary/' output/meeting_minutes.adoc
            # add numbering before == Summary ... section
+      - uses: docker://pandoc/latex:latest
+        with:
+          args: --standalone --from=docx --to=pdf --output=output/${{steps.files_list.outputs.files}}.pdf ${{ steps.files_list.outputs.files }}
       - uses: actions/upload-artifact@v4.3.4
         with:
           name: asciidoc
