@@ -4,10 +4,19 @@
 :authoremail: nicole-anne.paterson-jones@ext.ec.europa.eu
 :docdate: January 2024
 
-The ESPD is related to two further projects:
+The ESPD is associated with two further projects:
 
+* eProcurement Ontology
 * eForms
 * eCertis
+
+and supported by the eProcurement Ontology
+
+== The eProcurement Ontology
+
+The eProcurement Ontology (ePO) defines all the classes (concepts or names of entities) used in the ESPD, the relationships between classes, and the class attributes and cardinalities. The ePO's https://docs.ted.europa.eu/docs-staging/epo-home/stories_eAccess.html[eAccess Module] covers the ESPD Request, and the https://docs.ted.europa.eu/docs-staging/epo-home/stories_eSubmission.html[eSubmission module] covers the ESPD Response.
+
+As with other public procurement projects, the ePO controls the vocabulary used in the ESPD, facilitating a common usage of concepts and their meanings. This enables https://commission.europa.eu/news/interoperable-europe-act-enters-force-today-2024-04-11_en[interoperability] and more effective https://single-market-economy.ec.europa.eu/single-market/public-procurement/digital-procurement/public-procurement-data-space-ppds_en[data operations], the improvement of which is a strong priority in EU public procurement.
 
 == eForms
 

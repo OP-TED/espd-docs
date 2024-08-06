@@ -22,6 +22,8 @@ Validation is the process by which xml files are tested for compliance against t
 
 Using the online validation facility, the https://www.itb.ec.europa.eu/espd/upload[“testbed”], can used by developers to upload and check their documents.
 
+The Testbed online service is made available by the https://commission.europa.eu/about-european-commission/departments-and-executive-agencies/digital-services_en[Directorate-General for Digital Services (DIGIT)], and the validation files that uploaded xml files are checked against are provided by the ESPD team. Each ESPD version requires a distinct set of validation files for both the ESPD Request and ESPD Response. Updating the files is performed as part of a version release.
+
 Note: The testbed link is also in the validation GitHub folder readme.md.
 
 image:testbed.png[]
