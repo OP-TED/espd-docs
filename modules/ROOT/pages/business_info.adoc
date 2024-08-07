@@ -44,7 +44,7 @@ The main objective of the ESPD is to reduce administrative burden by removing th
 As shown in the image below, the first version of the digital ESPD was set up in 2016 (version 1.0.1). Since then, a number of new developments and enhancements have been implemented to produce a more efficient ESPD Service, taking into account Member States' requirements and needs, in compliance with the Directive.
 
 
-image::home_roadmap.png[roadmap]
+image::espd_timeline.png[roadmap]
 
 Figure 1: ESPD-EDM Roadmap
 [.text-left]
