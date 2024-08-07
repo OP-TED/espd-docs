@@ -4,6 +4,8 @@
 :authoremail: nicole-anne.paterson-jones@ext.ec.europa.eu
 :docdate: January 2024
 
+include::partial$piraeus.adoc[]
+
 '_The contracting body shall provide the exclusion grounds and selection criteria for its tendering process as structured information - via ESPD template or structured list of criteria set out in a call for tender._"
 
 This chapter on selection criteria provides details on how to implement the formal requirements set in the link:http://wiki.ds.unipi.gr/pages/viewpage.action?pageId=44367916[eSens ESPD BIS 41 - Single European Document] (Version 2.0.0) document. See specifically these global requirements related to selection criteria: *_br41-002_*, *_tbr070-010_*, *_tbr070-013_*, *_tbr070-018_*.
