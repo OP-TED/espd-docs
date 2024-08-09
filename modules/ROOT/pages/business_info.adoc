@@ -41,7 +41,7 @@ Article 4 of the Directive regulates in detail public procurement procedures in 
 [.text-left]
 The main objective of the ESPD is to reduce administrative burden by removing the need to produce large numbers of physical certificates and documentation related to exclusion and selection criteria. The intention was to make participation less burdensome for  small and medium-sized enterprises (SMEs).
 
-As in the image below, the first version of the digital ESPD was released in 2016 (version 1.0.1). Since then, a number of new developments and enhancements have been made to the ESPD Service, taking into account Member States' requirements and needs in compliance with the Directive.
+As in the image below, the first version of the digital ESPD was released in 2016 (version 1.0.1). Since then, a number of new developments and enhancements have been made to the ESPD Service, taking into account Member States' requirements and needs in compliance with the Directive. +
 
 
 //image::espd_timeline.png[roadmap]
