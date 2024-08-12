@@ -4,9 +4,11 @@
 :authoremail: nicole-anne.paterson-jones@ext.ec.europa.eu
 :docdate: January 2024
 
-The European Single Procurement Document (ESPD) is a electronic form for preliminary evidence in a public procurement procedure and is used in the EU eProcurement process. The form enables buyers to state the selection criteria suppliers have to meet, and evidence of lawfulness and integrity they must provide, for their tender to be considered by the buyer.
+The European Single Procurement Document (ESPD) is a mandatory electronic form, in two parts, used by buyers to assess the suitability of suppliers tendering in a public procurement procedure. 
 
-The following topics are included in this version of the ESPD documentation:
+The documentation provided here explains the ESPD Exchange Data Model (ESPD-EDM) and covers the resources provided by the Publications Office, to help member states and commercial entities create an ESPD service. The service is the practical online form which enables both parties in a procurement procedure to manage eligibility of a supplier electronically.
+
+The following information is provided for both business users (an overview of the ESPD), and technical users (resources for technical implementation of an ESPD service).
 
 == Release Documentation
 * xref:espd::release_notes.adoc[Release Notes] +
@@ -25,9 +27,9 @@ Using an online ESPD form from both buyer and supplier perspectives
 //* xref:espd-bus::creating.adoc[Creating an ESPD Service]
 //* xref:espd-bus::overview_upgrades.adoc[Overview for Upgrading your Version]
 
-== Technical Implementation
+== Technical Implementation of an ESPD Service
 * xref:espd-tech::index.adoc[Technical Information] +
-Information for technical implementors
+Information for technical implementation
 //* xref:espd-tech::tech_imp_roadmap.adoc[Road Map for Implementers]
 //* xref:espd-tech::tech_upgrades.adoc[Upgrading an ESPD Version]
 //* xref:espd-tech::demo.adoc[Demo ESPD Service Online]

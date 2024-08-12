@@ -11,6 +11,17 @@ ifndef::downloaddir[:downloaddir: download]
 
 
 == An Introduction for Business Users
+
+The European Single Procurement Document (ESPD) is a electronic form used by buyers to assess the suitability of suppliers tendering in a public procurement procedure. Statements and evidence (documentation to support the statements) that are provided by suppliers against EU, national, and procedure specific criteria, are managed via the ESPD. 
+
+The first part of the form, the ESPD Request, enables buyers to state the selection criteria suppliers have to meet, and what evidence of lawfulness and integrity they must provide, for their tender to be considered by the buyer. The second part of the form, the ESPD Response, enables suppliers to respond, and to list the evidence they can provide to substantiate their response.
+
+The main objective of the ESPD is to reduce administrative burden by removing the need to produce large numbers of physical certificates and documentation related to exclusion and selection criteria. The intention was to make participation in public procurement less burdensome for  small and medium-sized enterprises (SMEs).
+
+////
+The European Single Procurement Document (ESPD) is a electronic form for preliminary evidence in a public procurement procedure and is used in the EU eProcurement process. The form enables buyers to state the selection criteria suppliers have to meet, and evidence of lawfulness and integrity they must provide, for their tender to be considered by the buyer. The ESPD has two parts, a request and a response.
+////
+
 The three main phases of the public procurement process are:
 
 * Pre-tendering, which includes the preparation and planning of the procedure;
@@ -25,22 +36,15 @@ The three main phases of the public procurement process are:
 
 The ESPD is specifically concerned with qualification of suppliers step above.
 
-The European Single Procurement Document (ESPD) is a electronic form for preliminary evidence in a public procurement procedure and is used in the EU eProcurement process. The form enables buyers to state the selection criteria suppliers have to meet, and evidence of lawfulness and integrity they must provide, for their tender to be considered by the buyer. The ESPD has two parts, a request and a response.
-
-
-
 == Legal framework
 [.text-left]
 The Public Procurement Directive 2014/24/EC Article 59 (the "Directive") introduced the concept of the European Single Procurement Document (ESPD). By mapping out equivalent certificates between Member States, the ESPD replaces certificates issued by public authorities, or a third party involved in a procedure. It greatly simplifies and levels out cross-border participation by a greater number of operators in public procurement, and contributes to integrating the European Single Market.
 
 [.text-left]
-
-The ESPD Service tool enables Buyers and Suppliers to create, edit, export and import electronic documents in XML format (eESPD) for the exchange of criteria, requirements, statements and references regarding eligibility to participate in public procurement.
+The ESPD Service enables buyers and suppliers to create, edit, export and import electronic documents in XML format (eESPD) for the exchange of criteria, requirements, statements and references regarding eligibility to participate in public procurement.
 Article 4 of the Directive regulates in detail public procurement procedures in which the value of the contract exceeds a certain amount. These amounts, also known as 'thresholds', vary depending on the type of the contract, and the administrative level of the Buyer. Those contracts that fall under article 4 of the Directive are called contracts 'above the threshold', and the rest are known as contracts 'below the threshold'. The ESPD Service is flexible enough to provide coverage to procurement procedures both above and below the threshold.
 
 [.text-left]
-The main objective of the ESPD is to reduce administrative burden by removing the need to produce large numbers of physical certificates and documentation related to exclusion and selection criteria. The intention was to make participation less burdensome for  small and medium-sized enterprises (SMEs).
-
 As in the image below, the first version of the digital ESPD was released in 2016 (version 1.0.1). Since then, a number of new developments and enhancements have been made to the ESPD Service, taking into account Member States' requirements and needs in compliance with the Directive. +
 
 

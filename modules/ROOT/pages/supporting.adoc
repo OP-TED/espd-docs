@@ -42,8 +42,6 @@ Contracting authorities can look up, firstly, at country level, what requirement
 
 If a member state or contracting authority wishes to publish their criteria (which generally stay the same) according to a directive, they just can register them in eCertis, which makes them available to all the participants in the procurement process.
 
-
-
 Registration of the ESPD criteria in eCertis: All the criteria used in the ESPD, including exclusion grounds, are registered in eCertis with a unique identifier or code and the process of registering these, and the associated identifier, is coordinated carefully with eCertis. All criteria are published on eCertis with reference information such as the corresponding legislation, descriptions, and translations so that it is available to all participants in EU eProcurement.
 
 include::partial$feedback.adoc[]
