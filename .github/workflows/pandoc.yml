@@ -35,19 +35,9 @@ jobs:
       #- uses: docker://pandoc/latex:latest
       #  with:
       #    args: --standalone --from=docx --variable=papersize:a4 --to=pdf --output=output/${{steps.files_list.outputs.fn}}.pdf ${{ steps.files_list.outputs.files }}
-  container-asciidoc:
-    needs: convert_via_pandoc
-    runs-on: ubuntu-22.04
-    container: 
-      image: asciidoctor/docker-asciidoctor:latest
-      volumes:
-         - output:/documents/
-    steps:
-      - run: asciidoctor-pdf *.adoc
-  publish_artifact:
-    needs: container-asciidoc
-    runs-on: ubuntu-22.04
-    steps:
+      - uses: docker://asciidoctor/docker-asciidoctor:latest
+        with:
+          args: asciidoctor-pdf output/${{steps.files_list.outputs.fn}}.adoc
       - uses: actions/upload-artifact@v4.3.4
         with:
           name: asciidoc
