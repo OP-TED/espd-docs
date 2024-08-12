@@ -4,13 +4,12 @@
 :authoremail: nicole-anne.paterson-jones@ext.ec.europa.eu
 :docdate: January 2024
 
-The ESPD is associated with two further projects:
+The ESPD is supported by the eProcurement Ontology, and associated with two further projects:
 
-* eProcurement Ontology
 * eForms
 * eCertis
 
-and supported by the eProcurement Ontology
+and 
 
 == The eProcurement Ontology
 
