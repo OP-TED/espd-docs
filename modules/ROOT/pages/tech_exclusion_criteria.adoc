@@ -38,7 +38,9 @@ The label ''Convictions'' groups all the criteria with identical data structures
 [NOTE]
 _Note about the ESPD Service_
 
-In an initial phase, the European Commission provided an ESPD service to support the ESPD’s uptake. As announced in 2018, on 2 May 2019, the Commission’s ESPD service has been turned off. To reap the full benefit of an electronic ESPD, the integration with national eProcurement services and national databases is necessary. This will enable data reusability, default form pre-filling and data interexchange among different databases. In turn, buyers and suppliers will benefit from the automatism, making the application of the ESPD much easier and decreasing the data errors rates.
+Initially, the European Commission provided an ESPD service to support the ESPD’s uptake. As announced in 2018, the Commission’s ESPD service was turned off on 2 May 2019. 
+
+To reap the full benefit of an electronic ESPD, the integration with national eProcurement services and national databases is necessary. This enable data reusability, default form pre-filling, and data inter-exchange amongst different databases. In turn, buyers and suppliers benefit from this exchange, making the application of the ESPD much easier and decreasing data error rates.
 
 
 
@@ -183,42 +185,42 @@ _'Participation in a criminal organisation' conviction_
 
 [cols=",",options="header",]
 
-. Date of conviction. Mandatory format 'YYYY-MM-DD'
-. The reason of convictions. A descriptive text.
-. The natural person or legal entity convicted. A text.
-. Length of the period of exclusion. A cac:Period will be used in the response by the economic operator. The EO may specify a starting date and an end-date or, alternatively, a text to commenting the length. See XML example in the ESPD Response section.
-. If the answer is *No* the QUESTION 'Please describe them' should not be shown.
-. Text box to describe the measures to demonstrate the economic operator's reliability.
+. Date of conviction,  mandatory format 'YYYY-MM-DD'
+. The reason for convictions, a descriptive text.
+. The natural person or legal entity convicted, text.
+. Length of the period of exclusion. A cac:Period will be used in the response by the economic operator. The EO may specify a starting date and an end-date or, alternatively, a text con the length. See XML example in the ESPD Response section.
+. If the answer is *No*, the QUESTION 'Please describe them' should not be shown.
+. Text box to describe the measures demonstrating the economic operator's reliability.
 . A whole group related to one conviction can be repeated multiple times (or deleted).
-. If answered as *No* the group of QUESTION(s) relating the online evidence should not be shown. Beware that the ESPD Response behaves totally differently as far as evidences are concerned. The data concerning the evidence in the ESPDRequest document is placed in the ESPD Response document in a component cac:Evidence in a different manner. See the section ESPD Response for more details on this. See also the XML examples.
-. The URL where to access the evidence. Will be placed in an element of the object cac:Evidence. See chapter *"6.8 Evidences"*.
-. By specifying that the value of the expected data type is an evidence identifier (code EVIDENCE_IDENTIFIER of the Code List ResponseDataType`) the Response will have to contain an evidence supplied in an element of the object cac:Evidence, at the end of the XML Instance. See chapter *"6.8 Evidences"*.
+. If answered, *No*, the group of QUESTION(s) relating the online evidence should not be shown. Beware that the ESPD Response behaves totally differently as far as pieces of evidence are concerned. The data concerning the evidence in the ESPDRequest document is placed in the ESPD Response document in a component cac:Evidence in a different manner. See the section ESPD Response for more details on this. See also the XML examples.
+. The URL where to access the evidence. Will be placed in an element of the object cac:Evidence. See chapter *"6.8 Evidence"*.
+. By specifying that the value of the expected data type is an evidence identifier (code EVIDENCE_IDENTIFIER of the Code List ResponseDataType`) the Response will have to contain an evidence supplied in an element of the object cac:Evidence, at the end of the XML Instance. See chapter *"6.8 Evidence"*.
 . The issuer party of this evidence (e.g. a base registry). Will be placed in the element cac:Evidence/cac:DocumentReference/cac:Attachment/cac:IssuerParty. Some countries use verification codes associated to evidences. To specify these verification codes you can use the Evidence ID, as in the end the code identifies uniquely the Evidence in the issuer system (see this XML example, look for 'Verification code' inside the example, bullet number 6).
 . National criterion defined by the MS in e-Certis (this example corresponds to Finland) related to the EU criterion on this conviction.
-. An additional specification for this national criterion, in this case related to the evidence that will be required by this Member State.
+. An additional specification for this national criterion, in this case related to the evidence that will be required by the Member State.
 . UUID supplied by e-Certis. See also the criterion spread-sheet.
 . Exclusion criteria taxonomy code defined in the criterion spread-sheet.
 . Compulsory name and description for the criterion as defined in e-Certis. See also link:{url-tree}/codelists/ESPD-criterion.xlsx[ESPD-criterion spreadsheet]. Beware that UBL-2.3 allows '0..n' description lines!
-. This property is a caption, a mere 'label'. See Code List link:{url-tree}/codelists/gc/CriterionElementType.gc[CriterionElementType] for the complete list of possible options. Beware that when a property is of type CAPTION the cbc:ValueDataType must be set to NONE.
-. As the property is a CAPTION no response is expected from the economic operator. See Code List 'ResponseDataType' for the complete list of possible options.
+. This property is a caption, a simple 'label'. See Code List link:{url-tree}/codelists/gc/CriterionElementType.gc[CriterionElementType] for the complete list of possible options. Beware that when a property is of type CAPTION the cbc:ValueDataType must be set to NONE.
+. As the property is a CAPTION, no response is expected from the economic operator. See Code List 'ResponseDataType' for a complete list of possible options.
 . Notice that in the ESPD Request the criterion properties never use its element cbc:Name.
-. EU legislation data related to this criterion. Notice that all the textual fields have multiple cardinality and *may* specify the language (attribute languageID. This can be used to express the same content in different languages. No language specified defaults to en (English).
+. EU legislation data related to this criterion. Notice that all the text fields have a multiple cardinality and *may* specify the language (attribute languageID. This can be used to express the same content in different languages. No language specified defaults to en (English).
 . The complete title as published in Eurlex or in a national official electronic bulletin board is expected for this field.
 . A quick reference name to refer to the legislation is expected for this field.
 . The jurisdiction level (or scope) covered by this legislation.
 . One or more articles from this legislation where the criterion is defined and referred to. Beware that the cardinality of this field is multiple.
-. Groups codified as ON* must be processed always (e.g. all its elements shown on a GUI or automatically parsed and saved, etc.).
-. Pay attention to this type of QUESTION(s). It is intended to act as a *decision point*. If answered with *yes* (INDICATOR value = true) some additional questions will be asked to the economic operator. Thus the value of the code of the next sub-group (set to ONTRUE).
+. Groups codified as ON* must always be processed (e.g. all its elements shown on a GUI or automatically parsed and saved, etc.).
+. Pay attention to this type of QUESTION(s). It is intended to act as a *decision point*. If answered with *yes* (INDICATOR value = true) some additional questions will require answers from the economic operator. Thus the value of the code of the next sub-group (set to ONTRUE).
 . This property is a QUESTION, therefore a specific type of value will be expected from the economic operator in the ESPD Response (an INDICATOR, i.e. a 'boolean' value true/false, in this case).
 . The cbc:ValueDataType indicates the type of value that the buyer requires for this QUESTION. Therefore, in its answer (inside the ESPD Request document) the economic operator will have to use also an INDICATOR value (true/false). Otherwise the mechanism used to validate the ESPD Response should consider the XML instance as invalid (should be treated as a FATAL error).
-. Data structures defined by GROW are *re-usable*. This is specially the case (but not uniquelly) of the structure 'Is this information available electronically?' Notice that the UUID that identifies this structure is always the same in all the criteria that include it. Similarly structures that are reused in different criteria do have the same UUID (as they are the same). Beware that the group of properties (URI, Reference/Code, Issuer) will only be shown if the answer is 'Yes', thus the sub-group code ONTRUE.
+. Data structures defined by GROW are *re-usable*. This is especially the case (but not uniquely) of the structure 'Is this information available electronically?' Notice that the UUID that identifies this structure is always the same in all the criteria that include it. Similarly, structures that are reused in different criteria do have the same UUID (as they are the same). Beware that the group of properties (URI, Reference/Code, Issuer) will only be shown if the answer is 'Yes', hence the sub-group code ONTRUE.
 
 [NOTE]
 ====
 _Note for the future: Cross-border/cross-sector codes_
 
-Some relevant trans-European initiatives like ECRIS, BRIS, EESSI, and other, have defined Code Lists and other reference data that could be used in e-Procurement, and specifically by the ESPD. This would enhance the cross-border and cross-sector semantic and technical interoperability.
-Thus, in the case of Convictions, a new requirement could be introduced in G1 (see figures above) asking for the ECRIS Code corresponding to the offence that will be specified in the Response in case the Economic Operator answered ''yes'' to the first Requirement. The ECRIS Codes can be consulted in the Annex to the COUNCIL DECISION 2009/316/JHA of 6 April 2009 on the establishment of the European Criminal Records Information System (ECRIS) in application of Article 11 of Framework Decision 2009/315/JHA.
+Some relevant trans-European initiatives like ECRIS, BRIS, EESSI, and other, have defined Code Lists and other reference data that could be used in e-Procurement,  specifically by the ESPD. This would enhance the cross-border and cross-sector semantic and technical interoperability.
+Thus, in the case of Convictions, a new requirement could be introduced in G1 (see figures above) asking for the ECRIS Code corresponding to the offence that is specified in the Response where the Economic Operator answered ''yes'' to the first Requirement. The ECRIS Codes can be consulted in the Annex to the COUNCIL DECISION 2009/316/JHA of 6 April 2009 on the establishment of the European Criminal Records Information System (ECRIS) in application of Article 11 of Framework Decision 2009/315/JHA.
 ====
 
 == Contributions
@@ -229,14 +231,14 @@ See formal requirements related to exclusion grounds in the link:http://wiki.ds.
 
 [cols=",",]
 |===
-|*REQUIREMENT* |*The buyer needs to be able to specify national exclusion criteria linked to one EU criterion as well as criteria particular for the procurement procedure. The economic operator, in the ESPD Response document, will have to responde "Yes" or "No" to each national criterion thus confirming that it in breach of the Law.*
+|*REQUIREMENT* |*The buyer needs to be able to specify national exclusion criteria linked to one EU criterion, as well as criteria particular for the procurement procedure. The economic operator will have to respond "Yes" or "No" to each national criterion in the ESPD Response document, thus confirming whether it is in breach of the Law.*
 |===
 
 See also the REQUIREMENT link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#tbr070-015[_tbr070-015_] about economic thresholds regarding unpaid taxes or social security obligations.
 
 === Mock-ups - buyer perspective
 
-This other screen-capture below represents a possible mock-up, from the buyer perspective, for the edition of requirements in 'Contributions' criterion (Payment of Taxes).
+The screen-capture below represents a possible scenario, from the buyer perspective, for the edition of requirements in 'Contributions' criterion (Payment of Taxes).
 
 image:Payment_Taxes_REQUIREMENT_edition_CA.jpg['Payment of Taxes', REQUIREMENT edition,width=419,height=424]
 
@@ -244,11 +246,11 @@ _Figure 58. 'Payment of Taxes', REQUIREMENT edition (Buyer Perspective)_
 
 === Mock-ups - economic operator perspective
 
-This other mock-up illustrates what the economic operator sees.
+This is what the economic operator would see.
 
 [NOTE]
 ====
-Beware that this mock-up is not showing the national criteria. For this mock-up it is presumed that *by answering 'Yes' to the general EU criterion all the national criteria QUESTION 'Your answer' will be also set to 'Yes'*.
+Beware that this is not showing the national criteria. Here it is presumed that *by answering 'Yes' to the general EU criterion all the national criteria QUESTION 'Your answer' will be also set to 'Yes'*.
 ====
 
 image:Payment_Taxes_EO_perspective.jpg['Payment of Taxes', EO perspective,width=656,height=395]
@@ -449,8 +451,8 @@ _Payment of Taxes (PoT)_
 . For this *ESPD Request Payment of Taxes* criterion, the Member State defined in e-Certis a *national REQUIREMENT* consisting in the specification of the '_threshold amount of debt that an economic operator have with the national Tax Agency_' (50 Euros in this example).
 . Notice that type of property used is REQUIREMENT. This entails that: a cbc:ValueDataType will be present indicating the type of value the buyer uses for this REQUIREMENT (e.g. AMOUNT, INDICATOR, DESCRIPTION, etc.; see the link:{url-tree}/codelists/gc/ResponseDataType.gc[Code List ResponseDataType], the values are the same for buyers REQUIREMENT(s) than for economic operator response values).
 . Beware that No answer is expected here from the economic operator (do not get confused by the presence of the cbc:ValueDataType, as said it is used by both the Buyer and the EO.
-. The value supplied by the buyer for this requirement (50 Euros, in this example). Notice that the currency is specified in the attibute currencyID of the cbc:Amount component.
-. The MS also allows the buyer the possibility of adding multiple additional textual requirements (in this case the Buyer uses this to explain that ''Beware that the national Tax Agency won't permit the existence of a debt, even if minimial, for two consecutive years'').
+. The value supplied by the buyer for this requirement (50 Euros, in this example). Notice that the currency is specified in the attribute currencyID of the cbc:Amount component.
+. The MS also allows the buyer the possibility of adding multiple additional textual requirements (in this case the Buyer uses this to explain that ''Beware that the national Tax Agency won't permit the existence of a debt, even if minimal, for two consecutive years'').
 . Again, no answer is expected here from the economic operator, as this is a REQUIREMENT issued by the buyer. Hence the element 'cbc:ValueDataTypeCode' contains the type of value of the requirement issued by the buyer.
 
 

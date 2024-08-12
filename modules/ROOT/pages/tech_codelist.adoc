@@ -58,7 +58,7 @@ _Figure 6. Elements and metadata of an ESPD code list_
 
 
 [NOTE]
-The *_Annex I_* of this document lists all the code lists used by the ESPD and in which context or element it is used.
+*_Annex I_* of this document lists all the code lists used by the ESPD and in which context or element it is used.
 
 
 === Compulsory attributes
@@ -118,7 +118,7 @@ _Figure 8. Identifier attributes_
 
 [cols=",",options="header",]
 
-_Table 4. UBL attributes for identifiers_
+_Table 4. UBL attributes for identifiers and corresponding definitions, as provided by OASIS UBL (ISO/IEC 19845)_:
 [cols="1,2"]
 |===
 |*Attribute* |*Definition*
@@ -131,7 +131,7 @@ _Table 4. UBL attributes for identifiers_
 |*schemeURI* |The Uniform Resource Identifier that identifies where the identification scheme is located.
 |===
 
-And its corresponding definitions, as provided by OASIS UBL (ISO/IEC 19845):
+
 
 === XML Example
 
@@ -222,9 +222,9 @@ _TenderingCriterionResponse (the answer to the previous QUESTION)_
 
 This section collects all code lists used in *ESPD-EDM* with its classification, description and meta-data.
 
-[[access-right-table,access-right]]
+[[access-right-table,Access-right]]
 == access-right
-An example of how to use this code list can be found in xref:Tech_AnnexII_XML_Examples.adoc#access-right-xml-example[access-right xml Example].
+An example of how to use this code list can be found in xref:tech_codelist_examples.adoc#access-right-xml-example[access-right xml example].
 
 [cols="1,2a"]
 |===
@@ -251,7 +251,7 @@ An example of how to use this code list can be found in xref:Tech_AnnexII_XML_Ex
 
 [[boolean-gui-control-type-table,boolean-gui-control-type]]
 == boolean-gui-control-type 
-An example of how to use this code list can be found in xref:Tech_AnnexII_XML_Examples.adoc#boolean-gui-control-type-xml-example[boolean-gui-control-type xml Example].
+An example of how to use this code list can be found in xref:tech_codelist_examples.adoc#boolean-gui-control-type-xml-example[boolean-gui-control-type xml Example].
 
 [cols="1,2a"]
 |===
@@ -276,7 +276,7 @@ Contains values to be use by software implementations to display graphic control
 
 [[country-table,country]]
 == country
-An example of how to use this code list can be found in xref:Tech_AnnexII_XML_Examples.adoc#country-xml-example[country xml Example].
+An example of how to use this code list can be found in xref:tech_codelist_examples.adoc#country-xml-example[country xml Example].
 
 [cols="1,2a"]
 |===
@@ -306,7 +306,7 @@ An example of how to use this code list can be found in xref:Tech_AnnexII_XML_Ex
 
 [[criterion-table,criterion]]
 == criterion
-An example of how to use this code list can be found in xref:Tech_AnnexII_XML_Examples.adoc#criterion-xml-example[criterion xml Example].
+An example of how to use this code list can be found in xref:tech_codelist_examples.adoc#criterion-xml-example[criterion xml Example].
 
 [cols="1,2a"]
 |===
@@ -333,7 +333,7 @@ An example of how to use this code list can be found in xref:Tech_AnnexII_XML_Ex
 
 [[criterion-element-type-table,criterion-element-type]]
 == criterion-element-type 
-An example of how to use this code list can be found in xref:Tech_AnnexII_XML_Examples.adoc#criterion-element-type-xml-example[criterion-element-type xml Example].
+An example of how to use this code list can be found in xref:tech_codelist_examples.adoc#criterion-element-type-xml-example[criterion-element-type xml Example].
 
 [cols="1,2a"]
 |===
@@ -356,7 +356,7 @@ An example of how to use this code list can be found in xref:Tech_AnnexII_XML_Ex
 
 [[currency-table,currency]]
 == currency
-An example of how to use this code list can be found in xref:Tech_AnnexII_XML_Examples.adoc#currency-xml-example[currency xml Example].
+An example of how to use this code list can be found in xref:xref:tech_codelist_examples.adoc#currency-xml-example[currency xml Example].
 
 [cols="1,2a"]
 |===
@@ -383,7 +383,7 @@ An example of how to use this code list can be found in xref:Tech_AnnexII_XML_Ex
 
 [[docrefcontent-type-table,docrefcontent-type]]
 == docrefcontent-type 
-An example of how to use this code list can be found in xref:Tech_AnnexII_XML_Examples.adoc#docrefcontent-type-xml-example[docrefcontent-type xml Example].
+An example of how to use this code list can be found in xref:xref:tech_codelist_examples.adoc#docrefcontent-type-xml-example[docrefcontent-type xml Example].
 
 [cols="1,2a"]
 |===
@@ -409,7 +409,7 @@ This code list is maintained as technical for the time being. In the future it m
 
 [[economic-operator-size-table,economic-operator-size]]
 == economic-operator-size
-An example of how to use this code list can be found in xref:Tech_AnnexII_XML_Examples.adoc#economic-operator-size-xml-example[economic-operator-size xml Example].
+An example of how to use this code list can be found in xref:tech_codelist_examples.adoc#economic-operator-size-xml-example[economic-operator-size xml Example].
 
 [cols="1,2a"]
 |===
@@ -436,7 +436,7 @@ An example of how to use this code list can be found in xref:Tech_AnnexII_XML_Ex
 
 [[eoid-type-table,eoid-type]]
 == eoid-type 
-An example of how to use this code list can be found in xref:Tech_AnnexII_XML_Examples.adoc#eoid-type-xml-example[eoid-type xml Example].
+An example of how to use this code list can be found in xref:tech_codelist_examples.adoc#eoid-type-xml-example[eoid-type xml Example].
 
 [cols="1,2a"]
 |===
@@ -460,7 +460,7 @@ This code list is maintained as technical for the time being. In the future it m
 
 [[eo-role-type-table,eo-role-type]]
 == eo-role-type
-An example of how to use this code list can be found in xref:Tech_AnnexII_XML_Examples.adoc#eo-role-type-xml-example[eo-role-type xml Example].
+An example of how to use this code list can be found in xref:tech_codelist_examples.adoc#eo-role-type-xml-example[eo-role-type xml Example].
 
 [cols="1,2a"]
 |===
@@ -487,7 +487,7 @@ An example of how to use this code list can be found in xref:Tech_AnnexII_XML_Ex
 
 [[financial-ratio-type-table,financial-ratio-type]]
 == financial-ratio-type 
-An example of how to use this code list can be found in xref:Tech_AnnexII_XML_Examples.adoc#financial-ratio-type-xml-example[financial-ratio-type xml Example].
+An example of how to use this code list can be found in xref:tech_codelist_examples.adoc#financial-ratio-type-xml-example[financial-ratio-type xml Example].
 
 [cols="1,2a"]
 |===
@@ -514,7 +514,7 @@ This code list is maintained by the ESPD Team and codes are collected from Banqu
 
 [[language-table,language]]
 == language
-An example of how to use this code list can be found in xref:Tech_AnnexII_XML_Examples.adoc#language-xml-example[language xml Example].
+An example of how to use this code list can be found in xref:tech_codelist_examples.adoc#language-xml-example[language xml Example].
 
 [cols="1,2a"]
 |===
@@ -542,7 +542,7 @@ The concepts included are correlated with the ISO 639 international standard.
 
 [[occupation-table,occupation]]
 == occupation
-An example of how to use this code list can be found in xref:Tech_AnnexII_XML_Examples.adoc#occupation-xml-example[occupation xml Example].
+An example of how to use this code list can be found in xref:tech_codelist_examples.adoc#occupation-xml-example[occupation xml Example].
 
 [cols="1,2a"]
 |===

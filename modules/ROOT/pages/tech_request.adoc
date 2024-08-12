@@ -24,7 +24,7 @@ _Figure 11: QualificationApplicationRequest-2.3 main elements._
 
 == ESPD Request cardinalities
 
-As you can see the UBL-2.3 Schema is quite flexible as, except for a few cases practically all the elements are optional.
+The UBL-2.3 Schema is quite flexible as, except for in a few cases, practically all the elements are optional.
 
 The ESPD-EDM model, however, adds a few more restrictions regarding the cardinalities of some elements. These can be seen in the diagram below, which presents the ESPD-EDM structure for the ESPD Request with its own cardinality restrictions.
 
@@ -32,17 +32,17 @@ image:Qualification_ApplicationRequest_UML_diagram.jpg[QualificationApplicationR
 
 _Figure 12. ESPD-EDM 'QualificationApplicationRequest', UML diagram_
 
-If you compare both figures you will observe that:
+Comparing both figures, it can be observed that:
 
 [arabic]
-. The cardinalities of the root common basic components, such as cbc:ID, cbc:UUID,  are different for the ESPD than for UBL-2.3;
-. Similarly, the cardinalities of aggregate components like cac:ContractingParty and cac:TenderingCriterion are different to the UBL-2.3 ones.
+. The cardinalities of the root common basic components, such as cbc:ID, cbc:UUID, are different in the ESPD than in UBL-2.3;
+. Similarly, the cardinalities of aggregate components like cac:ContractingParty and cac:TenderingCriterion are different than the UBL-2.3 ones.
 
-The cardinality constraints added by the ESPD are not defined in the XSD Schema. In order to control these constraints the ESPD-EDM uses link:https://schematron.com/[ISO Schematron] assertions. The ESPD-EDM distribution package provides Schematron schemata and CVA files for the validation of the XML instances (folder link:{url-tree}/validation[_/validation_]).
+The cardinality constraints added by the ESPD are not defined in the XSD Schema. To control these constraints, the ESPD-EDM uses link:https://schematron.com/[ISO Schematron] assertions. The ESPD-EDM distribution package provides Schematron schemata and CVA files for the validation of the XML instances (folder link:{url-tree}/validation[_/validation_]).
 
 == Root elements
 
-The tables below establish a mapping between the business requirements, the logic layer of the ESPD-EDM and the UBL-2.3 physical layer. They list the elements that are expected in the ESPD Request and provide details on the cardinalities and usage of those elements.
+The tables below establish a mapping between the business requirements, the logic layer of the ESPD-EDM, and the UBL-2.3 physical layer. They list the elements that are expected in the ESPD Request and provide details on the cardinalities and usage of those elements.
 
 [cols=",",options="header",]
 
@@ -50,14 +50,14 @@ The tables below establish a mapping between the business requirements, the logi
 ====
 _A note about the Business Rules identifiers_
 
-From this point on in the document, the tables defining classes and its properties refer frequently to business rules. As stated in the link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1.0-BusinessRules[e-Sens BIS document], "[..] business rules are sets of rules that clarify the content of instances by stating mandatory fields, fixed values (like code lists), dependency between fields in the same object and dependency between different objects".
+From this point in the document, the tables defining classes and its properties refer frequently to business rules. As stated in the link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1.0-BusinessRules[e-Sens BIS document], "[..] business rules are sets of rules that clarify the content of instances by stating mandatory fields, fixed values (like code lists), dependency between fields in the same object, and dependency between different objects".
 
 Information requirement:
 
-Beware that *all theses documents do share the same business rule identifiers* (e.g. tbrxx-yyy for Business Requirement Identifiers in ESPDInt, and BR-Type-Id#n for the Test Cases technical rules).
+Beware that *all theses documents share the same business rule identifiers* (e.g. tbrxx-yyy for Business Requirement Identifiers in ESPDInt, and BR-Type-Id#n for the Test Cases technical rules).
 ====
 
-The mapping between the business requirements, the logic layer of the ESPD-EDM and the UBL-2.3 physical layer:
+The mapping between the business requirements, the logic layer of the ESPD-EDM, and the UBL-2.3 physical layer:
 
 _Table 5. Class QualificationApplicationRequest, components required by the ESPD-EDM_
 |===
@@ -178,17 +178,17 @@ Reference* |Associated class |0..n |A reference to an additional document associ
 [[lot_management, Lot Management]]
 == Lot Management
 
-The ESPD includes a change regarding how lots are managed. This is the outcome of the alignment with eForms.
+The ESPD includes a change as to how lots are managed. This is an outcome of the alignment with eForms.
 
-In this new version the ESPD will have the following logic:
+In this version the ESPD has the following logic:
 
-There will be 1 ESPD request stating the Exclusion Criteria and the Selection Criteria, but with differences respect version 2.1.1. The figure below shows the logic:
+There is one ESPD request stating the Exclusion Criteria and the Selection Criteria, but with differences with respect to version 2.1.1. The figure below shows the logic:
 
 image:Overview_new_lot_management_approach.jpg[Overview of new lot management approach.,width=497,height=129]
 
 _Figure 13. Overview of new lot management approach._
 
-The ESPD request include exclusion grounds that are general for all the Lots in which the procedure is divided in. However, for Selection Criteria is different since in the procedure is possible to have Lots with different selection criteria. Therefore, in the ESPD request the different Selection Criteria will have to include the reference to the lots which applies. It will be done using the UBL 2.3 cac:ProcurementProjectLotReference that includes cbc:TenderingCriterion.
+The ESPD request includes exclusion grounds that are general for all the Lots into which the procedure is divided. However, for Selection Criteria, it is different since in the procedure it is possible to have Lots with different selection criteria. Therefore, in the ESPD request the different Selection Criteria has to include the reference to the lots which applies. It will be done using the UBL 2.3 cac:ProcurementProjectLotReference that includes cbc:TenderingCriterion.
 
 The following XML example shows how it is done:
 
@@ -254,13 +254,13 @@ The following XML example shows how it is done:
 <!--- Rest of the elements of the criterion have been eliminated for the sake of brevity -->
 ----
 
-In Economic Operator's side it is different, as can be read in the image above there will be as many ESPD Response as Lots or Group of Lots the EO wishes to tender for. If the EO wants to participate in three Lots, the EO will need to fill in 3 ESPD Response. For more details on this, please see section ESPD Response.
+On Economic Operator's side it is different. As in the image above there will be as many ESPD Responses as Lots, or Group of Lots, the EO wishes to tender for. If the EO wishes to participate in three Lots, the EO will need to fill in 3 ESPD Responses. For more details on this, please see the section on the ESPD Response.
 
 === Lot identifiers
 
-This version of the ESPD changes the form to identify the Lots and Group of Lots taking the eForms format. This changes is done towards the interoperability of both models.
+This version of the ESPD changes the form to identify the Lots and Group of Lots, taking the eForms format. This changes is done with the aim of improving the interoperability of both models.
 
-Until version 2.1.1, the lots have been identified with the following structure "Lot1, Lot2, Lot3". With the new approach (eForms) the Lots identifiers will be as follows: (eForms) the Lots identifiers will be as follows:
+Up to version 2.1.1, the lots were identified with the following structure, "Lot1, Lot2, Lot3". With the new approach (eForms), the Lots identifiers will be as follows: 
 
 image:Lot_ID_schema.jpg[Lot Identifiers according to eForms schema,width=541,height=130]
 
@@ -273,11 +273,11 @@ _Figure 14: Lot Identifiers according to eForms schema_
 |*REQUIREMENT* link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1.0-tbr070-007[_tbr070-007_] |*The Buyer must be able to provide information about official journals or gazettes where the procurement procedure is announced. For procurement projects above the threshold it is compulsory to refer to the Contract Notice published in link:https://ted.europa.eu/TED/[TED].*
 |===
 
-ESPD conformant software applications will have to provide the means for the user to supply references to EU and notice publications about the procurement procedure, and notably about the Notices to which the ESPD is related.
+sSftware applications that conform to the ESPD will have to provide the means for the user to supply references to EU and notice publications about the procurement procedure, especially about Notices to which the ESPD is related.
 
 === Mock-up
 
-The Figure below is a mock-up representation of how to collect the data expected to reference publications on official gazettes or journals. This mechanism can also be used for contracts below the threshold, obviously.
+The Figure below is a mock-up of how to collect the data expected to reference publications on official gazettes or journals. This mechanism can of course also be used for contracts below the threshold.
 
 image:Publications_mock-up.jpg[Publications mock-up,width=500,height=459]
 
@@ -285,7 +285,7 @@ _Figure 14. Publications, mock-up_
 
 === XSD Schema
 
-The ESPD EDM uses the UBL component cac:AdditionalDocumentReference to allow the inclusion of references to documents that they might consider relevant, and amongst them the reference to the Contract Notice on the TED (for above-the-threshold contracts) and to possible Notices on national journals and boards.
+The ESPD EDM uses the UBL component cac:AdditionalDocumentReference to allow the inclusion of references to documents that might be considered relevant, amongst them the reference to the Contract Notice on the TED (for above-the-threshold contracts), and to possible Notices on national journals and boards.
 
 The class used for this, cac:AdditionalDocumentReference ''is a'' cac:DocumentReference class defined in the UBL-2.3 Common Aggregate Components library).
 
@@ -293,7 +293,7 @@ image:cacDocumentReference_XSD diagram.jpg[cac:DocumentReference, XSD diagram,wi
 
 _Figure 15. cac:DocumentReference, XSD diagram_
 
-The class cac:AdditionalDocumentReference aggregates a subclass cac:Attachment that is used by ESPD to place the URI, name of the document and descriptions.
+The class cac:AdditionalDocumentReference aggregates a subclass cac:Attachment that is used by ESPD to place the URI, the name of the document, and the descriptions.
 
 image:Associated_class cacExternalReference_XSD diagram.jpg[Associated class cac:ExternalReference XSD diagram,width=531,height=308]
 
@@ -301,9 +301,9 @@ _Figure 16. Associated class cac:ExternalReference, XSD diagram_
 
 === Expected elements
 
-As can be seen from the XSD Schema, the cac:DocumentReference class has a rich data structure. However, to refer to publications such as the TED and national publications, the ESPD most expects at most the following data:
+As can be seen from the XSD Schema, the cac:DocumentReference class has a rich data structure. However, to refer to publications such as the TED and national publications, the ESPD expects, at least, the following data:
 
-The mapping between the business requirements, the logic layer of the ESPD-EDM and the UBL-2.3 physical layer:
+The mapping between the business requirements, the logic layer of the ESPD-EDM, and the UBL-2.3 physical layer:
 
 [cols=",",options="header",]
 
@@ -323,44 +323,44 @@ _Table 6. Reference to additional documents, expected elements_
 |*cbc:ID* |Identifier |1 |The identifier for the referenced document, generally issued by the entity responsible for the document. a|
 *Information Requirement*: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1.0-tbr070-007[_tbr070-007_].
 
-*Rule*: If the document referenced is a Contract Notice published on TED the ID must follow the scheme defined by the Publications Office: [][][][]/S [][][]-[][][][][][] (e.g. 2015/S 252-461137). If at the time of drafting the ESPD document the Publication Office has not published yet the Contract Notice the value 0000/S 000-000000 value must be used to indicate that a temporary identifier is being used.
+*Rule*: If the document referenced is a Contract Notice published on TED, the ID must follow the scheme defined by the Publications Office: [][][][]/S [][][]-[][][][][][] (e.g. 2015/S 252-461137). If, at the time of drafting the ESPD document, the Publication Office has not yet published the Contract Notice, the value 0000/S 000-000000 value must be used to indicate that a temporary identifier is being used.
 
 *Rule scope*: Common (BR-COM-10#1, BR-OTH-02)
 
 |*cbc:UUID* |Identifier |0..1 |A universally unique identifier that can be used to reference this ESPD document instance. a|
 *Information Requirement*: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1.0-tbr92-013[_tbr92-013_].
 
-*Rule*: If the referenced document has a UUID to identify its particular instance refer to that UUID here.
+*Rule*: If the referenced document has a UUID to identify its particular instance, refer to that UUID here.
 
 |*cbc:DocumentTypeCode* |Code |1 |The type of document being referenced, expressed as a code. a|
 *Information Requirement*: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1.0-tbr070-007[_tbr070-007_].
 
-*Rule*: For the ESDP-EDM it is compulsory use of the Code List "docref-content-type". See example below on how to specify the OJS Contract Notice. If, for other documents, the type of document is not available in this list, provide the code "Other" and describe the content in the element DocumentType.
+*Rule*: For the ESDP-EDM it is compulsory to use the Code List "docref-content-type". See the example below on how to specify the OJS Contract Notice. If, for other documents, the type of document is not available in this list, provide the code "Other" and describe the content in the element DocumentType.
 
 *Rule scope*: Common (BR-OTH-01, BR-OTH-01#3, BR-OTH-03)
 
 |*cbc:DocumentType* |Text |0..1 |The type of document being referenced, expressed as text. a|
 *Information Requirement*: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1.0-tbr070-007[_tbr070-007_].
 
-*Rule*: Optionally use the attribute languageID to indicate the language of the text. Use the Code List "Language" for the value of the languageID attribute.
+*Rule*: The attribute "languageID" may be used optionally to indicate the language of the text. Use the Code List "Language" for the value of the languageID attribute.
 
 *Rule scope*: Common (BR-OTH-01, BR-OTH-01#4, BR-OTH-03)
 
 |*cbc:IssueDate* |Date |0..1 |Date when the document was issued by the buyer. a|
 *Information Requirement*: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1.0-tbr92-013[_tbr92-013_].
 
-*Rule*: Format "YYYY-MM-DD". If available in the referenced document place here the data of publication by the buyer.
+*Rule*: Format "YYYY-MM-DD". If the data of publication by the buyer is available in the referenced document, place it here. 
 
 |*cbc:IssueTime* |Time |0..1 |Time when the document was issued by the buyer. a|
 *Information Requirement*: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1.0-tbr070-002[_tbr92-013_].
 
-*Rule*: If available in the referenced document place here the time of publication by the buyer.
+*Rule*: If the time of publication by the buyer is available in the referenced document, place it here.
 
 |===
 
-Beware that the ESPD document do not embed the content of referenced documents but instead make a reference to its source. Thus the class 'DocumentReference' aggregates a 'cac:Attachment' class that allows for embedding the content or making reference to an external source of the content, which is the preferred way in ESPD (see XSD schema above):
+Beware that the ESPD document does not embed the content of referenced documents, instead it make a reference to its source. Thus the class 'DocumentReference' aggregates a 'cac:Attachment' class that allows for embedding the content or making reference to an external source of the content. This is the preferred way in the ESPD (see the XSD schema above):
 
-The mapping between the business requirements, the logic layer of the ESPD-EDM and the UBL-2.3 physical layer:
+The mapping between the business requirements, the logic layer of the ESPD-EDM, and the UBL-2.3 physical layer:
 
 [cols=",",options="header",]
 
@@ -386,12 +386,12 @@ _Table 7. External Reference_
 |*cbc:FileName* |Text |0..1 |The title of the document. a|
 *Information Requirement*: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1.0-tbr070-007[_tbr070-007_].
 
-*Rule*: Originally this field is the placeholder for the name of the file (e.g. PLACE-ContractNotice-2017-12452.xml. However, as the UBL component does not have a placeholder for a name or title, the ESPD documents use it for a short descriptive title of the document being referenced.
+*Rule*: Originally this field was the placeholder for the name of the file (e.g. PLACE-ContractNotice-2017-12452.xml). However, as the UBL component does not have a placeholder for a name or title, ESPD documents use it for a short descriptive title of the document being referenced.
 
 |*cbc:Description* |Text |0..n |Short description of the document. a|
 *Information Requirement*: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1.0-tbr070-007[_tbr070-007_].
 
-*Rule*: If the document being referenced is a Notice being published on TED, use two description lines. Use the second description line to place therein the temporary number received from TED. See example and comments below.
+*Rule*: If the document being referenced is a Notice being published on TED, use two description lines. Use the second description line to for the temporary number received from TED. See example and comments below.
 
 *Rule scope*: Common (BR-COM-10#2, BR-COM-10-S10, BR-COM-10-S20, BR-COM-10-S30)
 
@@ -466,13 +466,13 @@ The XML snippet below illustrates how to use the cac:AdditionalDocumentReference
 </QualificationApplicationRequest>
 ----
 
-. For TED Notices you must use the Publications Office Official Journal Supplement number in its original format [][][][]/S [][][]-[][][][][][], e.g. 2017/S 142-293520. Notice that the schemeAgencyID is OP (OP standing for 'Publications Office').
+. For TED Notices, the Publications Office Official Journal Supplement number must be used in its original format [][][][]/S [][][]-[][][][][][], e.g. 2017/S 142-293520. Notice that the schemeAgencyID is OP (OP standing for 'Publications Office').
 . The jurisdiction scope of this document is typified in the Code List docref-content-type (see file link:{url-tree}/codelists/gc/DocRefContentType.gc[/codelists/gc/DocRefContentType.gc] in the distribution package). *Beware that the name and content of this Code List has changed from the previous ESPD-EDM version 2.1.1*.
-. The ESPD documents never embed the actual content. Rather the content is always referenced from its original source (alignment to the Once-Only-Principle).
-. The title of the CN has to be placed in the FileName field of the attachment. UBL does not provide a placeholder fo the title of the document.
-. In the case of publication on the TED, at ESPD Request preparation time, the procurer does not have yet the OJS number, but can receive a temporary CN identifier (Received Notice Number). To save this number in the DocumentReference component create two cbc:Description elements and use the second one to place this Received Notice Number. If you do not have a description for the CN then use a 'dummy' content for the first description, e.g. <cbc:Description>_</cbc:/Description>.
-. Notice how the schemeAgencyID is used in this example to specify that the national Agency that created this reference to the national publication (e.g. "PLACE" to refer to the ID of the national electronic board where the CN was published). The pattern of the ID is the one created by the Spanish buyer.
-. In this case the code NOJCN means 'Contract Notice (CN) published on a National Government Official Journal' (see file link:{url-tree}/codelists/gc/DocRefContentType.gc[/codelists/gc/DocRefContentType.gc] in the distribution package).
+. The actual content is never embedded in the ESPD documents. Rather the content is always referenced from its original source (alignment with the Once-Only-Principle).
+. The title of the CN must be placed in the FileName field of the attachment. UBL does not provide a placeholder for the title of the document.
+. If publication on TED is at the ESPD Request preparation time, and the procurer does not yet have the OJS number, they can receive a temporary CN identifier (Received Notice Number). To save this number in the DocumentReference component, two cbc:Description elements must be created, and the second one used for the Received Notice Number. If you do not have a description for the CN then use dummy content for the first description, e.g. <cbc:Description>_</cbc:/Description>.
+. schemeAgencyID is used in this example to specify that the national Agency that created this reference to the national publication (e.g., "PLACE" to refer to the ID of the national electronic board where the CN was published). The pattern of the ID is the one created by the Spanish buyer.
+. In this case, the code NOJCN means 'Contract Notice (CN) published on a National Government Official Journal' (see file link:{url-tree}/codelists/gc/DocRefContentType.gc[/codelists/gc/DocRefContentType.gc] in the distribution package).
 
 == Contracting Body
 
@@ -484,7 +484,7 @@ See formal requirements related to the contracting authorities in the e-Sens sit
 
 In principle, the ESPD-EDM asks for a few data about the procurer (i.e. the buyer, body or entity). The essential (compulsory) data for the contracting body are namely the one aimed to identify it, i.e. its official name and the country. The figure below represents a possible GUI interface for these two data. However the UBL specification provides many other data elements some of which may be interesting to include in the ESPD, notably data about the means to contact the contracting body (see below the list of elements possible in the ESPD).
 
-Therefore software applications may take leverage of the richness of UBL-2.3 to collect also data about the buyer contact, end-point, and other data possible in the ESPD.
+Therefore software applications may make use of the richness of UBL-2.3 to collect data about the buyer contact, end-point, and other possible data in the ESPD.
 
 image:Procurer_identification_mockup.jpg[Procurer identification,width=600,height=100]
 
@@ -534,7 +534,7 @@ _Table 8. Contracting body, expected elements_
 [cols="1,1,1,3,3"]
 |===
 |*Components* |*Type* |*Card* |*Description* |*Requirements*
-|*cbc:BuyerProfileURI* |Identifier |0..1 |URL of the web section, in the contracting body web site, that contains information about the contracting body, the norms it applies when contracting, published calls for tenders, Prior Information Notices and Contract Notices as well as the related procurement documents, contract award notices, etc. a|
+|*cbc:BuyerProfileURI* |Identifier |0..1 |URL of the web section, in the contracting body web site, that contains information about the contracting body, the norms applied when contracting, published calls for tenders, Prior Information Notices and Contract Notices as well as the related procurement documents, contract award notices, etc. a|
 *Information Requirement*: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1.0-tbr070-006[_tbr070-006_].
 
 *Rule*: Notices published at national level shall not contain information other than that contained in the notices dispatched to the Publications Office of the European Union or published on a buyer profile, but shall indicate the date of dispatch of the notice to the Publications Office of the European Union or its publication on the buyer profile (Directive link:https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32014L0024&from=ES[2014/24/EU, Art. 52.2]).
@@ -559,7 +559,7 @@ _Table 9. Contracting body party, expected elements_
 |*cac:PartyIdentification/cbc:ID* |Identifier |1 |The national identifier of a contracting body as it is legally registered (e.g. VAT identification). a|
 *Information Requirement*: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1.0-tbr070-001[_tbr070-001_].
 
-*Rule*: When possible use the VAT identification of the contracting body (see the link:https://ec.europa.eu/taxation_customs/vies/[VIES] platform for a EU cross-border national VAT number verification system). When not possible a different identifier may be used. The code list link:{url-tree}/codelists/gc/EOIDType.gc[EOIDType] may be used to indicate the type of identifier used as a value of the schemeID attribute, e.g. schemeID="VAT").
+*Rule*: When possible, use the VAT identification of the contracting body (see the link:https://ec.europa.eu/taxation_customs/vies/[VIES] platform for a EU cross-border national VAT number verification system). When not possible, a different identifier may be used. The code list link:{url-tree}/codelists/gc/EOIDType.gc[EOIDType] may be used to indicate the type of identifier used as a value of the schemeID attribute, e.g. schemeID="VAT").
 
 *Rule scope*: Common (BR-REQ-20#4, BR-OTH-02)
 
