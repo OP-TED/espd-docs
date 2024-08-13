@@ -1,4 +1,4 @@
-name: espd
+name: ESPD-EDM
 title: ESPD EDM
 version: '3.3.0'
 start_page: ROOT:index.adoc
