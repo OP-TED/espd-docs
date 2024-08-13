@@ -1,4 +1,4 @@
-name: ESPD
+name: ESPD-EDM
 title: ESPD EDM
 version: &ver '3.0.1' # don't remove the &ver anchor
 start_page: ROOT:index.adoc
