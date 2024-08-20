@@ -31,5 +31,5 @@ xref:espd-home::history.adoc[Information on releases can be found here.]
 ****
 This section contains minutes and reports of the annual and monthly Open User Community activities and meetings.
 
-xref:espd-wgm::index.adoc[Click here to read the OUC rdocuments]
+xref:espd-wgm::index.adoc[Click here to read the OUC documents]
 ****
