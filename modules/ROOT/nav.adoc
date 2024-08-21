@@ -1,5 +1,5 @@
 :doctitle: Navigation
-:doccode: espd-v3.3.x-prod-004
+:doccode: espd-v4.0.x-prod-004
 :author: NPJ
 :authoremail: nicole-anne.paterson-jones@ext.ec.europa.eu
 :docdate: October 2023
@@ -9,6 +9,7 @@
 * [.separated]#**Release Documentation**#
 * xref:espd::release_notes.adoc[Release Notes]
 * link:{attachmentsdir}/ESPD_CM_html/index.html[Conceptual Model]
+*  https://docs.ted.europa.eu/espd-demo/[ESPD Demo]
 //* xref:espd::dist_pack.adoc[The Distribution Package]
 
 * [.separated]#**Information for Business Users**#
