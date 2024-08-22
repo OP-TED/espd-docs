@@ -14,8 +14,8 @@
 
 * [.separated]#**Information for Business Users**#
 * xref:business:index.adoc[Business Information]
-* xref:business::service.adoc[The ESPD Service]
-* xref:business::using.adoc[Using an ESPD Service]
+* xref:business:service.adoc[The ESPD Service]
+* xref:business:using.adoc[Using an ESPD Service]
 //* xref:espd-bus::creating.adoc[Creating an ESPD Service]
 //* xref:espd-bus::overview_upgrades.adoc[Overview for Upgrading your Version]
 

@@ -1,0 +1,36 @@
+:doctitle: How to use the ESPD
+:doccode: epo-bus-prod-016
+:author: NPJ
+:authoremail: nicole-anne.paterson-jones@ext.ec.europa.eu
+:docdate: January 2024
+
+
+
+== The structure of an ESPD Service
+
+To see how to xref:espd_form.adoc[fill in a form on an online ESPD-Service from the perspectives of both a buyer and a supplier], click on the linked text. This will demonstrate the use of an ESPD-Service from scratch i.e.,the first time it is filled out by a supplier or buyer. (the form can then be saved and uploaded and amended for subsequent times)
+
+////
+
+== Finding an eNotice to respond to in an ESPD-Service (for suppliers)
+To see how to xref:number.adoc[find a suitable eNotice number] that a supplier might want to respond to. A number is needed to start the process.
+
+== Save information needed in the ESPD online form for future use.
+This applies to both buyers and suppliers.
+
+After filling in information in an ESPD-Service for the first time, the completed form can be downloaded and saved  for future use. The next time an ESPD form needs filling in, the saved form can be uploaded and only the information that is different changed. This makes the process more efficient as most of the information will stay the same over time.
+
+See how to xref:reuse.adoc[save the completed form and upload it next time] you use an ESPD Service.
+
+
+== Suitable Locations for supporting documents/ evidence
+
+Supplier need to provide evidence like certificates, etc, and will have to xref:evidence.adoc[provide an online storage location] where the buyer can access them. Here are some best practices for saving/ storing these.
+
+== Managing Supplier Groups
+
+If you are tendering as the head of, or a participant in, a tender, here is some information on how to xref:subcon.adoc[manage the upload of subcontractor evidence and coordinating subcontractors filling in their part of the response form].
+
+////
+
+include::partial$feedback.adoc[]

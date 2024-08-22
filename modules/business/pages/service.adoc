@@ -1,0 +1,32 @@
+:doctitle: The ESPD Service
+:doccode: epo-bus-prod-012
+:author: NPJ
+:authoremail: nicole-anne.paterson-jones@ext.ec.europa.eu
+:docdate: January 2024
+
+== What is an ESPD Service?
+
+An ESPD service is an online portal that public buyers in the EU use, to publish their purchasing requirements (criteria) and collect responses and evidence from prospective suppliers of their suitability to supply. It is designed to enforce compliance with EU procurement legislation and , streamline the process,while enabling participation in public procurement by different types of suppliers.
+
+== What does an ESPD Service look like?
+
+=== Examples of current ESPDs:
+
+There are https://forum-vergabe.de/wp-content/uploads/Downloads/espd_service_provider_list_v21.pdf[a number of ESPD Services available], provided by EU member states or commercial ESPD service providers. The list can be accessed https://forum-vergabe.de/wp-content/uploads/Downloads/espd_service_provider_list_v21.pdf[here].
+
+=== What needs to be filled in on the ESPD Service page(s)?
+
+Firstly, what is filled in depends on whether you are a buyer or a supplier. In both cases, you have the option of filling in everything from scratch, or uploading a mostly filled in XML document in which you only need to add or change the details of anything different to the previously saved document you are uploading. The first time you interact with an ESPD service, you can save the document locally and use it in subsequent procedures. This applies to both buyers and suppliers.
+
+Buyers will fill in their requirements according to their needs and EU (and national) laws and directives; prospective suppliers will respond stating that they are able to supply, providing evidence.
+
+The information in the ESPD service is linked to an eForms notice by a number which is generated when a buyer fills in the eNotice publishing their wish to purchase goods or services (tender). The buyer fills in the details in the ESPD service as a subsequent step in the eProcurement process, and prospective suppliers then respond, having found the number by searching the tender notices for those requesting kinds of service and goods they are qualified and able to provide.
+
+=== A run through of an online ESPD Service
+
+xref:espd_form.adoc[Click here for a run through of an ESPD Service]
+
+include::partial$feedback.adoc[]
+
+
+

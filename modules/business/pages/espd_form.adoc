@@ -1,0 +1,157 @@
+:doctitle: Filling in the ESPD online form
+:doccode: epo-bus-prod-005
+:author: NPJ
+:authoremail: nicole-anne.paterson-jones@ext.ec.europa.eu
+:docdate: January 2024
+
+The ESPD form is divided into sections. For orientation in the form filling process, progress tracking is provided so the user always knows what parts are already completed and what parts are still missing:
+
+image::form/of1.png[]
+
+The ESPD form is divided into the following sections:
+
+
+== Part 1: Information concerning the procurement procedure and the contracting authority or contracting entity, which contains:
+
+
+* Information about publication
+
+image::form/of2.png[]
+
+* Identity of the procurer
+
+image::form/of3.png[]
+
+* Information about the procurement procedure
+
+image::form/of4.png[]
+
+== Part 2: Information concerning the economic operator, which contains:
+
+* Information about the economic operator, including whether it is a Micro, a Small or a Medium-Sized Enterprise, whether it is registered on an official list of approved economic operators or does it have an equivalent certificate, whether it is participating in the procurement procedure together with others, etc.
+
+image::form/of5.png[]
+
+* Information about representatives of the economic operator
+
+image::form/of6.png[]
+
+* Information about reliance on the capacities of other entities in order to meet the selection criteria.
+
+image::form/of7.png[]
+
+* Information concerning subcontractors on whose capacity the EO does not rely (this is, when the EO intends to subcontract any share of the contract to third parties but does not rely on the capacities of these third parties in order to meet the selection criteria)
+
+image::form/of8.png[]
+
+Part 2 applies only to the response document (ESPD Response) that the EO needs to fulfil.
+
+
+
+
+== Part 3: Exclusion grounds, which contains:
+* A: Grounds relating to criminal convictions (based on Article 57(1) of Directive 2014/24/EU)
+
+CA view: All options are ticked by default and the CA cannot remove the ticks, since they come from the Directive.
+
+image::form/of9.png[]
+
+EO view:
+
+image::form/of10.png[]
+
+* B: Grounds relating to the payment of taxes or social security contributions (based on Article 57(2) of Directive 2014/24/EU)
+
+CA view: All options are ticked by default and the CA cannot remove the ticks, since they come from the Directive.
+
+image::form/of11.png[]
+
+EO view:
+
+image::form/of12.png[]
+
+* C: Grounds relating to insolvency, conflicts of interests or professional misconduct (based on Article 57(4) of Directive 2014/24/EU)
+
+CA view: All options are ticked by default, but the CA can remove the ticks in case any of the options is not required for this specific procedure.
+
+image::form/of13.png[]
+
+EO view:
+
+image::form/of14.png[]
+
+* D: Purely national exclusion grounds, which depend on the regulation of each country.
+
+CA view: Where there are national exclusion grounds, the CA has to decide whether to include them or not in each procedure. By default, options related to purely national exclusion ground are not ticket, and the CA needs to manually select those that have to be included.
+
+image::form/of15.png[]
+
+* EO view:
+
+image::form/of16.png[]
+
+== Part 4: Selection criteria, which contains:
+* A: Suitability (based on Article 58(2) of Directive 2014/24/EU)
+
+CA view: All options are ticked by default, but the CA can manually remove the ticks of the options not required for this specific procedure.
+
+image::form/of17.png[]
+
+EO view:
+
+image::form/of18.png[]
+
+* B: Economic and financial standing (based on Article 58(3) of Directive 2014/24/EU)
+
+CA view: All options are ticked by default, but the CA can manually remove the ticks of the options not required for this specific procedure.
+
+image::form/of19.png[]
+
+EO view:
+
+image::form/of20.png[]
+
+* C: Technical and professional ability (based on Article 58(4) of Directive 2014/24/EU)
+
+CA view: All options are ticked by default, but the CA can manually remove the ticks of the options not required for this specific procedure.
+
+image::form/of21.png[]
+
+EO view:
+
+image::form/of22.png[]
+
+* D: Quality assurance schemes and environmental management standards (based on Article 62(2) of Directive 2014/24/EU)
+
+CA view: All options are ticked by default, but the CA can manually remove the ticks of the options not required for this specific procedure.
+
+image::form/of23.png[]
+
+EO view:
+
+image::form/of24.png[]
+
+Global indication for all selection criteria (instead of options A-D):
+
+image::form/of25.png[]
+
+== Part 5: Reduction of the number of qualified candidates.
+
+Part V applies only for the response document (ESPD Response) that the EO needs to fulfil (except when the EO is an entity, the lead entity does not rely on in order to meet the selection criteria). Furthermore, the economic operator should only provide information where the contracting authority or contracting entity has specified the objective and non-discriminatory criteria or rules to be applied in order to limit the number of candidates that will be invited to tender or to conduct a dialogue.
+
+image::form/of26.png[]
+
+== Part 6: Concluding statements, which contain the legal statements of the document.
+CA and EO view: In the response document, the EO shall also provide the date, place and signature.
+
+image::form/of27.png[]
+
+Once the form is filled in, the user has several options:
+
+image::form/of28.png[]
+
+There is an “Overview” option available to both the CA when preparing the ESPD Request and the EO when preparing the ESPD Response, which allows the user to review from a single page all the information provided in the form. If everything is correct, the ESDP document can be downloaded:
+
+image::form/of29.png[]
+
+include::partial$feedback.adoc[]
