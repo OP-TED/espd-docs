@@ -1,0 +1,95 @@
+:doctitle: ESPD Documentation for Technical Implementers
+:doccode: espd-tech-prod-001
+:author: NPJ
+:authoremail: nicole-anne.paterson-jones@ext.ec.europa.eu
+:docdate: January 2024
+
+[.tile-container]
+--
+[.tile]
+.The Conceptual Model
+****
+The Conceptual Model can be viewed via the link below
+
+link:{attachmentsdir}/ESPD_CM_html/index.html[ESPD-EDM Conceptual Model HTML]
+
+****
+[.tile]
+.The Distribution Package
+****
+This section describes the Distribution Package
+
+xref:tech_dist_pack.adoc[Click here for a description of the Distribution Package]
+
+****
+
+[.tile]
+.The ESPD Request
+****
+A technical description of the ESPD Request
+
+xref:tech_request.adoc[Click here for the ESPD Request ]
+****
+
+[.tile]
+.Exclusion Criteria
+****
+This section contains detailed technical description of the Exclusion Criteria
+
+xref:tech_exclusion_criteria.adoc[The ESPD Exclusion Criteria]
+****
+
+[.tile]
+.Selection Criteria
+****
+This section contains detailed technical description of the Selection Criteria
+
+xref:tech_selection_criteria.adoc[The ESPD Selection Criteria]
+****
+
+[.tile]
+.The ESPD Response
+****
+A technical description of the ESPD Response
+
+xref:tech_response.adoc[Click here for the ESPD Response]
+****
+
+[.tile]
+.Validation
+****
+This section contains detailed technical information on the tools provided and methods of validating your ESPD Service implementation
+
+xref:tech_validation.adoc[Validating an ESPD Service Implementation]
+****
+
+[.tile]
+.Code Lists Catalogue
+****
+This section provides information on codelists used in the ESPD and some code list examples.
+
+xref:tech_codelist.adoc[Code Lists used in the ESPD Service]
+****
+
+[.tile]
+.Business Rules
+****
+This section contains information on the relevant Business rules
+
+xref:tech_busrules.adoc[The ESPD Business Rules]
+****
+
+[.tile]
+.Technical Glossary
+****
+This section contains a Technical Glossary
+
+xref:tech_glossary.adoc[Technical Glossary]
+****
+--
+
+
+
+
+
+
