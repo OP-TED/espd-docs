@@ -13,6 +13,7 @@
 
 * [.separated]#**Information for Business Users**#
 * xref:ESPD:business::index.adoc[Business Information]
+* xref:3.0.0@ESPD:business:index.adoc[Business information]
 * xref:espd-bus::service.adoc[What is an ESPD Service?]
 * xref:espd-bus::using.adoc[The Structure of an ESPD Service]
 //* xref:espd-bus::creating.adoc[Creating an ESPD Service]
