@@ -7,20 +7,19 @@
 * xref:espd-home::index.adoc[Home]
 
 * [.separated]#**Release Documentation**#
-* xref:ESPD::release_notes.adoc[Release Notes]
+* xref:ESPD:release_notes.adoc[Release Notes]
 * link:{attachmentsdir}/ESPD_CM_html/index.html[Conceptual Model]
 //* xref:espd::dist_pack.adoc[The Distribution Package]
 
 * [.separated]#**Information for Business Users**#
 * xref:business:index.adoc[Business Information]
-* xref:3.0.0@ESPD:business/index.adoc[Business Information]
-* xref:espd-bus::service.adoc[What is an ESPD Service?]
-* xref:espd-bus::using.adoc[The Structure of an ESPD Service]
+* xref:business:service.adoc[What is an ESPD Service?]
+* xref:business:using.adoc[The Structure of an ESPD Service]
 //* xref:espd-bus::creating.adoc[Creating an ESPD Service]
 //* xref:espd-bus::overview_upgrades.adoc[Overview for Upgrading your Version]
 
 * [.separated]#**Technical Implementation**#
-* xref:espd-tech::index.adoc[Technical Information]
+* xref:technical:index.adoc[Technical Information]
 //* xref:espd-tech::tech_imp_roadmap.adoc[Road Map for Implementers]
 //* xref:espd-tech::tech_upgrades.adoc[Upgrading an ESPD Version]
 //* xref:espd-tech::demo.adoc[Demo ESPD Service Online]

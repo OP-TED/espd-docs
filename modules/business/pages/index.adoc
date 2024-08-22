@@ -11,7 +11,7 @@
 ****
 This section gives an overview of the ESPD for business Users.
 
-xref:espd-bus::business_info.adoc[Information for Business Users]
+xref:business:business_info.adoc[Information for Business Users]
 
 ****
 [.tile]
@@ -19,7 +19,7 @@ xref:espd-bus::business_info.adoc[Information for Business Users]
 ****
 This section explains the ESPD Service
 
-xref:espd-bus::service.adoc[Click here to read about the ESPD service]
+xref:business:service.adoc[Click here to read about the ESPD service]
 
 ****
 
@@ -29,7 +29,7 @@ xref:espd-bus::service.adoc[Click here to read about the ESPD service]
 ****
 This section runs through the ESPD online form from both the buyer and the supplier perspectives
 
-xref:espd-bus::espd_form.adoc[Click here to view the ESPD online form]
+xref:business:espd_form.adoc[Click here to view the ESPD online form]
 ****
 
 ////

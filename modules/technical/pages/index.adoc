@@ -19,7 +19,7 @@ link:{attachmentsdir}/ESPD_CM_html/index.html[ESPD-EDM Conceptual Model HTML]
 ****
 This section describes the Distribution Package
 
-xref:tech_dist_pack.adoc[Click here for a description of the Distribution Package]
+xref:technical:tech_dist_pack.adoc[Click here for a description of the Distribution Package]
 
 ****
 
@@ -28,7 +28,7 @@ xref:tech_dist_pack.adoc[Click here for a description of the Distribution Packag
 ****
 A technical description of the ESPD Request
 
-xref:tech_request.adoc[Click here for the ESPD Request ]
+xref:technical:tech_request.adoc[Click here for the ESPD Request ]
 ****
 
 [.tile]
@@ -36,7 +36,7 @@ xref:tech_request.adoc[Click here for the ESPD Request ]
 ****
 This section contains detailed technical description of the Exclusion Criteria
 
-xref:tech_exclusion_criteria.adoc[The ESPD Exclusion Criteria]
+xref:technical:tech_exclusion_criteria.adoc[The ESPD Exclusion Criteria]
 ****
 
 [.tile]
@@ -44,7 +44,7 @@ xref:tech_exclusion_criteria.adoc[The ESPD Exclusion Criteria]
 ****
 This section contains detailed technical description of the Selection Criteria
 
-xref:tech_selection_criteria.adoc[The ESPD Selection Criteria]
+xref:technical:tech_selection_criteria.adoc[The ESPD Selection Criteria]
 ****
 
 [.tile]
@@ -52,7 +52,7 @@ xref:tech_selection_criteria.adoc[The ESPD Selection Criteria]
 ****
 A technical description of the ESPD Response
 
-xref:tech_response.adoc[Click here for the ESPD Response]
+xref:technical:tech_response.adoc[Click here for the ESPD Response]
 ****
 
 [.tile]
@@ -60,7 +60,7 @@ xref:tech_response.adoc[Click here for the ESPD Response]
 ****
 This section contains detailed technical information on the tools provided and methods of validating your ESPD Service implementation
 
-xref:tech_validation.adoc[Validating an ESPD Service Implementation]
+xref:technical:tech_validation.adoc[Validating an ESPD Service Implementation]
 ****
 
 [.tile]
@@ -68,7 +68,7 @@ xref:tech_validation.adoc[Validating an ESPD Service Implementation]
 ****
 This section provides information on codelists used in the ESPD and some code list examples.
 
-xref:tech_codelist.adoc[Code Lists used in the ESPD Service]
+xref:technical:tech_codelist.adoc[Code Lists used in the ESPD Service]
 ****
 
 [.tile]
@@ -76,7 +76,7 @@ xref:tech_codelist.adoc[Code Lists used in the ESPD Service]
 ****
 This section contains information on the relevant Business rules
 
-xref:tech_busrules.adoc[The ESPD Business Rules]
+xref:technical:tech_busrules.adoc[The ESPD Business Rules]
 ****
 
 [.tile]
@@ -84,7 +84,7 @@ xref:tech_busrules.adoc[The ESPD Business Rules]
 ****
 This section contains a Technical Glossary
 
-xref:tech_glossary.adoc[Technical Glossary]
+xref:technical:tech_glossary.adoc[Technical Glossary]
 ****
 --
 
