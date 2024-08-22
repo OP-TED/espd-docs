@@ -18,17 +18,17 @@ The conceptual model for this version
 //* xref:espd::dist_pack.adoc[The Distribution Package]
 
 == Information for Business Users
-* xref:ESPD:business:index.adoc[Business Information] +
+* xref:3.3.0@ESPD-EDM:business:index.adoc[Business Information] +
 An overview of the ESPD for business users
-* xref:espd-bus::service.adoc[The ESPD Service] +
+* xref:3.3.0@ESPD-EDM:business:service.adoc[The ESPD Service] +
 What an ESPD service is and what it looks like
-* xref:espd-bus::using.adoc[Using an ESPD Service] +
+* xref:3.3.0@ESPD-EDM:business:using.adoc[Using an ESPD Service] +
 Using an online ESPD form from both buyer and supplier perspectives
 //* xref:espd-bus::creating.adoc[Creating an ESPD Service]
 //* xref:espd-bus::overview_upgrades.adoc[Overview for Upgrading your Version]
 
 == Technical Implementation of an ESPD Service
-* xref:espd-tech::index.adoc[Technical Information] +
+* xref:3.3.0@ESPD-EDM:technical:index.adoc[Technical Information] +
 Information for technical implementation
 //* xref:espd-tech::tech_imp_roadmap.adoc[Road Map for Implementers]
 //* xref:espd-tech::tech_upgrades.adoc[Upgrading an ESPD Version]
