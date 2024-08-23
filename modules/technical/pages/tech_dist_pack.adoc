@@ -20,7 +20,7 @@ The wgm-reports branch is for the Open user Community reports which are minutes 
 this is the description of the contents, and a brief overview of what can be found where in the repository. It is also used as the release notes.
 
 ==== Folders under the latest version
-===== The _ESPDTeam_ folder (for internal use only)
+===== The \_ESPDTeam_ folder (for internal use only)
 
 * *README.md* that describes the folder contents
 * *Bach-Database-Ratios.xlsx*: source code for the financial-ratio-type code list that is maintained by the OP, sourced from the Bank of France.
