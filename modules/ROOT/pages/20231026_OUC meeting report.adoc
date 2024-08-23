@@ -1,0 +1,156 @@
+= Open User Community Meeting Report
+
+== Publications Office - ESPD EDM
+
+
+[cols=",",",]
+|===
+|Meeting Date/Time: |2023-10-26, 10.00 - 11.30
+|===
+
+[cols=",",options="header",]
+|===
+|*Attendee Name* |*Organisation / Country*
+|Paloma ARILLO |OP
+|Arnhild Dordi GJONNES |Norway 
+|Cécile GUASCH |DIGIT
+|Alexandra JESENOVEC LJUBOJEVIC |Slovenia 
+|Ajda KOSTANJSEK |Slovenia  
+|Cristea MARILENA |Romania - ANAP 
+|Andreea PASARE |Meaningfy  
+|Konstantinos RAPTIS (UPRC) |UPRC-Greece 
+|Giampaolo SELLITO |ANAC-Italy  
+|Marc Christopher SCHMIDT |DG GROW 
+|Laurent SCHONJAANS |DG GROW 
+|Pascaline Laure TCHIENEHOM |France, NTT Data 
+|===
+
+:sectnums:
+:sectnumlevels: 4
+
+
+== Meeting Agenda
+
+. Summary of last meeting on 21 September 2023
+. GitHub issues 
+. January 2024: issues to be discussed 
+. ESPD-EDM & ePO: TemplateEvidence 
+. ESPD-EDM & ePO: YearlyTurnover 
+. Annual Seminar proposal 
+. Next meetings 
+. AOB 
+
+
+== Summary of last meeting on 21st September 2023 
+
+* The links to the last presentation and meeting report are provided,
+
+* The main topics discussed are summarised: 
+
+** ESPD-EDM v3.3.0 - issues included: 
+
+*** Remaining typos corrected. 
+*** Validation rules corrected. 
+*** Datatype for 'Percentage' changed to 'ResponseNumeric'.
+
+** Issues proposed for discussion for OUC on January 2024.
+** ESPD-EDM & ePO - eAccess: TemplateEvidence - Request / Response. 
+
+
+== GitHub issues
+
+* Currently, there are 20 open GitHub issues: 
+
+** Seven of them are being analysed by the ESPD-EDM team to present proposals in future OUC meetings.
+** Nine of these open issues have a dependency on third parties such as the eCertis or the eForms Teams.
+** Four of them will be presented during this meeting in order to propose solutions for the meeting in January:
+
+*** https://github.com/OP-TED/ESPD-EDM/issues/389[#389]: Pre-qualification systems and classification of EOs (Economic Operators). In Part II of the ESPD-EDM the prequalification is added for the Response (declaration). However, in some countries, such as Slovenia, a pre-qualification section is not mandatory, which implies this section is often not used.  In Italy for example the prequalification is used only for procurement concerning 'works'.  
+
+*** https://github.com/OP-TED/ESPD-EDM/issues/388[#388]: Other economic or financial requirements. Part IV Selection Criteria : ESPD-EDM v 2 offers the buyer the possibility to be very specific e.g 'turnover'. Discussion on this criterion held with ESPD group is to be found in https://github.com/OP-TED/ESPD-EDM/issues/14[#14]. 
+
+*** https://github.com/OP-TED/ESPD-EDM/issues/381[#381]: Subcontractors not relied upon have to provide information about Selection Criteria. In the Regulation entities not relied upon (subcontractors) do not need to fill in the Selection Criteria. 
+
+*** https://github.com/OP-TED/ESPD-EDM/issues/386[#386] Can the evidence group or subgroup be dropped to follow the ESPD regulation? The https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32016R0007[Regulation] does not require evidence for some criteria. Discussion to be dealt with in the next OUC meeting. 
+
+== January 2024: issues to be discussed   
+
+* https://github.com/OP-TED/ESPD-EDM/issues/389[#389]: Pre-qualification systems and classification of EOs (Economic Operators). In Part II of the ESPD-EDM the prequalification is added for the Response (declaration). However, in some countries, such as Slovenia, a pre-qualification section is not mandatory, which implies this section is often not used.  In Italy for example the prequalification is used only for procurement concerning 'works'.
+The Regulation allows three answers: yes, no, not applicable.
+The ESPD model allows only two answers: yes, no.
+eCertis will in the future allow Member States to indicate if a country has qualification services.
+The ESPD-EDM Team will check if the pre-qualification section is mandatory and if not, make it optional for a later release (maybe 4.X.X). 'Not applicable' means the country does not have a prequalification system so it does not apply. We should add this option in the ESPD model and maybe create a new code list. 
+
+* https://github.com/OP-TED/ESPD-EDM/issues/388[#388]: Other economic or financial requirements. Part IV Selection Criteria : ESPD-EDM v2 offers the buyer the possibility to be very specific e.g 'turnover'. In the financial section it is possible to provide a ratio. In Slovenia the buyer uses this section to add information that is not possible to be filled in any other field. It is proposed to make the field optional. The solution is to add a third option 'Other requirement' for the description.
+Discussion on this criterion held with ESPD group is to be found in https://github.com/OP-TED/ESPD-EDM/issues/14[#14]. 
+
+* https://github.com/OP-TED/ESPD-EDM/issues/381[#381]: Subcontractors not relied upon have to provide information about Selection Criteria.
+In the Regulation entities not relied upon (subcontractors) do not need to fill in the Selection Criteria.
+In the ESPD model the Selection Criteria must be filled in also for the entities not relied upon (subcontractors).
+The ESPD-EDM team has to come with proposals to modify the model and align it to the legislation and user needs. 
+
+== ESPD-EDM & ePO: TemplateEvidence  
+
+The eProcurement Ontology team is working now on eAccess, which includes the ESPD Request. The ESPD Response will be treated later under eSubmission.  The  ePO and ESPD teams are working closely together to ensure a common understanding and the completeness of both models. Some questions have arisen concerning the concept  TemplateEvidence. 
+
+The OUC are asked whether anyone implements TemplateEvidence in the ESPDRequest and if so what for, as it has no attributes. Italy has previously confirmed that they do not use the TemplateEvidence.. 
+
+The element TemplateEvidence is related to a Requirement. 
+
+The attendees will investigate with their implementation colleagues if and how this element is used. The Publications Office on its side will open a GitHub issue to allow users to provide their answers.  
+
+* In the Response there are two classes used to provide evidences:  Evidence and EvidenceSupplied: Evidence: which is the super class of TemplateEvidence. This class is linked to the root element of the response and also to the class DocumentReference allowing by that to attach a document.
+
+* Evidence Supplied: has one attribute identifier, which is used to identify the Evidence provided separately, or it could be a URL. It can then be used in combination with the Evidence element so as to be able to attach an evidence file. 
+
+The question raised during the meeting is whether any user is implementing this and what for? 
+
+
+== ESPD-EDM & ePO: Yearly Turnover 
+  
+In the process of defining the eProcurement Ontology Model for the phase eAcces some questions have raised. The Yearly turnover description is Minimum requiremen and the cardinality is 1..n 
+The use cases need to be clarified: 
+
+. How are the multiple minimum requirements to be implemented?
+. Would it be logical that the requirements would be associated to given years? 
+. Is it implicit that the first minimum requirement is year 1 and the second year two and so forth?
+
+For that purpose the GitHb https://github.com/OP-TED/ESPD-EDM/issues/402[#402] has been opened to allow users to provide answers. More details are provided on the ePO Working Group Meeting https://docs.ted.europa.eu/epo-wgm/notes/2023-09-26-wgm.html[minutes]. 
+
+This ticket is related to https://github.com/OP-TED/ESPD-EDM/issues/44[#44]. 
+
+
+== Annual Seminar 2023 proposals  
+
+The draft agenda for the ESPD Annual Seminar that will take place on 30 November 2023 is proposed. The attendees are welcome to indicate any other item that they would like to see during the event. 
+
+. Introduction
+. Q4 2022 / ESPD-EDM V3.1.0 
+. Q2 2023 / ESPD-EDM v3.2.0 
+. Q3 2023 / ESPD-EDM V3.3.0 (OP&interproc) 
+. 2024 / ESPD-EDM V4.0.0 - (OP&Italy) 
+. 2023 / ECertis Evolution & NEXT STEPS 
+. 2023 / eProcurement Ontology Evolution 
+
+Point 4 might be a live presentation done by the Interproc consortium, who is now implementing version 3 of the ESPD model. 
+
+This draft agenda is subject to be modified before mid-November. The TED Events colleagues will send the final agenda and the invitations to register for the Annual Seminar. 
+
+
+== Next meetings
+
+* Next OUC meetings: 
+
+** December - no meeting 
+** 25 January 2024, 10:00 - 11:30 
+
+* Annual Seminal 2023: 
+
+** 30 November 2023, 9:30 - 12:30
+
+
+== Any other business
+
+ 
+
+
