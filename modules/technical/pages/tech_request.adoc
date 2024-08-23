@@ -24,9 +24,9 @@ _Figure 11: QualificationApplicationRequest-2.3 main elements._
 
 == ESPD Request cardinalities
 
-The UBL-2.3 Schema is quite flexible as, except for in a few cases, practically all the elements are optional.
+The UBL-2.3 Schema is quite flexible as, except for in a few cases, all the elements are optional.
 
-The ESPD-EDM model, however, adds a few more restrictions regarding the cardinalities of some elements. These can be seen in the diagram below, which presents the ESPD-EDM structure for the ESPD Request with its own cardinality restrictions.
+The ESPD-EDM model, however, adds a few more restrictions regarding the cardinalities of some elements. These can be seen in the diagram below, which presents the ESPD-EDM structure for the ESPD Request with its cardinality restrictions.
 
 image:Qualification_ApplicationRequest_UML_diagram.jpg[QualificationApplicationRequest', UML diagram,width=394,height=430]
 
@@ -35,8 +35,8 @@ _Figure 12. ESPD-EDM 'QualificationApplicationRequest', UML diagram_
 Comparing both figures, it can be observed that:
 
 [arabic]
-. The cardinalities of the root common basic components, such as cbc:ID, cbc:UUID, are different in the ESPD than in UBL-2.3;
-. Similarly, the cardinalities of aggregate components like cac:ContractingParty and cac:TenderingCriterion are different than the UBL-2.3 ones.
+. The cardinalities of the root common basic components, such as cbc:ID, cbc:UUID, differ in the ESPD from in UBL-2.3;
+. Similarly, the cardinalities of aggregate components like cac:ContractingParty and cac:TenderingCriterion also differ in the ESPD from in UBL-2.3.
 
 The cardinality constraints added by the ESPD are not defined in the XSD Schema. To control these constraints, the ESPD-EDM uses link:https://schematron.com/[ISO Schematron] assertions. The ESPD-EDM distribution package provides Schematron schemata and CVA files for the validation of the XML instances (folder link:{url-tree}/validation[_/validation_]).
 
@@ -54,7 +54,7 @@ From this point in the document, the tables defining classes and its properties 
 
 Information requirement:
 
-Beware that *all theses documents share the same business rule identifiers* (e.g. tbrxx-yyy for Business Requirement Identifiers in ESPDInt, and BR-Type-Id#n for the Test Cases technical rules).
+Note that *all theses documents share the same business rule identifiers* (e.g. tbrxx-yyy for Business Requirement Identifiers in ESPDInt, and BR-Type-Id#n for the Test Cases technical rules).
 ====
 
 The mapping between the business requirements, the logic layer of the ESPD-EDM, and the UBL-2.3 physical layer:
@@ -110,7 +110,7 @@ Additional comments: copies of an ESPD document should be identified with same U
 |*cbc:UUID* |Identifier |1 |A universally unique identifier that can be used to reference this ESPD document instance. a|
 *Information Requirement*: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1.0-tbr070-002[_tbr070-002_].
 
-*Rule*: This UUID will be used to link the ESPD Response to its corresponding ESPD Request (thus its compulsoriness). Copies of a document must be identified with a different UUID. Compulsory use of schemeAgencyID attribute.
+*Rule*: This UUID will be used to link the ESPD Response to its corresponding ESPD Request (thus it being compulsory). Copies of a document must be identified with a different UUID. Compulsory use of schemeAgencyID attribute.
 
 *Rule scope*: BR-OTH-02
 
@@ -261,11 +261,11 @@ The following XML example shows how it is done:
 <!--- Rest of the elements of the criterion have been eliminated for the sake of brevity -->
 ----
 
-On Economic Operator's side it is different. As in the image above there will be as many ESPD Responses as Lots, or Group of Lots, the EO wishes to tender for. If the EO wishes to participate in three Lots, the EO will need to fill in 3 ESPD Responses. For more details on this, please see the section on the ESPD Response.
+From the Economic Operator's side it is different. As in the image above there will be as many ESPD Responses as Lots, or Group of Lots, the EO wishes to tender for. If the EO wishes to participate in three Lots, they will need to fill in 3 ESPD Responses. For more details on this, please see the section on the ESPD Response.
 
 === Lot identifiers
 
-This version of the ESPD changes the form to identify the Lots and Group of Lots, taking the eForms format. This changes is done with the aim of improving the interoperability of both models.
+This version of the ESPD changes the form to identify Lots and Groups of Lots, taking the eForms format. This changes is done with the aim of improving the interoperability of both models.
 
 Up to version 2.1.1, the lots were identified with the following structure, "Lot1, Lot2, Lot3". With the new approach (eForms), the Lots identifiers will be as follows: 
 
@@ -280,11 +280,11 @@ _Figure 14: Lot Identifiers according to eForms schema_
 |*REQUIREMENT* link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1.0-tbr070-007[_tbr070-007_] |*The Buyer must be able to provide information about official journals or gazettes where the procurement procedure is announced. For procurement projects above the threshold it is compulsory to refer to the Contract Notice published in link:https://ted.europa.eu/TED/[TED].*
 |===
 
-sSftware applications that conform to the ESPD will have to provide the means for the user to supply references to EU and notice publications about the procurement procedure, especially about Notices to which the ESPD is related.
+Software applications that conform to the ESPD will have to provide the means for the user to supply references to EU and notice publications about the procurement procedure, especially about Notices to which the ESPD is related.
 
 === Mock-up
 
-The Figure below is a mock-up of how to collect the data expected to reference publications on official gazettes or journals. This mechanism can of course also be used for contracts below the threshold.
+The Figure below is a mock-up of how to collect the data expected to reference publications on official gazettes or journals. This mechanism can, of course, also be used for contracts below the threshold.
 
 image:Publications_mock-up.jpg[Publications mock-up,width=500,height=459]
 
