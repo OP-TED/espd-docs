@@ -1,0 +1,126 @@
+:hardbreaks-option:
+
+= Open User Community Meeting Report
+
+== Publications Office - ESPD EDM
+
+
+[cols=","]
+|===
+|Meeting Date/Time: |2024-06-27, 14.00 - 15.30 
+|===
+
+[cols=",",options="header"]
+|===
+|*Attendee Name* |*Organisation / Country*
+|Andreea ANGHEL	|ANAP - Romania
+|Paloma ARILLO	|OP
+|Ajda KONSTANJSEK	|Slovenia
+|Jil MOSAR	|Luxembourg
+|Pietro PALERMO	|Italy
+|Nicole PATERSON-JONES	|OP
+|Cristea MARILENA |ANAP - Romania 
+|Francesco SCATERETTICO	|Italy
+|Joao SANTOS |Portugal
+|Marc Christopher SCHMIDT	|DG GROW
+|Laurent SCHONJAANS	|DG GROW
+|Giampaolo SELLITO 	|ANAC - Italy 
+|Dragoș STOICA	|OP
+|Pascaline Laure TCHIENEHOM	|NTT Data – France 
+|George VERNARDOS 	|OP
+|===
+
+:sectnums:
+:sectnumlevels: 4
+
+
+== Meeting Agenda
+
+. Summary OUC on 24 April 2024 
+. Visualisation of criteria – interactive tool 
+. Interactive creation of examples 
+. Documentation – towards a new UX 
+. eCertis planning 
+. Next meetings 
+
+
+
+== Summary OUC on 24 April 2024 
+
+* A link to the https://docs.ted.europa.eu/espd-ouc/index.html[main documents] relating to the Open User Community (OUC) meeting of the 24 April 2024 is provided in the navigation on the left.  Under the meeting link, the user can access both the meeting Presentation and the Report. 
+
+The main topics discussed in April are summarised as follows: 
+
+* GitHub issues: 
+
+** Unlabelled issues: need immediate discussion. Treated in the short term and presented to the users during the OUC meetings. 
+
+** Labelled issues: not immediate or blocking. Need a deeper analysis and discussion with the users. They are dealt with as and when and might be reassigned to another team ( eForms, eCertis, …)  
+
+* Version https://github.com/OP-TED/ESPD-EDM/tree/v4.0.0-rc[4.0.0-release candidate] is announced. The main changes presented are: 
+
+** UUIDs replaced with XML-path-like identifiers, 
+
+** New distribution of folders and their content. 
+
+* New features are presented: 
+
+** https://docs.ted.europa.eu/espd-demo/[UUID migration tool]: helps migration and upgrade from previous ESPD-EDM versions. Identifies UUIDs used in eCertis for a given criterion. 
+
+** http://link%20to%20the%20tool[GitHub template]: new templates to open issues. 
+
+* Future roadmap and next steps. 
+
+== Visualisation of criteria – interactive tool
+
+A new tool, https://docs.ted.europa.eu/espd-demo/[Model viewer], is presented. It is an interactive form that allows the user to visualise each Exclusion Ground and Selection Criterion in those ESPD versions, for which the Model has been released but for which there is not yet a service implementation. That means the tool is available starting with v3.3.0.  
+
+It explained as a reference, testing and feedback tool. 
+
+A live demo is carried out during the presentation. The tool is still under development: for v 3.3.0 is still being finetuned before the Team starts with the viewer for v4.0.0-rc. The attendees’ feedback is very positive during the meeting.  
+
+== Interactive creation of examples 
+
+A new tool, https://docs.ted.europa.eu/espd-demo/[ESPD examples generator], is presented. The tool allows the interactive creation of the ESPD Documents, Request and Response,  in different use cases. The user can create his specific XML examples, which gives him a broader view not restricted to the examples provided together with the ESPD Model. The tool is explained as playground before adoption and implementation of a new ESPD EDM version. 
+
+A live demo is carried out during the presentation. Considered as a reference for testing and feedback, the attendees’ feedback is very positive during the meeting. 
+
+== Documentation – towards a new UX 
+
+A new proposal for the ESPD-EDM documentation structure is presented. The link to the https://docs.ted.europa.eu/ESPD-EDM/latest/index.html[current documentation] is again provided and during a live demo the attendees are reminded how it can be used now a days.  The new structure is proposed. It is clarified that the documentation structure is under the process of being aligned to the documentation of other procurement projects, which are under the umbrella of the Standardisation Section of the Tenders Electronic Daily Unit. 
+
+The new user experience provides a more intuitive way of navigating through the documentation. A live demo is carried out and the attendees feedback is very positive during the meeting. 
+
+The attendees are invited to send their comments using the new https://github.com/OP-TED/espd-docs/issues/new/choose[GitHub Templates for documentation feedback]. 
+
+The three templates provided are for submitting different comments about the documentation.
+
+After clicking on "New issue":
+
+* *Report an error* - here you can report any error from a simple spelling mistake to when you think that something in the content might be incorrect.
+* *Send a general comment* - here you can mention something that you really do or do not like regarding the documentation so we know what to provide more of or less of.
+* *Suggest an Improvement* - here you can ask for a more detailed or better or different explanation of something in the documentation.
+
+== eCertis planning 
+
+* The colleagues from DG GROW present the eCertis release planning for the current year 2024:  
+
+** The release done in March 2020, 2024.01, explains the use of UUIDs and improves the search bar. Data can be marked as inactive using the new filter.  
+
+** The release 2024.02 was planned for Q2 or beginning of Q3 2024. However, this plan has to be changed and the new schedule will be provided. This release foresees to provide generic evidence linking the evidence to a specific scenario. The release includes the creation of  ‘subcriteria’ for purely national exclusion grounds. Concerning the user the release provides the use of hash-value for user personal data and the possibility to assign a ‘super-admin’ for each Member State. 
+
+** Release 2024.03 covers corrective manteinance after previous releases. Planned for Q4 2024 this release has to be reschedule. 
+
+* The current situation of the three services eCertis, ESPD and eForms is presented: they have a life on their own.  While eCertis and eForms are based in all Directives (23, 24, 25 and 81) the ESPD uses only Directive 24. 
+
+The desired future situation is also explained. The next steps are focused in define how the three services could work together is explained. Ideally ESPD should follow eCertis and all three services should use the same code lists. The main goal is that the buyer would only need to provide the information in the ESPD, and it could be taken over for eForms.  
+
+* The current status of eForms and eCertis is explained: eForms SDK 1.12 is released covering the update of exclusion grounds and selection criteria (https://code.europa.eu/eproc/eforms/docs/-/blob/main/codelists/cdl_003_exg.md, https://code.europa.eu/eproc/eforms/docs/-/blob/main/codelists/cdl_004_slc.md) and eCertis will be updated to reflect those changes which means eForms and eCertis are aligned. 
+
+== Next meetings 
+
+* The next OUC meeting is planned for the 19 September 2024, 10:00 – 11:30. This is one week before than usual (last Thursday of the month) due to the eSenders Seminar, which takes place on 26 September. The OUC meeting could be postponed until v4 is released. 
+
+* Annual Seminar – this year the Tenders Electronic Daily Unit is planning to organise one single event for the different projects dealt with in the Unit: eForms, eSenders, eProcurement Ontology, ESPD, other. The proposed date is from 3 to 4 December. It is foreseen to be a hybrid meeting. Attendees are asked to express their interest o attending in person in Luxembourg: while a few express their interest some other give information when the date is decided. Attendees are also requested to send to OPESPD@publications.europa.eu the topics they would like to be presented in the Annual Seminar and to express their interest to participate as speakers during the event. 
+
+* It is announced that bilateral meeting started in May and are ongoing with different users. The topics of interest for the user community will be presented during future meetings. 
