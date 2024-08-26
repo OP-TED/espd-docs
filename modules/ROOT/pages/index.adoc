@@ -21,7 +21,7 @@ xref:release_notes.adoc[Click here to read the version 4.4.0 details]
 ****
 Information on past releases and planned future releases can be found via the link below. The information includes a brief description of each release and links to the full release documentation.
 
-xref:espd-home:history.adoc[Information on releases can be found here.]
+xref:espd-home::history.adoc[Information on releases can be found here.]
 
 ****
 
@@ -30,7 +30,7 @@ xref:espd-home:history.adoc[Information on releases can be found here.]
 ****
 This section contains minutes and reports of the annual and monthly Open User Community activities and meetings.
 
-xref:espd-wgm:index.adoc[Click here to read the OUC reports]
+xref:espd-wgm::index.adoc[Click here to read the OUC reports]
 
 ****
 --
