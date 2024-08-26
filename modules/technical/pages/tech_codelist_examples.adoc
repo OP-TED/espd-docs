@@ -106,7 +106,7 @@ This case of use has to be interpreted by the software application that displays
 [[country-xml-example,country xml Example]]
 == country
 
-The following xml code is an example of use of code list xref:tech_codelist.adoc.adoc#country-table[country] in a _cac:ContractingParty_ element of ESPDRequest.
+The following xml code is an example of use of code list xref:tech_codelist.adoc#country-table[country] in a _cac:ContractingParty_ element of ESPDRequest.
 
 
 [source,xml,linenums]

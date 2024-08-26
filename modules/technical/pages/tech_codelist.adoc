@@ -565,6 +565,7 @@ The data type expected for this code is URL following the *ESCO* taxonomy identi
 !*LocationUri* !http://publications.europa.eu/resource/distribution/occupation/20221214-0/xml/gc/Occupation.gc
 !*AgencyLongName* !Directorate-General for Employment, Social Affairs and Inclusion
 !*AgencyIdentifier* !EMPL
+!===
 
 |===
 
