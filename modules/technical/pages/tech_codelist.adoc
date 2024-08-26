@@ -356,7 +356,7 @@ An example of how to use this code list can be found in xref:tech_codelist_examp
 
 [[currency-table,currency]]
 == currency
-An example of how to use this code list can be found in xref:xref:tech_codelist_examples.adoc#currency-xml-example[currency xml Example].
+An example of how to use this code list can be found in xref:tech_codelist_examples.adoc#currency-xml-example[currency xml Example].
 
 [cols="1,2a"]
 |===
@@ -383,7 +383,7 @@ An example of how to use this code list can be found in xref:xref:tech_codelist_
 
 [[docrefcontent-type-table,docrefcontent-type]]
 == docrefcontent-type 
-An example of how to use this code list can be found in xref:xref:tech_codelist_examples.adoc#docrefcontent-type-xml-example[docrefcontent-type xml Example].
+An example of how to use this code list can be found in xref:tech_codelist_examples.adoc#docrefcontent-type-xml-example[docrefcontent-type xml Example].
 
 [cols="1,2a"]
 |===
@@ -550,9 +550,10 @@ An example of how to use this code list can be found in xref:tech_codelist_examp
 |*Code list type* |Procurement specific
 |*Maintainer* |ESPD Team
 |*Description* |Contains codes for professional enrolment areas in which the Economic Operator must be registered in.
-This code list is maintained by the ESPD Team but content is collected from the <<esco>> (from now on *ESCO*) classification. This code list remains as technical but in the future it could be published in EU Vocabularies or provided directly from *ESCO*.
+This code list is maintained by the ESPD Team but content is collected from the https://esco.ec.europa.eu/en/classification[esco classification] (from now on *ESCO*). This code list remains as technical but in the future it could be published in EU Vocabularies or provided directly from *ESCO*.
 The data type expected for this code is URL following the *ESCO* taxonomy identification that uses a URI as the key value.
 |*Metadata* |
+
 [cols=","]
 !===
 !*ShortName* !Occupation

@@ -14,7 +14,7 @@ Technical resources and tools are freely available for its use and repurpose by 
 
 The adoption of the new UBL version (UBL 2.3) is related to the alignment between ESPD and eForms, which will ensure and improve the interoperability between models.
 
-= UBL-2.3 Documents and libraries
+== UBL-2.3 Documents and libraries
 
 UBL-2.3 defines thousands of different information components and dozens of documents. This guide describes and illustrates only those elements from UBL-2.3 that are actually used by the eESPD. Thus the ESPD-EDM reuses only a small set of those components and only 2 documents: *QualificationApplicationRequest* (for the ESPD Request) and *QualificationApplicationResponse* (for the ESPD Response).
 
@@ -28,7 +28,7 @@ The usual prefix used to identify Common Aggregate Components is cac:. The prefi
 
 All the materials developed by UBL-2.3 Technical Committee can be accessed here: link:https://github.com/oasis-tcs/ubl-2.3-artefacts[here].
 
-= UBL-2.3 and TOOP Requirements
+== UBL-2.3 and TOOP Requirements
 
 During the development of ESPD-EDM some requirements arose from TOOP related to the Evidence class. The aforementioned requirements that can be found in the following GitHub link:https://github.com/ESPD/ESPD-EDM/issues/277[issue], are fully mappable to the UBL 2.3 Schema.
 

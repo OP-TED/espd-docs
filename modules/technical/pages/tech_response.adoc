@@ -156,7 +156,7 @@ GroupName* |Text |0..1 |The name of the group that presents a tender to which th
 
 *Rule*: For the ESPD, this information will be linked to eForms. And ESPD should include the same procedure code as the one stated in eForms notices.
 
-|*cac:ContractingParty* |Associated class |1 |The buyer or contracting entity who is buying supplies, services or public works using a tendering procedure as described in the applicable directive (Directives 2014/24/EU, 2014/25/EU). See section xref:2.7_Contracting_Body.adoc[Contracting Body] for more specification details. a|
+|*cac:ContractingParty* |Associated class |1 |The buyer or contracting entity who is buying supplies, services or public works using a tendering procedure as described in the applicable directive (Directives 2014/24/EU, 2014/25/EU). See section xref:tech_request.adoc[Contracting Body] for more specification details. a|
 *Information Requirement*: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1-tbr92-020[_tbr92-011_].
 
 *Rule*: UBL-2.3 defines multiple cardinality ContractingParties presumably to allow *joint procurements*. However the ESPD only expects data about one buyer. The decision was made that in case of joint procurement the data collected in the ESPD would be about *the leader* of the joint procurement procedure.

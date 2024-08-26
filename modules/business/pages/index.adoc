@@ -33,6 +33,7 @@ xref:business:espd_form.adoc[Click here to view the ESPD online form]
 ****
 
 ////
+
 [.tile]
 .Using the ESPD Service
 ****
@@ -56,7 +57,7 @@ A business overview for upgrading your ESPD Service version
 
 xref:overview_upgrades.adoc[Click here for upgrading your ESPD version]
 ****
---
+
 ////
 
 include::partial$feedback.adoc[]
