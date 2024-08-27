@@ -938,4 +938,137 @@ image:Short_Tag_Name_and_Numbering_for_Criterion_C32_SC_spec-year-to.jpg[Short T
 
 _Figure 50. Short Tag Name and Numbering for Criterion C32 SC spec-year-to_
 
+== XML Path Like ID  
+
+
+Starting with version 4.0.0 of the ESPD, a new identifier format will be used to replace the UUID in the 
+Request or Response data structure for the descriptive elements, *criterion*, *group*, *subgroup*, *requirement*, *question*, and *caption*. The new identifier is based on the document structure and is called the *"XML Path Like ID". 
+
+
+=== UUID in the ESPD 
+
+The ESPD uses the UUID v4 standard to generate new entries. 
+
+ESPD main blocks have had UUIDs allocated to them since version 1.x.x. Of these, `CRITERION` blocks use unique fixed UUIDs for *eCertis* integration and specific national regulations are attached to the each *Selection Criteria* and *Exclusion Ground* via a unique UUID. This is used in all ESPD Service implementations to retrieve specific information from *eCertis*. So while main blocks can adopt XML Path Like IDs at any level without issue, the highest level UUIDs of the `CRITERION` element for *Selection Criteria* and *Exclusion Ground* must be retained for eCertis integration.
+
+
+=== Problem statement 
+
+The trigger for the evolution of UUIDs to XML Path Like IDs was the need to keep the link between the request and its responses consistent. It was also to provide a level of re-usability of responses that have the same content, particularly for the input elements that store the required information: `QUESTION`, and `REQUIREMENT`. For each ESPD Request and Response, those blocks were allocated new UUIDs in the past meaning that it was then not possible to identify identical blocks, nor to reuse answers having the same content from one ESPD Response to another. 
+
+This is because neither the responses, nor the number of responses in e.g., a 0..n or 1..n cardinality, can be predicted. Up to v3.3.0, any time a request is re-generated, new dynamic UUIDs are generated and hence updates also have to be made in the responses. The dynamic UUIDs of the former request have to be updated with the dynamic UUIDs of the new request for the various responses. 
+
+This dilemma prompted the evolution in the ESPD EDM, and XML Path like IDs were the chosen solution. This solution is able to identify a unique field that requires user input and its associated responses, regardless of cardinality, and maintains the element links between the Request and the Response. +
+ 
+The solution therefore satisfies the issue with an inconsistent link between the same element in the Request and Response, improves reusability, and preserves integration with eCertis.
+
+==== Specifications  
+
+The following cases for single element or group of elements that require a response may occur:
+
+* optional single occurrence, cardinality 0..1
+* mandatory single occurrence, cardinality 1
+* optional multiple occurrence, cardinality 0..n
+* mandatory multiple occurrence, cardinality 1..n  
+
+Variable cardinality (0..n) should be handled without breaking the link between the request (question/requirement) and its responses (answers, evidence/information, text/link/documents). 
+Reusability has to be ensured: within a response, within a given procedure (between a request and its responses, across lots), and across different procurement procedures (various requests and responses).  
+
+==== Requirements for solutions  
+
+When using (dynamic) UUIDs, the link should not be lost where there are several occurrences/responses for a single question or for a given subgroup of questions (same structure).  
+
+The request (dynamic) UUIDs should be re-used in the related responses.   
+
+NOTE: Identical group or subgroup structures have the same (fixed) UUID. For instance, the structure for providing pieces of evidence or EO entity information –name and ID of the entity-. In this case, the UUID is not enough to uniquely identify a given element since it can be duplicated (with the same ID) inside the criterion file. Here, the UUID has to be complemented with some additional context information like the parent node identifier, for instance.
+
+Hence, the problem statements are related to the structure and the contents as well:
+
+.Structure (UUID to describe a structure) 
+* Need to keep consistently the link (direct) between a request and its various responses  
+* Need to ensure that when structures are the same, they have the same UUID.  
+* Need to ensure no ambiguity when addressing structures represented by the same UUID.  
+
+.Contents re-usability (UUID to describe contents) 
+* Need to re-use occurrences (value provided by EO for a given element) that are created in a given Response   
+* Need to allow re-usability of occurrences across a given procedure (between a request and its various responses, across lots),  
+* Need to allow re-usability of occurrences across different procurement procedures (various requests and responses). 
+ 
+== XML Path Like ID general structure 
+
+The ESPD specific data structure allows the building of an XML path like ID that concatenates the labels of the elements on each path and the number of occurrences for each element that has multiple cardinality (0..n, 1..n). The XML Path ID construction will capture the general value type of the data that is provided in the ESPD Response.
+
+*Request* 
+
+The XML Path like ID of a Question in the ESPD Request is composed of three parts:  
+----
+{PREFIX + CRITERION_ELEMENT_CODE}/{INNER_PATH}/{TARGET_ELEMENT}
+----
+
+*Response* 
+
+For the ESPD Response, the XML PAth like ID has the same pattern for the Question and the answers, containing the occurrence number for multiple answers and the value type of the data. The general Pattern looks like:  
+
+----
+{PREFIX + CRITERION_ELEMENT_CODE}/{INNER_PATH}/{TARGET_ELEMENT}/{OCCURRENCE}
+----
+ 
+The target element can be either a question or a requirement most of the time, or any other descriptive element of the criterion (caption, legislation, etc.). +
+The last part _occurrence_ is optional if there is content or not in the target element that should, in this case, be a terminal node. This part _occurrence_ is described with the pattern *R#* that can be repeated several times according to the cardinalities of elements in the path. 
+
+=== XML Path Like ID Algorithm
+
+*Building a XML Path like ID for the ESPD Request*
+
+. Label each Criteria element using the latest version of the Criteria list (some criteria were deprecated and their number was not reused, mind the gap)
+. Label each other element inside a Criterion starting from 1 and increment by 1 for each new block
+. For each element build the XML Path like ID by concatenating all the labels of previous elements in the hierarchy
+. The ID will be used in `cac:TenderingCriterion/cbc:ID`
+[source, xml]
+----
+<cac:TenderingCriterionProperty>
+    <cbc:ID schemeID="criterion" schemeAgencyID="XXESPD-SERVICEXXX" schemeversionID="4.0.0">C1_EG_crime-org/QG1/QSG1/Q1</cbc:ID>
+    ...
+</cac:TenderingCriterionProperty>
+----
+
+*Building the XML Path like ID for ESPD Response*
+
+. All XML Path like IDs from ESPD Request are entirely reused
+. For each element that has multiple occurrences, concatenate *R#* to the end of the path
+. Add the type of the value for response: `RV`, `RES`, and `RAP`
++
+[%header,format=csv]
+|===
+Criterion Element, UBL Element, Short Tag Name
+RESPONSE VALUE, cac:ResponseValue, RV 
+(RESPONSE) EVIDENCE SUPPLIED, cac:EvidenceSupplied, RES 
+(RESPONSE) APPLICABLE PERIOD, cac:ApplicablePeriod, RAP
+|=== 
+
+ESPD Response fragment, example of `RV` data type:
+[source, xml]
+----
+<cac:TenderingCriterionResponse> 
+    <cbc:ID schemeID = "criterion" schemeAgencyID = "XXESPD-SERVICEXXX" schemeVersionID = "4.0.0">C1_EG_crime-org/QG1/QSG1/Q1/R2</cbc:ID> 
+    <cbc:ValidatedCriterionPropertyID schemeID = "criterion" schemeAgencyID = "XXESPD-SERVICEXXX" schemeVersionID = "4.0.0">C1_EG_crime-org/QG1/QSG1/Q1</cbc:ValidatedCriterionPropertyID> 
+    <cac:ResponseValue> 
+            <cbc:ID schemeID = "criterion" schemeAgencyID = "XXESPD-SERVICEXXX" schemeVersionID = "4.0.0">C1_EG_crime-org/QG1/QSG1/Q1/R2/RV</cbc:ID> 
+            <cbc:ResponseDate>2017-01-01</cbc:ResponseDate> 
+    </cac:ResponseValue> 
+</cac:TenderingCriterionResponse>  
+----
+
+ESPD Response fragment, example of `RES` data type:
+[source, xml]
+----
+<cac:TenderingCriterionResponse> 
+    <cbc:ID schemeID = "criterion" schemeAgencyID = "XXESPD-SERVICEXXX" schemeVersionID = "4.0.0">C1_EG_crime-org/QG2/QSG1/Q1/R1</cbc:ID>  
+    <cbc:ValidatedCriterionPropertyID schemeID = "criterion" schemeAgencyID = "XXESPD-SERVICEXXX" schemeVersionID = "4.0.0">C1_EG_crime-org/QG2/QSG1/Q1</cbc:ValidatedCriterionPropertyID>  
+    <cac:EvidenceSupplied> 
+        <cbc:ID schemeAgencyID = "XXESPD-SERVICEXXX">EVIDENCE-00001/C1_EG_crime-org/QG2/QSG1/Q1/R1/RES</cbc:ID> 
+    </cac:EvidenceSupplied>  
+</cac:TenderingCriterionResponse> 
+----
+
 
