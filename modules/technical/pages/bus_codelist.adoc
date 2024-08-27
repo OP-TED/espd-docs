@@ -18,7 +18,7 @@ In ESPD documents, codes can be used in different contexts e.g.,:
 Additional information about the code lists can be found in:
 
 
-* The <<code-list-catalogue>> in this documentation;
+* The xref:tech_codelist.adoc[code list catalogue] in this documentation;
 
 
 * The multilingual link:{url-tree}/codelists/gc/[Genericode] *.gc files automatically produced based on these spread-sheets; #and#?
