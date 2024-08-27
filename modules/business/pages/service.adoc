@@ -12,11 +12,11 @@ An ESPD service is an online portal that public buyers in the EU use, to publish
 
 === Examples of current ESPDs:
 
-There are https://forum-vergabe.de/wp-content/uploads/Downloads/espd_service_provider_list_v21.pdf[a number of ESPD Services available], provided by EU member states or commercial ESPD service providers. The list can be accessed https://forum-vergabe.de/wp-content/uploads/Downloads/espd_service_provider_list_v21.pdf[here].
+There are a number of ESPD Services available] provided by EU member states or commercial ESPD service providers. A link to the updated list of ESPD Service providers can be found https://single-market-economy.ec.europa.eu/single-market/public-procurement/digital-procurement/european-single-procurement-document-and-ecertis_en[here].
 
 === What needs to be filled in on the ESPD Service page(s)?
 
-Firstly, what is filled in depends on whether you are a buyer or a supplier. In both cases, you have the option of filling in everything from scratch, or uploading a mostly filled in XML document in which you only need to add or change the details of anything different to the previously saved document you are uploading. The first time you interact with an ESPD service, you can save the document locally and use it in subsequent procedures. This applies to both buyers and suppliers.
+Firstly, what is filled in depends on whether you are a buyer or a supplier. In both cases, you have the option of filling in everything from scratch, or uploading a mostly filled in XML document in which you only need to add or change the details of anything different to the previously saved document you created. The first time you interact with an ESPD service, you can save the document locally and use it in subsequent procedures. This applies to both buyers and suppliers.
 
 Buyers will fill in their requirements according to their needs and EU (and national) laws and directives; prospective suppliers will respond stating that they are able to supply, providing evidence.
 

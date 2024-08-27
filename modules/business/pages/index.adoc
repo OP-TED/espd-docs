@@ -19,7 +19,7 @@ xref:business:business_info.adoc[Information for Business Users]
 ****
 This section explains the ESPD Service
 
-xref:business::service.adoc[Click here to read about the ESPD service]
+xref:business:service.adoc[Click here to read about the ESPD service]
 
 ****
 
@@ -29,10 +29,11 @@ xref:business::service.adoc[Click here to read about the ESPD service]
 ****
 This section runs through the ESPD online form from both the buyer and the supplier perspectives
 
-xref:business::espd_form.adoc[Click here to view the ESPD online form]
+xref:business:espd_form.adoc[Click here to view the ESPD online form]
 ****
-
+--
 ////
+
 [.tile]
 .Using the ESPD Service
 ****
@@ -56,7 +57,7 @@ A business overview for upgrading your ESPD Service version
 
 xref:overview_upgrades.adoc[Click here for upgrading your ESPD version]
 ****
---
+
 ////
 
 include::partial$feedback.adoc[]

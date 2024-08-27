@@ -356,7 +356,7 @@ An example of how to use this code list can be found in xref:tech_codelist_examp
 
 [[currency-table,currency]]
 == currency
-An example of how to use this code list can be found in xref:xref:tech_codelist_examples.adoc#currency-xml-example[currency xml Example].
+An example of how to use this code list can be found in xref:tech_codelist_examples.adoc#currency-xml-example[currency xml Example].
 
 [cols="1,2a"]
 |===
@@ -383,7 +383,7 @@ An example of how to use this code list can be found in xref:xref:tech_codelist_
 
 [[docrefcontent-type-table,docrefcontent-type]]
 == docrefcontent-type 
-An example of how to use this code list can be found in xref:xref:tech_codelist_examples.adoc#docrefcontent-type-xml-example[docrefcontent-type xml Example].
+An example of how to use this code list can be found in xref:tech_codelist_examples.adoc#docrefcontent-type-xml-example[docrefcontent-type xml Example].
 
 [cols="1,2a"]
 |===
@@ -564,6 +564,8 @@ The data type expected for this code is URL following the *ESCO* taxonomy identi
 !*LocationUri* !http://publications.europa.eu/resource/distribution/occupation/20221214-0/xml/gc/Occupation.gc
 !*AgencyLongName* !Directorate-General for Employment, Social Affairs and Inclusion
 !*AgencyIdentifier* !EMPL
+
+!===
 
 |===
 
