@@ -2953,7 +2953,7 @@ _Figure 172.  Special requirements check buyer REQUIREMENT edition mock-up_
 
 The EO should see as many boxes (groups) of REQUIREMENT + QUESTION as REQUIREMENT(s) specified by the CA. In this case the economic operator (EO) sees one REQUIREMENT associated to one QUESTION. The expected answer is *Yes* or *No*.
 
-image:Special_requirements_check' EO_mock-up.jpg[Special requirements check' EO mock-up,width=636,height=122]
+image:Special_requirements_check_EO_mock-up.jpg[Special requirements check' EO mock-up,width=636,height=122]
 
 _Figure 173. 'Special requirements check' EO mock-up_
 
