@@ -29,7 +29,7 @@ this is the description of the contents, and a brief overview of what can be fou
 
 
 ===== The codelists folder
-The *codelists folder* contains the ESPD-criterion.xlsx file, the “Criterion Exel File”, an internal template that is used to define the ESPD Request structure and from which “test” ESPD-Request and ESPD-Response xml files can be generated internally. These xml output files are made available to the OUC in the xml-examples folder.
+The *codelists folder* contains the ESPD-criterion.xlsx file, the “Criterion Excel File”, an internal template that is used to define the ESPD Request structure and from which “test” ESPD-Request and ESPD-Response xml files can be generated internally. These xml output files are made available to the OUC in the xml-examples folder.
 
 The *gc sub-folder* contains all the generic codes that the ESPD uses. General codelists are downloaded and used as is, or a subset of them is used.
 
@@ -47,9 +47,11 @@ The .eap and .xmi file include two views and diagrams of the conceptual model:
 Folder ESPD_CM_html contains the HTML version of the UML conceptual model. If you do not want to download the folder to view the model you can view it on the documentation page under ESPD-EDM CONCEPTUAL MODEL HTML.
 
 
-
+////
 ===== The Java-library folder
-The java-library folder was provided for versions up to v2.x. It has not been maintained (as of V3.0.0) as the OUC is not restricted to using java and can develop their service in the language of their choice.
+The java-library folder was provided for versions up to v2.x. It has not been maintained (as of V3.0.0) as the OUC is not restricted to using java and can develop their service in the language of their choice. 
+////
+
 
 
 
@@ -68,6 +70,7 @@ This folder contains examples of the ESPD Request and Response xml files for use
 
 (The ESPD-criterion.xml file is not used by external users, it is an xml format of the xlsx file provided in the code list folder. It is used internally in the process that produces the schematron files used by the online Testbed.)
 
+////
 * The __xslt__ folder
 is used internally by the ESPD Team to create the xml
 The /ODS Data Structures to ESPD XML folder contains the transform files to create ESPDRequest and ESPDResponse xml sample files.
@@ -76,6 +79,7 @@ The From-REQUEST-to-RESPONSE.xslt: creates the ESPD Response from the ESPD Reque
 Untagged content in the master branch is in development. To access the latest and/ or stable branch, one must go to a tagged version.
 
 Earlier versions can be accessed via their tag and could have a completely different folder structure to the one described above.
+////
 
 == The Issues Tab
 This tab contains all the questions and issues submitted to the ESPD team by the open user community.

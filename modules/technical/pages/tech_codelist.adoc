@@ -41,7 +41,7 @@ Codes are normally maintained in "code lists". The ESPD-EDM keeps and distribute
 
 The ESPD reuses code lists from EU Vocabularies. This is to facilitate alignment between the ESPD and eForms models, ensuring maximum interoperability. The excel and ods code list files themselves are not provided, their metadata and their location in EU Vocabularies is given.
 
-#Genericodes is different, in this version ESPD will provide the gc files from EU Vocabularies to ensure its use and the validation. In future versions of the ESPD, only will be provided these GC of the code list purely used and maintained by ESPD.#
+NOTE: For Genericodes it is different. In this version ESPD will provide the genericode (gc) files from EU Vocabularies to ensure its use and validation. In future versions of the ESPD, only the GC of the code lists used and maintained by ESPD will be provided.
 
 ESPD-EDM Code #list contains# the following elements:
 
@@ -57,8 +57,7 @@ image:Elements_metadata_of_ESPD_codelist.jpg[Elements and metadata of an ESPD co
 _Figure 6. Elements and metadata of an ESPD code list_
 
 
-[NOTE]
-*_Annex I_* of this document lists all the code lists used by the ESPD and in which context or element it is used.
+//*_Annex I_* of this document lists all the code lists used by the ESPD and in which context or element it is used.
 
 
 === Compulsory attributes
