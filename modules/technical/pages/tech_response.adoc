@@ -37,7 +37,6 @@ image:Qualification_Application_Response_XSD_Schema.jpg[QualificationApplication
 
 _Figure 191. QualificationApplicationResponse XSD Schema, global view_
 
-
 == ESPD Response cardinalities
 
 As you can see the UBL-2.3 Schema is quite flexible as, except for a few cases, most elements are optional.
@@ -61,12 +60,11 @@ The European Commission (EC) link:https://ec.europa.eu/isa2/awards_en[ISA2 Progr
 
 === Root elements
 
-The tables below establish a mapping between the business requirements, the logic layer of the ESPD-EDM and the UBL-2.3 physical layer. They list the elements that are expected in the ESPD Response and provide details on the cardinalities and usage of those elements.
+The table below lists the elements that are expected in the ESPD Response and provides details on the cardinalities and usage of those elements.
 
-The mapping between the business requirements, the logic layer of the ESPD-EDM and the UBL-2.3 physical layer:
+[cols=",",options="header",]
 
-_Table 26. Class QualificationApplicationResponse, components required by the ESPD-EDM_
-[cols="1,2"]
+_Table 26. Class QualificationApplicationResponse, components required by the ESPD-EDM_ 
 |===
 |*Document name:* |*QualificationApplicationResponse*
 |*Definition*: a|
@@ -78,7 +76,7 @@ Preliminary evidence certificates in the form of a self-declaration submitted by
 |*File*: |link:{url-tree}/ubl-2.3/xsdrt/maindoc/UBL-QualificationApplicationResponse-2.3.xsd[ubl-2.3/xsdrt/maindoc/UBL-QualificationApplicationResponse-2.3.xsd]
 |===
 
-[cols="1,1,1,3,3"]
+[cols=",,,,",options="header",]
 |===
 |*Components* |*Type* |*Card* |*Description* |*Requirements*
 |*cbc:UBLVersionID* |Identifier |1 |Identifies the earliest version of the UBL 2 schema for this document type that defines all of the elements that might be encountered in the current instance. a|
@@ -133,8 +131,7 @@ Additional comments: copies of an ESPD document should be identified with same U
 
 *Rule*: Format "hh:mm:ss".
 
-|*cbc:EconomicOperator
-GroupName* |Text |0..1 |The name of the group that presents a tender to which this economic operator belongs (e.g. the name of a consortium, a joint venture, etc.). a|
+|*cbc:EconomicOperatorGroupName* |Text |0..1 |The name of the group that presents a tender to which this economic operator belongs (e.g. the name of a consortium, a joint venture, etc.). a|
 *Information Requirement*: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1-tbr92-020[_tbr92-008_].
 
 *Rule*: The leader of the group must take care of ensuring that the name of the group is identical in all the ESPDs of the tender.
@@ -161,22 +158,19 @@ GroupName* |Text |0..1 |The name of the group that presents a tender to which th
 
 *Rule*: UBL-2.3 defines multiple cardinality ContractingParties presumably to allow *joint procurements*. However the ESPD only expects data about one buyer. The decision was made that in case of joint procurement the data collected in the ESPD would be about *the leader* of the joint procurement procedure.
 
-|*cac:EconomicOperator
-Party* |Associated class |1 |Any natural or legal person or public entity which offers the execution of works and/or a work, the supply of products or the provision of services on the market. Information about the party submitting the qualification. a|
+|*cac:EconomicOperatorParty* |Associated class |1 |Any natural or legal person or public entity which offers the execution of works and/or a work, the supply of products or the provision of services on the market. Information about the party submitting the qualification. a|
 *Information Requirement*: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1-tbr92-020[_tbr92-001_].
 
 *Rule*: The ESPD Response only refers to one, and only one, economic operator.
 
 *Rule scope*: Common (BR-RESP-10)
 
-|*cac:ProcurementProject/
-cbc:Description* |Text |1 |Text describing this procurement project. |This element is required in the ESPD, however it should be identical to that provided in eForms. In general the corresponding eForm should feed the corresponding ESPD with the corresponding data.
+|*cac:ProcurementProject/cbc:Description* |Text |1 |Text describing this procurement project. |This element is required in the ESPD, however it should be identical to that provided in eForms. In general the corresponding eForm should feed the corresponding ESPD with the corresponding data.
 *Information Requirement*: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1-tbr92-020[_tbr92-013_].
 
 *Rule*: Use this component to identify and describe the procurement administrative procedure.
 
-|*cac:Procurement
-ProjectLot* |Associated class |1 |The procurement project lot or group of lots this ESPD Response tenders to. a|
+|*cac:ProcurementProjectLot* |Associated class |1 |The procurement project lot or group of lots this ESPD Response tenders to. a|
 *Information Requirement*: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1-tbr92-014[_tbr92-014_].
 
 *Rule*: The economic operator has to specify the Procurement Project Lot the ESPD refers to.
@@ -188,14 +182,12 @@ ProjectLot* |Associated class |1 |The procurement project lot or group of lots t
 
 *Rule*: (see examples further below in this document)
 
-|*cac:TenderingCriterion
-Response* |Associated class |1..n |Response of the economic operator to the requirements and questions issued by the buyer in the ESPD Request. a|
+|*cac:TenderingCriterionResponse* |Associated class |1..n |Response of the economic operator to the requirements and questions issued by the buyer in the ESPD Request. a|
 *Information Requirement*: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1-tbr92-020[_br92-018, tbr92-007, tbr92-005, tbr92-006_].
 
 *Rule*: (see examples further below in this document)
 
-|*cac:AdditionalDocument
-Reference* |Associated class |0..n |A reference to an additional document associated with this document. a|
+|*cac:AdditionalDocumentReference* |Associated class |0..n |A reference to an additional document associated with this document. a|
 *Information Requirement*: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1-tbr92-020[_tbr92-013_].
 
 *Rules*: At least two instances of the AdditionalDocumentReference are expected:
@@ -213,12 +205,12 @@ In the ESPD Response it is also compulsory to make reference to the ESPD Request
 
 |===
 
-=== XML example
+== XML example
 
 The XML snippet below shows how the beginning of an ESPD Response XML instance looks like. For a complete instance of an ESPD Response XML document see the the example files in the dist/xml folder: or link:{url-tree}/xml-examples/ESPD-Response.xml[ESPD-Response.xml].
 
 [source,xml]
-----
+---- 
 <QualificationApplicationResponse
 
 xmlns="urn:oasis:names:specification:ubl:schema:xsd:QualificationApplicationResponse-2"
@@ -279,14 +271,14 @@ _<!-- ... rest of document removed for brevity -->_
 
 == Reference to publications and to the ESPD Request
 
-[cols="1,2",]
+[cols=",",]
 |===
 |*REQUIREMENT* |*The economic operator must include int its ESPD Response document the information from the ESPD Request about the official journals or gazettes where the procurement procedure is announced. For procurement projects above the threshold it is compulsory to refer to the Contract Notice published in link:https://ted.europa.eu/TED/[TED] by the buyer.*
 |===
 
 For EU and notice publications that need to be included in the ESPD Response. See the section "2.6 EU and notice publications" where this information is presented in detail and illustrated with examples.
 
-[cols="1,2",]
+[cols=",",]
 |===
 |*REQUIREMENT* |**The economic operator must include in its ESPD Response document a reference to the ESPD Request. For this, the values of the two identifiers **cbc:ID** and **cbc:UUID** of the ESPD Request must be used as the values for the **cbc:ID** and **cbc:UUID* in the ESPD Response cac:AdditionalDocumentReference (to refer to that ESDP Request).*
 |===
@@ -310,9 +302,7 @@ In the ESPD Response you may also add references to:
 * Evidences that are global for the whole Response. This is not recommended though. Evidences should be as much particular of the Criterion as possible.
 * Other documents, e.g. maps, diagrams, or descriptive documents to complement the references about works, supplies or services.
 
-=== Expected elements
-
-The mapping between the business requirements, the logic layer of the ESPD-EDM and the UBL-2.3 physical layer:
+== Expected elements
 
 [cols=",",options="header",]
 
@@ -326,7 +316,7 @@ _Table 27. Reference to the ESPD Request, expected elements_
 |*Context of Use*: |In this case this reference points at the ESPD Request XML instance that was used to produce the ESPD Response XML document.
 |===
 
-[cols="1,1,1,3,3"]
+[cols=",,,,",options="header",]
 |===
 |*Components* |*Type* |*Card* |*Description* |*Requirements*
 |*cbc:ID* |Identifier |1 |The identifier for the referenced document, generally issued by the entity responsible for the document. a|
@@ -373,11 +363,9 @@ Beware that the ESPD document does not embed the content of referenced documents
 
 In the case of the reference to the ESPD Request from the ESPD Response, the only data expected here is the URI where the ESPD Request XML instance was published:
 
-The mapping between the business requirements, the logic layer of the ESPD-EDM and the UBL-2.3 physical layer:
-
 [cols=",",options="header",]
 
-_Table 28. External Reference_
+_Table 28. External Reference_ 
 |===
 |*Component name*: |*cac:ExternalReference*
 |*Definition*: |A reference to the authentic source of content of this document.
@@ -411,12 +399,12 @@ _Table 28. External Reference_
 
 == Economic Operator
 
-=== Related information requirements
+== Related information requirements
 
 See formal requirements related to the economic operators in the e-Sens site: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1-tbr092-001[(_tbr092-001, _tbr092-008_)].
 
 [cols=",",options="header",]
-_Table 29. Information requirement about the ESPD Response and the economic operators_
+_Table 29. Information requirement about the ESPD Response and the economic operators_ 
 |===
 |*REQUIREMENT* a|
 *One ESPD Response per economic operator*. The ESPD-EDM, as all the previous versions of the ESPD, requires that every economic operator that participates in one tender provide its own ESDP Response document. This affects sole traders that rely on other entities for the execution of the contract (e.g. subcontractors) and groups of economic operators, e.g. a Joint Venture or a Consortium, and all the sub-contractors on which each economic operator of the group relies on to meet the selection criteria.
@@ -441,7 +429,7 @@ _Table 31. Information requirement about the groups of economic operators_
 
 [cols=",",]
 [IMPORTANT]
-====
+==== 
 | a|
 _About the definition of economic operator_
 
@@ -472,7 +460,7 @@ Therefore in the ESPD-EDM, the information about the economic operator is spread
 . The UBL-2.3 *cac:EconomicOperatorParty* component; and
 . In *criteria data structures*: following the solution adopted for Version ESPD-EDM, the ESPD-EDM defines several criteria classified as CRITERION.OTHER.EO_DATA.* (where the * refers to different branches and leaves of a different structures about the economic operator (e.g. SHELTERED_WORKSHOP, TOGETHER_WITH_OTHERS, etc.). The XML instances use criteria components (UBL-2.3 cac:TenderingCriterion) to structure these data. The sub-sections below cover both.
 
-=== XSD Schemas
+== XSD Schemas
 
 cac:EconomicOperatorParty
 
@@ -547,8 +535,6 @@ _Figure 204. The UBL-2.3 Legal Entity Party_
 
 Please, remember that the elements cac:ContractingAuthority, cac:ProcurementProject, cac:ProcurementProjectLot and cac:AdditionalDocumentReference are expected in the ESPD Request, too. However, for the sake of brevity, and as they are taken from the ESPD Request and 'copied' in the ESPD Response, they have not been re-explained in this section about the ESPD Response. Therefore for details on those elements please refer to the section *2. The ESPD Request document*.
 
-The mapping between the business requirements, the logic layer of the ESPD-EDM and the UBL-2.3 physical layer:
-
 [cols=",",options="header",]
 [IMPORTANT]
 ====
@@ -585,8 +571,6 @@ _Table 32. Economic operator, expected elements_
 *Rule*: (See expected elements and rules below in the table about this Party).
 
 |===
-
-The mapping between the business requirements, the logic layer of the ESPD-EDM and the UBL-2.3 physical layer:
 
 [cols=",",options="header",]
 
@@ -636,8 +620,6 @@ _Table 33. Qualifying Party, expected elements_
 
 |===
 
-The mapping between the business requirements, the logic layer of the ESPD-EDM and the UBL-2.3 physical layer:
-
 [cols=",",options="header",]
 _Table 34. Economic operator role, expected elements_
 |===
@@ -664,8 +646,6 @@ _Table 34. Economic operator role, expected elements_
 *Rule scope*: Common (BR-RESP-10-02)
 
 |===
-
-The mapping between the business requirements, the logic layer of the ESPD-EDM and the UBL-2.3 physical layer:
 
 [cols=",",options="header",]
 _Table 35. (Qualifying) economic operator party, expected elements_
@@ -710,8 +690,6 @@ _Table 35. (Qualifying) economic operator party, expected elements_
 
 |===
 
-The mapping between the business requirements, the logic layer of the ESPD-EDM and the UBL-2.3 physical layer:
-
 [cols=",",options="header",]
 
 _Table 36. Economic operator postal address, expected elements_
@@ -754,8 +732,6 @@ _Table 36. Economic operator postal address, expected elements_
 *Rule*: None.
 |===
 
-The mapping between the business requirements, the logic layer of the ESPD-EDM and the UBL-2.3 physical layer:
-
 [cols=",",options="header",]
 _Table 37. Contact of the economic operator, expected elements_
 |===
@@ -790,8 +766,6 @@ _Table 37. Contact of the economic operator, expected elements_
 *Rule*: None.
 
 |===
-
-The mapping between the business requirements, the logic layer of the ESPD-EDM and the UBL-2.3 physical layer:
 
 [cols=",",options="header",]
 _Table 38. Service provider, expected elements_
@@ -976,58 +950,107 @@ _Economic operator data - XML example_
 [source,xml]
 ----
 <!-- The group of the name is at the root of the document -->
+
 <!-- The name of the group (Consortium, Joint Venture, etc.) if the tenderer is not a sole contractor -->
+
 <cbc:EconomicOperatorGroupName>ACME-Consortium</cbc:EconomicOperatorGroupName>
+
 <!-- Root elements removed for the sake of brevity -->
+
 <!-- Economic Operator Data -->
+
 <cac:EconomicOperatorParty>
-    <cac:QualifyingParty>
-        <cbc:EmployeeQuantity>12167</cbc:EmployeeQuantity> <14>
-        <cac:FinancialCapability>
-            <cbc:ValueAmount currencyID="EUR">1203000000</cbc:ValueAmount> <15>
-        </cac:FinancialCapability>
-        <cac:Party>
-        <!-- This EO company is NOT an SME -->
-        <cbc:IndustryClassificationCode listID="http://publications.europa.eu/resource/authority/economic-operator-size" listAgencyID="OP" listVersionID="20220316-0">LARGE</cbc:IndustryClassificationCode> <13>
-        <!-- Notice that the ID and Name of the Pre-Qualification System is in the attributes. They would be captured from e-Certis. -->
-            <cac:PartyIdentification>
-                <cbc:ID schemeID="VAT" schemeAgencyID="ROLECE" schemeAgencyName="Registro Oficial de Licitadores y Empresas Clasificadas del Estado">B82387770</cbc:ID>
-            </cac:PartyIdentification>
-        </cac:Party>
-    </cac:QualifyingParty>
-    <cac:EconomicOperatorRole>
-        <cbc:RoleCode listID="http://publications.europa.eu/resource/authority/eo-role-type" listAgencyID="OP" listVersionID="20211208-0">group-lead</cbc:RoleCode> <1>
-        <cbc:RoleDescription>Sole entity or, in case of Consortium, Joint Venture or other types of groups, the leader of the group.</cbc:RoleDescription>
-    </cac:EconomicOperatorRole>
-    <cac:Party>
-    <!--Additional Identifier not provided -->
-        <cbc:WebsiteURI>https://everis.com/global/en</cbc:WebsiteURI> <12>
-        <cac:PartyIdentification>
-            <cbc:ID schemeAgencyID="VAT" schemeAgencyName="OP" schemeID="VIES" schemeURI="link:http://ec.europa.eu/taxation_customs/vies/vieshome.do?locale=es" schemeName="VAT number">B82387770</cbc:ID> <10>
-        </cac:PartyIdentification>
-        <cac:PartyName>
-            <cbc:Name>Everis, Spain, S.L.U.</cbc:Name> <2>
-        </cac:PartyName>
-        <cac:PostalAddress>
-            <cbc:CityName>Madrid</cbc:CityName> <5>
-            <cbc:PostalZone>28050</cbc:PostalZone> <4> 
-            <cac:AddressLine>
-                <cbc:Line>Manoteras, 52</cbc:Line> <3>
-            </cac:AddressLine>
-            <cac:Country>
-                <cbc:IdentificationCode listID="http://publications.europa.eu/resource/authority/country" listAgencyID="OP" listVersionID="20220928-0">ES</cbc:IdentificationCode>
-                <cbc:Name>Spain</cbc:Name> <6>
-            </cac:Country>
-        </cac:PostalAddress>
-        <cac:Contact>
-            <cbc:Name>Xavi Ker; Ruth Gomis; Miguel Verde</cbc:Name> <9>
-            <cbc:Telephone>+34 91 749 00 00</cbc:Telephone> <8>
-            <cbc:ElectronicMail>Spain.Proposals.Office@everis.com</cbc:ElectronicMail> <7>
-        </cac:Contact>
-    </cac:Party>
+
+<cac:QualifyingParty>
+
+<cbc:EmployeeQuantity>12167</cbc:EmployeeQuantity>
+
+<cac:FinancialCapability>
+
+<cbc:ValueAmount currencyID="EUR">1203000000</cbc:ValueAmount>
+
+</cac:FinancialCapability>
+
+<cac:Party>
+
+<!-- This EO company is NOT an SME -->
+
+<cbc:IndustryClassificationCode listID="http://publications.europa.eu/resource/authority/economic-operator-size" listAgencyID="OP" listVersionID="20220316-0">LARGE</cbc:IndustryClassificationCode>
+
+<!-- Notice that the ID and Name of the Pre-Qualification System is in the attributes. They would be captured from e-Certis. -->
+
+<cac:PartyIdentification>
+
+<cbc:ID schemeID="VAT" schemeAgencyID="ROLECE" schemeAgencyName="Registro Oficial de Licitadores y Empresas Clasificadas del Estado">B82387770</cbc:ID>
+
+</cac:PartyIdentification>
+
+</cac:Party>
+
+</cac:QualifyingParty>
+
+<cac:EconomicOperatorRole>
+
+<cbc:RoleCode listID="http://publications.europa.eu/resource/authority/eo-role-type" listAgencyID="OP" listVersionID="20211208-0">group-lead</cbc:RoleCode>
+
+<cbc:RoleDescription>Sole entity or, in case of Consortium, Joint Venture or other types of groups, the leader of the group.</cbc:RoleDescription>
+
+</cac:EconomicOperatorRole>
+
+<cac:Party>
+
+<!--Additional Identifier not provided -->
+
+<cbc:WebsiteURI>https://everis.com/global/en</cbc:WebsiteURI>
+
+<cac:PartyIdentification>
+
+<cbc:ID schemeAgencyID="VAT" schemeAgencyName="OP" schemeID="VIES" schemeURI="link:http://ec.europa.eu/taxation_customs/vies/vieshome.do?locale=es" schemeName="VAT number">B82387770</cbc:ID>
+
+</cac:PartyIdentification>
+
+<cac:PartyName><cbc:Name>Everis, Spain, S.L.U.</cbc:Name></cac:PartyName>
+
+<cac:PostalAddress>
+
+<cbc:CityName>Madrid</cbc:CityName>
+
+<cbc:PostalZone>28050</cbc:PostalZone>
+
+<cac:AddressLine>
+
+<cbc:Line>Manoteras, 52</cbc:Line>
+
+</cac:AddressLine>
+
+<cac:Country>
+
+<cbc:IdentificationCode listID="http://publications.europa.eu/resource/authority/country" listAgencyID="OP" listVersionID="20220928-0">ES</cbc:IdentificationCode>
+
+<cbc:Name>Spain</cbc:Name>
+
+</cac:Country>
+
+</cac:PostalAddress>
+
+<cac:Contact>
+
+<cbc:Name>Xavi Ker; Ruth Gomis; Miguel Verde</cbc:Name>
+
+<cbc:Telephone>+34 91 749 00 00</cbc:Telephone>
+
+<cbc:ElectronicMail>Spain.Proposals.Office@everis.com</cbc:ElectronicMail>
+
+</cac:Contact>
+
+</cac:Party>
+
 </cac:EconomicOperatorParty>
+
 <!-- EO DATA ENDS HERE -->
+
 <!-- EXCLUSION CRITERIA START HERE -->
+
 <!-- Exclusion and selection Criteria, Responses and Evidences removed for the sake of brevity -->
 ----
 
@@ -1045,13 +1068,12 @@ _Economic operator data - XML example_
 . Telephone of the EO. A text field. Either the GUI and/or an external Schematron rule could be implemented to control the pattern of this text.
 . A coma separated list of persons of contact.
 . The VAT number of the EO. Notice how the attributes of the cbc:ID element are used: they respect the information requirements established for the identification of the EO (see requirements at the beginning of the section).
-. Additional identifier. In this example it is not used, thus the element is not displayed in the code snippet above.
+. Additional identifier. In this example it is not used, thus the absence of the element.
 . Internet address, normally the official web-site of the EO.
 . Code to identify the type of the company (micro, small, medium, SME, Large). Notice the use of the Code List economic-operator-size (for statistical purposes).
 . Number of employees of the EO's company. Do not use separators. The software application should take care of the formatting (for statistical purposes).
 . Indicative turnover of the EO's company (for statistical purposes).
 ====
-
 
 ==== Economic operator representatives
 
@@ -1095,8 +1117,6 @@ image:EO_representatives_Contact_Person.jpg[EO representatives - element Contact
 _Figure 236. EO representatives - element Contact, inside Person, XSD Schema_
 
 ==== Expected Elements
-
-The mapping between the business requirements, the logic layer of the ESPD-EDM and the UBL-2.3 physical layer:
 
 [cols=",",options="header",]
 
@@ -1188,104 +1208,196 @@ _Table 39. Representatives of the economic operator, expected elements_
 Notice that this XML example contains two representatives, as in the mock-up.
 
 _Economic operator's representatives_
-
 [source,xml]
 ----
 <!-- Economic Operator Data -->
+
 <cac:EconomicOperatorParty>
-    <cac:QualifyingParty>
-        <cbc:EmployeeQuantity>12167</cbc:EmployeeQuantity>
-        <cac:FinancialCapability><cbc:ValueAmount currencyID="EUR">1203000000</cbc:ValueAmount></cac:FinancialCapability>
-        <cac:Party>
-        <!-- This EO company is NOT an SME -->
-            <cbc:IndustryClassificationCode listID="http://publications.europa.eu/resource/authority/economic-operator-size" listAgencyID="OP" listVersionID="20220316-0">large</cbc:IndustryClassificationCode>
-        <!-- Notice that the ID and Name of the Pre-Qualification System is in the attributes. They would be captured from e-Certis. -->
-            <cac:PartyIdentification>
-                <cbc:ID schemeID="VAT" schemeAgencyID="ROLECE" schemeAgencyName="Registro Oficial de Licitadores y Empresas Clasificadas del Estado">B82387770</cbc:ID>
-            </cac:PartyIdentification>
-        </cac:Party>
-    </cac:QualifyingParty>
-    <cac:EconomicOperatorRole>
-        <cbc:RoleCode listID="http://publications.europa.eu/resource/authority/eo-role-type" listAgencyID="OP" listVersionID="20211208-0">sole-tenderer</cbc:RoleCode>
-        <cbc:RoleDescription>Sole entity or, in case of Consortium, Joint Venture or other types of groups, the leader of the group.</cbc:RoleDescription>
-    </cac:EconomicOperatorRole>
-    <cac:Party>
-        <cbc:WebsiteURI>https://everis.com/global/en</cbc:WebsiteURI>
-        <cac:PartyIdentification>
-            <cbc:ID schemeAgencyID="VAT" schemeAgencyName="OP" schemeID="VIES" schemeURI="link:http://ec.europa.eu/taxation_customs/vies/vieshome.do?locale=es" schemeName="VAT number">B82387770</cbc:ID>
-        </cac:PartyIdentification>
-        <cac:PartyName><cbc:Name>Everis, Spain, S.L.U.</cbc:Name></cac:PartyName>
-        <cac:PostalAddress>
-            <cbc:CityName>Madrid</cbc:CityName>
-            <cbc:PostalZone>28050</cbc:PostalZone>
-            <cac:AddressLine>
-            <cbc:Line>Manoteras, 52</cbc:Line>
-            </cac:AddressLine>
-            <cac:Country>
-                <cbc:IdentificationCode listID="http://publications.europa.eu/resource/authority/country" listAgencyID="OP" listVersionID="20220928-0">ESP</cbc:IdentificationCode>
-                <cbc:Name>Spain</cbc:Name>
-            </cac:Country>
-        </cac:PostalAddress>
-        <cac:Contact>
-            <cbc:Name>Xavi Ker; Ruth Gomis; Miguel Verde</cbc:Name>
-            <cbc:Telephone>+34 91 749 00 00</cbc:Telephone>
-            <cbc:ElectronicMail>Spain.Proposals.Office@everis.com</cbc:ElectronicMail>
-        </cac:Contact>
-    <!-- REPRESENTATIVES of the Economic Operator -->
-        <!-- Representative 1 -->
-        <cac:PowerOfAttorney>
-            <cbc:Description>Total powers to make decisions on behalf of the company.</cbc:Description> <12>
-            <cbc:Description>Main legal representative with power to make decisions about any aspect related to public procurement contracts with public administrations.</cbc:Description> <7>
-            <cac:AgentParty>
-                <cac:Person>
-                    <cbc:FirstName>Mary A.</cbc:FirstName> <1>
-                    <cbc:FamilyName>Smith</cbc:FamilyName> <8>
-                    <cbc:BirthDate>1980-07-17</cbc:BirthDate> <2>
-                <!-- No element for "street and number" present. The user decided not to provide it -->
-                    <cbc:BirthplaceName>Brussels</cbc:BirthplaceName> <9>
-                    <cac:Contact>
-                        <cbc:Telephone>+322124522</cbc:Telephone> <11>
-                        <cbc:ElectronicMail>masmith@everis.com</cbc:ElectronicMail> <10>
-                    </cac:Contact>
-                    <cac:ResidenceAddress>
-                        <!-- No cac:AddressLine element --> <3>
-                        <cbc:CityName>Brussels</cbc:CityName> <5>
-                        <cbc:PostalZone>1000</cbc:PostalZone> <4>
-                        <cac:Country>
-                            <cbc:IdentificationCode listID="http://publications.europa.eu/resource/authority/country" listAgencyID="OP" listVersionID="20220928-0">BEL</cbc:IdentificationCode> <6>
-                            <cbc:Name languageID="en">Belgium</cbc:Name>
-                        </cac:Country>
-                    </cac:ResidenceAddress>
-                </cac:Person>
-            </cac:AgentParty>
-        </cac:PowerOfAttorney>
-        <!-- Representative 2 -->
-        <cac:PowerOfAttorney>
-            <cbc:Description>Public Sector Responsible Manager</cbc:Description>
-            <cbc:Description>Can sign contracts with the buyer on behalf of the Consortium.</cbc:Description>
-            <cac:AgentParty>
-                <cac:Person>
-                    <cbc:FirstName>Sergi</cbc:FirstName>
-                    <cbc:FamilyName>Mallol</cbc:FamilyName>
-                    <cbc:BirthDate>1960-06-21</cbc:BirthDate>
-                    <cbc:BirthplaceName>Barcelona</cbc:BirthplaceName>
-                    <cac:Contact>
-                        <cbc:Telephone>+34934947700</cbc:Telephone>
-                        <cbc:ElectronicMail>sergi.mallol@everis.com</cbc:ElectronicMail>
-                    </cac:Contact>
-                    <cac:ResidenceAddress>
-                        <cbc:CityName>Barcelona</cbc:CityName>
-                        <cbc:PostalZone>08020</cbc:PostalZone>
-                        <cac:Country>
-                            <cbc:IdentificationCode listID="http://publications.europa.eu/resource/authority/country" listAgencyID="OP" listVersionID="20220928-0">>ESP</cbc:IdentificationCode>
-                        <cbc:Name languageID="en">Spain</cbc:Name>
-                        </cac:Country>
-                    </cac:ResidenceAddress>
-                </cac:Person>
-            </cac:AgentParty>
-        </cac:PowerOfAttorney>
-    </cac:Party>
+
+<cac:QualifyingParty>
+
+<cbc:EmployeeQuantity>12167</cbc:EmployeeQuantity>
+
+<cac:FinancialCapability><cbc:ValueAmount currencyID="EUR">1203000000</cbc:ValueAmount></cac:FinancialCapability>
+
+<cac:Party>
+
+<!-- This EO company is NOT an SME -->
+
+<cbc:IndustryClassificationCode listID="http://publications.europa.eu/resource/authority/economic-operator-size" listAgencyID="OP" listVersionID="20220316-0">large</cbc:IndustryClassificationCode>
+
+<!-- Notice that the ID and Name of the Pre-Qualification System is in the attributes. They would be captured from e-Certis. -->
+
+<cac:PartyIdentification>
+
+<cbc:ID schemeID="VAT" schemeAgencyID="ROLECE" schemeAgencyName="Registro Oficial de Licitadores y Empresas Clasificadas del Estado">B82387770</cbc:ID>
+
+</cac:PartyIdentification>
+
+</cac:Party>
+
+</cac:QualifyingParty>
+
+<cac:EconomicOperatorRole>
+
+<cbc:RoleCode listID="http://publications.europa.eu/resource/authority/eo-role-type" listAgencyID="OP" listVersionID="20211208-0">sole-tenderer</cbc:RoleCode>
+
+<cbc:RoleDescription>Sole entity or, in case of Consortium, Joint Venture or other types of groups, the leader of the group.</cbc:RoleDescription>
+
+</cac:EconomicOperatorRole>
+
+<cac:Party>
+
+<cbc:WebsiteURI>https://everis.com/global/en</cbc:WebsiteURI>
+
+<cac:PartyIdentification>
+
+<cbc:ID schemeAgencyID="VAT" schemeAgencyName="OP" schemeID="VIES" schemeURI="link:http://ec.europa.eu/taxation_customs/vies/vieshome.do?locale=es" schemeName="VAT number">B82387770</cbc:ID>
+
+</cac:PartyIdentification>
+
+<cac:PartyName><cbc:Name>Everis, Spain, S.L.U.</cbc:Name></cac:PartyName>
+
+<cac:PostalAddress>
+
+<cbc:CityName>Madrid</cbc:CityName>
+
+<cbc:PostalZone>28050</cbc:PostalZone>
+
+<cac:AddressLine>
+
+<cbc:Line>Manoteras, 52</cbc:Line>
+
+</cac:AddressLine>
+
+<cac:Country>
+
+<cbc:IdentificationCode listID="http://publications.europa.eu/resource/authority/country" listAgencyID="OP" listVersionID="20220928-0">ESP</cbc:IdentificationCode>
+
+<cbc:Name>Spain</cbc:Name>
+
+</cac:Country>
+
+</cac:PostalAddress>
+
+<cac:Contact>
+
+<cbc:Name>Xavi Ker; Ruth Gomis; Miguel Verde</cbc:Name>
+
+<cbc:Telephone>+34 91 749 00 00</cbc:Telephone>
+
+<cbc:ElectronicMail>Spain.Proposals.Office@everis.com</cbc:ElectronicMail>
+
+</cac:Contact>
+
+<!-- REPRESENTATIVES of the Economic Operator -->
+
+<!-- Representative 1 -->
+
+<cac:PowerOfAttorney>
+
+<cbc:Description>Total powers to make decisions on behalf of the company.</cbc:Description>
+
+<cbc:Description>Main legal representative with power to make decisions about any aspect related to public procurement contracts with public administrations.</cbc:Description>
+
+<cac:AgentParty>
+
+<cac:Person>
+
+<cbc:FirstName>Mary A.</cbc:FirstName>
+
+<cbc:FamilyName>Smith</cbc:FamilyName>
+
+<cbc:BirthDate>1980-07-17</cbc:BirthDate>
+
+<!-- No element for "street and number" present. The user decided not to provide it -->
+
+<cbc:BirthplaceName>Brussels</cbc:BirthplaceName>
+
+<cac:Contact>
+
+<cbc:Telephone>+322124522</cbc:Telephone>
+
+<cbc:ElectronicMail>masmith@everis.com</cbc:ElectronicMail>
+
+</cac:Contact>
+
+<cac:ResidenceAddress>
+
+<cbc:CityName>Brussels</cbc:CityName>
+
+<cbc:PostalZone>1000</cbc:PostalZone>
+
+<cac:Country>
+
+<cbc:IdentificationCode listID="http://publications.europa.eu/resource/authority/country" listAgencyID="OP" listVersionID="20220928-0">BEL</cbc:IdentificationCode>
+
+<cbc:Name languageID="en">Belgium</cbc:Name>
+
+</cac:Country>
+
+</cac:ResidenceAddress>
+
+</cac:Person>
+
+</cac:AgentParty>
+
+</cac:PowerOfAttorney>
+
+<!-- Representative 2 -->
+
+<cac:PowerOfAttorney>
+
+<cbc:Description>Public Sector Responsible Manager</cbc:Description>
+
+<cbc:Description>Can sign contracts with the buyer on behalf of the Consortium.</cbc:Description>
+
+<cac:AgentParty>
+
+<cac:Person>
+
+<cbc:FirstName>Sergi</cbc:FirstName>
+
+<cbc:FamilyName>Mallol</cbc:FamilyName>
+
+<cbc:BirthDate>1960-06-21</cbc:BirthDate>
+
+<cbc:BirthplaceName>Barcelona</cbc:BirthplaceName>
+
+<cac:Contact>
+
+<cbc:Telephone>+34934947700</cbc:Telephone>
+
+<cbc:ElectronicMail>sergi.mallol@everis.com</cbc:ElectronicMail>
+
+</cac:Contact>
+
+<cac:ResidenceAddress>
+
+<cbc:CityName>Barcelona</cbc:CityName>
+
+<cbc:PostalZone>08020</cbc:PostalZone>
+
+<cac:Country>
+
+<cbc:IdentificationCode listID="http://publications.europa.eu/resource/authority/country" listAgencyID="OP" listVersionID="20220928-0">>ESP</cbc:IdentificationCode>
+
+<cbc:Name languageID="en">Spain</cbc:Name>
+
+</cac:Country>
+
+</cac:ResidenceAddress>
+
+</cac:Person>
+
+</cac:AgentParty>
+
+</cac:PowerOfAttorney>
+
+</cac:Party>
+
 </cac:EconomicOperatorParty>
+
 <!-- Exclusion and selection Criteria, Responses and Evidences removed for the sake of brevity -->
 ----
 
@@ -1304,10 +1416,9 @@ _Economic operator's representatives_
 . Telephone number of the natural person.
 . First line of the cac:Description element reserved to hold the 'representation' role the natural person plays for this economic operator.
 
-
 == Answering QUESTIONs
 
-[cols="1,2",]
+[cols=",",]
 |===
 |*REQUIREMENT* a|
 The ESPD Response must include one criterion response (one answer), and only one, linked to one, and only one, criterion property (one QUESTION) copied from the ESPD Request into the ESPD Response document; and to each criterion property added by the economic operator to the ESDP Response.
@@ -1316,7 +1427,7 @@ One criterion response, though, may contain a list of response values of the *sa
 
 |===
 
-[cols="1,2",]
+[cols=",",]
 |===
 |*REQUIREMENT* |If the response to a criterion property is marked as *confidential* the evidences linked to this criterion property must also be treated as confidential.
 |===
@@ -1335,7 +1446,7 @@ In the same data structures *REQUIREMENT*(s) and *QUESTION*(s) do not have a UUI
 . In the UBL-2.3 model the answers are separated from inside the criterion. This differs from the previous models of the ESPD-EDM. The motivation for this separation was to allow drafting *QualificationApplicationResponse* documents without having to copy every criterion from the *QualificationApplicationRequest*, having in mind other scenarios different to the *European* Single Procurement Document. This could be used, perhaps, by public administrations that would like to use the UBL-2.3 XSDs for "under-the-threshold contract" ESPDs. Even in that situation the *QualificationApplicationResponse* would need to refer to the specific *QualificationApplicationRequest* instance (so the UUIDs are exactly the ones that were automatically generated for that instance). Remember that this is not possible in the ESPD-EDM, as there is a specific requirement asking to *copy* every criterion from the QualificationApplicationRequest into the QualificationApplicationResponse; see this business requirement at the beginning of the section.
 . If the UUID of cac:TenderingCriterionProperty was 'fixed' (as are the groups and subgroups) one answer could refer to more than one REQUIREMENT or QUESTION; and this is not permissible (see business requirement above, one criterion property → one answer, one answer → one criterion property).
 
-=== XSD Schema
+== XSD Schema
 
 To answer a QUESTION the ESPD-EDM uses the UBL-2.3 component cac:TenderingCriterionResponse. The expected elements are highlighted in blue in the figure below:
 
@@ -1374,15 +1485,13 @@ image:cacEvidenceSupplied_XSD_element.jpg[cac:EvidenceSupplied XSD element,width
 
 _Figure 240. cac:EvidenceSupplied XSD element_
 
-=== Mock-ups and data structures
+== Mock-ups and data structures
 
 The answers to QUESTION(s) are provided in the example mock-ups of the previous sections about how the buyer specify REQUIREMENT(s) and QUESTION(s), and how the economic operator adds or removes instances of elements (such as data on the economic operator, references to similar works and services, etc. Please refer to those mock-ups and compare the values shown in the fields reserved for the EO to answer and compare those values with the ones in the example XML snippets below.
 
 Responses are not associated to ESPD custom data structures. All the values regarding an answer are always placed in one instance of the UBL-2.3 data element cac:TenderingCriterionResponse.
 
-=== Expected Elements
-
-The mapping between the business requirements, the logic layer of the ESPD-EDM and the UBL-2.3 physical layer:
+== Expected Elements
 
 [cols=",",options="header",]
 
@@ -1396,7 +1505,7 @@ _Table 40. Elements expected in an answer to a criterion property_
 |*Context of use*: |The economic operator uses it in the ESPD Response document to answer a QUESTION. link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1-tbr92-018[_tbr92-018, tbr92-007, tbr92-005, tbr92-006_].
 |===
 
-[cols="1,1,1,3,3"]
+[cols=",,,,",options="header",]
 |===
 |*Components* |*Type* |*Card* |*Description* |*Requirements*
 |*cbc:ID* |Identifier |0..1 |A language-independent token, e.g., a number, that allows to identify a criterion response uniquely as well as allows to reference the criterion response in other documents. A criterion response describes how an economic operators fulfills an specific criterion. a|
@@ -1406,16 +1515,14 @@ _Table 40. Elements expected in an answer to a criterion property_
 
 *Rule scope*: Common (BR-TCR-05, BR-OTH-02)
 
-|*cbc:ValidatedCriterion
-PropertyID* |Identifier |1 |A cross-reference to the criterion properties which is validated through this response expressed as an identifier. a|
+|*cbc:ValidatedCriterionPropertyID* |Identifier |1 |A cross-reference to the criterion propertys which is validated thorugh this response expressed as an identifier. a|
 *Information Requirement*: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1-tbr92-018[_tbr92-018, tbr92-007, tbr92-005, tbr92-006_]
 
 *Rule*: This ID MUST point at one of the TenderingCriterionProperty/cbc:ID that were included in the Request document.
 
 *Rule scope*: Common (BR-RESP-30, BR-RESP-40, BR-RESP-60, BR-RESP-60-S10, BR-RESP-60-S20, BR-TCR-01, BR-TCR-03, BR-LEAD-10-S20, BR-LEAD-10-S30)
 
-|*cbc:Confidentiality
-LevelCode* |Code |0..1 |A code specifying the confidentiality level of the given response for this criterion. a|
+|*cbc:ConfidentialityLevelCode* |Code |0..1 |A code specifying the confidentiality level of the given response for this criterion. a|
 *Information Requirement*: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1-tbr92-018[_tbr92-018, tbr92-007, tbr92-005, tbr92-006_]
 
 *Rule*: If the value is true, all the evidences associated to this response becomes also confidential.
@@ -1456,9 +1563,7 @@ See the codes used for cac:ValueDataTypeCode in the Code List link:{url-tree}/co
 This disjointness rule applies to the *type* of the value, but *not to the values of the same type*. Thus, for lists of values that constitute the actual answer (e.g. the list of LotIDs the economic operator tenders to, or a list of CPV codes to describe with granularity an activity), a sequence of cac:ResponseValues shall be instantiated in the XML. See the XML examples below.
 ====
 
-The mapping between the business requirements, the logic layer of the ESPD-EDM and the UBL-2.3 physical layer:
-
-_Table 41. Elements expected in the 'cac:ApplicablePeriod' class_
+_Table 41. Elements expected in the 'cac:ApplicablePeriod' class_ 
 |===
 |*Class name*: |cac:Period
 |*Definition*: |A class to describe a period of time.
@@ -1468,7 +1573,7 @@ _Table 41. Elements expected in the 'cac:ApplicablePeriod' class_
 |*Context of use*: |A class for the economic operator to specify the start date and the end-date when the expected answer to a criterion property is a lapse of time; link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1-tbr92-018[_tbr92-018_].
 |===
 
-[cols="1,1,1,3,3",options="header",]
+[cols=",,,,",options="header",]
 |===
 |*Components* |*Type* |*Card* |*Description* |*Requirements*
 |*cbc:StartDate* |Date |0..1 |The date on which this period begins. a|
@@ -1483,8 +1588,6 @@ _Table 41. Elements expected in the 'cac:ApplicablePeriod' class_
 
 |===
 
-The mapping between the business requirements, the logic layer of the ESPD-EDM and the UBL-2.3 physical layer:
-
 [cols=",",options="header",]
 |===
 |_Table 42. Elements expected in the 'cac:EvidenceSupplied' class_ |
@@ -1492,12 +1595,11 @@ The mapping between the business requirements, the logic layer of the ESPD-EDM a
 |*Definition*: |A reference to the evidence supporting this criterion property response.
 |*Business rule(s)*: |None
 |*File*: |ubl-2.3/xsdrt/common/UBL-CommonAggregateComponents-2.3.xsd
-|*Path*: |/QualificationApplicationResponse/
-cac:TenderingCriterionResponse/cac:EvidenceSupplied
+|*Path*: |/QualificationApplicationResponse/cac:TenderingCriterionResponse/cac:EvidenceSupplied
 |*Context of use*: |Used to refer to one ore more evidences that are present in the QualificationApplicationResponse XML instance; link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1-tbr92-017[_tbr92-017_].
 |===
 
-[cols="1,1,1,3,3"]
+[cols=",,,,",options="header",]
 |===
 |*Components* |*Type* |*Card* |*Description* |*Requirements*
 |*cbc:ID* |Identifier |1 |The identifier of the referenced evidence. a|
@@ -1511,8 +1613,6 @@ cac:TenderingCriterionResponse/cac:EvidenceSupplied
 
 The table below lists the elements expected in the sub-class cac:ResponseValue. Remember that the elements of distinct types are all *disjoint* amongst themselves: i.e. you cannot associate one amount AND one indicator to the same cac:TenderingCriterionProperty element (but several values for elements of one type may be used to build up lists, e.g. lists of Lots and lists of CPV codes).
 
-The mapping between the business requirements, the logic layer of the ESPD-EDM and the UBL-2.3 physical layer:
-
 [cols=",",options="header",]
 
 _Table 43. Elements expected in the 'cac:ResponseValue' class_
@@ -1521,13 +1621,11 @@ _Table 43. Elements expected in the 'cac:ResponseValue' class_
 |*Definition*: |A class to describe the criterion property response value.
 |*Business rule(s)*: |Common (BR-TCR-08, BR-TCR-04)
 |*File*: |ubl-2.3/xsdrt/common/UBL-CommonAggregateComponents-2.3.xsd
-|*Path*: |/QualificationApplicationResponse
-/cac:TenderingCriterionResponse/cac:ResponseValue
-|*Context of use*: |Used to specify one value or a collection of values
-(in the case of a list) as a response to one, and only one, cac:TenderingCriterionProperty that is typified as a QUESTION.
+|*Path*: |/QualificationApplicationResponse/cac:TenderingCriterionResponse/cac:ResponseValue
+|*Context of use*: |Used to specify one value or a collection of values (in the case of a list) as a response to one, and only one, cac:TenderingCriterionProperty that is typified as a QUESTION.
 |===
 
-[cols="1,1,1,3,3"]
+[cols=",,,,",options="header",]
 |===
 |*Components* |*Type* |*Card* |*Description* |*Requirements*
 |*cbc:ID* |Identifier |0..1 |An identifier to refer to this criterion response value. a|
@@ -1583,7 +1681,7 @@ _Table 43. Elements expected in the 'cac:ResponseValue' class_
 
 *Rule*: None.
 
-|*cbc:ResponseNumeric* |Numeric |0..1 |A number used as a reply to the criterion property.
+|*cbc:ResponseNumeric* |Numeric |0..1 |A number used as a reply to the criterion property. 
 More precisely, a number, rate or percent used as a reply to the criterion requirement. a|
 *Information Requirement*: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1-tbr92-018[_tbr92-018_]
 
@@ -1601,7 +1699,7 @@ More precisely, a number, rate or percent used as a reply to the criterion requi
 
 |===
 
-=== Request/Response XML Example
+== Request/Response XML Example
 
 To start with a simple example let us re-take the last case presented in section *_Reduction of candidates_*.
 
@@ -1619,58 +1717,58 @@ _Reduction of Candidates - (QUESTION(s) in the ESPD-Request)_
 <!-- ... beginning of document removed for brevity -->
 
 <!-- Criterion:Reduction of the number of qualified candidates -->
-<cac:TenderingCriterion>
-        <cbc:ID schemeID="criterion" schemeAgencyID="OP" schemeVersionID="3.3.0">51c39ba9-0444-4967-afe9-36f753b30175</cbc:ID>
-        <cbc:CriterionTypeCode listID="http://publications.europa.eu/resource/authority/criterion" listAgencyID="OP" listVersionID="20230315-0">staff-red</cbc:CriterionTypeCode>
-        <cbc:Name>Reduction of the number of qualified candidates</cbc:Name>
-        <cbc:Description>The economic operator declares that It meets the objective and non discriminatory criteria or rules to be applied in order to limit the number of candidates in the following way:</cbc:Description> <2>
-        <cac:ProcurementProjectLotReference>
-                <cbc:ID schemeID="Criterion" schemeAgencyID="OP" schemeVersionID="3.3.0">LOT-00000</cbc:ID>
-        </cac:ProcurementProjectLotReference>
-        <cac:ProcurementProjectLotReference>
-                <cbc:ID schemeID="Criterion" schemeAgencyID="OP" schemeVersionID="3.3.0">LOT-00001</cbc:ID>
-        </cac:ProcurementProjectLotReference>
-        <cac:TenderingCriterionPropertyGroup>
-                <cbc:ID schemeID="criterion" schemeAgencyID="OP" schemeVersionID="3.3.0">ecc69670-f428-4446-908f-689568ca0d0d</cbc:ID>
-                <cbc:PropertyGroupTypeCode listID="property-group-type" listAgencyID="OP" listVersionID="3.3.0">ON*</cbc:PropertyGroupTypeCode>
-                <cac:TenderingCriterionProperty>
-                        <cbc:ID schemeID="criterion" schemeAgencyID="OP" schemeVersionID="3.3.0">de82e45f-a0f6-43a6-9761-bfae3385fd1d</cbc:ID>
-                        <cbc:Description>Your answer?</cbc:Description>
-                        <cbc:TypeCode listID="criterion-element-type" listAgencyID="OP" listVersionID="3.3.0">QUESTION</cbc:TypeCode> <1>
-                        <cbc:ValueDataTypeCode listID="response-data-type" listAgencyID="OP" listVersionID="3.3.0">INDICATOR</cbc:ValueDataTypeCode> <4>
-                </cac:TenderingCriterionProperty>
-                <cac:SubsidiaryTenderingCriterionPropertyGroup> <5>
-                        <cbc:ID schemeID="criterion" schemeAgencyID="OP" schemeVersionID="3.3.0">f13754df-7e15-4155-aaa6-7ca6407baa47</cbc:ID>
-                        <cbc:PropertyGroupTypeCode listID="property-group-type" listAgencyID="OP" listVersionID="3.3.0">ONTRUE</cbc:PropertyGroupTypeCode> <6>
+        <cac:TenderingCriterion>
+                <cbc:ID schemeID="criterion" schemeAgencyID="OP" schemeVersionID="4.0.0">51c39ba9-0444-4967-afe9-36f753b30175</cbc:ID>
+                <cbc:CriterionTypeCode listID="http://publications.europa.eu/resource/authority/criterion" listAgencyID="OP" listVersionID="20230315-0">staff-red</cbc:CriterionTypeCode>
+                <cbc:Name>Reduction of the number of qualified candidates</cbc:Name>
+                <cbc:Description>The economic operator declares that It meets the objective and non discriminatory criteria or rules to be applied in order to limit the number of candidates in the following way:</cbc:Description>
+                <cac:ProcurementProjectLotReference>
+                        <cbc:ID schemeID="Criterion" schemeAgencyID="OP" schemeVersionID="4.0.0">LOT-00000</cbc:ID>
+                </cac:ProcurementProjectLotReference>
+                <cac:ProcurementProjectLotReference>
+                        <cbc:ID schemeID="Criterion" schemeAgencyID="OP" schemeVersionID="4.0.0">LOT-00001</cbc:ID>
+                </cac:ProcurementProjectLotReference>
+                <cac:TenderingCriterionPropertyGroup>
+                        <cbc:ID schemeID="criterion" schemeAgencyID="OP" schemeVersionID="4.0.0">ecc69670-f428-4446-908f-689568ca0d0d</cbc:ID>
+                        <cbc:PropertyGroupTypeCode listID="property-group-type" listAgencyID="OP" listVersionID="4.0.0">ON*</cbc:PropertyGroupTypeCode>
                         <cac:TenderingCriterionProperty>
-                                <cbc:ID schemeID="criterion" schemeAgencyID="OP" schemeVersionID="3.3.0">ffc141f8-5ffe-4492-9066-7ff5dd633583</cbc:ID>
-                                <cbc:Description>Please describe them</cbc:Description>
-                                <cbc:TypeCode listID="criterion-element-type" listAgencyID="OP" listVersionID="3.3.0">QUESTION</cbc:TypeCode> <7>
-                                <cbc:ValueDataTypeCode listID="response-data-type" listAgencyID="OP" listVersionID="3.3.0">DESCRIPTION</cbc:ValueDataTypeCode> <8>
+                                <cbc:ID schemeID="criterion" schemeAgencyID="OP" schemeVersionID="4.0.0">de82e45f-a0f6-43a6-9761-bfae3385fd1d</cbc:ID>
+                                <cbc:Description>Your answer?</cbc:Description>
+                                <cbc:TypeCode listID="criterion-element-type" listAgencyID="OP" listVersionID="4.0.0">QUESTION</cbc:TypeCode>
+                                <cbc:ValueDataTypeCode listID="response-data-type" listAgencyID="OP" listVersionID="4.0.0">INDICATOR</cbc:ValueDataTypeCode>
                         </cac:TenderingCriterionProperty>
-                </cac:SubsidiaryTenderingCriterionPropertyGroup>
-        </cac:TenderingCriterionPropertyGroup>
-        <cac:TenderingCriterionPropertyGroup>
-                <cbc:ID schemeID="criterion" schemeAgencyID="OP" schemeVersionID="3.3.0">7458d42a-e581-4640-9283-34ceb3ad4345</cbc:ID>
-                <cbc:PropertyGroupTypeCode listID="property-group-type" listAgencyID="OP" listVersionID="3.3.0">ON*</cbc:PropertyGroupTypeCode>
-                <cac:TenderingCriterionProperty>
-                        <cbc:ID schemeID="criterion" schemeAgencyID="OP" schemeVersionID="3.3.0">01a08984-328f-4bc8-88d9-56634e66ca3c</cbc:ID>
-                        <cbc:Description>Is this information available electronically?</cbc:Description>
-                        <cbc:TypeCode listID="criterion-element-type" listAgencyID="OP" listVersionID="3.3.0">QUESTION</cbc:TypeCode> <3>
-                        <cbc:ValueDataTypeCode listID="response-data-type" listAgencyID="OP" listVersionID="3.3.0">INDICATOR</cbc:ValueDataTypeCode>
-                </cac:TenderingCriterionProperty>
-                <cac:SubsidiaryTenderingCriterionPropertyGroup>
-                        <cbc:ID schemeID="criterion" schemeAgencyID="OP" schemeVersionID="3.3.0">41dd2e9b-1bfd-44c7-93ee-56bd74a4334b</cbc:ID>
-                        <cbc:PropertyGroupTypeCode listID="property-group-type" listAgencyID="OP" listVersionID="3.3.0">ONTRUE</cbc:PropertyGroupTypeCode>
+                        <cac:SubsidiaryTenderingCriterionPropertyGroup>
+                                <cbc:ID schemeID="criterion" schemeAgencyID="OP" schemeVersionID="4.0.0">f13754df-7e15-4155-aaa6-7ca6407baa47</cbc:ID>
+                                <cbc:PropertyGroupTypeCode listID="property-group-type" listAgencyID="OP" listVersionID="4.0.0">ONTRUE</cbc:PropertyGroupTypeCode>
+                                <cac:TenderingCriterionProperty>
+                                        <cbc:ID schemeID="criterion" schemeAgencyID="OP" schemeVersionID="4.0.0">ffc141f8-5ffe-4492-9066-7ff5dd633583</cbc:ID>
+                                        <cbc:Description>Please describe them</cbc:Description>
+                                        <cbc:TypeCode listID="criterion-element-type" listAgencyID="OP" listVersionID="4.0.0">QUESTION</cbc:TypeCode>
+                                        <cbc:ValueDataTypeCode listID="response-data-type" listAgencyID="OP" listVersionID="4.0.0">DESCRIPTION</cbc:ValueDataTypeCode>
+                                </cac:TenderingCriterionProperty>
+                        </cac:SubsidiaryTenderingCriterionPropertyGroup>
+                </cac:TenderingCriterionPropertyGroup>
+                <cac:TenderingCriterionPropertyGroup>
+                        <cbc:ID schemeID="criterion" schemeAgencyID="OP" schemeVersionID="4.0.0">7458d42a-e581-4640-9283-34ceb3ad4345</cbc:ID>
+                        <cbc:PropertyGroupTypeCode listID="property-group-type" listAgencyID="OP" listVersionID="4.0.0">ON*</cbc:PropertyGroupTypeCode>
                         <cac:TenderingCriterionProperty>
-                                <cbc:ID schemeID="criterion" schemeAgencyID="OP" schemeVersionID="3.3.0">fe61b9a7-9e60-45eb-98c9-cd7102a86013</cbc:ID>
-                                <cbc:Description>Evidence Supplied</cbc:Description>
-                                <cbc:TypeCode listID="criterion-element-type" listAgencyID="OP" listVersionID="3.3.0">QUESTION</cbc:TypeCode>
-                                <cbc:ValueDataTypeCode listID="response-data-type" listAgencyID="OP" listVersionID="3.3.0">EVIDENCE_IDENTIFIER</cbc:ValueDataTypeCode>
+                                <cbc:ID schemeID="criterion" schemeAgencyID="OP" schemeVersionID="4.0.0">01a08984-328f-4bc8-88d9-56634e66ca3c</cbc:ID>
+                                <cbc:Description>Is this information available electronically?</cbc:Description>
+                                <cbc:TypeCode listID="criterion-element-type" listAgencyID="OP" listVersionID="4.0.0">QUESTION</cbc:TypeCode>
+                                <cbc:ValueDataTypeCode listID="response-data-type" listAgencyID="OP" listVersionID="4.0.0">INDICATOR</cbc:ValueDataTypeCode>
                         </cac:TenderingCriterionProperty>
-                </cac:SubsidiaryTenderingCriterionPropertyGroup>
-        </cac:TenderingCriterionPropertyGroup>
-</cac:TenderingCriterion>
+                        <cac:SubsidiaryTenderingCriterionPropertyGroup>
+                                <cbc:ID schemeID="criterion" schemeAgencyID="OP" schemeVersionID="4.0.0">41dd2e9b-1bfd-44c7-93ee-56bd74a4334b</cbc:ID>
+                                <cbc:PropertyGroupTypeCode listID="property-group-type" listAgencyID="OP" listVersionID="4.0.0">ONTRUE</cbc:PropertyGroupTypeCode>
+                                <cac:TenderingCriterionProperty>
+                                        <cbc:ID schemeID="criterion" schemeAgencyID="OP" schemeVersionID="4.0.0">fe61b9a7-9e60-45eb-98c9-cd7102a86013</cbc:ID>
+                                        <cbc:Description>Evidence Supplied</cbc:Description>
+                                        <cbc:TypeCode listID="criterion-element-type" listAgencyID="OP" listVersionID="4.0.0">QUESTION</cbc:TypeCode>
+                                        <cbc:ValueDataTypeCode listID="response-data-type" listAgencyID="OP" listVersionID="4.0.0">EVIDENCE_IDENTIFIER</cbc:ValueDataTypeCode>
+                                </cac:TenderingCriterionProperty>
+                        </cac:SubsidiaryTenderingCriterionPropertyGroup>
+                </cac:TenderingCriterionPropertyGroup>
+        </cac:TenderingCriterion>
 
 <!-- ... rest of document removed for brevity -->
 ----
@@ -1695,22 +1793,41 @@ _Reduction of Candidates - (answers in the ESPD-Response)_
 ----
 
 <!-- ... beginning of document removed for brevity -->
+
 <cac:TenderingCriterionResponse>
-        <cbc:ID schemeID="ISO/IEC 9834-8:2008 - 4UUID" schemeAgencyID="OP" schemeVersionID="3.3.0">d47daca4-4a27-4461-9db9-f483d3b7a114</cbc:ID>
-        <cbc:ValidatedCriterionPropertyID schemeID="criterion" schemeAgencyID="OP" schemeVersionID="3.3.0">c110177c-aa9a-4acd-809a-79a2353a41ef</cbc:ValidatedCriterionPropertyID> <1>
-        <cac:ResponseValue>
-                <cbc:ID schemeID="ISO/IEC 9834-8:2008 - 4UUID" schemeAgencyID="OP" schemeVersionID="3.3.0">de6f1bdd-abce-42f7-b9b8-30c4e7c4c94d</cbc:ID>
-                <cbc:ResponseIndicator>true</cbc:ResponseIndicator> <2>
-        </cac:ResponseValue>
+
+<cbc:ID schemeID="ISO/IEC 9834-8:2008 - 4UUID" schemeAgencyID="OP" schemeVersionID="4.0.0">d47daca4-4a27-4461-9db9-f483d3b7a114</cbc:ID>
+
+<cbc:ValidatedCriterionPropertyID schemeID="criterion" schemeAgencyID="OP" schemeVersionID="4.0.0">c110177c-aa9a-4acd-809a-79a2353a41ef</cbc:ValidatedCriterionPropertyID>
+
+<cac:ResponseValue>
+
+<cbc:ID schemeID="ISO/IEC 9834-8:2008 - 4UUID" schemeAgencyID="OP" schemeVersionID="4.0.0">de6f1bdd-abce-42f7-b9b8-30c4e7c4c94d</cbc:ID>
+
+<cbc:ResponseIndicator>true</cbc:ResponseIndicator>
+
+</cac:ResponseValue>
+
 </cac:TenderingCriterionResponse>
 
 <cac:TenderingCriterionResponse>
-        <cbc:ID schemeID="ISO/IEC 9834-8:2008 - 4UUID" schemeAgencyID="OP" schemeVersionID="3.3.0">d47daca4-4a27-4461-9db9-f483d3b7a114</cbc:ID>
-        <cbc:ValidatedCriterionPropertyID schemeID="criterion" schemeAgencyID="OP" schemeVersionID="3.3.0">e437cac1-3a89-4f36-bcc7-3219dda49d30</cbc:ValidatedCriterionPropertyID> <3>
-        <cac:ResponseValue>
-                <cbc:ID schemeID="ISO/IEC 9834-8:2008 - 4UUID" schemeAgencyID="OP" schemeVersionID="3.3.0">de6f1bdd-abce-42f7-b9b8-30c4e7c4c94d</cbc:ID>
-                <cbc:Description>This Consortium fulfills all the conditions defined by the buyer in the contract notice, and notably the Consortium is duly registered in the national pre-qualification system of the country of the Consortium lead where all the information about its classification and documentation about its financial standing are up to the date.</cbc:Description> <4>
-        </cac:ResponseValue>
+
+<cbc:ID schemeID="ISO/IEC 9834-8:2008 - 4UUID" schemeAgencyID="OP" schemeVersionID="4.0.0">d47daca4-4a27-4461-9db9-f483d3b7a114</cbc:ID>
+
+<cbc:ValidatedCriterionPropertyID schemeID="criterion" schemeAgencyID="OP" schemeVersionID="4.0.0">e437cac1-3a89-4f36-bcc7-3219dda49d30</cbc:ValidatedCriterionPropertyID>
+
+<cac:ResponseValue>
+
+<cbc:ID schemeID="ISO/IEC 9834-8:2008 - 4UUID" schemeAgencyID="OP" schemeVersionID="4.0.0">de6f1bdd-abce-42f7-b9b8-30c4e7c4c94d</cbc:ID>
+
+<cbc:Description>This Consortium fulfills all the conditions defined by the buyer in the contract notice, and notably
+
+the Consortium is duly registered in the national pre-qualification system of the country of the Consortium lead where
+
+all the information about its classification and documentation about its financial standing are up to the date.</cbc:Description>
+
+</cac:ResponseValue>
+
 </cac:TenderingCriterionResponse>
 
 <!-- ... rest of document removed for brevity -->
@@ -1726,16 +1843,13 @@ _Reduction of Candidates - (answers in the ESPD-Response)_
 
 
 == Evidence
-
-
-
 === Related information requirements
 
-See formal requirements related to evidence in the e-Sens site: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1-tbr092-017[(_tbr092-017_)].
+See formal requirements related to evidence on the e-Sens site: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1-tbr092-017[(_tbr092-017_)].
 
 === XSD Schema
 
-Remember that evidence is indirectly linked to responses based on the identifier of the evidence: in the response, the element cac:EvidenceSupplied/cbc:ID contains the identifier set in /QualificationApplicationResponse/cac:Evidence/cbc:ID. See XML example below; see also the example XML file link:{url-tree}/xml-examples/ESPD-Response.xml[ESPD-Response.xml] for an example.
+Remember that pieces of evidence are indirectly linked to responses based on the identifier of the evidence: in the response, the element cac:EvidenceSupplied/cbc:ID contains the identifier set in /QualificationApplicationResponse/cac:Evidence/cbc:ID. See XML example below; see also the example XML file link:{url-tree}/xml-examples/ESPD-Response.xml[ESPD-Response.xml] for an example.
 
 The figure below shows the XSD Diagram for the UBL-2.3 component cac:Evidence (elements in blue are the expected ones in ESPD-EDM):
 
@@ -1751,45 +1865,43 @@ _Figure 242. cac:DocumentReference inside cac:Evidence XSD diagram_
 
 === Mock-ups and data structures
 
-In principle only a few elements are kept in the ESPD Response document about an item of evidence: its Identifier, a URL from where to access its content, a Reference/Code, a Confidentiality indicator, and the Issuer.
+In principle only a few elements are kept in the ESPD Response document about a piece of evidence: its Identifier, a URL from where to access its content, a Reference/Code, a Confidentiality indicator, and the Issuer.
 
-This group of data repeats frequently in the many different mock-ups presented in this document. The one below is just one example and will be used to illustrate where the three element go in the XML instance of an item of evidence.
+This group of data repeats frequently in the many different mock-ups presented in this document. The one below is just one example and will be used to illustrate where the three element go in the XML instance of apiece of evidence.
 
 image:Conviction_Participation_criminal organisation_mockup_EO.jpg[Conviction EO mock-up,width=537,height=440]
 
 _Figure 243. Conviction 'Participation in criminal organisation', mock-up (EO perspective)_
 
-[IMPORTANT]
+[IMPORTANT]	
 ====
 _Duplicity of the Issuer_
 
 *Beware that* the current model of UBL-2.3 provides two elements for the Issuer, one for the issuer of the evidence and another for the issuer of the document reference.
 
-The ESPD-EDM uses always the one inside the document reference to refer to the issuer of the evidence (and of the document that 'is' the evidence). Thus the element used in the ESPD is cac:Evidence/cac:DocumentReference/cac:IssuerParty/cac:PartyIdentification/cbc:ID.
+The ESPD-EDM always uses the element inside the document reference to refer to the issuer of the evidence (and of the document that 'is' the evidence). Thus the element used in the ESPD is cac:Evidence/cac:DocumentReference/cac:IssuerParty/cac:PartyIdentification/cbc:ID.
 ====
 
 === Expected (and other) Elements
 
 This list below enumerates the elements of cac:Evidence that could be used in (that make sense for) an ESPD Response. Notice though that the current versions of the ESPD-EDM only use the few elements mentioned above: ID, URL, Reference/Code, Confidentiality level and Issuer.
 
-The mapping between the business requirements, the logic layer of the ESPD-EDM and the UBL-2.3 physical layer:
-
 [cols=",",options="header",]
 
-_Table 44. Elements expected in an item of evidence_
+_Table 44. Elements expected in a piece of Evidence_
 |===
 |*Class name*: |cac:Evidence
-|*Definition*: |A class to describe an item of evidentiary support for representations of capabilities or the ability to meet tendering requirements, which an economic operator must provide for acceptance into a tendering process.
+|*Definition*: |A class to describe support for an item of evidence, for representations of capabilities or the ability to meet tendering requirements which an economic operator must provide for acceptance into a tendering process.
 |*Business rule(s)*: |None
 |*File*: |ubl-2.3/xsdrt/common/UBL-CommonAggregateComponents-2.3.xsd
 |*Path*: |/QualificationApplicationResponse/cac:Evidence
-|*Context of use*: |The economic operator uses it in the ESPD Response document to provide evidentiary support to one or more criteria link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1-tbr092-017[(_tbr092-017_)].
+|*Context of use*: |The economic operator uses it in the ESPD Response document to provide support, in the form of evidence, for one or more criteria link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1-tbr092-017[(_tbr092-017_)].
 |===
 
-[cols="1,1,1,3,3",options="header",]
+[cols=",,,,",options="header",]
 |===
 |*Components* |*Type* |*Card* |*Description* |*Requirements*
-|*cbc:ID* |Identifier |1 |An identifier for this item of evidential support. a|
+|*cbc:ID* |Identifier |1 |An identifier for a piece of supporting evidence a|
 *Information Requirement*: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1-tbr092-017[_tbr092-017_]
 
 *Rule*: The Evidence ID MUST be unique in the ESPD Response XML instance (i.e. two items of evidence cannot have the same ID value). It is recommended to use always a UUID UUID of version 4 (random generated UUID).
@@ -1799,16 +1911,16 @@ _Table 44. Elements expected in an item of evidence_
 |*cbc:EvidenceTypeCode* |Code |0..1 |A code signifying the type of evidence. a|
 *Information Requirement*: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1-tbr092-017[_tbr092-017, tbr092-007, tbr092-006_]
 
-*Rule*: A code signifying the type of evidence. Could be aligned to e-Certis in the future.
+*Rule*: A code signifying the type of evidence. Could be used in the future in alignment to e-Certis.
 
 *Rule scope*: BR-OTH-01
 
-|*cbc:Name* |Text |0..1 |The name of the evidence. a|
+|*cbc:Name* |Text |0..1 |The name of the item of evidence. a|
 *Information Requirement*: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1-tbr092-017[_tbr092-017, tbr092-007, tbr092-006_]
 
-*Rule*: None. Could be aligned to e-Certis in the future.
+*Rule*: None. Could be used in the future in alignment to e-Certis.
 
-|*cbc:Description* |Text |0..1 |The textual description for this Evidence. a|
+|*cbc:Description* |Text |0..1 |The text description of this item of evidence. a|
 *Information Requirement*: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1-tbr092-017[_tbr092-017, tbr092-007, tbr092-006_]
 
 *Rule*: *Use this field to keep the Reference/Code of the Evidence*.
@@ -1818,64 +1930,57 @@ _Table 44. Elements expected in an item of evidence_
 
 *Rule*: None. No rule is applied.
 
-|*cbc:Confidentiality
-LevelCode* |Code |0..1 |A code specifying the confidentiality level of this evidence. a|
+|*cbc:ConfidentialityLevelCode* |Code |0..1 |A code specifying the confidentiality level of the item of evidence. a|
 *Information Requirement*: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1-tbr092-017[_tbr092-017_]
 
-*Rule*: Compulsory use of the Code List link:{url-tree}/codelists/gc/AccessRight.gc[AccessRight]. Software application should set this code to CONFIDENTIAL automatically when the confidentiality level code of at least one criterion to which this evidence is associated is set to CONFIDENTIAL.
+*Rule*: Compulsory use of the Code List link:{url-tree}/codelists/gc/AccessRight.gc[AccessRight]. Software application should set this code to CONFIDENTIAL automatically when the confidentiality level code of at least one criterion to which the item of evidence is associated is set to CONFIDENTIAL.
 
 *Rule scope*: BR-TCR-02, BR-OTH-01, BR-OTH-01#18, BR-OTH-03
 
 |===
 
-This table lists the elements from cac:Evidence/cac:DocumentReference used in the ESPD-EDM:
-
-The mapping between the business requirements, the logic layer of the ESPD-EDM and the UBL-2.3 physical layer:
+This other table lists the elements from cac:Evidence/cac:DocumentReference used in the ESPD-EDM:
 
 [cols=",",options="header",]
 
 _Table 45. Elements expected from the 'cac:Evidence/cac:DocumentReference' element_
 |===
 |*Class name*: |cac:DocumentReference
-|*Definition*: |A reference to the evidentiary document.
+|*Definition*: |A reference to the evidence document.
 |*Business rule(s)*: |None
 |*File*: |ubl-2.3/xsdrt/common/UBL-CommonAggregateComponents-2.3.xsd
 |*Path*: |/QualificationApplicationResponse/cac:Evidence/cac:DocumentReference
-|*Context of use*: |The economic operator uses it in the ESPD Response document to supply the URL of the evidence and the party who issued the evidentiary document. link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1-tbr092-017[(_tbr092-017, tbr092-022, tbr092-006, tbr092-007_)].
+|*Context of use*: |The economic operator uses it in the ESPD Response document to supply the URL of the evidence and the party who issued the evidence document. link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1-tbr092-017[(_tbr092-017, tbr092-022, tbr092-006, tbr092-007_)].
 |===
 
-[cols="1,1,1,3,3"]
+[cols=",,,,",options="header",]
 |===
 |*Components* |*Type* |*Card* |*Description* |*Requirements*
 |*cbc:ID* |Identifier |1 |An identifier for the referenced document. a|
 *Information Requirement*: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1-tbr092-017[_tbr092-017, tbr092-022, tbr092-006, tbr092-007_]
 
-*Rule*: *If the reference or verification code is provided for the evidence, use this element to place it.* This 'code' is used in some countries (e.g. Spain) to check that the document is authentic. If a verification code is supplied you can use an official 'end-point' to retrieve an image (or a PDF) of the document and check that the evidence is authentic.
+*Rule*: *If the reference or verification code is provided for the evidence use this element to place it.* This 'code' is used in some countries (e.g. Spain) to check that the document is authentic. If a verification code is supplied you can use an official 'end-point' to retrieve an image (or a PDF) of the document and check that the evidence is authentic.
 
 *Rule scope*: BR-OTH-02
 
-|*cac:Attachment/cac:
-ExternalReference/cbc:URI* |Identifier |1 |The Uniform Resource Identifier (URI) that identifies the external object as an Internet resource. a|
+|*cac:Attachment/cac:ExternalReference/cbc:URI* |Identifier |1 |The Uniform Resource Identifier (URI) that identifies the external object as an Internet resource. a|
 *Information Requirement*: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1-tbr092-017[_tbr092-017, tbr092-022, tbr092-006, tbr092-007_]
 
 *Rule*: None. No rule is applied.
 
-|*cac:IssuerParty/cac:
-PartyIdentification/cbc:ID* |Identifier |0..1 |The identifier of the party issuer of the documentary evidence. a|
+|*cac:IssuerParty/cac:PartyIdentification/cbc:ID* |Identifier |0..1 |The identifier of the party issuer of the documentary evidence. a|
 *Information Requirement*: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1-tbr092-017[_tbr092-017, tbr092-007, tbr092-006_]
 
 *Rule*: Not currently used in ESPD, but if you decide to use it try to use the VAT number whenever possible.
 
 *Rule scope*: BR-OTH-02
 
-|*cac:IssuerParty/cac:
-PartyName/cbc:Name* |Text |0..1 |The name of the party issuer of the documentary evidence. a|
+|*cac:IssuerParty/cac:PartyName/cbc:Name* |Text |0..1 |The name of the party issuer of the documentary evidence. a|
 *Information Requirement*: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1-tbr092-017[_tbr092-017, tbr092-007, tbr092-006_]
 
 *Rule*: ESPD-EDM uses this element to keep the name of the evidence issuer in the ESPD Response XML instance.
 
-|*cac:IssuerParty/cbc:
-WebsiteURI* |URI |0..1 |The website of the party issuer of the documentary evidence. a|
+|*cac:IssuerParty/cbc:WebsiteURI* |URI |0..1 |The website of the party issuer of the documentary evidence. a|
 *Information Requirement*: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1-tbr092-017[_tbr092-017, tbr092-007, tbr092-006_]
 
 *Rule*: None. No rule is applied.
@@ -1886,11 +1991,11 @@ WebsiteURI* |URI |0..1 |The website of the party issuer of the documentary evide
 
 *Example 1: Two different items of evidence for two criteria*
 
-The following snippet uses the same two criteria shown in the XML example snippet 1.a): hence the values of the cac:ValidatedCriterionPropertyID are 'd8d5478e-cc65-48c9-a189-19bbe87a9bfd' (criterion property 'participation in a criminal organisation') and '7c7fb445-c5f9-4f92-8b58-7f06a541951f' (criterion property 'contributions certificates').
+The following snippet uses the same two criteria shown in the XML example snippet 1.a: hence the values of the cac:ValidatedCriterionPropertyID are 'd8d5478e-cc65-48c9-a189-19bbe87a9bfd' (criterion property 'participation in a criminal organisation') and '7c7fb445-c5f9-4f92-8b58-7f06a541951f' (criterion property 'contributions certificates').
 
-=== XML snippet 2 different evidentiary documents per response
+=== XML snippet 2 different evidence documents per response
 
-_XML snippet 1.b) different evidentiary documents per response_
+_XML snippet 1.b) different evidence documents per response_
 
 [source,xml]
 ----
@@ -1901,68 +2006,119 @@ _XML snippet 1.b) different evidentiary documents per response_
 <!-- Answer to Criterion:Participation in a criminal organisation -->
 
 <!-- Property:Evidence Supplied (PropertyID:d8d5478e-cc65-48c9-a189-19bbe87a9bfd) -->
+
 <cac:TenderingCriterionResponse>
-    <cbc:ID schemeID="ISO/IEC 9834-8:2008 - 4UUID" schemeAgencyID="OP" schemeVersionID="3.3.0">219949a1-b7bb-4d7e-8c3b-cc8ca695e15b</cbc:ID> 
-    <cbc:ValidatedCriterionPropertyID schemeID="criterion" schemeAgencyID="OP" schemeVersionID="3.3.0">d8d5478e-cc65-48c9-a189-19bbe87a9bfd</cbc:ValidatedCriterionPropertyID> <1>
-    <cbc:ConfidentialityLevelCode listID="http://publications.europa.eu/resource/authority/access-right" listAgencyID="OP" listVersionID="20220316-0">PUBLIC</cbc:ConfidentialityLevelCode> <2>
-    <cac:EvidenceSupplied>
-        <cbc:ID>7dea9283-f8a2-481f-9ea6-41438e25fdd4</cbc:ID> <3>
-    </cac:EvidenceSupplied>
+
+<cbc:ID schemeID="ISO/IEC 9834-8:2008 - 4UUID" schemeAgencyID="OP" schemeVersionID="4.0.0">219949a1-b7bb-4d7e-8c3b-cc8ca695e15b</cbc:ID> 
+
+<cbc:ValidatedCriterionPropertyID schemeID="criterion" schemeAgencyID="OP" schemeVersionID="4.0.0">d8d5478e-cc65-48c9-a189-19bbe87a9bfd</cbc:ValidatedCriterionPropertyID> <1>
+
+<cbc:ConfidentialityLevelCode listID="http://publications.europa.eu/resource/authority/access-right" listAgencyID="OP" listVersionID="20220316-0">PUBLIC</cbc:ConfidentialityLevelCode> <2>
+
+<cac:EvidenceSupplied>
+
+<cbc:ID>7dea9283-f8a2-481f-9ea6-41438e25fdd4</cbc:ID> <3>
+
+</cac:EvidenceSupplied>
+
 </cac:TenderingCriterionResponse>
 
 <!-- Answer to Criterion:Contributions certificates -->
+
 <!-- Property:URL (PropertyID:191b34a8-5af0-4d53-b431-4ecd624218ea) -->
+
 <cac:TenderingCriterionResponse>
-    <cbc:ID schemeID="ISO/IEC 9834-8:2008 - 4UUID" schemeAgencyID="OP" schemeVersionID="3.3.0">7c7fb445-c5f9-4f92-8b58-7f06a541951f</cbc:ID>
-    <cbc:ValidatedCriterionPropertyID schemeID="criterion" schemeAgencyID="OP" schemeVersionID="3.3.0">191b34a8-5af0-4d53-b431-4ecd624218ea</cbc:ValidatedCriterionPropertyID> <4>
-    <cbc:ConfidentialityLevelCode listID="http://publications.europa.eu/resource/authority/access-right" listAgencyID="OP" listVersionID="20220316-0">CONFIDENTIAL</cbc:ConfidentialityLevelCode> <5>
-    <cac:EvidenceSupplied>
-        <cbc:ID>3b3be32e-3b7f-4a17-a0bb-a84210f61bb8</cbc:ID> <6>
-    </cac:EvidenceSupplied>
+
+<cbc:ID schemeID="ISO/IEC 9834-8:2008 - 4UUID" schemeAgencyID="OP" schemeVersionID="4.0.0">7c7fb445-c5f9-4f92-8b58-7f06a541951f</cbc:ID>
+
+<cbc:ValidatedCriterionPropertyID schemeID="criterion" schemeAgencyID="OP" schemeVersionID="4.0.0">191b34a8-5af0-4d53-b431-4ecd624218ea</cbc:ValidatedCriterionPropertyID> <4>
+
+<cbc:ConfidentialityLevelCode listID="http://publications.europa.eu/resource/authority/access-right" listAgencyID="OP" listVersionID="20220316-0">CONFIDENTIAL</cbc:ConfidentialityLevelCode> <5>
+
+<cac:EvidenceSupplied>
+
+<cbc:ID>3b3be32e-3b7f-4a17-a0bb-a84210f61bb8</cbc:ID> <6>
+
+</cac:EvidenceSupplied>
+
 </cac:TenderingCriterionResponse>
 
-<!-- EVIDENCES -->
+<!-- EVIDENCE -->
+
 <cac:Evidence>
-    <cbc:UUID schemeID="ISO/IEC 9834-8:2008 - 4UUID" schemeAgencyID="OP" schemeVersionID="2.0">7dea9283-f8a2-481f-9ea6-41438e25fdd4</cbc:UUID> <7>
-    <cbc:ConfidentialityLevelCode listID="http://publications.europa.eu/resource/authority/access-right" listAgencyID="OP" listVersionID="20220316-0">PUBLIC</cbc:ConfidentialityLevelCode> <8>
-    <cac:DocumentReference>
-    <!-- Verification code to access an authentic 'manifestation' of the document from the original issuer end-point -->
-        <cbc:ID schemeID="EAN-13" schemeAgencyID="OP" schemeVersionID="2.0">5901234123457</cbc:ID> <9>
-        <cac:Attachment>
-            <cac:ExternalReference>
-                <cbc:URI>http://interior.gob.es/pub/cert?id=5901234123457</cbc:URI> <10>
-            </cac:ExternalReference>
-        </cac:Attachment>
-        <cac:IssuerParty>
-            <cac:PartyName>
-                <cbc:Name languageID="es">Ministerio del Interior</cbc:Name> <11>
-            </cac:PartyName>
-        </cac:IssuerParty>
-    </cac:DocumentReference>
+
+<cbc:ID schemeID="ISO/IEC 9834-8:2008 - 4UUID" schemeAgencyID="OP" schemeVersionID="2.0">7dea9283-f8a2-481f-9ea6-41438e25fdd4</cbc:UUID> <7>
+
+<cbc:ConfidentialityLevelCode listID="http://publications.europa.eu/resource/authority/access-right" listAgencyID="OP" listVersionID="20220316-0">PUBLIC</cbc:ConfidentialityLevelCode> <8>
+
+<cac:DocumentReference>
+
+<!-- Verification code to access an authentic 'manifestation' of the document from the original issuer end-point -->
+
+<cbc:ID schemeID="EAN-13" schemeAgencyID="OP" schemeVersionID="2.0">5901234123457</cbc:ID> <9>
+
+<cac:Attachment>
+
+<cac:ExternalReference>
+
+<cbc:URI>http://interior.gob.es/pub/cert?id=5901234123457</cbc:URI><10>
+
+</cac:ExternalReference>
+
+</cac:Attachment>
+
+<cac:IssuerParty>
+
+<cac:PartyName>
+
+<cbc:Name languageID="es">Ministerio del Interior</cbc:Name> <11>
+
+</cac:PartyName>
+
+</cac:IssuerParty>
+
+</cac:DocumentReference>
+
 </cac:Evidence>
 
 <cac:Evidence>
-    <cbc:UUID schemeID="ISO/IEC 9834-8:2008 - 4UUID" schemeAgencyID="OP" schemeVersionID="2.0">3b3be32e-3b7f-4a17-a0bb-a84210f61bb8</cbc:UUID><12>
-    <cbc:ConfidentialityLevelCode listID="http://publications.europa.eu/resource/authority/access-right" listAgencyID="OP" listVersionID="20220316-0">CONFIDENTIAL</cbc:ConfidentialityLevelCode> <13>
-    <cac:DocumentReference>
-    <!-- Verification code to access an authentic 'manifestation' of the document from the original issuer end-point -->
-        <cbc:ID schemeID="EAN-13" schemeAgencyID="OP" schemeVersionID="2.0">6002345234568</cbc:ID> <14>
-        <cac:Attachment>
-            <cac:ExternalReference>
-                <cbc:URI>http://aeat.gob.es/pub/cert?id=6002345234568</cbc:URI> <15>
-            </cac:ExternalReference>
-        </cac:Attachment>
-        <cac:IssuerParty>
-            <cac:PartyName>
-                <cbc:Name languageID="es">Agencia Tributaria</cbc:Name> <16>
-            </cac:PartyName>
-        </cac:IssuerParty>
-    </cac:DocumentReference>
+
+<cbc:ID schemeID="ISO/IEC 9834-8:2008 - 4UUID" schemeAgencyID="OP" schemeVersionID="2.0">3b3be32e-3b7f-4a17-a0bb-a84210f61bb8</cbc:UUID><12>
+
+<cbc:ConfidentialityLevelCode listID="http://publications.europa.eu/resource/authority/access-right" listAgencyID="OP" listVersionID="20220316-0">CONFIDENTIAL</cbc:ConfidentialityLevelCode> <13>
+
+<cac:DocumentReference>
+
+<!-- Verification code to access an authentic 'manifestation' of the document from the original issuer end-point -->
+
+<cbc:ID schemeID="EAN-13" schemeAgencyID="OP" schemeVersionID="2.0">6002345234568</cbc:ID> <14>
+
+<cac:Attachment>
+
+<cac:ExternalReference>
+
+<cbc:URI>http://aeat.gob.es/pub/cert?id=6002345234568</cbc:URI> <15>
+
+</cac:ExternalReference>
+
+</cac:Attachment>
+
+<cac:IssuerParty>
+
+<cac:PartyName>
+
+<cbc:Name languageID="es">Agencia Tributaria</cbc:Name> <16>
+
+</cac:PartyName>
+
+</cac:IssuerParty>
+
+</cac:DocumentReference>
+
 </cac:Evidence>
 
 </QualificationApplicationResponse>
 ----
-
 
 
 . ID value of the first criterion property (QUESTION) for which this response value is the answer.
@@ -1980,6 +2136,24 @@ _XML snippet 1.b) different evidentiary documents per response_
 . The criteron is to be treated as 'CONFIDENTIAL': addressed only to the evaluators.
 . Verification code ID of the second evidence.
 . URL from where to get the document.
-. The name of the issuer of the second document of evidence.
+. The name of the issuer of the second evidenciary document.
+
+=== Handling the Evidence (sub)group close to the related element in the data structure 
+
+An item of evidence is provided as proof for a given QUESTION answer or QUESTION_SUBGROUP answers. The link with 
+the related answer should be maintained in the data structure. For example, in the figure below, 
+the evidence is included inside the QUESTION_SUBGROUP related to a specific occurrence of conviction. 
+
+image:Evidence_for_Criterion_C1_EG_crime-org.jpg[Evidence for Criterion C1 EG crime-org,width=650,height=500]
+
+_Figure 244. Evidence for Criterion C1 EG crime-org_
+
+== Lot Management in the ESPD Response  
+
+In the ESPD, a Response is provided for one Economic Operator (EO) and for one lot or group of lots. Hence, an EO will fill in as many ESPD Responses as there are lots or groups of lots he is participating in. 
+
+In the ESPD Response, the UBL 2.3 element *cac:ProcurementProjectLot* is used under the root element *QualificationApplicationResponse* to define the related lot or group of lots the EO is answering to for a given Response. Therefore, the corresponding list of Selection Criteria and QUESTION_SUBGROUP (of REQUIREMENT_GROUP) will be extracted from the Request accordingly. 
+
+See also section "xref:2.5_Lot_Management_in_ESPD_Request.adoc[2.5 Lot Management in ESPD Request]". 
 
 include::partial$feedback.adoc[]

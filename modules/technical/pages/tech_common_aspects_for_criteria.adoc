@@ -20,7 +20,7 @@ image:Criterion_UML_diagram.jpg[Criterion - UML diagram,width=518,height=345]
 
 _Figure 33. Criterion - UML diagram_
 
-== General behavior
+== General behaviour
 
 *Note that*:
 
@@ -116,7 +116,7 @@ link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1
 See XML examples in the sections about exclusion and selection criteria.
 
 
-== Legislation
+= Legislation
 
 The XSD schema below shows, in blue, the elements of the component cac:Legislation used to point at the legislation related to the criterion.
 
@@ -145,10 +145,10 @@ link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41ESPDV2.1.
 |===
 |*Components* |*Type* |*Card* |*Description* |*Requirements*
 |*cbc:ID* |Identifier |0..1 |An identifier to refer to the legislation. a|
-*Information Requirement*:
+*Information Requirement*: 
 
-*Rule*:
-*Rule scope*:
+*Rule*: 
+*Rule scope*: 
 
 |*cbc:Title* |Text |1..n |Title of the legislation. a|
 *Information Requirement*: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41ESPDV2.1.0-tbr070-013[_tbr070-013_].
@@ -187,7 +187,7 @@ link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41ESPDV2.1.
 
 See examples in sections about exclusion and selection criteria.
 
-=== XML Example
+== XML Example
 
 [source,xml]
 ----
@@ -199,7 +199,7 @@ _<!-- ... elements omitted for brevity -->_
 
 <cac:Legislation>
 
-<cbc:ID schemeID="criterion" schemeAgencyID="OP" schemeVersionID="3.3.0">4ea7a10a-643e-4022-b67e-e06573b28ff5</cbc:ID>
+<cbc:ID schemeID="criterion" schemeAgencyID="OP" schemeVersionID="4.0.0">4ea7a10a-643e-4022-b67e-e06573b28ff5</cbc:ID>
 
 <cbc:Title>DIRECTIVE 2014/24/EU OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL of 26 February 2014 on public procurement and repealing Directive 2004/18/EC</cbc:Title>
 
@@ -222,7 +222,7 @@ _<!-- ... elements omitted for brevity -->_
 . The official long title of the legislation is expected in the Title.
 . The short name that is commonly used to refer to the legislation is expected in the Description.
 
-== Groups of properties
+= Groups of properties
 
 This XSD diagram shows the sub-components of a group of criteria:
 
@@ -291,7 +291,7 @@ See also the spreadsheet link:{url-tree}/codelists/ESPD-criterion.xlsx[ESPD-crit
 [arabic]
 . See examples in sections about exclusion and selection criteria. Study:
 * How GROUPS (cac:TenderingCriterionPropertyGroup) and SUB-GROUPs (cac:cac:SubsidiaryTenderingCriterionPropertyGroup) are organised, and
-* How the codes ON*, ONTRUE and ONFALSE are used.
+* How the codes ON*, ONTRUE and ONFALSE are used. 
 . You will notice in the examples that the elements cbc:Name and cbc:Description of groups and subgroups of properties are never used. As a common practice the ESPD documents use instead a first cac:TenderingCriterionProperty of type CAPTION (i.e. an informative property that act as a 'label').
 
 == Properties
@@ -653,21 +653,21 @@ _<!--...-->_
 
 <cac:SubsidiaryTenderingCriterionPropertyGroup>
 
-<ID schemeAgencyID="OP" schemeVersionID="3.3.0">26ece6a2-b360-46c1-890d-8338913b8719</ID>
+<ID schemeAgencyID="OP" schemeVersionID="4.0.0">26ece6a2-b360-46c1-890d-8338913b8719</ID>
 
-<PropertyGroupTypeCode listID="property-group-type" listAgencyID="OP" listVersionID="3.3.0">ON*</PropertyGroupTypeCode>
+<PropertyGroupTypeCode listID="property-group-type" listAgencyID="OP" listVersionID="4.0.0">ON*</PropertyGroupTypeCode>
 
 <cac:TenderingCriterionProperty>
 
-<ID schemeID="criterion" schemeAgencyID="OP" schemeVersionID="3.3.0">9c62f2c7-0c51-451d-8730-427f92ed618c</ID>
+<ID schemeID="criterion" schemeAgencyID="OP" schemeVersionID="4.0.0">9c62f2c7-0c51-451d-8730-427f92ed618c</ID>
 
 <Description>Select the type of requirement</Description>
 
-<TypeCode listID="criterion-element-type" listAgencyID="OP" listVersionID="3.3.0">REQUIREMENT</TypeCode>
+<TypeCode listID="criterion-element-type" listAgencyID="OP" listVersionID="4.0.0">REQUIREMENT</TypeCode>
 
-<ValueDataTypeCode listID="response-data-type" listAgencyID="OP" listVersionID="3.3.0">CODE_BOOLEAN</ValueDataTypeCode>
+<ValueDataTypeCode listID="response-data-type" listAgencyID="OP" listVersionID="4.0.0">CODE_BOOLEAN</ValueDataTypeCode>
 
-<ExpectedCode listID="boolean-gui-control-type" listAgencyID="OP" listVersionID="3.3.0">RADIO_BUTTON_TRUE</ExpectedCode>
+<ExpectedCode listID="boolean-gui-control-type" listAgencyID="OP" listVersionID="4.0.0">RADIO_BUTTON_TRUE</ExpectedCode>
 
 </cac:TenderingCriterionProperty>
 
@@ -675,17 +675,17 @@ _<!--...-->_
 
 _<!--...-->_
 
-<PropertyGroupTypeCode listID="property-group-type" listAgencyID="OP" listVersionID="3.3.0">ONTRUE</PropertyGroupTypeCode>
+<PropertyGroupTypeCode listID="property-group-type" listAgencyID="OP" listVersionID="4.0.0">ONTRUE</PropertyGroupTypeCode>
 
 <cac:TenderingCriterionProperty>
 
-<ID schemeID="criterion" schemeAgencyID="OP" schemeVersionID="3.3.0">13728a54-21e3-4c84-8b11-48666c3d260f</ID>
+<ID schemeID="criterion" schemeAgencyID="OP" schemeVersionID="4.0.0">13728a54-21e3-4c84-8b11-48666c3d260f</ID>
 
 <Description>Specify the total invoiced amount, taxes included.</Description>
 
-<TypeCode listID="criterion-element-type" listAgencyID="OP" listVersionID="3.3.0">REQUIREMENT</TypeCode>
+<TypeCode listID="criterion-element-type" listAgencyID="OP" listVersionID="4.0.0">REQUIREMENT</TypeCode>
 
-<ValueDataTypeCode listID="response-data-type" listAgencyID="OP" listVersionID="3.3.0">DESCRIPTION</ValueDataTypeCode>
+<ValueDataTypeCode listID="response-data-type" listAgencyID="OP" listVersionID="4.0.0">DESCRIPTION</ValueDataTypeCode>
 
 <ExpectedDescription>__FinReqsDescription</ExpectedDescription>
 
@@ -693,13 +693,13 @@ _<!--...-->_
 
 <cac:TenderingCriterionProperty>
 
-<ID schemeID="criterion" schemeAgencyID="OP" schemeVersionID="3.3.0">48c7b3bf-8d1c-4497-a915-78d53ba68089</ID>
+<ID schemeID="criterion" schemeAgencyID="OP" schemeVersionID="4.0.0">48c7b3bf-8d1c-4497-a915-78d53ba68089</ID>
 
 <Description>Minimum amount</Description>
 
-<TypeCode listID="criterion-element-type" listAgencyID="OP" listVersionID="3.3.0">REQUIREMENT</TypeCode>
+<TypeCode listID="criterion-element-type" listAgencyID="OP" listVersionID="4.0.0">REQUIREMENT</TypeCode>
 
-<ValueDataTypeCode listID="response-data-type" listAgencyID="OP" listVersionID="3.3.0">AMOUNT</ValueDataTypeCode>
+<ValueDataTypeCode listID="response-data-type" listAgencyID="OP" listVersionID="4.0.0">AMOUNT</ValueDataTypeCode>
 
 <MinimumAmount currencyID="EUR">100006</MinimumAmount>
 
@@ -707,13 +707,13 @@ _<!--...-->_
 
 <cac:TenderingCriterionProperty>
 
-<ID schemeID="criterion" schemeAgencyID="OP" schemeVersionID="3.3.0">8b4ae4f0-2849-49ea-a64b-7bb20c60bde4</ID>
+<ID schemeID="criterion" schemeAgencyID="OP" schemeVersionID="4.0.0">8b4ae4f0-2849-49ea-a64b-7bb20c60bde4</ID>
 
 <Description>Start date; End date</Description>
 
-<TypeCode listID="criterion-element-type" listAgencyID="OP" listVersionID="3.3.0">REQUIREMENT</TypeCode>
+<TypeCode listID="criterion-element-type" listAgencyID="OP" listVersionID="4.0.0">REQUIREMENT</TypeCode>
 
-<ValueDataTypeCode listID="response-data-type" listAgencyID="OP" listVersionID="3.3.0">PERIOD</ValueDataTypeCode>
+<ValueDataTypeCode listID="response-data-type" listAgencyID="OP" listVersionID="4.0.0">PERIOD</ValueDataTypeCode>
 
 <cac:ApplicablePeriod>
 
@@ -727,19 +727,19 @@ _<!--...-->_
 
 <cac:SubsidiaryTenderingCriterionPropertyGroup>
 
-<ID schemeAgencyID="OP" schemeVersionID="3.3.0">9b3a04ff-e36d-4d4f-b47c-82ad402b9b02</ID>
+<ID schemeAgencyID="OP" schemeVersionID="4.0.0">9b3a04ff-e36d-4d4f-b47c-82ad402b9b02</ID>
 
-<PropertyGroupTypeCode listID="property-group-type" listAgencyID="OP" listVersionID="3.3.0"></PropertyGroupTypeCode>
+<PropertyGroupTypeCode listID="property-group-type" listAgencyID="OP" listVersionID="4.0.0"></PropertyGroupTypeCode>
 
 <cac:TenderingCriterionProperty>
 
-<ID schemeID="criterion" schemeAgencyID="OP" schemeVersionID="3.3.0">1d89c188-58d2-461e-a4f6-a17f689d87f4</ID>
+<ID schemeID="criterion" schemeAgencyID="OP" schemeVersionID="4.0.0">1d89c188-58d2-461e-a4f6-a17f689d87f4</ID>
 
 <Description>Amount</Description>
 
-<TypeCode listID="criterion-element-type" listAgencyID="OP" listVersionID="3.3.0">QUESTION</TypeCode>
+<TypeCode listID="criterion-element-type" listAgencyID="OP" listVersionID="4.0.0">QUESTION</TypeCode>
 
-<ValueDataTypeCode listID="response-data-type" listAgencyID="OP" listVersionID="3.3.0">AMOUNT</ValueDataTypeCode>
+<ValueDataTypeCode listID="response-data-type" listAgencyID="OP" listVersionID="4.0.0">AMOUNT</ValueDataTypeCode>
 
 </cac:TenderingCriterionProperty>
 
@@ -749,31 +749,31 @@ _<!--...-->_
 
 <cac:SubsidiaryTenderingCriterionPropertyGroup>
 
-<ID schemeAgencyID="OP" schemeVersionID="3.3.0">cc96aa19-a0be-4409-af58-ff3f3812741b</ID>
+<ID schemeAgencyID="OP" schemeVersionID="4.0.0">cc96aa19-a0be-4409-af58-ff3f3812741b</ID>
 
-<PropertyGroupTypeCode listID="property-group-type" listAgencyID="OP" listVersionID="3.3.0">ONFALSE</PropertyGroupTypeCode>
+<PropertyGroupTypeCode listID="property-group-type" listAgencyID="OP" listVersionID="4.0.0">ONFALSE</PropertyGroupTypeCode>
 
 <cac:TenderingCriterionProperty>
 
-<ID schemeID="criterion" schemeAgencyID="OP" schemeVersionID="3.3.0">57d4160f-20b4-4b43-967b-76b038a2fa6b</ID>
+<ID schemeID="criterion" schemeAgencyID="OP" schemeVersionID="4.0.0">57d4160f-20b4-4b43-967b-76b038a2fa6b</ID>
 
 <Description>Minimum rating</Description>
 
-<TypeCode listID="criterion-element-type" listAgencyID="OP" listVersionID="3.3.0">REQUIREMENT</TypeCode>
+<TypeCode listID="criterion-element-type" listAgencyID="OP" listVersionID="4.0.0">REQUIREMENT</TypeCode>
 
-<ValueDataTypeCode listID="response-data-type" listAgencyID="OP" listVersionID="3.3.0">QUANTITY</ValueDataTypeCode>
+<ValueDataTypeCode listID="response-data-type" listAgencyID="OP" listVersionID="4.0.0">QUANTITY</ValueDataTypeCode>
 
 </cac:TenderingCriterionProperty>
 
 <cac:TenderingCriterionProperty>
 
-<ID schemeID="criterion" schemeAgencyID="OP" schemeVersionID="3.3.0">f07b5174-93ae-46dd-aa26-7f451d97f6a8</ID>
+<ID schemeID="criterion" schemeAgencyID="OP" schemeVersionID="4.0.0">f07b5174-93ae-46dd-aa26-7f451d97f6a8</ID>
 
 <Description>Rating scheme</Description>
 
-<TypeCode listID="criterion-element-type" listAgencyID="OP" listVersionID="3.3.0">REQUIREMENT</TypeCode>
+<TypeCode listID="criterion-element-type" listAgencyID="OP" listVersionID="4.0.0">REQUIREMENT</TypeCode>
 
-<ValueDataTypeCode listID="response-data-type" listAgencyID="OP" listVersionID="3.3.0">DESCRIPTION</ValueDataTypeCode>
+<ValueDataTypeCode listID="response-data-type" listAgencyID="OP" listVersionID="4.0.0">DESCRIPTION</ValueDataTypeCode>
 
 <ExpectedDescription></ExpectedDescription>
 
@@ -781,19 +781,19 @@ _<!--...-->_
 
 <cac:SubsidiaryTenderingCriterionPropertyGroup>
 
-<ID schemeAgencyID="OP" schemeVersionID="3.3.0">5fe93344-ed91-4f97-bcab-b6720a131798</ID>
+<ID schemeAgencyID="OP" schemeVersionID="4.0.0">5fe93344-ed91-4f97-bcab-b6720a131798</ID>
 
-<PropertyGroupTypeCode listID="property-group-type" listAgencyID="OP" listVersionID="3.3.0"></PropertyGroupTypeCode>
+<PropertyGroupTypeCode listID="property-group-type" listAgencyID="OP" listVersionID="4.0.0"></PropertyGroupTypeCode>
 
 <cac:TenderingCriterionProperty>
 
-<ID schemeID="criterion" schemeAgencyID="OP" schemeVersionID="3.3.0">3bd1913b-c461-41eb-87c4-84e003785a56</ID>
+<ID schemeID="criterion" schemeAgencyID="OP" schemeVersionID="4.0.0">3bd1913b-c461-41eb-87c4-84e003785a56</ID>
 
 <Description>Rating</Description>
 
-<TypeCode listID="criterion-element-type" listAgencyID="OP" listVersionID="3.3.0">QUESTION</TypeCode>
+<TypeCode listID="criterion-element-type" listAgencyID="OP" listVersionID="4.0.0">QUESTION</TypeCode>
 
-<ValueDataTypeCode listID="response-data-type" listAgencyID="OP" listVersionID="3.3.0">QUANTITY</ValueDataTypeCode>
+<ValueDataTypeCode listID="response-data-type" listAgencyID="OP" listVersionID="4.0.0">QUANTITY</ValueDataTypeCode>
 
 </cac:TenderingCriterionProperty>
 
@@ -828,13 +828,13 @@ _<!-- ... -->_
 
 <cac:TenderingCriterionResponse>
 
-<ID schemeID="ISO/IEC 9834-8:2008 - 4UUID" schemeAgencyID="OP" schemeVersionID="3.3.0">76085d25-05ad-4cb3-b1e0-675558e3f43e</ID>
+<ID schemeID="ISO/IEC 9834-8:2008 - 4UUID" schemeAgencyID="OP" schemeVersionID="4.0.0">76085d25-05ad-4cb3-b1e0-675558e3f43e</ID>
 
-<ValidatedCriterionPropertyID schemeID="CriteriaTaxonomy" schemeAgencyID="OP" schemeVersionID="3.3.0">1d89c188-58d2-461e-a4f6-a17f689d87f4</ValidatedCriterionPropertyID>
+<ValidatedCriterionPropertyID schemeID="CriteriaTaxonomy" schemeAgencyID="OP" schemeVersionID="4.0.0">1d89c188-58d2-461e-a4f6-a17f689d87f4</ValidatedCriterionPropertyID>
 
 <cac:ResponseValue>
 
-<ID schemeID="ISO/IEC 9834-8:2008 - 4UUID" schemeAgencyID="OP" schemeVersionID="3.3.0">42245674-d305-40bf-8b58-87ba51313345</ID>
+<ID schemeID="ISO/IEC 9834-8:2008 - 4UUID" schemeAgencyID="OP" schemeVersionID="4.0.0">42245674-d305-40bf-8b58-87ba51313345</ID>
 
 <ResponseAmount currencyID="EUR">10025</ResponseAmount>
 

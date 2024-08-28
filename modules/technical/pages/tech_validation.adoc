@@ -176,46 +176,52 @@ Each Criterion is defined in e-Certis and must use the *Universally Unique Ident
 [loweralpha]
 .. link:{url-tree}/codelists/ESPD-criterion.xlsx[ESPD-criterion]
 
-ESPD validates that the UUID defined in the ESPDRequest XML or ESPDResponse XML are the ones supplied by e-Certis:
+The UUIDs defined in the ESPDRequest or ESPDResponse are fixed for the following elements:
 
 [cols=",",options="header",]
 |===
-|*Spreadsheet row* |*XSD Path*
-|\{CRITERION |cac:TenderingCriterion/cbc:ID
-|\{QUESTION_GROUP |cac:TenderingCriterion/cac:TenderingCriterionPropertyGroup/cbc:ID
-|\{QUESTION_SUBGROUP |cac:SubsidiaryTenderingCriterionPropertyGroup/cbc:ID
+|*Spreadsheet row* | *XSD Path*
+|{CRITERION | cac:TenderingCriterion/cbc:ID
+|{QUESTION_GROUP or {REQUIREMENT_GROUP | cac:TenderingCriterion/cac:TenderingCriterionPropertyGroup/cbc:ID
+|{QUESTION_SUBGROUP or {REQUIREMENT_SUBGROUP | cac:SubsidiaryTenderingCriterionPropertyGroup/cbc:ID 
+|{LEGISLATION | cac:TenderingCriterion/cac:Legislation/cbc:ID
 |===
 
-Every QUESTION_GROUP and QUESTION_SUBGROUP that has the same structure (meaning, QUESTION or QUESTION_SUBGROUP), share the same UUID, as they are the same.
+Every QUESTION_GROUP or QUESTION_SUBGROUP that has the same structure (meaning QUESTION or QUESTION_SUBGROUP), share the same UUID, as they are the same.
 
-Tendering Criterion
+=== Tendering Criterion 
 
-The validation of each criterion (cac:TenderingCriterion element) has the aim to check:
+The validation of each criterion (cac:TenderingCriterion element) has the aims to check:
 
 [arabic]
 . cbc:ID, cbc:CriterionTypeCode, cbc:Name and cbc:Description are mandatory;
-. cbc:ID and cbc:CriterionTypeCode values match with the ones supplied by e-Certis;
-. cac:TenderingCriterionPropertyGroup structure matches with the QUESTION_GROUP supplied by e-Certis (see Tendering Criterion Property Group and Subgroup section).
+. cbc:ID values match with the ones supplied by e-Certis;
+. cac:TenderingCriterionPropertyGroup structure matches with the QUESTION_GROUP or REQUIREMENT_GROUP (see Tendering Criterion Property Group and Subgroup section below).
 
-Tendering Criterion Property Group and Subgroup
+=== Tendering Criterion Property Group and Subgroup
 
 The same validations are executed for the first level group of properties and sub-groups of properties. The rules applied are:
 
 [arabic]
-. The cbc:ID and cbc:PropertyGroupTypeCode are mandatory elements and their values are the ones supplied by e-Certis in the corresponding cbc:TenderingCriterion;
-. cac:TenderingCriterionProperty structure matches with QUESTION supplied by e-Certis (see Tendering Crtierion Property section);
-. cac:SubsidiaryTenderingCriterionPropertyGroup matches with QUESTION_SUBGROUP supplied by e-Certis (for each property group, the same validations are applied).
+. The cbc:ID and cbc:PropertyGroupTypeCode are mandatory elements in the corresponding cbc:TenderingCriterion;
+. cac:SubsidiaryTenderingCriterionPropertyGroup matches with QUESTION_SUBGROUP or REQUIREMENT_SUBGROUP (for each property group, the same validations are applied); 
+. cac:TenderingCriterionProperty structure matches with QUESTION or REQUIREMENT or CAPTION (see Tendering Criterion Property section below). 
 
-Tendering Criterion Property
+=== Tendering Criterion Property 
 
 The validation of Tendering Criterion Property (cac:TenderingCriterionProperty element) is checked as follows:
 
 [arabic]
-. cbc:TypeCode and cbc:ValueDataTypeCode are mandatory elements and match with the ones supplied by e-Certis;
+. cbc:TypeCode and cbc:ValueDataTypeCode are mandatory elements;
 . cbc:ID and cbc:Description elements are mandatory, although their values are not validated;
-. If cbc:TypeCode value is "CAPTION" or "REQUIREMENT", cbc:ValueDataTypeCode value must be "NONE".
+. If cbc:TypeCode value is "CAPTION", cbc:ValueDataTypeCode value must be "NONE".  
 
-== Interoperability testbed
+=== Note. Replacement of UUID by XML Path Like ID 
+
+From ESPD v4.0.0, UUIDs will be replaced by XML Path Like IDs in the data structure, except for the top level Exclusion Grounds and Selection Criteria elements.
+For further details, see section, "Common Aspects for Criteria". 
+
+=== Interoperability testbed
 
 The European Commission (EC) link:https://ec.europa.eu/isa2/awards_en[ISA2 Programme] provides an link:https://joinup.ec.europa.eu/asset/itb/description[Interoperability Testbed] where Stakeholders can freely test these validation artefacts.
 

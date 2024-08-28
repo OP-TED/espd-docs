@@ -24,6 +24,15 @@ xref:tech_dist_pack.adoc[Click here for a description of the Distribution Packag
 ****
 
 [.tile]
+.Technical Architecture
+****
+This section describes the Technical Architecture
+
+xref:tech_architecture.adoc[Click here for a overview of the Technical Architecture]
+
+****
+
+[.tile]
 .The ESPD Request
 ****
 A technical description of the ESPD Request
