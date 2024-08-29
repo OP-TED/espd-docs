@@ -1,13 +1,19 @@
+:doctitle: Codelists Overview
+:doccode: espd-tech-prod-031
+:author: NPJ
+:authoremail: nicole-anne.paterson-jones@ext.ec.europa.eu
+:docdate: January 2024
+
 
 == Code lists used in ESPD
 
 NOTE: Some code lists used in ESPD were modified to align with those of the eForms.
 
-In some cases, code lists were removed from ESPD since the information will be retrieved from eForms.
+In some cases, code lists were removed from ESPD as the information is retrieved from eForms.
 
-For more details on the code list removed, consult the #Release Notes#.
+For more details on changes in the code lists, consult the Release Notes.
 
-In ESPD documents, codes can be used in different contexts e.g.,:
+In ESPD documents, codes can be used in different contexts e.g.,
 
 . Outside the criteria, in UBL components of type "Code Type";
 

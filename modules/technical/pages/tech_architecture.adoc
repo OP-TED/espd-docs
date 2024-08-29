@@ -1,4 +1,8 @@
-= ESPD Architecture and Procurement Procedure Steps 
+:doctitle: ESPD Architecture and Procurement Procedure Steps
+:doccode: espd-tech-prod-032
+:author: NPJ
+:authoremail: nicole-anne.paterson-jones@ext.ec.europa.eu
+:docdate: January 2024
 
 == ESPD Architecture Overview 
 
