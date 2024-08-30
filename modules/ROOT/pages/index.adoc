@@ -10,7 +10,7 @@
 [.tile]
 .ESPD 4.0.0: Latest Release
 ****
-ESPD-EDM version 4.0.0 blurb.
+ESPD-EDM version 4.0.0 introduced a major change - replacing UUIDs with XML Path Like IDs. 
 
 xref:release_notes.adoc[Click here to read the version 4.4.0 details]
 
