@@ -7,14 +7,14 @@
 
 This section contains the OUC Meeting Reportsand Annual Seminar documents. All the documentation can be accessed by expanding the different options in the navigation menu on the left.
 
-Most recent or planned OUC monthly meetings:
+Next OUC meeting:
 
-* September 21st, 2023, 10.00-11.30
-* October 26th, 2023, 10.00-11.30
+October 1st, 2024, 10.00-11.30
 
-Most recent or planned Annual Seminar:
+Next Annual Seminar:
 
-* November 30th, 2023, 09.30-12.30
+December 3rd-4th, 2024, hybrid full day TED event
+
 
 [.tile-container]
 --
