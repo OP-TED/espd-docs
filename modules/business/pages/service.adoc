@@ -12,7 +12,7 @@ An ESPD service is an online portal that public buyers in the EU use, to publish
 
 === Examples of current ESPDs:
 
-There are a number of ESPD Services available provided by EU member states or commercial ESPD service providers. A link to the updated list of ESPD Service providers can be found here: https://single-market-economy.ec.europa.eu/single-market/public-procurement/digital-procurement/european-single-procurement-document-and-ecertis_en.
+There are a number of ESPD Services available provided by EU member states or commercial ESPD service providers. A link to the updated list of ESPD Service providers can be found here: https://single-market-economy.ec.europa.eu/single-market/public-procurement/digital-procurement/european-single-procurement-document-and-ecertis_en. (Scroll down until you see the link, "list of ESPD providers" in the text)
 
 === What needs to be filled in on the ESPD Service page(s)?
 
