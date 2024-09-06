@@ -31,5 +31,6 @@
 * xref:espd-home::laws.adoc[Laws and Directives]
 
 * [.separated]#**Open User Community Documents**#
+* xref:espd-wgm::index.adoc[Upcoming Meeting Dates]
 * xref:espd-wgm::monthly.adoc[Regular Meetings]
 * xref:espd-wgm::annual.adoc[Annual Seminars]
