@@ -42,7 +42,7 @@ The main change in ESPD-EDM version 4.0.0  is the replacement of dynamic UUIDs w
 
 === ESDP Demo site
 
-Creation of https://docs.ted.europa.eu/espd-demo/[ESPD Demo] site to allow User Community to test and validate latest versions of ESPD before implementing the ESPD Service. This site offers the possibility for our User Community to give feedback on ESPD-EDM. The site is provided as Open Source code and is available on GitHub https://github.com/OP-TED/espd-demo[GitHub ESPD Demo repository], more details can be found in https://github.com/OP-TED/espd-demo/blob/main/README.md[README file] and in the documentation: #link to v4 docs#.
+Creation of https://docs.ted.europa.eu/espd-demo/[ESPD Demo] site to allow User Community to test and validate latest versions of ESPD before implementing the ESPD Service. This site offers the possibility for our User Community to give feedback on ESPD-EDM. The site is provided as Open Source code and is available on GitHub https://github.com/OP-TED/espd-demo[GitHub ESPD Demo repository], more details can be found in https://github.com/OP-TED/espd-demo/blob/main/README.md[README file] and in the documentation: xref:demo.adoc[Introduction to the ESPD Demo].
 
 //Full documentation can be found on TODO-link from Nicole[TED Documentation] site.
 
