@@ -11,7 +11,7 @@ The documentation provided here explains the ESPD Exchange Data Model (ESPD-EDM)
 The following information is provided for both business users (an overview of the ESPD), and technical users (resources for technical implementation of an ESPD Service).
 
 == Release Documentation
-*  xref:3.3.0@ESPD-EDM:ROOT:release_notes.adoc[Release Notes] +
+* xref:3.3.0@ESPD-EDM:ROOT:release_notes.adoc[Release Notes] +
 The release notes for this version.
 * link:{attachmentsdir}/ESPD_CM_html/index.html[Conceptual Model] +
 The conceptual model for this version
