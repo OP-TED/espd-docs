@@ -4,33 +4,49 @@
 :authoremail: nicole-anne.paterson-jones@ext.ec.europa.eu
 :docdate: January 2024
 
-[.tile-container]
---
+The European Single Procurement Document (ESPD) is a mandatory electronic form, in two parts, used by buyers to assess the suitability of suppliers tendering in a public procurement procedure. 
 
-[.tile]
-.ESPD 3.3.0: Latest Release
-****
-ESPD-EDM version 3.3.0 corrected minor errors in the data structure and code lists, as requested by Member States and other stakeholders.
+The documentation provided here explains the ESPD Exchange Data Model (ESPD-EDM) and covers the resources provided by the Publications Office, to help member states and commercial entities create an ESPD service. The service is the electronic online form which enables both parties in a procurement procedure to manage eligibility of a supplier in a procurement process.
 
-xref:ESPD-EDM::release_notes.adoc[Click here to read the version 3.3.0 details]
+The following information is provided for both business users (an overview of the ESPD), and technical users (resources for technical implementation of an ESPD Service).
 
-//(last updated on 2024-02-15)
-****
+== Release Documentation
+* xref:3.3.0@ESPD-EDM:ROOT:release_notes.adoc[Release Notes] +
+The release notes for this version.
+* link:{attachmentsdir}/ESPD_CM_html/index.html[Conceptual Model] +
+The conceptual model for this version
 
+== Information for Business Users
+* xref:3.3.0@ESPD-EDM:business:index.adoc[Business Information] +
+An overview of the ESPD for business users
+* xref:3.3.0@ESPD-EDM:business:service.adoc[The ESPD Service] +
+What an ESPD service is and what it looks like
+* xref:3.3.0@ESPD-EDM:business:using.adoc[Using an ESPD Service] +
+Using an online ESPD form from both buyer and supplier perspectives
+//* xref:espd-bus::creating.adoc[Creating an ESPD Service]
+//* xref:espd-bus::overview_upgrades.adoc[Overview for Upgrading your Version]
 
-[.tile]
-.ESPD Release Timelines
-****
-Information on past releases and planned future releases can be found via the link below. The information includes a brief description of each release and links to the full release documentation.
+== Technical Implementation of an ESPD Service
+* xref:3.3.0@ESPD-EDM:technical:index.adoc[Technical Information] +
+Information for technical implementation
+//* xref:espd-tech::tech_imp_roadmap.adoc[Road Map for Implementers]
+//* xref:espd-tech::tech_upgrades.adoc[Upgrading an ESPD Version]
+//* xref:espd-tech::demo.adoc[Demo ESPD Service Online]
 
-xref:espd-home::history.adoc[Information on releases can be found here.]
-****
+== General Reference
+* xref:espd-home::history.adoc[History and Planned Developments] +
+A road map of the ESPD project
+* xref:espd-home::external.adoc[External Resources] +
+External resources that support the ESPD
+* xref:espd-home::supporting.adoc[Supporting and related projects] +
+Other projects that align with and support the ESPD
+* xref:espd-home::laws.adoc[Laws and Directives] +
+Laws and directives that inform the ESPD
 
-[.tile]
-.Open User Community Documents
-****
-This section contains minutes and reports of the annual and monthly Open User Community activities and meetings.
+== Open User Community Reports
+* xref:espd-wgm::monthly.adoc[Monthly Reports] +
+Minutes and documents from the open user community monthly meetings
+* xref:espd-wgm::annual.adoc[Annual Reports] +
+Minutes and documents from the open user community annual meetings
 
-xref:espd-wgm::index.adoc[Click here to read the OUC documents]
-****
---
+include::partial$feedback.adoc[]
