@@ -4,45 +4,43 @@
 :authoremail: nicole-anne.paterson-jones@ext.ec.europa.eu
 :docdate: January 2024
 
-:sectnums:
-
 
 :sectnums:
 = Release Notes
 
 == v4.0.0 (October 2024) 
 
-The main change in ESPD-EDM version 4.0.0  is the replacement of dynamic UUIDs with XML Path like IDs. Some other minor errors were fixed in the data structure and the codelists.   
+The ESPD-EDM version 4.0.0 main change is the replacement of dynamic UUIDs with XML Path like IDs. Some other minor errors were fixed in the data structure and the codelists.   
 
-* XML Path like IDs for replacing UUIDs in ESPD data structure elements 
-* Extension of the lot management to different requirements (applicable to set of lots) 
-* Misplacement of evidence group 
-* General data structure updates : Descriptive requirement added to Part IV (Selection criteria), Other economic or financial requirements Part B(6),  Possibility to exclude Pre-qualification system section where it does not apply.  
-* General codelists updates 
-* Validation and Schematron Rules updates 
-* Conceptual model updates 
-* Github folders updates 
+* XML Path like IDs for replacing UUIDs in ESPD data structure elements; 
+* Extension of the lot management to different requirements (applicable to set of lots); 
+* Evidence group misplacement fixed; 
+* General data structure updates: Descriptive requirement added to Part IV (Selection criteria), Other economic or financial requirements Part B(6),  Possibility to exclude Pre-qualification system section where it does not apply;  
+* Code Lists general updates;
+* Validation and Schematron Rules updates; 
+* Conceptual model updates; 
+* Github folders updates; 
 
 === GitHub ESPD-EDM repository structure
 
-* **JIRA issue TEDSPD-668 - Updating ESPD-EDM Github folders**
-** **criterion** folder created. It contains the data structure of the ESPD taxonomy criterion files for the Request and the Response. It contains Excel files with an example of  ESPD Request and ESPD Response criterion files that do illustrate multiple occurrences.
+* **Updating ESPD-EDM Github folders**footnote:[JIRA TEDSPD-668]
+** **codelists** folder updated. It contains the data structure of the codelists used in ESPD and the related genericode files;
+** **ESPDTeam** folder merge in "codelists" folder and removed;
+** **criterion** folder created. It contains the data structure of the ESPD taxonomy criterion Excel files for the Request and the Response. It also contains two examples in Excel format illustratign multiple occurences: one for the ESPD Request and one for ESPD Response;
+** **conceptual-model** folder updated. It contains the UML conceptual model of the ESPD in .eap, .xmi and .dtd format;
+** **java-library** folder removed;
+** **ubl-2.3** folder. It contains the UBL v2.3 distribution files that are currently used in the ESPD;
+** **validation** folder updated. It contains the resulting files of the validation process based on Schematron Rules and generated using ITB (Interoperability Testbed). A script `espd-validation.bat` is provided for validation of ESPD Request and ESPD Response files;
 ** **xml-samples** folder updated. It contains UBL XML samples for the ESPD Request and ESPD Response that correspond to the criterion files provided.
-** **codelists** folder updated. It contains the data structure of the codelists used in ESPD and the related genericode files.
-** **ESPDTeam** folder merge in "codelists" folder and removed.
-** **java-library** folder removed.
-** **ubl-2.3** folder. It contains the UBL v2.3 distribution files that are currently used in the ESPD.
-** **conceptual-model** folder updated. It contains the UML conceptual model of the ESPD in .eap, .xmi and dtd format.
-** **validation** folder updated. It contains the resulting files of the validation process based on Schematron rules and generated using ITB (Interoperability Testbed). A script `espd-validation.bat` is provided for validation of ESPD Request and ESPD Response files.
 
 * **Fix GitHub issue https://github.com/OP-TED/ESPD-EDM/issues/414[#414]**
 ** UBL 2.3 distribution files updated. The folder **ubl-2.3** contains the official distribution files from **https://docs.oasis-open.org/ubl/os-UBL-2.3/UBL-2.3.zip[OASIS - UBL Project]**.
 
 * Creation of **https://github.com/OP-TED/ESPD-EDM/tree/espd-tools[espd-tools branch]** regrouping all ESPD-EDM internal tools used for ESPD-EDM Criterion and ESPD Codelists processing and transformation. Please find all details in the https://github.com/OP-TED/ESPD-EDM/blob/espd-tools/README.md[README file].
 
-=== ESDP Demo site
+=== ESPD Demo site
 
-Creation of https://docs.ted.europa.eu/espd-demo/[ESPD Demo] site to allow User Community to test and validate latest versions of ESPD before implementing the ESPD Service. This site offers the possibility for our User Community to give feedback on ESPD-EDM. The site is provided as Open Source code and is available on GitHub https://github.com/OP-TED/espd-demo[GitHub ESPD Demo repository], more details can be found in https://github.com/OP-TED/espd-demo/blob/main/README.md[README file] and in the documentation: xref:demo.adoc[Introduction to the ESPD Demo].
+Creation of https://docs.ted.europa.eu/espd-demo/[ESPD Demo] site to allow User Community to test and validate latest versions of ESPD before implementing the ESPD Service. This site offers the possibility for our User Community to give feedback on ESPD-EDM. The site is provided as Open Source code and is available on GitHub https://github.com/OP-TED/espd-demo[GitHub ESPD Demo repository], more details can be found in https://github.com/OP-TED/espd-demo/blob/main/README.md[README file].
 
 //Full documentation can be found on TODO-link from Nicole[TED Documentation] site.
 
@@ -50,7 +48,7 @@ Creation of https://docs.ted.europa.eu/espd-demo/[ESPD Demo] site to allow User 
 
 The Conceptual model was aligned with ePO and eForms and a new layout is proposed.
 
-* **JIRA issue TEDSPD-378 - Added cbc:MinimumAmount to cac::TenderingCriterionProperty**
+* **Added cbc:MinimumAmount to cac::TenderingCriterionProperty**footnote:[JIRA TEDSPD-378]
 ** Adding the cbc:MinimumAmmount to reflect the corresponding data type.
 * **GitHub issue https://github.com/OP-TED/ESPD-EDM/issues/404[#404] - ProcurementProjectLot Identifier duplication removed**
 ** Fix of the Enterprise Architect diagrams.
@@ -61,16 +59,15 @@ The Conceptual model was aligned with ePO and eForms and a new layout is propose
 
 === ESPD-EDM Criterion file - Data Structure 
 
-We introduced two ESPD-EDM example files together with the ESPD-EDM criterion file that can be found in **criterion** folder.
-
+Introduction of ESPD-EDM example files in Excel format together with the ESPD-EDM criterion file that can be found in **criterion** folder. +
 Several issues have been resolved related to the data structure of the ESPD-EDM Criterion (taxonomy) file. 
 
-* **JIRA TEDSPD-400, TEDSPD-454 - Replacement of dynamic UUID by XML Path like ID** 
+* **Replacement of dynamic UUID by XML Path like ID**footnote:[JIRA TEDSPD-400, TEDSPD-454]
 ** The dynamic UUIDs were replaced with XML Path Like IDs
 ** The static UUIDs for Exclusion Grounds and Selection Criteria were kept in order to preserve the integration with eCertis.
-* **Fix JIRA issue TEDSPD-653, TEDSPD-369 - Evidence Group or Subgroup misplacement**
+* **Evidence Group or Subgroup misplacement**footnote:[JIRA TEDSPD-653, TEDSPD-369]
   ** Some of the Evidence Group or Subgroup were not included in the right section.
-* **Fix JIRA issue TEDSPD-488 - Update criterion files with codes of EU Vocabularies for v4.0.0**
+* **Update criterion files with codes of EU Vocabularies for v4.0.0**footnote:[JIRA TEDSPD-488]
      ** In criterion C27, the element code "autorisation" has been replaced with the code "authorisation".
      ** In criterion C23, the element code "misinterpr" has been replaced with the code "misrepresent". 
      ** In criterion C23, the Name contents have been updated as well. "Guilty of misinterpretation" has been replaced by "Guilty of misrepresentation". 
@@ -85,7 +82,7 @@ Several issues have been resolved related to the data structure of the ESPD-EDM 
 * **Fix GitHub issue https://github.com/OP-TED/ESPD-EDM/issues/389[#389] - Pre qualification systems and classification of EOs**
      ** Added new section that allows the Economic Operator to choose the option in case the Country of the Contracting Authority does not have a national (pre)qualification system.
 
-* **JIRA issue TEDSPD-695 - ADDITIONAL_DESCRIPTION_LINE is included in ESPD XML examples**
+* **ADDITIONAL_DESCRIPTION_LINE is included in ESPD XML examples**footnote:[JIRA TEDSPD-695 ]
 ** Multiple **ADDITIONAL_DESCRIPTION_LINE** are rendered in the ESPD XML example documents
 
 === ESPD-EDM tools
@@ -109,7 +106,7 @@ ESPD version has been updated in the technical codelists files to match the curr
 
 The label "ESPD-EDMv4.0.0" has been added in the related sheet "ProfileExecutionID" (in the last row of the table) of the Excel file https://github.com/OP-TED/ESPD-EDM/tree/v4.0.0/codelists/ESPD-CodeLists.xlsx[ESPD-CodeLists.xlsx]. 
 
-* **JIRA TEDSPD-689: LOT_IDENTIFIER data type added to ResponseDataType codelist** 
+* **LOT_IDENTIFIER data type added to ResponseDataType codelist**footnote:[JIRA TEDSPD-689] 
 ** The LOT_IDENTIFIER is used to identify a LOT with format LOT-\#### starting with LOT-0000 and increasing the lot number for each additional lot.
 
 The corresponding genericode files have been generated. 
