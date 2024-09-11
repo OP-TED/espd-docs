@@ -8,9 +8,9 @@
 
 The https://docs.ted.europa.eu/espd-demo/[ESPD Demo Site] is a collection of tools designed to help developers who are in the process of creating an ESPD Service. Click on the link above to access the site.
 
-Watch the info video below about the tools available.
+//Watch the info video below about the tools available.
 
-#Insert video#
+//#Insert video#
 
 A description of the tools:
 
