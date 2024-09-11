@@ -10,7 +10,7 @@
 
 == v4.0.0 (October 2024) 
 
-The main change in ESPD-EDM version 4.0.0 is the replacement of dynamic UUIDs with XML Path like IDs. Some other minor errors were fixed in the data structure and the codelists.   
+The main change in ESPD-EDM version 4.0.0 is the replacement of dynamic UUIDs with XML Path like IDs. Some other minor errors were fixed in the data structure and the code lists.   
 
 * XML Path like IDs for replacing UUIDs in ESPD data structure elements; 
 * Extension of the lot management to different requirements (applicable to set of lots); 
@@ -24,7 +24,7 @@ The main change in ESPD-EDM version 4.0.0 is the replacement of dynamic UUIDs wi
 === GitHub ESPD-EDM repository structure
 
 * **Updating ESPD-EDM Github folders**footnote:[JIRA TEDSPD-668]
-** **codelists** folder updated. This contains the data structure of the codelists used in ESPD and the related genericode files;
+** **codelists** folder updated. This contains the data structure of the code lists used in ESPD and the related genericode files;
 ** **ESPDTeam** folder contents merge into "codelists" folder and removed;
 ** **criterion** folder created. This contains the data structure of the ESPD taxonomy criterion Excel files for the Request and the Response. It also contains two examples in Excel format illustrating multiple occurrences: one for the ESPD Request and one for ESPD Response;
 ** **conceptual-model** folder updated. This contains the UML conceptual model of the ESPD in .eap, .xmi and .dtd format;
@@ -36,7 +36,7 @@ The main change in ESPD-EDM version 4.0.0 is the replacement of dynamic UUIDs wi
 * **Fix GitHub issue https://github.com/OP-TED/ESPD-EDM/issues/414[#414]**
 ** UBL 2.3 distribution files updated. The folder **ubl-2.3** contains the official distribution files from **https://docs.oasis-open.org/ubl/os-UBL-2.3/UBL-2.3.zip[OASIS - UBL Project]**.
 
-* Creation of **https://github.com/OP-TED/ESPD-EDM/tree/espd-tools[espd-tools branch]** regrouping all ESPD-EDM internal tools used for ESPD-EDM Criterion and ESPD Codelists processing and transformation. Please find all details in the https://github.com/OP-TED/ESPD-EDM/blob/espd-tools/README.md[README file].
+* Creation of **https://github.com/OP-TED/ESPD-EDM/tree/espd-tools[espd-tools branch]** regrouping all ESPD-EDM internal tools used for ESPD-EDM Criterion and ESPD Code lists processing and transformation. Please find all details in the https://github.com/OP-TED/ESPD-EDM/blob/espd-tools/README.md[README file].
 
 === ESPD Demo site
 
@@ -55,7 +55,7 @@ The Conceptual model was aligned with ePO and eForms and a new layout is propose
 * **GitHub issue https://github.com/OP-TED/ESPD-EDM/issues/408[#408] - UBL term: cbc:CopyIndicator definition harmonized with the documentation.**
 ** Alignment of cbc:CopyIndicator definition from Enterprise Architect with TED Documentation.
 * **GitHub issue https://github.com/OP-TED/ESPD-EDM/issues/414[#414] - cac:ResidenceAddress linked to at-voc::country**
-** Adding link to at-voc::country codelist for cac:ResidenceAddress.
+** Adding link to at-voc::country code list for cac:ResidenceAddress.
 
 === ESPD-EDM Criterion file - Data Structure 
 
@@ -90,7 +90,7 @@ Several issues have been resolved related to the data structure of the ESPD-EDM 
 The XSLT files were deprecated and moved to **espd-tools** branch. New tools, based on JavaScript are provided to transform the Excel files: 
 
 * https://github.com/OP-TED/ESPD-EDM/blob/espd-tools/excel2espd.js[excel2espd.js] transforms the Excel Criterion file to ESPD XML examples, both ESPD Request and ESPD Response.
-* https://github.com/OP-TED/ESPD-EDM/blob/espd-tools/codelist.js[codelists.js] transforms the Excel Codelists file into genericode files, and downloads the external Codelists form EU Vocabularies.
+* https://github.com/OP-TED/ESPD-EDM/blob/espd-tools/codelist.js[codelists.js] transforms the Excel Code lists file into genericode files, and downloads the external code lists form EU Vocabularies.
 
 The following changes have been performed related to the ESPD-EDM tools files:
 
@@ -100,7 +100,7 @@ The following changes have been performed related to the ESPD-EDM tools files:
 * Converting samples from Excel to XML format with the JavaScript excel2espd tool. The XML samples available in the GitHub folder https://github.com/OP-TED/ESPD-EDM/tree/v4.0.0/xml-examples[xml-examples].  
 
 
-=== Codelists
+=== Code lists
 
 ESPD version has been updated in the technical codelists files to match the current version (specific files can be found in the folder https://github.com/OP-TED/ESPD-EDM/tree/v4.0.0/codelists/gc[codelists/gc]), for tags: Version, CanonicalURI, CanonicalVersionURI, LocationURI. 
 
@@ -114,11 +114,11 @@ The corresponding genericode files were generated.
 
 === Validation - Interoperability Testbed
 
-The ESPD Team provides a new repository to generate Schematron Business Rules and XSL files necessary for validation process: https://github.com/OP-TED/espd-validation-schematron[ESPD Schematron Validation]. This repository allows the processing, transformation, and validation of ESPD XML examples, UBL 2.3 XSD files, genericode codelists, and Schematron business rules files. The resulting XSL files are used for the Interoperability Testbed.
+The ESPD Team provides a new repository to generate Schematron Business Rules and XSL files necessary for validation process: https://github.com/OP-TED/espd-validation-schematron[ESPD Schematron Validation]. This repository allows the processing, transformation, and validation of ESPD XML examples, UBL 2.3 XSD files, genericode code lists, and Schematron business rules files. The resulting XSL files are used for the Interoperability Testbed.
 
 Update of Interoperability Testbed https://www.itb.ec.europa.eu/espd/upload[ESPD validator]
 
-* Generating the ESPD validator, for the Request and the Response, for v4.0.0 with the latest entry files (genericode files for codelists, xml files for the ESPD Request and the ESPD Response). 
+* Generating the ESPD validator, for the Request and the Response, for v4.0.0 with the latest entry files (genericode files for code lists, xml files for the ESPD Request and the ESPD Response). 
 
 === Online documentation - espd-docs GitHub Repository 
 

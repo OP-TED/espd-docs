@@ -25,7 +25,7 @@ The *codelists folder* contains the ESPD-criterion.xlsx file, the “Criterion E
 
 * The *xslx-codelists-to-genericode* subfolder #contains the excel-to-gc-multilang-v1.0.xsl* #that...#
 
-* The *gc* sub-folder contains all the generic codes that the ESPD uses. General codelists are downloaded and used as is, or a subset of them is used.
+* The *gc* sub-folder contains all the generic codes that the ESPD uses. General code lists are downloaded and used as is, or a subset of them is used.
 
 Transform files are used to generate technical code lists if there are many changes to do at one time. If there is a small change, e.g., to one code, the ESPD-codelists.xlsx file is used as the source file. The procedure for generating new code lists after changes can be found via this link.
 
