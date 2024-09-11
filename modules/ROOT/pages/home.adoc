@@ -19,9 +19,9 @@ image:home_roadmap.png[Roadmap,align=center,pdfwidth=50%,scaledwidth=50%]
 This new version of the ESPD-EDM is a minor release which focuses on:
 
 * updating the data structure 
-* updating the codelists files 
+* updating the code lists files 
 * updating the xml examples files 
-* updating the schematron files for codelists validation 
+* updating the schematron files for code lists validation 
 * updating the online documentation 
 
 For more information regarding the release, please refer to the xref:release_notes.adoc[release notes]. 

@@ -39,27 +39,27 @@ Changes to the ESPD-EDM XSLT files:
 
 * **Updates to the "ESPDRequest-Annotated.xslt" file (missing element/attribute or incorrect value)**
 
-      ** **Fixed GitHub issue https://github.com/OP-TED/ESPD-EDM/issues/387[#387] - Improper listVersionID attribute value in cbc:DocumentTypeCode**: cac:Language/cbc:LocaleCode/@listVersionID for  the codelist "language"
-      ** **Fixed GitHub issue https://github.com/OP-TED/ESPD-EDM/issues/387[#387] - Improper listVersionID attribute value in cbc:DocumentTypeCode**: cbc:ExpectedCode/@listVersionID for  the codelist "eo-role-type"
-      ** cac:Language/cbc:LocaleCode/@listAgencyID for  the codelist "language" 
-      ** cbc:ExpectedCode/@listAgencyID for  the codelist "occupation" 
+      ** **Fixed GitHub issue https://github.com/OP-TED/ESPD-EDM/issues/387[#387] - Improper listVersionID attribute value in cbc:DocumentTypeCode**: cac:Language/cbc:LocaleCode/@listVersionID for  the code list "language"
+      ** **Fixed GitHub issue https://github.com/OP-TED/ESPD-EDM/issues/387[#387] - Improper listVersionID attribute value in cbc:DocumentTypeCode**: cbc:ExpectedCode/@listVersionID for  the code list "eo-role-type"
+      ** cac:Language/cbc:LocaleCode/@listAgencyID for  the code list "language" 
+      ** cbc:ExpectedCode/@listAgencyID for  the code list "occupation" 
 					
 * **Updated the "From-REQUEST-to-RESPONSE.xslt" file (missing element/attribute or incorrect value)**
 
-      ** **Fixed GitHub issue https://github.com/OP-TED/ESPD-EDM/issues/387[#387] - Improper listVersionID attribute value in cbc:DocumentTypeCode**: cbc:ResponseCode/@listVersionID for  the codelist "eo-role-type"
+      ** **Fixed GitHub issue https://github.com/OP-TED/ESPD-EDM/issues/387[#387] - Improper listVersionID attribute value in cbc:DocumentTypeCode**: cbc:ResponseCode/@listVersionID for  the code list "eo-role-type"
 
-      ** **Fixed GitHub issue https://github.com/OP-TED/ESPD-EDM/issues/387[#387] - Improper listVersionID attribute value in cbc:DocumentTypeCode**: cbc:ResponseCode/@listVersionID for  the codelist "country"
+      ** **Fixed GitHub issue https://github.com/OP-TED/ESPD-EDM/issues/387[#387] - Improper listVersionID attribute value in cbc:DocumentTypeCode**: cbc:ResponseCode/@listVersionID for  the code list "country"
 
       ** **Fixed GitHub issue https://github.com/OP-TED/ESPD-EDM/issues/390[#390] - PERCENTAGE Questions: Artifact Examples and Shematrons Inconsistency**: cbc:ResponseQuantity/@unitCode replaced by cbc:ResponseNumeric/@format
-      ** cbc:ResponseCode/@listAgencyID for  the codelist "occupation" 
+      ** cbc:ResponseCode/@listAgencyID for  the code list "occupation" 
 
  * **Updated the xslt file "EconomicOperatorData.xslt" (missing element/attribute or incorrect value)**
-       ** **Fixed GitHub issue https://github.com/OP-TED/ESPD-EDM/issues/387[#387] - Improper listVersionID attribute value in cbc:DocumentTypeCode**: cac:Party/cbc:IndustryClassificationCode/@listVersionID for  the codelist "economic-operator-size"
+       ** **Fixed GitHub issue https://github.com/OP-TED/ESPD-EDM/issues/387[#387] - Improper listVersionID attribute value in cbc:DocumentTypeCode**: cac:Party/cbc:IndustryClassificationCode/@listVersionID for  the code list "economic-operator-size"
 
 * **Updated the "Legislation.xslt" file (missing element/attribute or incorrect value)**
 
-      ** **Fixed GitHub issue https://github.com/OP-TED/ESPD-EDM/issues/387[#387] - Improper listVersionID attribute value in cbc:DocumentTypeCode**: cac:Language/cbc:LocaleCode/@listVersionID for  the codelist "language"
-      ** cac:Language/cbc:LocaleCode/@listAgencyID for  the codelist "language" 
+      ** **Fixed GitHub issue https://github.com/OP-TED/ESPD-EDM/issues/387[#387] - Improper listVersionID attribute value in cbc:DocumentTypeCode**: cac:Language/cbc:LocaleCode/@listVersionID for  the code list "language"
+      ** cac:Language/cbc:LocaleCode/@listAgencyID for  the code list "language" 
      
 * **Converted samples from Excel to XML format with the updated XSLT**
 
@@ -92,7 +92,7 @@ The Interoperability Testbed https://www.itb.ec.europa.eu/espd/upload[ESPD valid
 * **Fixed GitHub issue https://github.com/OP-TED/ESPD-EDM/issues/390[#390] - PERCENTAGE Questions: Artifact Examples and Shematrons Inconsistency**
      ** Schematron file: "./common/sch/03-ESPD-resp-criterion-br.sch"
 
-* Generated the ESPD validator for the Request and the Response for v3.3.0, with the latest entry files (generic code files for codelists, xml files for the ESPD Request and the ESPD Response).
+* Generated the ESPD validator for the Request and the Response for v3.3.0, with the latest entry files (generic code files for code lists, xml files for the ESPD Request and the ESPD Response).
 
 
 === Online documentation - espd-docs GitHub Repository 
