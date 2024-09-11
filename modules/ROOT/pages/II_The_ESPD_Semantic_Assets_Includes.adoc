@@ -1,4 +1,5 @@
 
+////
 include::II.0_The_ESPD_Semantic_Assets.adoc[]
 include::II.1_ESPD_Distribution_package.adoc[]
 include::II.2_Adoption_of_UBL-2.2.adoc[]
@@ -7,3 +8,299 @@ include::II.3.1_UBL-2.2-TOOP-Requirements.adoc[]
 include::II.4.0_Codelists_and_Identifiers.adoc[]
 include::II.4.1_Compulsory_Attributes.adoc[]
 include::II.4.2_Compulsory_Attributes_XML_Example.adoc[]
+////
+
+== II. The ESPD Semantic Assets
+
+Semantic assets have been defined by https://joinup.ec.europa.eu/category/glossary/semantic-interoperability-asset[ISA] as "a collection of highly reusable metadata (e.g. xml schemata, generic data models) and reference data (e.g. code lists, taxonomies, dictionaries, vocabularies) which are used for e-Government system development".
+
+=== II.1 ESPD Distribution package
+
+All the semantic assets needed to implement ESPD electronic documents are organised in a link:{url-tree}/dist[distribution package]. The content of this folder is organised as follows:
+
+.Distribution (dist) package
+image::Dist-structure.png[dist package, alt="dist package", width="150" align="center"]
+
+. *art*: contains graphical resources used to  document the distribution;
+. *cl*: reference data (codelists) used by the XML instances. It also contains a spread-sheet with all the ESPD criteria structured. This spread-sheet can be used to automatically generate ESPD XML instances.
+. *doc*: contains this document (and other documents to support developers);
+. *mod*: UBL-2.2 model specified in spread-sheets;
+. *val*: validation artefacts (eg. ISO Schematron and OASIS Genericode CVA files);
+. *xml*: samples of ESPD XML instances for illustrative and testing purposes;
+. *xsd*: the UBL-2.2 XSD Schemas, documented (annotated) version;
+. *xsdrt*: the UBL-2.2 XSD Schemas, runtime version;
+. *xslt*: transformation stylesheets used to generate basic sample XML instances from the criteria defined in spreadsheets link:{url-blob-211}/dist/cl/ods/ESPD-CriteriaTaxonomy-BASIC-V2.1.1.ods[*Basic* ESPD data structures] and link:{url-blob-211}/dist/cl/ods/ESPD-CriteriaTaxonomy-EXTENDED-V2.1.1.ods[*Extended* ESPD data structures] (see folder link:{url-tree}/dist/cl[dist/cl]).
+
+=== II.2 Adoption of UBL-2.2
+
+One important difference of this new version in respect of the previous versions of the ESPD-EDM is that the XSD Schemas used for the XML implementation of the Request and Response documents have been developed by OASIS UBL (ISO/IEC 19845) in close collaboration with the European Commission (EC).
+
+The results of such collaboration have been included in the version 2.2 of UBL which is actually under revision and is to be formally adopted by the end of 2017.
+
+UBL, developed by the Organization for the Advancement of Structured Information Standards, is a royalty-free library of standard electronic Extensible Markup Language (XML) business documents. It is designed to plug directly into existing business, legal, auditing, and records management practices, and to operate within a standard business framework such as ISO 15000 (ebXML) to provide a complete, standards-based infrastructure that can extend the benefits of existing Electronic Data Interchange (EDI) systems to businesses of all sizes.
+
+UBL is also included in the ICT Standards for Procurement (https://joinup.ec.europa.eu/collection/ict-standards-procurement[ICT Standards for Procurement]): the rules on European standardisation allow the European Commission to identify information and communication technology (ICT) technical specifications - that are not national, European or international standards - to be eligible for referencing in public procurement.
+
+UBL is a specific used in some Member States and by the EU institutions, namely the European Commision. UBL is also referred to in the Commission implementing decision of 31 October 2014 on the identification of Universal Business Language version 2.1 for referencing in public procurement  (http://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32014D0771&from=EN[COM Decision 2014/771/EU]).
+
+Technical resources and tools are freely available for its use and repurpose by the Member States, Service Providers, EC and any other stakeholders. Especially interesting and largely used are the open source tools and artefacts referred by the OASIS UBL-TC, such as https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=codelist[Genericode] , http://schematron.com/[ISO Schematron]  and http://www.cranesoftwrights.com/[Crane Softwright]. 
+
+=== II.3 UBL-2.2 Documents and libraries
+
+UBL-2.2 defines thousands of different information components and dozens of documents. This guide describes and illustrates only those elements from UBL-2.2 that are actually used by the eESPD. Thus the ESPD-EDM reuses only a small set of those components and only 2 documents: `*QualificationApplicationRequest*` (for the ESPD Request) and `*QualificationApplicationResponse*` (for the ESPD Response).
+
+UBL-2.2 distributes two sets of XSD schemas: see folders `xsd` and `xsdrt` of the UBL distribution package. The `xsd` folder contains the schemata fully documented (with dictionary entry names, definitions, examples, etc.); whilst the `xsdrt` schemata are not likewise documented and are frequently used in production environments (*rt* stands for “run-time”).
+
+The previous ESPD-EDM versions used its own libraries where Criterion and Evidence-related aggregate and components were defined (components prefixed with `cac-ccv:`, `cac-cev`, `cbc-ccv` and `cbc-cev`). 
+
+This new version uses components exclusively defined by UBL-2.2 in two main libraries: Common Aggregate Components (file `UBL-CommonAggregateComponents-2.2.xsd.xsd`) and Common Basic Components (`UBL-CommonBasicComponents-2.2.xsd.xsd`). 
+
+The usual prefix used to identify Common Aggregate Components is `cac:`. The prefix for Common  Basic Components is `cbc:`.
+
+All the materials developed by UBL-2.2 Technical Committee can be accessed here: https://www.oasis-open.org/committees/document.php?document_id=60554.
+
+Beware also that the *UBL-2.2 namespaces* used for the two main documents in ESPD (and for the rest of UBL-2.2 XSD
+schemas are *now final*, since June 2018. Thus:
+
+. The ESPD-EDM v2.1.* XSD Schemas use the namespace `_urn:oasis:names:specification:ubl:schema:xsd:*_`, whilst
+. The previous ESPD-EDM versions 2.0.* used the namespace `_urn:X-test:UBL:Pre-award:*_`.
+
+[.text-left]
+=== UBL-2.2 and TOOP Requirements
+
+During the development of v2.1.1 some requirements arose from TOOP related to the Evidence class. The aforementioned requirements, that can be found in the following GitHub link:https://github.com/ESPD/ESPD-EDM/issues/254[issue], are fully mappable to the UBL 2.2 Schema.
+
+To check the mapping, please access to these link:{url-blob}/assets/TOOP_Requirements_UBL_2.2.xlsx[Excel file]
+or link:{url-blob}/assets/TOOP_Requirements_UBL_2.2.ods[ODS file].
+
+[.text-left]
+=== II.4 Codes and Identifiers
+
+A code is a shortened way (a number or a short abbreviated text), leading to the definition of a 'concept'. The code epresents the concept and is used by software applications to retrieve the definition of the concept or make automatic decisions.
+
+An Identifier, in turn, can be defined as “a value (represented as a short text, a number or a combination of both) used to establish the identity of, and distinguish uniquely, one occurrence of an object following a pattern” . 
+
+The essential distinctive features between identifiers and codes are:
+
+. Identifiers point at specific occurrences of objects (instances); codes replace concepts;
+
+. Identifiers are virtually limitless while codes are finite. In other words, identifier lists are “open” (the lists may grow) and code list are “closed” (practically never updated, once consolidated). Hence codes are maintained in 'Codelists' whilst identifiers are usually kept in databases.
+
+. Identifiers are in principle maintained in the business domain, e.g. buyer identifiers, economic operator identifiers, exclusion or selection criteria identifiers, etc.
+
+. Codes may belong to three different domains: 
+
+.. they can be somehow 'business-agnostic' and be used cross-domain (e.g. country codes, currency codes, language codes, etc.); 
+
+.. business-specific domain (i.e. procurement specific, like codes representing contract types, procurement procedure types, criteria types, etc.); and 
+
+.. business process-specific, i.e. ESPD-specific, such as the data type expected in the response to a criterion, or the type of a criterion property, etc.
+
+==== Codes and code lists
+
+The ESPD Exchange Data Model tries to reuse as much as possible the codes that are already used for e-Procurement. In any project, like the ESPD-EDM,
+there are at least three types (or layers) of codes:
+
+. *Cross-sector*, common, codes, like the ones defined and maintained by the ISO for currencies, languages, countries, etc.; or the ones defined by the European Commission
+that can be used in multiple business domains, e.g. the NUTS defined by EUROSTAT; the ones defined by BACH (Banque de France), etc.;
+. *Business domain-related*, maintained by international or European authorities, e.g. the ones defined by UNECE (as unit codes), or by the Publications Office of the European Union (OP), e.g. types of procurement procedures (based on the EU Directives);
+. *Project-specific* (or application-specific), i.e. those codes that are particular of the project. Types (taxonomy) of exclusion and selection criteria, types of evaluation method, etc. in the case of the ESPD-EDM.
+
+Codes are normally maintained in "code lists". The ESPD-EDM keeps and distributes these code lists in three different formats:
+
+. In an Office Open XML (link:{url-blob-211}/dist/cl/xlsx/ESPD-CodeLists-V2.1.1.xlsx[XLSX]) file,
+. In an Open Office Document (link:{url-tree}/dist/cl/ods[ODS]) file,
+. Genericode 1.0 (link:{url-tree}/dist/cl/gc[GC]) files (one `*.gc` file per code list).
+
+ESPD-EDM Code list contain the following elements:
+
+* *Metadata*: information about the code list, e.g. its identifier, the identifier and name of the agency responsible for defining and maintaining the list, the version of the list, etc.
+* *Code identifier*: the literal (a label composed of characters, numbers and symbols like '_');
+* *Concept description*: the definition of the concept represented by the code;
+* *Multilingual descriptions*: the translations of the English definitions.
+
+The figure below illustrate how these elements are organised in the code lists maintained in spread-sheets:
+
+.Elements and metadata of an ESPD code list
+image::CodelistElementsAndMetadata.png[Elements and metadata of an ESPD code list, alt="Elements and metadata of an ESPD code list", align="center"]
+
+[NOTE]
+====
+The link:#annex-ii-code-lists-used-in-espd[Annex II] of this document lists all the code lists used by the ESPD and in which context or element it is used.
+====
+
+==== Compulsory attributes
+.ESPD Requirement regarding codes
+[cols="<1,<4"]
+|===
+|*REQUIREMENT*:
+| *For codes, this ESPD V2.1.1 specification requires always three mandatory attributes: `listID`, `listAgencyID`, and `listVersionID`*.
+|===
+
+.ESPD Requirement regarding identifiers
+[cols="<1,<4"]
+|===
+|*REQUIREMENT*:
+| *For identifiers, this ESPD V2.1.1 specification requires at least (and always) the mandatory attribute `schemeAgencyID`*.
+When identifying parties, like the Economic Operator, the Contracting Authority, etc., the attribute `schemeID` SHOULD
+also be used (for this use the code list
+link:{url-blob-211}/dist/cl/xlsx/ESPD-CriteriaTaxonomy-EXTENDED-V2.1.1.xlsx[EOIDType]).
+|===
+
+In UBL Codes and identifiers are based on ebXML Core components (UBL conforms to http://docs.oasis-open.org/ubl/UBL-conformance-to-CCTS/v1.0/UBL-conformance-to-CCTS-v1.0.html[ebXML CCTS ISO/TS 15000-5:2005] currently maintained by UN/CEFACT).
+
+One convenient characteristic of these two CCT elements (Codes and Identifiers) is that they use a rich set of attributes that allow to identify their pattern, the name of the list, the URI from where to obtain the list, the Agency that maintains the list, the version of the list, and other. 
+
+UBL-2.2 CCT are defined in the file `CCTS_CCT_SchemaModule-2.2.xsd` (see folders `xsd/common` or `xsdrt/common` in the link:{url-tree}/dist/[distribution package]).
+
+The figure below shows the complete list of attributes for the CCT `CodeType` component. 
+
+.Code attributes
+image::CCT_CodeType_Attributes.png[Code attributes, alt="Code attributes", align="center"]
+
+And its corresponding definitions, as provided by OASIS UBL (ISO/IEC 19845):
+
+.UBL attributes for codes
+[cols="<1,<4"]
+|===
+
+|*Attribute*|*Definition*
+
+|*listID*|The identification of a list of codes (*MANDATORY in ESPD V2.1.1*).
+
+|*listAgencyID*|An agency that maintains one or more lists of codes.
+
+|*listAgencyName*|The name of the agency that maintains the list of codes (*MANDATORY in ESPD V2.1.1*).
+
+|*listName*|The name of a list of codes.
+
+|*listVersionID*|The version of the list of codes (*MANDATORY in ESPD V2.1.1*).
+
+|*name*|The textual equivalent of the code content component.
+
+|*languageID*|The identifier of the language used in the code name.
+
+|*listURI*|The Uniform Resource Identifier that identifies where the code list is located.
+
+|*listSchemeURI*|The Uniform Resource Identifier that identifies where the code list scheme is located.
+
+|===
+
+
+This other figure shows the attributes for the CCT `IdentifierType`component.
+
+.Identifier attributes
+image::CCT_IdentifierType_Attributes.png[Identifier attributes, alt="Identifier attributes", align="center"]
+
+And its corresponding definitions, as provided by OASIS UBL (ISO/IEC 19845):
+
+.UBL attributes for identifiers
+[cols="<1,<4"]
+|===
+
+|*Attribute*|*Definition*
+
+|*schemeID*|The identification of the identification scheme.
+
+|*schemeName*|The name of the identification scheme.
+
+|*schemeAgencyID*|The identification of the agency that maintains the identification scheme (*MANDATORY in ESPD V2.1.1*).
+
+|*schemeAgencyName*|The name of the agency that maintains the identification scheme.
+
+|*schemeVersionID*|The version of the identification scheme.
+
+|*schemeDataURI*|The Uniform Resource Identifier that identifies where the identification scheme data is located.
+
+|*schemeURI*|The Uniform Resource Identifier that identifies where the identification scheme is located.
+
+|===
+
+==== XML Example
+
+This fragment of XML shows how the compulsory attributes are used for the some of the root elements of an ESPD Request document.
+
+[source,xml]
+----
+<cbc:UBLVersionID schemeAgencyID="OASIS-UBL-TC">2.2</cbc:UBLVersionID> <!--1-->
+
+<cbc:ID schemeAgencyID="DGPE">ESPDREQ-DGPE-3b5755dfb8</cbc:ID> <!--2-->
+
+<cbc:UUID schemeID="ISO/IEC 9834-8:2008" schemeAgencyID="EU-COM-GROW" schemeVersionID="4">0fddbf2d-1e33-4267-b04f-52b59b72ccb6</cbc:UUID> <!--3-->
+
+<cbc:ContractFolderID schemeAgencyID="DGPE">PP.20170419.1024-9</cbc:ContractFolderID> <!--4-->
+
+<cbc:VersionID schemeAgencyID="EU-COM-GROW" schemeVersionID="2.1.1">1.0</cbc:VersionID> <!--5-->
+
+<cbc:ProcedureCode listID="ProcedureType" listAgencyID="EU-COM-OP" listVersionID="1.0">OPEN</cbc:ProcedureCode> <!--6-->
+
+<cbc:QualificationApplicationTypeCode listID="QualificationApplicationType" listAgencyID="EU-COM-GROW" listVersionID="2.1.1">EXTENDED</cbc:QualificationApplicationTypeCode> <!--7-->
+----
+<1> The Agency responsible for the maintenance of the UBL versioning is the OASIS UBL Technical Committee
+<2> The identifier for this document was issued by the a Spanish Central Government Directorate identified as 'DGPE'
+<3> The UUID follows the ISO/IEC Scheme 9834-8:2008 Version 4 and was generated by the European Commission's Directorate General GROWTH (DG GROW)
+<4> The reference number used to identify to which procurement procedure this ESPD document belongs (PP.20170419.1024-9) has been supplied by the Spanish Directorate DGPE
+<5> Generic information, such as the content version ID, use always by default the "EU-COM-GROW" Agnecy ID. Notice that the other additional attributes may be also used, as in this example.
+<6> Notice that for Codes, the three compulsory attributes are specified. For these codes. In this example the attributes are specifying that the code is maintained by the Publication Office in a list named `ProcedureType` and that the version that has been used is version `1.0` which is distributed jointly with this ESPD-EDM V2.1.1 specification (in the link:{url-tree}/dist[distribution package]).
+<7> Beware that the codes may be numbers, text or combinations of both. These code labels are the ones that are specified in the codelist spreadsheets and XML Genericode files distributed jointly with this specification (in the folder `dist/cl` of the link:{url-tree}/dist[distribution package].
+
+==== Code list that *IS NOT* used for CODE values
+
+Code lists contain the code identifiers that are expected as "values" for a data element of type CODE
+(i.e. a UBL-2.2. cbc:CodeType element). This is case of code lists such as `CurrencyCode`, `CountryCodeIdentifier`,
+`ProjectType`, `EORoleType`, etc.
+
+However, this ESP-EDM specification also uses the code list
+link:{url-blob-211}/dist/cl/xlsx/ESPD-CodeLists-V2.1.1.xlsx[EOIDType]
+with a different purpose, "the identification of the type of scheme used to identify parties, namely Economic Operators"
+(but should also used to identify the schemes used to identify Contracting Authorities, Service Providers, etc.).
+
+The figure below shows the possible values of this code list.
+These codes are to be used as values of the `schemeID` attribute (attribute of the UBL-2.2 element `cbc:Identifier`):
+
+.Values of the schemeID for Party Identifiers
+image::EOIDTypeCodeList.png[Use of the EOIDType code list, alt="Use of the EOIDType code list", align="center"]
+
+The next fragment of XML shows how this is used in the particular case of the Criterion "Relied on entities"
+("Does the economic operator rely on the capacities of other entities in order to meet the selection criteria...?").
+See also section link:#xml-example-extended-economic-operator[XML Example (Extended economic operator)]
+for a more complete example on this Criterion:
+
+.TenderingCriterionProperty (a QUESTION) asking for the identifier of the Economic Operator
+[source,xml]
+----
+...
+
+<cac:TenderingCriterionProperty>
+    <cbc:ID schemeID="CriteriaTaxonomy" schemeAgencyID="EU-COM-GROW" schemeVersionID="2.1.1">1fa05728-308f-43b0-b547-c903ffb0a8af</cbc:ID><!--1-->
+    <cbc:Description>ID of the economic operator</cbc:Description>
+    <cbc:TypeCode listID="CriterionElementType" listAgencyID="EU-COM-GROW" listVersionID="2.1.1">QUESTION</cbc:TypeCode>
+    <cbc:ValueDataTypeCode listID="ResponseDataType" listAgencyID="EU-COM-GROW" listVersionID="2.1.1">ECONOMIC_OPERATOR_IDENTIFIER</cbc:ValueDataTypeCode><!--2-->
+</cac:TenderingCriterionProperty>
+
+...
+----
+<1> The identifier of the property will be used in the response to map link the response to this QUESTION.
+<2> The ECONOMIC_OPERATOR_IDENTIFIER is mapped to an element `cbc:ResponseID` in the response (which is based on the
+UBL-2.2. element `cbc:Identifier`).
+
+.TenderingCriterionResponse (the answer to the previous QUESTION)
+[source,xml]
+----
+...
+
+ <cac:TenderingCriterionResponse>
+    <cbc:ID schemeID="ISO/IEC 9834-8:2008 - 4UUID" schemeAgencyID="EU-COM-GROW" schemeVersionID="2.1.1">acb58f0e-0fe4-4372-aa08-60d0c36bfcfe</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID schemeID="CriteriaTaxonomy" schemeAgencyID="EU-COM-GROW" schemeVersionID="2.1.1">1fa05728-308f-43b0-b547-c903ffb0a8af</cbc:ValidatedCriterionPropertyID><!--1-->
+    <cbc:ResponseID schemeID="VAT" schemeAgencyID="ES-AEAT">B82387770</cbc:ResponseID> <!--2-->
+ </cac:TenderingCriterionResponse>
+...
+----
+<1> Notice that this UUID is identical to the QUESTION UUID, which is the mechanism used in UBL to link the answer to
+the very specific QUESTION it is responding.
+<2> The element `cbc:ResponseID` is of type `Identifier`(as defined in the Core Component Type Specification library).
+The value ''VAT'' assigned to the attribute `schemeID`, taken from the code list
+link:{url-blob-211}/dist/cl/xlsx/ESPD-CodeLists-V2.1.1.xlsx[EOIDType],
+is used to indicate that the type of identifier used is the Value Added Tax identifier issued by the Spanish Tax Agency (ES-AEAT).
+
+
