@@ -43,4 +43,1670 @@ include::3.999_AdditionalDocumentReference.adoc[leveloffset=+1]
 
 include::3.9999_GENERAL_RULE_1.adoc[leveloffset=+1]
 
+////
 
+[.text-center]
+== III. The ESPDResponse XML document
+
+.text-left]
+== Data Model overview
+The UML Diagram below provides a simplified view of the ESPDResponse document. Notice that the classes herein represented belong to different data-packages.  
+Hence each class name is preceded by different prefixes representing their corresponding namespaces: "espd::", "ccv::", "cev::", "cac::" (see ''
+Table 1. Schemas, namespaces and prefixes used by the ESPDResponse''). footnote:[this UML was produced using the MS-Visio tool, thus the double semicolon "::" 
+after the prefix. The XML syntax only uses one semicolon ":".]
+
+[.text-center]
+[[RESP_ESPDResponse_UML]]
+.espd::ESPDRequest UML class diagram
+image::3_RESP_ESPDResponse_UML.png[alt="ESPDResponse UML diagram"]
+
+[.text-left]
+As you can see in the diagram more than 50% of the classes were already defined in UBL-2.1 (cac-prefixed classes). Moreover, many of the "root" elements in the espd:ESPDRequest class reuse 
+UBL-2.1 Common Basic Components. This document does not represent nor describe in its entirety the entities modelled in UBL that are re-used in the ESPD. Any detail on the model, 
+schemata, and any other artefact relating to UBL-2.1 can be freely downloaded here: http://docs.oasis-open.org/ubl/os-UBL-2.1/UBL-2.1.html. Nonetheless those parts of the UBL 
+components that are commonly used in the ESPD documents are herein sufficiently identified and commented.
+
+[.text-left]
+This other figure below shows a graphical view of the XSD Schema implementation corresponding to the above UML diagram.
+
+[.text-center]
+[[RESP_ESPDResponse_XSD_diagram]]
+.espd::ESPDResponse XSD diagram
+image::3_RESP_ESPDResponse_XSD_diagram.png[alt="ESPDRequest XSD diagram"]
+
+[.text-left]
+According to the UML Diagram an ESPDResponse XML document is represented by the class `espd:ESPDResponse`.
+This ''root'' class aggregates other classes (which in turn aggregate sub-classes). 
+The list below summarises the use of each of these classes. Further on, in this document, 
+each class is analysed and illustrated in more detail:
+
+[.text-left]
+. The `cac:ContractingParty`, defined in UBL-2.1,  is used to specify data relating the Contracting Authority, Body or Entity. All ESPD Requests MUST provide some basic data about 
+the Contracting Body. 
+
+. The `espd:EconomicOperator` class is defined by COM as a placeholder for all the data related to the 
+Economic Operator. This class aggregates an espd:RepresentativeNaturalPerson class intended to gather
+the data of the legal representatives of the EO. It also reuses the UBL-2.1 cac:Party class.  
+
+. The `cac:ProcurementProjectLot` class was also defined in UBL-2.1 to hold data about the Lots in which a Procurement Project has been divided. The ESPD Request XML documents MUST use 
+this class to specify whether the Procurement Project has lots or not and to identify them. Although the ESPD-EDM model was designed to support multiple lots, the 
+current version of the ESPDService, however, still does not fully uses this feature and permits only to describe them.  
+
+. The `ccv:Criterion` class belongs to the Core Criterion Vocabulary data-package, thus the ccv: prefix.footnote:[see the CCV-CommonAggregateComponents-1.0.xsd library for its XML definition] . It is a compulsory element of multiple cardinality allowing for the 
+specification of both the exclusion and selection criteria in an ESPD Request.
+
+. `cac:ServiceProviderParty` is a specialisation of the cac:Party class, both defined in UBL-2.1. It is used to inform about the party responsible of the system that provided the data 
+included in the document; e.g. a pre-qualification system, a procurement platform, etc. The absence of this element indicates that the data has been provided by the Economic Operator itself. 
+
+. `cac:Signature` class is used to include an electronic signature in the document. In general, the presence of an electronic signature aims at ensuring authenticity, integrity and 
+non-repudiation. Different methods of signing an electronic document exist, and some of them do not need embedding the signature in the document. The cardinality 0..1 of this 
+class in the `espd:ESPDRequest` document allows the use of other electronic signature methods that do not imply the use of this class in an ESPD Request XML document. Therefore, 
+the absence implies that authentic, integrity, etc. are solved by other means.
+
+. `cac:AdditionalDocumentReference` is used to include external references to information that can be accessed from a URL. In contracts above the threshold
+this element is used by the CA in the ESPDRequest to refer to the Contract Notice published in TeD. Other documents or information accessible through a URL that might be considered relevant 
+MAY be specified by the Contracting Authority (in the ESPDRequest) or by the EO (in the ESPDResponse) through 
+the use of multiple instances of this element.
+
+[.text-left]
+The next sections deal with the specific details of each one of these classes and provide guidelines, rules 
+and examples on how to produce XML documents that are conformant with the ESPD Service ESPDResponse XML document and 
+for contracts above the threshold. 
+
+[.text-left]
+.All the reference data artefacts in a bunch file
+[NOTE]
+====
+[.text-left]
+The text and tables below (about the classes, properties and attributes of the ESPD-EDM model) make reference to code lists, which use is compulsory in many cases. 
+These references provide links to the specific code lists therein referred to. The links allow for the downloading of a PDF file with the metadata about
+the list and the values and descriptions of each code. 
+
+Click on the links to download and examine the code list you are interested in.
+
+The ESPD Service uses http://www.schematron.com/spec.html[Schematron] and the https://www.oasis-open.org/committees/codelist/[OASIS Genericode 1.0] specification for the validation 
+of externalised codes. If you need the Genericode files you can download them altogether, jointly with the code lists PDF files, from this link:{url-blob}/code_lists/code_lists.zip[zip volume].
+====
+
+[.text-left]
+== Root properties
+The ESPDResponse main class represents the entire ESPDResponse documents. All the data (root properties) of the document "hang" directly from the class or are other classes associated to it.
+
+As for all documents designed upon the UBL-2.1 Naming and Design Rules (NDR), this main class uses several UBL-2.1 common basic components. Although most of them 
+are optional the ESPD Service expects the following ones:
+
+.List of root properties expected by the ESPD Service in the ESPDResponse
+|===
+|*Property*|*Description*|*Example*|*Mandatory?*|*Rules & comments*
+
+|*cbc:UBLVersionID*
+|Identifies the earliest version of the UBL 2 schema for this document type that defines all of the elements that might be encountered in the current instance
+a|
+[source,xml] 
+----
+<cbc:UBLVersionID 
+schemeAgencyID=
+"OASIS-UBL-TC">
+2.1
+</cbc:UBLVersionID>
+----
+|OPTIONAL (0..1) 
+|`*Rule*: Use the value "2.1". Use also "OASIS-UBL-TC" for the schemeAgencyID attribute`. 
+
+|*cbc:CustomizationID*
+|Identifies a user-defined customization of UBL for a specific use.
+a|
+[source,xml] 
+----
+<cbc:CustomizationID 
+schemeName="CustomizationID"
+schemeAgencyID="BII" 
+schemeVersionID="3.0">
+urn:www.cenbii.eu:
+transaction:biitrns092:ver3.0
+ </cbc:CustomizationID>
+----
+|OPTIONAL (0..1) 
+|`*Rule*: Compulsory use of the code defined by the CEN/BII Workshop-3 (_BiiCoreTrdm092 ESPD_). See link:{url-blob}/code_lists/pdf/CustomizationID.pdf[Code List].`
+
+|*cbc:CopyIndicator*
+|Indicates whether this document is a copy (true) or not (false)
+a|
+[source,xml] 
+----
+<cbc:CopyIndicator>
+false
+</cbc:CopyIndicator>
+----
+|OPTIONAL (0..1) 
+|
+
+|*cbc:VersionID*
+|Indicates the current version of this ESPDResponse XSD Schema
+a|
+[source,xml] 
+----
+<cbc:VersionID 
+schemeAgencyID=
+"EU-COM-GROW">
+2016.04.2
+</cbc:VersionID>
+----
+|OPTIONAL (0..1)
+|`*Rule*: Use always the value "2016.04.2 for this version (this may change in future releases)`
+
+|*cbc:IssueDate*
+|The date, assigned by the sender, on which this document was issued
+a|
+[source,xml] 
+----
+<cbc:IssueDate>
+2016-05-09
+</cbc:IssueDate>
+----
+|*MANDATORY* (1..1)
+|`*Comment*: compulsoriness inherited from UBL-2.1`
+
+|*cbc:IssueTime*
+|The time, assigned by the sender, at which this document was issued
+a|
+[source,xml] 
+----
+<cbc:IssueTime>
+17:36:51
+</cbc:IssueTime>
+----
+|OPTIONAL (0..1)
+| 
+
+|*cbc:ID*
+|An identifier for this document, assigned by the sender
+a|
+[source,xml] 
+----
+<cbc:ID 
+schemeID="ISO/IEC 9834-8:2008 - 4UUID"
+schemeAgencyID=
+"EU-COM-GROW" 
+schemeAgencyName=
+"DG GROW (European Commission)" 
+schemeVersionID="1.1">
+f01c214f-2fe6-4664-83ff-353f118b8d6f
+</cbc:ID>
+----
+|*MANDATORY* (1..1)
+|`*Comment*: Compulsoriness inherited from UBL-2.1. Do not forget to specify the schemeAgencyID attribute (EU-COM-GROW identifies all elements defined in the ESPD by COM)`
+
+|*cbc:ContractFolderID*
+|An identifier, assigned by the sender, for the process file (i.e., record) to which this document belongs
+a|
+[source,xml] 
+----
+<cbc:ContractFolderID 
+schemeAgencyID="TeD">
+EASME/COSME/2015/027
+</cbc:ContractFolderID>
+----
+|*MANDATORY* (1..1)
+|`*Comment*: This is a mandatory data provided by the Contracting Authority. It is already present in the ESPDRequest`
+
+5+^|*Associated classes*
+
+|*ext:UBLExtensions*
+|A container for all ad-hoc (non standard) extensions present in the document.
+|
+|OPTIONAL (0..1)
+|`*Comment*: Not used by the ESPD. See sub-section further on in this document`
+
+|*cac:ContractingParty*
+|The contracting authority or contracting entity who is buying supplies,
+services or public works using a tendering procedure as described in the
+applicable directive (Directives 2014/24/EU, 2014/25/EU).
+|
+|*MANDATORY* (1..1)
+|`*Comment*: See details further on in this document`
+
+|*espd-cac:
+EconomicOperatorParty*
+|Any natural or legal person or public entity or group of such persons
+and/or entities, including any temporary association of undertakings,
+which offers the execution of works and/or a work, the supply of products
+or the provision of services on the market. Information about the party 
+submitting the qualification.
+|
+|*MANDATORY* (1..1)
+|`*Comment*: See details further on in this document`
+
+|*cac:ProcurementProjectLot*
+|One of the parts of a procurement project that is being subdivided to allow 
+the contracting party to award different lots to different economic operators under 
+different contracts
+|
+|*MANDATORY* (1..n)
+|`*Comment*: See details further on in this document`
+
+|*ccv:Criterion*
+|A condition that the economic has to meet in order to not be excluded and 
+be selected as a candidate for awarding in a procurement procedure.
+|
+|*MANDATORY* (1..n)
+|`*Comment*: See details further on in this document`
+
+|*cac:
+ServiceProviderParty*
+|The organisation that provided the data about the procurement project,
+the Contracting Authority and/or the Economic Operator 
+|
+|OPTIONAL (0..1)
+|`*Comment*: See details further on in this document`
+
+|*cac:Signature*
+|The signature of the Economic Operator or of its representative
+|
+|OPTIONAL (0..n)
+|`*Comment*: See details further on in this document`
+
+|*cac:
+AdditionalDocumentReference*
+|A reference to an additional document
+|
+|OPTIONAL (0..n)
+|`*Comment*: See details further on in this document`
+
+|===
+
+Additionally to the above properties, the ESPDResponse XSD Schema defines other root properties that
+the class ESPDResponse does not uses currently. If you use them in your 
+own XML documents the ESPD Service will skip them (i.e. no exception would be thrown).
+
+.List of root properties expected by the ESPD Service in the ESPDResponse
+|===
+|Property|Description|Example|Mandatory?|Rules & comments
+
+|*espd-cbc:
+Economic
+Operator
+GroupName*
+|The name of the Consortium or group to which the Economic Operator belongs for a specific procurement project
+a|
+[source,xml] 
+----
+<xsd:element 
+ref="espd-cbc:
+EconomicOperatorGroupName" 
+minOccurs="0">
+ACME Global Consortium
+</cbc:EconomicOperatorGroupName>
+----
+|OPTIONAL (0..1)
+|Comments: This property is not used (yet) by the ESPD Service. Future releases will take it into account
+
+|*cbc:PreviousVersionID*
+|Indicates the version immediately previous to the earliest version of this ESPDResponse XSD Schema
+a|
+[source,xml] 
+----
+<cbc:VersionID 
+schemeAgencyID=
+"EU-COM-GROW">
+None
+</cbc:VersionID>
+----
+|OPTIONAL (0..1)
+|`*Rule*: Provide the value "None"`
+
+|*cbc:ProfileID*
+|Identifies a user-defined profile of the customization of UBL being used
+a|
+[source, xml]
+----
+<cbc:ProfileID>urn:X-demo:CoreElement</cbc:ProfileID>
+----
+|OPTIONAL (0..1)
+|Comment: Example source http://www.datypic.com/sc/ubl21/e-cbc_ProfileID.html
+
+|*cbc:ProfileExecutionID*
+|Identifies an instance of executing a profile, to associate all transactions in a collaboration
+a|
+[source, xml]
+----
+<cbc:ProfileExecutionID>
+normalizedString
+</cbc:ProfileExecutionID>
+----
+|OPTIONAL (0..1)
+|Comment: Example source http://www.datypic.com/sc/ubl21/e-cbc_ProfileExecutionID.html
+
+|*cbc:UUID*
+|A universally unique identifier for an instance of this document
+a|
+[source, xml]
+----
+<cbc:UUID>
+349ABBAE-DF9D-40B4-849F-94C5FF9D1AF4
+</cbc:UUID>
+----
+|OPTIONAL (0..1)
+|Comment: Example source http://www.datypic.com/sc/ubl21/e-cbc_UUID.html
+ 
+|=== 
+
+[.text-left]
+== UBLExtensions element 
+
+The UBL 2 Naming and Design Rules (NDR) establish that the first element of a 
+UBL-conformant XML document should be `ext:UBLExtensions` element. If used the 
+UBLExtensions MUST instantiate one or more `UBLExtension` sub-elements.
+
+The current version of the ESPDResponse documents does not UBLExtensions, but you could use it 
+for your own internal purposes. If specified in an XML document the ESPD Service would skip it.
+
+According to the http://docs.oasis-open.org/ubl/guidelines/UBL2-Customization1.0cs01.pdf[UBL 2 Guidelines for Customization] 
+the UBLExtension element found at the beginning of all UBL documents allows communities of
+interest to specify additional information entities as part of a UBL standard document. The
+UBLExtension element is not one of UBL's information entities. It is a structural device that
+allows arbitrary extensions to a UBL document type without affecting UBL conformance. 
+
+There are two situations where UBLExtension may be considered appropriate:
+
+. Where the requirement is to incorporate alien content in a standard UBL document type
+that cannot be contained as an Attachment.
+
+. Where a customizing organization wishes to extend information entities in a standard UBL
+document type and still have their documents be validated by the standard UBL schema. 
+
+[.text-left]
+== Contracting Party
+
+The class `cac:ContractingParty` was defined in UBL-2.1 (hence the prefix `cac:`).  
+This UBL class is a specialisation of the very rich UBL-2.1 aggregate component `cac:Party`.
+The ESPDResponse only uses a reduced subset of its data, although the XSD Schema imports it in 
+all of its richness (so you could use it for your own purposes beyond the ones expected by the 
+ESPD Service). See the http://docs.oasis-open.org/ubl/UBL-2.1.html[UBL-2.1] specification for all 
+the details about the `cac:Party` Common Aggregate Component.
+
+[.text-center]
+[[CMM_ContractingParty]]
+.ContractingParty XSD diagram details
+image::CMM_ContractingParty.png[align="center" alt="EO details, XSD", width="600", height="500"]
+
+[.text-left]
+=== Class cac:ContractingParty
+
+The table below lists the attributes and associated classes expected in an XML conformant 
+to the ESPD Service. 
+
+[.text-left]
+.Class cac:ContractingParty, elements expected by the ESPD Service  
+|===
+
+5+^|"_A class representing the contracting authority or contracting entity who is buying supplies,
+services or public works using a tendering procedure as described in the applicable directive 
+(Directives 2014/24/EU, 2014/25/EU)_" footnote:[Source: http://www.cenbii.eu/deliverables/cen-wsbii-3/[CEN/BII-WS3]]
+
+|*Elements*|*Description*|*Example*|*Mandatory?*|*Rules & comments*
+
+|*cac:PartyName*
+|The name of the contracting body  
+a|
+[source,xml] 
+----
+<cac:Party>
+ <cac:PartyName>
+  <cbc:Name>
+ 	Executive Agency for Small 
+ 	and Medium-sized Enterprises 
+ 	(EASME)
+  </cbc:Name>
+ </cac:PartyName>
+ ... <!--1-->
+</cac:Party>
+----
+|*MANDATORY* 
+|`*Rule*: The name of the contracting body MUST always be specified`
+
+|*cac:Country*
+|The country of the contracting body  
+a|
+[source,xml] 
+----
+<cac:Party>
+ ... <!--2-->
+ <cac:PostalAddress>
+  <cac:Country>
+   <cbc:IdentificationCode
+     listID="CountryCodeIdentifier"
+     listAgencyID="EU-COM-GROW"
+     listName="CountryCodeIdentifier"
+     listVersionID="1.0.2">BE
+   </cbc:IdentificationCode>
+  </cac:Country>
+ </cac:PostalAddress>
+</cac:Party>
+----
+|*MANDATORY* - (Although in the XSD Schema the cardinality is 0..n)
+|`*Rule*: The country of the contracting body MUST always be specified. Compulsory use of the 
+code list link:{url-blob}/code_lists/pdf/CountryCodeIdentifier.pdf[CountryCodeIdentifier]`
+
+|===
+<1> The name of the Contracting Body is mandatory but has been removed from this example to simplify the example
+<2> the country of Contracting Body is mandatory but has been removed from this example to simplify the example
+
+A complete example about the `cac:Party` elements of the `cac:ContractingParty` expected by the ESPD 
+Service follows: 
+
+[source,xml]
+.Elements re-used from `cac:Party` to identify the contracting body  
+----
+<cac:ContractingParty>
+  <cac:Party>
+    <cac:PartyName>
+      <cbc:Name>Executive Agency for Small and Medium-sized Enterprises (EASME)</cbc:Name>
+    </cac:PartyName>
+    <cac:PostalAddress>
+      <cac:Country>
+        <cbc:IdentificationCode listID="CountryCodeIdentifier" listAgencyID="EU-COM-GROW" listName="CountryCodeIdentifier" listVersionID="1.0.2">BE</cbc:IdentificationCode>
+      </cac:Country>
+    </cac:PostalAddress>
+    <cac:Contact/>
+  </cac:Party>
+</cac:ContractingParty>
+----
+
+[.text-left]
+== Economic Operator 
+
+The ESPDResponse was explicitly designed to hold data about one single Economic Operator.
+Thus, the ESPDResponse Exchange Data Model associates a class `EconomicOperatorParty` as 
+a placeholder for the data related to only one Economic Operator (EO) that 
+tenders solely to a procurement project, to one of the EOs that tender as part of a group 
+(e.g. a Consortium), or to one possible sub-contractor of the EO. 
+
+Consortia grouping more than one EO need to draft and submit as many ESPDResponses as Economic 
+Operators and sub-contractors participate in the tender. 
+Revisit the "Figure 7: espd::ESPDRequest UML class diagram" and check that its association
+to the epsd::EconomicOperatorParty class is restricted to 1. This element is therefore mandatory.
+
+The UML diagram below shows the details about the class EconomicOperatorParty:
+
+[.text-center]
+[[EO_UML_Details]]
+.Class EconomicOperatorParty UML diagram details
+image::EO_UML_Details.png[align="center" alt="EO details, UML", width="1000", height="900"]
+
+[.text-left]
+This other figure below shows the equivalent (abbreviated) XSD schema:
+
+[.text-center]
+[[EO_XSD_Schema_Diagram]]
+.Class EconomicOperatorParty UML diagram details
+image::EO_XSD_Details.png[align="center" alt="EO details, XSD", width="600"]
+
+[.text-left]
+=== EconomicOperatorParty
+The table below lists the attributes and associated classes expected in an XML conformant to the ESPD Service. 
+Beware that this class associates the very rich UBL-2.1 aggregate component `cac:Party`. 
+Similarly to what happens with the `cac:ContractingParty`, the ESPDResponse `espd:EconomicOperatorParty`
+only uses a reduced subset of the component `cac:Party`.
+
+[.text-left]
+.Class espd:EconomicOperatorParty
+|===
+
+5+^|"_A class representing any natural or legal person or public entity or group of such persons
+and/or entities, including any temporary association of undertakings, which offers the 
+execution of works and/or a work, the supply of products or the provision of services on the 
+market in the context for which the tender where the ESPDResponse is submitted_"footnote:[Source: http://www.cenbii.eu/deliverables/cen-wsbii-3/[CEN/BII-WS3]]
+
+|*Property*|*Description*|*Example*|*Mandatory?*|*Rules & comments*
+
+|*espd-cbc:EconomicOperatorRoleCode*
+|The code for the role of the economic operator when bidding from a consortium  
+a|
+[source,xml] 
+----
+<espd-cbc:
+EconomicOperatorRoleCode 
+listID="TendererRole" 
+listAgencyID="EU-COM-GROW" 
+listVersionID="1.0">
+MT
+</espd-cbc:
+EconomicOperatorRoleCode>
+----
+|OPTIONAL (0..1) - Currently not used in the ESPD Service
+|`*Rule*: Compulsory use of the code list link:{url-blob}/code_lists/pdf/TendererRole.pdf[TendererRole].`
+
+|*espd-cbc:
+EconomicOperatorRoleDescription*
+|A short description for the role of the economic operator when bidding from a consortium  
+a|
+[source,xml] 
+----
+<espd-cbc:
+EconomicOperatorRoleDescription 
+languageID="en">
+Main tenderer
+</espd-cbc:
+EconomicOperatorRoleDescription>
+----
+|OPTIONAL (0..1) 
+|`*Comment*: Currently not used by the ESPD Service`
+
+|*espd-cbc:
+NationalDataBaseURIID*
+|Unrestricted and full direct access to tools and devices used for
+electronic communication is possible at this URL.  
+|
+|OPTIONAL (0..1) 
+|`*Comment*: Currently not used by the ESPD Service`
+
+|*espd-cbc:
+NationalDatabaseAccessCredentials*
+|Credentials (e.g. username and password) to access the national database
+|
+|OPTIONAL (0..1) 
+|`*Comment*: Currently not used by the ESPD Service`
+
+|*espd-cbc:
+SMEIndicator*
+|Indicates whether the Economic Operator is an SME or not
+|
+|OPTIONAL (0..1) 
+|`*Comment*: See COM's definition of http://ec.europa.eu/growth/smes/business-friendly-environment/sme-definition/index_en.htm[SME]`
+
+5+^|*Associated classes*
+
+|*RepresentativeNaturalPerson*
+|Information about individuals who in one way or the other represent the economic operator
+|
+|OPTIONAL (0..n) 
+|Comment: Belongs to the ESPD spacename (espd-cac:)
+
+|*cac:Party*
+|The UBL-2.1 class used to hold data about the party that, in this case, is the Economic Operator 
+|
+|OPTIONAL (0..n) 
+|`*Comment*: See below which elements from cac:Party are currently used by the ESPD Service for the EO` 
+
+|===
+
+[.text-left]
+== RepresentativeNaturalPerson
+
+UBL-2.1 defines a component _PowerOfAttorney_ with that is a good container for the main data about a representativefootnote[cac:PowerOfAttorney also aggregates
+the cac:AgentParty, where many data about the person can be provided.]. However the ESPD stakeholders 
+identified some data requirements that the UBL-2.1 component does not cater for; namely the role of the person (e.g. type of representation) and the 
+country where this person is registered (i.e. in a civil base register).
+
+The XSD diagram and table below show the details about the class EconomicOperatorParty:
+
+[.text-center]
+[[Representative_XSD_Details]]
+.Class RepresentativeNaturalPerson details
+image::Representative_XSD_Details.png[align="center" alt="EO details, UML", width="1000", height="900"]
+
+[.text-left]
+.Class espd:RepresentativeNaturalPerson
+|===
+
+5+^|"_A class representing an individual who in one way or the other represents the economic operator_"
+
+|*Property*|*Description*|*Example*|*Mandatory?*|*Rules & comments*
+
+|*espd-cbc:
+NaturalPersonRoleCode*
+|  
+|
+|OPTIONAL (0..1) - Currently not used (yet) in the ESPD Service
+|
+
+|*espd-cbc:
+NaturalPersonRoleDescription*
+|A short description for the role of the Economic Operator's representative
+||OPTIONAL (0..1) 
+|`*Comment*: Currently not used (yet) by the ESPD Service`
+
+|*espd-cbc:
+NaturalPersonRegistrationCountryCode*
+|Country of registration  of the natural person
+|
+|OPTIONAL (0..1) 
+|`*Comment*: Currently not used by the ESPD Service`
+
+5+^|*Associated classes*
+
+|*espd-cbc:
+NaturalPersonRegistrationCountryCode*
+|Country of registration  of the natural person
+|
+|OPTIONAL (0..1) 
+|`*Comment*: Currently not used by the ESPD Service`
+
+|*cac:PowerOfAttorney*
+|A power of attorney associated with this natural person
+|OPTIONAL (0..n) 
+|Comment: UBL-2.1 component (cac:)
+
+|===
+
+=== Power of attorney
+The ESPD reuses only a small part of the class cac:PowerOfAttorney defined in UBL-2.1, only the component _AgentParty_ and within it the subcomponent _Person_: 
+
+[[Representative_XSD_Extended_Details]]
+image::Representative_XSD_Extended_Details.png[caption="Figure XX: ", title="UBL-2.1 Person, inside AgentParty, inside PowerOfAttorney", align="center" alt="EO details, XSD", width="600", height="500"]
+
+From the subcomponent Person, also a rich UBL structure, the ESPD is interested in a small set of elements, namely the name, birth data, and contact data of the
+representative, as shown in this example:
+
+[source,xml]
+.XML example of the data related to Person required by the ESPD Service  
+----
+<cac:PowerOfAttorney>
+  <cac:AgentParty>
+    <cac:Person>
+	  <cbc:FirstName>Bruce</cbc:FirstName>
+	  <cbc:FamilyName>Wayne</cbc:FamilyName>
+	  <cbc:BirthDate>1983-03-02</cbc:BirthDate>
+	  <cbc:BirthplaceName>USA</cbc:BirthplaceName>
+	  <cac:Contact>
+	    <cbc:Telephone>01 234 56 78</cbc:Telephone>
+		<cbc:ElectronicMail>Bruce.wayne@enterprises.com</cbc:ElectronicMail>
+	  </cac:Contact>
+	  <cac:ResidenceAddress>
+	    <cbc:Postbox>1000</cbc:Postbox>
+		<cbc:StreetName>Rue Melsens 3</cbc:StreetName>
+		<cbc:CityName>Brussels</cbc:CityName>
+		<cac:Country>
+		  <cbc:IdentificationCode listID="CountryCodeIdentifier" listAgencyID="EU-COM-GROW" listName="CountryCodeIdentifier" listVersionID="1.0.2">BE</cbc:IdentificationCode>
+		</cac:Country>
+	  </cac:ResidenceAddress>
+	</cac:Person>
+  </cac:AgentParty>
+</cac:PowerOfAttorney>
+----
+
+[.text-left]
+== The Party component of the Economic Operator  
+
+For the Economic Operator (EO) it is the UBL class cac:Party that holds the more important part of the data.
+
+[[EO_Party_XSD]]
+.EO's cac:Party sub-component
+image::EO_Party_XSD.png[align="center" alt="EO details, XSD", width="1000", height="900"]
+
+The ESPD Service uses the class `cac:Party` to identify the Economic Operator. Although this UBL-2.1 class defines
+many properties and associated classes, the ESPD Service uses only a reduced set of them: the EO's identification, name, 
+address and contact, as shown below:
+
+[.text-left]
+.Elements from the cac:Party expected in the ESPD Service to identify the Economic Operator (EO)
+|===
+
+|*Element*|*Description*|*Example*|*Mandatory?*|*Rules & comments*
+
+|*cac:PartyIdentification*
+|Unique identification number for the Economic Operator  
+a|
+[source,xml] 
+----
+<cac:PartyIdentification>
+ <cbc:ID 
+ schemeAgencyID= <!--1-->
+ "ES-TAX-AGENCY"
+ schemeID= <!--2-->
+ "VAT_Number"
+ >
+ B20779081
+ </cbc:ID> 
+</cac:PartyIdentification>
+----
+|*MANDATORY* - (Although in the XSD Schema the cardinality is 0..n) 
+|`*Rule*: Always provide an ID for the Economic Operator. In many countries this
+ID is the VAT number, but in the future it could be the European Unique ID provided
+by the Business Registers Interconnection System (BRIS)`. 
+
+|*cac:PartyName*
+|The official name of the Economic Operator, as registered in a Business Register  
+a|
+[source,xml] 
+----
+<cac:PartyName>
+ <cbc:Name>
+ Wayne Enterprises
+ </cbc:Name>
+</cac:PartyName>
+----
+|*MANDATORY* - (Although in the XSD Schema the cardinality is 0..n) 
+|`*Rule*: Always provide a name for the Economic Operator`
+
+|*cac:PostalAddress*
+|The address of the Economic Operator, as registered in a Business Register  
+a|
+[source,xml] 
+----
+(see example below)
+----
+|OPTIONAL  
+|`*Comment*: Although optional, provide the complete address (it helps disambiguate who is the
+EO in case of conflicting EOs names)`
+
+|*cac:Country*
+|The country code of where the EO is registered in a Business Register  
+a|
+[source,xml] 
+----
+<cac:PostalAddress>
+  <cac:Country>
+    <cbc:IdentificationCode listID="CountryCodeIdentifier" listAgencyID="EU-COM-GROW" listName="CountryCodeIdentifier" listVersionID="1.0.2">BE</cbc:IdentificationCode>
+  </cac:Country>
+</cac:PostalAddress>
+----
+|*MANDATORY* - (Although in the XSD Schema the cardinality is 0..1)  
+|`*Rule*: The country code MUST always be specified. Compulsory use of the
+code list link:{url-blob}/code_lists/pdf/CountryCodeIdentifier.pdf[CountryCodeIdentifier]
+
+|*cac:Contact*
+|The contact data of a person related to the EO  
+a|
+[source,xml] 
+----
+<cac:Contact>
+  <cbc:Name>Bruce Wayne</cbc:Name>
+  <cbc:Telephone>01 234 56 78</cbc:Telephone>
+  <cbc:ElectronicMail>wayne@enterprises.com</cbc:ElectronicMail>
+</cac:Contact>
+----
+|OPTIONAL  
+|`*Comment*: The ESPD Service expects the name, telephone and e-mail
+
+|===
+<1> The data provider SHOULD specify who is the issuer of the EO's ID
+<2> The `schemeID` attribute specifies if it is a VAT number or another national number. The
+possible values are: `VAT_Number` and `National_Number`.
+
+A complete example about the EO's Party elements expected by the ESPD Service follows: 
+
+[source,xml]
+.Elements re-used from `cac:Party` to identify the Economic Operator  
+----
+<espd-cac:EconomicOperatorParty>
+  <espd-cbc:SMEIndicator>false</espd-cbc:SMEIndicator>
+  <espd-cac:RepresentativeNaturalPerson/>
+  <cac:Party>
+    <cac:PartyIdentification>
+      <cbc:ID>B20779081</cbc:ID>
+    </cac:PartyIdentification>
+    <cac:PartyName>
+      <cbc:Name>Wayne Enterprises</cbc:Name>
+    </cac:PartyName>
+    <cac:PostalAddress>
+      <cbc:Postbox>1000</cbc:Postbox>
+      <cbc:StreetName>Rue Melsens 3</cbc:StreetName>
+      <cbc:CityName>Brussels</cbc:CityName>
+      <cac:Country>
+        <cbc:IdentificationCode listID="CountryCodeIdentifier" listAgencyID="EU-COM-GROW" listName="CountryCodeIdentifier" listVersionID="1.0.2">BE</cbc:IdentificationCode>
+      </cac:Country>
+    </cac:PostalAddress>
+    <cac:Contact>
+      <cbc:Name>Bruce Wayne</cbc:Name>
+      <cbc:Telephone>01 234 56 78</cbc:Telephone>
+      <cbc:ElectronicMail>wayne@enterprises.com</cbc:ElectronicMail>
+    </cac:Contact>
+  </cac:Party>
+</espd-cac:EconomicOperatorParty>
+----
+
+[.text-left]
+== Procurement Project Lot
+
+The class `cac:ProcurementProjectLot` was defined in UBL-2.1 to refer to the 
+possible lots into which a procurement project has been subdivided (see complete
+definition provided by UBL in the table below).
+
+[.text-center]
+[[CMM_ProcurementProjectLot]]
+.cac:ProcurementProjectLot XSD diagram details
+image::CMM_ProcurementProjectLot.png[align="center" alt="EO details, XSD", width="600", height="500"]
+
+[.text-left]
+.Class CMM_ProcurementProjectLot, elements expected by the ESPD Service  
+|===
+
+5+^|"_One of the parts of a procurement project that is being subdivided to allow the contracting party 
+to award different lots to different economic operators under different contracts_"footnote:[Source:
+http://docs.oasis-open.org/ubl/UBL-2.1.html[UBL] (look into the Common Aggregate Component library of the `xsd` folder inside the UBL-2.1 
+distribution package)]
+
+|*Elements*|*Description*|*Example*|*Mandatory?*|*Rules & comments*
+
+|*cbc:ID*
+|An identifier for the lots
+a|
+[source,xml] 
+----
+   <cac:ProcurementProjectLot>
+      <cbc:ID>0</cbc:ID> <!--1-->
+   </cac:ProcurementProjectLot>
+----
+|*MANDATORY* 
+|`*Rule*: The value `0` MUST be specified to indicate that this procurement project has no lots.
+
+|===
+<1> For the time being the ESPD Service does not handle multiple lots. 
+
+[.text-left]
+== Criterion
+
+Criteria are at the core of the ESPD. The two main groups of Criteria relevant for the ESPD are the ones 
+required in the Directive, Exclusion and Selection criteria. This section gives a detailed view on how 
+to specify each of those criteria. Its content is aligned to the http://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32016R0007[Annex to the Regulation 2016/7] 
+establishing the standard form for the European Single Procurement Document.     
+
+Additionally to the Exclusion and Selection Criteria, the ESPD EDM treat some data related to the
+Economic Operator also as criteria. This is covered further on under Section "Other Criteria". 
+
+[.text-left]
+=== Core Criterion and Core Evidence Data Models and Vocabularies
+
+This document differentiates between _Data Model_ (referring to the UML conceptual diagrams) and 
+_Vocabulary_ (referring to the XSD schemas). Thus the CCV and CEV abbreviations refer to the 
+Core Criterion and Core Evidence XSD Schemata that implement the conceptual 
+Data Models (represented as UML diagrams). 
+
+The UML diagram below shows in detail the classes of the Core Criterion and Core 
+Evidence Data Models used in the ESPDResponse XML document. 
+
+[.text-center]
+[[CCEV_UML]]
+.UML diagram for the CC and CE Data Models used in the ESPDResponse XML documents
+image::CCEV_UML.png[alt="UML_representation", width="1000", height="900"]
+
+As far as the ESPD Service is concerned the above UML diagram SHOULD be interpreted as follows:
+
+* One Criterion contains one or more Groups of Requirements
+* One Criterion MAY have sub-Criteria 
+* One Criterion MAY be linked to a specific Legislation
+* One Group of Requirements contains one or More Requirements
+* One or more Response MUST be provided (by the EO) for each Requirement
+* The Response MUST be of one, and +++<u>only one</u>+++, type of data
+* The type of data in a Response can be either an Indicator (a boolean value), a Code (representing a concept), an Amount (an economic value expressed as a specific currency type), a Date, a Percent, a Quantity or a Period  
+* One Response MAY refer to one or more Evidences
+* The Response MAY also refer to a Party that is somehow related to the Response  
+* An Evidence MAY refer to the issuer of that Evidence
+* The Evidence MAY refer to an attached DocumentReference, i.e. to a URL pointing at a document; the document could also be embedded into the cev:Evidence element, although the ESPD Service does not use this UBL feature  
+
+ 
+In the ESPD documents a +++<u>Criterion</u>+++ takes the form of a ''question or statement about a specific subject that may lead to the exclusion or selection of an Economic Operator in a 
+Procurement Project''. An example of Criterion in the ESPD would be a question like this:
+
+[.text-center] 
+"_Has the economic operator itself or any person who is a member of its administrative, management or 
+supervisory body or has powers of representation, decision or control therein been the subject of 
+a conviction by final judgement for participation in a criminal organisation, by a conviction rendered 
+at the most five years ago or in which an exclusion period set out directly in the conviction 
+continues to be applicable?_"
+
+[.text-left]
+''+++<u>Requirements</u>+++'', in turn, relates to the way the Economic Operator has to answer one 
+specific Criterion. In the case of the exclusion Criterion above mentioned, the Contracting 
+Authority requires the Economic Operator (EO) to answer ''yes or no'', and in the case of an 
+affirmative answer the EO is required to provide some more specific data about the 
+conviction.
+
+[IMPORTANT]
+In principle, practically all the elements in the UML class and the XSD Schema are optional.
+However *this does not mean that an ESPD conformant Service will accept that 
+certain data are not provided (or all of them for that matter)*. The compulsoriness of the ESPD Service documents 
+elements is not controlled solely by the XSD Schema. Instead the cardinality of the elements is also validated based on ''rules''. 
+These rules are assertions about the restrictions that affect an element,  an attribute or the 
+relationship between classes.footnote:[The ESPD Service confirms the presence of an element that in the schema is optional using the ISO Schematron validation method. The reason why the cardinality of the XSD schema is kept optional for most of the elements is to provide a model that is flexible enough so as to be used in other contexts different to the ESPD Service, e.g. for procurement projects at national or subnational levels where the value of the contracts are below the threshold; or for its use in systems where the ID of the instantiated objects is considered enough to identify a Criterion or a Requirement. For details about Schematron see http://www.schematron.com/spec.html.].
+In the tables below, describing each class, the optionality or compulsoriness is indicated in respect of the ESPD Service needs, and
+regardless of the XSD cardinality.   
+
+[.text-left]
+The next figure shows the "collapsed" (i.e. abbreviated) XSD Schema corresponding to the Criterion element: 
+
+[.text-center]
+[[CCEV_XSD]]
+.XSD diagram for the CCV and CEV used in the ESPDResponse XML documents
+image::CCEV_XSD.png[alt="UML_representation", width="600", height="500"]
+
+
+The tables below list and describe each class of the Core Criterion Vocabulary and Core Evidence 
+Vocabulary used in the ESPDResponse XML document. They also provide the rules specific to each 
+class, properties and elements within the class, as mentioned above. When implementing XML instances 
+of the ESPDRequest schema these rules MUST be thoroughly respected if the XML instance is intended 
+to be ESPD Service-conformant.
+
+Remember that the prefixes (ccv:, cbc: cac:, etc.) are representatives of the namespaces used in the 
+XSD Schema (see "Table 1. Schemas, namespaces and prefixes used by the ESPDResponse").
+
+[NOTE]
+Except for the ccv:Response element, the rest of the data is already present in the ESPDRequest XML Document. The ESPDResponse copies the ESPDRequest and extends it with the Response of the EO.
+
+[.text-left]
+.Class ccv:Criterion
+|===
+
+5+^|"_A class to associate a condition that the economic has to fulfil in order to not be excluded and be selected as a candidate for awarding in a procurement procedure_"
+
+5+^|*Attributes*
+
+|*pi*
+|Processing Instruction. Reserved for non-standard processing of the class; e.g. for hiding or showing elements in a user interface  
+|
+|OPTIONAL (0..1) 
+|`*Comment*: This attribute is defined in the ESPDRequest XSD Schema. In the case of the Criterion element the ESPD Service is currently 
+not using this attribute, but see below how the ESPD Service uses it in the case of the RequirementGroup element.` 
+
+5+^|*Properties*
+
+|*cbc:ID*
+|A language-independent token, e.g., a number, that allows to identify a criterion uniquely as 
+well as allows to reference the criterion in other documents
+a|
+[source,xml] 
+----
+<cbc:ID 
+schemeID="CriteriaID" 
+schemeAgencyID="EU-COM-GROW" 
+schemeVersionID="1.0">
+005eb9ed-1347-4ca3-bb29-9bc0db64e1ab
+</cbc:ID>
+----
+|*MANDATORY* (1..1) 
+|`*Rule*: Compulsory use of the UUIDs from the table link:{url-blob}/code_lists/xls/CriteriaTaxonomy.xlsx[Criteria]`
+
+|*ccv-cbc:
+FulfillmentIndicator*
+|Indicates whether the economic operator states that it fulfills the specific criterion (true) or not (false)
+|
+|OPTIONAL (0..1) - Currently not used by the ESPD Service
+|
+
+|*ccv-cbc:
+FulfillmentIndicatorType*
+|Codifies the type of indicator used to state whether the Criterion is met or not 
+|
+|OPTIONAL (0..1) - Currently not used by the ESPD Service
+|
+
+|*cbc:TypeCode*
+|Code specifying the type of Criterion
+a|
+[source,xml] 
+----
+<cbc:TypeCode 
+listID="CriteriaTypeCode" 
+listAgencyID="EU-COM-GROW" 
+listVersionID="1.0.2">
+CRITERION.EXCLUSION.CONVICTIONS.
+PARTICIPATION_IN_CRIMINAL_ORGANISATION
+</cbc:TypeCode>
+----
+|*MANDATORY* (1..1) 
+|`*Rule*: Compulsory use of the code list link:{url-blob}/code_lists/pdf/CriteriaTypeCode.pdf[CriteriaTypeCode]`
+
+|*cbc:Name*
+|A short and descriptive name for a criterion
+a|
+[source,xml]
+----
+<cbc:Name>
+Child labour and other forms 
+of trafficking in human beings
+</cbc:Name>
+----
+|*MANDATORY* (1..1)
+|`*Comment*: The names of the criteria can be obtained from the table link:{url-blob}/code_lists/xls/CriteriaTaxonomy.xlsx[Criteria]`
+
+|*cbc:Description*
+|An extended description of the criterion
+a|
+[source,xml]
+----
+<cbc:Description>
+Has the economic operator itself 
+or any person who is a member 
+of its administrative, 
+management or supervisory body ...
+</cbc:Description>
+----
+|*MANDATORY* (1..1) 
+|`*Comment*: The descriptions of the criteria can be obtained from the table link:{url-blob}/code_lists/xls/CriteriaTaxonomy.xlsx[Criteria]`
+
+5+^|*Associated classes*
+
+|*LegislationReference*
+|The specific piece(s) of Legislation(s) where the criterion is defined or mentioned
+|
+|*MANDATORY* (1..n)  
+|`*Comment*: See details below`
+
+|*SubCriterion*
+|Specialised criterion derived from a higher classified Criterion
+|
+|OPTIONAL (0..n)
+|`*Comment*: An example could be a criterion defined to specify concrete
+requirements that are applied at the national or sub-national level; e.g. a 
+very specific national professional misconduct criterion that is more specific 
+than the ones defined in the 
+link:{url-blob}/code_lists/xls/CriteriaTaxonomy.xlsx[EU Exclusion Criteria]`
+
+|===
+
+[.text-left]
+== Legislation Reference
+
+[.text-center]
+[[LegislationReference]]
+.LegislationReference XSD Diagram
+image::LegislationReference.png[alt="UML_representation", width="1200", height="1000"]
+
+
+[.text-left]
+.Class ccv:LegislationReference
+|===
+
+5+^|"_The specific piece(s) of Legislation(s) where the criterion is defined or mentioned_"
+
+5+^|*Attributes*
+
+|*langID*
+|Language of the textual data provided for this reference to a legislation
+a|
+[source,xml]
+-----
+<ccv:
+LegislationReference 
+langID="en"> ... 
+</ccv:LegislationReference>
+-----
+|OPTIONAL (0..1)
+|`*Comment*: If not specified defaults to `en` (English)`
+
+5+^|*Properties*
+
+|*ccv-cbc:
+LegislationTitle*
+|Title of the legislation as published in an official gazette or portal
+a|
+[source,xml]
+----
+<ccv-cbc:Title>
+DIRECTIVE 2014/24/EU 
+OF THE EUROPEAN PARLIAMENT 
+AND OF THE COUNCIL of 
+26 February 2014 on 
+public procurement and 
+repealing 
+Directive 2004/18/EC
+</ccv-cbc:Title>
+----
+|**MANDATORY** (1..1) 
+|`*Rule*:The complete title of the legislation provided  in the original legal text MUST be provided`
+
+|*Cbc:Description*
+|Reminder label or short description of the Legislation
+a|
+[source,xml]
+----
+<cbc:Description>
+Directive 2014/24/EU
+</cbc:Description>
+----
+|OPTIONAL (0..1)
+|
+
+|*ccv-cbc:
+JurisdictionLevelCode*
+|Jurisdictional level of a particular Legislation
+a|
+[source,xml]
+----
+<ccv-cbc:JurisdictionLevelCode
+  listID="CriterionJurisdictionLevel"
+  listAgencyID="EU-COM-GROW"
+  listVersionID="1.0.2">
+  EU_DIRECTIVE
+</ccv-cbc:JurisdictionLevelCode>
+----
+|*MANDATORY* (0..1) 
+|`*Rule*: Compulsory use of the code list link:{url-blob}/code_lists/pdf/CriterionJurisdictionLevel.pdf[CriterionJurisdictionLevel]`
+
+|*ccv-cbc:Article*
+|Textual description of the article of the Legislation; e.g. ''Article 61''
+a|
+[source,xml]
+----
+<ccv-cbc:Article>
+57(1)
+</ccv-cbc:Article>
+----
+|*MANDATORY* (1..1) 
+|`*Comment*: Other articles where the Criterion is referred to SHOULD also be provided`
+
+|*ccv-cbc:URIID*
+|URI that points at the text of a particular Legislation
+a|
+[source,xml]
+----
+<cbc:URI>
+http://eur-lex.europa.eu/
+legal-content/EN/TXT/
+?uri=celex:32014L0024
+</cbc:URI>
+----
+|*MANDATORY* (1..1) 
+|`*Comment*: In the case of European legislation, the URL MUST point at the multilingual 
+EUR-LEX web-page; e.g. http://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:32014L0024[Directive 2014/24/EU]`
+
+|===
+
+[.text-left]
+== Requirement Group
+
+[.text-center]
+[[RequirementGroup]]
+.XSD Diagram of the RequirementGroup class
+image::RequirementGroup.png[alt="UML_representation", width="1000", height="600"]
+
+[.text-left]
+.Class ccv:RequirementGroup
+|===
+
+5+^|"_A group of requirements with a specific structure relating to one Criterion_"
+
+5+^|*Attributes*
+
+|*pi*
+|Processing Instruction. Reserved for non-standard processing of the class; e.g. for hiding or showing elements in a user interface
+|
+|OPTIONAL  (0..1)
+|`*Comment*: This attribute is defined in the ESPDRequest XSD Schema. In the case of the RequirementGroup element the ESPD Service uses
+this attribute to specify whether the elements within the group must be shown or not. See the introduction to the section 
+"IV Criteria Data Flows" for a detailed explanation on the use of this attribute.` 
+
+
+5+^|Properties
+
+|*cbc:ID*
+|A language-independent token, e.g., a number, that allows to identify a group of requirements uniquely
+a|
+[source,xml]
+----
+<cbc:ID 
+schemeAgencyID="EU-COM-GROW" 
+schemeVersionID="1.0">
+7c637c0c-7703-4389-ba52-02997a055bd7
+</cbc:ID>
+----
+|*MANDATORY* (1..1)
+|`*Rule*: Compulsory use of the UUIDs from the table link:{url-blob}/code_lists/xls/CriteriaTaxonomy.xlsx[Criteria]`
+
+|*cbc:Name*
+|A short and descriptive name for a group of requirements
+|
+|OPTIONAL (0..1)
+|`*Comment*: The ESPD Service does not use this property`
+
+|*cbc:Description*
+|An extended description of the group of requirements
+|
+|OPTIONAL (0..1)
+|`*Comment*: The ESPD Service does not use this property`
+
+|*cbc:TypeCode*
+|Code to specify the type of the group
+|
+|OPTIONAL (0..1)
+|`*Comment*: The ESPD Service does not use this property`
+
+5+^|*Associated classes*
+
+|*Requirement*
+|Request by the Contracting Authority oriented to determine how the Economic Operator 
+meets a concrete aspect of the Criterion  
+|
+|*MANDATORY* (1..n)
+|
+
+|*RequirementGroup*
+|Subgroup(s) of nested Requirements catering for the construction of data flows including
+decision fork points
+|(See the example about a complete Criterion below=
+|*MANDATORY* (1..n)
+|
+
+|===
+
+[NOTE]
+A CriterionRequirementGroup MAY contain sub-groups of criteria. This nested structure allows the ESPD to represent
+complex decision structures and capture faithfully the data represented in highly structured user interfaces
+(like the one implemented in the ESPD Service). This is clearly illustrated in the next sections.
+
+[.text-left]
+== Requirement
+
+[.text-center]
+[[Requirement_XSD]]
+.XSD Diagram of the class Requirement
+image::Requirement_XSD.png[align="center" alt="EO details, UML", width="1000", height="900"]
+
+[.text-left]
+.Class ccv:Requirement
+|===
+
+5+^|"_A class to associate a specific requirement that must be fulfilled through a response by the Economic Operator (EO)_"
+
+5+^|*Attributes*
+
+|*pi*
+|Processing Instruction. Reserved for non-standard processing of the class  
+|
+|OPTIONAL  (0..1)
+|`*Comment*: This attribute is defined in the ESPDRequest XSD Schema. The ESPD Service does not make any use of this attribute`
+
+|*responseDataType*
+|Type of response expected for this requirement; e.g. Indicator, Date, Description, etc.  
+|
+|MANDATORY (1..1)
+|`*Rule*: Compulsory use of the code list link:{url-blob}/code_lists/pdf/ResponseDataType.pdf[ResponseDataType]`
+
+5+^|Properties
+
+|*cbc:ID*
+|A language-independent token, e.g., a number, that allows to identify a Requirement
+a|
+[source,xml]
+----
+----
+|MANDATORY (1..1) 
+|`*Rule*: Compulsory use of the UUIDs from the table link:{url-blob}/code_lists/xls/CriteriaTaxonomy.xlsx[Criteria]`
+
+|*cbc:Description*
+|Short textual description of the requirement
+|OPTIONAL (0..1) 
+|`*Comment*: The ESPD Service does not use this property` 
+
+|===
+
+[.text-left]
+== Response
+
+The `ccv:Response` class is used by the economic operator to answer a specific Requirement issued by
+the contracting body. 
+
+[.text-left]
+.Providing the expected data type 
+[IMPORTANT]
+====
+The XSD Schema defines multiple types of data for the response (Indicator, Amount, Date, etc.), 
+only one response data MUST be provided. And the data provided in the response MUST match the one specified in the attribute of the class ccv:Requirement.
+
+The economic operator MUST use the code list link:{url-blob}/code_lists/pdf/ResponseDataType.pdf[ResponseDataType] and make sure that the data provided is of the same type that the
+one expected by the contracting authority (See the column ''Type of value expected by the
+current version of the ESPD Service'').
+====
+
+[.text-center]
+[[Response_XSD]]
+.XSD Diagram of the class Response
+image::Response_XSD.png[align="center" alt="EO details, UML", width="600", height="500"]
+
+[.text-left]
+.Class ccv:Response
+|===
+
+5+^|"_A class to associate the answer provided by the Economic Operator (EO) to a specific Requirement_"
+
+5+^|*Attributes*
+
+|*pi*
+|Processing Instruction. Reserved for non-standard processing of the class;  
+|
+|OPTIONAL  (0..1)
+|`*Comment*: This attribute is defined in the ESPDRequest XSD Schema. The ESPD Service does not make any use of this attribute`
+
+5+^|*Properties*
+
+|*cbc:ID*
+|A language-independent token, e.g., a number, that allows to identify a Response
+|
+|OPTIONAL (0..1)
+|`*Comment*: This id SHOULD be provided by the EO or the service provider that instantiates the ESPDResponse XML document`
+
+|*ccv-cbc:Indicator*
+|Indicates a positive or a negative answer provided by the economic operator as an answer to a question in the Requirement
+a|
+[source,xml]
+----
+<ccv:Requirement 
+responseDataType="INDICATOR">
+	... <!--1-->
+   <ccv:Response>
+     <ccv-cbc:Indicator>
+     false
+     </ccv-cbc:Indicator>
+   </ccv:Response>
+</ccv:Requirement>
+----
+|OPTIONAL (0..1)
+|`*Comment*: The only possible values are _False_ and _True_
+
+|*cbc:Description*
+|A textual description of a criterion response that describes how an
+economic operators fulfills an specific criterion
+|
+|OPTIONAL (0..1)
+|
+
+|*cbc:Amount*
+|Declared amount that fulfills this criterion
+a|
+[source,xml]
+----
+<ccv:Requirement 
+responseDataType="AMOUNT">
+ ...       
+ <ccv:Response>
+  <cbc:Amount 
+  currencyID="EUR">
+  100000
+  </cbc:Amount>
+ </ccv:Response>
+</ccv:Requirement>
+----
+|OPTIONAL (0..1)
+|`*Rule*: The currencyID attribute is MANDATORY (e.g. "EUR"). Compulsory use of the code list link:{url-blob}/code_lists/pdf/CountryCodeIdentifier.pdf[CountryCodeIdentifier]. BEWARE that amounts can use decimal separators (e.g. 14134,95 but not hundred or thousand separators)`
+
+|*ccv-cbc:Code*
+|A code pointing at a definition of a concept as the answer to the Requirement
+|
+|OPTIONAL (0..1)
+|`*Comment*: The current ESPD Service does not use this property, but consider for example a 
+Requirement asking for a country code: in that case this would be the right placeholder for the
+expected data
+
+|*cbc:Date*
+|Declared date that fulfills this criterion
+a|
+[source,xml]
+----
+<ccv:Requirement 
+ responseDataType="DATE">
+  ... 
+  <cbc:Description>
+  Date of conviction
+  </cbc:Description>
+  	<ccv:Response>
+    	<cbc:Date>
+    	2015-11-04
+    	</cbc:Date>
+	</ccv:Response>
+</ccv:Requirement>
+----
+|OPTIONAL (0..1)
+|`*Rule*: The date format MUST be 'YYYY-MM-DD', where 'Y' stands for 'Year', 'M' for 'Month', and 'D' for 'Day'
+
+|*cbc:Percent*
+|Declared percentage that fulfills this criterion
+a|
+[source,xml]
+----
+<ccv:Requirement 
+responseDataType="PERCENTAGE">
+ ... 
+ <cbc:Description>What is the 
+ corresponding percentage of 
+ disabled or disadvantaged 
+ workers?
+ </cbc:Description>
+  <ccv:Response>
+  0.4
+  </ccv:Response>
+ </ccv:Requirement>
+----
+|OPTIONAL (0..1)
+|`*Rule*: do not format the percentage with the "%" symbol, just provide a float value like in the example`
+
+|*cbc:Quantity*
+|Declared quantity that fullfills the criterion
+a|
+[source,xml]
+----
+*EXAMPLE 1*:
+<ccv:Requirement 
+responseDataType="QUANTITY_YEAR">
+ ...
+ <cbc:Description>
+ Year
+ </cbc:Description>
+  <ccv:Response>
+  <cbc:Quantity 
+  unitCode="YEAR"><!--2-->
+  2015
+  </cbc:Quantity>
+ </ccv:Response>
+
+*EXAMPLE 2*:
+</ccv:Requirement>
+ <ccv:Requirement 
+ responseDataType="QUANTITY">
+ ...
+ <cbc:Description>
+ Ratio
+ </cbc:Description>
+  <ccv:Response>
+   <cbc:Quantity><!--3-->
+   1.7
+   </cbc:Quantity>
+  </ccv:Response>
+</ccv:Requirement>
+----
+|OPTIONAL (0..1)
+|`*Comment*: BEWARE that different types of Quantities can be required, some of them with a special attribute. See the column "Type of value expected by the
+current version of the ESPD Service" of the code list link:{url-blob}/code_lists/pdf/ResponseDataType.pdf[ResponseDataType]. See also the note
+below about "Quantities"`
+
+5+^|*Associated classes*
+
+|*cac:Period*
+|Declared period that fulfills the Criterion
+a|
+[source,xml]
+----
+<ccv:Response>
+ <cac:Period>
+  <cbc:Description>5 months</cbc:Description>
+ </cac:Period>
+</ccv:Response>
+----
+|OPTIONAL (0..1)
+|`*Rule*: For the time being the ESPD Service uses the text field Description of the cac:Period class. Future versions of the ESPD Service would leverage the features of this UBL component`
+
+|*cev-cac:Evidence*
+|One or more references to a source where a documentary proof can be obtained to demonstrate that one stated response does actually
+fulfill the Requirement from a Criterion  
+|
+|OPTIONAL (0..n)
+|`*Comment*: The current ESPD Service only allows the specification of one evidence. Beware that the economic operator may use one evidence
+to prove different Requirements. For this the EO will have to duplicate the reference to the same evidence
+for each Requirement where the reference to the Evidence is relevant`
+ 
+
+|*RelatedParty*
+|A party that may be affected by the response provided by the economic operator
+|
+|OPTIONAL (0..1)
+|`*Comment*: The ESPD Service does not use this feature for the time being`
+
+|===
+<1> "..." indicates that some mandatory elements (ID and Description) have been removed from 
+the example to shorten it
+<2> Notice the use of the attribute _unitCode_
+<3> Notice the absence of the attribute _unitCode_
+
+[.text-left]
+.About the different types of *Quantities* 
+[IMPORTANT]
+====
+Up to three different types of Quantities can be specified: (1) QUANTITY_INTEGER, 
+a number representing a quantity in a specific unit of measure. The unit has to be 
+specified (e.g. number of workers); (2) QUANTITY_YEAR, a non-negative integer 
+(i.e. a natural number) representing a year. The unit has to be specified as YEAR, and 
+(3) QUANTITY, a number representing a generic quantity with no unit specified (e.g. a ratio).
+
+Beware that in the case of QUANTITY_INTEGER and QUANTITY_YEAR the attribute *_unitCode_* MUST be always 
+specified (See code list link:{url-blob}/code_lists/pdf/ResponseDataType.pdf[ResponseDataType]).
+
+[[About_Quantities]]
+image::About_Quantities.png[caption="Figure XXX: ", title="The ResponseDataType code list", width="1000", height="900"]
+====
+
+[.text-left]
+== Evidence
+
+The `ccv:Evidence` class is used by the economic operator to refer to a trusted source of proofs that 
+supports the stated response to a criterion requirement. 
+
+In the ESPD Exchange Data Model (ESPD EDM) the Evidence class is part of the Response to a Requirement, as 
+shown in the XSD diagram below:
+
+[.text-center]
+[[Evidence_XSD]]
+.XSD diagram for class cev:Evidence
+image::Evidence_XSD.png[alt="UML_representation", width="1000", height="900"]
+
+[.text-left]
+.Class ccv:Evidence
+|===
+
+5+^|"_A class used by the economic operator to refer to a trusted source of proofs that 
+supports the stated response to a criterion requirement_"
+
+5+^|*Properties*
+
+|*cev-cbc:EvidenceName*
+|The name of an evidence
+|
+|OPTIONAL (0..1)
+|`*Comment*: The ESPD Service does not use this property for the time being`
+
+|*cev-cbc:
+EmbeddedEvidenceIndicator*
+|Indicates whether the Evidence is embedded in the XML document (_True_) 
+|
+|OPTIONAL (0..1)
+|`*Comment*: The ESPD Service does not use this feature as it always refers to it through a URL. Other
+solutions could need it (e.g. the e-Sens Virtual Company Dossier, VCD). The UBL-2.1 component allows for both embedding the evidence and referring to it via a URL`
+
+5+^|*Associated classes*
+
+|*EvidenceIssuerParty*
+|A UBL-2.1 Party class to refer to the (trusted) Party responsible for issuing the Evidence  
+|
+|OPTIONAL (0..1)
+|`*Comment*: The ESPD Service does not use this element for the time being`
+
+|*EvidenceDocumentReference*
+|A UBL-2.1 DocumentReference class to hold the data about the reference to the Evidence
+|(See example below)
+|OPTIONAL (0..1)
+|`*Comment*: The URL is currently the only property used by the ESPD`
+
+|===
+
+[source,xml]
+.Use of the Evidence element by the ESPD Service
+----
+<ccv:Requirement responseDataType="EVIDENCE_URL">
+ <cbc:ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">03bb1954-13ae-47d8-8ef8-b7fe0f22d700</cbc:ID>
+  <cbc:Description>URL</cbc:Description>
+   <ccv:Response>
+    <cev:Evidence>
+     <cev:EvidenceDocumentReference>
+      <cbc:ID>6a5818a9-7908-44d0-9847-086b4b7a1444</cbc:ID>
+       <cac:Attachment>
+        <cac:ExternalReference>
+         <cbc:URI>http://www.eurodb.be/scriptsPublic/arianeweb.dll/e/m_mkt_rech</cbc:URI>
+        </cac:ExternalReference>
+       </cac:Attachment>
+      </cev:EvidenceDocumentReference>
+     </cev:Evidence>
+    </ccv:Response>
+</ccv:Requirement>
+----
+
+[.text-left]
+== Service Provider
+
+The Service Provider refers to the party who provided the data included in the ESPDRequest XML document. For this purpose the ESPD EDM reuses 
+the UBL-2.1 class `cac:ServiceProvider`, which ''is a'' `cac:Party` class.  (see the http://docs.oasis-open.org/ubl/UBL-2.1.html[UBL-2.1 specification] for details about this class). 
+
+Similarly to the ''Service Provider'' the ESPD EDM defines a Signature that reuses the UBL-2.1 `cac:Signature` class to hold an 
+electronic signature. For the time being the ESPD does not use this UBL component neither.
+
+[.text-left]
+== Additional Document Reference
+
+The ESPD EDM reuses this UBL-2.1 component to allow both the contracting body (in the ESPDRequest) and the economic operator (in the ESPDResponse)
+to include references to documents that they might consider relevant including in the XML instances of both types of documents.
+
+The class used for this, `cac:AdditionalDocumentReference` ''is a'' `cac:DocumentReference` class defined in the UBL-2.1
+Common Aggregate Components library (see the folder _xsd/common/UBL-CommonAggregateComponents-2.1.xsd_ file of the 
+http://docs.oasis-open.org/ubl/UBL-2.1.html[UBL-2.1 specification])
+
+Although this class has a rich data structure the ESPD Service at most expects the following data from it:
+
+	* The document ID;
+	* The issue date and time;
+	* The document type code;
+	* A title for the document; and
+	* A description of its content and/or intended purpose; and 
+	* The URL where to access its content.
+	
+This example below illustrates how these fields from the cac:AdditionalDocumentReference are used in the ESPDRequest XML document. Beware that
+this is a special case (see General rule 1, below), as it refers to the Contract Notice published in the Publications Office's 
+http://ted.europa.eu/TED/main/HomePage.do[TeD] Service:
+
+[source,xml]
+.Use of the class cac:AdditionalDocumentReference to specify the CN in TeD
+----
+ <cac:AdditionalDocumentReference>
+      <cbc:ID schemeID="ISO/IEC 9834-8:2008 - 4UUID" schemeAgencyID="EU-COM-GROW" schemeAgencyName="DG GROW (European Commission)" schemeVersionID="1.1">2015/S 252-461137</cbc:ID><!--1-->
+      <cbc:DocumentTypeCode listID="ReferencesTypeCodes" listAgencyID="EU-COM-GROW" listVersionID="1.0">TED_CN</cbc:DocumentTypeCode><!--2-->
+      <cac:Attachment>
+         <cac:ExternalReference>
+            <cbc:FileName>Belgium-Brussels: European Resource Efficiency Excellence Centre</cbc:FileName><!--3-->
+            <cbc:Description>The objective of this contract is to set up a virtual European Resource Efficiency Excellence Centre. The Centre will provide information and support to European SMEs, business intermediaries, resource efficiencypractitioners and other interested parties such as regional authorities.</cbc:Description><!--4-->
+         </cac:ExternalReference>
+      </cac:Attachment>
+   </cac:AdditionalDocumentReference>
+----
+<1> Unique ID for this document (the TeD Contract Notice reference number)
+<2> The COM's code for this type of content
+<3> A title for the document
+<4> A description of the content and intended use of this document
+	
+[NOTE]
+====
+* The ID of this type of document has a special pattern [][][][]/S [][][]-[][][][][][]. This pattern is the ID scheme defined by *TeD*
+* The title for the document is placed in the _cbc:FileName_ field
+====
+  
+[.text-left]
+.General rule 1: All ESPD XML Documents MUST refer to the Contract Notice (CN) published in TeD 
+[NOTE]
+====
+[.text-left]
+All ESPDResponse XML instances (and the ESPDRequest instances, too, for that matter) MUST always 
+include an Additional Document Reference indicating the http://ted.europa.eu/TED/main/HomePage.do[TeD] reference number of 
+the Contract Notice the ESPDResponse is related to. 
+
+This reference number *MUST* be specified in the field `cbc:ID`of the element cac:AdditionalDocumentReference component, 
+and *MUST* follow the scheme defined by the Publications Office: [][][][]/S [][][]-[][][][][][] (e.g. 2015/S 252-461137).  
+====
+
+ ////
