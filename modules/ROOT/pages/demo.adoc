@@ -14,7 +14,7 @@ The https://docs.ted.europa.eu/espd-demo/[ESPD Demo Site] is a collection of too
 
 A description of the tools:
 
-=== Distribution Files
+=== Distribution files
 *Download Excel and XML distribution files*
 
 * The ESPD code list Excel and XML files
@@ -25,7 +25,7 @@ These downloads are available for ESPD-EDM Versions 3.3.0 and 4.0.0 directly fro
 === Code lists
 *Information about and download of code lists*
 
-* Information about the Code Lists used in the ESPD, name, versions, URI, agency, links to more information for each list.
+* Information about the code lists used in the ESPD, name, versions, URI, agency, links to more information for each list.
 * Contents of each code list i.e., the codes contained within each, translations of each code into all EU languages (if available), and an xml download of each code list.
 
 Code list information is available for versions 3.3.0 and 4.0.0 of the ESPD-EDM and can be filtered by version and code list.
