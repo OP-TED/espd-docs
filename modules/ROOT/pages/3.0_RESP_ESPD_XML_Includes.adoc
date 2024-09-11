@@ -1,5 +1,6 @@
 ifndef::imagesdir[:imagesdir: images]
 
+////
 [.text-center]
 == III. The ESPDResponse XML document
 
