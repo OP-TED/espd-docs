@@ -4168,7 +4168,7 @@ Notice that the data is distributed in three places:
 <16> Additional information related to the technical body.
 <17> Available online evidence related to this technical body.
 
-=== VI.9.5 Extended Abilities (II) - Facilities
+==== VI.9.5 Extended Abilities (II) - Facilities
 
 ==== Data Structure - Extended
 
@@ -4340,7 +4340,7 @@ to the element `cbc:WeightNumeric`(5% in this example). Additionally, The data a
 <10> Subgroup for evidences. The EO can use it to, in the response to it (in the ESPD-Response), make the information required available online. The URL should be in the domain of the EO.
 <11> The 2nd. Subgroup of REQUIREMENT + QUESTION starts here, in this case to ask about for other specificic quality measures (e.g. alignment to the ISO 9000).
 
-=== VI.9.6 Extended Abilities (III) - Education
+==== VI.9.6 Extended Abilities (III) - Education
 
 ==== Data Structure - Extended (Education)
 
@@ -4540,7 +4540,7 @@ classification.
 </cac:TenderingCriterion>
 ----
 
-=== VI.9.7 Extended Abilities (IV) - Checks
+==== VI.9.7 Extended Abilities (IV) - Checks
 
 ==== Mock-ups - contracting authority perspective
 The contracting authority has selected the 'allowance of checks' option in a ESPD Request builder software application GUI. This software application will create a criterion of this in the ESPD Request XML instance with zero, one or more REQUIREMENT(s) by the EO.
@@ -4643,7 +4643,7 @@ image::Extended_Abilities_4_Data_Structure.png[Extended 'Abilities (III) (Checks
 
 ----
 
-=== VI.9.8 Extended Abilities (V) - Staff
+==== VI.9.8 Extended Abilities (V) - Staff
 
 ==== Data Structure - Extended (Staff)
 

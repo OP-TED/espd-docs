@@ -3,7 +3,7 @@ include::partial$attributes.adoc[]
 
 [.text-left]
 
-=== Introduction to ISO Schematron
+=== Introduction to the ISO Schematron
 
 Schematron is a rule-based validation language to specify validation processes against XML documents.
 ISO Schematron is an ISO (ISO/IEC 19757-3:2006) and open standard.

@@ -6,12 +6,12 @@ include::XIX.2.All_About_Weights.adoc[]
 include::XIX.3.AIlAboutUUIDs.adoc[]
 ////
 
-== IX Putting pieces together
+== IX Putting the pieces together
 
 The ESPD-EDM specification, notably regarding the Extended ESPD, defines different complex sets of data that are
 scattered in distant locations of the corresponding XML instance.
 
-Consequently, implementors of software dealing with the ESPD XML instances may have a hard time to identify what needs
+Consequently, implementors of software dealing with the ESPD XML instances may have a hard time identifying what needs
 to go in the XML instance and where. This is the case of, specifically, the data related to three topics:
 1) economic operators, 2) lots, and 3) weights.
 
