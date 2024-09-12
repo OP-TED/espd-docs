@@ -19,9 +19,9 @@ module, under the `exchange-model/src/main/resources/schema/` folder.
  * Java 8
  * Maven 3
 
-=== Installation
+== Installation
 
-==== With Maven
+=== With Maven
 
 The recommended way to get started using the `exchange-model` in your Java project is with a dependency management system.
 
@@ -35,7 +35,7 @@ The recommended way to get started using the `exchange-model` in your Java proje
 </dependency>
 ----
 
-==== With Gradle
+=== With Gradle
 
 [source,groovy]
 .build.gradle
