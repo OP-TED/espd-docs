@@ -803,7 +803,7 @@ http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1.0-tb
 *Rule*: None.
 |===
 
-== XML example
+==== XML example
 
 The XML snippet below shows how an example of how to supply the expected data for the contracting body.
 
@@ -941,7 +941,7 @@ http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1.0-tb
 
 |===
 
-== XML example
+==== XML example
 
 The XML snippet below shows how an example of how to supply the expected data for the service provider.
 
