@@ -105,188 +105,6 @@ Each branch in this 'criteria taxonomy' corresponds to one data structure that i
 .Selection criteria taxonomy 
 image::SelectionCriteriaTaxonomy.png[Selection criteria taxonomy, alt="Selection criteria taxonomy", width="900" align="center"]
 
-== VI. Selection criteria
-
-'_The contracting body shall provide the exclusion grounds and selection criteria for its tendering process as structured information – via ESPD template or structured list of criteria set out in a call for tender._"
-
-This chapter on selection criteria provides details on how to implement the formal requirements set in the http://wiki.ds.unipi.gr/pages/viewpage.action?pageId=44367916[eSens ESPD BIS 41 - Single European Document] (Version 2.0.0) document. See specifically these global requirements related to selection criteria: http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#br41-002[_br41-002_],  
-http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#tbr070-010[_tbr070-010_],  http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#tbr070-013[_tbr070-013_], 
-http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#tbr070-016[_tbr070-016_], and
-http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#tbr070-018[_tbr070-018_].
-
-.Differences between Basic and Extended exclusion criteria
-[NOTE]
-====
-The ESPD-EDM V2.1.0 introduced important changes regarding the selection criteria that are shared by 2.1.1 version. It provides the contracting authority with much more flexibility to define requirements specific to the procurement procedure. These features affect specifically the following aspects:
-
-. Suitability, including enrolment in a relevant professional register, enrolment in a trade register, authorisation and membership of particular organisation needed for service contracts;
-
-. Turnovers (general and specific);
-
-. References to similar works and services, including confidentiality about the references;
- 
-. Quality assurance schemes and environmental management standards;
-
-. Professional ris indemnity insurance;
-
-. Other economic or financial requirements;
-
-. Technicians or technical bodies;
-
-. Supply chain management;
-
-. Allowance of checks;
-
-. Educational and professional qualifications and Environmental management measures;
-
-. Tools, plant or technical equipment;
-
-. Criteria for a particular type of contract;
-
-. Technical, study, research, and development facilities resources;
-
-. Financial ratios;
-
-. Other: Lots management, weighting, EO Roles.
- 
-This section  covers exhaustively each of these aspects and provides examples of XML implementation for each one of them. They will examined criterion by criterion, taking as a starting the point the requirement expressed in http://wiki.ds.unipi.gr/pages/viewpage.action?pageId=44367916['_BIS 41 - European Single Procurement Document (Version 2.0.0)_'].
-
-*ABOUT the compatibility between Basic and Extended ESPDs*: 
-
-* Not all the selection criteria have modified their structures between versions 1.0.2 and 2.1.1.
-* The changes introduced by the Extended ESPD are basically 'additions'. 
-
-Therefore the compatibility from a Basic ESPD *towards* a Extended ESPD should be possible to a large extent.
-====
-
-As for the exclusion criteria (and following requirement http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#tbr070-013[_tbr070-013_]) we have grouped the selection criteria under different categories. The figure below is intended to identify and list these categories for the selection criteria (branches in text boxes), and specific subgroups within each category (leaves in text without boxes). 
-
-Each branch in this 'criteria taxonomy' corresponds to one data structure that is identical for all the leaves under that branch (e.g. compare the names of the boxes with the tabs of the spreadsheets containing the link:{url-blob-211}/dist/cl/ods/ESPD-CriteriaTaxonomy-BASIC-V2.1.1.ods[Basic] and link:{url-blob-211}/dist/cl/ods/ESPD-CriteriaTaxonomy-EXTENDED-V2.1.1.ods[Extended] taxonomies).
-
-.Selection criteria taxonomy 
-image::SelectionCriteriaTaxonomy.png[Selection criteria taxonomy, alt="Selection criteria taxonomy", width="900" align="center"]
-
-== VI. Selection criteria
-
-'_The contracting body shall provide the exclusion grounds and selection criteria for its tendering process as structured information – via ESPD template or structured list of criteria set out in a call for tender._"
-
-This chapter on selection criteria provides details on how to implement the formal requirements set in the http://wiki.ds.unipi.gr/pages/viewpage.action?pageId=44367916[eSens ESPD BIS 41 - Single European Document] (Version 2.0.0) document. See specifically these global requirements related to selection criteria: http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#br41-002[_br41-002_],  
-http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#tbr070-010[_tbr070-010_],  http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#tbr070-013[_tbr070-013_], 
-http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#tbr070-016[_tbr070-016_], and
-http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#tbr070-018[_tbr070-018_].
-
-.Differences between Basic and Extended exclusion criteria
-[NOTE]
-====
-The ESPD-EDM V2.1.0 introduced important changes regarding the selection criteria that are shared by 2.1.1 version. It provides the contracting authority with much more flexibility to define requirements specific to the procurement procedure. These features affect specifically the following aspects:
-
-. Suitability, including enrolment in a relevant professional register, enrolment in a trade register, authorisation and membership of particular organisation needed for service contracts;
-
-. Turnovers (general and specific);
-
-. References to similar works and services, including confidentiality about the references;
- 
-. Quality assurance schemes and environmental management standards;
-
-. Professional ris indemnity insurance;
-
-. Other economic or financial requirements;
-
-. Technicians or technical bodies;
-
-. Supply chain management;
-
-. Allowance of checks;
-
-. Educational and professional qualifications and Environmental management measures;
-
-. Tools, plant or technical equipment;
-
-. Criteria for a particular type of contract;
-
-. Technical, study, research, and development facilities resources;
-
-. Financial ratios;
-
-. Other: Lots management, weighting, EO Roles.
- 
-This section  covers exhaustively each of these aspects and provides examples of XML implementation for each one of them. They will examined criterion by criterion, taking as a starting the point the requirement expressed in http://wiki.ds.unipi.gr/pages/viewpage.action?pageId=44367916['_BIS 41 - European Single Procurement Document (Version 2.0.0)_'].
-
-*ABOUT the compatibility between Basic and Extended ESPDs*: 
-
-* Not all the selection criteria have modified their structures between versions 1.0.2 and 2.1.1.
-* The changes introduced by the Extended ESPD are basically 'additions'. 
-
-Therefore the compatibility from a Basic ESPD *towards* a Extended ESPD should be possible to a large extent.
-====
-
-As for the exclusion criteria (and following requirement http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#tbr070-013[_tbr070-013_]) we have grouped the selection criteria under different categories. The figure below is intended to identify and list these categories for the selection criteria (branches in text boxes), and specific subgroups within each category (leaves in text without boxes). 
-
-Each branch in this 'criteria taxonomy' corresponds to one data structure that is identical for all the leaves under that branch (e.g. compare the names of the boxes with the tabs of the spreadsheets containing the link:{url-blob-211}/dist/cl/ods/ESPD-CriteriaTaxonomy-BASIC-V2.1.1.ods[Basic] and link:{url-blob-211}/dist/cl/ods/ESPD-CriteriaTaxonomy-EXTENDED-V2.1.1.ods[Extended] taxonomies).
-
-.Selection criteria taxonomy 
-image::SelectionCriteriaTaxonomy.png[Selection criteria taxonomy, alt="Selection criteria taxonomy", width="900" align="center"]
-
-== VI. Selection criteria
-
-'_The contracting body shall provide the exclusion grounds and selection criteria for its tendering process as structured information – via ESPD template or structured list of criteria set out in a call for tender._"
-
-This chapter on selection criteria provides details on how to implement the formal requirements set in the http://wiki.ds.unipi.gr/pages/viewpage.action?pageId=44367916[eSens ESPD BIS 41 - Single European Document] (Version 2.0.0) document. See specifically these global requirements related to selection criteria: http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#br41-002[_br41-002_],  
-http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#tbr070-010[_tbr070-010_],  http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#tbr070-013[_tbr070-013_], 
-http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#tbr070-016[_tbr070-016_], and
-http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#tbr070-018[_tbr070-018_].
-
-.Differences between Basic and Extended exclusion criteria
-[NOTE]
-====
-The ESPD-EDM V2.1.0 introduced important changes regarding the selection criteria that are shared by 2.1.1 version. It provides the contracting authority with much more flexibility to define requirements specific to the procurement procedure. These features affect specifically the following aspects:
-
-. Suitability, including enrolment in a relevant professional register, enrolment in a trade register, authorisation and membership of particular organisation needed for service contracts;
-
-. Turnovers (general and specific);
-
-. References to similar works and services, including confidentiality about the references;
- 
-. Quality assurance schemes and environmental management standards;
-
-. Professional ris indemnity insurance;
-
-. Other economic or financial requirements;
-
-. Technicians or technical bodies;
-
-. Supply chain management;
-
-. Allowance of checks;
-
-. Educational and professional qualifications and Environmental management measures;
-
-. Tools, plant or technical equipment;
-
-. Criteria for a particular type of contract;
-
-. Technical, study, research, and development facilities resources;
-
-. Financial ratios;
-
-. Other: Lots management, weighting, EO Roles.
- 
-This section  covers exhaustively each of these aspects and provides examples of XML implementation for each one of them. They will examined criterion by criterion, taking as a starting the point the requirement expressed in http://wiki.ds.unipi.gr/pages/viewpage.action?pageId=44367916['_BIS 41 - European Single Procurement Document (Version 2.0.0)_'].
-
-*ABOUT the compatibility between Basic and Extended ESPDs*: 
-
-* Not all the selection criteria have modified their structures between versions 1.0.2 and 2.1.1.
-* The changes introduced by the Extended ESPD are basically 'additions'. 
-
-Therefore the compatibility from a Basic ESPD *towards* a Extended ESPD should be possible to a large extent.
-====
-
-As for the exclusion criteria (and following requirement http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#tbr070-013[_tbr070-013_]) we have grouped the selection criteria under different categories. The figure below is intended to identify and list these categories for the selection criteria (branches in text boxes), and specific subgroups within each category (leaves in text without boxes). 
-
-Each branch in this 'criteria taxonomy' corresponds to one data structure that is identical for all the leaves under that branch (e.g. compare the names of the boxes with the tabs of the spreadsheets containing the link:{url-blob-211}/dist/cl/ods/ESPD-CriteriaTaxonomy-BASIC-V2.1.1.ods[Basic] and link:{url-blob-211}/dist/cl/ods/ESPD-CriteriaTaxonomy-EXTENDED-V2.1.1.ods[Extended] taxonomies).
-
-.Selection criteria taxonomy 
-image::SelectionCriteriaTaxonomy.png[Selection criteria taxonomy, alt="Selection criteria taxonomy", width="900" align="center"]
 
 === VI.1 Alpha criterion
 
@@ -432,7 +250,7 @@ See formal requirements related to 'Suitability' criteria for the Extended ESPD 
 ** Another data structure for two suitabilities related to ''service contracts'' (''For service contracts: authorisation of particular organisation needed'' and
 ''For service contracts: membership of particular organisation needed'').
 
-=== VI.2.1 Basic suitability (enrolments)
+==== VI.2.1 Basic suitability (enrolments)
 
 
 ==== Mock-ups - contracting authority perspective
@@ -507,7 +325,7 @@ image::Basic_Suitability_Enrolments_Data_Structure.png[Basic 'Suitability' crite
 <!... rest of elements removed for brevity -->
 ----
 
-=== VI.2.2 Extended suitability (enrolments)
+==== VI.2.2 Extended suitability (enrolments)
 
 ==== Mock-ups - contracting authority perspective
 
@@ -670,7 +488,7 @@ link:#ix-1-all-about-lots[IX.1 All about lots], sub-section link:#example-1-suit
 <!... rest of elements removed for brevity -->
 ----
 
-=== VI.2.3 Basic suitability (service contracts)
+==== VI.2.3 Basic suitability (service contracts)
 
 ==== Data Structure (Service Contracts)- Basic
 
@@ -739,7 +557,7 @@ image::Basic_Suitability_ServiceContract_Data_Structure.png[Basic 'Suitability' 
 <!... rest of elements removed for brevity -->
 ----
 
-=== VI.2.4 Extended suitability (service contracts)
+==== VI.2.4 Extended suitability (service contracts)
 
 
 ==== Data Structure (service contracts) - Extended
@@ -921,7 +739,7 @@ See formal requirements related to 'Turnover' criteria for the Extended ESPD in 
 
 ** For the *specific average turnover* the contracting authority can specify the *number of the past recent fiscal years* for which the EO will need to provide the Average Turnover; e.g. last 3 years; the *CPVs*, with one or several Common Procurement Vocabulary codes to indicate the activities that were developed during those fiscal years for that Turnover; the *minimum amount* expected from the EO, for which the EO’s average yearly turnover must equal or be greater; and the *currency*.
 
-=== VI.3.1 Basic general turnover
+==== VI.3.1 Basic general turnover
 
 ==== Mock-up - contracting authority perspective
 The mock-up below shows the perspective of the contracting authority (CA) when preparing a new ESPD Request. Notice that the CA may select the type of turnover. The economic operator, while preparing the ESPD Response, should only see these turnovers, and not the unselected ones. 
@@ -1061,7 +879,7 @@ image::Basic_General_Yearly_Turnover_Data_Structure.png[Basic 'yearly turnover' 
 <!... rest of elements removed for brevity -->
 ----
 
-=== VI.3.2 Extended general turnover
+==== VI.3.2 Extended general turnover
 
 In the Extended version the contracting can specify the number of the past recent years for which it will require turnovers, but also the minimum amount it expects from the economic operator.
 
@@ -1242,7 +1060,7 @@ image::Extended_Yearly_Turnovers_Data_Structure.png[Extended 'General Yearly Tur
 <!... rest of elements removed for brevity -->
 ----
 
-=== VI.3.3 Basic average yearly turnover
+==== VI.3.3 Basic average yearly turnover
 
 You will notice that the case of the *Basic average yearly turnover* is identical to the *Basic specific average turnover*. 
 
@@ -1333,7 +1151,7 @@ image::Basic_Average_Yearly_Turnover_Data_Structure.png[Basic 'average yearly tu
 <!... rest of elements removed for brevity -->
 ----
 
-=== VI.3.4 Extended average yearly turnover
+==== VI.3.4 Extended average yearly turnover
 
 ==== Mock-up - contracting authority perspective
 
@@ -1466,7 +1284,7 @@ image::Extended_Average_Yearly_Turnover_Data_Structure.png[Extended 'average yea
 <!... rest of elements removed for brevity -->
 ----
 
-=== VI.3.5 Basic specific yearly turnover
+==== VI.3.5 Basic specific yearly turnover
 
 ==== Mock-up - contracting authority perspective
 
@@ -1608,7 +1426,7 @@ image::Basic_Specific_Yearly_Turnover_Data_Structure.png[Basic 'specific yearly 
 <!... rest of elements removed for brevity -->
 ----
 
-=== VI.3.6 Extended specific yearly turnover
+==== VI.3.6 Extended specific yearly turnover
 
 One characteristic of the "specific" turnovers is that the contracting authority requires to know which is the economic operator's turnover for a concrete business domain. The only way of responding that requirement is either by describing the domain in a free-text field or to use the Common Procurement Vocabulary (CPV) codes to narrow as much as possible the business domain. 
 
@@ -1789,7 +1607,7 @@ image::Extended_Specific_Yearly_Turnover_Data_Structure.png[Extended 'specific y
 <!... rest of elements removed for brevity -->
 ----
 
-=== VI.3.7 Basic specific average turnover
+==== VI.3.7 Basic specific average turnover
 
 You will notice that the case of the *Basic specific average turnover* is identical to the *Basic general average turnover*. 
 
@@ -1932,7 +1750,7 @@ image::Basic_Specific_Average_Turnover_Data_Structure.png[Basic 'specific averag
 <!... rest of elements removed for brevity -->
 ----
 
-=== VI.3.8 Extended specific average turnover
+==== VI.3.8 Extended specific average turnover
 
 As for the EXTENDED specific yearly turnover, in the EXTENDED specific average turnover the contracting authority is interested in knowning the turnover for a concrete business domain. Hence the fields CPV and business domain description in the mock-ups and data structures.
 
@@ -2183,7 +2001,7 @@ See formal requirements related to 'Turnover' criteria for the Extended ESPD in 
 
 . The *Extended* is able to keep in the XML documents the national sub-criteria defined by the MS in e-Certis regarding this criterion.
 
-=== VI.5.1 Basic financial ratios
+==== VI.5.1 Basic financial ratios
 
 ==== Mock-up - contracting authority perspective
 
@@ -2248,7 +2066,7 @@ image::Basic_Financial_Ratio_Data_Structure.png[Basic 'financial ratio' criterio
 <!... rest of elements removed for brevity -->
 ----
 
-=== VI.5.2 Extended financial ratios
+==== VI.5.2 Extended financial ratios
 
 [cols="<1, <4"]
 |===
@@ -2459,7 +2277,7 @@ Other requirements:
 
 	** CRITERION.SELECTION.ECONOMIC_FINANCIAL_STANDING.RISK_INDEMNITY_INSURANCE
 
-=== VI.6.1 Basic risk indemnity insurance
+==== VI.6.1 Basic risk indemnity insurance
 
 ==== Mock-up - contracting authority perspective
 
@@ -2542,7 +2360,7 @@ image::Basic_Risk_Indemnity_Insurance_Data_Structure.png[Basic 'risk indemnity i
 <!... rest of elements removed for brevity -->
 ----
 
-=== VI.6.2 Extended risk indemnity insurance
+==== VI.6.2 Extended risk indemnity insurance
 
 ==== Mock-ups - contracting authority perspective
 
@@ -2823,7 +2641,7 @@ image::Other_Ec_Fin_Reqs_Data_Structure.png[Basic 'other economic or financial r
 <!... rest of elements removed for brevity -->
 ----
 
-=== VI.7.2 Extended other economic or financial requirements
+==== VI.7.2 Extended other economic or financial requirements
 
 ==== Mock-ups - contracting authority perspective
 
@@ -3073,7 +2891,7 @@ The total amount refers to the amount of the contract, the specific refers to th
 
 ====
 
-=== VI.8.1 Basic references
+==== VI.8.1 Basic references
 
 ==== Mock-ups - contracting authority perspective
 
@@ -3193,7 +3011,7 @@ image::Basic_References_Data_Structure.png[Basic 'References' criterion data str
 <!... rest of elements removed for brevity -->
 ----
 
-=== VI.8.2 Extended references
+==== VI.8.2 Extended references
 
 ==== Mock-ups - contracting authority perspective
 
@@ -3838,7 +3656,7 @@ Weighting can be done either using percentage or points for one procedure. The C
     *** Number of managerial staff (CRITERION.SELECTION.TECHNICAL_PROFESSIONAL_ABILITY.MANAGEMENT.MANAGERIAL_STAFF)
     *** Average annual manpower (CRITERION.SELECTION.TECHNICAL_PROFESSIONAL_ABILITY.MANAGEMENT.AVERAGE_ANNUAL_MANPOWER)
 
-=== VI.9.1 Basic Abilities (I) (Technicians, ...)
+==== VI.9.1 Basic Abilities (I) (Technicians, ...)
 
 ==== Mock-ups - contracting authority perspective (PASS/FAIL, i.e. 'non-weighted')
 
@@ -3931,7 +3749,7 @@ image::Basic_Abilities_I_Data_Structure.png[Basic 'Abilities (I)' criterion data
 <!... rest of elements removed for brevity -->
 ----
 
-=== VI.9.2 Basic Abilities (II) - Checks
+==== VI.9.2 Basic Abilities (II) - Checks
 
 ==== Mock-ups - contracting authority perspective
 
@@ -3994,70 +3812,7 @@ image::Basic_Checks_Data_Structure.png[Basic 'checks' criterion data structure, 
 <!-- rest of elements removed for brevity -->
 ----
 
-=== VI.9.2 Basic Abilities (II) - Checks
-
-==== Mock-ups - contracting authority perspective
-
-The contracting authority has selected the 'allowance of checks' option in a ESPD Request builder software application GUI. This criterion will be included in the ESDP Request XML instance.
-
-.Basic 'checks' CA mock-up
-image::Basic_Checks_CA_mockup.png[Basic 'checks' CA mock-up, alt="Basic 'checks' CA mock-up", align="center"]
-
-==== Mock-ups - economic operator perspective
-
-The economic operator has only to answer *Yes* or *No* in response.
-
-.Basic 'checks' EO mock-up
-image::Basic_Checks_EO_mockup.png[Basic 'checks' EO mock-up, alt="Basic 'checks' EO mock-up", align="center"]
-
-==== Data Structure - Basic
-The data structure for this criterion is quite straightforward, it only contains a group of one QUESTION which has to be answered with *Yes* or *No*, thus the expected property data type `INDICATOR`.
-
-(Some columns have been hidden to enhance the readability of the image).
-
-.Basic 'checks' criterion data structure
-image::Basic_Checks_Data_Structure.png[Basic 'checks' criterion data structure, alt="Basic 'checks' criterion data structure criterion data structure",align="center"]
-
-==== XML Example - Basic
-
-.Basic 'checks' XML example
-[source,xml]
-----
-<!-- header elements removed for brevity -->
-
-<!-- Criterion:Allowance of checks -->
-<cac:TenderingCriterion>
-	<cbc:ID schemeID="CriteriaTaxonomy" schemeAgencyID="EU-COM-GROW" schemeVersionID="2.1.1">c8809aa1-29b6-4f27-ae2f-27e612e394db</cbc:ID>
-	<cbc:CriterionTypeCode listID="CriteriaTypeCode" listAgencyID="EU-COM-GROW" listVersionID="2.1.1">CRITERION.SELECTION.TECHNICAL_PROFESSIONAL_ABILITY.TECHNICAL.CHECKS.ALLOWANCE_OF_CHECKS</cbc:CriterionTypeCode>
-	<cbc:Name>Allowance of checks</cbc:Name>
-	<cbc:Description>For complex products or services to be supplied or, exceptionally, for products or services which are required for a special purpose: The economic operator will allow checks to be conducted on the production capacities or the technical capacity of the economic operator and, where necessary, on the means of study and research which are available to it and on the quality control measures? The check is to be performed by the contracting authority or, in case the latter consents to this, on its behalf by a competent official body of the country in which the supplier or service provider is established.</cbc:Description>
-	<cac:Legislation>
-		<cbc:ID schemeID="CriteriaTaxonomy" schemeAgencyID="EU-COM-GROW" schemeVersionID="2.1.1">3905a69e-4893-4d52-9650-c144d405ecba</cbc:ID>
-		<cbc:Title>[Legislation title]</cbc:Title>
-		<cbc:Description>[Legislation description]</cbc:Description>
-		<cbc:JurisdictionLevel>EU</cbc:JurisdictionLevel>
-		<cbc:Article>[Article, e.g. Article 2.I.a]</cbc:Article>
-		<cbc:URI>http://eur-lex.europa.eu/</cbc:URI>
-		<cac:Language>
-			<cbc:LocaleCode listID="LanguageCodeEU" listAgencyName="EU-COM-GROW" listVersionID="2.1.1">EN</cbc:LocaleCode>
-		</cac:Language>
-	</cac:Legislation>
-	<cac:TenderingCriterionPropertyGroup>
-		<cbc:ID schemeID="CriteriaTaxonomy" schemeAgencyID="EU-COM-GROW" schemeVersionID="2.1.1">d7721546-9106-43a7-8d31-2fe08a862b00</cbc:ID>
-		<cbc:PropertyGroupTypeCode listID="PropertyGroupType" listAgencyID="EU-COM-GROW" listVersionID="2.1.1">ON*</cbc:PropertyGroupTypeCode>
-		<cac:TenderingCriterionProperty>
-			<cbc:ID schemeID="CriteriaTaxonomy" schemeAgencyID="EU-COM-GROW" schemeVersionID="2.1.1">6250e2c6-9309-42ea-a969-d2599c0159be</cbc:ID>
-			<cbc:Description>Do you allow checks?</cbc:Description>
-			<cbc:TypeCode listID="CriterionElementType" listAgencyID="EU-COM-GROW" listVersionID="2.1.1">QUESTION</cbc:TypeCode>
-			<cbc:ValueDataTypeCode listID="ResponseDataType" listAgencyID="EU-COM-GROW" listVersionID="2.1.1">INDICATOR</cbc:ValueDataTypeCode>
-		</cac:TenderingCriterionProperty>
-	</cac:TenderingCriterionPropertyGroup>
-</cac:TenderingCriterion>
-
-<!-- rest of elements removed for brevity -->
-----
-
-=== VI.9.3 Basic abilities (III) (Staff)
+==== VI.9.3 Basic abilities (III) (Staff)
 
 ==== Mock-ups - contracting authority perspective
 
@@ -4153,28 +3908,28 @@ image::Basic_Abilities_3_Data_Structure.png[Basic 'Abilities (III)' criterion da
 <!-- rest of elements removed for brevity -->
 ----
 
-=== VI.9.4 Extended Abilities (I) - Persons
+==== VI.9.4 Extended Abilities (I) - Persons
 
-=== Mock-ups - contracting authority perspective (PASS/FAIL, non-weighted)
+==== Mock-ups - contracting authority perspective (PASS/FAIL, non-weighted)
 
 .Extended 'Abilities (I)' CA REQUIREMENT edition mock-up 
 image::Extended_Abilities_1_CA_REQUIREMENT_Edition_mockup.png[Extended 'Abilities (I)' CA REQUIREMENT mock-up, alt="Extended 'Abilities (I)' CA REQUIREMENT mock-up", align="center"]
 
-=== Mock-ups - economic operator perspective (PASS/FAIL, non-weighted)
+==== Mock-ups - economic operator perspective (PASS/FAIL, non-weighted)
 
 As you see from the mock-up below the economic operator can add and remove technicians and bodies associated to one CA's REQUIREMENT. In this case the REQUIREMENT specified by the CA is the type of technical assistance the EO's teams must provide.
 
 .Extended 'Abilities (I)' EO mock-up 
 image::Extended_Abilities_1_EO_mockup.png[Extended 'Abilities (I)' EO mock-up, alt="Extended 'Abilities (I)' EO mock-up",  align="center"]
 
-=== Mock-ups - contracting authority perspective (WEIGHTED)
+==== Mock-ups - contracting authority perspective (WEIGHTED)
 
 In two-stages procedures the contracting authority may like to score EOs in the evaluation phase and  would like to inform the EO in a transparent way how it will weight them. The mock-up below shows a possible GUI for the CA to set this information and other additional requirements related to the weighting:
 
 .Extended 'Abilities (I)' WEIGHTED CA REQUIREMENT edition mock-up 
 image::Extended_Abilities_WEIGHTED_CA_REQ_mockup.png[Extended 'Abilities (I)' WEIGHTED CA REQUIREMENT edition mock-up, alt="Extended 'Abilities (I)' WEIGHTED CA REQUIREMENT edition mock-up", align="center"]
 
-=== Mock-ups - economic operator perspective (WEIGHTED)
+==== Mock-ups - economic operator perspective (WEIGHTED)
 
 .Extended 'Abilities (I)' WEIGHTED EO mock-up 
 image::Extended_Abilities_WEIGHTED_EO_mockup.png[Extended 'Abilities (I)' WEIGHTED EO mock-up, alt="Extended 'Abilities (I)' WEIGHTED EO mock-up", align="center"]
@@ -5226,7 +4981,7 @@ See formal requirements related to selection criteria in the http://wiki.ds.unip
 	** CRITERION.SELECTION.TECHNICAL_PROFESSIONAL_ABILITY.CERTIFICATES.QUALITY_ASSURANCE.QA_INDEPENDENT_CERTIFICATE
 	** CRITERION.SELECTION.TECHNICAL_PROFESSIONAL_ABILITY.CERTIFICATES.ENVIRONMENTAL_MANAGEMENT.ENV_INDEPENDENT_CERTIFICATE
 
-=== VI.12.1 Basic Quality Assurance schemes and environmental management standards
+==== VI.12.1 Basic Quality Assurance schemes and environmental management standards
 
 ==== Mock-ups - contracting authority perspective
 
@@ -5320,7 +5075,7 @@ image::Basic_QA_Data_Structure.png[Basic 'Quality Assurance schemes and environm
 <!-- rest of elements removed for brevity -->
 ----
 
-=== VI.12.2 Extended Quality Assurance schemes and environmental management standards
+==== VI.12.2 Extended Quality Assurance schemes and environmental management standards
 
 ==== Mock-ups - contracting authority perspective
 

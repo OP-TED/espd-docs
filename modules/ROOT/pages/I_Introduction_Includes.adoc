@@ -1,5 +1,3 @@
-[.text-center]
-== I. Introduction
 
 ////
 [.text-left]
