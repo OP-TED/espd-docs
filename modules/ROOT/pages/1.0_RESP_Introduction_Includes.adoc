@@ -1,7 +1,6 @@
 ifndef::imagesdir[:imagesdir: images]
 
 ////
-
 [.text-center]
 == I. Introduction
 
@@ -17,8 +16,8 @@ include::1.3_RESP_Scope.adoc[leveloffset=+1]
 [.text-center]
 == I. Introduction
 
-== Context
-=== The Directive 2014/24/EU and the ESPD
+=== Context
+==== The Directive 2014/24/EU and the ESPD
 
 Article 59 of the new Public Procurement Directive 2014/24/EC (henceforth ''the Directive'') introduced a new concept, 
 the European Single Procurement Document (ESPD) which is a self-declaration document intended for preliminary evidence 
@@ -26,7 +25,7 @@ in a public procurement procedure. By mapping out equivalent certificates betwee
 by public authorities or a third party involved in a procedure. It is thus a valuable facilitator for cross-border participation 
 of a greater number of potential operators in public procurement procedures and a valuable tool for integrating the European Single Market.
 
-=== The ESPD Service
+==== The ESPD Service
 In order to make full use of the ESPD concept, the European Commission has established an on-line service available for both suppliers and buyers. 
 The main objective of the ESPD is to reduce the administrative burden and lead to considerable simplification of participation in public 
 procurement procedures for buyers and suppliers. The service will reduce that burden by removing the need to produce a substantial number 
@@ -35,7 +34,7 @@ especially SMEs.
 
 The ESPD Service is currently in version 1.0 and can be accessed at this URL: https://ec.europa.eu/growth/tools-databases/espd/.
 
-=== The electronic and structured ESPD XML documents
+==== The electronic and structured ESPD XML documents
 The ESPD Service was designed to provide the ESPD in a machine-readable structured format that will help solutions all over Europe to be interoperable. Aiming at this objective, DG GROW has developed a data model and artefacts.footnote:[E.g. XSD schemas and validation mechanisms.] for the exchange of the ESPD between any Procurement 
 stakeholder's system. This document illustrates in detail how to use these artefacts in compliance with the Directive.
 
@@ -55,7 +54,7 @@ As shown in the use case diagram below, the ESPD Documents are at the very core 
 image::functionalities.png[ESPD_Functionalities, alt="Functionalities", width="600", height="400" align="center"]
 
 [.text-left]
-== Objectives and target audience
+=== Objectives and target audience
 
 [.text-left]
 The European Commission (COM) has defined a Data Model and XML vocabularies to express the ESPD documents that the ESPD Service exports and imports. However, these Data Models and XML Vocabularies are also intended to be used by any other systems that will use and/or exchange ESPD documents with other systems or in need to render its content into other formats or process them otherwise. 
@@ -68,9 +67,9 @@ To sum up, this document is intended to *facilitate the understanding of the mod
 The content of this document is mainly addressed to the development teams from the Member States, Economic Operators, Information Providers or any other party interested in understanding how the ESPD Exchange Data Model works and how to use it to produce XML instances of the ESPD Request document.
 
 [.text-left]
-== Scope of this document
+=== Scope of this document
 
-=== Contracts above the threshold and below the threshold
+==== Contracts above the threshold and below the threshold
 
 The Directive (namely Article 4) regulates in detail those  public procurement procedures which values of contract exceed certain amounts. These amounts, also known as 
 ''thresholds'', vary depending on the type of the contract and of the administration level of the contracting authority.
@@ -80,12 +79,12 @@ Those contracts that fall under this article 4 of the Directive are called contr
 The ESPD-EDM is rich and flexible enough so as to allow ESPD instances for contracts above and below the threshold. However this document is oriented exclusively to illustrate 
 how to create ESPD electronic documents for contracts above the threshold.
 
-=== In-Scope
+==== In-Scope
 
 . This document provides commented examples only on ESPD relating to contracts above the threshold
 . The explanations, examples, rules, recommendations, etc. only apply to the XML documents that intend to be compatible with the import and export features of the ESPD Service
 
-=== Out-of-Scope
+==== Out-of-Scope
 
 Many of the requirements and recommendations expressed in this document MAY NOT be valid for contracts below the threshold. However, from a purely technical point of view, the examples commented MAY be used to understand how the ESPD-EDM works and to create, in a normalized way, XML instances containing criteria for contracts below the threshold.
 

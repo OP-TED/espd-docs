@@ -210,7 +210,7 @@ ESPD Service is currently being addressed in order to overcome these limitations
 ====
 
 [.text-left]
-== 1. *EXCLUSION CRITERIA*
+=== 1. *EXCLUSION CRITERIA*
 
 For Procurement Projects where the value of the contract is above the threshold, all 
 ESPDRespone XML documents MUST specify all the exclusion criteria defined in the Directive. Thus the following general rule:
@@ -260,7 +260,7 @@ and the link:{url-blob}/code_lists/xls/CriteriaTaxonomy.xlsx[criteria data flow 
 ====
 
 [.text-left]
-== Convictions
+==== Convictions
  
 The label ''Convictions'' groups all the criteria related to the offences for which an 
 Economic Operator may have been convicted footnote:[This notation _CRITERION.EXCLUSION.CONVICTION.*_ is to 
@@ -436,7 +436,7 @@ the Response in case the Economic Operator answered ''yes'' to the first Require
 * The XML structure maps the data-structure;
 
 [.text-left]
-== Contributions
+==== Contributions
 
 [.text-left]
 The category ''Contributions'' encompasses two criteria:
@@ -617,7 +617,7 @@ specified in each requirement of the ESPDRequest.xml.
 ====
 
 [.text-left]
-== Social
+==== Social
 
 The ''Social'' group of criteria refers to breaching of social obligations like the ones 
 related to social laws: 
@@ -715,7 +715,7 @@ include::4.2.5_CMMN_NOTICE_THAT.adoc[leveloffset=+1]
 * For this criterion no evidences are required.
 
 [.text-left]
-== Business
+==== Business
 
 The category ''Business'' encompasses the following group of criteria:
 
@@ -823,7 +823,7 @@ include::4.2.5_CMMN_NOTICE_THAT.adoc[leveloffset=+1]
 	* The common evidence-related requirement group is herein used again.
 
     [.text-left]
-== Misconduct
+==== Misconduct
 
 The category ''Misconduct'' encompasses two criteria that share the same structure as the one used for the ''social'' group of criteria (see sub-section 
 ''How to specify ''social'' related criteria, above).footnote:[See &#91;DOC-REF-8&#93; for the complete taxonomy of criteria and each criterion code label.]
@@ -911,7 +911,7 @@ Prepare to accommodate individuals with a physical disability before Church meet
 * As for the group of ''social'' criteria no evidence is herein required.
 
 [.text-left]
-== Conflict of interest
+==== Conflict of interest
 
 The category ''Conflicts of Interest'' encompasses different exclusion criteria which are 
 more heterogeneous than the ones described until now. Three different data structures are 
@@ -1012,7 +1012,7 @@ Prepare to accommodate individuals with a physical disability before Church meet
 	* As for the group of ''social' criteria no evidence is herein required.
 
 [.text-left]
-== Procedure preparation
+==== Procedure preparation
 
 The data structures for the criterion ''Direct or indirect involvement in the
 preparation of this procurement procedure'' are the simplest ones:
@@ -1074,7 +1074,7 @@ Prepare to accommodate individuals with a physical disability before Church meet
 * The XML structure maps the data-structure;
 
 [.text-left]
-== Procedure participation
+==== Procedure participation
 
 Data structure for the criterion ''Conflict of interest due to its participation 
 in the procurement procedure'':
@@ -1123,7 +1123,7 @@ interest due to its participation in the procurement procedure'' (file Example1-
 * The XML structure maps the data-structure;
 
 [.text-left]
-== Misinterpretation
+==== Misinterpretation
 
 Data structure for the criterion 
 ''Guilty of misinterpretation, withheld information, able to provide required documents 
@@ -1174,7 +1174,7 @@ required documents and obtained confidential information of this procedure'':
 * The XML structure maps the data-structure;
 
 [.text-left]
-== Other national
+==== Other national
 
 Additionally to the exclusion criteria indicated in the Directive the Contracting Authorities MAY 
 add other exclusion criteria that are specific to their Member State at a national or subnational 
@@ -1276,7 +1276,7 @@ Prepare to accommodate individuals with a physical disability before Church meet
 * The general rules are respected;
 * The XML structure maps the data-structure;
 
-== 2. *SELECTION CRITERIA*
+=== 2. *SELECTION CRITERIA*
 
 The range of criteria related to the selection of Economic Operators is larger and more 
 heterogeneous than the one related to the exclusion criteria. The figure below is intended to 
@@ -1302,7 +1302,7 @@ Remember that the data structures corresponding to the data-flow diagrams shown 
 ====
 
 [.text-left]
-== Suitability
+==== Suitability
 
 The criteria under the category ''Suitability'' use two groups of simple data structures:
 
@@ -1405,7 +1405,7 @@ The fragment of XML below shows the implementation of the
 ====
 
 [.text-left]
-== Authorisation or membership
+==== Authorisation or membership
 
 The only difference between this group of suitability criteria and the enrolment one, above, 
 is that it adds a requirement asking for a description. See the link:{url-blob}/code_lists/xls/CriteriaTaxonomy.xlsx[Selection Criteria Table],
@@ -1501,7 +1501,7 @@ Prepare to accommodate individuals with a physical disability before Church meet
 ====
 
 [.text-left]
-== Economic and financial standing
+==== Economic and financial standing
 
 The ''Economic Financial Standing'' category encompasses one group of subcategories and four criteria
 with specific data structures:
@@ -1515,7 +1515,7 @@ with specific data structures:
 The following subsections show the data structures and examples for these three groups of criteria related to economic and financial standing criteria.
 
 [.text-left]
-== Turnovers
+==== Turnovers
 
 The group of criteria relating to turnovers is somehow special in the sense that it introduces a kind of 
 ''iterative structure'' that the criteria studied so far do not implement. As illustrated in the
@@ -1698,7 +1698,7 @@ This will be improved in the future.
 ====
 
 [.text-left]
-== Ratio
+==== Ratio
 
 For the time being the only  type of ratio referred to in the ESPD is ''Financial Ratio'' 
 (thus its inclusion under the Economic and Financial category of criteria). 
@@ -1982,7 +1982,7 @@ certificates (in the Criteria Taxonomy) has been split in three different certif
 	* CRITERION.SELECTION.TECHNICAL_PROFESSIONAL_ABILITY.CERTIFICATES.ENVIRONMENTAL_MANAGEMENT.*: ''Certificates by independent bodies about environmental management systems or standards''.
 
     [.text-left]
-== Quality Assurance Institutes
+==== Quality Assurance Institutes
 
 This category refers to a quality control certificate drawn up by official quality control institutes or agencies of recognised competence:
 
@@ -2068,7 +2068,7 @@ The fragment of XML below shows the implementation of this criterion in the ESPD
 <2> The EO provide a possible source of online evidences for these certificates. 
 
 [.text-left]
-== Quality Assurance Independent
+==== Quality Assurance Independent
 
 This category refers to a quality control certificate drawn up by independent bodies attesting that the economic operator complies with the required quality assurance standards:
 
@@ -2154,7 +2154,7 @@ The fragment of XML below shows the implementation of this criterion in the ESPD
 <2> The EO provide a possible source of online evidences for these certificates. 
 
 [.text-left]
-== Environmental Management
+==== Environmental Management
 
 For the time being, this general category refers to only the criterion ''Certificates by independent bodies about 
 environmental management systems or standards''. The data-structure for this criterion in the ESPD Service is the one below (notice
@@ -2245,7 +2245,7 @@ The fragment of XML below shows the implementation of this criterion in the ESPD
 <2> The EO provide a possible source of online evidences for these certificates.
 
 [.text-left]
-== 3. *OTHER CRITERIA*
+=== 3. *OTHER CRITERIA*
 
 For the time being, the ESPD Service use this group to cover the criteria related to the Economic Operator that are used to enhance
 its selection (and could even be used to make a decision about its awarding).

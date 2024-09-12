@@ -50,7 +50,7 @@ include::3.9999_GENERAL_RULE_1.adoc[leveloffset=+1]
 == III. The ESPDResponse XML document
 
 .text-left]
-== Data Model overview
+=== Data Model overview
 The UML Diagram below provides a simplified view of the ESPDResponse document. Notice that the classes herein represented belong to different data-packages.  
 Hence each class name is preceded by different prefixes representing their corresponding namespaces: "espd::", "ccv::", "cev::", "cac::" (see ''
 Table 1. Schemas, namespaces and prefixes used by the ESPDResponse''). footnote:[this UML was produced using the MS-Visio tool, thus the double semicolon "::" 
@@ -130,7 +130,7 @@ of externalised codes. If you need the Genericode files you can download them al
 ====
 
 [.text-left]
-== Root properties
+=== Root properties
 The ESPDResponse main class represents the entire ESPDResponse documents. All the data (root properties) of the document "hang" directly from the class or are other classes associated to it.
 
 As for all documents designed upon the UBL-2.1 Naming and Design Rules (NDR), this main class uses several UBL-2.1 common basic components. Although most of them 
@@ -393,7 +393,7 @@ a|
 |=== 
 
 [.text-left]
-== UBLExtensions element 
+=== UBLExtensions element 
 
 The UBL 2 Naming and Design Rules (NDR) establish that the first element of a 
 UBL-conformant XML document should be `ext:UBLExtensions` element. If used the 
