@@ -3053,33 +3053,33 @@ image::Regulated_Abilities_I_Data_Structure.png[Regulated 'Abilities (I)' criter
 <!... rest of elements removed for brevity -->
 ----
 
-== VI.8.2 Self-contained Abilities (I)
+=== VI.8.2 Self-contained Abilities (I)
 
-=== Mock-ups - contracting authority perspective (PASS/FAIL, non-weighted)
+==== Mock-ups - contracting authority perspective (PASS/FAIL, non-weighted)
 
 .Self-contained 'Abilities (I)' CA REQUIREMENT edition mock-up 
 image::Selfcontained_Abilities_1_CA_REQUIREMENT_Edition_mockup.png[Self-contained 'Abilities (I)' CA REQUIREMENT mock-up, alt="Self-contained 'Abilities (I)' CA REQUIREMENT mock-up", align="center"]
 
-=== Mock-ups - economic operator perspective (PASS/FAIL, non-weighted)
+==== Mock-ups - economic operator perspective (PASS/FAIL, non-weighted)
 
 As you see from the mock-up below the economic operator can add and remove technicians and bodies associated to one CA's REQUIREMENT. In this case the REQUIREMENT specified by the CA is the type of technical assistance the EO's teams must provide.
 
 .Self-contained 'Abilities (I)' EO mock-up 
 image::Selfcontained_Abilities_1_EO_mockup.png[Self-contained 'Abilities (I)' EO mock-up, alt="Self-contained 'Abilities (I)' EO mock-up",  align="center"]
 
-=== Mock-ups - contracting authority perspective (WEIGHTED)
+==== Mock-ups - contracting authority perspective (WEIGHTED)
 
 In two-stages procedures the contracting authority may like to score EOs in the evaluation phase and  would like to inform the EO in a transparent way how it will weight them. The mock-up below shows a possible GUI for the CA to set this information and other additional requirements related to the weighting:
 
 .Self-contained 'Abilities (I)' WEIGHTED CA REQUIREMENT edition mock-up 
 image::Selfcontained_Abilities_WEIGHTED_CA_REQ_mockup.png[Self-contained 'Abilities (I)' WEIGHTED CA REQUIREMENT edition mock-up, alt="Self-contained 'Abilities (I)' WEIGHTED CA REQUIREMENT edition mock-up", align="center"]
 
-=== Mock-ups - economic operator perspective (WEIGHTED)
+==== Mock-ups - economic operator perspective (WEIGHTED)
 
 .Self-contained 'Abilities (I)' WEIGHTED EO mock-up 
 image::Selfcontained_Abilities_WEIGHTED_EO_mockup.png[Self-contained 'Abilities (I)' WEIGHTED EO mock-up, alt="Self-contained 'Abilities (I)' WEIGHTED EO mock-up", align="center"]
 
-=== Data Structure - Self-contained
+==== Data Structure - Self-contained
 
 In this data structure the first REQUIREMENT set by the contracting authority is whether the criterion is to be WEIGHTED or not (the opposito to WEIGHTED is PASS/FAIL, see the Code List link:{url-blob}/dist/cl/ods/ESPD-CodeLists-V2.0.2[EvaluationMethodType]).
 
@@ -3088,7 +3088,7 @@ Either if it is weighted or not one important aspect here is that the sub-groups
 .Self-contained 'Abilities (I)' criterion data structure 
 image::Selfcontained_Abilities_1_Data_Structure.png[Self-contained 'Abilities (I)' criterion data structure, alt="Self-contained 'Abilities (I)' ",align="center"]
 
-=== XML Example - Self-contained (WEIGHTED)
+==== XML Example - Self-contained (WEIGHTED)
 
 The XML example below shows the REQUIREMENTs and QUESTIONs. See the section "link:#viii-3-xml-example-3-weighting[VIII.3. XML Example 3: Weighting]" for this same example followed by the responses.
 
