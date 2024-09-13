@@ -1,0 +1,7 @@
+* xref:espd-home::index.adoc[Home]
+
+* xref:2.1.1@ESPD-EDM:ROOT:release_notes.adoc[ESPD Exchange Data Model Implementation Guide V2.1.1]
+* https://github.com/OP-TED/ESPD-EDM/tree/v2.1.1/docs/src/main/asciidoc/modules/ROOT/dist[All resources in the distribution package]
+* https://docs.ted.europa.eu/ESPD-EDM/2.1.1/release_notes.html[v2.1.1 Release Notes]
+
+* xref:espd-wgm::index.adoc[Open User Community Documents]
