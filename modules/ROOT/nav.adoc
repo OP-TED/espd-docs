@@ -1,7 +1,7 @@
 * xref:espd-home::index.adoc[Home]
 
 * xref:index_response.adoc[ESPD Exchange Data Model Implementation Guide V1.0.2]
-* https://github.com/OP-TED/ESPD-EDM/tree/v1.0.2/docs/src/main/asciidoc/modules/ROOT/code_lists
-* https://github.com/OP-TED/ESPD-EDM/tree/v1.0.2/schematron/src/main/resources/schema
+* https://github.com/OP-TED/ESPD-EDM/tree/v1.0.2/docs/src/main/asciidoc/modules/ROOT/code_lists[Code Lists]
+* https://github.com/OP-TED/ESPD-EDM/tree/v1.0.2/schematron/src/main/resources/schema[XSD Schema files]
 
 * xref:espd-wgm::index.adoc[Open User Community Documents]
