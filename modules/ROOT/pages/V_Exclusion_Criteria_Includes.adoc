@@ -96,13 +96,13 @@ Beware that this mock-up is not showing the national criteria. For this mock-up 
 .Conviction 'Participation in criminal organisation', mock-up (EO perspective)
 image::Convictions__EO_mock-up.png[Conviction EO mock-up, alt="Conviction EO mock-up", align="center"]
 
-=== Data structure - Regulated
+==== Data structure - Regulated
 Notice that the only difference between the Regulated and the Self-contained structures is that the Regulated one does not contain a 'national sub-criterion'.
 
 .Data Structure for all 'Regulated Conviction' exclusion grounds criteria
 image::Regulated_ESPDRequest_Convictions_Data_Structure.png[Convictions data structure, alt="Convictions data structure", align="center"]
 
-=== Data structure - Self-contained
+==== Data structure - Self-contained
 
 .Data Structure for all 'Self-contained Conviction' exclusion grounds criteria
 image::Selfcontained_ESPDRequest_Convictions_Data_Structure.png[Convictions data structure, alt="Convictions data structure", align="center"]

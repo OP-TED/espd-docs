@@ -120,7 +120,7 @@ See formal requirements related to 'Suitability' criteria for the Self-contained
 
 ** (Authorisations and memberships) CRITERION.SELECTION.SUITABILITY.AUTHORISATION, and CRITERION.SELECTION.SUITABILITY.MEMBERSHIP: ''For service contracts: authorisation of particular organisation needed'', and ''For service contracts: membership of particular organisation needed''.
 
-=== VI.1.1 Regulated suitability
+==== VI.1.1 Regulated suitability
 
 
 ==== Mock-ups - contracting authority perspective
@@ -193,7 +193,7 @@ image::Regulated_Suitability_Data_Structure.png[Regulated 'Suitability' criterio
 <!... rest of elements removed for brevity -->
 ----
 
-=== VI.1.2 Self-contained suitability
+==== VI.1.2 Self-contained suitability
 
 
 ==== Mock-ups - contracting authority perspective
@@ -388,7 +388,7 @@ See formal requirements related to 'Turnover' criteria for the Self-contained ES
 
 ** For the *specific average turnover* the contracting authority can specify the *number of the past recent fiscal years* for which the EO will need to provide the Average Turnover; e.g. last 3 years; the *CPVs*, with one or several Common Procurement Vocabulary codes to indicate the activities that were developed during those fiscal years for that Turnover; the *minimum amount* expected from the EO, for which the EO’s average yearly turnover must equal or be greater; and the *currency*.
 
-=== VI.2.1 Regulated general turnover
+==== VI.2.1 Regulated general turnover
 
 ==== Mock-up - contracting authority perspective
 The mock-up below shows the perspective of the contracting authority (CA) when preparing a new ESPD Request. Notice that the CA may select the type of turnover. The economic operator, while preparing the ESPD Response, should only see these turnovers, and not the unselected ones. 
@@ -528,7 +528,7 @@ image::Regulated_General_Yearly_Turnover_Data_Structure.png[Regulated 'yearly tu
 <!... rest of elements removed for brevity -->
 ----
 
-=== VI.2.2 Self-contained general turnover
+==== VI.2.2 Self-contained general turnover
 
 In the new Self-contained version the contracting can specify the number of the past recent years for which it will require turnovers, but also the minimum amount it expects from the economic operator.
 
