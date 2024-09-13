@@ -1,5 +1,7 @@
 ifndef::imagesdir[:imagesdir: images]
 
+////
+ 
 [.text-center]
 == IV. Criteria Data Flows
 
@@ -130,3 +132,2195 @@ include::4.99.4_CMM_Certificates_Environmental_Example.adoc[leveloffset=+1]
 include::4.999.0_CMM_Other_Criteria.adoc[leveloffset=+1]
 
 include::4.999.1_CMM_Other_Criteria_Example.adoc[leveloffset=+1]
+
+////
+
+[.text-center]
+== IV. Criteria Data Flows
+
+[.text-left]
+The ESPD Exchange Data Model (ESPD-EDM) is flexible enough so as to implement XML documents with different structures. Concretely, the 
+possibility of nesting groups of requirements inside groups of requirements can end up in complex XML instances that may not resemble
+amongst them thus hindering the mapping of data, their presentation and the interoperability between systems.   
+
+[.text-left]
+Hence the need of establishing of a minimum set of rules about how to build up such data structures. To keep conformance with
+the ESPD Services the rules are simple:
+
+[.text-left]
+.General rule 2: How to structure an ESPD Service Criterion
+[NOTE]
+====
+[.text-left]
+. Respect the structure proposed by the ESPD Service for each Criterion, as shown in this document or as in the XML structures of
+the documents exported by the ESPD Service. For the time being these structures are fixed (immutable). In future releases of the 
+ESPD Service the structures will be "dynamic"  and will map the criteria as defined in e-Certis2;
+. Reserve the first requirement of a group to ask a question for which the response MUST be "Yes" or "No".
+. Use the attribute `pi` of the `RequirementGroup` element to set whether the ESPD Service MUST take into account the content 
+of the group or not. The ESPD Service accepts three possibilities: 
+	* *GROUP_FULFILLED.ON_TRUE* means that the requirement group which contains this attribute value is displayed when, in the response, 
+	the corresponding INDICATOR is set to 'Yes' (set to true). This is the case for all the Exclusion criteria.
+	* *GROUP_FULFILLED.ON_FALSE* the requirement group which contains this attribute value is displayed when its corresponding indicator 
+	is set to 'No' (set to false). See examples amongst the Selection criteria.
+	* If it is missing then the requirement group will always be displayed
+====
+
+[.text-left]
+The flow-chart below illustrates this principle for any exclusion conviction criterion:
+
+[.text-center]
+[[data_struct_design]]
+.General data-structure design rule for criteria and requirements with a ''yes'' or ''no'' answer"
+image::DS_CRITERION.EXCLUSION.CONVICTIONS.png[alt="data_flow_design", width="900"]
+
+[.text-center]
+[[data_struct_design_legend]]
+.Legend
+image::DS_CRITERION.EXCLUSION.CONVICTIONS_legend.png[alt="data_flow_design", width="900"]
+
+[.text-left]
+The interpretation of this diagram could be as follows:
+
+[.text-left]
+* This criterion has two main groups of requirements  (G1: _Breach?_ and G2: _Online Evidence_);
+* The first group of requirements has one requirement and one sub-group or requirements;
+* If the response to the requirement is "Yes" (ON TRUE footnote:[In the XML this is the attribute `GROUP_FULFILLED.ON_TRUE` of the element `RequirementGroup`]) 
+then the ESPD Service application will show four data fields and a new subgroup with an additional question. Thus (on True) the EO will have to provide the date of the conviction, 
+the reason, who was convicted and for how long.  If the response is "No", then the EO will proceed providing data about whether there's online evidence or not 
+regarding to the absence of conviction (if that is possible).
+* This behaviour repeats per each subgroup of requirements: the deepest subgroup of the structure for the group 1 will have to be shown by the ESPD Service (and filled by the EO) in case an
+imported ESPDRequirement XML has a "Yes" in the response to the requirement _Self-Cleaning_.
+  
+[.text-left]
+In the next sections this principle is used to structure the Exclusion and Selection Criteria. See also the examples provided all along the document.
+
+[.text-left]
+.Note for the future 1. The ESPD Service evolution: from a dynamic structure towards a dynamic one
+[IMPORTANT]
+====
+
+[.text-left]
+The current version of the ESPD Service user interface and XML documents instances are based on a fixed 
+known structure which is very close to the requirements expressed in the http://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32016R0007[Annex to the Regulation 2016/7].
+
+[.text-left]
+This imposes limitations to the maintainability and evolution of the ESPD Service. A dynamic 
+approach where the interface is built-up based on the data being imported into the 
+ESPD Service is currently being addressed in order to overcome these limitations.
+====
+
+[.text-left]
+=== 1. *EXCLUSION CRITERIA*
+
+For Procurement Projects where the value of the contract is above the threshold, all 
+ESPDRespone XML documents MUST specify all the exclusion criteria defined in the Directive. Thus the following general rule:
+
+include::4.2.0_GENERAL_RULE_3.adoc[leveloffset=+1]
+
+[.text-left]
+Criteria may be grouped in several different categories. The figure below is 
+intended to identify and list these categories for the Exclusion criteria (branches in text boxes), and specific subgroups 
+within each category (leaves in text without boxes):
+
+[.text-center]
+[[exclusion_criteria_taxonomy]]
+.Exclusion criteria taxonomy
+image::exclusion_criteria_taxonomy.png[alt="exclusion_criteria", width="800", height="1200"]
+
+[.text-left]
+Each of these categories has its own particular data structure, which can be represented as 
+flow diagrams like the one in the figure above (see Figure 21. ''General data-structure design rule for criteria and requirements with a _yes_ or _no_ answer''). 
+Thus the data structures below represent how the data is organised for each exclusion criterion used in the ESPD. 
+
+[.text-left]
+[NOTE]
+====
+The exclusion criteria have been drafted ''from a negative perspective''. Thus a criterion like `Payment of Taxes`
+is drafted like follows:
+
+_Has the economic operator breached its obligations relating to the payment of taxes, both in the 
+country in which it is established and in Member State of the contracting authority or contracting 
+entity if other than the country of establishment?_
+
+If the Economic Operator answers ''no'' then it has nothing to justify or motivate. On the 
+contrary if it answers ''yes'' it will have to provide additional data and evidences to prove 
+that the criterion is satisfied.
+
+The ESPD Service applies this approach as much as possible.
+====
+
+[.text-left]
+.General rule 3: For above-the-threshold contracts all the Exclusion criteria MUST be specified
+[NOTE]
+====
+[.text-left]
+All ESPDResponse XML instances (and the ESPDRequest instances, too, for that matter) MUST always 
+include all the exclusion criterion detailed in the http://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32016R0007[Annex of the Regulation 2016] 
+and the link:{url-blob}/code_lists/xls/CriteriaTaxonomy.xlsx[criteria data flow tables] defined by COM).
+====
+
+[.text-left]
+==== Convictions
+ 
+The label ''Convictions'' groups all the criteria related to the offences for which an 
+Economic Operator may have been convicted footnote:[This notation _CRITERION.EXCLUSION.CONVICTION.*_ is to 
+be read as ''it applies to all the selection criteria, which are part of the exclusion criteria group''. 
+See the link:{url-blob}/code_lists/xls/CriteriaTaxonomy.xlsx[criteria tables]
+for the complete taxonomy of criteria and each criterion code label.]:
+ 
+ 	* CRITERION.EXCLUSION.CONVICTIONS.*: ''participation in a criminal organisation'', ''corruption'', ''fraud'', ''terrorist offences linked to terrorist activities'', ''money laundering or terrorist financing'', ''child labour and other forms of trafficking in human beings''.
+ 	
+In an ESPD Service conformant XML document all these criteria share the same structure. The Figure 21 above provides a simple view of how the data of a `Conviction` exclusion criterion
+is organised. This other figure represents practically the same idea, but from a ''data-structuring'' perspective:
+
+[.text-center]
+[[exclusion_convictions_data_structure]]
+.Data-structure representation for convictions (CRITERION.EXCLUSION.CONVICTIONS.*)
+image::DF_CRITERION.EXCLUSION.CONVICTIONS.png[alt="exclusion_convictions_data_structure", width="900"]
+
+[subs=+quotes]
+[source,xml]
+.XML example of a conviction exclusion criterion
+----
+<ccv:Criterion>
+        <cbc:ID schemeID="CriteriaID" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">005eb9ed-1347-4ca3-bb29-9bc0db64e1ab</cbc:ID><!--1-->
+        <cbc:TypeCode listID="CriteriaTypeCode" listAgencyID="EU-COM-GROW" listVersionID="1.0.2">CRITERION.EXCLUSION.CONVICTIONS.PARTICIPATION_IN_CRIMINAL_ORGANISATION</cbc:TypeCode><!--2-->
+        <cbc:Name>Participation in a criminal organisation</cbc:Name>
+        <cbc:Description>Has the economic operator itself or any person who is a member of its administrative, management or supervisory body or has powers of representation, decision or control therein been the subject of a conviction by final judgment for participation in a criminal organisation, by a conviction rendered at the most five years ago or in which an exclusion period set out directly in the conviction continues to be applicable? As defined in Article 2 of Council Framework Decision 2008/841/JHA of 24 October 2008 on the fight against organised crime (OJ L 300, 11.11.2008, p. 42).</cbc:Description>
+        <ccv:LegislationReference>
+           <ccv-cbc:Title>DIRECTIVE 2014/24/EU OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL of 26 February 2014 on public procurement and repealing Directive 2004/18/EC</ccv-cbc:Title>
+           <cbc:Description>Directive 2014/24/EU</cbc:Description>
+           <ccv-cbc:JurisdictionLevelCode listID="CriterionJurisdictionLevel" listAgencyID="EU-COM-GROW" listVersionID="1.0.2">EU_DIRECTIVE</ccv-cbc:JurisdictionLevelCode>
+           <ccv-cbc:Article>57(1)</ccv-cbc:Article>
+           <cbc:URI>http://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:32014L0024</cbc:URI>
+        </ccv:LegislationReference>
+        <ccv:RequirementGroup>
+            <cbc:ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">7c637c0c-7703-4389-ba52-02997a055bd7</cbc:ID><!--3-->
+            <ccv:Requirement responseDataType="INDICATOR"><!--5-->
+                <cbc:ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">974c8196-9d1c-419c-9ca9-45bb9f5fd59a</cbc:ID><!--4-->
+                <cbc:Description>Your answer?</cbc:Description>
+                <ccv:Response>
+                    <ccv-cbc:Indicator>true</ccv-cbc:Indicator><!--6-->
+                </ccv:Response>
+            </ccv:Requirement>
+            <ccv:RequirementGroup pi="GROUP_FULFILLED.ON_TRUE">
+                <cbc:ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">41dd2e9b-1bfd-44c7-93ee-56bd74a4334b</cbc:ID>
+                <ccv:Requirement responseDataType="DATE">
+                    <cbc:ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">ecf40999-7b64-4e10-b960-7f8ff8674cf6</cbc:ID>
+                    <cbc:Description>Date of conviction</cbc:Description>
+                    <ccv:Response>
+                        <cbc:Date>2015-12-09</cbc:Date>
+                    </ccv:Response>
+                </ccv:Requirement>
+                <ccv:Requirement responseDataType="DESCRIPTION">
+                    <cbc:ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">7d35fb7c-da5b-4830-b598-4f347a04dceb</cbc:ID>
+                    <cbc:Description>Reason</cbc:Description>
+                    <ccv:Response>
+                        <cbc:Description>Participation in a criminal organisation</cbc:Description>
+                    </ccv:Response>
+                </ccv:Requirement>
+                <ccv:Requirement responseDataType="DESCRIPTION">
+                    <cbc:ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">c5012430-14da-454c-9d01-34cedc6a7ded</cbc:ID>
+                    <cbc:Description>Who has been convicted</cbc:Description>
+                    <ccv:Response>
+                        <cbc:Description>Mr Dragon A</cbc:Description>
+                    </ccv:Response>
+                </ccv:Requirement>
+                <ccv:Requirement responseDataType="PERIOD">
+                    <cbc:ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">9ca9096f-edd2-4f19-b6b1-b55c83a2d5c8</cbc:ID>
+                    <cbc:Description>Length of the period of exclusion</cbc:Description>
+                    <ccv:Response>
+                        <cac:Period>
+                            <cbc:Description>6 years</cbc:Description>
+                        </cac:Period>
+                    </ccv:Response>
+                </ccv:Requirement>
+                <ccv:RequirementGroup>
+                    <cbc:ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">5f9f09f7-f701-432c-9fdc-c22c124a74c9</cbc:ID>
+                    <ccv:Requirement responseDataType="INDICATOR">
+                        <cbc:ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">20c5361b-7599-4ee6-b030-7f8323174d1e</cbc:ID>
+                        <cbc:Description>Have you taken measures to demonstrate your reliability 'Self-Cleaning'?</cbc:Description>
+                        <ccv:Response>
+                            <ccv-cbc:Indicator>true</ccv-cbc:Indicator>
+                        </ccv:Response>
+                    </ccv:Requirement>
+                    <ccv:RequirementGroup pi="GROUP_FULFILLED.ON_TRUE">
+                        <cbc:ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">74e6c7b4-757b-4b40-ada6-fad6a997c310</cbc:ID>
+                        <ccv:Requirement responseDataType="DESCRIPTION">
+                            <cbc:ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">7b07904f-e080-401a-a3a1-9a3efeeda54b</cbc:ID>
+                            <cbc:Description>Please describe them</cbc:Description>
+                            <ccv:Response>
+<cbc:Description>Many causes and conditions can impair mobility and movement. The inability to use legs, arms, or the body trunk effectively because of paralysis, stiffness, pain, or other impairments is common. It may be the result of birth defects, disease, age, or accidents. These disabilities may change from day to day. They may also contribute to other disabilities such as impaired speech, memory loss, short stature, and hearing loss.</cbc:Description>
+                            </ccv:Response>
+                        </ccv:Requirement>
+                    </ccv:RequirementGroup>
+                </ccv:RequirementGroup>
+            </ccv:RequirementGroup>
+        </ccv:RequirementGroup>
+        <ccv:RequirementGroup>
+            <cbc:ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">7458d42a-e581-4640-9283-34ceb3ad4345</cbc:ID>
+            <ccv:Requirement responseDataType="INDICATOR">
+                <cbc:ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">c1347b74-1872-4060-a6db-f4044edcd7c4</cbc:ID>
+                <cbc:Description>Is this information available electronically?</cbc:Description>
+                <ccv:Response>
+                    <ccv-cbc:Indicator>true</ccv-cbc:Indicator>
+                </ccv:Response>
+            </ccv:Requirement>
+            <ccv:RequirementGroup pi="GROUP_FULFILLED.ON_TRUE">
+                <cbc:ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">41dd2e9b-1bfd-44c7-93ee-56bd74a4334b</cbc:ID>
+                <ccv:Requirement responseDataType="EVIDENCE_URL">
+                    <cbc:ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">f4313bb6-21b6-499e-bdff-debe10e11d2c</cbc:ID>
+                    <cbc:Description>URL</cbc:Description>
+                    <ccv:Response>
+                        <cev:Evidence>
+                            <cev:EvidenceDocumentReference>
+								<cbc:ID>fe3696b0-0325-404a-9fab-989b4c9dd963</cbc:ID>
+								<cac:Attachment>
+								    <cac:ExternalReference>
+								        <cbc:URI>https://www.lds.org/topics/disability/list/physical-disability?lang=eng</cbc:URI>
+								    </cac:ExternalReference>
+								</cac:Attachment>
+                            </cev:EvidenceDocumentReference>
+                        </cev:Evidence>
+                    </ccv:Response>
+                </ccv:Requirement>
+                <ccv:Requirement responseDataType="CODE">
+                    <cbc:ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">1f1cd18e-3e01-4ca2-af4c-e2981924ba8d</cbc:ID>
+                    <cbc:Description>Code</cbc:Description>
+                    <ccv:Response>
+                        <ccv-cbc:Code>Participation in a criminal organisation</ccv-cbc:Code>
+                    </ccv:Response>
+                </ccv:Requirement>
+            </ccv:RequirementGroup>
+        </ccv:RequirementGroup>
+</ccv:Criterion>
+----
+<1> COM UUID in table link:{url-blob}/code_lists/xls/CriteriaTaxonomy.xlsx[ESPD Criteria: Exclusion criteria]
+<2> COM code list link:{url-blob}/code_lists/pdf/CriteriaTypeCode.pdf[CriteriaTypeCode]
+<3> COM UUID in table link:{url-blob}/code_lists/xls/CriteriaTaxonomy.xlsx[ESPD Criteria: Exclusion criteria]
+<4> COM UUID in table link:{url-blob}/code_lists/xls/CriteriaTaxonomy.xlsx[ESPD Criteria: Exclusion criteria]
+<5> Expected response of type Indicator (a boolean value _true_ or _false_)
+<6> The response (i) is of the expected type, and (2) the response answers the question in the Criterion: this EO has not participated in a criminal 
+organisation. Hence the rest of responses are empty, as the EO has not to provide any further data
+
+.General rule 4: Use of the first Requirement as a ''decision point''
+[NOTE]
+====
+If the Criterion contains a question that needs to be answered with ''yes'' or ''no'' the first Requirement SHOULD be just a sentence requiring to answer ''yes'' or ''no''.
+The answer to this Requirement will be considered the answer to the Criterion and a ''decision point'' used to fork between whether to process the data within the group or not.
+====
+
+.General rule 5: Compulsory use of the UUIDs defined by COM
+[NOTE]
+====
+ESPD XML documents intended to be conformant to the ESPD Service MUST use the Universally Unique Identifiers provided by COM for Criterion, RequirementGroup and Requirement. 
+These UUIDs are the same as the ones used in e-Certis.footnote:[For the time being e-Certis only contains Criteria.].
+====
+
+.Note for the future 2: Cross-border/cross-sector codes
+[IMPORTANT]
+====
+Some relevant trans-European initiatives like ECRIS, BRIS, EESSI, and other, have defined Code Lists and other reference data that could be used in e-Procurement, and specifically 
+by the ESPD. This would enhance the cross-border and cross-sector semantic and technical interoperability.
+ 
+Thus, in the case of Convictions, a new requirement could be introduced in G1 (see figures above) asking for the ECRIS Code corresponding to the offence that will be specified in 
+the Response in case the Economic Operator answered ''yes'' to the first Requirement. The ECRIS Codes can be consulted in the Annex to the COUNCIL DECISION 2009/316/JHA of 6 April 
+2009 on the establishment of the European Criminal Records Information System (ECRIS) in application of Article 11 of Framework Decision 2009/315/JHA.footnote:[http://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX%3A32009D0316].
+====
+
+[NOTE]
+* The XML structure and elements of the above example reproduce the fragment of text in
+	the http://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32016R0007[Annex to the Regulation 2016/7] 
+	related to this criterion;
+* The general rules are respected;
+* The XML structure maps the data-structure;
+
+[.text-left]
+==== Contributions
+
+[.text-left]
+The category ''Contributions'' encompasses two criteria:
+
+	* CRITERION.EXCLUSION.CONTRIBUTIONS.*: ''payment of taxes'' and ''social security contributions''.
+
+[.text-left]
+Both are implemented using the same structure: 
+
+[.text-center]
+[[exclusion_contributions_data_structure]]
+.Data-structure representation for contributions (EXCLUSION.CONTRIBUTIONS.*)
+image::14_exclusion_contributions_data_struct.png[alt="exclusion_contributions_data_structure", width="900"]
+
+[.text-left]
+The fragment of XML below shows the implementation of both in the ESPD Service:
+
+[source,xml]
+.Example of an EO that breached its obligations relating to the payment of taxes 
+----
+<ccv:Criterion>
+        <cbc:ID schemeID="CriteriaID" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">b61bbeb7-690e-4a40-bc68-d6d4ecfaa3d4</cbc:ID>
+        <cbc:TypeCode listID="CriteriaTypeCode" listAgencyID="EU-COM-GROW" listVersionID="1.0.2">CRITERION.EXCLUSION.CONTRIBUTIONS.PAYMENT_OF_TAXES</cbc:TypeCode>
+        <cbc:Name>Payment of taxes</cbc:Name>
+        <cbc:Description>Has the economic operator breached its obligations relating to the payment of taxes, both in the country in which it is established and in Member State of the contracting authority or contracting entity if other than the country of establishment?</cbc:Description>
+        <ccv:LegislationReference>
+            <ccv-cbc:Title>DIRECTIVE 2014/24/EU OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL of 26 February 2014 on public procurement and repealing Directive 2004/18/EC</ccv-cbc:Title>
+            <cbc:Description>Directive 2014/24/EU</cbc:Description>
+            <ccv-cbc:JurisdictionLevelCode listID="CriterionJurisdictionLevel" listAgencyID="EU-COM-GROW" listVersionID="1.0.2">EU_DIRECTIVE</ccv-cbc:JurisdictionLevelCode>
+            <ccv-cbc:Article>57(2)</ccv-cbc:Article>
+            <cbc:URI>http://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:32014L0024</cbc:URI>
+        </ccv:LegislationReference>
+        <ccv:RequirementGroup>
+            <cbc:ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">098fd3cc-466e-4233-af1a-affe09471bce</cbc:ID>
+            <ccv:Requirement responseDataType="INDICATOR">
+                <cbc:ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">974c8196-9d1c-419c-9ca9-45bb9f5fd59a</cbc:ID>
+                <cbc:Description>Your answer?</cbc:Description>
+                <ccv:Response>
+                    <ccv-cbc:Indicator>true</ccv-cbc:Indicator><!--1-->
+                </ccv:Response>
+            </ccv:Requirement>
+            <ccv:RequirementGroup pi="GROUP_FULFILLED.ON_TRUE">
+                <cbc:ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">f8499787-f9f8-4355-95e2-9784426f4d7b</cbc:ID>
+                <ccv:Requirement responseDataType="CODE_COUNTRY">
+                    <cbc:ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">6c87d3d4-e8eb-4253-b385-6373020ab886</cbc:ID>
+                    <cbc:Description>Country or member state concerned</cbc:Description>
+                    <ccv:Response>
+                        <ccv-cbc:Code listID="ISO 3166-1" listAgencyID="ISO" listVersionID="1.0">FR</ccv-cbc:Code>
+                    </ccv:Response>
+                </ccv:Requirement>
+                <ccv:Requirement responseDataType="AMOUNT">
+                    <cbc:ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">9052cc59-cfe5-41c6-a314-02a7f378ffe8</cbc:ID>
+                    <cbc:Description>Amount concerned</cbc:Description>
+                    <ccv:Response>
+                        <cbc:Amount currencyID="EUR">300.0</cbc:Amount><!--2-->
+                    </ccv:Response>
+                </ccv:Requirement>
+                <ccv:RequirementGroup>
+                    <cbc:ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">7c2aec9f-4876-4c33-89e6-2ab6d6cf5d02</cbc:ID>
+                    <ccv:Requirement responseDataType="INDICATOR">
+                        <cbc:ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">9b4497e6-a166-46f9-8581-7fc39ff975c4</cbc:ID>
+                        <cbc:Description>Has this breach of obligations been established by means other than a judicial or administrative decision?</cbc:Description>
+                        <ccv:Response>
+                            <ccv-cbc:Indicator>true</ccv-cbc:Indicator><!--3-->
+                        </ccv:Response>
+                    </ccv:Requirement>
+                    <ccv:RequirementGroup pi="GROUP_FULFILLED.ON_TRUE">
+                        <cbc:ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">3cb7abf1-662a-4756-b61c-7bc716c1fafc</cbc:ID>
+                        <ccv:Requirement responseDataType="DESCRIPTION">
+                            <cbc:ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">201f11c3-1fa2-4464-acc0-f021266fd881</cbc:ID>
+                            <cbc:Description>Please describe which means were used</cbc:Description>
+                            <ccv:Response>
+<cbc:Description>how compassion, sensitivity, and sincerity by respecting the individual’s wishes. Maintain a balance between helping and allowing the individual to grow by providing for himself or herself.&#xD;
+Prepare to accommodate individuals with a physical disability before Church meetings and activities begin. This may include providing ramps, seating accommodations, access to all facilities (including the pulpit), and media equipment. Facilities should be accessible to those who use wheelchairs, braces, artificial limbs, other assistive devices, or assistive animals.</cbc:Description>
+                            </ccv:Response>
+                        </ccv:Requirement>
+                    </ccv:RequirementGroup>
+                </ccv:RequirementGroup>
+                <ccv:RequirementGroup>
+                    <cbc:ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">c882afa4-6971-4b00-8970-0c283eb122cc</cbc:ID>
+                    <ccv:Requirement responseDataType="INDICATOR">
+                        <cbc:ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">08b0c984-c5e6-4143-8493-868c39745637</cbc:ID>
+                        <cbc:Description>If this breach of obligations was established through a judicial or administrative decision, was this decision final and binding?</cbc:Description>
+                        <ccv:Response>
+                            <ccv-cbc:Indicator>false</ccv-cbc:Indicator><!--4-->
+                        </ccv:Response>
+                    </ccv:Requirement>
+                    <ccv:RequirementGroup pi="GROUP_FULFILLED.ON_TRUE">
+                        <cbc:ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">815422d6-f8a1-418a-8bf0-3524f7c8f721</cbc:ID>
+                        <ccv:Requirement responseDataType="DATE">
+                            <cbc:ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">ecf40999-7b64-4e10-b960-7f8ff8674cf6</cbc:ID>
+                            <cbc:Description>Date of conviction</cbc:Description>
+                            <ccv:Response/>
+                        </ccv:Requirement>
+                        <ccv:Requirement responseDataType="PERIOD">
+                            <cbc:ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">9ca9096f-edd2-4f19-b6b1-b55c83a2d5c8</cbc:ID>
+                            <cbc:Description>Length of the period of exclusion</cbc:Description>
+                            <ccv:Response/>
+                        </ccv:Requirement>
+                    </ccv:RequirementGroup>
+                </ccv:RequirementGroup>
+                <ccv:RequirementGroup>
+                    <cbc:ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">fc57e473-d63e-4a04-b589-dcf81cab8052</cbc:ID>
+                    <ccv:Requirement responseDataType="INDICATOR">
+                        <cbc:ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">70f8697b-8953-411a-a489-4ff62e5250d2</cbc:ID>
+                        <cbc:Description>Has the economic operator fulfilled its obligations by paying or entering into a binding arrangement with a view to paying the taxes or social security contributions due, including, where applicable, any interest accrued or fines?</cbc:Description>
+                        <ccv:Response>
+                            <ccv-cbc:Indicator>true</ccv-cbc:Indicator>
+                        </ccv:Response>
+                    </ccv:Requirement>
+                    <ccv:RequirementGroup pi="GROUP_FULFILLED.ON_TRUE">
+                        <cbc:ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">6c3609e1-9add-4fa9-9409-62ce72ae4548</cbc:ID>
+                        <ccv:Requirement responseDataType="DESCRIPTION">
+                            <cbc:ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">55905dd0-38f0-4f93-8c74-5ae05a21afc5</cbc:ID>
+                            <cbc:Description>Please describe them</cbc:Description>
+                            <ccv:Response>
+<cbc:Description>how compassion, sensitivity, and sincerity by respecting the individual’s wishes. Maintain a balance between helping and allowing the individual to grow by providing for himself or herself.&#xD;
+Prepare to accommodate individuals with a physical disability before Church meetings and activities begin. This may include providing ramps, seating accommodations, access to all facilities (including the pulpit), and media equipment. Facilities should be accessible to those who use wheelchairs, braces, artificial limbs, other assistive devices, or assistive animals.</cbc:Description>
+                            </ccv:Response>
+                        </ccv:Requirement>
+                    </ccv:RequirementGroup>
+                </ccv:RequirementGroup>
+            </ccv:RequirementGroup>
+        </ccv:RequirementGroup>
+        <ccv:RequirementGroup><!--5-->
+            <cbc:ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">7458d42a-e581-4640-9283-34ceb3ad4345</cbc:ID>
+            <ccv:Requirement responseDataType="INDICATOR">
+                <cbc:ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">c1347b74-1872-4060-a6db-f4044edcd7c4</cbc:ID>
+                <cbc:Description>Is this information available electronically?</cbc:Description>
+                <ccv:Response>
+                    <ccv-cbc:Indicator>true</ccv-cbc:Indicator>
+                </ccv:Response>
+            </ccv:Requirement>
+            <ccv:RequirementGroup pi="GROUP_FULFILLED.ON_TRUE">
+                <cbc:ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">41dd2e9b-1bfd-44c7-93ee-56bd74a4334b</cbc:ID>
+                <ccv:Requirement responseDataType="EVIDENCE_URL">
+                    <cbc:ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">f4313bb6-21b6-499e-bdff-debe10e11d2c</cbc:ID>
+                    <cbc:Description>URL</cbc:Description>
+                    <ccv:Response>
+                        <cev:Evidence>
+                            <cev:EvidenceDocumentReference>
+<cbc:ID>782b543f-f852-49e8-a1ab-76e4c63a8c1e</cbc:ID>
+<cac:Attachment>
+    <cac:ExternalReference>
+        <cbc:URI>https://www.lds.org/topics/disability/list/physical-disability?lang=eng</cbc:URI>
+    </cac:ExternalReference>
+</cac:Attachment>
+                            </cev:EvidenceDocumentReference>
+                        </cev:Evidence>
+                    </ccv:Response>
+                </ccv:Requirement>
+                <ccv:Requirement responseDataType="CODE">
+                    <cbc:ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">1f1cd18e-3e01-4ca2-af4c-e2981924ba8d</cbc:ID>
+                    <cbc:Description>Code</cbc:Description>
+                    <ccv:Response>
+                        <ccv-cbc:Code>Payment of taxes code</ccv-cbc:Code>
+                    </ccv:Response>
+                </ccv:Requirement>
+            </ccv:RequirementGroup>
+        </ccv:RequirementGroup>
+    </ccv:Criterion>
+----
+<1> The EO answers affirmatively, therefore it is, in principle, breaching an exclusion criterion and will have to motivate it by providing responses to the inner criterion requirements.
+<2> Notice how the currency is specified.
+<3> As the EO answers "no" (false) to this question it has not to provide data related to this inner requirement.
+<4> Again, as the EO answers "yes" to this other inner requirement it has also to provide the required data (date of the conviction and the period of exclusion)
+<5> In this case, the EO does not provide any online evidence (see other examples further on for this).
+
+[NOTE]
+====
+* The first group contains the requirements requesting data about the payment of taxes;
+* The second group (available online information) is identical to the second group showed in the previous case (convictions); it requests references to evidences, a structure that repeats in practically all the ESPD criteria;
+* The first group of requirements contains ''sub-groups'' of requirements. This is consistent with the model and the XSD Schema. Each sub-group starts with another
+''decision point''. As for the Criterion question, a ''yes'' answer in a sub-group indicates 
+that a sub-group of data will have to be provided by the EO.  It is important to always respect this approach in order to keep the conformance with the ESPD Service.
+Bear in mind that at validation time  the data provided by the Economic Operator in the  ESPDResponse.xml instance will be checked against the required responseDataType attribute
+specified in each requirement of the ESPDRequest.xml.
+====
+
+[.text-left]
+==== Social
+
+The ''Social'' group of criteria refers to breaching of social obligations like the ones 
+related to social laws: 
+
+	* CRITERION.EXCLUSION.SOCIAL.*: ''breaching of obligations in the fields of 
+	environmental law'', ''breaching of obligations in the fields of social law'' 
+	and ''breaching of obligations in the fields of labour law''.
+	
+All these criteria are specified based on the same data structure:
+
+This other figure below represents the data structure:
+
+[.text-center]
+[[exclusion_social__data_structure]]
+.Data-structure representation for social-related criteria (EXCLUSION.SOCIAL.*)
+image::15_exclusion_social__data_struct.png[alt="exclusion_social__data_structure", width="600"]
+
+[NOTE]
+====
+* This same structure is also used for other exclusion criteria such as the misconduct related ones or one particular case of conflict of interest;
+* Contrary to the criteria so far studied this one does not include the group of requirements requesting evidences (see also [DOC-REF-1]).
+====
+
+[.text-left]
+The piece of XML below is a fragment of an ESPD Request XML document. 
+This fragment shows the implementation of the Criterion 
+''Breaching of obligations in the fields of environmental law'':
+
+[source, xml]
+.The EO breached the environmental law but took measures to avoid future similar situations
+----
+<ccv:Criterion>
+        <cbc:ID schemeID="CriteriaID" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">a80ddb62-d25b-4e4e-ae22-3968460dc0a9</cbc:ID>
+        <cbc:TypeCode listID="CriteriaTypeCode" listAgencyID="EU-COM-GROW" listVersionID="1.0.2">CRITERION.EXCLUSION.SOCIAL.ENVIRONMENTAL_LAW</cbc:TypeCode>
+        <cbc:Name>Breaching of obligations in the fields of environmental law</cbc:Name>
+        <cbc:Description>Has the economic operator, to its knowledge, breached its obligations in the fields of environmental law? As referred to for the purposes of this procurement in national law, in the relevant notice or the procurement documents or in Article 18(2) of Directive 2014/24/EU.</cbc:Description>
+        <ccv:LegislationReference>
+            <ccv-cbc:Title>DIRECTIVE 2014/24/EU OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL of 26 February 2014 on public procurement and repealing Directive 2004/18/EC</ccv-cbc:Title>
+            <cbc:Description>Directive 2014/24/EU</cbc:Description>
+            <ccv-cbc:JurisdictionLevelCode listID="CriterionJurisdictionLevel" listAgencyID="EU-COM-GROW" listVersionID="1.0.2">EU_DIRECTIVE</ccv-cbc:JurisdictionLevelCode>
+            <ccv-cbc:Article>57(4)</ccv-cbc:Article>
+            <cbc:URI>http://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:32014L0024</cbc:URI>
+        </ccv:LegislationReference>
+        <ccv:RequirementGroup>
+            <cbc:ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">976b5acb-c00f-46ca-8f83-5ce6abfdfe43</cbc:ID>
+            <ccv:Requirement responseDataType="INDICATOR">
+                <cbc:ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">974c8196-9d1c-419c-9ca9-45bb9f5fd59a</cbc:ID>
+                <cbc:Description>Your answer?</cbc:Description>
+                <ccv:Response>
+                    <ccv-cbc:Indicator>true</ccv-cbc:Indicator><!--1-->
+                </ccv:Response>
+            </ccv:Requirement>
+            <ccv:RequirementGroup pi="GROUP_FULFILLED.ON_TRUE">
+                <cbc:ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">64a2102c-4af1-4ecb-97b3-0c41907ec0f6</cbc:ID>
+                <ccv:Requirement responseDataType="DESCRIPTION">
+                    <cbc:ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">e098da8e-4717-4500-965f-f882d5b4e1ad</cbc:ID>
+                    <cbc:Description>Please describe them</cbc:Description>
+                    <ccv:Response><!--2-->
+                        <cbc:Description>People with mobility and movement impairments may find it difficult to participate when facing social and physical barriers. Quite often they are individuals of courage and independence who have a desire to contribute to the fullest level of their ability. Some are totally independent, while others may need part- or full-time assistance.</cbc:Description>
+                    </ccv:Response>
+                </ccv:Requirement>
+                <ccv:RequirementGroup>
+                    <cbc:ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">5f9f09f7-f701-432c-9fdc-c22c124a74c9</cbc:ID>
+                    <ccv:Requirement responseDataType="INDICATOR">
+                        <cbc:ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">20c5361b-7599-4ee6-b030-7f8323174d1e</cbc:ID>
+                        <cbc:Description>Have you taken measures to demonstrate your reliability 'Self-Cleaning'?</cbc:Description>
+                        <ccv:Response>
+                            <ccv-cbc:Indicator>true</ccv-cbc:Indicator>
+                        </ccv:Response>
+                    </ccv:Requirement>
+                    <ccv:RequirementGroup pi="GROUP_FULFILLED.ON_TRUE">
+                        <cbc:ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">74e6c7b4-757b-4b40-ada6-fad6a997c310</cbc:ID>
+                        <ccv:Requirement responseDataType="DESCRIPTION"><!--3-->
+                            <cbc:ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">7b07904f-e080-401a-a3a1-9a3efeeda54b</cbc:ID>
+                            <cbc:Description>Please describe them</cbc:Description>
+                            <ccv:Response>
+<cbc:Description>People with mobility and movement impairments may find it difficult to participate when facing social and physical barriers. Quite often they are individuals of courage and independence who have a desire to contribute to the fullest level of their ability. Some are totally independent, while others may need part- or full-time assistance.</cbc:Description>
+                            </ccv:Response>
+                        </ccv:Requirement>
+                    </ccv:RequirementGroup>
+                </ccv:RequirementGroup>
+            </ccv:RequirementGroup>
+        </ccv:RequirementGroup>
+</ccv:Criterion>  
+----
+<1> The EO answers "yes", therefore it has to provide an explanation
+<2> The EO explains the breach
+<3> The EO motivates the action undertaken to demonstrate its reliability
+
+include::4.2.5_CMMN_NOTICE_THAT.adoc[leveloffset=+1]
+;
+
+* The ''Self-Cleaning'' sub-group of requirements will only be processed in case the answer to the Criterion (i.e. the answer to first requirement) is ''yes'';
+
+* For this criterion no evidences are required.
+
+[.text-left]
+==== Business
+
+The category ''Business'' encompasses the following group of criteria:
+
+ 	* CRITERION.EXCLUSION.BUSINESS.*: breaching of obligations for ''bankruptcy'', ''insolvency'', ''winding-up'', ''arrangement with creditors'', ''analogous situation like bankruptcy under national law'', ''assets being administered by liquidator'' and ''business activities suspended''.
+ 	
+All of them are implemented using the same structure:
+
+[.text-center]
+[[exclusion_business_data_structure]]
+.Data-structure representation for all the business-related criteria (EXCLUSION.BUSINESS.*)
+image::16_exclusion_business_data_struct.png[alt="exclusion_business_data_structure", width="600"]
+
+[.text-left]
+The piece of XML below is a fragment of an ESPD Request XML document. 
+This fragment shows the implementation of the Criterion ''Bankruptcy'':
+
+[source,xml]
+.XML example of a bankruptcy criterion
+----
+<ccv:Criterion>
+        <cbc:ID schemeID="CriteriaID" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">d3732c09-7d62-4edc-a172-241da6636e7c</cbc:ID>
+        <cbc:TypeCode listID="CriteriaTypeCode" listAgencyID="EU-COM-GROW" listVersionID="1.0.2">CRITERION.EXCLUSION.BUSINESS.BANKRUPTCY</cbc:TypeCode>
+        <cbc:Name>Bankruptcy</cbc:Name>
+        <cbc:Description>Is the economic operator bankrupt? This information needs not be given if exclusion of economic operators in this case has been made mandatory under the applicable national law without any possibility of derogation where the economic operator is nevertheless able to perform the contract.</cbc:Description>
+        <ccv:LegislationReference>
+            <ccv-cbc:Title>DIRECTIVE 2014/24/EU OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL of 26 February 2014 on public procurement and repealing Directive 2004/18/EC</ccv-cbc:Title>
+            <cbc:Description>Directive 2014/24/EU</cbc:Description>
+            <ccv-cbc:JurisdictionLevelCode listID="CriterionJurisdictionLevel" listAgencyID="EU-COM-GROW" listVersionID="1.0.2">EU_DIRECTIVE</ccv-cbc:JurisdictionLevelCode>
+            <ccv-cbc:Article>57(4)</ccv-cbc:Article>
+            <cbc:URI>http://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:32014L0024</cbc:URI>
+        </ccv:LegislationReference>
+        <ccv:RequirementGroup>
+            <cbc:ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">d91c11a1-f19e-4b83-8ade-c4be2bf00555</cbc:ID>
+            <ccv:Requirement responseDataType="INDICATOR">
+                <cbc:ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">974c8196-9d1c-419c-9ca9-45bb9f5fd59a</cbc:ID>
+                <cbc:Description>Your answer?</cbc:Description>
+                <ccv:Response>
+                    <ccv-cbc:Indicator>true</ccv-cbc:Indicator>
+                </ccv:Response>
+            </ccv:Requirement>
+            <ccv:RequirementGroup pi="GROUP_FULFILLED.ON_TRUE">
+                <cbc:ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">aeef523b-c8fc-4dba-9c34-03e34812567b</cbc:ID>
+                <ccv:Requirement responseDataType="DESCRIPTION">
+                    <cbc:ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">e098da8e-4717-4500-965f-f882d5b4e1ad</cbc:ID>
+                    <cbc:Description>Please describe them</cbc:Description>
+                    <ccv:Response>
+                        <cbc:Description>Learn about the disability and how you can help. Get to know the person and the caregiver.&#xD;
+Show compassion, sensitivity, and sincerity by respecting the individual’s wishes. Maintain a balance between helping and allowing the individual to grow by providing for himself or herself.&#xD;
+Prepare to accommodate individuals with a physical disability before Church meetings and activities begin. This may include providing ramps, seating accommodations, access to all facilities (including the pulpit), and media equipment. Facilities should be accessible to those who use wheelchairs, braces, artificial limbs, other assistive devices, or assistive animals.</cbc:Description>
+                    </ccv:Response>
+                </ccv:Requirement>
+                <ccv:Requirement responseDataType="DESCRIPTION">
+                    <cbc:ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">4e3f468a-86c4-4c99-bd15-c8b221229348</cbc:ID>
+                    <cbc:Description>Indicate reasons for being nevertheless to perform the contract</cbc:Description>
+                    <ccv:Response>
+                        <cbc:Description>Learn about the disability and how you can help. Get to know the person and the caregiver.&#xD;
+Show compassion, sensitivity, and sincerity by respecting the individual’s wishes. Maintain a balance between helping and allowing the individual to grow by providing for himself or herself.&#xD;
+Prepare to accommodate individuals with a physical disability before Church meetings and activities begin. This may include providing ramps, seating accommodations, access to all facilities (including the pulpit), and media equipment. Facilities should be accessible to those who use wheelchairs, braces, artificial limbs, other assistive devices, or assistive animals.</cbc:Description>
+                    </ccv:Response>
+                </ccv:Requirement>
+            </ccv:RequirementGroup>
+        </ccv:RequirementGroup>
+        <ccv:RequirementGroup>
+            <cbc:ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">7458d42a-e581-4640-9283-34ceb3ad4345</cbc:ID>
+            <ccv:Requirement responseDataType="INDICATOR">
+                <cbc:ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">c1347b74-1872-4060-a6db-f4044edcd7c4</cbc:ID>
+                <cbc:Description>Is this information available electronically?</cbc:Description>
+                <ccv:Response>
+                    <ccv-cbc:Indicator>true</ccv-cbc:Indicator>
+                </ccv:Response>
+            </ccv:Requirement>
+            <ccv:RequirementGroup pi="GROUP_FULFILLED.ON_TRUE">
+                <cbc:ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">41dd2e9b-1bfd-44c7-93ee-56bd74a4334b</cbc:ID>
+                <ccv:Requirement responseDataType="EVIDENCE_URL">
+                    <cbc:ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">f4313bb6-21b6-499e-bdff-debe10e11d2c</cbc:ID>
+                    <cbc:Description>URL</cbc:Description>
+                    <ccv:Response>
+                        <cev:Evidence>
+                            <cev:EvidenceDocumentReference>
+<cbc:ID>5e3f7be6-ac84-4ad4-be34-38873e866f3f</cbc:ID>
+<cac:Attachment>
+    <cac:ExternalReference>
+        <cbc:URI>https://www.lds.org/topics/disability/list/physical-disability?lang=eng</cbc:URI>
+    </cac:ExternalReference>
+</cac:Attachment>
+                            </cev:EvidenceDocumentReference>
+                        </cev:Evidence>
+                    </ccv:Response>
+                </ccv:Requirement>
+                <ccv:Requirement responseDataType="CODE">
+                    <cbc:ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">1f1cd18e-3e01-4ca2-af4c-e2981924ba8d</cbc:ID>
+                    <cbc:Description>Code</cbc:Description>
+                    <ccv:Response>
+                        <ccv-cbc:Code>Bankruptcy code</ccv-cbc:Code>
+                    </ccv:Response>
+                </ccv:Requirement>
+            </ccv:RequirementGroup>
+        </ccv:RequirementGroup>
+    </ccv:Criterion>
+----
+
+include::4.2.5_CMMN_NOTICE_THAT.adoc[leveloffset=+1]
+;
+
+	* The common evidence-related requirement group is herein used again.
+
+    [.text-left]
+==== Misconduct
+
+The category ''Misconduct'' encompasses two criteria that share the same structure as the one used for the ''social'' group of criteria (see sub-section 
+''How to specify ''social'' related criteria, above).footnote:[See &#91;DOC-REF-8&#93; for the complete taxonomy of criteria and each criterion code label.]
+
+	* CRITERION.EXCLUSION.MISCONDUCT.*: ''guilty of grave professional misconduct''; and ''agreements with other economic operators aimed at distorting competition''.
+	 
+This other figure below represents the data-structure:
+
+[.text-center]
+[[exclusion_misconduct_data_structure]]
+.Data-structure representation for the misconduct-related criteria (EXCLUSION.MISCONDUCT.*)
+image::17_exclusion_misconduct_data_struct.png[alt="exclusion_misconduct_data_structure", width="600"]
+
+[.text-left]
+The piece of XML below is a fragment of an ESPD Response XML document. 
+This fragment shows the implementation of the Criterion ''Guilty of grave professional misconduct'':
+
+[source,xml]
+.XML example of a misconduct criterion (the EO declares no misconducts)
+----
+<ccv:Criterion>
+        <cbc:ID schemeID="CriteriaID" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">514d3fde-1e3e-4dcd-b02a-9f984d5bbda3</cbc:ID>
+        <cbc:TypeCode listID="CriteriaTypeCode" listAgencyID="EU-COM-GROW" listVersionID="1.0.2">CRITERION.EXCLUSION.MISCONDUCT.MC_PROFESSIONAL</cbc:TypeCode>
+        <cbc:Name>Guilty of grave professional misconduct</cbc:Name>
+        <cbc:Description>Is the economic operator  guilty of grave professional misconduct? Where applicable, see definitions in national law, the relevant notice or the procurement documents.</cbc:Description>
+        <ccv:LegislationReference>
+            <ccv-cbc:Title>DIRECTIVE 2014/24/EU OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL of 26 February 2014 on public procurement and repealing Directive 2004/18/EC</ccv-cbc:Title>
+            <cbc:Description>Directive 2014/24/EU</cbc:Description>
+            <ccv-cbc:JurisdictionLevelCode listID="CriterionJurisdictionLevel" listAgencyID="EU-COM-GROW" listVersionID="1.0.2">EU_DIRECTIVE</ccv-cbc:JurisdictionLevelCode>
+            <ccv-cbc:Article>57(4)</ccv-cbc:Article>
+            <cbc:URI>http://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:32014L0024</cbc:URI>
+        </ccv:LegislationReference>
+        <ccv:RequirementGroup>
+            <cbc:ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">67362ec7-cec3-4cb8-a38e-5d7a2a31e6d8</cbc:ID>
+            <ccv:Requirement responseDataType="INDICATOR">
+                <cbc:ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">974c8196-9d1c-419c-9ca9-45bb9f5fd59a</cbc:ID>
+                <cbc:Description>Your answer?</cbc:Description>
+                <ccv:Response>
+                    <ccv-cbc:Indicator>true</ccv-cbc:Indicator>
+                </ccv:Response>
+            </ccv:Requirement>
+            <ccv:RequirementGroup pi="GROUP_FULFILLED.ON_TRUE">
+                <cbc:ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">2cbcf978-765c-40aa-996b-b1d082485cef</cbc:ID>
+                <ccv:Requirement responseDataType="DESCRIPTION">
+                    <cbc:ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">e098da8e-4717-4500-965f-f882d5b4e1ad</cbc:ID>
+                    <cbc:Description>Please describe them</cbc:Description>
+                    <ccv:Response>
+                        <cbc:Description>Learn about the disability and how you can help. Get to know the person and the caregiver.&#xD;
+Show compassion, sensitivity, and sincerity by respecting the individual’s wishes. Maintain a balance between helping and allowing the individual to grow by providing for himself or herself.&#xD;
+Prepare to accommodate individuals with a physical disability before Church meetings and activities begin. This may include providing ramps, seating accommodations, access to all facilities (including the pulpit), and media equipment. Facilities should be accessible to those who use wheelchairs, braces, artificial limbs, other assistive devices, or assistive animals.</cbc:Description>
+                    </ccv:Response>
+                </ccv:Requirement>
+                <ccv:RequirementGroup>
+                    <cbc:ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">5f9f09f7-f701-432c-9fdc-c22c124a74c9</cbc:ID>
+                    <ccv:Requirement responseDataType="INDICATOR">
+                        <cbc:ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">20c5361b-7599-4ee6-b030-7f8323174d1e</cbc:ID>
+                        <cbc:Description>Have you taken measures to demonstrate your reliability 'Self-Cleaning'?</cbc:Description>
+                        <ccv:Response>
+                            <ccv-cbc:Indicator>true</ccv-cbc:Indicator>
+                        </ccv:Response>
+                    </ccv:Requirement>
+                    <ccv:RequirementGroup pi="GROUP_FULFILLED.ON_TRUE">
+                        <cbc:ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">74e6c7b4-757b-4b40-ada6-fad6a997c310</cbc:ID>
+                        <ccv:Requirement responseDataType="DESCRIPTION">
+                            <cbc:ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">7b07904f-e080-401a-a3a1-9a3efeeda54b</cbc:ID>
+                            <cbc:Description>Please describe them</cbc:Description>
+                            <ccv:Response>
+<cbc:Description>Guilty of grave professional misconduct descr</cbc:Description>
+                            </ccv:Response>
+                        </ccv:Requirement>
+                    </ccv:RequirementGroup>
+                </ccv:RequirementGroup>
+            </ccv:RequirementGroup>
+        </ccv:RequirementGroup>
+</ccv:Criterion>
+----
+
+[NOTE]
+* The XML structure and elements of the above example reproduce the fragment of text in
+	the http://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32016R0007[Annex to the Regulation 2016/7] 
+	related to this criterion;
+* The general rules are respected;
+* The XML structure maps the data-structure;
+
+* As for the group of ''social'' criteria no evidence is herein required.
+
+[.text-left]
+==== Conflict of interest
+
+The category ''Conflicts of Interest'' encompasses different exclusion criteria which are 
+more heterogeneous than the ones described until now. Three different data structures are 
+used in the ESPD Service to describe different conflict of interest criteria:
+
+	* CRITERION.EXCLUSION.CONFLICT_OF_INTEREST.EARLY_TERMINATION: Conflict of interest due 
+	to ''early termination, damages or other comparable sanctions'';
+	* CRITERION.EXCLUSION.CONFLICT_OF_INTEREST.PROCEDURE_PREPARATION: Conflict of interest 
+	due to ''direct or indirect involvement in the preparation of this procurement procedure'';
+	* CRITERION.EXCLUSION.CONFLICT_OF_INTEREST.PROCEDURE_PARTICIPATION: Conflict of interest due 
+	to ''participation in the procurement procedure''; and
+	* CRITERION.EXCLUSION.CONFLICT_OF_INTEREST.MISINTERPRETATION: Conflict of interest due 
+	for being ''guilty of misinterpretation, withheld information, able to provide required 
+	documents and obtained confidential information of this procedure''.
+
+The following subsections show the data structures and examples for these three groups of 
+criteria related to conflict of interests:
+
+The data structure for the criterion ''Early termination, damages or other 
+comparable sanctions'' is the same as the ones used for the exclusion criteria groups 
+[..].MINSCONDUCT.* and [..].SOCIAL.*:
+
+[.text-center]
+[[early_termination_data_structure]]
+.Data-structure representation for the CONFLICT_OF_INTEREST.EARLY_TERMINATION criterion
+image::18_early_termination_data_struct.png[alt="exclusion_misconduct_data_structure", width="600"]
+
+The piece of XML below is a fragment of an ESPD Response XML document.
+This fragment shows the implementation of the criterion ''Early termination'':
+
+[source,xml]
+.XML example of an ''Early termination'' exclusion criterion
+----
+<ccv:Criterion>
+        <cbc:ID schemeID="CriteriaID" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">3293e92b-7f3e-42f1-bee6-a7641bb04251</cbc:ID>
+        <cbc:TypeCode listID="CriteriaTypeCode" listAgencyID="EU-COM-GROW" listVersionID="1.0.2">CRITERION.EXCLUSION.CONFLICT_OF_INTEREST.EARLY_TERMINATION</cbc:TypeCode>
+        <cbc:Name>Early termination, damages or other comparable sanctions</cbc:Name>
+        <cbc:Description>Has the economic operator experienced that a prior public contract, a prior contract with a contracting entity or a prior concession contract was terminated early, or that damages or other comparable sanctions were imposed in connection with that prior contract?</cbc:Description>
+        <ccv:LegislationReference>
+            <ccv-cbc:Title>DIRECTIVE 2014/24/EU OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL of 26 February 2014 on public procurement and repealing Directive 2004/18/EC</ccv-cbc:Title>
+            <cbc:Description>Directive 2014/24/EU</cbc:Description>
+            <ccv-cbc:JurisdictionLevelCode listID="CriterionJurisdictionLevel" listAgencyID="EU-COM-GROW" listVersionID="1.0.2">EU_DIRECTIVE</ccv-cbc:JurisdictionLevelCode>
+            <ccv-cbc:Article>57(4)</ccv-cbc:Article>
+            <cbc:URI>http://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:32014L0024</cbc:URI>
+        </ccv:LegislationReference>
+        <ccv:RequirementGroup>
+            <cbc:ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">67362ec7-cec3-4cb8-a38e-5d7a2a31e6d8</cbc:ID>
+            <ccv:Requirement responseDataType="INDICATOR">
+                <cbc:ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">974c8196-9d1c-419c-9ca9-45bb9f5fd59a</cbc:ID>
+                <cbc:Description>Your answer?</cbc:Description>
+                <ccv:Response>
+                    <ccv-cbc:Indicator>true</ccv-cbc:Indicator>
+                </ccv:Response>
+            </ccv:Requirement>
+            <ccv:RequirementGroup pi="GROUP_FULFILLED.ON_TRUE">
+                <cbc:ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">2cbcf978-765c-40aa-996b-b1d082485cef</cbc:ID>
+                <ccv:Requirement responseDataType="DESCRIPTION">
+                    <cbc:ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">e098da8e-4717-4500-965f-f882d5b4e1ad</cbc:ID>
+                    <cbc:Description>Please describe them</cbc:Description>
+                    <ccv:Response>
+                        <cbc:Description>Learn about the disability and how you can help. Get to know the person and the caregiver.&#xD;
+Show compassion, sensitivity, and sincerity by respecting the individual’s wishes. Maintain a balance between helping and allowing the individual to grow by providing for himself or herself.&#xD;
+Prepare to accommodate individuals with a physical disability before Church meetings and activities begin. This may include providing ramps, seating accommodations, access to all facilities (including the pulpit), and media equipment. Facilities should be accessible to those who use wheelchairs, braces, artificial limbs, other assistive devices, or assistive animals.</cbc:Description>
+                    </ccv:Response>
+                </ccv:Requirement>
+                <ccv:RequirementGroup>
+                    <cbc:ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">5f9f09f7-f701-432c-9fdc-c22c124a74c9</cbc:ID>
+                    <ccv:Requirement responseDataType="INDICATOR">
+                        <cbc:ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">20c5361b-7599-4ee6-b030-7f8323174d1e</cbc:ID>
+                        <cbc:Description>Have you taken measures to demonstrate your reliability 'Self-Cleaning'?</cbc:Description>
+                        <ccv:Response>
+                            <ccv-cbc:Indicator>true</ccv-cbc:Indicator>
+                        </ccv:Response>
+                    </ccv:Requirement>
+                    <ccv:RequirementGroup pi="GROUP_FULFILLED.ON_TRUE">
+                        <cbc:ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">74e6c7b4-757b-4b40-ada6-fad6a997c310</cbc:ID>
+                        <ccv:Requirement responseDataType="DESCRIPTION">
+                            <cbc:ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">7b07904f-e080-401a-a3a1-9a3efeeda54b</cbc:ID>
+                            <cbc:Description>Please describe them</cbc:Description>
+                            <ccv:Response>
+<cbc:Description>Early termination, damages or other comparable sanctions  descr</cbc:Description>
+                            </ccv:Response>
+                        </ccv:Requirement>
+                    </ccv:RequirementGroup>
+                </ccv:RequirementGroup>
+            </ccv:RequirementGroup>
+        </ccv:RequirementGroup>
+</ccv:Criterion>
+----
+
+[NOTE]
+* The XML structure and elements of the above example reproduce the fragment of text in
+	the http://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32016R0007[Annex to the Regulation 2016/7] 
+	related to this criterion;
+* The general rules are respected;
+* The XML structure maps the data-structure;
+
+	* As for the group of ''social' criteria no evidence is herein required.
+
+[.text-left]
+==== Procedure preparation
+
+The data structures for the criterion ''Direct or indirect involvement in the
+preparation of this procurement procedure'' are the simplest ones:
+
+[.text-center]
+[[interest_preparation_data_structure]]
+.Data-structure representation for the ....CONFLICT_OF_INTEREST.PREPARATION criterion
+image::19_interest_preparation_data_struct.png[alt="interest_preparation_data_struct", width="600"]
+
+[.text-left]
+The piece of XML below corresponds to the implementation of the criterion 
+''Direct or indirect involvement in the preparation of this procurement procedure'' :
+
+[source,xml]
+.XML example of ''Direct or indirect involvement in the preparation of this procurement procedure''
+----
+<ccv:Criterion>
+        <cbc:ID schemeID="CriteriaID" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">61874050-5130-4f1c-a174-720939c7b483</cbc:ID>
+        <cbc:TypeCode listID="CriteriaTypeCode" listAgencyID="EU-COM-GROW" listVersionID="1.0.2">CRITERION.EXCLUSION.CONFLICT_OF_INTEREST.PROCEDURE_PREPARATION</cbc:TypeCode>
+        <cbc:Name>Direct or indirect involvement in the preparation of this procurement procedure</cbc:Name>
+        <cbc:Description>Has the economic operator or an undertaking related to it advised the contracting authority or contracting entity or otherwise been involved in the preparation of the procurement procedure?</cbc:Description>
+        <ccv:LegislationReference>
+            <ccv-cbc:Title>DIRECTIVE 2014/24/EU OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL of 26 February 2014 on public procurement and repealing Directive 2004/18/EC</ccv-cbc:Title>
+            <cbc:Description>Directive 2014/24/EU</cbc:Description>
+            <ccv-cbc:JurisdictionLevelCode listID="CriterionJurisdictionLevel" listAgencyID="EU-COM-GROW" listVersionID="1.0.2">EU_DIRECTIVE</ccv-cbc:JurisdictionLevelCode>
+            <ccv-cbc:Article>57(4)</ccv-cbc:Article>
+            <cbc:URI>http://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:32014L0024</cbc:URI>
+        </ccv:LegislationReference>
+        <ccv:RequirementGroup>
+            <cbc:ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">77ae3f29-7c5f-4afa-af97-24afec48c5bf</cbc:ID>
+            <ccv:Requirement responseDataType="INDICATOR">
+                <cbc:ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">974c8196-9d1c-419c-9ca9-45bb9f5fd59a</cbc:ID>
+                <cbc:Description>Your answer?</cbc:Description>
+                <ccv:Response>
+                    <ccv-cbc:Indicator>true</ccv-cbc:Indicator>
+                </ccv:Response>
+            </ccv:Requirement>
+            <ccv:RequirementGroup pi="GROUP_FULFILLED.ON_TRUE">
+                <cbc:ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">73f0fe4c-4ed9-4343-8096-d898cf200146</cbc:ID>
+                <ccv:Requirement responseDataType="DESCRIPTION">
+                    <cbc:ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">e098da8e-4717-4500-965f-f882d5b4e1ad</cbc:ID>
+                    <cbc:Description>Please describe them</cbc:Description>
+                    <ccv:Response>
+                        <cbc:Description>Learn about the disability and how you can help. Get to know the person and the caregiver.&#xD;
+Show compassion, sensitivity, and sincerity by respecting the individual’s wishes. Maintain a balance between helping and allowing the individual to grow by providing for himself or herself.&#xD;
+Prepare to accommodate individuals with a physical disability before Church meetings and activities begin. This may include providing ramps, seating accommodations, access to all facilities (including the pulpit), and media equipment. Facilities should be accessible to those who use wheelchairs, braces, artificial limbs, other assistive devices, or assistive animals.</cbc:Description>
+                    </ccv:Response>
+                </ccv:Requirement>
+            </ccv:RequirementGroup>
+        </ccv:RequirementGroup>
+</ccv:Criterion>
+----
+
+[NOTE]
+* The XML structure and elements of the above example reproduce the fragment of text in
+	the http://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32016R0007[Annex to the Regulation 2016/7] 
+	related to this criterion;
+* The general rules are respected;
+* The XML structure maps the data-structure;
+
+[.text-left]
+==== Procedure participation
+
+Data structure for the criterion ''Conflict of interest due to its participation 
+in the procurement procedure'':
+
+[.text-center]
+[[participation_criterion_data_structure]]
+.Data-structure representation for the ...CONFLICT_OF_INTEREST.PARTICIPATION criterion
+image::20_participation_criterion_data_struct.png[alt="participation_criterion_data_structure", width="600"]
+
+The piece of XML below is a fragment of an ESPD Response XML document. This fragment shows the implementation of the conflict of interest criterion ''Conflict of
+interest due to its participation in the procurement procedure'' (file Example1-ESPDResponse-total fake-Wayne Enterprises.xml):
+
+[source,xml]
+.XML example for the criterion ''conflict of interest due to participation in the procurement procedure''
+----
+<ccv:Criterion>
+        <cbc:ID schemeID="CriteriaID" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">b1b5ac18-f393-4280-9659-1367943c1a2e</cbc:ID>
+        <cbc:TypeCode listID="CriteriaTypeCode" listAgencyID="EU-COM-GROW" listVersionID="1.0.2">CRITERION.EXCLUSION.CONFLICT_OF_INTEREST.PROCEDURE_PARTICIPATION</cbc:TypeCode>
+        <cbc:Name>Conflict of interest due to its participation in the procurement procedure</cbc:Name>
+        <cbc:Description>Is the economic operator aware of any conflict of interest, as indicated in national law, the relevant notice or the procurement documents due to its participation in the procurement procedure?</cbc:Description>
+        <ccv:LegislationReference>
+            <ccv-cbc:Title>DIRECTIVE 2014/24/EU OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL of 26 February 2014 on public procurement and repealing Directive 2004/18/EC</ccv-cbc:Title>
+            <cbc:Description>Directive 2014/24/EU</cbc:Description>
+            <ccv-cbc:JurisdictionLevelCode listID="CriterionJurisdictionLevel" listAgencyID="EU-COM-GROW" listVersionID="1.0.2">EU_DIRECTIVE</ccv-cbc:JurisdictionLevelCode>
+            <ccv-cbc:Article>57(4)</ccv-cbc:Article>
+            <cbc:URI>http://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:32014L0024</cbc:URI>
+        </ccv:LegislationReference>
+        <ccv:RequirementGroup>
+            <cbc:ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">30450436-f559-4dfa-98ba-f0842ed9d2a0</cbc:ID>
+            <ccv:Requirement responseDataType="INDICATOR">
+                <cbc:ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">974c8196-9d1c-419c-9ca9-45bb9f5fd59a</cbc:ID>
+                <cbc:Description>Your answer?</cbc:Description>
+                <ccv:Response>
+                    <ccv-cbc:Indicator>true</ccv-cbc:Indicator>
+                </ccv:Response>
+            </ccv:Requirement>
+        </ccv:RequirementGroup>
+    </ccv:Criterion>
+----
+
+[NOTE]
+* The XML structure and elements of the above example reproduce the fragment of text in
+	the http://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32016R0007[Annex to the Regulation 2016/7] 
+	related to this criterion;
+* The general rules are respected;
+* The XML structure maps the data-structure;
+
+[.text-left]
+==== Misinterpretation
+
+Data structure for the criterion 
+''Guilty of misinterpretation, withheld information, able to provide required documents 
+and obtained confidential information of this procedure'':
+
+[.text-center]
+[[misinterpretation_data_structure]]
+.Data-structure representation for the CONFLICT_OF_INTEREST.MISINTERPRETATION criterion
+image::21_misinterpretation_criterion_data_struct.png[alt="participation_criterion_data_structure", width="600"]
+
+This fragment of XMl code shows the implementation of the conflict of interest
+criterion ''Guilty of misinterpretation, withheld information, unable to provide 
+required documents and obtained confidential information of this procedure'':
+
+[source,xml]
+.XML example for the criterion ''Guilty of misinterpretation''
+----
+<ccv:Criterion>
+        <cbc:ID schemeID="CriteriaID" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">696a75b2-6107-428f-8b74-82affb67e184</cbc:ID>
+        <cbc:TypeCode listID="CriteriaTypeCode" listAgencyID="EU-COM-GROW" listVersionID="1.0.2">CRITERION.EXCLUSION.CONFLICT_OF_INTEREST.MISINTERPRETATION</cbc:TypeCode>
+        <cbc:Name>Guilty of misinterpretation, withheld information, unable to provide required documents and obtained confidential information of this procedure</cbc:Name>
+        <cbc:Description>Can the economic operator confirm the four exclusion grounds, that it has not been guilty of serious misrepresentation in supplying the information required for the verification of the absence of grounds for exclusion or the fulfilment of the selection criteria, that it has not withheld such information, it has been able, without delay, to submit the supporting documents required by a contracting authority or contracting entity, and it has not undertaken to unduly influence the decision making process of the contracting authority or contracting entity, to obtain confidential information that may confer upon it undue advantages in the procurement procedure or to negligently provide misleading information that may have a material influence on decisions concerning exclusion, selection or award?</cbc:Description>
+        <ccv:LegislationReference>
+            <ccv-cbc:Title>DIRECTIVE 2014/24/EU OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL of 26 February 2014 on public procurement and repealing Directive 2004/18/EC</ccv-cbc:Title>
+            <cbc:Description>Directive 2014/24/EU</cbc:Description>
+            <ccv-cbc:JurisdictionLevelCode listID="CriterionJurisdictionLevel" listAgencyID="EU-COM-GROW" listVersionID="1.0.2">EU_DIRECTIVE</ccv-cbc:JurisdictionLevelCode>
+            <ccv-cbc:Article>57(4)</ccv-cbc:Article>
+            <cbc:URI>http://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:32014L0024</cbc:URI>
+        </ccv:LegislationReference>
+        <ccv:RequirementGroup>
+            <cbc:ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">30450436-f559-4dfa-98ba-f0842ed9d2a0</cbc:ID>
+            <ccv:Requirement responseDataType="INDICATOR">
+                <cbc:ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">974c8196-9d1c-419c-9ca9-45bb9f5fd59a</cbc:ID>
+                <cbc:Description>Your answer?</cbc:Description>
+                <ccv:Response>
+                    <ccv-cbc:Indicator>true</ccv-cbc:Indicator>
+                </ccv:Response>
+            </ccv:Requirement>
+        </ccv:RequirementGroup>
+    </ccv:Criterion>
+----
+
+[NOTE]
+* The XML structure and elements of the above example reproduce the fragment of text in
+	the http://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32016R0007[Annex to the Regulation 2016/7] 
+	related to this criterion;
+* The general rules are respected;
+* The XML structure maps the data-structure;
+
+[.text-left]
+==== Other national
+
+Additionally to the exclusion criteria indicated in the Directive the Contracting Authorities MAY 
+add other exclusion criteria that are specific to their Member State at a national or subnational 
+level.
+
+This is the objective of the category NATIONAL.OTHER:
+
+	* CRITERION.EXCLUSION.NATIONAL.OTHER: ''Purely national exclusion grounds'', 
+	which data structure is as simple as the one illustrated below:
+	
+[.text-center]
+[[national_other_data_structure]]
+.Data-structure representation for the CRITERION.EXCLUSION.NATIONAL.OTHER criterion
+image::21_misinterpretation_criterion_data_struct.png[alt="participation_criterion_data_structure", width="600"]
+
+[.text-left]
+The piece of XML below shows the implementation of the Criterion ''Purely national exclusion grounds'':
+
+[source,xml]
+.XML example for the criterion ''Purely national exclusion grounds''
+----
+   <ccv:Criterion>
+        <cbc:ID schemeID="CriteriaID" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">63adb07d-db1b-4ef0-a14e-a99785cf8cf6</cbc:ID>
+        <cbc:TypeCode listID="CriteriaTypeCode" listAgencyID="EU-COM-GROW" listVersionID="1.0.2">CRITERION.EXCLUSION.NATIONAL.OTHER</cbc:TypeCode>
+        <cbc:Name>Purely national exclusion grounds</cbc:Name>
+        <cbc:Description>Other exclusion grounds that may be foreseen in the national legislation of the contracting authority’s or contracting entity’s Member State. Do the purely national grounds of exclusion, which are specified in the relevant notice or in the procurement documents, apply?</cbc:Description>
+        <ccv:LegislationReference>
+            <ccv-cbc:Title>DIRECTIVE 2014/24/EU OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL of 26 February 2014 on public procurement and repealing Directive 2004/18/EC</ccv-cbc:Title>
+            <cbc:Description>Directive 2014/24/EU</cbc:Description>
+            <ccv-cbc:JurisdictionLevelCode listID="CriterionJurisdictionLevel" listAgencyID="EU-COM-GROW" listVersionID="1.0.2">EU_DIRECTIVE</ccv-cbc:JurisdictionLevelCode>
+            <ccv-cbc:Article>57(4)</ccv-cbc:Article>
+            <cbc:URI>http://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:32014L0024</cbc:URI>
+        </ccv:LegislationReference>
+        <ccv:RequirementGroup>
+            <cbc:ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">77ae3f29-7c5f-4afa-af97-24afec48c5bf</cbc:ID>
+            <ccv:Requirement responseDataType="INDICATOR">
+                <cbc:ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">974c8196-9d1c-419c-9ca9-45bb9f5fd59a</cbc:ID>
+                <cbc:Description>Your answer?</cbc:Description>
+                <ccv:Response>
+                    <ccv-cbc:Indicator>true</ccv-cbc:Indicator>
+                </ccv:Response>
+            </ccv:Requirement>
+            <ccv:RequirementGroup pi="GROUP_FULFILLED.ON_TRUE">
+                <cbc:ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">73f0fe4c-4ed9-4343-8096-d898cf200146</cbc:ID>
+                <ccv:Requirement responseDataType="DESCRIPTION">
+                    <cbc:ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">e098da8e-4717-4500-965f-f882d5b4e1ad</cbc:ID>
+                    <cbc:Description>Please describe them</cbc:Description>
+                    <ccv:Response>
+                        <cbc:Description>Learn about the disability and how you can help. Get to know the person and the caregiver.&#xD;
+Show compassion, sensitivity, and sincerity by respecting the individual’s wishes. Maintain a balance between helping and allowing the individual to grow by providing for himself or herself.&#xD;
+Prepare to accommodate individuals with a physical disability before Church meetings and activities begin. This may include providing ramps, seating accommodations, access to all facilities (including the pulpit), and media equipment. Facilities should be accessible to those who use wheelchairs, braces, artificial limbs, other assistive devices, or assistive animals.</cbc:Description>
+                    </ccv:Response>
+                </ccv:Requirement>
+            </ccv:RequirementGroup>
+        </ccv:RequirementGroup>
+        <ccv:RequirementGroup>
+            <cbc:ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">7458d42a-e581-4640-9283-34ceb3ad4345</cbc:ID>
+            <ccv:Requirement responseDataType="INDICATOR">
+                <cbc:ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">c1347b74-1872-4060-a6db-f4044edcd7c4</cbc:ID>
+                <cbc:Description>Is this information available electronically?</cbc:Description>
+                <ccv:Response>
+                    <ccv-cbc:Indicator>true</ccv-cbc:Indicator>
+                </ccv:Response>
+            </ccv:Requirement>
+            <ccv:RequirementGroup pi="GROUP_FULFILLED.ON_TRUE">
+                <cbc:ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">41dd2e9b-1bfd-44c7-93ee-56bd74a4334b</cbc:ID>
+                <ccv:Requirement responseDataType="EVIDENCE_URL">
+                    <cbc:ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">f4313bb6-21b6-499e-bdff-debe10e11d2c</cbc:ID>
+                    <cbc:Description>URL</cbc:Description>
+                    <ccv:Response>
+                        <cev:Evidence>
+                            <cev:EvidenceDocumentReference>
+<cbc:ID>ce57fb28-353e-494f-aec0-a930eb146042</cbc:ID>
+<cac:Attachment>
+    <cac:ExternalReference>
+        <cbc:URI>https://www.lds.org/topics/disability/list/physical-disability?lang=eng</cbc:URI>
+    </cac:ExternalReference>
+</cac:Attachment>
+                            </cev:EvidenceDocumentReference>
+                        </cev:Evidence>
+                    </ccv:Response>
+                </ccv:Requirement>
+                <ccv:Requirement responseDataType="CODE">
+                    <cbc:ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">1f1cd18e-3e01-4ca2-af4c-e2981924ba8d</cbc:ID>
+                    <cbc:Description>Code</cbc:Description>
+                    <ccv:Response>
+                        <ccv-cbc:Code>Purely national exclusion grounds code</ccv-cbc:Code>
+                    </ccv:Response>
+                </ccv:Requirement>
+            </ccv:RequirementGroup>
+        </ccv:RequirementGroup>
+    </ccv:Criterion>
+----
+
+[NOTE]
+* The XML structure and elements of the above example reproduce the fragment of text in
+	the http://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32016R0007[Annex to the Regulation 2016/7] 
+	related to this criterion;
+* The general rules are respected;
+* The XML structure maps the data-structure;
+
+=== 2. *SELECTION CRITERIA*
+
+The range of criteria related to the selection of Economic Operators is larger and more 
+heterogeneous than the one related to the exclusion criteria. The figure below is intended to 
+identify and list all the categories (branches in text boxes) and criteria 
+(leaves in text without boxes):
+
+[.text-center]
+[[selection_criteria_taxonomy]]
+.Selection criteria taxonomy
+image::SelectionCriteriaTaxonomy.png[alt="selection_criteria_taxonomy", width="1000"]
+
+[.text-left]
+Some groups or sub-groups of selection criteria share the same structure, while other have their 
+own specific structure. Beware that, differently to the exclusion criteria, some selection 
+criteria do not provide additional data when answering ''Yes'' to the criterion question. 
+When this occurs the ''yes'' answer is ''the'' expected data. 
+This is clearly illustrated for the selection suitability criteria in the next subsection below.
+
+[NOTE]
+====
+Remember that the data structures corresponding to the data-flow diagrams shown in this section can be accessed online 
+(click link:{url-blob}/code_lists/xls/CriteriaTaxonomy.xlsx[here]).
+====
+
+[.text-left]
+==== Suitability
+
+The criteria under the category ''Suitability'' use two groups of simple data structures:
+
+	* I) (Enrolments) CRITERION.SELECTION.SUITABILITY.PROFESSIONAL_REGISTER_ENROLMENT, and CRITERION.SELECTION.SUITABILITY.TRADE_REGISTER_ENROLMENT: ''Enrolment in a relevant professional register'' and ''Enrolment in a trade register'';
+	* II) (Authorisations and memberships) CRITERION.SELECTION.SUITABILITY.AUTHORISATION, and CRITERION.SELECTION.SUITABILITY.MEMBERSHIP: ''For service contracts: authorisation of particular organisation needed'', and ''For service contracts: membership of particular organisation needed''.
+
+    == Enrolment
+
+The two criteria of the first group (enrolment) share the structure shown in the table below 
+(the table refers to the criterion ''Enrolment in a relevant professional register'' 
+(See the ttps://webgate.ec.europa.eu/fpfis/wikis/display/EPROC/ESPD+Criteria%3A+Selection+Criteria[data structure table] for the details about the rest of the criterion).
+
+The data-structure diagram is represented in the figure below:
+
+[.text-center]
+[[selection_suitability_enrolment_data_structure]]
+.Detailed data-structure representation for suitability (CRITERION.SELECTION.SUITABILITY.ENROLMENT.*)
+image::25_selection_suitability_enrolment_data_struct.png[alt="selection_suitability_enrolment_data_structure", width="600"]
+
+[.text-left]
+[NOTE]
+====
+For the requirement R 1.1, both answers ''Yes'' or ''No'' redirect the flow of the data to the next requirement.
+However, the application controlling this flow (e.g. the ESPD Service) will persist and use.footnote:[Thus, the ESPD Service will use the answer to show it in the User Interface and to include it in an XML instance.] the answer before deciding skipping to the next requirement.
+====
+
+The fragment of XML below shows the implementation of the
+''Enrolment in a relevant professional register'' criterion:
+
+[source,xml]
+.XML example of a ''Enrolment in a relevant professional register'' criterion (CRITERION.SELECTION.SUITABILITY.ENROLMENT) 
+----
+<ccv:Criterion>
+        <cbc:ID schemeID="CriteriaID" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">6ee55a59-6adb-4c3a-b89f-e62a7ad7be7f</cbc:ID>
+        <cbc:TypeCode listID="CriteriaTypeCode" listAgencyID="EU-COM-GROW" listVersionID="1.0.2">CRITERION.SELECTION.SUITABILITY.PROFESSIONAL_REGISTER_ENROLMENT</cbc:TypeCode>
+        <cbc:Name>Enrolment in a relevant professional register</cbc:Name>
+        <cbc:Description>It is enrolled in relevant professional registers kept in the Member State of its establishment as described in Annex XI of Directive 2014/24/EU; economic operators from certain Member States may have to comply with other requirements set out in that Annex.</cbc:Description>
+        <ccv:LegislationReference>
+            <ccv-cbc:Title>DIRECTIVE 2014/24/EU OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL of 26 February 2014 on public procurement and repealing Directive 2004/18/EC</ccv-cbc:Title>
+            <cbc:Description>Directive 2014/24/EU</cbc:Description>
+            <ccv-cbc:JurisdictionLevelCode listID="CriterionJurisdictionLevel" listAgencyID="EU-COM-GROW" listVersionID="1.0.2">EU_DIRECTIVE</ccv-cbc:JurisdictionLevelCode>
+            <ccv-cbc:Article>58(2)</ccv-cbc:Article>
+            <cbc:URI>http://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:32014L0024</cbc:URI>
+        </ccv:LegislationReference>
+        <ccv:RequirementGroup>
+            <cbc:ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">1768de86-a6c8-48e4-bd8e-de2f2f7424d0</cbc:ID>
+            <ccv:Requirement responseDataType="INDICATOR">
+                <cbc:ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">15335c12-ad77-4728-b5ad-3c06a60d65a4</cbc:ID>
+                <cbc:Description>Your answer?</cbc:Description>
+                <ccv:Response>
+                    <ccv-cbc:Indicator>true</ccv-cbc:Indicator><!--1-->
+                </ccv:Response>
+            </ccv:Requirement>
+        </ccv:RequirementGroup>
+        <ccv:RequirementGroup>
+            <cbc:ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">9026e403-3eb6-4705-a9e9-e21a1efc867d</cbc:ID>
+            <ccv:Requirement responseDataType="INDICATOR">
+                <cbc:ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">9dae5670-cb75-4c97-901b-96ddac5a633a</cbc:ID>
+                <cbc:Description>Is this information available electronically?</cbc:Description>
+                <ccv:Response>
+                    <ccv-cbc:Indicator>true</ccv-cbc:Indicator>
+                </ccv:Response>
+            </ccv:Requirement>
+            <ccv:RequirementGroup pi="GROUP_FULFILLED.ON_TRUE">
+                <cbc:ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">0a166f0a-0c5f-42b0-81e9-0fc9fa598a48</cbc:ID>
+                <ccv:Requirement responseDataType="EVIDENCE_URL"><!--2-->
+                    <cbc:ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">03bb1954-13ae-47d8-8ef8-b7fe0f22d700</cbc:ID>
+                    <cbc:Description>URL</cbc:Description>
+                    <ccv:Response>
+                        <cev:Evidence>
+                            <cev:EvidenceDocumentReference>
+<cbc:ID>9ac9f19b-e455-4564-a7c3-b95a345070d2</cbc:ID>
+<cac:Attachment>
+    <cac:ExternalReference>
+        <cbc:URI>https://www.lds.org/topics/disability/list/physical-disability?lang=eng</cbc:URI>
+    </cac:ExternalReference>
+</cac:Attachment>
+                            </cev:EvidenceDocumentReference>
+                        </cev:Evidence>
+                    </ccv:Response>
+                </ccv:Requirement>
+                <ccv:Requirement responseDataType="CODE">
+                    <cbc:ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">e2d863a0-60cb-4e58-8c14-4c1595af48b7</cbc:ID>
+                    <cbc:Description>Code</cbc:Description>
+                    <ccv:Response>
+                        <ccv-cbc:Code>Enrolment in a relevant professional register code</ccv-cbc:Code>
+                    </ccv:Response>
+                </ccv:Requirement>
+            </ccv:RequirementGroup>
+        </ccv:RequirementGroup>
+    </ccv:Criterion>
+----
+<1> The EO is enrolled in a professional register
+<2> It provides a URL where to get an online registration certificate
+
+[NOTE]
+====
+* The general rule number 3 is respected (use of the sentence ''Your answer'' to respond the Criterion);
+* The XML structure maps the structure of the data-flow.
+====
+
+[.text-left]
+==== Authorisation or membership
+
+The only difference between this group of suitability criteria and the enrolment one, above, 
+is that it adds a requirement asking for a description. See the link:{url-blob}/code_lists/xls/CriteriaTaxonomy.xlsx[Selection Criteria Table],
+data-structure and example below).
+
+[.text-center]
+[[selection_suitability_authorisation_data_structure]]
+.Detailed data-structure representation for suitability (CRITERION.SELECTION.SUITABILITY.AUTHORISATION_MEMBERSHIP.*)", 
+image::27_selection_suitability_authorisation_data_struct.png[alt="selection_suitability_authorisation", width="600"]
+
+The fragment of XML below shows the implementation of the criterion
+''For service contracts: authorisation of particular organisation needed'':
+
+[source,xml]
+.XML example of a ''For service contracts: authorisation of particular organisation needed'' (CRITERION.SELECTION.SUITABILITY.AUTHORISATION) criterion 
+----
+  <ccv:Criterion>
+        <cbc:ID schemeID="CriteriaID" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">9eeb6d5c-0eb8-48e8-a4c5-5087a7c095a4</cbc:ID>
+        <cbc:TypeCode listID="CriteriaTypeCode" listAgencyID="EU-COM-GROW" listVersionID="1.0.2">CRITERION.SELECTION.SUITABILITY.AUTHORISATION</cbc:TypeCode>
+        <cbc:Name>For service contracts: authorisation of particular organisation needed</cbc:Name>
+        <cbc:Description>Is a particular membership of a particular organisation needed in order to be able to perform the service in question in the country of establishment of the economic operator?</cbc:Description>
+        <ccv:LegislationReference>
+            <ccv-cbc:Title>DIRECTIVE 2014/24/EU OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL of 26 February 2014 on public procurement and repealing Directive 2004/18/EC</ccv-cbc:Title>
+            <cbc:Description>Directive 2014/24/EU</cbc:Description>
+            <ccv-cbc:JurisdictionLevelCode listID="CriterionJurisdictionLevel" listAgencyID="EU-COM-GROW" listVersionID="1.0.2">EU_DIRECTIVE</ccv-cbc:JurisdictionLevelCode>
+            <ccv-cbc:Article>58(2)</ccv-cbc:Article>
+            <cbc:URI>http://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:32014L0024</cbc:URI>
+        </ccv:LegislationReference>
+        <ccv:RequirementGroup>
+            <cbc:ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">a109e144-f65e-469d-bcda-220f1af34b6c</cbc:ID>
+            <ccv:Requirement responseDataType="INDICATOR">
+                <cbc:ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">15335c12-ad77-4728-b5ad-3c06a60d65a4</cbc:ID>
+                <cbc:Description>Your answer?</cbc:Description>
+                <ccv:Response>
+                    <ccv-cbc:Indicator>true</ccv-cbc:Indicator>
+                </ccv:Response>
+            </ccv:Requirement>
+            <ccv:RequirementGroup pi="GROUP_FULFILLED.ON_TRUE">
+                <cbc:ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">7696fb3f-9722-43b8-9b91-ad59bb4b8ad2</cbc:ID>
+                <ccv:Requirement responseDataType="DESCRIPTION">
+                    <cbc:ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">51391308-0bf6-423c-95e2-d5a54aa31fb8</cbc:ID>
+                    <cbc:Description>Please describe them</cbc:Description>
+                    <ccv:Response>
+                        <cbc:Description>Learn about the disability and how you can help. Get to know the person and the caregiver.&#xD;
+Show compassion, sensitivity, and sincerity by respecting the individual’s wishes. Maintain a balance between helping and allowing the individual to grow by providing for himself or herself.&#xD;
+Prepare to accommodate individuals with a physical disability before Church meetings and activities begin. This may include providing ramps, seating accommodations, access to all facilities (including the pulpit), and media equipment. Facilities should be accessible to those who use wheelchairs, braces, artificial limbs, other assistive devices, or assistive animals.</cbc:Description>
+                    </ccv:Response>
+                </ccv:Requirement>
+            </ccv:RequirementGroup>
+        </ccv:RequirementGroup>
+        <ccv:RequirementGroup>
+            <cbc:ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">9026e403-3eb6-4705-a9e9-e21a1efc867d</cbc:ID>
+            <ccv:Requirement responseDataType="INDICATOR">
+                <cbc:ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">9dae5670-cb75-4c97-901b-96ddac5a633a</cbc:ID>
+                <cbc:Description>Is this information available electronically?</cbc:Description>
+                <ccv:Response>
+                    <ccv-cbc:Indicator>true</ccv-cbc:Indicator>
+                </ccv:Response>
+            </ccv:Requirement>
+            <ccv:RequirementGroup pi="GROUP_FULFILLED.ON_TRUE">
+                <cbc:ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">0a166f0a-0c5f-42b0-81e9-0fc9fa598a48</cbc:ID>
+                <ccv:Requirement responseDataType="EVIDENCE_URL">
+                    <cbc:ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">03bb1954-13ae-47d8-8ef8-b7fe0f22d700</cbc:ID>
+                    <cbc:Description>URL</cbc:Description>
+                    <ccv:Response>
+                        <cev:Evidence>
+                            <cev:EvidenceDocumentReference>
+<cbc:ID>945331da-f91f-4040-a929-5499bf1386ec</cbc:ID>
+<cac:Attachment>
+    <cac:ExternalReference>
+        <cbc:URI>https://www.lds.org/topics/disability/list/physical-disability?lang=eng</cbc:URI>
+    </cac:ExternalReference>
+</cac:Attachment>
+                            </cev:EvidenceDocumentReference>
+                        </cev:Evidence>
+                    </ccv:Response>
+                </ccv:Requirement>
+                <ccv:Requirement responseDataType="CODE">
+                    <cbc:ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">e2d863a0-60cb-4e58-8c14-4c1595af48b7</cbc:ID>
+                    <cbc:Description>Code</cbc:Description>
+                    <ccv:Response>
+                        <ccv-cbc:Code>For service contracts: authorisation of particular organisation needed code</ccv-cbc:Code>
+                    </ccv:Response>
+                </ccv:Requirement>
+            </ccv:RequirementGroup>
+        </ccv:RequirementGroup>
+    </ccv:Criterion>
+----
+[NOTE]
+====
+* The general rules number 1 and 3 are here respected;
+* The additional data to provide in case of an affirmative answer to the criterion is the second requirement ''Please describe them''; hence the expected response data type, ''DESCRIPTION''.
+====
+
+[.text-left]
+==== Economic and financial standing
+
+The ''Economic Financial Standing'' category encompasses one group of subcategories and four criteria
+with specific data structures:
+
+	* CRITERION.SELECTION.ECONOMIC_FINANCIAL_STANDING.TURNOVER.*: ''General yearly turnover'',  ''Average yearly turnover'', ''Specific yearly turnover'', ''Specific average turnover''; 
+	* CRITERION.SELECTION.ECONOMIC_FINANCIAL_STANDING.FINANCIAL_RATIO: it currently refers to ''Financial ratio''
+	* CRITERION.SELECTION.ECONOMIC_FINANCIAL_STANDING.RISK_INDEMNITY_INSURANCE.PROFESSIONAL: it currently refers to ''Professional risk indemnity insurance'';
+	* CRITERION.SELECTION.ECONOMIC_FINANCIAL_STANDING.TURNOVER.SET_UP: ''Set up of economic operator'';
+	* CRITERION.SELECTION.ECONOMIC_FINANCIAL_STANDING.OTHER_REQUIREMENTS: ''Other economic or financial requirements''.
+	
+The following subsections show the data structures and examples for these three groups of criteria related to economic and financial standing criteria.
+
+[.text-left]
+==== Turnovers
+
+The group of criteria relating to turnovers is somehow special in the sense that it introduces a kind of 
+''iterative structure'' that the criteria studied so far do not implement. As illustrated in the
+figures and example below, this iterative structure for turnovers allows repeating a specific tuple
+footnote:[i.e. a couple of values corresponding to amount and year.] of amount and year as many 
+times as required in the specific call for tender (normally values for the past three years).
+
+[.text-left]
+The simplified data structure illustrates this idea of iterative tuples (Year, Amount). The ''...'' symbol means that the subgroup is repeated as many times as required in the tender documents:
+The corresponding data-structure diagram would be this one. Notice that each tuple (Year, Amount) is treated as a subgroup of two requirements:
+
+[.text-center]
+[[selection_economic_financial_standing_turnover_representation]]
+.Detailed data-structure representation for turnovers (CRITERION.SELECTION.ECONOMIC_FINANCIAL_STANDING.TURNOVER.*)
+image::29_selection_economic_financial_standing_turnover_representation_struct.png[alt="selection_economic_financial_standing_turnover_representation", width="600"]
+
+[.text-left]
+The fragment of XML below shows the implementation of the 
+''General yearly turnover'' criterion (file Example1-ESPDResponse-total fake-Wayne Enterprises.xml):
+
+[source,xml]
+.XML example of a ''General yearly turnover'' (CRITERION.SELECTION.ECONOMIC_FINANCIAL_STANDING.TURNOVER.GENERAL_YEARLY) criterion 
+----
+  <ccv:Criterion>
+      <cbc:ID schemeID="CriteriaID" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">499efc97-2ac1-4af2-9e84-323c2ca67747</cbc:ID>
+      <cbc:TypeCode listID="CriteriaTypeCode" listAgencyID="EU-COM-GROW" listVersionID="1.0.2">SELECTION.ECONOMIC_FINANCIAL_STANDING</cbc:TypeCode>
+      <cbc:Name>General yearly turnover</cbc:Name>
+      <cbc:Description>Its general yearly turnover for the number of financial years required in the relevant notice, the procurement documents or the ESPD is as follows:</cbc:Description>
+      <ccv:LegislationReference>
+         <ccv-cbc:Title>DIRECTIVE 2014/24/EU OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL of 26 February 2014 on public procurement and repealing Directive 2004/18/EC</ccv-cbc:Title>
+         <cbc:Description>On public procurement and repealing Directive 2004/18/EC</cbc:Description>
+         <ccv-cbc:JurisdictionLevelCode listID="CriterionJurisdictionLevel" listAgencyID="EU-COM-GROW" listVersionID="1.0.2">EU_DIRECTIVE</ccv-cbc:JurisdictionLevelCode>
+         <ccv-cbc:Article>58(3)</ccv-cbc:Article>
+         <cbc:URI>http://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:32014L0024</cbc:URI>
+      </ccv:LegislationReference>
+      <ccv:RequirementGroup>
+         <cbc:ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">e1886054-ada4-473c-9afc-2fde82c24cf4</cbc:ID>
+         <ccv:Requirement responseDataType="INDICATOR">
+            <cbc:ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">15335c12-ad77-4728-b5ad-3c06a60d65a4</cbc:ID>
+            <cbc:Description>Your answer?</cbc:Description>
+            <ccv:Response>
+               <ccv-cbc:Indicator>true</ccv-cbc:Indicator><!--1-->
+            </ccv:Response>
+         </ccv:Requirement>
+         <ccv:RequirementGroup>
+            <cbc:ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">1689194b-6ecf-4ab4-ab38-7656610c25bb</cbc:ID>
+            <ccv:Requirement responseDataType="QUANTITY_YEAR">
+               <cbc:ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">5aacceb3-280e-42f1-b2da-3d8ac7877fe9</cbc:ID>
+               <cbc:Description>Year</cbc:Description>
+               <ccv:Response>
+                  <cbc:Quantity unitCode="YEAR">2015</cbc:Quantity><!--2-->
+               </ccv:Response>
+            </ccv:Requirement>
+            <ccv:Requirement responseDataType="AMOUNT">
+               <cbc:ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">42db0eaa-d2dd-48cb-83ac-38d73cab9b50</cbc:ID>
+               <cbc:Description>Amount</cbc:Description>
+               <ccv:Response>
+                  <cbc:Amount currencyID="EUR">800000000</cbc:Amount><!--3-->
+               </ccv:Response>
+            </ccv:Requirement>
+         </ccv:RequirementGroup>
+         <ccv:RequirementGroup>
+            <cbc:ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">c628dd27-8016-4d80-8660-7461f2e3ee0f</cbc:ID>
+            <ccv:Requirement responseDataType="QUANTITY_YEAR">
+               <cbc:ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">49a57870-7fb8-451f-a7af-fa0e7f8b97e7</cbc:ID>
+               <cbc:Description>Year</cbc:Description>
+               <ccv:Response>
+                  <cbc:Quantity unitCode="YEAR">2014</cbc:Quantity><!--4-->
+               </ccv:Response>
+            </ccv:Requirement>
+            <ccv:Requirement responseDataType="AMOUNT">
+               <cbc:ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">4acd0a02-c267-4d05-b456-c0565c2ffd46</cbc:ID>
+               <cbc:Description>Amount</cbc:Description>
+               <ccv:Response>
+                  <cbc:Amount currencyID="EUR">750000000</cbc:Amount><!--5-->
+               </ccv:Response>
+            </ccv:Requirement>
+         </ccv:RequirementGroup>
+         <ccv:RequirementGroup>
+            <cbc:ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">9dd09f9f-3326-4865-9d5a-f0836076fb19</cbc:ID>
+            <ccv:Requirement responseDataType="QUANTITY_YEAR">
+               <cbc:ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">9d0cf1cb-27bc-4747-8579-47dce4d8d490</cbc:ID>
+               <cbc:Description>Year</cbc:Description>
+               <ccv:Response>
+                  <cbc:Quantity unitCode="YEAR">2013</cbc:Quantity><!--6-->
+               </ccv:Response>
+            </ccv:Requirement>
+            <ccv:Requirement responseDataType="AMOUNT">
+               <cbc:ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">28fb4b41-5178-4b79-ba24-d9a62fa4a658</cbc:ID>
+               <cbc:Description>Amount</cbc:Description>
+               <ccv:Response>
+                  <cbc:Amount currencyID="EUR">650000000</cbc:Amount><!--7-->
+               </ccv:Response>
+            </ccv:Requirement>
+         </ccv:RequirementGroup>
+         <ccv:RequirementGroup>
+            <cbc:ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">962011c9-9e2e-4e7b-818e-30e8506e874f</cbc:ID>
+            <ccv:Requirement responseDataType="QUANTITY_YEAR">
+               <cbc:ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">17a7353d-a7a4-43ee-9cc8-b9db83eeafb3</cbc:ID>
+               <cbc:Description>Year</cbc:Description>
+               <ccv:Response>
+                  <cbc:Quantity unitCode="YEAR">2012</cbc:Quantity><!--8-->
+               </ccv:Response>
+            </ccv:Requirement>
+            <ccv:Requirement responseDataType="AMOUNT">
+               <cbc:ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">9f278e42-aa1d-4b2e-97cd-832248aa5393</cbc:ID>
+               <cbc:Description>Amount</cbc:Description>
+               <ccv:Response>
+                  <cbc:Amount currencyID="EUR">620000000</cbc:Amount>
+               </ccv:Response>
+            </ccv:Requirement>
+         </ccv:RequirementGroup>
+         <ccv:RequirementGroup>
+            <cbc:ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">343795e2-98e9-4cc9-8ef2-8817cec8f49a</cbc:ID>
+            <ccv:Requirement responseDataType="QUANTITY_YEAR">
+               <cbc:ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">34825634-5151-4e31-af1b-7eafadcf15be</cbc:ID>
+               <cbc:Description>Year</cbc:Description>
+               <ccv:Response>
+                  <cbc:Quantity unitCode="YEAR">2011</cbc:Quantity>
+               </ccv:Response>
+            </ccv:Requirement>
+            <ccv:Requirement responseDataType="AMOUNT">
+               <cbc:ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">cc1a0b1e-dbfd-4313-a4fb-2e543b05549b</cbc:ID>
+               <cbc:Description>Amount</cbc:Description>
+               <ccv:Response>
+                  <cbc:Amount currencyID="EUR">590000000</cbc:Amount>
+               </ccv:Response>
+            </ccv:Requirement>
+         </ccv:RequirementGroup>
+      </ccv:RequirementGroup>
+      <ccv:RequirementGroup>
+         <cbc:ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">9026e403-3eb6-4705-a9e9-e21a1efc867d</cbc:ID>
+         <ccv:Requirement responseDataType="INDICATOR">
+            <cbc:ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">9dae5670-cb75-4c97-901b-96ddac5a633a</cbc:ID>
+            <cbc:Description>Is this information available electronically?</cbc:Description>
+            <ccv:Response>
+               <ccv-cbc:Indicator>false</ccv-cbc:Indicator>
+            </ccv:Response>
+         </ccv:Requirement>
+         <ccv:Requirement responseDataType="EVIDENCE_URL">
+            <cbc:ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">03bb1954-13ae-47d8-8ef8-b7fe0f22d700</cbc:ID>
+            <cbc:Description>URL</cbc:Description>
+            <ccv:Response/>
+         </ccv:Requirement>
+         <ccv:Requirement responseDataType="CODE">
+            <cbc:ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">e2d863a0-60cb-4e58-8c14-4c1595af48b7</cbc:ID>
+            <cbc:Description>Code</cbc:Description>
+            <ccv:Response/>
+         </ccv:Requirement>
+      </ccv:RequirementGroup>
+   </ccv:Criterion>
+----
+<1> Data is going to be provided by the EO, hence the ''true'' indicator 
+<2> Year 2012
+<3> Amount corresponding to year 2012
+<4> Year 2013
+<5> Amount corresponding to year 2013
+<6> Year 2014
+<7> Amount corresponding to year 2014
+<8> etc.
+
+[NOTE]
+====
+* The XML structure and elements reproduce quite faithfully the text of the Annex to the Implementing Regulation 2016/7
+relating to the turnovers;
+* The general rule number 3 is respected (use of the sentence ''Your answer'' to respond the Criterion);
+* In case the answer is ''yes'' three subgroups of requirements requesting year and amount
+will have to be completed by the Economic Operator;
+* The types of data expected in the ESPDResponse.xml file are ''YEAR'' and  ''AMOUNT''.
+	Beware of the following:
+	** In the case of ''YEAR'' the expected type of data is ''QUANTITY_YEAR''. The element used in the response MUST be ''cbc:QuantityType''. This element, taken from
+	the OASIS UBL-2.1 specification provide an attribute named ''unitCode''. In the ESPD Response, the responses of type QUANTITY_YEAR MUST specify the value ''YEAR''
+	for the attribute ''cbc:unitCode'' of cbc:QuantityType;
+	** In the case of the data type ''AMOUNT'', the element used in the response MUST be ''cbc:AmountType''. This element, defined in the OASIS  UBL-2.1 specification,
+	provides an attribute named ''currencyID''. In the ESPD Response, all the responses with amounts MUST always specify the currency in the
+	cbc:AmountType attribute;
+* The XML maps the structures illustrated in the figures above related to the selection turnover category of criteria.
+* The current version of the ESPD Service only supports a fixed number of yearly turnovers.
+This will be improved in the future.
+====
+
+[.text-left]
+==== Ratio
+
+For the time being the only  type of ratio referred to in the ESPD is ''Financial Ratio'' 
+(thus its inclusion under the Economic and Financial category of criteria). 
+The structure of this criterion is identical to the one for turnovers. The only difference between them 
+lies in the tuple of values required, (Description, Ratio) instead of (Year, Amount).
+
+[.text-left]
+The simplified data structure illustrates this idea of iterative tuples (Description, Quantity). The ''...'' symbol means that the subgroup is repeated as many times as required in the tender documents:
+
+The corresponding data-structure diagram would be this one. Notice that each tuple (Description, Quantity) is treated as a subgroup of two requirements:
+
+[.text-center]
+[[Ratio]]
+.Detailed data-structure representation for turnovers (CRITERION.SELECTION.ECONOMIC_FINANCIAL_STANDING.TURNOVER.*)
+image::Ratio_struct.png[alt="selection_economic_financial_turnovers", width="600"]
+
+The fragment of XML below shows the implementation of criterion ''Financial Ratio'' in the ESPD Service:
+
+[source,xml]
+.XML example of a ''Financial ratio'' criterion (CRITERION.SUITABILITY.ECONOMIC_FINANCIAL_STANDING. TURNOVER.RATIO)  
+----
+<ccv:Criterion>
+        <cbc:ID schemeID="CriteriaID" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">e4d37adc-08cd-4f4d-a8d8-32b62b0a1f46</cbc:ID>
+        <cbc:TypeCode listID="CriteriaTypeCode" listAgencyID="EU-COM-GROW" listVersionID="1.0.2">CRITERION.SELECTION.ECONOMIC_FINANCIAL_STANDING.FINANCIAL_RATIO</cbc:TypeCode>
+        <cbc:Name>Financial ratio</cbc:Name>
+        <cbc:Description>Concerning the financial ratios  specified in the relevant notice, the procurement documents or the ESPD, the economic operator declares that the actual values for the required ratios are as follows:</cbc:Description>
+        <ccv:LegislationReference>
+            <ccv-cbc:Title>DIRECTIVE 2014/24/EU OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL of 26 February 2014 on public procurement and repealing Directive 2004/18/EC</ccv-cbc:Title>
+            <cbc:Description>On public procurement and repealing Directive 2004/18/EC</cbc:Description>
+            <ccv-cbc:JurisdictionLevelCode listID="CriterionJurisdictionLevel" listAgencyID="EU-COM-GROW" listVersionID="1.0.2">EU_DIRECTIVE</ccv-cbc:JurisdictionLevelCode>
+            <ccv-cbc:Article>58(3)</ccv-cbc:Article>
+            <cbc:URI>http://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:32014L0024</cbc:URI>
+        </ccv:LegislationReference>
+        <ccv:RequirementGroup>
+            <cbc:ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">cf00f7bb-c2cf-4565-91bb-221d78d8dd2f</cbc:ID>
+            <ccv:Requirement responseDataType="DESCRIPTION">
+                <cbc:ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">3a6fefd4-f458-4d43-97fb-0725fce5dce2</cbc:ID>
+                <cbc:Description>Please provide the requested data below</cbc:Description>
+                <ccv:Response/>
+            </ccv:Requirement>
+            <ccv:RequirementGroup>
+                <cbc:ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">096686e1-82ca-4de0-8710-d74d90da0f0c</cbc:ID>
+                <ccv:Requirement responseDataType="DESCRIPTION">
+                    <cbc:ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">ab05ff3b-f3e1-4441-9b43-ee9912e29e92</cbc:ID>
+                    <cbc:Description>Description</cbc:Description>
+                    <ccv:Response>
+                        <cbc:Description>TEST_1</cbc:Description><!--1-->
+                    </ccv:Response>
+                </ccv:Requirement>
+                <ccv:Requirement responseDataType="QUANTITY">
+                    <cbc:ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">5461b973-7067-457e-93cc-8338da2c3eef</cbc:ID>
+                    <cbc:Description>Ratio</cbc:Description>
+                    <ccv:Response>
+                        <cbc:Quantity>1.0</cbc:Quantity><!--2-->
+                    </ccv:Response>
+                </ccv:Requirement>
+            </ccv:RequirementGroup>
+            <ccv:RequirementGroup>
+                <cbc:ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">ce5a61e7-0b0d-4c8b-ac55-2a457743022a</cbc:ID>
+                <ccv:Requirement responseDataType="DESCRIPTION">
+                    <cbc:ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">927def36-1fa3-4018-8b45-7ee2c5b1e0af</cbc:ID>
+                    <cbc:Description>Description</cbc:Description>
+                    <ccv:Response>
+                        <cbc:Description>TEST_2</cbc:Description><!--3-->
+                    </ccv:Response>
+                </ccv:Requirement>
+                <ccv:Requirement responseDataType="QUANTITY">
+                    <cbc:ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">295d82b7-5ee6-4977-8aea-bac4acf6ecdf</cbc:ID>
+                    <cbc:Description>Ratio</cbc:Description>
+                    <ccv:Response>
+                        <cbc:Quantity>2.0</cbc:Quantity><!--4-->
+                    </ccv:Response>
+                </ccv:Requirement>
+            </ccv:RequirementGroup>
+            <ccv:RequirementGroup>
+                <cbc:ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">3d0734f0-8f9b-4218-a245-c535e3773bc5</cbc:ID>
+                <ccv:Requirement responseDataType="DESCRIPTION">
+                    <cbc:ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">e6ca4034-cfee-499a-9a47-c4f2862ef4d0</cbc:ID>
+                    <cbc:Description>Description</cbc:Description>
+                    <ccv:Response>
+                        <cbc:Description>TEST_3</cbc:Description>
+                    </ccv:Response>
+                </ccv:Requirement>
+                <ccv:Requirement responseDataType="QUANTITY">
+                    <cbc:ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">2b792afb-87ba-47b5-a80c-aee76a6f2cc8</cbc:ID>
+                    <cbc:Description>Ratio</cbc:Description><!--5-->
+                    ...
+----
+<1> Description for the first ratio
+<2> Amount for the first ratio 
+<3> Description for the second ratio
+<4> Amount for the second ratio
+<5> etc...more tuples (Ratio, Amount)
+
+[NOTE]
+====
+* The XML structure and elements reproduces quite faithfully the fragment of text in the Implementing Regulation 2016/7 related
+to the financial ratio criterion;
+* Conversely to the criteria studied up to now, *the general rules number 1 and 3 are treated differently* (use of the sentence
+''please provide the requested data	below)'' to respond the Criterion);
+* Therefore *data is expected in any case*;
+* The types of data expected in the ESPDResponse XML file are ''DESCRIPTION'' (a text) and ''QUANTITY''. The element in the
+response corresponding to this ''QUANTITY'' MUST be of type ''cbc:QuantityType''. This element, defined in the OASIS  UBL-2.1 specification,
+provides an attribute named	''unitCode''. In the case of the Ratio Criterion a value for this attribute MAY NOT be provided;
+* The XML maps the structures illustrated in the figures above related to the selection financial ratio criterion.
+====
+
+[.text-left]
+== Risk indemnity insurance
+
+The structure of this criterion is quite simple as it only asks for an amount and, if available, online information.
+
+[.text-center]	
+[[selection_economic_financial_risk_data_structure]]
+.Data-structure representation for a risk indemnity insurance criterion (CRITERION.SELECTION.ECONOMIC_FINANCIAL_STANDING.RISK_INDEMNITY_INSURANCE)
+image::33_selection_economic_financial_risk_data_struct.png[alt="selection_economic_financial_risk_data_structure", width="600"]
+
+[.text-left]
+== Economic operator setup
+
+The structure of this criterion is very simple as it only asks for a year: in the criterion description the Contracting Authority is 
+requiring that in case the information concerning turnover (general or specific) is not available for the entire period required, 
+the Economic Operator states the date on which it was set up or started trading. The simplified data structure follows below:
+
+[.text-center]
+[[eo_setup]]
+.Data-structure representation for the criterion Setup of the economic operator (CRITERION.SELECTION.ECONOMIC_FINANCIAL_STANDING.TURNOVER.SET_UP)
+image::35_selection_economic_financial_data_struct.png[alt="selection_economic_financial_data_structure", width="600"]
+
+The fragment of XML below shows the implementation of this criterion ''Set up of economic operator'' in the ESPD Service:
+
+[source,xml]
+.XML example of the Setup of economic operator criterion (CRITERION.SELECTION.ECONOMIC_FINANCIAL_STANDING.TURNOVER.SET_UP) 
+----
+<ccv:Criterion>
+        <cbc:ID schemeID="CriteriaID" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">77f481ce-ffb6-483f-8e2b-c78db5e68292</cbc:ID>
+        <cbc:TypeCode listID="CriteriaTypeCode" listAgencyID="EU-COM-GROW" listVersionID="1.0.2">CRITERION.SELECTION.ECONOMIC_FINANCIAL_STANDING.TURNOVER.SET_UP</cbc:TypeCode>
+        <cbc:Name>Set up of economic operator</cbc:Name>
+        <cbc:Description>In case the information concerning turnover (general or specific) is not available for the entire period required, please state the date on which the economic operator was set up or started trading:</cbc:Description>
+        <ccv:LegislationReference>
+            <ccv-cbc:Title>DIRECTIVE 2014/24/EU OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL of 26 February 2014 on public procurement and repealing Directive 2004/18/EC</ccv-cbc:Title>
+            <cbc:Description>On public procurement and repealing Directive 2004/18/EC</cbc:Description>
+            <ccv-cbc:JurisdictionLevelCode listID="CriterionJurisdictionLevel" listAgencyID="EU-COM-GROW" listVersionID="1.0.2">EU_DIRECTIVE</ccv-cbc:JurisdictionLevelCode>
+            <ccv-cbc:Article>58(3)</ccv-cbc:Article>
+            <cbc:URI>http://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:32014L0024</cbc:URI>
+        </ccv:LegislationReference>
+        <ccv:RequirementGroup>
+            <cbc:ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">e9aa7763-c167-4352-8060-1a3d7d3e2662</cbc:ID>
+            <ccv:Requirement responseDataType="QUANTITY_YEAR">
+                <cbc:ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">a18b2c98-8552-45ca-9751-d4c94c05847a</cbc:ID>
+                <cbc:Description>Please specify</cbc:Description>
+                <ccv:Response>
+                    <cbc:Quantity unitCode="YEAR">2014</cbc:Quantity><!--1-->
+                </ccv:Response>
+            </ccv:Requirement>
+        </ccv:RequirementGroup>
+    </ccv:Criterion>
+----
+<1> The EO specified the year of its set up
+
+[NOTE]
+====
+* The expected data type is ''QUANTITY_YEAR''. i.e. a year is expected expressed as a quantity, as in 2014. As for turnovers,
+where each turnover year was required, remember that the element used in the response MUST be ''cbc:QuantityType''. This element, taken
+from the OASIS UBL-2.1 specification provides an attribute named ''unitCode''. In the ESPD Response, the responses of type QUANTITY_YEAR *MUST*
+specify the value ''YEAR'' for the attribute ''cbc:unitCode'' of cbc:QuantityType.
+====
+
+[.text-left]
+== Other economic of financial requirements
+
+Contracting Authorities MAY include other economic and financial requirements beyond the ones studied above. 
+In this case a simple description is requested, plus additional information if available on line:
+
+[.text-center]
+[[selection_economic_financial_other]]
+.Data-structure representation for a ''Other economic or financial'' criterion (CRITERION.SELECTION.ECONOMIC_FINANCIAL_STANDING.OTHER_REQUIREMENTS)
+image::37_selection_economic_financial_other_struct.png[alt="selection_economic_financial_other", width="600"]
+
+[.text-left]
+== Management Artefacts
+
+AUTHENTICATED_ARTEFACTS, NO_AUTHENTICATED_ARTEFACTS
+
+This category refers to a group of two criteria that share the same structure:
+
+	* CRITERION.SELECTION.TECHNICAL_PROFESSIONAL_ABILITY.MANAGEMENT.ARTEFACTS.*: ''For supply contracts: samples, descriptions or photographs *with* certification of authenticity'', 
+	and ''For supply contracts: samples, descriptions or photographs *without* certification of authenticity''
+
+
+The corresponding data-structure diagram would be this one:
+
+[.text-center]
+[[Management_Artefacts]]
+.Data-structure representation for the criteria of type CRITERION.SELECTION.TECHNICAL_PROFESSIONAL_ABILITY.MANAGEMENT.ARTEFACTS.*
+image::Management_Artefacts_struct.png[alt="", width="600"]
+
+The fragment of XML below shows the implementation of this criterion in the ESPD Service:
+
+[source,xml]
+.XML example of a criterion ''For supply contracts: samples, descriptions or photographs without certification of authenticity''(group CRITERION.SELECTION.TECHNICAL_PROFESSIONAL_ABILITY.MANAGEMENT.ARTEFACTS.*)
+----
+<ccv:Criterion>
+        <cbc:ID schemeID="CriteriaID" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">bdf0601d-2480-4250-b870-658d0ee95be6</cbc:ID>
+        <cbc:TypeCode listID="CriteriaTypeCode" listAgencyID="EU-COM-GROW" listVersionID="1.0.2">CRITERION.SELECTION.TECHNICAL_PROFESSIONAL_ABILITY.MANAGEMENT.ARTEFACTS.NO_AUTHENTICATED_ARTEFACTS</cbc:TypeCode>
+        <cbc:Name>For supply contracts: samples, descriptions or photographs without certification of authenticity</cbc:Name>
+        <cbc:Description>For public supply contracts: The economic operator will supply the required samples, descriptions or photographs of the products to be supplied, which do not need to be accompanied by certifications of authenticity.</cbc:Description>
+        <ccv:LegislationReference>
+            <ccv-cbc:Title>DIRECTIVE 2014/24/EU OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL of 26 February 2014 on public procurement and repealing Directive 2004/18/EC</ccv-cbc:Title>
+            <cbc:Description>On public procurement and repealing Directive 2004/18/EC</cbc:Description>
+            <ccv-cbc:JurisdictionLevelCode listID="CriterionJurisdictionLevel" listAgencyID="EU-COM-GROW" listVersionID="1.0.2">EU_DIRECTIVE</ccv-cbc:JurisdictionLevelCode>
+            <ccv-cbc:Article>58(4)</ccv-cbc:Article>
+            <cbc:URI>http://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:32014L0024</cbc:URI>
+        </ccv:LegislationReference>
+        <ccv:RequirementGroup>
+            <cbc:ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">cb73544d-e8bb-4cc6-819b-b8e04f1e240e</cbc:ID>
+            <ccv:Requirement responseDataType="INDICATOR">
+                <cbc:ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">15335c12-ad77-4728-b5ad-3c06a60d65a4</cbc:ID>
+                <cbc:Description>Your answer?</cbc:Description>
+                <ccv:Response>
+                    <ccv-cbc:Indicator>true</ccv-cbc:Indicator><!--1-->
+                </ccv:Response>
+            </ccv:Requirement>
+        </ccv:RequirementGroup>
+        <ccv:RequirementGroup>
+            <cbc:ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">9026e403-3eb6-4705-a9e9-e21a1efc867d</cbc:ID>
+            <ccv:Requirement responseDataType="INDICATOR">
+                <cbc:ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">9dae5670-cb75-4c97-901b-96ddac5a633a</cbc:ID>
+                <cbc:Description>Is this information available electronically?</cbc:Description>
+                <ccv:Response>
+                    <ccv-cbc:Indicator>true</ccv-cbc:Indicator>
+                </ccv:Response>
+            </ccv:Requirement>
+            <ccv:RequirementGroup pi="GROUP_FULFILLED.ON_TRUE">
+                <cbc:ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">0a166f0a-0c5f-42b0-81e9-0fc9fa598a48</cbc:ID>
+                <ccv:Requirement responseDataType="EVIDENCE_URL">
+                    <cbc:ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">03bb1954-13ae-47d8-8ef8-b7fe0f22d700</cbc:ID>
+                    <cbc:Description>URL</cbc:Description>
+                    <ccv:Response>
+                        <cev:Evidence>
+                            <cev:EvidenceDocumentReference>
+<cbc:ID>9c91d7ac-d6f6-4bb8-a143-166963f95bda</cbc:ID>
+<cac:Attachment>
+    <cac:ExternalReference>
+        <cbc:URI>http://www.agrismundus.eu/</cbc:URI>
+    </cac:ExternalReference>
+</cac:Attachment>
+                            </cev:EvidenceDocumentReference>
+                        </cev:Evidence>
+                    </ccv:Response>
+                </ccv:Requirement>
+                <ccv:Requirement responseDataType="CODE">
+                    <cbc:ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">e2d863a0-60cb-4e58-8c14-4c1595af48b7</cbc:ID>
+                    <cbc:Description>Code</cbc:Description>
+                    <ccv:Response>
+                        <ccv-cbc:Code>For supply contracts: samples, descriptions or photographs without certification of authenticity code</ccv-cbc:Code>
+                    </ccv:Response>
+                </ccv:Requirement>
+            </ccv:RequirementGroup>
+        </ccv:RequirementGroup>
+    </ccv:Criterion>
+----
+<1> The EO states that it will provide the artefacts required in the procurement documents.
+
+[NOTE]
+====
+The EO only has to answer ''yes'' or ''no'' and provide available online evidences. In this case the EO does not provide any evidence
+but states that it will produce any requested artefact.
+====
+
+[.text-left]
+== Certificates
+
+The criteria under the category ''Certificates'' use two groups of data structure. However the categorisation of the 
+certificates (in the Criteria Taxonomy) has been split in three different certificate categories:
+
+	* CRITERION.SELECTION.TECHNICAL_PROFESSIONAL_ABILITY.CERTIFICATES.QUALITY_ASSURANCE.QA_INSTITUTES: ''For supply contracts: certificates by quality control institutes''.
+	 
+	* CRITERION.SELECTION.TECHNICAL_PROFESSIONAL_ABILITY.CERTIFICATES.QUALITY_ASSURANCE.QA_INDEPENDENT: ''For certificates by independent bodies about quality assurance standards''.
+	
+	* CRITERION.SELECTION.TECHNICAL_PROFESSIONAL_ABILITY.CERTIFICATES.ENVIRONMENTAL_MANAGEMENT.*: ''Certificates by independent bodies about environmental management systems or standards''.
+
+    [.text-left]
+==== Quality Assurance Institutes
+
+This category refers to a quality control certificate drawn up by official quality control institutes or agencies of recognised competence:
+
+[.text-center]
+[[Certificates_QA_1]]
+.Data-structure representation for the criteria of type CRITERION.SELECTION.TECHNICAL_PROFESSIONAL_ABILITY.CERTIFICATES.QUALITY_ASSURANCE.QA_INSTITUTES_CERTIFICATE
+image::Certificates_QA_struct.png[alt="", width="900"]
+	
+The fragment of XML below shows the implementation of this criterion in the ESPD Service:
+
+[source,xml]
+.XML example of a criterion ''Certificates by institutes about quality assurance standards'' criterion (data structure of type CRITERION.SELECTION.TECHNICAL_PROFESSIONAL_ABILITY.CERTIFICATES.*)
+----
+<ccv:Criterion>
+        <cbc:ID schemeID="CriteriaID" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">a7669d7d-9297-43e1-9d10-691a1660187c</cbc:ID>
+        <cbc:TypeCode listID="CriteriaTypeCode" listAgencyID="EU-COM-GROW" listVersionID="1.0.2">CRITERION.SELECTION.TECHNICAL_PROFESSIONAL_ABILITY.CERTIFICATES.QUALITY_ASSURANCE.QA_INSTITUTES_CERTIFICATE</cbc:TypeCode>
+        <cbc:Name>For supply contracts: certificates by quality control institutes</cbc:Name>
+        <cbc:Description>Can the economic operator provide the required certificates drawn up by official quality control institutes or agencies of recognised competence attesting the conformity of products clearly identified by references to the technical specifications or standards, which are set out in the relevant notice or the procurement documents?</cbc:Description>
+        <ccv:LegislationReference>
+            <ccv-cbc:Title>DIRECTIVE 2014/24/EU OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL of 26 February 2014 on public procurement and repealing Directive 2004/18/EC</ccv-cbc:Title>
+            <cbc:Description>On public procurement and repealing Directive 2004/18/EC</cbc:Description>
+            <ccv-cbc:JurisdictionLevelCode listID="CriterionJurisdictionLevel" listAgencyID="EU-COM-GROW" listVersionID="1.0.2">EU_DIRECTIVE</ccv-cbc:JurisdictionLevelCode>
+            <ccv-cbc:Article>58(4)</ccv-cbc:Article>
+            <cbc:URI>http://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:32014L0024</cbc:URI>
+        </ccv:LegislationReference>
+        <ccv:RequirementGroup>
+            <cbc:ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">4887c3d7-05fc-4e3e-b066-f338910f0c4c</cbc:ID>
+            <ccv:Requirement responseDataType="INDICATOR">
+                <cbc:ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">15335c12-ad77-4728-b5ad-3c06a60d65a4</cbc:ID>
+                <cbc:Description>Your answer?</cbc:Description>
+                <ccv:Response>
+                    <ccv-cbc:Indicator>true</ccv-cbc:Indicator><!--1-->
+                </ccv:Response>
+            </ccv:Requirement>
+            <ccv:RequirementGroup pi="GROUP_FULFILLED.ON_FALSE">
+                <cbc:ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">83f2f79e-0455-4918-89ff-d7829e8bf758</cbc:ID>
+                <ccv:Requirement responseDataType="DESCRIPTION">
+                    <cbc:ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">b9dec4cb-2f6f-47d7-a023-e9099b19b338</cbc:ID>
+                    <cbc:Description>If not, please explain why and state which other means of proof can be provided:</cbc:Description>
+                    <ccv:Response/>
+                </ccv:Requirement>
+            </ccv:RequirementGroup>
+        </ccv:RequirementGroup>
+        <ccv:RequirementGroup>
+            <cbc:ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">9026e403-3eb6-4705-a9e9-e21a1efc867d</cbc:ID>
+            <ccv:Requirement responseDataType="INDICATOR">
+                <cbc:ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">9dae5670-cb75-4c97-901b-96ddac5a633a</cbc:ID>
+                <cbc:Description>Is this information available electronically?</cbc:Description>
+                <ccv:Response>
+                    <ccv-cbc:Indicator>true</ccv-cbc:Indicator><!--2-->
+                </ccv:Response>
+            </ccv:Requirement>
+            <ccv:RequirementGroup pi="GROUP_FULFILLED.ON_TRUE">
+                <cbc:ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">0a166f0a-0c5f-42b0-81e9-0fc9fa598a48</cbc:ID>
+                <ccv:Requirement responseDataType="EVIDENCE_URL">
+                    <cbc:ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">03bb1954-13ae-47d8-8ef8-b7fe0f22d700</cbc:ID>
+                    <cbc:Description>URL</cbc:Description>
+                    <ccv:Response>
+                        <cev:Evidence>
+                            <cev:EvidenceDocumentReference>
+<cbc:ID>9f5c1c17-60c8-4b24-8149-5b5399ee918d</cbc:ID>
+<cac:Attachment>
+    <cac:ExternalReference>
+        <cbc:URI>http://www.agrismundus.eu/</cbc:URI>
+    </cac:ExternalReference>
+</cac:Attachment>
+                            </cev:EvidenceDocumentReference>
+                        </cev:Evidence>
+                    </ccv:Response>
+                </ccv:Requirement>
+                <ccv:Requirement responseDataType="CODE">
+                    <cbc:ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">e2d863a0-60cb-4e58-8c14-4c1595af48b7</cbc:ID>
+                    <cbc:Description>Code</cbc:Description>
+                    <ccv:Response>
+                        <ccv-cbc:Code>For supply contracts: certificates by quality control institutes code</ccv-cbc:Code>
+                    </ccv:Response>
+                </ccv:Requirement>
+            </ccv:RequirementGroup>
+        </ccv:RequirementGroup>
+    </ccv:Criterion>
+----
+<1> The EO states that it will produce certificates about quality assurance standards issued by institutes; 
+<2> The EO provide a possible source of online evidences for these certificates. 
+
+[.text-left]
+==== Quality Assurance Independent
+
+This category refers to a quality control certificate drawn up by independent bodies attesting that the economic operator complies with the required quality assurance standards:
+
+[.text-center]
+[[Certificates_QA_2]]
+.Data-structure representation for the criteria of type CRITERION.SELECTION.TECHNICAL_PROFESSIONAL_ABILITY.CERTIFICATES.QUALITY_ASSURANCE.QA_INDEPENDENT_CERTIFICATE.*
+image::Certificates_QA_independent_struct.png[alt="", width="900"]
+
+The fragment of XML below shows the implementation of this criterion in the ESPD Service:
+
+[source,xml]
+.XML example of a criterion ''Certificates by independent bodies about quality assurance standards'' criterion (data structure of type CRITERION.SELECTION.TECHNICAL_PROFESSIONAL_ABILITY.CERTIFICATES.*)
+----
+<ccv:Criterion>
+        <cbc:ID schemeID="CriteriaID" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">d726bac9-e153-4e75-bfca-c5385587766d</cbc:ID>
+        <cbc:TypeCode listID="CriteriaTypeCode" listAgencyID="EU-COM-GROW" listVersionID="1.0.2">CRITERION.SELECTION.TECHNICAL_PROFESSIONAL_ABILITY.CERTIFICATES.QUALITY_ASSURANCE.QA_INDEPENDENT_CERTIFICATE</cbc:TypeCode>
+        <cbc:Name>Certificates by independent bodies about quality assurance standards</cbc:Name>
+        <cbc:Description>Will the economic operator be able to produce certificates drawn up by independent bodies attesting that the economic operator complies with the required quality assurance standards, including accessibility for disabled persons?</cbc:Description>
+        <ccv:LegislationReference>
+            <ccv-cbc:Title>DIRECTIVE 2014/24/EU OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL of 26 February 2014 on public procurement and repealing Directive 2004/18/EC</ccv-cbc:Title>
+            <cbc:Description>On public procurement and repealing Directive 2004/18/EC</cbc:Description>
+            <ccv-cbc:JurisdictionLevelCode listID="CriterionJurisdictionLevel" listAgencyID="EU-COM-GROW" listVersionID="1.0.2">EU_DIRECTIVE</ccv-cbc:JurisdictionLevelCode>
+            <ccv-cbc:Article>62(2)</ccv-cbc:Article>
+            <cbc:URI>http://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:32014L0024</cbc:URI>
+        </ccv:LegislationReference>
+        <ccv:RequirementGroup>
+            <cbc:ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">0e88f63c-5642-4a17-833b-ae5800e1750a</cbc:ID>
+            <ccv:Requirement responseDataType="INDICATOR">
+                <cbc:ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">15335c12-ad77-4728-b5ad-3c06a60d65a4</cbc:ID>
+                <cbc:Description>Your answer?</cbc:Description>
+                <ccv:Response>
+                    <ccv-cbc:Indicator>true</ccv-cbc:Indicator><!--1-->
+                </ccv:Response>
+            </ccv:Requirement>
+            <ccv:RequirementGroup pi="GROUP_FULFILLED.ON_FALSE">
+                <cbc:ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">76c7cf31-be3a-4a7e-8c35-a65ae60cd674</cbc:ID>
+                <ccv:Requirement responseDataType="DESCRIPTION">
+                    <cbc:ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">8c5d1e13-54f7-4895-a65c-b8e09253130c</cbc:ID>
+                    <cbc:Description>If not, please explain why and specify which other means of proof concerning the quality assurance scheme can be provided:</cbc:Description>
+                    <ccv:Response/>
+                </ccv:Requirement>
+            </ccv:RequirementGroup>
+        </ccv:RequirementGroup>
+        <ccv:RequirementGroup>
+            <cbc:ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">9026e403-3eb6-4705-a9e9-e21a1efc867d</cbc:ID>
+            <ccv:Requirement responseDataType="INDICATOR">
+                <cbc:ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">9dae5670-cb75-4c97-901b-96ddac5a633a</cbc:ID>
+                <cbc:Description>Is this information available electronically?</cbc:Description>
+                <ccv:Response>
+                    <ccv-cbc:Indicator>true</ccv-cbc:Indicator><!--2-->
+                </ccv:Response>
+            </ccv:Requirement>
+            <ccv:RequirementGroup pi="GROUP_FULFILLED.ON_TRUE">
+                <cbc:ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">0a166f0a-0c5f-42b0-81e9-0fc9fa598a48</cbc:ID>
+                <ccv:Requirement responseDataType="EVIDENCE_URL">
+                    <cbc:ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">03bb1954-13ae-47d8-8ef8-b7fe0f22d700</cbc:ID>
+                    <cbc:Description>URL</cbc:Description>
+                    <ccv:Response>
+                        <cev:Evidence>
+                            <cev:EvidenceDocumentReference>
+<cbc:ID>f7fb4580-20fa-4374-bb48-3818c68faf18</cbc:ID>
+<cac:Attachment>
+    <cac:ExternalReference>
+        <cbc:URI>http://www.agrismundus.eu/</cbc:URI>
+    </cac:ExternalReference>
+</cac:Attachment>
+                            </cev:EvidenceDocumentReference>
+                        </cev:Evidence>
+                    </ccv:Response>
+                </ccv:Requirement>
+                <ccv:Requirement responseDataType="CODE">
+                    <cbc:ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">e2d863a0-60cb-4e58-8c14-4c1595af48b7</cbc:ID>
+                    <cbc:Description>Code</cbc:Description>
+                    <ccv:Response>
+                        <ccv-cbc:Code>Certificates by independent bodies about quality assurance standards code</ccv-cbc:Code>
+                    </ccv:Response>
+                </ccv:Requirement>
+            </ccv:RequirementGroup>
+        </ccv:RequirementGroup>
+    </ccv:Criterion>
+----
+<1> The EO states that it will produce certificates about quality assurance standards issued by independent bodies; 
+<2> The EO provide a possible source of online evidences for these certificates. 
+
+[.text-left]
+==== Environmental Management
+
+For the time being, this general category refers to only the criterion ''Certificates by independent bodies about 
+environmental management systems or standards''. The data-structure for this criterion in the ESPD Service is the one below (notice
+that this structure is possibly on of the most frequent in the ESPD Service as it is used in several exclusion and selection criteria). 
+
+[.text-center]
+[[Certificates_Environmental]]
+.Data-structure representation for the criteria of type CRITERION.SELECTION.TECHNICAL_PROFESSIONAL_ABILITY.CERTIFICATES.QUALITY_ASSURANCE.*
+image::Certificates_Environmental_struct.png[alt="", width="900"]
+
+[NOTE]
+The data-structure is identical to the certificate about quality assurance independent above.
+
+The fragment of XML below shows the implementation of this criterion in the ESPD Service:
+
+[source,xml]
+.Certificates by independent bodies about environmental management systems or standards'' criterion (data structure of type CRITERION.SELECTION.TECHNICAL_PROFESSIONAL_ABILITY.CERTIFICATES.*)
+----
+<ccv:Criterion>
+        <cbc:ID schemeID="CriteriaID" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">8ed65e48-fd0d-444f-97bd-4f58da632999</cbc:ID>
+        <cbc:TypeCode listID="CriteriaTypeCode" listAgencyID="EU-COM-GROW" listVersionID="1.0.2">CRITERION.SELECTION.TECHNICAL_PROFESSIONAL_ABILITY.CERTIFICATES.ENVIRONMENTAL_MANAGEMENT.ENV_INDEPENDENT_CERTIFICATE</cbc:TypeCode>
+        <cbc:Name>Certificates by independent bodies about environmental management systems or standards</cbc:Name>
+        <cbc:Description>Will the economic operator be able to produce certificates drawn up by independent bodies attesting that the economic operator complies with the required environmental management systems or standards?</cbc:Description>
+        <ccv:LegislationReference>
+            <ccv-cbc:Title>DIRECTIVE 2014/24/EU OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL of 26 February 2014 on public procurement and repealing Directive 2004/18/EC</ccv-cbc:Title>
+            <cbc:Description>On public procurement and repealing Directive 2004/18/EC</cbc:Description>
+            <ccv-cbc:JurisdictionLevelCode listID="CriterionJurisdictionLevel" listAgencyID="EU-COM-GROW" listVersionID="1.0.2">EU_DIRECTIVE</ccv-cbc:JurisdictionLevelCode>
+            <ccv-cbc:Article>62(2)</ccv-cbc:Article>
+            <cbc:URI>http://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:32014L0024</cbc:URI>
+        </ccv:LegislationReference>
+        <ccv:RequirementGroup>
+            <cbc:ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">82a59ce2-9c59-4075-af08-843ad89a45ec</cbc:ID>
+            <ccv:Requirement responseDataType="INDICATOR">
+                <cbc:ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">15335c12-ad77-4728-b5ad-3c06a60d65a4</cbc:ID>
+                <cbc:Description>Your answer?</cbc:Description>
+                <ccv:Response>
+                    <ccv-cbc:Indicator>true</ccv-cbc:Indicator><!--1-->
+                </ccv:Response>
+            </ccv:Requirement>
+            <ccv:RequirementGroup pi="GROUP_FULFILLED.ON_FALSE">
+                <cbc:ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">d664788a-df88-49a0-9dfa-2dd217355724</cbc:ID>
+                <ccv:Requirement responseDataType="DESCRIPTION">
+                    <cbc:ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">b0aace10-fd73-46d1-ae78-289ee5cd42ca</cbc:ID>
+                    <cbc:Description>If not, please explain why and specify which other means of proof concerning the environmental management systems or standards can be provided:</cbc:Description>
+                    <ccv:Response/>
+                </ccv:Requirement>
+            </ccv:RequirementGroup>
+        </ccv:RequirementGroup>
+        <ccv:RequirementGroup>
+            <cbc:ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">9026e403-3eb6-4705-a9e9-e21a1efc867d</cbc:ID>
+            <ccv:Requirement responseDataType="INDICATOR">
+                <cbc:ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">9dae5670-cb75-4c97-901b-96ddac5a633a</cbc:ID>
+                <cbc:Description>Is this information available electronically?</cbc:Description>
+                <ccv:Response>
+                    <ccv-cbc:Indicator>true</ccv-cbc:Indicator><!--2-->
+                </ccv:Response>
+            </ccv:Requirement>
+            <ccv:RequirementGroup pi="GROUP_FULFILLED.ON_TRUE">
+                <cbc:ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">0a166f0a-0c5f-42b0-81e9-0fc9fa598a48</cbc:ID>
+                <ccv:Requirement responseDataType="EVIDENCE_URL">
+                    <cbc:ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">03bb1954-13ae-47d8-8ef8-b7fe0f22d700</cbc:ID>
+                    <cbc:Description>URL</cbc:Description>
+                    <ccv:Response>
+                        <cev:Evidence>
+                            <cev:EvidenceDocumentReference>
+<cbc:ID>02a8f07e-a3aa-4b1e-80f5-b8b947027aa5</cbc:ID>
+<cac:Attachment>
+    <cac:ExternalReference>
+        <cbc:URI>http://www.agrismundus.eu/</cbc:URI>
+    </cac:ExternalReference>
+</cac:Attachment>
+                            </cev:EvidenceDocumentReference>
+                        </cev:Evidence>
+                    </ccv:Response>
+                </ccv:Requirement>
+                <ccv:Requirement responseDataType="CODE">
+                    <cbc:ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">e2d863a0-60cb-4e58-8c14-4c1595af48b7</cbc:ID>
+                    <cbc:Description>Code</cbc:Description>
+                    <ccv:Response>
+                        <ccv-cbc:Code>Certificates by independent bodies about environmental management systems or standards code</ccv-cbc:Code>
+                    </ccv:Response>
+                </ccv:Requirement>
+            </ccv:RequirementGroup>
+        </ccv:RequirementGroup>
+    </ccv:Criterion>
+----
+<1> The EO states that it will produce certificates about quality assurance standards issued by independent bodies; 
+<2> The EO provide a possible source of online evidences for these certificates.
+
+[.text-left]
+=== 3. *OTHER CRITERIA*
+
+For the time being, the ESPD Service use this group to cover the criteria related to the Economic Operator that are used to enhance
+its selection (and could even be used to make a decision about its awarding).
+
+In the link:{url-blob}/code_lists/pdf/CriteriaTypeCode.pdf[Criteria Taxonomy] code list these criteria are
+classified as ''CRITERION.OTHER.EO_DATA.*''. The complete list of these criteria is accessible in the table 
+link:{url-blob}/code_lists/xls/CriteriaTaxonomy.xlsx[ESPD Criteria: Other Criteria] (please have
+a look into this table, it will help you better understand how these criteria work in the ESPD Service):
+
+	. ''[..] Is the economic operator a sheltered workshop, a 'social business' or will it provide for the performance of the contract in the context of sheltered employment programmes?'';
+	. ''[..]is the economic operator registered on an official list of approved economic operators or does it have an equivalent certificate [..]'';
+	. '' Is the economic operator participating in the procurement procedure together with others?''
+	. ''Does the economic operator rely on the capacities of other entities in order to meet the selection criteria set out under Part IV and the criteria and rules (if any) set out under Part V below?''
+	. ''Does the economic operator intend to subcontract any share of the contract to third parties?''
+	. ''It meets the objective and non discriminatory criteria or rules to be applied in order to limit the number of candidates in the following way: In case certain certificates or 
+	other forms of documentary evidence are required, please indicate for each whether the economic operator has the required documents:'';
+	
+For the most part these criteria have no ''data-structures'' and ''decision points'' as all the Exclusion criteria an some selection criteria do have. 
+They are mostly presented as plain lists of data that the EO has to provide in case it particular situation fits to one of those criteria.     
+
+The diagram below illustrates the first criterion of the above list (''[..] Is the economic operator a sheltered workshop [..]''):
+
+[.text-center]
+[[OtherCriteria_EO_Data]]
+.Data-structure representation for the criteria of type CRITERION.OTHER.EO_DATA.*
+image::OtherCriteria_EO_Data_struct.png[alt="", width="600"]
+
+[.text-left]
+The following example, below, illustrates how this criterion is implemented. 
+
+This XML piece, as for all the previous XML examples, was
+generated by the https://webgate.ec.europa.eu/espd/filter?lang=en[ESPD Service].
+
+An XML example for the criterion `... Is the economic operator a sheltered workshop ...` from the group `CRITERION.OTHER.EO_DATA.*` is given below.
+
+[source,xml]
+----
+<ccv:Criterion>
+        <cbc:ID schemeID="CriteriaID" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">2043338f-a38a-490b-b3ec-2607cb25a017</cbc:ID>
+        <cbc:TypeCode listID="CriteriaTypeCode" listAgencyID="EU-COM-GROW" listVersionID="1.0.2">CRITERION.OTHER.EO_DATA.SHELTERED_WORKSHOP</cbc:TypeCode>
+        <cbc:Name>Procurement reserved</cbc:Name>
+        <cbc:Description>Only in case the procurement is reserved: is the economic operator a sheltered workshop, a 'social business' or will it provide for the performance of the contract in the context of sheltered employment programmes?</cbc:Description>
+        <ccv:RequirementGroup>
+            <cbc:ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">6febbe4a-e715-427c-a2b1-19cfabadaef0</cbc:ID>
+            <ccv:Requirement responseDataType="INDICATOR">
+                <cbc:ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">7f18c64e-ae09-4646-9400-f3666d50af51</cbc:ID>
+                <ccv:Response>
+                    <ccv-cbc:Indicator>true</ccv-cbc:Indicator>
+                </ccv:Response>
+            </ccv:Requirement>
+            <ccv:RequirementGroup pi="GROUP_FULFILLED.ON_TRUE">
+                <cbc:ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">a5e33369-e2b5-45f7-9969-ddb1c3ae17c8</cbc:ID>
+                <ccv:Requirement responseDataType="PERCENTAGE">
+                    <cbc:ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">4e552658-d532-4770-943b-b90efcc9788d</cbc:ID>
+                    <cbc:Description>What is the corresponding percentage of disabled or disadvantaged workers?</cbc:Description>
+                    <ccv:Response>
+                        <cbc:Percent>2.0</cbc:Percent>
+                    </ccv:Response>
+                </ccv:Requirement>
+                <ccv:Requirement responseDataType="DESCRIPTION">
+                    <cbc:ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">e01d0929-c7a9-455a-aaf9-e1f7cd966336</cbc:ID>
+                    <cbc:Description>If required, please provide details on whether the employees concerned belong to a specific category of disabled or disadvantaged workers?</cbc:Description>
+                    <ccv:Response>
+                        <cbc:Description>Physical Disabilities</cbc:Description>
+                    </ccv:Response>
+                </ccv:Requirement>
+            </ccv:RequirementGroup>
+        </ccv:RequirementGroup>
+</ccv:Criterion>
+----
+
+[NOTE]
+====
+* There is only one group;
+* The INDICATOR is not a decision point, but is treated as one datum
+====
+
+ ////
