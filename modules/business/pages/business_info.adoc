@@ -307,7 +307,7 @@ Information about the economic operator	|X	|X	|X	|X
 Exclusion grounds	|X	|X	|X	|X
 
 |*Part 4*
-Selection Criteria	| |X	|X	|X
+Selection Criteria	|X |X	|X	|
 
 |*Part 5*
 Reduction of the number of qualified candidates	|Adhoc	|Adhoc	|Adhoc	|
