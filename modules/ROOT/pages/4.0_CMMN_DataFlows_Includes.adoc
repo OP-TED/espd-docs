@@ -2323,4 +2323,4 @@ An XML example for the criterion `... Is the economic operator a sheltered works
 * The INDICATOR is not a decision point, but is treated as one datum
 ====
 
- ////
+ 
