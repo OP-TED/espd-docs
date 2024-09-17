@@ -14,8 +14,8 @@
 
 ****
 
-image::../images/espd_demo_site.png[link=https://docs.ted.europa.eu/espd-demo,width=220]
-//image::query_tile.png[xref=sample_app/examples.adoc]
+image::espd_demo_site.png[link=https://docs.ted.europa.eu/espd-demo,width=220]
+//image::endpoint.png[link=https://publications.europa.eu/webapi/rdf/sparql,width=220]
 
 ****
 
