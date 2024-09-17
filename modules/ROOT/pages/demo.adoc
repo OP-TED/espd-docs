@@ -9,16 +9,17 @@
 [.tile-container]
 --
 
-[.tile2]
+[.tile]
 .
 
 ****
 
-image::../images/espd_demo.site.png[link=https://docs.ted.europa.eu/espd-demo]
+image::espd_demo.site.png[link=https://docs.ted.europa.eu/espd-demo,width=204,height=204]
+//image::query_tile.png[xref=sample_app/examples.adoc]
 
 ****
 
-[.tile2]
+[.tile]
 .Tools available
 
 ****
