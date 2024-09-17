@@ -41,7 +41,7 @@ The https://docs.ted.europa.eu/espd-demo/[ESPD Demo Site] is a collection of too
 A description of the tools:
 
 === Distribution files
-*Download Excel and XML distribution files*
+*Download distribution files in Excel or XML format*
 
 * The ESPD code list Excel and XML files
 * The Model and Data Structure Excel files
