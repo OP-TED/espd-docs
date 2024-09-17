@@ -14,7 +14,7 @@
 
 ****
 
-image::espd_demo.site.png[link=https://docs.ted.europa.eu/espd-demo,width=204,height=204]
+image::../images/espd_demo_site.png[link=https://docs.ted.europa.eu/espd-demo]
 //image::query_tile.png[xref=sample_app/examples.adoc]
 
 ****
@@ -32,7 +32,7 @@ image::espd_demo.site.png[link=https://docs.ted.europa.eu/espd-demo,width=204,he
 ****
 --
 
-The https://docs.ted.europa.eu/espd-demo/[ESPD Demo Site] is a collection of tools designed to help developers who are in the process of creating an ESPD Service. Click on the image above to go the the site.
+The ESPD Demo Site is a collection of tools designed to help developers who are in the process of creating an ESPD Service. Click on the image above to go the the site.
 
 //Watch the info video below about the tools available.
 
