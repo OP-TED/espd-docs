@@ -6,6 +6,8 @@
 
 == The ESPD Demo Site
 
+The ESPD Demo Site is a collection of tools designed to help developers who are in the process of creating an ESPD Service. Click on the image below to go the the site.
+
 [.tile-container]
 --
 
@@ -32,7 +34,7 @@ image::espd_demo_site.png[link=https://docs.ted.europa.eu/espd-demo,width=220]
 ****
 --
 
-The ESPD Demo Site is a collection of tools designed to help developers who are in the process of creating an ESPD Service. Click on the image above to go the the site.
+
 
 //Watch the info video below about the tools available.
 
