@@ -6,7 +6,31 @@
 
 == The ESPD Demo Site
 
-The https://docs.ted.europa.eu/espd-demo/[ESPD Demo Site] is a collection of tools designed to help developers who are in the process of creating an ESPD Service. Click on the link above to access the site.
+[.tile-container]
+--
+
+[.tile2]
+.
+
+****
+
+image::../images/espd_demo.site.png[link=https://docs.ted.europa.eu/espd-demo]
+
+****
+
+[.tile2]
+.Tools available
+
+****
+. Export the ESPD Distribution Files
+. View XML Code List files
+. Check UUIDs against eCertis
+. View a model of the ESPD form
+. Generate and download XML files for testing
+
+****
+--
+The https://docs.ted.europa.eu/espd-demo/[ESPD Demo Site] is a collection of tools designed to help developers who are in the process of creating an ESPD Service. Click on the image above to go the the site.
 
 //Watch the info video below about the tools available.
 
