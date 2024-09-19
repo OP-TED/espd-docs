@@ -8,7 +8,7 @@
 
 * [.separated]#**Release Documentation**#
 * xref:4.0.0@ESPD-EDM:ROOT:release_notes.adoc[Release Notes]
-* link:4.0.0@EDPD-EDM{attachmentsdir}/ESPD_CM_html/index.html[Conceptual Model]
+* link:4.0.0@EDPD-EDM/{attachmentsdir}/ESPD_CM_html/index.html[Conceptual Model]
 * xref:espd-home::demo.adoc[ESPD Demo Site]
 //* xref:espd::dist_pack.adoc[The Distribution Package]
 
