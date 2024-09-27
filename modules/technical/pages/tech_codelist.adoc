@@ -138,11 +138,12 @@ This fragment of XML shows how the compulsory attributes are used for the some o
 
 [source,xml]
 ----
-<!--1--> <cbc:UBLVersionID schemeAgencyID="OASIS-UBL-TC">2.3</cbc:UBLVersionID>
-<!--2--> <cbc:ID schemeAgencyID="DGPE">ESPDREQ-DGPE-3b5755dfb8</cbc:ID>
-<!--3--> <cbc:UUID schemeID="ISO/IEC 9834-8:2008" schemeAgencyID="OP" schemeVersionID="4">0fddbf2d-1e33-4267-b04f-52b59b72ccb6</cbc:UUID>
-<!--4--> <cbc:ContractFolderID schemeAgencyID="DGPE">PP.20170419.1024-9</cbc:ContractFolderID>
-<!--5--> <cbc:VersionID schemeAgencyID="OP" schemeVersionID="3.3.0">1.0</cbc:VersionID>
+<cbc:UBLVersionID schemeAgencyID="OASIS-UBL-TC">2.3</cbc:UBLVersionID> <!--1--> 
+<cbc:ID schemeAgencyID="DGPE">ESPDREQ-DGPE-3b5755dfb8</cbc:ID> <!--2--> 
+<cbc:UUID schemeID="ISO/IEC 9834-8:2008" schemeAgencyID="OP"
+          schemeVersionID="4">0fddbf2d-1e33-4267-b04f-52b59b72ccb6</cbc:UUID> <!--3--> 
+<cbc:ContractFolderID schemeAgencyID="DGPE">PP.20170419.1024-9</cbc:ContractFolderID> <!--4--> 
+<cbc:VersionID schemeAgencyID="OP" schemeVersionID="3.3.0">1.0</cbc:VersionID> <!--5--> 
 ----
 <1> The Agency responsible for the maintenance of the UBL versioning is the OASIS UBL Technical Committee
 <2> The identifier for this document was issued by the a Spanish Central Government Directorate identified as 'DGPE'
@@ -173,10 +174,14 @@ _TenderingCriterionProperty (a QUESTION) asking for the identifier of the Econom
 ----
 ...
 <cac:TenderingCriterionProperty>
-<!--1-->  <cbc:ID schemeID="Criterion" schemeAgencyID="OP" schemeVersionID="3.3.0">1fa05728-308f-43b0-b547-c903ffb0a8af</cbc:ID>
+  <cbc:ID schemeID="Criterion" schemeAgencyID="OP" schemeVersionID="3.3.0">
+     1fa05728-308f-43b0-b547-c903ffb0a8af
+  </cbc:ID> <!--1--> 
   <cbc:Description>ID of the economic operator</cbc:Description>
   <cbc:TypeCode listID="criterion-element-type" listAgencyID="OP" listVersionID="3.3.0">QUESTION</cbc:TypeCode>
-<!--2-->  <cbc:ValueDataTypeCode listID="response-data-type" listAgencyID="OP" listVersionID="3.3.0">ECONOMIC_OPERATOR_IDENTIFIER</cbc:ValueDataTypeCode>
+  <cbc:ValueDataTypeCode listID="response-data-type" listAgencyID="OP" listVersionID="3.3.0">
+    ECONOMIC_OPERATOR_IDENTIFIER
+  </cbc:ValueDataTypeCode> <!--2-->  
 </cac:TenderingCriterionProperty>
 ...
 ----
@@ -190,9 +195,13 @@ _TenderingCriterionResponse (the answer to the previous QUESTION)_
 ...
 <cac:TenderingCriterionResponse>
   <cbc:ID schemeID="ISO/IEC 9834-8:2008 - 4UUID" schemeAgencyID="OP" schemeVersionID="3.3.0">acb58f0e-0fe4-4372-aa08-60d0c36bfcfe</cbc:ID>
- <!--1--> <cbc:ValidatedCriterionPropertyID schemeID="Criterion" schemeAgencyID="OP" schemeVersionID="3.3.0">1fa05728-308f-43b0-b547-c903ffb0a8af</cbc:ValidatedCriterionPropertyID>
-<!--2-->  <cbc:ResponseID schemeID="VAT" schemeAgencyID="ES-AEAT">B82387770</cbc:ResponseID>
-</cac:TenderingCriterionResponse>
+  <cbc:ValidatedCriterionPropertyID schemeID="Criterion" schemeAgencyID="OP" schemeVersionID="3.3.0">
+    1fa05728-308f-43b0-b547-c903ffb0a8af
+  </cbc:ValidatedCriterionPropertyID> <!--1--> 
+  <cbc:ResponseID schemeID="VAT" schemeAgencyID="ES-AEAT">
+    B82387770
+  </cbc:ResponseID> <!--2-->  
+</cac:TenderingCriterionResponse>  
 ...
 ----
 <1> Notice that this UUID is identical to the QUESTION UUID, which is the mechanism used in UBL to link the answer to the very specific QUESTION it is responding.
