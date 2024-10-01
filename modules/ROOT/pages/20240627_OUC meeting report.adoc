@@ -30,8 +30,7 @@
 |George VERNARDOS 	|OP
 |===
 
-:sectnums:
-:sectnumlevels: 4
+
 
 
 == Meeting Agenda
@@ -44,6 +43,8 @@
 . Next meetings 
 
 
+:sectnums:
+:sectnumlevels: 4
 
 == Summary OUC on 24 April 2024 
 
@@ -67,7 +68,7 @@ The main topics discussed in April are summarised as follows:
 
 ** https://docs.ted.europa.eu/espd-demo/[UUID migration tool]: helps migration and upgrade from previous ESPD-EDM versions. Identifies UUIDs used in eCertis for a given criterion. 
 
-** http://link%20to%20the%20tool[GitHub template]: new templates to open issues. 
+** https://github.com/OP-TED/ESPD-EDM/issues/new/choose[GitHub template]: new templates to open issues. 
 
 * Future roadmap and next steps. 
 
