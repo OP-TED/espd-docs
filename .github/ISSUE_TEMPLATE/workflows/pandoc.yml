@@ -1,0 +1,44 @@
+name: Word to ASCIIDoc converter
+
+on: workflow_dispatch
+# manual triggering only
+
+jobs:
+  convert_via_pandoc:
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v4.1.7
+        with:
+          ref: pandoc
+          # use pandoc branch for storing the input Word file and to collect all output files
+      - name: list files to conver
+        id: files_list
+        run: |
+          mkdir output  # create output dir
+          # list all ESPD*.docx files as input argumets for conversion
+          # echo "files=$(printf '"%s" ' ESPD*.docx)" > $GITHUB_OUTPUT
+          last_file=$(ls -t ESPD*.docx | grep -v "TEMPLATE" | head -n 1)
+          echo "files=$last_file" >> $GITHUB_OUTPUT
+          echo "fn=${last_file%%.*}" >> $GITHUB_OUTPUT
+      - uses: docker://pandoc/latex:latest
+        with:
+          args: --standalone --wrap=none --markdown-headings=atx --extract-media=output/extracted-media --from=docx --to=asciidoc --output=output/${{steps.files_list.outputs.fn}}.adoc ${{ steps.files_list.outputs.files }}         
+      - name: fix format
+        id: sed_script
+        run: |
+           sed -i '0,/\[width/s/^\[width.*\]$/[cols=","]/' output/${{steps.files_list.outputs.fn}}.adoc
+           # fix first table
+           sed -i '0,/\[width/s/^\[width.*\]$/[cols=",",options="header"]/' output/${{steps.files_list.outputs.fn}}.adoc
+           # fix second table
+           sed -i 's/== Summary/:sectnums:\n:sectnumlevels: 4\n\n== Summary/' output/${{steps.files_list.outputs.fn}}.adoc
+           # add numbering before == Summary ... section      
+      #- uses: docker://pandoc/latex:latest
+      #  with:
+      #    args: --standalone --from=docx --variable=papersize:a4 --to=pdf --output=output/${{steps.files_list.outputs.fn}}.pdf ${{ steps.files_list.outputs.files }}
+      - uses: docker://asciidoctor/docker-asciidoctor:latest
+        with:
+          args: asciidoctor-pdf output/${{steps.files_list.outputs.fn}}.adoc
+      - uses: actions/upload-artifact@v4.3.4
+        with:
+          name: asciidoc
+          path: output
