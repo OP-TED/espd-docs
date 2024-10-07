@@ -17,7 +17,7 @@ jobs:
           mkdir output  # create output dir
           # get the latest ESPD*.docx file as input argumet for conversion
           ls -l ESPD*.docx
-          last_file=$(printf '"%s" ' ESPD*.docx)
+          last_file=$(printf '%s' ESPD*.docx)
           echo "files=$last_file" >> $GITHUB_OUTPUT
           echo "fn=${last_file%%.*}" >> $GITHUB_OUTPUT
       - uses: docker://pandoc/latex:latest
