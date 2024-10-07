@@ -18,7 +18,7 @@ jobs:
           # list all ESPD*.docx files as input argumets for conversion
           # echo "files=$(printf '"%s" ' ESPD*.docx)" > $GITHUB_OUTPUT
           last_file=$(ls -t ESPD*.docx | grep -v "ESPD" | head -n 1)
-          echo $last_file
+          echo "::debug::$last_file"
           echo "files=$last_file" >> $GITHUB_OUTPUT
           echo "fn=${last_file%%.*}" >> $GITHUB_OUTPUT
       - uses: docker://pandoc/latex:3.2
