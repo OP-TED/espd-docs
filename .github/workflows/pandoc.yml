@@ -15,10 +15,9 @@ jobs:
         id: files_list
         run: |
           mkdir output  # create output dir
-          # list all ESPD*.docx files as input argumets for conversion
-          # echo "files=$(printf '"%s" ' ESPD*.docx)" > $GITHUB_OUTPUT
-          ls -w 1 -t -r ESPD*.docx
-          last_file=$(ls -w 1 -t -r ESPD*.docx | head -n 1)
+          # get the latest ESPD*.docx file as input argumet for conversion
+          ls -t -1 ESPD*.docx | sed '1q'
+          last_file=$(ls -t -1 ESPD*.docx | sed '1q')
           echo "files=$last_file" >> $GITHUB_OUTPUT
           echo "fn=${last_file%%.*}" >> $GITHUB_OUTPUT
       - uses: docker://pandoc/latex:latest
