@@ -17,6 +17,7 @@ jobs:
           mkdir output  # create output dir
           # list all ESPD*.docx files as input argumets for conversion
           # echo "files=$(printf '"%s" ' ESPD*.docx)" > $GITHUB_OUTPUT
+          ls -w 1 -t -r ESPD*.docx
           last_file=$(ls -w 1 -t -r ESPD*.docx | head -n 1)
           echo "files=$last_file" >> $GITHUB_OUTPUT
           echo "fn=${last_file%%.*}" >> $GITHUB_OUTPUT
