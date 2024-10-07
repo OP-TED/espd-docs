@@ -11,13 +11,13 @@ jobs:
         with:
           ref: pandoc
           # use pandoc branch for storing the input Word file and to collect all output files
-      - name: list files to conver
+      - name: List ESPD Word files to convert
         id: files_list
         run: |
           mkdir output  # create output dir
           # get the latest ESPD*.docx file as input argumet for conversion
-          ls -ltr -1 ESPD*.docx
-          last_file=$(ls -tr -1 ESPD*.docx | sed '1q')
+          ls -l ESPD*.docx
+          last_file=$(printf '"%s" ' ESPD*.docx)
           echo "files=$last_file" >> $GITHUB_OUTPUT
           echo "fn=${last_file%%.*}" >> $GITHUB_OUTPUT
       - uses: docker://pandoc/latex:latest
