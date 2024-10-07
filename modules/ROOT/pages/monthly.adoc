@@ -7,11 +7,8 @@
 == 2024
 
 === 2024-10-01
-
 *** link:https://github.com/OP-TED/espd-docs/blob/wgm-reports/modules/ROOT/attachments/ESPD_OUC_Meetings_Slides_20241001.pdf[36th OUC Presentation] 
-////
 *** xref:20241001_OUC meeting report.adoc[36th OUC Report] 
-////
 
 === 2024-06-27
 *** link:https://github.com/OP-TED/espd-docs/blob/wgm-reports/modules/ROOT/attachments/ESPD_OUC_Meetings_Slides_20240627.pdf[35th OUC Presentation] 
