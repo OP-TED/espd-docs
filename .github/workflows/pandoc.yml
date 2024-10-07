@@ -20,7 +20,7 @@ jobs:
           last_file=$(ls -w 1 -t -r ESPD*.docx | head -n 1)
           echo "files=$last_file" >> $GITHUB_OUTPUT
           echo "fn=${last_file%%.*}" >> $GITHUB_OUTPUT
-      - uses: docker://pandoc/latex:3.2
+      - uses: docker://pandoc/latex:latest
         with:
           args: --standalone --wrap=none --markdown-headings=atx --extract-media=output/extracted-media --from=docx --to=asciidoc --output=output/${{steps.files_list.outputs.fn}}.adoc ${{ steps.files_list.outputs.files }}         
       - name: fix format
@@ -32,7 +32,7 @@ jobs:
            # fix second table
            sed -i 's/== Summary/:sectnums:\n:sectnumlevels: 4\n\n== Summary/' output/${{steps.files_list.outputs.fn}}.adoc
            # add numbering before == Summary ... section      
-      #- uses: docker://pandoc/latex:3.2
+      #- uses: docker://pandoc/latex:latest
       #  with:
       #    args: --standalone --from=docx --variable=papersize:a4 --to=pdf --output=output/${{steps.files_list.outputs.fn}}.pdf ${{ steps.files_list.outputs.files }}
       - uses: docker://asciidoctor/docker-asciidoctor:latest
