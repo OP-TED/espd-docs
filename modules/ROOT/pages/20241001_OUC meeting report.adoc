@@ -9,16 +9,16 @@
 
 [cols=",",options="header"]
 |===
-|*Attendee Name* |*Organization / Country*
+|*Attendee Name* |*Organisation / Country*
 |Paloma ARILLO |OP
-|Karl FERRAND |OP
 |Michaël DE WINNE |BOSA - Belgium
+|Karl FERRAND |OP
 |Jostein FRØMYR |Norway
 |Uroš IZLAKAR |Slovenia
-|Ajda KONSTANJŠEK |Slovenia
 |Juris KALĒJS |SDDA – Latvia
 |Laura KIVIKANGAS |Finland
 |Ville KNUUTTILA |Solita – Finland
+|Ajda KONSTANJŠEK |Slovenia
 |Srđan KRASIĆ |OP
 |Arnis KRAUZE |Latvia
 |Mitja MEDVEŠČEK |Slovenia
@@ -53,33 +53,45 @@
 
 == Summary OUC meeting on 27 June 2024
 
-* The link to the main documents related to the previous Open User Community (OUC) meeting is provided: in the index the user can navigate to the corresponding event at get the Presentation and the Report, in this case 2024-06-27.
-* The main topics discussed in June are summarized:
-** Proposal for interactive tool for visualization of criteria (Exclusion Grounds, Selection Criteria, Interactive Form)
+* The link to the main documents related to the previous Open User Community (OUC) meeting was provided: in the index the user can navigate to the corresponding event at get the Presentation and the Report, in this case 2024-06-27.
+* The main topics discussed in June were summarised:
+** Proposal for interactive tool for visualisation of criteria (Exclusion Grounds, Selection Criteria, Interactive Form)
 ** Creation of own XML examples for Request and Response
 ** New design for documentation
 ** Integration of eCertis, ESPD and eForms
 
 == Documentation – a new UX Design
 
-* A new https://docs.ted.europa.eu/ESPD-EDM/latest/index.html[ESPD-EDM documentation] site is presented. The comparation with the previous version shows that the new design is aligned with other TED projects. A brief remark for all using old versions: they are preserved and available by the links in drop-down menu. With more details as separate slides are presented the sections: "Information for Business Users" (with separated topics for general information and introduction to the ESPD legislation, roadmap, etc. but also structure of an ESPT Service example, and how to fill online form), "Technical Implementation" (with topics ordered by logic of usage) and “Documentation - OUC Meeting and Seminars” (with separated topic for meeting scheduler, regular meetings and annual seminars. New GitHub templates are presented: for reporting an error, general comments or improvement suggestion. The presentation included a live presentation of ESPD Documentation (online). The attendees’ feedback was very positive during the meeting.
+The new https://docs.ted.europa.eu/ESPD-EDM/latest/index.html[ESPD-EDM documentation] site was presented. The comparation with the previous version shows that the new design is aligned with other TED projects. +
+ +
+A brief remark for all using old ESPD versions: The documentation has been preserved and is available via the links in the drop-down menu version chooser as before.
+
+The new sections of the documentation were presented on different slides:
+
+* "Information for Business Users" (with separated topics for general information and introduction to the ESPD legislation, roadmap, etc., and also the possible structure of an ESPD Service example, and the online form) from a buyer’s or supplier’s perspective.,
+* "Technical Implementation" (with topics ordered by sequence of usage), and
+* OUC Meeting and Seminars” (with separate topics for meeting schedule, regular meetings and annual seminars.
+
+New GitHub templates were presented: for reporting an error, general comments or an improvement suggestion in the documentation. +
+ +
+The presentation included a live presentation of ESPD Documentation (online). The meeting attendees’ feedback was positive.
 
 == V4 available on-line – new features and tools
 
-* New release v4.0.0 is presented as a central part of the meeting. The list of new features is reviewed with special attention to model changes: alignment with ePO, IDs based on XML Path, improved lot management. New model structure is presented by separate slides for new Criterion examples, but also for useful tools for implementers and developers (batch .bat file for validation, XML files ESPD-Request.xml and ESPD-Response, new folder structure and content, etc.), tools in https://github.com/OP-TED/ESPD-EDM/tree/espd-tools[espd-tools] branch (for transformation of Criterion and Code List Excel files to UBL and .gc and web format) and https://github.com/OP-TED/espd-validation-schematron[Schematron validation] branch.
+* New release v4.0.0 was presented as the central part of the meeting. The list of new features was reviewed with special attention to the model changes: alignment with ePO, IDs based on XML Path, improved lot management. New model structure was presented by separate slides for new Criterion examples, but also for useful tools for implementers and developers (batch .bat file for validation, XML files ESPD-Request.xml and ESPD-Response, new folder structure and content, etc.), tools in https://github.com/OP-TED/ESPD-EDM/tree/espd-tools[espd-tools] branch (for transformation of Criterion and Code List Excel files to UBL and .gc and web format) and https://github.com/OP-TED/espd-validation-schematron[Schematron validation] branch.
 
 == ESPD Demo – Interactive creation of examples v4
 
-* A new ESPD demo site is presented, including the link to https://docs.ted.europa.eu/espd-demo/[demo site]. The tool provides clear visualization of ESPD request end response in interactive process and allows creation of examples for v4.0.0 but also for v3.3.0 validation with corresponding error, etc. Messages. On attendee’s request one live example has been executed. Special attention was paid to questions related to implementation of national requirements within the mark of ESPD model.
+* A new ESPD demo site was presented, including the link to the https://docs.ted.europa.eu/espd-demo/[demo site]. The tool provides a clear visualisation of the ESPD request and response in an interactive manner and allows the creation of examples for v4.0.0 and v3.3.0 validation with corresponding error, etc., messages. On the attendee’s request a live example was demonstrated. Special attention was paid to questions relating to the implementation of national requirements within the mark of ESPD model.
 
 == GitHub issues – closed
 
-* The list of 23 GitHub issues closed during 2024 is presented:
-** The minor part related to clarifications, documentation and previous v3.3.0 release was mentioned briefly.
-** On the other hand, all v4.0.0 issues were reviewed one by one, except https://github.com/OP-TED/ESPD-EDM/issues/388[#388] and https://github.com/OP-TED/ESPD-EDM/issues/389[#389] analyzed previously within general data structure update presentation.
+* The list of 23 GitHub issues closed during 2024 was presented:
+** A brief time was dedicated to clarifications, documentation, and issues around the previous v3.3.0 release.
+** All v4.0.0 issues were reviewed one by one, except https://github.com/OP-TED/ESPD-EDM/issues/388[#388] and https://github.com/OP-TED/ESPD-EDM/issues/389[#389&#44;] discussed previously within the general data structure update presentation.
 
 == Next meetings
 
-* Annual Seminar – this year the Tenders Electronic Daily Unit is planning to organize one single event for the different projects dealt with in the Unit: eForms, eSenders, eProcurement Ontology, ESPD and others. The proposed date is from 3 to 4 December. It is foreseen to be a hybrid meeting (on site or online). Attendees are asked to express their interest for attending in person in Luxembourg. Attendees are also requested to send to OPESPD@publications.europa.eu the topics they would like to be presented in the Annual Seminar and to express their interest in participating as speakers during the event.
+* Annual Seminar – this year the Tenders Electronic Daily Unit is planning to organise one single combined event for the different projects in the Unit: eForms, eSenders, eProcurement Ontology, ESPD and others. The proposed date is from 3 to 4 December. It is foreseen to be a hybrid meeting (on site or online). Attendees are asked to express their interest for attending in person in Luxembourg. Attendees were also requested to send to OPESPD@publications.europa.eu the topics they would like to be presented in the Annual Seminar and to express their interest in participating as speakers during the event.
 ** The next OUC meeting is planned for the 27 March 2025, 10:00 – 11:30.
 ** The users can obtain additional support for any question related to implementation by bilateral meetings proposed by their own initiative. Please contact us at OPESPD@publications.europa.eu.
