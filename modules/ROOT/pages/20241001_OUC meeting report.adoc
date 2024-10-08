@@ -4,7 +4,7 @@
 
 [cols=","]
 |===
-|*Meeting Date/Time:* |2024-10-01, 10:00 – 11:30
+|*Meeting Date/Time:* |2024-10-01, 10.00 – 11.30
 |===
 
 [cols=",",options="header"]
@@ -53,7 +53,7 @@
 
 == Summary OUC meeting on 27 June 2024
 
-* The link to the main documents related to the previous Open User Community (OUC) meeting was provided: in the index the user can navigate to the corresponding event at get the Presentation and the Report, in this case 2024-06-27.
+* The link to the https://docs.ted.europa.eu/espd-wgm/monthly.html[main documents] related to the previous Open User Community (OUC) meeting was provided: in the index the user can navigate to the corresponding event at get the Presentation and the Report, in this case 2024-06-27.
 * The main topics discussed in June were summarised:
 ** Proposal for interactive tool for visualisation of criteria (Exclusion Grounds, Selection Criteria, Interactive Form)
 ** Creation of own XML examples for Request and Response
@@ -70,7 +70,7 @@ The new sections of the documentation were presented on different slides:
 
 * "Information for Business Users" (with separated topics for general information and introduction to the ESPD legislation, roadmap, etc., and also the possible structure of an ESPD Service example, and the online form) from a buyer’s or supplier’s perspective.,
 * "Technical Implementation" (with topics ordered by sequence of usage), and
-* OUC Meeting and Seminars” (with separate topics for meeting schedule, regular meetings and annual seminars.
+* OUC Meeting and Seminars” (with separate topics for meeting schedule, regular meetings and annual seminars).
 
 New GitHub templates were presented: for reporting an error, general comments or an improvement suggestion in the documentation. +
  +
@@ -93,5 +93,5 @@ The presentation included a live presentation of ESPD Documentation (online). Th
 == Next meetings
 
 * Annual Seminar – this year the Tenders Electronic Daily Unit is planning to organise one single combined event for the different projects in the Unit: eForms, eSenders, eProcurement Ontology, ESPD and others. The proposed date is from 3 to 4 December. It is foreseen to be a hybrid meeting (on site or online). Attendees are asked to express their interest for attending in person in Luxembourg. Attendees were also requested to send to OPESPD@publications.europa.eu the topics they would like to be presented in the Annual Seminar and to express their interest in participating as speakers during the event.
-** The next OUC meeting is planned for the 27 March 2025, 10:00 – 11:30.
+** The next OUC meeting is planned for the 27 March 2025, 10.00 – 11.30.
 ** The users can obtain additional support for any question related to implementation by bilateral meetings proposed by their own initiative. Please contact us at OPESPD@publications.europa.eu.
