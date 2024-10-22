@@ -5,10 +5,6 @@
 :docdate: January 2024
 :sectnums:
 
-ifeval::[{espd_latest_version} == {page-component-version}]
-:page-aliases: 4.0.0@tech_busrules.adoc,4.0@tech_busrules.adoc
-endif::[]
-
 == Purpose
 
 This guide explains how Business Rules are implemented, and which ones apply in each case. The guide can be used to:
