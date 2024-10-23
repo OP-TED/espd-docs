@@ -1694,7 +1694,7 @@ ____
 
 .Table 52: BR-REQ-40
 
-[#_BR-REG-10 .anchor]##
+//[#_BR-REG-10 .anchor]##
 
 == Common Rules
 
