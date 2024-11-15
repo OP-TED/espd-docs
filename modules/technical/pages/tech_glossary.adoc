@@ -60,7 +60,7 @@ EuroVoc is a multilingual, multidisciplinary thesaurus covering the activities o
 
 [[eSens, eSens]]
 *eSens* +
-https://cordis.europa.eu/article/id/191247-the-building-blocks-for-digital-governments-revolution[eSens] was a project that ran from 2013 to 2017 to deliver a generic e-infrastructure used across a range of public services. Its aim was to make digital government services simpler and more cost-effective to implement for the benefit ofcitizens, businesses and public organisations.
+https://cordis.europa.eu/article/id/191247-the-building-blocks-for-digital-governments-revolution[eSens] was a project that ran from 2013 to 2017 to deliver a generic e-infrastructure used across a range of public services. Its aim was to make digital government services simpler and more cost-effective to implement for the benefit of citizens, businesses and public organisations.
 
 [[espd,European Single Procurement Document (ESPD)]]
 *European Single Procurement Document (ESPD).*  +

@@ -32,33 +32,7 @@ This section runs through the ESPD online form from both the buyer and the suppl
 xref:business:espd_form.adoc[Click here to view the ESPD online form]
 ****
 --
-////
 
-[.tile]
-.Using the ESPD Service
-****
-This section describes how to the ESPD is used by buyers and suppliers for a tender
-
-xref:using.adoc[See how to use an ESPD Service]
-****
-
-[.tile]
-.Creating an ESPD Service
-****
-This section gives a rationale for creating an ESPD service and explains the advantages
-
-xref:creating.adoc[See the advantages of creating an ESPD Service]
-****
-
-[.tile]
-.Upgrading an ESPD Service version
-****
-A business overview for upgrading your ESPD Service version
-
-xref:overview_upgrades.adoc[Click here for upgrading your ESPD version]
-****
-
-////
 
 include::partial$feedback.adoc[]
 

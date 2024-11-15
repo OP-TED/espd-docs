@@ -218,8 +218,8 @@ The validation of Tendering Criterion Property (cac:TenderingCriterionProperty e
 
 === Note. Replacement of UUID by XML Path Like ID 
 
-From ESPD v4.0.0, UUIDs will be replaced by XML Path Like IDs in the data structure, except for the top level Exclusion Grounds and Selection Criteria elements.
-For further details, see section, "Common Aspects for Criteria". 
+From ESPD v4.0.0, UUIDs are replaced by XML Path Like IDs in the data structure, except for the top level Exclusion Grounds and Selection Criteria elements.
+//For further details, see xref:tech_common_aspects_for_criteria.adoc[Common Aspects for Criteria]. 
 
 === Interoperability testbed
 

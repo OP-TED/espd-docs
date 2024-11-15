@@ -24,7 +24,7 @@ _Figure 10. ESPD Architecture Overview_
 
 The ESPD Architecture components interact with each other to produce the final ESPD UBL XML Request and Response. 
 
-* *The UBL (Universal Business Language) component* 
+* *The UBL (https://docs.oasis-open.org/ubl/UBL-2.3.html[Universal Business Language]) component* 
 
 This describes the UBL language that is used to define the ESPD Request and Response XML elements, and attributes of XML elements. 
 
