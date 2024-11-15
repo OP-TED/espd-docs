@@ -12,10 +12,6 @@ The latest distribution package can be found on https://github.com/OP-TED/ESPD-E
 ==== Branches
 The master branch contains the code. Only a master branch is maintained with different version tags.
 
-The wgm-reports branch is for the Open user Community reports which are minutes of the monthly meetings.
-
-
-
 ==== README.md
 this is the description of the contents, and a brief overview of what can be found where in the repository. It is also used as the release notes.
 

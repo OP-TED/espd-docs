@@ -16,7 +16,7 @@ The European Single Procurement Document (ESPD) is a electronic form used by buy
 
 The first part of the form, the ESPD Request, enables buyers to state the selection criteria suppliers have to meet, and what evidence of lawfulness and integrity they must provide, for their tender to be considered by the buyer. The second part of the form, the ESPD Response, enables suppliers to respond, and to list the evidence they can provide to substantiate their response.
 
-The main objective of the ESPD is to reduce administrative burden by removing the need to produce large numbers of physical certificates and documentation related to exclusion and selection criteria. The intention was to make participation in public procurement less burdensome for  small and medium-sized enterprises (SMEs).
+The main objective of the ESPD is to reduce administrative burden by removing the need to produce large numbers of physical certificates and documentation related to exclusion and selection criteria. The intention is to make participation in public procurement less burdensome for  small and medium-sized enterprises (SMEs).
 
 ////
 The European Single Procurement Document (ESPD) is a electronic form for preliminary evidence in a public procurement procedure and is used in the EU eProcurement process. The form enables buyers to state the selection criteria suppliers have to meet, and evidence of lawfulness and integrity they must provide, for their tender to be considered by the buyer. The ESPD has two parts, a request and a response.
@@ -189,7 +189,7 @@ link:https://niolesk.top/#https://kroki.io/vega/svg/eNrNVk2PmzAQvedXILe9ZYkhIcvu
 
 Figure 1: ESPD-EDM Roadmap
 [.text-left]
-The evolution of the ESPD developed in alignment with eForms. The alignment followed three main principles:
+The evolution of the ESPD developed in alignment with https://single-market-economy.ec.europa.eu/single-market/public-procurement/digital-procurement/eforms_en[eForms]. The alignment followed three main principles:
 
 * Ensuring the interoperability between models;
 * The simplification of data processing;
@@ -223,7 +223,7 @@ Economic Operators can play different roles, catered for in the ESPD-EDM, within
 == Parts of the ESPD
 
 
-Each section is filled in by one or both parties, and in the case of a response involving a supplier group, the group leader must fill in information related to group members in the response.
+Each section of the ESPD form is filled in by one or both parties, and in the case of a response involving a supplier group, the group leader must fill in information related to group members in the response.
 
 === Part 1: Buyer and procedure information
 
@@ -233,7 +233,7 @@ Information concerning the procurement procedure and the Buyer or contracting en
 
 *The Supplier fills in:*
 
-Information concerning the procurement procedure and the Buyer or contracting entity, where the Economic Operator is required to identify the ESPD Request to which it is creating a response, by providing information about the publication, the identity of the procurer, and the procurement procedure.
+Information concerning the procurement procedure and the Buyer or contracting entity, where the Economic Operator, or supplier, is required to identify the ESPD Request to which it is creating a response, by providing information about the publication, the identity of the procurer, and the procurement procedure.
 
 === Part 2: Supplier information
 
@@ -276,7 +276,7 @@ The Supplier responds to each of the above criteria.
 
 NOTE: The buyer does not fill in this section.
 
-The Supplier provides information where the buyer or contracting entity has specified objective and non-discriminatory criteria or rules, in part 4,to be applied. This serves to limit the number of candidates invited to tender, or to take part in a dialogue within a two-phased procedure.
+The Supplier provides information where the buyer or contracting entity has specified objective and non-discriminatory criteria or rules, in part 4, to be applied. This serves to limit the number of candidates invited to tender, or to take part in a dialogue within a two-phased procedure.
 
 === Part 6: Concluding statements
 

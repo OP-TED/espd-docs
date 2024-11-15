@@ -1,5 +1,0 @@
-:doctitle: Detailed Technical Guides for Version Upgrades
-:doccode: espd-tech-prod-003
-:author: NPJ
-:authoremail: nicole-anne.paterson-jones@ext.ec.europa.eu
-:docdate: January 2024

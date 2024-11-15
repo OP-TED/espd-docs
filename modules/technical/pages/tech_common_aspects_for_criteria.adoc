@@ -20,7 +20,7 @@ image:Criterion_UML_diagram.jpg[Criterion - UML diagram,width=518,height=345]
 
 _Figure 33. Criterion - UML diagram_
 
-== General behavior
+== General behaviour
 
 *Note that*:
 
