@@ -602,7 +602,7 @@ ____
 
 ==== RS-80
 
-.Table 20: Test Case RS-80
+.Test Case RS-80
 [width="100%",cols="18%,5%,21%,20%,36%",options="header",]
 |===
 |*Pre-conditions* | | | |
@@ -667,7 +667,7 @@ ____
 
 ==== RS-100
 
-.Table 22: Test Case RS-100
+.Test Case RS-100
 [width="100%",cols="18%,3%,25%,20%,34%",options="header",]
 |===
 |*Pre-conditions* | | | |
@@ -1271,7 +1271,7 @@ Other entity (not relied upon): Entity on which the main contractor, the group o
 |RS-290-R50 (<<BR-SC-30,BR-SC-30]>>) |Information about the procurement procedure MIGHT be provided | |N/A |N/A
 |===
 
-_Table 41: Test Case RS-290_
+
 
 ==== RS-300
 
@@ -2758,7 +2758,7 @@ Then, its /cac:TenderingCriterionResponse /cbc:ResponseID must exist within /cac
 
 === BR-LOT-20
 
-.Table 76: BR-LOT-20
+.BR-LOT-20
 [width="100%",cols="25%,19%,18%,38%",options="header",]
 |===
 |*Mapping Rule ID* | | |
@@ -3006,7 +3006,7 @@ ____
 
 ==== BR-LEAD-10-S20
 
-.Table 83: BR-LEAD-10-S20
+.BR-LEAD-10-S20
 [width="100%",cols="25%,4%,33%,38%",options="header",]
 |===
 |*Mapping Rule ID* | | |
