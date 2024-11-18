@@ -29,7 +29,7 @@ a|
 a|
 |===
 
-.Table 1: List of Input documents
+_Table 1: List of Input documents_
 
 === Process
 
@@ -70,7 +70,7 @@ UBL-QualificationApplicationRequest-2.2-Pre-award.xsd (ESPD Request) or UBL-Qual
 |Test Case Rule ID (from [RD01]) and Mapping Rule ID |Description of the rule and mapping to Mapping Rule ID (current document) | |Scenario ID (from [RD01]) and Mapping Scenario ID |Description of the scenario and mapping to Mapping Scenario ID (current document)
 |===
 
-.Table 2: Test Case ID example
+_Table 2: Test Case ID example_
 
 [arabic, start=2]
 . For each of the rules identified in document [RD01], the following table describes its mapping in natural language:
@@ -90,7 +90,7 @@ Business rules can be classified as WARNING (user information) or ERROR (fatal e
 
 |===
 
-.Table 3: Mapping rule ID example
+_Table 3: Mapping rule ID example_
 
 == ESPDRequest
 
@@ -109,7 +109,7 @@ a|<<RQ-50,RQ-50>> |1 |1 |0
 a|<<RQ-60,RQ-60>> |1 |1 |1
 |===
 
-.Table 4: ESPDRequest - List of test cases
+_Table 4: ESPDRequest - List of test cases_
 
 === Test Cases
 
@@ -140,7 +140,7 @@ RQ-10-R10-S10
 |RQ-10-R50 (<<BR-REQ-40,BR-REQ-40>>) |Selection criteria CAN be provided | |N/A |N/A
 |===
 
-.Table 5: Test Case RQ-10
+_Table 5: Test Case RQ-10_
 
 ==== RQ-20
 
@@ -168,7 +168,7 @@ RQ-20-R10-S10
 |RQ-20-R50 (<<BR-REQ-40,BR-REQ-40>>) |Selection criteria CAN be provided | |N/A |N/A
 |===
 
-.Table 6: Test Case RQ-20
+_Table 6: Test Case RQ-20_
 
 ==== RQ-30
 
@@ -198,7 +198,7 @@ RQ-30-R10-S10
 |RQ-30-R60 (<<BR-SC-20,BR-SC-20>>) |When selection criteria is provided, specific requirements for each criteria CAN be provided | |N/A |N/A
 |===
 
-.Table 7: Test Case RQ-30
+_Table 7: Test Case RQ-30_
 
 ==== RQ-40
 
@@ -230,7 +230,7 @@ RQ-40-R10-S10
 | | | |RQ-40-R70-S20 (<<BR-2P-10-S20,BR-2P-10-S20>>) |For two-phased procedure without weighted criteria, additional information regarding weighting IS NOT required
 |===
 
-.Table 8: Test Case RQ-40
+_Table 8: Test Case RQ-40_
 
 ==== RQ-50
 
@@ -263,7 +263,7 @@ RQ-50-R10-S10
 |RQ-50-R80 (<<BR-SC-20,BR-SC-20>>) |When selection criteria is provided, specific requirements for each criteria CAN be provided | |N/A |N/A
 |===
 
-.Table 9: Test Case RQ-50
+_Table 9: Test Case RQ-50_
 
 ==== RQ-60
 BR-LOT-30-S20
@@ -298,7 +298,7 @@ RQ-60-R10-S10
 | | | |RQ-60-R90-S20 (<<BR-2P-10-S20,BR-2P-10-S20>>) |For two-phased procedure without weighted criteria, additional information regarding weighting IS NOT required
 |===
 
-.Table 10: Test Case RQ-60
+_Table 10: Test Case RQ-60_
 
 === List of Business Rules
 
@@ -364,7 +364,7 @@ ____
 |<<RQ-60,RQ-60>> | | | | |- | | | | |
 |===
 
-.Table 11: ESPDRequest - Test Cases and Business Rules
+_Table 11: ESPDRequest - Test Cases and Business Rules_
 
 == ESPDResponse
 
@@ -405,7 +405,7 @@ ____
 |<<RS-300,RS-300>> |1 |1 |1 |Other entity (not relied upon)
 |===
 
-.Table 12: ESPDResponse - List of test cases
+_Table 12: ESPDResponse - List of test cases_
 
 === Test Cases
 
@@ -429,7 +429,7 @@ ____
 |RS-10-R50 (<<_BR-REG-10,BR-REG-20>>) |Information about the procurement procedure MIGHT be provided | |N/A |N/A
 |===
 
-.Table 13: Test Case RS-10
+_Table 13: Test Case RS-10_
 
 ==== RS-20
 
@@ -454,7 +454,7 @@ ____
 |RS-20-R60 (<<_BR-REG-10,BR-REG-20>>) |Information about the procurement procedure MIGHT be provided | |N/A |N/A
 |===
 
-.Table 14: Test Case RS-20
+_Table 14: Test Case RS-20_
 
 ==== RS-30
 
@@ -476,7 +476,7 @@ ____
 |RS-30-R50 (<<BR-SC-30,BR-SC-30]>>) |Information about the procurement procedure MIGHT be provided | |N/A |N/A
 |===
 
-.Table 15: Test Case RS-30
+_Table 15: Test Case RS-30_
 
 ==== RS-40
 
@@ -501,7 +501,7 @@ ____
 |RS-40-R60 (<<BR-SC-30,BR-SC-30]>>) |Information about the procurement procedure MIGHT be provided | |N/A |N/A
 |===
 
-.Table 16: Test Case RS-40
+_Table 16: Test Case RS-40_
 
 ==== RS-50
 
@@ -525,7 +525,7 @@ ____
 |RS-50-R70 (<<BR-SC-30,BR-SC-30]>>) |Information about the procurement procedure MIGHT be provided | |N/A |N/A
 |===
 
-.Table 17: Test Case RS-50
+_Table 17: Test Case RS-50_
 
 ==== RS-60
 
@@ -552,7 +552,7 @@ ____
 |RS-60-R80 (<<BR-SC-30,BR-SC-30]>>) |Information about the procurement procedure MIGHT be provided | |N/A |N/A
 |===
 
-.Table 18: Test Case RS-60
+_Table 18: Test Case RS-60_
 
 ==== RS-70
 
@@ -582,7 +582,7 @@ ____
 |RS-70-R60 (<<_BR-REG-10,BR-REG-20>>) |Information about the procurement procedure MIGHT be provided | |N/A |N/A
 |===
 
-.Table 19: Test Case RS-70
+_Table 19: Test Case RS-70_
 
 ==== RS-80
 
@@ -615,7 +615,7 @@ ____
 |RS-80-R70 (<<_BR-REG-10,BR-REG-20>>) |Information about the procurement procedure MIGHT be provided | |N/A |N/A
 |===
 
-.Table 20: Test Case RS-80
+_Table 20: Test Case RS-80_
 
 ==== RS-90
 
@@ -645,7 +645,7 @@ ____
 |RS-90-R60 (<<BR-SC-30,BR-SC-30]>>) |Information about the procurement procedure MIGHT be provided | |N/A |N/A
 |===
 
-.Table 21: Test Case RS-90
+_Table 21: Test Case RS-90_
 
 ==== RS-100
 
@@ -678,7 +678,7 @@ ____
 |RS-100-R70 (<<BR-SC-30,BR-SC-30]>>) |Information about the procurement procedure MIGHT be provided | |N/A |N/A
 |===
 
-.Table 22: Test Case RS-100
+_Table 22: Test Case RS-100_
 
 ==== RS-110
 
@@ -710,7 +710,7 @@ ____
 |RS-110-R80 (<<BR-SC-30,BR-SC-30]>>) |Information about the procurement procedure MIGHT be provided | |N/A |N/A
 |===
 
-.Table 23: Test Case RS-110
+_Table 23: Test Case RS-110_
 
 ==== RS-120
 
@@ -745,7 +745,7 @@ ____
 |RS-120-R90 (<<BR-SC-30,BR-SC-30]>>) |Information about the procurement procedure MIGHT be provided | |N/A |N/A
 |===
 
-.Table 24: Test Case RS-120
+_Table 24: Test Case RS-120_
 
 ==== RS-130
 
@@ -772,7 +772,7 @@ ____
 |RS-130-R50 (<<_BR-REG-10,BR-REG-20>>) |Information about the procurement procedure MIGHT be provided | |N/A |N/A
 |===
 
-.Table 25: Test Case RS-130
+_Table 25: Test Case RS-130_
 
 ==== RS-140
 
@@ -802,7 +802,7 @@ ____
 |RS-140-R60 (<<_BR-REG-10,BR-REG-20>>) |Information about the procurement procedure MIGHT be provided | |N/A |N/A
 |===
 
-.Table 26: Test Case RS-140
+_Table 26: Test Case RS-140_
 
 ==== RS-150
 
@@ -829,7 +829,7 @@ ____
 |RS-150-R50 (<<BR-SC-30,BR-SC-30]>>) |Information about the procurement procedure MIGHT be provided | |N/A |N/A
 |===
 
-.Table 27: Test Case RS-150
+_Table 27: Test Case RS-150_
 
 ==== RS-160
 
@@ -859,7 +859,7 @@ ____
 |RS-160-R60 (<<BR-SC-30,BR-SC-30]>>) |Information about the procurement procedure MIGHT be provided | |N/A |N/A
 |===
 
-.Table 28: Test Case RS-160
+_Table 28: Test Case RS-160_
 
 ==== RS-170
 
@@ -888,7 +888,7 @@ ____
 |RS-170-R70 (<<BR-SC-30,BR-SC-30]>>) |Information about the procurement procedure MIGHT be provided | |N/A |N/A
 |===
 
-.Table 29: Test Case RS-170
+_Table 29: Test Case RS-170_
 
 ==== RS-180
 
@@ -920,7 +920,7 @@ ____
 |RS-180-R80 (<<BR-SC-30,BR-SC-30]>>) |Information about the procurement procedure MIGHT be provided | |N/A |N/A
 |===
 
-.Table 30: Test Case RS-180
+_Table 30: Test Case RS-180_
 
 ==== RS-190
 
@@ -947,7 +947,7 @@ Other entity (relied upon): Entity on which the main contractor, the group or an
 |RS-190-R50 (<<_BR-REG-10,BR-REG-20>>) |Information about the procurement procedure MIGHT be provided | |N/A |N/A
 |===
 
-.Table 31: Test Case RS-190
+_Table 31: Test Case RS-190_
 
 ==== RS-200
 
@@ -977,7 +977,7 @@ Other entity (relied upon): Entity on which the main contractor, the group or an
 |RS-200-R60 (<<_BR-REG-10,BR-REG-20>>) |Information about the procurement procedure MIGHT be provided | |N/A |N/A
 |===
 
-.Table 32: Test Case RS-200
+_Table 32: Test Case RS-200_
 
 ==== RS-210
 
@@ -1006,7 +1006,7 @@ Other entity (relied upon): Entity on which the main contractor, the group or an
 |RS-210-R70 (<<BR-SC-30,BR-SC-30]>>) |Information about the procurement procedure MIGHT be provided | |N/A |N/A
 |===
 
-.Table 33: Test Case RS-210
+_Table 33: Test Case RS-210_
 
 ==== RS-220
 
@@ -1036,7 +1036,7 @@ Other entity (relied upon): Entity on which the main contractor, the group or an
 |RS-220-R60 (<<BR-SC-30,BR-SC-30]>>) |Information about the procurement procedure MIGHT be provided | |N/A |N/A
 |===
 
-.Table 34: Test Case RS-220
+_Table 34: Test Case RS-220_
 
 ==== RS-230
 
@@ -1065,7 +1065,7 @@ Other entity (relied upon): Entity on which the main contractor, the group or an
 |RS-230-R70 (<<BR-SC-30,BR-SC-30]>>) |Information about the procurement procedure MIGHT be provided | |N/A |N/A
 |===
 
-.Table 35: Test Case RS-230
+_Table 35: Test Case RS-230_
 
 ==== RS-240
 
@@ -1097,7 +1097,7 @@ Other entity (relied upon): Entity on which the main contractor, the group or an
 |RS-240-R80 (<<BR-SC-30,BR-SC-30]>>) |Information about the procurement procedure MIGHT be provided | |N/A |N/A
 |===
 
-.Table 36: Test Case RS-240
+_Table 36: Test Case RS-240_
 
 ==== RS-250
 
@@ -1123,7 +1123,7 @@ Other entity (not relied upon): Entity on which the main contractor, the group o
 |RS-250-R40 (<<_BR-REG-10,BR-REG-20>>) |Information about the procurement procedure MIGHT be provided | |N/A |N/A
 |===
 
-.Table 37: Test Case RS-250
+_Table 37: Test Case RS-250_
 
 ==== RS-260
 
@@ -1151,7 +1151,7 @@ Other entity (not relied upon): Entity on which the main contractor, the group o
 |RS-260-R50 (<<_BR-REG-10,BR-REG-20>>) |Information about the procurement procedure MIGHT be provided | |N/A |N/A
 |===
 
-.Table 38: Test Case RS-260
+_Table 38: Test Case RS-260_
 
 ==== RS-270
 
@@ -1178,7 +1178,7 @@ Other entity (not relied upon): Entity on which the main contractor, the group o
 |RS-270-R50 (<<BR-SC-30,BR-SC-30]>>) |Information about the procurement procedure MIGHT be provided | |N/A |N/A
 |===
 
-.Table 39: Test Case RS-270
+_Table 39: Test Case RS-270_
 
 ==== RS-280
 
@@ -1206,7 +1206,7 @@ Other entity (not relied upon): Entity on which the main contractor, the group o
 |RS-280-R50 (<<BR-SC-30,BR-SC-30]>>) |Information about the procurement procedure MIGHT be provided | |N/A |N/A
 |===
 
-.Table 40: Test Case RS-280
+_Table 40: Test Case RS-280_
 
 ==== RS-290
 
@@ -1233,7 +1233,7 @@ Other entity (not relied upon): Entity on which the main contractor, the group o
 |RS-290-R50 (<<BR-SC-30,BR-SC-30]>>) |Information about the procurement procedure MIGHT be provided | |N/A |N/A
 |===
 
-.Table 41: Test Case RS-290
+_Table 41: Test Case RS-290_
 
 ==== RS-300
 
@@ -1262,7 +1262,7 @@ Other entity (not relied upon): Entity on which the main contractor, the group o
 |RS-300-R60 (<<BR-SC-30,BR-SC-30]>>) |Information about the procurement procedure MIGHT be provided | |N/A |N/A
 |===
 
-.Table 42: Test Case RS-300
+_Table 42: Test Case RS-300_
 
 === List of Business Rules
 
@@ -1366,7 +1366,7 @@ ____
 |<<RS-300,RS-300>>  | | |- |- | | |- |- |- | | |- |-
 |===
 
-.Table 43: ESPDResponse - Test Cases and Business Rules
+_Table 43: ESPDResponse - Test Cases and Business Rules_
 
 == Common Business Rules
 
@@ -1403,7 +1403,7 @@ Then
 
 |===
 
-.Table 44: BR-COM-10
+_Table 44: BR-COM-10_
 
 ==== BR-COM-10-S10
 
@@ -1424,7 +1424,7 @@ Then
 |- | |*No Schematron rule can be implemented.*
 |===
 
-.Table 45: BR-COM-10-S10
+_Table 45: BR-COM-10-S10_
 
 ==== BR-COM-10-S20
 
@@ -1445,7 +1445,7 @@ Then
 |- | |*No Schematron rule can be implemented.*
 |===
 
-.Table 46: BR-COM-10-S20
+_Table 46: BR-COM-10-S20_
 
 ==== BR-COM-10-S30
 
@@ -1466,7 +1466,7 @@ Then
 |- | |*No Schematron rule can be implemented.*
 |===
 
-.Table 47: BR-COM-10-S30
+_Table 47: BR-COM-10-S30_
 
 == Common ESPDRequest Rules
 
@@ -1578,7 +1578,7 @@ ____
 
 |===
 
-.Table 48: BR-REQ-20
+_Table 48: BR-REQ-20_
 
 === BR-REQ-30
 
@@ -1616,7 +1616,7 @@ ____
 |The Business Rules listed within 14 Tendering Criterion General Rules are general to all TenderingCriterion. | |
 |===
 
-.Table 49: BR-REQ-30
+_Table 49: BR-REQ-30_
 
 ==== BR-REQ-30-S10
 
@@ -1635,7 +1635,7 @@ ____
 |- | |*No Schematron rule can be implemented*
 |===
 
-.Table 50: BR-REQ-30-S10
+_Table 50: BR-REQ-30-S10_
 
 ==== BR-REQ-30-S20
 
@@ -1654,7 +1654,7 @@ ____
 |- | |*No Schematron rule can be implemented*
 |===
 
-.Table 51: BR-REQ-30-S20
+_Table 51: BR-REQ-30-S20_
 
 === BR-REQ-40
 
@@ -1692,7 +1692,7 @@ ____
 |The Business Rules listed within 14 Tendering Criterion General Rules are general to all TenderingCriterion. | |
 |===
 
-.Table 52: BR-REQ-40
+_Table 52: BR-REQ-40_
 
 //[#_BR-REG-10 .anchor]##
 
@@ -1740,7 +1740,7 @@ ____
 |
 |===
 
-.Table 55: BR-SC-10
+_Table 55: BR-SC-10_
 
 === BR-SC-20
 
@@ -1766,7 +1766,7 @@ ____
 |- | |*No Schematron rule can be implemented* |
 |===
 
-.Table 56: BR-SC-20
+_Table 56: BR-SC-20_
 
 === BR-SC-30
 
@@ -1809,7 +1809,7 @@ ____
 |Same business rules as BR-SC-10. | | |
 |===
 
-.Table 57: BR-SC-30
+_Table 57: BR-SC-30_
 
 == Two-phased Procedures Rules
 
@@ -1835,7 +1835,7 @@ ____
 |Defining the type of weighting and description is mandatory when it is two-phased procedure. | |*No Schematron rule can be implemented*
 |===
 
-.Table 58: BR-2P-10
+_Table 58: BR-2P-10_
 
 ==== BR-2P-10-S10
 
@@ -1895,7 +1895,7 @@ Then, /cac:TenderingCriterion /cbc:EvaluationMethodTypeCode != WEIGHTED or not i
 
 |===
 
-.Table 59: BR-2P-10-S10
+_Table 59: BR-2P-10-S10_
 
 ==== BR-2P-10-S20
 
@@ -1931,7 +1931,7 @@ Then, Weight value cannot be provided: /cac:TenderingCriterion/cbc:WeightNumeric
 
 |===
 
-.Table 60: BR-2P-10-S10
+_Table 60: BR-2P-10-S10_
 
 == Common ESPDResponse Rules
 
@@ -2138,7 +2138,7 @@ ____
 
 |===
 
-.Table 61: BR-RESP-10
+_Table 61: BR-RESP-10_
 
 === BR-RESP-20
 
@@ -2186,7 +2186,7 @@ ____
 
 |===
 
-.Table 62: BR-RESP-20
+_Table 62: BR-RESP-20_
 
 == Not registered pre-qualification system Rules
 
@@ -2236,7 +2236,7 @@ ____
 |
 |===
 
-.Table 63: BR-RESP-30
+_Table 63: BR-RESP-30_
 
 === BR-RESP-40 (role different to OENRON)
 
@@ -2287,9 +2287,9 @@ ____
 |
 |===
 
-.Table 64: BR-RESP-40
+_Table 64: BR-RESP-40_
 
-[#_BR-RESP-90_(role_OENRON) .anchor]##
+[#_BR-RESP-90_(role_OENRON) .anchor]#
 
 == Registered pre-qualification system Rules
 
@@ -2329,7 +2329,7 @@ ____
 |Same business rules as BR-RESP-30 as it works as a Criterion. | | |
 |===
 
-.Table 65: BR-RESP-50
+_Table 65: BR-RESP-50_
 
 === BR-RESP-60
 
@@ -2365,7 +2365,7 @@ ____
 |Same business rules as BR-RESP-30 | | |
 |===
 
-.Table 66: BR-RESP-60
+_Table 66: BR-RESP-60_
 
 ==== BR-RESP-60-S10
 
@@ -2397,7 +2397,7 @@ ____
 |*No Schematron rule can be implemented* | | |
 |===
 
-.Table 67: BR-RESP-60-S10
+_Table 67: BR-RESP-60-S10_
 
 ==== BR-RESP-60-S20
 
@@ -2429,7 +2429,7 @@ ____
 |*No Schematron rule can be implemented* | | |
 |===
 
-.Table 68: BR-RESP-60-S20
+_Table 68: BR-RESP-60-S20_
 
 === BR-RESP-70
 
@@ -2455,7 +2455,7 @@ ____
 |Same business rules as BR-RESP-30 | | |
 |===
 
-.Table 69: BR-RESP-70
+_Table 69: BR-RESP-70_
 
 ==== BR-RESP-70-S10
 
@@ -2477,7 +2477,7 @@ ____
 |*No Schematron rule can be implemented* | | |
 |===
 
-.Table 70: BR-RESP-70-S10
+_Table 70: BR-RESP-70-S10_
 
 ==== BR-RESP-70-S20
 
@@ -2499,7 +2499,7 @@ ____
 |*No Schematron rule can be implemented* | | |
 |===
 
-.Table 71: BR-RESP-70-S20
+_Table 71: BR-RESP-70-S20_
 
 === BR-RESP-80
 
@@ -2529,7 +2529,7 @@ ____
 |See scenarios BR-RESP-80-S10 and BR-RESP-80-S20. | | |
 |===
 
-.Table 72: BR-RESP-80
+_Table 72: BR-RESP-80_
 
 ==== BR-RESP-80-S10
 
@@ -2579,7 +2579,7 @@ Then, all selection criterion must have responses.
 |
 |===
 
-.Table 73: BR-RESP-80-S10
+_Table 73: BR-RESP-80-S10_
 
 ==== BR-RESP-80-S20
 
@@ -2629,7 +2629,7 @@ Then, selection criterion does not need to have responses.
 |
 |===
 
-.Table 74: BR-RESP-80-S20
+_Table 74: BR-RESP-80-S20_
 
 == Lots Rules
 
@@ -2685,7 +2685,7 @@ Then, its /cac:TenderingCriterionResponse /cbc:ResponseID must exist within /cac
 |
 |===
 
-.Table 75: BR-LOT-10
+_Table 75: BR-LOT-10_
 
 === BR-LOT-20
 
@@ -2716,7 +2716,7 @@ Then, its /cac:TenderingCriterionResponse /cbc:ResponseID must exist within /cac
 |The Business Rules listed within 15 Tendering Criterion Self-contained Rules are general to all TenderingCriterion in self-contained qualification applications. | | |
 |===
 
-.Table 76: BR-LOT-20
+_Table 76: BR-LOT-20_
 
 === BR-LOT-30
 
@@ -2746,7 +2746,7 @@ Information about lots specified is two different sets of the XSD schema in orde
 |See <<BR-LOT-30-S10,BR-LOT-30-S10>> and <<BR-LOT-30-S20,BR-LOT-30-S10>> | | |
 |===
 
-.Table 77: BR-LOT-30
+_Table 77: BR-LOT-30_
 
 ==== BR-LOT-30-S10
 
@@ -2781,7 +2781,7 @@ ____
 |
 |===
 
-.Table 78: BR-LOT-30-S10
+_Table 78: BR-LOT-30-S10_
 
 ==== BR-LOT-30-S20
 
@@ -2804,7 +2804,7 @@ ____
 |- | |*No Schematron rule can be implemented as it works as any other Tendering Criterion.* |
 |===
 
-.Table 79: BR-LOT-30-S20
+_Table 79: BR-LOT-30-S20_
 
 === BR-LOT-40
 
@@ -2834,7 +2834,7 @@ If, cbc:ExpectedID is included, it must be one of the Lots identified within /ca
 |
 |===
 
-.Table 80: BR-LOT-40
+_Table 80: BR-LOT-40_
 
 == Specific Lead Role Rules
 
@@ -2886,7 +2886,7 @@ ____
 |
 |===
 
-.Table 81: BR-LEAD-10
+_Table 81: BR-LEAD-10_
 
 ==== BR-LEAD-10-S10
 
@@ -2926,7 +2926,7 @@ ____
 |
 |===
 
-.Table 82: BR-LEAD-10-S10
+_Table 82: BR-LEAD-10-S10_
 
 ==== BR-LEAD-10-S20
 
@@ -2966,7 +2966,7 @@ ____
 |
 |===
 
-.Table 83: BR-LEAD-10-S20
+_Table 83: BR-LEAD-10-S20_
 
 ==== BR-LEAD-10-S30
 
@@ -3011,7 +3011,7 @@ ____
 |
 |===
 
-.Table 84: BR-LEAD-10-S30
+_Table 84: BR-LEAD-10-S30
 
 == Tendering Criterion General Rules
 
@@ -3061,7 +3061,7 @@ cac:TenderingCriterion/cac:TenderingCriterionPropertyGroup
 
 |===
 
-.Table 86: Tendering Criterion structure and XSD
+_Table 86: Tendering Criterion structure and XSD_
 
 === Level 1: Tendering Criterion
 
@@ -3245,7 +3245,7 @@ ____
 
 |===
 
-.Table 87: Tendering Criterion Business Rules
+_Table 87: Tendering Criterion Business Rules_
 
 === Level 2: Legislation
 
@@ -3314,7 +3314,7 @@ ____
 
 |===
 
-.Table 88: Legislation Business Rules
+_Table 88: Legislation Business Rules_
 
 === Tendering Criterion Property Group
 
@@ -3429,7 +3429,7 @@ ____
 
 |===
 
-.Table 89: Tendering Criterion Property Group Business Rules
+_Table 89: Tendering Criterion Property Group Business Rules_
 
 === Tendering Criterion Property
 
@@ -3535,7 +3535,7 @@ ____
 
 |===
 
-.Table 90: Tendering Criterion Property Business Rules
+_Table 90: Tendering Criterion Property Business Rules_
 
 == Tendering Criterion Self-contained Rules
 
@@ -3561,7 +3561,7 @@ Information about the national sub-criteria defined by the Member States.
 
 |===
 
-.Table 92: Tendering Criterion structure and XSD
+_Table 92: Tendering Criterion structure and XSD_
 
 == Tendering Criterion Response Rules
 
@@ -3628,7 +3628,7 @@ ____
 
 |===
 
-.Table 93: Tendering Criterion Response Business Rules
+_Table 93: Tendering Criterion Response Business Rules_
 
 === Level 2: Response Value
 
@@ -3732,7 +3732,7 @@ Then, its /cac: SubsidiaryTenderingCriterionPropertyGroup /cbc:ID cannot exist w
 
 |===
 
-.Table 94: Response Value Business Rules
+_Table 94: Response Value Business Rules_
 
 [start=8]
 . This table lists the relationship between data type and response data type:
@@ -3765,7 +3765,7 @@ Then, its /cac: SubsidiaryTenderingCriterionPropertyGroup /cbc:ID cannot exist w
 |TIME |../cac:ResponseValue/cbc:ResponseTime
 |===
 
-.Table 95: Matching between data type and response
+_Table 95: Matching between data type and response_
 
 
 === Level 2: Evidence Supplied
@@ -3799,7 +3799,7 @@ Severity: ERROR
 
 |===
 
-.Table 96: Evidence Supplied Business Rules
+_Table 96: Evidence Supplied Business Rules_
 
 == Other Common Rules
 

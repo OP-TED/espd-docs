@@ -2144,9 +2144,9 @@ An item of evidence is provided as proof for a given QUESTION answer or QUESTION
 the related answer should be maintained in the data structure. For example, in the figure below, 
 the evidence is included inside the QUESTION_SUBGROUP related to a specific occurrence of conviction. 
 
-image:Evidence_for_Criterion_C1_EG_crime-org.jpg[Evidence for Criterion C1 EG crime-org,width=650,height=500]
+//image:Evidence_for_Criterion_C1_EG_crime-org.jpg[Evidence for Criterion C1 EG crime-org,width=650,height=500]
 
-_Figure 244. Evidence for Criterion C1 EG crime-org_
+//_Figure 244. Evidence for Criterion C1 EG crime-org_
 
 == Lot Management in the ESPD Response  
 
@@ -2154,6 +2154,6 @@ In the ESPD, a Response is provided for one Economic Operator (EO) and for one l
 
 In the ESPD Response, the UBL 2.3 element *cac:ProcurementProjectLot* is used under the root element *QualificationApplicationResponse* to define the related lot or group of lots the EO is answering to for a given Response. Therefore, the corresponding list of Selection Criteria and QUESTION_SUBGROUP (of REQUIREMENT_GROUP) will be extracted from the Request accordingly. 
 
-See also section "xref:2.5_Lot_Management_in_ESPD_Request.adoc[2.5 Lot Management in ESPD Request]". 
+See also see https://docs.ted.europa.eu/ESPD-EDM/latest/technical/tech_request.html#lot_management[Lot Management in the ESPD Request]". 
 
 include::partial$feedback.adoc[]
