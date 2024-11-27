@@ -49,7 +49,7 @@ The full documentation for v4.0.0 can be found on the https://docs.ted.europa.eu
 The Conceptual model was aligned with ePO and eForms and a new layout is proposed.
 
 * **Added cbc:MinimumAmount to cac::TenderingCriterionProperty**footnote:[JIRA TEDSPD-378]
-** Adding the cbc:MinimumAmmount to reflect the corresponding data type.
+** Adding the cbc:MinimumAmount to reflect the corresponding data type.
 * **GitHub issue https://github.com/OP-TED/ESPD-EDM/issues/404[#404] - ProcurementProjectLot Identifier duplication removed**
 ** Fix of the Enterprise Architect diagrams.
 * **GitHub issue https://github.com/OP-TED/ESPD-EDM/issues/408[#408] - UBL term: cbc:CopyIndicator definition harmonized with the documentation.**

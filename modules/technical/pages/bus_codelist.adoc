@@ -41,7 +41,7 @@ The table below lists the code lists used in the ESPD documents and the location
 |CriterionElementType |DG GROW (European Commission) |See element cac:TenderingCriterion/{zwsp}cac:TenderingCriterionPropertyGroup/{zwsp}cac:TenderingCriterionProperty/{zwsp}cbc:TypeCode of the UBL-2.3 XSD QualificationApplicationRequest Schema
 |Currency |Publications Office of the EU |All UBL-2.3 elements of type cbc:Amount in its attribute @currencyID
 |DocRefContentType |DG GROW (European Commission) |UBL-2.3 element cac:AdditionalDocumentReference/{zwsp}cbc:DocumentTypeCode. See XML example in section *2.5 EU and notice publications*
-|EOIDType |DG GROW (European Commission) |Attribute cac:PartyIdentification/cbc:ID@SchemeID. See 'Requirement" boxes in section *6.6 Economic Operator*
+|EOID Type |DG GROW (European Commission) |Attribute cac:PartyIdentification/cbc:ID@SchemeID. See 'Requirement" boxes in section *6.6 Economic Operator*
 |EconomicOperatorSize |Publications Office of the EU |Used in the UBL-2.3 element cac:EconomicOperatorParty/{zwsp}cac:QualifyingParty/{zwsp}cbc:IndustryClassificationCode to specify the size of the economic operator.
 |EoRoleType |DG GROW (European Commission) |Element cac:EconomicOperatorRole/{zwsp}cbc:RoleCode.
 |FinancialRatioType |BACH Banque de France |Used in the REQUIREMENT "Ratio Type" of the Criterion  *finan-rat*. See data structure for this criterion in the ESPD Request link:{url-tree}/codelists/ESPD-criterion.xlsx[ESPD-criterion].

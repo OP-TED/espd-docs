@@ -18,7 +18,7 @@ image:Selection_criteria_classification.jpg[Selection criteria classification,wi
 
 _Figure 90. Selection criteria classification_
 
-= Lot Management approach for Selection Criteria
+== Lot Management approach for Selection Criteria
 
 For Selection Criteria, the buyer may specify the Lots that apply to each selection criteria by using the element *cac:ProcurementProjectLotReference* inside the element *cac:TenderingCriterion*. 
 
@@ -495,7 +495,7 @@ _Figure 106. 'General Yearly Turnovers' buyer mock-up for a a common threshold f
 
 image:General_Yearly_Turnovers_CA mock-up_ commonThreshold.jpg[General Yearly Turnovers buyer mock-up for a a common threshold for all years requested,width=522,height=237]
 
-_Figure 107. 'General Yearly Turnovers' Buyer mock-up when applaying different turnover per year requested._
+_Figure 107. 'General Yearly Turnovers' Buyer mock-up when applying different turnover per year requested._
 
 === Mock-up - economic operator perspective
 
@@ -1578,7 +1578,7 @@ image:Economic_operator_indemnity_insurance_mock-up.jpg['Economic operator indem
 
 _Figure 142. 'Economic operator indemnity insurance' EO mock-up_
 
-Note that the EO should provide an answer (ESPD Response) for every Lot that tenders. Meaning that if the Selection Criteria applies to different Lots (as can be read in the mockup), the EO should sumbit the data for the number of lots that apply.
+Note that the EO should provide an answer (ESPD Response) for every Lot that tenders. Meaning that if the Selection Criteria applies to different Lots (as can be read in the mockup), the EO should submit the data for the number of lots that apply.
 
 === Data Structure
 
@@ -1776,7 +1776,7 @@ Thus, for this criterion the buyer  will be able to:
 . In the ESPDResponse, the EO will be required to provide, for each requirement, the amount and currency.
 . When the procedure includes more than one Lot: The buyer  can specify the Lots the criteria applies to.
 
-Notice that in the mock-up below the first requirement is about an *economic of financial requirement* whilst the second requirement is about a *rating requirement*. See data structure and XML example for more details on this distiction.
+Notice that in the mock-up below the first requirement is about an *economic of financial requirement* whilst the second requirement is about a *rating requirement*. See data structure and XML example for more details on this distinction.
 
 === Mock-up - economic operator perspective
 
@@ -1786,7 +1786,7 @@ image:Other_economic_financial_requirements_EO mock-up.jpg['Other economic or fi
 
 _Figure 148. 'Other economic or financial requirements' EO mock-up_
 
-Note that the EO should provide an answer (ESPD Response) for every Lot that tenders. Meaning that if the Selection Criteria applies to different Lots (as can be read in the mockup), the EO should sumbit the data for the number of lots that apply.
+Note that the EO should provide an answer (ESPD Response) for every Lot that tenders. Meaning that if the Selection Criteria applies to different Lots (as can be read in the mockup), the EO should submit the data for the number of lots that apply.
 
 === Data Structure
 
@@ -2045,7 +2045,7 @@ The data structure for references caters for:
 [arabic]
 . The definition of multiple national criteria associated to the EU criterion specified in e-Certis;
 . The creation of the Legislation component associated to the EU criterion;
-. One group of REQUIREMENT(s) for the buyer to specify the general requirements for this criterion (e.g. Lots the references apply to, minimun number of references);
+. One group of REQUIREMENT(s) for the buyer to specify the general requirements for this criterion (e.g. Lots the references apply to, minimum number of references);
 . Multiple groups (cardinality 1..n) of questions for the economic operator to answer; which in this case are multiple references to works about which the EO has to provide information and the lots the EO tenders to related to the references.
 
 image:References_criterion_data_structure.jpg['References' criterion data structure,width=505,height=216]
@@ -2250,7 +2250,7 @@ The following elements can be read in the example:
 . The description of the work executed.
 . The Total Amount of the Reference, including the amounts that were specific to (share of) other EOs participating in the execution of the work. Notice that the attribute currencyID is set to "EUR".
 . The activity of this economic operator in this work.
-. The amount specific to the contribution of this EO in this Reference. Notice that the specific and the total amounts are identical. The EO proabably executed the work alone, as a sole contractor.
+. The amount specific to the contribution of this EO in this Reference. Notice that the specific and the total amounts are identical. The EO probably executed the work alone, as a sole contractor.
 . Duration of the execution of the work.
 . The level of confidentiality of the information regarding this Reference. Confidential references provided by the EO cannot be made accessible by the buyer to third parties.
 . The name of the recipient of the work.
@@ -2272,7 +2272,7 @@ The  ESPD, supplies data structures facilitating a greater semantic interoperabi
 ** Technicians or technical bodies for quality control (qual-cont-tech)
 ** For works contracts: technicians or technical bodies to carry out the work (work-tech)
 
-* One data structure to define a miscellania of five criteria that can share the same data structure:
+* One data structure to define a miscellanea of five criteria that can share the same data structure:
 
 ** Technical facilities and measures for ensuring quality (qual-facil)
 ** Study and research facilities (research-fac)
@@ -2717,7 +2717,7 @@ _Criterion "Technical facilities and measures for ensuring quality" (ESPD-Reques
 
 (The figure below is defined in the the tab ''SC_Abilities_3 (Education)'' of the link:{url-tree}/codelists/ESPD-criterion.xlsx[ESPD-criterion] spread-sheet).
 
-image:abilitites-education-datastructure.png.jpg[Abilities (III) (Education)' criterion data structure,width=566,height=313]
+image:abilities-education-datastructure.png.jpg[Abilities (III) (Education)' criterion data structure,width=566,height=313]
 
 _Figure 171. 'Abilities (III) (Education)' criterion data structure_
 
@@ -2945,7 +2945,7 @@ _Criterion "Educational and professional qualifications" ESPD-Request)_
 
 === Mock-ups - buyer perspective
 
-The buyer has selected the 'allowance of checks' (in link:{url-tree}/codelists/ESPD-criterion.xlsx[ESPD-criterion] will be shown as "Special requierement check", spec-req-check) option in a ESPD Request builder software application GUI. This software application will create a criterion of this in the ESPD Request XML instance with zero, one or more REQUIREMENT(s) by the EO.
+The buyer has selected the 'allowance of checks' (in link:{url-tree}/codelists/ESPD-criterion.xlsx[ESPD-criterion] will be shown as "Special requirement check", spec-req-check) option in a ESPD Request builder software application GUI. This software application will create a criterion of this in the ESPD Request XML instance with zero, one or more REQUIREMENT(s) by the EO.
 
 The buyer (CA) can specify none, one or several REQUIREMENT(s). In this case a REQUIREMENT is a descriptive text provided by the buyer where the criterion is better explained or where certain conditions relating to the criterion. In this example the buyer is specifying which type of premises it wants to check and for which reasons.
 

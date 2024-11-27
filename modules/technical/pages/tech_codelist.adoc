@@ -601,7 +601,7 @@ The data type expected for this code is URL following the *ESCO* taxonomy identi
 |*Name* |*_ResponseDataType_*
 |*Code list type* |Technical
 |*Maintainer* |ESPD Team
-|*Description* |Contains identifiers used to descrive data type expected in criteria elements.
+|*Description* |Contains identifiers used to describe data type expected in criteria elements.
 [cols=","]
 !===
 !*ShortName* !ResponseDataType

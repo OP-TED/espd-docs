@@ -60,7 +60,7 @@ Contains the ubl 2.3. schema, a direct download from the UBL site.
 
 
 ===== The Validation folder
-The validation folder contains the schematron and xsl files for the validation of the ESPD Request and Response xml files as well a link to the “testbed”, an online facility for validating the two xml documents. The procedure for updating the schematron files can be found via this link.
+The validation folder contains the schematron and xsl files for the validation of the ESPD Request and Response xml files as well a link to the “Testbed”, an online facility for validating the two xml documents. The procedure for updating the schematron files can be found via this link.
 
 
 

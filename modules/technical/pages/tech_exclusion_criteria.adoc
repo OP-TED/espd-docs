@@ -20,7 +20,7 @@ As suggested in section "Criteria Data Structures" criteria may be grouped in se
 
 Each branch in this 'criteria classification' corresponds to one data structure that is identical for all the leaves under that branch. 
 
-image:Exclusion_criteria_clasification.jpg[Exclusion criteria clasification,width=510,height=374]
+image:Exclusion_criteria_classification.jpg[Exclusion criteria classification,width=510,height=374]
 
 _Figure 49. Exclusion criteria classification_
 
@@ -38,7 +38,7 @@ The label ''Convictions'' groups all the criteria with identical data structures
 [NOTE]
 _Note about the ESPD Service_
 
-In an initial phase, the European Commission provided an ESPD service to support the ESPD’s uptake. As announced in 2018, on 2 May 2019, the Commission’s ESPD service has been turned off. To reap the full benefit of an electronic ESPD, the integration with national eProcurement services and national databases is necessary. This will enable data reusability, default form pre-filling and data interexchange among different databases. In turn, buyers and suppliers will benefit from the automatism, making the application of the ESPD much easier and decreasing the data errors rates.
+In an initial phase, the European Commission provided an ESPD service to support the ESPD’s uptake. As announced in 2018, on 2 May 2019, the Commission’s ESPD service has been turned off. To reap the full benefit of an electronic ESPD, the integration with national eProcurement services and national databases is necessary. This will enable data reusability, default form pre-filling and data inter-exchange among different databases. In turn, buyers and suppliers will benefit from the automatism, making the application of the ESPD much easier and decreasing the data errors rates.
 
 
 === Data structure
@@ -209,7 +209,7 @@ _'Participation in a criminal organisation' conviction_
 . Pay attention to this type of QUESTION(s). It is intended to act as a *decision point*. If answered with *yes* (INDICATOR value = true) some additional questions will be asked to the economic operator. Thus the value of the code of the next sub-group (set to ONTRUE).
 . This property is a QUESTION, therefore a specific type of value will be expected from the economic operator in the ESPD Response (an INDICATOR, i.e. a 'boolean' value true/false, in this case).
 . The cbc:ValueDataType indicates the type of value that the buyer requires for this QUESTION. Therefore, in its answer (inside the ESPD Request document) the economic operator will have to use also an INDICATOR value (true/false). Otherwise the mechanism used to validate the ESPD Response should consider the XML instance as invalid (should be treated as a FATAL error).
-. Data structures defined by GROW are *re-usable*. This is specially the case (but not uniquelly) of the structure 'Is this information available electronically?' Notice that the UUID that identifies this structure is always the same in all the criteria that include it. Similarly structures that are reused in different criteria do have the same UUID (as they are the same). Beware that the group of properties (URI, Reference/Code, Issuer) will only be shown if the answer is 'Yes', thus the sub-group code ONTRUE.
+. Data structures defined by GROW are *re-usable*. This is specially the case (but not uniquely) of the structure 'Is this information available electronically?' Notice that the UUID that identifies this structure is always the same in all the criteria that include it. Similarly structures that are reused in different criteria do have the same UUID (as they are the same). Beware that the group of properties (URI, Reference/Code, Issuer) will only be shown if the answer is 'Yes', thus the sub-group code ONTRUE.
 
 [NOTE]
 ====
@@ -227,7 +227,7 @@ See formal requirements related to exclusion grounds in the link:http://wiki.ds.
 
 [cols=",",]
 |===
-|*REQUIREMENT* |*The buyer needs to be able to specify national exclusion criteria linked to one EU criterion as well as criteria particular for the procurement procedure. The economic operator, in the ESPD Response document, will have to responde "Yes" or "No" to each national criterion thus confirming that it in breach of the Law.*
+|*REQUIREMENT* |*The buyer needs to be able to specify national exclusion criteria linked to one EU criterion as well as criteria particular for the procurement procedure. The economic operator, in the ESPD Response document, will have to respond "Yes" or "No" to each national criterion thus confirming that it in breach of the Law.*
 |===
 
 See also the REQUIREMENT link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#tbr070-015[_tbr070-015_] about economic thresholds regarding unpaid taxes or social security obligations.
@@ -447,8 +447,8 @@ _Payment of Taxes (PoT)_
 . For this *ESPD Request Payment of Taxes* criterion, the Member State defined in e-Certis a *national REQUIREMENT* consisting in the specification of the '_threshold amount of debt that an economic operator have with the national Tax Agency_' (50 Euros in this example).
 . Notice that type of property used is REQUIREMENT. This entails that: a cbc:ValueDataType will be present indicating the type of value the buyer uses for this REQUIREMENT (e.g. AMOUNT, INDICATOR, DESCRIPTION, etc.; see the link:{url-tree}/codelists/gc/ResponseDataType.gc[Code List ResponseDataType], the values are the same for buyers REQUIREMENT(s) than for economic operator response values).
 . Beware that No answer is expected here from the economic operator (do not get confused by the presence of the cbc:ValueDataType, as said it is used by both the Buyer and the EO.
-. The value supplied by the buyer for this requirement (50 Euros, in this example). Notice that the currency is specified in the attibute currencyID of the cbc:Amount component.
-. The MS also allows the buyer the possibility of adding multiple additional textual requirements (in this case the Buyer uses this to explain that ''Beware that the national Tax Agency won't permit the existence of a debt, even if minimial, for two consecutive years'').
+. The value supplied by the buyer for this requirement (50 Euros, in this example). Notice that the currency is specified in the attribute currencyID of the cbc:Amount component.
+. The MS also allows the buyer the possibility of adding multiple additional textual requirements (in this case the Buyer uses this to explain that ''Beware that the national Tax Agency won't permit the existence of a debt, even if minimal, for two consecutive years'').
 . Again, no answer is expected here from the economic operator, as this is a REQUIREMENT issued by the buyer. Hence the element 'cbc:ValueDataTypeCode' contains the type of value of the requirement issued by the buyer.
 
 
@@ -1262,7 +1262,7 @@ The ESPD-EDM V2.1.1 *Extended ESPD* introduced and important feature: the MS can
 
 === Mock-up - economic operator perspective
 
-The figure below shows a fragment of a list of national criteria that a software application has captured from e-Certis. *Per each criterion* the economic operator has to specify whether it fulfills the Criterion or not and eventually provide references to online evidence.
+The figure below shows a fragment of a list of national criteria that a software application has captured from e-Certis. *Per each criterion* the economic operator has to specify whether it fulfils the Criterion or not and eventually provide references to online evidence.
 
 image:Purely_national_criteria_mockup_CA_perspective.jpg['Purely national criteria' mock-up - buyer perspective,width=500,height=350]
 

@@ -451,7 +451,7 @@ ____
 |Regulated or Self-contained ESPD | |/cbc:QualificationApplicationTypeCode is REGULATED | |
 |Divided into lots | |/cac:ProcurementProjectLot /cbc:ID is 0 (not divided into lots) | |
 |Pre-qualification system | |/cac:EconomicOperatorParty/cac:QualifyingParty/cac:Party /cac:PartyIdentification exist (registered on a national pre-qualification system) | |
-|EO Role | |/cac:EconomicOperatorParty/cac:EconomnicOperatorRole /cbc:RoleCode is SCLE (Sole contractor) | |
+|EO Role | |/cac:EconomicOperatorParty/cac:EconomicOperatorRole /cbc:RoleCode is SCLE (Sole contractor) | |
 
 |*List of rules* | | | |
 |*Rule ID* |*Rule* | |*Scenario ID* |*Scenarios*
@@ -477,7 +477,7 @@ ____
 |Regulated or Self-contained ESPD | |/cbc:QualificationApplicationTypeCode is SELFCONTAINED | |
 |Divided into lots | |/cac:ProcurementProjectLot /cbc:ID is 0 (not divided into lots) | |
 |Pre-qualification system | |/cac:EconomicOperatorParty/cac:QualifyingParty/cac:Party /cac:PartyIdentification not exist (not registered on a national pre-qualification system) | |
-|EO Role | |/cac:EconomicOperatorParty/cac:EconomnicOperatorRole /cbc:RoleCode is SCLE (Sole contractor) | |
+|EO Role | |/cac:EconomicOperatorParty/cac:EconomicOperatorRole /cbc:RoleCode is SCLE (Sole contractor) | |
 
 |*List of rules* | | | |
 |*Rule ID* |*Rule* | |*Scenario ID* |*Scenarios*
@@ -500,7 +500,7 @@ ____
 |Regulated or Self-contained ESPD | |/cbc:QualificationApplicationTypeCode is SELFCONTAINED | |
 |Divided into lots | |/cac:ProcurementProjectLot /cbc:ID is 0 (not divided into lots) | |
 |Pre-qualification system | |/cac:EconomicOperatorParty/cac:QualifyingParty/cac:Party /cac:PartyIdentification exist (registered on a national pre-qualification system) | |
-|EO Role | |/cac:EconomicOperatorParty/cac:EconomnicOperatorRole /cbc:RoleCode is SCLE (Sole contractor) | |
+|EO Role | |/cac:EconomicOperatorParty/cac:EconomicOperatorRole /cbc:RoleCode is SCLE (Sole contractor) | |
 
 |*List of rules* | | | |
 |*Rule ID* |*Rule* | |*Scenario ID* |*Scenarios*
@@ -526,7 +526,7 @@ ____
 |Regulated or Self-contained ESPD | |/cbc:QualificationApplicationTypeCode is SELFCONTAINED | |
 |Divided into lots | |/cac:ProcurementProjectLot /cbc:ID is not 0 (divided into lots) | |
 |Pre-qualification system | |/cac:EconomicOperatorParty/cac:QualifyingParty/cac:Party /cac:PartyIdentification not exist (not registered on a national pre-qualification system) | |
-|EO Role | |/cac:EconomicOperatorParty/cac:EconomnicOperatorRole /cbc:RoleCode is SCLE (Sole contractor) | |
+|EO Role | |/cac:EconomicOperatorParty/cac:EconomicOperatorRole /cbc:RoleCode is SCLE (Sole contractor) | |
 
 |*List of rules* | | | |
 |*Rule ID* |*Rule* | |*Scenario ID* |*Scenarios*
@@ -551,7 +551,7 @@ ____
 |Regulated or Self-contained ESPD | |/cbc:QualificationApplicationTypeCode is SELFCONTAINED | |
 |Divided into lots | |/cac:ProcurementProjectLot /cbc:ID is not 0 (divided into lots) | |
 |Pre-qualification system | |/cac:EconomicOperatorParty/cac:QualifyingParty/cac:Party /cac:PartyIdentification exist (registered on a national pre-qualification system) | |
-|EO Role | |/cac:EconomicOperatorParty/cac:EconomnicOperatorRole /cbc:RoleCode is SCLE (Sole contractor) | |
+|EO Role | |/cac:EconomicOperatorParty/cac:EconomicOperatorRole /cbc:RoleCode is SCLE (Sole contractor) | |
 
 |*List of rules* | | | |
 |*Rule ID* |*Rule* | |*Scenario ID* |*Scenarios*
@@ -580,7 +580,7 @@ ____
 |Divided into lots | |/cac:ProcurementProjectLot /cbc:ID is 0 (not divided into lots) | |
 |Pre-qualification system | |/cac:EconomicOperatorParty/cac:QualifyingParty/cac:Party /cac:PartyIdentification not exist (not registered on a national pre-qualification system) | |
 |EO Role | a|
-/cac:EconomicOperatorParty/cac:EconomnicOperatorRole /cbc:RoleCode is SCLE (Lead entity)
+/cac:EconomicOperatorParty/cac:EconomicOperatorRole /cbc:RoleCode is SCLE (Lead entity)
 
 /cbc:EconomicOperatorGroupName becomes compulsory
 
@@ -611,7 +611,7 @@ ____
 |Divided into lots | |/cac:ProcurementProjectLot /cbc:ID is 0 (not divided into lots) | |
 |Pre-qualification system | |/cac:EconomicOperatorParty/cac:QualifyingParty/cac:Party /cac:PartyIdentification exist (registered on a national pre-qualification system) | |
 |EO Role | a|
-/cac:EconomicOperatorParty/cac:EconomnicOperatorRole /cbc:RoleCode is SCLE (Lead entity)
+/cac:EconomicOperatorParty/cac:EconomicOperatorRole /cbc:RoleCode is SCLE (Lead entity)
 
 /cbc:EconomicOperatorGroupName becomes compulsory
 
@@ -645,7 +645,7 @@ ____
 |Divided into lots | |/cac:ProcurementProjectLot /cbc:ID is 0 (not divided into lots) | |
 |Pre-qualification system | |/cac:EconomicOperatorParty/cac:QualifyingParty/cac:Party /cac:PartyIdentification not exist (not registered on a national pre-qualification system) | |
 |EO Role | a|
-/cac:EconomicOperatorParty/cac:EconomnicOperatorRole /cbc:RoleCode is SCLE (Lead entity)
+/cac:EconomicOperatorParty/cac:EconomicOperatorRole /cbc:RoleCode is SCLE (Lead entity)
 
 /cbc:EconomicOperatorGroupName becomes compulsory
 
@@ -676,7 +676,7 @@ ____
 |Divided into lots | |/cac:ProcurementProjectLot /cbc:ID is 0 (not divided into lots) | |
 |Pre-qualification system | |/cac:EconomicOperatorParty/cac:QualifyingParty/cac:Party /cac:PartyIdentification exist (registered on a national pre-qualification system) | |
 |EO Role | a|
-/cac:EconomicOperatorParty/cac:EconomnicOperatorRole /cbc:RoleCode is SCLE (Lead entity)
+/cac:EconomicOperatorParty/cac:EconomicOperatorRole /cbc:RoleCode is SCLE (Lead entity)
 
 /cbc:EconomicOperatorGroupName becomes compulsory
 
@@ -710,7 +710,7 @@ ____
 |Divided into lots | |/cac:ProcurementProjectLot /cbc:ID is not 0 (divided into lots) | |
 |Pre-qualification system | |/cac:EconomicOperatorParty/cac:QualifyingParty/cac:Party /cac:PartyIdentification not exist (not registered on a national pre-qualification system) | |
 |EO Role | a|
-/cac:EconomicOperatorParty/cac:EconomnicOperatorRole /cbc:RoleCode is SCLE (Lead entity)
+/cac:EconomicOperatorParty/cac:EconomicOperatorRole /cbc:RoleCode is SCLE (Lead entity)
 
 /cbc:EconomicOperatorGroupName becomes compulsory
 
@@ -743,7 +743,7 @@ ____
 |Divided into lots | |/cac:ProcurementProjectLot /cbc:ID is not 0 (divided into lots) | |
 |Pre-qualification system | |/cac:EconomicOperatorParty/cac:QualifyingParty/cac:Party /cac:PartyIdentification exist (registered on a national pre-qualification system) | |
 |EO Role | a|
-/cac:EconomicOperatorParty/cac:EconomnicOperatorRole /cbc:RoleCode is SCLE (Lead entity)
+/cac:EconomicOperatorParty/cac:EconomicOperatorRole /cbc:RoleCode is SCLE (Lead entity)
 
 /cbc:EconomicOperatorGroupName becomes compulsory
 
@@ -779,7 +779,7 @@ ____
 |Divided into lots | |/cac:ProcurementProjectLot /cbc:ID is 0 (not divided into lots) | |
 |Pre-qualification system | |/cac:EconomicOperatorParty/cac:QualifyingParty/cac:Party /cac:PartyIdentification not exist (not registered on a national pre-qualification system) | |
 |EO Role | a|
-/cac:EconomicOperatorParty/cac:EconomnicOperatorRole /cbc:RoleCode is GM (Group member)
+/cac:EconomicOperatorParty/cac:EconomicOperatorRole /cbc:RoleCode is GM (Group member)
 
 /cbc:EconomicOperatorGroupName becomes compulsory
 
@@ -807,7 +807,7 @@ ____
 |Divided into lots | |/cac:ProcurementProjectLot /cbc:ID is 0 (not divided into lots) | |
 |Pre-qualification system | |/cac:EconomicOperatorParty/cac:QualifyingParty/cac:Party /cac:PartyIdentification exist (registered on a national pre-qualification system) | |
 |EO Role | a|
-/cac:EconomicOperatorParty/cac:EconomnicOperatorRole /cbc:RoleCode is GM (Group member)
+/cac:EconomicOperatorParty/cac:EconomicOperatorRole /cbc:RoleCode is GM (Group member)
 
 /cbc:EconomicOperatorGroupName becomes compulsory
 
@@ -838,7 +838,7 @@ ____
 |Divided into lots | |/cac:ProcurementProjectLot /cbc:ID is 0 (not divided into lots) | |
 |Pre-qualification system | |/cac:EconomicOperatorParty/cac:QualifyingParty/cac:Party /cac:PartyIdentification not exist (not registered on a national pre-qualification system) | |
 |EO Role | a|
-/cac:EconomicOperatorParty/cac:EconomnicOperatorRole /cbc:RoleCode is GM (Group member)
+/cac:EconomicOperatorParty/cac:EconomicOperatorRole /cbc:RoleCode is GM (Group member)
 
 /cbc:EconomicOperatorGroupName becomes compulsory
 
@@ -866,7 +866,7 @@ ____
 |Divided into lots | |/cac:ProcurementProjectLot /cbc:ID is 0 (not divided into lots) | |
 |Pre-qualification system | |/cac:EconomicOperatorParty/cac:QualifyingParty/cac:Party /cac:PartyIdentification exists (registered on a national pre-qualification system) | |
 |EO Role | a|
-/cac:EconomicOperatorParty/cac:EconomnicOperatorRole /cbc:RoleCode is GM (Group member)
+/cac:EconomicOperatorParty/cac:EconomicOperatorRole /cbc:RoleCode is GM (Group member)
 
 /cbc:EconomicOperatorGroupName becomes compulsory
 
@@ -897,7 +897,7 @@ ____
 |Divided into lots | |/cac:ProcurementProjectLot /cbc:ID is not 0 (divided into lots) | |
 |Pre-qualification system | |/cac:EconomicOperatorParty/cac:QualifyingParty/cac:Party /cac:PartyIdentification not exist (not registered on a national pre-qualification system) | |
 |EO Role | a|
-/cac:EconomicOperatorParty/cac:EconomnicOperatorRole /cbc:RoleCode is GM (Group member)
+/cac:EconomicOperatorParty/cac:EconomicOperatorRole /cbc:RoleCode is GM (Group member)
 
 /cbc:EconomicOperatorGroupName becomes compulsory
 
@@ -927,7 +927,7 @@ ____
 |Divided into lots | |/cac:ProcurementProjectLot /cbc:ID is not 0 (divided into lots) | |
 |Pre-qualification system | |/cac:EconomicOperatorParty/cac:QualifyingParty/cac:Party /cac:PartyIdentification exists (registered on a national pre-qualification system) | |
 |EO Role | a|
-/cac:EconomicOperatorParty/cac:EconomnicOperatorRole /cbc:RoleCode is GM (Group member)
+/cac:EconomicOperatorParty/cac:EconomicOperatorRole /cbc:RoleCode is GM (Group member)
 
 /cbc:EconomicOperatorGroupName becomes compulsory
 
@@ -960,7 +960,7 @@ ____
 |Divided into lots | |/cac:ProcurementProjectLot /cbc:ID is 0 (not divided into lots) | |
 |Pre-qualification system | |/cac:EconomicOperatorParty/cac:QualifyingParty/cac:Party /cac:PartyIdentification not exist (not registered on a national pre-qualification system) | |
 |EO Role | a|
-/cac:EconomicOperatorParty/cac:EconomnicOperatorRole /cbc:RoleCode is OERON (Other entity (relied upon))
+/cac:EconomicOperatorParty/cac:EconomicOperatorRole /cbc:RoleCode is OERON (Other entity (relied upon))
 
 Other entity (relied upon): Entity on which the main contractor, the group or another subcontractor relies in order to meet the selection criteria.
 
@@ -988,7 +988,7 @@ Other entity (relied upon): Entity on which the main contractor, the group or an
 |Divided into lots | |/cac:ProcurementProjectLot /cbc:ID is 0 (not divided into lots) | |
 |Pre-qualification system | |/cac:EconomicOperatorParty/cac:QualifyingParty/cac:Party /cac:PartyIdentification exists (registered on a national pre-qualification system) | |
 |EO Role | a|
-/cac:EconomicOperatorParty/cac:EconomnicOperatorRole /cbc:RoleCode is OERON (Other entity (relied upon))
+/cac:EconomicOperatorParty/cac:EconomicOperatorRole /cbc:RoleCode is OERON (Other entity (relied upon))
 
 Other entity (relied upon): Entity on which the main contractor, the group or another subcontractor relies in order to meet the selection criteria.
 
@@ -1019,7 +1019,7 @@ Other entity (relied upon): Entity on which the main contractor, the group or an
 |Divided into lots | |/cac:ProcurementProjectLot /cbc:ID is not 0 (divided into lots) | |
 |Pre-qualification system | |/cac:EconomicOperatorParty/cac:QualifyingParty/cac:Party /cac:PartyIdentification not exist (not registered on a national pre-qualification system) | |
 |EO Role | a|
-/cac:EconomicOperatorParty/cac:EconomnicOperatorRole /cbc:RoleCode is OERON (Other entity (relied upon))
+/cac:EconomicOperatorParty/cac:EconomicOperatorRole /cbc:RoleCode is OERON (Other entity (relied upon))
 
 Other entity (relied upon): Entity on which the main contractor, the group or another subcontractor relies in order to meet the selection criteria.
 
@@ -1049,7 +1049,7 @@ Other entity (relied upon): Entity on which the main contractor, the group or an
 |Divided into lots | |/cac:ProcurementProjectLot /cbc:ID is 0 (not divided into lots) | |
 |Pre-qualification system | |/cac:EconomicOperatorParty/cac:QualifyingParty/cac:Party /cac:PartyIdentification exists (registered on a national pre-qualification system) | |
 |EO Role | a|
-/cac:EconomicOperatorParty/cac:EconomnicOperatorRole /cbc:RoleCode is OERON (Other entity (relied upon))
+/cac:EconomicOperatorParty/cac:EconomicOperatorRole /cbc:RoleCode is OERON (Other entity (relied upon))
 
 Other entity (relied upon): Entity on which the main contractor, the group or another subcontractor relies in order to meet the selection criteria.
 
@@ -1080,7 +1080,7 @@ Other entity (relied upon): Entity on which the main contractor, the group or an
 |Divided into lots | |/cac:ProcurementProjectLot /cbc:ID is not 0 (divided into lots) | |
 |Pre-qualification system | |/cac:EconomicOperatorParty/cac:QualifyingParty/cac:Party /cac:PartyIdentification not exist (not registered on a national pre-qualification system) | |
 |EO Role | a|
-/cac:EconomicOperatorParty/cac:EconomnicOperatorRole /cbc:RoleCode is OERON (Other entity (relied upon))
+/cac:EconomicOperatorParty/cac:EconomicOperatorRole /cbc:RoleCode is OERON (Other entity (relied upon))
 
 Other entity (relied upon): Entity on which the main contractor, the group or another subcontractor relies in order to meet the selection criteria.
 
@@ -1110,7 +1110,7 @@ Other entity (relied upon): Entity on which the main contractor, the group or an
 |Divided into lots | |/cac:ProcurementProjectLot /cbc:ID is not 0 (divided into lots) | |
 |Pre-qualification system | |/cac:EconomicOperatorParty/cac:QualifyingParty/cac:Party /cac:PartyIdentification exists (registered on a national pre-qualification system) | |
 |EO Role | a|
-/cac:EconomicOperatorParty/cac:EconomnicOperatorRole /cbc:RoleCode is OERON (Other entity (relied upon))
+/cac:EconomicOperatorParty/cac:EconomicOperatorRole /cbc:RoleCode is OERON (Other entity (relied upon))
 
 Other entity (relied upon): Entity on which the main contractor, the group or another subcontractor relies in order to meet the selection criteria.
 
@@ -1143,7 +1143,7 @@ Other entity (relied upon): Entity on which the main contractor, the group or an
 |Divided into lots | |/cac:ProcurementProjectLot /cbc:ID is 0 (not divided into lots) | |
 |Pre-qualification system | |/cac:EconomicOperatorParty/cac:QualifyingParty/cac:Party /cac:PartyIdentification not exist (not registered on a national pre-qualification system) | |
 |EO Role | a|
-/cac:EconomicOperatorParty/cac:EconomnicOperatorRole /cbc:RoleCode is OENRON (Other entity (not relied upon))
+/cac:EconomicOperatorParty/cac:EconomicOperatorRole /cbc:RoleCode is OENRON (Other entity (not relied upon))
 
 Other entity (not relied upon): Entity on which the main contractor, the group or another subcontractor does not rely in order to meet the selection criteria.
 
@@ -1170,7 +1170,7 @@ Other entity (not relied upon): Entity on which the main contractor, the group o
 |Divided into lots | |/cac:ProcurementProjectLot /cbc:ID is 0 (not divided into lots) | |
 |Pre-qualification system | |/cac:EconomicOperatorParty/cac:QualifyingParty/cac:Party /cac:PartyIdentification exists (registered on a national pre-qualification system) | |
 |EO Role | a|
-/cac:EconomicOperatorParty/cac:EconomnicOperatorRole /cbc:RoleCode is OENRON (Other entity (not relied upon))
+/cac:EconomicOperatorParty/cac:EconomicOperatorRole /cbc:RoleCode is OENRON (Other entity (not relied upon))
 
 Other entity (not relied upon): Entity on which the main contractor, the group or another subcontractor does not rely in order to meet the selection criteria.
 
@@ -1199,7 +1199,7 @@ Other entity (not relied upon): Entity on which the main contractor, the group o
 |Divided into lots | |/cac:ProcurementProjectLot /cbc:ID is not 0 (divided into lots) | |
 |Pre-qualification system | |/cac:EconomicOperatorParty/cac:QualifyingParty/cac:Party /cac:PartyIdentification not exists (not registered on a national pre-qualification system) | |
 |EO Role | a|
-/cac:EconomicOperatorParty/cac:EconomnicOperatorRole /cbc:RoleCode is OENRON (Other entity (not relied upon))
+/cac:EconomicOperatorParty/cac:EconomicOperatorRole /cbc:RoleCode is OENRON (Other entity (not relied upon))
 
 Other entity (not relied upon): Entity on which the main contractor, the group or another subcontractor does not rely in order to meet the selection criteria.
 
@@ -1227,7 +1227,7 @@ Other entity (not relied upon): Entity on which the main contractor, the group o
 |Divided into lots | |/cac:ProcurementProjectLot /cbc:ID is 0 (not divided into lots) | |
 |Pre-qualification system | |/cac:EconomicOperatorParty/cac:QualifyingParty/cac:Party /cac:PartyIdentification exists (registered on a national pre-qualification system) | |
 |EO Role | a|
-/cac:EconomicOperatorParty/cac:EconomnicOperatorRole /cbc:RoleCode is OENRON (Other entity (not relied upon))
+/cac:EconomicOperatorParty/cac:EconomicOperatorRole /cbc:RoleCode is OENRON (Other entity (not relied upon))
 
 Other entity (not relied upon): Entity on which the main contractor, the group or another subcontractor does not rely in order to meet the selection criteria.
 
@@ -1256,7 +1256,7 @@ Other entity (not relied upon): Entity on which the main contractor, the group o
 |Divided into lots | |/cac:ProcurementProjectLot /cbc:ID is not 0 (divided into lots) | |
 |Pre-qualification system | |/cac:EconomicOperatorParty/cac:QualifyingParty/cac:Party /cac:PartyIdentification not exist (not registered on a national pre-qualification system) | |
 |EO Role | a|
-/cac:EconomicOperatorParty/cac:EconomnicOperatorRole /cbc:RoleCode is OENRON (Other entity (not relied upon))
+/cac:EconomicOperatorParty/cac:EconomicOperatorRole /cbc:RoleCode is OENRON (Other entity (not relied upon))
 
 Other entity (not relied upon): Entity on which the main contractor, the group or another subcontractor does not rely in order to meet the selection criteria.
 
@@ -1284,7 +1284,7 @@ Other entity (not relied upon): Entity on which the main contractor, the group o
 |Divided into lots | |/cac:ProcurementProjectLot /cbc:ID is not 0 (divided into lots) | |
 |Pre-qualification system | |/cac:EconomicOperatorParty/cac:QualifyingParty/cac:Party /cac:PartyIdentification exists (registered on a national pre-qualification system) | |
 |EO Role | a|
-/cac:EconomicOperatorParty/cac:EconomnicOperatorRole /cbc:RoleCode is OENRON (Other entity (not relied upon))
+/cac:EconomicOperatorParty/cac:EconomicOperatorRole /cbc:RoleCode is OENRON (Other entity (not relied upon))
 
 Other entity (not relied upon): Entity on which the main contractor, the group or another subcontractor does not rely in order to meet the selection criteria.
 
@@ -2031,7 +2031,7 @@ ____
 /cac:EconomicOperatorParty /cac:QualifyingParty
 ____
 
-|*Qualifying party / Party identifier*: The attribute schemeAgencyID must hold the value retrieved from eCertis that identifies unequivocally the (pre)qualification system. If, for any reason, that value is not available use the default schemeAgencyID "EU-COM-GROW" and the cac:EconomicOperatorParty /cac:PartyIdentificaton /cbc:ID for the value of the identifier. Additionally you can use the data structure CRITERION.OTHER.EO_DATA.REGISTERED_IN_OFFICIAL_LIST to specify an alternative or additional name, identifier and description. | a|
+|*Qualifying party / Party identifier*: The attribute schemeAgencyID must hold the value retrieved from eCertis that identifies unequivocally the (pre)qualification system. If, for any reason, that value is not available use the default schemeAgencyID "EU-COM-GROW" and the cac:EconomicOperatorParty /cac:PartyIdentification /cbc:ID for the value of the identifier. Additionally you can use the data structure CRITERION.OTHER.EO_DATA.REGISTERED_IN_OFFICIAL_LIST to specify an alternative or additional name, identifier and description. | a|
 * {blank}
 +
 ____
@@ -2534,7 +2534,7 @@ ____
 * RS-140-R50-S10
 * RS-200-R50-S10
 
-|Rule descriptn |When the pre-qualification system the EO is registered on does not cover all the selection criteria, information about compliance of selection criteria MUST be provided. | |
+|Rule description |When the pre-qualification system the EO is registered on does not cover all the selection criteria, information about compliance of selection criteria MUST be provided. | |
 |Mapping description |Criterion responses are implemented as Tendering Criterion response components | |
 |XSD Path |/cac:TenderingCriterionResponse[0..n] | |
 |XSD Business Rule description | |XSD Business Rule Schematron |
@@ -3752,7 +3752,7 @@ a|
 [start=5]
 . {blank}
 
-|Recommendation: use a UUDI-version 4 number on Response value identifier. |*No Schematron rule can be implemented.*
+|Recommendation: use a UUID-version 4 number on Response value identifier. |*No Schematron rule can be implemented.*
 a|
 [start=6]
 . {blank}
