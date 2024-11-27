@@ -20,7 +20,7 @@ As suggested in section "Criteria Data Structures" criteria may be grouped in se
 
 Each branch in this 'criteria classification' corresponds to one data structure that is identical for all the leaves under that branch. 
 
-image:Exclusion_criteria_clasification.jpg[Exclusion criteria clasification,width=510,height=374]
+image:Exclusion_criteria_classification.jpg[Exclusion criteria classification,width=510,height=374]
 
 _Figure 49. Exclusion criteria classification_
 

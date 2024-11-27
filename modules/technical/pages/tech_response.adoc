@@ -114,7 +114,7 @@ Additional comments: copies of an ESPD document should be identified with same U
 |*cbc:UUID* |Identifier |1 |A universally unique identifier that can be used to reference this ESPD document instance. a|
 *Information Requirement*: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1-tbr92-020[_tbr92-019_].
 
-*Rule*: Other documents, e.g. the tender, might refer to the ESPD Response using this identifier (thus its compulsoriness). Copies of a document must be identified with a different UUID. Compulsory use of schemeAgencyID attribute.
+*Rule*: Other documents, e.g. the tender, might refer to the ESPD Response using this identifier (thus it being compulsory). Copies of a document must be identified with a different UUID. Compulsory use of schemeAgencyID attribute.
 
 |*cbc:ContractFolderID* |Identifier |1 |An identifier that is specified by the buyer and used as a reference number for all documents in the procurement process. It is also known as procurement project identifier, procurement reference number or contract folder identifier. A reference to the procurement procedure to which a Qualification request document and the delivered response documents are associated. a|
 *Information Requirement*: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1-tbr92-020[_tbr92-013_].
@@ -269,7 +269,7 @@ xsi:schemaLocation="urn:oasis:names:specification:ubl:schema:xsd:QualificationAp
 
 <cbc:VersionID schemeAgencyID="OP" schemeVersionID="2.0">1.0</cbc:VersionID>
 
-<!-- The type of the procurement procedure; this information is provided by eForms and the concret notice per procedure. e.g. open = In open procedures any interested economic operator may submit a tender in response to a call for competition.-->
+<!-- The type of the procurement procedure; this information is provided by eForms and the concrete notice per procedure. e.g. open = In open procedures any interested economic operator may submit a tender in response to a call for competition.-->
 
 <cbc:ProcedureCode listID="Dummy_procurement-procedure-type" listAgencyID="" listVersionID="">open</cbc:ProcedureCode>
 
@@ -288,7 +288,7 @@ For EU and notice publications that need to be included in the ESPD Response. Se
 
 [cols="1,2",]
 |===
-|*REQUIREMENT* |**The economic operator must include in its ESPD Response document a reference to the ESPD Request. For this, the values of the two identifiers **cbc:ID** and **cbc:UUID** of the ESPD Request must be used as the values for the **cbc:ID** and **cbc:UUID* in the ESPD Response cac:AdditionalDocumentReference (to refer to that ESDP Request).*
+|*REQUIREMENT* |**The economic operator must include in its ESPD Response document a reference to the ESPD Request. For this, the values of the two identifiers **cbc:ID** and **cbc:UUID** of the ESPD Request must be used as the values for the **cbc:ID** and **cbc:UUID* in the ESPD Response cac:AdditionalDocumentReference (to refer to that ESPD Request).*
 |===
 
 Thus the ESPD Response must also make reference to the ESPD Request that is being responded by the economic operator. The XSD diagram below shows (in blue) which elements are expected for this reference. See also the list of expected elements (and rules) and the XML example beneath the XSD diagram.
@@ -346,7 +346,7 @@ _Table 27. Reference to the ESPD Request, expected elements_
 |*cbc:DocumentTypeCode* |Code |1 |The type of document being referenced, expressed as a code. a|
 *Information Requirement*: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1-tbr92-013[_tbr92-013_].
 
-*Rule*: For the ESDP-EDM it is compulsory use of the value ESPD_REQUEST from the Code List link:{url-tree}/codelists/gc/DocRefContentType.gc[_docref-content-type_]. See also the XML example below on how to specify the ESPD Request.
+*Rule*: For the ESPD-EDM it is compulsory use of the value ESPD_REQUEST from the Code List link:{url-tree}/codelists/gc/DocRefContentType.gc[_docref-content-type_]. See also the XML example below on how to specify the ESPD Request.
 
 *Rule scope*: Common (BR-OTH-01, BR-COM-10#3, BR-OTH-01#3, BR-OTH-03)
 
@@ -419,7 +419,7 @@ See formal requirements related to the economic operators in the e-Sens site: li
 _Table 29. Information requirement about the ESPD Response and the economic operators_
 |===
 |*REQUIREMENT* a|
-*One ESPD Response per economic operator*. The ESPD-EDM, as all the previous versions of the ESPD, requires that every economic operator that participates in one tender provide its own ESDP Response document. This affects sole traders that rely on other entities for the execution of the contract (e.g. subcontractors) and groups of economic operators, e.g. a Joint Venture or a Consortium, and all the sub-contractors on which each economic operator of the group relies on to meet the selection criteria.
+*One ESPD Response per economic operator*. The ESPD-EDM, as all the previous versions of the ESPD, requires that every economic operator that participates in one tender provide its own ESPD Response document. This affects sole traders that rely on other entities for the execution of the contract (e.g. subcontractors) and groups of economic operators, e.g. a Joint Venture or a Consortium, and all the sub-contractors on which each economic operator of the group relies on to meet the selection criteria.
 
 Moreover, each EO should submit an ESPD Response per lot or group of Lots which tenders to.
 
@@ -462,9 +462,9 @@ Therefore, in the context of the ESPD the definition of economic operator has be
 
 The information that the economic operator (EO) has to provide is relatively abundant, especially if the EO is the lead entity of a group. UBL does provide a class cac:EconomicOperatorParty with sufficient data elements to identify the economic operator, its role, its representatives, physical location, officially registered address and other.
 
-As the whole ESDP-EDM is based entirely on the UBL-2.3 XSD (W3C) Schemas, these schemas are to be used for ESPD.
+As the whole ESPD-EDM is based entirely on the UBL-2.3 XSD (W3C) Schemas, these schemas are to be used for ESPD.
 
-Nonetheless some data requested in the ESPD are not modeled in UBL-2.3, namely those aiming at purposes going beyond the identification of the economic operator; e.g. data with statistical purposes; or to ensure the transparency of the procurement procedure; other.
+Nonetheless some data requested in the ESPD are not modelled in UBL-2.3, namely those aiming at purposes going beyond the identification of the economic operator; e.g. data with statistical purposes; or to ensure the transparency of the procurement procedure; other.
 
 Therefore in the ESPD-EDM, the information about the economic operator is spread in two different places:
 
@@ -494,7 +494,7 @@ The diagram below shows the XSD element that will hold the data required by the 
 * *Identification of the economic operator*: The Identifier assigned by the register or (pre)qualification system to the economic operator is placed in the element /cac:EconomicOperatorParty/cac:QualifyingParty/cac:Party/cac:PartyIdentification (more details on this below and in the XML example);
 * *(Pre)qualification system*: The Identifier and name of the (pre)qualification system is captured from e-Certis. The only datum that is necessary to keep in the XML is the identifier of the system provided by e-Certis. This identifier will be used as the value for the attribute schemeAgencyID (always compulsory) of the element /cac:EconomicOperatorParty/cac:QualifyingParty/cac:Party/cac:PartyIdentification. This way:
 ** The (pre)qualification system is perfectly identified (and trusted, as it is registered in eCertis); and
-** The economic operator, identified with the number used in that (pre)qualification system, is linked inequivocally to that (pre)qualification system.
+** The economic operator, identified with the number used in that (pre)qualification system, is linked unequivocally to that (pre)qualification system.
 * *References and classification*: The references linked to the classification of the EO are place in the component cac:QualifyingParty/cac:CompletedTask.
 ** For this version of the ESPD the only expected data about the reference is a short description identifying the task as described in the (pre)qualification system. However if you take a look at this common aggregate component you will observe that it caters for other relevant data.
 ** Similarly, this version of the ESPD-EDM, does not expect a complex representation of possible (optional) classification schemes. However the component cac:BusinessClassificationScheme, associated to cac:QualifyingParty allows complex hierarchical classifications.
@@ -849,14 +849,14 @@ As you will see next, the information required about the economic operators vari
 [arabic]
 . Is the economic operator a sole trader or does it belong to a group?
 . If it belongs to a group, is the economic operator the leader of the group, a member or another entity (see the different types of 'roles' below);
-. Does the economic operator rely on other entities to fulfill the selection criteria?
+. Does the economic operator rely on other entities to fulfil the selection criteria?
 . Is the procurement procedure divided into lots?
 
 One relevant aspect is the *Role* of the economic operator. The ESPD-EDM defines five different roles for the EO. The information to be provided by each role varies depending on whether the EO is:
 
 [arabic]
 . *Sole tenderer / Group Leader*: Sole entity or, in case of Consortium, Joint Venture or other types of groups, the leader of the group. In this case:
-* The sole contractor or leader will have to produce a complete ESDP;
+* The sole contractor or leader will have to produce a complete ESPD;
 * The sole contractor or leader will also have to identify the rest of the procurers (in the case of a group);
 * The sole contractor or leader will have to identify the entities upon which it relies (and about those on which the entities it relies on rely).
 * The sole contractor or leader will have to identify the entities upon which it does not relies.
@@ -968,7 +968,7 @@ _Figure 231. Not relied on entities - data structure_
 
 ==== XML Example
 
-This example contains all the data about an economic operator. Beware that the basic identification data is placed into the cac:EconomicOperatorParty component, whilst the rest of the data (namely for statististical purposes) is structured in the data structures described above.
+This example contains all the data about an economic operator. Beware that the basic identification data is placed into the cac:EconomicOperatorParty component, whilst the rest of the data (namely for statistical purposes) is structured in the data structures described above.
 
 
 _Economic operator data - XML example_
@@ -1037,7 +1037,7 @@ _Economic operator data - XML example_
 ====
 . Role of the economic operator. The values are defined in the Code List link:{url-tree}/codelists/gc/EoRoleType.gc[EoRoleType]. The selection of the value Sole Tenderer or Group Leader determines whether the data about the relied-on and not-relied-on entities is instantiated in this XML.
 . Name of the economic operator. A text field.
-. Street and number of the economic operator. Notice that the cac:AddressLine element is used instead of cbc:StreetnName and cbc:BuildingNumber. This is because name and number are not split in two fields.
+. Street and number of the economic operator. Notice that the cac:AddressLine element is used instead of cbc:StreetName and cbc:BuildingNumber. This is because name and number are not split in two fields.
 . Postcode (zip code) of the EO. A text field. Either the GUI and/or an external Schematron rule could be implemented to control the pattern of this text.
 . City, the name of the town of the EO. Applications could check whether the town exists in the country.
 . Country, only the country code identifier is needed. In this example the description is also used, but is redundant. Software applications should be able to, based on the language of the user, retrieve the name of the country based on the country code.
@@ -1082,7 +1082,7 @@ image:EO_representatives_Power_Attorney_XSD_Schema.jpg[EO representatives Power 
 
 _Figure 234. EO representatives Power of Attorney, XSD Schema_
 
-Notice that the largest part of the data is held in the component cac:EconomicOperatorParty/cac:Party/cac:PowerOfAttorney/cac:AgentParty/cac:Person. The figure below shows (in blue) the expected elements. See the table "Expecte Elements" and the XML example below for the details (e.g. how to use the cac:Person/cac:Contact element to contact the representative.
+Notice that the largest part of the data is held in the component cac:EconomicOperatorParty/cac:Party/cac:PowerOfAttorney/cac:AgentParty/cac:Person. The figure below shows (in blue) the expected elements. See the table "Expected Elements" and the XML example below for the details (e.g. how to use the cac:Person/cac:Contact element to contact the representative.
 
 image:EO_representatives_element_Person.jpg[EO representatives - element Person,width=284,height=496]
 
@@ -1172,7 +1172,7 @@ _Table 39. Representatives of the economic operator, expected elements_
 
 *Rule*: None.
 
-|*cac:PowerOfAttorney/cbc:Description* |Text |0..n |The short description for the role of the economic operstors representative and other detailed information on the representation. a|
+|*cac:PowerOfAttorney/cbc:Description* |Text |0..n |The short description for the role of the economic operators representative and other detailed information on the representation. a|
 *Information Requirement*: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1-tbr092-010[_tbr92-010_]
 
 *Rule*: Use line 1 of the description to describe the role of the representative. Use line 2 to provide detailed information on the representation (its forms, extent, purpose, etc.)
@@ -1310,7 +1310,7 @@ _Economic operator's representatives_
 [cols="1,2",]
 |===
 |*REQUIREMENT* a|
-The ESPD Response must include one criterion response (one answer), and only one, linked to one, and only one, criterion property (one QUESTION) copied from the ESPD Request into the ESPD Response document; and to each criterion property added by the economic operator to the ESDP Response.
+The ESPD Response must include one criterion response (one answer), and only one, linked to one, and only one, criterion property (one QUESTION) copied from the ESPD Request into the ESPD Response document; and to each criterion property added by the economic operator to the ESPD Response.
 
 One criterion response, though, may contain a list of response values of the *same type*.
 
@@ -1399,7 +1399,7 @@ _Table 40. Elements expected in an answer to a criterion property_
 [cols="1,1,1,3,3"]
 |===
 |*Components* |*Type* |*Card* |*Description* |*Requirements*
-|*cbc:ID* |Identifier |0..1 |A language-independent token, e.g., a number, that allows to identify a criterion response uniquely as well as allows to reference the criterion response in other documents. A criterion response describes how an economic operators fulfills an specific criterion. a|
+|*cbc:ID* |Identifier |0..1 |A language-independent token, e.g., a number, that allows to identify a criterion response uniquely as well as allows to reference the criterion response in other documents. A criterion response describes how an economic operators fulfils an specific criterion. a|
 *Information Requirement*: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1-tbr92-018[_tbr92-018, tbr92-007, tbr92-005, tbr92-006_]
 
 *Rule*: This ID SHOULD be provided by the EO or the service provider that instantiates the ESPDResponse XML document.
@@ -1533,7 +1533,7 @@ _Table 43. Elements expected in the 'cac:ResponseValue' class_
 |*cbc:ID* |Identifier |0..1 |An identifier to refer to this criterion response value. a|
 *Information Requirement*: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1-tbr92-018[_tbr92-018_]
 
-*Rule*: Recommendation: use a UUDI-version 4 number.
+*Rule*: Recommendation: use a UUID-version 4 number.
 
 *Rule scope*: BR-TCR-05
 
@@ -1682,7 +1682,7 @@ _Reduction of Candidates - (QUESTION(s) in the ESPD-Request)_
 . The next QUESTION is enclose in a SUBGROUP because the processing instruction ONTRUE can be used only by GROUPs or SUBGROUPs of REQUIREMENTs and QUESTIONs.
 . If the previous QUESTION is answered with a true the EO will be presented with a new demand expressed in th next QUESTION.
 . The QUESTION ''Please describe them'', presented if the EO answered true to the previous QUESTION (''Your answer'').
-. The type of data expected here is a free text bythe EO (for the Response, a DESCRIPTION maps to the UBL-2.3 element cbc:Description, which is an extension of the xsd:String).
+. The type of data expected here is a free text by the EO (for the Response, a DESCRIPTION maps to the UBL-2.3 element cbc:Description, which is an extension of the xsd:String).
 
 
 == XML example (Responses to the QUESTION(s))
@@ -1709,7 +1709,7 @@ _Reduction of Candidates - (answers in the ESPD-Response)_
         <cbc:ValidatedCriterionPropertyID schemeID="criterion" schemeAgencyID="OP" schemeVersionID="3.3.0">e437cac1-3a89-4f36-bcc7-3219dda49d30</cbc:ValidatedCriterionPropertyID> <3>
         <cac:ResponseValue>
                 <cbc:ID schemeID="ISO/IEC 9834-8:2008 - 4UUID" schemeAgencyID="OP" schemeVersionID="3.3.0">de6f1bdd-abce-42f7-b9b8-30c4e7c4c94d</cbc:ID>
-                <cbc:Description>This Consortium fulfills all the conditions defined by the buyer in the contract notice, and notably the Consortium is duly registered in the national pre-qualification system of the country of the Consortium lead where all the information about its classification and documentation about its financial standing are up to the date.</cbc:Description> <4>
+                <cbc:Description>This Consortium fulfils all the conditions defined by the buyer in the contract notice, and notably the Consortium is duly registered in the national pre-qualification system of the country of the Consortium lead where all the information about its classification and documentation about its financial standing are up to the date.</cbc:Description> <4>
         </cac:ResponseValue>
 </cac:TenderingCriterionResponse>
 
@@ -1718,8 +1718,8 @@ _Reduction of Candidates - (answers in the ESPD-Response)_
 
 [cols=",",options="header",]
 
-. Notice this UUID is identical to the cac:TenderingCriterionProperty one. This is the way the UBL-2.3 Qualification Application Response document links each QUESTION(s) to one response (and only one), or viceversa.
-. The economic operator states here that it meets the criteria. Notice that the data element is the UBL-2.3 element cbc:ResponseIndicator, which is an ''semantisation'' (a specialisation) of cbc:Indicator and therefore corresponds to the type of data expected by the buyer in the Request (in cbc:ValueDataTypeCode).
+. Notice this UUID is identical to the cac:TenderingCriterionProperty one. This is the way the UBL-2.3 Qualification Application Response document links each QUESTION(s) to one response (and only one), or vice versa.
+. The economic operator states here that it meets the criteria. Notice that the data element is the UBL-2.3 element cbc:ResponseIndicator, which is an ''semantisisation'' (a specialisation) of cbc:Indicator and therefore corresponds to the type of data expected by the buyer in the Request (in cbc:ValueDataTypeCode).
 . This is the UUID corresponding to the QUESTION in the Request ''Please describe them''.
 . The economic operator describes how it meets the criteria. The data element containing the explanation by the EO. Notice that the type of data is the UBL-2.3 element cbc:Description, as requested by the buyer in cbc:ValueDataTypeCode.
 
@@ -1779,11 +1779,11 @@ The mapping between the business requirements, the logic layer of the ESPD-EDM a
 _Table 44. Elements expected in an item of evidence_
 |===
 |*Class name*: |cac:Evidence
-|*Definition*: |A class to describe an item of evidentiary support for representations of capabilities or the ability to meet tendering requirements, which an economic operator must provide for acceptance into a tendering process.
+|*Definition*: |A class to describe an item of supporting evidence for representations of capabilities or the ability to meet tendering requirements, which an economic operator must provide for acceptance into a tendering process.
 |*Business rule(s)*: |None
 |*File*: |ubl-2.3/xsdrt/common/UBL-CommonAggregateComponents-2.3.xsd
 |*Path*: |/QualificationApplicationResponse/cac:Evidence
-|*Context of use*: |The economic operator uses it in the ESPD Response document to provide evidentiary support to one or more criteria link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1-tbr092-017[(_tbr092-017_)].
+|*Context of use*: |The economic operator uses it in the ESPD Response document to provide supporting evidence to one or more criteria link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1-tbr092-017[(_tbr092-017_)].
 |===
 
 [cols="1,1,1,3,3",options="header",]
@@ -1837,11 +1837,11 @@ The mapping between the business requirements, the logic layer of the ESPD-EDM a
 _Table 45. Elements expected from the 'cac:Evidence/cac:DocumentReference' element_
 |===
 |*Class name*: |cac:DocumentReference
-|*Definition*: |A reference to the evidentiary document.
+|*Definition*: |A reference to the document of supporting evidence.
 |*Business rule(s)*: |None
 |*File*: |ubl-2.3/xsdrt/common/UBL-CommonAggregateComponents-2.3.xsd
 |*Path*: |/QualificationApplicationResponse/cac:Evidence/cac:DocumentReference
-|*Context of use*: |The economic operator uses it in the ESPD Response document to supply the URL of the evidence and the party who issued the evidentiary document. link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1-tbr092-017[(_tbr092-017, tbr092-022, tbr092-006, tbr092-007_)].
+|*Context of use*: |The economic operator uses it in the ESPD Response document to supply the URL of the evidence and the party who issued the document of supporting evidence. link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1-tbr092-017[(_tbr092-017, tbr092-022, tbr092-006, tbr092-007_)].
 |===
 
 [cols="1,1,1,3,3"]
@@ -1888,9 +1888,9 @@ WebsiteURI* |URI |0..1 |The website of the party issuer of the documentary evide
 
 The following snippet uses the same two criteria shown in the XML example snippet 1.a): hence the values of the cac:ValidatedCriterionPropertyID are 'd8d5478e-cc65-48c9-a189-19bbe87a9bfd' (criterion property 'participation in a criminal organisation') and '7c7fb445-c5f9-4f92-8b58-7f06a541951f' (criterion property 'contributions certificates').
 
-=== XML snippet 2 different evidentiary documents per response
+=== XML snippet 2 different documents of evidence per response
 
-_XML snippet 1.b) different evidentiary documents per response_
+_XML snippet 1.b) different documents of evidence per response_
 
 [source,xml]
 ----
@@ -1966,7 +1966,7 @@ _XML snippet 1.b) different evidentiary documents per response_
 
 
 . ID value of the first criterion property (QUESTION) for which this response value is the answer.
-. The criteron is to be treated as 'PUBLIC': it could be published.
+. The criterion is to be treated as 'PUBLIC': it could be published.
 . Identifier of the first evidence object that is used for this criterion: it must match the value provided for the cac:Evidence/cbc:ID element of the evidence.
 . ID value of the second criterion property (QUESTION) for which this response value is the answer.
 . Confidentiality level is set to 'CONFIDENTIAL'. Therefore the evidence linked to this response will also be treated as 'CONFIDENTIAL'.
@@ -1975,9 +1975,9 @@ _XML snippet 1.b) different evidentiary documents per response_
 . Confidentiality code for the first evidence: 'PUBLIC', notice that it is consistent with the fact that the response is also set as 'PUBLIC'.
 . Verification code ID for the first evidence (a 13 digit EAN-13 barcode number in this case).
 . URL from where to get the document. The fact that the evidence MUST BE treated as CONFIDENTIAL is not inconsistent with the fact that the evidence is available online from a free-of-charge national data base.
-. The name of the issuer of the first evidenciary document.
+. The name of the issuer of the first document of supporting evidence.
 . ID of the second criterion property (QUESTION) for which this response value is the answer.
-. The criteron is to be treated as 'CONFIDENTIAL': addressed only to the evaluators.
+. The criterion is to be treated as 'CONFIDENTIAL': addressed only to the evaluators.
 . Verification code ID of the second evidence.
 . URL from where to get the document.
 . The name of the issuer of the second document of evidence.

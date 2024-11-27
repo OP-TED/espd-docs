@@ -25,7 +25,7 @@ this is the description of the contents, and a brief overview of what can be fou
 
 
 ===== The codelists folder
-The *codelists folder* contains the ESPD-criterion.xlsx file, the “Criterion Exel File”, an internal template that is used to define the ESPD Request structure and from which “test” ESPD-Request and ESPD-Response xml files can be generated internally. These xml output files are made available to the OUC in the xml-examples folder.
+The *codelists folder* contains the ESPD-criterion.xlsx file, the “Criterion Excel File”, an internal template that is used to define the ESPD Request structure and from which “test” ESPD-Request and ESPD-Response xml files can be generated internally. These xml output files are made available to the OUC in the xml-examples folder.
 
 The *gc sub-folder* contains all the generic codes that the ESPD uses. General codelists are downloaded and used as is, or a subset of them is used.
 

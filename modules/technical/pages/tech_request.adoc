@@ -108,7 +108,7 @@ Additional comments: copies of an ESPD document should be identified with same U
 |*cbc:UUID* |Identifier |1 |A universally unique identifier that can be used to reference this ESPD document instance. a|
 *Information Requirement*: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1.0-tbr070-002[_tbr070-002_].
 
-*Rule*: This UUID will be used to link the ESPD Response to its corresponding ESPD Request (thus its compulsoriness). Copies of a document must be identified with a different UUID. Compulsory use of schemeAgencyID attribute.
+*Rule*: This UUID will be used to link the ESPD Response to its corresponding ESPD Request (thus it being compulsory). Copies of a document must be identified with a different UUID. Compulsory use of schemeAgencyID attribute.
 
 *Rule scope*: BR-OTH-02
 
@@ -340,7 +340,7 @@ _Table 6. Reference to additional documents, expected elements_
 |*cbc:DocumentTypeCode* |Code |1 |The type of document being referenced, expressed as a code. a|
 *Information Requirement*: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1.0-tbr070-007[_tbr070-007_].
 
-*Rule*: For the ESDP-EDM it is compulsory to use the Code List "docref-content-type". See the example below on how to specify the OJS Contract Notice. If, for other documents, the type of document is not available in this list, provide the code "Other" and describe the content in the element DocumentType.
+*Rule*: For the ESPD-EDM it is compulsory to use the Code List "docref-content-type". See the example below on how to specify the OJS Contract Notice. If, for other documents, the type of document is not available in this list, provide the code "Other" and describe the content in the element DocumentType.
 
 *Rule scope*: Common (BR-OTH-01, BR-OTH-01#3, BR-OTH-03)
 
@@ -442,7 +442,7 @@ The XML snippet below illustrates how to use the cac:AdditionalDocumentReference
 
 <cac:AdditionalDocumentReference>
 
-<!-- Contract Notice publishied on the Spanish Central eTendering Platform "PLACE" Plataforma de Contratación del Sector Público -->
+<!-- Contract Notice published on the Spanish Central eTendering Platform "PLACE" Plataforma de Contratación del Sector Público -->
 
 <cbc:ID schemeAgencyID="PLACE">3.17/20830.0160</cbc:ID>
 
@@ -594,7 +594,7 @@ The mapping between the business requirements, the logic layer of the ESPD-EDM a
 _Table 10. Contracting body postal address, expected elements_
 |===
 |*Class name*: |cac:PostalAddress
-|*Definition*: |Contractinng body address information.
+|*Definition*: |Contracting body address information.
 |*Business rule(s)*: |None
 |*File*: |ubl-2.3/xsdrt/common/UBL-CommonAggregateComponents-2.3.xsd
 |*Path*: |/QualificationApplicationRequest/

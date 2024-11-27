@@ -491,7 +491,7 @@ _Figure 106. 'General Yearly Turnovers' buyer mock-up for a a common threshold f
 
 image:General_Yearly_Turnovers_CA mock-up_ commonThreshold.jpg[General Yearly Turnovers buyer mock-up for a a common threshold for all years requested,width=522,height=237]
 
-_Figure 107. 'General Yearly Turnovers' Buyer mock-up when applaying different turnover per year requested._
+_Figure 107. 'General Yearly Turnovers' Buyer mock-up when applying different turnover per year requested._
 
 === Mock-up - economic operator perspective
 
@@ -904,7 +904,7 @@ For *specific yearly turnover* criterion the following fields may be required by
 . The *minimum amount* expected from the EO, for which each specific yearly turnover must equal or be greater;
 . The *currency*.
 
-image:Specificyaer_turnoever_CA-perspective.jpg[specific yearly turnover' buyer mock-up_,width=494,height=182]
+image:Specific_yearly_turnover_CA-perspective.jpg[specific yearly turnover' buyer mock-up_,width=494,height=182]
 
 _Figure 118. 'specific yearly turnover' Buyer mock-up_
 
@@ -1126,7 +1126,7 @@ _Specific yearly turnover_
 
 === Specific average turnover
 
-As for the specific yearly turnover, in the specific average turnover the buyer is interested in knowning the turnover for a concrete business domain. Hence the fields business domain description in the mock-ups and data structures.
+As for the specific yearly turnover, in the specific average turnover the buyer is interested in knowing the turnover for a concrete business domain. Hence the fields business domain description in the mock-ups and data structures.
 
 === Mock-up - buyer perspective
 
@@ -2041,7 +2041,7 @@ The data structure for references caters for:
 [arabic]
 . The definition of multiple national criteria associated to the EU criterion specified in e-Certis;
 . The creation of the Legislation component associated to the EU criterion;
-. One group of REQUIREMENT(s) for the buyer to specify the general requirements for this criterion (e.g. Lots the references apply to, minimun number of references);
+. One group of REQUIREMENT(s) for the buyer to specify the general requirements for this criterion (e.g. Lots the references apply to, minimum number of references);
 . Multiple groups (cardinality 1..n) of questions for the economic operator to answer; which in this case are multiple references to works about which the EO has to provide information and the lots the EO tenders to related to the references.
 
 image:References_criterion_data_structure.jpg['References' criterion data structure,width=505,height=216]
@@ -2713,7 +2713,7 @@ _Criterion "Technical facilities and measures for ensuring quality" (ESPD-Reques
 
 (The figure below is defined in the the tab ''SC_Abilities_3 (Education)'' of the link:{url-tree}/codelists/ESPD-criterion.xlsx[ESPD-criterion] spread-sheet).
 
-image:abilitites-education-datastructure.png.jpg[Abilities (III) (Education)' criterion data structure,width=566,height=313]
+image:abilities-education-datastructure.png.jpg[Abilities (III) (Education)' criterion data structure,width=566,height=313]
 
 _Figure 171. 'Abilities (III) (Education)' criterion data structure_
 
@@ -2982,11 +2982,11 @@ _Allowance of checks criterion /Special requirements check_
 ----
 <!-- header elements removed for brevity -->
 
-<!-- Criterion:Special equirements check -->
+<!-- Criterion:Special requirements check -->
         <cac:TenderingCriterion>
                 <cbc:ID schemeID="criterion" schemeAgencyID="OP" schemeVersionID="3.3.0">c8809aa1-29b6-4f27-ae2f-27e612e394db</cbc:ID>
                 <cbc:CriterionTypeCode listID="http://publications.europa.eu/resource/authority/criterion" listAgencyID="OP" listVersionID="20230315-0">spec-req-check</cbc:CriterionTypeCode>
-                <cbc:Name>Special equirements check</cbc:Name>
+                <cbc:Name>Special requirements check</cbc:Name>
                 <cbc:Description>For complex products or services to be supplied or, exceptionally, for products or services which are required for a special purpose: The economic operator will allow checks to be conducted on the production capacities or the technical capacity of the economic operator and, where necessary, on the means of study and research which are available to it and on the quality control measures? The check is to be performed by the contracting authority or, in case the latter consents to this, on its behalf by a competent official body of the country in which the supplier or service provider is established.</cbc:Description>
                 <cac:ProcurementProjectLotReference>
                         <cbc:ID schemeID="Criterion" schemeAgencyID="OP" schemeVersionID="3.3.0">LOT-00000</cbc:ID>
@@ -3181,7 +3181,7 @@ _Criterion SC-Abilities (Staff) ESPD-Request_
                         <cbc:PropertyGroupTypeCode listID="property-group-type" listAgencyID="OP" listVersionID="3.3.0">ON*</cbc:PropertyGroupTypeCode>
                         <cac:TenderingCriterionProperty>
                                 <cbc:ID schemeID="criterion" schemeAgencyID="OP" schemeVersionID="3.3.0">15988699-0661-42dd-870d-47556c76bd52</cbc:ID>
-                                <cbc:Description>Minum number of years</cbc:Description>
+                                <cbc:Description>Minimum number of years</cbc:Description>
                                 <cbc:TypeCode listID="criterion-element-type" listAgencyID="OP" listVersionID="3.3.0">REQUIREMENT</cbc:TypeCode>
                                 <cbc:ValueDataTypeCode listID="response-data-type" listAgencyID="OP" listVersionID="3.3.0">QUANTITY_YEAR</cbc:ValueDataTypeCode>
                                 <!-- No answer is expected here from the economic operator, as this is a REQUIREMENT issued by the buyer. Hence the element 'cbc:ValueDataTypeCode' contains the type of value of the requirement issued by the buyer -->
@@ -3270,7 +3270,7 @@ _Criterion SC-Abilities (Staff) ESPD-Request_
                 </cac:TenderingCriterionPropertyGroup>
         </cac:TenderingCriterion>
 
-<!-- Rest of elements until the end of the Request documentn removed for brevity. -->
+<!-- Rest of elements until the end of the Request documentation removed for brevity. -->
 ----
 
 
@@ -3621,7 +3621,7 @@ Notice the following:
 
 [arabic]
 . In principle the buyer  has to provide at least one REQUIREMENT. But it might decide not to provide any requirement at all. In this case do not to alter the data structure (e.g. not to remove the REQUIREMENT_GROUP) and to provide a text for REQUIREMENT such as, for example, 'No specific requirements'.
-. The ONFALSE code for the sub-group containing the sentence thats starts with 'If not, please explain why...' means: if the answer to the previous question was *No* then this sub-group must be shown/processed.
+. The ONFALSE code for the sub-group containing the sentence that starts with 'If not, please explain why...' means: if the answer to the previous question was *No* then this sub-group must be shown/processed.
 . If ONTRUE (answer to previous QUESTION = *Yes*) then the question about the online evidence is shown/processed.
 
 (Some columns have been hidden to enhance the readability of the image).
