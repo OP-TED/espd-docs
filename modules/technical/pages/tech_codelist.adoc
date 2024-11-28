@@ -204,12 +204,14 @@ NOTE: The source code can be copied from the code block below the callout sectio
 <cac:TenderingCriterionProperty>
   <cbc:ID schemeID="Criterion" schemeAgencyID="OP" schemeVersionID="3.3.0">
      1fa05728-308f-43b0-b547-c903ffb0a8af
-  </cbc:ID> <!--1--> 
+  <!--1--> 
+  </cbc:ID> 
   <cbc:Description>ID of the economic operator</cbc:Description>
   <cbc:TypeCode listID="criterion-element-type" listAgencyID="OP" listVersionID="3.3.0">QUESTION</cbc:TypeCode>
   <cbc:ValueDataTypeCode listID="response-data-type" listAgencyID="OP" listVersionID="3.3.0">
     ECONOMIC_OPERATOR_IDENTIFIER
-  </cbc:ValueDataTypeCode> <!--2-->  
+  <!--2-->
+  </cbc:ValueDataTypeCode>   
 </cac:TenderingCriterionProperty>
 ----
 
@@ -222,12 +224,12 @@ NOTE: The source code can be copied from the code block below the callout sectio
 <cac:TenderingCriterionProperty>
   <cbc:ID schemeID="Criterion" schemeAgencyID="OP" schemeVersionID="3.3.0">
      1fa05728-308f-43b0-b547-c903ffb0a8af
-  </cbc:ID> <!--1--> 
+  </cbc:ID> 
   <cbc:Description>ID of the economic operator</cbc:Description>
   <cbc:TypeCode listID="criterion-element-type" listAgencyID="OP" listVersionID="3.3.0">QUESTION</cbc:TypeCode>
   <cbc:ValueDataTypeCode listID="response-data-type" listAgencyID="OP" listVersionID="3.3.0">
     ECONOMIC_OPERATOR_IDENTIFIER
-  </cbc:ValueDataTypeCode> <!--2-->  
+  </cbc:ValueDataTypeCode> 
 </cac:TenderingCriterionProperty>
 
 ----
@@ -273,11 +275,9 @@ NOTE: The source code can be copied from the code block below the callout sectio
   <cbc:ID schemeID="ISO/IEC 9834-8:2008 - 4UUID" schemeAgencyID="OP" schemeVersionID="3.3.0">acb58f0e-0fe4-4372-aa08-60d0c36bfcfe</cbc:ID>
   <cbc:ValidatedCriterionPropertyID schemeID="Criterion" schemeAgencyID="OP" schemeVersionID="3.3.0">
     1fa05728-308f-43b0-b547-c903ffb0a8af
-  <!--1--> 
   </cbc:ValidatedCriterionPropertyID> 
   <cbc:ResponseID schemeID="VAT" schemeAgencyID="ES-AEAT">
     B82387770
-  <!--2--> 
   </cbc:ResponseID>  
 </cac:TenderingCriterionResponse>  
 
