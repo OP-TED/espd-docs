@@ -406,7 +406,11 @@ _Table 7. External Reference_
 
 The XML snippet below illustrates how to use the cac:AdditionalDocumentReference in the ESPDRequest XML document to refer to a Contract Notice published in TED and on a national procurement board:
 
-[source,xml]
+==== Code with callouts
+
+NOTE: The source code can be copied from the code block below the callout section
+
+[Code with callouts]
 ----
 <!--- Root elements eliminated for the sake of brevity -->
 
@@ -478,6 +482,74 @@ The XML snippet below illustrates how to use the cac:AdditionalDocumentReference
 . If notice publication on TED happens at the same time the ESPD Request is prepared, the procurer will not yet have an OJS number. They can receive a temporary CN identifier (Received Notice Number). To save this number in the DocumentReference component, two cbc:Description elements must be created, and the second one used for the Received Notice Number. If you do not have a description for the CN then use dummy content for the first description, e.g. <cbc:Description>_</cbc:/Description>.
 . schemeAgencyID is used in this example to specify that the national Agency that created this reference to the national publication (e.g., "PLACE" to refer to the ID of the national electronic board where the CN was published). The pattern of the ID is the one created by the Spanish buyer.
 . In this case, the code NOJCN means 'Contract Notice (CN) published on a National Government Official Journal' (see file link:{url-tree}/codelists/gc/DocRefContentType.gc[/codelists/gc/DocRefContentType.gc] in the distribution package).
+
+==== Copy the code block
+
+[source,xml]
+----
+<!--- Root elements eliminated for the sake of brevity -->
+
+<!-- Reference to the Contract Notice published on TED -->
+
+<cac:AdditionalDocumentReference>
+
+<cbc:ID schemeAgencyID="OP">2017/S 142-293520</cbc:ID>
+
+<cbc:DocumentTypeCode listID="http://publications.europa.eu/resource/authority/docrefcontent-type" listAgencyID="OP" listVersionID="20220928-0">TED_CN</cbc:DocumentTypeCode>
+
+<cac:Attachment>
+
+<cac:ExternalReference>
+
+<!-- Beware XML URI fields may require encoded URLs -->
+
+<cbc:URI schemeAgencyID="OP">http://ted.europa.eu/udl?uri%3DTED:NOTICE:293520-2017:TEXT:EN:HTML%026src%3D0</cbc:URI>
+
+<cbc:FileName>Spain-Zamora: Repair and maintenance services</cbc:FileName>
+
+<cbc:Description>Repair and maintenance services. Real estate services.</cbc:Description>
+
+<cbc:Description>293520-2017</cbc:Description>
+
+</cac:ExternalReference>
+
+</cac:Attachment>
+
+</cac:AdditionalDocumentReference>
+
+<!-- Reference to the Contract Notice published on the Spanish Central Government eTendering Platform -->
+
+<cac:AdditionalDocumentReference>
+
+<!-- Contract Notice published on the Spanish Central eTendering Platform "PLACE" Plataforma de Contratación del Sector Público -->
+
+<cbc:ID schemeAgencyID="PLACE">3.17/20830.0160</cbc:ID>
+
+<!-- Contract Notice (CN) published on a National Government Official Journal -->
+
+<cbc:DocumentTypeCode listID="http://publications.europa.eu/resource/authority/docrefcontent-type" listAgencyID="OP" listVersionID="20220928-0">NOJCN</cbc:DocumentTypeCode>
+
+<cac:Attachment>
+
+<cac:ExternalReference>
+
+<!-- Beware XML URI fields may require encoded URLs -->
+
+<cbc:URI schemeAgencyID="PLACE">https://contrataciondelestado.es/wps/portal/!ut/p/b1/pY_LDoIwEEW_hQ8wM5S2wJKH5REUVEDbjenCGI3Axvj9gmFrMXF2Nzkncy8okDahHD2XMAYnUL1-3a76eRt6_Ziy4me6LqNIpAS9gxMjKeKm4ekUyQhIA5AQo5-w2WdORNu8rfghSxCzVMRFY7NR57_5-OUC_K-_t9j_CMqMkBkwTfwAhg3bdOguIEfMPQfthedkvoNluB8f5dWmrhJiI3KoQYbhEkYnLA-hUw8hhJ_dqV7pwLLeHJySpA!!/</cbc:URI>
+
+<cbc:FileName>Suministro y transporte de balasto</cbc:FileName>
+
+<cbc:Description>Suministro y transporte de balasto para el tramo Zamora — Pedralba de la Línea de Alta Velocidad Olmedo — Lubián — Ourense. Subtramo 8.</cbc:Description>
+
+</cac:ExternalReference>
+
+</cac:Attachment>
+
+</cac:AdditionalDocumentReference>
+
+</QualificationApplicationRequest>
+----
+
 
 == Contracting Body
 
@@ -765,7 +837,12 @@ IdentificationCode* |Code |1 |The code that identifies the country of the servic
 
 The XML snippet below shows how an example of how to supply the expected data for the service provider.
 
-[source,xml]
+==== Code with callouts
+
+NOTE: The source code can be copied from the code block below the callout section
+
+[Code with callouts]
+
 ----
 ...
 
@@ -821,6 +898,59 @@ _<!--- Root elements eliminated for the sake of brevity -->_
 . The service provider VAT number. The issuer Agency is the Spanish Tax Agency (AEAT). You can use the VIES platform to verify that the VAT number exists and is correct for Spain.
 . The registered name of the service provider is mandatory.
 . The country code of the service provider (ESP) is compulsory. You will need to use this code (ESP) to verify the VAT number in the VIES service.
+
+==== Copy the code block
+
+[source,xml]
+----
+...
+
+_<!--- Root elements eliminated for the sake of brevity -->_
+
+<cac:ContractingParty>
+
+<cac:Party>
+
+<cac:PartyIdentification><cbc:ID schemeAgencyID="VIES">B82387770</cbc:ID> </cac:PartyIdentification>
+
+<cac:PartyName><cbc:Name>Ministerio de Defensa</cbc:Name></cac:PartyName>
+
+<cac:PostalAddress><cac:Country><cbc:IdentificationCode listID="http://publications.europa.eu/resource/authority/country" listAgencyID="OP" listVersionID="20220928-0">ES</cbc:IdentificationCode></cac:Country></cac:PostalAddress>
+
+<cac:ServiceProviderParty>
+
+<cac:Party>
+
+<cbc:WebsiteURI>http://www.minhafp.gob.es/es-ES/Areas%20Tematicas/Patrimonio%20del%20Estado/Contratacion%20del%20Sector%20Publico/Paginas/ROLECE.aspx</cbc:WebsiteURI>
+
+<cbc:EndpointID>http://www.minhafp.gob.es/ESPD/endpoint</cbc:EndpointID>
+
+<cac:PartyIdentification>
+
+<cbc:ID schemeAgencyID="AEAT">B36699932</cbc:ID>
+
+</cac:PartyIdentification>
+
+<cac:PartyName>
+
+<cbc:Name>Registro Oficial de Licitadores y Empresas Clasificadas (ROLECE)</cbc:Name></cac:PartyName>
+
+<cac:PostalAddress>
+
+<cac:Country><cbc:IdentificationCode listID="http://publications.europa.eu/resource/authority/country" listAgencyID="OP" listVersionID="20220928-0">ESP</cbc:IdentificationCode></cac:Country>
+
+</cac:PostalAddress>
+
+</cac:Party>
+
+</cac:ServiceProviderParty>
+
+</cac:Party>
+
+</cac:ContractingParty>
+
+...
+----
 
 include::partial$feedback.adoc[]
 
