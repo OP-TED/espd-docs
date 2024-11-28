@@ -138,12 +138,18 @@ This fragment of XML shows how the compulsory attributes are used for the some o
 
 [Code with Callouts]
 ----
-<!--1--> <cbc:UBLVersionID schemeAgencyID="OASIS-UBL-TC">2.3</cbc:UBLVersionID>
-<cbc:ID schemeAgencyID="DGPE">ESPDREQ-DGPE-3b5755dfb8</cbc:ID> <!--2--> 
+<!--1--> 
+<cbc:UBLVersionID schemeAgencyID="OASIS-UBL-TC">2.3</cbc:UBLVersionID>
+<!--2-->
+<cbc:ID schemeAgencyID="DGPE">ESPDREQ-DGPE-3b5755dfb8</cbc:ID>  
 <cbc:UUID schemeID="ISO/IEC 9834-8:2008" schemeAgencyID="OP"
-          schemeVersionID="4">0fddbf2d-1e33-4267-b04f-52b59b72ccb6</cbc:UUID> <!--3--> 
-<cbc:ContractFolderID schemeAgencyID="DGPE">PP.20170419.1024-9</cbc:ContractFolderID> <!--4--> 
-<cbc:VersionID schemeAgencyID="OP" schemeVersionID="3.3.0">1.0</cbc:VersionID> <!--5--> 
+<!--3--> 
+          schemeVersionID="4">0fddbf2d-1e33-4267-b04f-52b59b72ccb6</cbc:UUID> 
+<!--4--> 
+<cbc:ContractFolderID schemeAgencyID="DGPE">PP.20170419.1024-9</
+cbc:ContractFolderID> 
+<!--5--> 
+<cbc:VersionID schemeAgencyID="OP" schemeVersionID="3.3.0">1.0</cbc:VersionID> 
 ----
 <1> The Agency responsible for the maintenance of the UBL versioning is the OASIS UBL Technical Committee
 <2> The identifier for this document was issued by the a Spanish Central Government Directorate identified as 'DGPE'
