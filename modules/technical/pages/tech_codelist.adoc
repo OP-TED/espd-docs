@@ -140,7 +140,7 @@ This fragment of XML shows how the compulsory attributes are used for the some o
 
 NOTE: The source code can be copied from the code block below the callout section
 
-[Code with Callouts]
+[Code with callouts]
 ----
 <!--1--> 
 <cbc:UBLVersionID schemeAgencyID="OASIS-UBL-TC">2.3</cbc:UBLVersionID>
@@ -163,7 +163,7 @@ cbc:ContractFolderID>
 
 Beware that the codes may be numbers, text or combinations of both. These code labels are the ones that are specified in the codelist spreadsheets and XML Genericode files distributed jointly with this specification (in the folder /codelists of the link:{url-tree}[distribution package].
 
-==== Copy the code block here
+==== Copy the code block
 
 [source,xml]
 ----
