@@ -250,10 +250,12 @@ NOTE: The source code can be copied from the code block below the callout sectio
   <cbc:ID schemeID="ISO/IEC 9834-8:2008 - 4UUID" schemeAgencyID="OP" schemeVersionID="3.3.0">acb58f0e-0fe4-4372-aa08-60d0c36bfcfe</cbc:ID>
   <cbc:ValidatedCriterionPropertyID schemeID="Criterion" schemeAgencyID="OP" schemeVersionID="3.3.0">
     1fa05728-308f-43b0-b547-c903ffb0a8af
-  </cbc:ValidatedCriterionPropertyID> <!--1--> 
+  <!--1--> 
+  </cbc:ValidatedCriterionPropertyID> 
   <cbc:ResponseID schemeID="VAT" schemeAgencyID="ES-AEAT">
     B82387770
-  </cbc:ResponseID> <!--2-->  
+  <!--2-->
+  </cbc:ResponseID>   
 </cac:TenderingCriterionResponse>
 
 ----
@@ -271,10 +273,12 @@ NOTE: The source code can be copied from the code block below the callout sectio
   <cbc:ID schemeID="ISO/IEC 9834-8:2008 - 4UUID" schemeAgencyID="OP" schemeVersionID="3.3.0">acb58f0e-0fe4-4372-aa08-60d0c36bfcfe</cbc:ID>
   <cbc:ValidatedCriterionPropertyID schemeID="Criterion" schemeAgencyID="OP" schemeVersionID="3.3.0">
     1fa05728-308f-43b0-b547-c903ffb0a8af
-  </cbc:ValidatedCriterionPropertyID> <!--1--> 
+  <!--1--> 
+  </cbc:ValidatedCriterionPropertyID> 
   <cbc:ResponseID schemeID="VAT" schemeAgencyID="ES-AEAT">
     B82387770
-  </cbc:ResponseID> <!--2-->  
+  <!--2--> 
+  </cbc:ResponseID>  
 </cac:TenderingCriterionResponse>  
 
 ----
