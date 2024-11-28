@@ -619,7 +619,7 @@ The following fragment of XML code shows how this is expressed:
 
 [source,xml]
 ----
-_Use of semantisised boolean codes for REQUIREMENT processing control_
+_Use of semanticised boolean codes for REQUIREMENT processing control_
 
 _<!-- lines with '...' refer to elements that have been removed for brevity. See complete sample in folder xml-examples of this distribution -->_
 
@@ -811,7 +811,7 @@ _<!--...-->_
 ----
 
 
-. This property (cac:TenderingCriterionProperty) can be used by the software application to help the buyer select the type of REQUIREMENT it wants to be shown to the economic operator, either an Amount limited by a threshold and a period of time or rating constrained by a threshold and a rating scheme. The expected value will be a code expressing a three-state indicator (a boolean semantisised as CODE_BOOLEAN).
+. This property (cac:TenderingCriterionProperty) can be used by the software application to help the buyer select the type of REQUIREMENT it wants to be shown to the economic operator, either an Amount limited by a threshold and a period of time or rating constrained by a threshold and a rating scheme. The expected value will be a code expressing a three-state indicator (a boolean semanticised as CODE_BOOLEAN).
 . In this example, the buyer has specified the value RADIO_BUTTON_TRUE.
 . As the value of the element cbc:ExpectedCode, inside the REQUIREMENT (cac:TenderingCriterionProperty) ''Select the type of requirement'', is RADIO_BUTTON_TRUE the economic operator will see the first SUBGROUP of REQUIREMENT(s) (UUID 26ece6a2-b360-46c1-890d-8338913b8719) and will have to respond the QUESTION with the text "Amount".
 . The buyer is specifying that an amount above 100006 Euros is expected.
@@ -845,7 +845,7 @@ _<!-- ... -->_
 . This UUID is identical to the UUID of the cac:TenderingCriterionProperty selected by the buyer for the QUESTION "Amount:" (see XML above).
 . The element cbc:ResponseAmount is of type "AMOUNT", as expected by the validation mechanisms.
 . The value of the amount meets the REQUIREMENT, as the amount is required to be above 10006 Euros (see XML above, notice the currencyID type value, too).
-. Beware that, contrary to other numeric types of data, AMOUNT is not semantisised and mapped to cbc:ResponseMinimumAmount nor cbc:ResponseMaximumAmount`, as in the current ESPD-EDM specification all monetary thresholds are always "minimum" (and similarly for QUANTITY or QUANTITY_INTEGER, e.g. see the REQUIREMENT ''Minimum number of years'' in criterion #49 (tab _SC-Abilities_5 (Staff)_ in the link:{url-tree}/codelists/ESPD-criterion.xlsx[ESPD-criterion] spread-sheet).
+. Beware that, contrary to other numeric types of data, AMOUNT is not semanticised and mapped to cbc:ResponseMinimumAmount nor cbc:ResponseMaximumAmount`, as in the current ESPD-EDM specification all monetary thresholds are always "minimum" (and similarly for QUANTITY or QUANTITY_INTEGER, e.g. see the REQUIREMENT ''Minimum number of years'' in criterion #49 (tab _SC-Abilities_5 (Staff)_ in the link:{url-tree}/codelists/ESPD-criterion.xlsx[ESPD-criterion] spread-sheet).
 
 
 == Use of CAPTION

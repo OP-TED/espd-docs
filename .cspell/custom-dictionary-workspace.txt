@@ -80,8 +80,8 @@ schem
 SCLE
 sectnums
 SELFCONTAINED
-semantisisation
-semantisised
+semanticisation
+semanticised
 SEMIC
 Sens
 Sergi
