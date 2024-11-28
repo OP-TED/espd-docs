@@ -1836,7 +1836,7 @@ all the information about its classification and documentation about its financi
 [cols=",",options="header",]
 
 . Notice this UUID is identical to the cac:TenderingCriterionProperty one. This is the way the UBL-2.3 Qualification Application Response document links each QUESTION(s) to one response (and only one), or vice versa.
-. The economic operator states here that it meets the criteria. Notice that the data element is the UBL-2.3 element cbc:ResponseIndicator, which is an ''semantisisation'' (a specialisation) of cbc:Indicator and therefore corresponds to the type of data expected by the buyer in the Request (in cbc:ValueDataTypeCode).
+. The economic operator states here that it meets the criteria. Notice that the data element is the UBL-2.3 element cbc:ResponseIndicator, which is an ''semanticisation'' (a specialisation) of cbc:Indicator and therefore corresponds to the type of data expected by the buyer in the Request (in cbc:ValueDataTypeCode).
 . This is the UUID corresponding to the QUESTION in the Request ''Please describe them''.
 . The economic operator describes how it meets the criteria. The data element containing the explanation by the EO. Notice that the type of data is the UBL-2.3 element cbc:Description, as requested by the buyer in cbc:ValueDataTypeCode.
 
