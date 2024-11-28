@@ -136,6 +136,10 @@ _Table 4. UBL attributes for identifiers and corresponding definitions, as provi
 
 This fragment of XML shows how the compulsory attributes are used for the some of the root elements of an ESPD Request document.
 
+==== Code with callouts
+
+NOTE: The source code can be copied from the code block below the callout section.
+
 [Code with Callouts]
 ----
 <!--1--> 
