@@ -50,7 +50,7 @@ This describes the resulting ESPD Codelists generic code files produced by the X
 
 * *The ESPD Validation component*. 
 
-This validates the generated files produced (ESPD Request UBL XML, ESPD Response UBL XML, ESPD Codelists Generic Code) against a UBL schema and a set of ESPD specific rules. 
+This validates the generated files produced (ESPD Request UBL XML, ESPD Response UBL XML, ESPD Codelists Generic Code) against a UBL schema and a set of ESPD specific rules. This allows the  high level validation of ESPD documents produced by the various ESPD Services implemented by different member states. The validation tool (testbed) can be found https://www.itb.ec.europa.eu/espd/upload[here online].
 
 
 == ESPD Procurement Procedure Steps 
