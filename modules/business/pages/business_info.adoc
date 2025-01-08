@@ -38,7 +38,13 @@ The ESPD is specifically concerned with qualification of suppliers step above.
 
 == The ESPD Process from a Business Perspective
 
+The ESPD process for a buyer
 
+image::espd_bus_buyerer.png[]
+
+The ESPD process for a supplier
+
+image::espd_bus_supplier.png[]
 
 == Legal framework
 [.text-left]
