@@ -99,7 +99,7 @@ s|Components|Type|Card|Description|Requirements
 *Rule scope*: Common (BR-OTH-02)
 
 |*cbc:CopyIndicator* |Indicator |0..1 |Indicates whether this document is a copy (true) or not (false). +
-ESPD definition: this component enables to keep track of the event of having forwarded the same document several times to the same or to different destinations. + 
+ESPD definition: this component indicates if the document is an original or a copy, i.e., has or has not been generated or sent previously.  +
 Additional comments: copies of an ESPD document should be identified with same UUIDs. a|
 *Information Requirement*: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1.0-tbr070-002[_tbr070-002_].
 
