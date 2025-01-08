@@ -36,6 +36,10 @@ The three main phases of the public procurement process are:
 
 The ESPD is specifically concerned with qualification of suppliers step above.
 
+== The ESPD Process from a Business Perspective
+
+
+
 == Legal framework
 [.text-left]
 The Public Procurement Directive 2014/24/EC Article 59 (the "Directive") introduced the concept of the European Single Procurement Document (ESPD). By mapping out equivalent certificates between Member States, the ESPD replaces certificates issued by public authorities, or a third party involved in a procedure. It greatly simplifies and levels out cross-border participation by a greater number of operators in public procurement, and contributes to integrating the European Single Market.
