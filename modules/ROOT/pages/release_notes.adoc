@@ -8,7 +8,7 @@
 :sectnums:
 = Release Notes
 
-== v4.0.0 (October 2024) 
+== v4.0.0 (September 2024) 
 
 The main change in ESPD-EDM version 4.0.0 is the replacement of dynamic UUIDs with XML Path like IDs. Some other minor errors were fixed in the data structure and the code lists.   
 
