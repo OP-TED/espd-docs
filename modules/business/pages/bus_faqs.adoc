@@ -1,0 +1,5 @@
+Suggestions:
+
+* business rules, per version 
+* role based tool showing buyers and suppliers what they have to fill in per version
+* answers to questions from public
