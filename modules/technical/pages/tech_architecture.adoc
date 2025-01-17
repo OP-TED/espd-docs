@@ -62,7 +62,7 @@ The Buyer or the Contracting Authority (CA) initiates a procurement procedure.
 image:ESPD_Buyer_Plan.jpg[Buyer Planning,align="center",width=650,height=500]
 
 // Image as code 1
-image::https://kroki.io/pikchr/svg/eNqNzk0OwiAQBeB9TzHhAA0oxNilpHFnvAJFbCciGBwVby_xJ2lYuXzJm-8NuUzANrenSx0DG31MMHhjT8053h0kHCcC3ioMTb8VHQwxQzIHUJcMbO9NCBjG3yHPYr3QUsMRvS9JytVSq5JoromWfzRTcbtIaN31D43eX9fzjwnJgSEo9rdSkfOGeQEdYk-v)=[diagram]
+image::https://kroki.io/pikchr/svg/eNqNzk0OwiAQBeB9TzHhAA0oxNilpHFnvAJFbCciGBwVby_xJ2lYuXzJm-8NuUzANrenSx0DG31MMHhjT8053h0kHCcC3ioMTb8VHQwxQzIHUJcMbO9NCBjG3yHPYr3QUsMRvS9JytVSq5JoromWfzRTcbtIaN31D43eX9fzjwnJgSEo9rdSkfOGeQEdYk-v=[Image as code 1]
 
 ////
 text "Buyer:" color black
