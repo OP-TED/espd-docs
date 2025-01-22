@@ -84,7 +84,9 @@ the requirement issued by the contracting authority -->
         <cbc:PropertyGroupTypeCode listID="property-group-type" listVersionID="4.0.0">ONFALSE</cbc:PropertyGroupTypeCode>
         <cac:TenderingCriterionProperty>
                 <cbc:ID schemeID="criterion" schemeAgencyID="OP" schemeVersionID="20210616-0">d996223a-3f54-4803-bf05-39019c843e94</cbc:ID>
+                <1>
                 <cbc:Description>Minimum rating</cbc:Description>
+                <2>
                 <cbc:TypeCode listID="criterion-element-type" listVersionID="4.0.0">REQUIREMENT</cbc:TypeCode>
                 <cbc:ValueDataTypeCode listID="response-data-type" listVersionID="4.0.0">QUANTITY</cbc:ValueDataTypeCode>
                 <!-- No answer is expected
@@ -100,8 +102,8 @@ the requirement issued by the contracting authority -->
 
 This case of use has to be interpreted by the software application that displays the ESPDRequest document so the <<eo>> can select which _REQUIREMENT_SUBGROUP_ is shown and provide an answer to it. Taking this into consideration:
 
-. The value of _boolean-gui-control_ will be used by the application software to display either the REQUIREMENT for "Description of the economic or financial requirement" or the REQUIREMENT for "Minimum rating".
-. In this case the value for _boolean-gui-control_ is _RADIO_BUTTON_TRUE_. This will display REQUIREMENT for "Description of the economic or financial requirement" as default since the following _cac:SubsidiaryTenderingCriterionPropertyGroup_ is defined with _cbc:PropertyGroupTypeCode_ value=*ONTRUE*.
+<1> The value of _boolean-gui-control_ will be used by the application software to display either the REQUIREMENT for "Description of the economic or financial requirement" or the REQUIREMENT for "Minimum rating".
+<2> In this case the value for _boolean-gui-control_ is _RADIO_BUTTON_TRUE_. This will display REQUIREMENT for "Description of the economic or financial requirement" as default since the following _cac:SubsidiaryTenderingCriterionPropertyGroup_ is defined with _cbc:PropertyGroupTypeCode_ value=*ONTRUE*.
 
 [[country-xml-example,country xml Example]]
 === country
