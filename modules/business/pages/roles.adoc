@@ -1,0 +1,287 @@
+:doctitle: Business Roles and the ESPD Form
+:doccode: epo-bus-prod-020
+:author: NPJ
+:authoremail: nicole-anne.paterson-jones@ext.ec.europa.eu
+:docdate: January 2024
+
+Both a CA, who creates the ESPD Request document, and the various EO entities who respond to one or more lots specified by the CA and produce an ESPD Response document, would use an ESPD Service to fill out the parts specific to their role in the public procurement process.
+
+This is a guide to who fills out what in the ESPD 
+
+== The CA
+
+The CA fills in the following sections:
+
+=== Part 1 of the form 
+
+Some fields in this section might be a national requirement for e.g., national tracking purposes.
+
+* Information about the publication
+* information about the procurer's identity
+* Information about the publication procedure
+
+==== Lots
+
+A procurement is always defined in *Lots*, which are effectively a package of supply. Even if there is only one instance of supply, there is one lot. Lots can differ in content, quantity, time, and location of delivery e.g.:
+
+* Lot 1: 2 tons/ product 1/ to Poland/ July
+* Lot 2: 3.5 tons/ product 2/ to Germany/ September
+
+However, the lots are usually of a related product and/ or under the same financial allocation for the CA's purposes.
+
+=== Part 3 of the form: Exclusion Grounds
+
+*EU-wide exclusion grounds apply to the complete procurement i.e., automatically to every lot.*
+
+NOTE: EU mandated exclusion grounds are included automatically and the CA cannot remove any.
+
+* National exclusion grounds
+
+These are included at a national level in a country specific ESPD service. 
+
+NOTE: The CA can decide which optional national exclusion grounds to include as per national law. Mandatory national exclusion grounds cannot be excluded.
+
+=== Part 4 of the form: Selection Criteria
+
+The CA decides, *per lot*, which selection criteria apply and ticks/ unticks the specific criteria.
+
+
+=== Part 5 of the form: Reduction of Candidates
+
+This is where the CA can indicate whether they have a specific objective and where they will apply criteria for the EO to prove non-discrimination or compliance with other rules, for eligibility for consideration to supply.
+
+== Economic Operators
+
+Economic Operators can have different roles
+
+* Sole contractor
+* Group member: leader 
+* Group member: not leader
+* Other Entity not relied on 
+* Other Entity relied on 
+
+Due to the complexity of which parts are required to be filled in by which entities, a table is provided below:
+
+
+== Part I: Publication and Basic Information
+
+=== Part I-A: Publication Details
+[cols="3,1,1,1,1,1,1,1,1"]
+|===
+|Field |Completed by CA |Sole contractor |Group Leader |Not Group Leader |Other Entity, Not Relied On |Other Entity, Relied On |Evidence available electronically? |Evidence available submitted?
+
+|Received notice number |x | | | | | | |
+|Notice number in the OJS |x | | | | | | |
+|OJS URL |x | | | | | | |
+|National Official Journal |x | | | | | | |
+|===
+
+=== Part I-B: Procurer Identification
+[cols="3,1,1,1,1,1,1,1,1"]
+|===
+|Field |Completed by CA |Sole contractor |Group Leader |Not Group Leader |Other Entity, Not Relied On |Other Entity, Relied On |Evidence available electronically? |Evidence available submitted?
+
+|Official name |x | | | | | | |
+|Country |x | | | | | | |
+|Website |x | | | | | | |
+|VAT no. |x | | | | | | |
+|City |x | | | | | | |
+|Street & no. |x | | | | | | |
+|Post Code |x | | | | | | |
+|Contact person |x | | | | | | |
+|Telephone |x | | | | | | |
+|e-mail |x | | | | | | |
+|===
+
+=== Part I-C: Procurement Procedure
+[cols="3,1,1,1,1,1,1,1,1"]
+|===
+|Field |Completed by CA |Sole contractor |Group Leader |Not Group Leader |Other Entity, Not Relied On |Other Entity, Relied On |Evidence available electronically? |Evidence available submitted?
+
+|Title |x | | | | | | |
+|Short description |x | | | | | | |
+|File reference number |x | | | | | | |
+|Number of lots |x | | | | | | |
+|===
+
+== Part II: Economic Operator Information
+
+=== Part II-A: EO Basic Information
+[cols="3,1,1,1,1,1,1,1,1"]
+|===
+|Field |Completed by CA |Sole contractor |Group Leader |Not Group Leader |Other Entity, Not Relied On |Other Entity, Relied On |Evidence available electronically? |Evidence available submitted?
+
+|Official name | | | | | | | |
+|Country | | | | | | | |
+|Website | | | | | | | |
+|VAT no. | | | | | | | |
+|City | | | | | | | |
+|Street & no. | | | | | | | |
+|Post Code | | | | | | | |
+|Contact person | | | | | | | |
+|Telephone | | | | | | | |
+|e-mail | | | | | | | |
+|EO size | | | | | | | |
+|Sheltered Workshop? | | | | | | | |
+|EO registered in a pre qualification system | | | | | | | |
+|Economic Operator together with others | | | | | | | |
+|===
+
+=== Part II-B: EO Representatives Information
+[cols="3,1,1,1,1,1,1,1,1"]
+|===
+|Field |Completed by CA |Sole contractor |Group Leader |Not Group Leader |Other Entity, Not Relied On |Other Entity, Relied On |Evidence available electronically? |Evidence available submitted?
+
+|First Name | | | | | | | |
+|Last Name | | | | | | | |
+|Date of Birth | | | | | | | |
+|Place of Birth | | | | | | | |
+|Country | | | | | | | |
+|Website | | | | | | | |
+|Role | | | | | | | |
+|City | | | | | | | |
+|Street and Number | | | | | | | |
+|Post code | | | | | | | |
+|Telephone | | | | | | | |
+|E-mail | | | | | | | |
+|Detailed Information | | | | | | | |
+|===
+
+=== Part II-C: Sub-contractors relied on
+[cols="3,1,1,1,1,1,1,1,1"]
+|===
+|Field |Completed by CA |Sole contractor |Group Leader |Not Group Leader |Other Entity, Not Relied On |Other Entity, Relied On |Evidence available electronically? |Evidence available submitted?
+
+|Is the EO reliant on the capacities of other entities? | | | | | | | |
+|===
+
+=== Part II-D: Subcontractors not relied on
+[cols="3,1,1,1,1,1,1,1,1"]
+|===
+|Field |Completed by CA |Sole contractor |Group Leader |Not Group Leader |Other Entity, Not Relied On |Other Entity, Relied On |Evidence available electronically? |Evidence available submitted?
+
+|Does the EO intend to subcontract? | | | | | | | |
+|===
+
+== Part III: Exclusion Grounds
+
+=== Part III-A: Criminal Convictions
+[cols="3,1,1,1,1,1,1,1,1"]
+|===
+|Ground |Completed by CA |Sole contractor |Group Leader |Not Group Leader |Other Entity, Not Relied On |Other Entity, Relied On |Evidence available electronically? |Evidence available submitted?
+
+|Participation in a criminal organisation |x | | | | | | |
+|Corruption |x | | | | | | |
+|Fraud |x | | | | | | |
+|Terrorist offences or offences linked to terrorist activities |x | | | | | | |
+|Money laundering or terrorist financing |x | | | | | | |
+|Child labour and other forms of trafficking in human beings |x | | | | | | |
+|===
+
+=== Part III-B: Payment of Taxes/Social Security
+[cols="3,1,1,1,1,1,1,1,1"]
+|===
+|Ground |Completed by CA |Sole contractor |Group Leader |Not Group Leader |Other Entity, Not Relied On |Other Entity, Relied On |Evidence available electronically? |Evidence available submitted?
+
+|Payment of taxes |x | | | | | | |
+|Payment of social security contributions |x | | | | | | |
+|===
+
+=== Part III-C: Insolvency, Conflicts of Interest, Professional Misconduct
+[cols="3,1,1,1,1,1,1,1,1"]
+|===
+|Ground |Completed by CA |Sole contractor |Group Leader |Not Group Leader |Other Entity, Not Relied On |Other Entity, Relied On |Evidence available electronically? |Evidence available submitted?
+
+|Breaching of obligations in the fields of environmental law |x | | | | | | |
+|Breaching of obligations in the fields of social law |x | | | | | | |
+|Breaching of obligations in the fields of labour law |x | | | | | | |
+|Bankruptcy |x | | | | | | |
+|Insolvency |x | | | | | | |
+|Arrangement with creditors |x | | | | | | |
+|Analogous situation like bankruptcy under national law |x | | | | | | |
+|Assets being administered by liquidator |x | | | | | | |
+|Business activities are suspended |x | | | | | | |
+|Guilty of grave professional misconduct |x | | | | | | |
+|Agreements with other economic operators aimed at distorting competition |x | | | | | | |
+|Conflict of interest due to its participation in the procurement procedure |x | | | | | | |
+|Direct or indirect involvement in the preparation of this procurement procedure |x | | | | | | |
+|Early termination, damages or other comparable sanctions |x | | | | | | |
+|Guilty of misrepresentation, withheld information, unable to provide required documents and obtained confidential information of this procedure |x | | | | | | |
+|===
+
+=== Part III-D: National Exclusion Grounds
+[cols="3,1,1,1,1,1,1,1,1"]
+|===
+|Ground |Completed by CA |Sole contractor |Group Leader |Not Group Leader |Other Entity, Not Relied On |Other Entity, Relied On |Evidence available electronically? |Evidence available submitted?
+
+|Purely national exclusion grounds |x | | | | | | |
+|===
+
+== Part IV: Selection Criteria
+
+=== Suitability
+[cols="3,1,1,1,1,1,1,1,1"]
+|===
+|Criterion |Completed by CA |Sole contractor |Group Leader |Not Group Leader |Other Entity, Not Relied On |Other Entity, Relied On |Evidence available electronically? |Evidence available submitted?
+
+|Enrolment in a relevant professional register |x | | | | | | |
+|Enrolment in a trade register |x | | | | | | |
+|For service contracts: authorisation of particular organisation needed |x | | | | | | |
+|For service contracts: membership of particular organisation needed |x | | | | | | |
+|===
+
+=== Economic & Financial Standing
+[cols="3,1,1,1,1,1,1,1,1"]
+|===
+|Criterion |Completed by CA |Sole contractor |Group Leader |Not Group Leader |Other Entity, Not Relied On |Other Entity, Relied On |Evidence available electronically? |Evidence available submitted?
+
+|General yearly turnover |x | | | | | | |
+|Average yearly turnover |x | | | | | | |
+|Specific average turnover |x | | | | | | |
+|Specific yearly turnover |x | | | | | | |
+|Financial ratio |x | | | | | | |
+|Professional risk indemnity insurance |x | | | | | | |
+|Other economic or financial requirements |x | | | | | | |
+|===
+
+=== Technical & Professional Standing
+[cols="3,1,1,1,1,1,1,1,1"]
+|===
+|Criterion |Completed by CA |Sole contractor |Group Leader |Not Group Leader |Other Entity, Not Relied On |Other Entity, Relied On |Evidence available electronically? |Evidence available submitted?
+
+|For works contracts: performance of works of the specified type |x | | | | | | |
+|For supply contracts: performance of deliveries of the specified type |x | | | | | | |
+|For service contracts: performance of services of the specified type |x | | | | | | |
+|Technicians or technical bodies for quality control |x | | | | | | |
+|Technical facilities and measures for ensuring quality |x | | | | | | |
+|Supply chain management |x | | | | | | |
+|Environmental management measures |x | | | | | | |
+|Tools, plant or technical equipment |x | | | | | | |
+|Educational and professional qualifications |x | | | | | | |
+|Special requirements check |x | | | | | | |
+|Number of managerial staff |x | | | | | | |
+|Average annual manpower |x | | | | | | |
+|Subcontracting proportion |x | | | | | | |
+|For supply contracts: samples, descriptions or photographs without certification of authenticity |x | | | | | | |
+|For supply contracts: samples, descriptions or photographs with certification of authenticity |x | | | | | | |
+|For supply contracts: certificates by quality control institutes |x | | | | | | |
+|===
+
+=== Quality Assurance and Environmental Management
+[cols="3,1,1,1,1,1,1,1,1"]
+|===
+|Criterion |Completed by CA |Sole contractor |Group Leader |Not Group Leader |Other Entity, Not Relied On |Other Entity, Relied On |Evidence available electronically? |Evidence available submitted?
+
+|Certificates by independent bodies about quality assurance standards |x | | | | | | |
+|Certificates by independent bodies about environmental management systems or standards |x | | | | | | |
+|===
+
+== Part V: Reduction of Candidates
+[cols="3,1,1,1,1,1,1,1,1"]
+|===
+|Field |Completed by CA |Sole contractor |Group Leader |Not Group Leader |Other Entity, Not Relied On |Other Entity, Relied On |Evidence available electronically? |Evidence available submitted?
+
+|Reduction of the number of qualified candidates | | | | | | | |
+|===
+
+
