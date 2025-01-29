@@ -213,11 +213,12 @@ The ESPD Service is oriented therefore to these two types of users:
 Economic Operators can play different roles, catered for in the ESPD-EDM, within a procurement procedure:
 
 * *Sole Tenderer:* sole economic operator participating in the procurement procedure by itself;
-* *Group Member:* In case of Consortium, Joint Venture or other type of groups, the economic operator can participate as a:
-**	*Group Leader:* the leader of the group;
-** *Group Member (not leader)* of the group.
+* *Group Member:* In case of a Consortium, Joint Venture or other types of groups, the economic operator can participate as a:
+**	*Group Leader:* the leader of the group: the Group Leader is the point of contact with the buyer and speaks on behalf of the group with the buyer.
+** *Group Member (not leader)* of the group: a group member supplies a percentage of the contract.
 ** *Other entity (relied upon):* An entity upon which the main contractor, the group, or another subcontractor, relies on order to meet the selection criteria;
-** *Other entity (not relied upon) or Subcontractor*: An entity upon which the main contractor, the group, or another subcontractor, does not rely on order to meet the selection criteria.
+** *Subcontractor*: An entity upon which the main contractor, the group, or another subcontractor, does not rely on order to meet the selection criteria, not a group member.
+
 
 
 == Parts of the ESPD
