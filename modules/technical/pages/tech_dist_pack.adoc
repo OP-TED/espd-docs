@@ -12,24 +12,21 @@ The latest distribution package can be found on https://github.com/OP-TED/ESPD-E
 ==== Branches
 The master branch contains the code. Only a master branch is maintained with different version tags.
 
-The wgm-reports branch is for the Open user Community reports which are minutes of the monthly meetings.
-
-
-
 ==== README.md
 this is the description of the contents, and a brief overview of what can be found where in the repository. It is also used as the release notes.
 
 ==== Folders under the latest version
 ===== The \_ESPDTeam_ folder (for internal use only)
 
+////
 * *README.md* that describes the folder contents
 * *Bach-Database-Ratios.xlsx*: source code for the financial-ratio-type code list that is maintained by the OP, sourced from the Bank of France.
 * *ESPD-Codelists.xlsx*: Code list source definition that is transformed using the /XLSX CodeLists to Genericode/Excel_to_GC_Multilang_v1.0.xsl into the .gc codelist files in ESPD-EDM/codelists/gc. (A list of all the ESPD code lists).
 * */XLSX CodeLists to Genericode*. Style sheet to generate genericode code lists from the definition in the ESPD-CodeLists.xlsx. (Instructions on how to generate the gc files are in the readme) ESPD-EDM/__ESPDTeam__/xslx-codelists-to-genericode at master · OP-TED/ESPD-EDM (github.com)
-
+////
 
 ===== The codelists folder
-The *codelists folder* contains the ESPD-criterion.xlsx file, the “Criterion Exel File”, an internal template that is used to define the ESPD Request structure and from which “test” ESPD-Request and ESPD-Response xml files can be generated internally. These xml output files are made available to the OUC in the xml-examples folder.
+The *codelists folder* contains the ESPD-criterion.xlsx file, the “Criterion Excel File”, an internal template that is used to define the ESPD Request structure and from which “test” ESPD-Request and ESPD-Response xml files can be generated internally. These xml output files are made available to the OUC in the xml-examples folder.
 
 The *gc sub-folder* contains all the generic codes that the ESPD uses. General codelists are downloaded and used as is, or a subset of them is used.
 

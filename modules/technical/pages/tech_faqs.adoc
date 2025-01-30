@@ -1,0 +1,6 @@
+Suggestions:
+
+* tool (demo) showing what fields should be available plus their behaviour, per version - as in current demo
+* ecertis/ other info sources integration
+* uuid and path-like identifier explanations
+* questions from the public

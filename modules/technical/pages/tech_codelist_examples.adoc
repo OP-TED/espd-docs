@@ -101,7 +101,7 @@ the requirement issued by the contracting authority -->
 This case of use has to be interpreted by the software application that displays the ESPDRequest document so the <<eo>> can select which _REQUIREMENT_SUBGROUP_ is shown and provide an answer to it. Taking this into consideration:
 
 . The value of _boolean-gui-control_ will be used by the application software to display either the REQUIREMENT for "Description of the economic or financial requirement" or the REQUIREMENT for "Minimum rating".
-. In this case the value for _boolean-gui-control_ is _RADIO_BUTTON_TRUE_. This will display REQUIREMENT for "Description of the economic or financial requirement" as defaul since the following _cac:SubsidiaryTenderingCriterionPropertyGroup_ is defined with _cbc:PropertyGroupTypeCode_ value=*ONTRUE*.
+. In this case the value for _boolean-gui-control_ is _RADIO_BUTTON_TRUE_. This will display REQUIREMENT for "Description of the economic or financial requirement" as default since the following _cac:SubsidiaryTenderingCriterionPropertyGroup_ is defined with _cbc:PropertyGroupTypeCode_ value=*ONTRUE*.
 
 [[country-xml-example,country xml Example]]
 == country
@@ -241,7 +241,7 @@ Code list is used to define attribute _currencyID_ of element _cbc:ExpectedAmoun
 [[docrefcontent-type-xml-example,docrefcontent-type xml Example]]
 == docrefcontent-type
 
-The following xml code is an example of use of code list xref:tech_codelist.adoc#docrefcontent-type-table[docrefcontent-type] in a _cac:AdditionalDocumentReference_ specifing its _cbc:DocumentTypeCode_ value in a ESPDRequest.
+The following xml code is an example of use of code list xref:tech_codelist.adoc#docrefcontent-type-table[docrefcontent-type] in a _cac:AdditionalDocumentReference_ specifying its _cbc:DocumentTypeCode_ value in a ESPDRequest.
 
 
 [source,xml,linenums]
@@ -270,7 +270,7 @@ This _cac:AdditionalDocumentReference_ specifies a <<ted>> Notice as it is decla
 [[economic-operator-size-xml-example,economic-operator-size xml Example]]
 == economic-operator-size
 
-The following xml code is an example of use of code list xref:tech_codelist.adoc#economic-operator-size-table[economic-operator-size] in a _cac:EconomicOperatorParty_ specifing its _cbc:IndustryClassificationCode_ value in a ESPDResponse.
+The following xml code is an example of use of code list xref:tech_codelist.adoc#economic-operator-size-table[economic-operator-size] in a _cac:EconomicOperatorParty_ specifying its _cbc:IndustryClassificationCode_ value in a ESPDResponse.
 
 
 [source,xml,linenums]

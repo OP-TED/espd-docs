@@ -50,7 +50,7 @@ Changes to the ESPD-EDM XSLT files:
 
       ** **Fixed GitHub issue https://github.com/OP-TED/ESPD-EDM/issues/387[#387] - Improper listVersionID attribute value in cbc:DocumentTypeCode**: cbc:ResponseCode/@listVersionID for  the code list "country"
 
-      ** **Fixed GitHub issue https://github.com/OP-TED/ESPD-EDM/issues/390[#390] - PERCENTAGE Questions: Artifact Examples and Shematrons Inconsistency**: cbc:ResponseQuantity/@unitCode replaced by cbc:ResponseNumeric/@format
+      ** **Fixed GitHub issue https://github.com/OP-TED/ESPD-EDM/issues/390[#390] - PERCENTAGE Questions: Artifact Examples and Schematron Inconsistency**: cbc:ResponseQuantity/@unitCode replaced by cbc:ResponseNumeric/@format
       ** cbc:ResponseCode/@listAgencyID for  the code list "occupation" 
 
  * **Updated the xslt file "EconomicOperatorData.xslt" (missing element/attribute or incorrect value)**
@@ -89,7 +89,7 @@ The Interoperability Testbed https://www.itb.ec.europa.eu/espd/upload[ESPD valid
 * **Fixed GitHub issue https://github.com/OP-TED/ESPD-EDM/issues/387[#387] - Improper listVersionID attribute value in cbc:DocumentTypeCode**
      ** Schematron files: "./common/sch/01-ESPD-common-cl-attributes.sch", "./common/sch/01-ESPD-codelist-values.sch", "./common/sch/04-ESPD-common-other-br"  
 
-* **Fixed GitHub issue https://github.com/OP-TED/ESPD-EDM/issues/390[#390] - PERCENTAGE Questions: Artifact Examples and Shematrons Inconsistency**
+* **Fixed GitHub issue https://github.com/OP-TED/ESPD-EDM/issues/390[#390] - PERCENTAGE Questions: Artifact Examples and Schematron Inconsistency**
      ** Schematron file: "./common/sch/03-ESPD-resp-criterion-br.sch"
 
 * Generated the ESPD validator for the Request and the Response for v3.3.0, with the latest entry files (generic code files for code lists, xml files for the ESPD Request and the ESPD Response).

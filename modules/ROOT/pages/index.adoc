@@ -23,15 +23,10 @@ An overview of the ESPD for business users
 What an ESPD service is and what it looks like
 * xref:3.3.0@ESPD-EDM:business:using.adoc[Using an ESPD Service] +
 Using an online ESPD form from both buyer and supplier perspectives
-//* xref:espd-bus::creating.adoc[Creating an ESPD Service]
-//* xref:espd-bus::overview_upgrades.adoc[Overview for Upgrading your Version]
 
 == Technical Implementation of an ESPD Service
 * xref:3.3.0@ESPD-EDM:technical:index.adoc[Technical Information] +
 Information for technical implementation
-//* xref:espd-tech::tech_imp_roadmap.adoc[Road Map for Implementers]
-//* xref:espd-tech::tech_upgrades.adoc[Upgrading an ESPD Version]
-//* xref:espd-tech::demo.adoc[Demo ESPD Service Online]
 
 == General Reference
 * xref:espd-home::history.adoc[History and Planned Developments] +
