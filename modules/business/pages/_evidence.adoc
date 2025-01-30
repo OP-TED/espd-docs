@@ -1,7 +1,0 @@
-:doctitle: Providing Evidence Locations
-:doccode: epo-bus-prod-006
-:author: NPJ
-:authoremail: nicole-anne.paterson-jones@ext.ec.europa.eu
-:docdate: January 2024
-
-include::partial$feedback.adoc[]

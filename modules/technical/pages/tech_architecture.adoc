@@ -24,7 +24,7 @@ _Figure 10. ESPD Architecture Overview_
 
 The ESPD Architecture components interact with each other to produce the final ESPD UBL XML Request and Response. 
 
-* *The UBL (Universal Business Language) component* 
+* *The UBL (https://docs.oasis-open.org/ubl/UBL-2.3.html[Universal Business Language]) component* 
 
 This describes the UBL language that is used to define the ESPD Request and Response XML elements, and attributes of XML elements. 
 
@@ -50,7 +50,7 @@ This describes the resulting ESPD Codelists generic code files produced by the X
 
 * *The ESPD Validation component*. 
 
-This validates the generated files produced (ESPD Request UBL XML, ESPD Response UBL XML, ESPD Codelists Generic Code) against a UBL schema and a set of ESPD specific rules. 
+This validates the generated files produced (ESPD Request UBL XML, ESPD Response UBL XML, ESPD Codelists Generic Code) against a UBL schema and a set of ESPD specific rules. This allows the  high level validation of ESPD documents produced by the various ESPD Services implemented by different member states. The validation tool (testbed) can be found https://www.itb.ec.europa.eu/espd/upload[here online].
 
 
 == ESPD Procurement Procedure Steps 

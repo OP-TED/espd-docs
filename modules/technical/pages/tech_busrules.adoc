@@ -14,6 +14,7 @@ This guide explains how Business Rules are implemented, and which ones apply in 
 
 === Input Documents
 
+.List of Input documents
 [width="100%",cols="13%,31%,11%,45%",options="header",]
 |===
 |*ID* |*Filename* |*Version* |*Description*
@@ -29,7 +30,7 @@ a|
 a|
 |===
 
-.Table 1: List of Input documents
+
 
 === Process
 
@@ -50,8 +51,9 @@ The process to identify the business rules is the following one:
 The process described above uses the following auxiliary tables.
 
 [arabic]
-. Identification of the test cases from [RD01] and mapping it into the UBL-2.3 XSD.
+. Identification of the test cases from [RD01] and mapping them to the UBL-2.3 XSD:
 
+.Test Case ID example
 [width="100%",cols="22%,11%,11%,24%,32%",options="header",]
 |===
 |*Pre-conditions (from [RD01])* | | | |
@@ -70,11 +72,12 @@ UBL-QualificationApplicationRequest-2.2-Pre-award.xsd (ESPD Request) or UBL-Qual
 |Test Case Rule ID (from [RD01]) and Mapping Rule ID |Description of the rule and mapping to Mapping Rule ID (current document) | |Scenario ID (from [RD01]) and Mapping Scenario ID |Description of the scenario and mapping to Mapping Scenario ID (current document)
 |===
 
-.Table 2: Test Case ID example
+
 
 [arabic, start=2]
 . For each of the rules identified in document [RD01], the following table describes its mapping in natural language:
 
+.Mapping rule ID example
 [width="100%",cols="36%,13%,51%",options="header",]
 |===
 |*Mapping Rule ID* | |
@@ -90,7 +93,6 @@ Business rules can be classified as WARNING (user information) or ERROR (fatal e
 
 |===
 
-.Table 3: Mapping rule ID example
 
 == ESPDRequest
 
@@ -98,6 +100,7 @@ Business rules can be classified as WARNING (user information) or ERROR (fatal e
 
 List of use cases regarding the ESPD request transaction, which 0 means false and 1 means true:
 
+.ESPDRequest - List of test cases
 [width="100%",cols="25%,25%,25%,25%",options="header",]
 |===
 |*Test Case ID* |*Self-Contained* |*Divided into lots* |*Two-phased procedure*
@@ -109,12 +112,11 @@ a|<<RQ-50,RQ-50>> |1 |1 |0
 a|<<RQ-60,RQ-60>> |1 |1 |1
 |===
 
-.Table 4: ESPDRequest - List of test cases
-
 === Test Cases
 
 ==== RQ-10
 
+.Test Case RQ-10
 [width="100%",cols="18%,11%,18%,20%,33%",options="header",]
 |===
 |*Pre-conditions* | | | |
@@ -140,10 +142,11 @@ RQ-10-R10-S10
 |RQ-10-R50 (<<BR-REQ-40,BR-REQ-40>>) |Selection criteria CAN be provided | |N/A |N/A
 |===
 
-.Table 5: Test Case RQ-10
+
 
 ==== RQ-20
 
+.Test Case RQ-20
 [width="100%",cols="19%,11%,16%,20%,34%",options="header",]
 |===
 |*Pre-conditions* | | | |
@@ -168,10 +171,11 @@ RQ-20-R10-S10
 |RQ-20-R50 (<<BR-REQ-40,BR-REQ-40>>) |Selection criteria CAN be provided | |N/A |N/A
 |===
 
-.Table 6: Test Case RQ-20
+
 
 ==== RQ-30
 
+.Test Case RQ-30
 [width="100%",cols="19%,11%,16%,20%,34%",options="header",]
 |===
 |*Pre-conditions* | | | |
@@ -198,10 +202,11 @@ RQ-30-R10-S10
 |RQ-30-R60 (<<BR-SC-20,BR-SC-20>>) |When selection criteria is provided, specific requirements for each criteria CAN be provided | |N/A |N/A
 |===
 
-.Table 7: Test Case RQ-30
+
 
 ==== RQ-40
 
+.Test Case RQ-40
 [width="100%",cols="18%,11%,15%,20%,36%",options="header",]
 |===
 |*Pre-conditions* | | | |
@@ -230,10 +235,11 @@ RQ-40-R10-S10
 | | | |RQ-40-R70-S20 (<<BR-2P-10-S20,BR-2P-10-S20>>) |For two-phased procedure without weighted criteria, additional information regarding weighting IS NOT required
 |===
 
-.Table 8: Test Case RQ-40
+
 
 ==== RQ-50
 
+.Test Case RQ-50
 [width="100%",cols="19%,11%,16%,20%,34%",options="header",]
 |===
 |*Pre-conditions* | | | |
@@ -263,10 +269,12 @@ RQ-50-R10-S10
 |RQ-50-R80 (<<BR-SC-20,BR-SC-20>>) |When selection criteria is provided, specific requirements for each criteria CAN be provided | |N/A |N/A
 |===
 
-.Table 9: Test Case RQ-50
+
 
 ==== RQ-60
 BR-LOT-30-S20
+
+.Test Case RQ-60
 [width="100%",cols="19%,11%,16%,20%,34%",options="header",]
 |===
 |*Pre-conditions* | | | |
@@ -298,12 +306,13 @@ RQ-60-R10-S10
 | | | |RQ-60-R90-S20 (<<BR-2P-10-S20,BR-2P-10-S20>>) |For two-phased procedure without weighted criteria, additional information regarding weighting IS NOT required
 |===
 
-.Table 10: Test Case RQ-60
+
 
 === List of Business Rules
 
 List of business rules and its applications to the test cases:
 
+.ESPDRequest - Test Cases and Business Rules
 [width="100%",cols="10%,9%,9%,9%,9%,9%,9%,9%,9%,9%,9%",options="header",]
 |===
 | a|
@@ -364,12 +373,13 @@ ____
 |<<RQ-60,RQ-60>> | | | | |- | | | | |
 |===
 
-.Table 11: ESPDRequest - Test Cases and Business Rules
+
 
 == ESPDResponse
 
 === List of Test Cases
 
+.ESPDResponse - List of test cases
 [width="100%",cols="17%,16%,16%,20%,31%",options="header",]
 |===
 |*Test Case ID* |*Self-Contained* |*Divided into lots* |*Pre-qualification system* |*EO Role*
@@ -405,12 +415,13 @@ ____
 |<<RS-300,RS-300>> |1 |1 |1 |Other entity (not relied upon)
 |===
 
-.Table 12: ESPDResponse - List of test cases
+
 
 === Test Cases
 
 ==== RS-10
 
+.Test Case RS-10
 [width="100%",cols="18%,5%,48%,15%,14%",options="header",]
 |===
 |*Pre-conditions* | | | |
@@ -429,10 +440,10 @@ ____
 |RS-10-R50 (<<_BR-REG-10,BR-REG-20>>) |Information about the procurement procedure MIGHT be provided | |N/A |N/A
 |===
 
-.Table 13: Test Case RS-10
 
 ==== RS-20
 
+.Test Case RS-20
 [width="100%",cols="18%,11%,13%,20%,38%",options="header",]
 |===
 |*Pre-conditions* | | | |
@@ -440,7 +451,7 @@ ____
 |Regulated or Self-contained ESPD | |/cbc:QualificationApplicationTypeCode is REGULATED | |
 |Divided into lots | |/cac:ProcurementProjectLot /cbc:ID is 0 (not divided into lots) | |
 |Pre-qualification system | |/cac:EconomicOperatorParty/cac:QualifyingParty/cac:Party /cac:PartyIdentification exist (registered on a national pre-qualification system) | |
-|EO Role | |/cac:EconomicOperatorParty/cac:EconomnicOperatorRole /cbc:RoleCode is SCLE (Sole contractor) | |
+|EO Role | |/cac:EconomicOperatorParty/cac:EconomicOperatorRole /cbc:RoleCode is SCLE (Sole contractor) | |
 
 |*List of rules* | | | |
 |*Rule ID* |*Rule* | |*Scenario ID* |*Scenarios*
@@ -454,10 +465,11 @@ ____
 |RS-20-R60 (<<_BR-REG-10,BR-REG-20>>) |Information about the procurement procedure MIGHT be provided | |N/A |N/A
 |===
 
-.Table 14: Test Case RS-20
+
 
 ==== RS-30
 
+.Test Case RS-30
 [width="100%",cols="18%,11%,40%,15%,16%",options="header",]
 |===
 |*Pre-conditions* | | | |
@@ -465,7 +477,7 @@ ____
 |Regulated or Self-contained ESPD | |/cbc:QualificationApplicationTypeCode is SELFCONTAINED | |
 |Divided into lots | |/cac:ProcurementProjectLot /cbc:ID is 0 (not divided into lots) | |
 |Pre-qualification system | |/cac:EconomicOperatorParty/cac:QualifyingParty/cac:Party /cac:PartyIdentification not exist (not registered on a national pre-qualification system) | |
-|EO Role | |/cac:EconomicOperatorParty/cac:EconomnicOperatorRole /cbc:RoleCode is SCLE (Sole contractor) | |
+|EO Role | |/cac:EconomicOperatorParty/cac:EconomicOperatorRole /cbc:RoleCode is SCLE (Sole contractor) | |
 
 |*List of rules* | | | |
 |*Rule ID* |*Rule* | |*Scenario ID* |*Scenarios*
@@ -476,10 +488,11 @@ ____
 |RS-30-R50 (<<BR-SC-30,BR-SC-30]>>) |Information about the procurement procedure MIGHT be provided | |N/A |N/A
 |===
 
-.Table 15: Test Case RS-30
+
 
 ==== RS-40
 
+.Test Case RS-40
 [width="100%",cols="18%,11%,15%,20%,36%",options="header",]
 |===
 |*Pre-conditions* | | | |
@@ -487,7 +500,7 @@ ____
 |Regulated or Self-contained ESPD | |/cbc:QualificationApplicationTypeCode is SELFCONTAINED | |
 |Divided into lots | |/cac:ProcurementProjectLot /cbc:ID is 0 (not divided into lots) | |
 |Pre-qualification system | |/cac:EconomicOperatorParty/cac:QualifyingParty/cac:Party /cac:PartyIdentification exist (registered on a national pre-qualification system) | |
-|EO Role | |/cac:EconomicOperatorParty/cac:EconomnicOperatorRole /cbc:RoleCode is SCLE (Sole contractor) | |
+|EO Role | |/cac:EconomicOperatorParty/cac:EconomicOperatorRole /cbc:RoleCode is SCLE (Sole contractor) | |
 
 |*List of rules* | | | |
 |*Rule ID* |*Rule* | |*Scenario ID* |*Scenarios*
@@ -501,10 +514,11 @@ ____
 |RS-40-R60 (<<BR-SC-30,BR-SC-30]>>) |Information about the procurement procedure MIGHT be provided | |N/A |N/A
 |===
 
-.Table 16: Test Case RS-40
+
 
 ==== RS-50
 
+.Test Case RS-50
 [width="100%",cols="19%,11%,41%,15%,14%",options="header",]
 |===
 |*Pre-conditions* | | | |
@@ -512,7 +526,7 @@ ____
 |Regulated or Self-contained ESPD | |/cbc:QualificationApplicationTypeCode is SELFCONTAINED | |
 |Divided into lots | |/cac:ProcurementProjectLot /cbc:ID is not 0 (divided into lots) | |
 |Pre-qualification system | |/cac:EconomicOperatorParty/cac:QualifyingParty/cac:Party /cac:PartyIdentification not exist (not registered on a national pre-qualification system) | |
-|EO Role | |/cac:EconomicOperatorParty/cac:EconomnicOperatorRole /cbc:RoleCode is SCLE (Sole contractor) | |
+|EO Role | |/cac:EconomicOperatorParty/cac:EconomicOperatorRole /cbc:RoleCode is SCLE (Sole contractor) | |
 
 |*List of rules* | | | |
 |*Rule ID* |*Rule* | |*Scenario ID* |*Scenarios*
@@ -525,10 +539,11 @@ ____
 |RS-50-R70 (<<BR-SC-30,BR-SC-30]>>) |Information about the procurement procedure MIGHT be provided | |N/A |N/A
 |===
 
-.Table 17: Test Case RS-50
+
 
 ==== RS-60
 
+.Test Case RS-60
 [width="100%",cols="18%,11%,15%,20%,36%",options="header",]
 |===
 |*Pre-conditions* | | | |
@@ -536,7 +551,7 @@ ____
 |Regulated or Self-contained ESPD | |/cbc:QualificationApplicationTypeCode is SELFCONTAINED | |
 |Divided into lots | |/cac:ProcurementProjectLot /cbc:ID is not 0 (divided into lots) | |
 |Pre-qualification system | |/cac:EconomicOperatorParty/cac:QualifyingParty/cac:Party /cac:PartyIdentification exist (registered on a national pre-qualification system) | |
-|EO Role | |/cac:EconomicOperatorParty/cac:EconomnicOperatorRole /cbc:RoleCode is SCLE (Sole contractor) | |
+|EO Role | |/cac:EconomicOperatorParty/cac:EconomicOperatorRole /cbc:RoleCode is SCLE (Sole contractor) | |
 
 |*List of rules* | | | |
 |*Rule ID* |*Rule* | |*Scenario ID* |*Scenarios*
@@ -552,10 +567,11 @@ ____
 |RS-60-R80 (<<BR-SC-30,BR-SC-30]>>) |Information about the procurement procedure MIGHT be provided | |N/A |N/A
 |===
 
-.Table 18: Test Case RS-60
+
 
 ==== RS-70
 
+.Test Case RS-70
 [width="100%",cols="18%,5%,23%,20%,34%",options="header",]
 |===
 |*Pre-conditions* | | | |
@@ -564,7 +580,7 @@ ____
 |Divided into lots | |/cac:ProcurementProjectLot /cbc:ID is 0 (not divided into lots) | |
 |Pre-qualification system | |/cac:EconomicOperatorParty/cac:QualifyingParty/cac:Party /cac:PartyIdentification not exist (not registered on a national pre-qualification system) | |
 |EO Role | a|
-/cac:EconomicOperatorParty/cac:EconomnicOperatorRole /cbc:RoleCode is SCLE (Lead entity)
+/cac:EconomicOperatorParty/cac:EconomicOperatorRole /cbc:RoleCode is SCLE (Lead entity)
 
 /cbc:EconomicOperatorGroupName becomes compulsory
 
@@ -582,10 +598,11 @@ ____
 |RS-70-R60 (<<_BR-REG-10,BR-REG-20>>) |Information about the procurement procedure MIGHT be provided | |N/A |N/A
 |===
 
-.Table 19: Test Case RS-70
+
 
 ==== RS-80
 
+.Test Case RS-80
 [width="100%",cols="18%,5%,21%,20%,36%",options="header",]
 |===
 |*Pre-conditions* | | | |
@@ -594,7 +611,7 @@ ____
 |Divided into lots | |/cac:ProcurementProjectLot /cbc:ID is 0 (not divided into lots) | |
 |Pre-qualification system | |/cac:EconomicOperatorParty/cac:QualifyingParty/cac:Party /cac:PartyIdentification exist (registered on a national pre-qualification system) | |
 |EO Role | a|
-/cac:EconomicOperatorParty/cac:EconomnicOperatorRole /cbc:RoleCode is SCLE (Lead entity)
+/cac:EconomicOperatorParty/cac:EconomicOperatorRole /cbc:RoleCode is SCLE (Lead entity)
 
 /cbc:EconomicOperatorGroupName becomes compulsory
 
@@ -615,10 +632,11 @@ ____
 |RS-80-R70 (<<_BR-REG-10,BR-REG-20>>) |Information about the procurement procedure MIGHT be provided | |N/A |N/A
 |===
 
-.Table 20: Test Case RS-80
+
 
 ==== RS-90
 
+.Test Case RS-90
 [width="100%",cols="18%,5%,23%,20%,34%",options="header",]
 |===
 |*Pre-conditions* | | | |
@@ -627,7 +645,7 @@ ____
 |Divided into lots | |/cac:ProcurementProjectLot /cbc:ID is 0 (not divided into lots) | |
 |Pre-qualification system | |/cac:EconomicOperatorParty/cac:QualifyingParty/cac:Party /cac:PartyIdentification not exist (not registered on a national pre-qualification system) | |
 |EO Role | a|
-/cac:EconomicOperatorParty/cac:EconomnicOperatorRole /cbc:RoleCode is SCLE (Lead entity)
+/cac:EconomicOperatorParty/cac:EconomicOperatorRole /cbc:RoleCode is SCLE (Lead entity)
 
 /cbc:EconomicOperatorGroupName becomes compulsory
 
@@ -645,10 +663,11 @@ ____
 |RS-90-R60 (<<BR-SC-30,BR-SC-30]>>) |Information about the procurement procedure MIGHT be provided | |N/A |N/A
 |===
 
-.Table 21: Test Case RS-90
+
 
 ==== RS-100
 
+.Test Case RS-100
 [width="100%",cols="18%,3%,25%,20%,34%",options="header",]
 |===
 |*Pre-conditions* | | | |
@@ -657,7 +676,7 @@ ____
 |Divided into lots | |/cac:ProcurementProjectLot /cbc:ID is 0 (not divided into lots) | |
 |Pre-qualification system | |/cac:EconomicOperatorParty/cac:QualifyingParty/cac:Party /cac:PartyIdentification exist (registered on a national pre-qualification system) | |
 |EO Role | a|
-/cac:EconomicOperatorParty/cac:EconomnicOperatorRole /cbc:RoleCode is SCLE (Lead entity)
+/cac:EconomicOperatorParty/cac:EconomicOperatorRole /cbc:RoleCode is SCLE (Lead entity)
 
 /cbc:EconomicOperatorGroupName becomes compulsory
 
@@ -678,10 +697,11 @@ ____
 |RS-100-R70 (<<BR-SC-30,BR-SC-30]>>) |Information about the procurement procedure MIGHT be provided | |N/A |N/A
 |===
 
-.Table 22: Test Case RS-100
+
 
 ==== RS-110
 
+.Test Case RS-110
 [width="100%",cols="18%,3%,25%,20%,34%",options="header",]
 |===
 |*Pre-conditions* | | | |
@@ -690,7 +710,7 @@ ____
 |Divided into lots | |/cac:ProcurementProjectLot /cbc:ID is not 0 (divided into lots) | |
 |Pre-qualification system | |/cac:EconomicOperatorParty/cac:QualifyingParty/cac:Party /cac:PartyIdentification not exist (not registered on a national pre-qualification system) | |
 |EO Role | a|
-/cac:EconomicOperatorParty/cac:EconomnicOperatorRole /cbc:RoleCode is SCLE (Lead entity)
+/cac:EconomicOperatorParty/cac:EconomicOperatorRole /cbc:RoleCode is SCLE (Lead entity)
 
 /cbc:EconomicOperatorGroupName becomes compulsory
 
@@ -710,10 +730,11 @@ ____
 |RS-110-R80 (<<BR-SC-30,BR-SC-30]>>) |Information about the procurement procedure MIGHT be provided | |N/A |N/A
 |===
 
-.Table 23: Test Case RS-110
+
 
 ==== RS-120
 
+.Test Case RS-120
 [width="100%",cols="18%,3%,26%,20%,33%",options="header",]
 |===
 |*Pre-conditions* | | | |
@@ -722,7 +743,7 @@ ____
 |Divided into lots | |/cac:ProcurementProjectLot /cbc:ID is not 0 (divided into lots) | |
 |Pre-qualification system | |/cac:EconomicOperatorParty/cac:QualifyingParty/cac:Party /cac:PartyIdentification exist (registered on a national pre-qualification system) | |
 |EO Role | a|
-/cac:EconomicOperatorParty/cac:EconomnicOperatorRole /cbc:RoleCode is SCLE (Lead entity)
+/cac:EconomicOperatorParty/cac:EconomicOperatorRole /cbc:RoleCode is SCLE (Lead entity)
 
 /cbc:EconomicOperatorGroupName becomes compulsory
 
@@ -745,10 +766,11 @@ ____
 |RS-120-R90 (<<BR-SC-30,BR-SC-30]>>) |Information about the procurement procedure MIGHT be provided | |N/A |N/A
 |===
 
-.Table 24: Test Case RS-120
+
 
 ==== RS-130
 
+.Test Case RS-130
 [width="100%",cols="17%,3%,48%,16%,16%",options="header",]
 |===
 |*Pre-conditions* | | | |
@@ -757,7 +779,7 @@ ____
 |Divided into lots | |/cac:ProcurementProjectLot /cbc:ID is 0 (not divided into lots) | |
 |Pre-qualification system | |/cac:EconomicOperatorParty/cac:QualifyingParty/cac:Party /cac:PartyIdentification not exist (not registered on a national pre-qualification system) | |
 |EO Role | a|
-/cac:EconomicOperatorParty/cac:EconomnicOperatorRole /cbc:RoleCode is GM (Group member)
+/cac:EconomicOperatorParty/cac:EconomicOperatorRole /cbc:RoleCode is GM (Group member)
 
 /cbc:EconomicOperatorGroupName becomes compulsory
 
@@ -772,10 +794,11 @@ ____
 |RS-130-R50 (<<_BR-REG-10,BR-REG-20>>) |Information about the procurement procedure MIGHT be provided | |N/A |N/A
 |===
 
-.Table 25: Test Case RS-130
+
 
 ==== RS-140
 
+.Test Case RS-140
 [width="100%",cols="17%,4%,21%,20%,38%",options="header",]
 |===
 |*Pre-conditions* | | | |
@@ -784,7 +807,7 @@ ____
 |Divided into lots | |/cac:ProcurementProjectLot /cbc:ID is 0 (not divided into lots) | |
 |Pre-qualification system | |/cac:EconomicOperatorParty/cac:QualifyingParty/cac:Party /cac:PartyIdentification exist (registered on a national pre-qualification system) | |
 |EO Role | a|
-/cac:EconomicOperatorParty/cac:EconomnicOperatorRole /cbc:RoleCode is GM (Group member)
+/cac:EconomicOperatorParty/cac:EconomicOperatorRole /cbc:RoleCode is GM (Group member)
 
 /cbc:EconomicOperatorGroupName becomes compulsory
 
@@ -802,10 +825,11 @@ ____
 |RS-140-R60 (<<_BR-REG-10,BR-REG-20>>) |Information about the procurement procedure MIGHT be provided | |N/A |N/A
 |===
 
-.Table 26: Test Case RS-140
+
 
 ==== RS-150
 
+.Test Case RS-150
 [width="100%",cols="17%,4%,50%,15%,14%",options="header",]
 |===
 |*Pre-conditions* | | | |
@@ -814,7 +838,7 @@ ____
 |Divided into lots | |/cac:ProcurementProjectLot /cbc:ID is 0 (not divided into lots) | |
 |Pre-qualification system | |/cac:EconomicOperatorParty/cac:QualifyingParty/cac:Party /cac:PartyIdentification not exist (not registered on a national pre-qualification system) | |
 |EO Role | a|
-/cac:EconomicOperatorParty/cac:EconomnicOperatorRole /cbc:RoleCode is GM (Group member)
+/cac:EconomicOperatorParty/cac:EconomicOperatorRole /cbc:RoleCode is GM (Group member)
 
 /cbc:EconomicOperatorGroupName becomes compulsory
 
@@ -829,10 +853,11 @@ ____
 |RS-150-R50 (<<BR-SC-30,BR-SC-30]>>) |Information about the procurement procedure MIGHT be provided | |N/A |N/A
 |===
 
-.Table 27: Test Case RS-150
+
 
 ==== RS-160
 
+.Test Case RS-160
 [width="100%",cols="17%,3%,21%,20%,39%",options="header",]
 |===
 |*Pre-conditions* | | | |
@@ -841,7 +866,7 @@ ____
 |Divided into lots | |/cac:ProcurementProjectLot /cbc:ID is 0 (not divided into lots) | |
 |Pre-qualification system | |/cac:EconomicOperatorParty/cac:QualifyingParty/cac:Party /cac:PartyIdentification exists (registered on a national pre-qualification system) | |
 |EO Role | a|
-/cac:EconomicOperatorParty/cac:EconomnicOperatorRole /cbc:RoleCode is GM (Group member)
+/cac:EconomicOperatorParty/cac:EconomicOperatorRole /cbc:RoleCode is GM (Group member)
 
 /cbc:EconomicOperatorGroupName becomes compulsory
 
@@ -859,10 +884,11 @@ ____
 |RS-160-R60 (<<BR-SC-30,BR-SC-30]>>) |Information about the procurement procedure MIGHT be provided | |N/A |N/A
 |===
 
-.Table 28: Test Case RS-160
+
 
 ==== RS-170
 
+.Test Case RS-170
 [width="100%",cols="17%,6%,48%,15%,14%",options="header",]
 |===
 |*Pre-conditions* | | | |
@@ -871,7 +897,7 @@ ____
 |Divided into lots | |/cac:ProcurementProjectLot /cbc:ID is not 0 (divided into lots) | |
 |Pre-qualification system | |/cac:EconomicOperatorParty/cac:QualifyingParty/cac:Party /cac:PartyIdentification not exist (not registered on a national pre-qualification system) | |
 |EO Role | a|
-/cac:EconomicOperatorParty/cac:EconomnicOperatorRole /cbc:RoleCode is GM (Group member)
+/cac:EconomicOperatorParty/cac:EconomicOperatorRole /cbc:RoleCode is GM (Group member)
 
 /cbc:EconomicOperatorGroupName becomes compulsory
 
@@ -888,10 +914,11 @@ ____
 |RS-170-R70 (<<BR-SC-30,BR-SC-30]>>) |Information about the procurement procedure MIGHT be provided | |N/A |N/A
 |===
 
-.Table 29: Test Case RS-170
+
 
 ==== RS-180
 
+.Test Case RS-180
 [width="100%",cols="17%,6%,21%,20%,36%",options="header",]
 |===
 |*Pre-conditions* | | | |
@@ -900,7 +927,7 @@ ____
 |Divided into lots | |/cac:ProcurementProjectLot /cbc:ID is not 0 (divided into lots) | |
 |Pre-qualification system | |/cac:EconomicOperatorParty/cac:QualifyingParty/cac:Party /cac:PartyIdentification exists (registered on a national pre-qualification system) | |
 |EO Role | a|
-/cac:EconomicOperatorParty/cac:EconomnicOperatorRole /cbc:RoleCode is GM (Group member)
+/cac:EconomicOperatorParty/cac:EconomicOperatorRole /cbc:RoleCode is GM (Group member)
 
 /cbc:EconomicOperatorGroupName becomes compulsory
 
@@ -920,10 +947,11 @@ ____
 |RS-180-R80 (<<BR-SC-30,BR-SC-30]>>) |Information about the procurement procedure MIGHT be provided | |N/A |N/A
 |===
 
-.Table 30: Test Case RS-180
+
 
 ==== RS-190
 
+.Test Case RS-190
 [width="100%",cols="17%,4%,50%,15%,14%",options="header",]
 |===
 |*Pre-conditions* | | | |
@@ -932,7 +960,7 @@ ____
 |Divided into lots | |/cac:ProcurementProjectLot /cbc:ID is 0 (not divided into lots) | |
 |Pre-qualification system | |/cac:EconomicOperatorParty/cac:QualifyingParty/cac:Party /cac:PartyIdentification not exist (not registered on a national pre-qualification system) | |
 |EO Role | a|
-/cac:EconomicOperatorParty/cac:EconomnicOperatorRole /cbc:RoleCode is OERON (Other entity (relied upon))
+/cac:EconomicOperatorParty/cac:EconomicOperatorRole /cbc:RoleCode is OERON (Other entity (relied upon))
 
 Other entity (relied upon): Entity on which the main contractor, the group or another subcontractor relies in order to meet the selection criteria.
 
@@ -947,10 +975,11 @@ Other entity (relied upon): Entity on which the main contractor, the group or an
 |RS-190-R50 (<<_BR-REG-10,BR-REG-20>>) |Information about the procurement procedure MIGHT be provided | |N/A |N/A
 |===
 
-.Table 31: Test Case RS-190
+
 
 ==== RS-200
 
+.Test Case RS-200
 [width="100%",cols="17%,4%,21%,20%,38%",options="header",]
 |===
 |*Pre-conditions* | | | |
@@ -959,7 +988,7 @@ Other entity (relied upon): Entity on which the main contractor, the group or an
 |Divided into lots | |/cac:ProcurementProjectLot /cbc:ID is 0 (not divided into lots) | |
 |Pre-qualification system | |/cac:EconomicOperatorParty/cac:QualifyingParty/cac:Party /cac:PartyIdentification exists (registered on a national pre-qualification system) | |
 |EO Role | a|
-/cac:EconomicOperatorParty/cac:EconomnicOperatorRole /cbc:RoleCode is OERON (Other entity (relied upon))
+/cac:EconomicOperatorParty/cac:EconomicOperatorRole /cbc:RoleCode is OERON (Other entity (relied upon))
 
 Other entity (relied upon): Entity on which the main contractor, the group or another subcontractor relies in order to meet the selection criteria.
 
@@ -977,10 +1006,11 @@ Other entity (relied upon): Entity on which the main contractor, the group or an
 |RS-200-R60 (<<_BR-REG-10,BR-REG-20>>) |Information about the procurement procedure MIGHT be provided | |N/A |N/A
 |===
 
-.Table 32: Test Case RS-200
+
 
 ==== RS-210
 
+.Test Case RS-210
 [width="100%",cols="17%,4%,50%,15%,14%",options="header",]
 |===
 |*Pre-conditions* | | | |
@@ -989,7 +1019,7 @@ Other entity (relied upon): Entity on which the main contractor, the group or an
 |Divided into lots | |/cac:ProcurementProjectLot /cbc:ID is not 0 (divided into lots) | |
 |Pre-qualification system | |/cac:EconomicOperatorParty/cac:QualifyingParty/cac:Party /cac:PartyIdentification not exist (not registered on a national pre-qualification system) | |
 |EO Role | a|
-/cac:EconomicOperatorParty/cac:EconomnicOperatorRole /cbc:RoleCode is OERON (Other entity (relied upon))
+/cac:EconomicOperatorParty/cac:EconomicOperatorRole /cbc:RoleCode is OERON (Other entity (relied upon))
 
 Other entity (relied upon): Entity on which the main contractor, the group or another subcontractor relies in order to meet the selection criteria.
 
@@ -1006,10 +1036,11 @@ Other entity (relied upon): Entity on which the main contractor, the group or an
 |RS-210-R70 (<<BR-SC-30,BR-SC-30]>>) |Information about the procurement procedure MIGHT be provided | |N/A |N/A
 |===
 
-.Table 33: Test Case RS-210
+
 
 ==== RS-220
 
+.Test Case RS-220
 [width="100%",cols="17%,4%,23%,20%,36%",options="header",]
 |===
 |*Pre-conditions* | | | |
@@ -1018,7 +1049,7 @@ Other entity (relied upon): Entity on which the main contractor, the group or an
 |Divided into lots | |/cac:ProcurementProjectLot /cbc:ID is 0 (not divided into lots) | |
 |Pre-qualification system | |/cac:EconomicOperatorParty/cac:QualifyingParty/cac:Party /cac:PartyIdentification exists (registered on a national pre-qualification system) | |
 |EO Role | a|
-/cac:EconomicOperatorParty/cac:EconomnicOperatorRole /cbc:RoleCode is OERON (Other entity (relied upon))
+/cac:EconomicOperatorParty/cac:EconomicOperatorRole /cbc:RoleCode is OERON (Other entity (relied upon))
 
 Other entity (relied upon): Entity on which the main contractor, the group or another subcontractor relies in order to meet the selection criteria.
 
@@ -1036,10 +1067,11 @@ Other entity (relied upon): Entity on which the main contractor, the group or an
 |RS-220-R60 (<<BR-SC-30,BR-SC-30]>>) |Information about the procurement procedure MIGHT be provided | |N/A |N/A
 |===
 
-.Table 34: Test Case RS-220
+
 
 ==== RS-230
 
+.Test Case RS-230
 [width="100%",cols="17%,4%,50%,15%,14%",options="header",]
 |===
 |*Pre-conditions* | | | |
@@ -1048,7 +1080,7 @@ Other entity (relied upon): Entity on which the main contractor, the group or an
 |Divided into lots | |/cac:ProcurementProjectLot /cbc:ID is not 0 (divided into lots) | |
 |Pre-qualification system | |/cac:EconomicOperatorParty/cac:QualifyingParty/cac:Party /cac:PartyIdentification not exist (not registered on a national pre-qualification system) | |
 |EO Role | a|
-/cac:EconomicOperatorParty/cac:EconomnicOperatorRole /cbc:RoleCode is OERON (Other entity (relied upon))
+/cac:EconomicOperatorParty/cac:EconomicOperatorRole /cbc:RoleCode is OERON (Other entity (relied upon))
 
 Other entity (relied upon): Entity on which the main contractor, the group or another subcontractor relies in order to meet the selection criteria.
 
@@ -1065,10 +1097,11 @@ Other entity (relied upon): Entity on which the main contractor, the group or an
 |RS-230-R70 (<<BR-SC-30,BR-SC-30]>>) |Information about the procurement procedure MIGHT be provided | |N/A |N/A
 |===
 
-.Table 35: Test Case RS-230
+
 
 ==== RS-240
 
+.Test Case RS-240
 [width="100%",cols="17%,4%,26%,20%,33%",options="header",]
 |===
 |*Pre-conditions* | | | |
@@ -1077,7 +1110,7 @@ Other entity (relied upon): Entity on which the main contractor, the group or an
 |Divided into lots | |/cac:ProcurementProjectLot /cbc:ID is not 0 (divided into lots) | |
 |Pre-qualification system | |/cac:EconomicOperatorParty/cac:QualifyingParty/cac:Party /cac:PartyIdentification exists (registered on a national pre-qualification system) | |
 |EO Role | a|
-/cac:EconomicOperatorParty/cac:EconomnicOperatorRole /cbc:RoleCode is OERON (Other entity (relied upon))
+/cac:EconomicOperatorParty/cac:EconomicOperatorRole /cbc:RoleCode is OERON (Other entity (relied upon))
 
 Other entity (relied upon): Entity on which the main contractor, the group or another subcontractor relies in order to meet the selection criteria.
 
@@ -1097,10 +1130,11 @@ Other entity (relied upon): Entity on which the main contractor, the group or an
 |RS-240-R80 (<<BR-SC-30,BR-SC-30]>>) |Information about the procurement procedure MIGHT be provided | |N/A |N/A
 |===
 
-.Table 36: Test Case RS-240
+
 
 ==== RS-250
 
+.Test Case RS-250
 [width="100%",cols="18%,3%,51%,15%,13%",options="header",]
 |===
 |*Pre-conditions* | | | |
@@ -1109,7 +1143,7 @@ Other entity (relied upon): Entity on which the main contractor, the group or an
 |Divided into lots | |/cac:ProcurementProjectLot /cbc:ID is 0 (not divided into lots) | |
 |Pre-qualification system | |/cac:EconomicOperatorParty/cac:QualifyingParty/cac:Party /cac:PartyIdentification not exist (not registered on a national pre-qualification system) | |
 |EO Role | a|
-/cac:EconomicOperatorParty/cac:EconomnicOperatorRole /cbc:RoleCode is OENRON (Other entity (not relied upon))
+/cac:EconomicOperatorParty/cac:EconomicOperatorRole /cbc:RoleCode is OENRON (Other entity (not relied upon))
 
 Other entity (not relied upon): Entity on which the main contractor, the group or another subcontractor does not rely in order to meet the selection criteria.
 
@@ -1123,10 +1157,11 @@ Other entity (not relied upon): Entity on which the main contractor, the group o
 |RS-250-R40 (<<_BR-REG-10,BR-REG-20>>) |Information about the procurement procedure MIGHT be provided | |N/A |N/A
 |===
 
-.Table 37: Test Case RS-250
+
 
 ==== RS-260
 
+.Test Case RS-260
 [width="100%",cols="17%,4%,21%,20%,38%",options="header",]
 |===
 |*Pre-conditions* | | | |
@@ -1135,7 +1170,7 @@ Other entity (not relied upon): Entity on which the main contractor, the group o
 |Divided into lots | |/cac:ProcurementProjectLot /cbc:ID is 0 (not divided into lots) | |
 |Pre-qualification system | |/cac:EconomicOperatorParty/cac:QualifyingParty/cac:Party /cac:PartyIdentification exists (registered on a national pre-qualification system) | |
 |EO Role | a|
-/cac:EconomicOperatorParty/cac:EconomnicOperatorRole /cbc:RoleCode is OENRON (Other entity (not relied upon))
+/cac:EconomicOperatorParty/cac:EconomicOperatorRole /cbc:RoleCode is OENRON (Other entity (not relied upon))
 
 Other entity (not relied upon): Entity on which the main contractor, the group or another subcontractor does not rely in order to meet the selection criteria.
 
@@ -1151,10 +1186,11 @@ Other entity (not relied upon): Entity on which the main contractor, the group o
 |RS-260-R50 (<<_BR-REG-10,BR-REG-20>>) |Information about the procurement procedure MIGHT be provided | |N/A |N/A
 |===
 
-.Table 38: Test Case RS-260
+
 
 ==== RS-270
 
+.Test Case RS-270
 [width="100%",cols="17%,4%,50%,15%,14%",options="header",]
 |===
 |*Pre-conditions* | | | |
@@ -1163,7 +1199,7 @@ Other entity (not relied upon): Entity on which the main contractor, the group o
 |Divided into lots | |/cac:ProcurementProjectLot /cbc:ID is not 0 (divided into lots) | |
 |Pre-qualification system | |/cac:EconomicOperatorParty/cac:QualifyingParty/cac:Party /cac:PartyIdentification not exists (not registered on a national pre-qualification system) | |
 |EO Role | a|
-/cac:EconomicOperatorParty/cac:EconomnicOperatorRole /cbc:RoleCode is OENRON (Other entity (not relied upon))
+/cac:EconomicOperatorParty/cac:EconomicOperatorRole /cbc:RoleCode is OENRON (Other entity (not relied upon))
 
 Other entity (not relied upon): Entity on which the main contractor, the group or another subcontractor does not rely in order to meet the selection criteria.
 
@@ -1178,10 +1214,11 @@ Other entity (not relied upon): Entity on which the main contractor, the group o
 |RS-270-R50 (<<BR-SC-30,BR-SC-30]>>) |Information about the procurement procedure MIGHT be provided | |N/A |N/A
 |===
 
-.Table 39: Test Case RS-270
+
 
 ==== RS-280
 
+.Test Case RS-280
 [width="100%",cols="17%,6%,26%,20%,31%",options="header",]
 |===
 |*Pre-conditions* | | | |
@@ -1190,7 +1227,7 @@ Other entity (not relied upon): Entity on which the main contractor, the group o
 |Divided into lots | |/cac:ProcurementProjectLot /cbc:ID is 0 (not divided into lots) | |
 |Pre-qualification system | |/cac:EconomicOperatorParty/cac:QualifyingParty/cac:Party /cac:PartyIdentification exists (registered on a national pre-qualification system) | |
 |EO Role | a|
-/cac:EconomicOperatorParty/cac:EconomnicOperatorRole /cbc:RoleCode is OENRON (Other entity (not relied upon))
+/cac:EconomicOperatorParty/cac:EconomicOperatorRole /cbc:RoleCode is OENRON (Other entity (not relied upon))
 
 Other entity (not relied upon): Entity on which the main contractor, the group or another subcontractor does not rely in order to meet the selection criteria.
 
@@ -1206,10 +1243,11 @@ Other entity (not relied upon): Entity on which the main contractor, the group o
 |RS-280-R50 (<<BR-SC-30,BR-SC-30]>>) |Information about the procurement procedure MIGHT be provided | |N/A |N/A
 |===
 
-.Table 40: Test Case RS-280
+
 
 ==== RS-290
 
+.Test Case RS-290
 [width="100%",cols="17%,4%,50%,15%,14%",options="header",]
 |===
 |*Pre-conditions* | | | |
@@ -1218,7 +1256,7 @@ Other entity (not relied upon): Entity on which the main contractor, the group o
 |Divided into lots | |/cac:ProcurementProjectLot /cbc:ID is not 0 (divided into lots) | |
 |Pre-qualification system | |/cac:EconomicOperatorParty/cac:QualifyingParty/cac:Party /cac:PartyIdentification not exist (not registered on a national pre-qualification system) | |
 |EO Role | a|
-/cac:EconomicOperatorParty/cac:EconomnicOperatorRole /cbc:RoleCode is OENRON (Other entity (not relied upon))
+/cac:EconomicOperatorParty/cac:EconomicOperatorRole /cbc:RoleCode is OENRON (Other entity (not relied upon))
 
 Other entity (not relied upon): Entity on which the main contractor, the group or another subcontractor does not rely in order to meet the selection criteria.
 
@@ -1233,10 +1271,11 @@ Other entity (not relied upon): Entity on which the main contractor, the group o
 |RS-290-R50 (<<BR-SC-30,BR-SC-30]>>) |Information about the procurement procedure MIGHT be provided | |N/A |N/A
 |===
 
-.Table 41: Test Case RS-290
+
 
 ==== RS-300
 
+.Test Case RS-300
 [width="100%",cols="17%,4%,28%,20%,31%",options="header",]
 |===
 |*Pre-conditions* | | | |
@@ -1245,7 +1284,7 @@ Other entity (not relied upon): Entity on which the main contractor, the group o
 |Divided into lots | |/cac:ProcurementProjectLot /cbc:ID is not 0 (divided into lots) | |
 |Pre-qualification system | |/cac:EconomicOperatorParty/cac:QualifyingParty/cac:Party /cac:PartyIdentification exists (registered on a national pre-qualification system) | |
 |EO Role | a|
-/cac:EconomicOperatorParty/cac:EconomnicOperatorRole /cbc:RoleCode is OENRON (Other entity (not relied upon))
+/cac:EconomicOperatorParty/cac:EconomicOperatorRole /cbc:RoleCode is OENRON (Other entity (not relied upon))
 
 Other entity (not relied upon): Entity on which the main contractor, the group or another subcontractor does not rely in order to meet the selection criteria.
 
@@ -1262,12 +1301,13 @@ Other entity (not relied upon): Entity on which the main contractor, the group o
 |RS-300-R60 (<<BR-SC-30,BR-SC-30]>>) |Information about the procurement procedure MIGHT be provided | |N/A |N/A
 |===
 
-.Table 42: Test Case RS-300
+
 
 === List of Business Rules
 
 List of business rules and its applications to the test cases:
 
+.ESPD Response - Test Cases and Business Rules
 [width="100%",cols="21%,7%,6%,6%,6%,6%,6%,6%,6%,6%,6%,6%,6%,6%",options="header",]
 |===
 | a|
@@ -1366,12 +1406,12 @@ ____
 |<<RS-300,RS-300>>  | | |- |- | | |- |- |- | | |- |-
 |===
 
-.Table 43: ESPDResponse - Test Cases and Business Rules
 
 == Common Business Rules
 
 === BR-COM-10
 
+.BR-COM-10
 [width="100%",cols="27%,22%,51%",options="header",]
 |===
 |*Mapping Rule ID* | |
@@ -1403,10 +1443,11 @@ Then
 
 |===
 
-.Table 44: BR-COM-10
+
 
 ==== BR-COM-10-S10
 
+.BR-COM-10-S10
 [width="100%",cols="27%,23%,50%",options="header",]
 |===
 |*Mapping Scenario ID* | |
@@ -1424,10 +1465,11 @@ Then
 |- | |*No Schematron rule can be implemented.*
 |===
 
-.Table 45: BR-COM-10-S10
+
 
 ==== BR-COM-10-S20
 
+.BR-COM-10-S20
 [width="100%",cols="27%,23%,50%",options="header",]
 |===
 |*Mapping Scenario ID* | |
@@ -1445,10 +1487,11 @@ Then
 |- | |*No Schematron rule can be implemented.*
 |===
 
-.Table 46: BR-COM-10-S20
+
 
 ==== BR-COM-10-S30
 
+.BR-COM-10-S30
 [width="100%",cols="27%,23%,50%",options="header",]
 |===
 |*Mapping Scenario ID* | |
@@ -1466,12 +1509,13 @@ Then
 |- | |*No Schematron rule can be implemented.*
 |===
 
-.Table 47: BR-COM-10-S30
 
-== Common ESPDRequest Rules
+
+== Common ESPD Request Rules
 
 === BR-REQ-20
 
+.BR-REQ-20
 [width="100%",cols="27%,22%,51%",options="header",]
 |===
 |*Mapping Rule ID* | |
@@ -1578,10 +1622,11 @@ ____
 
 |===
 
-.Table 48: BR-REQ-20
+
 
 === BR-REQ-30
 
+.BR-REQ-30
 [width="100%",cols="25%,18%,57%",options="header",]
 |===
 |*Mapping Rule ID* | |
@@ -1616,10 +1661,11 @@ ____
 |The Business Rules listed within 14 Tendering Criterion General Rules are general to all TenderingCriterion. | |
 |===
 
-.Table 49: BR-REQ-30
+
 
 ==== BR-REQ-30-S10
 
+.BR-REQ-30-S10
 [width="100%",cols="28%,21%,51%",options="header",]
 |===
 |*Mapping Scenario ID* | |
@@ -1635,10 +1681,11 @@ ____
 |- | |*No Schematron rule can be implemented*
 |===
 
-.Table 50: BR-REQ-30-S10
+
 
 ==== BR-REQ-30-S20
 
+.BR-REQ-30-S20
 [width="100%",cols="28%,21%,51%",options="header",]
 |===
 |*Mapping Scenario ID* | |
@@ -1654,10 +1701,11 @@ ____
 |- | |*No Schematron rule can be implemented*
 |===
 
-.Table 51: BR-REQ-30-S20
+
 
 === BR-REQ-40
 
+.BR-REQ-40
 [width="100%",cols="28%,21%,51%",options="header",]
 |===
 |*Mapping Rule ID* | |
@@ -1692,7 +1740,7 @@ ____
 |The Business Rules listed within 14 Tendering Criterion General Rules are general to all TenderingCriterion. | |
 |===
 
-.Table 52: BR-REQ-40
+
 
 //[#_BR-REG-10 .anchor]##
 
@@ -1700,6 +1748,7 @@ ____
 
 === BR-SC-10
 
+.BR-SC-10
 [width="100%",cols="28%,21%,15%,36%",options="header",]
 |===
 |*Mapping Rule ID* | | |
@@ -1740,10 +1789,11 @@ ____
 |
 |===
 
-.Table 55: BR-SC-10
+
 
 === BR-SC-20
 
+.BR-SC-20
 [width="100%",cols="29%,21%,14%,36%",options="header",]
 |===
 |*Mapping Rule ID* | | |
@@ -1766,10 +1816,11 @@ ____
 |- | |*No Schematron rule can be implemented* |
 |===
 
-.Table 56: BR-SC-20
+
 
 === BR-SC-30
 
+.BR-SC-30
 [width="100%",cols="29%,21%,14%,36%",options="header",]
 |===
 |*Mapping Rule ID* | | |
@@ -1809,12 +1860,13 @@ ____
 |Same business rules as BR-SC-10. | | |
 |===
 
-.Table 57: BR-SC-30
+
 
 == Two-phased Procedures Rules
 
 === BR-2P-10
 
+.BR-2P-10
 [width="100%",cols="19%,30%,51%",options="header",]
 |===
 |*Mapping Rule ID* | |
@@ -1835,10 +1887,11 @@ ____
 |Defining the type of weighting and description is mandatory when it is two-phased procedure. | |*No Schematron rule can be implemented*
 |===
 
-.Table 58: BR-2P-10
+
 
 ==== BR-2P-10-S10
 
+.BR-2P-10-S10
 [width="100%",cols="22%,18%,60%",options="header",]
 |===
 |*Mapping Scenario ID* | |
@@ -1895,10 +1948,11 @@ Then, /cac:TenderingCriterion /cbc:EvaluationMethodTypeCode != WEIGHTED or not i
 
 |===
 
-.Table 59: BR-2P-10-S10
+
 
 ==== BR-2P-10-S20
 
+_BR-2P-10-S20
 [width="100%",cols="27%,9%,64%",options="header",]
 |===
 |*Mapping Scenario ID* | |
@@ -1931,12 +1985,13 @@ Then, Weight value cannot be provided: /cac:TenderingCriterion/cbc:WeightNumeric
 
 |===
 
-.Table 60: BR-2P-10-S10
+
 
 == Common ESPDResponse Rules
 
 === BR-RESP-10
 
+.BR-RESP-10
 [width="100%",cols="25%,24%,51%",options="header",]
 |===
 |*Mapping Rule ID* | |
@@ -1976,7 +2031,7 @@ ____
 /cac:EconomicOperatorParty /cac:QualifyingParty
 ____
 
-|*Qualifying party / Party identifier*: The attribute schemeAgencyID must hold the value retrieved from eCertis that identifies unequivocally the (pre)qualification system. If, for any reason, that value is not available use the default schemeAgencyID "EU-COM-GROW" and the cac:EconomicOperatorParty /cac:PartyIdentificaton /cbc:ID for the value of the identifier. Additionally you can use the data structure CRITERION.OTHER.EO_DATA.REGISTERED_IN_OFFICIAL_LIST to specify an alternative or additional name, identifier and description. | a|
+|*Qualifying party / Party identifier*: The attribute schemeAgencyID must hold the value retrieved from eCertis that identifies unequivocally the (pre)qualification system. If, for any reason, that value is not available use the default schemeAgencyID "EU-COM-GROW" and the cac:EconomicOperatorParty /cac:PartyIdentification /cbc:ID for the value of the identifier. Additionally you can use the data structure CRITERION.OTHER.EO_DATA.REGISTERED_IN_OFFICIAL_LIST to specify an alternative or additional name, identifier and description. | a|
 * {blank}
 +
 ____
@@ -2138,10 +2193,11 @@ ____
 
 |===
 
-.Table 61: BR-RESP-10
+
 
 === BR-RESP-20
 
+.BR-RESP-20
 [width="100%",cols="26%,10%,64%",options="header",]
 |===
 |*Mapping Rule ID* | |
@@ -2186,12 +2242,13 @@ ____
 
 |===
 
-.Table 62: BR-RESP-20
+
 
 == Not registered pre-qualification system Rules
 
 === BR-RESP-30
 
+.BR-RESP-30
 [width="100%",cols="34%,14%,19%,33%",options="header",]
 |===
 |*Mapping Rule ID* | | |
@@ -2236,10 +2293,11 @@ ____
 |
 |===
 
-.Table 63: BR-RESP-30
+
 
 === BR-RESP-40 (role different to OENRON)
 
+.BR-RESP-40
 [width="100%",cols="34%,14%,19%,33%",options="header",]
 |===
 |*Mapping Rule ID* | | |
@@ -2287,14 +2345,15 @@ ____
 |
 |===
 
-.Table 64: BR-RESP-40
 
-[#_BR-RESP-90_(role_OENRON) .anchor]##
+
+[#_BR-RESP-90_(role_OENRON) .anchor]#
 
 == Registered pre-qualification system Rules
 
 === BR-RESP-50
 
+.BR-RESP-50
 [width="100%",cols="34%,14%,19%,33%",options="header",]
 |===
 |*Mapping Rule ID* | | |
@@ -2329,10 +2388,11 @@ ____
 |Same business rules as BR-RESP-30 as it works as a Criterion. | | |
 |===
 
-.Table 65: BR-RESP-50
+
 
 === BR-RESP-60
 
+.BR-RESP-60
 [width="100%",cols="34%,14%,19%,33%",options="header",]
 |===
 |*Mapping Rule ID* | | |
@@ -2365,10 +2425,11 @@ ____
 |Same business rules as BR-RESP-30 | | |
 |===
 
-.Table 66: BR-RESP-60
+
 
 ==== BR-RESP-60-S10
 
+.BR-RESP-60-S10
 [width="100%",cols="34%,14%,19%,33%",options="header",]
 |===
 |*Mapping Rule ID* | | |
@@ -2397,10 +2458,11 @@ ____
 |*No Schematron rule can be implemented* | | |
 |===
 
-.Table 67: BR-RESP-60-S10
+
 
 ==== BR-RESP-60-S20
 
+.BR-RESP-60-S20
 [width="100%",cols="33%,33%,33%,33%",options="header",]
 |===
 |*Mapping Rule ID* | | |
@@ -2429,10 +2491,11 @@ ____
 |*No Schematron rule can be implemented* | | |
 |===
 
-.Table 68: BR-RESP-60-S20
+
 
 === BR-RESP-70
 
+.BR-RESP-70
 [width="100%",cols="33%,33%,33%,33%",options="header",]
 |===
 |*Mapping Rule ID* | | |
@@ -2455,10 +2518,11 @@ ____
 |Same business rules as BR-RESP-30 | | |
 |===
 
-.Table 69: BR-RESP-70
+
 
 ==== BR-RESP-70-S10
 
+.BR-RESP-70-S10
 [width="100%",cols="33%,33%,33%,33%%",options="header",]
 |===
 |*Mapping Rule ID* | | |
@@ -2470,17 +2534,18 @@ ____
 * RS-140-R50-S10
 * RS-200-R50-S10
 
-|Rule descriptn |When the pre-qualification system the EO is registered on does not cover all the selection criteria, information about compliance of selection criteria MUST be provided. | |
+|Rule description |When the pre-qualification system the EO is registered on does not cover all the selection criteria, information about compliance of selection criteria MUST be provided. | |
 |Mapping description |Criterion responses are implemented as Tendering Criterion response components | |
 |XSD Path |/cac:TenderingCriterionResponse[0..n] | |
 |XSD Business Rule description | |XSD Business Rule Schematron |
 |*No Schematron rule can be implemented* | | |
 |===
 
-.Table 70: BR-RESP-70-S10
+
 
 ==== BR-RESP-70-S20
 
+.BR-RESP-70-S20
 [width="100%",cols="33%,33%,33%,33%",options="header",]
 |===
 |*Mapping Rule ID* | | |
@@ -2499,10 +2564,11 @@ ____
 |*No Schematron rule can be implemented* | | |
 |===
 
-.Table 71: BR-RESP-70-S20
+
 
 === BR-RESP-80
 
+.BR-RESP-80
 [width="100%",cols="33%,33%,33%,33%",options="header",]
 |===
 |*Mapping Rule ID* | | |
@@ -2529,10 +2595,11 @@ ____
 |See scenarios BR-RESP-80-S10 and BR-RESP-80-S20. | | |
 |===
 
-.Table 72: BR-RESP-80
+
 
 ==== BR-RESP-80-S10
 
+.BR-RESP-80-S10
 [width="100%",cols="33%,33%,33%,33%",options="header",]
 |===
 |*Mapping Rule ID* | | |
@@ -2579,10 +2646,11 @@ Then, all selection criterion must have responses.
 |
 |===
 
-.Table 73: BR-RESP-80-S10
+
 
 ==== BR-RESP-80-S20
 
+.BR-RESP-80-S20
 [width="100%",cols="33%,33%,33%,33%",options="header",]
 |===
 |*Mapping Rule ID* | | |
@@ -2629,12 +2697,13 @@ Then, selection criterion does not need to have responses.
 |
 |===
 
-.Table 74: BR-RESP-80-S20
+
 
 == Lots Rules
 
 === BR-LOT-10
 
+.BR-LOT-10
 [width="100%",cols="25%,19%,18%,38%",options="header",]
 |===
 |*Mapping Rule ID* | | |
@@ -2685,10 +2754,11 @@ Then, its /cac:TenderingCriterionResponse /cbc:ResponseID must exist within /cac
 |
 |===
 
-.Table 75: BR-LOT-10
+
 
 === BR-LOT-20
 
+.BR-LOT-20
 [width="100%",cols="25%,19%,18%,38%",options="header",]
 |===
 |*Mapping Rule ID* | | |
@@ -2716,10 +2786,11 @@ Then, its /cac:TenderingCriterionResponse /cbc:ResponseID must exist within /cac
 |The Business Rules listed within 15 Tendering Criterion Self-contained Rules are general to all TenderingCriterion in self-contained qualification applications. | | |
 |===
 
-.Table 76: BR-LOT-20
+
 
 === BR-LOT-30
 
+.BR-LOT-30
 [width="100%",cols="25%,19%,18%,38%",options="header",]
 |===
 |*Mapping Rule ID* | | |
@@ -2746,10 +2817,11 @@ Information about lots specified is two different sets of the XSD schema in orde
 |See <<BR-LOT-30-S10,BR-LOT-30-S10>> and <<BR-LOT-30-S20,BR-LOT-30-S10>> | | |
 |===
 
-.Table 77: BR-LOT-30
+
 
 ==== BR-LOT-30-S10
 
+.BR-LOT-30-S10
 [width="100%",cols="25%,19%,18%,38%",options="header",]
 |===
 |*Mapping Rule ID* | | |
@@ -2781,10 +2853,11 @@ ____
 |
 |===
 
-.Table 78: BR-LOT-30-S10
+
 
 ==== BR-LOT-30-S20
 
+.BR-LOT-30-S20
 [width="100%",cols="25%,19%,18%,38%",options="header",]
 |===
 |*Mapping Rule ID* | | |
@@ -2804,10 +2877,11 @@ ____
 |- | |*No Schematron rule can be implemented as it works as any other Tendering Criterion.* |
 |===
 
-.Table 79: BR-LOT-30-S20
+
 
 === BR-LOT-40
 
+.BR-LOT-40
 [width="100%",cols="33%,33%,33%,33%",options="header",]
 |===
 |*Mapping Rule ID* | | |
@@ -2834,12 +2908,13 @@ If, cbc:ExpectedID is included, it must be one of the Lots identified within /ca
 |
 |===
 
-.Table 80: BR-LOT-40
+
 
 == Specific Lead Role Rules
 
 === BR-LEAD-10
 
+.BR-LEAD-10
 [width="100%",cols="33%,33%,33%,33%",options="header",]
 |===
 |*Mapping Rule ID* | | |
@@ -2886,10 +2961,11 @@ ____
 |
 |===
 
-.Table 81: BR-LEAD-10
+
 
 ==== BR-LEAD-10-S10
 
+.BR-LEAD-10-S10
 [width="100%",cols="25%,14%,23%,38%",options="header",]
 |===
 |*Mapping Rule ID* | | |
@@ -2926,10 +3002,11 @@ ____
 |
 |===
 
-.Table 82: BR-LEAD-10-S10
+
 
 ==== BR-LEAD-10-S20
 
+.BR-LEAD-10-S20
 [width="100%",cols="25%,4%,33%,38%",options="header",]
 |===
 |*Mapping Rule ID* | | |
@@ -2966,10 +3043,11 @@ ____
 |
 |===
 
-.Table 83: BR-LEAD-10-S20
+
 
 ==== BR-LEAD-10-S30
 
+.BR-LEAD-10-S30
 [width="100%",cols="25%,2%,35%,38%",options="header",]
 |===
 |*Mapping Rule ID* | | |
@@ -3011,7 +3089,7 @@ ____
 |
 |===
 
-.Table 84: BR-LEAD-10-S30
+
 
 == Tendering Criterion General Rules
 
@@ -3021,6 +3099,7 @@ The tendering criterion is based on the document [RD03], this means that the Ten
 
 There are four type of rows:
 
+.Tendering Criterion structure and XSD
 [width="100%",cols="27%,73%",options="header",]
 |===
 |*Row* |*Description*
@@ -3061,13 +3140,13 @@ cac:TenderingCriterion/cac:TenderingCriterionPropertyGroup
 
 |===
 
-.Table 86: Tendering Criterion structure and XSD
+
 
 === Level 1: Tendering Criterion
 
 A tendering criterion describes a fact or a condition that is used by the contracting body to evaluate and compare tenders by economic operators and which will be used for the exclusion and the selection of candidate tenderers to the award decision.
 
-
+.Tendering Criterion Business Rules
 [width="100%",cols="13%,36%,51%",options="header",]
 |===
 |Identifier |XSD Business Rule description |XSD Business Rule Schematron
@@ -3245,12 +3324,13 @@ ____
 
 |===
 
-.Table 87: Tendering Criterion Business Rules
+
 
 === Level 2: Legislation
 
 A class to make reference to the legislation related to the criterion.
 
+.Legislation Business Rules
 [width="100%",cols="13%,36%,51%",options="header",]
 |===
 a|
@@ -3314,13 +3394,13 @@ ____
 
 |===
 
-.Table 88: Legislation Business Rules
+
 
 === Tendering Criterion Property Group
 
 The first level group of properties and sub-groups of properties in the structure of a criterion.
 
-
+.Tendering Criterion Property Group Business Rules
 [width="100%",cols="13%,36%,51%",options="header",]
 |===
 a|
@@ -3429,12 +3509,13 @@ ____
 
 |===
 
-.Table 89: Tendering Criterion Property Group Business Rules
+
 
 === Tendering Criterion Property
 
 Caption (i.e. a 'label'), specific MS or contracting authority requirement (e.g. 'Number of references expected: 5' or a question addressed to the economic operator (e.g. 'your average yearly turnover for the past three years?').
 
+.Tendering Criterion Property Business Rules
 [width="100%",cols="13%,36%,51%",options="header",]
 |===
 a|
@@ -3535,12 +3616,13 @@ ____
 
 |===
 
-.Table 90: Tendering Criterion Property Business Rules
+
 
 == Tendering Criterion Self-contained Rules
 
 This is the list of rules common to Tendering Criterion elements of both, ESPDRequest and ESPDResponse, which procurement procedure type is self-contained.
 
+.Tendering Criterion structure and XSD
 [width="100%",cols="27%,73%",options="header",]
 |===
 |*Row* |*Description*
@@ -3561,7 +3643,7 @@ Information about the national sub-criteria defined by the Member States.
 
 |===
 
-.Table 92: Tendering Criterion structure and XSD
+
 
 == Tendering Criterion Response Rules
 
@@ -3571,6 +3653,7 @@ This is the list of rules common to Tendering Criterion Response elements of ESP
 
 A tendering criterion response describes a response to a criterion property from tendering criterion.
 
+.Tendering Criterion Response Business Rules
 [width="100%",cols="14%,33%,53%",options="header",]
 |===
 |Identifier |XSD Business Rule description |XSD Business Rule Schematron
@@ -3628,12 +3711,13 @@ ____
 
 |===
 
-.Table 93: Tendering Criterion Response Business Rules
+
 
 === Level 2: Response Value
 
 This element describes the criterion property response value:
 
+.Response Value Business Rules
 [width="100%",cols="14%,33%,53%",options="header",]
 |===
 |Identifier |XSD Business Rule description |XSD Business Rule Schematron
@@ -3668,7 +3752,7 @@ a|
 [start=5]
 . {blank}
 
-|Recommendation: use a UUDI-version 4 number on Response value identifier. |*No Schematron rule can be implemented.*
+|Recommendation: use a UUID-version 4 number on Response value identifier. |*No Schematron rule can be implemented.*
 a|
 [start=6]
 . {blank}
@@ -3732,11 +3816,12 @@ Then, its /cac: SubsidiaryTenderingCriterionPropertyGroup /cbc:ID cannot exist w
 
 |===
 
-.Table 94: Response Value Business Rules
+
 
 [start=8]
 . This table lists the relationship between data type and response data type:
 
+.Matching between data type and response
 [width="100%",cols="50%,50%",options="header",]
 |===
 |/cac:TenderingCriterion /cac:TenderingCriterionPropertyGroup /cac:TenderingCriterionProperty/cac:ValueDataTypeCode |/cac:TenderingCriterionResponse /cac:ResponseValue
@@ -3765,13 +3850,14 @@ Then, its /cac: SubsidiaryTenderingCriterionPropertyGroup /cbc:ID cannot exist w
 |TIME |../cac:ResponseValue/cbc:ResponseTime
 |===
 
-.Table 95: Matching between data type and response
+
 
 
 === Level 2: Evidence Supplied
 
 This element describes the evidence supporting this criterion property response:
 
+.Evidence Supplied Business Rules
 [width="100%",cols="14%,33%,53%",options="header",]
 |===
 |Identifier |XSD Business Rule description |XSD Business Rule Schematron
@@ -3799,12 +3885,13 @@ Severity: ERROR
 
 |===
 
-.Table 96: Evidence Supplied Business Rules
+
 
 == Other Common Rules
 
 This is the list of rules common to all elements of both, ESPDRequest and ESPDResponse. They do not depend on the test cases:
 
+.Other Common Rules
 [width="100%",cols="33%,33%,33%",options="header",]
 |===
 |Identifier |XSD Business Rule description |XSD Business Rule Schematron

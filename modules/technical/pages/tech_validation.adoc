@@ -100,7 +100,7 @@ image:CVA_example.jpg[CVA example,width=600,height=258]
 As a basis of the implementation, it has been taken into account:
 
 [arabic]
-. Schematron implementation of CVA files for validation from link:https://cranesoftwrights.github.io/resources/ubl/index.htm#cva2sch[CRANE SOFTWRIGHTS LTD]
+. Schematron implementation of CVA files for validation from link:https://cranesoftwrights.github.io/resources/ubl/index.htm#cva2sch[CRANE SOFTWRIGHT LTD]
 
 image:CodeList_Validation_Execution_files.jpg[Code List Validation Execution files,width=600,height=210]
 
@@ -113,7 +113,7 @@ image:Execution _validation process_codelists.jpg[Execution of the validation pr
 
 The validation of a ESPD XML has the following life-cycle:
 
-image:ESPD_Schematorn_lyfe-cycle.jpg[ESPD Schematorn lyfe-cycle,width=370,height=436]
+image:ESPD_Schematron_life-cycle.jpg[ESPD Schematron life-cycle,width=370,height=436]
 
 [arabic]
 . The validation of the XML starts by ensuring that the input XML follows the *structure defined by the XSD*: QualificationApplicationRequest.xsd XSD Schema or QualificationApplicationResponse.xsd XSD Schema. These schemas can be found under the folder ubl-2.3/xsdrt/maindoc (or the equivalent documented xsd folder).
@@ -140,7 +140,7 @@ image:Validation_Process.jpg[Validation Process,width=600,height=416]
 . *Other* business rules:
 [loweralpha]
 .. Other validations which are common to Request and Response applications, such as the mandatory use of the attribute schemeAgencyID for identifiers: 04 ESPD Common Other BR.sch
-.. Specific business rules for Request applications, in this case, the validation of the correct value for cbc:CutomisationID element: 04 ESPD Req Other BR.sch
+.. Specific business rules for Request applications, in this case, the validation of the correct value for cbc:CustomisationID element: 04 ESPD Req Other BR.sch
 .. Business rules related to the procurer: 05 ESPD Req Procurer BR.sch
 .. Specific business rules: 05 ESPD Req Specific BR.sch
 
@@ -160,7 +160,7 @@ image:Validation_Process.jpg[Validation Process,width=600,height=416]
 . *Other* business rules:
 [loweralpha]
 .. Other validations which are common to Request and Response applications, such as the mandatory use of the attribute schemeAgencyID for identifiers: 04 ESPD Common Other BR.sch
-.. Specific business rules for Response applications, in this case, the validation of the correct value for cbc:CutomisationID element: 04 ESPD Resp Other BR.sch
+.. Specific business rules for Response applications, in this case, the validation of the correct value for cbc:CustomisationID element: 04 ESPD Resp Other BR.sch
 .. Business rules related to the economic operator: 05 ESPD Resp EO BR.sch
 .. Response Specific business rules: 05 ESPD Resp Specific BR.sch
 .. Specific business rules for economic operators registered in a pre-qualification system: 05 ESPD Resp Qualification BR.sch
@@ -218,14 +218,14 @@ The validation of Tendering Criterion Property (cac:TenderingCriterionProperty e
 
 === Note. Replacement of UUID by XML Path Like ID 
 
-From ESPD v4.0.0, UUIDs will be replaced by XML Path Like IDs in the data structure, except for the top level Exclusion Grounds and Selection Criteria elements.
-For further details, see section, "Common Aspects for Criteria". 
+From ESPD v4.0.0, UUIDs are replaced by XML Path Like IDs in the data structure, except for the top level Exclusion Grounds and Selection Criteria elements.
+//For further details, see xref:tech_common_aspects_for_criteria.adoc[Common Aspects for Criteria]. 
 
 === Interoperability testbed
 
 The European Commission (EC) link:https://ec.europa.eu/isa2/awards_en[ISA2 Programme] provides an link:https://joinup.ec.europa.eu/asset/itb/description[Interoperability Testbed] where Stakeholders can freely test these validation artefacts.
 
-All the ESPD-EDM artefacts necessary to perform the validation are set up in the testbed. Thus developers and integrators can test the validity of the ESPD-Request and ESDP-Response XML instances by uploading the instances in the testbed and launching the validation.
+All the ESPD-EDM artefacts necessary to perform the validation are set up in the testbed. Thus developers and integrators can test the validity of the ESPD-Request and ESPD-Response XML instances by uploading the instances in the testbed and launching the validation.
 
 Use this URL to upload and execute the validations: link:https://www.itb.ec.europa.eu/espd/upload[Upload].
 

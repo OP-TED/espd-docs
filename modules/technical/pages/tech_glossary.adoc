@@ -60,7 +60,7 @@ EuroVoc is a multilingual, multidisciplinary thesaurus covering the activities o
 
 [[eSens, eSens]]
 *eSens* +
-https://cordis.europa.eu/article/id/191247-the-building-blocks-for-digital-governments-revolution[eSens] was a project that ran from 2013 to 2017 to deliver a generic e-infrastructure used across a range of public services. Its aim was to make digital government services simpler and more cost-effective to implement for the benefit ofcitizens, businesses and public organisations.
+https://cordis.europa.eu/article/id/191247-the-building-blocks-for-digital-governments-revolution[eSens] was a project that ran from 2013 to 2017 to deliver a generic e-infrastructure used across a range of public services. Its aim was to make digital government services simpler and more cost-effective to implement for the benefit of citizens, businesses and public organisations.
 
 [[espd,European Single Procurement Document (ESPD)]]
 *European Single Procurement Document (ESPD).*  +
@@ -68,7 +68,7 @@ Self-declaration document intended for preliminary evidence in a public procurem
 
 [[espd-edm,European Single Procurement Document Exchange Data Model (ESPD-EDM)]]
 *European Single Procurement Document Exchange Data Model (ESPD-EDM).*  +
-Data model developed by the European Comission to define the exchange of European Single Procurement Document (ESPD) documents between Procurement stakeholder’s system. (https://github.com/ESPD/ESPD-EDM/tree/master)
+Data model developed by the European Commission to define the exchange of European Single Procurement Document (ESPD) documents between Procurement stakeholder’s system. (https://github.com/ESPD/ESPD-EDM/tree/master)
 
 [[gc,genericode]]
 *genericode.*  +
@@ -103,7 +103,7 @@ Company that offers standardization and de jure approval for reference in intern
 Group of users that participate or work with the ESPD-EDM.
 
 [[op,The Publications Office of the European Union (OP)]]
-*The Publications Office of the European Union (OP).* Interinstitutional office whose task is to publish the publications of the institutions of the European Union (Decision 2009/496/EC, Euratom). (https://op.europa.eu/en/home)
+*The Publications Office of the European Union (OP).* Inter-institutional office whose task is to publish the publications of the institutions of the European Union (Decision 2009/496/EC, Euratom). (https://op.europa.eu/en/home)
 
 [[Semantic_Assets,Semantic Assets]] Semantic assets (metadata or reference data) are maintained as part of the actions for semantic interoperability by the ISA² Programme, which aims at improving semantic interoperability in European eGovernment systems by providing solutions to help European public administrations perform seamless and meaningful cross-border and cross-domain data exchanges. The ISA² Programme has developed a number of semantic specifications and interoperability solutions which are available to public administrations, namely: Core Vocabularies, the DCAT Application Profile for Data Portals in Europe (DCAT-AP) and the Asset Description Metadata Schema (ADMS). The SEMIC action is also funding the development of solutions managed by other services, such as VocBench3 which is managed by the Publications Office of the EU. https://ec.europa.eu/isa2/actions/improving-semantic-interoperability-european-egovernment-systems_en/[More Information]
 

@@ -150,7 +150,7 @@ Once the form is filled in, the user has several options:
 
 image::form/of28.png[]
 
-There is an “Overview” option available to both the CA when preparing the ESPD Request and the EO when preparing the ESPD Response, which allows the user to review from a single page all the information provided in the form. If everything is correct, the ESDP document can be downloaded:
+There is an “Overview” option available to both the CA when preparing the ESPD Request and the EO when preparing the ESPD Response, which allows the user to review from a single page all the information provided in the form. If everything is correct, the ESPD document can be downloaded:
 
 image::form/of29.png[]
 
