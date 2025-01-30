@@ -238,6 +238,10 @@ Important to note is that ESPD forms must be *filled in per Lot*:
 
 Each section is filled in by one or both parties, and in the case of a response involving a supplier group, the group leader must fill in information related to group members in their response: names and other identifying details, AND each party must fill in and sign an ESPD.It is the Group leader's responsibility to collect the completed ESPD Response documents from all parties *per lot* and submit them in the tender.
 
+The process is illustrated by the diagram below:
+
+image::ESPD_gl.png[]
+
 NOTE: different EO parties might have different roles in different lots, hence the requirement for each participating party to fill in one ESPD Response per lot.
 
 A table of which EO role should fill in which sections in the ESPD Response is provided below the ESPD parts description following.
