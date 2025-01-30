@@ -244,7 +244,7 @@ image::ESPD_gl.png[]
 
 NOTE: Different EO parties might have different roles in different lots, hence the requirement for each participating party to fill in one ESPD Response per lot.
 
-A table of which EO role should fill in which sections in the ESPD Response is provided below the ESPD parts description following.
+A table of which EO role should fill in which sections in the ESPD Response is provided in the ESPD parts description below.
 
 ==== Example 1
 
