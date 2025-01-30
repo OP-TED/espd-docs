@@ -229,7 +229,26 @@ Economic Operators can play different roles, catered for in the ESPD-EDM, within
 ** *Other entity (relied upon):* An entity upon which the main contractor, the group, or another subcontractor, relies on order to meet the selection criteria;
 ** *Other entity (not relied upon) or Subcontractor*: An entity upon which the main contractor, the group, or another subcontractor, does not rely on order to meet the selection criteria.
 
+=== The effect of Lots
 
+Important to note is that ESPD forms must be *filled in per Lot*:
+
+* The exclusion grounds automatically apply to all lots.
+* The selection criteris apply per lot i.e., they may be different between lots.
+
+Each section is filled in by one or both parties, and in the case of a response involving a supplier group, the group leader must fill in information related to group members in their response: names and other identifying details, AND each party must fill in and sign an ESPD.It is the Group leader's responsibility to collect the completed ESPD Response documents from all parties *per lot* and submit them in the tender.
+
+NOTE: different EO parties might have different roles in different lots, hence the requirement for each participating party to fill in one ESPD Response per lot.
+
+A table of which EO role should fill in which sections in the ESPD Response is provided below the ESPD parts description following.
+
+==== Example 1
+
+A relied on entity might only be relied on in some lots but participate as a contractor (not relied on) in others.
+
+==== Example 2
+
+A group member might only be a member in some lots and not others.
 == Parts of the ESPD
 
 
