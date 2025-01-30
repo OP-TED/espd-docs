@@ -250,6 +250,7 @@ A relied on entity might only be relied on in some lots but participate as a con
 ==== Example 2
 
 A group member might only be a member in some lots and not others.
+
 == Parts of the ESPD
 
 
