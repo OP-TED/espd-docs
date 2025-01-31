@@ -80,3 +80,7 @@ Finally, the Buyer and the EO interact to conclude the procurement procedure.
 image:ESPD_Buyer_EO.jpg[Buyer and EO,align="center",width=650,height=500]
 
 _Figure 10_d. Buyer and EO_
+
+== Example XML Request and Response files
+
+NOTE: Example XML files can be generated using the link=https://docs.ted.europa.eu/espd-demo[ESPD Demo Development Tools]. This is a useful facility that allows developers to generate different request and response XML files based on individual/ specific scenarios. These can then be used to facilitate understanding of their development task and to test their code.
