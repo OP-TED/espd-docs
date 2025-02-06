@@ -269,7 +269,7 @@ Information concerning the procurement procedure and the Buyer or contracting en
 
 Information concerning the procurement procedure and the Buyer or contracting entity, where the Economic Operator, or offering party, is required to identify the ESPD Request to which it is creating a response, by providing information about the publication, the identity of the procurer, and the procurement procedure.
 
-=== Part 2: offering party information
+=== Part 2: Offering party information
 
 NOTE: The Buyer does not fill in this section.
 
