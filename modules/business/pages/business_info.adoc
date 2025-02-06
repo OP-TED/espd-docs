@@ -12,9 +12,9 @@ ifndef::downloaddir[:downloaddir: download]
 
 == An Introduction for Business Users
 
-The European Single Procurement Document (ESPD) is a electronic form used by buyers to assess the suitability of suppliers tendering in a public procurement procedure. Statements and evidence (documentation to support the statements) that are provided by suppliers against EU, national, and procedure specific criteria, are managed via the ESPD. 
+The European Single Procurement Document (ESPD) is a electronic form used by buyers to assess the suitability of tendering parties in a public procurement procedure. Statements and evidence (documentation to support the statements) that are provided by tendering parties against EU, national, and procedure specific criteria, are managed via the ESPD. 
 
-The first part of the form, the ESPD Request, enables buyers to state the selection criteria suppliers have to meet, and what evidence of lawfulness and integrity they must provide, for their tender to be considered by the buyer. The second part of the form, the ESPD Response, enables suppliers to respond, and to list the evidence they can provide to substantiate their response.
+The first part of the form, the ESPD Request, enables buyers to state the selection criteria tendering parties have to meet, and what evidence of lawfulness and integrity they must provide, for their tender to be considered by the buyer. The second part of the form, the ESPD Response, enables tendering parties to respond, and to list the evidence they can provide to substantiate their response.
 
 The main objective of the ESPD is to reduce administrative burden by removing the need to produce large numbers of physical certificates and documentation related to exclusion and selection criteria. The intention is to make participation in public procurement less burdensome for  small and medium-sized enterprises (SMEs).
 
@@ -27,14 +27,14 @@ The three main phases of the public procurement process are:
 * Pre-tendering, which includes the preparation and planning of the procedure;
 * Tendering, which includes:
 ** The publication of the contract notice by the Contracting Authority (CA) or buyer;
-** The submission of tenders by the Economic Operators (EOs) or suppliers;
+** The submission of tenders by the tendering parties;
 ** The opening of tenders;
-** The qualification of suppliers by applying the exclusion grounds and selecting suitable tenderers based on the selection criteria set by the CA during the preparation of the procedure and published in the contract notice;
+** The qualification of tendering parties by applying the exclusion grounds and selecting suitable tenderers based on the selection criteria set by the CA during the preparation of the procedure and published in the contract notice;
 ** The evaluation of bids, based on the award criteria set by the CA;
 ** The award of the contract.
 * Post-tendering, or contract implementation.
 
-The ESPD is specifically concerned with qualification of suppliers step above.
+The ESPD is specifically concerned with qualification of tendering parties step above.
 
 == The ESPD Process from a Business Perspective
 
@@ -42,7 +42,7 @@ The ESPD process for a buyer
 
 image::espd_bus_buyer.png[]
 
-The ESPD process for a supplier
+The ESPD process for a tendering party
 
 image::espd_bus_supplier.png[]
 
@@ -51,7 +51,7 @@ image::espd_bus_supplier.png[]
 The Public Procurement Directive 2014/24/EC Article 59 (the "Directive") introduced the concept of the European Single Procurement Document (ESPD). By mapping out equivalent certificates between Member States, the ESPD replaces certificates issued by public authorities, or a third party involved in a procedure. It greatly simplifies and levels out cross-border participation by a greater number of operators in public procurement, and contributes to integrating the European Single Market.
 
 [.text-left]
-The ESPD Service enables buyers and suppliers to create, edit, export and import electronic documents in XML format (eESPD) for the exchange of criteria, requirements, statements and references regarding eligibility to participate in public procurement.
+The ESPD Service enables buyers and tendering parties to create, edit, export and import electronic documents in XML format (eESPD) for the exchange of criteria, requirements, statements and references regarding eligibility to participate in public procurement.
 Article 4 of the Directive regulates in detail public procurement procedures in which the value of the contract exceeds a certain amount. These amounts, also known as 'thresholds', vary depending on the type of the contract, and the administrative level of the Buyer. Those contracts that fall under article 4 of the Directive are called contracts 'above the threshold', and the rest are known as contracts 'below the threshold'. The ESPD Service is flexible enough to provide coverage to procurement procedures both above and below the threshold.
 
 [.text-left]
@@ -236,7 +236,7 @@ Important to note is that ESPD forms must be *filled in per Lot*:
 * The exclusion grounds automatically apply to all lots.
 * The selection criteris apply per lot i.e., they may be different between lots.
 
-Each section is filled in by one or both parties, and in the case of a response involving a supplier group, the group leader must fill in information related to group members in their response: names and other identifying details, AND each party must fill in and sign an ESPD. It is the Group leader's responsibility to collect the completed ESPD Response documents from all parties *per lot* and submit them in the tender.
+Each section is filled in by one or both parties, and in the case of a response involving a tendering group, the group leader must fill in information related to group members in their response: names and other identifying details, AND each party must fill in and sign an ESPD. It is the Group leader's responsibility to collect the completed ESPD Response documents from all parties *per lot* and submit them in the tender.
 
 The process is illustrated in the diagram below:
 
@@ -256,7 +256,7 @@ A group member might only be a member in some lots and not others.
 == Parts of the ESPD
 
 
-Each section of the ESPD form is filled in by one or both parties, and in the case of a response involving a supplier group, the group leader must fill in information related to group members in the response.
+Each section of the ESPD form is filled in by one or both parties, and in the case of a response involving a tendering group, the group leader must fill in information related to group members in the response.
 
 === Part 1: Buyer and procedure information
 
@@ -266,7 +266,7 @@ Information concerning the procurement procedure and the Buyer or contracting en
 
 *The Supplier fills in:*
 
-Information concerning the procurement procedure and the Buyer or contracting entity, where the Economic Operator, or supplier, is required to identify the ESPD Request to which it is creating a response, by providing information about the publication, the identity of the procurer, and the procurement procedure.
+Information concerning the procurement procedure and the Buyer or contracting entity, where the tendering party is required to identify the ESPD Request to which it is creating a response, by providing information about the publication, the identity of the procurer, and the procurement procedure.
 
 === Part 2: Supplier information
 
@@ -296,7 +296,7 @@ NOTE: The Supplier must respond to all the above questions.
 
 === Part 4: Selection criteria
 
-The Buyer indicates which selection criteria will be applied regarding supplier:
+The Buyer indicates which selection criteria will be applied to the tendering party:
 
 * suitability;
 * economic and financial standing;
