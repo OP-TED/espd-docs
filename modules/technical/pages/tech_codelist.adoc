@@ -620,7 +620,7 @@ This code list is maintained by the ESPD Team but content is collected from the 
 The data type expected for this code is URL following the *ESCO* taxonomy identification that uses a URI as the key value.
 |*Metadata* |
 [cols=","]
-|===
+!===
 !*ShortName* !Occupation
 !*LongName* !occupation
 !*ListID* !http://publications.europa.eu/resource/authority/occupation
@@ -631,10 +631,14 @@ The data type expected for this code is URL following the *ESCO* taxonomy identi
 !*AgencyLongName* !Directorate-General for Employment, Social Affairs and Inclusion
 !*AgencyIdentifier* !EMPL
 
+!===
+
 |===
 
 [[profile-execution-id-table,profile-execution-id]]
+
 == profile-execution-id 
+
 [cols="1,2a"]
 |===
 |*Name* |*_ProfileExecutionID_*
