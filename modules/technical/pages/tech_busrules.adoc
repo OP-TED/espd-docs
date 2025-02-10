@@ -615,9 +615,8 @@ Party /cac:PartyIdentification exist (registered on a
 national pre-qualification system)
 |EO Role  a|
 /cac:EconomicOperatorParty/cac:EconomicOperatorRole
-/cbc:RoleCode is SCLE (Lead entity)
-
-/cbc:EconomicOperatorGroupName becomes compulsory|
+/cbc:RoleCode is SCLE (Lead entity) +
+/cbc:EconomicOperatorGroupName becomes compulsory
 |===
 
 ===== *List of rules*
@@ -2560,7 +2559,7 @@ ____
 | |
 |Business requirement |link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr092-018[tbr92-018], link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr092-007[tbr92-007]_, _[.underline]#tbr92-005#_, link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr092-006[tbr92-006] | |
 |XSD Business Rule description | |XSD Business Rule Schematron |
-|Same business rules as BR-RESP-30 | | |
+|Same business rules as BR-RESP-30 | | 
 |===
 
 
@@ -3113,9 +3112,8 @@ If the response cac:TenderingCriterionResponse +
 each of the criterion subgroups identified within: +
 /cac:TenderingCriterion /cac:TenderingCriterionPropertyGroup +
 /cac:SubsidiaryTenderingCriterionPropertyGroup/ + cac:TenderingCriterionProperty, must be answered
-____
 
-|
+
 |===
 
 
@@ -3845,7 +3843,6 @@ Severity: ERROR
 * {blank}
 +
 If /cac:TenderingCriterionResponse /cac:ResponseValue /cbc:ResponseIndicator = true and /cac:TenderingCriterionResponse /cbc:ValidatedCriterionPropertyID matches one of the IDs within /cac:TenderingCriterionGroupPropertyGroup /cbc:ID, and its /cbc:PropertyGroupTypeCode = ONFALSE
-
 +
 Then, its /cac: SubsidiaryTenderingCriterionPropertyGroup /cbc:ID cannot exist within /cac:TenderingCriterionResponse /cbc:ValidatedCriterionPropertyID
 
