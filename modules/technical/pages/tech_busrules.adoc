@@ -2916,27 +2916,54 @@ Severity: WARNING
 [width="100%",cols="33%,33%,33%,33%",options="header",]
 |===
 |*Mapping Rule ID* | | |
-|Test Case Rule ID a|
+
+|Test Case Rule ID 
+a|
 * RQ-50-R70
 * RQ-60-R70
+| 
+|
 
-| |
-|Rule description |When selection criteria is provided, the lots each criteria applies to MUST be provided. | |
-|Mapping description |The lots requirement for each criteria are implemented as Tendering Criterion components. | |
-|XSD Path a|
+|Rule description 
+|When selection criteria is provided, the lots each criteria applies to MUST be provided. 
+| 
+|
+
+|Mapping description 
+|The lots requirement for each criteria are implemented as Tendering Criterion components. 
+| 
+|
+|XSD Path 
+a|
 * /cac:TenderingCriterion[0..n]
+| 
+|
 
-| |
-|Business requirement |link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr070-010[_[.underline]#tbr070-010#_] | |
-|XSD Business Rule description | |XSD Business Rule description |
-|The Business Rules listed within 15 Tendering Criterion Self-contained Rules are general to all TenderingCriterion in self-contained qualification applications. | | |
-|The lots each criteria applies to MUST be provided. | a|
+|Business requirement 
+|link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr070-010[_[.underline]#tbr070-010#_] 
+| 
+|
+
+|XSD Business Rule description 
+| 
+|
+|The Business Rules listed within 15 Tendering Criterion Self-contained Rules are general to all TenderingCriterion in self-contained qualification applications. 
+
+| 
+| 
+|
+|The lots each criteria applies to MUST be provided. 
+
+| 
+a|
 * Severity: ERROR
 * When cac:TenderingCriterionPropertyGroup is a53561d5-6614-4dbe-987e-b96f35387f46 and its cac:TenderingCriterionProperty is REQUIREMENT and IDENTIFIER;
 +
 If, cbc:ExpectedID is included, it must be one of the Lots identified within /cac:ProcurementProjectLot/cbc:ID
 
 |
+|
+
 |===
 
 
@@ -3760,11 +3787,13 @@ _Level 2: /cac:ResponseValue_
 Business requirement: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr92-018[_[.underline]#tbr92-018#_]
 
 | |
+
 a|
 [start=4]
 . {blank}
 
-|One cac:ResponseValue element contains the complete list of possible values for one answer to a criterion property. Only *one type of element can be used to answer a criterion property*, and that element MUST be of the *same type as the one specified as expected in the ESPD Request* (element cac:TenderingCriterionProperty /cac:ValueDataTypeCode). a|
+|One cac:ResponseValue element contains the complete list of possible values for one answer to a criterion property. Only *one type of element can be used to answer a criterion property*, and that element MUST be of the *same type as the one specified as expected in the ESPD Request* (element cac:TenderingCriterionProperty /cac:ValueDataTypeCode). 
+a|
 * {blank}
 +
 ____
