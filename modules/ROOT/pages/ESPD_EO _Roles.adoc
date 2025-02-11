@@ -1,0 +1,145 @@
+:doctitle: Understanding Economic Operator (EO) Roles
+:doccode: espd-bus-prod-020
+:author: NPJ
+:authoremail: nicole-anne.paterson-jones@ext.ec.europa.eu
+:docdate: February 2025
+
+Offering parties participating in a tender can have different roles
+
+* Sole Trader
+
+A Sole Trader is a single economic Entity, such as a single person like an IT Consultant, or a single business that operates solely and independently in providing goods and services.
+
+* Group Leaders and Group Members
+
+A group leader is a person or business that establishes a supply group consisting of members all of whom contribute to the supply of the goods and services. The group is collectively responsible for the supply. The group leader performs tasks such as coordinating the admin of the group, being the single contact between the group and their customer, and collecting and submitting the members' contributions to the bid, including all the ESPD responses.
+
+A group member follows the co-ordination of the group leader, supplying goods and services as per their remit and/ or geographical area.
+
+* Sub-contractor
+
+Sub-contractors are economic entities engaged by a group leader or member to supply a function or service independently of the group. They are typically one of many similar companies that could fulfil this function and as such are "not relied on". They liaise only with the requesting EO party.
+
+* Other Entity relied on
+
+An entity that is relied on performs a role or a capacity that the group or sole trader relies on to fulfil the selection criteria. They might not provide goods or services, but are relied on for the eligibility of the operating party. This might be e.g., to boost the turnover of the offering party to a threshold level, perform a regulatory or auditory function, supply certificates of quality assurance during stages of building work, supply certificates related to biosecurity for cross bordr transport (these are just a few).
+
+ The following sections show in detail which EO roles are required to complete which answers in an ESPD.
+
+ == The ESPD form questions
+
+=== Part II
+
+[cols="1,1,1,1", options="header"]
+|===
+| Part II-A (EO Information) | Part II-B (Info EO Representatives) | Part II-C (Sub-contractors relied on) | Part II-D Subcontractors (not relied on)
+
+| Official name              | First Name                          | Is the EO reliant on the capacities of other entities? | Does the EO intend to subcontract (to entities it does not rely on)?
+| Country                    | Last Name                           |
+| Website                    | Date of Birth                       |
+| VAT no.                    | Place of Birth                      |
+| City                       | Country                             |
+| Street & no.               | Website                             |
+| Post Code                  | Role                                |
+| Contact person             | City                                |
+| Telephone                  | Street and Number                   |
+| e-mail                     | Post code                           |
+| EO size                    | Telephone                           |
+| Sheltered Workshop?        | E-mail                              |
+| EO registered in a pre qualification system | Detailed Information |
+| Economic Operator together with others |
+|===
+	
+[cols="1,1,1,1", options="header"]
+|===
+| Part III-A (EG - criminal convictions) | Part III-B (EG - payment of taxes/ soc sec) | Part III-C (EG - insolvency, conflicts of interest, prof. misconduct) | Part III-D (EG - Purely national exclusion grounds)
+
+| Participation in a criminal organisation | Payment of taxes | Breaching of obligations in the fields of environmental law | Purely national exclusion grounds
+| Corruption | Payment of social security contributions | Breaching of obligations in the fields of social law | 
+| Fraud |  | Breaching of obligations in the fields of labour law | 
+| Terrorist offences or offences linked to terrorist activities |  | Bankruptcy | 
+| Money laundering or terrorist financing |  | Insolvency | 
+| Child labour and other forms of trafficking in human beings |  | Arrangement with creditors | 
+|  |  | Analogous situation like bankruptcy under national law | 
+|  |  | Assets being administered by liquidator | 
+|  |  | Business activities are suspended | 
+|  |  | Guilty of grave professional misconduct | 
+|  |  | Agreements with other economic operators aimed at distorting competition | 
+|  |  | Conflict of interest due to its participation in the procurement procedure | 
+|  |  | Direct or indirect involvement in the preparation of this procurement procedure | 
+|  |  | Early termination, damages or other comparable sanctions | 
+|  |  | Guilty of misrepresentation, withheld information, unable to provide required documents and obtained confidential information of this procedure | 
+|===
+
+[cols="1,1,1,1", options="header"]
+|===
+| Part IV - A (SC - Suitability) | Part IV - B (SC - Economic & financial standing) | Part IV - C (SC - Technical & professional standing) | Part IV - D (SC - Quality assurance schemes and environmental management standards)
+
+| Enrolment in a relevant professional register | General yearly turnover | For works contracts: performance of works of the specified type | Certificates by independent bodies about quality assurance standards
+| Enrolment in a trade register | Average yearly turnover | For supply contracts: performance of deliveries of the specified type | Certificates by independent bodies about environmental management systems or standards
+| For service contracts: authorisation of particular organisation needed | Specific average turnover | For service contracts: performance of services of the specified type | 
+| For service contracts: membership of particular organisation needed | Specific yearly turnover | Technicians or technical bodies for quality control | 
+|  | Financial ratio | In the case of public works contracts, the economic operator will be able to call on the following technicians or technical bodies to carry out the work: | 
+|  | Professional risk indemnity insurance | Technical facilities and measures for ensuring quality | 
+|  | Other economic or financial requirements | Supply chain management | 
+|  |  | Environmental management measures | 
+|  |  | Tools, plant or technical equipment | 
+|  |  | Educational and professional qualifications | 
+|  |  | Special requirements check | 
+|  |  | Number of managerial staff | 
+|  |  | Average annual manpower | 
+|  |  | Subcontracting proportion | 
+|  |  | For supply contracts: samples, descriptions or photographs without certification of authenticity | 
+|  |  | For supply contracts: samples, descriptions or photographs with certification of authenticity | 
+|  |  | For supply contracts: certificates by quality control institutes | 
+|===
+
+[cols="1", options="header"]
+|===
+| Part V (Reduction of Candidates)
+
+| Reduction of the number of qualified candidates
+|===
+
+ == Summary of which roles answer which questions
+
+
+[cols="1,1,1,1,1"]
+|===
+
+ s|Sole Trader s|EO Group Leader s|EO Group Member (not leader) s|(Sub)contractor s|Other Entity: relied on
+
+ |Part II A & B
+ |Part II A & B
+ |Part II A & B
+ |Part II A & B
+ |Part II A & B
+
+|Part II C& D: No
+|Part II C& D: optional YES 
+|n/a
+|GL fills in Part II C	
+|GL fills in part II D
+
+|Part III A,B,C,D	
+|Part III A,B,,D	
+|Part III A,B,C,D	
+|If Part II C: Yes, OEnro fills in	
+|If Part II D: Yes, OEro fills in
+
+|Part IV A, B,C,D	
+|Part IV A, B,C,D	
+|Part IV A, B,C,D	
+|If  Part II D: Yes, GL fills in on behalf of OEnro	
+|If  Part II D: Yes, GL fills in on behalf of OEro
+
+|Part V - not applicable	
+|Part V	
+|Part V	
+|Part V - not applicable	
+|Part V - not applicable
+
+|===
+
+NOTE: OEnro = (sub)contractor +
+OEro = other entity relied on
