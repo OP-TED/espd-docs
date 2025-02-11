@@ -30,7 +30,7 @@
 * xref:espd-home::external.adoc[External Resources]
 * xref:espd-home::supporting.adoc[Supporting and related projects]
 * xref:espd-home::laws.adoc[Laws and Directives]
-* xref:ESPD_EO_roles.adoc[Roles]
+* xref:espd_eo_roles.adoc[Roles]
 
 * [.separated]#**Open User Community Documents**#
 * xref:espd-wgm::index.adoc[Upcoming Meeting Dates]
