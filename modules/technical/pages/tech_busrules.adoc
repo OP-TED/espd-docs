@@ -615,9 +615,8 @@ Party /cac:PartyIdentification exist (registered on a
 national pre-qualification system)
 |EO Role  a|
 /cac:EconomicOperatorParty/cac:EconomicOperatorRole
-/cbc:RoleCode is SCLE (Lead entity)
-
-/cbc:EconomicOperatorGroupName becomes compulsory|
+/cbc:RoleCode is SCLE (Lead entity) +
+/cbc:EconomicOperatorGroupName becomes compulsory
 |===
 
 ===== *List of rules*
@@ -2544,7 +2543,7 @@ ____
 [width="100%",cols="33%,33%,33%,33%",options="header",]
 |===
 |*Mapping Rule ID* | | |
-|Test Case Rule ID a|
+|Test Case Rule ID a| |
 * RS-20-R50
 * RS-80-R60
 
@@ -2555,12 +2554,12 @@ ____
 |Rule description |Information about compliance of selection criteria CAN be provided | |
 |Mapping description |Criterion responses are implemented as Tendering Criterion response components | |
 |XSD Path a|
-* /cac:TenderingCriterionResponse[0..n]
+/cac:TenderingCriterionResponse[0..n]
 
 | |
 |Business requirement |link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr092-018[tbr92-018], link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr092-007[tbr92-007]_, _[.underline]#tbr92-005#_, link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr092-006[tbr92-006] | |
 |XSD Business Rule description | |XSD Business Rule Schematron |
-|Same business rules as BR-RESP-30 | | |
+|Same business rules as BR-RESP-30 | | 
 |===
 
 
@@ -2570,7 +2569,7 @@ ____
 .BR-RESP-70-S10
 [width="100%",cols="33%,33%,33%,33%%",options="header",]
 |===
-|*Mapping Rule ID* | | |
+|*Mapping Rule ID* | 
 |Test Case Rule ID a|
 * RS-20-R50-S10
 * RS-80-R60-S10
@@ -2579,7 +2578,7 @@ ____
 * RS-140-R50-S10
 * RS-200-R50-S10
 
-|Rule description |When the pre-qualification system the EO is registered on does not cover all the selection criteria, information about compliance of selection criteria MUST be provided. | |
+|Rule description |When the pre-qualification system the EO is registered on does not cover all the selection criteria, information about compliance of selection criteria MUST be provided. 
 |Mapping description |Criterion responses are implemented as Tendering Criterion response components | |
 |XSD Path |/cac:TenderingCriterionResponse[0..n] | |
 |XSD Business Rule description | |XSD Business Rule Schematron |
@@ -2786,18 +2785,9 @@ EO_DATA.LOTS_TENDERED.
 |Business requirement |link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr92-014[_[.underline]#tbr92-014#_] | |
 |XSD Business Rule description | |XSD Business Rule Schematron |
 |The list of lots the EO tenders for MUST be provided. | a|
-* {blank}
-+
-____
 Severity: ERROR
-____
-* {blank}
-+
-____
-If /cac:ProcurementProjectLot/cbc:ID is not 0 and the /cac:TenderingCriterion type is CRITERION.OTHER.EO_DATA.LOTS_TENDERED
-____
-+
-Then, its /cac:TenderingCriterionResponse /cbc:ResponseID must exist within /cac:ProcurementProjectLot /cbc:ID
+
+If /cac:ProcurementProjectLot/cbc:ID is not 0 and the /cac:TenderingCriterion type is CRITERION.OTHER.EO_DATA.LOTS_TENDERED. Then, its /cac:TenderingCriterionResponse /cbc:ResponseID must exist within /cac:ProcurementProjectLot /cbc:ID
 
 |
 |===
@@ -2887,16 +2877,9 @@ Information about lots specified is two different sets of the XSD schema in orde
 |Business requirement |link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr070-008[_[.underline]#tbr070-008#_] | |
 |XSD Business Rule description | |XSD Business Rule Schematron |
 |Convention: Lots should always be identified with a sequential number, as in the examples: Lot1, Lot2 Lot7. | a|
-* {blank}
-+
-____
 Severity: WARNING
-____
-* {blank}
-+
-____
+
 /cac:ProcurementProjectLot /cbc:ID must be unique in the XML instance.
-____
 
 |
 |===
@@ -2933,27 +2916,54 @@ ____
 [width="100%",cols="33%,33%,33%,33%",options="header",]
 |===
 |*Mapping Rule ID* | | |
-|Test Case Rule ID a|
+
+|Test Case Rule ID 
+a|
 * RQ-50-R70
 * RQ-60-R70
+| 
+|
 
-| |
-|Rule description |When selection criteria is provided, the lots each criteria applies to MUST be provided. | |
-|Mapping description |The lots requirement for each criteria are implemented as Tendering Criterion components. | |
-|XSD Path a|
+|Rule description 
+|When selection criteria is provided, the lots each criteria applies to MUST be provided. 
+| 
+|
+
+|Mapping description 
+|The lots requirement for each criteria are implemented as Tendering Criterion components. 
+| 
+|
+|XSD Path 
+a|
 * /cac:TenderingCriterion[0..n]
+| 
+|
 
-| |
-|Business requirement |link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr070-010[_[.underline]#tbr070-010#_] | |
-|XSD Business Rule description | |XSD Business Rule description |
-|The Business Rules listed within 15 Tendering Criterion Self-contained Rules are general to all TenderingCriterion in self-contained qualification applications. | | |
-|The lots each criteria applies to MUST be provided. | a|
+|Business requirement 
+|link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr070-010[_[.underline]#tbr070-010#_] 
+| 
+|
+
+|XSD Business Rule description 
+| 
+|
+|The Business Rules listed within 15 Tendering Criterion Self-contained Rules are general to all TenderingCriterion in self-contained qualification applications. 
+
+| 
+| 
+|
+|The lots each criteria applies to MUST be provided. 
+
+| 
+a|
 * Severity: ERROR
 * When cac:TenderingCriterionPropertyGroup is a53561d5-6614-4dbe-987e-b96f35387f46 and its cac:TenderingCriterionProperty is REQUIREMENT and IDENTIFIER;
 +
 If, cbc:ExpectedID is included, it must be one of the Lots identified within /cac:ProcurementProjectLot/cbc:ID
 
 |
+|
+
 |===
 
 
@@ -2985,32 +2995,27 @@ If, cbc:ExpectedID is included, it must be one of the Lots identified within /ca
 |Business requirement |link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr092-008[_[.underline]#tbr092-008#_] | |
 |XSD Business Rule description | |XSD Business Rule Schematron |
 |Information about the other participants MUST be provided | a|
-* {blank}
-+
-____
+
 Severity: ERROR
-____
-* {blank}
-+
-____
-At least one /cac:TenderingCriterionResponse /cbc:ValidatedCriterionPropertyID must match
-an IDs criterion within /cac:TenderingCriterionProperty
-/cbc:ID which /cac:TenderingCriterion/cbc:CriterionTypeCode is _CRITERION.OTHER.EO_DATA.
+
+At least one /cac:TenderingCriterionResponse + 
+/cbc:ValidatedCriterionPropertyID must match +
+an IDs criterion within +
+/cac:TenderingCriterionProperty/cbc:ID which +
+/cac:TenderingCriterion/cbc:CriterionTypeCode +
+is _CRITERION.OTHER.EO_DATA. +
 TOGETHER_WITH_OTHERS_
-____
-* {blank}
-+
-____
-/cac:TenderingCriterionResponse /cac:ResponseValue
-/cbc:ResponseIndicator is true; meaning that the EO
-is participating with others.
-____
-* {blank}
-+
-____
-Each of the criterion subgroups identified within: /cac:TenderingCriterion
-/cac:TenderingCriterionPropertyGroup /cac:SubsidiaryTenderingCriterionPropertyGroup/cac:TenderingCriterionProperty, must be answered.
-____
+
+/cac:TenderingCriterionResponse +
+/cac:ResponseValue/cbc:ResponseIndicator is +
+true; meaning that the EO is + 
+participating with others.
+
+Each of the criterion subgroups identified within: +
+/cac:TenderingCriterion +
+/cac:TenderingCriterionPropertyGroup +
+/cac:SubsidiaryTenderingCriterionPropertyGroup/ +
+cac:TenderingCriterionProperty, must be answered.
 
 |
 |===
@@ -3043,16 +3048,13 @@ ____
 ESPDV2.0-tbr092-008[_[.underline]#tbr092-008#_] | |
 |XSD Business Rule description | |XSD Business Rule Schematron |
 |Information about the group MUST be provided | a|
-* {blank}
-+
-____
+
 Severity: WARNING
-____
-* {blank}
-+
-____
-If /cbc:EconomicOperatorGroupName is not implemented, a warning is thrown to inform that the ESPDResponse is going to be used as Sole contractor and not lead entity.
-____
+
+If /cbc:EconomicOperatorGroupName is not +
+implemented, a warning is thrown to inform +
+that the ESPDResponse is going to be used +
+as Sole contractor and not lead entity.
 
 |
 |===
@@ -3084,18 +3086,13 @@ ____
 |Business requirement |link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr092-008[_[.underline]#tbr092-008#_] | |
 |XSD Business Rule description | |XSD Business Rule Schematron |
 |Information about all the entities the EO relies on MUST be provided | a|
-* {blank}
-+
-____
-Severity: ERROR
-____
-* {blank}
-+
-____
-At least one /cac:TenderingCriterionResponse /cbc:ValidatedCriterionPropertyID must match
-an IDs criterion within /cac:TenderingCriterion/cbc:ID which /cac:TenderingCriterion/cbc:CriterionTypeCode
-is _CRITERION.OTHER.EO_DATA.RELIES_ON_OTHER_CAPACITIES_
-____
+
+At least one /cac:TenderingCriterionResponse +
+/cbc:ValidatedCriterionPropertyID must match +
+an IDs criterion within /cac:TenderingCriterion/cbc:ID +
+which /cac:TenderingCriterion/cbc:CriterionTypeCode is +
+_CRITERION.OTHER.EO_DATA. +
+RELIES_ON_OTHER_CAPACITIES_
 
 |
 |===
@@ -3127,27 +3124,23 @@ ____
 |Business requirement |link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr092-008[_[.underline]#tbr092-008#_] | |
 |XSD Business Rule description | |XSD Business Rule Schematron |
 |Information about all subcontractors MUST be provided | a|
-* {blank}
-+
-____
-Severity: ERROR
-____
-* {blank}
-+
-____
-At least one /cac:TenderingCriterionResponse /cbc:ValidatedCriterionPropertyID must match
-an IDs criterion within /cac:TenderingCriterion/cbc:ID which /cac:TenderingCriterion/cbc:CriterionTypeCode
-is _CRITERION.OTHER.EO_DATA.SUBCONTRACTS_
-WITH_THIRD_PARTIES_
-____
-* {blank}
-+
-____
-If the response cac:TenderingCriterionResponse /cac:ResponseValue/cbc:ResponseIndicator is
-true; each of the criterion subgroups identified within: /cac:TenderingCriterion /cac:TenderingCriterionPropertyGroup /cac:SubsidiaryTenderingCriterionPropertyGroup/cac:TenderingCriterionProperty, must be answered
-____
 
-|
+Severity: ERROR
+
+At least one /cac:TenderingCriterionResponse +
+/cbc:ValidatedCriterionPropertyID must match +
+an IDs criterion within /cac:TenderingCriterion/cbc:ID +
+which /cac:TenderingCriterion/cbc:CriterionTypeCode is +
+_CRITERION.OTHER.EO_DATA. +
+SUBCONTRACTS_WITH_THIRD_PARTIES_
+
+If the response cac:TenderingCriterionResponse +
+/cac:ResponseValue/cbc:ResponseIndicator is true; +
+each of the criterion subgroups identified within: +
+/cac:TenderingCriterion /cac:TenderingCriterionPropertyGroup +
+/cac:SubsidiaryTenderingCriterionPropertyGroup/ + cac:TenderingCriterionProperty, must be answered
+
+
 |===
 
 
@@ -3794,11 +3787,13 @@ _Level 2: /cac:ResponseValue_
 Business requirement: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr92-018[_[.underline]#tbr92-018#_]
 
 | |
+
 a|
 [start=4]
 . {blank}
 
-|One cac:ResponseValue element contains the complete list of possible values for one answer to a criterion property. Only *one type of element can be used to answer a criterion property*, and that element MUST be of the *same type as the one specified as expected in the ESPD Request* (element cac:TenderingCriterionProperty /cac:ValueDataTypeCode). a|
+|One cac:ResponseValue element contains the complete list of possible values for one answer to a criterion property. Only *one type of element can be used to answer a criterion property*, and that element MUST be of the *same type as the one specified as expected in the ESPD Request* (element cac:TenderingCriterionProperty /cac:ValueDataTypeCode). 
+a|
 * {blank}
 +
 ____
@@ -3877,7 +3872,6 @@ Severity: ERROR
 * {blank}
 +
 If /cac:TenderingCriterionResponse /cac:ResponseValue /cbc:ResponseIndicator = true and /cac:TenderingCriterionResponse /cbc:ValidatedCriterionPropertyID matches one of the IDs within /cac:TenderingCriterionGroupPropertyGroup /cbc:ID, and its /cbc:PropertyGroupTypeCode = ONFALSE
-
 +
 Then, its /cac: SubsidiaryTenderingCriterionPropertyGroup /cbc:ID cannot exist within /cac:TenderingCriterionResponse /cbc:ValidatedCriterionPropertyID
 

@@ -19,10 +19,10 @@ The conceptual model for this version
 == Information for Business Users
 * xref:3.3.0@ESPD-EDM:business:index.adoc[Business Information] +
 An overview of the ESPD for business users
-* xref:3.3.0@ESPD-EDM:business:service.adoc[The ESPD Service] +
-What an ESPD service is and what it looks like
-* xref:3.3.0@ESPD-EDM:business:using.adoc[Using an ESPD Service] +
-Using an online ESPD form from both buyer and supplier perspectives
+//* xref:3.3.0@ESPD-EDM:business:service.adoc[The ESPD Service] +
+//What an ESPD service is and what it looks like
+//* xref:3.3.0@ESPD-EDM:business:using.adoc[Using an ESPD Service] +
+//Using an online ESPD form from both buyer and supplier perspectives
 
 == Technical Implementation of an ESPD Service
 * xref:3.3.0@ESPD-EDM:technical:index.adoc[Technical Information] +
