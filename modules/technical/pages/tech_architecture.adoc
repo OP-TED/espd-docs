@@ -34,7 +34,7 @@ This describes the Request and the Response model elements and their attributes,
 
 * *The ESPD Criterion Data Structure component* 
 
-This describes each Request and Response criterion and its hierarchical tree structure of descriptive elements. It is maintained in MS Excel format file then transformed (saved) into an ODS (Open Document) file, from which an initial XML file is extracted. From the XML file an ESPD UBL XML file is generated using XSLT transformation rules. 
+This describes each Request and Response criterion and its hierarchical tree structure of descriptive elements. It is maintained in MS Excel format file then transformed (saved) into an ODS (Open Document) file, from which an initial XML file is extracted. From the XML file an ESPD UBL XML file is generated using XSLT transformation rules. This is an internal process that provides standard xml documents for developers to refer to (provided on GetHub). Developers also have the possibility to generate their own xml files using the The ESPD Demo tools which enables them to create custom xml files based on their own scenarios.
 
 * *The ESPD UBL XML component*
 
@@ -80,3 +80,7 @@ Finally, the Buyer and the EO interact to conclude the procurement procedure.
 image:ESPD_Buyer_EO.jpg[Buyer and EO,align="center",width=650,height=500]
 
 _Figure 10_d. Buyer and EO_
+
+== Example XML Request and Response files
+
+NOTE: Example XML files can be generated using the link=https://docs.ted.europa.eu/espd-demo[ESPD Demo Development Tools]. This is a useful facility that allows developers to generate different request and response XML files based on individual/ specific scenarios. These can then be used to facilitate understanding of their development task and to test their code.
