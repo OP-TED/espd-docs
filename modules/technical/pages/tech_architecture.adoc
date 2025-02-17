@@ -186,10 +186,14 @@ _Figure 10_a. Buyer Planning_
 
 The Buyer launches a Request. 
 
-image:ESPD_Buyer_Request.jpg[Buyer Request,align="center",width=650,height=500]
+image:ESPD_Buyer_Request.jpg[Buyer Request,align="center",width=450,height=300]
 
 Image as code 3
-image::https://kroki.io/pikchr/svg/eNqtkcFqwzAMhu95ChEYbJeRdDGjvSahx5blCWRbWc2cKDjyGvb0cxkbPZTSwm76Qf4-SRZaBPLW8MiDM7CbKKBwgMd297TJwbBPQXs0H9nAnwTBvR8EimflxqzdlhvQvEBAC2paEqfbN_BG88TjTNBQj9FLDnmDgtBJiEZioF9ssZTrVV3V0DvvU6qq15dapSQZhsBHKIvi4a9X4VpbdZLiVWsdZ0m7fJH9d7G-Ku6iHpwIWejTO0z2fWCTtAONAqea7G1DyM-n3HXM48EJAQqkOS8CbrjLOQMvQu7c8RyovwGZisnP[Tux,450,300]
+
+image::https://kroki.io/pikchr/svg/eNqNzk0OwiAQBeB9TzHhAA0oxNilpHFnvAJFbCciGBwVby_xJ2lYuXzJm-8NuUzANrenSx0DG31MMHhjT8053h0kHCcC3ioMTb8VHQwxQzIHUJcMbO9NCBjG3yHPYr3QUsMRvS9JytVSq5JoromWfzRTcbtIaN31D43eX9fzjwnJgSEo9rdSkfOGeQEdYk-v[Tux,450,300]
+
+
+
 
 ////
 text "Buyer:" color black
