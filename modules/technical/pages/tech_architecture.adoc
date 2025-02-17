@@ -162,10 +162,11 @@ The set of tasks for the whole procurement procedure are summarised in the follo
 
 The Buyer or the Contracting Authority (CA) initiates a procurement procedure. 
 
-image:ESPD_Buyer_Plan.jpg[Buyer Planning,align="center",width=650,height=500]
+image:ESPD_Buyer_Plan.jpg[Buyer Planning,align="center",width=450,height=50]
 
 Image as code 2
-image::https://kroki.io/pikchr/svg/eNqNzk0OwiAQBeB9TzHhAA0oxNilpHFnvAJFbCciGBwVby_xJ2lYuXzJm-8NuUzANrenSx0DG31MMHhjT8053h0kHCcC3ioMTb8VHQwxQzIHUJcMbO9NCBjG3yHPYr3QUsMRvS9JytVSq5JoromWfzRTcbtIaN31D43eX9fzjwnJgSEo9rdSkfOGeQEdYk-v[Tux,450,300]
+
+image::https://kroki.io/pikchr/svg/eNqNzk0OwiAQBeB9TzHhAA0oxNilpHFnvAJFbCciGBwVby_xJ2lYuXzJm-8NuUzANrenSx0DG31MMHhjT8053h0kHCcC3ioMTb8VHQwxQzIHUJcMbO9NCBjG3yHPYr3QUsMRvS9JytVSq5JoromWfzRTcbtIaN31D43eX9fzjwnJgSEo9rdSkfOGeQEdYk-v[Tux,450,50]
 
 ////
 text "Buyer:" color black
@@ -179,21 +180,15 @@ text "Notices" color white at EG1a
 [Edit this diagram](https://niolesk.top/#https://kroki.io/pikchr/svg/eNqNzk0OwiAQBeB9TzHhAA0oxNilpHFnvAJFbCciGBwVby_xJ2lYuXzJm-8NuUzANrenSx0DG31MMHhjT8053h0kHCcC3ioMTb8VHQwxQzIHUJcMbO9NCBjG3yHPYr3QUsMRvS9JytVSq5JoromWfzRTcbtIaN31D43eX9fzjwnJgSEo9rdSkfOGeQEdYk-v)
 ////
 
-
-
-
 _Figure 10_a. Buyer Planning_
 
 The Buyer launches a Request. 
 
-image:ESPD_Buyer_Request.jpg[Buyer Request,align="center",width=450,height=300]
+image:ESPD_Buyer_Request.jpg[Buyer Request,align="center",width=750,height=75]
 
 Image as code 3
 
-image::https://kroki.io/pikchr/svg/eNqNzk0OwiAQBeB9TzHhAA0oxNilpHFnvAJFbCciGBwVby_xJ2lYuXzJm-8NuUzANrenSx0DG31MMHhjT8053h0kHCcC3ioMTb8VHQwxQzIHUJcMbO9NCBjG3yHPYr3QUsMRvS9JytVSq5JoromWfzRTcbtIaN31D43eX9fzjwnJgSEo9rdSkfOGeQEdYk-v[Tux,450,300]
-
-
-
+image::https://kroki.io/pikchr/svg/eNqtkcFOwzAMhu99il-RuKIWGqHtSDtxrdgTOI1Lo6ULpA4rPD0BCbTDNG0SN1u2_--3LbwI1GP64LhW6IMPEcZTvyum8M6I7mUUlLfa7YvNU7WGCQsiWejXBWqz7Vo881viWdDyQMmLgmpJCFuJqZcU-Ve1XKrVXVM3GJz3Oavrh_tG50wKijEcUJXlzV-vppWx-ptJ56BNmiVM7pPtv3PNOW6XjHfzyBZDHqMM72LoM3Xifa7mmO1lHuTnAVdd8jA6YZAguzw1f8FRjiXolMaVCx7rmS8kEcGy[Tux,750,75]
 
 ////
 text "Buyer:" color black
@@ -206,19 +201,18 @@ EG1b: box rad 5px "ESPD Request Published for a" "Procurement Procedure" color 0
 text "ESPD Request Default" "Data Structure" color white at EG1
 text "ESPD Request Customized" "Data Structure" color white at EG1a
 text "ESPD Request Published for a" "Procurement Procedure" color white at EG1b
-
 ////
 
 _Figure 10_b. Buyer Request_
 
 Economic Operators (EO) respond to the (officially published) Request. 
 
-image:ESPD_EO_Response.jpg[EO Response,align="center",width=650,height=500]
+image:ESPD_EO_Response.jpg[EO Response,align="center",width=750,height=75]
 
 
 Image as code 4
 
-image::https://kroki.io/pikchr/svg/eNqtkcFqwzAMhu95ChEYbJeRdDGjvSahx5blCWRbWc2cKDjyGvb0cxkbPZTSwm76Qf4-SRZaBPLW8MiDM7CbKKBwgMd297TJwbBPQXs0H9nAnwTBvR8EimflxqzdlhvQvEBAC2paEqfbN_BG88TjTNBQj9FLDnmDgtBJiEZioF9ssZTrVV3V0DvvU6qq15dapSQZhsBHKIvi4a9X4VpbdZLiVWsdZ0m7fJH9d7G-Ku6iHpwIWejTO0z2fWCTtAONAqea7G1DyM-n3HXM48EJAQqkOS8CbrjLOQMvQu7c8RyovwGZisnP[Tux,450,300]
+image::https://kroki.io/pikchr/svg/eNqtkcFqwzAMhu95ChEYbJeRdDGjvSahx5blCWRbWc2cKDjyGvb0cxkbPZTSwm76Qf4-SRZaBPLW8MiDM7CbKKBwgMd297TJwbBPQXs0H9nAnwTBvR8EimflxqzdlhvQvEBAC2paEqfbN_BG88TjTNBQj9FLDnmDgtBJiEZioF9ssZTrVV3V0DvvU6qq15dapSQZhsBHKIvi4a9X4VpbdZLiVWsdZ0m7fJH9d7G-Ku6iHpwIWejTO0z2fWCTtAONAqea7G1DyM-n3HXM48EJAQqkOS8CbrjLOQMvQu7c8RyovwGZisnP[Tux,750,75]
 
 ////
 text "Economic Operator (EO):" color black
@@ -239,11 +233,11 @@ _Figure 10_c. Economic Operator (EO) Response_
 
 Finally, the Buyer and the EO interact to conclude the procurement procedure. 
 
-image:ESPD_Buyer_EO.jpg[Buyer and EO,align="center",width=650,height=500]
+image:ESPD_Buyer_EO.jpg[Buyer and EO,align="center",width=750,height=75]
 
 Image as code 5
 
-image::https://kroki.io/pikchr/svg/eNqlkE0OgjAQRvecYkKiS1OUxoArbYhLF55gWqo2FkqaUertRYMGcWPi8su8efNDOhDEm8tNe5hi1ayg2OUxKGedB2lRnaPKXTV4czwRsBk3dVRskxykC-CxBN4EiPfaakXG1a9OFpJsLlIBB2Ntl9J0uRC8SxSh966FhLHJm-WYyZI_vDgSr1v05b9SOZIKV5NHRT946fmer_PakyENSNDZe-Zj02Ede2A8dcjIO328eic=[Tux,450,300]
+image::https://kroki.io/pikchr/svg/eNqlkE0OgjAQRvecYkKiS1OUxoArbYhLF55gWqo2FkqaUertRYMGcWPi8su8efNDOhDEm8tNe5hi1ayg2OUxKGedB2lRnaPKXTV4czwRsBk3dVRskxykC-CxBN4EiPfaakXG1a9OFpJsLlIBB2Ntl9J0uRC8SxSh966FhLHJm-WYyZI_vDgSr1v05b9SOZIKV5NHRT946fmer_PakyENSNDZe-Zj02Ede2A8dcjIO328eic=[Tux,750,75]
 
 ////
 text "Buyer &amp; EO:" color black
