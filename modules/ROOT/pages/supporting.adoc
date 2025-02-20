@@ -43,4 +43,7 @@ If a member state or contracting authority wishes to publish their criteria (whi
 
 Registration of the ESPD criteria in eCertis: All the criteria used in the ESPD, including exclusion grounds, are registered in eCertis with a unique identifier or code and the process of registering these, and the associated identifier, is coordinated carefully with eCertis. All criteria are published on eCertis with reference information such as the corresponding legislation, descriptions, and translations so that it is available to all participants in EU eProcurement.
 
+[.banner]
+We are currently investigating how our eSenders and data reusers use the Reuse (Bulk Downloads) Documentation . Please reply to our https://ec.europa.eu/eusurvey/runner/670dc92b-c6ef-94d5-3af0-c54d65b0ad6d[survey on Reusing TED XML Data from the TED Website] to help us improve our documentation according to your needs.
+
 include::partial$feedback.adoc[]
