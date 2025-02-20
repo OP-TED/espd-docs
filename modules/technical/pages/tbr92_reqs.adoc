@@ -1,0 +1,122 @@
+= Economic Operator Requirements
+
+== Economic Operator
+
+[cols="1,4", options="header"]
+|===
+| ID | Requirement
+| tbr92-001 | The economic operator must be able to include all information necessary for identification: Party Name, Party Identification, endpoint id.
+| tbr92-002 | The economic operator must be able to include contact information: Postal address, telephone number, fax number, e-mail address, contact person(s), Internet address.
+| tbr92-003 | The economic operator must be able to define his country of registration. The country of registration is needed to identify relevant evidences and the legal domain of evidence provision.
+| Tbr92-004 | The economic operator must be able to indicate, whether he is a micro, a small or a medium-sized enterprise (SME).
+| Tbr92-005 | In case of reserved procurement, the economic operator must be able to indicate that he is in a sheltered program (e.g. sheltered workshop, social business, etc.). If so, he must be able to indicate the corresponding percentage of disabled or disadvantaged workers and details on whether the employees concerned belong to a specific category.
+| Tbr92-006 | If the economic operator is registered on an official list of approved economic operators or is in possession of an equivalent certificate (e.g. under a national (pre)qualification system), he must be able to provide:
+  a) the relevant registration or certification number,
+  b) in case the certificate is available electronically: the web address, issuing body, and precise reference of the documentation;
+  c) the references on which the registration or certification is based, as well as the classification obtained in the official list;
+  d) whether the registration or certification covers all the required exclusion grounds and selection criteria.
+| Tbr92-007 | If the call for tender demands a certificate with regard to the payment of social security contributions and taxes, the economic operator must be able to indicate if he can provide such a certificate. And if so, in the case the certificate can be retrieved free of charge electronically: the web address, issuing body, and precise reference of the documentation.
+| Tbr92-008 | The economic operator must be able to indicate if he is participating together with others (e.g. with subcontractors or with other partners). If so, he must be able to provide:
+  a) the role of the economic operator in the group (leader, responsible for specific tasks, etc.);
+  b) the identification of the other economic operators participating in the procurement procedure;
+  c) (where applicable) name of the participating group.
+|===
+
+== Representative of the Economic Operator
+
+[cols="1,4", options="header"]
+|===
+| ID | Requirement
+| tbr92-009 | The economic operator must be able to name a natural person that is acting as the representative of the economic operator and to include the personal information necessary for identifying this natural person (e.g. Identifier, name, nationality, address, place of birth, date of birth).
+| tbr92-010 | The economic operator must also be able to specify the position (acting capacity) the natural person takes in the company in the qualification/tendering phase. If needed, the economic operator shall be able to provide detailed information on the representation (its forms, extent, purpose, etc.).
+|===
+
+== Contracting Authority
+
+[cols="1,4", options="header"]
+|===
+| ID | Requirement
+| tbr92-011 | The contracting authority must be identified, hence information about the party are required, such as party name, country, identification, endpoint id.
+| tbr92-012 | The ESPD should contain contact information of the contracting authority: Postal address, telephone number, fax number, e-mail address, contact person(s).
+|===
+
+== Call for Tender Reference
+
+[cols="1,4", options="header"]
+|===
+| ID | Requirement
+| tbr92-013 | The ESPD must contain a reference to the call for tenders, i.e. the procurement project ID, which defines the requirements (i.e. criteria) for which this document is created and submitted by the economic operator.
+|===
+
+== Procurement Lots
+
+[cols="1,4", options="header"]
+|===
+| ID | Requirement
+| Tbr92-014 | Where the call for tender is divided into lots, the economic operator must be able to indicate, which lot he is tendering.
+|===
+
+== List of Criteria
+
+[cols="1,4", options="header"]
+|===
+| ID | Requirement
+| Tbr92-015 | The ESPD must contain corresponding information about the (non)existence of exclusion grounds as set out in the call for tender or ESPD template (cf. tbr70-009). The information shall contain a legal reference (EU level, contracting authority national level, economic operator national level). Furthermore it must contain the name of criterion and criterion group to which it belongs (according to names of Art. 57 of 2014/24/EC and referred to in Art. 80 of 2014/25/EC) as well as indications of (non)existence of each single exclusion ground contained and details and explanations as requested according to Art. 57 of directive 2014/25/EU and the ESPD form agreed among the Member State. Where demanded and if available electronically, the ESPD shall provide the following information to relevant documentation: the web address, issuing body, and precise reference of the documentation. The ESPD shall also accommodate information of self-cleaning measures and reliability explanations in cases, where an exclusion ground exists.
+| Tbr92-016 | The ESPD must contain corresponding information about the fulfilment of selection criteria as set out in the call for tender or ESPD template (cf. tbr70-010). The information shall contain a legal reference (EU level, contracting authority national level, economic operator national level). Furthermore it must contain the name of criterion and criterion group to which it belongs (according to names of Art. 58 of 2014/24/EC and referred to in Art. 80 of 2014/25/EC) as well as indications of fulfilment of selection criteria contained as well as details and explanations as requested according to Art. 58 of directive 2014/25/EU and the ESPD form agreed among the Member State. Where demanded and if available electronically, the ESPD shall provide the following information to relevant documentation: the web address, issuing body, and precise reference of the documentation.
+|===
+
+== Link to Evidences
+
+[cols="1,4", options="header"]
+|===
+| ID | Requirement
+| tbr92-017 | The economic operator must be able to add the internet address of a national database (including any identification data and, where applicable, the necessary declaration of consent cf. Art. 59 of 2014/24/EC) from which a contracting authority can directly retrieve any evidence documents and certificates or supporting documents which prove the EO’s compliance to the requested criteria defined in the call for tender and stated in the ESPD.
+|===
+
+== Evaluation of Criteria
+
+[cols="1,4", options="header"]
+|===
+| ID | Requirement
+| tbr92-018 | The ESPD shall contain structured information describing the fulfilment of selection criteria and non-existence of exclusion grounds. This is essential for automatic evaluation of criteria.
+|===
+
+== Issuing Date and Time
+
+[cols="1,4", options="header"]
+|===
+| ID | Requirement
+| tbr92-019 | The ESPD shall have an ID and reflect the date and time when it has been issued.
+|===
+
+== Versioning
+
+[cols="1,4", options="header"]
+|===
+| ID | Requirement
+| tbr92-020 | The ESPD should allow to include a VersionID to the ESPD. The VersionID helps to identify the status of subsystems that have supported the creation of the ESPD. It is needed to trace changes that have occurred.
+|===
+
+== ESPD Service Provider
+
+[cols="1,4", options="header"]
+|===
+| ID | Requirement
+| tbr92-021 | The ESPD may reflect information about the issuing service that was used to create the ESPD itself.
+|===
+
+== Additional Documentation
+
+[cols="1,4", options="header"]
+|===
+| ID | Requirement
+| Tbr92-022 | The economic operator should be able to include any additional documents that are not classified as evidentiary information that prove specific exclusion grounds or selection criteria.
+|===
+
+== Date, Place of Issuance and Signature
+
+[cols="1,4", options="header"]
+|===
+| ID | Requirement
+| Tbr92-023 | The economic operator must be able to indicate date and place where the ESPD has been compiled. Where required, he must be able to digitally sign the ESPD.
+|===
