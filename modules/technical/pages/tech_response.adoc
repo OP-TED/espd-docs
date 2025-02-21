@@ -82,7 +82,7 @@ Preliminary evidence certificates in the form of a self-declaration submitted by
 |===
 |*Components* |*Type* |*Card* |*Description* |*Requirements*
 |*cbc:UBLVersionID* |Identifier |1 |Identifies the earliest version of the UBL 2 schema for this document type that defines all of the elements that might be encountered in the current instance. a|
-*Information Requirement*: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1-tbr92-020[_tbr92-020_].
+*Information Requirement*: xref:tbr92_reqs.adoc[tbr92-020].
 
 *Rule*: Use the value "2.3". Use also "OASIS-UBL-TC" for the schemeAgencyID attribute.
 
@@ -400,7 +400,7 @@ _Table 28. External Reference_
 *Rule*: Originally this field is the placeholder for the name of the file (e.g. PLACE-ContractNotice-2017-12452.xml. However, as the UBL component does not have a placeholder for a name or title, the ESPD documents use it for a short descriptive title of the document being referenced.
 
 |*cbc:Description* |Text |0..n |Short description of the document. a|
-*Information Requirement*: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1.0-tbr070-007[_tbr070-007_].
+*Information Requirement*: xref:tbr70_reqs.adoc#Call for tenders[tbr070-007].
 
 *Rule*: If the document being referenced is a Notice being published on TED, use two description lines. Use the second description line to place therein the temporary number received from TED. See example and comments below.
 
