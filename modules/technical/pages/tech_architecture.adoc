@@ -18,25 +18,10 @@ Key components and standards were adopted in alignment with related projects in 
 
 Below is a high level overview of the ESPD Architecture. 
 
-image:ESPD_Architecture_Overview.jpg[ESPD Architecture Overview,align="center",width=650,height=500]
-
-Image as code 1
-
 image::https://kroki.io/pikchr/svg/eNq1Vl1v2koQffevGKWqBCp21sYuJA9XstemipQquSGJKl1VkcEL7JWxuWsD6b-_s16gjj-AfokHzLA-M3POmbEvL-E-nDO4zNl0kfBpGBdXL6GYLjhe5WvBjEW-jOFmWTn3wmUkuwzG9_6LWzr_crdhYsPZ1vh3NYfOiM8xCCYxQB6F8lHYH-1q7jX845rXMElfQYQROKtXuHj6fHsBF_I2PfA_6w8sW6VJxnTv7vkCpmmcCiCv5pVFbQozHsf4y3XkB3_lWihEugX9r8NJ9Z_mWmemeTwrDeKF16CS8WTDMz6JGUTpNgGLvIeZSJfgmkYGmtv_rf0JPl8c6dL-nV1-1bxUREwozHzBE9jyKF-AaxTfH4jhYGzBZE0YVBe7aCgjU5bkTGiaJGZXtGkiP_XKNQ-9oHl2zQ3eLXTu3PHNGJ4Sjs7Jwhi8dcYTlmVwGybzNTqyi03-vQ5jPkOb5jxN3NUq3l0-sP_WLMuN1yxqa3lAXN_-WPBbqtR5W6g6hCVaf6BEJcuZNWpfUQeUwWCKZQYfoGP3SBfaBPOaBPNqgnkHwahUg5pVNYph3hGK_fhhHsI4F-tisNsqt-1Bnx51rxNeTSIH81nH832Rbj6ZpB2-OopfxrePMOIx62RSHjgbvG3kkTE585jKae5E6fwnqPt4IuGvcjf4de5OkudI8qg5bGqFphGL-Q_YzrPpIDiPu6sTCY9wV8rSim-ROncFdcd4KwEf5r0Y0hkXWS7xkCwdOqRHjGH75NOmyae1yaeHyffl5Puf7GOjD3LlISm7Jk4rX2zVZbphYDnvJbp1zK0_DF9G7h_TEj6xhAk-BcojVsBnrfglAcr41SfsM670qNjiqMaN5DBdMRFOeMzzb_Ao2fJY1JplZHvW0GqQ2cMvXOvEsHqgm8bQ6UKryH6TyH5NZH8v8rumx4dODBN9pAXSAIFV0_8JvfqcTsPJOg4Fl8S1dDSihBBEqGrMKBM5P3GfLMmEYmAhncFKsA1P1xnCVYVl93c_C1XVkI1Ssfzpwqqr_jHw26CGdp8SWkAZViNYdY0_sDnyLe11YlG0ljdoGAiUcixfwqfsjKaNYQPuG69StYp0yyA9MLttNg2abBrUbBocdpHaqMXDAd9gpE3RpJgChwLHIU8L88odKIO6ilZe19og9EaM0xCZGkrzqvcdwTeSov1zy8j2dVhOCYWqOlRYwtglGLXsyjBUza06jZl3lWxVLzsIcgwhUBtG77-BoKpFXDmH6B5iN9kNEJbhkDoEKaIVQuog_p7UQZmOYEdq33BshK4C_A8zdl4I[Tux,650,500]
-
-
-image::https://kroki.io/pikchr/svg/eNq1lttum0AQhu95ilGqSIlq0IKhdnJRCRYSRUqVNk6iSlUvsFknKxHWXbCTvn1nWeISTnYPkS9s1vibmf-fGeyfwjffPoW5eAYZJ-CtnuHg9tPlARxEs8-hGYWfzGuWr0SWMzO4ujuAhUiFBPJsnzjUpbDkaYpXvqdeeFUYsZTiCcyP2zv1d4bv7BnmZq8wyItPQQfj2YbnfJ4ySMRTBg45hKUUj-DbVg6GP_6v9Ul-_zBQpfs_q_xuBEImTGpm8cAzeOJJ8QC-Vb6_J5aHZw9M5YSH-kN1GquTBcsKJg1DCVMlbduoTztzI8BeMAK31Q3BJRxd-bOLGdxmfMNkHqcQrHOesTyHyzi7X8f37BiL_LKOU77ki7jgIvNXq7T6eM1-rFleWM950lfyhPih-6HUt5ap9zpRfROm6LxBitqWPXM0vqMPaIPFtMoM3sOROyLH0GdY0GVY0DIs2BpGlRvUbrqhGgkqQbGeMC5imBVyvSjWkvVl7rqTMR3sXi8-mScexnOG431V3bwzSD--OYpfZ5c3cMZTdpQre2BveN_Io2Jq5jGU112J9vktpPuwI-C_ajf5d-12iucp8ag97SqFioSl_A_aLnDpJNpPu5MdAQe0q0Xp5TukrV0p3ZBuNfB23sshXXKZF4qHYplwREbEmvZPPu2afNqafLqd_FBNfnjuDo0-qJWHolRF7Ha-3KqPYsPA8Q4V3Rnq1j_G18njIS_hnGVM8gVQnrASn_fyawbU-c0n7B2u9KTc4ujGhdJQrJiM5zzlxU-4UWoFLOmNcuYGztTpsDnAN1zrxHJGYNrW1DuGXpPDLpPDlsnhi8nvuh4fJrFs7CMjUg0QOS3_b7FX78Qinq_TWHIlXE9FZ5QQgoSmx4wyWfAdv1Mp2VAOLIglrCTbcLHOEdc0ln2--ltU00N2JuTjXyfWXPU3UdiHmrpjSmiJspxOWHONX7N71Fu1145F0ZvepGMg0MoZkxu-YHsUbU07uK96lepVZDoWGYF93NemUVebRq02jba7SG_U8uGA_2BUm2KTYggcChyHQpTNq3agOjT1aePvWh_C7GTsRuR6KO2T0W9CaGVl-fumkb_k4Xg1CtV56GOFcWsYvezqGKrnVt-NkatMnnQtFYIMESK9YczxKwTVJeLK2Z6-IKrJ7kA4lkfaCFKeNgRpQ8IXUSd1OaJK1LHluYhuAn4Ba7ks5g[Tux,650,500]
-
-test image 2
-
-image::https://kroki.io/plantuml/svg/eNpljzEPgjAQhff-iguTDFQlcYMmuru5mwNO0tCWhjY6GP-7LRJTdHvv7r67d26QxuKEGiY0gyML5Y65b7GzEvblIalYbAfs6SK9oqOSvdFkPCi6ecYmaj2aXhFkZ5QmgycD2Ogg-V3SI4_OyTjgR5OzVwqc0NECNEHydtR2NGH3TK2dHjtSP3zViPmQd9W2ERmgg-iv3jGW4MC5-L-wTEJdi1XeRENRiFWOtMfnrclriQ5gJD-Z3x9beAM=[Tux,450,300]
-
-test image 3
-
-image::https://kroki.io/pikchr/svg/eNqlVUtv2zAMvutXEA4wdMASJEs7DFlRoMC2U4HuMOzS7aBYcqxVFg1KefTfj3rUTV9Bg-VgKxQ_it9Hih6B0h2ClUttF3C9_KvrAOGu115cWpv_-wXcCDGC74Z8AMItYAOYt8QSd1Dxo0orkgpm0z6b4GRrQltBRbh2Site1UhOk39fgQwwMw7IrNoQ4_WkNwbXXtSGaqvZNb0POGprTe_ZsywOuHLyXtfo1NPsr39dXs0WgBtpoYrPIQjrwa5NosxcRHY5CdJaeCe7_guzCa1xTKUAt0aFFlLESatTDuWVbXn_twD-vc7-zhrWiph_WR2g1ZgoVHwe5s55UqbuW9x64MB6HIs86KAwQMUPjrPEjX5JhEhSRGQ5oyHsYDb5XHfPD4UqOvoSTUiKZ78FljwHnO_TeQchSc8Vlp3J7IzZageTOYsvlXErmE-L6WwwzT7d204H28dpjpXsQzRR5SR8UnjOMm40Bb17KvHPVheZH_Y5EhQKxoNjiWUd1txAd4Au7SqSW8foek0bPYHnURgngRs3EFro0bgQvZC7mWMGXwJyhB69CQbdB1i7GrtOu5BOaNByCSO_mMdCjGKla7RIQFq9zqkkHql95SRhIymZkxalL1L81BvJNRFV0rccd6_W08mcC5cRPkh6XL49JIZwBDKD4g3kmh0Nqm-PAA0i5O6EONVAmabRFGVO1thFsVCNWa1JxkoUldL1u9cpuZbrcD5-ksLpAZkeAy_eDBxSL138H7mXhigN7WVXLuZLx-8jYHzxNtBA9nx8NOBCiD8wAs0TnjcevlyR_1X8tiUi2xZ5YCojVyQ7wR3PQ-_bjoe5ZWWuG_hhbuuWyleQb_zSrHj2W5XmdZo_eTo6JFbx0UH_ALwPfr0=[Tux,650,500]
-
-
 ////
+//image:ESPD_Architecture_Overview.jpg[ESPD Architecture Overview,align="center",width=650,height=500]
+// Page /technical/tech_architecture.html Image /technical/_images/ESPD_Architecture_Overview.jpg (Figure 10. ESPD Architecture Overview)
 A: [A1: box rad 5px "UML" "ESPD-EDM-Response-BOV" color 0x192C4C fill 0xA5A5A5 fit
 arrow -> color 0xA5A5A5
 A2: box rad 5px "UML" "ESPD-EDM-Response-TOV" color 0x192C4C fill 0xA5A5A5 fit
@@ -121,10 +106,11 @@ arrow from E.n + (-3.25, 0.0) to C.s + (-1.25, 0.0) color 0xFFC000
 arrow from E.n + (-2.50, 0.0) to C.s + (-0.50, -0.25) color 0xFFC000
 arrow from D.s + (0.75,-0.25) to E.n - (-3.54, 0) color 0xFFC000
 
-[Edit this diagram](https://niolesk.top/#https://kroki.io/pikchr/svg/eNq1lttum0AQhu95ilGqSIlq0IKhdnJRCRYSRUqVNk6iSlUvsFknKxHWXbCTvn1nWeISTnYPkS9s1vibmf-fGeyfwjffPoW5eAYZJ-CtnuHg9tPlARxEs8-hGYWfzGuWr0SWMzO4ujuAhUiFBPJsnzjUpbDkaYpXvqdeeFUYsZTiCcyP2zv1d4bv7BnmZq8wyItPQQfj2YbnfJ4ySMRTBg45hKUUj-DbVg6GP_6v9Ul-_zBQpfs_q_xuBEImTGpm8cAzeOJJ8QC-Vb6_J5aHZw9M5YSH-kN1GquTBcsKJg1DCVMlbduoTztzI8BeMAK31Q3BJRxd-bOLGdxmfMNkHqcQrHOesTyHyzi7X8f37BiL_LKOU77ki7jgIvNXq7T6eM1-rFleWM950lfyhPih-6HUt5ap9zpRfROm6LxBitqWPXM0vqMPaIPFtMoM3sOROyLH0GdY0GVY0DIs2BpGlRvUbrqhGgkqQbGeMC5imBVyvSjWkvVl7rqTMR3sXi8-mScexnOG431V3bwzSD--OYpfZ5c3cMZTdpQre2BveN_Io2Jq5jGU112J9vktpPuwI-C_ajf5d-12iucp8ag97SqFioSl_A_aLnDpJNpPu5MdAQe0q0Xp5TukrV0p3ZBuNfB23sshXXKZF4qHYplwREbEmvZPPu2afNqafLqd_FBNfnjuDo0-qJWHolRF7Ha-3KqPYsPA8Q4V3Rnq1j_G18njIS_hnGVM8gVQnrASn_fyawbU-c0n7B2u9KTc4ujGhdJQrJiM5zzlxU-4UWoFLOmNcuYGztTpsDnAN1zrxHJGYNrW1DuGXpPDLpPDlsnhi8nvuh4fJrFs7CMjUg0QOS3_b7FX78Qinq_TWHIlXE9FZ5QQgoSmx4wyWfAdv1Mp2VAOLIglrCTbcLHOEdc0ln2--ltU00N2JuTjXyfWXPU3UdiHmrpjSmiJspxOWHONX7N71Fu1145F0ZvepGMg0MoZkxu-YHsUbU07uK96lepVZDoWGYF93NemUVebRq02jba7SG_U8uGA_2BUm2KTYggcChyHQpTNq3agOjT1aePvWh_C7GTsRuR6KO2T0W9CaGVl-fumkb_k4Xg1CtV56GOFcWsYvezqGKrnVt-NkatMnnQtFYIMESK9YczxKwTVJeLK2Z6-IKrJ7kA4lkfaCFKeNgRpQ8IXUSd1OaJK1LHluYhuAn4Ba7ks5g)
+//Embedded adoc link:
+//image::https://kroki.io/pikchr/svg/eNq1Vl1v2koQffevGKWqBCp21sYuJA9XstemipQquSGJKl1VkcEL7JWxuWsD6b-_s16gjj-AfokHzLA-M3POmbEvL-E-nDO4zNl0kfBpGBdXL6GYLjhe5WvBjEW-jOFmWTn3wmUkuwzG9_6LWzr_crdhYsPZ1vh3NYfOiM8xCCYxQB6F8lHYH-1q7jX845rXMElfQYQROKtXuHj6fHsBF_I2PfA_6w8sW6VJxnTv7vkCpmmcCiCv5pVFbQozHsf4y3XkB3_lWihEugX9r8NJ9Z_mWmemeTwrDeKF16CS8WTDMz6JGUTpNgGLvIeZSJfgmkYGmtv_rf0JPl8c6dL-nV1-1bxUREwozHzBE9jyKF-AaxTfH4jhYGzBZE0YVBe7aCgjU5bkTGiaJGZXtGkiP_XKNQ-9oHl2zQ3eLXTu3PHNGJ4Sjs7Jwhi8dcYTlmVwGybzNTqyi03-vQ5jPkOb5jxN3NUq3l0-sP_WLMuN1yxqa3lAXN_-WPBbqtR5W6g6hCVaf6BEJcuZNWpfUQeUwWCKZQYfoGP3SBfaBPOaBPNqgnkHwahUg5pVNYph3hGK_fhhHsI4F-tisNsqt-1Bnx51rxNeTSIH81nH832Rbj6ZpB2-OopfxrePMOIx62RSHjgbvG3kkTE585jKae5E6fwnqPt4IuGvcjf4de5OkudI8qg5bGqFphGL-Q_YzrPpIDiPu6sTCY9wV8rSim-ROncFdcd4KwEf5r0Y0hkXWS7xkCwdOqRHjGH75NOmyae1yaeHyffl5Puf7GOjD3LlISm7Jk4rX2zVZbphYDnvJbp1zK0_DF9G7h_TEj6xhAk-BcojVsBnrfglAcr41SfsM670qNjiqMaN5DBdMRFOeMzzb_Ao2fJY1JplZHvW0GqQ2cMvXOvEsHqgm8bQ6UKryH6TyH5NZH8v8rumx4dODBN9pAXSAIFV0_8JvfqcTsPJOg4Fl8S1dDSihBBEqGrMKBM5P3GfLMmEYmAhncFKsA1P1xnCVYVl93c_C1XVkI1Ssfzpwqqr_jHw26CGdp8SWkAZViNYdY0_sDnyLe11YlG0ljdoGAiUcixfwqfsjKaNYQPuG69StYp0yyA9MLttNg2abBrUbBocdpHaqMXDAd9gpE3RpJgChwLHIU8L88odKIO6ilZe19og9EaM0xCZGkrzqvcdwTeSov1zy8j2dVhOCYWqOlRYwtglGLXsyjBUza06jZl3lWxVLzsIcgwhUBtG77-BoKpFXDmH6B5iN9kNEJbhkDoEKaIVQuog_p7UQZmOYEdq33BshK4C_A8zdl4I[Tux,650,500]
+
+//[Edit this diagram](https://niolesk.top/#https://kroki.io/pikchr/svg/eNq1Vl1v2koQffevGKWqBCp21sYuJA9XstemipQquSGJKl1VkcEL7JWxuWsD6b-_s16gjj-AfokHzLA-M3POmbEvL-E-nDO4zNl0kfBpGBdXL6GYLjhe5WvBjEW-jOFmWTn3wmUkuwzG9_6LWzr_crdhYsPZ1vh3NYfOiM8xCCYxQB6F8lHYH-1q7jX845rXMElfQYQROKtXuHj6fHsBF_I2PfA_6w8sW6VJxnTv7vkCpmmcCiCv5pVFbQozHsf4y3XkB3_lWihEugX9r8NJ9Z_mWmemeTwrDeKF16CS8WTDMz6JGUTpNgGLvIeZSJfgmkYGmtv_rf0JPl8c6dL-nV1-1bxUREwozHzBE9jyKF-AaxTfH4jhYGzBZE0YVBe7aCgjU5bkTGiaJGZXtGkiP_XKNQ-9oHl2zQ3eLXTu3PHNGJ4Sjs7Jwhi8dcYTlmVwGybzNTqyi03-vQ5jPkOb5jxN3NUq3l0-sP_WLMuN1yxqa3lAXN_-WPBbqtR5W6g6hCVaf6BEJcuZNWpfUQeUwWCKZQYfoGP3SBfaBPOaBPNqgnkHwahUg5pVNYph3hGK_fhhHsI4F-tisNsqt-1Bnx51rxNeTSIH81nH832Rbj6ZpB2-OopfxrePMOIx62RSHjgbvG3kkTE585jKae5E6fwnqPt4IuGvcjf4de5OkudI8qg5bGqFphGL-Q_YzrPpIDiPu6sTCY9wV8rSim-ROncFdcd4KwEf5r0Y0hkXWS7xkCwdOqRHjGH75NOmyae1yaeHyffl5Puf7GOjD3LlISm7Jk4rX2zVZbphYDnvJbp1zK0_DF9G7h_TEj6xhAk-BcojVsBnrfglAcr41SfsM670qNjiqMaN5DBdMRFOeMzzb_Ao2fJY1JplZHvW0GqQ2cMvXOvEsHqgm8bQ6UKryH6TyH5NZH8v8rumx4dODBN9pAXSAIFV0_8JvfqcTsPJOg4Fl8S1dDSihBBEqGrMKBM5P3GfLMmEYmAhncFKsA1P1xnCVYVl93c_C1XVkI1Ssfzpwqqr_jHw26CGdp8SWkAZViNYdY0_sDnyLe11YlG0ljdoGAiUcixfwqfsjKaNYQPuG69StYp0yyA9MLttNg2abBrUbBocdpHaqMXDAd9gpE3RpJgChwLHIU8L88odKIO6ilZe19og9EaM0xCZGkrzqvcdwTeSov1zy8j2dVhOCYWqOlRYwtglGLXsyjBUza06jZl3lWxVLzsIcgwhUBtG77-BoKpFXDmH6B5iN9kNEJbhkDoEKaIVQuog_p7UQZmOYEdq33BshK4C_A8zdl4I)
 ////
-
-
 _Figure 10. ESPD Architecture Overview_
 
 The ESPD Architecture components interact with each other to produce the final ESPD UBL XML Request and Response. 
@@ -164,13 +150,12 @@ The set of tasks for the whole procurement procedure are summarised in the follo
 
 The Buyer or the Contracting Authority (CA) initiates a procurement procedure. 
 
-image:ESPD_Buyer_Plan.jpg[Buyer Planning,align="center",width=450,height=50]
-
-Image as code 2
-
 image::https://kroki.io/pikchr/svg/eNqNzk0OwiAQBeB9TzHhAA0oxNilpHFnvAJFbCciGBwVby_xJ2lYuXzJm-8NuUzANrenSx0DG31MMHhjT8053h0kHCcC3ioMTb8VHQwxQzIHUJcMbO9NCBjG3yHPYr3QUsMRvS9JytVSq5JoromWfzRTcbtIaN31D43eX9fzjwnJgSEo9rdSkfOGeQEdYk-v[Tux,450,50]
-
 ////
+//image:ESPD_Buyer_Plan.jpg[Buyer Planning,align="center",width=450,height=50]
+
+// Page /technical/tech_architecture.html Image /technical/_images/ESPD_Buyer_Plan.jpg (Figure 10_a. Buyer Planning)
+
 text "Buyer:" color black
 move right 0.5in
 EG1: box rad 5px "Planning" color 0x192C4C fill 0x4473C5 fit
@@ -179,20 +164,21 @@ EG1a: box rad 5px "Notices" color 0x192C4C fill 0x4473C5 fit
 text "Planning" color white at EG1
 text "Notices" color white at EG1a
 
-[Edit this diagram](https://niolesk.top/#https://kroki.io/pikchr/svg/eNqNzk0OwiAQBeB9TzHhAA0oxNilpHFnvAJFbCciGBwVby_xJ2lYuXzJm-8NuUzANrenSx0DG31MMHhjT8053h0kHCcC3ioMTb8VHQwxQzIHUJcMbO9NCBjG3yHPYr3QUsMRvS9JytVSq5JoromWfzRTcbtIaN31D43eX9fzjwnJgSEo9rdSkfOGeQEdYk-v)
-////
+//Embedded adoc link:
+//image::https://kroki.io/pikchr/svg/eNqNzk0OwiAQBeB9TzHhAA0oxNilpHFnvAJFbCciGBwVby_xJ2lYuXzJm-8NuUzANrenSx0DG31MMHhjT8053h0kHCcC3ioMTb8VHQwxQzIHUJcMbO9NCBjG3yHPYr3QUsMRvS9JytVSq5JoromWfzRTcbtIaN31D43eX9fzjwnJgSEo9rdSkfOGeQEdYk-v[Tux,450,50]
 
+//[Edit this diagram](https://niolesk.top/#https://kroki.io/pikchr/svg/eNqNzk0OwiAQBeB9TzHhAA0oxNilpHFnvAJFbCciGBwVby_xJ2lYuXzJm-8NuUzANrenSx0DG31MMHhjT8053h0kHCcC3ioMTb8VHQwxQzIHUJcMbO9NCBjG3yHPYr3QUsMRvS9JytVSq5JoromWfzRTcbtIaN31D43eX9fzjwnJgSEo9rdSkfOGeQEdYk-v)
+////
 _Figure 10_a. Buyer Planning_
 
 The Buyer launches a Request. 
 
-image:ESPD_Buyer_Request.jpg[Buyer Request,align="center",width=750,height=75]
-
-Image as code 3
-
-image::https://kroki.io/pikchr/svg/eNqtkcFOwzAMhu99il-RuKIWGqHtSDtxrdgTOI1Lo6ULpA4rPD0BCbTDNG0SN1u2_--3LbwI1GP64LhW6IMPEcZTvyum8M6I7mUUlLfa7YvNU7WGCQsiWejXBWqz7Vo881viWdDyQMmLgmpJCFuJqZcU-Ve1XKrVXVM3GJz3Oavrh_tG50wKijEcUJXlzV-vppWx-ptJ56BNmiVM7pPtv3PNOW6XjHfzyBZDHqMM72LoM3Xifa7mmO1lHuTnAVdd8jA6YZAguzw1f8FRjiXolMaVCx7rmS8kEcGy[Tux,750,75]
-
+image::https://kroki.io/pikchr/svg/eNqtksFOwzAMhu99CqsSElzaDlqh7Ug7ELeKPUDltG4bSJeROqzw9KSFoWmapk3iZsf2__1xEoaQY0MQMpXtWpaopqhAU7bSRWwNBS13Cp67g75Cjid9uFzlWfFgP8kUL_RuqefgddPA9aNs3DDMokIEMNXht37jeUwDgz-dLnwotdIGhMLyzev0B4GRTcsQBYlce8un2QKEHsBgBclmAH8k7rQgoxqtYh_8DBlhxcZOrneq0TCb36ZxCrVUymVxfH-XJi5jD43RW2cwuvrrTXAuqmRk4iloanvWnfyi6t-54hQ3t0LJvqUKajeGDp4bXTpqR2tXdTFV53n4eYCLNrkdfwQgg3N5bP6MpexL4DGNCy-4rye-AS-A678=[Tux,800,100]
 ////
+//image:ESPD_Buyer_Request.jpg[Buyer Request,align="center",width=750,height=75]
+
+// Page /technical/tech_architecture.html Image /technical/_images/ESPD_Buyer_Request.jpg (Figure 10_b. Buyer Request)
+
 text "Buyer:" color black
 move right 0.5in
 EG1: box rad 5px "ESPD Request Default" "Data Structure" color 0x192C4C fill 0x4473C5 fit
@@ -203,20 +189,23 @@ EG1b: box rad 5px "ESPD Request Published for a" "Procurement Procedure" color 0
 text "ESPD Request Default" "Data Structure" color white at EG1
 text "ESPD Request Customized" "Data Structure" color white at EG1a
 text "ESPD Request Published for a" "Procurement Procedure" color white at EG1b
-////
 
+//Embedded adoc link:
+//image::https://kroki.io/pikchr/svg/eNqtksFOwzAMhu99CqsSElzaDlqh7Ug7ELeKPUDltG4bSJeROqzw9KSFoWmapk3iZsf2__1xEoaQY0MQMpXtWpaopqhAU7bSRWwNBS13Cp67g75Cjid9uFzlWfFgP8kUL_RuqefgddPA9aNs3DDMokIEMNXht37jeUwDgz-dLnwotdIGhMLyzev0B4GRTcsQBYlce8un2QKEHsBgBclmAH8k7rQgoxqtYh_8DBlhxcZOrneq0TCb36ZxCrVUymVxfH-XJi5jD43RW2cwuvrrTXAuqmRk4iloanvWnfyi6t-54hQ3t0LJvqUKajeGDp4bXTpqR2tXdTFV53n4eYCLNrkdfwQgg3N5bP6MpexL4DGNCy-4rye-AS-A678=[Tux,800,100]
+
+//[Edit this diagram](https://niolesk.top/#https://kroki.io/pikchr/svg/eNqtksFOwzAMhu99CqsSElzaDlqh7Ug7ELeKPUDltG4bSJeROqzw9KSFoWmapk3iZsf2__1xEoaQY0MQMpXtWpaopqhAU7bSRWwNBS13Cp67g75Cjid9uFzlWfFgP8kUL_RuqefgddPA9aNs3DDMokIEMNXht37jeUwDgz-dLnwotdIGhMLyzev0B4GRTcsQBYlce8un2QKEHsBgBclmAH8k7rQgoxqtYh_8DBlhxcZOrneq0TCb36ZxCrVUymVxfH-XJi5jD43RW2cwuvrrTXAuqmRk4iloanvWnfyi6t-54hQ3t0LJvqUKajeGDp4bXTpqR2tXdTFV53n4eYCLNrkdfwQgg3N5bP6MpexL4DGNCy-4rye-AS-A678=)
+////
 _Figure 10_b. Buyer Request_
+
 
 Economic Operators (EO) respond to the (officially published) Request. 
 
-image:ESPD_EO_Response.jpg[EO Response,align="center",width=750,height=75]
-
-
-Image as code 4
-
-image::https://kroki.io/pikchr/svg/eNqtkcFqwzAMhu95ChEYbJeRdDGjvSahx5blCWRbWc2cKDjyGvb0cxkbPZTSwm76Qf4-SRZaBPLW8MiDM7CbKKBwgMd297TJwbBPQXs0H9nAnwTBvR8EimflxqzdlhvQvEBAC2paEqfbN_BG88TjTNBQj9FLDnmDgtBJiEZioF9ssZTrVV3V0DvvU6qq15dapSQZhsBHKIvi4a9X4VpbdZLiVWsdZ0m7fJH9d7G-Ku6iHpwIWejTO0z2fWCTtAONAqea7G1DyM-n3HXM48EJAQqkOS8CbrjLOQMvQu7c8RyovwGZisnP[Tux,750,75]
-
+image::https://kroki.io/pikchr/svg/eNqtklFrg0AMx9_9FEEYtC9qt8poX60be2pZP4DEM9XbTk_OuMo-_WJZSxmltLC35Eh-__yTC0PYYEkQMqmq0QrNIcrQqUpLxL2joOLawFv9py7T40sXptvNKkvX2Tt1rW06Cj7aEiYvupRWmEWZCiBVtrG1VrBuySFbB5N0PYVjx9TzmAYG_3Ld0gdljSS5QfXp1faLwOmyYoiCWDde-jpbQm4HcFhA3A7CkZFOdFjRDnvDPvgrZIQtu_7g64iNhtniMZknsNPGSDafPz8lsWTsoXN2Lyaih1NtjIu8iEdRvKqa9B2Ll28q_l04vyq87fNaM1MBO-lDUd84q0S2poZhjKm4bYjfo9y1zP34bQAZZM6LgBv2cs7Ai5A7PZ4D8x8f5PjN[Tux,900,100]
 ////
+//image:ESPD_EO_Response.jpg[EO Response,align="center",width=750,height=75]
+
+// Page /technical/tech_architecture.html Image /technical/_images/ESPD_EO_Response.jpg (Figure 10_c. Economic Operator (EO) Response)
+
 text "Economic Operator (EO):" color black
 move right 0.5in
 EG1: box rad 5px "ESPD Response Default" "Data Structure" color 0x192C4C fill 0x4473C5 fit
@@ -228,21 +217,22 @@ text "ESPD Response Default" "Data Structure" color white at EG1
 text "ESPD Response Customized" "Data Structure" color white at EG1a
 text "ESPD Response Submitted for a" "Procurement Procedure" color white at EG1b
 
-[Edit this diagram](https://niolesk.top/#https://kroki.io/pikchr/svg/eNqtkcFqwzAMhu95ChEYbJeRdDGjvSahx5blCWRbWc2cKDjyGvb0cxkbPZTSwm76Qf4-SRZaBPLW8MiDM7CbKKBwgMd297TJwbBPQXs0H9nAnwTBvR8EimflxqzdlhvQvEBAC2paEqfbN_BG88TjTNBQj9FLDnmDgtBJiEZioF9ssZTrVV3V0DvvU6qq15dapSQZhsBHKIvi4a9X4VpbdZLiVWsdZ0m7fJH9d7G-Ku6iHpwIWejTO0z2fWCTtAONAqea7G1DyM-n3HXM48EJAQqkOS8CbrjLOQMvQu7c8RyovwGZisnP)
-////
+//Embedded adoc link:
+//image::https://kroki.io/pikchr/svg/eNqtklFrg0AMx9_9FEEYtC9qt8poX60be2pZP4DEM9XbTk_OuMo-_WJZSxmltLC35Eh-__yTC0PYYEkQMqmq0QrNIcrQqUpLxL2joOLawFv9py7T40sXptvNKkvX2Tt1rW06Cj7aEiYvupRWmEWZCiBVtrG1VrBuySFbB5N0PYVjx9TzmAYG_3Ld0gdljSS5QfXp1faLwOmyYoiCWDde-jpbQm4HcFhA3A7CkZFOdFjRDnvDPvgrZIQtu_7g64iNhtniMZknsNPGSDafPz8lsWTsoXN2Lyaih1NtjIu8iEdRvKqa9B2Ll28q_l04vyq87fNaM1MBO-lDUd84q0S2poZhjKm4bYjfo9y1zP34bQAZZM6LgBv2cs7Ai5A7PZ4D8x8f5PjN[Tux,900,100]
 
+//[Edit this diagram](https://niolesk.top/#https://kroki.io/pikchr/svg/eNqtklFrg0AMx9_9FEEYtC9qt8poX60be2pZP4DEM9XbTk_OuMo-_WJZSxmltLC35Eh-__yTC0PYYEkQMqmq0QrNIcrQqUpLxL2joOLawFv9py7T40sXptvNKkvX2Tt1rW06Cj7aEiYvupRWmEWZCiBVtrG1VrBuySFbB5N0PYVjx9TzmAYG_3Ld0gdljSS5QfXp1faLwOmyYoiCWDde-jpbQm4HcFhA3A7CkZFOdFjRDnvDPvgrZIQtu_7g64iNhtniMZknsNPGSDafPz8lsWTsoXN2Lyaih1NtjIu8iEdRvKqa9B2Ll28q_l04vyq87fNaM1MBO-lDUd84q0S2poZhjKm4bYjfo9y1zP34bQAZZM6LgBv2cs7Ai5A7PZ4D8x8f5PjN)
+////
 _Figure 10_c. Economic Operator (EO) Response_
 
 Finally, the Buyer and the EO interact to conclude the procurement procedure. 
 
-image:ESPD_Buyer_EO.jpg[Buyer and EO,align="center",width=750,height=75]
-
-Image as code 5
-
-image::https://kroki.io/pikchr/svg/eNqlkE0OgjAQRvecYkKiS1OUxoArbYhLF55gWqo2FkqaUertRYMGcWPi8su8efNDOhDEm8tNe5hi1ayg2OUxKGedB2lRnaPKXTV4czwRsBk3dVRskxykC-CxBN4EiPfaakXG1a9OFpJsLlIBB2Ntl9J0uRC8SxSh966FhLHJm-WYyZI_vDgSr1v05b9SOZIKV5NHRT946fmer_PakyENSNDZe-Zj02Ede2A8dcjIO328eic=[Tux,750,75]
-
+image::https://kroki.io/pikchr/svg/eNqlkc1OwzAQhO9-ilGkIrjkBxKhticIAXFqpT5AtHFMYnDiyHVJeHucNkJtuCBxW8_Ofju2gwBbqgQCK3jdSk7qWOVkeC1dZQ9G-LVtFF6bmS-Xo7IPst32KX88fAmTZxv_vatw_SwrN4cozEsfxxaoLZFtbhizYrDwTuIVNd3aySsP-4aUAtdKGxSK-Adr9KeAkVVtEfqJbFn2Eq1Q6AGGSiTdAG8nlIsodetNk-EQLW_TOMWbdLRwiOP7uzRxJ8vIGN27SOHix5vQsiiTkUsz8ENPpvwvtJhBU91aQ9z-gXt6pF_X68c_AVk4-uS5SHrep8kw33ruKb4B_E2jGA==[Tux,600,60]
 ////
-text "Buyer &amp; EO:" color black
+//image:ESPD_Buyer_EO.jpg[Buyer and EO,align="center",width=750,height=75]
+
+// Page /technical/tech_architecture.html Image /technical/_images/ESPD_Buyer_EO.jpg (Figure 10_d. Buyer and EO)
+
+text "Buyer &amp; EO:" small color black
 move right 0.5in
 EG1: box rad 5px "Selection" color 0x192C4C fill 0x4473C5 fit
 arrow 100% color 0x5a9bd5
@@ -253,7 +243,9 @@ text "Selection" color white at EG1
 text "Award" color white at EG1a
 text "Contract" color white at EG1b
 
-[Edit this diagram](https://niolesk.top/#https://kroki.io/pikchr/svg/eNqlkE0OgjAQRvecYkKiS1OUxoArbYhLF55gWqo2FkqaUertRYMGcWPi8su8efNDOhDEm8tNe5hi1ayg2OUxKGedB2lRnaPKXTV4czwRsBk3dVRskxykC-CxBN4EiPfaakXG1a9OFpJsLlIBB2Ntl9J0uRC8SxSh966FhLHJm-WYyZI_vDgSr1v05b9SOZIKV5NHRT946fmer_PakyENSNDZe-Zj02Ede2A8dcjIO328eic=)
-////
+//Embedded adoc link:
+//image::https://kroki.io/pikchr/svg/eNqlkc1OwzAQhO9-ilGkIrjkBxKhticIAXFqpT5AtHFMYnDiyHVJeHucNkJtuCBxW8_Ofju2gwBbqgQCK3jdSk7qWOVkeC1dZQ9G-LVtFF6bmS-Xo7IPst32KX88fAmTZxv_vatw_SwrN4cozEsfxxaoLZFtbhizYrDwTuIVNd3aySsP-4aUAtdKGxSK-Adr9KeAkVVtEfqJbFn2Eq1Q6AGGSiTdAG8nlIsodetNk-EQLW_TOMWbdLRwiOP7uzRxJ8vIGN27SOHix5vQsiiTkUsz8ENPpvwvtJhBU91aQ9z-gXt6pF_X68c_AVk4-uS5SHrep8kw33ruKb4B_E2jGA==[Tux,600,60]
 
+//[Edit this diagram](https://niolesk.top/#https://kroki.io/pikchr/svg/eNqlkc1OwzAQhO9-ilGkIrjkBxKhticIAXFqpT5AtHFMYnDiyHVJeHucNkJtuCBxW8_Ofju2gwBbqgQCK3jdSk7qWOVkeC1dZQ9G-LVtFF6bmS-Xo7IPst32KX88fAmTZxv_vatw_SwrN4cozEsfxxaoLZFtbhizYrDwTuIVNd3aySsP-4aUAtdKGxSK-Adr9KeAkVVtEfqJbFn2Eq1Q6AGGSiTdAG8nlIsodetNk-EQLW_TOMWbdLRwiOP7uzRxJ8vIGN27SOHix5vQsiiTkUsz8ENPpvwvtJhBU91aQ9z-gXt6pF_X68c_AVk4-uS5SHrep8kw33ruKb4B_E2jGA==)
+////
 _Figure 10_d. Buyer and EO_
