@@ -50,7 +50,7 @@ The tables below establish a mapping between the business requirements, the logi
 ====
 _A note about the Business Rules identifiers_
 
-From this point in the document, the tables defining classes and its properties refer frequently to business rules. As stated in the xref:bis41.adocs[e-Sens BIS document], "[..] business rules are sets of rules that clarify the content of instances by stating mandatory fields, fixed values (like code lists), dependency between fields in the same object, and dependency between different objects".
+From this point in the document, the tables defining classes and its properties refer frequently to business rules. As stated in the xref:bis41.adoc[e-Sens BIS document], "[..] business rules are sets of rules that clarify the content of instances by stating mandatory fields, fixed values (like code lists), dependency between fields in the same object, and dependency between different objects".
 
 Information requirement:
 
