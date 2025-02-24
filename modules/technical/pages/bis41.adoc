@@ -1,3 +1,4 @@
+////
 TC  WI :2014 (E) 511Élément introductif — Élément central — Élément
 complémentaireEinführendes Element — Haupt-Element — Ergänzendes
 ElementBusiness Interoperability Interfaces for public procurement in
@@ -258,7 +259,11 @@ This document was edited by:
 |Carmen Ciciriello |Technical Editor |IT
 |===
 
-[#_Toc423863786 .anchor]####Introduction
+////
+
+= Business Interoperability Interfaces for public procurement in Europe — Profile BII41 — European Single Procurement Document (ESPD)
+
+== Introduction
 
 The CEN BII Workshop was established in May 2007 with the objective of
 harmonising electronic public procurement in Europe. The BII Workshop is
@@ -407,6 +412,7 @@ CWA 2345.
 
 == Requirements
 
+[#br]
 === High Level Business Requirements
 
 [width="100%",cols="14%,73%,13%",options="header",]
