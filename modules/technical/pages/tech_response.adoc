@@ -811,16 +811,157 @@ _Figure 200. The Party of the economic party_
 
 The figures below show the `cac:QualifyingParty` sub-components `cac:BusinessClassificationScheme` and `FinancialCapability`, and `cac:CompletedTask` in a bit more of detail. At present, the ESPD-EDM only uses one field, cbc:Description for the references and classifications and `cbc:Amount`for the Turnover.
 
-image:UBL-2.3_Classification_Scheme.jpg[UBL-2.3 'Classification Scheme',width=485,height=349]
+image::https://kroki.io/blockdiag/svg/eNrtVd1u0zAUvm6e4ii7GEhemnagoU1DomsrTarQ2Dpu0FS5zmli5tqR7YyWqfc8BQ_Hk2A3TX9Y2cbPuCIXkfOdn3w-53z2UCh2nXCawm1Qr8MZTRHqFlkmOaNivhpoNLmSBqPMjgWcjn_wGXCPmPplq7fXjPYHJ4Iaw0fOZrmSgwuW4Rijj3kKz7o8LTRCM25E0M8QNGcZGKsLZj2uRkBhkQZ2N_NAmWcXRkqD9bGYO2IobWl2sZZOlFRjjua538sFWjA5lTBGq_kkAJh_Dj7xxGZwDC_joyWWIU8z68CmA4NUqyKHz6jVoFzeBgFTwv34GMKdzkEn7jZC5xdGIey9hpBRdviuoIKPplymZ1TbaQgfEu79pZJIQNAhCh8dR9G3L1_DKxe8NapK1yoMl2jMZhHKGmzkrjLdH-DT4sQeuuJ2JhalcTYTEvevITs8bVery8vVukeNPccb7l3b1OI2vM_vsHkkGZ_prbL4YJ1-JR_9EzZtNEzz3Jv-Jqk3KUo2XZW1_J5TXSDvUftarnXh_LRaltnWgB6VaeHk5rx_b6fOa9N64nqbKv3TiW0sJ7bUwohrY5e6qNUAltIYCsqunTA8aN24rTTT7cbuCeeCWzwmozk6o3CMN3A7FR5PqMkwKZPNXw_vMAhqJS-DTMlkjWS4zb8_zf28VEScs0wwGaoJgeqMaBzEZJMQWW13p91q73da4dXRPyhDWYKn0jBZUyRZUxO5qw3y1HNN7p3SwJUBZkFtFsyqQ75sllVuchM0BBIc0UJYuKGiQOAGGs1X87N62Wp34Y3dgKz63IwJrN0BrqNbj2fyiCEk_7s0fUBVzRe-wrPvFKu46g==[The rich structure of a UBL-2.3 Classification Scheme for the representation of taxonomies,width=600,height=650]
+////
+//image:UBL-2.3_Classification_Scheme.jpg[UBL-2.3 'Classification Scheme',width=485,height=349]
+blockdiag {
+// Page /technical/tech_response.html Image /technical/_images/UBL-2.3_Classification_Scheme.jpg (Figure 201. The rich structure of a UBL-2.3 'Classification Scheme' for the representation of taxonomies)
+// Set span metrix
+   span_width = 50;
+   span_height = 20;
 
+group zero_group {
+
+color = "#E7E0F1";
+
+"." -> "cac:QualifyingParty" [dir = none, label = "0..∞"]
+
+"cac:QualifyingParty" -> "cac:BusinessClassificationScheme" [dir = none]
+
+"cac:BusinessClassificationScheme" -> "ext:UBLExtensions", "cbc:ID", "cbc:UUID", "cbc:LastRevisionDate", "cbc:LastRevisionTime" [dir = none]
+"cac:BusinessClassificationScheme" -> "cbc:Note" [dir = none, label = "0..∞"]
+"cac:BusinessClassificationScheme" -> "cbc:Name" [dir = none]
+"cac:BusinessClassificationScheme" -> "cbc:Description" [dir = none, label = "0..∞"]
+"cac:BusinessClassificationScheme" -> "cbc:AgencyID", "cbc:AgencyName", "cbc:VersionID", "cbc:URI", "cbc:SchemeURI", "cbc:LanguageID" [dir = none]
+"cac:BusinessClassificationScheme" -> "cac:ClassificationCategory" [dir = none, label = "1..∞"]
+
+group first_group {
+		  color = "black";
+		  textcolor = "#FF0000";
+          shape = line;
+          style = dashed;
+		  
+		  "cac:BusinessClassificationScheme"
+
+	group second_group {
+		"ClassificationSchemeType" [shape = roundedbox, width = 170,style = dashed, color = "#DBD3EB"];
+		  color = "black";
+		  textcolor = "#FF0000";
+          shape = line;
+          style = dashed;
+
+		  "ext:UBLExtensions", "cbc:ID", "cbc:UUID", "cbc:LastRevisionDate", "cbc:LastRevisionTime", "cbc:Note", "cbc:Name", "cbc:Description", "cbc:AgencyID", "cbc:AgencyName", "cbc:VersionID", "cbc:URI", "cbc:SchemeURI", "cbc:LanguageID", "cac:ClassificationCategory"
+	   }
+	}
+}
+// Set width to nodes, default value is 128
+"." [shape = diamond, width = 20, height = 20];
+"cac:QualifyingParty", "cac:BusinessClassificationScheme", "ext:UBLExtensions", "cbc:ID", "cbc:UUID", "cbc:LastRevisionDate", "cbc:LastRevisionTime", "cbc:Note", "cbc:Name", "cbc:Description", "cbc:AgencyID", "cbc:AgencyName", "cbc:VersionID", "cbc:URI", "cbc:SchemeURI", "cbc:LanguageID", "cac:ClassificationCategory" [shape = roundedbox, width = 240];
+}
+
+
+//Embedded adoc link:
+//image::https://kroki.io/blockdiag/svg/eNrtVd1u0zAUvm6e4ii7GEhemnagoU1DomsrTarQ2Dpu0FS5zmli5tqR7YyWqfc8BQ_Hk2A3TX9Y2cbPuCIXkfOdn3w-53z2UCh2nXCawm1Qr8MZTRHqFlkmOaNivhpoNLmSBqPMjgWcjn_wGXCPmPplq7fXjPYHJ4Iaw0fOZrmSgwuW4Rijj3kKz7o8LTRCM25E0M8QNGcZGKsLZj2uRkBhkQZ2N_NAmWcXRkqD9bGYO2IobWl2sZZOlFRjjua538sFWjA5lTBGq_kkAJh_Dj7xxGZwDC_joyWWIU8z68CmA4NUqyKHz6jVoFzeBgFTwv34GMKdzkEn7jZC5xdGIey9hpBRdviuoIKPplymZ1TbaQgfEu79pZJIQNAhCh8dR9G3L1_DKxe8NapK1yoMl2jMZhHKGmzkrjLdH-DT4sQeuuJ2JhalcTYTEvevITs8bVery8vVukeNPccb7l3b1OI2vM_vsHkkGZ_prbL4YJ1-JR_9EzZtNEzz3Jv-Jqk3KUo2XZW1_J5TXSDvUftarnXh_LRaltnWgB6VaeHk5rx_b6fOa9N64nqbKv3TiW0sJ7bUwohrY5e6qNUAltIYCsqunTA8aN24rTTT7cbuCeeCWzwmozk6o3CMN3A7FR5PqMkwKZPNXw_vMAhqJS-DTMlkjWS4zb8_zf28VEScs0wwGaoJgeqMaBzEZJMQWW13p91q73da4dXRPyhDWYKn0jBZUyRZUxO5qw3y1HNN7p3SwJUBZkFtFsyqQ75sllVuchM0BBIc0UJYuKGiQOAGGs1X87N62Wp34Y3dgKz63IwJrN0BrqNbj2fyiCEk_7s0fUBVzRe-wrPvFKu46g==[The rich structure of a UBL-2.3 Classification Scheme for the representation of taxonomies,width=600,height=650]
+
+//[Edit this diagram](https://niolesk.top/#https://kroki.io/blockdiag/svg/eNrtVd1u0zAUvm6e4ii7GEhemnagoU1DomsrTarQ2Dpu0FS5zmli5tqR7YyWqfc8BQ_Hk2A3TX9Y2cbPuCIXkfOdn3w-53z2UCh2nXCawm1Qr8MZTRHqFlkmOaNivhpoNLmSBqPMjgWcjn_wGXCPmPplq7fXjPYHJ4Iaw0fOZrmSgwuW4Rijj3kKz7o8LTRCM25E0M8QNGcZGKsLZj2uRkBhkQZ2N_NAmWcXRkqD9bGYO2IobWl2sZZOlFRjjua538sFWjA5lTBGq_kkAJh_Dj7xxGZwDC_joyWWIU8z68CmA4NUqyKHz6jVoFzeBgFTwv34GMKdzkEn7jZC5xdGIey9hpBRdviuoIKPplymZ1TbaQgfEu79pZJIQNAhCh8dR9G3L1_DKxe8NapK1yoMl2jMZhHKGmzkrjLdH-DT4sQeuuJ2JhalcTYTEvevITs8bVery8vVukeNPccb7l3b1OI2vM_vsHkkGZ_prbL4YJ1-JR_9EzZtNEzz3Jv-Jqk3KUo2XZW1_J5TXSDvUftarnXh_LRaltnWgB6VaeHk5rx_b6fOa9N64nqbKv3TiW0sJ7bUwohrY5e6qNUAltIYCsqunTA8aN24rTTT7cbuCeeCWzwmozk6o3CMN3A7FR5PqMkwKZPNXw_vMAhqJS-DTMlkjWS4zb8_zf28VEScs0wwGaoJgeqMaBzEZJMQWW13p91q73da4dXRPyhDWYKn0jBZUyRZUxO5qw3y1HNN7p3SwJUBZkFtFsyqQ75sllVuchM0BBIc0UJYuKGiQOAGGs1X87N62Wp34Y3dgKz63IwJrN0BrqNbj2fyiCEk_7s0fUBVzRe-wrPvFKu46g==)
+////
 _Figure 201. The rich structure of a UBL-2.3 'Classification Scheme' for the representation of taxonomies_
 
-image:UBL-2.3_Capability.jpg[UBL-2.3 'Capability',width=454,height=207]
+image::https://kroki.io/blockdiag/svg/eNrVVM2O0zAQPjdPMcoeFiRvmmZBi7oCiW5bCYlDURc4oKpy7Gli1rWj2FlaVr3zFDwcT4KT_mRbWlqEhIQPUfJ55pu_LxNLze64oAk8eM0mDGiC0LTIUiUYldXbOEeTaWUwSO1Uwpvpjs1YlIhpvu-8vYiCy_ENzWgspLDz4HOWwJO-SIocIQqjAG5TBGPzgtkS0hNYOcF57XX-tMxkiBZMRhVM0eZi5gFUn-MvgtsUXsLz8HqDpSiS1DowcqCX5LrI4Cvmerx8ffA8pqXOnYF_1rvqhf2W7-z8wIeLV-AzytrvCirFZC5UMqC5nfvwiYvSXmmFBCSNUZbeYRD8-PbdHznnvV5rur5QVDFBZV3ViZR7PUtanNm2a1ZvZlEZ4cbhExcrZu3a8Hae4Y3muBVqdIS3pOiiYbnIrKM9muZxtg9UFvh6qgtl1zlWkOuWsrudOEroLnv3gqNiOCyyTArkf5sjrRIS3CEDzIXmVZoO_YjxUNjd_q0ENRG5sRtFNRoAG1HFkrI7J6kStG5Qtdr6_dAdv5Lq6piUZugupVC4hdu5LHFOTYp8SVY9DlbjeY1lOgaZVvxRbv62KFxB66jORHHksZ4RWP9KrauQbEcndW1n3U73stfxR9f_oOZlvX8idfKrgsmJMiQH1EVOkYjnEoWF11h4i_W2WrbTaicbjoYAxwktpIX7MioIA63oRbV0NsNwe3fqBldPIgoJPFpmrud79ww5rAnyf7Tv94KMnpWlL34CPX8cTQ==[The structure of UBL-2.3 Capability,width=650,height=450]
+////
+//image:UBL-2.3_Capability.jpg[UBL-2.3 'Capability',width=454,height=207]
 
+blockdiag {
+// Page /technical/tech_response.html Image /technical/_images/UBL-2.3_Capability.jpg (Figure 202. The structure of UBL-2.3 'Capability')
+// Set span metrix
+   span_width = 50;
+   span_height = 20;
+
+group zero_group {
+
+color = "#E7E0F1";
+
+"." -> "cac:QualifyingParty" [dir = none, label = "0..∞"]
+
+"cac:QualifyingParty" -> "cac:FinancialCapability" [dir = none, label = "0..∞"]
+
+"cac:FinancialCapability" -> "ext:UBLExtensions", "cbc:CapabilityTypeCode" [dir = none]
+"cac:FinancialCapability" -> "cbc:Description" [dir = none, label = "0..∞"]
+"cac:FinancialCapability" -> "cbc:ValueAmount", "cbc:ValueQuantity" [dir = none]
+"cac:FinancialCapability" -> "cac:EvidenceSupplied" [dir = none, label = "0..∞"]
+"cac:FinancialCapability" -> "cac:ValidityPeriod", "cac:WebSite" [dir = none]
+
+group first_group {
+		  color = "black";
+		  textcolor = "#FF0000";
+          shape = line;
+          style = dashed;
+		  
+		  "cac:FinancialCapability"
+
+	group second_group {
+		"CapabilityType" [shape = roundedbox, width = 170,style = dashed, color = "#DBD3EB"];
+		  color = "black";
+		  textcolor = "#FF0000";
+          shape = line;
+          style = dashed;
+
+		  "ext:UBLExtensions", "cbc:CapabilityTypeCode", "cbc:Description", "cbc:ValueAmount", "cbc:ValueQuantity", "cac:EvidenceSupplied", "cac:ValidityPeriod", "cac:WebSite"
+	   }
+	}
+}
+// Set width to nodes, default value is 128
+"." [shape = diamond, width = 20, height = 20];
+"cac:QualifyingParty", "cac:FinancialCapability", "ext:UBLExtensions", "cbc:CapabilityTypeCode", "cbc:Description", "cbc:ValueAmount", "cbc:ValueQuantity", "cac:EvidenceSupplied", "cac:ValidityPeriod", "cac:WebSite" [shape = roundedbox, width = 240];
+}
+
+
+//Embedded adoc link:
+//image::https://kroki.io/blockdiag/svg/eNrVVM2O0zAQPjdPMcoeFiRvmmZBi7oCiW5bCYlDURc4oKpy7Gli1rWj2FlaVr3zFDwcT4KT_mRbWlqEhIQPUfJ55pu_LxNLze64oAk8eM0mDGiC0LTIUiUYldXbOEeTaWUwSO1Uwpvpjs1YlIhpvu-8vYiCy_ENzWgspLDz4HOWwJO-SIocIQqjAG5TBGPzgtkS0hNYOcF57XX-tMxkiBZMRhVM0eZi5gFUn-MvgtsUXsLz8HqDpSiS1DowcqCX5LrI4Cvmerx8ffA8pqXOnYF_1rvqhf2W7-z8wIeLV-AzytrvCirFZC5UMqC5nfvwiYvSXmmFBCSNUZbeYRD8-PbdHznnvV5rur5QVDFBZV3ViZR7PUtanNm2a1ZvZlEZ4cbhExcrZu3a8Hae4Y3muBVqdIS3pOiiYbnIrKM9muZxtg9UFvh6qgtl1zlWkOuWsrudOEroLnv3gqNiOCyyTArkf5sjrRIS3CEDzIXmVZoO_YjxUNjd_q0ENRG5sRtFNRoAG1HFkrI7J6kStG5Qtdr6_dAdv5Lq6piUZugupVC4hdu5LHFOTYp8SVY9DlbjeY1lOgaZVvxRbv62KFxB66jORHHksZ4RWP9KrauQbEcndW1n3U73stfxR9f_oOZlvX8idfKrgsmJMiQH1EVOkYjnEoWF11h4i_W2WrbTaicbjoYAxwktpIX7MioIA63oRbV0NsNwe3fqBldPIgoJPFpmrud79ww5rAnyf7Tv94KMnpWlL34CPX8cTQ==[The structure of UBL-2.3 Capability,width=600,height=650]
+
+//[Edit this diagram](https://niolesk.top/#https://kroki.io/blockdiag/svg/eNrVVM2O0zAQPjdPMcoeFiRvmmZBi7oCiW5bCYlDURc4oKpy7Gli1rWj2FlaVr3zFDwcT4KT_mRbWlqEhIQPUfJ55pu_LxNLze64oAk8eM0mDGiC0LTIUiUYldXbOEeTaWUwSO1Uwpvpjs1YlIhpvu-8vYiCy_ENzWgspLDz4HOWwJO-SIocIQqjAG5TBGPzgtkS0hNYOcF57XX-tMxkiBZMRhVM0eZi5gFUn-MvgtsUXsLz8HqDpSiS1DowcqCX5LrI4Cvmerx8ffA8pqXOnYF_1rvqhf2W7-z8wIeLV-AzytrvCirFZC5UMqC5nfvwiYvSXmmFBCSNUZbeYRD8-PbdHznnvV5rur5QVDFBZV3ViZR7PUtanNm2a1ZvZlEZ4cbhExcrZu3a8Hae4Y3muBVqdIS3pOiiYbnIrKM9muZxtg9UFvh6qgtl1zlWkOuWsrudOEroLnv3gqNiOCyyTArkf5sjrRIS3CEDzIXmVZoO_YjxUNjd_q0ENRG5sRtFNRoAG1HFkrI7J6kStG5Qtdr6_dAdv5Lq6piUZugupVC4hdu5LHFOTYp8SVY9DlbjeY1lOgaZVvxRbv62KFxB66jORHHksZ4RWP9KrauQbEcndW1n3U73stfxR9f_oOZlvX8idfKrgsmJMiQH1EVOkYjnEoWF11h4i_W2WrbTaicbjoYAxwktpIX7MioIA63oRbV0NsNwe3fqBldPIgoJPFpmrud79ww5rAnyf7Tv94KMnpWlL34CPX8cTQ==)
+////
 _Figure 202. The structure of UBL-2.3 'Capability'_
 
-image:UBL-2.3_Completed_Task_for references.jpg[UBL-2.3 Completed Task (used for references),width=291,height=200]
+image::https://kroki.io/blockdiag/svg/eNrVVMuK2zAUXcdfcXEpzIDH8TgtUxKmkCcUugiddFWCUaSbWI0sGUmeJh2y71f04_ollZz3MMO0iy6qhZGP7j336B5JM6HoknGygIeg2YQxWSA0LdJcckpEPcs0mlJJg3FuCwEfikcxGfeIaX7ufbxK41bWV0Up0CLLJsQss7nSr9NE4xw1Soom_lou4GLEF5VGSJNWDJMcwVhdUeshNQfrgB0bHNjAs8FFZdzUccKR8fLSS79DC6YkEgq0mq8CgPo3-8aZzeEW3iadA5YjX-TWgekWDBZaVSV8R62y7fQhCKgSrswthK-GN8NkdB12giCMQ7h6DyEltH1Q5oWF8IVxHy2VxAgEmaHwuUkc__rxM5y61CdyPBWubNttdriyKA13fQ4jxz-j7a6UFRHde9Suvd1CVdLulybKEuEpzuEx0XbdJyWh3K53S6e6ps-K8NkDNFTz0joNNaGLHN5z5lt8V5Wl4Mhe3OWz_A4eo-aK7ak_IeUlR2n7lbGqQF2LfyR358uca2MPxjTCswKTdYkuzeSkRJfogiRDNlOrCPbWpzdJZOxa-HVGTI4sgqO7g96gNeyF007QaMARnwlCl-EWtM6kY8JolLgR1idnN_bVBZd4hp9V3ZLVn39te_TnnkZ_YU_Q2ASb_W3bttcqZxZDEwHDOamEhXsiKgRu4Dp9V9-YgznuoSmUZCfOJBGcXEbnwRMnKPpfu_XCqXzj97v5DaWYy6k=[The structure of the UBL-2.3 Completed Task,width=450,height=400]
+////
+//image:UBL-2.3_Completed_Task_for references.jpg[UBL-2.3 Completed Task (used for references),width=291,height=200]
+blockdiag {
+// Page /technical/tech_response.html Image /technical/_images/UBL-2.3_Completed_Task_for%20references.jpg (Figure 203. The structure of the UBL-2.3 Completed Task (used for references))
+// Set span metrix
+   span_width = 50;
+   span_height = 20;
+   
+group zero_group {
 
+color = "#E7E0F1";
+
+"." -> "cac:CompletedTask" [dir = none, label = "0..∞"]
+
+"cac:CompletedTask" -> "ext:UBLExtensions", "cbc:AnnualAverageAmount", "cbc:TotalTaskAmount", "cbc:PartyCapacityAmount" [dir = none]
+"cac:CompletedTask" -> "cbc:Description", "cac:EvidenceSupplied" [dir = none, label = "0..∞"]
+"cac:CompletedTask" -> "cac:Period", "cac:RecipientCustomerParty" [dir = none]
+
+group first_group {
+	"CompletedTaskType" [shape = roundedbox, width = 270,style = dashed, color = "#DBD3EB"];
+		  color = "black";
+		  textcolor = "#FF0000";
+          shape = line;
+          style = dashed;
+		  
+		  "ext:UBLExtensions", "cbc:AnnualAverageAmount", "cbc:TotalTaskAmount", "cbc:PartyCapacityAmount", "cbc:Description", "cac:EvidenceSupplied", "cac:Period", "cac:RecipientCustomerParty"
+	}
+}
+// Set width to nodes, default value is 128
+"." [shape = diamond, width = 20, height = 20];
+"cac:CompletedTask", "ext:UBLExtensions", "cbc:AnnualAverageAmount", "cbc:TotalTaskAmount", "cbc:PartyCapacityAmount", "cbc:Description", "cac:EvidenceSupplied", "cac:Period", "cac:RecipientCustomerParty" [shape = roundedbox, width = 240];
+}
+
+//Embedded adoc link:
+//image::https://kroki.io/blockdiag/svg/eNrVVMuK2zAUXcdfcXEpzIDH8TgtUxKmkCcUugiddFWCUaSbWI0sGUmeJh2y71f04_ollZz3MMO0iy6qhZGP7j336B5JM6HoknGygIeg2YQxWSA0LdJcckpEPcs0mlJJg3FuCwEfikcxGfeIaX7ufbxK41bWV0Up0CLLJsQss7nSr9NE4xw1Soom_lou4GLEF5VGSJNWDJMcwVhdUeshNQfrgB0bHNjAs8FFZdzUccKR8fLSS79DC6YkEgq0mq8CgPo3-8aZzeEW3iadA5YjX-TWgekWDBZaVSV8R62y7fQhCKgSrswthK-GN8NkdB12giCMQ7h6DyEltH1Q5oWF8IVxHy2VxAgEmaHwuUkc__rxM5y61CdyPBWubNttdriyKA13fQ4jxz-j7a6UFRHde9Suvd1CVdLulybKEuEpzuEx0XbdJyWh3K53S6e6ps-K8NkDNFTz0joNNaGLHN5z5lt8V5Wl4Mhe3OWz_A4eo-aK7ak_IeUlR2n7lbGqQF2LfyR358uca2MPxjTCswKTdYkuzeSkRJfogiRDNlOrCPbWpzdJZOxa-HVGTI4sgqO7g96gNeyF007QaMARnwlCl-EWtM6kY8JolLgR1idnN_bVBZd4hp9V3ZLVn39te_TnnkZ_YU_Q2ASb_W3bttcqZxZDEwHDOamEhXsiKgRu4Dp9V9-YgznuoSmUZCfOJBGcXEbnwRMnKPpfu_XCqXzj97v5DaWYy6k=[The structure of the UBL-2.3 Completed Task,width=436,height=200]
+
+//[Edit this diagram](https://niolesk.top/#https://kroki.io/blockdiag/svg/eNrVVMuK2zAUXcdfcXEpzIDH8TgtUxKmkCcUugiddFWCUaSbWI0sGUmeJh2y71f04_ollZz3MMO0iy6qhZGP7j336B5JM6HoknGygIeg2YQxWSA0LdJcckpEPcs0mlJJg3FuCwEfikcxGfeIaX7ufbxK41bWV0Up0CLLJsQss7nSr9NE4xw1Soom_lou4GLEF5VGSJNWDJMcwVhdUeshNQfrgB0bHNjAs8FFZdzUccKR8fLSS79DC6YkEgq0mq8CgPo3-8aZzeEW3iadA5YjX-TWgekWDBZaVSV8R62y7fQhCKgSrswthK-GN8NkdB12giCMQ7h6DyEltH1Q5oWF8IVxHy2VxAgEmaHwuUkc__rxM5y61CdyPBWubNttdriyKA13fQ4jxz-j7a6UFRHde9Suvd1CVdLulybKEuEpzuEx0XbdJyWh3K53S6e6ps-K8NkDNFTz0joNNaGLHN5z5lt8V5Wl4Mhe3OWz_A4eo-aK7ak_IeUlR2n7lbGqQF2LfyR358uca2MPxjTCswKTdYkuzeSkRJfogiRDNlOrCPbWpzdJZOxa-HVGTI4sgqO7g96gNeyF007QaMARnwlCl-EWtM6kY8JolLgR1idnN_bVBZd4hp9V3ZLVn39te_TnnkZ_YU_Q2ASb_W3bttcqZxZDEwHDOamEhXsiKgRu4Dp9V9-YgznuoSmUZCfOJBGcXEbnwRMnKPpfu_XCqXzj97v5DaWYy6k=)
+////
 _Figure 203. The structure of the UBL-2.3 Completed Task (used for references)_
 
 UBL-2.3 provides a component to hold very specifically the data to identify the economic operator as it officially registered in a Business Register. This XSD diagram below shows the elements of this component cac:LegalEntityParty. This ESPD-EDM specification recommends to use it as an alternative (or supplementary) way to identify the economic party.
