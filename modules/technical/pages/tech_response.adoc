@@ -33,54 +33,9 @@ Notice that, in the UBL-2.3 Schema there are only four mandatory elements: cbc:I
 This section about the ESPD Response does not cover those information elements that were already described in the ESPD Request, unless a characteristic related to the ESPD Response needs to be clarified. Thus for details about elements like cac:ContractingParty, cac:ProcurementProject and cac:AdditionalDocumentReference refer to the section *2. The ESPD Request*.
 ====
 
-image::https://kroki.io/blockdiag/svg/eNrtVt1O2zAUvm6e4ii72SSvf_thDDEJaDtVYqyjsF0wVLnJaWJI7cx2WAvjfk-xh9uTzE7atF3pihDQIZGLyP782ef4_LobCe_UZzSAC6dUghYNEEoavZAzj0bpqCNRxYIrLIa6H0Gz_xenwyyiSof7zc4-9lAi97BTb7dqZvotQaWLJ3EATxssSCRCZf11EQwXRA90iGCJMCI-szq0UYOKKYc-askGDkA67Xxnvg5hE16VN3IsRBaE2oDVDHQCKZIYzlGKTja8cBxPREIajvukvlYvNyruhuO4nxIasZ65gGaCb8VxNBrujy77lR8MY4QfsIxoaS48fwcuDvTbw-3d-kAjV4ahXAKu1_Us-BmlhZq1MbaTKC367Dw9awK3pOixCOeA-gC9ZJY6dZaIh03uW8WEzIUeThO4ltTTDRH5KA0ORz6zJuGC4_GdGGNa7B7t44xIAhHtYmR9Ui4Wf__85d6dEk2lEqxRjbndLHDA-hbIkLonuPGF9zFGaU343kZOqvRoy5z3WhLPmEjUFQvCQ9_E-Y7w8-2LFLaKprz7cceXNFnanpCMBx9Qh8I3mREM94RenXsypYxC92yM1V2aThLDXLtFpR6mgULnAzFbXKBl5a61tLFsIrmPXJvhCXr6PnxzpeBdocc2OkBuapix3I5k2gwEX5kb51UZ81bmsy3fZ3aVRjVjQ2vBvCXnQXbG_Ol5mwWcamPvpXYcddcek0rn7bXgXk_DIxVSc6FNMPuM2fyuGBAY9_TqWpkoPYzsuk9ViD6BSduubdde1Lfd4w2nUIAJ3o2od-pmoDbNd7Kh0Sibz02fBKNvLD1iHGfwGanZYenvIbVzckW_JQ-n_ZFr9CcChQX9gkwVdHKT-koWljtys3pElpYHcgvZ6jiFS8e5HD-Zs1TSwmSvj4qAjz2aRBrOaJQgMAWV6ptbLzv_Tur1MoH8hV6plk0CP2bVY1b911m1JKRf2iC-_AO7cEjk[QualificationApplicationResponse XSD Schema,width=697,height=1278]
-////
-//image:Qualification_Application_Response_XSD_Schema.jpg[QualificationApplicationResponse XSD Schema,width=397,height=678]
-blockdiag {
-// Page /technical/tech_response.html Image /technical/_images/URI_Reference_ESPD_Request.jpg (Figure 196. URI of the ESPD Request)
-// Set span metrix
-   span_width = 50;
-   span_height = 20;
-   
-group zero_group {
-
-color = "#E7E0F1";
-
-"QualificationApplicationResponse\nType | QualificationApplicationResponseType" -> "ext:UBLExtensions", "cbc:UBLVersionID", "cbc:CustomizationID", "cbc:ProfileID", "cbc:ProfileExecutionID", "cbc:ID", "cbc:CopyIndicator", "cbc:UUID", "cbc:ContractFolderID" [dir = none]
-"QualificationApplicationResponse\nType | QualificationApplicationResponseType" -> "cbc:ContractName" [dir = none, label = "0..∞"]
-"QualificationApplicationResponse\nType | QualificationApplicationResponseType" -> "cbc:IssueDate", "cbc:IssueTime",  "cbc:EconomicOperatorGroupName", "cbc:VersionID", "cbc:PreviousVersionID", "cbc:ProcedureCode", "cbc:QualificationApplicationTypeCode" [dir = none]
-"QualificationApplicationResponse\nType | QualificationApplicationResponseType" -> "cbc:WeightScoringMethodologyNote" [dir = none, label = "0..∞"]
-"QualificationApplicationResponse\nType | QualificationApplicationResponseType" -> "cbc:WeightingTypeCode" [dir = none]
-"QualificationApplicationResponse\nType | QualificationApplicationResponseType" -> "cbc:Note" [dir = none, label = "0..∞"]
-"QualificationApplicationResponse\nType | QualificationApplicationResponseType" -> "cac:ContractingParty", "cac:EconomicOperatorParty" [dir = none, label = "1..∞"]
-"QualificationApplicationResponse\nType | QualificationApplicationResponseType" -> "cac:ProcurementProject" [dir = none]
-"QualificationApplicationResponse\nType | QualificationApplicationResponseType" -> "cac:ProcurementProjectLot", "cac:TenderingCriterion" [dir = none, label = "0..∞"]
-"QualificationApplicationResponse\nType | QualificationApplicationResponseType" -> "cac:TenderingCriterionResponse" [dir = none, label = "1..∞"]
-"QualificationApplicationResponse\nType | QualificationApplicationResponseType" -> "cac:AdditionalDocumentReference", "cac:Evidence", "cac:Signature" [dir = none, label = "0..∞"]
-
-group first_group {
-	"QualificationApplicationResponseType" [shape = roundedbox, width = 270,style = dashed, color = "#DBD3EB"];
-		  color = "black";
-		  textcolor = "#FF0000";
-          shape = line;
-          style = dashed;
-		  
-		  "ext:UBLExtensions", "cbc:UBLVersionID", "cbc:CustomizationID", "cbc:ProfileID", "cbc:ProfileExecutionID", "cbc:ID", "cbc:CopyIndicator", "cbc:UUID", "cbc:ContractFolderID", "cbc:ContractName", "cbc:IssueDate", "cbc:IssueTime",  "cbc:EconomicOperatorGroupName", "cbc:VersionID", "cbc:PreviousVersionID", "cbc:ProcedureCode", "cbc:QualificationApplicationTypeCode", "cbc:WeightScoringMethodologyNote", 	"cbc:WeightingTypeCode", "cbc:Note", "cac:ContractingParty", "cac:EconomicOperatorParty", "cac:ProcurementProject", "cac:ProcurementProjectLot", "cac:TenderingCriterion", "cac:TenderingCriterionResponse", "cac:AdditionalDocumentReference", "cac:Evidence", "cac:Signature"
-
-	}
-
-}
-// Set width to nodes, default value is 128
-"QualificationApplicationResponse\nType | QualificationApplicationResponseType" [shape = roundedbox, width = 290, height = 120];
-"ext:UBLExtensions", "cbc:UBLVersionID", "cbc:CustomizationID", "cbc:ProfileID", "cbc:ProfileExecutionID", "cbc:ID", "cbc:CopyIndicator", "cbc:UUID", "cbc:ContractFolderID", "cbc:ContractName", "cbc:IssueDate", "cbc:IssueTime",  "cbc:EconomicOperatorGroupName", "cbc:VersionID", "cbc:PreviousVersionID", "cbc:ProcedureCode", "cbc:QualificationApplicationTypeCode", "cbc:WeightScoringMethodologyNote", 	"cbc:WeightingTypeCode", "cbc:Note", "cac:ContractingParty", "cac:EconomicOperatorParty", "cac:ProcurementProject", "cac:ProcurementProjectLot", "cac:TenderingCriterion", "cac:TenderingCriterionResponse", "cac:AdditionalDocumentReference", "cac:Evidence", "cac:Signature" [shape = roundedbox, width = 240];
-}
-
-
-//Embedded adoc link:
-//image::https://kroki.io/blockdiag/svg/eNrtVt1O2zAUvm6e4ii72SSvf_thDDEJaDtVYqyjsF0wVLnJaWJI7cx2WAvjfk-xh9uTzE7atF3pihDQIZGLyP782ef4_LobCe_UZzSAC6dUghYNEEoavZAzj0bpqCNRxYIrLIa6H0Gz_xenwyyiSof7zc4-9lAi97BTb7dqZvotQaWLJ3EATxssSCRCZf11EQwXRA90iGCJMCI-szq0UYOKKYc-askGDkA67Xxnvg5hE16VN3IsRBaE2oDVDHQCKZIYzlGKTja8cBxPREIajvukvlYvNyruhuO4nxIasZ65gGaCb8VxNBrujy77lR8MY4QfsIxoaS48fwcuDvTbw-3d-kAjV4ahXAKu1_Us-BmlhZq1MbaTKC367Dw9awK3pOixCOeA-gC9ZJY6dZaIh03uW8WEzIUeThO4ltTTDRH5KA0ORz6zJuGC4_GdGGNa7B7t44xIAhHtYmR9Ui4Wf__85d6dEk2lEqxRjbndLHDA-hbIkLonuPGF9zFGaU343kZOqvRoy5z3WhLPmEjUFQvCQ9_E-Y7w8-2LFLaKprz7cceXNFnanpCMBx9Qh8I3mREM94RenXsypYxC92yM1V2aThLDXLtFpR6mgULnAzFbXKBl5a61tLFsIrmPXJvhCXr6PnxzpeBdocc2OkBuapix3I5k2gwEX5kb51UZ81bmsy3fZ3aVRjVjQ2vBvCXnQXbG_Ol5mwWcamPvpXYcddcek0rn7bXgXk_DIxVSc6FNMPuM2fyuGBAY9_TqWpkoPYzsuk9ViD6BSduubdde1Lfd4w2nUIAJ3o2od-pmoDbNd7Kh0Sibz02fBKNvLD1iHGfwGanZYenvIbVzckW_JQ-n_ZFr9CcChQX9gkwVdHKT-koWljtys3pElpYHcgvZ6jiFS8e5HD-Zs1TSwmSvj4qAjz2aRBrOaJQgMAWV6ptbLzv_Tur1MoH8hV6plk0CP2bVY1b911m1JKRf2iC-_AO7cEjk[QualificationApplicationResponse XSD Schema,width=697,height=1278]
-
-//[Edit this diagram](https://niolesk.top/#https://kroki.io/blockdiag/svg/eNrtVt1O2zAUvm6e4ii72SSvf_thDDEJaDtVYqyjsF0wVLnJaWJI7cx2WAvjfk-xh9uTzE7atF3pihDQIZGLyP782ef4_LobCe_UZzSAC6dUghYNEEoavZAzj0bpqCNRxYIrLIa6H0Gz_xenwyyiSof7zc4-9lAi97BTb7dqZvotQaWLJ3EATxssSCRCZf11EQwXRA90iGCJMCI-szq0UYOKKYc-askGDkA67Xxnvg5hE16VN3IsRBaE2oDVDHQCKZIYzlGKTja8cBxPREIajvukvlYvNyruhuO4nxIasZ65gGaCb8VxNBrujy77lR8MY4QfsIxoaS48fwcuDvTbw-3d-kAjV4ahXAKu1_Us-BmlhZq1MbaTKC367Dw9awK3pOixCOeA-gC9ZJY6dZaIh03uW8WEzIUeThO4ltTTDRH5KA0ORz6zJuGC4_GdGGNa7B7t44xIAhHtYmR9Ui4Wf__85d6dEk2lEqxRjbndLHDA-hbIkLonuPGF9zFGaU343kZOqvRoy5z3WhLPmEjUFQvCQ9_E-Y7w8-2LFLaKprz7cceXNFnanpCMBx9Qh8I3mREM94RenXsypYxC92yM1V2aThLDXLtFpR6mgULnAzFbXKBl5a61tLFsIrmPXJvhCXr6PnxzpeBdocc2OkBuapix3I5k2gwEX5kb51UZ81bmsy3fZ3aVRjVjQ2vBvCXnQXbG_Ol5mwWcamPvpXYcddcek0rn7bXgXk_DIxVSc6FNMPuM2fyuGBAY9_TqWpkoPYzsuk9ViD6BSduubdde1Lfd4w2nUIAJ3o2od-pmoDbNd7Kh0Sibz02fBKNvLD1iHGfwGanZYenvIbVzckW_JQ-n_ZFr9CcChQX9gkwVdHKT-koWljtys3pElpYHcgvZ6jiFS8e5HD-Zs1TSwmSvj4qAjz2aRBrOaJQgMAWV6ptbLzv_Tur1MoH8hV6plk0CP2bVY1b911m1JKRf2iC-_AO7cEjk)
-////
+image::https://kroki.io/blockdiag/svg/eNrtVt1O2zAUvm6e4ii72SSvLQwNGNokoO1UibGOwnbBUOXGp4khtTPbYS2M-z3FHm5PMjtt03alK0JAh0QuIufzsf3l_H1uxzI4Y5yGcOmVStCgIULJYBAJHtA4G7UU6kQKjcXIdGOod_-yaXGH6NLRQb11gB1UKAJsVZuNiv38lqI2xdMkhOc1HqYKYWXzdRGsLcgOmAjBGcLQ8IXj0EQDOqECumgU73kA2WfrO2cmgrewtrGVYxHyMDIWXFnNQIYdmsam1ZHCaH6BbmYtm_FCJdMELlDJ1mB46XmBjKWyNv6z6nq1XFvxtzzP_5TSmHfsrxkuxXaSxMPhwdANX8VhP0H4AYsMnZkPL9-Bjz3z5mhnr9ozKLS10D4BP2gHDvyMykH1ygjbTbWRXX6R7TWGG0p2eIwzQLWHQTptOrGXTPp1wRwxqfJDjyYNhFE0MDUZM1QWh2PGnUuEFHhyL86YPHafdnHqSAIxbWPsYlIuFn___OXfH4m61ilWqMHcbw445F0HDJBqIIWNRfAxQeVc-N5lTkZ6uGQmeg2F51ym-poJGSCzFbArWb58HmFHNLN7mHB8ycqoGUjFRfgBTSSZrYywvy_N8sIzIGUJPbAzlvfTdFwY9rcbVJl-lih0NhEHk3NYrtw3S5fLNpO7KIwdnmJgHiI21x68J83IR4cobA-znttV3NiBFEsL4yyVkd3SYrbNGHezNK5YHzoP5mKdJ9k5Z5PfTR4Kaqy_F_pxqK4drrTJ5bXg34zhsY5o4qTarrNuY23ZIzBS-1flMtGmH7t5RnWEjMBYtis7lVfVHct3SvBPtrxCAcZm7ZgGZ_4ANFaLx-trtbJ9_OyGMHxGZGIucAqfIjHYLHs9JnUn18gveTxqSG4gVwQKc-SDTPR3cpt2S-Z2P3K79kQWdgtyB8XrFa68q9HNelBXRtpSZqjJ6MYM5zROEbi2N-mNO-9B_6zw1c0ygfwiv16eLuZVW8xPFfZUYf91hS2UMJvEV38Aj_VaHg==[QualificationApplicationResponse XSD Schema,width=400,height=900]
+//image:Qualification_Application_Response_XSD_Schema.jpg[QualificationApplicationResponse XSD Schema,width=350,height=700]
+//[Edit this diagram](https://niolesk.top/#https://kroki.io/blockdiag/svg/eNrtVt1O2zAUvm6e4ii72SSvLQwNGNokoO1UibGOwnbBUOXGp4khtTPbYS2M-z3FHm5PMjtt03alK0JAh0QuIufzsf3l_H1uxzI4Y5yGcOmVStCgIULJYBAJHtA4G7UU6kQKjcXIdGOod_-yaXGH6NLRQb11gB1UKAJsVZuNiv38lqI2xdMkhOc1HqYKYWXzdRGsLcgOmAjBGcLQ8IXj0EQDOqECumgU73kA2WfrO2cmgrewtrGVYxHyMDIWXFnNQIYdmsam1ZHCaH6BbmYtm_FCJdMELlDJ1mB46XmBjKWyNv6z6nq1XFvxtzzP_5TSmHfsrxkuxXaSxMPhwdANX8VhP0H4AYsMnZkPL9-Bjz3z5mhnr9ozKLS10D4BP2gHDvyMykH1ygjbTbWRXX6R7TWGG0p2eIwzQLWHQTptOrGXTPp1wRwxqfJDjyYNhFE0MDUZM1QWh2PGnUuEFHhyL86YPHafdnHqSAIxbWPsYlIuFn___OXfH4m61ilWqMHcbw445F0HDJBqIIWNRfAxQeVc-N5lTkZ6uGQmeg2F51ym-poJGSCzFbArWb58HmFHNLN7mHB8ycqoGUjFRfgBTSSZrYywvy_N8sIzIGUJPbAzlvfTdFwY9rcbVJl-lih0NhEHk3NYrtw3S5fLNpO7KIwdnmJgHiI21x68J83IR4cobA-znttV3NiBFEsL4yyVkd3SYrbNGHezNK5YHzoP5mKdJ9k5Z5PfTR4Kaqy_F_pxqK4drrTJ5bXg34zhsY5o4qTarrNuY23ZIzBS-1flMtGmH7t5RnWEjMBYtis7lVfVHct3SvBPtrxCAcZm7ZgGZ_4ANFaLx-trtbJ9_OyGMHxGZGIucAqfIjHYLHs9JnUn18gveTxqSG4gVwQKc-SDTPR3cpt2S-Z2P3K79kQWdgtyB8XrFa68q9HNelBXRtpSZqjJ6MYM5zROEbi2N-mNO-9B_6zw1c0ygfwiv16eLuZVW8xPFfZUYf91hS2UMJvEV38Aj_VaHg==)
 _Figure 191. QualificationApplicationResponse XSD Schema, global view_
 
 == ESPD Response cardinalities
@@ -331,67 +286,18 @@ For EU and notice publications that need to be included in the ESPD Response. Se
 
 Thus the ESPD Response must also make reference to the ESPD Request that is being responded by the economic operator. The XSD diagram below shows (in blue) which elements are expected for this reference. See also the list of expected elements (and rules) and the XML example beneath the XSD diagram.
 
-image:Reference_ESPD_Request.jpg[Reference to ESPD Request,width=480,height=648]
-
+image::https://kroki.io/blockdiag/svg/eNrtVdtu1DAQfV5_xSi8gBR2t6WoN4FEya60UiVWvQkJVZE3niSmjh1sB3Zb9Z2v4OP4Euxks5cCBaqFJ_IQOWdmjmfsM5OJUMkV4zSDG9LrwZhmCD2LSS55QkW9ijWaUkmD3dwWAkbFHZ-Ye8T0TjBFjTLBeHA6juIT_FChsd33ZQaPhzyrNMLW_vMuDAQWKK0BnJaYWGRgFeg2GGyO4AlgTgCpVsUq2iTzxKd7ihZMSSUUaDWfEoD6M_7Emc3hBezsHS6wHHmWWwdubdcgw5RWwsapcrnwa_SWndpCMq2qEq5Rq7hZ3hCSKKG08wkeDXYH_eFWcEhIEMDTlxAkNDl4xRi3XEkqIpVUvr7FcQTwjnEfKpXEEASdoPBE_W736-cvwSX5NUG9yyQ5GEVrZH8S-lqVs5Fk7sas0kHYgOfnjnG-HhlTYUQtrgFnvFgALfvZrMTXiv0Qf3B-b8fU5hs8qmMqs8rpclngsXJqXUv8ArVxPEuXlu_UUluZ2vWh9bSmCE2ieen9N1Wdd7KWJrk31qk75IIK7gJnY9RcsRat71CPqbazFnIN5GT_JnXF89TL4W5ml2TeACnXxi46oBN8l8_8wk1OS98-zlEyZBM1DaHtwO3dfmjsTHg7oyZHFsKylaKj6NngKLg8JJ0OLPGJoMlV0IAWp3YZMBz23RPUbTp_2t0Fl7iGr-3akNWvtpPCf9sY4arOw82KNPy55sK_IxjSuSW3pJ3BzW27MS5dNiZsZyt8pKJC4MbN3D0_LRdScX-cQkm2opN-CIsJvd13iviNsXqv8PZXGXcaxv8Xv4FJce-p1wd9-w0N3LqA[Elements expected to reference the ESPD Request from the ESPD Response,width=600,height=750]
+//image:Reference_ESPD_Request.jpg[Reference to ESPD Request,width=480,height=648]
+//[Edit this diagram](https://niolesk.top/#https://kroki.io/blockdiag/svg/eNrtVdtu1DAQfV5_xSi8gBR2t6WoN4FEya60UiVWvQkJVZE3niSmjh1sB3Zb9Z2v4OP4Euxks5cCBaqFJ_IQOWdmjmfsM5OJUMkV4zSDG9LrwZhmCD2LSS55QkW9ijWaUkmD3dwWAkbFHZ-Ye8T0TjBFjTLBeHA6juIT_FChsd33ZQaPhzyrNMLW_vMuDAQWKK0BnJaYWGRgFeg2GGyO4AlgTgCpVsUq2iTzxKd7ihZMSSUUaDWfEoD6M_7Emc3hBezsHS6wHHmWWwdubdcgw5RWwsapcrnwa_SWndpCMq2qEq5Rq7hZ3hCSKKG08wkeDXYH_eFWcEhIEMDTlxAkNDl4xRi3XEkqIpVUvr7FcQTwjnEfKpXEEASdoPBE_W736-cvwSX5NUG9yyQ5GEVrZH8S-lqVs5Fk7sas0kHYgOfnjnG-HhlTYUQtrgFnvFgALfvZrMTXiv0Qf3B-b8fU5hs8qmMqs8rpclngsXJqXUv8ArVxPEuXlu_UUluZ2vWh9bSmCE2ieen9N1Wdd7KWJrk31qk75IIK7gJnY9RcsRat71CPqbazFnIN5GT_JnXF89TL4W5ml2TeACnXxi46oBN8l8_8wk1OS98-zlEyZBM1DaHtwO3dfmjsTHg7oyZHFsKylaKj6NngKLg8JJ0OLPGJoMlV0IAWp3YZMBz23RPUbTp_2t0Fl7iGr-3akNWvtpPCf9sY4arOw82KNPy55sK_IxjSuSW3pJ3BzW27MS5dNiZsZyt8pKJC4MbN3D0_LRdScX-cQkm2opN-CIsJvd13iviNsXqv8PZXGXcaxv8Xv4FJce-p1wd9-w0N3LqA)
 _Figure 195. Elements expected to reference the ESPD Request from the ESPD Response_
 
 If the buyer publishes the ESPD Request on a public journal, the economic operator must specify the URI from where the ESPD Response was downloaded to draft its ESPD Response (see for instance how this is done for the publications on the TED or national journals; and see also the XML example below).
 
 This URI should be specified in the field cac:AdditionalDocumentReference/cac:Attachment/cac:ExternalReference/cbc:URI:
 
-image::https://kroki.io/blockdiag/svg/eNrdVN1u0zAUvm6e4ijcgBTStPwMVoG0LqnYxdC0jStUVY59mpg5drBdaJl6z1PwcDwJTrM0Ld3okLgZlhIdf_7OOT7Hn50KRa8YJxlce90unJEMoWuR5pJTIlbWRKMplTQY5rYQcFL8xpnwCjHdD-cnk3OcokZJcZJcnMVu-nmGxoafygwej3g20wi91y9DcFxQU7A5QkWEG-KTag8XaMGUREKBVvO5B7CaTr5yZnN4Ay-iwRrLkWe5dWC_Br1Mq1kJ31CrSW1eex5VQmnH8R8lB0k06vkDz_MpoYdHjHHLlSRive9Y0VmB0vrw9C3UJGsJzWvsI-NVIKkkBiBIiqIKG4Xhz-8__HETdcNhFSSlh0mRImPImvBDLolehGG4FXN8_wD38nNYMreoNwu8zfEWUpPXHZQf1GaT-h0xeYNV9pHIlOY2L07R5oo1S8m85HoRE4vbyCUv1sips48VW89HShfEbiKJpIpxmW1ixznRhLotO6VseXOB70nxtyXGaKjmZSWE_Sdci2rKtbFrgXX8tvOXi7LKb3JSovN0DOlOLVXzABr99g6iwNiFqNaZ6x-yAFqJxsP4WTL0xwOv04EWTwWhV34NWpzb1mE0itzwV_K_GU12wSVu4VtZ62Cr3x6NBndoMLhLY57XqZtjkCrJ2k51_B3yg-pY260HeTGCXcV7riBYusLct2ye37rxVrl7wNAEwHBKZsLCFyJmCNxAr_9q_xMa7DygwT9XWvB_ncaf70H_eeRU7i1_AQ7gdeA=[URI of the ESPD Request,align="left",width=720,height=576]
-////
+image::https://kroki.io/blockdiag/svg/eNrdVM1u1DAQPq-fYhQuIIXsblmxpRVIbTcreiiq2nJCVeTYs4mpYwfbW3Zb7Z2n4OF4Epyk2Z_-0CJxKTlE48_fzNgznyeVml1wQTO4Jt0uHNMMoeuQ5UowKmsrMWhLrSxGuSskHBa3OImoENv9fHKYnOAEDSqGSXx6PPLLb1O0LvpaZvByLLKpQei_exuB54KegMsRKiLcEF9VZzhFB7akCgp0RswIQL1MvgvucngPg-3dJZajyHLnwf5WDXKc0Kl0yUQrZ8UVVjuDeodkRk9LuEKjk8a8JoRpqY3nBC_iYdwb94NdQgJG2c4e58IJrahc3mik2bRA5QJ4_QEaknOU5Q32hYsqkNIKQ5A0RVmF7UXRrx8_g_M26ppDHSRlO3GRIufI2_D7QlEzj6JoI-b50wM8yc9j8cyhWb_gfY73kNq8voVB2Jht6o_U5i1W2Xsy00a4vDhCl2vebsWzUpj5iDrcRM5EsUSOvH2g-XI91qagbh2JFdNcqGwdO8ipocwf2Wtow1tI_ESLv73iCC0zoqyE8HiHG1FNhLFuKbBOsKr82bys8tuclpUsPUP5rqV6FkKr7P6wF1o3l9U-9_VDHsJKoqP90Zt4PzjfJZ0OrPBUUnYRNKDDmVs5jMc9_wW1_G--NrsUCjfwjaxNsPr3iEbDBzQYPqQxQjpNcSwyrfiqUp3gDvlZVWxVrWf5MMK7iif-QrAgnQVZtGO5KbvT_hVwtGE7buGSyimCsH4Mbz9hgP6xpVvDnm_Y7bEV_nMlhv9Xtx4p6qAq6uI3XtGJIg==[URI of the ESPD Request,align="left",width=750,height=550]
 //image:URI_Reference_ESPD_Request.jpg[URI_Reference to ESPD Request,width=510,height=288]
-blockdiag {
-// Page /technical/tech_response.html Image /technical/_images/URI_Reference_ESPD_Request.jpg (Figure 196. URI of the ESPD Request)
-// Set span metrix
-   span_width = 50;
-   span_height = 20;
-   
-group zero_group {
-
-color = "#E7E0F1";
-
-"cac:AdditionalReferenceDocument" -> "cac:Attachment" [dir = none, label = "0..∞"]
-
-"cac:Attachment" -> "cbc:EmbeddedDocumentBinary..." [dir = none]
-"cac:Attachment" -> "cbc:EmbeddedDocument" [dir = none]
-"cac:Attachment" -> "cac:ExternalReference" [dir = none]
-"cac:ExternalReference" -> "cbc:URI", "cbc:DocumentHash", "cbc:HashAlgorithmMethod", "cbc:ExpiryDate", "cbc:ExpiryTime", "cbc:MimeCode", "cbc:FormatCode", "cbc:EncodingCode", "cbc:CharacterSetCode", "cbc:FileName" [dir = none]
-"cac:ExternalReference" -> "cbc:Description" [dir = none, label = "0..∞"]
-
-group first_group {
-	"AttachmentType" [shape = roundedbox, width = 170,style = dashed, color = "#DBD3EB"];
-		  color = "black";
-		  textcolor = "#FF0000";
-          shape = line;
-          style = dashed;
-		  
-		  "cbc:EmbeddedDocumentBinary...", "cbc:EmbeddedDocument", "cac:ExternalReference"
-
-	group second_group {
-		"ExternalReferenceType" [shape = roundedbox, width = 170,style = dashed, color = "#DBD3EB"];
-		  color = "black";
-		  textcolor = "#FF0000";
-          shape = line;
-          style = dashed;
-
-		  "cbc:URI", "cbc:DocumentHash", "cbc:HashAlgorithmMethod", "cbc:ExpiryDate", "cbc:ExpiryTime", "cbc:MimeCode", "cbc:FormatCode", "cbc:EncodingCode", "cbc:CharacterSetCode", "cbc:FileName", "cbc:Description"
-	   }
-
-	}
-
-}
-// Set width to nodes, default value is 128
-"cac:AdditionalReferenceDocument", "cac:Attachment", "cbc:EmbeddedDocumentBinary...", "cbc:EmbeddedDocument", "cac:ExternalReference", "cbc:URI", "cbc:DocumentHash", "cbc:HashAlgorithmMethod", "cbc:ExpiryDate", "cbc:ExpiryTime", "cbc:MimeCode", "cbc:FormatCode", "cbc:EncodingCode", "cbc:CharacterSetCode", "cbc:FileName", "cbc:Description" [shape = roundedbox, width = 240];
-
-}
-
-//Embedded adoc link:
-//image::https://kroki.io/blockdiag/svg/eNrdVN1u0zAUvm6e4ijcgBTStPwMVoG0LqnYxdC0jStUVY59mpg5drBdaJl6z1PwcDwJTrM0Ld3okLgZlhIdf_7OOT7Hn50KRa8YJxlce90unJEMoWuR5pJTIlbWRKMplTQY5rYQcFL8xpnwCjHdD-cnk3OcokZJcZJcnMVu-nmGxoafygwej3g20wi91y9DcFxQU7A5QkWEG-KTag8XaMGUREKBVvO5B7CaTr5yZnN4Ay-iwRrLkWe5dWC_Br1Mq1kJ31CrSW1eex5VQmnH8R8lB0k06vkDz_MpoYdHjHHLlSRive9Y0VmB0vrw9C3UJGsJzWvsI-NVIKkkBiBIiqIKG4Xhz-8__HETdcNhFSSlh0mRImPImvBDLolehGG4FXN8_wD38nNYMreoNwu8zfEWUpPXHZQf1GaT-h0xeYNV9pHIlOY2L07R5oo1S8m85HoRE4vbyCUv1sips48VW89HShfEbiKJpIpxmW1ixznRhLotO6VseXOB70nxtyXGaKjmZSWE_Sdci2rKtbFrgXX8tvOXi7LKb3JSovN0DOlOLVXzABr99g6iwNiFqNaZ6x-yAFqJxsP4WTL0xwOv04EWTwWhV34NWpzb1mE0itzwV_K_GU12wSVu4VtZ62Cr3x6NBndoMLhLY57XqZtjkCrJ2k51_B3yg-pY260HeTGCXcV7riBYusLct2ye37rxVrl7wNAEwHBKZsLCFyJmCNxAr_9q_xMa7DygwT9XWvB_ncaf70H_eeRU7i1_AQ7gdeA=[URI of the ESPD Request,width=510,height=288]
-
-//[Edit this diagram](https://niolesk.top/#https://kroki.io/blockdiag/svg/eNrdVN1u0zAUvm6e4ijcgBTStPwMVoG0LqnYxdC0jStUVY59mpg5drBdaJl6z1PwcDwJTrM0Ld3okLgZlhIdf_7OOT7Hn50KRa8YJxlce90unJEMoWuR5pJTIlbWRKMplTQY5rYQcFL8xpnwCjHdD-cnk3OcokZJcZJcnMVu-nmGxoafygwej3g20wi91y9DcFxQU7A5QkWEG-KTag8XaMGUREKBVvO5B7CaTr5yZnN4Ay-iwRrLkWe5dWC_Br1Mq1kJ31CrSW1eex5VQmnH8R8lB0k06vkDz_MpoYdHjHHLlSRive9Y0VmB0vrw9C3UJGsJzWvsI-NVIKkkBiBIiqIKG4Xhz-8__HETdcNhFSSlh0mRImPImvBDLolehGG4FXN8_wD38nNYMreoNwu8zfEWUpPXHZQf1GaT-h0xeYNV9pHIlOY2L07R5oo1S8m85HoRE4vbyCUv1sips48VW89HShfEbiKJpIpxmW1ixznRhLotO6VseXOB70nxtyXGaKjmZSWE_Sdci2rKtbFrgXX8tvOXi7LKb3JSovN0DOlOLVXzABr99g6iwNiFqNaZ6x-yAFqJxsP4WTL0xwOv04EWTwWhV34NWpzb1mE0itzwV_K_GU12wSVu4VtZ62Cr3x6NBndoMLhLY57XqZtjkCrJ2k51_B3yg-pY260HeTGCXcV7riBYusLct2ye37rxVrl7wNAEwHBKZsLCFyJmCNxAr_9q_xMa7DygwT9XWvB_ncaf70H_eeRU7i1_AQ7gdeA=)
-////
+//[Edit this diagram](https://niolesk.top/#https://kroki.io/blockdiag/svg/eNrdVM1u1DAQPq-fYhQuIIXsblmxpRVIbTcreiiq2nJCVeTYs4mpYwfbW3Zb7Z2n4OF4Epyk2Z_-0CJxKTlE48_fzNgznyeVml1wQTO4Jt0uHNMMoeuQ5UowKmsrMWhLrSxGuSskHBa3OImoENv9fHKYnOAEDSqGSXx6PPLLb1O0LvpaZvByLLKpQei_exuB54KegMsRKiLcEF9VZzhFB7akCgp0RswIQL1MvgvucngPg-3dJZajyHLnwf5WDXKc0Kl0yUQrZ8UVVjuDeodkRk9LuEKjk8a8JoRpqY3nBC_iYdwb94NdQgJG2c4e58IJrahc3mik2bRA5QJ4_QEaknOU5Q32hYsqkNIKQ5A0RVmF7UXRrx8_g_M26ppDHSRlO3GRIufI2_D7QlEzj6JoI-b50wM8yc9j8cyhWb_gfY73kNq8voVB2Jht6o_U5i1W2Xsy00a4vDhCl2vebsWzUpj5iDrcRM5EsUSOvH2g-XI91qagbh2JFdNcqGwdO8ipocwf2Wtow1tI_ESLv73iCC0zoqyE8HiHG1FNhLFuKbBOsKr82bys8tuclpUsPUP5rqV6FkKr7P6wF1o3l9U-9_VDHsJKoqP90Zt4PzjfJZ0OrPBUUnYRNKDDmVs5jMc9_wW1_G--NrsUCjfwjaxNsPr3iEbDBzQYPqQxQjpNcSwyrfiqUp3gDvlZVWxVrWf5MMK7iif-QrAgnQVZtGO5KbvT_hVwtGE7buGSyimCsH4Mbz9hgP6xpVvDnm_Y7bEV_nMlhv9Xtx4p6qAq6uI3XtGJIg==)
 _Figure 196. URI of the ESPD Request_
 
 In the ESPD Response you may also add references to:
@@ -563,43 +469,9 @@ cac:EconomicOperatorParty
 
 The UBL-2.3 cac:EconomicOperatorParty has three common aggregate components, the XSD Schema looks like this:
 
-image::https://kroki.io/blockdiag/svg/eNq1UtFu0zAUfa6_4sq8gGTStIAKq-ChaiohITEYSEioipz4NjFz7ch2unZT3_mKfdy-BKdpVjYK2wt-iJxz7j335pxkyuTnQvICrki_D6e8QOh7zEstc652t9Siq4x2GJV-qeD98l5NKhvE9ZPcaLOUefqxQsu9salZoV1JvIh-VAU8ncmitgiDN6MIcp6fdPVd-Sm3fgPfzqYMCmUyrqDpfdasdYYeXMU1LNFbuSYAu9f0Qgpfwlt4FY9vsRJlUfoADluQFNbUFVyiNWl7vSIkN8rYUEOfJKMkng3omBD616UoPH8HFNf-5OvkQ7L2qJ0MhlD4LmSjoo3G-YP9Df2p5kouNlIXe-I3BQaKZ6iareIouvl5TR-neZ_-bBRS1nJ_TpmTvSELaZ2_daRHj075sqkwtLuSVxgEQrEWKDKzZtB5PxzFzPmNanjBXYmCwcHe6WT6IpnQ-Zj0enDAM8Xzc9qCPhh7aJjN4nDoLrr96aYrqfEOfmdqK7Z7HImKHfefPdZC0tsSsu3-xfbbvQmOCnQMBC54rTysuKoRpIPB8PW_smP_Y8UHYnoZhxC2vwBWt0kW[cac:EconomicOperatorParty XSD,width=436,height=200]
-////
+image::https://kroki.io/blockdiag/svg/eNq1Ut1q2zAYvY6e4kO72UB1nC6QrmG7CHFgMFi7bjAYwcj2F1urIhlJTpOW3O8p9nB7ksl23PQnXXszXRjpnO_P53yJ1OllJngON6TfhzOeI_QdpoUSKZfNLTZoS60sBoVbSvi4fBATixqx_SjVSi9FGn8u0XCnTaxXaFYCr4KfZQ6vZyKvDMLg3SiAlKenXXwXfsaN28D3iymDXOqES6hz39RjXaADW3IFS3RGrAlA84yvROYKeA_Dk_EtVqDIC-fBwXEDZrjglXTxQitnxTXWzLBhSG50VcI1Gh231xtCUi218TH0VTSKwtmAjgmhT45L4egDUFy702-TT9HaobLCS0XhRybqKkornD-bX9PnFZdisREq3xF3KjCQPEFZTxUGwZ9fv-nLaj6kv2iJlLXc4y5zshNkIYx1t4r06MEuXzcl-nRb8LKW1AerDLNErxl0rhyPQmbdRtZ8xm2BGYO9vNPJ9G00ofMx6fVgjyeSp5e0BZ0Xdp8wm4X-0Ma63em6S6HwHn6va1us-Rywih3Wn71UQtLbkm23pO2vO-0FzdCybvlgxWWFIKxfypN_Wcf-x4TPuDQMvQfbv9qbUVE=[cac:EconomicOperatorParty XSD,width=436,height=200]
 //image:Economic_Operator_overview.jpg[EconomicOperator overview,width=436,height=161]
-blockdiag {
-// Page /technical/tech_response.html Image /technical/_images/Economic_Operator_overview.jpg (Figure 197. cac:EconomicOperatorParty XSD, global view)
-// Set span metrix
-   span_width = 50;
-   span_height = 20;
-   
-group zero_group {
-
-color = "#E7E0F1";
-
-"cac:EconomicOperatorParty" -> "ext:UBLExtensions" [dir = none]
-"cac:EconomicOperatorParty" -> "cac:QualifyingParty" [dir = none, label = "0..∞"]
-"cac:EconomicOperatorParty" -> "cac:EconomicOperatorRole", "cac:Party" [dir = none]
-
-group first_group {
-	"EconomicOperatorPartyType" [shape = roundedbox, width = 270,style = dashed, color = "#DBD3EB"];
-		  color = "black";
-		  textcolor = "#FF0000";
-          shape = line;
-          style = dashed;
-		  
-		  "ext:UBLExtensions", "cac:QualifyingParty", "cac:EconomicOperatorRole", "cac:Party"
-	}
-
-}
-// Set width to nodes, default value is 128
-"cac:EconomicOperatorParty", "ext:UBLExtensions", "cac:QualifyingParty", "cac:EconomicOperatorRole", "cac:Party" [shape = roundedbox, width = 240];
-}
-
-//Embedded adoc link:
-//image::https://kroki.io/blockdiag/svg/eNq1UtFu0zAUfa6_4sq8gGTStIAKq-ChaiohITEYSEioipz4NjFz7ch2unZT3_mKfdy-BKdpVjYK2wt-iJxz7j335pxkyuTnQvICrki_D6e8QOh7zEstc652t9Siq4x2GJV-qeD98l5NKhvE9ZPcaLOUefqxQsu9salZoV1JvIh-VAU8ncmitgiDN6MIcp6fdPVd-Sm3fgPfzqYMCmUyrqDpfdasdYYeXMU1LNFbuSYAu9f0Qgpfwlt4FY9vsRJlUfoADluQFNbUFVyiNWl7vSIkN8rYUEOfJKMkng3omBD616UoPH8HFNf-5OvkQ7L2qJ0MhlD4LmSjoo3G-YP9Df2p5kouNlIXe-I3BQaKZ6iareIouvl5TR-neZ_-bBRS1nJ_TpmTvSELaZ2_daRHj075sqkwtLuSVxgEQrEWKDKzZtB5PxzFzPmNanjBXYmCwcHe6WT6IpnQ-Zj0enDAM8Xzc9qCPhh7aJjN4nDoLrr96aYrqfEOfmdqK7Z7HImKHfefPdZC0tsSsu3-xfbbvQmOCnQMBC54rTysuKoRpIPB8PW_smP_Y8UHYnoZhxC2vwBWt0kW[cac:EconomicOperatorParty XSD,width=436,height=200]
-
-//[Edit this diagram](https://niolesk.top/#https://kroki.io/blockdiag/svg/eNq1UtFu0zAUfa6_4sq8gGTStIAKq-ChaiohITEYSEioipz4NjFz7ch2unZT3_mKfdy-BKdpVjYK2wt-iJxz7j335pxkyuTnQvICrki_D6e8QOh7zEstc652t9Siq4x2GJV-qeD98l5NKhvE9ZPcaLOUefqxQsu9salZoV1JvIh-VAU8ncmitgiDN6MIcp6fdPVd-Sm3fgPfzqYMCmUyrqDpfdasdYYeXMU1LNFbuSYAu9f0Qgpfwlt4FY9vsRJlUfoADluQFNbUFVyiNWl7vSIkN8rYUEOfJKMkng3omBD616UoPH8HFNf-5OvkQ7L2qJ0MhlD4LmSjoo3G-YP9Df2p5kouNlIXe-I3BQaKZ6iareIouvl5TR-neZ_-bBRS1nJ_TpmTvSELaZ2_daRHj075sqkwtLuSVxgEQrEWKDKzZtB5PxzFzPmNanjBXYmCwcHe6WT6IpnQ-Zj0enDAM8Xzc9qCPhh7aJjN4nDoLrr96aYrqfEOfmdqK7Z7HImKHfefPdZC0tsSsu3-xfbbvQmOCnQMBC54rTysuKoRpIPB8PW_smP_Y8UHYnoZhxC2vwBWt0kW)
-////
+//[Edit this diagram](https://niolesk.top/#https://kroki.io/blockdiag/svg/eNq1Ut1q2zAYvY6e4kO72UB1nC6QrmG7CHFgMFi7bjAYwcj2F1urIhlJTpOW3O8p9nB7ksl23PQnXXszXRjpnO_P53yJ1OllJngON6TfhzOeI_QdpoUSKZfNLTZoS60sBoVbSvi4fBATixqx_SjVSi9FGn8u0XCnTaxXaFYCr4KfZQ6vZyKvDMLg3SiAlKenXXwXfsaN28D3iymDXOqES6hz39RjXaADW3IFS3RGrAlA84yvROYKeA_Dk_EtVqDIC-fBwXEDZrjglXTxQitnxTXWzLBhSG50VcI1Gh231xtCUi218TH0VTSKwtmAjgmhT45L4egDUFy702-TT9HaobLCS0XhRybqKkornD-bX9PnFZdisREq3xF3KjCQPEFZTxUGwZ9fv-nLaj6kv2iJlLXc4y5zshNkIYx1t4r06MEuXzcl-nRb8LKW1AerDLNErxl0rhyPQmbdRtZ8xm2BGYO9vNPJ9G00ofMx6fVgjyeSp5e0BZ0Xdp8wm4X-0Ma63em6S6HwHn6va1us-Rywih3Wn71UQtLbkm23pO2vO-0FzdCybvlgxWWFIKxfypN_Wcf-x4TPuDQMvQfbv9qbUVE=)
 _Figure 197. cac:EconomicOperatorParty XSD, global view_
 
 [arabic]
@@ -623,345 +495,44 @@ The diagram below shows the XSD element that will hold the data required by the 
 ** *cac:QualifyingParty/cac:Party/cbc:IndustryClassificationCode* to indicate whether the EO is a micro, small, medium or large company (or simply an SME). This code is defined in the Code List link:{url-tree}/codelists/gc/EconomicOperatorSize.gc[economic-operator-size]. See also sections "Expected Elements" and "XML example" for more details.
 * *Turnover*: For statistical purposes the ESPD-EDM asks this datum to reflect the financial capability of the economic operator (see mock-ups above). This datum is to be placed in cac:QualifyingParty/cac:FinancialCapability/ValueAmount.
 
-image::https://kroki.io/blockdiag/svg/eNrtVttuEzEQfc5-xci8gGRyA9TSCh5ykyohUUiRQKiKHO8ka-rYK9spCVXf-Qo-ji9hdreb0LBJI6FKVGIfos1cjsfHZ8Y71lZexEpM4SpqNOBUTBEaAWVilBQ6fxs59Kk1HutJmGk4mW3EjFRm8Y13c6HVZKnMdHQqXFjWv6RTeDxQ07lDaL08rIMU8mgdlQcBapyhCRw-DntPshKGGMCnwsAMg1OLCCD_O_qq4pDAK3jRPF7ZElTTJJCxTcZo6uw8hW_o7Kh4vYoiabV1FMAe9Q_6zUGLURyrM3j6GlhWTl9aY2dKvk3RiWBdXhSDz7HKsow1yEGLMeoMo1mv__z-g50TxI7cDBoX4ehD501_EdB4ReTBLczzOwGqqLqzrH1AN93vrUZgvHBWrFNu9s9iKveZI40LJCVVKgJZT9FJOmO2CylPQuetEXqowjxP3G_H2wGLTZLjEwrnKc4ERWTc1NifpdouETftnblXBr3vauG9mpDIs1r6lypGI1H3NuNOyJ7llxEnq4gzNDE6zEnu2hhLnqtXGMqEemE3SyIDvem8rkjFWOmycnINlBFGqipX19JuMWB8JvxFaeyh1ML9PdWldErcKpGxskEnyvmw6tAaqxTs2TJFKsknIkUqg4KJyXhsFxzKQdA6aHIfljrzx8InGHNYt3uv03vW77Dz46hWg7V9rIW8YIUxkHrXCYNBkx6WD5ebp1xd02Hdst9atQDLf6r6nm9pZr5_P0ZRraDLI0XHa-5qbAP2QdG2hbKdI4RvmxT8AXc8v9fG5ns3KB0HXEe16-i6vIgL0QRLUyFGzyHGiZjrAJdCzxGUh1b7ML9PV5Kjb4kZaXStt3aTw2_3NClrxzXF76uF-DahbSNjk7X_Mv1XZLp7vLWfZxIjBf8CkVydZw==[cac:QualifyingParty element XSD,width=500,height=650]
-////
+image::https://kroki.io/blockdiag/svg/eNrtVl1r2zAUfY5_xUV72UDLR1to17I95AsKg2VLBxujBEW-sbXKkpHkLmnJ-37Fftx-yWS7TtbMSQOj0MH8EJJ7r46ujs_RzVRqfhUKFsFt0GrBiEUILYc8VoIzWXybGLSpVhabsUsknCcbNRORR2zrfcakmC2EiiYjZtyi-TWN4PlQRJlB6Lw6aQJn_HRdVRQBSkxQOQqfxv0XeQtjdGBTpiBBZ8Q8ACh-Tr6J0MXwGo5OzlaxGEUUOx_sHBTBEGcsk24y08pZcYN55ugsCCKjsxRu0OhJ-fU2CLiW2vgC8mxwPGgPO8TXEQIv3wDJ-xxwrXQi-LsUDXPaFN0S-BKKfJHSCilINkWZQ7SbzZ_ff5BLj7BjbQ6Nc3f6sft2MHeorPCswj3MywcB6jh8sK19QDfTH7REILRM1uxTHfbPZmrPWSBNSyTBRcqcj47QcP_yyS6kYhEaqxWTY-GyYuF-J94OWB7SJz4jM9bXKSc8GXc9DpJU6gXiZrybWaHQ2p5k1oqZV3_ey-BahKg4yv5m3bmP5-urivNVxQWqEA0WJPd0iBXP9TuMeexNspslloPeWbLHUjYVsurcp4ZCMcVFXaqn_WnRYXjB7FUV7COXzPw91ZV0Ktw6kZHKnzNhrFsZtEFqBXuxSNG3ZGOW5vb2xZ7JcKrnFKob4uCwTa1byDwfMhtjSGHt9n63fzjoksuzoNGAdXwqGb8iZdB59a4XDIdt_5Digrl7qt2lf1n34vd2LcGKjzrf0y1mpvv7MQgaJV0WfXW45q5BNmD3oK1z_FRo20LZziuEbrsp6D_sePqoxqZ7G9S_DlgGjWWwrCZ0KRqn_a0QoqXV5IVrJjMEYf1EPsnH6Upx_j9G4iX6m0vbFFbz-6DthbVjStHHchDdprNtXGyS9l-lT0WlDwyF41xiwfIXI6ylRg==[cac:QualifyingParty element XSD,width=650,height=700]
 //image:Qualifying_Party.jpg[Qualifying Party,width=404,height=337]
-blockdiag {
-// Page /technical/tech_response.html Image /technical/_images/Qualifying_Party.jpg (Figure 198. cac:QualifyingParty element, XSD)
-// Set span metrix
-   span_width = 50;
-   span_height = 20;
-
-group zero_group {
-
-color = "#E7E0F1";
-
-"." -> "cac:EconomicOperatorParty" [dir = none, label = "0..∞"]
-
-"cac:EconomicOperatorParty" -> "ext:UBLExtensions " [dir = none]
-"cac:EconomicOperatorParty" -> "cac:QualifyingParty " [dir = none, label = "0..∞"]
-"cac:EconomicOperatorParty" -> "cac:EconomicOperatorRole ", "cac:Party " [dir = none]
-
-"cac:QualifyingParty " -> "ext:UBLExtensions", "cbc:ParticipationPercent"
-"cac:QualifyingParty " -> "cbc:PersonalSituation" [dir = none, label = "0..∞"]
-"cac:QualifyingParty " -> "cbc:OperatingYearsQuantity", "cbc:EmployeeQuantity", "cbc:BusinessClassificationEvidencelD", "cbc:BusinessIdentityEvidenceID", "cbc:TendererRoleCode", "cac:BusinessClassificationScheme"
-"cac:QualifyingParty " -> "cac:TechnicalCapability", "cac:FinancialCapability", "cac:CompletedTask", "cac:Declaration" [dir = none, label = "0..∞"]
-"cac:QualifyingParty " -> "cac:Party", "cac:EconomicOperatorRole"
-
-group first_group {
-	"EconomicOperatorPartyType" [shape = roundedbox, width = 170,style = dashed, color = "#DBD3EB"];
-		  color = "black";
-		  textcolor = "#FF0000";
-          shape = line;
-          style = dashed;
-		  
-		  "ext:UBLExtensions ", "cac:QualifyingParty ", "cac:EconomicOperatorRole ", "cac:Party "
-
-	group second_group {
-		"QualifyingPartyType" [shape = roundedbox, width = 170,style = dashed, color = "#DBD3EB"];
-		  color = "black";
-		  textcolor = "#FF0000";
-          shape = line;
-          style = dashed;
-
-		  "ext:UBLExtensions", "cbc:ParticipationPercent", "cbc:PersonalSituation", "cbc:OperatingYearsQuantity", "cbc:EmployeeQuantity", "cbc:BusinessClassificationEvidencelD", "cbc:BusinessIdentityEvidenceID", "cbc:TendererRoleCode", "cac:BusinessClassificationScheme", "cac:TechnicalCapability", "cac:FinancialCapability", "cac:CompletedTask", "cac:Declaration", "cac:Party", "cac:EconomicOperatorRole"
-	   }
-	}
-}
-// Set width to nodes, default value is 128
-"." [shape = diamond, width = 20, height = 20];
-"cac:EconomicOperatorParty", "ext:UBLExtensions ", "cac:QualifyingParty ", "cac:EconomicOperatorRole ", "cac:Party ", "ext:UBLExtensions", "cac:EconomicOperatorRole", "cac:Party", "ext:UBLExtensions", "cbc:ParticipationPercent", "cbc:PersonalSituation", "cbc:OperatingYearsQuantity", "cbc:EmployeeQuantity", "cbc:BusinessClassificationEvidencelD", "cbc:BusinessIdentityEvidenceID", "cbc:TendererRoleCode", "cac:BusinessClassificationScheme", "cac:TechnicalCapability", "cac:FinancialCapability", "cac:CompletedTask", "cac:Declaration", "cac:Party", "cac:EconomicOperatorRole" [shape = roundedbox, width = 240];
-
-}
-
-//Embedded adoc link:
-//image::https://kroki.io/blockdiag/svg/eNrtVttuEzEQfc5-xci8gGRyA9TSCh5ykyohUUiRQKiKHO8ka-rYK9spCVXf-Qo-ji9hdreb0LBJI6FKVGIfos1cjsfHZ8Y71lZexEpM4SpqNOBUTBEaAWVilBQ6fxs59Kk1HutJmGk4mW3EjFRm8Y13c6HVZKnMdHQqXFjWv6RTeDxQ07lDaL08rIMU8mgdlQcBapyhCRw-DntPshKGGMCnwsAMg1OLCCD_O_qq4pDAK3jRPF7ZElTTJJCxTcZo6uw8hW_o7Kh4vYoiabV1FMAe9Q_6zUGLURyrM3j6GlhWTl9aY2dKvk3RiWBdXhSDz7HKsow1yEGLMeoMo1mv__z-g50TxI7cDBoX4ehD501_EdB4ReTBLczzOwGqqLqzrH1AN93vrUZgvHBWrFNu9s9iKveZI40LJCVVKgJZT9FJOmO2CylPQuetEXqowjxP3G_H2wGLTZLjEwrnKc4ERWTc1NifpdouETftnblXBr3vauG9mpDIs1r6lypGI1H3NuNOyJ7llxEnq4gzNDE6zEnu2hhLnqtXGMqEemE3SyIDvem8rkjFWOmycnINlBFGqipX19JuMWB8JvxFaeyh1ML9PdWldErcKpGxskEnyvmw6tAaqxTs2TJFKsknIkUqg4KJyXhsFxzKQdA6aHIfljrzx8InGHNYt3uv03vW77Dz46hWg7V9rIW8YIUxkHrXCYNBkx6WD5ebp1xd02Hdst9atQDLf6r6nm9pZr5_P0ZRraDLI0XHa-5qbAP2QdG2hbKdI4RvmxT8AXc8v9fG5ns3KB0HXEe16-i6vIgL0QRLUyFGzyHGiZjrAJdCzxGUh1b7ML9PV5Kjb4kZaXStt3aTw2_3NClrxzXF76uF-DahbSNjk7X_Mv1XZLp7vLWfZxIjBf8CkVydZw==[cac:QualifyingParty element XSD,width=500,height=650]
-
-//[Edit this diagram](https://niolesk.top/#https://kroki.io/blockdiag/svg/eNrtVttuEzEQfc5-xci8gGRyA9TSCh5ykyohUUiRQKiKHO8ka-rYK9spCVXf-Qo-ji9hdreb0LBJI6FKVGIfos1cjsfHZ8Y71lZexEpM4SpqNOBUTBEaAWVilBQ6fxs59Kk1HutJmGk4mW3EjFRm8Y13c6HVZKnMdHQqXFjWv6RTeDxQ07lDaL08rIMU8mgdlQcBapyhCRw-DntPshKGGMCnwsAMg1OLCCD_O_qq4pDAK3jRPF7ZElTTJJCxTcZo6uw8hW_o7Kh4vYoiabV1FMAe9Q_6zUGLURyrM3j6GlhWTl9aY2dKvk3RiWBdXhSDz7HKsow1yEGLMeoMo1mv__z-g50TxI7cDBoX4ehD501_EdB4ReTBLczzOwGqqLqzrH1AN93vrUZgvHBWrFNu9s9iKveZI40LJCVVKgJZT9FJOmO2CylPQuetEXqowjxP3G_H2wGLTZLjEwrnKc4ERWTc1NifpdouETftnblXBr3vauG9mpDIs1r6lypGI1H3NuNOyJ7llxEnq4gzNDE6zEnu2hhLnqtXGMqEemE3SyIDvem8rkjFWOmycnINlBFGqipX19JuMWB8JvxFaeyh1ML9PdWldErcKpGxskEnyvmw6tAaqxTs2TJFKsknIkUqg4KJyXhsFxzKQdA6aHIfljrzx8InGHNYt3uv03vW77Dz46hWg7V9rIW8YIUxkHrXCYNBkx6WD5ebp1xd02Hdst9atQDLf6r6nm9pZr5_P0ZRraDLI0XHa-5qbAP2QdG2hbKdI4RvmxT8AXc8v9fG5ns3KB0HXEe16-i6vIgL0QRLUyFGzyHGiZjrAJdCzxGUh1b7ML9PV5Kjb4kZaXStt3aTw2_3NClrxzXF76uF-DahbSNjk7X_Mv1XZLp7vLWfZxIjBf8CkVydZw==)
-////
+//[Edit this diagram](https://niolesk.top/#https://kroki.io/blockdiag/svg/eNrtVl1r2zAUfY5_xUV72UDLR1to17I95AsKg2VLBxujBEW-sbXKkpHkLmnJ-37Fftx-yWS7TtbMSQOj0MH8EJJ7r46ujs_RzVRqfhUKFsFt0GrBiEUILYc8VoIzWXybGLSpVhabsUsknCcbNRORR2zrfcakmC2EiiYjZtyi-TWN4PlQRJlB6Lw6aQJn_HRdVRQBSkxQOQqfxv0XeQtjdGBTpiBBZ8Q8ACh-Tr6J0MXwGo5OzlaxGEUUOx_sHBTBEGcsk24y08pZcYN55ugsCCKjsxRu0OhJ-fU2CLiW2vgC8mxwPGgPO8TXEQIv3wDJ-xxwrXQi-LsUDXPaFN0S-BKKfJHSCilINkWZQ7SbzZ_ff5BLj7BjbQ6Nc3f6sft2MHeorPCswj3MywcB6jh8sK19QDfTH7REILRM1uxTHfbPZmrPWSBNSyTBRcqcj47QcP_yyS6kYhEaqxWTY-GyYuF-J94OWB7SJz4jM9bXKSc8GXc9DpJU6gXiZrybWaHQ2p5k1oqZV3_ey-BahKg4yv5m3bmP5-urivNVxQWqEA0WJPd0iBXP9TuMeexNspslloPeWbLHUjYVsurcp4ZCMcVFXaqn_WnRYXjB7FUV7COXzPw91ZV0Ktw6kZHKnzNhrFsZtEFqBXuxSNG3ZGOW5vb2xZ7JcKrnFKob4uCwTa1byDwfMhtjSGHt9n63fzjoksuzoNGAdXwqGb8iZdB59a4XDIdt_5Digrl7qt2lf1n34vd2LcGKjzrf0y1mpvv7MQgaJV0WfXW45q5BNmD3oK1z_FRo20LZziuEbrsp6D_sePqoxqZ7G9S_DlgGjWWwrCZ0KRqn_a0QoqXV5IVrJjMEYf1EPsnH6Upx_j9G4iX6m0vbFFbz-6DthbVjStHHchDdprNtXGyS9l-lT0WlDwyF41xiwfIXI6ylRg==)
 _Figure 198. cac:QualifyingParty element, XSD_
 
 === cac:EconomicOperatorRole
 
 The UBL-2.3 element for the role of the economic operator is quite straightforward and typical in UBL: it provides a pair *code + description* (see Code List link:{url-tree}/codelists/gc/EoRoleType.gc[EoRoleType] for the codes and descriptions; see also the XML example below).
 
-image::https://kroki.io/blockdiag/svg/eNqlktFu0zAUhq_rpzgyNyClaVpAY63YRWkqIU0CDbhCVeXYp4k31yeyXdZu6j1PsYfjSXCadlXRxJDwReT8Pv7_c76kMCRvlBYl3LNeDz6LEqEXUFZWS2F2u7lDX5P1mFZhaeDj8o-auW4U30PqOjLYDZsa0-u6hJdTXa4cQv_8PIWreAS0gFAhoCRLSy2BanQikHvVZH_BAL4WFpYYnF4zgN3r_FarUMF7eJuNHrUKdVmFKA5akZWOVjXcoaN5u71nTJIhF2v4i_wsz6Z9PmKMSyGH-T7_0z6-6Y1D9wI4rsPw2_gyXwe0XseheQJcFnLYlHwgFcu-K92YWrI4e87ucHOCXjpdh-h4YpCAEQWapscsTX_9fOAzth9loZ0Pj7N0-FMhXyPp6OcrUWP0iLVWoSponcAB2uAsS3zYmOZcCV-hSuDIZTKevM7HfDZinQ4c9cIIecNbMUQkxwvTaRYX3zHfr0O60RZP9JPU1mz3-AfIydPoWGfL2Pbwr7QjBookFfoEFC7EygT4IcwKQXvoD9795QMl_9HIM8zfZJHo9jcVbxJZ[Role of the economic operator,width=436,height=200]
-
-////
+image::https://kroki.io/blockdiag/svg/eNqlksFqGzEQhs_WUwzqpYX1ep0akti0B9drKBQamvZUzKKVxrtqZGmR5NZJ8L1PkYfLk0Rae2NcQhKoDov2n9E_o09TKsOvhGQV3JLBAC5YhTDwyGstOVPtrrDoGqMdprVfKfi8-ienkFFxAzR9axT2_XWD6a-mgrdzWa0twvD8PIVvIQRmCb5GQG60WUkOpkHLvLHvYu1L9OAapmGF3soNAWh_iz9S-Bo-wOhs8qjVKKvaB3F40ooCl2ytfLE02jt5gzEyaiOksmbdwA1aU-y2t4Rwo4wNOfRNfppn8yGdEEI54-N839nXfWOxawr9j0Bx48c_pl_yjUftZMBBE6C85OOY8smIkPZTyGiqjcbFS3bdyRk6bmXjg-ORQQKKlahij1ma3v-9owuyv8pSWucf79KjTxX5Ht4g-LmaNZFFyNUCRWk2CXQ4T06zxPlrFeOCuRpFAgcus-nsfT6liwnp9eCgl4rxK7oTfUByODCfZ2HRlvl-ddWV1HikH1XdmbWfV0BOnkZHeluy7YZod0NvAkiBLumGA34ztUaQLgzN2TPvk_xHHy8gH2UB6PYBv3UalA==[Role of the economic operator,width=450,height=180]
 //image:eo-role-type.jpg[Role of the economic operator,width=403,height=126]
-blockdiag {
-// Page /technical/tech_response.html Image /technical/_images/eo-role-type.jpg (Figure 199. Role of the economic operator)
-// Set span metrix
-   span_width = 50;
-   span_height = 20;
-   
-group zero_group {
-
-color = "#E7E0F1";
-
-"cac:EconomicOperatorRole" -> "ext:UBLExtensions", "cbc:RoleCode" [dir = none]
-"cac:EconomicOperatorRole" -> "cbc:RoleDescription" [dir = none, label = "0..∞"]
-
-group first_group {
-	"EconomicOperatorRoleType" [shape = roundedbox, width = 270,style = dashed, color = "#DBD3EB"];
-		  color = "black";
-		  textcolor = "#FF0000";
-          shape = line;
-          style = dashed;
-		  
-		  "ext:UBLExtensions", "cbc:RoleCode", "cbc:RoleDescription"
-	}
-
-}
-// Set width to nodes, default value is 128
-"cac:EconomicOperatorRole", "ext:UBLExtensions", "cbc:RoleCode", "cbc:RoleDescription" [shape = roundedbox, width = 240];
-}
-
-//Embedded adoc link:
-//image::https://kroki.io/blockdiag/svg/eNqlktFu0zAUhq_rpzgyNyClaVpAY63YRWkqIU0CDbhCVeXYp4k31yeyXdZu6j1PsYfjSXCadlXRxJDwReT8Pv7_c76kMCRvlBYl3LNeDz6LEqEXUFZWS2F2u7lDX5P1mFZhaeDj8o-auW4U30PqOjLYDZsa0-u6hJdTXa4cQv_8PIWreAS0gFAhoCRLSy2BanQikHvVZH_BAL4WFpYYnF4zgN3r_FarUMF7eJuNHrUKdVmFKA5akZWOVjXcoaN5u71nTJIhF2v4i_wsz6Z9PmKMSyGH-T7_0z6-6Y1D9wI4rsPw2_gyXwe0XseheQJcFnLYlHwgFcu-K92YWrI4e87ucHOCXjpdh-h4YpCAEQWapscsTX_9fOAzth9loZ0Pj7N0-FMhXyPp6OcrUWP0iLVWoSponcAB2uAsS3zYmOZcCV-hSuDIZTKevM7HfDZinQ4c9cIIecNbMUQkxwvTaRYX3zHfr0O60RZP9JPU1mz3-AfIydPoWGfL2Pbwr7QjBookFfoEFC7EygT4IcwKQXvoD9795QMl_9HIM8zfZJHo9jcVbxJZ[Role of the economic operator,width=436,height=200]
-
-//[Edit this diagram](https://niolesk.top/#https://kroki.io/blockdiag/svg/eNqlktFu0zAUhq_rpzgyNyClaVpAY63YRWkqIU0CDbhCVeXYp4k31yeyXdZu6j1PsYfjSXCadlXRxJDwReT8Pv7_c76kMCRvlBYl3LNeDz6LEqEXUFZWS2F2u7lDX5P1mFZhaeDj8o-auW4U30PqOjLYDZsa0-u6hJdTXa4cQv_8PIWreAS0gFAhoCRLSy2BanQikHvVZH_BAL4WFpYYnF4zgN3r_FarUMF7eJuNHrUKdVmFKA5akZWOVjXcoaN5u71nTJIhF2v4i_wsz6Z9PmKMSyGH-T7_0z6-6Y1D9wI4rsPw2_gyXwe0XseheQJcFnLYlHwgFcu-K92YWrI4e87ucHOCXjpdh-h4YpCAEQWapscsTX_9fOAzth9loZ0Pj7N0-FMhXyPp6OcrUWP0iLVWoSponcAB2uAsS3zYmOZcCV-hSuDIZTKevM7HfDZinQ4c9cIIecNbMUQkxwvTaRYX3zHfr0O60RZP9JPU1mz3-AfIydPoWGfL2Pbwr7QjBookFfoEFC7EygT4IcwKQXvoD9795QMl_9HIM8zfZJHo9jcVbxJZ)
-////
+//[Edit this diagram](https://niolesk.top/#https://kroki.io/blockdiag/svg/eNqlksFqGzEQhs_WUwzqpYX1ep0akti0B9drKBQamvZUzKKVxrtqZGmR5NZJ8L1PkYfLk0Rae2NcQhKoDov2n9E_o09TKsOvhGQV3JLBAC5YhTDwyGstOVPtrrDoGqMdprVfKfi8-ienkFFxAzR9axT2_XWD6a-mgrdzWa0twvD8PIVvIQRmCb5GQG60WUkOpkHLvLHvYu1L9OAapmGF3soNAWh_iz9S-Bo-wOhs8qjVKKvaB3F40ooCl2ytfLE02jt5gzEyaiOksmbdwA1aU-y2t4Rwo4wNOfRNfppn8yGdEEI54-N839nXfWOxawr9j0Bx48c_pl_yjUftZMBBE6C85OOY8smIkPZTyGiqjcbFS3bdyRk6bmXjg-ORQQKKlahij1ma3v-9owuyv8pSWucf79KjTxX5Ht4g-LmaNZFFyNUCRWk2CXQ4T06zxPlrFeOCuRpFAgcus-nsfT6liwnp9eCgl4rxK7oTfUByODCfZ2HRlvl-ddWV1HikH1XdmbWfV0BOnkZHeluy7YZod0NvAkiBLumGA34ztUaQLgzN2TPvk_xHHy8gH2UB6PYBv3UalA==)
 _Figure 199. Role of the economic operator_
 
 === cac:Party
 
 The XSD diagram below shows (in blue) the elements for which data are expected in the ESPD Response for the cac:Party element of the economic operator.
 
-image::https://kroki.io/blockdiag/svg/eNrtVlFv0zAQfm5-xSkICaTQdQUE6gSCrZ1UVGBiRTwAqhz7mhgcO4ov0IL2zq_gx_FLsNMma0rFNiEQSOQhir-c78733XdJrAx_LyRL4HOwtwcnLEHYI-Splpyp6mlWoM2NtthNKVMwzrZsZtIjdu-EFbSczZAbbTLJr_d7uUe67_IEbhzLpCwQ-r1eF6YpQmUMZg7kFvUWqDbc9ImcIoHNmYYMqZCLAKBazj5KQSk8gLu9gwZLUSYpObC_AoOkMGUOn7Aws9Xj5yDgRpnC2YTXRvdGveP98CAIQs74oMokhFsPIeQxH7zC2ErCly_GYbRCJiYxL3COBWqO42ENj7TIjdR0joy1KC0VyyPFrJVzVxySRh8ZgSG8FtJH10bj2x_j1suxQE3Nzspv_eoZy9puIlAsRuWP1Ot2v335Gu50DBOmk9IR1Hgzlph6LISj1TZgurSezIlZh75kwlO2OOUpZtjKdYIJUyN3Em9_9ZQHR0YT47SVRLDNT2W_sGKgTZExJT-hOHXNohOfzCN4TG4Rl4T2R0ftqno_uKDBy8PJaEGorauAhZpWbwM7XTR57nTQtMVw01P9_MTEU0mqWQ_RN3_m-K-RKSrMUxduE5izRdOACjkVxonwKZNqF2Ot_KoEDDVMPXfKK45MlpVa7iB9F1fBWllzWVhqpNXpADTqihXj7522PEiuJOeyOz7uuSusFLq-bMpydC-V1NjCaak8LphNUaycVbffqNDoCjKMfkVZ0ZXkE7UV4SjodDqryls_NsUGDZ1OyDnZW-42qI-AxXSZ4xt9A-u-hJhZvOm4rqvv9muBIjaLCOrx2r_Ti9osROccXxseDm-PDsO3B1XQnez_hP_Vyzb3a6yOaIg872v4chr3xmcb5aFUFlvVaRj0NbmgAvv3_qYKXDSdtg8_N2VBafv06x7698_-hwdrdKnZuWKgE1R3R8X6H2ZVUjJupgq0EQgXqFQEH5gqEaSF_f79zW9g9H_GRRe3-09N_qq2uHDMOhld9h-mVtMSlTIf3caz70abqw0=[The Party of the economic party,width=500,height=750]
-////
+image::https://kroki.io/blockdiag/svg/eNrlVlFP2zAQfm5-hZVp0pBCaTskUNGmAW2lTt2GoGgPG6qc-JJ4OHYUX0YL4n2_Yj9uv2R22oSmdCpo2jQ0HlDus32-u---q32hgkvGaURunJ0dckIjIDsIQSx5QEXxNclAp0pqaMaYCDJMVvZMuEX0zgnNcDaZQKCkSnjwvNNKLdL8kkbkxYBHeQak02o1yTgGUmwmKiRojPIIKQ5s2UDOAIlOqSQJYManDiGFObniDGPyiuzuH1RYDDyK0YDtTgEyCGkucBIqiZpfg13ZLVacKFN5Sq4hU5P5543jBEqozOxxn_X3-q1B2z1wHDegQbeI0SXbr4kb-EH3I_iaI5yfDl1vjoxUpE4hhAxkAMNeCfclSxWXeIcMJcs1ZrNjQbXmoSkbciWPFQOXfGLc3i6VhIv795bmkIHE6mTht1x6T5O6G48I6oOwKbWazR_fvrtrHZMRlVFuqKu8KY1UHDJmCNcVGM-0pXmkFlc_MOAxnZ4FMSRQi3UEERV9k4nd__iQu8eGUhrgShDOKj_F_qlmXamyhArTA-zMtJGMbDBvyCEaw88R9H1H9apaPzDF7vnRqD9FkNpUQJOSVruHrHVRxbnWQdUWvWVP5fdb5Y85isrugZVFYvgvkTEISGNz3TIQ0mnVgAICzJSR5zvKxTrGavEVASismPpgNJkdqyTJJV9D-jquFsIKeaaxUlajUUnLFzS4NMJqNNBU405xg0HL_BULOqaplargEgobZ8LajOoYmEWMfhuNPyhF7xF6835HQt6jdOLVW98xRZhXWNu5yZbKbYoToN42_7pl_JCNZyl8li-g7D7iUw1bhtGy4Oa4ZMB8NfVIOV47uy2vToBH7ljrHfVe9o_cC0uKYWUNywb9JdFmbZVrC5W3KURL9xx9mIjN3tu7smDMs3pVKtpsLTZk3t77RzLfNHbqSYcqzzCuZb1omCed81-elN6DhqEN9rYov2Vg8ViZ1xKVGZEMtFc-QshXKnIgXJvHyf7yT5pH_vtJ5m1ucu-p9MTGcWrk89AXSamjGQihrpa8tK2X25-uLLKc[The Party of the economic party,width=500,height=750]
 //image:Party__economic party.jpg[The Party of the economic party,width=295,height=439]
-blockdiag {
-// Page /technical/tech_response.html Image /technical/_images/Party__economic%20party.jpg (Figure 200. The Party of the economic party)
-// Set span metrix
-   span_width = 50;
-   span_height = 20;
-   
-group zero_group {
-
-color = "#E7E0F1";
-
-"cac:Party" -> "cbc:WebsiteURI", "cbc:LogoReferenceID", "cbc:EndpointID", "cbc:IndustryClassificationCode" [dir = none]
-"cac:Party" -> "cac:PartyIdentification", "cac:PartyName" [dir = none, label = "0..∞"]
-"cac:Party" -> "cac Language", "cac:PostalAddress", "cac:PhysicalLocation" [dir = none]
-"cac:Party" -> "cac:PartyTaxScheme", "cac:PartyLegalEntity" [dir = none, label = "0..∞"]
-"cac:Party" -> "cac:Contact" [dir = none]
-
-"cbc:WebsiteURI" -> "xsd:normalizedString", "@ Attributes" [dir = none]
-
-"cac:PartyName" -> "ext:UBLExtensions ", "cbc:Name " [dir = none]
-
-"cac:Contact" -> "ext:UBLExtensions", "cbc:ID", "cbc:Name", "cbc:JobTitle", "cbc:Department", "cbc:Telephone", "cbc:Telefax", "cbc:ElectronicMail" [dir = none]
-"cac:Contact" -> "cbc:Note", "cac:OtherCommunication" [dir = none, label = "0..∞"]
-
-
-group first_group {
-		  color = "black";
-		  textcolor = "#FF0000";
-          shape = line;
-          style = dashed;
-		  
-		  "cbc:WebsiteURI", "cbc:LogoReferenceID", "cbc:EndpointID", "cbc:IndustryClassificationCode", "cac:PartyIdentification", "cac:PartyName", "cac Language", "cac:PostalAddress", "cac:PhysicalLocation", "cac:PartyTaxScheme", "cac:PartyLegalEntity", "cac:Contact"
-
-
-			group second_group {
-				"ccts-cct:IdentifierType\n(extension base)" [shape = roundedbox, width = 240,style = dashed, color = "#DBD3EB"];
-				  color = "black";
-				  textcolor = "#FF0000";
-				  shape = line;
-				  style = dotted;
-
-				  "xsd:normalizedString", "@ Attributes"
-			}
-
-			group third_group {
-				"PartyNameType" [shape = roundedbox, width = 170,style = dashed, color = "#DBD3EB"];
-				  color = "black";
-				  textcolor = "#FF0000";
-				  shape = line;
-				  style = dotted;
-
-				  "ext:UBLExtensions ", "cbc:Name "
-			}
-
-			group fourth_group {
-				"ContactType" [shape = roundedbox, width = 170,style = dashed, color = "#DBD3EB"];
-				  color = "black";
-				  textcolor = "#FF0000";
-				  shape = line;
-				  style = dotted;
-
-				  "ext:UBLExtensions", "cbc:ID", "cbc:Name", "cbc:JobTitle", "cbc:Department", "cbc:Telephone", "cbc:Telefax", "cbc:ElectronicMail", "cbc:Note", "cac:OtherCommunication"
-			}
-	
-		}
-	}
-
-// Set width to nodes, default value is 128
-"cac:Party", "cbc:WebsiteURI", "cbc:LogoReferenceID", "cbc:EndpointID", "cbc:IndustryClassificationCode", "cac:PartyIdentification", "cac:PartyName", "cac Language", "cac:PostalAddress", "cac:PhysicalLocation", "cac:PartyTaxScheme", "cac:PartyLegalEntity", "cac:Contact", "ext:UBLExtensions ", "cbc:Name ", "ext:UBLExtensions ", "cbc:ID", "cbc:Name", "cbc:JobTitle", "cbc:Department", "cbc:Telephone", "cbc:Telefax", "cbc:ElectronicMail", "cbc:Note", "cac:OtherCommunication" [shape = roundedbox, width = 240];
-"xsd:normalizedString", "@ Attributes" [color = yellow];
-}
-
-//Embedded adoc link:
-//image::https://kroki.io/blockdiag/svg/eNrtVlFv0zAQfm5-xSkICaTQdQUE6gSCrZ1UVGBiRTwAqhz7mhgcO4ov0IL2zq_gx_FLsNMma0rFNiEQSOQhir-c78733XdJrAx_LyRL4HOwtwcnLEHYI-Splpyp6mlWoM2NtthNKVMwzrZsZtIjdu-EFbSczZAbbTLJr_d7uUe67_IEbhzLpCwQ-r1eF6YpQmUMZg7kFvUWqDbc9ImcIoHNmYYMqZCLAKBazj5KQSk8gLu9gwZLUSYpObC_AoOkMGUOn7Aws9Xj5yDgRpnC2YTXRvdGveP98CAIQs74oMokhFsPIeQxH7zC2ErCly_GYbRCJiYxL3COBWqO42ENj7TIjdR0joy1KC0VyyPFrJVzVxySRh8ZgSG8FtJH10bj2x_j1suxQE3Nzspv_eoZy9puIlAsRuWP1Ot2v335Gu50DBOmk9IR1Hgzlph6LISj1TZgurSezIlZh75kwlO2OOUpZtjKdYIJUyN3Em9_9ZQHR0YT47SVRLDNT2W_sGKgTZExJT-hOHXNohOfzCN4TG4Rl4T2R0ftqno_uKDBy8PJaEGorauAhZpWbwM7XTR57nTQtMVw01P9_MTEU0mqWQ_RN3_m-K-RKSrMUxduE5izRdOACjkVxonwKZNqF2Ot_KoEDDVMPXfKK45MlpVa7iB9F1fBWllzWVhqpNXpADTqihXj7522PEiuJOeyOz7uuSusFLq-bMpydC-V1NjCaak8LphNUaycVbffqNDoCjKMfkVZ0ZXkE7UV4SjodDqryls_NsUGDZ1OyDnZW-42qI-AxXSZ4xt9A-u-hJhZvOm4rqvv9muBIjaLCOrx2r_Ti9osROccXxseDm-PDsO3B1XQnez_hP_Vyzb3a6yOaIg872v4chr3xmcb5aFUFlvVaRj0NbmgAvv3_qYKXDSdtg8_N2VBafv06x7698_-hwdrdKnZuWKgE1R3R8X6H2ZVUjJupgq0EQgXqFQEH5gqEaSF_f79zW9g9H_GRRe3-09N_qq2uHDMOhld9h-mVtMSlTIf3caz70abqw0=[The Party of the economic party,width=436,height=200]
-
-//[Edit this diagram](https://niolesk.top/#https://kroki.io/blockdiag/svg/eNrtVlFv0zAQfm5-xSkICaTQdQUE6gSCrZ1UVGBiRTwAqhz7mhgcO4ov0IL2zq_gx_FLsNMma0rFNiEQSOQhir-c78733XdJrAx_LyRL4HOwtwcnLEHYI-Splpyp6mlWoM2NtthNKVMwzrZsZtIjdu-EFbSczZAbbTLJr_d7uUe67_IEbhzLpCwQ-r1eF6YpQmUMZg7kFvUWqDbc9ImcIoHNmYYMqZCLAKBazj5KQSk8gLu9gwZLUSYpObC_AoOkMGUOn7Aws9Xj5yDgRpnC2YTXRvdGveP98CAIQs74oMokhFsPIeQxH7zC2ErCly_GYbRCJiYxL3COBWqO42ENj7TIjdR0joy1KC0VyyPFrJVzVxySRh8ZgSG8FtJH10bj2x_j1suxQE3Nzspv_eoZy9puIlAsRuWP1Ot2v335Gu50DBOmk9IR1Hgzlph6LISj1TZgurSezIlZh75kwlO2OOUpZtjKdYIJUyN3Em9_9ZQHR0YT47SVRLDNT2W_sGKgTZExJT-hOHXNohOfzCN4TG4Rl4T2R0ftqno_uKDBy8PJaEGorauAhZpWbwM7XTR57nTQtMVw01P9_MTEU0mqWQ_RN3_m-K-RKSrMUxduE5izRdOACjkVxonwKZNqF2Ot_KoEDDVMPXfKK45MlpVa7iB9F1fBWllzWVhqpNXpADTqihXj7522PEiuJOeyOz7uuSusFLq-bMpydC-V1NjCaak8LphNUaycVbffqNDoCjKMfkVZ0ZXkE7UV4SjodDqryls_NsUGDZ1OyDnZW-42qI-AxXSZ4xt9A-u-hJhZvOm4rqvv9muBIjaLCOrx2r_Ti9osROccXxseDm-PDsO3B1XQnez_hP_Vyzb3a6yOaIg872v4chr3xmcb5aFUFlvVaRj0NbmgAvv3_qYKXDSdtg8_N2VBafv06x7698_-hwdrdKnZuWKgE1R3R8X6H2ZVUjJupgq0EQgXqFQEH5gqEaSF_f79zW9g9H_GRRe3-09N_qq2uHDMOhld9h-mVtMSlTIf3caz70abqw0=)
-////
+//[Edit this diagram](https://niolesk.top/#https://kroki.io/blockdiag/svg/eNrlVlFP2zAQfm5-hZVp0pBCaTskUNGmAW2lTt2GoGgPG6qc-JJ4OHYUX0YL4n2_Yj9uv2R22oSmdCpo2jQ0HlDus32-u---q32hgkvGaURunJ0dckIjIDsIQSx5QEXxNclAp0pqaMaYCDJMVvZMuEX0zgnNcDaZQKCkSnjwvNNKLdL8kkbkxYBHeQak02o1yTgGUmwmKiRojPIIKQ5s2UDOAIlOqSQJYManDiGFObniDGPyiuzuH1RYDDyK0YDtTgEyCGkucBIqiZpfg13ZLVacKFN5Sq4hU5P5543jBEqozOxxn_X3-q1B2z1wHDegQbeI0SXbr4kb-EH3I_iaI5yfDl1vjoxUpE4hhAxkAMNeCfclSxWXeIcMJcs1ZrNjQbXmoSkbciWPFQOXfGLc3i6VhIv795bmkIHE6mTht1x6T5O6G48I6oOwKbWazR_fvrtrHZMRlVFuqKu8KY1UHDJmCNcVGM-0pXmkFlc_MOAxnZ4FMSRQi3UEERV9k4nd__iQu8eGUhrgShDOKj_F_qlmXamyhArTA-zMtJGMbDBvyCEaw88R9H1H9apaPzDF7vnRqD9FkNpUQJOSVruHrHVRxbnWQdUWvWVP5fdb5Y85isrugZVFYvgvkTEISGNz3TIQ0mnVgAICzJSR5zvKxTrGavEVASismPpgNJkdqyTJJV9D-jquFsIKeaaxUlajUUnLFzS4NMJqNNBU405xg0HL_BULOqaplargEgobZ8LajOoYmEWMfhuNPyhF7xF6835HQt6jdOLVW98xRZhXWNu5yZbKbYoToN42_7pl_JCNZyl8li-g7D7iUw1bhtGy4Oa4ZMB8NfVIOV47uy2vToBH7ljrHfVe9o_cC0uKYWUNywb9JdFmbZVrC5W3KURL9xx9mIjN3tu7smDMs3pVKtpsLTZk3t77RzLfNHbqSYcqzzCuZb1omCed81-elN6DhqEN9rYov2Vg8ViZ1xKVGZEMtFc-QshXKnIgXJvHyf7yT5pH_vtJ5m1ucu-p9MTGcWrk89AXSamjGQihrpa8tK2X25-uLLKc)
 _Figure 200. The Party of the economic party_
 
 The figures below show the `cac:QualifyingParty` sub-components `cac:BusinessClassificationScheme` and `FinancialCapability`, and `cac:CompletedTask` in a bit more of detail. At present, the ESPD-EDM only uses one field, cbc:Description for the references and classifications and `cbc:Amount`for the Turnover.
 
-image::https://kroki.io/blockdiag/svg/eNrtVd1u0zAUvm6e4ii7GEhemnagoU1DomsrTarQ2Dpu0FS5zmli5tqR7YyWqfc8BQ_Hk2A3TX9Y2cbPuCIXkfOdn3w-53z2UCh2nXCawm1Qr8MZTRHqFlkmOaNivhpoNLmSBqPMjgWcjn_wGXCPmPplq7fXjPYHJ4Iaw0fOZrmSgwuW4Rijj3kKz7o8LTRCM25E0M8QNGcZGKsLZj2uRkBhkQZ2N_NAmWcXRkqD9bGYO2IobWl2sZZOlFRjjua538sFWjA5lTBGq_kkAJh_Dj7xxGZwDC_joyWWIU8z68CmA4NUqyKHz6jVoFzeBgFTwv34GMKdzkEn7jZC5xdGIey9hpBRdviuoIKPplymZ1TbaQgfEu79pZJIQNAhCh8dR9G3L1_DKxe8NapK1yoMl2jMZhHKGmzkrjLdH-DT4sQeuuJ2JhalcTYTEvevITs8bVery8vVukeNPccb7l3b1OI2vM_vsHkkGZ_prbL4YJ1-JR_9EzZtNEzz3Jv-Jqk3KUo2XZW1_J5TXSDvUftarnXh_LRaltnWgB6VaeHk5rx_b6fOa9N64nqbKv3TiW0sJ7bUwohrY5e6qNUAltIYCsqunTA8aN24rTTT7cbuCeeCWzwmozk6o3CMN3A7FR5PqMkwKZPNXw_vMAhqJS-DTMlkjWS4zb8_zf28VEScs0wwGaoJgeqMaBzEZJMQWW13p91q73da4dXRPyhDWYKn0jBZUyRZUxO5qw3y1HNN7p3SwJUBZkFtFsyqQ75sllVuchM0BBIc0UJYuKGiQOAGGs1X87N62Wp34Y3dgKz63IwJrN0BrqNbj2fyiCEk_7s0fUBVzRe-wrPvFKu46g==[The rich structure of a UBL-2.3 Classification Scheme for the representation of taxonomies,width=600,height=650]
-////
+image::https://kroki.io/blockdiag/svg/eNrtVc1O20AQPsdPMTIHWmlJnEBVBKJSQxIJCVUUSC8Vsjbrsb3F2bV215CAcu9T9OH6JN2NYycBCvSHnupDtJ6fL9_OzDceZZJdRpwmcOu1WnBCE4SWQZYKzmg2P4UKdS6FxmZqxhkcje_EhNxZdGvYPd7qNLfDw4xqzWPrM1yK8IylOMbmlzyBVwOeFAqhE7SbcJ4iKM5S0EYVzDi7jIHCAgY213GgxNmEWCowLhdzSwyFKd0219CJFHLMUb92dzlDAzqnAsZoFJ94APPX8JpHJoUD2Nndr20p8iQ11tjuzI0RxrTITBhLYTS_QefZ2fe8RMkihxtUMiyPt57HZGYpHYC_0X_bDwZt38b5Pmy9A59RtvexoBmPp1wkJ1SZqQ-fI-7ChRRIIKMjzFxy0Gx-__rNv7C5D2ZVcN1Cc4Far1enLM4adoX0eIKDxYnZs1XvTwwKbX3aJ_a_RmzvqFedhsPl-Zhqc4pX3IX2qMGH7Of8HptnknFIH6TBJ-v0K3j0T9j0UDPFc-f6m6TeJyjYdFnW8n1OdWH5hMrVcqULp0fVsURbMRxTkRRWhzb6925qo9a9h7a3iVQ_ndh2PbGlFGKutKll0WgA1MoYZZRdWl04o7HjtpTMYBDYx5-LbvHolOZOcJllvGY308zZI6pTjEqw-c_TN_S8RslLI5MiWiHpPxR_Ps3dvFREbLCIMBrJCYFqeXTaAVknRJbX3eh1e9v9rn-x_w_KUJbgpTRMVhRJVtRE7muDvPRck0en1LNlgJnXmHmzavuXzTLSTm6EmlRbHa5oViBwbbf9rlvVdafth3Bs52OlzQGB-tvQCWxDn7OEHx2cNzXK3R1P_rdx-lT1dlz1Zt4PY2PL8Q==[The rich structure of a UBL-2.3 Classification Scheme for the representation of taxonomies,width=650,height=600]
 //image:UBL-2.3_Classification_Scheme.jpg[UBL-2.3 'Classification Scheme',width=485,height=349]
-blockdiag {
-// Page /technical/tech_response.html Image /technical/_images/UBL-2.3_Classification_Scheme.jpg (Figure 201. The rich structure of a UBL-2.3 'Classification Scheme' for the representation of taxonomies)
-// Set span metrix
-   span_width = 50;
-   span_height = 20;
-
-group zero_group {
-
-color = "#E7E0F1";
-
-"." -> "cac:QualifyingParty" [dir = none, label = "0..∞"]
-
-"cac:QualifyingParty" -> "cac:BusinessClassificationScheme" [dir = none]
-
-"cac:BusinessClassificationScheme" -> "ext:UBLExtensions", "cbc:ID", "cbc:UUID", "cbc:LastRevisionDate", "cbc:LastRevisionTime" [dir = none]
-"cac:BusinessClassificationScheme" -> "cbc:Note" [dir = none, label = "0..∞"]
-"cac:BusinessClassificationScheme" -> "cbc:Name" [dir = none]
-"cac:BusinessClassificationScheme" -> "cbc:Description" [dir = none, label = "0..∞"]
-"cac:BusinessClassificationScheme" -> "cbc:AgencyID", "cbc:AgencyName", "cbc:VersionID", "cbc:URI", "cbc:SchemeURI", "cbc:LanguageID" [dir = none]
-"cac:BusinessClassificationScheme" -> "cac:ClassificationCategory" [dir = none, label = "1..∞"]
-
-group first_group {
-		  color = "black";
-		  textcolor = "#FF0000";
-          shape = line;
-          style = dashed;
-		  
-		  "cac:BusinessClassificationScheme"
-
-	group second_group {
-		"ClassificationSchemeType" [shape = roundedbox, width = 170,style = dashed, color = "#DBD3EB"];
-		  color = "black";
-		  textcolor = "#FF0000";
-          shape = line;
-          style = dashed;
-
-		  "ext:UBLExtensions", "cbc:ID", "cbc:UUID", "cbc:LastRevisionDate", "cbc:LastRevisionTime", "cbc:Note", "cbc:Name", "cbc:Description", "cbc:AgencyID", "cbc:AgencyName", "cbc:VersionID", "cbc:URI", "cbc:SchemeURI", "cbc:LanguageID", "cac:ClassificationCategory"
-	   }
-	}
-}
-// Set width to nodes, default value is 128
-"." [shape = diamond, width = 20, height = 20];
-"cac:QualifyingParty", "cac:BusinessClassificationScheme", "ext:UBLExtensions", "cbc:ID", "cbc:UUID", "cbc:LastRevisionDate", "cbc:LastRevisionTime", "cbc:Note", "cbc:Name", "cbc:Description", "cbc:AgencyID", "cbc:AgencyName", "cbc:VersionID", "cbc:URI", "cbc:SchemeURI", "cbc:LanguageID", "cac:ClassificationCategory" [shape = roundedbox, width = 240];
-}
-
-
-//Embedded adoc link:
-//image::https://kroki.io/blockdiag/svg/eNrtVd1u0zAUvm6e4ii7GEhemnagoU1DomsrTarQ2Dpu0FS5zmli5tqR7YyWqfc8BQ_Hk2A3TX9Y2cbPuCIXkfOdn3w-53z2UCh2nXCawm1Qr8MZTRHqFlkmOaNivhpoNLmSBqPMjgWcjn_wGXCPmPplq7fXjPYHJ4Iaw0fOZrmSgwuW4Rijj3kKz7o8LTRCM25E0M8QNGcZGKsLZj2uRkBhkQZ2N_NAmWcXRkqD9bGYO2IobWl2sZZOlFRjjua538sFWjA5lTBGq_kkAJh_Dj7xxGZwDC_joyWWIU8z68CmA4NUqyKHz6jVoFzeBgFTwv34GMKdzkEn7jZC5xdGIey9hpBRdviuoIKPplymZ1TbaQgfEu79pZJIQNAhCh8dR9G3L1_DKxe8NapK1yoMl2jMZhHKGmzkrjLdH-DT4sQeuuJ2JhalcTYTEvevITs8bVery8vVukeNPccb7l3b1OI2vM_vsHkkGZ_prbL4YJ1-JR_9EzZtNEzz3Jv-Jqk3KUo2XZW1_J5TXSDvUftarnXh_LRaltnWgB6VaeHk5rx_b6fOa9N64nqbKv3TiW0sJ7bUwohrY5e6qNUAltIYCsqunTA8aN24rTTT7cbuCeeCWzwmozk6o3CMN3A7FR5PqMkwKZPNXw_vMAhqJS-DTMlkjWS4zb8_zf28VEScs0wwGaoJgeqMaBzEZJMQWW13p91q73da4dXRPyhDWYKn0jBZUyRZUxO5qw3y1HNN7p3SwJUBZkFtFsyqQ75sllVuchM0BBIc0UJYuKGiQOAGGs1X87N62Wp34Y3dgKz63IwJrN0BrqNbj2fyiCEk_7s0fUBVzRe-wrPvFKu46g==[The rich structure of a UBL-2.3 Classification Scheme for the representation of taxonomies,width=600,height=650]
-
-//[Edit this diagram](https://niolesk.top/#https://kroki.io/blockdiag/svg/eNrtVd1u0zAUvm6e4ii7GEhemnagoU1DomsrTarQ2Dpu0FS5zmli5tqR7YyWqfc8BQ_Hk2A3TX9Y2cbPuCIXkfOdn3w-53z2UCh2nXCawm1Qr8MZTRHqFlkmOaNivhpoNLmSBqPMjgWcjn_wGXCPmPplq7fXjPYHJ4Iaw0fOZrmSgwuW4Rijj3kKz7o8LTRCM25E0M8QNGcZGKsLZj2uRkBhkQZ2N_NAmWcXRkqD9bGYO2IobWl2sZZOlFRjjua538sFWjA5lTBGq_kkAJh_Dj7xxGZwDC_joyWWIU8z68CmA4NUqyKHz6jVoFzeBgFTwv34GMKdzkEn7jZC5xdGIey9hpBRdviuoIKPplymZ1TbaQgfEu79pZJIQNAhCh8dR9G3L1_DKxe8NapK1yoMl2jMZhHKGmzkrjLdH-DT4sQeuuJ2JhalcTYTEvevITs8bVery8vVukeNPccb7l3b1OI2vM_vsHkkGZ_prbL4YJ1-JR_9EzZtNEzz3Jv-Jqk3KUo2XZW1_J5TXSDvUftarnXh_LRaltnWgB6VaeHk5rx_b6fOa9N64nqbKv3TiW0sJ7bUwohrY5e6qNUAltIYCsqunTA8aN24rTTT7cbuCeeCWzwmozk6o3CMN3A7FR5PqMkwKZPNXw_vMAhqJS-DTMlkjWS4zb8_zf28VEScs0wwGaoJgeqMaBzEZJMQWW13p91q73da4dXRPyhDWYKn0jBZUyRZUxO5qw3y1HNN7p3SwJUBZkFtFsyqQ75sllVuchM0BBIc0UJYuKGiQOAGGs1X87N62Wp34Y3dgKz63IwJrN0BrqNbj2fyiCEk_7s0fUBVzRe-wrPvFKu46g==)
-////
+//[Edit this diagram](https://niolesk.top/#https://kroki.io/blockdiag/svg/eNrtVc1O20AQPsdPMTIHWmlJnEBVBKJSQxIJCVUUSC8Vsjbrsb3F2bV215CAcu9T9OH6JN2NYycBCvSHnupDtJ6fL9_OzDceZZJdRpwmcOu1WnBCE4SWQZYKzmg2P4UKdS6FxmZqxhkcje_EhNxZdGvYPd7qNLfDw4xqzWPrM1yK8IylOMbmlzyBVwOeFAqhE7SbcJ4iKM5S0EYVzDi7jIHCAgY213GgxNmEWCowLhdzSwyFKd0219CJFHLMUb92dzlDAzqnAsZoFJ94APPX8JpHJoUD2Nndr20p8iQ11tjuzI0RxrTITBhLYTS_QefZ2fe8RMkihxtUMiyPt57HZGYpHYC_0X_bDwZt38b5Pmy9A59RtvexoBmPp1wkJ1SZqQ-fI-7ChRRIIKMjzFxy0Gx-__rNv7C5D2ZVcN1Cc4Far1enLM4adoX0eIKDxYnZs1XvTwwKbX3aJ_a_RmzvqFedhsPl-Zhqc4pX3IX2qMGH7Of8HptnknFIH6TBJ-v0K3j0T9j0UDPFc-f6m6TeJyjYdFnW8n1OdWH5hMrVcqULp0fVsURbMRxTkRRWhzb6925qo9a9h7a3iVQ_ndh2PbGlFGKutKll0WgA1MoYZZRdWl04o7HjtpTMYBDYx5-LbvHolOZOcJllvGY308zZI6pTjEqw-c_TN_S8RslLI5MiWiHpPxR_Ps3dvFREbLCIMBrJCYFqeXTaAVknRJbX3eh1e9v9rn-x_w_KUJbgpTRMVhRJVtRE7muDvPRck0en1LNlgJnXmHmzavuXzTLSTm6EmlRbHa5oViBwbbf9rlvVdafth3Bs52OlzQGB-tvQCWxDn7OEHx2cNzXK3R1P_rdx-lT1dlz1Zt4PY2PL8Q==)
 _Figure 201. The rich structure of a UBL-2.3 'Classification Scheme' for the representation of taxonomies_
 
-image::https://kroki.io/blockdiag/svg/eNrVVM2O0zAQPjdPMcoeFiRvmmZBi7oCiW5bCYlDURc4oKpy7Gli1rWj2FlaVr3zFDwcT4KT_mRbWlqEhIQPUfJ55pu_LxNLze64oAk8eM0mDGiC0LTIUiUYldXbOEeTaWUwSO1Uwpvpjs1YlIhpvu-8vYiCy_ENzWgspLDz4HOWwJO-SIocIQqjAG5TBGPzgtkS0hNYOcF57XX-tMxkiBZMRhVM0eZi5gFUn-MvgtsUXsLz8HqDpSiS1DowcqCX5LrI4Cvmerx8ffA8pqXOnYF_1rvqhf2W7-z8wIeLV-AzytrvCirFZC5UMqC5nfvwiYvSXmmFBCSNUZbeYRD8-PbdHznnvV5rur5QVDFBZV3ViZR7PUtanNm2a1ZvZlEZ4cbhExcrZu3a8Hae4Y3muBVqdIS3pOiiYbnIrKM9muZxtg9UFvh6qgtl1zlWkOuWsrudOEroLnv3gqNiOCyyTArkf5sjrRIS3CEDzIXmVZoO_YjxUNjd_q0ENRG5sRtFNRoAG1HFkrI7J6kStG5Qtdr6_dAdv5Lq6piUZugupVC4hdu5LHFOTYp8SVY9DlbjeY1lOgaZVvxRbv62KFxB66jORHHksZ4RWP9KrauQbEcndW1n3U73stfxR9f_oOZlvX8idfKrgsmJMiQH1EVOkYjnEoWF11h4i_W2WrbTaicbjoYAxwktpIX7MioIA63oRbV0NsNwe3fqBldPIgoJPFpmrud79ww5rAnyf7Tv94KMnpWlL34CPX8cTQ==[The structure of UBL-2.3 Capability,width=650,height=450]
-////
+image::https://kroki.io/blockdiag/svg/eNrVVM1O20AQPsdPMTIHWmlxjEECgVqpQCJV6iEI2h4qFK13J_aUza7lXdMElHufog_XJ-muQ5KGQkNVqVL3YNnfznzz93lyZcS1JF7AXdTtwoAXCF2HotQkuGrfhjXaymiLSenGCt6OH9gMKSC2-_7k3U6W7A1PecVzUuSmyeeqgBd9KpoaIUuzBC5LBOvqRrgAmRHcO8H2ymv7ZcjkAh3YimsYo6tpEgG0n8MvJF0Jr2D_8HiJlUhF6Ty4m7WgxBFvlBuOjHaWbjHc7B9HUVGbpoJbrM1w_noXRcIoU3uDeKt30Ev7u7G3i5MYdl5DLLg4Om-4otGUdDHgtZvG8ElSsNdGIwPFc1TBO02S71-_xVfe-VGvBV2fNNeCuFrV-0zKRz0DLU7ckW9jb-JQW_KDipmPlYujleHltMJTI3Et1NUG3kBxhlbUVDlPuzHNzWwfuGrwzdg02i1ybCHfLe0edmIjob_s3ZBELfCiqSpFKP82R94mRNIjA6zJyDZNj37E_ILcw_7dC2pEtXVLRXU6AEtR5YqLay-pADo_qJXa-v3Un7jV6_2xJa-CVhVpXMPdVAVccluinJO1jyeriaLOPB2Lwmj5U27xuih8QYuo3kRLlLmZMFj8ZLsHKVuPzla1bZ2dnO31TuKr439Q87zeP5E6-1XB7JkyZE-oiz1HIpFPFGZRZxbNFnts3k5nvGwkWrbYT3ATogJZv7cO26WzHIbfyGM_uNUkspTBcs1lqe_5o3uGPa0J9n-07_eCzPZD6bMfjyckkg==[The structure of UBL-2.3 Capability,width=650,height=350]
 //image:UBL-2.3_Capability.jpg[UBL-2.3 'Capability',width=454,height=207]
-
-blockdiag {
-// Page /technical/tech_response.html Image /technical/_images/UBL-2.3_Capability.jpg (Figure 202. The structure of UBL-2.3 'Capability')
-// Set span metrix
-   span_width = 50;
-   span_height = 20;
-
-group zero_group {
-
-color = "#E7E0F1";
-
-"." -> "cac:QualifyingParty" [dir = none, label = "0..∞"]
-
-"cac:QualifyingParty" -> "cac:FinancialCapability" [dir = none, label = "0..∞"]
-
-"cac:FinancialCapability" -> "ext:UBLExtensions", "cbc:CapabilityTypeCode" [dir = none]
-"cac:FinancialCapability" -> "cbc:Description" [dir = none, label = "0..∞"]
-"cac:FinancialCapability" -> "cbc:ValueAmount", "cbc:ValueQuantity" [dir = none]
-"cac:FinancialCapability" -> "cac:EvidenceSupplied" [dir = none, label = "0..∞"]
-"cac:FinancialCapability" -> "cac:ValidityPeriod", "cac:WebSite" [dir = none]
-
-group first_group {
-		  color = "black";
-		  textcolor = "#FF0000";
-          shape = line;
-          style = dashed;
-		  
-		  "cac:FinancialCapability"
-
-	group second_group {
-		"CapabilityType" [shape = roundedbox, width = 170,style = dashed, color = "#DBD3EB"];
-		  color = "black";
-		  textcolor = "#FF0000";
-          shape = line;
-          style = dashed;
-
-		  "ext:UBLExtensions", "cbc:CapabilityTypeCode", "cbc:Description", "cbc:ValueAmount", "cbc:ValueQuantity", "cac:EvidenceSupplied", "cac:ValidityPeriod", "cac:WebSite"
-	   }
-	}
-}
-// Set width to nodes, default value is 128
-"." [shape = diamond, width = 20, height = 20];
-"cac:QualifyingParty", "cac:FinancialCapability", "ext:UBLExtensions", "cbc:CapabilityTypeCode", "cbc:Description", "cbc:ValueAmount", "cbc:ValueQuantity", "cac:EvidenceSupplied", "cac:ValidityPeriod", "cac:WebSite" [shape = roundedbox, width = 240];
-}
-
-
-//Embedded adoc link:
-//image::https://kroki.io/blockdiag/svg/eNrVVM2O0zAQPjdPMcoeFiRvmmZBi7oCiW5bCYlDURc4oKpy7Gli1rWj2FlaVr3zFDwcT4KT_mRbWlqEhIQPUfJ55pu_LxNLze64oAk8eM0mDGiC0LTIUiUYldXbOEeTaWUwSO1Uwpvpjs1YlIhpvu-8vYiCy_ENzWgspLDz4HOWwJO-SIocIQqjAG5TBGPzgtkS0hNYOcF57XX-tMxkiBZMRhVM0eZi5gFUn-MvgtsUXsLz8HqDpSiS1DowcqCX5LrI4Cvmerx8ffA8pqXOnYF_1rvqhf2W7-z8wIeLV-AzytrvCirFZC5UMqC5nfvwiYvSXmmFBCSNUZbeYRD8-PbdHznnvV5rur5QVDFBZV3ViZR7PUtanNm2a1ZvZlEZ4cbhExcrZu3a8Hae4Y3muBVqdIS3pOiiYbnIrKM9muZxtg9UFvh6qgtl1zlWkOuWsrudOEroLnv3gqNiOCyyTArkf5sjrRIS3CEDzIXmVZoO_YjxUNjd_q0ENRG5sRtFNRoAG1HFkrI7J6kStG5Qtdr6_dAdv5Lq6piUZugupVC4hdu5LHFOTYp8SVY9DlbjeY1lOgaZVvxRbv62KFxB66jORHHksZ4RWP9KrauQbEcndW1n3U73stfxR9f_oOZlvX8idfKrgsmJMiQH1EVOkYjnEoWF11h4i_W2WrbTaicbjoYAxwktpIX7MioIA63oRbV0NsNwe3fqBldPIgoJPFpmrud79ww5rAnyf7Tv94KMnpWlL34CPX8cTQ==[The structure of UBL-2.3 Capability,width=600,height=650]
-
-//[Edit this diagram](https://niolesk.top/#https://kroki.io/blockdiag/svg/eNrVVM2O0zAQPjdPMcoeFiRvmmZBi7oCiW5bCYlDURc4oKpy7Gli1rWj2FlaVr3zFDwcT4KT_mRbWlqEhIQPUfJ55pu_LxNLze64oAk8eM0mDGiC0LTIUiUYldXbOEeTaWUwSO1Uwpvpjs1YlIhpvu-8vYiCy_ENzWgspLDz4HOWwJO-SIocIQqjAG5TBGPzgtkS0hNYOcF57XX-tMxkiBZMRhVM0eZi5gFUn-MvgtsUXsLz8HqDpSiS1DowcqCX5LrI4Cvmerx8ffA8pqXOnYF_1rvqhf2W7-z8wIeLV-AzytrvCirFZC5UMqC5nfvwiYvSXmmFBCSNUZbeYRD8-PbdHznnvV5rur5QVDFBZV3ViZR7PUtanNm2a1ZvZlEZ4cbhExcrZu3a8Hae4Y3muBVqdIS3pOiiYbnIrKM9muZxtg9UFvh6qgtl1zlWkOuWsrudOEroLnv3gqNiOCyyTArkf5sjrRIS3CEDzIXmVZoO_YjxUNjd_q0ENRG5sRtFNRoAG1HFkrI7J6kStG5Qtdr6_dAdv5Lq6piUZugupVC4hdu5LHFOTYp8SVY9DlbjeY1lOgaZVvxRbv62KFxB66jORHHksZ4RWP9KrauQbEcndW1n3U73stfxR9f_oOZlvX8idfKrgsmJMiQH1EVOkYjnEoWF11h4i_W2WrbTaicbjoYAxwktpIX7MioIA63oRbV0NsNwe3fqBldPIgoJPFpmrud79ww5rAnyf7Tv94KMnpWlL34CPX8cTQ==)
-////
+//[Edit this diagram](https://niolesk.top/#https://kroki.io/blockdiag/svg/eNrVVM1O20AQPsdPMTIHWmlxjEECgVqpQCJV6iEI2h4qFK13J_aUza7lXdMElHufog_XJ-muQ5KGQkNVqVL3YNnfznzz93lyZcS1JF7AXdTtwoAXCF2HotQkuGrfhjXaymiLSenGCt6OH9gMKSC2-_7k3U6W7A1PecVzUuSmyeeqgBd9KpoaIUuzBC5LBOvqRrgAmRHcO8H2ymv7ZcjkAh3YimsYo6tpEgG0n8MvJF0Jr2D_8HiJlUhF6Ty4m7WgxBFvlBuOjHaWbjHc7B9HUVGbpoJbrM1w_noXRcIoU3uDeKt30Ev7u7G3i5MYdl5DLLg4Om-4otGUdDHgtZvG8ElSsNdGIwPFc1TBO02S71-_xVfe-VGvBV2fNNeCuFrV-0zKRz0DLU7ckW9jb-JQW_KDipmPlYujleHltMJTI3Et1NUG3kBxhlbUVDlPuzHNzWwfuGrwzdg02i1ybCHfLe0edmIjob_s3ZBELfCiqSpFKP82R94mRNIjA6zJyDZNj37E_ILcw_7dC2pEtXVLRXU6AEtR5YqLay-pADo_qJXa-v3Un7jV6_2xJa-CVhVpXMPdVAVccluinJO1jyeriaLOPB2Lwmj5U27xuih8QYuo3kRLlLmZMFj8ZLsHKVuPzla1bZ2dnO31TuKr439Q87zeP5E6-1XB7JkyZE-oiz1HIpFPFGZRZxbNFnts3k5nvGwkWrbYT3ATogJZv7cO26WzHIbfyGM_uNUkspTBcs1lqe_5o3uGPa0J9n-07_eCzPZD6bMfjyckkg==)
 _Figure 202. The structure of UBL-2.3 'Capability'_
 
-image::https://kroki.io/blockdiag/svg/eNrVVMuK2zAUXcdfcXEpzIDH8TgtUxKmkCcUugiddFWCUaSbWI0sGUmeJh2y71f04_ollZz3MMO0iy6qhZGP7j336B5JM6HoknGygIeg2YQxWSA0LdJcckpEPcs0mlJJg3FuCwEfikcxGfeIaX7ufbxK41bWV0Up0CLLJsQss7nSr9NE4xw1Soom_lou4GLEF5VGSJNWDJMcwVhdUeshNQfrgB0bHNjAs8FFZdzUccKR8fLSS79DC6YkEgq0mq8CgPo3-8aZzeEW3iadA5YjX-TWgekWDBZaVSV8R62y7fQhCKgSrswthK-GN8NkdB12giCMQ7h6DyEltH1Q5oWF8IVxHy2VxAgEmaHwuUkc__rxM5y61CdyPBWubNttdriyKA13fQ4jxz-j7a6UFRHde9Suvd1CVdLulybKEuEpzuEx0XbdJyWh3K53S6e6ps-K8NkDNFTz0joNNaGLHN5z5lt8V5Wl4Mhe3OWz_A4eo-aK7ak_IeUlR2n7lbGqQF2LfyR358uca2MPxjTCswKTdYkuzeSkRJfogiRDNlOrCPbWpzdJZOxa-HVGTI4sgqO7g96gNeyF007QaMARnwlCl-EWtM6kY8JolLgR1idnN_bVBZd4hp9V3ZLVn39te_TnnkZ_YU_Q2ASb_W3bttcqZxZDEwHDOamEhXsiKgRu4Dp9V9-YgznuoSmUZCfOJBGcXEbnwRMnKPpfu_XCqXzj97v5DaWYy6k=[The structure of the UBL-2.3 Completed Task,width=450,height=400]
-////
+image::https://kroki.io/blockdiag/svg/eNrVVE1rGzEQPXt_xbClkMDG3jiBhJgUHH9AoQfTuKcSFlkae9VopUWade0E3_sr-uP6Syqtv-KQkPbQQ3VYtG80T2_nzexEGX4vJJvBY9RqwYjNEFqEPNeSM1XvMouuNNphM6dCwcfi2ZlMBsS1vtx8Omk3z7KeKUqFhCIbM3efTY19304tTtGi5uia38oZHA3lrLII7fSsCeMcwZGtOAXITIE8sGGDHRsENjiqnN96TtgzHh8H6bdI4EqmoUCychEB1K_Zdykoh2s4v-zssBzlLCcPnrZrUOCUVYq8Vk1OPmCInNeRaGZNVcIDWpOtt49RxI3yAq4hfje4GKTD07gTRXEMJx8g5oxf7SQHxTF8FTIc1kZjAopNUIXUtNn89eNnfOczX8gJVLigK1-FwYJQO-kNiBPPP-FXXa0rprpztL7u3cJUmrahsSGmAsUhPGKWlj1WMi5puQk91XX3qoiQ3UfHrSzJa6gJ_cnBXIpQ-9uqLJVE8eZXvsrv4RFaacSW-jNyWUrU1KscmQJtLf6Z3I0tU2kd7XxpxAcXjJcl-jSXszIY6g9pgWJiFglse6J9kSaOlirEBXM5igT25vZv-meDm_iuEzUasMcnivH7eA2SN2mfMBymfsV142zW9nYlNR7gB7euyerHv7Y9-XNPk7-wJ2qsotV2DNflJePNEuiS7XjBnKkKQTo_dpdhYHbe-B9QYbR4YkyawG5I26m34IUGSv7XYr3RlOfhe1e_AUGK05I=[The structure of the UBL-2.3 Completed Task,width=450,height=300]
 //image:UBL-2.3_Completed_Task_for references.jpg[UBL-2.3 Completed Task (used for references),width=291,height=200]
-blockdiag {
-// Page /technical/tech_response.html Image /technical/_images/UBL-2.3_Completed_Task_for%20references.jpg (Figure 203. The structure of the UBL-2.3 Completed Task (used for references))
-// Set span metrix
-   span_width = 50;
-   span_height = 20;
-   
-group zero_group {
-
-color = "#E7E0F1";
-
-"." -> "cac:CompletedTask" [dir = none, label = "0..∞"]
-
-"cac:CompletedTask" -> "ext:UBLExtensions", "cbc:AnnualAverageAmount", "cbc:TotalTaskAmount", "cbc:PartyCapacityAmount" [dir = none]
-"cac:CompletedTask" -> "cbc:Description", "cac:EvidenceSupplied" [dir = none, label = "0..∞"]
-"cac:CompletedTask" -> "cac:Period", "cac:RecipientCustomerParty" [dir = none]
-
-group first_group {
-	"CompletedTaskType" [shape = roundedbox, width = 270,style = dashed, color = "#DBD3EB"];
-		  color = "black";
-		  textcolor = "#FF0000";
-          shape = line;
-          style = dashed;
-		  
-		  "ext:UBLExtensions", "cbc:AnnualAverageAmount", "cbc:TotalTaskAmount", "cbc:PartyCapacityAmount", "cbc:Description", "cac:EvidenceSupplied", "cac:Period", "cac:RecipientCustomerParty"
-	}
-}
-// Set width to nodes, default value is 128
-"." [shape = diamond, width = 20, height = 20];
-"cac:CompletedTask", "ext:UBLExtensions", "cbc:AnnualAverageAmount", "cbc:TotalTaskAmount", "cbc:PartyCapacityAmount", "cbc:Description", "cac:EvidenceSupplied", "cac:Period", "cac:RecipientCustomerParty" [shape = roundedbox, width = 240];
-}
-
-//Embedded adoc link:
-//image::https://kroki.io/blockdiag/svg/eNrVVMuK2zAUXcdfcXEpzIDH8TgtUxKmkCcUugiddFWCUaSbWI0sGUmeJh2y71f04_ollZz3MMO0iy6qhZGP7j336B5JM6HoknGygIeg2YQxWSA0LdJcckpEPcs0mlJJg3FuCwEfikcxGfeIaX7ufbxK41bWV0Up0CLLJsQss7nSr9NE4xw1Soom_lou4GLEF5VGSJNWDJMcwVhdUeshNQfrgB0bHNjAs8FFZdzUccKR8fLSS79DC6YkEgq0mq8CgPo3-8aZzeEW3iadA5YjX-TWgekWDBZaVSV8R62y7fQhCKgSrswthK-GN8NkdB12giCMQ7h6DyEltH1Q5oWF8IVxHy2VxAgEmaHwuUkc__rxM5y61CdyPBWubNttdriyKA13fQ4jxz-j7a6UFRHde9Suvd1CVdLulybKEuEpzuEx0XbdJyWh3K53S6e6ps-K8NkDNFTz0joNNaGLHN5z5lt8V5Wl4Mhe3OWz_A4eo-aK7ak_IeUlR2n7lbGqQF2LfyR358uca2MPxjTCswKTdYkuzeSkRJfogiRDNlOrCPbWpzdJZOxa-HVGTI4sgqO7g96gNeyF007QaMARnwlCl-EWtM6kY8JolLgR1idnN_bVBZd4hp9V3ZLVn39te_TnnkZ_YU_Q2ASb_W3bttcqZxZDEwHDOamEhXsiKgRu4Dp9V9-YgznuoSmUZCfOJBGcXEbnwRMnKPpfu_XCqXzj97v5DaWYy6k=[The structure of the UBL-2.3 Completed Task,width=436,height=200]
-
-//[Edit this diagram](https://niolesk.top/#https://kroki.io/blockdiag/svg/eNrVVMuK2zAUXcdfcXEpzIDH8TgtUxKmkCcUugiddFWCUaSbWI0sGUmeJh2y71f04_ollZz3MMO0iy6qhZGP7j336B5JM6HoknGygIeg2YQxWSA0LdJcckpEPcs0mlJJg3FuCwEfikcxGfeIaX7ufbxK41bWV0Up0CLLJsQss7nSr9NE4xw1Soom_lou4GLEF5VGSJNWDJMcwVhdUeshNQfrgB0bHNjAs8FFZdzUccKR8fLSS79DC6YkEgq0mq8CgPo3-8aZzeEW3iadA5YjX-TWgekWDBZaVSV8R62y7fQhCKgSrswthK-GN8NkdB12giCMQ7h6DyEltH1Q5oWF8IVxHy2VxAgEmaHwuUkc__rxM5y61CdyPBWubNttdriyKA13fQ4jxz-j7a6UFRHde9Suvd1CVdLulybKEuEpzuEx0XbdJyWh3K53S6e6ps-K8NkDNFTz0joNNaGLHN5z5lt8V5Wl4Mhe3OWz_A4eo-aK7ak_IeUlR2n7lbGqQF2LfyR358uca2MPxjTCswKTdYkuzeSkRJfogiRDNlOrCPbWpzdJZOxa-HVGTI4sgqO7g96gNeyF007QaMARnwlCl-EWtM6kY8JolLgR1idnN_bVBZd4hp9V3ZLVn39te_TnnkZ_YU_Q2ASb_W3bttcqZxZDEwHDOamEhXsiKgRu4Dp9V9-YgznuoSmUZCfOJBGcXEbnwRMnKPpfu_XCqXzj97v5DaWYy6k=)
-////
+//[Edit this diagram](https://niolesk.top/#https://kroki.io/blockdiag/svg/eNrVVE1rGzEQPXt_xbClkMDG3jiBhJgUHH9AoQfTuKcSFlkae9VopUWade0E3_sr-uP6Syqtv-KQkPbQQ3VYtG80T2_nzexEGX4vJJvBY9RqwYjNEFqEPNeSM1XvMouuNNphM6dCwcfi2ZlMBsS1vtx8Omk3z7KeKUqFhCIbM3efTY19304tTtGi5uia38oZHA3lrLII7fSsCeMcwZGtOAXITIE8sGGDHRsENjiqnN96TtgzHh8H6bdI4EqmoUCychEB1K_Zdykoh2s4v-zssBzlLCcPnrZrUOCUVYq8Vk1OPmCInNeRaGZNVcIDWpOtt49RxI3yAq4hfje4GKTD07gTRXEMJx8g5oxf7SQHxTF8FTIc1kZjAopNUIXUtNn89eNnfOczX8gJVLigK1-FwYJQO-kNiBPPP-FXXa0rprpztL7u3cJUmrahsSGmAsUhPGKWlj1WMi5puQk91XX3qoiQ3UfHrSzJa6gJ_cnBXIpQ-9uqLJVE8eZXvsrv4RFaacSW-jNyWUrU1KscmQJtLf6Z3I0tU2kd7XxpxAcXjJcl-jSXszIY6g9pgWJiFglse6J9kSaOlirEBXM5igT25vZv-meDm_iuEzUasMcnivH7eA2SN2mfMBymfsV142zW9nYlNR7gB7euyerHv7Y9-XNPk7-wJ2qsotV2DNflJePNEuiS7XjBnKkKQTo_dpdhYHbe-B9QYbR4YkyawG5I26m34IUGSv7XYr3RlOfhe1e_AUGK05I=)
 _Figure 203. The structure of the UBL-2.3 Completed Task (used for references)_
 
 UBL-2.3 provides a component to hold very specifically the data to identify the economic operator as it officially registered in a Business Register. This XSD diagram below shows the elements of this component cac:LegalEntityParty. This ESPD-EDM specification recommends to use it as an alternative (or supplementary) way to identify the economic party.
