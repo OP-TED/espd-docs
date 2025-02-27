@@ -1,5 +1,6 @@
 = Economic Operator Requirements
 
+[#eo]
 == Economic Operator
 
 [cols="1,4", options="header"]
@@ -22,6 +23,7 @@
   c) (where applicable) name of the participating group.
 |===
 
+[#reps_eo]
 == Representative of the Economic Operator
 
 [cols="1,4", options="header"]
@@ -31,6 +33,7 @@
 | tbr92-010 | The economic operator must also be able to specify the position (acting capacity) the natural person takes in the company in the qualification/tendering phase. If needed, the economic operator shall be able to provide detailed information on the representation (its forms, extent, purpose, etc.).
 |===
 
+[#ca]
 == Contracting Authority
 
 [cols="1,4", options="header"]
@@ -40,6 +43,7 @@
 | tbr92-012 | The ESPD should contain contact information of the contracting authority: Postal address, telephone number, fax number, e-mail address, contact person(s).
 |===
 
+[#call_tender_refs]
 == Call for Tender Reference
 
 [cols="1,4", options="header"]
@@ -48,6 +52,7 @@
 | tbr92-013 | The ESPD must contain a reference to the call for tenders, i.e. the procurement project ID, which defines the requirements (i.e. criteria) for which this document is created and submitted by the economic operator.
 |===
 
+[#lots]
 == Procurement Lots
 
 [cols="1,4", options="header"]
@@ -56,6 +61,7 @@
 | Tbr92-014 | Where the call for tender is divided into lots, the economic operator must be able to indicate, which lot he is tendering.
 |===
 
+[#crit_list]
 == List of Criteria
 
 [cols="1,4", options="header"]
@@ -65,6 +71,7 @@
 | Tbr92-016 | The ESPD must contain corresponding information about the fulfilment of selection criteria as set out in the call for tender or ESPD template (cf. tbr70-010). The information shall contain a legal reference (EU level, contracting authority national level, economic operator national level). Furthermore it must contain the name of criterion and criterion group to which it belongs (according to names of Art. 58 of 2014/24/EC and referred to in Art. 80 of 2014/25/EC) as well as indications of fulfilment of selection criteria contained as well as details and explanations as requested according to Art. 58 of directive 2014/25/EU and the ESPD form agreed among the Member State. Where demanded and if available electronically, the ESPD shall provide the following information to relevant documentation: the web address, issuing body, and precise reference of the documentation.
 |===
 
+[#evidence_link]
 == Link to Evidences
 
 [cols="1,4", options="header"]
@@ -73,6 +80,7 @@
 | tbr92-017 | The economic operator must be able to add the internet address of a national database (including any identification data and, where applicable, the necessary declaration of consent cf. Art. 59 of 2014/24/EC) from which a contracting authority can directly retrieve any evidence documents and certificates or supporting documents which prove the EO’s compliance to the requested criteria defined in the call for tender and stated in the ESPD.
 |===
 
+[#eval_crit]
 == Evaluation of Criteria
 
 [cols="1,4", options="header"]
@@ -81,6 +89,7 @@
 | tbr92-018 | The ESPD shall contain structured information describing the fulfilment of selection criteria and non-existence of exclusion grounds. This is essential for automatic evaluation of criteria.
 |===
 
+[#date_time]
 == Issuing Date and Time
 
 [cols="1,4", options="header"]
@@ -89,6 +98,7 @@
 | tbr92-019 | The ESPD shall have an ID and reflect the date and time when it has been issued.
 |===
 
+[#versioning]
 == Versioning
 
 [cols="1,4", options="header"]
@@ -97,6 +107,7 @@
 | tbr92-020 | The ESPD should allow to include a VersionID to the ESPD. The VersionID helps to identify the status of subsystems that have supported the creation of the ESPD. It is needed to trace changes that have occurred.
 |===
 
+[#service_provider]
 == ESPD Service Provider
 
 [cols="1,4", options="header"]
@@ -105,6 +116,7 @@
 | tbr92-021 | The ESPD may reflect information about the issuing service that was used to create the ESPD itself.
 |===
 
+[#additional_info]
 == Additional Documentation
 
 [cols="1,4", options="header"]
@@ -113,6 +125,7 @@
 | Tbr92-022 | The economic operator should be able to include any additional documents that are not classified as evidentiary information that prove specific exclusion grounds or selection criteria.
 |===
 
+[#signature]
 == Date, Place of Issuance and Signature
 
 [cols="1,4", options="header"]

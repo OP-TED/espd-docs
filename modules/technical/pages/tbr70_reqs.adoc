@@ -1,5 +1,6 @@
 = Contracting Body Requirements
 
+[#general]
 == General
 
 [width="100%",cols="7%,93%",options="header",]
@@ -11,6 +12,7 @@ is a copy. The UBL version and the ESPD version, the ESPD specification
 and the transaction should be identified as well.
 |===
 
+[#contracting_body]
 == Contracting body
 
 [width="100%",cols="8%,92%",options="header",]
@@ -28,6 +30,7 @@ fax number, e-mail address, contact person(s).
 codes in the ESPD request.
 |===
 
+[#call_for_tender]
 == Call for tenders
 
 [width="100%",cols="6%,94%",options="header",]
@@ -43,6 +46,7 @@ possible to maintain this information in order to keep track of the
 connection between ESPD request and call for tenders/notices.
 |===
 
+[#procurement_lots]
 == Procurement lots
 
 [width="100%",cols="7%,93%",options="header",]
@@ -57,6 +61,8 @@ contracting body shall provide a reference to the group of lots of the
 call for tender, to which the minimum turnover applies (art. 58 of
 2014/24/EU).
 |===
+
+[#list_of_criteria]
 == List of Criteria
 
 [width="100%",cols="6%,94%",options="header",]
@@ -108,6 +114,7 @@ particular type of contract.
 information about the applicable periods for qualification criteria
 |===
 
+[#service_provider]
 == ESPD service provider
 
 [width="100%",cols="9%,91%",options="header",]
@@ -118,6 +125,7 @@ regarding an ESPD service provider: Name, Party Identification, Endpoint
 ID, Website, Country.
 |===
 
+[#additional_documentation]
 == Additional documentation
 
 [width="100%",cols="12%,88%",options="header",]
@@ -127,6 +135,7 @@ ID, Website, Country.
 complementary information such as liability statements.
 |===
 
+[#versioning]
 == Versioning
 
 [width="100%",cols="7%,93%",options="header",]
