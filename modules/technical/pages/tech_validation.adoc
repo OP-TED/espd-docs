@@ -10,7 +10,7 @@ Schematron is a rule-based validation language that specifies validation process
 
 === ESPD Business Rules
 
-The ESPD-EDM uses Schematron to validate business rules, the business requirements taken as input for these rules are specified in the #link:http://wiki.ds.unipi.gr/display/ESPDInt[ESPDint Business Document]#.
+The ESPD-EDM uses Schematron to validate business rules, the business requirements taken as input for these rules are specified in the link:http://wiki.ds.unipi.gr/display/ESPDInt[ESPDint Business Document].
 
 These business rules can be typified as:
 
