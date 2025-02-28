@@ -1470,7 +1470,7 @@ ____
 |Rule description |Information about publication CAN be provided |
 |Mapping description |Publications are implemented as Document Reference components |
 |XSD Path |/cac:AdditionalDocumentReference[0..n] |
-|Business requirement |link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr070-007[_[.underline]#tbr070-007#_] |
+|Business requirement |xref:tbr70_reqs.adoc#call_for_tender[tbr70-007] |
 |XSD Business Rule description | |XSD Business Rule Schematron
 |If the document referenced is a *Contract Notice published on TED* the ID must follow the scheme defined by the Publications Office: *[][][][]/S [][][]-[][][][][][]* (e.g. 2015/S 252-461137). If at the time of drafting the ESPD document the Publication Office has not published yet the Contract Notice the value 0000/S 000-000000 value must be used to indicate that a temporary identifier is being used. | a|
 * Severity: ERROR
@@ -1507,7 +1507,7 @@ Then
 |Rule description |Above the threshold, information about the publication of the contract notice in TED MUST be provided (when it is available). |
 |Mapping description |ESPD does not carry information about the value of the contract. Therefore, the threshold cannot be calculated. |
 |XSD Path |- |
-|Business requirement |link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr070-007[_[.underline]#tbr070-007#_] |
+|Business requirement |xref:tbr70_reqs.adoc#call_for_tender[tbr70-007] |
 |XSD Business Rule description | |XSD Business Rule Schematron
 |- | |*No Schematron rule can be implemented.*
 |===
@@ -1529,7 +1529,7 @@ Then
 |Rule description |Below the threshold, information about the publication of the contract notice in TED MIGHT be provided (when it is available). |
 |Mapping description |ESPD does not carry information about the value of the contract. Therefore, the threshold cannot be calculated. |
 |XSD Path |- |
-|Business requirement |link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr070-007[_[.underline]#tbr070-007#_] |
+|Business requirement |xref:tbr70_reqs.adoc#call_for_tender[tbr70-007] |
 |XSD Business Rule description | |XSD Business Rule Schematron
 |- | |*No Schematron rule can be implemented.*
 |===
@@ -1551,7 +1551,7 @@ Then
 |Rule description |Information about the publication of the contract notice in other official gazettes or journals MIGHT be provided. |
 |Mapping description |No specific rules should be applied. |
 |XSD Path |- |
-|Business requirement |link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr070-007[_[.underline]#tbr070-007#_] |
+|Business requirement |xref:tbr70_reqs.adoc#call_for_tender[tbr70-007] |
 |XSD Business Rule description | |XSD Business Rule Schematron
 |- | |*No Schematron rule can be implemented.*
 |===
@@ -1573,7 +1573,7 @@ Then
 |Rule description |Information about the procurer MUST be provided |
 |Mapping description |Procurers are implemented as Contracting Party components. |
 |XSD Path |/cac:ContractingParty[1..n]/cac:Party[1] |
-|Business requirement |link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr070-01[_[.underline]#tbr070-01#_] |
+|Business requirement |xref:tbr70_reqs.adoc#contracting_body[tbr70-001] |
 |XSD Business Rule description | |XSD Business Rule Schematron
 |Information about the procurer MUST be provided. | |No Schematron rule can be implemented, as Contracting party is already compulsory.
 |The ESPD only expects data about one buyer. | a|
@@ -1601,7 +1601,7 @@ ____
 ____
 
 a|
-Business requirement: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr070-006[_[.underline]#tbr070-006#_]
+Business requirement: xref:tbr70_reqs.adoc#contracting_body[tbr70-006]
 
 The country of the contracting body must always be specified.
 
@@ -1630,7 +1630,7 @@ If at least one element: /cac:ContractingParty/cac:Party /cac:PartyIdentificatio
 ____
 
 |_/cac:ContractingParty/cac:Party/cac:ServiceProviderParty[0..n]_ | |
-|Business requirement: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr070-0011[_[.underline]#tbr070-011#_] | |
+|Business requirement: xref:tbr70_reqs.adoc#service_provider[tbr70-011] | |
 |An identifier for the service provider must always be provided. | a|
 * {blank}
 +
@@ -1691,7 +1691,7 @@ And,
 /cac:TenderingCriterion/cbc:CriterionTypeCode starts with CRITERION.EXCLUSION. (They are exclusion criteria).
 
 |
-|Business requirement |link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr070-009[_[.underline]#tbr070-009#_] |
+|Business requirement |xref:tbr70_reqs.adoc#list_of_criteria[tbr70-009] |
 |XSD Business Rule description | |XSD Business Rule Schematron
 |Exclusion grounds MUST be retrieved from e-Certis. | a|
 * {blank}
@@ -1723,7 +1723,7 @@ ____
 |Rule description |Information for common exclusion grounds (sections A, B and C) MUST be retrieved from e-Certis. |
 |Mapping description |The spreadsheets [RD03] carries the information from e-Certis. No additional business rules are needed in this scenario. |
 |XSD Path |- |
-|Business requirement |link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr070-009[_[.underline]#tbr070-009#_] |
+|Business requirement |xref:tbr70_reqs.adoc#list_of_criteria[tbr70-009] |
 |XSD Business Rule description | |XSD Business Rule Schematron
 |- | |*No Schematron rule can be implemented*
 |===
@@ -1743,7 +1743,7 @@ ____
 |Rule description |Information for national exclusion grounds (section D) MUST be retrieved from e-Certis. |
 |Mapping description |No additional business rules are needed in this scenario. |
 |XSD Path |- |
-|Business requirement |link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr070-009[_[.underline]#tbr070-009#_] |
+|Business requirement |xref:tbr70_reqs.adoc#list_of_criteria[tbr70-009] |
 |XSD Business Rule description | |XSD Business Rule Schematron
 |- | |*No Schematron rule can be implemented*
 |===
@@ -1770,7 +1770,7 @@ And,
 /cac:TenderingCriterion/cbc:CriterionTypeCode starts with CRITERION.SELECTION. (They are selection criteria).
 
 |
-|Business requirement |link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr070-010[_[.underline]#tbr070-010#_] |
+|Business requirement |xref:tbr70_reqs.adoc#list_of_criteria[tbr70-010] |
 |XSD Business Rule description | |XSD Business Rule Schematron
 |Selection criteria CAN be provided. | a|
 * {blank}
@@ -1814,7 +1814,7 @@ ____
 * /cbc:ContractFolderID[1]
 
 | |
-|Business requirement |link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr070-007[_[.underline]#tbr070-007#_] | |
+|Business requirement |xref:tbr70_reqs.adoc#call_for_tender[tbr70-007] | |
 |XSD Business Rule description | |XSD Business Rule Schematron |
 a|
 * The type of the procurement administrative procedure according to the EU Directives.
@@ -1858,7 +1858,8 @@ ____
 * /cac:TenderingCriterionResponse[0..n]
 
 | |
-|Business requirement |_ link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr092-018[[.underline]#tbr92-018#], link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr092-007[[.underline]#tbr92-007#]_, _[.underline]#tbr92-005#_, link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr092-006[_[.underline]#tbr92-006#_] | |
+|Business requirement |xref:tbr92_reqs.adoc#eo[tbr92-005], xref:tbr92_reqs.adoc#eo[tbr92-006], xref:tbr92_reqs.adoc#eo[tbr92-007], xref:tbr92_reqs.adoc#eval_crit[tbr92-018]
+ | |
 |XSD Business Rule description | |XSD Business Rule Schematron |
 |- | |*No Schematron rule can be implemented* |
 |===
@@ -1902,7 +1903,7 @@ ____
 * /cbc:ContractFolderID[1]
 
 | |
-|Business requirement |link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr070-007[_[.underline]#tbr070-007#_] | |
+|Business requirement |xref:tbr70_reqs.adoc#call_for_tender[tbr70-007] | |
 |XSD Business Rule description | |XSD Business Rule Schematron |
 |Same business rules as BR-SC-10. | | |
 |===
@@ -1929,7 +1930,7 @@ ____
 * /cbc:WeightingType[0..1]
 
 |
-|Business requirement |link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr070-016[_[.underline]#tbr070-016#_] |
+|Business requirement |xref:tbr92_reqs.adoc#crit_list[tbr92-016] |
 |XSD Business Rule description | |XSD Business Rule Schematron
 |Defining the type of weighting and description is mandatory when it is two-phased procedure. | |*No Schematron rule can be implemented*
 |===
@@ -1959,7 +1960,7 @@ Specific information about weighting within each criteria is implemented as Tend
 * /cac:TenderingCriterion/cbc:WeightNumeric[0..1]
 
 |
-|Business requirement |link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr070-016[_[.underline]#tbr070-016#_] |
+|Business requirement |xref:tbr92_reqs.adoc#crit_list[tbr92-016] |
 |XSD Business Rule description | |XSD Business Rule Schematron
 |For two stage procedures it [.underline]#should be possible# to weight the "Technical and professional ability". Weighting can be done either using percentage or points for one procedure. The CA should have a free text where they can describe the scoring methodology. | a|
 * {blank}
@@ -2014,7 +2015,7 @@ _BR-2P-10-S20
 * /cac:TenderingCriterion /cbc:EvaluationMethodTypeCode[0..1]
 
 |
-|Business requirement |link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr070-016[_[.underline]#tbr070-016#_] |
+|Business requirement |xref:tbr92_reqs.adoc#crit_list[tbr92-016] |
 |XSD Business Rule description | |XSD Business Rule Schematron
 |If evaluation method is pass/fail, weighting is not required. | a|
 * {blank}
@@ -2061,7 +2062,7 @@ See BR-COM-10
 ____
 
 |_/cac:EconomicOperatorParty/cac:QualifyingParty_ | |
-|Business requirement: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr92-001[_[.underline]#tbr92-001#_] | |
+|Business requirement: xref:tbr92_reqs.adoc#eo[tbr92-001] | |
 |*Qualifying party* is *compulsory* in the ESPD-EDM V4.0.0 as it is the natural placeholder for several relevant data about the Economic Operator. | a|
 * {blank}
 +
@@ -2091,7 +2092,7 @@ schemeAgencyID attribute from Party identifier is always mandatory. The current 
 ____
 
 |_/cac:EconomicOperatorParty/cac:EconomicOperatorRole_ | |
-|Business requirement: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr92-008[_[.underline]#tbr92-008#_] | |
+|Business requirement: xref:tbr92_reqs.adoc#eo[tbr92-008]| |
 |This element is compulsory in the ESPD-EDM V4.0.0 because depending on it different sets of data will be required or not, shown or hidden, processed or skipped. | a|
 * {blank}
 +
@@ -2121,7 +2122,7 @@ ____
 /cac:EconomicOperatorParty /cac:EconomicOperatorRole /cbc:RoleCode
 
 |_/cac:EconomicOperatorParty/cac:Party_ | |
-|Business requirement: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr92-001[_[.underline]#tbr92-001#_] | |
+|Business requirement: xref:tbr92_reqs.adoc#eo[tbr92-001] | |
 |An identifier that identifies the economic operator is mandatory. | a|
 * {blank}
 +
@@ -2147,7 +2148,7 @@ Compulsory use of the element: /cac:PartyName/cbc:Name
 ____
 
 a|
-Business requirement: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr92-004[_[.underline]#tbr92-004#_]
+Business requirement: xref:tbr92_reqs.adoc#eo[tbr92-004]
 
 *Industrial classification*: Compulsory use of the element.
 
@@ -2164,7 +2165,7 @@ Compulsory use of the element: /cbc:IndustryClassificationCode
 ____
 
 a|
-Business requirement: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr92-012[_[.underline]#tbr92-012#_]
+Business requirement: xref:tbr92_reqs.adoc#ca[tbr92-012]
 
 *Country*: The country of the contracting body must always be specified.
 
@@ -2181,7 +2182,7 @@ Country of the contracting body is mandatory: /cac:EconomicOperatorParty /cac:Pa
 ____
 
 |_/cac:EconomicOperatorParty/cac:Party/cac:ServiceProviderParty/cac:Party_ | |
-|Business requirement: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr070-021[_[.underline]#tbr070-021#_] | |
+|Business requirement: xref:tbr92_reqs.adoc#service_provider[tbr92-021] | |
 |*End point identifier*: An end-point identifier MUST have a scheme identifier attribute. | a|
 * {blank}
 +
@@ -2258,7 +2259,7 @@ ____
 * /cac:EconomicOperatorParty/cac:Party /cac:PowerOfAttorney
 
 |
-|Business requirement | link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr092-009[tbr92-009] |
+|Business requirement | xref:tbr92_reqs.adoc#reps_eo[tbr92-009]|
 |XSD Business Rule description | |XSD Business Rule Schematron
 |Name, Family name and country of the natural person are mandatory | a|
 * {blank}
@@ -2375,7 +2376,8 @@ Response to the specific requirements related to selection criteria of the ESPDR
 * /cac:TenderingCriterionResponse[0..n]
 
 | |
-|Business requirement |_ link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr092-018[tbr92-018], link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr092-007[#tbr92-007#]_, _[.underline]#tbr92-005#_, link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr092-006[tbr92-006] | |
+|Business requirement |xref:tbr92_reqs.adoc#eo[tbr92-006], xref:tbr92_reqs.adoc#eo[tbr92-007], xref:tbr92_reqs.adoc#eval_crit[tbr92-018]
+ | |
 |XSD Business Rule description | |XSD Business Rule Schematron |
 |Information about compliance of selection criteria MUST be provided. | a|
 * {blank}
@@ -2430,7 +2432,7 @@ ____
 * Additional information as Other Criterion /cac:TenderingCriterionResponse
 | |
 
-|Business requirement |_ link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr092-018[[.underline]#tbr92-018#], link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr092-007[[.underline]#tbr92-007#]_, _[.underline]#tbr92-005#_, link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr092-006[_[.underline]#tbr92-006#_] | |
+|Business requirement |xref:tbr92_reqs.adoc#eo[tbr92-006], xref:tbr92_reqs.adoc#eo[tbr92-007], xref:tbr92_reqs.adoc#eval_crit[tbr92-018]| |
 
 |XSD Business Rule description | |XSD Business Rule Schematron |
 |Same business rules as BR-RESP-30 as it works as a Criterion. | | |
@@ -2468,7 +2470,7 @@ ____
 * /cac:TenderingCriterionResponse[0..n]
 
 | |
-|Business requirement |_ link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr092-018[tbr92-018], link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr092-007[tbr92-007]_, _[.underline]#tbr92-005#_, link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr092-006[tbr92-006] | |
+|Business requirement |xref:tbr92_reqs.adoc#eo[tbr92-006], xref:tbr92_reqs.adoc#eo[tbr92-007], xref:tbr92_reqs.adoc#eval_crit[tbr92-018]| |
 |XSD Business Rule description | |XSD Business Rule Schematron |
 |Same business rules as BR-RESP-30 | | |
 |===
@@ -2566,7 +2568,7 @@ a|
 * /cac:TenderingCriterionResponse[0..n]
 
 | |
-|Business requirement |_ link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr092-018[tbr92-018], link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr092-007[tbr92-007]_, _[.underline]#tbr92-005#_, link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr092-006[tbr92-006] | |
+|Business requirement |xref:tbr92_reqs.adoc#eo[tbr92-006], xref:tbr92_reqs.adoc#eo[tbr92-007], xref:tbr92_reqs.adoc#eval_crit[tbr92-018] | |
 |XSD Business Rule description | |XSD Business Rule Schematron |
 |Same business rules as BR-RESP-30 | | |
 |===
@@ -2644,7 +2646,8 @@ a|
 * /cac:TenderingCriterionResponse[0..n]
 
 | |
-|Business requirement |link:http://wiki.ds.unipi.gr/pages/viewpage.action?pageId=44367916#br41-002[br41-002], link:http://wiki.ds.unipi.gr/pages/viewpage.action?pageId=44367916#tbr070-010[tbr070-010], link:http://wiki.ds.unipi.gr/pages/viewpage.action?pageId=44367916#tbr070-013[tbr070-013], link:http://wiki.ds.unipi.gr/pages/viewpage.action?pageId=44367916#tbr070-016[tbr070-016], and link:http://wiki.ds.unipi.gr/pages/viewpage.action?pageId=44367916#tbr070-018[tbr070-018]. | |
+|Business requirement |xref:tbr92_reqs.adoc#eo[tbr92-002], xref:tbr92_reqs.adoc#reps_eo[tbr92-010], xref:tbr92_reqs.adoc#call_tender_refs[tbr92-013], xref:tbr92_reqs.adoc#crit_list[tbr92-016], xref:tbr92_reqs.adoc#eval_crit[tbr92-018]
+ | |
 |XSD Business Rule description | |XSD Business Rule Schematron |
 |See scenarios BR-RESP-80-S10 and BR-RESP-80-S20. | | |
 |===
@@ -2789,7 +2792,7 @@ Lots EO tenders to, are specified as Tendering criterion of type CRITERION.OTHER
 * /cac:TenderingCriterion[0..n]
 
 | |
-|Business requirement |link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr92-014[_[.underline]#tbr92-014#_] | |
+|Business requirement |xref:tbr92_reqs.adoc#lots[tbr92-014] | |
 |XSD Business Rule description | |XSD Business Rule Schematron |
 |The list of lots the EO tenders for MUST be provided. | a|
 
@@ -2833,7 +2836,7 @@ Then, its /cac:TenderingCriterionResponse +
 * /cac:TenderingCriterion[0..n]
 
 | |
-|Business requirement |link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr070-010[_[.underline]#tbr070-010#_] | |
+|Business requirement |xref:tbr70_reqs.adoc#list_of_criteria[tbr70-010] | |
 |XSD Business Rule description | |XSD Business Rule description |
 |The Business Rules listed within 15 Tendering Criterion Self-contained Rules are general to all TenderingCriterion in self-contained qualification applications. | | |
 |===
@@ -2864,7 +2867,7 @@ Information about lots specified is two different sets of the XSD schema in orde
 * /cac:TenderingCriterion[0..n], CRITERION.OTHER.CA_DATA.LOTS_SUBMISSION
 
 | |
-|Business requirement |link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr070-008[tbr070-008] | |
+|Business requirement |xref:tbr70_reqs.adoc[#procurement_lots[tbr70-008] | |
 |XSD Business Rule description | |XSD Business Rule Schematron |
 |See <<BR-LOT-30-S10,BR-LOT-30-S10>> and <<BR-LOT-30-S20,BR-LOT-30-S10>> | | |
 |===
@@ -2888,7 +2891,7 @@ Information about lots specified is two different sets of the XSD schema in orde
 * /cac:ProcurementProjectLot[0..n] /cbc:ID[1]
 
 | |
-|Business requirement |link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr070-008[_[.underline]#tbr070-008#_] | |
+|Business requirement |xref:tbr70_reqs.adoc[#procurement_lots[tbr70-008] | |
 |XSD Business Rule description | |XSD Business Rule Schematron |
 |Convention: Lots should always be identified with a sequential number, as in the examples: Lot1, Lot2 Lot7. | a|
 * {blank}
@@ -2924,7 +2927,7 @@ ____
 * /cac:TenderingCriterion[0..n] as CRITERION.OTHER.CA_DATA.LOTS_SUBMISSION
 
 | |
-|Business requirement |link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr070-008[_[.underline]#tbr070-008#_] | |
+|Business requirement |xref:tbr70_reqs.adoc[#procurement_lots[tbr70-008 | |
 |XSD Business Rule description | |XSD Business Rule Schematron |
 |- | |*No Schematron rule can be implemented as it works as any other Tendering Criterion.* |
 |===
@@ -2948,7 +2951,7 @@ ____
 * /cac:TenderingCriterion[0..n]
 
 | |
-|Business requirement |link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr070-010[_[.underline]#tbr070-010#_] | |
+|Business requirement |xref:tbr70_reqs.adoc#list_of_criteria[tbr70-010] | |
 |XSD Business Rule description | |XSD Business Rule description |
 |The Business Rules listed within 15 Tendering Criterion Self-contained Rules are general to all TenderingCriterion in self-contained qualification applications. | | |
 |The lots each criteria applies to MUST be provided. | a|
@@ -2986,7 +2989,7 @@ If, cbc:ExpectedID is included, it must be one of the Lots identified within /ca
 * /cac:TenderingCriterionResponse[0..n]
 
 | |
-|Business requirement |link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr092-008[_[.underline]#tbr092-008#_] | |
+|Business requirement |xref:tbr92_reqs.adoc#eo[tbr92-008] | |
 |XSD Business Rule description | |XSD Business Rule Schematron |
 |Information about the other participants MUST be provided | a|
 
@@ -3035,7 +3038,7 @@ cac:TenderingCriterionProperty, must be answered.
 * /cbc:EconomicOperatorGroupName[0..1]
 
 | |
-|Business requirement |link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr092-008[_[.underline]#tbr092-008#_] | |
+|Business requirement |xref:tbr92_reqs.adoc#eo[tbr92-008] | |
 |XSD Business Rule description | |XSD Business Rule Schematron |
 |Information about the group MUST be provided | a|
 
@@ -3072,7 +3075,7 @@ going to be used as Sole contractor and not lead entity.
 * /cac:TenderingCriterionResponse[0..n]
 
 | |
-|Business requirement |link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr092-008[_[.underline]#tbr092-008#_] | |
+|Business requirement |xref:tbr92_reqs.adoc#eo[tbr92-008] | |
 |XSD Business Rule description | |XSD Business Rule Schematron |
 |Information about all the entities the EO relies on MUST be provided | a|
 
@@ -3112,7 +3115,7 @@ RELIES_ON_OTHER_CAPACITIES_
 * /cac:TenderingCriterionResponse[0..n]
 
 | |
-|Business requirement |link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr092-008[_[.underline]#tbr092-008#_] | |
+|Business requirement |xref:tbr92_reqs.adoc#eo[tbr92-008] | |
 |XSD Business Rule description | |XSD Business Rule Schematron |
 |Information about all subcontractors MUST be provided | a|
 
@@ -3200,7 +3203,7 @@ A tendering criterion describes a fact or a condition that is used by the contra
 a|
 _Level 1: /TenderingCriterion_
 
-Business requirement: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr070-009[_[.underline]#tbr070-009#_]
+Business requirement: xref:tbr70_reqs.adoc#list_of_criteria[tbr70-009]
 
 | |
 a|
@@ -3223,7 +3226,7 @@ a|
 . {blank}
 
 a|
-Business requirement: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr070-010[_[.underline]#tbr070-010#_]
+Business requirement: xref:tbr70_reqs.adoc#list_of_criteria[tbr70-010]
 
 Each Criterion is defined in e-Certis and must use the UUID supplied by e-Certis.
 
@@ -3383,7 +3386,7 @@ A class to make reference to the legislation related to the criterion.
 a|
 _Level 2: /TenderingCriterion/cac:Legislation_
 
-Business requirement: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr070-013[_[.underline]#tbr070-013#_]
+Business requirement: xref:tbr70_reqs.adoc#list_of_criteria[tbr70-013]
 
 | |
 a|
@@ -3455,7 +3458,7 @@ _/cac:TenderingCriterionPropertyGroup, independently of the level_
 
 _/cac:SubsidiaryTenderingCriterionPropertyGroup, independently of the level_
 
-Business requirement: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr070-013[_[.underline]#tbr070-013#_]
+Business requirement: xref:tbr70_reqs.adoc#list_of_criteria[tbr70-013]
 
 | |
 a|
@@ -3568,7 +3571,7 @@ Caption (i.e. a 'label'), specific MS or contracting authority requirement (e.g.
 a|
 _cac:TenderingCriterionProperty, independently of the level_
 
-Business requirement: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr070-013[_[.underline]#tbr070-013#_]
+Business requirement: xref:tbr70_reqs.adoc#list_of_criteria[tbr70-013]
 
 | |
 a|
@@ -3707,8 +3710,7 @@ A tendering criterion response describes a response to a criterion property from
 a|
 _Level 1: /cac:TenderingCriterionResponse_
 
-Business requirement: _ link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr092-018[[.underline]#tbr92-018#], link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr092-007[[.underline]#tbr92-007#]_, _[.underline]#tbr92-005#_, link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr092-006[_[.underline]#tbr92-006#_]
-
+Business requirement: xref:tbr92_reqs.adoc#eo[tbr92-005], xref:tbr92_reqs.adoc#eo[tbr92-006], xref:tbr92_reqs.adoc#eo[tbr92-007], xref:tbr92_reqs.adoc#eval_crit[tbr92-018]
 | |
 a|
 . {blank}
@@ -3772,7 +3774,7 @@ This element describes the criterion property response value:
 a|
 _Level 2: /cac:ResponseValue_
 
-Business requirement: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr92-018[_[.underline]#tbr92-018#_]
+Business requirement: xref:tbr92_reqs.adoc#eval_crit[tbr92-018]
 | |
 
 a|
@@ -3914,7 +3916,7 @@ This element describes the evidence supporting this criterion property response:
 a|
 _Level 2: /cac:EvidenceSupplied_
 
-Business requirement: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr92-017[_[.underline]#tbr92-017#_]
+Business requirement: xref:tbr92_reqs.adoc#evidence_link[tbr92-017]
 
 | |
 a|
@@ -3982,7 +3984,7 @@ a|
 . {blank}
 
 a|
-Business requirement: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr070-002[_[.underline]#tbr070-002#_]
+Business requirement: xref:tbr70_reqs.adoc#general[tbr70-002]
 
 Identifies the earliest version of the UBL 2 schema.
 

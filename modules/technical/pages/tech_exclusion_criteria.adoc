@@ -8,12 +8,12 @@ include::partial$piraeus.adoc[]
 
 [cols=",",]
 |===
-|*REQUIREMENT* link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0.1[_tbr092-015_, _br41-002_] |*The contracting body shall provide the exclusion grounds and selection criteria for its tendering process as structured information - via ESPD template or structured list of criteria set out in a call for tender.*
+|*REQUIREMENT* xref:tbr92_reqs.adoc#crit_list[tbr92-015],xref:bis41.adoc#br[br41-002] |*The contracting body shall provide the exclusion grounds and selection criteria for its tendering process as structured information - via ESPD template or structured list of criteria set out in a call for tender.*
 |===
 
 [cols=",",]
 |===
-|*REQUIREMENT* link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1.0-tbr070-009[_tbr070-009_] |The ESPD request must contain information about the criteria that set the exclusion grounds as stated in directive 2014/24/EU Art. 57 and referred to in directive 2014/25/EU Art. 80 and/or according to national legislation. These should be retrieved from e-Certis.
+|*REQUIREMENT* xref:tbr70_reqs.adoc#list_of_criteria[tbr70-009] |The ESPD request must contain information about the criteria that set the exclusion grounds as stated in directive 2014/24/EU Art. 57 and referred to in directive 2014/25/EU Art. 80 and/or according to national legislation. These should be retrieved from e-Certis.
 |===
 
 As suggested in section "Criteria Data Structures" criteria may be grouped in several different categories. The figure below is intended to identify and list these categories for the Exclusion criteria (branches in text boxes), and specific subgroups within each category (leaves in text without boxes).
@@ -28,7 +28,7 @@ _Figure 49. Exclusion criteria classification_
 
 *Information requirement*
 
-See formal requirements related to exclusion grounds in the link:http://wiki.ds.unipi.gr/pages/viewpage.action?pageId=44367916[BIS 41 - European Single Procurement Document (Version 2.0.0)], and more specifically *_tbr070-009_*, *_tbr070-004_*, *_tbr070-013_*.
+See formal requirements related to exclusion grounds in the xref:bis41.adoc[BIS 41 - European Single Procurement Document (Version 2.0.0)], and more specifically *_tbr070-009_*, *_tbr070-004_*, *_tbr070-013_*.
 
 The label ''Convictions'' groups all the criteria with identical data structures classified as:
 
@@ -355,14 +355,14 @@ Thus, in the case of Convictions, a new requirement could be introduced in G1 (s
 
 === Related information requirements
 
-See formal requirements related to exclusion grounds in the link:http://wiki.ds.unipi.gr/pages/viewpage.action?pageId=44367916[BIS 41 - European Single Procurement Document (Version 2.0.0)], and more specifically *_tbr070-009_*, *_tbr070-004_*, *_tbr070-013_*.
+See formal requirements related to exclusion grounds in the xref:bis41.adoc[BIS 41 - European Single Procurement Document (Version 2.0.0)], and more specifically *_tbr070-009_*, *_tbr070-004_*, *_tbr070-013_*.
 
 [cols=",",]
 |===
 |*REQUIREMENT* |*The buyer needs to be able to specify national exclusion criteria linked to one EU criterion as well as criteria particular for the procurement procedure. The economic operator, in the ESPD Response document, will have to respond "Yes" or "No" to each national criterion thus confirming that it in breach of the Law.*
 |===
 
-See also the REQUIREMENT link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#tbr070-015[_tbr070-015_] about economic thresholds regarding unpaid taxes or social security obligations.
+See also the REQUIREMENT xref:tbr70_reqs.adoc#list_of_criteria[tbr70-015] about economic thresholds regarding unpaid taxes or social security obligations.
 
 === Mock-ups - buyer perspective
 
@@ -769,7 +769,7 @@ NOTE: The source code can be copied from the code block below the callout sectio
 
 === Related information requirements
 
-See formal requirements related to exclusion grounds in the link:http://wiki.ds.unipi.gr/pages/viewpage.action?pageId=44367916[BIS 41 - European Single Procurement Document (Version 2.0.0)], more specifically *_tbr070-009_*, *_tbr070-004_*, *_tbr070-013_*.
+See formal requirements related to exclusion grounds in the xref:bis41.adoc[BIS 41 - European Single Procurement Document (Version 2.0.0)], more specifically *_tbr070-009_*, *_tbr070-004_*, *_tbr070-013_*.
 
 Category ''Social'' encompasses criteria with identical data structures, classified as:
 
@@ -905,7 +905,7 @@ _'Environmental Law'_
 
 === Related information requirements
 
-See formal requirements related to exclusion grounds in the link:http://wiki.ds.unipi.gr/pages/viewpage.action?pageId=44367916[BIS 41 - European Single Procurement Document (Version 2.0.0)], and more specifically *_tbr070-009_*, *_tbr070-004_*, *_tbr070-013_*.
+See formal requirements related to exclusion grounds in the xref:bis41.adoc[BIS 41 - European Single Procurement Document (Version 2.0.0)], and more specifically *_tbr070-009_*, *_tbr070-004_*, *_tbr070-013_*.
 
 === Mock-ups - buyer perspective
 
@@ -1034,7 +1034,7 @@ _<!-- ... the rest of elements in the QualificationApplicationRequest document o
 
 === Related information requirements
 
-See formal requirements related to exclusion grounds in the link:http://wiki.ds.unipi.gr/pages/viewpage.action?pageId=44367916[BIS 41 - European Single Procurement Document (Version 2.0.0)], and more specifically *_tbr070-009_*, *_tbr070-004_*, *_tbr070-013_*.
+See formal requirements related to exclusion grounds in the xref:bis41.adoc[BIS 41 - European Single Procurement Document (Version 2.0.0)], and more specifically *_tbr070-009_*, *_tbr070-004_*, *_tbr070-013_*.
 
 === Mock-ups - buyer perspective
 
@@ -1174,7 +1174,7 @@ _'Professional Misconduct'_
 
 === Related information requirements
 
-See formal requirements related to exclusion grounds in the link:http://wiki.ds.unipi.gr/pages/viewpage.action?pageId=44367916[BIS 41 - European Single Procurement Document (Version 2.0.0)], and more specifically *_tbr070-009_*, *_tbr070-004_*, *_tbr070-013_*.
+See formal requirements related to exclusion grounds in the xref:bis41.adoc[BIS 41 - European Single Procurement Document (Version 2.0.0)], and more specifically *_tbr070-009_*, *_tbr070-004_*, *_tbr070-013_*.
 
 We have divided the conflict of interest criteria in two groups, this first group is composed of two criteria with the same structure:
 
@@ -1302,7 +1302,7 @@ _'Participation in the procurement procedure' conflict of interest_
 
 === Related information requirements
 
-See formal requirements related to exclusion grounds in the link:http://wiki.ds.unipi.gr/pages/viewpage.action?pageId=44367916[BIS 41 - European Single Procurement Document (Version 2.0.0)], more specifically *_tbr070-009_*, *_tbr070-004_*, *_tbr070-013_*.
+See formal requirements related to exclusion grounds in the xref:bis41.adoc[BIS 41 - European Single Procurement Document (Version 2.0.0)], more specifically *_tbr070-009_*, *_tbr070-004_*, *_tbr070-013_*.
 
 === Mock-ups - buyer  perspective
 
@@ -1441,7 +1441,7 @@ _Early termination conflict of interest_
 
 === Related information requirements
 
-See formal requirements related to exclusion grounds in the link:http://wiki.ds.unipi.gr/pages/viewpage.action?pageId=44367916[BIS 41 - European Single Procurement Document (Version 2.0.0)], and more specifically *_tbr070-009_*, *_tbr070-004_*, *_tbr070-013_*.
+See formal requirements related to exclusion grounds in the lxref:bis41.adoc[BIS 41 - European Single Procurement Document (Version 2.0.0)], and more specifically *_tbr070-009_*, *_tbr070-004_*, *_tbr070-013_*.
 
 === Mock-ups - buyer perspective
 
@@ -1557,7 +1557,7 @@ _<!-- ... the rest of elements in the QualificationApplicationRequest document o
 
 === Related information requirements
 
-See formal requirements related to exclusion grounds in the link:http://wiki.ds.unipi.gr/pages/viewpage.action?pageId=44367916[BIS 41 - European Single Procurement Document (Version 2.0.0)], and more specifically *_tbr070-009_*, *_tbr070-004_*, *_tbr070-013_*.
+See formal requirements related to exclusion grounds in the xref:bis41.adoc[BIS 41 - European Single Procurement Document (Version 2.0.0)], and more specifically *_tbr070-009_*, *_tbr070-004_*, *_tbr070-013_*.
 
 Other requirements related specifically to purely national criteria are:
 
