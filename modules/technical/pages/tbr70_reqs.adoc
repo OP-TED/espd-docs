@@ -1,0 +1,148 @@
+= Contracting Body Requirements
+
+[#general]
+== General
+
+[width="100%",cols="7%,93%",options="header",]
+|===
+|*ID* |*Requirement*
+|tbr070-002 |The ESPD request shall be identified and dated. The time of
+issue should be stated and it should be indicated whether the document
+is a copy. The UBL version and the ESPD version, the ESPD specification
+and the transaction should be identified as well.
+|===
+
+[#contracting_body]
+== Contracting body
+
+[width="100%",cols="8%,92%",options="header",]
+|===
+|*ID* |*Requirement*
+|tbr070-001 |The contracting body must be identified, hence information
+about the party is required, such as party name, identification,
+endpoint id-, buyer profile  and country- .
+
+|tbr070-006 |The qualification document should contain contact
+information of the contracting body: Postal address, telephone number,
+fax number, e-mail address, contact person(s).
+
+|tbr070-005 |The contracting authority must be able to provide the CPV
+codes in the ESPD request.
+|===
+
+[#call_for_tender]
+== Call for tenders
+
+[width="100%",cols="6%,94%",options="header",]
+|===
+|*ID* |*Requirement*
+|tbr070-007 |The ESPD request must contain the object of the contract,
+its name, a despription, the type of procedure, the type of procurement
+project and the applied CPV codes as well as a reference to the call for
+tenders, i.e. the procurement project ID or notice ID (PIN, CN, and
+CAN), which defines the requirements (i.e. criteria) for which this
+document is created and submitted by the economic operator. It must be
+possible to maintain this information in order to keep track of the
+connection between ESPD request and call for tenders/notices.
+|===
+
+[#procurement_lots]
+== Procurement lots
+
+[width="100%",cols="7%,93%",options="header",]
+|===
+|*ID* |*Requirement*
+|tbr070-008 |The ESPD request may contain information about the
+procurement lots defined in a call for tender and indicate for each
+tendering criterion what lots are related to it. The contracting body
+shall also set the minimum yearly turnover that economic operators are
+required to have if they tender for more than one lot. In this case, the
+contracting body shall provide a reference to the group of lots of the
+call for tender, to which the minimum turnover applies (art. 58 of
+2014/24/EU).
+|===
+
+[#list_of_criteria]
+== List of Criteria
+
+[width="100%",cols="6%,94%",options="header",]
+|===
+|*ID* |*Requirement*
+|tbr070-003 |The contracting authority must be able to define the
+particular requirements that apply to selection criteria regarding
+Suitability.
+
+|tbr070-009 |The ESPD request must contain information about the
+criteria that set the exclusion grounds as stated in directive
+2014/24/EU Art. 57 and referred to in directive 2014/25/EU Art. 80
+and/or according to national legislation.
+
+|tbr070-010 |The ESPD request must contain information about qualitative
+selection criteria as stated in directive 2014/24/EU Art. 58 and
+2014/25/EU Art. 80 and/or according to national legislation.
+
+|tbr070-004 |The contracting body must be able to indicate, which
+criteria for exclusion grounds and qualitative selection specific types
+of economic operators (e.g. subcontractors or partners in consortia)
+need to declare.
+
+|tbr070-013 |The ESPD request shall provide criteria of exclusion
+grounds and of qualitative selection in a structured way, i.e. grouping
+the criteria along the criteria groups as put forward in the directive
+2014/24/EU. Additional information for each criterion may be provided
+such as: Legal reference (EU level, contracting body national level,
+economic operator national level), type of criterion (e.g. technical
+capability, financial standing, etc.) or specific requirements for
+natural persons as settled in Art. 67-69 of directive 2014/24/EU. This
+information is provided by the contracting body, who includes the
+information from the call for tenders or it is automatically/directly
+imported from the call for tenders.
+
+|tbr070-015 |The ESPD must provide information about thresholds
+regarding unpaid taxes or social security obligations.
+
+|tbr070-016 |The contracting authority must be able to provide
+information about weighted criteria.
+
+|tbr070-017 |Information about weighted criteria provided by the
+contracting authority must be displayed to the economic operator.
+
+|tbr070-018 |Several selection criteria must be displayed only for a
+particular type of contract.
+
+|tbr070-019 |The contracting authority must be able to provide
+information about the applicable periods for qualification criteria
+|===
+
+[#service_provider]
+== ESPD service provider
+
+[width="100%",cols="9%,91%",options="header",]
+|===
+|*ID* |*Requirement*
+|tbr070-011 |The ESPD request may contain information of identification
+regarding an ESPD service provider: Name, Party Identification, Endpoint
+ID, Website, Country.
+|===
+
+[#additional_documentation]
+== Additional documentation
+
+[width="100%",cols="12%,88%",options="header",]
+|===
+|*ID* |*Requirement*
+|tbr070-012 |The ESPD service provider may be able to provide
+complementary information such as liability statements.
+|===
+
+[#versioning]
+== Versioning
+
+[width="100%",cols="7%,93%",options="header",]
+|===
+|*ID* |*Requirement*
+|tbr070-014 |The ESPD should allow to include a Version ID and a
+Previous Version ID to the ESPD. Both help to identify the status of
+subsystems that have supported the creation of the ESPD. The Previous
+version ID is needed to trace changes that have occurred.
+|===
