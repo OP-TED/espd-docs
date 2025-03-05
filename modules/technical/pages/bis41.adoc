@@ -265,10 +265,7 @@ This document was edited by:
 
 == Introduction
 
-The CEN BII Workshop was established in May 2007 with the objective of
-harmonising electronic public procurement in Europe. The BII Workshop is
-a standardisation initiative within CEN (European Committee for
-Standardisation). It provides a framework for interoperability in
+The BII Workshop established in May 2007 was a standardisation initiative with the objective of harmonising electronic public procurement in Europe. . It provides a framework for interoperability in
 pan-European electronic transactions expressed as a set of technical
 specifications ("Profiles"). Profiles are designed to facilitate
 effective public e-procurement based on a modular approach for
@@ -279,9 +276,6 @@ business processes. The profile descriptions focus on the core
 information elements that typically cater to the majority of user
 requirements applicable across Europe and lower the need for detailed
 bilateral agreements between the trading partners.
-
-More information about the BII initiative can be found in CWA 1234:2015
-and on http://www.cenbii.eu[www.cenbii.eu].
 
 == Scope
 
