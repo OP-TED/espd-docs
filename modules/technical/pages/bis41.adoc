@@ -318,7 +318,7 @@ for tendering in an open procedure. Qualification through providing a
 Virtual Company Dossier or through other Qualification profiles
 containing the necessary evidence documents, as well as tendering are
 out of the scope of this profile.
-+
+
 The open procedure is described in profile BII37, the restricted
 procedure in profile BII39.
 
@@ -571,8 +571,7 @@ The ESPD profile is realizing the ESPD process, as highlighted in the
 above figure. The ESPD process is part of the qualification process in
 the pre-awarding process area.
 
-===  +
-Parties and roles involved
+===  Parties and roles involved
 
 The following business partners participate in this profile, acting in
 the roles as defined below.
@@ -610,76 +609,67 @@ Figure 3 — ESPD business process
 
 [width="100%",cols="28%,72%",options="header",]
 |===
-a|
-____
-*Category*
-____
+s|Category s|Description
 
-a|
-____
-*Description*
-____
 
-a|
-____
-Description
-____
-
+a|Description
 |The ESPD requester requests an ESPD from the ESPD provider. The ESPD
 provider prepares the ESPD and sends it to the ESPD requester.
 
-a|
-____
-Pre-conditions
-____
-
+a|Pre-conditions
 |The ESPD requester needs an ESPD.
 
-a|
-____
-Post-conditions
-____
-
-|The ESPD has been provided to the ESPD requester.
+a|Post-conditions
+|The ESPD has been provided to the ESPD requester
 |===
 
 [width="100%",cols="22%,19%,59%",options="header",]
 |===
-|*Activity* |*Role involved* |*Description*
-|Send ESPD template |ESPD requester |The ESPD requester requests an ESPD
+s|Activity s|Role involved s|Description
+
+|Send ESPD template 
+|ESPD requester 
+|The ESPD requester requests an ESPD
 from the ESPD provider. The request includes a template with a
 specification of the information that needs to be present in the ESPD.
 
-|Prepare ESPD |ESPD provider |The ESPD provider prepares the ESPD, based
+|Prepare ESPD 
+|ESPD provider 
+|The ESPD provider prepares the ESPD, based
 on the template.
 
-|Send ESPD |ESPD provider |The ESPD provider sends the ESPD to the ESPD
+|Send ESPD 
+|ESPD provider 
+|The ESPD provider sends the ESPD to the ESPD
 requester.
 |===
 
 === Qualification transaction business requirements 
 
-==== 
+==== Trdm070 ESPD request transaction
 
 [width="100%",cols="30%,70%",options="header",]
 |===
-|[#_Toc423863804 .anchor]####Trdm070 ESPD request
-transaction**Categories** |*Description and Values*
-|Identifier |Trdm070
+s|Categories s|Description and Values
 
-|Description |A structured electronic business document for requesting
+|Identifier 
+|Trdm070
+
+|Description 
+|A structured electronic business document for requesting
 qualification information through an ESPD (conform to an ESPD template).
 Directive 2014/24/EU, Art. 59.
 
-|Partner Types |Governmental or private organisation
+|Partner Types 
+|Governmental or private organisation
 
-|Authorized Roles a|
-ESPD requester
+|Authorized Roles 
+|ESPD requester
 
 ESPD provider
 
-|Legal Implications a|
-By providing an ESPD template to the economic operator, the contracting
+|Legal Implications 
+|By providing an ESPD template to the economic operator, the contracting
 body is legally responsible for the correctness of the information
 provided.
 
@@ -687,16 +677,17 @@ By compiling an ESPD template through an ESPD service provider, the
 contracting body is legally responsible for the correctness of the
 information provided.
 
-|Initial Event |ESPD requester sends the ESPD request using an ESPD
+|Initial Event 
+|ESPD requester sends the ESPD request using an ESPD
 template.
 
 |Terminal event |ESPD provider receives and processes the ESPD request.
-
 |Scope |Open and restricted tendering procedures, with a focus on
 implementing the simplification in tendering procedures above threshold
 according to directives 2014/24/EU and 2014/25/EU.
 
-|Boundary |Trdm070
+|Boundary 
+|Trdm070
 |===
 
 ===== Trdm070 ESPD request transaction business requirements
@@ -706,24 +697,30 @@ _Contracting body_
 [width="100%",cols="15%,85%",options="header",]
 |===
 |*ID* |*Requirement*
-|tbr70-001 |The contracting body must be identified, hence information
+
+|tbr70-001 
+|The contracting body must be identified, hence information
 about the party is required, such as party name, country,
 identification, endpoint id.
 
-|tbr70-002 |The contracting body must be able to list criteria for
+|tbr70-002 
+|The contracting body must be able to list criteria for
 exclusion grounds according to directive 2014/24/EU and 2014/25/EU
 and/or according to national legislation.
 
-|tbr70-003 |The contracting body must be able to list criteria for
+|tbr70-003 
+|The contracting body must be able to list criteria for
 qualitative selection according to directive 2014/24/EU and 2014/25/EU
 and/or according to national legislation.
 
-|tbr70-004 |The contracting body must be able to indicate which criteria
+|tbr70-004 
+|The contracting body must be able to indicate which criteria
 for exclusion grounds and qualitative selection specific types of
 economic operators (e.g. subcontractors or partners in consortia) need
 to declare.
 
-|Tbr70-005 |Where a call for tender is divided into lots, the
+|Tbr70-005 
+|Where a call for tender is divided into lots, the
 contracting body must be able to indicate for each individual lot, what
 selection criteria are to be fulfilled. The contracting body shall also
 set the minimum yearly turnover that economic operators are required to
@@ -731,7 +728,8 @@ have if they tender for more than one lot. In this case, the contracting
 body shall provide a reference to the groups of lots of the call for
 thender, to which the minimum turnover applies (art. 58 of 2014/24/EU).
 
-|Tbr70-006 |The qualification document should contain contact
+|Tbr70-006 
+|The qualification document should contain contact
 information of the contracting body: Postal address, telephone number,
 fax number, e-mail address, contact person(s).
 |===
@@ -741,7 +739,9 @@ _Call for tenders_
 [width="100%",cols="15%,85%",options="header",]
 |===
 |*ID* |*Requirement*
-|Tbr70-007 |The ESPD request must contain a reference to the call for
+
+|Tbr70-007 
+|The ESPD request must contain a reference to the call for
 tenders, i.e. the procurement project ID, which defines the requirements
 (i.e. criteria) for which this document is created and submitted by the
 economic operator. It must be possible to maintain this information in
@@ -769,13 +769,17 @@ _List of Criteria_
 [width="100%",cols="15%,85%",options="header",]
 |===
 |*ID* |*Requirement*
-|Tbr70-009 |The ESPD template must contain information about the
+
+|Tbr70-009 
+|The ESPD template must contain information about the
 criteria that set the exclusion grounds. 2014/24/EU Art. 57 and referred
 to in 2014/25/EU Art. 80.
 
-|Tbr70-010 |The ESPD template must contain information about the
+|Tbr70-010 
+|The ESPD template must contain information about the
 criteria that set the selection grounds. 2014/24/EU Art. 58 and
 2014/25/EU Art. yy.
+
 |===
 
 _ESPD service provider_
@@ -783,9 +787,12 @@ _ESPD service provider_
 [width="100%",cols="15%,85%",options="header",]
 |===
 |*ID* |*Requirement*
-|Tbr70-011 |The ESPD template shall contain information of
+
+|Tbr70-011 
+|The ESPD template shall contain information of
 identification regarding an ESPD service provider: Name, Party
 Identification, Endpoint ID.
+
 |===
 
 _Additional documentation_
@@ -793,8 +800,11 @@ _Additional documentation_
 [width="100%",cols="15%,85%",options="header",]
 |===
 |*ID* |*Requirement*
-|Tbr70-012 |The ESPD service provider should be able to provide
+
+|Tbr70-012 
+|The ESPD service provider should be able to provide
 complementary information such as liability statements.
+
 |===
 
 ===== Trdm070 ESPD request transaction model
@@ -805,61 +815,15 @@ Figure 4 — ESPD request transaction model
 
 ===== Trdm070 ESPD request transaction information Requirements
 
+#start here#
+
 [width="100%",cols="12%,3%,,1%,,,,,,24%,38%,12%,10%",options="header",]
 |===
-a|
-____
-*InfReqID*
-____
+s|InfReqID s|Card s|Tree and Business term | | | | | | | s|Usage s|Data Type s|BusReqID
 
-a|
-____
-*Card*
-____
+| | | a|ESPD Request| | | | | | | | |
 
-a|
-____
-*Tree and Business term*
-____
-
-| | | | | | | a|
-____
-*Usage*
-____
-
-a|
-____
-*Data Type*
-____
-
-a|
-____
-*BusReqID*
-____
-
-| | | a|
-____
-ESPD Request
-____
-
-| | | | | | | | |
-
-| a|
-____
-1..1
-____
-
-| | a|
-____
-Document identifier
-____
-
-| | | | | a|
-____
-Identifier of a document
-____
-
-a|
+| a|1..1| | |Document identifier| | | | | |Identifier of a document|
 ____
 Identifier
 ____
