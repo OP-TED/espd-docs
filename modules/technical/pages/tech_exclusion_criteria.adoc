@@ -1,4 +1,4 @@
-:doctitle: Exclusion criteria
+:doctitle: Exclusion grounds
 :doccode: espd-tech-prod-010
 :author: NPJ
 :authoremail: nicole-anne.paterson-jones@ext.ec.europa.eu

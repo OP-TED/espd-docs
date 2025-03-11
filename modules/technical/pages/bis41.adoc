@@ -1,271 +1,11 @@
-////
-TC  WI :2014 (E) 511Élément introductif — Élément central — Élément
-complémentaireEinführendes Element — Haupt-Element — Ergänzendes
-ElementBusiness Interoperability Interfaces for public procurement in
-Europe — Profile BII41 — European Single Procurement Document (ESPD)E0
-00 201407Working Document  TC  WI  0False 2Heading 2Heading 1 0 STD
-Version 2.5a10 1C:\Users\Fred\Documents\data\BII3\Profiles\Profile 41 -
-ESPD\Profile 41 - ESPD.docx /TC 
 
-Date:  2014-07
-
-TC  WI 
-
-/TC 
-
-Secretariat:   
-
-Business Interoperability Interfaces for public procurement in Europe —
-Profile BII41 — European Single Procurement Document (ESPD)
-
-_Einführendes Element — Haupt-Element — Ergänzendes Element_
-
-_Élément introductif — Élément central — Élément complémentaire_
-
-ICS:  
-
-Descriptors:  
-
-CWA 3456 is a technical agreement, developed and approved by an open,
-independent Workshop structure within the framework of the CEN-CENELEC
-system.
-
-CWA 3456 reflects the agreement only of the registered participants
-responsible for its content, and was developed in accordance with the
-CEN-CENELEC rules and practices for the development and approval of
-CEN/CENELEC Workshop Agreements.
-
-CWA 3456 does not have the status of a European Standard (EN) developed
-by CEN and its national Members. It does not represent the wider level
-of consensus and transparency required for a European Standard (EN) and
-is not is not intended to support legislative requirements or to address
-issues with significant health and safety implications. For these
-reasons, CEN are not accountable for the technical content of CWA 3456
-or for any possible conflicts with national standards or legislation.
-
-The Workshop participants who drafted and approved CWA 3456 are
-indicated in the Foreword.
-
-The copyright in CWA 3456 is owned exclusively by CEN. Copies of CWA
-3456 are available from the national standards bodies of the following
-countries: Austria, Belgium, Bulgaria, Croatia, Cyprus, Czech Republic,
-Denmark, Estonia, Finland, Former Yugoslav Republic of Macedonia,
-France, Germany, Greece, Hungary, Iceland, Ireland, Italy, Latvia,
-Lithuania, Luxembourg, Malta, Netherlands, Norway, Poland, Portugal,
-Romania, Slovakia, Slovenia, Spain, Sweden, Switzerland, Turkey and the
-United Kingdom.
-
-Contents
-
-Page
-
-link:#_Toc343173732[Foreword link:#_Toc343173732[3]]
-
-link:#_Toc423863786[Introduction link:#_Toc423863786[5]]
-
-link:#scope[1 Scope link:#scope[6]]
-
-link:#introduction[1.1 Introduction link:#introduction[6]]
-
-link:#goals[1.2 Goals link:#goals[6]]
-
-link:#business-environment[1.3 Business environment
-link:#business-environment[7]]
-
-link:#introduction-1[1.3.1 Introduction link:#introduction-1[7]]
-
-link:#tendering-procedures[1.3.2 Tendering procedures
-link:#tendering-procedures[7]]
-
-link:#requirements[2 Requirements link:#requirements[8]]
-
-link:#high-level-business-requirements[2.1 High Level Business
-Requirements link:#high-level-business-requirements[8]]
-
-link:#key-examples[2.2 Key Examples link:#key-examples[8]]
-
-link:#example-1[2.2.1 Example 1 link:#example-1[8]]
-
-link:#example-2[2.2.2 Example 2 link:#example-2[9]]
-
-link:#example-3[2.2.3 Example 3 link:#example-3[9]]
-
-link:#profile-detailed-description[3 Profile detailed description
-link:#profile-detailed-description[10]]
-
-link:#business-processes-in-scope[3.1 Business processes in scope
-link:#business-processes-in-scope[10]]
-
-link:#parties-and-roles-involved[3.2 Parties and roles involved
-link:#parties-and-roles-involved[11]]
-
-link:#espd-process[3.3 ESPD Process link:#espd-process[12]]
-
-link:#qualification-transaction-business-requirements[3.4 Qualification
-transaction business requirements
-link:#qualification-transaction-business-requirements[13]]
-
-link:#_Toc423863804[3.4.1 Trdm070 ESPD request transaction
-link:#_Toc423863804[13]]
-
-link:#trdm092-espd-transaction[3.4.2 Trdm092 ESPD transaction
-link:#trdm092-espd-transaction[20]]
-
-link:#implementation[4 Implementation link:#implementation[32]]
-
-link:#references[5 References link:#references[32]]
-
-[#_Toc343173732 .anchor]####Foreword
-
-This document is a working document.
-
-CWA 3456 part 110, *Profile BII41 - European Single Procurement Document
-(ESPD)* was developed in accordance with CEN-CENELEC Guide 29
-“CEN/CENELEC Workshop Agreements – The way to rapid agreement” and with
-the relevant provisions of CEN/CENELEC Internal Regulations - Part 2. It
-was agreed on YYYY-MM-DD in a Workshop by representatives of interested
-parties, approved and supported by CEN following a public call for
-participation made on YYYY-MM-DD. It does not necessarily reflect the
-views of all stakeholders that might have an interest in its subject
-matter.
-
-The final text of CWA 3456 was submitted to CEN for publication on
-YYYY-MM-DD. It was developed and approved by:
-
-* Agenzia delle entrate – Sistema di Interscambio (IT)
-* AVCP - Autorità per la Vigilanza sui Contratti Pubblici di Lavori,
-Servizi e Forniture (IT)
-* BME e.V. (DE)
-* CEN/WS eCAT, Liaison
-* Columbus Denmark A/S (DK)
-* Cloudia Oy (FI)
-* Danish Agency for Digitisation (DIGST) (DK)
-* DIFI (NO)
-* Direction de l'information légale et administrative (DILA) (FR)
-* ETSI, Liaison
-* Flowcanto (NL)
-* GS1 in Europe (NL)
-* Highjump Software (DK)
-* ICEPRO (IS)
-* Invinet Sistemes 2003 (ES)
-* Laszlo Ketszeri (HU)
-* Nets Norway AS (NO)
-* Nexus IT (ES)
-* Phast (FR)
-* PIANOo Dutch Ministry of Economic Affairs (NL)
-* Publications Office of the European Union (LU)
-* Single Face To Industry (SFTI) (SE)
-* SKI A/S (DK)
-* SOGEI (IT)
-* University of Koblenz-Landau (DE)
-* University of Piraeus Research Center (UPRC) (GR)
-* Western Norway Regional Health Authority (NO)
-
-It is possible that some elements of CWA 3456 may be subject to patent
-rights. The CEN-CENELEC policy on patent rights is set out in
-CEN-CENELEC Guide 8 “Guidelines for Implementation of the Common IPR
-Policy on Patents (and other statutory intellectual property rights
-based on inventions)”. CEN shall not be held responsible for identifying
-any or all such patent rights.
-
-The Workshop participants have made every effort to ensure the
-reliability and accuracy of the technical and non-technical content of
-CWA 3456, but this does not guarantee, either explicitly or implicitly,
-its correctness. Users of CWA 3456 should be aware that neither the
-Workshop participants, nor CEN can be held liable for damages or losses
-of any kind whatsoever which may arise from its application. Users of
-CWA 3456 do so on their own responsibility and at their own risk.
-
-This CEN Workshop Agreement (CWA) has been drafted and approved by the
-Workshop on *Business Interoperability Interfaces for Public procurement
-in Europe (BII)*, phase 3.
-
-CWA 3456 is part of a set of CWAs prepared by BIIfootnote:[In order to
-ease the reading and review the CWAs provided by BII, they are also made
-available on http://www.cenbii.eu together with explanatory notes and
-supporting material. The official version is however the version as
-published by CEN.]:
-
-____
-CWA 1234:2015 BII Architecture
-
-CWA 2345:2015 BII Notification profiles and transactions
-
-CWA 3456:2015 BII Tendering profiles and transactions
-
-CWA 4567:2015 BII Catalogue profiles and transactions
-
-CWA 5678:2015 BII Post-award profiles and transactions
-____
-
-CWA 3456 consists of:
-
-* An overview of the e-Tendering process area (CWA 3456 part 1)
-* e-Tendering profiles (CWA 3456 parts 101 - 123)
-* Mapping of e-Tendering related transactions to the UBL syntax (CWA
-3456 parts 201 - 227)
-* Mapping of e-Tendering related transactions to the UN/CEFACT syntax
-(CWA 3456 parts 301 - 327)
-
-A detailed overview of all CWA 3456 parts can be found in CWA 3456 part
-1.
-
-The CEN Workshop members who have contributed to the development of this
-document are:
-
-[width="100%",cols="38%,46%,16%",options="header",]
-|===
-|*Name* |*Affiliation* |*Country*
-|Ansgar Mondorf |University of Koblenz-Landau |DE
-|Maria Wimmer |University of Koblenz-Landau |DE
-|Kornelis Drijfhout |PIANOo |NL
-|Chander Khoenkhoen |PIANOo |NL
-|Veit Jahns |BME/University of Duisburg-Essen |DE
-|Frank-Dieter Dorloff |BME/University of Duisburg-Essen |DE
-|Kerstin Wiss-Holmdahl |SFTI/SALAR |SE
-|Thomas Pettersson |SFTI |SE
-|Magnus Matts |SFTI/Kammarkollegiet |SE
-|Giampaolo Sellitto |AVCP |IT
-|Ana Estelrich |Phast |FR
-|Cécile Guasch |DIGIT - European Commission |BE
-|Marius Juganaru |DIGIT - European Commission |BE
-|Marc Christopher Schmidt |DG GROWTH - European Commission |BE
-|Ole Madsen |DIGST |DK
-|Are Berg |Difi |NO
-|Jan Maeroe |Difi |NO
-|Pål Røynesdal |WNRHA |NO
-|Jerry Dimitriou |UPRC |GR
-|Panagiotis Nicolaou |UPRC |GR
-|Isabella Rapisarda |Consip |IT
-|Samuel Dupont |DILA |FR
-|Sacha Lauzanne |DILA |FR
-|Natalie Muric |The Publications Office |LU
-|Claire Noël |The Publications Office |LU
-|Christoph Karich |eVergabe |DE
-|Tom Hombergs |eVergabe |DE
-|===
-
-This document was edited by:
-
-[width="100%",cols="38%,46%,16%",options="header",]
-|===
-|*Name* |*Role* |*Country*
-|Oriol Bausa |Technical Editor |ES
-|Georg Birgisson |Technical Editor |IS
-|Jostein Frømyr |Vice-Chair CEN/BII |NO
-|Fred van Blommestein |Technical Editor |NL
-|Yildiray Kabak |Technical Editor |TR
-|Edmund Gray |Technical Editor |EI
-|Carmen Ciciriello |Technical Editor |IT
-|===
-
-////
 
 = Business Interoperability Interfaces for public procurement in Europe — Profile BII41 — European Single Procurement Document (ESPD)
 
 == Introduction
 
 The BII Workshop established in May 2007 was a standardisation initiative with the objective of harmonising electronic public procurement in Europe. . It provides a framework for interoperability in
+
 pan-European electronic transactions expressed as a set of technical
 specifications ("Profiles"). Profiles are designed to facilitate
 effective public e-procurement based on a modular approach for
@@ -276,7 +16,6 @@ business processes. The profile descriptions focus on the core
 information elements that typically cater to the majority of user
 requirements applicable across Europe and lower the need for detailed
 bilateral agreements between the trading partners.
-
 
 == Scope
 
@@ -313,14 +52,13 @@ for tendering in an open procedure. Qualification through providing a
 Virtual Company Dossier or through other Qualification profiles
 containing the necessary evidence documents, as well as tendering are
 out of the scope of this profile.
-+
+
 The open procedure is described in profile BII37, the restricted
 procedure in profile BII39.
 
 === Goals
 
-The main business benefits to be gained by implementing this profile
-are:
+The main business benefits to be gained by implementing this profile are:
 
 [width="100%",cols="12%,88%",options="header",]
 |===
@@ -357,8 +95,7 @@ The transactions, specified in this profile are intended to be exchanged
 between the tendering systems of economic operators and contracting
 bodies. This means that it is expected that the parties have connected
 their systems to the internet, and that they have middleware in place to
-enable them to send and receive the transactions in a secure way, using
-an agreed syntax.
+enable them to send and receive the transactions in a secure way, using an agreed syntax.
 
 The content model of the transactions can also be used in procurement
 platforms or portals, so that these platforms as well as procurement
@@ -371,13 +108,11 @@ participate in the tendering process.
 ==== Tendering procedures
 
 Individual pre-award processes can be put in place using different
-procedures, depending on the value and the type of the contract to be
-awarded, on the legal nature of the contracting body and on specific
+procedures, depending on the value and the type of the contract to be awarded, on the legal nature of the contracting body and on specific
 member state national legislation (Directive 2014/24/EU art. 26). In
 open procedures, any economic operator can access the tender documents
 (including the call for tenders) and submit a tender before the time
-expires, without subscribing for interest and without any previous
-assessment of their capabilities. In restricted and negotiated
+expires, without subscribing for interest and without any previous assessment of their capabilities. In restricted and negotiated
 procedures and in a competitive dialogue the interested economic
 operators must submit a request to participate in order to be invited in
 the tendering process by the contracting body. When the contracting body
@@ -385,13 +120,11 @@ has published a notice, the interested economic operators may subscribe
 to obtain tendering information using profile BII46. Negotiated
 procedures require sending the invitation to tender (profile BII52) to
 identified candidates.
-
 Article 26 to 32 from Directive 2014/24/EU and article 43 to 50 from
 Directive 2014/25/EU describe the different tendering procedures that
 can be used by contracting bodies. For the purpose of electronic
 tendering, some of these procedures have been described in BII profiles
-BII37 (open procedure) and BII39 (restricted procedure). These profiles
-are included in CWA 3456 parts 106 and 108.
+BII37 (open procedure) and BII39 (restricted procedure). These profiles are included in CWA 3456 parts 106 and 108.
 
 Official notification through publishing bodies is part of many
 procedures. eNotification covers the electronic transfer of electronic
@@ -451,12 +184,11 @@ G41-001
 
 G41-004
 
-|Br41-006 |An economic operator shall be able to ask its contractors in
-a consortium or subcontractors to provide their ESPD to her/him using
+|Br41-006 |An economic operator shall be able to ask its contractors in consortium or subcontractors to provide their ESPD to her/him using
 this profile |G41-003
 
 |Br41-007 |The ESPD shall contain an URL and relevant access credentials
-to a national database, from where the evidentiary documents along the
+to a national database, from where the evidence documents along the
 ESPD can be retrieved by the contracting body. a|
 G41-004
 
@@ -467,19 +199,16 @@ G41-002
 === Key Examples
 
 ==== *Example 1*
-
-A contracting body from Germany using the eTendering platform e-Vergabe
+ contracting body from Germany using the eTendering platform e-Vergabe
 starts to prepare a tendering procedure, because it wants to buy goods
 from any European supplier. First, it starts to prepare the relevant
 documents in particular the tender notice and call for tender in any
 local format (e.g. x-Vergabe9. As part of this process, the contracting
 body specifies the qualification criteria in the form of a structured
 ESPD Template, according to pre-defined codes, which need to be proven
-by economic operators applying for the contract. The contracting body
-adds the standardied qualification criteria to the tender notice and/or
+by economic operators applying for the contract. The contracting body adds the standardised qualification criteria to the tender notice and/or
 call for tender, or it includes the ESPD Template as an attachment to
 the previous.
-
 After having searched for interesting call for tenders across Europe,
 having received an invitation to the call for tender , or having
 received a notification from a platform where the economic operator is
@@ -487,7 +216,7 @@ subscribed to (e.g. TED), an economic operator from the Netherlands
 subscribed interest (using TenderNed as his or her tendering platform to
 prepare the bid) and received the tender documents, including
 qualification criteria. In this ESPD profile, the most relevant document
-received is the call for tender including the list ofqualification
+received is the call for tender including the list of qualification
 criteria (as part of the call for tender itself or as attached ESPD
 Template). The list of qualification criteria is received in a
 standardized, structured format. Besides preparing the content of the
@@ -500,9 +229,7 @@ client). The contracting body receives the offer in e-Vergabe, including
 the ESPD.
 
 ==== *Example 2*
-
-Along the procedure described in Example 1, the economic operator is not
-a single tenderer. He / she bids in a consortium and has a subcontractor
+long the procedure described in Example 1, the economic operator is not single tenderer. He / she bids in a consortium and has a subcontractor
 him- or herself. Hence, the economic operator as main contractor sends a
 request from his TenderNed client to the German subcontractor to provide
 the ESPD for the tender. The German subcontractor receives the request
@@ -518,8 +245,7 @@ portal via download. Afterwards, he sends the ESPD to the main
 contractor’s tendering client (TenderNed) via DE-Mail.
 
 The Austrian partner contractor contacts ANKÖ to generate the ESPD. He
-uploads the ESPD template received, fills and signs the ESPD using the
-ANKÖ ESPD service, and sends from ANKÖ’s portal the ESPD to the
+uploads the ESPD template received, fills and signs the ESPD using theNKÖ ESPD service, and sends from ANKÖ’s portal the ESPD to the
 TenderNed client of the main contractor.
 
 The Italian economic operator uses the ESPD service of the European
@@ -562,12 +288,10 @@ image:bis1.png[image,width=650,height=670]
 
 Figure 1 — Procurement
 
-The ESPD profile is realizing the ESPD process, as highlighted in the
-above figure. The ESPD process is part of the qualification process in
+The ESPD profile is realizing the ESPD process, as highlighted in the above figure. The ESPD process is part of the qualification process in
 the pre-awarding process area.
 
-===  +
-Parties and roles involved
+===  Parties and roles involved
 
 The following business partners participate in this profile, acting in
 the roles as defined below.
@@ -605,76 +329,67 @@ Figure 3 — ESPD business process
 
 [width="100%",cols="28%,72%",options="header",]
 |===
-a|
-____
-*Category*
-____
+s|Category s|Description
 
-a|
-____
-*Description*
-____
 
-a|
-____
-Description
-____
-
+|Description
 |The ESPD requester requests an ESPD from the ESPD provider. The ESPD
 provider prepares the ESPD and sends it to the ESPD requester.
 
-a|
-____
-Pre-conditions
-____
-
+|Pre-conditions
 |The ESPD requester needs an ESPD.
 
-a|
-____
-Post-conditions
-____
-
-|The ESPD has been provided to the ESPD requester.
+|Post-conditions
+|The ESPD has been provided to the ESPD requester
 |===
 
 [width="100%",cols="22%,19%,59%",options="header",]
 |===
-|*Activity* |*Role involved* |*Description*
-|Send ESPD template |ESPD requester |The ESPD requester requests an ESPD
+s|Activity s|Role involved s|Description
+
+|Send ESPD template 
+|ESPD requester 
+|The ESPD requester requests an ESPD
 from the ESPD provider. The request includes a template with a
 specification of the information that needs to be present in the ESPD.
 
-|Prepare ESPD |ESPD provider |The ESPD provider prepares the ESPD, based
+|Prepare ESPD 
+|ESPD provider 
+|The ESPD provider prepares the ESPD, based
 on the template.
 
-|Send ESPD |ESPD provider |The ESPD provider sends the ESPD to the ESPD
+|Send ESPD 
+|ESPD provider 
+|The ESPD provider sends the ESPD to the ESPD
 requester.
 |===
 
 === Qualification transaction business requirements 
 
-==== 
+==== Trdm070 ESPD request transaction
 
 [width="100%",cols="30%,70%",options="header",]
 |===
-|[#_Toc423863804 .anchor]####Trdm070 ESPD request
-transaction**Categories** |*Description and Values*
-|Identifier |Trdm070
+s|Categories s|Description and Values
 
-|Description |A structured electronic business document for requesting
+|Identifier 
+|Trdm070
+
+|Description 
+|A structured electronic business document for requesting
 qualification information through an ESPD (conform to an ESPD template).
 Directive 2014/24/EU, Art. 59.
 
-|Partner Types |Governmental or private organisation
+|Partner Types 
+|Governmental or private organisation
 
-|Authorized Roles a|
-ESPD requester
+|Authorized Roles 
+|ESPD requester
 
 ESPD provider
 
-|Legal Implications a|
-By providing an ESPD template to the economic operator, the contracting
+|Legal Implications 
+|By providing an ESPD template to the economic operator, the contracting
 body is legally responsible for the correctness of the information
 provided.
 
@@ -682,16 +397,16 @@ By compiling an ESPD template through an ESPD service provider, the
 contracting body is legally responsible for the correctness of the
 information provided.
 
-|Initial Event |ESPD requester sends the ESPD request using an ESPD
+|Initial Event 
+|ESPD requester sends the ESPD request using an ESPD
 template.
 
 |Terminal event |ESPD provider receives and processes the ESPD request.
-
 |Scope |Open and restricted tendering procedures, with a focus on
-implementing the simplification in tendering procedures above threshold
-according to directives 2014/24/EU and 2014/25/EU.
+implementing the simplification in tendering procedures above threshold according to directives 2014/24/EU and 2014/25/EU.
 
-|Boundary |Trdm070
+|Boundary 
+|Trdm070
 |===
 
 ===== Trdm070 ESPD request transaction business requirements
@@ -701,32 +416,36 @@ _Contracting body_
 [width="100%",cols="15%,85%",options="header",]
 |===
 |*ID* |*Requirement*
-|tbr70-001 |The contracting body must be identified, hence information
-about the party is required, such as party name, country,
+
+|tbr70-001 
+|The contracting body must be identified, hence information about the party is required, such as party name, country,
 identification, endpoint id.
 
-|tbr70-002 |The contracting body must be able to list criteria for
-exclusion grounds according to directive 2014/24/EU and 2014/25/EU
-and/or according to national legislation.
+|tbr70-002 
+|The contracting body must be able to list criteria for
+exclusion grounds according to directive 2014/24/EU and 2014/25/EUnd/or according to national legislation.
 
-|tbr70-003 |The contracting body must be able to list criteria for
-qualitative selection according to directive 2014/24/EU and 2014/25/EU
-and/or according to national legislation.
+|tbr70-003 
+|The contracting body must be able to list criteria for
+qualitative selection according to directive 2014/24/EU and 2014/25/EUnd/or according to national legislation.
 
-|tbr70-004 |The contracting body must be able to indicate which criteria
+|tbr70-004 
+|The contracting body must be able to indicate which criteria
 for exclusion grounds and qualitative selection specific types of
 economic operators (e.g. subcontractors or partners in consortia) need
 to declare.
 
-|Tbr70-005 |Where a call for tender is divided into lots, the
+|Tbr70-005 
+|Where a call for tender is divided into lots, the
 contracting body must be able to indicate for each individual lot, what
 selection criteria are to be fulfilled. The contracting body shall also
 set the minimum yearly turnover that economic operators are required to
 have if they tender for more than one lot. In this case, the contracting
 body shall provide a reference to the groups of lots of the call for
-thender, to which the minimum turnover applies (art. 58 of 2014/24/EU).
+tender, to which the minimum turnover applies (art. 58 of 2014/24/EU).
 
-|Tbr70-006 |The qualification document should contain contact
+|Tbr70-006 
+|The qualification document should contain contact
 information of the contracting body: Postal address, telephone number,
 fax number, e-mail address, contact person(s).
 |===
@@ -736,7 +455,9 @@ _Call for tenders_
 [width="100%",cols="15%,85%",options="header",]
 |===
 |*ID* |*Requirement*
-|Tbr70-007 |The ESPD request must contain a reference to the call for
+
+|Tbr70-007 
+|The ESPD request must contain a reference to the call for
 tenders, i.e. the procurement project ID, which defines the requirements
 (i.e. criteria) for which this document is created and submitted by the
 economic operator. It must be possible to maintain this information in
@@ -755,8 +476,7 @@ individual lot, what selection criteria are to be fulfilled. The
 contracting body shall also set the minimum yearly turnover that
 economic operators are required to have if they tender for more than one
 lot. In this case, the contracting body shall provide a reference to the
-group of lots of the call for tender, to which the minimum turnover
-applies (art. 58 of 2014/24/EU).
+group of lots of the call for tender, to which the minimum turnover applies (art. 58 of 2014/24/EU).
 |===
 
 _List of Criteria_
@@ -764,13 +484,17 @@ _List of Criteria_
 [width="100%",cols="15%,85%",options="header",]
 |===
 |*ID* |*Requirement*
-|Tbr70-009 |The ESPD template must contain information about the
+
+|Tbr70-009 
+|The ESPD template must contain information about the
 criteria that set the exclusion grounds. 2014/24/EU Art. 57 and referred
 to in 2014/25/EU Art. 80.
 
-|Tbr70-010 |The ESPD template must contain information about the
+|Tbr70-010 
+|The ESPD template must contain information about the
 criteria that set the selection grounds. 2014/24/EU Art. 58 and
 2014/25/EU Art. yy.
+
 |===
 
 _ESPD service provider_
@@ -778,9 +502,12 @@ _ESPD service provider_
 [width="100%",cols="15%,85%",options="header",]
 |===
 |*ID* |*Requirement*
-|Tbr70-011 |The ESPD template shall contain information of
+
+|Tbr70-011 
+|The ESPD template shall contain information of
 identification regarding an ESPD service provider: Name, Party
 Identification, Endpoint ID.
+
 |===
 
 _Additional documentation_
@@ -788,8 +515,11 @@ _Additional documentation_
 [width="100%",cols="15%,85%",options="header",]
 |===
 |*ID* |*Requirement*
-|Tbr70-012 |The ESPD service provider should be able to provide
+
+|Tbr70-012 
+|The ESPD service provider should be able to provide
 complementary information such as liability statements.
+
 |===
 
 ===== Trdm070 ESPD request transaction model
@@ -800,2215 +530,794 @@ Figure 4 — ESPD request transaction model
 
 ===== Trdm070 ESPD request transaction information Requirements
 
-[width="100%",cols="12%,3%,,1%,,,,,,24%,38%,12%,10%",options="header",]
+[width="100%",cols=",,,,,"]
 |===
-a|
-____
-*InfReqID*
-____
-
-a|
-____
-*Card*
-____
-
-a|
-____
-*Tree and Business term*
-____
-
-| | | | | | | a|
-____
-*Usage*
-____
-
-a|
-____
-*Data Type*
-____
-
-a|
-____
-*BusReqID*
-____
-
-| | | a|
-____
-ESPD Request
-____
-
-| | | | | | | | |
-
-| a|
-____
-1..1
-____
-
-| | a|
-____
-Document identifier
-____
-
-| | | | | a|
-____
-Identifier of a document
-____
-
-a|
-____
-Identifier
-____
+s|InfReqID s|Card s|Tree and Business term s|Usage s|Data Type s|BusReqID
 
 |
+s|ESPD Request
+| 
+| 
+|
+| 
 
-| a|
-____
-1..1
-____
-
-| | a|
-____
-Document issue date
-____
-
-| | | | | a|
-____
-Date when the referred document was issued.
-____
-
-a|
-____
-Date
-____
-
+| 
+|1..1 
+|Document identifier
+|Identifier of a document
+|Identifier
 |
 
-| a|
-____
-0..1
-____
-
-| | a|
-____
-Document issue time
-____
-
-| | | | | a|
-____
-Time when the document was issued.
-____
-
-a|
-____
-Time
-____
-
+| 
+|1..1
+|Document issue date
+|Date when the referred document was issued.
+|Date
 |
 
-a|
-____
-tir70-005
-____
+| 
+|0..1
+|Document issue time
+|Time when the document was issued.
+|Time
+|
 
-a|
-____
-1..1
-____
-
-| | a|
-____
-Reference number
-____
-
-| | | | | a|
-____
-An identifier that is specified by the buyer and used as a reference
+|tir70-005
+|1..1
+|Reference number
+|An identifier that is specified by the buyer and used as a reference
 number for all documents in the procurement process. It is also known as
 procurement project identifier, procurement reference number or contract
 folder identifier. A reference to the procurement process to which this
 Qualification document is delivered as a response.
-____
+|
+|tbr70-007
 
-| a|
-____
-tbr70-007
-____
-
-| a|
-____
-0..1
-____
-
-| | a|
-____
-Document version identifier
-____
-
-| | | | | a|
-____
-The version of the document that has been identified with the document
+|
+|0..1
+|Document version identifier
+|The version of the document that has been identified with the document
 identifier.
-____
+|
+|
 
-| |
-
-| a|
-____
-0..1
-____
-
-| | a|
-____
-Minimum yearly turnover
-____
-
-| | | | | a|
-____
-The minimum yearly turnover that economic operators are required to have
+| 
+|0..1
+|Minimum yearly turnover
+|The minimum yearly turnover that economic operators are required to have
 if they tender for more than one lot.
-____
+|Amount
+|tbr70-008
 
-a|
-____
-Amount
-____
-
-a|
-____
-tbr70-008
-____
-
-| a|
-____
-0..n
-____
-
-| | a|
-____
-Group of lots
-____
-
-| | | | | a|
-____
-Reference to the groups of lots of the call for thender, to which the
+| 
+|0..n
+|Group of lots
+|Reference to the groups of lots of the call for tender, to which the
 minimum turnover applies (art. 58 of 2014/24/EU
-____
+| 
+|
 
-| |
-
-| a|
-____
-0..1
-____
-
-| | | a|
-____
-Lot reference
-____
-
-| | | | a|
-____
-A reference to one or more lots the economic operator is applying for.
+| 
+|0..1
+|Lot reference
+|A reference to one or more lots the economic operator is applying for.
 The original lot definition is part of the call for tender document. The
 Qualification instance only references the corresponding IDs in order to
 establish the connection to the call for tender information.
-____
+| 
+|tbr70-008
 
-| a|
-____
-tbr70-008
-____
+| 
+|1..1
+|Process control information
+|Information about the specification that apply to the transaction.
+| 
+|
 
-| a|
-____
-1..1
-____
-
-| | a|
-____
-Process control information
-____
-
-| | | | | a|
-____
-Information about the specification that apply to the transaction.
-____
-
-| |
-
-| a|
-____
-1..1
-____
-
-| | | a|
-____
-Business process type identifier
-____
-
-| | | | a|
-____
-Identifies the business process context in which the transaction
-appears. It enables the buyer to process the invoice in an appropriate
+| 
+|1..1
+|Business process type identifier
+|Identifies the business process context in which the transaction appears. It enables the buyer to process the invoice in an appropriate
 way.
-____
+|Identifier
+|tbr00-001
 
-a|
-____
-Identifier
-____
-
-a|
-____
-tbr00-001
-____
-
-| a|
-____
-1..1
-____
-
-| | | a|
-____
-Specification identification
-____
-
-| | | | a|
-____
-An identification of the specification containing the total set of rules
+| 
+|1..1
+|Specification identification
+|An identification of the specification containing the total set of rules
 regarding semantic content, cardinalities and business rules to which
 the data contained in the instance document conforms. This identifies
 the European invoice norm, as well as any extensions applied. The
 identification may include the version of the specification.
-____
+|Code
+|tbr00-002
 
-a|
-____
-Code
-____
+| 
+|1..1
+|Contracting body
+|The contracting authority or contracting entity who is buying supplies,
+services or public works using a tendering procedure as described in the applicable directive (Directives 2014/24/EU, 2014/25/EU).
+|
+|
 
-a|
-____
-tbr00-002
-____
+|tir70-026
+|1..1
+|Contracting body name
+|The name of the contracting body as it is registered.
+| 
+|tbr70-001
 
-| a|
-____
-1..1
-____
-
-| | a|
-____
-Contracting body
-____
-
-| | | | | a|
-____
-The contracting authority or contracting entity who is buying supplies,
-services or public works using a tendering procedure as described in the
-applicable directive (Directives 2014/24/EU, 2014/25/EU).
-____
-
-| |
-
-a|
-____
-tir70-026
-____
-
-a|
-____
-1..1
-____
-
-| | | a|
-____
-Contracting body name
-____
-
-| | | | a|
-____
-The name of the contracting body as it is registered.
-____
-
-| a|
-____
-tbr70-001
-____
-
-a|
-____
-tir70-028
-____
-
-a|
-____
-1..1
-____
-
-| | | a|
-____
-Contracting body identifier
-____
-
-| | | | a|
-____
-The national identifier of a contracting body as it is legally
+|tir70-028
+|1..1
+|Contracting body identifier
+|The national identifier of a contracting body as it is legally
 registered (e.g. VAT identification, such as KBO)
-____
+|Identifier
+|tbr70-001
 
-a|
-____
-Identifier
-____
+| 
+|1..1
+|Contracting body electronic address identifier
+|Electronic address of the contracting body.
+|Identifier
+|tbr70-001
 
-a|
-____
-tbr70-001
-____
-
-| a|
-____
-1..1
-____
-
-| | | a|
-____
-Contracting body electronic address identifier
-____
-
-| | | | a|
-____
-Electronic address of the contracting body.
-____
-
-a|
-____
-Identifier
-____
-
-a|
-____
-tbr70-001
-____
-
-a|
-____
-tir70-027
-____
-
-a|
-____
-1..1
-____
-
-| | | a|
-____
-Country of registration
-____
-
-| | | | a|
-____
-The country where the party is registered. The country should always be
+|tir70-027
+|1..1
+|Country of registration
+|The country where the party is registered. The country should always be
 given by using ISO code 3166 alpha 2
-____
+|Code
+|tbr70-001
 
-a|
-____
-Code
-____
+| 
+|0..1
+|Postal Address
+|Address information.
+|
+|
 
-a|
-____
-tbr70-001
-____
-
-| a|
-____
-0..1
-____
-
-| | | a|
-____
-Postal Address
-____
-
-| | | | a|
-____
-Address information.
-____
-
-| |
-
-a|
-____
-tir70-029
-____
-
-a|
-____
-0..1
-____
-
-| | | | a|
-____
-Address line 1
-____
-
-| | | a|
-____
-The main address line in an address. Usually the street name and number
+|tir70-029
+|0..1
+|Address line 1
+|The main address line in an address. Usually the street name and number
 or post office box.
-____
+|Text
+|Tbr70-006
 
-a|
-____
-Text
-____
-
-a|
-____
-Tbr70-006
-____
-
-a|
-____
-tir70-030
-____
-
-a|
-____
-0..1
-____
-
-| | | | a|
-____
-Address line 2
-____
-
-| | | a|
-____
-An additional address line in an address that can be used to give
+|tir70-030
+|0..1
+|Address line 2
+|An additional address line in an address that can be used to give
 further details supplementing the main line.
-____
+|Text
+|Tbr70-006
 
-a|
-____
-Text
-____
+|tir70-031
+|0..1
+|City
+|The common name of a city where the address is.
+|Text
+|Tbr70-006
 
-a|
-____
-Tbr70-006
-____
-
-a|
-____
-tir70-031
-____
-
-a|
-____
-0..1
-____
-
-| | | | a|
-____
-City
-____
-
-| | | a|
-____
-The common name of a city where the address is.
-____
-
-a|
-____
-Text
-____
-
-a|
-____
-Tbr70-006
-____
-
-a|
-____
-tir70-032
-____
-
-a|
-____
-0..1
-____
-
-| | | | a|
-____
-Post code
-____
-
-| | | a|
-____
-The identifier for an addressable group of properties according to the
+|tir70-032
+|0..1
+|Post code
+|The identifier for an addressable group of properties according to the
 relevant postal service, such as a ZIP code or Post Code.
-____
+|Text
+|Tbr70-006
 
-a|
-____
-Text
-____
-
-a|
-____
-Tbr70-006
-____
-
-a|
-____
-tir70-033
-____
-
-a|
-____
-0..1
-____
-
-| | | | a|
-____
-Country subdivision
-____
-
-| | | a|
-____
-The subdivision of a country such as region, county, state, province
+|tir70-033
+|0..1
+|Country subdivision
+|The subdivision of a country such as region, county, state, province
 etc.
-____
+|Text
+|Tbr70-006
 
-a|
-____
-Text
-____
-
-a|
-____
-Tbr70-006
-____
-
-a|
-____
-tir70-034
-____
-
-a|
-____
-0..1
-____
-
-| | | | a|
-____
-Country code
-____
-
-| | | a|
-____
-A code that identifies the country. The lists of valid countries are
+|tir70-034
+|0..1
+|Country code
+|A code that identifies the country. The lists of valid countries are
 registered with the ISO 3166-1 Maintenance agency, "Codes for the
 representation of names of countries and their subdivisions". It is
 recommended to use the alpha-2 representation.
-____
+|Code
+|Tbr70-006
 
-a|
-____
-Code
-____
-
-a|
-____
-Tbr70-006
-____
-
-| a|
-____
-0..1
-____
-
-| | | a|
-____
-Contact person
-____
-
-| | | | a|
-____
-Used to provide contacting information for a party in general or a
+|
+|0..1
+|Contact person
+|Used to provide contacting information for a party in general or a
 person.
-____
+| 
+|
 
-| |
+|tir70-035
+|0..1
+|Contact point
+|The name of the contact point.
+|Text
+|Tbr70-006
 
-a|
-____
-tir70-035
-____
+|tir70-036
+|0..1
+|Contact fax number
+|fax number for the contact point.
+|Text
+|tbr41-011
 
-a|
-____
-0..1
-____
+|tir70-037
+|0..1
+|Contact telephone number
+|phone number for the contact point.
+|Text
+|Tbr70-006
 
-| | | | a|
-____
-Contact point
-____
+|tir70-038
+|0..1
+|Contact email address
+|An e-mail address for the contact point.
+|Text
+|Tbr70-006
 
-| | | a|
-____
-The name of the contact point.
-____
 
-a|
-____
-Text
-____
+|
+|1..1
+|Service provider
+| 
+|
+|
 
-a|
-____
-Tbr70-006
-____
+|
+|0..1
+|Service provider name
+|The name of the service provider.
+|
+|Tbr70-011
 
-a|
-____
-tir70-036
-____
-
-a|
-____
-0..1
-____
-
-| | | | a|
-____
-Contact fax number
-____
-
-| | | a|
-____
-A fax number for the contact point.
-____
-
-a|
-____
-Text
-____
-
-a|
-____
-tbr41-011
-____
-
-a|
-____
-tir70-037
-____
-
-a|
-____
-0..1
-____
-
-| | | | a|
-____
-Contact telephone number
-____
-
-| | | a|
-____
-A phone number for the contact point.
-____
-
-a|
-____
-Text
-____
-
-a|
-____
-Tbr70-006
-____
-
-a|
-____
-tir70-038
-____
-
-a|
-____
-0..1
-____
-
-| | | | a|
-____
-Contact email address
-____
-
-| | | a|
-____
-An e-mail address for the contact point.
-____
-
-a|
-____
-Text
-____
-
-a|
-____
-Tbr70-006
-____
-
-| a|
-____
-1..1
-____
-
-| | a|
-____
-Service provider
-____
-
-| | | | | | | |
-
-| a|
-____
-0..1
-____
-
-| | | a|
-____
-Service provider name
-____
-
-| | | | a|
-____
-The name of the service provider.
-____
-
-| a|
-____
-Tbr70-011
-____
-
-| a|
-____
-0..1
-____
-
-| | | a|
-____
-Service provider identifier
-____
-
-| | | | a|
-____
-The national identifier of a service provider as it is legally
+|
+|0..1
+|Service provider identifier
+|The national identifier of a service provider as it is legally
 registered (e.g. VAT identification, such as KBO)
-____
+|
+|Tbr70-011
 
-| a|
-____
-Tbr70-011
-____
 
-| a|
-____
-0..1
-____
+|
+|0..1
+|Service provider electronic address identifier
+|Electronic address of the service provider.
+|
+|Tbr70-011
 
-| | | a|
-____
-Service provider electronic address identifier
-____
 
-| | | | a|
-____
-Electronic address of the service provider.
-____
+|
+|1..n
+|Exclusion criterion
+|
+|
+|
 
-| a|
-____
-Tbr70-011
-____
-
-| a|
-____
-1..n
-____
-
-| | a|
-____
-Exclusion criterion
-____
-
-| | | | | | | |
-
-| a|
-____
-0..1
-____
-
-| | | a|
-____
-Criterion identifier
-____
-
-| | | | a|
-____
-A language-independent token, e.g., a number, that allows to identify a
+|
+|0..1
+|Criterion identifier
+|language-independent token, e.g., a number, that allows to identify a
 criterion uniquely as well as allows to reference the criterion in other
 documents. A criterion describes a fact that is used by the contracting
 body to evaluate and compare tenders by economic operators and which
 will be used in the award decision.
-____
+|Identifier
+|Tbr70-009
 
-a|
-____
-Identifier
-____
+|
+|0..1
+|Criterion version identifier
+|Version of the criterion.
+|Identifier
+|Tbr70-009
 
-a|
-____
-Tbr70-009
-____
 
-| a|
-____
-0..1
-____
+|
+|1..n
+|Criterion domain identifier
+|Domain of the criterion.
+|
+|Tbr70-009
 
-| | | a|
-____
-Criterion version identifier
-____
 
-| | | | a|
-____
-Version of the criterion.
-____
-
-a|
-____
-Identifier
-____
-
-a|
-____
-Tbr70-009
-____
-
-| a|
-____
-1..n
-____
-
-| | | a|
-____
-Criterion domain identifier
-____
-
-| | | | a|
-____
-Domain of the criterion.
-____
-
-| a|
-____
-Tbr70-009
-____
-
-| a|
-____
-0..1
-____
-
-| | | a|
-____
-Criterion name
-____
-
-| | | | a|
-____
-A short and descriptive name for a criterion. A criterion describes a
+|
+|0..1
+|Criterion name
+|short and descriptive name for a criterion. A criterion describes a
 fact that is used by the contracting body to evaluate and compare
 tenders by economic operators and which will be used in the award
 decision or to assess the eligibility of an economic operator.
-____
+|
+|Tbr70-009
 
-| a|
-____
-Tbr70-009
-____
+|
+|0..1
+|Criterion description
+|An extended description of the criterion.
+|
+|Tbr70-009
 
-| a|
-____
-0..1
-____
-
-| | | a|
-____
-Criterion description
-____
-
-| | | | a|
-____
-An extended description of the criterion.
-____
-
-| a|
-____
-Tbr70-009
-____
-
-| a|
-____
-0..n
-____
-
-| | | a|
-____
-Lot reference
-____
-
-| | | | a|
-____
-A reference to one or more lots the economic operator is applying for.
+|
+|0..n
+|Lot reference
+|reference to one or more lots the economic operator is applying for.
 The original lot definition is part of the call for tender document. The
 Qualification instance only references the corresponding IDs in order to
 establish the connection to the call for tender information.
-____
-
-| a|
-____
-tbr70-005,
-
-tbr70-008
-____
-
-| a|
-____
-0..n
-____
-
-| | | a|
-____
-Economic operator role
-____
-
-| | | | a|
-____
-The role of the economic operator when bidding from a consortium.
-____
-
-a|
-____
-Code
-____
-
-a|
-____
-tbr70-004
-____
-
-| a|
-____
-0..n
-____
-
-| | | a|
-____
-Criterion requirement
-____
-
-| | | | a|
-____
-Requirement to fulfill an specific criterion.
-____
-
-| |
-
-| a|
-____
-0..1
-____
-
-| | | | a|
-____
-Criterion requirement identifier
-____
-
-| | | a|
-____
-Identifier of the requirement that fulfills an specific criterion.
-____
-
-a|
-____
-Identifier
-____
+|
+|tbr70-005, tbr70-008
 
 |
+|0..n
+|Economic operator role
+|The role of the economic operator when bidding from a consortium.
+|Code
+|tbr70-004
 
-| a|
-____
-0..1
-____
-
-| | | | a|
-____
-Criterion requirement version identifier
-____
-
-| | | a|
-____
-Version identifier of the requirement that fulfills an specific
-criterion.
-____
-
-| |
-
-| a|
-____
-0..1
-____
-
-| | | | a|
-____
-Criterion requirement description
-____
-
-| | | a|
-____
-Description of the requirement that fulfills an specific criterion.
-____
-
-| |
-
-| a|
-____
-0..n
-____
-
-| | | | a|
-____
-Required evidence
-____
-
-| | | | | |
-
-| a|
-____
-0..1
-____
-
-| | | | | a|
-____
-Evidence identifier
-____
-
-| | a|
-____
-Identifier for an evidence.
-____
-
-a|
-____
-Identifier
-____
 
 |
-
-| a|
-____
-0..1
-____
-
-| | | | | a|
-____
-Evidence name
-____
-
-| | a|
-____
-The name of an evidence.
-____
-
-| |
-
-| a|
-____
-0..1
-____
-
-| | | | | a|
-____
-Evidence description
-____
-
-| | a|
-____
-A textual description of the evidence.
-____
-
-| |
-
-| a|
-____
-0..1
-____
-
-| | | | | a|
-____
-Evidence version identifier
-____
-
-| | a|
-____
-Version identifier for an evidence.
-____
-
-| |
-
-| a|
-____
-0..1
-____
-
-| | | | | a|
-____
-Evidence type code
-____
-
-| | a|
-____
-Type code for an evidence.
-____
-
-a|
-____
-Code
-____
-
+|0..n
+|Criterion requirement
+|Requirement to fulfil a specific criterion.
+|
 |
 
-| a|
-____
-0..1
-____
+|
+|0..1
+|Criterion requirement identifier
+|Identifier of the requirement that fulfils a specific criterion.
+|Identifier
+|
 
-| | | | | a|
-____
-Evidence issuer party
-____
+|
+|0..1
+|Criterion requirement version identifier
+|Version identifier of the requirement that fulfils a specific criterion.
+|
+|
 
-| | | | |
+|
+|0..1
+|Criterion requirement description
+|Description of the requirement that fulfils a specific criterion.
+|
+|
 
-| a|
-____
-0..1
-____
+|
+|0..n
+|Required evidence
+|
+|
+|
 
-| | | | | | a|
-____
-Evidence issuer party identifier
-____
+|
+|0..1
+|Evidence identifier
+|Identifier for an evidence.
+|Identifier
+|
 
-| a|
-____
-The identifier of the party issuer of the evidence.
-____
+|
+|0..1
+|Evidence name
+|The name of an evidence.
+|
+|
 
-| |
+|
+|0..1
+|Evidence description
+| textual description of the evidence.
+|
+|
 
-| a|
-____
-0..1
-____
+|
+|0..1
+|Evidence version identifier
+|Version identifier for an evidence.
+|
+|
 
-| | | | | | a|
-____
-Evidence issuer party name
-____
+|
+|0..1
+|Evidence type code
+|Type code for an evidence.
+|Code
+|
 
-| a|
-____
-The name of the party issuer of the evidence.
-____
+|
+|0..1
+|Evidence issuer party
+|
+|
+|
 
-| |
+|
+|0..1
+|Evidence issuer party identifier
+|The identifier of the party issuer of the evidence.
+|
+|
 
-| a|
-____
-0..1
-____
+|
+|0..1
+|Evidence issuer party name
+|The name of the party issuer of the evidence.
+|
+|
 
-| | | | | | a|
-____
-Postal Address
-____
+|
+|0..1
+|Postal Address
+|Address information.
+|
+|
 
-| a|
-____
-Address information.
-____
-
-| |
-
-| a|
-____
-0..1
-____
-
-| | | | | | | a|
-____
-Address line 1
-____
-
-a|
-____
-The main address line in an address. Usually the street name and number
+|
+|0..1
+|Address line 1
+|The main address line in an address. Usually the street name and number
 or post office box.
-____
-
-a|
-____
-Text
-____
-
+|Text
 |
 
-| a|
-____
-0..1
-____
-
-| | | | | | | a|
-____
-Address line 2
-____
-
-a|
-____
-An additional address line in an address that can be used to give
+|
+|0..1
+|Address line 2
+|An additional address line in an address that can be used to give
 further details supplementing the main line.
-____
-
-a|
-____
-Text
-____
-
+|Text
 |
 
-| a|
-____
-0..1
-____
-
-| | | | | | | a|
-____
-City
-____
-
-a|
-____
-The common name of a city where the address is.
-____
-
-a|
-____
-Text
-____
-
+|
+|0..1
+|City
+|The common name of a city where the address is.
+|Text
 |
 
-| a|
-____
-0..1
-____
-
-| | | | | | | a|
-____
-Post code
-____
-
-a|
-____
-The identifier for an addressable group of properties according to the
+|
+|0..1
+|Post code
+|The identifier for an addressable group of properties according to the
 relevant postal service, such as a ZIP code or Post Code.
-____
-
-a|
-____
-Text
-____
-
+|Text
 |
 
-| a|
-____
-0..1
-____
-
-| | | | | | | a|
-____
-Country subdivision
-____
-
-a|
-____
-The subdivision of a country such as region, county, state, province
+|
+|0..1
+|Country subdivision
+|The subdivision of a country such as region, county, state, province
 etc.
-____
-
-a|
-____
-Text
-____
-
+|Text
 |
 
-| a|
-____
-0..1
-____
-
-| | | | | | | a|
-____
-Country code
-____
-
-a|
-____
-A code that identifies the country. The lists of valid countries are
+|
+|0..1
+|Country code
+|A code that identifies the country. The lists of valid countries are
 registered with the ISO 3166-1 Maintenance agency, "Codes for the
 representation of names of countries and their subdivisions". It is
 recommended to use the alpha-2 representation.
-____
-
-a|
-____
-Code
-____
-
+|Code
 |
 
-| a|
-____
-0..n
-____
-
-| | | a|
-____
-Criterion regulation
-____
-
-| | | | | | |
-
-| a|
-____
-0..1
-____
-
-| | | | a|
-____
-Regulation URI
-____
-
-| | | a|
-____
-URI that points to a particular regulation
-____
-
-a|
-____
-Identifier
-____
-
+|
+|0..n
+|Criterion regulation
+|
+|
 |
 
-| a|
-____
-1..1
-____
 
-| | | | a|
-____
-Jurisdiction level
-____
+|
+|0..1
+|Regulation URI
+|URI that points to a particular regulation
+|Identifier
+|
 
-| | | a|
-____
-Jurisdictional level of a particular regulation.
-____
+|
+|1..1
+|Jurisdiction level
+|Jurisdictional level of a particular regulation.
+|
+|
 
-| |
+|
+|0..1
+|Regulation title
+|Title of a regulation.
+|
+|
 
-| a|
-____
-0..1
-____
+|
+|1..n
+|Selection criterion
+|
+|
+|tbr70-003, tbr70-015
 
-| | | | a|
-____
-Regulation title
-____
 
-| | | a|
-____
-Title of a regulation.
-____
-
-| |
-
-| a|
-____
-1..n
-____
-
-| | a|
-____
-Selection criterion
-____
-
-| | | | | | | a|
-____
-tbr70-003,
-
-tbr70-015
-____
-
-| a|
-____
-0..1
-____
-
-| | | a|
-____
-Criterion identifier
-____
-
-| | | | a|
-____
-A language-independent token, e.g., a number, that allows to identify a
+|
+|0..1
+|Criterion identifier
+| language-independent token, e.g., a number, that allows to identify a
 criterion uniquely as well as allows to reference the criterion in other
 documents. A criterion describes a fact that is used by the contracting
 body to evaluate and compare tenders by economic operators and which
 will be used in the award decision.
-____
+|Identifier
+|Tbr70-010
 
-a|
-____
-Identifier
-____
 
-a|
-____
-Tbr70-010
-____
+|
+|0..1
+|Criterion version identifier
+|Version of the criterion.
+|Identifier
+|Tbr70-010
 
-| a|
-____
-0..1
-____
 
-| | | a|
-____
-Criterion version identifier
-____
+|
+|1..n
+|Criterion domain identifier
+|Domain of the criterion.
+|
+|Tbr70-010
 
-| | | | a|
-____
-Version of the criterion.
-____
 
-a|
-____
-Identifier
-____
-
-a|
-____
-Tbr70-010
-____
-
-| a|
-____
-1..n
-____
-
-| | | a|
-____
-Criterion domain identifier
-____
-
-| | | | a|
-____
-Domain of the criterion.
-____
-
-| a|
-____
-Tbr70-010
-____
-
-| a|
-____
-0..1
-____
-
-| | | a|
-____
-Criterion name
-____
-
-| | | | a|
-____
-A short and descriptive name for a criterion. A criterion describes a
+|
+|0..1
+|Criterion name
+|short and descriptive name for a criterion. A criterion describes a
 fact that is used by the contracting body to evaluate and compare
 tenders by economic operators and which will be used in the award
 decision or to assess the eligibility of an economic operator.
-____
+|
+|Tbr70-010
 
-| a|
-____
-Tbr70-010
-____
 
-| a|
-____
-0..1
-____
+|
+|0..1
+|Criterion description
+|An extended description of the criterion.
+|
+|Tbr70-010
 
-| | | a|
-____
-Criterion description
-____
 
-| | | | a|
-____
-An extended description of the criterion.
-____
-
-| a|
-____
-Tbr70-010
-____
-
-| a|
-____
-0..n
-____
-
-| | | a|
-____
-Lot reference
-____
-
-| | | | a|
-____
-A reference to one or more lots the economic operator is applying for.
+|
+|0..n
+|Lot reference
+|A reference to one or more lots the economic operator is applying for.
 The original lot definition is part of the call for tender document. The
 Qualification instance only references the corresponding IDs in order to
 establish the connection to the call for tender information.
-____
+|
+|tbr70-005, tbr70-008
 
-| a|
-____
-tbr70-005,
-
-tbr70-008
-____
-
-| a|
-____
-0..n
-____
-
-| | | a|
-____
-Economic operator role
-____
-
-| | | | a|
-____
-The role of the economic operator when bidding from a consortium.
-____
-
-a|
-____
-Code
-____
 
 |
-
-| a|
-____
-0..n
-____
-
-| | | a|
-____
-Criterion requirement
-____
-
-| | | | a|
-____
-Requirement to fulfill an specific criterion.
-____
-
-| |
-
-| a|
-____
-0..1
-____
-
-| | | | a|
-____
-Criterion requirement identifier
-____
-
-| | | a|
-____
-Identifier of the requirement that fulfills an specific criterion.
-____
-
-a|
-____
-Identifier
-____
-
+|0..n
+|Economic operator role
+|The role of the economic operator when bidding from a consortium.
+|Code
 |
 
-| a|
-____
-0..1
-____
+|
+|0..n
+|Criterion requirement
+|Requirement to fulfil a specific criterion.
+|
+|
 
-| | | | a|
-____
-Criterion requirement version identifier
-____
+|
+|0..1
+|Criterion requirement identifier
+|Identifier of the requirement that fulfils a specific criterion.
+|Identifier
+|
 
-| | | a|
-____
-Version identifier of the requirement that fulfills an specific
+|
+|0..1
+|Criterion requirement version identifier
+|Version identifier of the requirement that fulfils a specific
 criterion.
-____
-
-| |
-
-| a|
-____
-0..1
-____
-
-| | | | a|
-____
-Criterion requirement description
-____
-
-| | | a|
-____
-Description of the requirement that fulfills an specific criterion.
-____
-
-| |
-
-| a|
-____
-0..n
-____
-
-| | | | a|
-____
-Required evidence
-____
-
-| | | | | |
-
-| a|
-____
-0..1
-____
-
-| | | | | a|
-____
-Evidence identifier
-____
-
-| | a|
-____
-Identifier for an evidence.
-____
-
-a|
-____
-Identifier
-____
-
+|
 |
 
-| a|
-____
-0..1
-____
-
-| | | | | a|
-____
-Evidence name
-____
-
-| | a|
-____
-The name of an evidence.
-____
-
-| |
-
-| a|
-____
-0..1
-____
-
-| | | | | a|
-____
-Evidence description
-____
-
-| | a|
-____
-A textual description of the evidence.
-____
-
-| |
-
-| a|
-____
-0..1
-____
-
-| | | | | a|
-____
-Evidence version identifier
-____
-
-| | a|
-____
-Version identifier for an evidence.
-____
-
-| |
-
-| a|
-____
-0..1
-____
-
-| | | | | a|
-____
-Evidence type code
-____
-
-| | a|
-____
-Type code for an evidence.
-____
-
-a|
-____
-Code
-____
-
+|
+|0..1
+|Criterion requirement description
+|Description of the requirement that fulfils a specific criterion.
+|
 |
 
-| a|
-____
-0..1
-____
+|
+|0..n
+|Required evidence
+|
+|
+|
 
-| | | | | a|
-____
-Evidence issuer party
-____
+|
+|0..1
+|Evidence identifier
+|Identifier for an evidence.
+|Identifier
+|
 
-| | | | |
+|
+|0..1
+|Evidence name
+|The name of an evidence.
+|
+|
 
-| a|
-____
-0..1
-____
+|
+|0..1
+|Evidence description
+|textual description of the evidence.
+|
+|
 
-| | | | | | a|
-____
-Evidence issuer party identifier
-____
+|
+|0..1
+|Evidence version identifier
+|Version identifier for an evidence.
+|
+|
 
-| a|
-____
-The identifier of the party issuer of the evidence.
-____
+|
+|0..1
+|Evidence type code
+|Type code for an evidence.
+|Code
+|
 
-| |
+|
+|0..1
+|Evidence issuer party
+|
+|
+|
 
-| a|
-____
-0..1
-____
+|
+|0..1
+|Evidence issuer party identifier
+|The identifier of the party issuer of the evidence.
+|
+|
 
-| | | | | | a|
-____
-Evidence issuer party name
-____
+|
+|0..1
+|Evidence issuer party name
+|The name of the party issuer of the evidence.
+|
+|
 
-| a|
-____
-The name of the party issuer of the evidence.
-____
+|
+|0..1
+|Postal Address
+|Address information.
+|
+|
 
-| |
-
-| a|
-____
-0..1
-____
-
-| | | | | | a|
-____
-Postal Address
-____
-
-| a|
-____
-Address information.
-____
-
-| |
-
-| a|
-____
-0..1
-____
-
-| | | | | | | a|
-____
-Address line 1
-____
-
-a|
-____
-The main address line in an address. Usually the street name and number
+|
+|0..1
+|Address line 1
+|The main address line in an address. Usually the street name and number
 or post office box.
-____
-
-a|
-____
-Text
-____
-
+|Text
 |
 
-| a|
-____
-0..1
-____
-
-| | | | | | | a|
-____
-Address line 2
-____
-
-a|
-____
-An additional address line in an address that can be used to give
+|
+|0..1
+|Address line 2
+|An additional address line in an address that can be used to give
 further details supplementing the main line.
-____
-
-a|
-____
-Text
-____
-
+|Text
 |
 
-| a|
-____
-0..1
-____
-
-| | | | | | | a|
-____
-City
-____
-
-a|
-____
-The common name of a city where the address is.
-____
-
-a|
-____
-Text
-____
-
+|
+|0..1
+|City
+|The common name of a city where the address is.
+|Text
 |
 
-| a|
-____
-0..1
-____
-
-| | | | | | | a|
-____
-Post code
-____
-
-a|
-____
-The identifier for an addressable group of properties according to the
+|
+|0..1
+|Post code
+|The identifier for an addressable group of properties according to the
 relevant postal service, such as a ZIP code or Post Code.
-____
-
-a|
-____
-Text
-____
-
+|Text
 |
 
-| a|
-____
-0..1
-____
-
-| | | | | | | a|
-____
-Country subdivision
-____
-
-a|
-____
-The subdivision of a country such as region, county, state, province
+|
+|0..1
+|Country subdivision
+|The subdivision of a country such as region, county, state, province
 etc.
-____
-
-a|
-____
-Text
-____
-
+|Text
 |
 
-| a|
-____
-0..1
-____
-
-| | | | | | | a|
-____
-Country code
-____
-
-a|
-____
-A code that identifies the country. The lists of valid countries are
+|
+|0..1
+|Country code
+|code that identifies the country. The lists of valid countries are
 registered with the ISO 3166-1 Maintenance agency, "Codes for the
 representation of names of countries and their subdivisions". It is
 recommended to use the alpha-2 representation.
-____
-
-a|
-____
-Code
-____
-
+|Code
 |
 
-| a|
-____
-0..n
-____
-
-| | | a|
-____
-Criterion regulation
-____
-
-| | | | | | |
-
-| a|
-____
-0..1
-____
-
-| | | | a|
-____
-Regulation URI
-____
-
-| | | a|
-____
-URI that points to a particular regulation
-____
-
-a|
-____
-Identifier
-____
-
+|
+|0..n
+|Criterion regulation
+|
+|
 |
 
-| a|
-____
-1..1
-____
+|
+|0..1
+|Regulation URI
+|URI that points to a particular regulation
+|Identifier
+|
 
-| | | | a|
-____
-Jurisdiction level
-____
+|
+|1..1
+|Jurisdiction level
+|Jurisdictional level of a particular regulation.
+|
+|
 
-| | | a|
-____
-Jurisdictional level of a particular regulation.
-____
+|
+|0..1
+|Regulation title
+|Title of a regulation.
+|
+|
 
-| |
+|
+|0..n
+|Additional document
+|Information about an attached document.
+|
+|
 
-| a|
-____
-0..1
-____
+|tir41-182
+|0..1
+|Attachment identifier
+|An identifier that can be used to reference the attached document, such as an unique identifier.
+|Identifier
+|Tbr70-012
 
-| | | | a|
-____
-Regulation title
-____
+|tir41-183
+|0..n
+|Attachment description
+|A short description of the attached document
+|Text
+|Tbr70-012
 
-| | | a|
-____
-Title of a regulation.
-____
-
-| |
-
-| a|
-____
-0..n
-____
-
-| | a|
-____
-Additional document
-____
-
-| | | | | a|
-____
-Information about an attached document.
-____
-
-| |
-
-a|
-____
-tir41-182
-____
-
-a|
-____
-0..1
-____
-
-| | | a|
-____
-Attachment identifier
-____
-
-| | | | a|
-____
-An identifier that can be used to reference the attached document, such
-as an unique identifier.
-____
-
-a|
-____
-Identifier
-____
-
-a|
-____
-Tbr70-012
-____
-
-a|
-____
-tir41-183
-____
-
-a|
-____
-0..n
-____
-
-| | | a|
-____
-Attachment description
-____
-
-| | | | a|
-____
-A short description of the attached document
-____
-
-a|
-____
-Text
-____
-
-a|
-____
-Tbr70-012
-____
-
-a|
-____
-tir41-184
-____
-
-a|
-____
-0..1
-____
-
-| | | a|
-____
-Attached document
-____
-
-| | | | a|
-____
-An attached document embedded as binary object. Attached document is
+|tir41-184
+|0..1
+|Attached document
+|An attached document embedded as binary object. Attached document is
 used when documentation shall be stored with the invoice for future
 reference or audit purposes.
-____
-
-a|
-____
-Binary Object
-____
-
-a|
-____
-Tbr70-012
-____
+|Binary Object
+|Tbr70-012
 
 |===
 
@@ -3017,7 +1326,7 @@ ____
 [width="100%",cols="30%,70%",options="header",]
 |===
 |*Categories* |*Description and Values*
-|Identifier |BiiTrns092
+|Identifier |BiiTrans092
 
 |Description |A structured electronic business document for providing
 qualification information in a simplified way through an ESPD when
@@ -3049,8 +1358,7 @@ document (ESPD)
 document (ESPD).
 
 |Scope |Open and restricted tendering procedures, with a focus on
-implementing the simplification in tendering procedures above threshold
-according to directives 2014/24/EU and 2014/25/EU.
+implementing the simplification in tendering procedures above threshold according to directives 2014/24/EU and 2014/25/EU.
 
 |Boundary |None specified.
 |===
@@ -3067,8 +1375,7 @@ information necessary for identification: Party Name, Party
 Identification, endpoint id.
 
 |tbr92-002 |The economic operator must be able to include contact
-information: Postal address, telephone number, fax number, e-mail
-address, contact person(s), Internet address.
+information: Postal address, telephone number, fax number, e-mail address, contact person(s), Internet address.
 
 |tbr92-003 |The economic operator must be able to define his country of
 registration. The country of registration is needed to identify relevant
@@ -3092,8 +1399,7 @@ provide
 
 {empty}a) the relevant registration or certification number,
 
-{empty}b) in case the certificate is available electronically: the web
-address, issuing body, and precise reference of the documentation;
+{empty}b) in case the certificate is available electronically: the web address, issuing body, and precise reference of the documentation;
 
 {empty}c) the references on which the registration or certification is
 based, as well as the classification obtained in the official list;
@@ -3103,8 +1409,7 @@ required exclusion grounds and selection criteria.
 
 |Tbr92-007 |If the call for tender demands a certificate with regard to
 the payment of social security contributions and taxes, the economic
-operator must be able to indicate if he can provide such a certificate.
-And if so, in the case the certificate can be retrieved free of charge
+operator must be able to indicate if he can provide such a certificate.nd if so, in the case the certificate can be retrieved free of charge
 electronically: the web address, issuing body, and precise reference of
 the documentation.
 
@@ -3186,18 +1491,15 @@ of exclusion grounds as set out in the call for tender or ESPD template
 (cf. tbr70-009). The information shall contain a legal reference (EU
 level, contracting authority national level, economic operator national
 level). Furthermore it must contain the name of criterion and criterion
-group to which it belongs (according to names of Art. 57 of 2014/24/EC
-and referred to in Art. 80 of 2014/25/EC) as well as indications of
+group to which it belongs (according to names of Art. 57 of 2014/24/ECnd referred to in Art. 80 of 2014/25/EC) as well as indications of
 (non)existence of each single exclusion ground contained and details and
-explanations as requested according to Art. 57 of directive 2014/25/EU
-and the ESPD form agreed among the Member State.
+explanations as requested according to Art. 57 of directive 2014/25/EUnd the ESPD form agreed among the Member State.
 
 Where demanded and if available electronically, the ESPD shall provide
 the following information to relevant documentation: the web address,
 issuing body, and precise reference of the documentation.
 
-The ESPD shall also accommodate information of self-cleaning measures
-and reliability explanations in cases, where an exclusion ground exists.
+The ESPD shall also accommodate information of self-cleaning measures and reliability explanations in cases, where an exclusion ground exists.
 
 |Tbr92-016 a|
 The ESPD must contain corresponding information about the fulfilment of
@@ -3205,11 +1507,9 @@ selection criteria as set out in the call for tender or ESPD template
 (cf. tbr70-010). The information shall contain a legal reference (EU
 level, contracting authority national level, economic operator national
 level). Furthermore it must contain the name of criterion and criterion
-group to which it belongs (according to names of Art. 58 of 2014/24/EC
-and referred to in Art. 80 of 2014/25/EC) as well as indications of
+group to which it belongs (according to names of Art. 58 of 2014/24/ECnd referred to in Art. 80 of 2014/25/EC) as well as indications of
 fulfilment of selection criteria contained as well as details and
-explanations as requested according to Art. 58 of directive 2014/25/EU
-and the ESPD form agreed among the Member State.
+explanations as requested according to Art. 58 of directive 2014/25/EUnd the ESPD form agreed among the Member State.
 
 Where demanded and if available electronically, the ESPD shall provide
 the following information to relevant documentation: the web address,
@@ -3222,12 +1522,11 @@ _Link to Evidences_
 [width="100%",cols="15%,85%",options="header",]
 |===
 |*ID* |*Requirement*
-|tbr92-017 |The economic operator must be able to add the internet
-address of a national database (including any identification data and,
+|tbr92-017 |The economic operator must be able to add the internet address of a national database (including any identification data and,
 where applicable, the necessary declaration of consent cf. Art. 59 of
 2014/24/EC) from which a contracting authority can directly retrieve any
 evidence documents and certificates or supporting documents which prove
-the EO’s compliance to the requested criteria defined in the call for
+the EOs compliance to the requested criteria defined in the call for
 tender and stated in the ESPD.
 |===
 
@@ -3275,8 +1574,7 @@ _Additional documentation_
 [width="100%",cols="15%,85%",options="header",]
 |===
 |*ID* |*Requirement*
-|Tbr92-022 |The economic operator should be able to include any
-additional documents that are not classified as evidentiary information
+|Tbr92-022 |The economic operator should be able to include any additional documents that are not classified as evidence information
 that prove specific exclusion grounds or selection criteria.
 |===
 
@@ -3298,563 +1596,1132 @@ Figure 5 — ESPD transaction model
 
 ===== Trdm092 ESPD transaction information Requirements
 
-[width="100%",cols="13%,3%,,1%,,,,,,,,23%,38%,12%,10%",options="header",]
+[width="100%",cols="1,1,1,1,1,1"]
 |===
-|*InfReqID* |*Card* |*Tree and Business term* | | | | | | | | | |*Usage*
-|*Data Type* |*BusReqID*
-| | | |ESPD | | | | | | | | | | |
 
-|tir92-022 |1..1 | | |Document identifier | | | | | | | |Identifier of a
-document An transaction instance must contain an identifier. The
-identifier enables positive referencing the document instance for
-various purposes including referencing between transactions that are
-part of the same process. |Identifier |tbr92-026
-
-|tir92-002 |0..1 | | |Document issue date | | | | | | | |Date when the
-referred document was issued. |Date |tbr92-026
-
-|tir92-003 |0..1 | | |Document issue time | | | | | | | |Time when the
-document was issued. |Time |tbr92-026
-
-| |1..1 | | |Reference number | | | | | | | |An identifier that is
-specified by the buyer and used as a reference number for all documents
-in the procurement process. It is also known as procurement project
-identifier, procurement reference number or contract folder identifier.
-A reference to the procurement process to which this Qualification
-document is delivered as a response. | |tbr92-014
-
-|tir92-001 |0..1 | | |Document version identifier | | | | | | | |The
-version of the document that has been identified with the document
-identifier. | |tbr92-027
-
-| |1..1 | | |Process control information | | | | | | | |Information
-about the specification that apply to the transaction. | |
-
-| |1..1 | | | |Business process type identifier | | | | | | |Identifies
-the business process context in which the transaction appears. It
-enables the buyer to process the invoice in an appropriate way.
-|Identifier |tbr00-001
-
-|tir41-025 |1..1 | | | |Specification identification | | | | | | |An
-identification of the specification containing the total set of rules
-regarding semantic content, cardinalities and business rules to which
-the data contained in the instance document conforms. This identifies
-the European invoice norm, as well as any extensions applied. The
-identification may include the version of the specification. |Code
-|tbr00-002
-
-| |1..1 | | |Contracting body | | | | | | | |The contracting authority
-or contracting entity who is buying supplies, services or public works
-using a tendering procedure as described in the applicable directive
-(Directives 2014/24/EU, 2014/25/EU). | |
-
-|tir92-026 |1..1 | | | |Contracting body name | | | | | | |The name of
-the contracting body as it is registered. | |tbr92-010
-
-|tir92-028 |1..1 | | | |Contracting body identifier | | | | | | |The
-national identifier of a contracting body as it is legally registered
-(e.g. VAT identification, such as KBO) |Identifier |tbr92-010
-
-| |0..1 | | | |Postal Address | | | | | | |Address information. | |
-
-|tir92-029 |0..1 | | | | |Address line 1 | | | | | |The main address
-line in an address. Usually the street name and number or post office
-box. |Text |tbr92-011
-
-|tir92-030 |0..1 | | | | |Address line 2 | | | | | |An additional
-address line in an address that can be used to give further details
-supplementing the main line. |Text |tbr92-011
-
-|tir92-031 |0..1 | | | | |City | | | | | |The common name of a city
-where the address is. |Text |tbr92-011
-
-|tir92-032 |0..1 | | | | |Post code | | | | | |The identifier for an
-addressable group of properties according to the relevant postal
-service, such as a ZIP code or Post Code. |Text |tbr92-011
-
-|tir92-033 |0..1 | | | | |Country subdivision | | | | | |The subdivision
-of a country such as region, county, state, province etc. |Text
-|tbr92-011
-
-|tir92-034 |0..1 | | | | |Country code | | | | | |A code that identifies
-the country. The lists of valid countries are registered with the ISO
-3166-1 Maintenance agency, "Codes for the representation of names of
-countries and their subdivisions". It is recommended to use the alpha-2
-representation. |Code |tbr92-011
-
-| |0..1 | | | |Contact person | | | | | | |Used to provide contacting
-information for a party in general or a person. | |
-
-|tir92-035 |0..1 | | | | |Contact point | | | | | |The name of the
-contact point. |Text |tbr92-011
-
-|tir92-036 |0..1 | | | | |Contact fax number | | | | | |A fax number for
-the contact point. |Text |tbr92-011
-
-|tir92-037 |0..1 | | | | |Contact telephone number | | | | | |A phone
-number for the contact point. |Text |tbr92-011
-
-|tir92-038 |0..1 | | | | |Contact email address | | | | | |An e-mail
-address for the contact point. |Text |tbr92-011
-
-| |1..n | | |Economic operator | | | | | | | |Any natural or legal
-person or public entity or group of such persons and/or entities,
-including any temporary association of undertakings, | a|
-tbr92-017,
-
-tbr92-010,
-
-| | | | | | | | | | | | |which offers the execution of works and/or a
-work, the supply of products or the provision of services on the market.
-Information about the party submitting the qualification. | a|
-tbr92-028,
-
-tbr92-029
-
-|tir92-039 |1..1 | | | |Economic operator identifier | | | | | | |An
-identifier that identifies the economic operator, such as a legal
-registration identifier. |Identifier |tbr92-001
-
-|tir92-200 |0..1 | | | |Economic operator electronic address identifier
-| | | | | | |Electronic address of the economic operator. | |tbr92-001
-
-|tir92-010 |0..1 | | | |Economic operator registration country code | |
-| | | | |The registration country code of the economic operator. |Code
-|tbr92-003
-
-|tir92-011 |1..1 | | | |Economic operator name | | | | | | |The name of
-the economic operator. | |tbr92-001
-
-|tir41-040 |0..1 | | | |Economic operator role | | | | | | |The role of
-the economic operator when bidding from a consortium. (main contractor,
-subcontractor , additional) |Code |tbr92-004
-
-|tir92-201 |0..1 | | | |National database URI | | | | | | |Unrestricted
-and full direct access to tools and devices used for electronic
-communication is possible at this URL. | |tbr92-004
-
-|tir92-202 |0..1 | | | |National database access credentials | | | | | |
-|Unrestricted and full direct access to tools and devices used for
-electronic communication is possible at this URL. | |tbr92-004
-
-| |0..1 | | | |Postal address | | | | | | |Address information. | |
-
-|tir92-041 |0..1 | | | | |Address line 1 | | | | | |The main address
-line in an address. Usually the street name and number or post office
-box. |Text |tbr92-002
-
-|tir92-042 |0..1 | | | | |Address line 2 | | | | | |An additional
-address line in an address that can be used to give further details
-supplementing the main line. |Text |tbr92-002
-
-|tir92-043 |0..1 | | | | |City | | | | | |The common name of a city
-where the address is. |Text |tbr92-002
-
-|tir92-044 |0..1 | | | | |Post code | | | | | |The identifier for an
-addressable group of properties according to the relevant postal
-service, such as a ZIP code or Post Code. |Text |tbr92-002
-
-|tir92-045 |0..1 | | | | |Country subdivision | | | | | |The subdivision
-of a country such as region, county, state, province etc. |Text
-|tbr92-002
-
-|tir92-046 |0..1 | | | | |Country code | | | | | |A code that identifies
-the country. The lists of valid countries are registered with the ISO
-3166-1 Maintenance agency, "Codes for the representation of names of
-countries and their subdivisions". It is recommended to use the alpha-2
-representation. |Code |tbr92-002
-
-| |0..1 | | | |Contacting details | | | | | | |Used to provide
-contacting information for a party in general or a person. | |
-
-|tir92-047 |0..1 | | | | |Contact point | | | | | |The name of the
-contact point. |Text |tbr92-002
-
-|tir92-048 |0..1 | | | | |Contact fax number | | | | | |A fax number for
-the contact point. |Text |tbr92-002
-
-|tir92-049 |0..1 | | | | |Contact telephone number | | | | | |A phone
-number for the contact point. |Text |tbr92-002
-
-|tir92-050 |0..1 | | | | |Contact email address | | | | | |An e-mail
-address for the contact point. |Text |tbr92-002
-
-| |0..n | | | |Procurement project lot | | | | | | | | |
-
-| |0..1 | | | | |Lot identifier | | | | | |An identifier for the lot.
-|Identifier |
-
-| |0..1 | | | |Exclusion criterion | | | | | | | | |
-
-| |0..1 | | | | |Criterion identifier | | | | | |A language-independent
-token, e.g., a number, that allows to identify a criterion uniquely as
-well as allows to reference the criterion in other documents. A
-criterion describes a fact that is used by the contracting body to
-evaluate and compare tenders by economic operators and which will be
-used in the award decision. |Identifier |tbr92-016
-
-| |0..1 | | | | |Criterion version identifier | | | | | |Version of the
-criterion. |Identifier |tbr92-016
-
-| |1..n | | | | |Criterion domain identifier | | | | | |Domain of the
-criterion. | |tbr92-016
-
-| |0..1 | | | | |Criterion name | | | | | |A short and descriptive name
-for a criterion. A criterion describes a fact that is used by the
-contracting body to evaluate and compare tenders by economic operators
-and which will be used in the award decision or to assess the
-eligibility of an economic operator. | |tbr92-016
-
-| |0..1 | | | | |Criterion description | | | | | |An extended
-description of the criterion. | |tbr92-016
-
-| |0..n | | | | |Criterion requirement | | | | | |Requirement to fulfill
-an specific criterion. | |
-
-| |0..1 | | | | | |Criterion requirement identifier | | | | |Identifier
-of the requirement that fulfills an specific criterion. |Identifier |
-
-| |0..1 | | | | | |Criterion requirement version identifier | | | |
-|Version identifier of the requirement that fulfills an specific
-criterion. | |
-
-| |0..1 | | | | | |Criterion requirement description | | | |
-|Description of the requirement that fulfills an specific criterion. | |
-
-| |0..n | | | | | |Required evidence | | | | | | |
-
-| |0..1 | | | | | | |Evidence identifier | | | |Identifier for an
-evidence. |Identifier |
-
-| |0..1 | | | | | | |Evidence name | | | |The name of an evidence. | |
-
-| |0..1 | | | | | | |Evidence description | | | |A textual description
-of the evidence. | |
-
-| |0..1 | | | | | | |Evidence version identifier | | | |Version
-identifier for an evidence. | |
-
-| |0..1 | | | | | | |Evidence type code | | | |Type code for an
-evidence. |Code |
-
-| |0..1 | | | | | | |Evidence issuer party | | | | | |
-
-| |0..1 | | | | | | | |Evidence issuer party identifier | | |The
-identifier of the party issuer of the evidence. | |tbr92-022
-
-| |0..1 | | | | | | | |Evidence issuer party name | | |The name of the
-party issuer of the evidence. | |
-
-| |0..1 | | | | | | | |Postal Address | | |Address information. | |
-
-| |0..1 | | | | | | | | |Address line 1 | |The main address line in an
-address. Usually the street name and number or post office box. |Text |
-
-| |0..1 | | | | | | | | |Address line 2 | |An additional address line in
-an address that can be used to give further details supplementing the
-main line. |Text |
-
-| |0..1 | | | | | | | | |City | |The common name of a city where the
-address is. |Text |
-
-| |0..1 | | | | | | | | |Post code | |The identifier for an addressable
-group of properties according to the relevant postal service, such as a
-ZIP code or Post Code. |Text |
-
-| |0..1 | | | | | | | | |Country subdivision | |The subdivision of a
-country such as region, county, state, province etc. |Text |
-
-| |0..1 | | | | | | | | |Country code | |A code that identifies the
-country. The lists of valid countries are registered with the ISO 3166-1
-Maintenance agency, "Codes for the representation of names of countries
-and their subdivisions". It is recommended to use the alpha-2
-representation. |Code |
-
-| |0..n | | | | |Criterion regulation | | | | | | | |
-
-| |0..1 | | | | | |Regulation URI | | | | |URI that points to a
-particular regulation |Identifier |tbr92-019
-
-| |1..1 | | | | | |Jurisdiction level | | | | |Jurisdictional level of a
-particular regulation. | |tbr92-019
-
-| |0..1 | | | | | |Regulation title | | | | |Title of a regulation. |
-|tbr92-019
-
-| |0..1 | | | |Selection criterion | | | | | | | | |
-
-| |0..1 | | | | |Criterion identifier | | | | | |A language-independent
-token, e.g., a number, that allows to identify a criterion uniquely as
-well as allows to reference the criterion in other documents. A
-criterion describes a fact that is used by the contracting body to
-evaluate and compare tenders by economic operators and which will be
-used in the award decision. |Identifier |tbr92-016
-
-| |0..1 | | | | |Criterion version identifier | | | | | |Version of the
-criterion. |Identifier |tbr92-016
-
-| |1..n | | | | |Criterion domain identifier | | | | | |Domain of the
-criterion. | |tbr92-016
-
-| |0..1 | | | | |Criterion name | | | | | |A short and descriptive name
-for a criterion. A criterion describes a fact that is used by the
-contracting body to evaluate and compare tenders by economic operators
-and which will be used in the award decision or to assess the
-eligibility of an economic operator. | |tbr92-016
-
-| |0..1 | | | | |Criterion description | | | | | |An extended
-description of the criterion. | |tbr92-016
-
-| |0..n | | | | |Criterion requirement | | | | | |Requirement to fulfill
-an specific criterion. | |
-
-| |0..1 | | | | | |Criterion requirement identifier | | | | |Identifier
-of the requirement that fulfills an specific criterion. |Identifier |
-
-| |0..1 | | | | | |Criterion requirement version identifier | | | |
-|Version identifier of the requirement that fulfills an specific
-criterion. | |
-
-| |0..1 | | | | | |Criterion requirement description | | | |
-|Description of the requirement that fulfills an specific criterion. | |
-
-| |0..n | | | | | |Required evidence | | | | | | |
-
-| |0..1 | | | | | | |Evidence identifier | | | |Identifier for an
-evidence. |Identifier |tbr92-022
-
-| |0..1 | | | | | | |Evidence name | | | |The name of an evidence. | |
-
-| |0..1 | | | | | | |Evidence description | | | |A textual description
-of the evidence. | |
-
-| |0..1 | | | | | | |Evidence version identifier | | | |Version
-identifier for an evidence. | |
-
-| |0..1 | | | | | | |Evidence type code | | | |Type code for an
-evidence. |Code |
-
-| |0..1 | | | | | | |Evidence issuer party | | | | | |
-
-| |0..1 | | | | | | | |Evidence issuer party identifier | | |The
-identifier of the party issuer of the evidence. | |tbr92-022
-
-| |0..1 | | | | | | | |Evidence issuer party name | | |The name of the
-party issuer of the evidence. | |
-
-| |0..1 | | | | | | | |Postal Address | | |Address information. | |
-
-| |0..1 | | | | | | | | |Address line 1 | |The main address line in an
-address. Usually the street name and number or post office box. |Text |
-
-| |0..1 | | | | | | | | |Address line 2 | |An additional address line in
-an address that can be used to give further details supplementing the
-main line. |Text |
-
-| |0..1 | | | | | | | | |City | |The common name of a city where the
-address is. |Text |
-
-| |0..1 | | | | | | | | |Post code | |The identifier for an addressable
-group of properties according to the relevant postal service, such as a
-ZIP code or Post Code. |Text |
-
-| |0..1 | | | | | | | | |Country subdivision | |The subdivision of a
-country such as region, county, state, province etc. |Text |
-
-| |0..1 | | | | | | | | |Country code | |A code that identifies the
-country. The lists of valid countries are registered with the ISO 3166-1
-Maintenance agency, "Codes for the representation of names of countries
-and their subdivisions". It is recommended to use the alpha-2
-representation. |Code |
-
-| |0..n | | | | |Criterion regulation | | | | | | | |
-
-| |0..1 | | | | | |Regulation URI | | | | |URI that points to a
-particular regulation |Identifier |tbr92-019
-
-| |1..1 | | | | | |Jurisdiction level | | | | |Jurisdictional level of a
-particular regulation. | |tbr92-019
-
-| |0..1 | | | | | |Regulation title | | | | |Title of a regulation. |
-|tbr92-019
-
-| |0..n | | | |NaturalPerson | | | | | | |Information about individuals
-who in one way or the other represent the economic operator. |
-|tbr92-018
-
-|tir92-055 |1..1 | | | | |Natural person name | | | | | |Name of the
-natural person. | |tbr92-006
-
-|tir92-056 |0..1 | | | | |Natural person identifier | | | | |
-|Identifier of the natural person. |Identifier |tbr92-006
-
-|tir92-057 |0..1 | | | | |Natural person role | | | | | |Role of the
-natural person. | |tbr92-007
-
-|tir92-065 |0..1 | | | | |Natural person birth place | | | | | |Place of
-birth of the natural person. | |tbr92-006
-
-|tir92-066 |0..1 | | | | |Natural person birth date | | | | | |Date of
-birth of the natural person. |Date |tbr92-006
-
-|tir92-064 |0..1 | | | | |Natural person registration country | | | | |
-|Country of registration  of the natural person. |Code |tbr92-009
-
-|tir92-067 |0..1 | | | | |Power of attorney | | | | | |Power of attorney
-of the natural person. | |tbr92-008
-
-| |0..1 | | | | |Postal address | | | | | |Address information. | |
-
-|tir92-058 |0..1 | | | | | |Address line 1 | | | | |The main address
-line in an address. Usually the street name and number or post office
-box. |Text |tbr92-008
-
-|tir92-059 |0..1 | | | | | |Address line 2 | | | | |An additional
-address line in an address that can be used to give further details
-supplementing the main line. |Text |tbr92-008
-
-|tir92-060 |0..1 | | | | | |City | | | | |The common name of a city
-where the address is. |Text |tbr92-008
-
-|tir92-061 |0..1 | | | | | |Post code | | | | |The identifier for an
-addressable group of properties according to the relevant postal
-service, such as a ZIP code or Post Code. |Text |tbr92-008
-
-|tir92-062 |0..1 | | | | | |Country subdivision | | | | |The subdivision
-of a country such as region, county, state, province etc. |Text
-|tbr92-008
-
-|tir92-063 |0..1 | | | | | |Country code | | | | |A code that identifies
-the country. The lists of valid countries are registered with the ISO
-3166-1 Maintenance agency, "Codes for the representation of names of
-countries and their subdivisions". It is recommended to use the alpha-2
-representation. |Code |tbr92-008
-
-| |0..1 | | | | |Suitability criterion | | | | | | | |
-
-| |0..1 | | | | | |Criterion identifier | | | | |A language-independent
-token, e.g., a number, that allows to identify a criterion uniquely as
-well as allows to reference the criterion in other documents. A
-criterion describes a fact that is used by the contracting body to
-evaluate and compare tenders by economic operators and which |Identifier
+s|InfReqID s|Cardinality s|Tree and Business term s|Usage s|Data Type s|BusReqID
+||ESPD||||
+
+|tir92-022 
+|1..1 
+|Document identifier
+|Identifier of a document An transaction instance must contain an identifier. The identifier enables positive referencing the document instance for various purposes including referencing between transactions that are part of the same process. 
+|Identifier 
+|tbr92-026
+
+|tir92-002 
+|0..1 
+|Document issue date
+|Date when the referred document was issued. 
+|Date 
+|tbr92-026
+
+|tir92-003 
+|0..1 
+|Document issue time
+|Time when the document was issued. 
+|Time 
+|tbr92-026
+
+| 
+|1..1 
+|Reference number
+|An identifier that is specified by the buyer and used as a reference number for all documents in the procurement process. It is also known as procurement project identifier, procurement reference number or contract folder identifier. reference to the procurement process to which this Qualification document is delivered as a response.
+|
+|tbr92-014
+
+|tir92-001 
+|0..1 
+|Document version identifier
+|The version of the document that has been identified with the document identifier.
+|
+|tbr92-027
+
+| 
+|1..1 
+|Process control information
+|Information about the specification that apply to the transaction.
+|
 |
 
-| | | | | | | | | | | | |will be used in the award decision. | |
+| 
+|1..1
+|Business process type identifier 
+|Identifies the business process context in which the transaction appears. It enables the buyer to process the invoice in an appropriate way.
+|Identifier  
+|tbr00-001
 
-| |0..1 | | | | | |Criterion version identifier | | | | |Version of the
-criterion. |Identifier |
+|tir41-025 
+|1..1
+|Specification identification 
+|An identification of the specification containing the total set of rules regarding semantic content, cardinalities and business rules to which the data contained in the instance document conforms. This identifies the European invoice norm, as well as any extensions applied. The identification may include the version of the specification. 
+|Code
+|tbr00-002
 
-| |1..n | | | | | |Criterion domain identifier | | | | |Domain of the
-criterion. | |
+| 
+|1..1 
+|Contracting body
+|The contracting authority or contracting entity who is buying supplies, services or public works using a tendering procedure as described in the applicable directive (Directives 2014/24/EU, 2014/25/EU).
+|
+|
 
-| |0..1 | | | | | |Criterion name | | | | |A short and descriptive name
-for a criterion. A criterion describes a fact that is used by the
-contracting body to evaluate and compare tenders by economic operators
-and which will be used in the award decision or to assess the
-eligibility of an economic operator. | |
+|tir92-026 
+|1..1
+|Contracting body name 
+|The name of the contracting body as it is registered.
+|
+|tbr92-010
 
-| |0..1 | | | | | |Criterion description | | | | |An extended
-description of the criterion. | |
+|tir92-028 
+|1..1
+|Contracting body identifier 
+|The national identifier of a contracting body as it is legally registered (e.g. VAT identification, such as KBO) 
+|Identifier 
+|tbr92-010
 
-| |0..n | | | | | |Criterion requirement | | | | |Requirement to fulfill
-an specific criterion. | |
+| 
+|0..1
+|Postal Address 
+|Address information
+|
+|
 
-| |0..1 | | | | | | |Criterion requirement identifier | | | |Identifier
-of the requirement that fulfills an specific criterion. |Identifier |
+|tir92-029 
+|0..1 
+|Address line 1
+|The main address line in an address. Usually the street name and number or post office box. 
+|Text 
+|tbr92-011
 
-| |0..1 | | | | | | |Criterion requirement version identifier | | |
-|Version identifier of the requirement that fulfills an specific
-criterion. | |
+|tir92-030 
+|0..1 
+|Address line 2
+|An additional address line in an address that can be used to give further details
+supplementing the main line. 
+|Text 
+|tbr92-011
 
-| |0..1 | | | | | | |Criterion requirement description | | |
-|Description of the requirement that fulfills an specific criterion. | |
+|tir92-031 
+|0..1 
+|City
+|The common name of a city where the address is. 
+|Text 
+|tbr92-011
 
-| |0..n | | | | | | |Required evidence | | | | | |
+|tir92-032 
+|0..1 
+|Post code
+|The identifier for and addressable group of properties according to the relevant postal service, such as a ZIP code or Post Code. 
+|Text 
+|tbr92-011
 
-| |0..1 | | | | | | | |Evidence identifier | | |Identifier for an
-evidence. |Identifier |
+|tir92-033 
+|0..1 
+|Country subdivision
+|The subdivision of a country such as region, county, state, province etc. 
+|Text
+|tbr92-011
 
-| |0..1 | | | | | | | |Evidence name | | |The name of an evidence. | |
+|tir92-034 
+|0..1 
+|Country code
+|A code that identifies the country. The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". It is recommended to use the alpha-2 representation.  
+|Code 
+|tbr92-011
 
-| |0..1 | | | | | | | |Evidence description | | |A textual description
-of the evidence. | |
+| 
+|0..1
+|Contact person 
+|Used to provide contacting information for a party in general or a person.
+|
+|
 
-| |0..1 | | | | | | | |Evidence version identifier | | |Version
-identifier for an evidence. | |
+|tir92-035 
+|0..1 
+|Contact point
+|The name of the contact point. 
+|Text 
+|tbr92-011
 
-| |0..1 | | | | | | | |Evidence type code | | |Type code for an
-evidence. |Code |
+|tir92-036 
+|0..1 
+|Contact fax number
+|A fax number for the contact point. 
+|Text 
+|tbr92-011
 
-| |0..1 | | | | | | | |Evidence issuer party | | | | |
+|tir92-037 
+|0..1 
+|Contact telephone number
+|A phone number for the contact point. 
+|Text 
+|tbr92-011
 
-| |0..1 | | | | | | | | |Evidence issuer party identifier | |The
-identifier of the party issuer of the evidence. | |
+|tir92-038 
+|0..1 
+|Contact email addressAn e-mail
+|Address for the contact point. 
+|Text 
+|tbr92-011
 
-| |0..1 | | | | | | | | |Evidence issuer party name | |The name of the
-party issuer of the evidence. | |
+| 
+|1..n 
+|Economic operator
+|Any natural or legal person or public entity or group of such persons and/or entities, including any temporary association of undertakings, which offers the execution of works and/or a work, the supply of products or the provision of services on the market. Information about the party submitting the qualification.
+|Identifier
+|tbr92-017, tbr92-010, tbr92-028, tbr92-029
 
-| |0..1 | | | | | | | | |Postal Address | |Address information. | |
+|tir92-039 
+|1..1
+|Economic operator identifier 
+|An identifier that identifies the economic operator, such as a legal registration identifier. 
+|Identifier 
+|tbr92-001
 
-| |0..1 | | | | | | | | | |Address line 1 |The main address line in an
-address. Usually the street name and number or post office box. |Text |
+|tir92-200 
+|0..1
+|Economic operator electronic address identifier
+|Electronic address of the economic operator.
+|
+|tbr92-001
 
-| |0..1 | | | | | | | | | |Address line 2 |An additional address line in
-an address that can be used to give further details supplementing the
-main line. |Text |
+|tir92-010 
+|0..1
+|Economic operator registration country code
+|The registration country code of the economic operator. 
+|Code
+|tbr92-003
 
-| |0..1 | | | | | | | | | |City |The common name of a city where the
-address is. |Text |
+|tir92-011 
+|1..1
+|Economic operator name 
+|The name of
+the economic operator.
+|
+|tbr92-001
 
-| |0..1 | | | | | | | | | |Post code |The identifier for an addressable
-group of properties according to the relevant postal service, such as a
-ZIP code or Post Code. |Text |
+|tir41-040 
+|0..1
+|Economic operator role 
+|The role of the economic operator when bidding from a consortium. (main contractor,
+subcontractor , additional) 
+|Code 
+|tbr92-004
 
-| |0..1 | | | | | | | | | |Country subdivision |The subdivision of a
-country such as region, county, state, province etc. |Text |
+|tir92-201 
+|0..1
+|National database URI 
+|Unrestricted and full direct access to tools and devices used for electronic communication is possible at this URL.
+|
+|tbr92-004
 
-| |0..1 | | | | | | | | | |Country code |A code that identifies the
-country. The lists of valid countries are registered with the ISO 3166-1
-Maintenance agency, "Codes for the representation of names of countries
-and their subdivisions". It is recommended to use the alpha-2
-representation. |Code |
+|tir92-202 
+|0..1
+|National database access credentials 
+|Unrestricted and full direct access to tools and devices used for electronic communication is possible at this URL.
+|
+|tbr92-004
 
-| |0..n | | | | | |Criterion regulation | | | | | | |
+|0..1
+|Postal address 
+|Address information.
+|
+|
+|
 
-| |0..1 | | | | | | |Regulation URI | | | |URI that points to a
-particular regulation |Identifier |
+|tir92-041 
+|0..1 
+|Address line 1
+|The main address line in an address. Usually the street name and number or post office box. 
+|Text 
+|tbr92-002
 
-| |1..1 | | | | | | |Jurisdiction level | | | |Jurisdictional level of a
-particular regulation. | |
+|tir92-042 
+|0..1 
+|Address line 2
+|An additional address line in an address that can be used to give further details supplementing the main line. 
+|Text 
+|tbr92-002
 
-| |0..1 | | | | | | |Regulation title | | | |Title of a regulation. | |
+|tir92-043 
+|0..1 
+|City
+|The common name of a city where the address is. 
+|Text 
+|tbr92-002
 
-| |0..1 | | |Service provider | | | | | | | | | |
+|tir92-044 
+|0..1 
+|Post code
+|The identifier for and addressable group of properties according to the relevant postal service, such as a ZIP code or Post Code. 
+|Text |
+tbr92-002
 
-| |0..1 | | | |Service provider name | | | | | | |The name of the
-service provider. Issuer body of the ESPD. | |tbr92-028
+|tir92-045 
+|0..1 
+|Country subdivision
+|The subdivision of a country such as region, county, state, province etc. 
+|Text
+|tbr92-002
 
-| |0..1 | | | |Service provider identifier | | | | | | |The national
-identifier of a service provider as it is legally registered (e.g. VAT
-identification, such as KBO) Issuer body of the ESPD. | |tbr92-028
+|tir92-046 
+|0..1 
+|Country code
+|A code that identifies the country. The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". It is recommended to use the alpha-2
+representation. 
+|Code 
+|tbr92-002
 
-| |0..1 | | | |Service provider electronic address identifier | | | | |
-| |Electronic address of the service provider. Issuer body of the ESPD.
-| |tbr92-028
+| 
+|0..1
+|Contacting details 
+|Used to provide contacting information for a party in general or a person.
+|
+|
 
-| |0..n | | |Additional document | | | | | | | |Information about an
-attached document. | |
 
-|tir92-182 |0..1 | | | |Attachment identifier | | | | | | |An identifier
-that can be used to reference the attached document, such as an unique
-identifier. |Identifier |tbr92-020
+|tir92-047 
+|0..1 
+|Contact point
+|The name of the contact point. 
+|Text 
+|tbr92-002
 
-|tir92-183 |0..n | | | |Attachment description | | | | | | |A short
-description of the attached document |Text |tbr92-020
+|tir92-048 
+|0..1 
+|Contact fax number
+|A fax number for the contact point. 
+|Text 
+|tbr92-002
 
-|tir92-184 |0..1 | | | |Attached document | | | | | | |An attached
-document embedded as binary object. Attached document is used when
-documentation shall be stored with the invoice for future reference or
-audit purposes. |Binary Object |tbr92-020
+|tir92-049 
+|0..1 
+|Contact telephone number
+|A phone number for the contact point. 
+|Text 
+|tbr92-002
+
+|tir92-050 
+|0..1 
+|Contact email addressAn e-mail
+|Address for the contact point. 
+|Text 
+|tbr92-002
+
+| 
+|0..n
+|Procurement project lot 
+|
+|
+|
+
+| 
+|0..1 
+|Lot identifier
+|An identifier for the lot.
+|Identifier 
+|
+
+| 
+|0..1
+|Exclusion criterion 
+|
+|
+|
+
+| 
+|0..1 
+|Criterion identifier
+|A language-independent token, e.g., a number, that allows to identify a criterion uniquely as well as allows to reference the criterion in other documents. A criterion describes a fact that is used by the contracting body to evaluate and compare tenders by economic operators and which will be
+used in the award decision. 
+|Identifier 
+|tbr92-016
+
+| 
+|0..1 
+|Criterion version identifier
+|Version of the criterion. 
+|Identifier 
+|tbr92-016
+
+| 
+|1..n 
+|Criterion domain identifier
+|Domain of the criterion.
+|
+|tbr92-016
+
+| 
+|0..1 
+|Criterion name
+|A short and descriptive name for a criterion. A criterion describes a fact that is used by the contracting body to evaluate and compare tenders by economic operators and which will be used in the award decision or to assess the eligibility of an economic operator.
+|
+|tbr92-016
+
+| 
+|0..1 
+|Criterion description
+|An extended description of the criterion.
+|
+|tbr92-016
+
+| 
+|0..n 
+|Criterion requirement
+|Requirement to fulfil a specific criterion.
+|
+|
+
+| 
+|0..1
+|Criterion requirement identifier 
+|Identifier of the requirement that fulfils a specific criterion. 
+|Identifier 
+|
+
+| 
+|0..1
+|Criterion requirement version identifier
+|Version identifier of the requirement that fulfils a specific
+criterion.
+|
+|
+
+| 
+|0..1
+|Criterion requirement description
+|Description of the requirement that fulfils a specific criterion.
+|
+|
+
+| 
+|0..n
+|Required evidence 
+|
+|
+|
+
+| 
+|0..1 
+|Evidence identifier
+|Identifier for an item of evidence. 
+|Identifier 
+|
+
+| 
+|0..1 
+|Evidence name
+|The name of an evidence.
+|
+|
+
+| 
+|0..1 
+|Evidence description
+|A textual description of the evidence.
+|
+|
+
+| 
+|0..1 
+|Evidence version identifier
+|Version identifier for an evidence.
+|
+|
+
+| 
+|0..1 
+|Evidence type code 
+|Type code for an item of evidence. 
+|Code 
+|
+
+| 
+|0..1 
+|Evidence issuer party
+|
+|
+|
+
+| 
+|0..1
+|Evidence issuer party identifier 
+|The identifier of the party issuer of the evidence.
+|
+|tbr92-022
+
+| 
+|0..1
+|Evidence issuer party name 
+|The name of the party issuer of the evidence.
+|
+|
+
+| 
+|0..1
+|Postal Address 
+|Address information.
+|
+|
+
+| 
+|0..1 
+|Address line 1
+|The main address line in and address. Usually the street name and number or post office box. 
+|Text 
+|
+
+| 
+|0..1 
+|Address line 2
+|An additional address line inn address that can be used to give further details supplementing the main line. 
+|Text 
+|
+
+| 
+|0..1 
+|City
+|The common name of a city where the address is. 
+|Text 
+|
+
+| 
+|0..1 
+|Post code
+|The identifier for an addressable group of properties according to the relevant postal service, such as a ZIP code or Post Code. 
+|Text 
+|
+
+| 
+|0..1 
+|Country subdivision
+|The subdivision of a country such as region, county, state, province etc. 
+|Text 
+|
+
+| 
+|0..1 
+|Country code
+|A code that identifies the country. The lists of valid countries are registered with the ISO 3166-1
+Maintenance agency, "Codes for the representation of names of countries and their subdivisions". It is recommended to use the alpha-2
+representation. 
+|Code 
+|
+
+| 
+|0..n 
+|Criterion regulation
+|
+|
+|
+
+| 
+|0..1
+|Regulation URI 
+|URI that points to a particular regulation 
+|Identifier 
+|tbr92-019
+
+| 
+|1..1
+|Jurisdiction level 
+|Jurisdictional level of a particular regulation.
+|
+|tbr92-019
+
+| 
+|0..1
+|Regulation title 
+|Title of a regulation. 
+|
+|tbr92-019
+
+| 
+|0..1
+|Selection criterion 
+|
+|
+|
+
+| 
+|0..1 
+|Criterion identifier
+|A language-independent
+token, e.g., a number, that allows to identify a criterion uniquely as
+well as allows to reference the criterion in other documents. A
+criterion describes a fact that is used by the contracting body to
+evaluate and compare tenders by economic operators and which will be
+used in the award decision. 
+|Identifier 
+|tbr92-016
+
+| 
+|0..1 
+|Criterion version identifier
+|Version of the criterion. 
+|Identifier 
+|tbr92-016
+
+| 
+|1..n 
+|Criterion domain identifier
+|Domain of the criterion.
+|
+|tbr92-016
+
+| 
+|0..1 
+|Criterion name
+|A short and descriptive name for a criterion. A criterion describes a fact that is used by the contracting body to evaluate and compare tenders by economic operators and which will be used in the award decision or to assess the eligibility of an economic operator.
+|
+|tbr92-016
+
+| 
+|0..1 
+|Criterion description
+|An extended description of the criterion.
+|
+|tbr92-016
+
+| 
+|0..n 
+|Criterion requirement
+|Requirement to fulfil a specific criterion.
+|
+|
+
+| 
+|0..1
+|Criterion requirement identifier 
+|Identifier of the requirement that fulfils a specific criterion. 
+|Identifier 
+|
+
+| 
+|0..1
+|Criterion requirement version identifier
+|Version identifier of the requirement that fulfils a specific
+criterion.
+|
+|
+
+| 
+|0..1
+|Criterion requirement description
+|Description of the requirement that fulfils a specific criterion.
+|
+|
+
+| 
+|0..n
+|Required evidence 
+|
+|
+|
+
+| 
+|0..1 
+|Evidence identifier
+|Identifier for an item of evidence. 
+|Identifier 
+|tbr92-022
+
+| 
+|0..1 
+|Evidence nameThe name of an evidence.
+|
+|
+|
+
+| 
+|0..1 
+|Evidence description
+|A textual description of the evidence.
+|
+|
+
+| 
+|0..1 
+|Evidence version identifier
+|Version identifier for an evidence.
+|
+|
+
+| 
+|0..1 
+|Evidence type code
+|Type code for an evidence. 
+|Code 
+|
+
+| 
+|0..1 
+|Evidence issuer party
+|
+|
+|
+
+| 
+|0..1
+|Evidence issuer party identifier 
+|The identifier of the party issuer of the evidence.
+|
+|tbr92-022
+
+| 
+|0..1
+|Evidence issuer party name 
+|The name of the party issuer of the evidence.
+|
+|
+
+| 
+|0..1
+|Postal Address 
+|Address information.
+|
+|
+
+| 
+|0..1 
+|Address line 1
+|The main address line in and address. Usually the street name and number or post office box. 
+|Text 
+|
+
+| 
+|0..1 
+|Address line 2
+|An additional address line in an address that can be used to give further details supplementing the main line. 
+|Text 
+|
+
+| 
+|0..1 
+|City
+|The common name of a city where the address is. 
+|Text 
+|
+
+| 
+|0..1 
+|Post code
+|The identifier for an addressable group of properties according to the relevant postal service, such as a ZIP code or Post Code. 
+|Text 
+|
+
+| 
+|0..1 
+|Country subdivision
+|The subdivision of a country such as region, county, state, province etc. 
+|Text 
+|
+
+| 
+|0..1 
+|Country code
+|A code that identifies the country. The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". It is recommended to use the alpha-2 representation. 
+|Code 
+|
+
+| 
+|0..n 
+|Criterion regulation
+|
+|
+|
+
+| 
+|0..1
+|Regulation URI 
+|URI that points to a particular regulation 
+|Identifier 
+|tbr92-019
+
+| 
+|1..1
+|Jurisdiction level 
+|Jurisdictional level of a particular regulation.
+|
+|tbr92-019
+
+| 
+|0..1
+|Regulation title 
+|Title of a regulation. 
+|
+|tbr92-019
+
+| 
+|0..n
+|NaturalPerson 
+|Information about individuals who in one way or the other represent the economic operator. 
+|
+|tbr92-018
+
+|tir92-055 
+|1..1 
+|Natural person name
+|Name of the natural person.
+|
+|tbr92-006
+
+|tir92-056 
+|0..1 
+|Natural person identifier 
+|Identifier of the natural person. 
+|Identifier 
+|tbr92-006
+
+|tir92-057 
+|0..1 
+|Natural person role
+|Role of the natural person.
+|
+|tbr92-007
+
+|tir92-065 
+|0..1 
+|Natural person birth place
+|Place of birth of the natural person.
+|
+|tbr92-006
+
+|tir92-066 
+|0..1 
+|Natural person birth date
+|Date of birth of the natural person. 
+|Date 
+|tbr92-006
+
+|tir92-064 
+|0..1 
+|Natural person registration country 
+|Country of registration  of the natural person. 
+|Code 
+|tbr92-009
+
+|tir92-067 
+|0..1 
+|Power of attorney
+|Power of attorney of the natural person.
+|
+|tbr92-008
+
+| 
+|0..1 
+|Postal address
+|Address information.
+|
+|
+
+|tir92-058 
+|0..1
+|Address line 1 
+|The main address line in an address. Usually the street name and number or post office box. 
+|Text 
+|tbr92-008
+
+|tir92-059 
+|0..1
+|Address line 2 
+|An additional address line in an address that can be used to give further details supplementing the main line. 
+|Text 
+|tbr92-008
+
+|tir92-060 
+|0..1
+|City 
+|The common name of a city where the address is. 
+|Text 
+|tbr92-008
+
+|tir92-061 
+|0..1
+|Post code 
+|The identifier for an addressable group of properties according to the relevant postal service, such as a ZIP code or Post Code. 
+|Text 
+|tbr92-008
+
+|tir92-062 
+|0..1
+|Country subdivision 
+|The subdivision of a country such as region, county, state, province etc. 
+|Text
+|tbr92-008
+
+|tir92-063 
+|0..1
+|Country code 
+|A code that identifies the country. The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". It is recommended to use the alpha-2 representation. 
+|Code 
+|tbr92-008
+
+| 
+|0..1 
+|Suitability criterion
+|
+|
+|
+
+| 
+|0..1
+|Criterion identifier 
+|A language-independent token, e.g., a number, that allows to identify a criterion uniquely as well as allows to reference the criterion in other documents. A criterion describes a fact that is used by the contracting body to evaluate and compare tenders by economic operators and which will be used in the award decision.
+|Identifier
+|
+
+| 
+|0..1
+|Criterion version identifier 
+|Version of the criterion. 
+|Identifier 
+|
+
+| 
+|1..n
+|Criterion domain identifier 
+|Domain of the criterion.
+|
+|
+
+| 
+|0..1
+|Criterion name 
+|A short and descriptive name for a criterion. A criterion describes a fact that is used by the contracting body to evaluate and compare tenders by economic operators and which will be used in the award decision or to assess the eligibility of an economic operator.
+|
+|
+
+| 
+|0..1
+|Criterion description 
+|An extended description of the criterion.
+|
+|
+
+| 
+|0..n
+|Criterion requirement 
+|Requirement to fulfil a specific criterion.
+|
+|
+
+| 
+|0..1 
+|Criterion requirement identifier
+|Identifier of the requirement that fulfils a specific criterion. 
+|Identifier 
+|
+
+| 
+|0..1 
+|Criterion requirement version identifier 
+|Version identifier of the requirement that fulfils a specific
+criterion.
+|
+|
+
+| 
+|0..1 
+|Criterion requirement description 
+|Description of the requirement that fulfils a specific criterion.
+|
+|
+
+| 
+|0..n 
+|Required evidence
+|
+|
+|
+
+| 
+|0..1
+|Evidence identifier 
+|Identifier for an evidence. 
+|Identifier 
+|
+
+| 
+|0..1
+|Evidence name 
+|The name of an item of evidence.
+|
+|
+
+| 
+|0..1
+|Evidence description 
+|A textual description of the evidence.
+|
+|
+
+| 
+|0..1
+|Evidence version identifier 
+|Version identifier for an evidence.
+|
+|
+
+| 
+|0..1
+|Evidence type code 
+|Type code for an evidence. 
+|Code 
+|
+
+| 
+|0..1
+|Evidence issuer party 
+|
+|
+|
+
+| 
+|0..1 
+|Evidence issuer party identifier
+|The identifier of the party issuer of the evidence.
+|
+|
+
+| 
+|0..1 
+|Evidence issuer party name
+|The name of the party issuer of the evidence.
+|
+|
+
+| 
+|0..1 
+|Postal Address
+|Address information.
+|
+|
+
+| 
+|0..1
+|Address line 1 
+|The main address line in and address. Usually the street name and number or post office box. 
+|Text 
+|
+
+| 
+|0..1
+|Address line 2 
+|An additional address line in an address that can be used to give further details supplementing the main line. 
+|Text 
+|
+
+| 
+|0..1
+|City 
+|The common name of a city where the address is. 
+|Text 
+|
+
+| 
+|0..1
+|Post code 
+|The identifier for an addressable group of properties according to the relevant postal service, such as a ZIP code or Post Code. 
+|Text 
+|
+
+| 
+|0..1
+|Country subdivision 
+|The subdivision of a country such as region, county, state, province etc. 
+|Text 
+|
+
+| 
+|0..1
+|Country code |A code that identifies the country. The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". It is recommended to use the alpha-2 representation. 
+|Code 
+|
+
+| 
+|0..n
+|Criterion regulation 
+|
+|
+|
+
+| 
+|0..1 
+|Regulation URI
+|URI that points to a particular regulation 
+|Identifier 
+|
+
+| 
+|1..1 
+|Jurisdiction level
+|Jurisdictional level of a particular regulation.
+|
+|
+
+| 
+|0..1 
+|Regulation title
+|Title of a regulation.
+|
+|
+
+| 
+|0..1 
+|Service provider
+|
+|
+|
+
+| 
+|0..1
+|Service provider name |The name of the service provider. Issuer body of the ESPD.
+|
+|tbr92-028
+
+| 
+|0..1
+|Service provider identifier 
+|The national identifier of a service provider as it is legally registered (e.g. VAT identification, such as KBO) Issuer body of the ESPD.
+|
+|tbr92-028
+
+| 
+|0..1
+|Service provider electronic address identifier 
+|Electronic address of the service provider. Issuer body of the ESPD.
+| 
+|tbr92-028
+
+| 
+|0..n 
+|Additional document
+|Information about an attached document.
+|
+|
+
+|tir92-182 
+|0..1
+|Attachment identifier 
+|An identifier that can be used to reference the attached document, such as an unique identifier. 
+|Identifier 
+|tbr92-020
+
+|tir92-183 
+|0..n
+|Attachment description 
+|A short description of the attached document 
+|Text 
+|tbr92-020
+
+|tir92-184 
+|0..1
+|Attached document 
+|An attached document embedded as binary object. Attached document is used when documentation shall be stored with the invoice for future reference or audit purposes. 
+|Binary Object 
+|tbr92-020
+
 |===
 
 == Implementation
@@ -3863,14 +2730,8 @@ For this profile no syntax implementation guides are available.
 
 == References
 
-* {blank}
-* {blank}
+* http://eur-lex.europa.eu/legal-content/EN/TXT/?qid=1435830281783&uri=CELEX:32014L0024[Directive 2014/24/EU of the European Parliament and the Council of 26 February 2014 on public procurement and repealing Directive 2004/18/EU]
 
-http://eur-lex.europa.eu/legal-content/EN/TXT/?qid=1435830281783&uri=CELEX:32014L0024[Directive
-2014/24/EU of the European Parliament and the Council of 26 Frebruary
-2014 on public procurement and repealing Directive
-2004/18/EU]http://eur-lex.europa.eu/legal-content/EN/TXT/?qid=1435830281783&uri=CELEX:32014L0025[Directive
-2014/25/EU of the European Parliament and of the Council of 26 February
-2014 on procurement by entities operating in the water&#44; energy&#44;
-transport and postal services sectors and repealing Directive
+* http://eur-lex.europa.eu/legal-content/EN/TXT/?qid=1435830281783&uri=CELEX:32014L0025[Directive 2014/25/EU of the European Parliament and of the Council of 26 February 2014 on procurement by entities operating in the water, energy, transport, and postal services sectors and repealing Directive 
 2004/17/EU]
+
