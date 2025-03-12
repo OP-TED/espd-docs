@@ -1,0 +1,9 @@
+tocTab[tocTab.length] = new Array("0.3.1.59:1", "", "AI69 info-buyer", "EARoot/EA3/EA1/EA59/EA1728.html", "175.png", "245", "0", "", "Logical diagram0","{593348B7-AE26-4bdb-9ED5-A71A28A5FA97}");
+tocTab[tocTab.length] = new Array("0.3.1.59:2", "", "AI69_info-buyer: cac::QualificationApplicationRequest", "EARoot/EA3/EA1/EA59/EA1731.html", "25.png", "E4115", "0", "", "Object0","{368FF213-B54F-46e1-8093-11404D58CE08}");
+tocTab[tocTab.length] = new Array("0.3.1.59:3", "", "AI69_info-buyer/CP1/PAR1: cac::Party", "EARoot/EA3/EA1/EA59/EA1732.html", "25.png", "E4117", "0", "", "Object0","{98E7647D-746C-41fe-8ED3-69E041893605}");
+tocTab[tocTab.length] = new Array("0.3.1.59:4", "", "AI69_info-buyer/CP1/PAR1/CTC1: cac::Contact", "EARoot/EA3/EA1/EA59/EA1733.html", "25.png", "E4125", "0", "", "Object0","{9AE879EC-0023-4189-ADB7-10D54F4A4631}");
+tocTab[tocTab.length] = new Array("0.3.1.59:5", "", "AI69_info-buyer/CP1/PAR1/PA1: cac::PostalAddress", "EARoot/EA3/EA1/EA59/EA1734.html", "25.png", "E4122", "0", "", "Object0","{37170F88-07BC-4e5d-A5A7-3C149AA291E7}");
+tocTab[tocTab.length] = new Array("0.3.1.59:6", "", "AI69_info-buyer/CP1/PAR1/PA1/CTR1: cac::Country", "EARoot/EA3/EA1/EA59/EA1735.html", "25.png", "E4123", "0", "", "Object0","{007FE671-F150-4442-A208-B9908D50DBA3}");
+tocTab[tocTab.length] = new Array("0.3.1.59:7", "", "AI69_info-buyer/CP1/PAR1/PI1: cac::PartyIdentificatoin", "EARoot/EA3/EA1/EA59/EA1736.html", "25.png", "E4119", "0", "", "Object0","{58EF158D-8A99-4f72-9845-11D2B82B9A22}");
+tocTab[tocTab.length] = new Array("0.3.1.59:8", "", "AI69_info-buyer/CP1/PAR1/PN1: cac::PartyName", "EARoot/EA3/EA1/EA59/EA1737.html", "25.png", "E4121", "0", "", "Object0","{B53D730D-3AAD-4a55-8AFB-327C240EB444}");
+tocTab[tocTab.length] = new Array("0.3.1.59:9", "", "AI69_infor-buyer/CP1: cac::ContractingParty", "EARoot/EA3/EA1/EA59/EA1738.html", "25.png", "E4116", "0", "", "Object0","{E1DBC0C2-6C41-4f62-AC2F-68D61CB06884}");

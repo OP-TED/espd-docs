@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>WebUI_step_2_4_part_III_A</title>
+<link href="../../css/ea.css" rel="stylesheet" type="text/css" />
+<script>
+function initPage(src) {	
+	if(parent==this&&(this.location+"").indexOf('EARoot')!=-1)
+		document.location=(this.location+"").substring(0,(this.location+"").indexOf('EARoot'))+"index"+(this.location+"").substring((this.location+"").lastIndexOf('.'))+"?goto="+((this.location+"").substring((this.location+"").indexOf('EARoot')+7,(this.location+"").lastIndexOf('.')).replace(/\//g,':').replace(/EA/g,""));
+	else
+		parent.initPage(src);
+}
+
+function nameClassifier(name, separator)
+{
+  var str = name;
+  var classifierName;
+  var node = document.getElementById('name_classifier');
+  if(node != null)
+  {
+    classifierName = node.innerHTML;
+  }
+  if(classifierName != "")
+  {
+   str += separator + classifierName;
+  }
+  
+  return str;
+}
+</script>
+</head>
+<body onload="initPage(this);" class="Content">
+<div class="PageBody">
+	
+<img src="EA1932.png" usemap="#EA1932" border="0" />
+
+<MAP NAME="EA1932">
+<area shape="rect" coords="31,934,271,954" href="EA2067.html" target="_self">
+<area shape="rect" coords="31,836,543,937" href="EA2063.html" target="_self">
+<area shape="rect" coords="31,802,271,822" href="EA2068.html" target="_self">
+<area shape="rect" coords="31,706,543,807" href="EA2058.html" target="_self">
+<area shape="rect" coords="31,668,271,688" href="EA2066.html" target="_self">
+<area shape="rect" coords="31,575,543,676" href="EA2061.html" target="_self">
+<area shape="rect" coords="31,524,271,544" href="EA2069.html" target="_self">
+<area shape="rect" coords="31,436,543,524" href="EA2060.html" target="_self">
+<area shape="rect" coords="31,405,271,425" href="EA2065.html" target="_self">
+<area shape="rect" coords="31,278,543,405" href="EA2059.html" target="_self">
+<area shape="rect" coords="31,239,271,259" href="EA2064.html" target="_self">
+<area shape="rect" coords="31,155,543,243" href="EA2062.html" target="_self">
+<area shape="rect" coords="38,118,570,134" href="EA2070.html" target="_self">
+<area shape="rect" coords="48,79,522,106" href="EA2073.html" target="_self">
+<area shape="rect" coords="10,10,575,970" href="EA1953.html" target="_self">
+</MAP>
+
+	<div class="ObjectTitle">WebUI_step_2_4_part_III_A : Webpage Wireframe diagram</div>
+	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">29/01/2025 16:26:34</td>
+		</tr>
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Modified:</td>
+			<td width="85%" class="ObjectDetailsValue">29/01/2025 16:41:49</td>
+		</tr>
+		<tr style="padding-top: 10px;">
+			<td width="15%" class="ObjectDetailsTopic"><img src="../../images/plus03.gif" align="absmiddle" id="proj" onclick="parent.toggleData(this.id)" />Project:</td>
+			<td width="85%" class="ObjectDetailsValue"></td>			
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td width="85%" class="ObjectDetailsValue">srkrasic</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td width="85%" class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic"><img src="../../images/plus03.gif" align="absmiddle" id="adv" onclick="parent.toggleData(this.id)" />Advanced:</td>
+			<td width="85%" class="ObjectDetailsValue"></td>			
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">ID:</td>
+			<td width="85%" class="ObjectDetailsValue">{89172A60-01F5-4059-9A1E-E6DEC81012E4}</td>
+		</tr>
+	</table>
+	
+</div>
+ 
+</body>
+</html>
