@@ -1,0 +1,7 @@
+tocTab[tocTab.length] = new Array("0.3.1.70:1", "", "AI73 info-signature", "EARoot/EA3/EA1/EA70/EA1847.html", "175.png", "249", "0", "", "Logical diagram0","{BD8454F0-66FC-4e11-9A51-1964E2396BB0}");
+tocTab[tocTab.length] = new Array("0.3.1.70:2", "", "AI73_info-signature: cac::QualifyingParty", "EARoot/EA3/EA1/EA70/EA1850.html", "25.png", "E4153", "0", "", "Object0","{6375CC35-D491-42aa-8B5E-63FD89BF3E65}");
+tocTab[tocTab.length] = new Array("0.3.1.70:3", "", "AI73_info-signature/DEC1: cac::Declaration", "EARoot/EA3/EA1/EA70/EA1851.html", "25.png", "E4154", "0", "", "Object0","{D3737267-2716-42c7-A66D-360D73DCDD41}");
+tocTab[tocTab.length] = new Array("0.3.1.70:4", "", "AI73_info-signature/QG1/Q1: cac::TechnicalCapability", "EARoot/EA3/EA1/EA70/EA1852.html", "25.png", "E4155", "0", "", "Object0","{33289704-3844-4fbd-A289-84A58B52F4A2}");
+tocTab[tocTab.length] = new Array("0.3.1.70:5", "", "AI73_info-signature/QG1/Q2: cac::TechnicalCapability", "EARoot/EA3/EA1/EA70/EA1853.html", "25.png", "E4156", "0", "", "Object0","{603A771F-3A48-4595-87F9-A79119BEA0D5}");
+tocTab[tocTab.length] = new Array("0.3.1.70:6", "", "AI73_info-signature/QG1/QSG1/Q1: cac::TechnicalCapability", "EARoot/EA3/EA1/EA70/EA1854.html", "25.png", "E4157", "0", "", "Object0","{00BDD4B2-34DD-4cd0-846D-4EC7DE2BBEB0}");
+tocTab[tocTab.length] = new Array("0.3.1.70:7", "", "AI73_info-signature/QG1/QSG1/Q2: cac::TechnicalCapability", "EARoot/EA3/EA1/EA70/EA1855.html", "25.png", "E4158", "0", "", "Object0","{23189320-2E9A-49d8-B8CF-2065C9ABCD77}");
