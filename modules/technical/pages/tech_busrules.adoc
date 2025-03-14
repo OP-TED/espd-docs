@@ -3139,7 +3139,7 @@ each of the criterion subgroups identified within: +
 /cac:TenderingCriterion /cac:TenderingCriterionPropertyGroup +
 /cac:SubsidiaryTenderingCriterionPropertyGroup/ + cac:TenderingCriterionProperty, must be answered
 
-
+|
 |===
 
 
@@ -3871,7 +3871,7 @@ Severity: ERROR
 If /cac:TenderingCriterionResponse /cac:ResponseValue /cbc:ResponseIndicator = true and /cac:TenderingCriterionResponse /cbc:ValidatedCriterionPropertyID matches one of the IDs within /cac:TenderingCriterionGroupPropertyGroup /cbc:ID, and its /cbc:PropertyGroupTypeCode = ONFALSE
 +
 Then, its /cac: SubsidiaryTenderingCriterionPropertyGroup /cbc:ID cannot exist within /cac:TenderingCriterionResponse /cbc:ValidatedCriterionPropertyID
-
+|
 |===
 
 
