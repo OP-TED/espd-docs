@@ -688,7 +688,7 @@ NaturalPersonRegistrationCountryCode*
 |A power of attorney associated with this natural person
 |OPTIONAL (0..n) 
 |Comment: UBL-2.1 component (cac:)
-
+|
 |===
 
 === Power of attorney
@@ -1330,7 +1330,7 @@ a|
 |Short textual description of the requirement
 |OPTIONAL (0..1) 
 |`*Comment*: The ESPD Service does not use this property` 
-
+|
 |===
 
 [.text-left]
