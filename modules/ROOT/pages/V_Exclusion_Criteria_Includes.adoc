@@ -34,8 +34,8 @@ http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr070
 
 [cols="<1,<4"]
 |===
-|*REQUIREMENT*
-For Procurement Projects where the value of the contract is above the threshold, all ESPDRespone XML documents MUST specify all the exclusion criteria defined in the http://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32016R0007[Annex 2 of the Regulation 2016/7]. 
+|*REQUIREMENT* +
+|For Procurement Projects where the value of the contract is above the threshold, all ESPDRespone XML documents MUST specify all the exclusion criteria defined in the http://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32016R0007[Annex 2 of the Regulation 2016/7]. 
 |===
 
 .Differences between Regulated and Self-contained exclusion criteria
