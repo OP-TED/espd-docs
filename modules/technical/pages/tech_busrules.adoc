@@ -2554,7 +2554,8 @@ a|
 [width="100%",cols="33%,33%,33%,33%",options="header",]
 |===
 |*Mapping Rule ID* | | |
-|Test Case Rule ID a|
+|Test Case Rule ID 
+a|
 * RS-20-R50
 * RS-80-R60
 
@@ -2562,14 +2563,32 @@ a|
 * RS-140-R50
 * RS-200-R50
 
-|Rule description |Information about compliance of selection criteria CAN be provided | |
-|Mapping description |Criterion responses are implemented as Tendering Criterion response components | |
-|XSD Path a|
-* /cac:TenderingCriterionResponse[0..n]
+|Rule description 
+|Information about compliance of selection criteria CAN be provided 
+| 
+|
 
-| |
-|Business requirement |xref:tbr92_reqs.adoc#eo[tbr92-006], xref:tbr92_reqs.adoc#eo[tbr92-007], xref:tbr92_reqs.adoc#eval_crit[tbr92-018] | |
-|XSD Business Rule description | |XSD Business Rule Schematron |
+|Mapping description 
+|Criterion responses are implemented as Tendering Criterion response components 
+| 
+|
+
+|XSD Path 
+a|
+* /cac:TenderingCriterionResponse[0..n]
+| 
+|
+
+|Business requirement 
+|xref:tbr92_reqs.adoc#eo[tbr92-006], xref:tbr92_reqs.adoc#eo[tbr92-007], xref:tbr92_reqs.adoc#eval_crit[tbr92-018] 
+| 
+|
+
+|XSD Business Rule description 
+| 
+|XSD Business Rule Schematron 
+|
+
 |Same business rules as BR-RESP-30 | | |
 |===
 
