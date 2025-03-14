@@ -1,0 +1,3996 @@
+:doctitle: Business Rules Guide
+:doccode: espd-tech-prod-005
+:author: NPJ
+:authoremail: nicole-anne.paterson-jones@ext.ec.europa.eu
+:docdate: January 2024
+:sectnums:
+
+== Purpose
+
+This guide explains how Business Rules are implemented, and which ones apply in each case. The guide can be used to:
+
+* Identify the business rules, and describe and map the Schematron rules with UBL-2.3 XSD, for each test case;
+* Validate the criteria taxonomy.
+
+=== Input Documents
+
+.List of Input documents
+[width="100%",cols="13%,31%,11%,45%",options="header",]
+|===
+
+|*ID* |*Filename* |*Version* |*Description*
+
+a|1 
+|ESPD_Testcases 
+|01 
+|Identification of the different test cases for the ESPDRequest and the ESPDResponse.
+
+a|2
+|XML Implementation Guide (current document) link:https://docs.ted.europa.eu/ESPD-EDM/latest/index.html[Technical HandBook] 
+|4.0.0 
+|Understanding of the model underlying the implementation of the ESPD Request and ESPD Response XML documents.
+
+|===
+
+
+
+=== Process
+
+The process to identify the business rules is the following one:
+
+[arabic]
+. *List the test cases ID and test case rule ID* from [RD01]. These rules are common among the test cases; which means that each rule ID must have a unique identifier within the current document (Mapping Rule ID).
+. For each *Mapping Rule ID*:
+[loweralpha]
+.. Map each of the rules to UBL-2.3 XSD as description;
+.. Identify the whole path within UBL-2.3 XSD;
+.. List the business rules coming from the XML implementation guide [RD02] and those ones coming from ESPD_TestCases [RD01].
+. Identify the rules coming from Data Structures Regulated spreadsheet [RD03] and Self-contained [RD04].
+. Identify other rules coming from the XML implementation guide [RD02].
+
+=== Tables
+
+The process described above uses the following auxiliary tables.
+
+[arabic]
+. Identification of the test cases from [RD01] and mapping them to the UBL-2.3 XSD:
+
+.Test Case ID example
+[width="100%",cols="22%,11%,11%,24%,32%",options="header",]
+|===
+
+|*Pre-conditions (from [RD01])* | | | |
+
+|XSD Schema 
+| 
+a|XSD filename. It could be ESPD request or ESPD response.
+UBL-QualificationApplicationRequest-2.2-Pre-award.xsd (ESPD Request) or UBL-QualificationApplicationResponse-2.2-Pre-award.xsd (ESPD Response).
+| 
+|
+
+|Regulated or Self-contained ESPD 
+| 
+|/cbc:QualificationApplicationTypeCode value, either REGULATED or SELFCONTAINED according to QualificationApplicationType code list. 
+| 
+|
+
+|Divided into lots 
+| 
+|Number of lots in the current test case (/cac:ProcurementProjectLot /cbc:ID). 
+| 
+|
+
+|Two-phased procedure 
+| 
+|Type of procedure, whether single-phased (OPEN) or two-phased procedure (different to OPEN) (/cbc:ProcedureCode). 
+| 
+|
+
+|*List of rules (they apply when the previous conditions are met)* 
+| 
+| 
+| 
+|
+
+|*Rule ID* 
+|*Rule* 
+| 
+|*Scenario ID* 
+|*Scenarios*
+
+|Test Case Rule ID (from [RD01]) and Mapping Rule ID 
+|Description of the rule and mapping to Mapping Rule ID (current document) 
+| 
+|Scenario ID (from [RD01]) and Mapping Scenario ID 
+|Description of the scenario and mapping to Mapping Scenario ID (current document)
+
+|===
+
+
+
+[arabic, start=2]
+. For each of the rules identified in document [RD01], the following table describes its mapping in natural language:
+
+.Mapping rule ID example
+[width="100%",cols="36%,13%,51%",options="header",]
+
+|===
+
+|*Mapping Rule ID* | |
+
+|Test Case Rule ID 
+|Identifier of the Rule from [RD01] 
+|
+
+|Rule description 
+|Description of the business rule 
+|
+
+|Mapping description |Description of the mapping between the rule and the XSD |
+
+|XSD Path |UB-2.2 XSD path |
+
+|XSD Business Rule description | |XSD Business Rule Schematron
+
+|Description of the business rule, which applies the XSD (see document [RD02]) 
+| 
+a|Description of the business rule from Schematron point of view.
+
+Business rules can be classified as WARNING (user information) or ERROR (fatal error which stops the validation).
+
+|===
+
+
+== ESPDRequest
+
+=== List of Test Cases
+
+List of use cases regarding the ESPD request transaction, which 0 means false and 1 means true:
+
+.ESPDRequest - List of test cases
+[width="100%",cols="25%,25%,25%,25%",options="header",]
+|===
+|*Test Case ID* |*Self-Contained* |*Divided into lots* |*Two-phased procedure*
+a|<<RQ-10,RQ-10>> |0 |0 |0
+a|<<RQ-20,RQ-20>> |0 |0 |1
+a|<<RQ-30,RQ-30>> |1 |0 |0
+a|<<RQ-40,RQ-40>> |1 |0 |1
+a|<<RQ-50,RQ-50>> |1 |1 |0
+a|<<RQ-60,RQ-60>> |1 |1 |1
+|===
+
+=== Test Cases
+
+==== RQ-10
+
+.Test Case RQ-10
+[width="100%",cols="18%,11%,18%,20%,33%",options="header",]
+|===
+|*Pre-conditions* | | | |
+|XSD Schema | |UBL-QualificationApplicationRequest-2.2-Pre-award.xsd (ESPD Request) | |
+|Regulated or Self-contained ESPD | |/cbc:QualificationApplicationTypeCode is REGULATED | |
+|Divided into lots | |/cac:ProcurementProjectLot /cbc:ID is 0 (not divided into lots) | |
+|Two-phased procedure | |/cbc:ProcedureCode = OPEN (Open procedure, a single-phased procedure) | |
+
+|*List of rules* | | | |
+|*Rule ID* |*Rule* | |*Scenario ID* |*Scenarios*
+|RQ-10-R10 (<<BR-COM-10,BR-COM-10>>) |Information about publication CAN be provided | a|
+RQ-10-R10-S10
+
+(<<BR-COM-10-S10,BR-COM-10-S10>>)
+
+|Above the threshold, information about the publication of the contract notice in TED MUST be provided (when it is available)
+| | | |RQ-10-R10-S20 (<<BR-COM-10-S20,BR-COM-10-S20>>) |Below the threshold, information about the publication of the contract notice in TED MIGHT be provided (when it is available)
+| | | |RQ-10-R10-S30 (<<BR-COM-10-S30,BR-COM-10-S30>>) |Information about the publication of the contract notice in other official gazettes or journals MIGHT be provided
+|RQ-10-R20 (<<BR-REQ-20,BR-REQ-20>>) |Information about the procurer MUST be provided | |N/A |N/A
+|RQ-10-R30 (<<BR-REG-10,BR-REG-10>>) |Information about the procurement procedure MUST be provided | |N/A |N/A
+|RQ-10-R40 (<<BR-REQ-30,BR-REQ-30>>) |Exclusion grounds MUST be retrieved from e-Certis | |RQ-10-R40-S10 (<<BR-REQ-30-S10,BR-REQ-30-S10>>) |Information for common exclusion grounds (sections A, B and C) MUST be retrieved from e-Certis.
+| | | |RQ-10-R40-S20 (<<BR-REQ-30-S20,BR-REQ-30-S20>>) |Information for national exclusion grounds (section D) MUST be retrieved from e-Certis.
+|RQ-10-R50 (<<BR-REQ-40,BR-REQ-40>>) |Selection criteria CAN be provided | |N/A |N/A
+|===
+
+
+
+==== RQ-20
+
+.Test Case RQ-20
+[width="100%",cols="19%,11%,16%,20%,34%",options="header",]
+|===
+|*Pre-conditions* | | | |
+|XSD Schema | |UBL-QualificationApplicationRequest-2.2-Pre-award.xsd (ESPD Request) | |
+|Divided into lots | |/cac:ProcurementProjectLot /cbc:ID is 0 (not divided into lots) | |
+|Two-phased procedure | |/cbc:ProcedureCode != OPEN (a procedure different to Open procedure, it is a two-phased procedure) | |
+
+|*List of rules* | | | |
+|*Rule ID* |*Rule* | |*Scenario ID* |*Scenarios*
+|RQ-20-R10 (<<BR-COM-10,BR-COM-10>>) |Information about publication CAN be provided | a|
+RQ-20-R10-S10
+
+(<<BR-COM-S10,BR-COM-S10>>))
+
+|Above the threshold, information about the publication of the contract notice in TED MUST be provided (when it is available)
+| | | |RQ-20-R10-S20 (<<BR-COM-10-S20,BR-COM-10-S20>>) |Below the threshold, information about the publication of the contract notice in TED MIGHT be provided (when it is available)
+| | | |RQ-20-R10-S30 (<<BR-COM-10-S30,BR-COM-10-S30>>) |Information about the publication of the contract notice in other official gazettes or journals MIGHT be provided
+|RQ-20-R20 (<<BR-REQ-20,BR-REQ-20>>) |Information about the procurer MUST be provided | |N/A |N/A
+|RQ-20-R30 (<<BR-REG-10,BR-REG-10>>) |Information about the procurement procedure MUST be provided | |N/A |N/A
+|RQ-20-R40 (<<BR-REQ-30,BR-REQ-30>>) |Exclusion grounds MUST be retrieved from e-Certis | |RQ-20-R40-S10 (<<BR-REQ-30-S10,BR-REQ-30-S10>>) |Information for common exclusion grounds (sections A, B and C) MUST be retrieved from e-Certis.
+| | | |RQ-20-R40-S20 (<<BR-REQ-30-S20,BR-REQ-30-S20>>) |Information for national exclusion grounds (section D) MUST be retrieved from e-Certis.
+|RQ-20-R50 (<<BR-REQ-40,BR-REQ-40>>) |Selection criteria CAN be provided | |N/A |N/A
+|===
+
+
+
+==== RQ-30
+
+.Test Case RQ-30
+[width="100%",cols="19%,11%,16%,20%,34%",options="header",]
+|===
+|*Pre-conditions* | | | |
+|XSD Schema | |UBL-QualificationApplicationRequest-2.2-Pre-award.xsd (ESPD Request) | |
+|Regulated or Self-contained ESPD | |/cbc:QualificationApplicationTypeCode is SELFCONTAINED | |
+|Divided into lots | |/cac:ProcurementProjectLot /cbc:ID is 0 (not divided into lots) | |
+|Two-phased procedure | |/cbc:ProcedureCode = OPEN (Open procedure, a single-phased procedure) | |
+
+|*List of rules* | | | |
+|*Rule ID* |*Rule* | |*Scenario ID* |*Scenarios*
+|RQ-30-R10 (<<BR-COM-10,BR-COM-10>>) |Information about publication CAN be provided | a|
+RQ-30-R10-S10
+
+(<<BR-COM-S10,BR-COM-S10>>))
+
+|Above the threshold, information about the publication of the contract notice in TED MUST be provided (when it is available)
+| | | |RQ-30-R10-S20 (<<BR-COM-10-S20,BR-COM-10-S20>>) |Below the threshold, information about the publication of the contract notice in TED MIGHT be provided (when it is available)
+| | | |RQ-30-R10-S30 (<<BR-COM-10-S30,BR-COM-10-S30>>) |Information about the publication of the contract notice in other official gazettes or journals MIGHT be provided
+|RQ-30-R20 (<<BR-REQ-20,BR-REQ-20>>) |Information about the procurer MUST be provided | |N/A |N/A
+|RQ-30-R30 (<<BR-SC-10,BR-SC-10>>) |Information about the procurement procedure MUST be provided | |N/A |N/A
+|RQ-30-R40 (<<BR-REQ-30,BR-REQ-30>>) |Exclusion grounds MUST be retrieved from e-Certis | |RQ-30-R40-S10 (<<BR-REQ-30-S10,BR-REQ-30-S10>>) |Information for common exclusion grounds (sections A, B and C) MUST be retrieved from e-Certis.
+| | | |RQ-30-R40-S20 (<<BR-REQ-30-S20,BR-REQ-30-S20>>) |Information for national exclusion grounds (section D) MUST be retrieved from e-Certis.
+|RQ-30-R50 (<<BR-REQ-40,BR-REQ-40>>) |Selection criteria CAN be provided | |N/A |N/A
+|RQ-30-R60 (<<BR-SC-20,BR-SC-20>>) |When selection criteria is provided, specific requirements for each criteria CAN be provided | |N/A |N/A
+|===
+
+
+
+==== RQ-40
+
+.Test Case RQ-40
+[width="100%",cols="18%,11%,15%,20%,36%",options="header",]
+|===
+|*Pre-conditions* | | | |
+|XSD Schema | |UBL-QualificationApplicationRequest-2.2-Pre-award.xsd (ESPD Request) | |
+|Regulated or Self-contained ESPD | |/cbc:QualificationApplicationTypeCode is SELF-CONTAINED | |
+|Divided into lots | |/cac:ProcurementProjectLot /cbc:ID is not 0 (divided into lots) | |
+|Two-phased procedure | |/cbc:ProcedureCode != OPEN (a procedure different to Open procedure, it is a two-phased procedure) | |
+
+|*List of rules* | | | |
+|*Rule ID* |*Rule* | |*Scenario ID* |*Scenarios*
+|RQ-40-R10 (<<BR-COM-10,BR-COM-10>>) |Information about publication CAN be provided | a|
+RQ-40-R10-S10
+
+(<<BR-COM-S10,BR-COM-S10>>))
+
+|Above the threshold, information about the publication of the contract notice in TED MUST be provided (when it is available)
+| | | |RQ-40-R10-S20 (<<BR-COM-10-S20,BR-COM-10-S20>>) |Below the threshold, information about the publication of the contract notice in TED MIGHT be provided (when it is available)
+| | | |RQ-40-R10-S30 (<<BR-COM-10-S30,BR-COM-10-S30>>) |Information about the publication of the contract notice in other official gazettes or journals MIGHT be provided
+|RQ-40-R20 (<<BR-REQ-20,BR-REQ-20>>) |Information about the procurer MUST be provided | |N/A |N/A
+|RQ-40-R30 (<<BR-SC-10,BR-SC-10>>) |Information about the procurement procedure MUST be provided | |N/A |N/A
+|RQ-40-R40 (<<BR-REQ-30,BR-REQ-30>>) |Exclusion grounds MUST be retrieved from e-Certis | |RQ-40-R40-S10 (<<BR-REQ-30-S10,BR-REQ-30-S10>>) |Information for common exclusion grounds (sections A, B and C) MUST be retrieved from e-Certis.
+| | | |RQ-40-R40-S20 (<<BR-REQ-30-S20,BR-REQ-30-S20>>) |Information for national exclusion grounds (section D) MUST be retrieved from e-Certis.
+|RQ-40-R50 (<<BR-REQ-40,BR-REQ-40>>) |Selection criteria CAN be provided | |N/A |N/A
+|RQ-40-R60 (<<BR-SC-20,BR-SC-20>>) |When selection criteria is provided, specific requirements for each criteria CAN be provided | |N/A |N/A
+|RQ-40-R70 (<<BR-2P-10,BR-2P-10>>) |Information about weighting MUST be provided | |RQ-40-R70-S10 (<<BR-2P-10-S10,BR-2P-10-S10>>) |For two-phased procedure with weighted criteria the information about weighting for each criteria within Technical and professional ability MUST be provided
+| | | |RQ-40-R70-S20 (<<BR-2P-10-S20,BR-2P-10-S20>>) |For two-phased procedure without weighted criteria, additional information regarding weighting IS NOT required
+|===
+
+
+
+==== RQ-50
+
+.Test Case RQ-50
+[width="100%",cols="19%,11%,16%,20%,34%",options="header",]
+|===
+|*Pre-conditions* | | | |
+|XSD Schema | |UBL-QualificationApplicationRequest-2.2-Pre-award.xsd (ESPD Request) | |
+|Regulated or Self-contained ESPD | |/cbc:QualificationApplicationTypeCode is SELFCONTAINED | |
+|Divided into lots | |/cac:ProcurementProjectLot /cbc:ID is not 0 (divided into lots) | |
+|Two-phased procedure | |/cbc:ProcedureCode = OPEN (Open procedure, a single-phased procedure) | |
+
+|*List of rules* | | | |
+|*Rule ID* |*Rule* | |*Scenario ID* |*Scenarios*
+|RQ-50-R10 (<<BR-COM-10,BR-COM-10>>) |Information about publication CAN be provided | a|
+RQ-50-R10-S10
+
+(<<BR-COM-S10,BR-COM-S10>>))
+
+|Above the threshold, information about the publication of the contract notice in TED MUST be provided (when it is available)
+| | | |RQ-50-R10-S20 (<<BR-COM-10-S20,BR-COM-10-S20>>) |Below the threshold, information about the publication of the contract notice in TED MIGHT be provided (when it is available)
+| | | |RQ-50-R10-S30 (<<BR-COM-10-S30,BR-COM-10-S30>>) |Information about the publication of the contract notice in other official gazettes or journals MIGHT be provided
+|RQ-50-R20 (<<BR-REQ-20,BR-REQ-20>>) |Information about the procurer MUST be provided | |N/A |N/A
+|RQ-50-R30 (<<BR-SC-10,BR-SC-10>>) |Information about the procurement procedure MUST be provided | |N/A |N/A
+|RQ-50-R40 (<<BR-LOT-30,BR-LOT-30>>) |Information about lots MUST be provided | |RQ-50-R40-S10 (<<BR-LOT-30-S10,BR-LOT-30-S10>>) |The number of lots into which the procurement procedure is divided MUST be provided.
+| | | |RQ-50-R40-S20 (<<BR-LOT-30-S20,BR-LOT-30>>) |Additional information regarding lots CAN be provided.
+|RQ-50-R50 (<<BR-REQ-30,BR-REQ-30>>) |Exclusion grounds MUST be retrieved from e-Certis | |RQ-50-R50-S10 (<<BR-REQ-30-S10,BR-REQ-30-S10>>) |Information for common exclusion grounds (sections A, B and C) MUST be retrieved from e-Certis.
+| | | |RQ-50-R50-S20 (<<BR-REQ-30-S20,BR-REQ-30-S20>>) |Information for national exclusion grounds (section D) MUST be retrieved from e-Certis.
+|RQ-50-R60 (<<BR-REQ-40,BR-REQ-40>>) |Selection criteria CAN be provided | |N/A |N/A
+|RQ-50-R70 (<<BR-LOT-40,BR-LOT-40>>) |When selection criteria is provided, the lots each criteria applies to MUST be provided | |N/A |N/A
+|RQ-50-R80 (<<BR-SC-20,BR-SC-20>>) |When selection criteria is provided, specific requirements for each criteria CAN be provided | |N/A |N/A
+|===
+
+
+
+==== RQ-60
+BR-LOT-30-S20
+
+.Test Case RQ-60
+[width="100%",cols="19%,11%,16%,20%,34%",options="header",]
+|===
+|*Pre-conditions* | | | |
+|XSD Schema | |UBL-QualificationApplicationRequest-2.2-Pre-award.xsd (ESPD Request) | |
+|Regulated or Self-contained ESPD | |/cbc:QualificationApplicationTypeCode is SELFCONTAINED | |
+|Divided into lots | |/cac:ProcurementProjectLot /cbc:ID is not 0 (divided into lots) | |
+|Two-phased procedure | |/cbc:ProcedureCode != OPEN (a procedure different to Open procedure, it is a two-phased procedure) | |
+
+|*List of rules* | | | |
+|*Rule ID* |*Rule* | |*Scenario ID* |*Scenarios*
+|RQ-60-R10 (<<BR-COM-10,BR-COM-10>>) |Information about publication CAN be provided | a|
+RQ-60-R10-S10
+
+(<<BR-COM-10-S10,BR-COM-10-S10>>)
+
+|Above the threshold, information about the publication of the contract notice in TED MUST be provided (when it is available)
+| | | |RQ-60-R10-S20 (<<BR-COM-10-S20,BR-COM-10-S20>>) |Below the threshold, information about the publication of the contract notice in TED MIGHT be provided (when it is available)
+| | | |RQ-60-R10-S30 (<<BR-COM-10-S30,BR-COM-10-S30>>) |Information about the publication of the contract notice in other official gazettes or journals MIGHT be provided
+|RQ-60-R20 (<<BR-REQ-20,BR-REQ-20>>) |Information about the procurer MUST be provided | |N/A |N/A
+|RQ-60-R30 (<<BR-SC-10,BR-SC-10>>) |Information about the procurement procedure MUST be provided | |N/A |N/A
+|RQ-60-R40 (<<BR-LOT-30,BR-LOT-30>>) |Information about lots MUST be provided | |RQ-60-R40-S10 (<<BR-LOT-30-S10,BR-LOT-30-S10>>) |The number of lots into which the procurement procedure is divided MUST be provided.
+| | | |RQ-60-R40-S20 (<<BR-LOT-30-S20,BR-LOT-30-S20>>) |Additional information regarding lots CAN be provided.
+|RQ-60-R50 (<<BR-REQ-30,BR-REQ-30>>) |Exclusion grounds MUST be retrieved from e-Certis | |RQ-50-R50-S10 (<<BR-REQ-30-S10,BR-REQ-30-S10>>) |Information for common exclusion grounds (sections A, B and C) MUST be retrieved from e-Certis.
+| | | |RQ-50-R50-S20 (<<BR-REQ-30-S20,BR-REQ-30-S20>>) |Information for national exclusion grounds (section D) MUST be retrieved from e-Certis.
+|RQ-60-R60 (<<BR-REQ-40,BR-REQ-40>>) |Selection criteria CAN be provided | |N/A |N/A
+|RQ-60-R70 (<<BR-LOT-40,BR-LOT-40>>) |When selection criteria is provided, the lots each criteria applies to MUST be provided | |N/A |N/A
+|RQ-60-R80 (<<BR-SC-20,BR-SC-20>>) |When selection criteria is provided, specific requirements for each criteria CAN be provided | |N/A |N/A
+|RQ-60-R90 (<<BR-2P-10,BR-2P-10>>) |Information about weighting MUST be provided | |RQ-60-R90-S10 (<<BR-2P-10-S10,BR-2P-10-S10>>) |For two-phased procedure with weighted criteria the information about weighting for each criteria within Technical and professional ability MUST be provided
+| | | |RQ-60-R90-S20 (<<BR-2P-10-S20,BR-2P-10-S20>>) |For two-phased procedure without weighted criteria, additional information regarding weighting IS NOT required
+|===
+
+
+
+=== List of Business Rules
+
+List of business rules and its applications to the test cases:
+
+.ESPDRequest - Test Cases and Business Rules
+[width="100%",cols="10%,9%,9%,9%,9%,9%,9%,9%,9%,9%,9%",options="header",]
+|===
+| a|
+____
+<<BR-COM-10,BR-COM-10>>
+____
+
+a|
+____
+<<BR-REQ-20,BR-REQ-20>>
+____
+
+a|
+____
+<<BR-REQ-30,BR-REQ-30>>
+____
+
+a|
+____
+<<BR-REQ-40,BR-REQ-40>>
+____
+
+a|
+____
+<<BR-REG-10,BR-REG-10>>
+____
+
+a|
+____
+<<BR-SC-10,BR-SC-10>>
+____
+
+a|
+____
+<<BR-SC-20,BR-SC-20>>
+____
+
+a|
+____
+<<BR-LOT-30,BR-LOT-30>>
+____
+
+a|
+____
+<<BR-LOT-40,BR-LOT-40>>
+____
+
+a|
+____
+<<BR-2P-10,BR-2P-10>>
+____
+
+|<<RQ-10,RQ-10>> | | | | | |- |- |- |- |-
+|<<RQ-20,RQ-20>> | | | | | |- |- |- |- |-
+|<<RQ-30,RQ-30>> | | | | |- | | |- |- |
+|<<RQ-40,RQ-40>> | | | | |- | | |- |- |
+|<<RQ-50,RQ-50>> | | | | |- | | | | |
+|<<RQ-60,RQ-60>> | | | | |- | | | | |
+|===
+
+
+
+== ESPDResponse
+
+=== List of Test Cases
+
+.ESPDResponse - List of test cases
+[width="100%",cols="17%,16%,16%,20%,31%",options="header",]
+|===
+|*Test Case ID* |*Self-Contained* |*Divided into lots* |*Pre-qualification system* |*EO Role*
+|<<RS-10,RS-10>> |0 |0 |0 |Sole contractor
+|<<RQ-20,RS-20>> |0 |0 |1 |Sole contractor
+|<<RS-30,RS-30>> |1 |0 |0 |Sole contractor
+|<<RS-40,RS-40>> |1 |0 |1 |Sole contractor
+|<<RS-50,RS-50>> |1 |1 |0 |Sole contractor
+|<<RS-60,RS-60>> |1 |1 |1 |Sole contractor
+|<<RS-70,RS-70>> |0 |0 |0 |Lead entity
+|<<RS-80,RS-80>> |0 |0 |1 |Lead entity
+|<<RS-90,RS-90>> |1 |0 |0 |Lead entity
+|<<RS-100,RS-100>> |1 |0 |1 |Lead entity
+|<<RS-110,RS-110>> |1 |1 |0 |Lead entity
+|<<RS-120,RS-120>> |1 |1 |1 |Lead entity
+|<<RS-130,RS-130>> |0 |0 |0 |Group Member
+|<<RS-140,RS-140>>|0 |0 |1 |Group Member
+|<<RS-150,RS-150>> |1 |0 |0 |Group Member
+|<<RS-160,RS-160>> |1 |0 |1 |Group Member
+|<<RS-170,RS-170>> |1 |1 |0 |Group Member
+|<<RS-180,RS-180>> |1 |1 |1 |Group Member
+|<<RS-190,RS-190>> |0 |0 |0 |Other entity (relied upon)
+|<<RS-200,RS-200>> |0 |0 |1 |Other entity (relied upon)
+|<<RS-210,RS-210>> |1 |0 |0 |Other entity (relied upon)
+|<<RS-220,RS-220>> |1 |0 |1 |Other entity (relied upon)
+|<<RS-230,RS-230]>> |1 |1 |0 |Other entity (relied upon)
+|<<RS-240,RS-240>> |1 |1 |1 |Other entity (relied upon)
+|<<RS-250,RS-250>> |0 |0 |0 |Other entity (not relied upon)
+|<<RS-260,RS-260>> |0 |0 |1 |Other entity (not relied upon)
+|<<RS-270,RS-270>> |1 |0 |0 |Other entity (not relied upon)
+|<<RS-280,RS-280>> |1 |0 |1 |Other entity (not relied upon)
+|<<RS-290,RS-290>> |1 |1 |0 |Other entity (not relied upon)
+|<<RS-300,RS-300>> |1 |1 |1 |Other entity (not relied upon)
+|===
+
+
+
+=== Test Cases
+
+==== RS-10
+
+.Test Case RS-10
+[width="100%",cols="18%,5%,48%,15%,14%",options="header",]
+|===
+|*Pre-conditions* | | | |
+|XSD Schema | |UBL-QualificationApplicationResponse-2.2-Pre-award.xsd (ESPD Response) | |
+|Regulated or Self-contained ESPD | |/cbc:QualificationApplicationTypeCode is REGULATED | |
+|Divided into lots | |/cac:ProcurementProjectLot /cbc:ID is 0 (not divided into lots) | |
+|Pre-qualification system | |/cac:EconomicOperatorParty/cac:QualifyingParty/cac:Party /cac:PartyIdentification not exist (not registered on a national pre-qualification system) | |
+|EO Role | |/cac:EconomicOperatorParty/cac:EconomicOperatorRole/cbc:RoleCode is SCLE (Sole contractor) | |
+
+|*List of rules* | | | |
+|*Rule ID* |*Rule* | |*Scenario ID* |*Scenarios*
+|RS-10-R10 (<<BR-RESP-10.BR-RESP-10>>) |Information about the economic operator MUST be provided | |N/A |N/A
+|RS-10-R20 (<<BR-RESP-20.BR-RESP-20>>) |Information about representatives of the economic operator CAN be provided | |N/A |N/A
+|RS-10-R30 (<<BR-RESP-30.BR-RESP-30>>) |Information about compliance of exclusion grounds MUST be provided | |N/A |N/A
+|RS-10-R40 (<<br-resp-40-role-different-to-oenron,BR-RESP-40>> |Information about compliance of selection criteria MUST be provided | |N/A |N/A
+|RS-10-R50 (<<_BR-REG-10,BR-REG-20>>) |Information about the procurement procedure MIGHT be provided | |N/A |N/A
+|===
+
+
+==== RS-20
+
+.Test Case RS-20
+[width="100%",cols="18%,11%,13%,20%,38%",options="header",]
+|===
+|*Pre-conditions* | | | |
+|XSD Schema | |UBL-QualificationApplicationResponse-2.2-Pre-award.xsd (ESPD Response) | |
+|Regulated or Self-contained ESPD | |/cbc:QualificationApplicationTypeCode is REGULATED | |
+|Divided into lots | |/cac:ProcurementProjectLot /cbc:ID is 0 (not divided into lots) | |
+|Pre-qualification system | |/cac:EconomicOperatorParty/cac:QualifyingParty/cac:Party /cac:PartyIdentification exist (registered on a national pre-qualification system) | |
+|EO Role | |/cac:EconomicOperatorParty/cac:EconomicOperatorRole /cbc:RoleCode is SCLE (Sole contractor) | |
+
+|*List of rules* | | | |
+|*Rule ID* |*Rule* | |*Scenario ID* |*Scenarios*
+|RS-20-R10 (<<BR-RESP-10.BR-RESP-10>>) |Information about the economic operator MUST be provided | |N/A |N/A
+|RS-20-R20 (<<_BR-RESP-90_(role_OENRON,BR-RESP-50>>BR-RESP-40>>) |Information about the pre-qualification system the EO is registered on MUST be provided | |N/A |N/A
+|RS-20-R30 (<<BR-RESP-20.BR-RESP-20>>) |Information about representatives of the economic operator CAN be provided | |N/A |N/A
+|RS-20-R40 (<<BR-RESP-60,BR-RESP-60>>BR-RESP-40>>) |Information about compliance of exclusion grounds CAN be provided | |RS-20-R40-S10 (<<BR-RESP-60-S10,BR-RESP-60-S10>BR-RESP-40>>) |When the pre-qualification system the EO is registered on does not cover all the exclusion criteria, information about compliance of exclusion grounds MUST be provided.
+| | | |RS-20-R40-S20 (<<BR-RESP-60-S20,BR-RESP-60-S20>>) |When the pre-qualification system the EO is registered on covers all the exclusion criteria, information about compliance of exclusion grounds IS NOT required.
+|RS-20-R50 (<<BR-RESP-70,BR-RESP-70>>]) |Information about compliance of selection criteria CAN be provided | |RS-20-R50-S10 (<<BR-RESP-70-S20,BR-RESP-70-S10>>]) |When the pre-qualification system the EO is registered on does not cover all the selection criteria, information about compliance of selection criteria MUST be provided.
+| | | |RS-20-R50-S20 (<<BR-RESP-70-S20,BR-RESP-70-S20>>]) |When the pre-qualification system the EO is registered on covers all the selection criteria, information about compliance of selection criteria IS NOT required.
+|RS-20-R60 (<<_BR-REG-10,BR-REG-20>>) |Information about the procurement procedure MIGHT be provided | |N/A |N/A
+|===
+
+
+
+==== RS-30
+
+.Test Case RS-30
+[width="100%",cols="18%,11%,40%,15%,16%",options="header",]
+|===
+|*Pre-conditions* | | | |
+|XSD Schema | |UBL-QualificationApplicationResponse-2.2-Pre-award.xsd (ESPD Response) | |
+|Regulated or Self-contained ESPD | |/cbc:QualificationApplicationTypeCode is SELFCONTAINED | |
+|Divided into lots | |/cac:ProcurementProjectLot /cbc:ID is 0 (not divided into lots) | |
+|Pre-qualification system | |/cac:EconomicOperatorParty/cac:QualifyingParty/cac:Party /cac:PartyIdentification not exist (not registered on a national pre-qualification system) | |
+|EO Role | |/cac:EconomicOperatorParty/cac:EconomicOperatorRole /cbc:RoleCode is SCLE (Sole contractor) | |
+
+|*List of rules* | | | |
+|*Rule ID* |*Rule* | |*Scenario ID* |*Scenarios*
+|RS-30-R10 (<<BR-RESP-10.BR-RESP-10>>) |Information about the economic operator MUST be provided | |N/A |N/A
+|RS-30-R20 (<<BR-RESP-20.BR-RESP-20>>) |Information about representatives of the economic operator CAN be provided | |N/A |N/A
+|RS-30-R30 (<<BR-RESP-30.BR-RESP-30>>) |Information about compliance of exclusion grounds MUST be provided | |N/A |N/A
+|RS-30-R40 (<<BR-RESP-40-role-different-to-oenron,BR-RESP-40>>) |Response to the specific requirements related to selection criteria of the ESPDRequest MUST be provided | |N/A |N/A
+|RS-30-R50 (<<BR-SC-30,BR-SC-30]>>) |Information about the procurement procedure MIGHT be provided | |N/A |N/A
+|===
+
+
+
+==== RS-40
+
+.Test Case RS-40
+[width="100%",cols="18%,11%,15%,20%,36%",options="header",]
+|===
+|*Pre-conditions* | | | |
+|XSD Schema | |UBL-QualificationApplicationResponse-2.2-Pre-award.xsd (ESPD Response) | |
+|Regulated or Self-contained ESPD | |/cbc:QualificationApplicationTypeCode is SELFCONTAINED | |
+|Divided into lots | |/cac:ProcurementProjectLot /cbc:ID is 0 (not divided into lots) | |
+|Pre-qualification system | |/cac:EconomicOperatorParty/cac:QualifyingParty/cac:Party /cac:PartyIdentification exist (registered on a national pre-qualification system) | |
+|EO Role | |/cac:EconomicOperatorParty/cac:EconomicOperatorRole /cbc:RoleCode is SCLE (Sole contractor) | |
+
+|*List of rules* | | | |
+|*Rule ID* |*Rule* | |*Scenario ID* |*Scenarios*
+|RS-40-R10 (<<BR-RESP-10.BR-RESP-10>>) |Information about the economic operator MUST be provided | |N/A |N/A
+|RS-40-R20 (<<_BR-RESP-90_(role_OENRON,BR-RESP-50>>) |Information about the pre-qualification system the EO is registered on MUST be provided | |N/A |N/A
+|RS-40-R30 (<<BR-RESP-20.BR-RESP-20>>) |Information about representatives of the economic operator CAN be provided | |N/A |N/A
+|RS-40-R40 (>B<<BR-RESP-60,BR-RESP-60>>) |Information about compliance of exclusion grounds CAN be provided | |RS-40-R40-S10 (<<BR-RESP-60-S10,BR-RESP-60-S10>>) |When the pre-qualification system the EO is registered on does not cover all the exclusion criteria, information about compliance of exclusion grounds MUST be provided.
+| | | |RS-40-R40-S20 (<<BR-RESP-60-S20,BR-RESP-60-S20>>) |When the pre-qualification system the EO is registered on covers all the exclusion criteria, information about compliance of exclusion grounds IS NOT required.
+|RS-40-R50 (<<BR-RESP-80,BR-RESP-80>>) |Response to the specific requirements related to selection criteria of the ESPDRequest CAN be provided | |RS-40-R50-S10 (<<BR-RESP-80-S10,BR-RESP-80-S10>>) |When the pre-qualification system the EO is registered on does not cover all the selection criteria, information about compliance of selection criteria MUST be provided.
+| | | |RS-40-R50-S20 (<<BR-RESP-80-S20,BR-RESP-80-S20>>) |When the pre-qualification system the EO is registered on covers all the selection criteria, information about compliance of selection criteria IS NOT required.
+|RS-40-R60 (<<BR-SC-30,BR-SC-30]>>) |Information about the procurement procedure MIGHT be provided | |N/A |N/A
+|===
+
+
+
+==== RS-50
+
+.Test Case RS-50
+[width="100%",cols="19%,11%,41%,15%,14%",options="header",]
+|===
+|*Pre-conditions* | | | |
+|XSD Schema | |UBL-QualificationApplicationResponse-2.2-Pre-award.xsd (ESPD Response) | |
+|Regulated or Self-contained ESPD | |/cbc:QualificationApplicationTypeCode is SELFCONTAINED | |
+|Divided into lots | |/cac:ProcurementProjectLot /cbc:ID is not 0 (divided into lots) | |
+|Pre-qualification system | |/cac:EconomicOperatorParty/cac:QualifyingParty/cac:Party /cac:PartyIdentification not exist (not registered on a national pre-qualification system) | |
+|EO Role | |/cac:EconomicOperatorParty/cac:EconomicOperatorRole /cbc:RoleCode is SCLE (Sole contractor) | |
+
+|*List of rules* | | | |
+|*Rule ID* |*Rule* | |*Scenario ID* |*Scenarios*
+|RS-50-R10 (<<BR-RESP-10.BR-RESP-10>>) |Information about the economic operator MUST be provided | |N/A |N/A
+|RS-50-R20 (<<BR-LOT-10,BR-LOT-10>>) |The list of lots the EO tenders for MUST be provided | |N/A |N/A
+|RS-50-R30 (<<BR-RESP-20.BR-RESP-20>>) |Information about representatives of the economic operator CAN be provided | |N/A |N/A
+|RS-50-R40 (<<BR-RESP-30.BR-RESP-30>>) |Information about compliance of exclusion grounds MUST be provided | |N/A |N/A
+|RS-50-R50 (<<BR-RESP-40-role-different-to-oenron,BR-RESP-40>>) |Response to the specific requirements related to selection criteria of the ESPDRequest MUST be provided | |N/A |N/A
+|RS-50-R60 (<<BR-LOT-20,BR-LOT-20>>) |The set of lots that apply to the information provided in response to the requirements for each selection criterion MUST be provided | |N/A |N/A
+|RS-50-R70 (<<BR-SC-30,BR-SC-30]>>) |Information about the procurement procedure MIGHT be provided | |N/A |N/A
+|===
+
+
+
+==== RS-60
+
+.Test Case RS-60
+[width="100%",cols="18%,11%,15%,20%,36%",options="header",]
+|===
+|*Pre-conditions* | | | |
+|XSD Schema | |UBL-QualificationApplicationResponse-2.2-Pre-award.xsd (ESPD Response) | |
+|Regulated or Self-contained ESPD | |/cbc:QualificationApplicationTypeCode is SELFCONTAINED | |
+|Divided into lots | |/cac:ProcurementProjectLot /cbc:ID is not 0 (divided into lots) | |
+|Pre-qualification system | |/cac:EconomicOperatorParty/cac:QualifyingParty/cac:Party /cac:PartyIdentification exist (registered on a national pre-qualification system) | |
+|EO Role | |/cac:EconomicOperatorParty/cac:EconomicOperatorRole /cbc:RoleCode is SCLE (Sole contractor) | |
+
+|*List of rules* | | | |
+|*Rule ID* |*Rule* | |*Scenario ID* |*Scenarios*
+|RS-60-R10 (<<BR-RESP-10.BR-RESP-10>>) |Information about the economic operator MUST be provided | |N/A |N/A
+|RS-60-R20 (<<_BR-RESP-90_(role_OENRON,BR-RESP-50>>BR-RESP-40>>) |Information about the pre-qualification system the EO is registered on MUST be provided | |N/A |N/A
+|RS-60-R30 (<<BR-LOT-10,BR-LOT-10>>) |The list of lots the EO tenders for MUST be provided | |N/A |N/A
+|RS-60-R40 (<<BR-RESP-20.BR-RESP-20>>) |Information about representatives of the economic operator CAN be provided | |N/A |N/A
+|RS-60-R50 (<<BR-RESP-60,BR-RESP-60>>BR-RESP-40>>) |Information about compliance of exclusion grounds CAN be provided | |RS-60-R50-S10 (<<BR-RESP-60-S10,BR-RESP-60-S10>BR-RESP-40>>) |When the pre-qualification system the EO is registered on does not cover all the exclusion criteria, information about compliance of exclusion grounds MUST be provided.
+| | | |RS-60-R50-S20 (<<BR-RESP-60-S20,BR-RESP-60-S20>>) |When the pre-qualification system the EO is registered on covers all the exclusion criteria, information about compliance of exclusion grounds IS NOT required.
+|RS-60-R60 (<<BR-RESP-80,BR-RESP-80>>) |Response to the specific requirements related to selection criteria of the ESPDRequest CAN be provided | |RS-60-R60-S10 (<<BR-RESP-80-S10,BR-RESP-80-S10>>) |When the pre-qualification system the EO is registered on does not cover all the selection criteria, information about compliance of selection criteria MUST be provided.
+| | | |RS-60-R60-S20 (<<BR-RESP-80-S20,BR-RESP-80-S20>>) |When the pre-qualification system the EO is registered on covers all the selection criteria, information about compliance of selection criteria IS NOT required.
+|RS-60-R70 (<<BR-LOT-20,BR-LOT-20>>) |The set of lots that apply to the information provided in response to the requirements for each selection criterion MUST be provided (when information about compliance of selection criteria is provided) | |N/A |N/A
+|RS-60-R80 (<<BR-SC-30,BR-SC-30]>>) |Information about the procurement procedure MIGHT be provided | |N/A |N/A
+|===
+
+
+
+==== RS-70
+
+.Test Case RS-70
+[width="100%",cols="18%,5%,23%,20%,34%",options="header",]
+|===
+|*Pre-conditions* | | | |
+|XSD Schema | |UBL-QualificationApplicationResponse-2.2-Pre-award.xsd (ESPD Response) | |
+|Regulated or Self-contained ESPD | |/cbc:QualificationApplicationTypeCode is REGULATED | |
+|Divided into lots | |/cac:ProcurementProjectLot /cbc:ID is 0 (not divided into lots) | |
+|Pre-qualification system | |/cac:EconomicOperatorParty/cac:QualifyingParty/cac:Party /cac:PartyIdentification not exist (not registered on a national pre-qualification system) | |
+|EO Role | a|
+/cac:EconomicOperatorParty/cac:EconomicOperatorRole /cbc:RoleCode is SCLE (Lead entity)
+
+/cbc:EconomicOperatorGroupName becomes compulsory
+
+| |
+
+|*List of rules* | | | |
+|*Rule ID* |*Rule* | |*Scenario ID* |*Scenarios*
+|RS-70-R10 (<<BR-RESP-10.BR-RESP-10>>) |Information about the economic operator MUST be provided | |N/A |N/A
+|RS-70-R20 (<<BR-RESP-20.BR-RESP-20>>) |Information about representatives of the economic operator CAN be provided | |N/A |N/A
+|RS-70-R30 (<<BR-LEAD-10,BR-LEAD-10>>) |When the EO is participating in the procurement procedure together with others, information about the other participants MUST be provided | |RS-70-R30-S10 (<<BR-LOT-10-S10,BR-LEAD-01-S10>>) |When the EO is participating in the procurement procedure in a group (Consortium, Joint Venture or others), information about the group MUST be provided
+| | | |RS-70-R30-S20 (<<BR-LEAD-01-S20,BR-LEAD-01-S20>>) |When the EO (or any other EO participating in the procurement procedure) relies on the capacities of other entities in order to meet the selection criteria, information about all the entities the EO relies on MUST be provided
+| | | |RS-70-R30-S30 (<<BR-LEAD-10-S30,BR-LEAD-01-S30>>) |When the EO (or any other EO participating in the procurement procedure) intends to subcontract a share of the contract to third parties, information about all subcontractors MUST be provided
+|RS-70-R40 (<<BR-RESP-30.BR-RESP-30>>) |Information about compliance of exclusion grounds MUST be provided | |N/A |N/A
+|RS-70-R50 (<<BR-RESP-40-role-different-to-oenron,BR-RESP-40>>) |Information about compliance of selection criteria MUST be provided | |N/A |N/A
+|RS-70-R60 (<<_BR-REG-10,BR-REG-20>>) |Information about the procurement procedure MIGHT be provided | |N/A |N/A
+|===
+
+
+
+==== RS-80
+
+.Test Case RS-80
+[width="100%",cols="18%,5%,21%,20%,36%",options="header",]
+|===
+|*Pre-conditions* | | | |
+|XSD Schema | |UBL-QualificationApplicationResponse-2.2-Pre-award.xsd (ESPD Response) | |
+|Regulated or Self-contained ESPD | |/cbc:QualificationApplicationTypeCode is REGULATED | |
+|Divided into lots | |/cac:ProcurementProjectLot /cbc:ID is 0 (not divided into lots) | |
+|Pre-qualification system | |/cac:EconomicOperatorParty/cac:QualifyingParty/cac:Party /cac:PartyIdentification exist (registered on a national pre-qualification system) | |
+|EO Role | a|
+/cac:EconomicOperatorParty/cac:EconomicOperatorRole /cbc:RoleCode is SCLE (Lead entity)
+
+/cbc:EconomicOperatorGroupName becomes compulsory
+
+| |
+
+|*List of rules* | | | |
+|*Rule ID* |*Rule* | |*Scenario ID* |*Scenarios*
+|RS-80-R10 (<<BR-RESP-10.BR-RESP-10>>) |Information about the economic operator MUST be provided | |N/A |N/A
+|RS-80-R20 (<<_BR-RESP-90_(role_OENRON,BR-RESP-50>>BR-RESP-40>>) |Information about the pre-qualification system the EO is registered on MUST be provided | |N/A |N/A
+|RS-80-R30 (<<BR-RESP-20.BR-RESP-20>>) |Information about representatives of the economic operator CAN be provided | |N/A |N/A
+|RS-80-R40 (<<BR-LEAD-10,BR-LEAD-10>>) |When the EO is participating in the procurement procedure together with others, information about the other participants MUST be provided | |RS-80-R40-S10 (<<BR-LOT-10-S10,BR-LEAD-01-S10>>) |When the EO is participating in the procurement procedure in a group (Consortium, Joint Venture or others), information about the group MUST be provided
+| | | |RS-80-R40-S20 (<<BR-LEAD-01-S20,BR-LEAD-01-S20>>) |When the EO (or any other EO participating in the procurement procedure) relies on the capacities of other entities in order to meet the selection criteria, information about all the entities the EO relies on MUST be provided
+| | | |RS-80-R40-S30 (<<BR-LEAD-10-S30,BR-LEAD-01-S30>>) |When the EO (or any other EO participating in the procurement procedure) intends to subcontract a share of the contract to third parties, information about all subcontractors MUST be provided
+|RS-80-R50 (<<BR-RESP-60,BR-RESP-60>>BR-RESP-40>>) |Information about compliance of exclusion grounds CAN be provided | |RS-80-R50-S10 (<<BR-RESP-60-S10,BR-RESP-60-S10>BR-RESP-40>>) |When the pre-qualification system the EO is registered on does not cover all the exclusion criteria, information about compliance of exclusion grounds MUST be provided.
+| | | |RS-80-R50-S20 (<<BR-RESP-60-S20,BR-RESP-60-S20>>) |When the pre-qualification system the EO is registered on covers all the exclusion criteria, information about compliance of exclusion grounds IS NOT required.
+|RS-80-R60 (<<BR-RESP-70,BR-RESP-70>>]) |Information about compliance of selection criteria CAN be provided | |RS-80-R60-S10 (<<BR-RESP-70-S20,BR-RESP-70-S10>>]) |When the pre-qualification system the EO is registered on does not cover all the selection criteria, information about compliance of selection criteria MUST be provided.
+| | | |RS-80-R60-S20 (<<BR-RESP-70-S20,BR-RESP-70-S20>>]) |When the pre-qualification system the EO is registered on covers all the selection criteria, information about compliance of selection criteria IS NOT required.
+|RS-80-R70 (<<_BR-REG-10,BR-REG-20>>) |Information about the procurement procedure MIGHT be provided | |N/A |N/A
+|===
+
+
+
+==== RS-90
+
+.Test Case RS-90
+[width="100%",cols="18%,5%,23%,20%,34%",options="header",]
+|===
+|*Pre-conditions* | | | |
+|XSD Schema | |UBL-QualificationApplicationResponse-2.2-Pre-award.xsd (ESPD Response) | |
+|Regulated or Self-contained ESPD | |/cbc:QualificationApplicationTypeCode is SELFCONTAINED | |
+|Divided into lots | |/cac:ProcurementProjectLot /cbc:ID is 0 (not divided into lots) | |
+|Pre-qualification system | |/cac:EconomicOperatorParty/cac:QualifyingParty/cac:Party /cac:PartyIdentification not exist (not registered on a national pre-qualification system) | |
+|EO Role | a|/cac:EconomicOperatorParty/cac:EconomicOperatorRole /cbc:RoleCode is SCLE (Lead entity) /cbc:EconomicOperatorGroupName becomes compulsory| |
+|*List of rules* | | | |
+|*Rule ID* |*Rule* | |*Scenario ID* |*Scenarios*
+|RS-90-R10 (<<BR-RESP-10.BR-RESP-10>>) |Information about the economic operator MUST be provided | |N/A |N/A
+|RS-90-R20 (<<BR-RESP-20.BR-RESP-20>>) |Information about representatives of the economic operator CAN be provided | |N/A |N/A
+|RS-90-R30 (<<BR-LEAD-10,BR-LEAD-10>>) |When the EO is participating in the procurement procedure together with others, information about the other participants MUST be provided | |RS-70-R30-S10 (<<BR-LOT-10-S10,BR-LEAD-01-S10>>) |When the EO is participating in the procurement procedure in a group (Consortium, Joint Venture or others), information about the group MUST be provided
+| | | |RS-90-R30-S20 (<<BR-LEAD-01-S20,BR-LEAD-01-S20>>) |When the EO (or any other EO participating in the procurement procedure) relies on the capacities of other entities in order to meet the selection criteria, information about all the entities the EO relies on MUST be provided
+| | | |RS-90-R30-S30 (<<BR-LEAD-10-S30,BR-LEAD-01-S30>>) |When the EO (or any other EO participating in the procurement procedure) intends to subcontract a share of the contract to third parties, information about all subcontractors MUST be provided
+|RS-90-R40 (<<BR-RESP-30.BR-RESP-30>>) |Information about compliance of exclusion grounds MUST be provided | |N/A |N/A
+|RS-90-R50 (<<BR-RESP-40-role-different-to-oenron,BR-RESP-40>>) |Response to the specific requirements related to selection criteria of the ESPDRequest MUST be provided | |N/A |N/A
+|RS-90-R60 (<<BR-SC-30,BR-SC-30]>>) |Information about the procurement procedure MIGHT be provided | |N/A |N/A
+|===
+
+
+
+==== RS-100
+
+.Test Case RS-100
+[width="100%",cols="18%,3%,25%,20%,34%",options="header",]
+|===
+|*Pre-conditions* | | | |
+|XSD Schema | |UBL-QualificationApplicationResponse-2.2-Pre-award.xsd (ESPD Response) | |
+|Regulated or Self-contained ESPD | |/cbc:QualificationApplicationTypeCode is SELFCONTAINED | |
+|Divided into lots | |/cac:ProcurementProjectLot /cbc:ID is 0 (not divided into lots) | |
+|Pre-qualification system | |/cac:EconomicOperatorParty/cac:QualifyingParty/cac:Party /cac:PartyIdentification exist (registered on a national pre-qualification system) | |
+|EO Role | a|
+/cac:EconomicOperatorParty/cac:EconomicOperatorRole /cbc:RoleCode is SCLE (Lead entity)
+
+/cbc:EconomicOperatorGroupName becomes compulsory
+
+| |
+
+|*List of rules* | | | |
+|*Rule ID* |*Rule* | |*Scenario ID* |*Scenarios*
+|RS-100-R10 (<<BR-RESP-10.BR-RESP-10>>) |Information about the economic operator MUST be provided | |N/A |N/A
+|RS-100-R20 (<<_BR-RESP-90_(role_OENRON,BR-RESP-50>>BR-RESP-40>>) |Information about the pre-qualification system the EO is registered on MUST be provided | |N/A |N/A
+|RS-100-R30 (<<BR-RESP-20.BR-RESP-20>>) |Information about representatives of the economic operator CAN be provided | |N/A |N/A
+|RS-100-R40 (<<BR-LEAD-10,BR-LEAD-10>>) |When the EO is participating in the procurement procedure together with others, information about the other participants MUST be provided | |RS-100-R40-S10 (<<BR-LOT-10-S10,BR-LEAD-01-S10>>) |When the EO is participating in the procurement procedure in a group (Consortium, Joint Venture or others), information about the group MUST be provided
+| | | |RS-100-R40-S20 (<<BR-LEAD-01-S20,BR-LEAD-01-S20>>) |When the EO (or any other EO participating in the procurement procedure) relies on the capacities of other entities in order to meet the selection criteria, information about all the entities the EO relies on MUST be provided
+| | | |RS-100-R40-S30 (<<BR-LEAD-10-S30,BR-LEAD-01-S30>>) |When the EO (or any other EO participating in the procurement procedure) intends to subcontract a share of the contract to third parties, information about all subcontractors MUST be provided
+|RS-100-R50 (<<BR-RESP-60,BR-RESP-60>>BR-RESP-40>>) |Information about compliance of exclusion grounds CAN be provided | |RS-100-R50-S10 (<<BR-RESP-60-S10,BR-RESP-60-S10>BR-RESP-40>>) |When the pre-qualification system the EO is registered on does not cover all the exclusion criteria, information about compliance of exclusion grounds MUST be provided.
+| | | |RS-100-R50-S20 (<<BR-RESP-60-S20,BR-RESP-60-S20>>) |When the pre-qualification system the EO is registered on covers all the exclusion criteria, information about compliance of exclusion grounds IS NOT required.
+|RS-100-R60 (<<BR-RESP-80,BR-RESP-80>>) |Response to the specific requirements related to selection criteria of the ESPDRequest CAN be provided | |RS-100-R60-S10 (<<BR-RESP-80-S10,BR-RESP-80-S10>>) |When the pre-qualification system the EO is registered on does not cover all the selection criteria, information about compliance of selection criteria MUST be provided.
+| | | |RS-100-R60-S20 (<<BR-RESP-80-S20,BR-RESP-80-S20>>) |When the pre-qualification system the EO is registered on covers all the selection criteria, information about compliance of selection criteria IS NOT required.
+|RS-100-R70 (<<BR-SC-30,BR-SC-30]>>) |Information about the procurement procedure MIGHT be provided | |N/A |N/A
+|===
+
+
+
+==== RS-110
+
+.Test Case RS-110
+[width="100%",cols="18%,3%,25%,20%,34%",options="header",]
+|===
+|*Pre-conditions* | | | |
+|XSD Schema | |UBL-QualificationApplicationResponse-2.2-Pre-award.xsd (ESPD Response) | |
+|Regulated or Self-contained ESPD | |/cbc:QualificationApplicationTypeCode is SELFCONTAINED | |
+|Divided into lots | |/cac:ProcurementProjectLot /cbc:ID is not 0 (divided into lots) | |
+|Pre-qualification system | |/cac:EconomicOperatorParty/cac:QualifyingParty/cac:Party /cac:PartyIdentification not exist (not registered on a national pre-qualification system) | |
+|EO Role | a|
+/cac:EconomicOperatorParty/cac:EconomicOperatorRole /cbc:RoleCode is SCLE (Lead entity)
+
+/cbc:EconomicOperatorGroupName becomes compulsory
+
+| |
+
+|*List of rules* | | | |
+|*Rule ID* |*Rule* | |*Scenario ID* |*Scenarios*
+|RS-110-R10 (<<BR-RESP-10.BR-RESP-10>>) |Information about the economic operator MUST be provided | |N/A |N/A
+|RS-110-R20 (<<BR-LOT-10,BR-LOT-10>>) |The list of lots the EO tenders for MUST be provided | |N/A |N/A
+|RS-110-R30 (<<BR-RESP-20.BR-RESP-20>>) |Information about representatives of the economic operator CAN be provided | |N/A |N/A
+|RS-110-R40 (<<BR-LEAD-10,BR-LEAD-10>>) |When the EO is participating in the procurement procedure together with others, information about the other participants MUST be provided | |RS-110-R40-S10 (<<BR-LEAD-S10,BR-LEAD-10>>) |When the EO is participating in the procurement procedure in a group (Consortium, Joint Venture or others), information about the group MUST be provided
+| | | |RS-110-R40-S20 (<<BR-LEAD-01-S20,BR-LEAD-01-S20>>) |When the EO (or any other EO participating in the procurement procedure) relies on the capacities of other entities in order to meet the selection criteria, information about all the entities the EO relies on MUST be provided
+| | | |RS-110-R40-S30 (<<BR-LEAD-10-S30,BR-LEAD-01-S30>>) |When the EO (or any other EO participating in the procurement procedure) intends to subcontract a share of the contract to third parties, information about all subcontractors MUST be provided
+|RS-110-R50 (<<BR-RESP-30.BR-RESP-30>>) |Information about compliance of exclusion grounds MUST be provided | |N/A |N/A
+|RS-110-R60 (<<BR-RESP-40-role-different-to-oenron,BR-RESP-40>>) |Response to the specific requirements related to selection criteria of the ESPDRequest MUST be provided | |N/A |N/A
+|RS-110-R70 (<<BR-LOT-20,BR-LOT-20>>) |The set of lots that apply to the information provided in response to the requirements for each selection criterion MUST be provided | |N/A |N/A
+|RS-110-R80 (<<BR-SC-30,BR-SC-30]>>) |Information about the procurement procedure MIGHT be provided | |N/A |N/A
+|===
+
+
+
+==== RS-120
+
+.Test Case RS-120
+[width="100%",cols="18%,3%,26%,20%,33%",options="header",]
+|===
+|*Pre-conditions* | | | |
+|XSD Schema | |UBL-QualificationApplicationResponse-2.2-Pre-award.xsd (ESPD Response) | |
+|Regulated or Self-contained ESPD | |/cbc:QualificationApplicationTypeCode is SELFCONTAINED | |
+|Divided into lots | |/cac:ProcurementProjectLot /cbc:ID is not 0 (divided into lots) | |
+|Pre-qualification system | |/cac:EconomicOperatorParty/cac:QualifyingParty/cac:Party /cac:PartyIdentification exist (registered on a national pre-qualification system) | |
+|EO Role | a|
+/cac:EconomicOperatorParty/cac:EconomicOperatorRole /cbc:RoleCode is SCLE (Lead entity)
+
+/cbc:EconomicOperatorGroupName becomes compulsory
+
+| |
+
+|*List of rules* | | | |
+|*Rule ID* |*Rule* | |*Scenario ID* |*Scenarios*
+|RS-120-R10 (<<BR-RESP-10.BR-RESP-10>>) |Information about the economic operator MUST be provided | |N/A |N/A
+|RS-120-R20 (<<_BR-RESP-90_(role_OENRON,BR-RESP-50>>BR-RESP-40>>) |Information about the pre-qualification system the EO is registered on MUST be provided | |N/A |N/A
+|RS-120-R30 (<<BR-LOT-10,BR-LOT-10>>) |The list of lots the EO tenders for MUST be provided | |N/A |N/A
+|RS-120-R40 (<<BR-RESP-20.BR-RESP-20>>) |Information about representatives of the economic operator CAN be provided | |N/A |N/A
+|RS-120-R50 (<<BR-LEAD-10,BR-LEAD-10>>) |When the EO is participating in the procurement procedure together with others, information about the other participants MUST be provided | |RS-120-R50-S10 (<<BR-LOT-10-S10,BR-LEAD-01-S10>>) |When the EO is participating in the procurement procedure in a group (Consortium, Joint Venture or others), information about the group MUST be provided
+| | | |RS-120-R50-S20 (<<BR-LEAD-01-S20,BR-LEAD-01-S20>>) |When the EO (or any other EO participating in the procurement procedure) relies on the capacities of other entities in order to meet the selection criteria, information about all the entities the EO relies on MUST be provided
+| | | |RS-120-R50-S30 (<<BR-LEAD-10-S30,BR-LEAD-01-S30>>) |When the EO (or any other EO participating in the procurement procedure) intends to subcontract a share of the contract to third parties, information about all subcontractors MUST be provided
+|RS-120-R60 (<<BR-RESP-60,BR-RESP-60>>BR-RESP-40>>) |Information about compliance of exclusion grounds CAN be provided | |RS-120-R60-S10 (<<BR-RESP-60-S10,BR-RESP-60-S10>BR-RESP-40>>) |When the pre-qualification system the EO is registered on does not cover all the exclusion criteria, information about compliance of exclusion grounds MUST be provided.
+| | | |RS-120-R60-S20 (<<BR-RESP-60-S20,BR-RESP-60-S20>>) |When the pre-qualification system the EO is registered on covers all the exclusion criteria, information about compliance of exclusion grounds IS NOT required.
+|RS-120-R70 (<<BR-RESP-80,BR-RESP-80>>) |Response to the specific requirements related to selection criteria of the ESPDRequest CAN be provided | |RS-120-R70-S10 (<<BR-RESP-80-S10,BR-RESP-80-S10>>) |When the pre-qualification system the EO is registered on does not cover all the selection criteria, information about compliance of selection criteria MUST be provided.
+| | | |RS-120-R70-S20 (<<BR-RESP-80-S20,BR-RESP-80-S20>>) |When the pre-qualification system the EO is registered on covers all the selection criteria, information about compliance of selection criteria IS NOT required.
+|RS-120-R80 (<<BR-LOT-20,BR-LOT-20>>) |The set of lots that apply to the information provided in response to the requirements for each selection criterion MUST be provided (when information about compliance of selection criteria is provided) | |N/A |N/A
+|RS-120-R90 (<<BR-SC-30,BR-SC-30]>>) |Information about the procurement procedure MIGHT be provided | |N/A |N/A
+|===
+
+
+
+==== RS-130
+
+.Test Case RS-130
+[width="100%",cols="17%,3%,48%,16%,16%",options="header",]
+|===
+|*Pre-conditions* | | | |
+|XSD Schema | |UBL-QualificationApplicationResponse-2.2-Pre-award.xsd (ESPD Response) | |
+|Regulated or Self-contained ESPD | |/cbc:QualificationApplicationTypeCode is REGULATED | |
+|Divided into lots | |/cac:ProcurementProjectLot /cbc:ID is 0 (not divided into lots) | |
+|Pre-qualification system | |/cac:EconomicOperatorParty/cac:QualifyingParty/cac:Party /cac:PartyIdentification not exist (not registered on a national pre-qualification system) | |
+|EO Role | a|
+/cac:EconomicOperatorParty/cac:EconomicOperatorRole /cbc:RoleCode is GM (Group member)
+
+/cbc:EconomicOperatorGroupName becomes compulsory
+
+| |
+
+|*List of rules* | | | |
+|*Rule ID* |*Rule* | |*Scenario ID* |*Scenarios*
+|RS-130-R10 (<<BR-RESP-10.BR-RESP-10>>) |Information about the economic operator MUST be provided | |N/A |N/A
+|RS-130-R20 (<<BR-RESP-20.BR-RESP-20>>) |Information about representatives of the economic operator CAN be provided | |N/A |N/A
+|RS-130-R30 (<<BR-RESP-30.BR-RESP-30>>) |Information about compliance of exclusion grounds MUST be provided | |N/A |N/A
+|RS-130-R40 (<<BR-RESP-40-role-different-to-oenron,BR-RESP-40>>) |Information about compliance of selection criteria MUST be provided | |N/A |N/A
+|RS-130-R50 (<<_BR-REG-10,BR-REG-20>>) |Information about the procurement procedure MIGHT be provided | |N/A |N/A
+|===
+
+
+
+==== RS-140
+
+.Test Case RS-140
+[width="100%",cols="17%,4%,21%,20%,38%",options="header",]
+|===
+|*Pre-conditions* | | | |
+|XSD Schema | |UBL-QualificationApplicationResponse-2.2-Pre-award.xsd (ESPD Response) | |
+|Regulated or Self-contained ESPD | |/cbc:QualificationApplicationTypeCode is REGULATED | |
+|Divided into lots | |/cac:ProcurementProjectLot /cbc:ID is 0 (not divided into lots) | |
+|Pre-qualification system | |/cac:EconomicOperatorParty/cac:QualifyingParty/cac:Party /cac:PartyIdentification exist (registered on a national pre-qualification system) | |
+|EO Role | a|
+/cac:EconomicOperatorParty/cac:EconomicOperatorRole /cbc:RoleCode is GM (Group member)
+
+/cbc:EconomicOperatorGroupName becomes compulsory
+
+| |
+
+|*List of rules* | | | |
+|*Rule ID* |*Rule* | |*Scenario ID* |*Scenarios*
+|RS-140-R10 (<<BR-RESP-10.BR-RESP-10>>) |Information about the economic operator MUST be provided | |N/A |N/A
+|RS-140-R20 (<<_BR-RESP-90_(role_OENRON,BR-RESP-50>>BR-RESP-40>>) |Information about the pre-qualification system the EO is registered on MUST be provided | |N/A |N/A
+|RS-140-R30 (<<BR-RESP-20.BR-RESP-20>>) |Information about representatives of the economic operator CAN be provided | |N/A |N/A
+|RS-140-R40 (<<BR-RESP-60,BR-RESP-60>>BR-RESP-40>>) |Information about compliance of exclusion grounds CAN be provided | |RS-140-R40-S10 (<<BR-RESP-60-S10,BR-RESP-60-S10>BR-RESP-40>>) |When the pre-qualification system the EO is registered on does not cover all the exclusion criteria, information about compliance of exclusion grounds MUST be provided.
+| | | |RS-140-R40-S20 (<<BR-RESP-60-S20,BR-RESP-60-S20>>) |When the pre-qualification system the EO is registered on covers all the exclusion criteria, information about compliance of exclusion grounds IS NOT required.
+|RS-140-R50 (<<BR-RESP-70,BR-RESP-70>>]) |Information about compliance of selection criteria CAN be provided | |RS-140-R50-S10 (<<BR-RESP-70-S20,BR-RESP-70-S10>>]) |When the pre-qualification system the EO is registered on does not cover all the selection criteria, information about compliance of selection criteria MUST be provided.
+| | | |RS-140-R50-S20 (<<BR-RESP-70-S20,BR-RESP-70-S20>>]) |When the pre-qualification system the EO is registered on covers all the selection criteria, information about compliance of selection criteria IS NOT required.
+|RS-140-R60 (<<_BR-REG-10,BR-REG-20>>) |Information about the procurement procedure MIGHT be provided | |N/A |N/A
+|===
+
+
+
+==== RS-150
+
+.Test Case RS-150
+[width="100%",cols="17%,4%,50%,15%,14%",options="header",]
+|===
+|*Pre-conditions* | | | |
+|XSD Schema | |UBL-QualificationApplicationResponse-2.2-Pre-award.xsd (ESPD Response) | |
+|Regulated or Self-contained ESPD | |/cbc:QualificationApplicationTypeCode is SELFCONTAINED | |
+|Divided into lots | |/cac:ProcurementProjectLot /cbc:ID is 0 (not divided into lots) | |
+|Pre-qualification system | |/cac:EconomicOperatorParty/cac:QualifyingParty/cac:Party /cac:PartyIdentification not exist (not registered on a national pre-qualification system) | |
+|EO Role | a|
+/cac:EconomicOperatorParty/cac:EconomicOperatorRole /cbc:RoleCode is GM (Group member)
+
+/cbc:EconomicOperatorGroupName becomes compulsory
+
+| |
+
+|*List of rules* | | | |
+|*Rule ID* |*Rule* | |*Scenario ID* |*Scenarios*
+|RS-150-R10 (<<BR-RESP-10.BR-RESP-10>>) |Information about the economic operator MUST be provided | |N/A |N/A
+|RS-150-R20 (<<BR-RESP-20.BR-RESP-20>>) |Information about representatives of the economic operator CAN be provided | |N/A |N/A
+|RS-150-R30 (<<BR-RESP-30.BR-RESP-30>>) |Information about compliance of exclusion grounds MUST be provided | |N/A |N/A
+|RS-150-R40 (<<BR-RESP-40-role-different-to-oenron,BR-RESP-40>>) |Response to the specific requirements related to selection criteria of the ESPDRequest MUST be provided | |N/A |N/A
+|RS-150-R50 (<<BR-SC-30,BR-SC-30]>>) |Information about the procurement procedure MIGHT be provided | |N/A |N/A
+|===
+
+
+
+==== RS-160
+
+.Test Case RS-160
+[width="100%",cols="17%,3%,21%,20%,39%",options="header",]
+|===
+|*Pre-conditions* | | | |
+|XSD Schema | |UBL-QualificationApplicationResponse-2.2-Pre-award.xsd (ESPD Response) | |
+|Regulated or Self-contained ESPD | |/cbc:QualificationApplicationTypeCode is SELFCONTAINED | |
+|Divided into lots | |/cac:ProcurementProjectLot /cbc:ID is 0 (not divided into lots) | |
+|Pre-qualification system | |/cac:EconomicOperatorParty/cac:QualifyingParty/cac:Party /cac:PartyIdentification exists (registered on a national pre-qualification system) | |
+|EO Role | a|
+/cac:EconomicOperatorParty/cac:EconomicOperatorRole /cbc:RoleCode is GM (Group member)
+
+/cbc:EconomicOperatorGroupName becomes compulsory
+
+| |
+
+|*List of rules* | | | |
+|*Rule ID* |*Rule* | |*Scenario ID* |*Scenarios*
+|RS-160-R10 (<<BR-RESP-10.BR-RESP-10>>) |Information about the economic operator MUST be provided | |N/A |N/A
+|RS-160-R20 (<<_BR-RESP-90_(role_OENRON,BR-RESP-50>>BR-RESP-40>>) |Information about the pre-qualification system the EO is registered on MUST be provided | |N/A |N/A
+|RS-160-R30 (<<BR-RESP-20.BR-RESP-20>>) |Information about representatives of the economic operator CAN be provided | |N/A |N/A
+|RS-160-R40 (<<BR-RESP-60,BR-RESP-60>>BR-RESP-40>>) |Information about compliance of exclusion grounds CAN be provided | |RS-160-R40-S10 (<<BR-RESP-60-S10,BR-RESP-60-S10>BR-RESP-40>>) |When the pre-qualification system the EO is registered on does not cover all the exclusion criteria, information about compliance of exclusion grounds MUST be provided.
+| | | |RS-160-R40-S20 (<<BR-RESP-60-S20,BR-RESP-60-S20>>) |When the pre-qualification system the EO is registered on covers all the exclusion criteria, information about compliance of exclusion grounds IS NOT required.
+|RS-160-R50 (<<BR-RESP-80,BR-RESP-80>>) |Response to the specific requirements related to selection criteria of the ESPDRequest CAN be provided | |RS-160-R50-S10 (<<BR-RESP-80-S10,BR-RESP-80-S10>>) |When the pre-qualification system the EO is registered on does not cover all the selection criteria, information about compliance of selection criteria MUST be provided.
+| | | |RS-160-R50-S20 (<<BR-RESP-80-S20,BR-RESP-80-S20>>) |When the pre-qualification system the EO is registered on does not cover all the selection criteria, information about compliance of selection criteria MUST be provided.
+|RS-160-R60 (<<BR-SC-30,BR-SC-30]>>) |Information about the procurement procedure MIGHT be provided | |N/A |N/A
+|===
+
+
+
+==== RS-170
+
+.Test Case RS-170
+[width="100%",cols="17%,6%,48%,15%,14%",options="header",]
+|===
+|*Pre-conditions* | | | |
+|XSD Schema | |UBL-QualificationApplicationResponse-2.2-Pre-award.xsd (ESPD Response) | |
+|Regulated or Self-contained ESPD | |/cbc:QualificationApplicationTypeCode is SELFCONTAINED | |
+|Divided into lots | |/cac:ProcurementProjectLot /cbc:ID is not 0 (divided into lots) | |
+|Pre-qualification system | |/cac:EconomicOperatorParty/cac:QualifyingParty/cac:Party /cac:PartyIdentification not exist (not registered on a national pre-qualification system) | |
+|EO Role | a|
+/cac:EconomicOperatorParty/cac:EconomicOperatorRole /cbc:RoleCode is GM (Group member)
+
+/cbc:EconomicOperatorGroupName becomes compulsory
+
+| |
+
+|*List of rules* | | | |
+|*Rule ID* |*Rule* | |*Scenario ID* |*Scenarios*
+|RS-170-R10 (<<BR-RESP-10.BR-RESP-10>>) |Information about the economic operator MUST be provided | |N/A |N/A
+|RS-170-R20 (<<BR-LOT-10,BR-LOT-10>>) |The list of lots the EO tenders for MUST be provided | |N/A |N/A
+|RS-170-R30 (<<BR-RESP-20.BR-RESP-20>>) |Information about representatives of the economic operator CAN be provided | |N/A |N/A
+|RS-170-R40 (<<BR-RESP-30.BR-RESP-30>>) |Information about compliance of exclusion grounds MUST be provided | |N/A |N/A
+|RS-170-R50 (<<BR-RESP-40-role-different-to-oenron,BR-RESP-40>>) |Response to the specific requirements related to selection criteria of the ESPDRequest MUST be provided | |N/A |N/A
+|RS-170-R60 (<<BR-LOT-20,BR-LOT-20>>) |The set of lots that apply to the information provided in response to the requirements for each selection criterion MUST be provided | |N/A |N/A
+|RS-170-R70 (<<BR-SC-30,BR-SC-30]>>) |Information about the procurement procedure MIGHT be provided | |N/A |N/A
+|===
+
+
+
+==== RS-180
+
+.Test Case RS-180
+[width="100%",cols="17%,6%,21%,20%,36%",options="header",]
+|===
+|*Pre-conditions* | | | |
+|XSD Schema | |UBL-QualificationApplicationResponse-2.2-Pre-award.xsd (ESPD Response) | |
+|Regulated or Self-contained ESPD | |/cbc:QualificationApplicationTypeCode is SELFCONTAINED | |
+|Divided into lots | |/cac:ProcurementProjectLot /cbc:ID is not 0 (divided into lots) | |
+|Pre-qualification system | |/cac:EconomicOperatorParty/cac:QualifyingParty/cac:Party /cac:PartyIdentification exists (registered on a national pre-qualification system) | |
+|EO Role | a|
+/cac:EconomicOperatorParty/cac:EconomicOperatorRole /cbc:RoleCode is GM (Group member)
+
+/cbc:EconomicOperatorGroupName becomes compulsory
+
+| |
+
+|*List of rules* | | | |
+|*Rule ID* |*Rule* | |*Scenario ID* |*Scenarios*
+|RS-180-R10 (<<BR-RESP-10.BR-RESP-10>>) |Information about the economic operator MUST be provided | |N/A |N/A
+|RS-180-R20 (<<_BR-RESP-90_(role_OENRON,BR-RESP-50>>BR-RESP-40>>) |Information about the pre-qualification system the EO is registered on MUST be provided | |N/A |N/A
+|RS-180-R30 (<<BR-LOT-10,BR-LOT-10>>) |The list of lots the EO tenders for MUST be provided | |N/A |N/A
+|RS-180-R40 (<<BR-RESP-20.BR-RESP-20>>) |Information about representatives of the economic operator CAN be provided | |N/A |N/A
+|RS-180-R50 (<<BR-RESP-60,BR-RESP-60>>BR-RESP-40>>) |Information about compliance of exclusion grounds CAN be provided | |RS-180-R50-S10 (<<BR-RESP-60-S10,BR-RESP-60-S10>BR-RESP-40>>) |When the pre-qualification system the EO is registered on does not cover all the exclusion criteria, information about compliance of exclusion grounds MUST be provided.
+| | | |RS-180-R50-S20 (<<BR-RESP-60-S20,BR-RESP-60-S20>>) |When the pre-qualification system the EO is registered on covers all the exclusion criteria, information about compliance of exclusion grounds IS NOT required.
+|RS-180-R60 (<<BR-RESP-80,BR-RESP-80>>) |Response to the specific requirements related to selection criteria of the ESPDRequest CAN be provided | |RS-180-R60-S10 (<<BR-RESP-80-S10,BR-RESP-80-S10>>) |When the pre-qualification system the EO is registered on does not cover all the selection criteria, information about compliance of selection criteria MUST be provided.
+| | | |RS-180-R60-S20 (<<BR-RESP-80-S20,BR-RESP-80-S20>>) |When the pre-qualification system the EO is registered on does not cover all the selection criteria, information about compliance of selection criteria MUST be provided.
+|RS-180-R70 (<<BR-LOT-20,BR-LOT-20>>) |The set of lots that apply to the information provided in response to the requirements for each selection criterion MUST be provided (when information about compliance of selection criteria is provided) | |N/A |N/A
+|RS-180-R80 (<<BR-SC-30,BR-SC-30]>>) |Information about the procurement procedure MIGHT be provided | |N/A |N/A
+|===
+
+
+
+==== RS-190
+
+.Test Case RS-190
+[width="100%",cols="17%,4%,50%,15%,14%",options="header",]
+|===
+|*Pre-conditions* | | | |
+|XSD Schema | |UBL-QualificationApplicationResponse-2.2-Pre-award.xsd (ESPD Response) | |
+|Regulated or Self-contained ESPD | |/cbc:QualificationApplicationTypeCode is REGULATED | |
+|Divided into lots | |/cac:ProcurementProjectLot /cbc:ID is 0 (not divided into lots) | |
+|Pre-qualification system | |/cac:EconomicOperatorParty/cac:QualifyingParty/cac:Party /cac:PartyIdentification not exist (not registered on a national pre-qualification system) | |
+|EO Role | a|
+/cac:EconomicOperatorParty/cac:EconomicOperatorRole /cbc:RoleCode is OERON (Other entity (relied upon))
+
+Other entity (relied upon): Entity on which the main contractor, the group or another subcontractor relies in order to meet the selection criteria.
+
+| |
+
+|*List of rules* | | | |
+|*Rule ID* |*Rule* | |*Scenario ID* |*Scenarios*
+|RS-190-R10 (<<BR-RESP-10.BR-RESP-10>>) |Information about the economic operator MUST be provided | |N/A |N/A
+|RS-190-R20 (<<BR-RESP-20.BR-RESP-20>>) |Information about representatives of the economic operator CAN be provided | |N/A |N/A
+|RS-190-R30 (<<BR-RESP-30.BR-RESP-30>>) |Information about compliance of exclusion grounds MUST be provided | |N/A |N/A
+|RS-190-R40 (<<BR-RESP-40-role-different-to-oenron,BR-RESP-40>>) |Information about compliance of selection criteria MUST be provided | |N/A |N/A
+|RS-190-R50 (<<_BR-REG-10,BR-REG-20>>) |Information about the procurement procedure MIGHT be provided | |N/A |N/A
+|===
+
+
+
+==== RS-200
+
+.Test Case RS-200
+[width="100%",cols="17%,4%,21%,20%,38%",options="header",]
+|===
+|*Pre-conditions* | | | |
+|XSD Schema | |UBL-QualificationApplicationResponse-2.2-Pre-award.xsd (ESPD Response) | |
+|Regulated or Self-contained ESPD | |/cbc:QualificationApplicationTypeCode is REGULATED | |
+|Divided into lots | |/cac:ProcurementProjectLot /cbc:ID is 0 (not divided into lots) | |
+|Pre-qualification system | |/cac:EconomicOperatorParty/cac:QualifyingParty/cac:Party /cac:PartyIdentification exists (registered on a national pre-qualification system) | |
+|EO Role | a|
+/cac:EconomicOperatorParty/cac:EconomicOperatorRole /cbc:RoleCode is OERON (Other entity (relied upon))
+
+Other entity (relied upon): Entity on which the main contractor, the group or another subcontractor relies in order to meet the selection criteria.
+
+| |
+
+|*List of rules* | | | |
+|*Rule ID* |*Rule* | |*Scenario ID* |*Scenarios*
+|RS-200-R10 (<<BR-RESP-10.BR-RESP-10>>) |Information about the economic operator MUST be provided | |N/A |N/A
+|RS-200-R20 (<<_BR-RESP-90_(role_OENRON,BR-RESP-50>>BR-RESP-40>>) |Information about the pre-qualification system the EO is registered on MUST be provided | |N/A |N/A
+|RS-200-R30 (<<BR-RESP-20.BR-RESP-20>>) |Information about representatives of the economic operator CAN be provided | |N/A |N/A
+|RS-200-R40 (<<BR-RESP-60,BR-RESP-60>>BR-RESP-40>>) |Information about compliance of exclusion grounds CAN be provided | |RS-200-R40-S10 (<<BR-RESP-60-S10,BR-RESP-60-S10>BR-RESP-40>>) |When the pre-qualification system the EO is registered on does not cover all the exclusion criteria, information about compliance of exclusion grounds MUST be provided.
+| | | |RS-200-R40-S20 (<<BR-RESP-60-S20,BR-RESP-60-S20>>) |When the pre-qualification system the EO is registered on covers all the exclusion criteria, information about compliance of exclusion grounds IS NOT required.
+|RS-200-R50 (<<BR-RESP-70,BR-RESP-70>>]) |Information about compliance of selection criteria CAN be provided | |RS-200-R50-S10 (<<BR-RESP-70-S20,BR-RESP-70-S10>>]) |When the pre-qualification system the EO is registered on does not cover all the selection criteria, information about compliance of selection criteria MUST be provided.
+| | | |RS-200-R50-S20 (<<BR-RESP-70-S20,BR-RESP-70-S20>>]) |When the pre-qualification system the EO is registered on covers all the selection criteria, information about compliance of selection criteria IS NOT required.
+|RS-200-R60 (<<_BR-REG-10,BR-REG-20>>) |Information about the procurement procedure MIGHT be provided | |N/A |N/A
+|===
+
+
+
+==== RS-210
+
+.Test Case RS-210
+[width="100%",cols="17%,4%,50%,15%,14%",options="header",]
+|===
+|*Pre-conditions* | | | |
+|XSD Schema | |UBL-QualificationApplicationResponse-2.2-Pre-award.xsd (ESPD Response) | |
+|Regulated or Self-contained ESPD | |/cbc:QualificationApplicationTypeCode is SELFCONTAINED | |
+|Divided into lots | |/cac:ProcurementProjectLot /cbc:ID is not 0 (divided into lots) | |
+|Pre-qualification system | |/cac:EconomicOperatorParty/cac:QualifyingParty/cac:Party /cac:PartyIdentification not exist (not registered on a national pre-qualification system) | |
+|EO Role | a|
+/cac:EconomicOperatorParty/cac:EconomicOperatorRole /cbc:RoleCode is OERON (Other entity (relied upon))
+
+Other entity (relied upon): Entity on which the main contractor, the group or another subcontractor relies in order to meet the selection criteria.
+
+| |
+
+|*List of rules* | | | |
+|*Rule ID* |*Rule* | |*Scenario ID* |*Scenarios*
+|RS-210-R10 (<<BR-RESP-10.BR-RESP-10>>) |Information about the economic operator MUST be provided | |N/A |N/A
+|RS-210-R20 (<<BR-LOT-10,BR-LOT-10>>) |The list of lots the EO tenders for MUST be provided | |N/A |N/A
+|RS-210-R30 (<<BR-RESP-20.BR-RESP-20>>) |Information about representatives of the economic operator CAN be provided | |N/A |N/A
+|RS-210-R40 (<<BR-RESP-30.BR-RESP-30>>) |Information about compliance of exclusion grounds MUST be provided | |N/A |N/A
+|RS-210-R50 (<<BR-RESP-40-role-different-to-oenron,BR-RESP-40>>) |Information about compliance of selection criteria MUST be provided | |N/A |N/A
+|RS-210-R60 (<<BR-LOT-20,BR-LOT-20>>) |The set of lots that apply to the information provided in response to the requirements for each selection criterion MUST be provided | |N/A |N/A
+|RS-210-R70 (<<BR-SC-30,BR-SC-30]>>) |Information about the procurement procedure MIGHT be provided | |N/A |N/A
+|===
+
+
+
+==== RS-220
+
+.Test Case RS-220
+[width="100%",cols="17%,4%,23%,20%,36%",options="header",]
+|===
+|*Pre-conditions* | | | |
+|XSD Schema | |UBL-QualificationApplicationResponse-2.2-Pre-award.xsd (ESPD Response) | |
+|Regulated or Self-contained ESPD | |/cbc:QualificationApplicationTypeCode is SELFCONTAINED | |
+|Divided into lots | |/cac:ProcurementProjectLot /cbc:ID is 0 (not divided into lots) | |
+|Pre-qualification system | |/cac:EconomicOperatorParty/cac:QualifyingParty/cac:Party /cac:PartyIdentification exists (registered on a national pre-qualification system) | |
+|EO Role | a|
+/cac:EconomicOperatorParty/cac:EconomicOperatorRole /cbc:RoleCode is OERON (Other entity (relied upon))
+
+Other entity (relied upon): Entity on which the main contractor, the group or another subcontractor relies in order to meet the selection criteria.
+
+| |
+
+|*List of rules* | | | |
+|*Rule ID* |*Rule* | |*Scenario ID* |*Scenarios*
+|RS-220-R10 (<<BR-RESP-10.BR-RESP-10>>) |Information about the economic operator MUST be provided | |N/A |N/A
+|RS-220-R20 (<<_BR-RESP-90_(role_OENRON,BR-RESP-50>>BR-RESP-40>>) |Information about the pre-qualification system the EO is registered on MUST be provided | |N/A |N/A
+|RS-220-R30 (<<BR-RESP-20.BR-RESP-20>>) |Information about representatives of the economic operator CAN be provided | |N/A |N/A
+|RS-220-R40 (<<BR-RESP-60,BR-RESP-60>>BR-RESP-40>>) |Information about compliance of exclusion grounds CAN be provided | |RS-220-R40-S10 (<<BR-RESP-60-S10,BR-RESP-60-S10>BR-RESP-40>>) |When the pre-qualification system the EO is registered on does not cover all the exclusion criteria, information about compliance of exclusion grounds MUST be provided.
+| | | |RS-220-R40-S20 (<<BR-RESP-60-S20,BR-RESP-60-S20>>) |When the pre-qualification system the EO is registered on covers all the exclusion criteria, information about compliance of exclusion grounds IS NOT required.
+|RS-220-R50 (<<BR-RESP-80,BR-RESP-80>>) |Response to the specific requirements related to selection criteria of the ESPDRequest CAN be provided | |RS-220-R50-S10 (<<BR-RESP-80-S10,BR-RESP-80-S10>>) |When the pre-qualification system the EO is registered on does not cover all the selection criteria, information about compliance of selection criteria MUST be provided.
+| | | |RS-220-R50-S20 (<<BR-RESP-80-S20,BR-RESP-80-S20>>) |When the pre-qualification system the EO is registered on does not cover all the selection criteria, information about compliance of selection criteria MUST be provided.
+|RS-220-R60 (<<BR-SC-30,BR-SC-30]>>) |Information about the procurement procedure MIGHT be provided | |N/A |N/A
+|===
+
+
+
+==== RS-230
+
+.Test Case RS-230
+[width="100%",cols="17%,4%,50%,15%,14%",options="header",]
+|===
+|*Pre-conditions* | | | |
+|XSD Schema | |UBL-QualificationApplicationResponse-2.2-Pre-award.xsd (ESPD Response) | |
+|Regulated or Self-contained ESPD | |/cbc:QualificationApplicationTypeCode is SELFCONTAINED | |
+|Divided into lots | |/cac:ProcurementProjectLot /cbc:ID is not 0 (divided into lots) | |
+|Pre-qualification system | |/cac:EconomicOperatorParty/cac:QualifyingParty/cac:Party /cac:PartyIdentification not exist (not registered on a national pre-qualification system) | |
+|EO Role | a|
+/cac:EconomicOperatorParty/cac:EconomicOperatorRole /cbc:RoleCode is OERON (Other entity (relied upon))
+
+Other entity (relied upon): Entity on which the main contractor, the group or another subcontractor relies in order to meet the selection criteria.
+
+| |
+
+|*List of rules* | | | |
+|*Rule ID* |*Rule* | |*Scenario ID* |*Scenarios*
+|RS-230-R10 (<<BR-RESP-10.BR-RESP-10>>) |Information about the economic operator MUST be provided | |N/A |N/A
+|RS-230-R20 (<<BR-LOT-10,BR-LOT-10>>) |The list of lots the EO tenders for MUST be provided | |N/A |N/A
+|RS-230-R30 (<<BR-RESP-20.BR-RESP-20>>) |Information about representatives of the economic operator CAN be provided | |N/A |N/A
+|RS-230-R40 (<<BR-RESP-30.BR-RESP-30>>) |Information about compliance of exclusion grounds MUST be provided | |N/A |N/A
+|RS-230-R50 (<<BR-RESP-40-role-different-to-oenron,BR-RESP-40>>) |Response to the specific requirements related to selection criteria of the ESPDRequest MUST be provided | |N/A |N/A
+|RS-230-R60 (<<BR-LOT-20,BR-LOT-20>>) |The set of lots that apply to the information provided in response to the requirements for each selection criterion MUST be provided | |N/A |N/A
+|RS-230-R70 (<<BR-SC-30,BR-SC-30]>>) |Information about the procurement procedure MIGHT be provided | |N/A |N/A
+|===
+
+
+
+==== RS-240
+
+.Test Case RS-240
+[width="100%",cols="17%,4%,26%,20%,33%",options="header",]
+|===
+|*Pre-conditions* | | | |
+|XSD Schema | |UBL-QualificationApplicationResponse-2.2-Pre-award.xsd (ESPD Response) | |
+|Regulated or Self-contained ESPD | |/cbc:QualificationApplicationTypeCode is SELFCONTAINED | |
+|Divided into lots | |/cac:ProcurementProjectLot /cbc:ID is not 0 (divided into lots) | |
+|Pre-qualification system | |/cac:EconomicOperatorParty/cac:QualifyingParty/cac:Party /cac:PartyIdentification exists (registered on a national pre-qualification system) | |
+|EO Role | a|
+/cac:EconomicOperatorParty/cac:EconomicOperatorRole /cbc:RoleCode is OERON (Other entity (relied upon))
+
+Other entity (relied upon): Entity on which the main contractor, the group or another subcontractor relies in order to meet the selection criteria.
+
+| |
+
+|*List of rules* | | | |
+|*Rule ID* |*Rule* | |*Scenario ID* |*Scenarios*
+|RS-240-R10 (<<BR-RESP-10.BR-RESP-10>>) |Information about the economic operator MUST be provided | |N/A |N/A
+|RS-240-R20 (<<_BR-RESP-90_(role_OENRON,BR-RESP-50>>BR-RESP-40>>) |Information about the pre-qualification system the EO is registered on MUST be provided | |N/A |N/A
+|RS-240-R30 (<<BR-LOT-10,BR-LOT-10>>) |The list of lots the EO tenders for MUST be provided | |N/A |N/A
+|RS-240-R40 (<<BR-RESP-20.BR-RESP-20>>) |Information about representatives of the economic operator CAN be provided | |N/A |N/A
+|RS-240-R50 (<<BR-RESP-60,BR-RESP-60>>BR-RESP-40>>) |Information about compliance of exclusion grounds CAN be provided | |RS-240-R50-S10 (<<BR-RESP-60-S10,BR-RESP-60-S10>BR-RESP-40>>) |When the pre-qualification system the EO is registered on does not cover all the exclusion criteria, information about compliance of exclusion grounds MUST be provided.
+| | | |RS-240-R50-S20 (<<BR-RESP-60-S20,BR-RESP-60-S20>>) |When the pre-qualification system the EO is registered on covers all the exclusion criteria, information about compliance of exclusion grounds IS NOT required.
+|RS-240-R60 (<<BR-RESP-80,BR-RESP-80>>) |Response to the specific requirements related to selection criteria of the ESPDRequest CAN be provided | |RS-240-R60-S10 (<<BR-RESP-80-S10,BR-RESP-80-S10>>) |When the pre-qualification system the EO is registered on does not cover all the selection criteria, information about compliance of selection criteria MUST be provided.
+| | | |RS-240-R60-S20 (<<BR-RESP-80-S20,BR-RESP-80-S20>>) |When the pre-qualification system the EO is registered on does not cover all the selection criteria, information about compliance of selection criteria MUST be provided.
+|RS-240-R70 (<<BR-LOT-20,BR-LOT-20>>) |The set of lots that apply to the information provided in response to the requirements for each selection criterion MUST be provided | |N/A |N/A
+|RS-240-R80 (<<BR-SC-30,BR-SC-30]>>) |Information about the procurement procedure MIGHT be provided | |N/A |N/A
+|===
+
+
+
+==== RS-250
+
+.Test Case RS-250
+[width="100%",cols="18%,3%,51%,15%,13%",options="header",]
+|===
+|*Pre-conditions* | | | |
+|XSD Schema | |UBL-QualificationApplicationResponse-2.2-Pre-award.xsd (ESPD Response) | |
+|Regulated or Self-contained ESPD | |/cbc:QualificationApplicationTypeCode is REGULATED | |
+|Divided into lots | |/cac:ProcurementProjectLot /cbc:ID is 0 (not divided into lots) | |
+|Pre-qualification system | |/cac:EconomicOperatorParty/cac:QualifyingParty/cac:Party /cac:PartyIdentification not exist (not registered on a national pre-qualification system) | |
+|EO Role | a|
+/cac:EconomicOperatorParty/cac:EconomicOperatorRole /cbc:RoleCode is OENRON (Other entity (not relied upon))
+
+Other entity (not relied upon): Entity on which the main contractor, the group or another subcontractor does not rely in order to meet the selection criteria.
+
+| |
+
+|*List of rules* | | | |
+|*Rule ID* |*Rule* | |*Scenario ID* |*Scenarios*
+|RS-250-R10 (<<BR-RESP-10.BR-RESP-10>>) |Information about the economic operator MUST be provided | |N/A |N/A
+|RS-250-R20 (<<BR-RESP-20.BR-RESP-20>>) |Information about representatives of the economic operator CAN be provided | |N/A |N/A
+|RS-250-R30 (<<BR-RESP-30.BR-RESP-30>>) |Information about compliance of exclusion grounds MUST be provided | |N/A |N/A
+|RS-250-R40 (<<_BR-REG-10,BR-REG-20>>) |Information about the procurement procedure MIGHT be provided | |N/A |N/A
+|===
+
+
+
+==== RS-260
+
+.Test Case RS-260
+[width="100%",cols="17%,4%,21%,20%,38%",options="header",]
+|===
+|*Pre-conditions* | | | |
+|XSD Schema | |UBL-QualificationApplicationResponse-2.2-Pre-award.xsd (ESPD Response) | |
+|Regulated or Self-contained ESPD | |/cbc:QualificationApplicationTypeCode is REGULATED | |
+|Divided into lots | |/cac:ProcurementProjectLot /cbc:ID is 0 (not divided into lots) | |
+|Pre-qualification system | |/cac:EconomicOperatorParty/cac:QualifyingParty/cac:Party /cac:PartyIdentification exists (registered on a national pre-qualification system) | |
+|EO Role | a|
+/cac:EconomicOperatorParty/cac:EconomicOperatorRole /cbc:RoleCode is OENRON (Other entity (not relied upon))
+
+Other entity (not relied upon): Entity on which the main contractor, the group or another subcontractor does not rely in order to meet the selection criteria.
+
+| |
+
+|*List of rules* | | | |
+|*Rule ID* |*Rule* | |*Scenario ID* |*Scenarios*
+|RS-260-R10 (<<BR-RESP-10.BR-RESP-10>>) |Information about the economic operator MUST be provided | |N/A |N/A
+|RS-260-R20 (<<_BR-RESP-90_(role_OENRON,BR-RESP-50>>BR-RESP-40>>) |Information about the pre-qualification system the EO is registered on MUST be provided | |N/A |N/A
+|RS-260-R30 (<<BR-RESP-20.BR-RESP-20>>) |Information about representatives of the economic operator CAN be provided | |N/A |N/A
+|RS-260-R40 (<<BR-RESP-60,BR-RESP-60>>BR-RESP-40>>) |Information about compliance of exclusion grounds CAN be provided | |RS-260-R40-S10 (<<BR-RESP-60-S10,BR-RESP-60-S10>BR-RESP-40>>) |When the pre-qualification system the EO is registered on does not cover all the exclusion criteria, information about compliance of exclusion grounds MUST be provided.
+| | | |RS-260-R40-S20 (<<BR-RESP-60-S20,BR-RESP-60-S20>>) |When the pre-qualification system the EO is registered on covers all the exclusion criteria, information about compliance of exclusion grounds IS NOT required.
+|RS-260-R50 (<<_BR-REG-10,BR-REG-20>>) |Information about the procurement procedure MIGHT be provided | |N/A |N/A
+|===
+
+
+
+==== RS-270
+
+.Test Case RS-270
+[width="100%",cols="17%,4%,50%,15%,14%",options="header",]
+|===
+|*Pre-conditions* | | | |
+|XSD Schema | |UBL-QualificationApplicationResponse-2.2-Pre-award.xsd (ESPD Response) | |
+|Regulated or Self-contained ESPD | |/cbc:QualificationApplicationTypeCode is SELFCONTAINED | |
+|Divided into lots | |/cac:ProcurementProjectLot /cbc:ID is not 0 (divided into lots) | |
+|Pre-qualification system | |/cac:EconomicOperatorParty/cac:QualifyingParty/cac:Party /cac:PartyIdentification not exists (not registered on a national pre-qualification system) | |
+|EO Role | a|
+/cac:EconomicOperatorParty/cac:EconomicOperatorRole /cbc:RoleCode is OENRON (Other entity (not relied upon))
+
+Other entity (not relied upon): Entity on which the main contractor, the group or another subcontractor does not rely in order to meet the selection criteria.
+
+| |
+
+|*List of rules* | | | |
+|*Rule ID* |*Rule* | |*Scenario ID* |*Scenarios*
+|RS-270-R10 (<<BR-RESP-10.BR-RESP-10>>) |Information about the economic operator MUST be provided | |N/A |N/A
+|RS-270-R20 (<<BR-LOT-10,BR-LOT-10>>) |The list of lots the EO tenders for MUST be provided | |N/A |N/A
+|RS-270-R30 (<<BR-RESP-20.BR-RESP-20>>) |Information about representatives of the economic operator CAN be provided | |N/A |N/A
+|RS-270-R40 (<<BR-RESP-30.BR-RESP-30>>) |Information about compliance of exclusion grounds MUST be provided | |N/A |N/A
+|RS-270-R50 (<<BR-SC-30,BR-SC-30]>>) |Information about the procurement procedure MIGHT be provided | |N/A |N/A
+|===
+
+
+
+==== RS-280
+
+.Test Case RS-280
+[width="100%",cols="17%,6%,26%,20%,31%",options="header",]
+|===
+|*Pre-conditions* | | | |
+|XSD Schema | |UBL-QualificationApplicationResponse-2.2-Pre-award.xsd (ESPD Response) | |
+|Regulated or Self-contained ESPD | |/cbc:QualificationApplicationTypeCode is SELFCONTAINED | |
+|Divided into lots | |/cac:ProcurementProjectLot /cbc:ID is 0 (not divided into lots) | |
+|Pre-qualification system | |/cac:EconomicOperatorParty/cac:QualifyingParty/cac:Party /cac:PartyIdentification exists (registered on a national pre-qualification system) | |
+|EO Role | a|
+/cac:EconomicOperatorParty/cac:EconomicOperatorRole /cbc:RoleCode is OENRON (Other entity (not relied upon))
+
+Other entity (not relied upon): Entity on which the main contractor, the group or another subcontractor does not rely in order to meet the selection criteria.
+
+| |
+
+|*List of rules* | | | |
+|*Rule ID* |*Rule* | |*Scenario ID* |*Scenarios*
+|RS-280-R10 (<<BR-RESP-10.BR-RESP-10>>) |Information about the economic operator MUST be provided | |N/A |N/A
+|RS-280-R20 (<<_BR-RESP-90_(role_OENRON,BR-RESP-50>>BR-RESP-40>>) |Information about the pre-qualification system the EO is registered on MUST be provided | |N/A |N/A
+|RS-280-R30 (<<BR-RESP-20.BR-RESP-20>>) |Information about representatives of the economic operator CAN be provided | |N/A |N/A
+|RS-280-R40 (<<BR-RESP-60,BR-RESP-60>>BR-RESP-40>>) |Information about compliance of exclusion grounds CAN be provided | |RS-280-R40-S10 (<<BR-RESP-60-S10,BR-RESP-60-S10>BR-RESP-40>>) |When the pre-qualification system the EO is registered on does not cover all the exclusion criteria, information about compliance of exclusion grounds MUST be provided.
+| | | |RS-280-R40-S20 (<<BR-RESP-60-S20,BR-RESP-60-S20>>) |When the pre-qualification system the EO is registered on covers all the exclusion criteria, information about compliance of exclusion grounds IS NOT required.
+|RS-280-R50 (<<BR-SC-30,BR-SC-30]>>) |Information about the procurement procedure MIGHT be provided | |N/A |N/A
+|===
+
+
+
+==== RS-290
+
+.Test Case RS-290
+[width="100%",cols="17%,4%,50%,15%,14%",options="header",]
+|===
+|*Pre-conditions* | | | |
+|XSD Schema | |UBL-QualificationApplicationResponse-2.2-Pre-award.xsd (ESPD Response) | |
+|Regulated or Self-contained ESPD | |/cbc:QualificationApplicationTypeCode is SELFCONTAINED | |
+|Divided into lots | |/cac:ProcurementProjectLot /cbc:ID is not 0 (divided into lots) | |
+|Pre-qualification system | |/cac:EconomicOperatorParty/cac:QualifyingParty/cac:Party /cac:PartyIdentification not exist (not registered on a national pre-qualification system) | |
+|EO Role | a|
+/cac:EconomicOperatorParty/cac:EconomicOperatorRole /cbc:RoleCode is OENRON (Other entity (not relied upon))
+
+Other entity (not relied upon): Entity on which the main contractor, the group or another subcontractor does not rely in order to meet the selection criteria.
+
+| |
+
+|*List of rules* | | | |
+|*Rule ID* |*Rule* | |*Scenario ID* |*Scenarios*
+|RS-290-R10 (<<BR-RESP-10.BR-RESP-10>>) |Information about the economic operator MUST be provided | |N/A |N/A
+|RS-290-R20 (<<BR-LOT-10,BR-LOT-10>>) |The list of lots the EO tenders for MUST be provided | |N/A |N/A
+|RS-290-R30 (<<BR-RESP-20.BR-RESP-20>>) |Information about representatives of the economic operator CAN be provided | |N/A |N/A
+|RS-290-R40 (<<BR-RESP-30.BR-RESP-30>>) |Information about compliance of exclusion grounds MUST be provided | |N/A |N/A
+|RS-290-R50 (<<BR-SC-30,BR-SC-30]>>) |Information about the procurement procedure MIGHT be provided | |N/A |N/A
+|===
+
+
+
+==== RS-300
+
+.Test Case RS-300
+[width="100%",cols="17%,4%,28%,20%,31%",options="header",]
+|===
+|*Pre-conditions* | | | |
+|XSD Schema | |UBL-QualificationApplicationResponse-2.2-Pre-award.xsd (ESPD Response) | |
+|Regulated or Self-contained ESPD | |/cbc:QualificationApplicationTypeCode is SELFCONTAINED | |
+|Divided into lots | |/cac:ProcurementProjectLot /cbc:ID is not 0 (divided into lots) | |
+|Pre-qualification system | |/cac:EconomicOperatorParty/cac:QualifyingParty/cac:Party /cac:PartyIdentification exists (registered on a national pre-qualification system) | |
+|EO Role | a|/cac:EconomicOperatorParty/cac:EconomicOperatorRole /cbc:RoleCode is OENRON (Other entity (not relied upon)) Other entity (not relied upon): Entity on which the main contractor, the group or another subcontractor does not rely in order to meet the selection criteria.| |
+|*List of rules* | | | |
+|*Rule ID* |*Rule* | |*Scenario ID* |*Scenarios*
+|RS-300-R10 (<<BR-RESP-10.BR-RESP-10>>) |Information about the economic operator MUST be provided | |N/A |N/A
+|RS-300-R20 (<<_BR-RESP-90_(role_OENRON,BR-RESP-50>>BR-RESP-40>>) |Information about the pre-qualification system the EO is registered on MUST be provided | |N/A |N/A
+|RS-300-R30 (<<BR-LOT-10,BR-LOT-10>>) |The list of lots the EO tenders for MUST be provided | |N/A |N/A
+|RS-300-R40 (<<BR-RESP-20.BR-RESP-20>>) |Information about representatives of the economic operator CAN be provided | |N/A |N/A
+|RS-300-R50 (<<BR-RESP-60,BR-RESP-60>>BR-RESP-40>>) |Information about compliance of exclusion grounds CAN be provided | |RS-300-R50-S10 (<<BR-RESP-60-S10,BR-RESP-60-S10>BR-RESP-40>>) |When the pre-qualification system the EO is registered on does not cover all the exclusion criteria, information about compliance of exclusion grounds MUST be provided.
+| | | |RS-300-R50-S20 (<<BR-RESP-60-S20,BR-RESP-60-S20>>) |When the pre-qualification system the EO is registered on covers all the exclusion criteria, information about compliance of exclusion grounds IS NOT required.|RS-300-R60 (<<BR-SC-30,BR-SC-30]>>) |Information about the procurement procedure MIGHT be provided | |N/A |N/A
+|===
+
+
+
+=== List of Business Rules
+
+List of business rules and its applications to the test cases:
+
+.ESPD Response - Test Cases and Business Rules
+[width="100%",cols="21%,7%,6%,6%,6%,6%,6%,6%,6%,6%,6%,6%,6%,6%",options="header",]
+|===
+| a|
+____
+<<BR-RESP-10.BR-RESP-10>> <<BR-COM-10,BR-COM-10>>*____
+
+a|
+____
+<<BR-RESP-20,BR-RESP-20>>
+____
+
+a|
+____
+<<BR-RESP-30,BR-RESP-30>>
+____
+
+a|
+____
+<<BR-RESP-40-role-different-to-oenron,BR-RESP-40>>
+____
+
+a|
+____
+<<BR-RESP-50,BR-RESP-50>>
+____
+
+a|
+____
+<<BR-RESP-60,BR-RESP-60>>
+____
+
+a|
+____
+<<BR-RESP-70,BR-RESP-70>>
+____
+
+a|
+____
+<<BR-RESP-80,BR-RESP-80>>
+____
+
+a|
+____
+<<BR-REG-10,BR-REG-20>>
+____
+
+a|
+____
+<<BR-SC-30,BR-SC-30>>
+____
+
+a|
+____
+<<BR-LOT-10,BR-LOT-10>>
+____
+
+a|
+____
+<<BR-LOT-20,BR-LOT-20>>
+____
+
+a|
+____
+<<BR-LEAD-10,BR-LEAD-10>>
+____
+
+|<<RS-10,RS-10>> | | | | |- |- |- |- | |- |- |- |-
+|<<RS-20,RS-20>> | | |- |- | | | |- | |- |- |- |-
+|<<RS-30,RS-30>> | | | | |- |- |- |- |- | |- |- |-
+|<<RS-40,RS-40>> | | |- |- | | |- | |- | |- |- |-
+|<<RS-50,RS-50>> | | | | |- |- |- |- |- | | | |-
+|<<RS-60,RS-60>> | | |- |- | | |- | |- | | | |-
+|<<RS-70,RS-70>>  | | | | |- |- |- |- | |- |- |- |
+|<<RS-80,RS-80>>  | | |- |- | | | |- | |- |- |- |
+|<<RS-90,RS-90>>  | | | | |- |- |- |- |- | |- |- |
+|<<RS-100,RS-100>> | | |- |- | | |- | |- | |- |- |
+|<<RS-110,RS-110>>  | | | | |- |- |- |- |- | | | |
+|<<RS-120,RS-120>>  | | |- |- | | |- | |- | | | |
+|<<RS-130,RS-130>> | | | | |- |- |- |- | |- |- |- |-
+|<<RS-140,RS-140>>  | | |- |- | | | |- | |- |- |- |-
+|<<RS-150,RS-150>>  | | | | |- |- |- |- |- | |- |- |-
+|<<RS-160,RS-160>>  | | |- |- | | |- | |- | |- |- |-
+|<<RS-170,RS-170>>  | | | | |- |- |- |- |- | | | |-
+|<<RS-180,RS-180>>  | | |- |- | | |- | |- | | | |-
+|<<RS-190,RS-100>>  | | | | |- |- |- |- | |- |- |- |-
+|<<RS-200,RS-100>>  | | |- |- | | | |- | |- |- |- |-
+|<<RS-210,RS-210>>  | | | | |- |- |- |- |- | | | |-
+|<<RS-220,RS-220>>  | | |- |- | | |- | |- | |- |- |-
+|<<RS-230,RS-230>>  | | | | |- |- |- |- |- | | | |-
+|<<RS-240,RS-240>>  | | |- |- | | |- | |- | | | |-
+|<<RS-250,RS-250>>  | | | |- |- |- |- |- | |- |- |- |-
+|<<RS-260,RS-260>>  | | |- |- | | |- |- | |- |- |- |-
+|<<RS-270,RS-270>>  | | | |- |- |- |- |- |- | | |- |-
+|<<RS-280,RS-280>>  | | |- |- | | |- |- |- | |- |- |-
+|<<RS-290,RS-290>>  | | | |- |- |- |- |- |- | | |- |-
+|<<RS-300,RS-300>>  | | |- |- | | |- |- |- | | |- |-
+|===
+
+
+== Common Business Rules
+
+=== BR-COM-10
+
+.BR-COM-10
+[width="100%",cols="27%,22%,51%",options="header",]
+|===
+|*Mapping Rule ID* | |
+|Test Case Rule ID a|
+* All ESPD Request test cases.
+* All ESPD Response test cases.
+
+|
+|Rule description |Information about publication CAN be provided |
+|Mapping description |Publications are implemented as Document Reference components |
+|XSD Path |/cac:AdditionalDocumentReference[0..n] |
+|Business requirement |xref:tbr70_reqs.adoc#call_for_tender[tbr70-007] |
+|XSD Business Rule description | |XSD Business Rule Schematron
+|If the document referenced is a *Contract Notice published on TED* the ID must follow the scheme defined by the Publications Office: *[][][][]/S [][][]-[][][][][][]* (e.g. 2015/S 252-461137). If at the time of drafting the ESPD document the Publication Office has not published yet the Contract Notice the value 0000/S 000-000000 value must be used to indicate that a temporary identifier is being used. | a|
+* Severity: ERROR
+* If /cac:AdditionalDocumentReference /cbc:DocumentTypeCode is 'TED_CN' +
+Then /cac:AdditionalDocumentReference /cbc:ID must follow the pattern YYYY/S DDD-DDDDDD
+
+|If the document being referenced is a Notice being published on TED, use two description lines. Use the second description line to place therein the temporary number received from TED. | a|
+* Severity: WARNING
+* If /cac:AdditionalDocumentReference /cbc:DocumentTypeCode is 'TED_CN' +
+Then
++
+/cac:AdditionalReferenceDocument /cac:Attachment /cac:ExternalReference/ cbc:Description multiplicity is two
+
+|The type of document being referenced, expressed as a code is mandatory. | a|
+* Severity: ERROR
+* /cac:AdditionalDocumentReference /cbc:DocumentTypeCode is mandatory.
+
+|===
+
+
+
+==== BR-COM-10-S10
+
+.BR-COM-10-S10
+[width="100%",cols="27%,23%,50%",options="header",]
+|===
+|*Mapping Scenario ID* | |
+|Test Case Scenario ID a|
+* All ESPD Request test cases.
+
+* All ESPD Response test cases.
+
+|
+|Rule description |Above the threshold, information about the publication of the contract notice in TED MUST be provided (when it is available). |
+|Mapping description |ESPD does not carry information about the value of the contract. Therefore, the threshold cannot be calculated. |
+|XSD Path |- |
+|Business requirement |xref:tbr70_reqs.adoc#call_for_tender[tbr70-007] |
+|XSD Business Rule description | |XSD Business Rule Schematron
+|- | |*No Schematron rule can be implemented.*
+|===
+
+
+
+==== BR-COM-10-S20
+
+.BR-COM-10-S20
+[width="100%",cols="27%,23%,50%",options="header",]
+|===
+|*Mapping Scenario ID* | |
+|Test Case Scenario ID a|
+* All ESPD Request test cases.
+
+* All ESPD Response test cases.
+
+|
+|Rule description |Below the threshold, information about the publication of the contract notice in TED MIGHT be provided (when it is available). |
+|Mapping description |ESPD does not carry information about the value of the contract. Therefore, the threshold cannot be calculated. |
+|XSD Path |- |
+|Business requirement |xref:tbr70_reqs.adoc#call_for_tender[tbr70-007] |
+|XSD Business Rule description | |XSD Business Rule Schematron
+|- | |*No Schematron rule can be implemented.*
+|===
+
+
+
+==== BR-COM-10-S30
+
+.BR-COM-10-S30
+[width="100%",cols="27%,23%,50%",options="header",]
+|===
+|*Mapping Scenario ID* | |
+|Test Case Scenario ID a|
+* All ESPD Request test cases.
+
+* All ESPD Response test cases.
+
+|
+|Rule description |Information about the publication of the contract notice in other official gazettes or journals MIGHT be provided. |
+|Mapping description |No specific rules should be applied. |
+|XSD Path |- |
+|Business requirement |xref:tbr70_reqs.adoc#call_for_tender[tbr70-007] |
+|XSD Business Rule description | |XSD Business Rule Schematron
+|- | |*No Schematron rule can be implemented.*
+|===
+
+
+
+== Common ESPD Request Rules
+
+=== BR-REQ-20
+
+.BR-REQ-20
+[width="100%",cols="27%,22%,51%",options="header",]
+|===
+|*Mapping Rule ID* | |
+|Test Case Rule ID a|
+* All ESPD Request test cases.
+
+|
+|Rule description |Information about the procurer MUST be provided |
+|Mapping description |Procurers are implemented as Contracting Party components. |
+|XSD Path |/cac:ContractingParty[1..n]/cac:Party[1] |
+|Business requirement |xref:tbr70_reqs.adoc#contracting_body[tbr70-001] |
+|XSD Business Rule description | |XSD Business Rule Schematron
+|Information about the procurer MUST be provided. | |No Schematron rule can be implemented, as Contracting party is already compulsory.
+|The ESPD only expects data about one buyer. | a|
+* {blank}
++
+____
+Severity: WARNING
+____
+* {blank}
++
+____
+Only one /cac:ContractingParty is expected.
+____
+
+|Use the official name of the contracting body. Mandatory. | a|
+* {blank}
++
+____
+Severity: ERROR
+____
+* {blank}
++
+____
+/cac:ContractingParty/cac:Party /cac:PartyName/cbc:Name[1] is mandatory.
+____
+
+a|
+Business requirement: xref:tbr70_reqs.adoc#contracting_body[tbr70-006]
+
+The country of the contracting body must always be specified.
+
+| a|
+* {blank}
++
+____
+Severity: ERROR
+____
+* {blank}
++
+____
+/cac:ContractingParty/cac:Party /cac:PostalAddress/cac:Country /cbc:IdentificationCode is mandatory.
+____
+
+|More than one identifier can be specified. When possible use the VAT identification of the contracting body. | a|
+* {blank}
++
+____
+Severity: WARNING
+____
+* {blank}
++
+____
+If at least one element: /cac:ContractingParty/cac:Party /cac:PartyIdentification/cbc:ID is not present, there is a warning.
+____
+
+|_/cac:ContractingParty/cac:Party/cac:ServiceProviderParty[0..n]_ | |
+|Business requirement: xref:tbr70_reqs.adoc#service_provider[tbr70-011] | |
+|An identifier for the service provider must always be provided. | a|
+* {blank}
++
+____
+Severity: ERROR
+____
+* {blank}
++
+____
+/cac:ContractingParty/cac:Party /cac:ServiceProviderParty /cac:Party /cac:PartyIdentification/cbc:ID is mandatory.
+____
+
+|The name of the service provider must always be specified. | a|
+* {blank}
++
+____
+Severity: ERROR
+____
+* {blank}
++
+____
+/cac:ContractingParty/cac:Party /cac:ServiceProviderParty /cac:Party/cac:PartyName /cbc:Name is mandatory.
+____
+
+|The country of the service provider must always be specified. | a|
+* {blank}
++
+____
+Severity: ERROR
+____
+* {blank}
++
+____
+/cac:ContractingParty/cac:Party /cac:ServiceProviderParty /cac:Party/cac:PostalAddress /cac:Country /cbc:IdentificationCode is mandatory.
+____
+
+|===
+
+
+
+=== BR-REQ-30
+
+.BR-REQ-30
+[width="100%",cols="25%,18%,57%",options="header",]
+|===
+|*Mapping Rule ID* | |
+|Test Case Rule ID a|
+* All ESPD Request test cases.
+
+|
+|Rule description |Exclusion grounds MUST be retrieved from e-Certis. |
+|Mapping description |Exclusion criteria or grounds are implemented as Tendering Criterion components. |
+|XSD Path a|
+/cac:TenderingCriterion[1..n]
+
+And,
+
+/cac:TenderingCriterion/cbc:CriterionTypeCode starts with CRITERION.EXCLUSION. (They are exclusion criteria).
+
+|
+|Business requirement |xref:tbr70_reqs.adoc#list_of_criteria[tbr70-009] |
+|XSD Business Rule description | |XSD Business Rule Schematron
+|Exclusion grounds MUST be retrieved from e-Certis. | a|
+* {blank}
++
+____
+Severity: ERROR
+____
+* {blank}
++
+____
+All criterion code starting CRITERION.EXCLUSION. from [RD03] must be implemented within /cac:TenderingCriterion.
+____
+
+|The Business Rules listed within 14 Tendering Criterion General Rules are general to all TenderingCriterion. | |
+|===
+
+
+
+==== BR-REQ-30-S10
+
+.BR-REQ-30-S10
+[width="100%",cols="28%,21%,51%",options="header",]
+|===
+|*Mapping Scenario ID* | |
+|Test Case Scenario ID a|
+* All ESPD Request test cases.
+
+|
+|Rule description |Information for common exclusion grounds (sections A, B and C) MUST be retrieved from e-Certis. |
+|Mapping description |The spreadsheets [RD03] carries the information from e-Certis. No additional business rules are needed in this scenario. |
+|XSD Path |- |
+|Business requirement |xref:tbr70_reqs.adoc#list_of_criteria[tbr70-009] |
+|XSD Business Rule description | |XSD Business Rule Schematron
+|- | |*No Schematron rule can be implemented*
+|===
+
+
+
+==== BR-REQ-30-S20
+
+.BR-REQ-30-S20
+[width="100%",cols="28%,21%,51%",options="header",]
+|===
+|*Mapping Scenario ID* | |
+|Test Case Scenario ID a|
+* All ESPD Request test cases.
+
+|
+|Rule description |Information for national exclusion grounds (section D) MUST be retrieved from e-Certis. |
+|Mapping description |No additional business rules are needed in this scenario. |
+|XSD Path |- |
+|Business requirement |xref:tbr70_reqs.adoc#list_of_criteria[tbr70-009] |
+|XSD Business Rule description | |XSD Business Rule Schematron
+|- | |*No Schematron rule can be implemented*
+|===
+
+
+
+=== BR-REQ-40
+
+.BR-REQ-40
+[width="100%",cols="28%,21%,51%",options="header",]
+|===
+|*Mapping Rule ID* | |
+|Test Case Rule ID a|
+* All ESPD Request test cases.
+
+|
+|Rule description |Selection criteria CAN be provided. |
+|Mapping description |Selection criteria are implemented as Tendering Criterion components. |
+|XSD Path a|
+/cac:TenderingCriterion[0..n]
+
+And,
+
+/cac:TenderingCriterion/cbc:CriterionTypeCode starts with CRITERION.SELECTION. (They are selection criteria).
+
+|
+|Business requirement |xref:tbr70_reqs.adoc#list_of_criteria[tbr70-010] |
+|XSD Business Rule description | |XSD Business Rule Schematron
+|Selection criteria CAN be provided. | a|
+* {blank}
++
+____
+Severity: WARNING
+____
+* {blank}
++
+____
+All criterion code starting CRITERION.SELECTION. from [RD03] must be implemented within /cac:TenderingCriterion.
+____
+
+|The Business Rules listed within 14 Tendering Criterion General Rules are general to all TenderingCriterion. | |
+|===
+
+
+
+//[#_BR-REG-10 .anchor]##
+
+== Common Rules
+
+=== BR-SC-10
+
+.BR-SC-10
+[width="100%",cols="28%,21%,15%,36%",options="header",]
+|===
+|*Mapping Rule ID* | | |
+|Test Case Rule ID a|
+* RQ-30-R30
+* RQ-40-R30
+
+| a|
+* RQ-50-R30
+* RQ-60-R30
+
+|Rule description |Information about the procurement procedure MUST be provided | |
+|Mapping description |Procurement procedures are implemented as Procurement Project components | |
+|XSD Path a|
+* /cac:ProcurementProject[0..1]
+* /cbc:ContractFolderID[1]
+
+| |
+|Business requirement |xref:tbr70_reqs.adoc#call_for_tender[tbr70-007] | |
+|XSD Business Rule description | |XSD Business Rule Schematron |
+a|
+* The type of the procurement administrative procedure according to the EU Directives.
+
+| a|
+* {blank}
++
+____
+Severity: ERROR
+____
+* {blank}
++
+____
+The following element is mandatory:
+____
+
+* /cbc:ProcedureCode
+
+|
+|===
+
+
+
+=== BR-SC-20
+
+.BR-SC-20
+[width="100%",cols="29%,21%,14%,36%",options="header",]
+|===
+|*Mapping Rule ID* | | |
+|Test Case Rule ID a|
+* RQ-30-R60
+* RQ-40-R60
+
+| a|
+* RQ-50-R80
+* RQ-60-R80
+
+|Rule description |When selection criteria is provided, specific requirements for each criteria CAN be provided. | |
+|Mapping description |Criterion responses are implemented as Tendering Criterion response components | |
+|XSD Path a|
+* /cac:TenderingCriterionResponse[0..n]
+
+| |
+|Business requirement |xref:tbr92_reqs.adoc#eo[tbr92-005], xref:tbr92_reqs.adoc#eo[tbr92-006], xref:tbr92_reqs.adoc#eo[tbr92-007], xref:tbr92_reqs.adoc#eval_crit[tbr92-018]
+ | |
+|XSD Business Rule description | |XSD Business Rule Schematron |
+|- | |*No Schematron rule can be implemented* |
+|===
+
+
+
+=== BR-SC-30
+
+.BR-SC-30
+[width="100%",cols="29%,21%,14%,36%",options="header",]
+|===
+|*Mapping Rule ID* | | |
+|Test Case Rule ID a|
+* RS-30-R50
+* RS-40-R60
+* RS-50-R70
+* RS-60-R80
+* RS-90-R60
+* RS-100-R70
+* RS-110-R80
+* RS-120-R90
+* RS-150-R50
+* RS-160-R60
+
+| a|
+* RS-170-R70
+* RS-180-R80
+* RS-210-R70
+* RS-220-R60
+* RS-230-R70
+* RS-240-R80
+* RS-270-R50
+* RS-280-R50
+* RS-290-R50
+* RS-300-R60
+
+|Rule description |Information about the procurement procedure MIGHT be provided | |
+|Mapping description |Procurement procedures are implemented as Procurement Project components | |
+|XSD Path a|
+* /cac:ProcurementProject[0..1]
+* /cbc:ContractFolderID[1]
+
+| |
+|Business requirement |xref:tbr70_reqs.adoc#call_for_tender[tbr70-007] | |
+|XSD Business Rule description | |XSD Business Rule Schematron |
+|Same business rules as BR-SC-10. | | |
+|===
+
+
+
+== Two-phased Procedures Rules
+
+=== BR-2P-10
+
+.BR-2P-10
+[width="100%",cols="19%,30%,51%",options="header",]
+|===
+|*Mapping Rule ID* | |
+|Test Case Rule ID a|
+* RQ-40-R70
+* RQ-60-R90
+
+|
+|Rule description |Information about weighting MUST be provided |
+|Mapping description |The global information related to the weighted criteria are the type and description. |
+|XSD Path a|
+* /cbc:WeightScoringMethodologyDescription[0..n]
+* /cbc:WeightingType[0..1]
+
+|
+|Business requirement |xref:tbr92_reqs.adoc#crit_list[tbr92-016] |
+|XSD Business Rule description | |XSD Business Rule Schematron
+|Defining the type of weighting and description is mandatory when it is two-phased procedure. | |*No Schematron rule can be implemented*
+|===
+
+
+
+==== BR-2P-10-S10
+
+.BR-2P-10-S10
+[width="100%",cols="22%,18%,60%",options="header",]
+|===
+|*Mapping Scenario ID* | |
+|Test Case Scenario ID a|
+* RQ-40-R70
+* RQ-60-R90
+
+|
+|Rule description |For two-phased procedure with weighted criteria the information about weighting for each criteria within Technical and professional ability MUST be provided |
+|Mapping description a|
+Common information about weighting is implemented as in <<BR-2P-10,BR-2P-10>>.
+
+Specific information about weighting within each criteria is implemented as Tendering Criterion components.
+
+|
+|XSD Path a|
+* /cac:TenderingCriterion /cbc:EvaluationMethodTypeCode[0..1]
+* /cac:TenderingCriterion/cbc:WeightNumeric[0..1]
+
+|
+|Business requirement |xref:tbr92_reqs.adoc#crit_list[tbr92-016] |
+|XSD Business Rule description | |XSD Business Rule Schematron
+|For two stage procedures it [.underline]#should be possible# to weight the "Technical and professional ability". Weighting can be done either using percentage or points for one procedure. The CA should have a free text where they can describe the scoring methodology. | a|
+* {blank}
++
+____
+Severity: ERROR
+____
+* {blank}
++
+____
+If /cac:TenderingCriterion /cbc:CriterionTypeCode is within 'CRITERION.SELECTION.TECHNICAL_PROFESSIONAL_ABILITY.TECHNICAL.*' group
+____
++
+And, /cac:TenderingCriterion /cbc:EvaluationMethodTypeCode = WEIGHTED
+
+____
+Then, it is mandatory to provide a numeric Weight value: /cac:TenderingCriterion /cbc:WeightNumeric
+____
+
+|The rest of selection criteria should be always PASS/FAIL. | a|
+* {blank}
++
+____
+Severity: ERROR
+____
+* {blank}
++
+____
+If /cac:TenderingCriterion /cbc:CriterionTypeCode is *NOT* within 'CRITERION.SELECTION.TECHNICAL_PROFESSIONAL_ABILITY.TECHNICAL.*' group
+____
++
+Then, /cac:TenderingCriterion /cbc:EvaluationMethodTypeCode != WEIGHTED or not included.
+
+|===
+
+
+
+==== BR-2P-10-S20
+
+_BR-2P-10-S20
+[width="100%",cols="27%,9%,64%",options="header",]
+|===
+|*Mapping Scenario ID* | |
+|Test Case Scenario ID a|
+* RQ-40-R70
+* RQ-60-R90
+
+|
+|Rule description |For two-phased procedure without weighted criteria, additional information regarding weighting IS NOT required |
+|Mapping description |Information regarding weighting is not expected when evaluation method type is pass/fail. |
+|XSD Path a|
+* /cac:TenderingCriterion /cbc:EvaluationMethodTypeCode[0..1]
+
+|
+|Business requirement |xref:tbr92_reqs.adoc#crit_list[tbr92-016] |
+|XSD Business Rule description | |XSD Business Rule Schematron
+|If evaluation method is pass/fail, weighting is not required. | a|
+* {blank}
++
+____
+Severity: ERROR
+____
+* {blank}
++
+____
+If, /cac:TenderingCriterion /cbc:EvaluationMethodTypeCode != WEIGHTED
+____
++
+Then, Weight value cannot be provided: /cac:TenderingCriterion/cbc:WeightNumeric
+
+|===
+
+
+
+== Common ESPDResponse Rules
+
+=== BR-RESP-10
+
+.BR-RESP-10
+[width="100%",cols="25%,24%,51%",options="header",]
+|===
+|*Mapping Rule ID* | |
+|Test Case Rule ID a|
+* All ESPD Response test cases.
+
+|
+|Rule description |Information about the economic operator MUST be provided |
+|Mapping description |Economic operator data is implemented as Economic Operator Party components. |
+|XSD Path a|
+* /cac:EconomicOperatorParty[1..n]
+
+|
+|XSD Business Rule description | |XSD Business Rule Schematron
+|The economic operator must include in its ESPD Response document a reference to the ESPD Request. | a|
+* {blank}
++
+____
+See BR-COM-10
+____
+
+|_/cac:EconomicOperatorParty/cac:QualifyingParty_ | |
+|Business requirement: xref:tbr92_reqs.adoc#eo[tbr92-001] | |
+|*Qualifying party* is *compulsory* in the ESPD-EDM V4.0.0 as it is the natural placeholder for several relevant data about the Economic Operator. | a|
+* {blank}
++
+____
+Severity: ERROR
+____
+* {blank}
++
+____
+Qualifying party is mandatory:
+____
+
+____
+/cac:EconomicOperatorParty /cac:QualifyingParty
+____
+
+|*Qualifying party / Party identifier*: The attribute schemeAgencyID must hold the value retrieved from eCertis that identifies unequivocally the (pre)qualification system. If, for any reason, that value is not available use the default schemeAgencyID "EU-COM-GROW" and the cac:EconomicOperatorParty /cac:PartyIdentification /cbc:ID for the value of the identifier. Additionally you can use the data structure CRITERION.OTHER.EO_DATA.REGISTERED_IN_OFFICIAL_LIST to specify an alternative or additional name, identifier and description. | a|
+* {blank}
++
+____
+Severity NONE
+____
+* {blank}
++
+____
+schemeAgencyID attribute from Party identifier is always mandatory. The current version of eCertis does not allow for this feature yet. Therefore, the logic expected schemeAgencyID defaults to "OP". This will not be validated in version 2.0.2.
+____
+
+|_/cac:EconomicOperatorParty/cac:EconomicOperatorRole_ | |
+|Business requirement: xref:tbr92_reqs.adoc#eo[tbr92-008]| |
+|This element is compulsory in the ESPD-EDM V4.0.0 because depending on it different sets of data will be required or not, shown or hidden, processed or skipped. | a|
+* {blank}
++
+____
+Severity: ERROR
+____
+* {blank}
++
+____
+Economic operator role is mandatory:
+____
++
+/cac:EconomicOperatorParty /cac:EconomicOperatorRole
+
+|Identifies the role of the economic operator in the bid. | a|
+* {blank}
++
+____
+Severity: ERROR
+____
+* {blank}
++
+____
+Economic operator role is mandatory:
+____
++
+/cac:EconomicOperatorParty /cac:EconomicOperatorRole /cbc:RoleCode
+
+|_/cac:EconomicOperatorParty/cac:Party_ | |
+|Business requirement: xref:tbr92_reqs.adoc#eo[tbr92-001] | |
+|An identifier that identifies the economic operator is mandatory. | a|
+* {blank}
++
+____
+Severity: ERROR
+____
+* {blank}
++
+____
+Compulsory use of the element: /cac:PartyIdentification/cbc:ID
+____
+
+|The name of the economic operator is mandatory. | a|
+* {blank}
++
+____
+Severity: ERROR
+____
+* {blank}
++
+____
+Compulsory use of the element: /cac:PartyName/cbc:Name
+____
+
+a|
+Business requirement: xref:tbr92_reqs.adoc#eo[tbr92-004]
+
+*Industrial classification*: Compulsory use of the element.
+
+| a|
+* {blank}
++
+____
+Severity: ERROR
+____
+* {blank}
++
+____
+Compulsory use of the element: /cbc:IndustryClassificationCode
+____
+
+a|
+Business requirement: xref:tbr92_reqs.adoc#ca[tbr92-012]
+
+*Country*: The country of the contracting body must always be specified.
+
+| a|
+* {blank}
++
+____
+Severity: ERROR
+____
+* {blank}
++
+____
+Country of the contracting body is mandatory: /cac:EconomicOperatorParty /cac:Party/cac:PostalAddress /cac:Country /cbc:IdentificationCode
+____
+
+|_/cac:EconomicOperatorParty/cac:Party/cac:ServiceProviderParty/cac:Party_ | |
+|Business requirement: xref:tbr92_reqs.adoc#service_provider[tbr92-021] | |
+|*End point identifier*: An end-point identifier MUST have a scheme identifier attribute. | a|
+* {blank}
++
+____
+Severity: ERROR
+____
+* {blank}
++
+____
+Compulsory use of the attribute schemeID: /cbc:EndpointID/@schemeID
+____
+
+|*Name*: The name of the service provider must always be specified. | a|
+* {blank}
++
+____
+Severity: ERROR
+____
+* {blank}
++
+____
+The name of the service provided is mandatory:
+____
+
+____
+/cac:PartyName/cbc:Name
+____
+
+|*Country*: The country of the service provider must always be specified. | a|
+* {blank}
++
+____
+Severity: ERROR
+____
+* {blank}
++
+____
+The country of the service provided is mandatory:
+____
++
+/cac:PostalAddress/cac:Country /cbc:IdentificationCode
+
+|*Identifier*: An identifier for the service provider must always be provided. | a|
+* {blank}
++
+____
+Severity: ERROR
+____
+* {blank}
++
+____
+The identifier of the service provided is mandatory:
+____
++
+/cac:PartyIdentification/cbc:ID
+
+|===
+
+
+
+=== BR-RESP-20
+
+.BR-RESP-20
+[width="100%",cols="26%,10%,64%",options="header",]
+|===
+|*Mapping Rule ID* | |
+|Test Case Rule ID a|
+* All ESPD Response test cases.
+
+|
+|Rule description |Information about representatives of the economic operator CAN be provided |
+|Mapping description |All the data regarding the representative of the economic operators is placed in the UBL-2.3 component cac:EconomicOperatorParty/cac:Party/cac:PowerOfAttorney. |
+|XSD Path a|
+* /cac:EconomicOperatorParty/cac:Party /cac:PowerOfAttorney
+
+|
+|Business requirement | xref:tbr92_reqs.adoc#reps_eo[tbr92-009]|
+|XSD Business Rule description | |XSD Business Rule Schematron
+|Name, Family name and country of the natural person are mandatory | a|
+* {blank}
++
+____
+Severity: ERROR
+____
+* {blank}
++
+____
+/cac:EconomicOperatorParty/cac:Party /cac:PowerOfAttorney is an optional element. If it is used, the following sub-elements are mandatory:
+____
+** {blank}
++
+____
+/cac:AgentParty/cac:Person /cbc:FirstName
+____
+** {blank}
++
+____
+/cac:AgentParty/cac:Person /cbc:FamilyName
+____
+** {blank}
++
+____
+/cac:AgentParty/cac:Person /cac:ResidenceAddress/cac:Country /cbc:IdentificationCode
+____
+
+|===
+
+
+
+== Not registered pre-qualification system Rules
+
+=== BR-RESP-30
+
+.BR-RESP-30
+[width="100%",cols="34%,14%,19%,33%",options="header",]
+|===
+|*Mapping Rule ID* | | |
+|Test Case Rule ID a|
+* RS-10-R30
+* RS-30-R30
+* RS-50-R40
+* RS-70-R40
+* RS-90-R40
+* RS-110-R50
+* RS-130-R30
+* RS-150-R30
+
+| a|
+* RS-170-R40
+* RS-190-R30
+* RS-210-R40
+* RS-230-R40
+* RS-250-R30
+* RS-270-R40
+* RS-290-R40
+
+|Rule description |Information about compliance of exclusion grounds MUST be provided | |
+|Mapping description |Criterion responses are implemented as Tendering Criterion response components | |
+|XSD Path a|
+* /cac:TenderingCriterionResponse
+
+| |
+|XSD Business Rule description | |XSD Business Rule Schematron |
+|Information about compliance of exclusion grounds MUST be provided | a|
+* {blank}
++
+____
+Severity: ERROR
+____
+* {blank}
++
+____
+All /cac:TenderingCriterion /cbc:CriterionTypeCode starts with CRITERION.EXCLUSION. (They are exclusion criteria) must have its /cbc:ID as response within /cac:TenderingCriterionResponse /cbc:ValidatedCriterionPropertyID
+____
+
+|
+|===
+
+
+
+=== BR-RESP-40 (role different to OENRON)
+
+.BR-RESP-40
+[width="100%",cols="34%,14%,19%,33%",options="header",]
+|===
+|*Mapping Rule ID* | | |
+|Test Case Rule ID a|
+* RS-10-R40
+* RS-30-R40
+* RS-50-R50
+* RS-70-R50
+* RS-90-R50
+* RS-110-R60
+
+| a|
+* RS-130-R40
+* RS-150-R40
+* RS-170-R50
+* RS-190-R40
+* RS-210-R50
+* RS-230-R50
+
+|Rule description a|
+Information about compliance of selection criteria MUST be provided; and,
+
+Response to the specific requirements related to selection criteria of the ESPDRequest MUST be provided
+
+| |
+|Mapping description |Criterion responses are implemented as Tendering Criterion response components | |
+|XSD Path a|
+* /cac:TenderingCriterionResponse[0..n]
+
+| |
+|Business requirement |xref:tbr92_reqs.adoc#eo[tbr92-006], xref:tbr92_reqs.adoc#eo[tbr92-007], xref:tbr92_reqs.adoc#eval_crit[tbr92-018]
+ | |
+|XSD Business Rule description | |XSD Business Rule Schematron |
+|Information about compliance of selection criteria MUST be provided. | a|
+* {blank}
++
+____
+Severity: WARNING
+____
+* {blank}
++
+____
+All /cac:TenderingCriterion /cbc:CriterionTypeCode starts with CRITERION.SELECTION. (They are selection criteria) must have its /cbc:ID as response within /cac:TenderingCriterionResponse /cbc:ValidatedCriterionPropertyID
+____
+
+|
+|===
+
+
+
+[#_BR-RESP-90_(role_OENRON) .anchor]#
+
+== Registered pre-qualification system Rules
+
+=== BR-RESP-50
+
+.BR-RESP-50
+[width="100%",cols="34%,14%,19%,33%",options="header",]
+|===
+|*Mapping Rule ID* | | |
+|Test Case Rule ID a|
+* RS-20-R20
+* RS-40-R20
+* RS-60-R20
+* RS-80-R20
+* RS-100-R20
+* RS-120-R20
+* RS-140-R20
+
+| a|
+* RS-160-R20
+* RS-180-R20
+* RS-200-R20
+* RS-220-R20
+* RS-240-R20
+* RS-260-R20
+* RS-280-R20
+* RS-300-R20
+
+|Rule description |Information about the pre-qualification system the EO is registered on MUST be provided | |
+|Mapping description |Pre-qualification system information is implemented as the identifier of the Economic Operator (EO) and Criterion for additional information. | |
+|XSD Path a|
+* Identifier of the EO: /cac:EconomicOperatorParty /cac:QualifyingParty/cac:Party /cac:PartyIdentification/cbc:ID
+* Additional information as Other Criterion /cac:TenderingCriterionResponse
+| |
+
+|Business requirement |xref:tbr92_reqs.adoc#eo[tbr92-006], xref:tbr92_reqs.adoc#eo[tbr92-007], xref:tbr92_reqs.adoc#eval_crit[tbr92-018]| |
+
+|XSD Business Rule description | |XSD Business Rule Schematron |
+|Same business rules as BR-RESP-30 as it works as a Criterion. | | |
+|===
+
+
+
+=== BR-RESP-60
+
+.BR-RESP-60
+[width="100%",cols="34%,14%,19%,33%",options="header",]
+|===
+|*Mapping Rule ID* | | |
+|Test Case Rule ID a|
+* RS-20-R40
+* RS-40-R40
+* RS-60-R50
+* RS-80-R50
+* RS-100-R50
+* RS-120-R60
+* RS-140-R40
+
+| a|
+* RS-160-R40
+* RS-180-R50
+* RS-200-R40
+* RS-220-R40
+* RS-260-R40
+* RS-280-R40
+* RS-300-R50
+
+|Rule description |Information about compliance of exclusion grounds CAN be provided | |
+|Mapping description |Criterion responses are implemented as Tendering Criterion response components | |
+|XSD Path a|
+* /cac:TenderingCriterionResponse[0..n]
+
+| |
+|Business requirement |xref:tbr92_reqs.adoc#eo[tbr92-006], xref:tbr92_reqs.adoc#eo[tbr92-007], xref:tbr92_reqs.adoc#eval_crit[tbr92-018]| |
+|XSD Business Rule description | |XSD Business Rule Schematron |
+|Same business rules as BR-RESP-30 | | |
+|===
+
+
+
+==== BR-RESP-60-S10
+
+.BR-RESP-60-S10
+[width="100%",cols="34%,14%,19%,33%",options="header",]
+|===
+|*Mapping Rule ID* | | |
+|Test Case Rule ID a|
+* RS-20-R40-S10
+* RS-40-R40-S10
+* RS-60-R50-S10
+* RS-80-R50-S10
+* RS-100-R50-S10
+* RS-120-R60-S10
+* RS-140-R40-S10
+
+| a|
+* RS-160-R40-S10
+* RS-180-R50-S10
+* RS-200-R40-S10
+* RS-220-R40-S10
+* RS-260-R40-S10
+* RS-280-R40-S10
+* RS-300-R50-S10
+
+|Rule description |When the pre-qualification system the EO is registered on does not cover all the exclusion criteria, information about compliance of exclusion grounds MUST be provided | |
+|Mapping description |Criterion responses are implemented as Tendering Criterion response components | |
+|XSD Path |/cac:TenderingCriterionResponse[0..n] | |
+|XSD Business Rule description | |XSD Business Rule Schematron |
+|*No Schematron rule can be implemented* | | |
+|===
+
+
+
+==== BR-RESP-60-S20
+
+.BR-RESP-60-S20
+[width="100%",cols="33%,33%,33%,33%",options="header",]
+|===
+|*Mapping Rule ID* | | |
+|Test Case Rule ID 
+a|
+* RS-20-R40-S20
+* RS-40-R40-S20
+* RS-60-R50-S20
+* RS-80-R50-S20
+* RS-100-R50-S20
+* RS-120-R60-S20
+* RS-140-R40-S20
+
+| 
+a|
+* RS-160-R40-S20
+* RS-180-R50-S20
+* RS-200-R40-S20
+* RS-220-R40-S20
+* RS-260-R40-S20
+* RS-280-R40-S20
+* RS-300-R50-S30
+
+|Rule description |When the pre-qualification system the EO is registered on covers all the exclusion criteria, information about compliance of exclusion grounds IS NOT required. | |
+
+|Mapping description |Criterion responses are implemented as Tendering Criterion response components | |
+
+|XSD Path |/cac:TenderingCriterionResponse[0..n] | |
+
+|XSD Business Rule description | |XSD Business Rule Schematron |
+
+|*No Schematron rule can be implemented* | | |
+|===
+
+
+=== BR-RESP-70
+
+.BR-RESP-70
+[width="100%",cols="33%,33%,33%,33%",options="header",]
+|===
+|*Mapping Rule ID* | | |
+|Test Case Rule ID a|
+* RS-20-R50
+* RS-80-R60
+
+| a|
+* RS-140-R50
+* RS-200-R50
+
+|Rule description |Information about compliance of selection criteria CAN be provided | |
+|Mapping description |Criterion responses are implemented as Tendering Criterion response components | |
+|XSD Path a|
+* /cac:TenderingCriterionResponse[0..n]
+
+| |
+|Business requirement |xref:tbr92_reqs.adoc#eo[tbr92-006], xref:tbr92_reqs.adoc#eo[tbr92-007], xref:tbr92_reqs.adoc#eval_crit[tbr92-018] | |
+|XSD Business Rule description | |XSD Business Rule Schematron |
+|Same business rules as BR-RESP-30 | | |
+|===
+
+
+
+==== BR-RESP-70-S10
+
+.BR-RESP-70-S10
+[width="100%",cols="33%,33%,33%,33%%",options="header",]
+|===
+|*Mapping Rule ID* | 
+|Test Case Rule ID a|
+* RS-20-R50-S10
+* RS-80-R60-S10
+
+| a|
+* RS-140-R50-S10
+* RS-200-R50-S10
+
+|Rule description 
+|When the pre-qualification system the EO is registered on does not cover all the selection criteria, information about compliance of selection criteria MUST be provided. | 
+|Mapping description |Criterion responses are implemented as Tendering Criterion response components | |
+|XSD Path |/cac:TenderingCriterionResponse[0..n] | |
+|XSD Business Rule description | |XSD Business Rule Schematron |
+|*No Schematron rule can be implemented* | | |
+|===
+
+
+
+==== BR-RESP-70-S20
+
+.BR-RESP-70-S20
+[width="100%",cols="33%,33%,33%,33%",options="header",]
+|===
+|*Mapping Rule ID* | | |
+|Test Case Rule ID a|
+* RS-20-R50-S20
+* RS-80-R60-S20
+
+| a|
+* RS-140-R50-S20
+* RS-200-R50-S20
+
+|Rule description |When the pre-qualification system the EO is registered on covers all the selection criteria, information about compliance of selection criteria IS NOT required. | |
+|Mapping description |Criterion responses are implemented as Tendering Criterion response components | |
+|XSD Path |/cac:TenderingCriterionResponse[0..n] | |
+|XSD Business Rule description | |XSD Business Rule Schematron |
+|*No Schematron rule can be implemented* | | |
+|===
+
+
+
+=== BR-RESP-80
+
+.BR-RESP-80
+[width="100%",cols="33%,33%,33%,33%",options="header",]
+|===
+|*Mapping Rule ID* | | |
+|Test Case Rule ID a|
+* RS-40-R50
+* RS-60-R60
+* RS-100-R60
+* RS-120-R70
+
+| a|
+* RS-160-R50
+* RS-180-R60
+* RS-220-R50
+* RS-240-R60
+
+|Rule description |Response to the specific requirements related to selection criteria of the ESPDRequest CAN be provided | |
+|Mapping description |Criterion responses are implemented as Tendering Criterion response components. | |
+|XSD Path a|
+* /cac:TenderingCriterionResponse[0..n]
+
+| |
+|Business requirement |xref:tbr92_reqs.adoc#eo[tbr92-002], xref:tbr92_reqs.adoc#reps_eo[tbr92-010], xref:tbr92_reqs.adoc#call_tender_refs[tbr92-013], xref:tbr92_reqs.adoc#crit_list[tbr92-016], xref:tbr92_reqs.adoc#eval_crit[tbr92-018]
+ | |
+|XSD Business Rule description | |XSD Business Rule Schematron |
+|See scenarios BR-RESP-80-S10 and BR-RESP-80-S20. | | |
+|===
+
+
+
+==== BR-RESP-80-S10
+
+.BR-RESP-80-S10
+[width="100%",cols="33%,33%,33%,33%",options="header",]
+|===
+|*Mapping Rule ID* | | |
+|Test Case Rule ID a|
+* RS-40-R50-S10
+* RS-60-R60-S10
+* RS-100-R60-S10
+* RS-120-R70-S10
+
+| a|
+* RS-160-R50-S10
+* RS-180-R60-S10
+* RS-220-R50-S10
+* RS-240-R60-S10
+
+|Rule description |When the pre-qualification system the EO is registered on does not cover all the selection criteria, information about compliance of selection criteria MUST be provided. | |
+|Mapping description a|
+Pre-qualification system (PQS) information is implemented as the identifier of the Economic Operator (EO).
+
+Selection criterion responses are implemented as Tendering Criterion response components.
+
+This rule is accomplished when:
+
+* Service provided party is included.
+* Application type is SELFCONTAINED
+* Role is not OENRON
+
+| |
+|XSD Path a|
+* PQS: /cac:EconomicOperatorParty /cac:QualifyingParty/cac:Party /cac:PartyIdentification/cbc:ID
+* Responses: /cac:TenderingCriterionResponse
+* Service provider: /cac:ContractingParty /cac:Party/cac:ServiceProviderParty
+* Application type: /cbc:QualificationApplicationTypeCode
+* Role: /cbc:RoleCode
+
+| |
+|XSD Business Rule description | |XSD Business Rule Schematron |
+|When the pre-qualification system the EO is registered on does not cover all the selection criteria, information about compliance of selection criteria MUST be provided. | a|
+* Severity: WARNING
+* If PQS exists (/cac:EconomicOperatorParty /cac:QualifyingParty/cac:Party /cac:PartyIdentification/cbc:ID), Service Provider exists (cac:ContractingParty /cac:Party/cac:ServiceProviderParty), /cbc:RoleCode != OENRON and /cbc:QualificationApplicationTypeCode = SELFCONTAINED
++
+Then, all selection criterion must have responses.
+
+|
+|===
+
+
+
+==== BR-RESP-80-S20
+
+.BR-RESP-80-S20
+[width="100%",cols="33%,33%,33%,33%",options="header",]
+|===
+|*Mapping Rule ID* | | |
+|Test Case Rule ID a|
+* RS-40-R50-S20
+* RS-60-R60-S20
+* RS-100-R60-S20
+* RS-120-R70-S20
+
+| a|
+* RS-160-R50-S20
+* RS-180-R60-S20
+* RS-220-R50-S20
+* RS-240-R60-S20
+
+|Rule description |When the pre-qualification system the EO is registered on covers all the selection criteria, information about compliance of selection criteria IS NOT required. | |
+|Mapping description a|
+Pre-qualification system (PQS) information is implemented as the identifier of the Economic Operator (EO).
+
+Selection criterion responses are implemented as Tendering Criterion response components.
+
+This rule is accomplished when:
+
+* Service provided party is not included.
+* Application type is SELFCONTAINED
+* Role is not OENRON
+
+| |
+|XSD Path a|
+* PQS: /cac:EconomicOperatorParty /cac:QualifyingParty/cac:Party /cac:PartyIdentification/cbc:ID
+* Responses: /cac:TenderingCriterionResponse
+* Service provider: /cac:ContractingParty /cac:Party/cac:ServiceProviderParty
+* Application type: /cbc:QualificationApplicationTypeCode
+* Role: /cbc:RoleCode
+
+| |
+|XSD Business Rule description | |XSD Business Rule description |
+|When the pre-qualification system the EO is registered on covers all the selection criteria, information about compliance of selection criteria IS NOT required. | a|
+* Severity: WARNING
+* If PQS exists (/cac:EconomicOperatorParty /cac:QualifyingParty/cac:Party /cac:PartyIdentification/cbc:ID), Service Provider does not exists not(cac:ContractingParty /cac:Party/cac:ServiceProviderParty), /cbc:RoleCode != OENRON and /cbc:QualificationApplicationTypeCode = SELFCONTAINED
++
+Then, selection criterion does not need to have responses.
+
+|
+|===
+
+
+
+== Lots Rules
+
+=== BR-LOT-10
+
+.BR-LOT-10
+[width="100%",cols="25%,19%,18%,38%",options="header",]
+|===
+|*Mapping Rule ID* | | |
+|Test Case Rule ID a|
+* RS-50-R20
+* RS-60-R30
+* RS-110-R20
+* RS-120-R30
+* RS-170-R20
+* RS-180-R30
+
+| a|
+* RS-210-R20
+* RS-230-R20
+* RS-240-R30
+* RS-270-R20
+* RS-290-R20
+* RS-300-R30
+
+|Rule description |The list of lots the EO tenders for MUST be provided. | |
+|Mapping description a|
+The procurement procedure is divided into lots, the ProcurementProjectLot component provides details specific to the lot.
+
+Lots EO tenders to, are specified as Tendering criterion of type CRITERION.OTHER.EO_DATA.LOTS_TENDERED.
+
+| |
+|XSD Path a|
+* /cac:ProcurementProjectLot[0..n]
+* /cac:TenderingCriterion[0..n]
+
+| |
+|Business requirement |xref:tbr92_reqs.adoc#lots[tbr92-014] | |
+|XSD Business Rule description | |XSD Business Rule Schematron |
+|The list of lots the EO tenders for MUST be provided. | a|
+
+Severity: ERROR
+
+If /cac:ProcurementProjectLot/cbc:ID is not 0 +
+and the /cac:TenderingCriterion type is +
+CRITERION.OTHER.EO_DATA.LOTS_TENDERED
+
+Then, its /cac:TenderingCriterionResponse +
+/cbc:ResponseID must exist within +
+/cac:ProcurementProjectLot /cbc:ID
+
+|
+|===
+
+
+
+=== BR-LOT-20
+
+.BR-LOT-20
+[width="100%",cols="25%,19%,18%,38%",options="header",]
+|===
+|*Mapping Rule ID* | | |
+|Test Case Rule ID a|
+* RS-50-R60
+* RS-60-R70
+* RS-110-R70
+* RS-120-R80
+* RS-170-R60
+
+| a|
+* RS-180-R70
+* RS-210-R60
+* RS-230-R60
+* RS-240-R70
+
+|Rule description |The set of lots that apply to the information provided in response to the requirements for each selection criterion MUST be provided. | |
+|Mapping description |The lots requirements for each criteria are implemented as Tendering Criterion components. | |
+|XSD Path a|
+* /cac:TenderingCriterion[0..n]
+
+| |
+|Business requirement |xref:tbr70_reqs.adoc#list_of_criteria[tbr70-010] | |
+|XSD Business Rule description | |XSD Business Rule description |
+|The Business Rules listed within 15 Tendering Criterion Self-contained Rules are general to all TenderingCriterion in self-contained qualification applications. | | |
+|===
+
+
+
+=== BR-LOT-30
+
+.BR-LOT-30
+[width="100%",cols="25%,19%,18%,38%",options="header",]
+|===
+|*Mapping Rule ID* | | |
+|Test Case Rule ID a|
+* RQ-50-R40
+* RQ-60-R40
+
+| |
+|Rule description |Information about lots MUST be provided. | |
+|Mapping description a|
+Information about lots specified is two different sets of the XSD schema in order to:
+
+* Identify the number of lots; and,
+* Provide additional information of the lots.
+
+| |
+|XSD Path a|
+* /cac:ProcurementProjectLot[0..n]
+* /cac:TenderingCriterion[0..n], CRITERION.OTHER.CA_DATA.LOTS_SUBMISSION
+
+| |
+|Business requirement |xref:tbr70_reqs.adoc[#procurement_lots[tbr70-008] | |
+|XSD Business Rule description | |XSD Business Rule Schematron |
+|See <<BR-LOT-30-S10,BR-LOT-30-S10>> and <<BR-LOT-30-S20,BR-LOT-30-S10>> | | |
+|===
+
+
+
+==== BR-LOT-30-S10
+
+.BR-LOT-30-S10
+[width="100%",cols="25%,19%,18%,38%",options="header",]
+|===
+|*Mapping Rule ID* | | |
+|Test Case Rule ID a|
+* RQ-50-R40-S10
+* RQ-60-R40-S10
+
+| |
+|Rule description |The number of lots into which the procurement procedure is divided MUST be provided. | |
+|Mapping description |Each of the procurement project lots into which this contract can be divided. | |
+|XSD Path a|
+* /cac:ProcurementProjectLot[0..n] /cbc:ID[1]
+
+| |
+|Business requirement |xref:tbr70_reqs.adoc[#procurement_lots[tbr70-008] | |
+|XSD Business Rule description | |XSD Business Rule Schematron |
+|Convention: Lots should always be identified with a sequential number, as in the examples: Lot1, Lot2 Lot7. | a|
+* {blank}
++
+____
+Severity: WARNING
+____
+* {blank}
++
+____
+/cac:ProcurementProjectLot /cbc:ID must be unique in the XML instance.
+____
+
+|
+|===
+
+
+
+==== BR-LOT-30-S20
+
+.BR-LOT-30-S20
+[width="100%",cols="25%,19%,18%,38%",options="header",]
+|===
+|*Mapping Rule ID* | | |
+|Test Case Rule ID a|
+* RQ-50-R40-S20
+* RQ-60-R40-S20
+
+| |
+|Rule description |Additional information regarding lots CAN be provided. | |
+|Mapping description |Additional information about lots must be implemented as criterion. | |
+|XSD Path a|
+* /cac:TenderingCriterion[0..n] as CRITERION.OTHER.CA_DATA.LOTS_SUBMISSION
+
+| |
+|Business requirement |xref:tbr70_reqs.adoc[#procurement_lots[tbr70-008 | |
+|XSD Business Rule description | |XSD Business Rule Schematron |
+|- | |*No Schematron rule can be implemented as it works as any other Tendering Criterion.* |
+|===
+
+
+
+=== BR-LOT-40
+
+.BR-LOT-40
+[width="100%",cols="33%,33%,33%,33%",options="header",]
+|===
+|*Mapping Rule ID* | | |
+|Test Case Rule ID a|
+* RQ-50-R70
+* RQ-60-R70
+
+| |
+|Rule description |When selection criteria is provided, the lots each criteria applies to MUST be provided. | |
+|Mapping description |The lots requirement for each criteria are implemented as Tendering Criterion components. | |
+|XSD Path a|
+* /cac:TenderingCriterion[0..n]
+
+| |
+|Business requirement |xref:tbr70_reqs.adoc#list_of_criteria[tbr70-010] | |
+|XSD Business Rule description | |XSD Business Rule description |
+|The Business Rules listed within 15 Tendering Criterion Self-contained Rules are general to all TenderingCriterion in self-contained qualification applications. | | |
+|The lots each criteria applies to MUST be provided. | a|
+* Severity: ERROR
+* When cac:TenderingCriterionPropertyGroup is a53561d5-6614-4dbe-987e-b96f35387f46 and its cac:TenderingCriterionProperty is REQUIREMENT and IDENTIFIER;
++
+If, cbc:ExpectedID is included, it must be one of the Lots identified within /cac:ProcurementProjectLot/cbc:ID
+
+|
+|===
+
+
+
+== Specific Lead Role Rules
+
+=== BR-LEAD-10
+
+.BR-LEAD-10
+[width="100%",cols="33%,33%,33%,33%",options="header",]
+|===
+|*Mapping Rule ID* | | |
+|Test Case Rule ID a|
+* RS-70-R30
+* RS-80-R40
+* RS-90-R30
+
+| a|
+* RS-100-R40
+* RS-110-R40
+* RS-120-R50
+
+|Rule description |When the EO is participating in the procurement procedure together with others, information about the other participants MUST be provided | |
+|Mapping description |Information about different participants of the group is implemented as Criterion | |
+|XSD Path a|
+* /cac:TenderingCriterionResponse[0..n]
+
+| |
+|Business requirement |xref:tbr92_reqs.adoc#eo[tbr92-008] | |
+|XSD Business Rule description | |XSD Business Rule Schematron |
+|Information about the other participants MUST be provided | a|
+
+Severity: ERROR
+
+At least one /cac:TenderingCriterionResponse +
+/cbc:ValidatedCriterionPropertyID must match an +
+IDs criterion within /cac:TenderingCriterionProperty 
+/cbc:ID which /cac:TenderingCriterion/cbc:CriterionTypeCode +
+is _CRITERION.OTHER.EO_DATA. +
+TOGETHER_WITH_OTHERS_
+
+/cac:TenderingCriterionResponse /cac:ResponseValue/ +
+cbc:ResponseIndicator is true; meaning that the EO +
+is participating with others.
+
+Each of the criterion subgroups identified within: +
+/cac:TenderingCriterion /cac:TenderingCriterionPropertyGroup +
+/cac:SubsidiaryTenderingCriterionPropertyGroup/ +
+cac:TenderingCriterionProperty, must be answered.
+
+|
+|===
+
+
+
+==== BR-LEAD-10-S10
+
+.BR-LEAD-10-S10
+[width="100%",cols="25%,14%,23%,38%",options="header",]
+|===
+|*Mapping Rule ID* | | |
+|Test Case Rule ID a|
+* RS-70-R30-S10
+* RS-80-R40-S10
+* RS-90-R30-S10
+
+| a|
+* RS-100-R40-S10
+* RS-110-R40-S10
+* RS-120-R50-S10
+
+|Rule description |When the EO is participating in the procurement procedure in a group (Consortium, Joint Venture or others), information about the group MUST be provided | |
+|Mapping description |The information about the group is provided as group name | |
+|XSD Path a|
+* /cbc:EconomicOperatorGroupName[0..1]
+
+| |
+|Business requirement |xref:tbr92_reqs.adoc#eo[tbr92-008] | |
+|XSD Business Rule description | |XSD Business Rule Schematron |
+|Information about the group MUST be provided | a|
+
+Severity: WARNING
+
+If /cbc:EconomicOperatorGroupName is not implemented, +
+a warning is thrown to inform that the ESPDResponse is +
+going to be used as Sole contractor and not lead entity.
+
+|
+|===
+
+
+
+==== BR-LEAD-10-S20
+
+.BR-LEAD-10-S20
+[width="100%",cols="25%,4%,33%,38%",options="header",]
+|===
+|*Mapping Rule ID* | | |
+|Test Case Rule ID a|
+* RS-70-R30-S20
+* RS-80-R40-S20
+* RS-90-R30-S20
+
+| a|
+* RS-100-R40-S20
+* RS-110-R40-S20
+* RS-120-R50-S20
+
+|Rule description |When the EO (or any other EO participating in the procurement procedure) relies on the capacities of other entities in order to meet the selection criteria, information about all the entities the EO relies on MUST be provided | |
+|Mapping description |Information about all the entities the EO relies on is implemented as Criterion. | |
+|XSD Path a|
+* /cac:TenderingCriterionResponse[0..n]
+
+| |
+|Business requirement |xref:tbr92_reqs.adoc#eo[tbr92-008] | |
+|XSD Business Rule description | |XSD Business Rule Schematron |
+|Information about all the entities the EO relies on MUST be provided | a|
+
+Severity: ERROR
+
+At least one /cac:TenderingCriterionResponse +
+/cbc:ValidatedCriterionPropertyID must match an IDs +
+criterion within /cac:TenderingCriterion/cbc:ID which +
+/cac:TenderingCriterion/cbc:CriterionTypeCode is +
+_CRITERION.OTHER.EO_DATA. +
+RELIES_ON_OTHER_CAPACITIES_
+
+|
+|===
+
+
+
+==== BR-LEAD-10-S30
+
+.BR-LEAD-10-S30
+[width="100%",cols="25%,2%,35%,38%",options="header",]
+|===
+|*Mapping Rule ID* | | |
+|Test Case Rule ID a|
+* RS-70-R30-S30
+* RS-80-R40-S30
+* RS-90-R30-S30
+
+| a|
+* RS-100-R40-S30
+* RS-110-R40-S30
+* RS-120-R50-S30
+
+|Rule description |When the EO (or any other EO participating in the procurement procedure) intends to subcontract a share of the contract to third parties, information about all subcontractors MUST be provided | |
+|Mapping description |Information about all subcontractors is implemented as Criterion. | |
+|XSD Path a|
+* /cac:TenderingCriterionResponse[0..n]
+
+| |
+|Business requirement |xref:tbr92_reqs.adoc#eo[tbr92-008] | |
+|XSD Business Rule description | |XSD Business Rule Schematron |
+|Information about all subcontractors MUST be provided | a|
+
+Severity: ERROR
+
+At least one /cac:TenderingCriterionResponse +
+/cbc:ValidatedCriterionPropertyID must match an +
+IDs criterion within /cac:TenderingCriterion/cbc:ID which +
+/cac:TenderingCriterion/cbc:CriterionTypeCode is +
+_CRITERION.OTHER.EO_DATA. +
+SUBCONTRACTS_WITH_THIRD_PARTIES_
+
+If the response cac:TenderingCriterionResponse +
+/cac:ResponseValue/cbc:ResponseIndicator is true; +
+each of the criterion subgroups identified within: +
+/cac:TenderingCriterion +
+/cac:TenderingCriterionPropertyGroup +
+/cac:SubsidiaryTenderingCriterionPropertyGroup/ +
+cac:TenderingCriterionProperty, must be answered
+
+|
+|===
+
+
+
+== Tendering Criterion General Rules
+
+This is the list of rules common to Tendering Criterion elements of both, ESPDRequest and ESPDResponse. They do not depend on the test cases.
+
+The tendering criterion is based on the document [RD03], this means that the Tendering Criterion complex element is implemented following the structure of the file.
+
+There are four type of rows:
+
+.Tendering Criterion structure and XSD
+[width="100%",cols="27%,73%",options="header",]
+|===
+|*Row* |*Description*
+|\{CRITERION a|
+* [.underline]#Root element#: cac:TenderingCriterion
+* [.underline]#Name#: ../cbc:Name
+* [.underline]#Description#: ../cbc:Description
+* [.underline]#PropertyDataType#: -
+* [.underline]#ElementUUID#: ../cbc:ID
+* [.underline]#ElementCode#: ../cbc:CriterionTypeCode
+
+|\{QUESTION_GROUP a|
+* [.underline]#Root element#:
++
+cac:TenderingCriterion/cac:TenderingCriterionPropertyGroup
+* [.underline]#Name#: -
+* [.underline]#Description#: -
+* [.underline]#PropertyDataType#: -
+* [.underline]#ElementUUID#: ../cbc:ID
+* [.underline]#ElementCode#: ../cbc:PropertygroupTypeCode
+
+|\{QUESTION} a|
+* ../cbc:TypeCode = QUESTION
+* [.underline]#Root element#: cac:TenderingCriterion/cac:TenderingCriterionPropertyGroup /cac:TenderingCriterionProperty
+* [.underline]#Name#: -
+* [.underline]#Description#: ../cbc:Description
+* [.underline]#PropertyDataType#: ../cbc:ValueDataTypeCode
+* [.underline]#ElementUUID#: -
+* [.underline]#ElementCode#: -
+
+|\{QUESTION_SUBGROUP} a|
+* [.underline]#Root element#: cac:TenderingCriterion/cac:TenderingCriterionPropertyGroup /cac:SubsidiaryTenderingCriterionPropertyGroup
+* [.underline]#Name#: -
+* [.underline]#Description#: -
+* [.underline]#PropertyDataType#: -
+* [.underline]#ElementUUID#: ../cbc:ID
+* [.underline]#ElementCode#: ../cbc:PropertygroupTypeCode
+
+|===
+
+
+
+=== Level 1: Tendering Criterion
+
+A tendering criterion describes a fact or a condition that is used by the contracting body to evaluate and compare tenders by economic operators and which will be used for the exclusion and the selection of candidate tenderers to the award decision.
+
+.Tendering Criterion Business Rules
+[width="100%",cols="13%,36%,51%",options="header",]
+|===
+|Identifier |XSD Business Rule description |XSD Business Rule Schematron
+a|
+_Level 1: /TenderingCriterion_
+
+Business requirement: xref:tbr70_reqs.adoc#list_of_criteria[tbr70-009]
+
+| |
+a|
+. {blank}
+
+|At least one TenderingCriterion is expected. a|
+* {blank}
++
+____
+Severity: ERROR
+____
+* {blank}
++
+____
+/cac:TenderingCriterion is mandatory.
+____
+
+a|
+[start=2]
+. {blank}
+
+a|
+Business requirement: xref:tbr70_reqs.adoc#list_of_criteria[tbr70-010]
+
+Each Criterion is defined in e-Certis and must use the UUID supplied by e-Certis.
+
+a|
+* {blank}
++
+____
+Severity: ERROR
+____
+* {blank}
++
+____
+/cac:TenderingCriterion/cbc:ID is mandatory.
+____
+* {blank}
++
+____
+/cac:TenderingCriterion/cbc:ID must match the Element UUID column from [RD03].
+____
+
+a|
+[start=3]
+. {blank}
+
+a|
+Business requirement: http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr070-013[_[.underline]#tbr070-013#_]
+
+Classification code defined by the ESPD-EDM to represent the criterion in the ESPD taxonomy of criteria is mandatory.
+
+a|
+* {blank}
++
+____
+Severity: ERROR
+____
+* {blank}
++
+____
+/cac:TenderingCriterion /cbc:CriterionTypeCode is mandatory.
+____
+
+a|
+[start=4]
+. {blank}
+
+a|
+Business requirement: http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr070-013[_[.underline]#tbr070-013#_]
+
+Compulsory use of codes coming from e-Certis.
+
+a|
+* {blank}
++
+____
+Severity: ERROR
+____
+* {blank}
++
+____
+/cac:TenderingCriterion /cbc:CriterionTypeCode must match the Element Code column from [RD03].
+____
+
+a|
+[start=5]
+. {blank}
+
+a|
+Business requirement: http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr070-010[_[.underline]#tbr070-010#_]
+
+The name should match the one from e-Certis.
+
+a|
+* {blank}
++
+____
+Severity: ERROR
+____
+* {blank}
++
+____
+/cac:TenderingCriterion/cbc:Name is mandatory.
+____
+* {blank}
++
+____
+No Schematron is implemented in the following requirement, as it is a too strict rule:
+____
+* {blank}
++
+____
+/cac:TenderingCriterion/cbc:Name should match the Name column from [RD03].
+____
+
+a|
+[start=6]
+. {blank}
+
+a|
+Business requirement: http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr070-010[_[.underline]#tbr070-010#_]
+
+The description should match the one from e-Certis.
+
+a|
+* {blank}
++
+____
+Severity: ERROR
+____
+* {blank}
++
+____
+/cac:TenderingCriterion/cbc:Description is mandatory.
+____
+* {blank}
++
+____
+No Schematron is implemented in the following requirement, as it is a too strict rule:
+____
+* {blank}
++
+____
+/cac:TenderingCriterion /cbc:Description should match the Description column from [RD03].
+____
+
+a|
+[start=7]
+. {blank}
+
+a|
+Business requirement: http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr070-013[_[.underline]#tbr070-013#_]
+
+The first level group of properties and sub-groups of properties in the structure of a criterion.
+
+a|
+* {blank}
++
+____
+Severity: ERROR
+____
+* {blank}
++
+____
+The number of /cac:TenderingCriterion/cac:TenderingCriterionPropertyGroup must match the number of QUESTION_GROUP from [RD03].
+____
+
+|===
+
+
+
+=== Level 2: Legislation
+
+A class to make reference to the legislation related to the criterion.
+
+.Legislation Business Rules
+[width="100%",cols="13%,36%,51%",options="header",]
+|===
+a|
+_Level 2: /TenderingCriterion/cac:Legislation_
+
+Business requirement: xref:tbr70_reqs.adoc#list_of_criteria[tbr70-013]
+
+| |
+a|
+[start=8]
+. {blank}
+
+|The reference to the legislation related to the Criterion is optional. |No Schematron rule is needed as Legislation is already optional.
+a|
+[start=9]
+. {blank}
+
+|Title of the legislation is mandatory. a|
+* {blank}
++
+____
+Severity: ERROR
+____
+* {blank}
++
+____
+../cac:Legislation /cbc:Title is mandatory.
+____
+
+a|
+[start=10]
+. {blank}
+
+|The description of the legislation provided in the original legal text SHOULD be provided. a|
+* {blank}
++
+____
+Severity: WARNING
+____
+* {blank}
++
+____
+../cac:Legislation /cbc:Description is highly recommended.
+____
+
+a|
+[start=11]
+. {blank}
+
+|Other articles where the Criterion is referred to SHOULD also be provided. a|
+* {blank}
++
+____
+Severity: WARNING
+____
+* {blank}
++
+____
+../cac:Legislation/cbc:Article is highly recommended.
+____
+
+|===
+
+
+
+=== Tendering Criterion Property Group
+
+The first level group of properties and sub-groups of properties in the structure of a criterion.
+
+.Tendering Criterion Property Group Business Rules
+[width="100%",cols="13%,36%,51%",options="header",]
+|===
+a|
+_/cac:TenderingCriterionPropertyGroup, independently of the level_
+
+_/cac:SubsidiaryTenderingCriterionPropertyGroup, independently of the level_
+
+Business requirement: xref:tbr70_reqs.adoc#list_of_criteria[tbr70-013]
+
+| |
+a|
+[start=12]
+. {blank}
+
+|The ID which identifies one specific property is mandatory. a|
+* {blank}
++
+____
+Severity: ERROR
+____
+* {blank}
++
+____
+../cbc:ID is mandatory.
+____
+
+a|
+[start=13]
+. {blank}
+
+|Each Criterion is defined in e-Certis and must use the UUID supplied by e-Certis. a|
+* {blank}
++
+____
+Severity: ERROR
+____
+* {blank}
++
+____
+../cbc:ID must match the Element UUID column from [RD03].
+____
+
+a|
+[start=14]
+. {blank}
+
+|Code addressed to control the behaviour of the group of criteria is mandatory. a|
+* {blank}
++
+____
+Severity: ERROR
+____
+* {blank}
++
+____
+../cbc:PropertyGroupTypeCode is mandatory.
+____
+
+a|
+[start=15]
+. {blank}
+
+|Compulsory use of the group of criteria supplied by e-Certis. a|
+* {blank}
++
+____
+Severity: ERROR
+____
+* {blank}
++
+____
+../cbc:PropertyGroupTypeCode must match the Element Code column from [RD03].
+____
+
+a|
+[start=16]
+. {blank}
+
+|Properties related to the tendering criterion must be the ones supplied by e-Certis. a|
+* {blank}
++
+____
+Severity: ERROR
+____
+* {blank}
++
+____
+The number of ../cac:TenderingCriterionProperty must match the number of QUESTION from [RD03].
+____
+
+a|
+[start=17]
+. {blank}
+
+|A second, third or n-level group inside a first level group of properties. a|
+* {blank}
++
+____
+Severity: ERROR
+____
+* {blank}
++
+____
+The number of ../cac:SubsidiaryTenderingCriterionPropertyGroup must match the number of QUESTION_SUBGROUP from [RD03].
+____
+
+|===
+
+
+
+=== Tendering Criterion Property
+
+Caption (i.e. a 'label'), specific MS or contracting authority requirement (e.g. 'Number of references expected: 5' or a question addressed to the economic operator (e.g. 'your average yearly turnover for the past three years?').
+
+.Tendering Criterion Property Business Rules
+[width="100%",cols="13%,36%,51%",options="header",]
+|===
+a|
+_cac:TenderingCriterionProperty, independently of the level_
+
+Business requirement: xref:tbr70_reqs.adoc#list_of_criteria[tbr70-013]
+
+| |
+a|
+[start=18]
+. {blank}
+
+|The ID which identifies one specific property is mandatory. And it must use UUID numbers (version 4) automatically generated. a|
+* {blank}
++
+____
+Severity: ERROR
+____
+* {blank}
++
+____
+../cbc:ID is mandatory.
+____
+
+a|
+[start=19]
+. {blank}
+
+|The text of the caption, requirement or question is mandatory. a|
+* {blank}
++
+____
+Severity: ERROR
+____
+* {blank}
++
+____
+../cbc:Description is mandatory.
+____
+
+a|
+[start=20]
+. {blank}
+
+|The type of property is mandatory and it should match the one from e-Certis. a|
+* {blank}
++
+____
+Severity: ERROR
+____
+* {blank}
++
+____
+../cbc:TypeCode is mandatory.
+____
+* {blank}
++
+____
+Severity: ERROR
+____
+* {blank}
++
+____
+../cbc:TypeCode must match the Element Code column from [RD03].
+____
+
+a|
+[start=21]
+. {blank}
+
+|The type of answer expected by the contracting authority in the case of a property of type QUESTION, is mandatory and it should match the one from e-Certis. a|
+* {blank}
++
+____
+Severity: ERROR
+____
+* {blank}
++
+____
+../cbc:ValueDataTypeCode is mandatory.
+____
+* {blank}
++
+____
+../cbc:ValueDataTypeCode must match the Element Code column from [RD03].
+____
+* {blank}
++
+____
+Severity: ERROR
+____
+* {blank}
++
+____
+If ../cbc:TypeCode is CAPTION or REQUIREMENT, +
+Then, ../cbc:ValueDataTypeCode MUST be NONE.
+____
+
+|===
+
+
+
+== Tendering Criterion Self-contained Rules
+
+This is the list of rules common to Tendering Criterion elements of both, ESPDRequest and ESPDResponse, which procurement procedure type is self-contained.
+
+.Tendering Criterion structure and XSD
+[width="100%",cols="27%,73%",options="header",]
+|===
+|*Row* |*Description*
+|\{SUBCRITERION a|
+Information about the national sub-criteria defined by the Member States.
+
+*No Schematron rules are needed as each Member States has defined its own criteria.*
+
+|\{REQUIREMENT_GROUP a|
+* [.underline]#Root element#: cac:TenderingCriterionPropertyGroup
+* [.underline]#Name#: -
+* [.underline]#Description#: -
+* [.underline]#PropertyDataType#: -
+* [.underline]#ElementUUID#: ../cbc:ID
+* [.underline]#ElementCode#: ../cbc:PropertygroupTypeCode
+
+*No Schematron rules are needed as the same rules as cac:TenderingCriterionPropertyGroup from previous section will be applied.*
+
+|===
+
+
+
+== Tendering Criterion Response Rules
+
+This is the list of rules common to Tendering Criterion Response elements of ESPDResponse. They do not depend on the test cases.
+
+=== Level 1: Tendering Criterion Response
+
+A tendering criterion response describes a response to a criterion property from tendering criterion.
+
+.Tendering Criterion Response Business Rules
+[width="100%",cols="14%,33%,53%",options="header",]
+|===
+|Identifier |XSD Business Rule description |XSD Business Rule Schematron
+a|
+_Level 1: /cac:TenderingCriterionResponse_
+
+Business requirement: xref:tbr92_reqs.adoc#eo[tbr92-005], xref:tbr92_reqs.adoc#eo[tbr92-006], xref:tbr92_reqs.adoc#eo[tbr92-007], xref:tbr92_reqs.adoc#eval_crit[tbr92-018]
+| |
+a|
+. {blank}
+
+|Validated Criterion Property ID MUST point at one of the TenderingCriterionProperty /cbc:ID that were included in the Request document. a|
+* {blank}
++
+____
+Severity: ERROR
+____
+* {blank}
++
+____
+/cac:TenderingCriterionResponse /cbc:ValidatedCriterionPropertyID is mandatory.
+____
+* {blank}
++
+____
+/cac:TenderingCriterionResponse /cbc:ValidatedCriterionPropertyID must match one of the IDs within /cac:TenderingCriterionProperty /cbc:ID
+____
+* {blank}
++
+____
+/cac:TenderingCriterionProperty /cbc:ID must have 0 or 1 /cac:TenderingCriterionResponse /cbc:ValidatedCriterionPropertyID
+____
+
+a|
+[start=2]
+. {blank}
+
+|If Confidentiality value is true, all the evidences associated to this response becomes also confidential. |*No Schematron rule can be implemented.*
+a|
+[start=3]
+. {blank}
+
+|The current structure for the response allows responding values inside the cac:ResponseValue element or in other elements of the cac:TenderingCriterionResponse, like cac:ApplicablePeriod and cac:EvidenceSupplied a|
+* {blank}
++
+____
+Severity: ERROR
+____
+* {blank}
++
+____
+Only one of the /cac:TenderingCriterionResponse sub elements (/cac:ResponseValue, /cac:ApplicablePeriod or /cac:EvidenceSupplied) is mandatory.
+____
+
+|===
+
+
+
+=== Level 2: Response Value
+
+This element describes the criterion property response value:
+
+.Response Value Business Rules
+[width="100%",cols="14%,33%,53%",options="header",]
+|===
+
+|Identifier |XSD Business Rule description |XSD Business Rule Schematron
+a|
+_Level 2: /cac:ResponseValue_
+
+Business requirement: xref:tbr92_reqs.adoc#eval_crit[tbr92-018]
+| |
+
+a|
+[start=4]
+. {blank}
+|One cac:ResponseValue element contains the complete list of possible values for one answer to a criterion property. Only *one type of element can be used to answer a criterion property*, and that element MUST be of the *same type as the one specified as expected in the ESPD Request* (element cac:TenderingCriterionProperty /cac:ValueDataTypeCode). 
+a|
+* {blank}
++
+____
+Severity: ERROR
+____
+* {blank}
++
+____
+Only one sub-element within /cac:TenderingCriterionResponse /cac:ResponseValue is admitted at the same time.
+____
+* {blank}
++
+____
+The mandatory sub-element within /cac:TenderingCriterionResponse /cac:ResponseValue depends on /cac:TenderingCriterion /cac:TenderingCriterionPropertyGroup /cac:TenderingCriterionProperty /cac:ValueDataTypeCode (see the relationship on _Table 95: Matching between data type and response_)
+____
+
+a|
+[start=5]
+. {blank}
+|Recommendation: use a UUID-version 4 number on Response value identifier. 
+|*No Schematron rule can be implemented.*
+
+a|
+[start=6]
+. {blank}
+
+|Groups codified as ONTRUE must be processed if response is True 
+a|
+* {blank}
++
+____
+Severity: ERROR
+____
+* {blank}
++
+____
+If /cac:TenderingCriterionResponse /cac:ResponseValue /cbc:ResponseIndicator = true and /cac:TenderingCriterionResponse /cbc:ValidatedCriterionPropertyID matches one of the IDs within /cac:TenderingCriterionGroupPropertyGroup /cbc:ID, and its /cbc:PropertyGroupTypeCode = ONTRUE
+____
++
+Then, its /cac: SubsidiaryTenderingCriterionPropertyGroup /cbc:ID must exist within /cac:TenderingCriterionResponse /cbc:ValidatedCriterionPropertyID
+
+| | a|
+* {blank}
++
+____
+Severity: ERROR
+____
+* {blank}
++
+____
+If /cac:TenderingCriterionResponse /cac:ResponseValue /cbc:ResponseIndicator = false and /cac:TenderingCriterionResponse /cbc:ValidatedCriterionPropertyID matches one of the IDs within /cac:TenderingCriterionGroupPropertyGroup /cbc:ID, and its /cbc:PropertyGroupTypeCode = ONTRUE
+____
++
+Then, its /cac: SubsidiaryTenderingCriterionPropertyGroup /cbc:ID cannot exist within /cac:TenderingCriterionResponse /cbc:ValidatedCriterionPropertyID
+
+a|
+[start=7]
+. {blank}
+
+|Groups codified as ONFALSE must be processed if response is False a|
+* {blank}
+
++
+Severity: ERROR
+
+* {blank}
++
+If /cac:TenderingCriterionResponse /cac:ResponseValue /cbc:ResponseIndicator = false and /cac:TenderingCriterionResponse /cbc:ValidatedCriterionPropertyID matches one of the IDs within /cac:TenderingCriterionGroupPropertyGroup /cbc:ID, and its /cbc:PropertyGroupTypeCode = ONFALSE
++
+Then, its /cac: SubsidiaryTenderingCriterionPropertyGroup /cbc:ID must exist within /cac:TenderingCriterionResponse /cbc:ValidatedCriterionPropertyID
+
+a|
+[start=8]
+* {blank}
++
+Severity: ERROR
+
+* {blank}
++
+If /cac:TenderingCriterionResponse /cac:ResponseValue /cbc:ResponseIndicator = true and /cac:TenderingCriterionResponse /cbc:ValidatedCriterionPropertyID matches one of the IDs within /cac:TenderingCriterionGroupPropertyGroup /cbc:ID, and its /cbc:PropertyGroupTypeCode = ONFALSE
+
++
+Then, its /cac: SubsidiaryTenderingCriterionPropertyGroup /cbc:ID cannot exist within /cac:TenderingCriterionResponse /cbc:ValidatedCriterionPropertyID
+
+|===
+
+
+
+[start=8]
+. This table lists the relationship between data type and response data type:
+
+.Matching between data type and response
+[width="100%",cols="50%,50%",options="header",]
+|===
+|/cac:TenderingCriterion /cac:TenderingCriterionPropertyGroup /cac:TenderingCriterionProperty/cac:ValueDataTypeCode |/cac:TenderingCriterionResponse /cac:ResponseValue
+|AMOUNT |../cac:ResponseValue/cbc:ResponseAmount
+|CODE |../cac:ResponseValue/cbc:ResponseCode
+|CODE_COUNTRY |../cac:ResponseValue/cbc:ResponseCode
+|DATE |../cac:ResponseValue/cbc:ResponseDate
+|DESCRIPTION |../cac:ResponseValue/cbc:Description
+|EVIDENCE_IDENTIFIER |../cac:EvidenceSupplied/cbc:ID
+|INDICATOR |../cac:ResponseValue/cbc:ResponseIndicator
+|PERCENTAGE |../cac:ResponseValue/cbc:ResponseNumeric
+|PERIOD |../cac:ApplicablePeriod
+|QUANTITY_INTEGER |../cac:ResponseValue/cbc:ResponseQuantity /@unitCode=QUANTITY_INTEGER
+|QUANTITY_YEAR |../cac:ResponseValue/cbc:ResponseQuantity /@unitCode=QUANTITY_YEAR
+|QUANTITY |../cac:ResponseValue/cbc:ResponseQuantity /@unitCode=QUANTITY
+|NONE |No response is required
+|IDENTIFIER |../cac:ResponseValue/cbc:ResponseID
+|URL |../cac:ResponseValue/cbc:ResponseURI
+|MAXIMUM_AMOUNT |../cac:ResponseValue/cbc:ResponseAmount
+|MINIMUM_AMOUNT |../cac:ResponseValue/cbc:ResponseAmount
+|MAXIMUM_VALUE_NUMERIC |../cac:ResponseValue/cbc:ResponseNumeric
+|MINIMUM_VALUE_NUMERIC |../cac:ResponseValue/cbc:ResponseNumeric
+|TRANSLATION_TYPE_CODE |../cac:ResponseValue/cbc:ResponseCode
+|CERTIFICATION_LEVEL_DESCRIPTION |../cac:ResponseValue/cbc:Description
+|COPY_QUALITY_TYPE_CODE |../cac:ResponseValue/cbc:ResponseCode
+|TIME |../cac:ResponseValue/cbc:ResponseTime
+|===
+
+
+
+
+=== Level 2: Evidence Supplied
+
+This element describes the evidence supporting this criterion property response:
+
+.Evidence Supplied Business Rules
+[width="100%",cols="14%,33%,53%",options="header",]
+|===
+|Identifier |XSD Business Rule description |XSD Business Rule Schematron
+a|
+_Level 2: /cac:EvidenceSupplied_
+
+Business requirement: xref:tbr92_reqs.adoc#evidence_link[tbr92-017]
+
+| |
+a|
+[start=9]
+. {blank}
+
+|The expected Evidence identifier must match the value of a cac:Evidence/cbc:ID present in the XML document. a|
+* {blank}
++
+
+Severity: ERROR
+
+* {blank}
++
+
+/cac:TenderingCriterionResponse /cac:EvidenceSupplied/cbc:ID must match one of the IDs within /cac:Evidence /cbc:ID
+
+
+|===
+
+
+
+== Other Common Rules
+
+This is the list of rules common to all elements of both, ESPDRequest and ESPDResponse. They do not depend on the test cases:
+
+.Other Common Rules
+[width="100%",cols="33%,33%,33%",options="header",]
+|===
+|Identifier |XSD Business Rule description |XSD Business Rule Schematron
+a|
+. {blank}
+
+
+|For codes, this ESPD V2.0.2 specification requires always three mandatory attributes: listID, listAgencyID, and listVersionID. a|
+* Severity: ERROR
+* Elements which are codes (its type is CodeType), the attributes listID, listAgencyID and listVersionID are mandatory.
+
+a|
+[start=2]
+. {blank}
+
+|For identifiers, this ESPD V2.0.2 specification requires at least (and always) the mandatory attribute schemeAgencyID. a|
+* Severity: ERROR
+* Elements which are identifiers (its type is IdentifierType) the attribute schemeAgencyID is mandatory.
+
+a|
+[start=3]
+. {blank}
+
+|Compulsory use of the code list identified within the document [RD02]. a|
+* Severity: ERROR
+* Compulsory use of the code list identified within the 18 Annex I: XSDs elements and Code Lists
+
+a|
+[start=4]
+. {blank}
+
+|There are cardinality constraints added by the ESPD which are not defined in the XSD Schema. a|
+* Severity: ERROR
+* Compulsory use of the elements listed within 19 Annex II: Compulsory XSDs elements
+
+a|
+[start=5]
+. {blank}
+
+a|
+Business requirement: xref:tbr70_reqs.adoc#general[tbr70-002]
+
+Identifies the earliest version of the UBL 2 schema.
+
+Use the value "2.3". Use also "OASIS-UBL-TC" for the schemeAgencyID attribute.
+
+a|
+* Severity: ERROR
+* Compulsory use of the values:
+
+[arabic]
+. {blank}
++
+
+/cbc:UBLVersionID is 2.3
+
+. {blank}
++
+
+/cbc:UBLVersionID /@schemeAgencyID is OASIS-UBL-TC
+
+
+|===
