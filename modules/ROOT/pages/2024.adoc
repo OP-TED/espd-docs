@@ -4,10 +4,10 @@
 :authoremail: srdjan.krasic.sa@nttdata.com
 :docdate: January 2025
 
-https://www.youtube.com/watch?v=hjH7F5eUmmY&ab_channel=PublicationsOfficeoftheEuropeanUnion[TED - TED-Together event (3 December 2024) video]
-https://www.youtube.com/watch?v=YlsWBawzVJ0&ab_channel=PublicationsOfficeoftheEuropeanUnion[TED - TED-Together event (4 December 2024) video]
+** link:https://www.youtube.com/watch?v=hjH7F5eUmmY&ab_channel=PublicationsOfficeoftheEuropeanUnion[TED - TED-Together event (3 December 2024) video]
+** link:https://www.youtube.com/watch?v=YlsWBawzVJ0&ab_channel=PublicationsOfficeoftheEuropeanUnion[TED - TED-Together event (4 December 2024) video]
 
-https://github.com/OP-TED/espd-docs/blob/wgm-reports/modules/ROOT/attachments/annual_seminar/2024_ESPD_Annual_Seminar_Presentation.pdf[ESPD Annual Seminar Presentation]
+** link:https://github.com/OP-TED/espd-docs/blob/wgm-reports/modules/ROOT/attachments/annual-seminar/2024_ESPD_Annual_Seminar_Presentation.pdf[ESPD Annual Seminar Presentation]
 
 //https://github.com/OP-TED/espd-docs/blob/wgm-reports/modules/ROOT/attachments/annual_seminar_2023/20231130_ecertis_annual_meeting.pdf[ESPD eCertis Presentation]
 
