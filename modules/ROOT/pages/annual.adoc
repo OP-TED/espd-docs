@@ -9,7 +9,7 @@
 [.tile]
 .2024 Annual Seminar Documents
 ****
-The annual seminar report, the seminar video, and a copy of the presentation are available.
+The annual seminar videos and a copy of the presentation are available.
 
 xref:2024.adoc[Click here to access the documents]
 
