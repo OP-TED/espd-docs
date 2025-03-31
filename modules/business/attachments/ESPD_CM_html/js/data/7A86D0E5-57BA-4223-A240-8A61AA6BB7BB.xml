@@ -1,4 +1,4 @@
-tocTab[tocTab.length] = new Array("0.3.1.60:1", "", "AI70 info_pp", "EARoot/EA3/EA1/EA60/EA1739.html", "175.png", "246", "0", "", "Logical diagram0","{106BC013-E701-474a-A6A6-3A4ACD63369B}");
+tocTab[tocTab.length] = new Array("0.3.1.60:1", "", "AI70 info-pp", "EARoot/EA3/EA1/EA60/EA1739.html", "175.png", "246", "0", "", "Logical diagram0","{106BC013-E701-474a-A6A6-3A4ACD63369B}");
 tocTab[tocTab.length] = new Array("0.3.1.60:2", "", "AI70_info-pp: cac::QualificationApplicationRequest", "EARoot/EA3/EA1/EA60/EA1742.html", "25.png", "E4127", "0", "", "Object0","{F2486562-9DDF-469f-9F8A-6A551A23AD82}");
 tocTab[tocTab.length] = new Array("0.3.1.60:3", "", "AI70_info-pp/PP1: cac::ProcurementProject", "EARoot/EA3/EA1/EA60/EA1743.html", "25.png", "E4128", "0", "", "Object0","{E9123C80-65D7-4986-AB47-3FBBB048248F}");
 tocTab[tocTab.length] = new Array("0.3.1.60:4", "", "AI70_info-pp/PPL1: cac::ProcurementProjectLot", "EARoot/EA3/EA1/EA60/EA1744.html", "25.png", "E4129", "0", "", "Object0","{09064B88-1DE1-48da-936C-8B3C132A3E31}");
