@@ -1,0 +1,91 @@
+== Open User Community Meeting Report
+
+== Publications Office – ESPD EDM
+
+[cols=","]
+|===
+|Meeting Date/Time: |2025-04-01, 10.00 - 11.30
+|===
+
+[cols=",",options="header"]
+|===
+|*Attendee Name* |*Organisation / Country*
+|Andreea ANGHEL  |ANAP - Romania 
+|Paloma ARILLO ARANDA |OP 
+|Chancellery office |Belgium 
+|Michaël DE WINNE  |BOSA - Belgium 
+|Uroš IZLAKAR  |Slovenia 
+|Anastasia KOLLIA |Greece
+|Ajda KONSTANJŠEK  |Slovenia 
+|Srđan KRASIĆ  |OP 
+|Karl LILJA |Denmark 
+|Cristea MARILENA  |ANAP - Romania
+|Conor MCDERMOTT |Ireland
+|Mitja MEDVEŠČEK  |Slovenia 
+|Ana MITKOVA |Bulgaria
+|Jil MOSAR  |Luxembourg 
+|Natalie MURIC  |OP 
+|Nicole PATERSON-JONES  |OP 
+|Marc Christopher SCHMIDT  |DG GROW 
+|Laurent SCHONJAANS  |DG GROW 
+|Dragoș STOICA  |OP 
+|Dimitris VATIKIOTIS |Greece
+|Martin UTOFT  |Denmark 
+|===
+
+== Meeting Agenda
+
+[arabic]
+. Summary OUC on 1^st^ October 2024
+. Simplified visualisation in Enterprise Architect
+. GitHub status
+. eCertis work ongoing
+. Next meetings
+
+:sectnums:
+:sectnumlevels: 4
+
+== Summary OUC meeting on 1^st^ October 2024
+
+* The link to the https://docs.ted.europa.eu/espd-wgm/monthly.html[main documents] related to the previous Open User Community (OUC) meeting was provided: in the index the user can navigate to the corresponding event, in this case 2024-10-01. Also, the links for https://docs.ted.europa.eu/espd-wgm/annual.html[Annual Seminars] and the last https://op.europa.eu/en/web/ted-together/agenda_2024_12_03[TED Together Event].
+* The main topics discussed in October were summarized:
+** Documentation – new UX Design.
+** v4 presentation – online.
+** ESPD Demo with interactive examples.
+** GitHub status – closed tickets.
+
+== Simplified visualisation in Enterprise Architect
+
+* ESPD-EDM modelled in Enterprise Architect was presented:
+** Alignment of ESPD-EDM with eCertis UUIDs and eForms code lists.
+** Tools: Generate boilerplate for ESPD Service implementers.
+* The team has responded to the question of whether the Enterprise Architect file can be accessed: yes, .eapx is available at https://github.com/OP-TED/ESPD-EDM/blob/v5.0.0-alpha.1/conceptual-model/ESPD_CM.eapx[GitHub].
+* For ESPD-EDM espd-tools branch now is available:
+** The export of EA structure into JSON format.
+** JSON schema for ESPD-EDM.
+* ESPD Demo is improved with:
+** Integrated SurveyJS for ESPD online form.
+** Integrated PDFMake to generate PDF documents.
+
+== GitHub status
+
+* There are 15 closed issued from the last meeting:
+** Closed issues from the backlog, cleaned up in October 2024.
+** Issues transferred to ePO (https://github.com/OP-TED/ESPD-EDM/issues/413[#413]) and eCertis (https://github.com/OP-TED/ESPD-EDM/issues/367[#367], https://github.com/OP-TED/ESPD-EDM/issues/356[#356], https://github.com/OP-TED/ESPD-EDM/issues/336[#336]) colleagues. More details in the next section from eCertis team.
+** Two issues related to the future release: https://github.com/OP-TED/ESPD-EDM/issues/423[#423] (++[++Other++]++: Mapping the SubContractor to the Tenderer) and https://github.com/OP-TED/ESPD-EDM/issues/386[#386] (Can the evidence group or subgroup be dropped to follow the ESPD regulation?). Both of them were resolved and implemented in new release model (EA).
+* There are 2 open issues:
+** https://github.com/OP-TED/ESPD-EDM/issues/424[#424] (++[++Question++]++: Where could we find translations for SUBCRITERIONs descriptions) and https://github.com/OP-TED/ESPD-EDM/issues/422[#422] (Purely national Exclusion Ground - dynamic structure)
+** Discussion is ongoing and probably we will have a new bilateral meeting with colleagues from Slovenia.
+
+== eCertis Work Ongoing
+
+* eCertis team presented work ongoing:
+** UUID Management: Improved UUID handling for record updates and lifecycle that will resolve reported issues.
+** New Criteria: Merging criteria for service contracts requiring authorisation or membership of particular organisations.
+** GitLab: Similar working methods as eForms GitLab, including change requests, documents, and workshops.
+
+== Next meetings
+
+* The next OUC meeting is planned and confirmed for the 17^th^ of June 2025, 10:00 – 11:30.
+* After this, the next OUC meeting is planned for the 2nd of October 2025.
+* The Annual Seminar is planned again as part of Tenders Electronic Daily event for 26th-27th November 2025, with other projects in the Unit: eForms, eSenders, eProcurement Ontology, ESPD and others. More information about TED events (Ontology, etc.) could be find in https://ted.europa.eu/en/2025-event-calendar[event calendar].
