@@ -119,7 +119,7 @@ ESPD-EDM v3.1.0. The link to the https://docs.ted.europa.eu/ESPD-EDM/latest/xml_
 The link to the last https://github.com/OP-TED/ESPD-EDM/releases/tag/v3.3.0[[.underline]#release tag#] which includes all changes and to the https://docs.ted.europa.eu/ESPD-EDM/3.3.0/index.html[documentation] were
 provided.
 
-3.3. ESPD-EDM v3.3.0 implementation – Interproc consortium
+=== 3.3. ESPD-EDM v3.3.0 implementation – Interproc consortium
 
 Interproc consortium, started the implementation of the ESPD-EDM version
 3.3.0 during 2023. The consortium has created several artifacts and
@@ -152,7 +152,7 @@ https://www.youtube-nocookie.com/embed/gox6hMfZZXU[video] can be watched
 It is under consideration and discussion to publish the code as open
 source.
 
-3.4. ESPD-EDM v4.0.0 (2024)
+=== 3.4. ESPD-EDM v4.0.0 (2024)
 
 After the break the main updates that will be included in the major
 release v4.0.0, scheduled for Q2 2024, were presented, together with the
@@ -247,12 +247,12 @@ Q: Will we have a pilot implementation for v 4? One of the main issues during v3
 
 A: For the time being there is no room for the ESPD Team to implement a pilot service. GROW and the Publications Office will check the possibilities available to avoid that users start development for v4 from scratch.
 
-3.5. eProcurement Ontology eAccess - ESPD Request
+=== 3.5. eProcurement Ontology eAccess - ESPD Request
 
-*The eProcurement Ontology (ePO) and the ESPD-EDM teams meet every
+* The eProcurement Ontology (ePO) and the ESPD-EDM teams meet every
 Tuesday with other users starting at 14:30 to create the eAccess model following the ESPD.
 
-*The main goal of the Ontology is explained: to provide a common
+* The main goal of the Ontology is explained: to provide a common
 understanding , which enables the correct input of data in procurement systems. the understanding of exchanged data, data quality.
 
 * The diagrams created during the last months are presented. The process includes the analysis of the already existing concepts in both, Ontology and ESPD models.
@@ -267,7 +267,7 @@ understanding , which enables the correct input of data in procurement systems. 
 
 * ESPD implementers were invited to contact the ePO or ESPD OP teams to clarify some questions related to the need of using certain elements.
 
-3.6. What’s up, eCertis? An Outlook
+=== 3.6. What’s up, eCertis? An Outlook
 
 The release planning for eCertis was presented:
 
