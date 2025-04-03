@@ -69,7 +69,8 @@ xref:tbr70_reqs.adoc#list_of_criteria[tbr70-009]
 |*cbc:CriterionTypeCode* |Code |1 |A classification code defined by the ESPD-EDM to represent the criterion in the ESPD taxonomy of criteria. a|
 *Information Requirement*: xref:tbr70_reqs.adoc#list_of_criteria[tbr70-013] 
 
-*Rule*: Compulsory use of codes coming from e-Certis, which are also used in the spreadsheets link:{url-tree}/codelists/ESPD-criterion.xlsx[_ESPD-criterion_], e.g. crime-org, corruption, chain-manage)
+*Rule*: Compulsory use of codes coming from e-Certis, which are also used in the spreadsheets https://github.com/OP-TED/ESPD-EDM/blob/main/criterion/ESPD-criterion.xlsx[_ESPD-criterion_], e.g. crime-org, corruption, chain-manage
+//link:{url-tree}/codelists/ESPD-criterion.xlsx[_ESPD-criterion_], e.g. crime-org, corruption, chain-manage)
 
 *Rule scope*: Common (BR-REQ-30, BR-REQ-30-S10, BR-REQ-30-S20, BR-REQ-40, BR-TC-03, BR-TC-04, BR-OTH-01, BR-OTH-01#7, BR-OTH-03)
 
