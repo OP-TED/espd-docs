@@ -56,6 +56,14 @@ xref:technical:tech_response.adoc[Click here for the ESPD Response]
 ****
 
 [.tile]
+.Common Aspects for Criteria
+****
+This section describes Common Aspects for Criteria
+
+xref:tech_common_aspects_for_criteria.adoc[Common Aspects for Criteria]
+****
+
+[.tile]
 .Validation
 ****
 This section contains detailed technical information on the tools provided and methods of validating your ESPD Service implementation
