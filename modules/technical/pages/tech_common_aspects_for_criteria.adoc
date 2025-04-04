@@ -89,7 +89,7 @@ xref:tbr70_reqs.adoc#list_of_criteria[tbr70-009]
 *Note*: The UBL specification allows always multiple lines of text for the component cbc:Description. This feature can be used to split long descriptions into multiple lines, especially when the description contains enumerations (see the criterion "Misrepresentation" for an example).
 
 |*cac:ProcurementProjectLotReference* |Class |0..n |One or more of the procurement project lots to which this criterion can be related to. a|
-*Information Requirement*: (see section <<lot_management>>)
+*Information Requirement*: (see section xref:tech_selection_criteria.adoc#_lot_management_approach_for_selection_criteria[lot management])
 
 *Rule*: This element is mandatory for all Selection Criteria with cardinality 1..n because different Selection Criteria can be associated with different procurement lots. This element is not necessary for exclusion grounds because exclusion grounds are applied to all procurements.
 
@@ -559,9 +559,11 @@ If you examine any of the XML examples provided in this document you will observ
 ** A REQUIREMENT_GROUP or REQUIREMENT-SUBGROUP may contain either REQUIREMENT_SUBGROUPS and/or QUESTION_SUBGROUPS;
 ** The only possibility in the UBL-2.3 model to distinguish whether a group or a subgroup of criterion properties contains REQUIREMENT(s) or QUESTION(s) is to look into the value of the cac:TenderingCriterionProperty/cbc:TypeCode. The list of possible codes are the ones of the above mentioned Code List "link:{url-tree}/codelists/gc/CriterionElementType.gc[CriterionElementType]".
 
+////
 == XML examples and tools
 
 The fact of presenting the data structures as a spread-sheet book had an additional reason: *to use the spread-sheet as an elementary prototype tool to generate the XML instances of the criteria for the ESPD Request and ESPD Response documents*.
+
 
 Thus the folder link:{url-tree}/xml-examples/\\__xslt__/ODS-Data-Structures-to-ESPD-XML[xml-examples/\\__xslt__/ODS-Data-Structures-to-ESPD-XML] contains four XSL style-sheets that facilitate the generation of the complete set of criteria required in an ESPD Request or in an ESPD Response XML file.
 
@@ -592,6 +594,7 @@ The following features *are implemented* in the second set of transformation XSL
 The following feature *is NOT implemented* in the first set of transformation XSL-T style-sheet (link:{url-tree}/xml-examples/\\__xslt__/ODS-Data-Structures-to-ESPD-XML/ESPDRequest-Annotated.xslt[ESPDRequest-Annotated.xslt]):
 
 * The Criteria from the ESPD Request *are not* copied in the ESPD Response document. But the XML examples in the link:{url-tree}/xml-examples/[xml-examples folder].
+////
 
 == GUI control elements
 
