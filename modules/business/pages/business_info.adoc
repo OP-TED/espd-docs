@@ -231,7 +231,7 @@ Economic Operators can play different roles, catered for in the ESPD-EDM, within
 
 === The effect of Lots
 
-Important to note is that ESPD forms must be *filled in per ot*:
+Important to note is that ESPD forms must be *filled in per lot*:
 
 * The exclusion grounds automatically apply to all lots.
 * The selection criteris apply per lot i.e., they may be different between lots.
