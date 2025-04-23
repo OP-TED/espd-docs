@@ -8,7 +8,7 @@
 
 The ESPD-EDM models the business and information requirements in alignment with the works developed by e-Sens, which uses the identifier *Trdm092* to refer to the business requirements regarding the ESPD Response transaction. See formal information requirements related to the ESPD Response transaction in the document xref:bis41.adoc[BIS 41 - European Single Procurement Document (Version 2.0.0)](Trdm092), by e-Sens.
 
-include::partial$piraeus.adoc[]
+//include::partial$piraeus.adoc[]
 
 [cols="1,2"]
 |===

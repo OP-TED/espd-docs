@@ -8,7 +8,7 @@
 
 The ESPD-EDM models the business and information requirements in alignment with the works developed by e-Sens, which uses the identifier *Trdm070* to refer to the business requirements regarding the ESPD Request transaction. See formal information requirements related to the ESPD Request transaction in the document xref:bis41.adoc[_Business Requirements: ESPD request transaction (Trdm070)_], by e-Sens.
 
-include::partial$piraeus.adoc[]
+//include::partial$piraeus.adoc[]
 
 == ESPD Request XSD Schema
 

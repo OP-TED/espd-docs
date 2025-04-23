@@ -4,7 +4,7 @@
 :authoremail: nicole-anne.paterson-jones@ext.ec.europa.eu
 :docdate: January 2024
 
-include::partial$piraeus.adoc[]
+//include::partial$piraeus.adoc[]
 
 [cols=",",]
 |===
