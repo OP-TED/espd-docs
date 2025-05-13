@@ -1,10 +1,10 @@
 name: ESPD-EDM
 title: ESPD EDM
-version: '4.0.0'
+version: '4.1.0'
 prerelease:
 start_page: ROOT:index.adoc
 nav:
 - modules/ROOT/nav.adoc
 asciidoc:
   attributes:
-    url-tree: https://github.com/OP-TED/ESPD-EDM/tree/v4.0.0
+    url-tree: https://github.com/OP-TED/ESPD-EDM/tree/v4.1.0

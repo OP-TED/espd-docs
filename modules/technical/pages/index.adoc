@@ -33,6 +33,14 @@ xref:tech_architecture.adoc[Click here for a overview of the Technical Architect
 ****
 
 [.tile]
+.ESPD Implementation
+****
+Guidelines for ESPD Service implementation
+
+xref:tech_skills.adoc[Click here for the ESPD Implementation ]
+****
+
+[.tile]
 .The ESPD Request
 ****
 A technical description of the ESPD Request
