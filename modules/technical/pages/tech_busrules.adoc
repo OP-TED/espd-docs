@@ -1482,7 +1482,7 @@ Then /cac:AdditionalDocumentReference /cbc:ID must follow the pattern YYYY/S DDD
 * If /cac:AdditionalDocumentReference /cbc:DocumentTypeCode is 'TED_CN' +
 Then
 +
-/cac:AdditionalReferenceDocument /cac:Attachment /cac:ExternalReference/ cbc:Description multiplicity is two
+/cac:AdditionalDocumentReference /cac:Attachment /cac:ExternalReference/ cbc:Description multiplicity is two
 
 |The type of document being referenced, expressed as a code is mandatory. | a|
 * Severity: ERROR

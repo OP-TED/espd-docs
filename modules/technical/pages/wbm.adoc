@@ -4262,7 +4262,7 @@ the ESPD document the Publication Office has not published yet the
 Contract Notice the value 0000/S 000-000000 value must be used to
 indicate that a temporary identifier is being used
 
-|BR-COM-10#2 |/cac:AdditionalReferenceDocument /cac:Attachment
+|BR-COM-10#2 |/cac:AdditionalDocumentReference /cac:Attachment
 /cac:ExternalReference/ cbc:Description  |Rule |Warning |If the document
 being referenced is a Notice being published on TED, use two description
 lines. Use the second description line to place therein the temporary
@@ -4272,17 +4272,17 @@ number received from TED.
 |Rule |Fatal |The type of document being referenced, expressed as a code
 is mandatory.
 
-|BR-COM-10-S10 |/cac:AdditionalReferenceDocument /cac:Attachment
+|BR-COM-10-S10 |/cac:AdditionalDocumentReference /cac:Attachment
 /cac:ExternalReference/ cbc:Description |Information (no schematron
 rule) | |Above the threshold, information about the publication of the
 contract notice in TED MUST be provided.
 
-|BR-COM-10-S20 |/cac:AdditionalReferenceDocument /cac:Attachment
+|BR-COM-10-S20 |/cac:AdditionalDocumentReference /cac:Attachment
 /cac:ExternalReference/ cbc:Description |Information (no schematron
 rule) | |Below the threshold, information about the publication of the
 contract notice in TED MIGHT be provided.
 
-|BR-COM-10-S30 |/cac:AdditionalReferenceDocument /cac:Attachment
+|BR-COM-10-S30 |/cac:AdditionalDocumentReference /cac:Attachment
 /cac:ExternalReference/ cbc:Description |Information (no schematron
 rule) | |Information about the publication of the contract notice in
 other official gazettes or journals MIGHT be provided.
