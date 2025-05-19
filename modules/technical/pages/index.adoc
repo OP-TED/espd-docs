@@ -41,7 +41,7 @@ xref:tech_request.adoc[Click here for the ESPD Request ]
 ****
 
 [.tile]
-.Exclusion Criteria
+.Exclusion Grounds
 ****
 This section contains detailed technical description of the Exclusion Criteria
 
