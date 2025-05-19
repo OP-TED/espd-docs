@@ -1,7 +1,7 @@
 name: ESPD-EDM
 title: ESPD EDM
 version: '5.0.0'
-prerelease: -i2c
+prerelease: alpha
 start_page: ROOT:index.adoc
 nav:
 - modules/ROOT/nav.adoc
