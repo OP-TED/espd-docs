@@ -191,7 +191,7 @@ See examples in sections about exclusion and selection criteria.
 
 ==== Code with callouts
 
-NOTE: The source code can be copied from the code block below the callout section
+NOTE: The source code can be generated using the https://docs.ted.europa.eu/espd-demo/[ESPD Demo site]
 
 [Code with callouts]
 ----
@@ -200,11 +200,11 @@ NOTE: The source code can be copied from the code block below the callout sectio
 _<!-- ... elements omitted for brevity -->_
 
 <cac:Legislation>
-
+<1>
 <cbc:ID schemeID="criterion" schemeAgencyID="OP" schemeVersionID="4.0.0">4ea7a10a-643e-4022-b67e-e06573b28ff5</cbc:ID>
-
+<2>
 <cbc:Title>DIRECTIVE 2014/24/EU OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL of 26 February 2014 on public procurement and repealing Directive 2004/18/EC</cbc:Title>
-
+<3>
 <cbc:Description>DIRECTIVE 2014/24/EU OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL of 26 February 2014 on public procurement and repealing Directive 2004/18/EC</cbc:Description>
 
 <cbc:JurisdictionLevel languageID="en">EU Directive</cbc:JurisdictionLevel>
@@ -224,6 +224,7 @@ _<!-- ... elements omitted for brevity -->_
 . The official long title of the legislation is expected in the Title.
 . The short name that is commonly used to refer to the legislation is expected in the Description.
 
+////
 ==== Copy the code block
 
 Snippet of XML to illustrate how to use the cac:Legislation component inside a criterion:
@@ -254,6 +255,7 @@ _<!-- ... elements omitted for brevity -->_
 
 </cac:TenderingCriterion>
 ----
+////
 
 = Groups of properties
 
@@ -652,7 +654,7 @@ The following fragment of XML code shows how this is expressed:
 
 === Code with callouts
 
-NOTE: The source code can be copied from the code block below the callout section
+NOTE: The source code can be generated using the https://docs.ted.europa.eu/espd-demo/[ESPD Demo site]
 
 [Code with callouts]
 ----
@@ -856,6 +858,7 @@ _<!--...-->_
 . This SUBGROUP is never processed (e.g. shown to the economic operator) as it contains the SUBGROUP of REQUIREMENT(s) and QUESTION in case the buyer had specified RADIO_BUTTON_FALSE as an answer to the field "Select the type of requirement".
 . The QUESTION that the economic operator would have had to respond in case the buyer had selected the second SUBGROUP of REQUIREMENT(s), which is not the case in this example.
 
+////
 [source,xml]
 ----
 _Use of semanticised boolean codes for REQUIREMENT processing control_
@@ -1048,13 +1051,13 @@ _<!--...-->_
 
 </cac:TenderingCriterion>
 ----
-
+////
 
 _Response of the economic operator to the REQUIREMENT "Amount"_
 
 ==== Code with callouts
 
-NOTE: The source code can be copied from the code block below the callout section
+NOTE: The source code can be generated using the https://docs.ted.europa.eu/espd-demo/[ESPD Demo site]
 
 [Code with callouts]
 ----
@@ -1063,15 +1066,15 @@ _<!-- ... -->_
 <cac:TenderingCriterionResponse>
 
 <ID schemeID="ISO/IEC 9834-8:2008 - 4UUID" schemeAgencyID="OP" schemeVersionID="4.0.0">76085d25-05ad-4cb3-b1e0-675558e3f43e</ID>
-
+<1>
 <ValidatedCriterionPropertyID schemeID="CriteriaTaxonomy" schemeAgencyID="OP" schemeVersionID="4.0.0">1d89c188-58d2-461e-a4f6-a17f689d87f4</ValidatedCriterionPropertyID>
 
 <cac:ResponseValue>
 
 <ID schemeID="ISO/IEC 9834-8:2008 - 4UUID" schemeAgencyID="OP" schemeVersionID="4.0.0">42245674-d305-40bf-8b58-87ba51313345</ID>
-
+<2>
 <ResponseAmount currencyID="EUR">10025</ResponseAmount>
-
+<3><4>
 </cac:ResponseValue>
 
 </cac:TenderingCriterionResponse>
@@ -1082,6 +1085,7 @@ _<!-- ... -->_
 . The value of the amount meets the REQUIREMENT, as the amount is required to be above 10006 Euros (see XML above, notice the currencyID type value, too).
 . Beware that, contrary to other numeric types of data, AMOUNT is not semanticised and mapped to cbc:ResponseMinimumAmount nor cbc:ResponseMaximumAmount`, as in the current ESPD-EDM specification all monetary thresholds are always "minimum" (and similarly for QUANTITY or QUANTITY_INTEGER, e.g. see the REQUIREMENT ''Minimum number of years'' in criterion #49 (tab _SC-Abilities_5 (Staff)_ in the link:{url-tree}/codelists/ESPD-criterion.xlsx[ESPD-criterion] spread-sheet).
 
+////
 ==== Copy the code block
 
 [source,xml]
@@ -1104,7 +1108,7 @@ _<!-- ... -->_
 
 </cac:TenderingCriterionResponse>
 ----
-
+////
 
 
 == Use of CAPTION
@@ -1286,7 +1290,7 @@ The last part _occurrence_ is optional if there is content or not in the target 
 
 ==== Code with callouts
 
-NOTE: The source code can be copied from the code block below the callout section
+NOTE: The source code can be generated using the https://docs.ted.europa.eu/espd-demo/[ESPD Demo site]
 
 [Code with callouts]
 ----
@@ -1300,7 +1304,7 @@ NOTE: The source code can be copied from the code block below the callout sectio
 . All XML Path like IDs from ESPD Request are entirely reused
 . For each element that has multiple occurrences, concatenate *R#* to the end of the path
 . Add the type of the value for response: `RV`, `RES`, and `RAP`
-
+////
 [source, xml]
 ----
 <cac:TenderingCriterionProperty>
@@ -1308,7 +1312,7 @@ NOTE: The source code can be copied from the code block below the callout sectio
     ...
 </cac:TenderingCriterionProperty>
 ----
-
+////
 
 
 [%header,format=csv]

@@ -951,7 +951,7 @@ _Economic operator data - XML example_
 
 ==== Code with callouts
 
-NOTE: The source code can be copied from the code block below the callout section
+NOTE: The source code can be generated using the https://docs.ted.europa.eu/espd-demo/[ESPD Demo site]
 
 [Code with callouts]
 ----
@@ -1081,6 +1081,7 @@ NOTE: The source code can be copied from the code block below the callout sectio
 . Indicative turnover of the EO's company (for statistical purposes).
 ====
 
+////
 ==== Copy the code block
 
 [source,xml]
@@ -1189,7 +1190,7 @@ NOTE: The source code can be copied from the code block below the callout sectio
 
 <!-- Exclusion and selection Criteria, Responses and Evidences removed for the sake of brevity -->
 ----
-
+////
 
 ==== Economic operator representatives
 
@@ -1327,7 +1328,7 @@ _Economic operator's representatives_
 
 ==== Code with callouts
 
-NOTE: The source code can be copied from the code block below the callout section
+NOTE: The source code can be generated using the https://docs.ted.europa.eu/espd-demo/[ESPD Demo site]
 
 [Code with callouts]
 ----
@@ -1537,6 +1538,7 @@ NOTE: The source code can be copied from the code block below the callout sectio
 . Telephone number of the natural person.
 . First line of the cac:Description element reserved to hold the 'representation' role the natural person plays for this economic operator.
 
+////
 ==== Copy the code block
 
 [source,xml]
@@ -1731,6 +1733,7 @@ NOTE: The source code can be copied from the code block below the callout sectio
 
 <!-- Exclusion and selection Criteria, Responses and Evidences removed for the sake of brevity -->
 ----
+////
 
 == Answering QUESTIONs
 
@@ -2029,7 +2032,7 @@ _Reduction of Candidates - (QUESTION(s) in the ESPD-Request)_
 
 ==== Code with callouts
 
-NOTE: The source code can be copied from the code block below the callout section
+NOTE: The source code can be generated using the https://docs.ted.europa.eu/espd-demo/[ESPD Demo site]
 
 [Code with callouts]
 ----
@@ -2102,6 +2105,7 @@ NOTE: The source code can be copied from the code block below the callout sectio
 . The QUESTION ''Please describe them'', presented if the EO answered true to the previous QUESTION (''Your answer'').
 . The type of data expected here is a free text by the EO (for the Response, a DESCRIPTION maps to the UBL-2.3 element cbc:Description, which is an extension of the xsd:String).
 
+////
 ==== Copy the code block
 
 [source,xml]
@@ -2165,6 +2169,7 @@ NOTE: The source code can be copied from the code block below the callout sectio
 
 <!-- ... rest of document removed for brevity -->
 ----
+////
 
 == XML example (Responses to the QUESTION(s))
 
@@ -2174,7 +2179,7 @@ _Reduction of Candidates - (answers in the ESPD-Response)_
 
 === Code with callouts
 
-NOTE: The source code can be copied from the code block below the callout section
+NOTE: The source code can be generated using the https://docs.ted.europa.eu/espd-demo/[ESPD Demo site]
 
 [Code with callouts]
 ----
@@ -2227,6 +2232,7 @@ all the information about its classification and documentation about its financi
 . This is the UUID corresponding to the QUESTION in the Request ''Please describe them''.
 . The economic operator describes how it meets the criteria. The data element containing the explanation by the EO. Notice that the type of data is the UBL-2.3 element cbc:Description, as requested by the buyer in cbc:ValueDataTypeCode.
 
+////
 ==== Copy the code block
 
 [source,xml]
@@ -2272,6 +2278,7 @@ all the information about its classification and documentation about its financi
 
 <!-- ... rest of document removed for brevity -->
 ----
+////
 
 == Evidence
 === Related information requirements
@@ -2431,7 +2438,7 @@ _XML snippet 1.b) different evidence documents per response_
 
 ==== Code with callouts
 
-NOTE: The source code can be copied from the code block below the callout section
+NOTE: The source code can be generated using the https://docs.ted.europa.eu/espd-demo/[ESPD Demo site]
 
 [Code with callouts]
 ----
@@ -2574,6 +2581,7 @@ NOTE: The source code can be copied from the code block below the callout sectio
 . URL from where to get the document.
 . The name of the issuer of the second document of evidence.
 
+////
 ==== Copy the code block
 
 [source,xml]
@@ -2698,6 +2706,7 @@ NOTE: The source code can be copied from the code block below the callout sectio
 
 </QualificationApplicationResponse>
 ----
+////
 
 === Handling the Evidence (sub)group close to the related element in the data structure 
 

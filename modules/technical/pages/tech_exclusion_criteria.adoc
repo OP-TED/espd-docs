@@ -55,7 +55,7 @@ _'Participation in a criminal organisation' conviction_
 
 ==== Code with callouts
 
-NOTE: The source code can be copied from the code block below the callout section
+NOTE: The source code can be generated using the https://docs.ted.europa.eu/espd-demo/[ESPD Demo site]
 
 [Code with callouts]
 ----
@@ -114,24 +114,28 @@ NOTE: The source code can be copied from the code block below the callout sectio
                                 <cbc:PropertyGroupTypeCode listID="property-group-type" listAgencyID="OP" listVersionID="4.0.0">ONTRUE</cbc:PropertyGroupTypeCode>
                                 <cac:TenderingCriterionProperty>
                                         <cbc:ID schemeID="criterion" schemeAgencyID="OP" schemeVersionID="4.0.0">a1534624-95cf-4519-bdaa-856d5acf59b6</cbc:ID>
+<1>
                                         <cbc:Description>Date of conviction</cbc:Description>
                                         <cbc:TypeCode listID="criterion-element-type" listAgencyID="OP" listVersionID="4.0.0">QUESTION</cbc:TypeCode>
                                         <cbc:ValueDataTypeCode listID="response-data-type" listAgencyID="OP" listVersionID="4.0.0">DATE</cbc:ValueDataTypeCode>
                                 </cac:TenderingCriterionProperty>
                                 <cac:TenderingCriterionProperty>
                                         <cbc:ID schemeID="criterion" schemeAgencyID="OP" schemeVersionID="4.0.0">f36ee1fb-210b-4786-b351-e0194ba2df89</cbc:ID>
+<2>
                                         <cbc:Description>Reason</cbc:Description>
                                         <cbc:TypeCode listID="criterion-element-type" listAgencyID="OP" listVersionID="4.0.0">QUESTION</cbc:TypeCode>
                                         <cbc:ValueDataTypeCode listID="response-data-type" listAgencyID="OP" listVersionID="4.0.0">DESCRIPTION</cbc:ValueDataTypeCode>
                                 </cac:TenderingCriterionProperty>
                                 <cac:TenderingCriterionProperty>
                                         <cbc:ID schemeID="criterion" schemeAgencyID="OP" schemeVersionID="4.0.0">05bd1155-a780-4eef-9526-09d90b1b5359</cbc:ID>
+<3>                                        
                                         <cbc:Description>Who has been convicted</cbc:Description>
                                         <cbc:TypeCode listID="criterion-element-type" listAgencyID="OP" listVersionID="4.0.0">QUESTION</cbc:TypeCode>
                                         <cbc:ValueDataTypeCode listID="response-data-type" listAgencyID="OP" listVersionID="4.0.0">DESCRIPTION</cbc:ValueDataTypeCode>
                                 </cac:TenderingCriterionProperty>
                                 <cac:TenderingCriterionProperty>
                                         <cbc:ID schemeID="criterion" schemeAgencyID="OP" schemeVersionID="4.0.0">5969410e-0884-41c6-ae13-e7f4666b2e81</cbc:ID>
+<4><5>                                        
                                         <cbc:Description>Length of the period of exclusion</cbc:Description>
                                         <cbc:TypeCode listID="criterion-element-type" listAgencyID="OP" listVersionID="4.0.0">QUESTION</cbc:TypeCode>
                                         <cbc:ValueDataTypeCode listID="response-data-type" listAgencyID="OP" listVersionID="4.0.0">PERIOD</cbc:ValueDataTypeCode>
@@ -141,9 +145,11 @@ NOTE: The source code can be copied from the code block below the callout sectio
                                         <cbc:PropertyGroupTypeCode listID="property-group-type" listAgencyID="OP" listVersionID="4.0.0">ON*</cbc:PropertyGroupTypeCode>
                                         <cac:TenderingCriterionProperty>
                                                 <cbc:ID schemeID="criterion" schemeAgencyID="OP" schemeVersionID="4.0.0">108399ae-0332-4c14-bd3b-69d5035a2c53</cbc:ID>
+<6><7><8>                                                
                                                 <cbc:Description>Have you taken measures to demonstrate your reliability (Self-Cleaning)?</cbc:Description>
                                                 <cbc:TypeCode listID="criterion-element-type" listAgencyID="OP" listVersionID="4.0.0">QUESTION</cbc:TypeCode>
                                                 <cbc:ValueDataTypeCode listID="response-data-type" listAgencyID="OP" listVersionID="4.0.0">INDICATOR</cbc:ValueDataTypeCode>
+<9>                                        
                                         </cac:TenderingCriterionProperty>
                                         <cac:SubsidiaryTenderingCriterionPropertyGroup>
                                                 <cbc:ID schemeID="criterion" schemeAgencyID="OP" schemeVersionID="4.0.0">74e6c7b4-757b-4b40-ada6-fad6a997c310</cbc:ID>
@@ -215,6 +221,7 @@ NOTE: The source code can be copied from the code block below the callout sectio
 . The cbc:ValueDataType indicates the type of value that the buyer requires for this QUESTION. Therefore, in its answer (inside the ESPD Request document) the economic operator will have to use also an INDICATOR value (true/false). Otherwise the mechanism used to validate the ESPD Response should consider the XML instance as invalid (should be treated as a FATAL error).
 . Data structures defined by GROW are *re-usable*. This is specially the case (but not uniquely) of the structure 'Is this information available electronically?' Notice that the UUID that identifies this structure is always the same in all the criteria that include it. Similarly structures that are reused in different criteria do have the same UUID (as they are the same). Beware that the group of properties (URI, Reference/Code, Issuer) will only be shown if the answer is 'Yes', thus the sub-group code ONTRUE.
 
+////
 ==== Copy the code block
 
 [source,xml]
@@ -342,6 +349,7 @@ NOTE: The source code can be copied from the code block below the callout sectio
 
 <!-- ... the rest of elements in the QualificationApplicationRequest document omitted for brevity -->
 ----
+////
 
 [NOTE]
 ====
@@ -396,12 +404,12 @@ _Payment of Taxes (PoT)_
 
 ==== Code with callouts
 
-NOTE: The source code can be copied from the code block below the callout section
+NOTE: The source code can be generated using the https://docs.ted.europa.eu/espd-demo/[ESPD Demo site]
 
 [Code with callouts]
 ----
 <!... header elements removed for brevity -->
-
+<1>
 <!-- Criterion:Payment of taxes -->
         <cac:TenderingCriterion>
                 <cbc:ID schemeID="criterion" schemeAgencyID="OP" schemeVersionID="4.0.0">b61bbeb7-690e-4a40-bc68-d6d4ecfaa3d4</cbc:ID>
@@ -412,6 +420,7 @@ NOTE: The source code can be copied from the code block below the callout sectio
                 <cac:SubTenderingCriterion>
                         <cbc:ID schemeID="criterion" schemeAgencyID="OP" schemeVersionID="4.0.0">e6b21867-95b5-4549-8180-f4673219b179</cbc:ID>
                         <cbc:Name>[Name of the National Criterion]</cbc:Name>
+<2>
                         <cbc:Description>[Description of the National Criterion ]</cbc:Description>
                         <cac:TenderingCriterionPropertyGroup>
                                 <cbc:ID schemeID="criterion" schemeAgencyID="OP" schemeVersionID="4.0.0">8c39b505-8abe-44fa-a3e0-f2d78b9d8224</cbc:ID>
@@ -432,6 +441,7 @@ NOTE: The source code can be copied from the code block below the callout sectio
                 </cac:SubTenderingCriterion>
                 <cac:Legislation>
                         <cbc:ID schemeID="criterion" schemeAgencyID="OP" schemeVersionID="4.0.0">cf127b09-2ca6-4365-bade-e8c90b8e8528</cbc:ID>
+<1>                        
                         <cbc:Title>[Legislation title]</cbc:Title>
                         <cbc:Description>[Legislation description]</cbc:Description>
                         <cbc:JurisdictionLevel>EU</cbc:JurisdictionLevel>
@@ -447,6 +457,7 @@ NOTE: The source code can be copied from the code block below the callout sectio
                         <cac:TenderingCriterionProperty>
                                 <cbc:ID schemeID="criterion" schemeAgencyID="OP" schemeVersionID="4.0.0">610f01af-b5c6-486b-9b5e-8ea35c80beeb</cbc:ID>
                                 <cbc:Description>Threshold</cbc:Description>
+<3>                                
                                 <cbc:TypeCode listID="criterion-element-type" listAgencyID="OP" listVersionID="4.0.0">REQUIREMENT</cbc:TypeCode>
                                 <cbc:ValueDataTypeCode listID="response-data-type" listAgencyID="OP" listVersionID="4.0.0">AMOUNT</cbc:ValueDataTypeCode>
                                 <!-- No answer is expected here from the economic operator, as this is a REQUIREMENT issued by the buyer. Hence the element'cbc:ValueDataTypeCode' contains the type of value of the requirement issued by the buyer -->
@@ -587,6 +598,7 @@ NOTE: The source code can be copied from the code block below the callout sectio
 . The MS also allows the buyer the possibility of adding multiple additional textual requirements (in this case the Buyer uses this to explain that ''Beware that the national Tax Agency won't permit the existence of a debt, even if minimal, for two consecutive years'').
 . Again, no answer is expected here from the economic operator, as this is a REQUIREMENT issued by the buyer. Hence the element 'cbc:ValueDataTypeCode' contains the type of value of the requirement issued by the buyer.
 
+////
 [source,xml]
 ----
 <!... header elements removed for brevity -->
@@ -764,7 +776,7 @@ NOTE: The source code can be copied from the code block below the callout sectio
                 </cac:TenderingCriterionPropertyGroup>
         </cac:TenderingCriterion>
 ----
-
+////
 == Environment, Social, Labour Law
 
 === Related information requirements

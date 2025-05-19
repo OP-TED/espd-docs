@@ -267,7 +267,7 @@ _Example of suitability criterion_
 
 ==== Code with callouts
 
-NOTE: The source code can be copied from the code block below the callout section
+NOTE: The source code can be generated using the https://docs.ted.europa.eu/espd-demo/[ESPD Demo site]
 
 [Code with callouts]
 ----
@@ -454,6 +454,7 @@ NOTE: The source code can be copied from the code block below the callout sectio
 . If yes... provide the registration number for the authorisation.
 . If no... provide a justification for not having this authorisation issued by the required organisation.
 
+////
 ==== Copy the code block
 
 [source,xml]
@@ -629,6 +630,7 @@ NOTE: The source code can be copied from the code block below the callout sectio
 
 <!--... rest of elements removed for brevity... -->
 ----
+////
 
 == Turnovers
 
@@ -1571,7 +1573,7 @@ _Financial Ratio_
 
 ==== Code with callouts
 
-NOTE: The source code can be copied from the code block below the callout section
+NOTE: The source code can be generated using the https://docs.ted.europa.eu/espd-demo/[ESPD Demo site]
 
 [Code with callouts]
 ----
@@ -1730,6 +1732,7 @@ NOTE: The source code can be copied from the code block below the callout sectio
 . First financial ratio block: the Criterion Property used to refer to the response by the economic operator. In the ESPD Response document, the ID of this Criterion Property will be used by the element cac:ValidatedCriterionPropertyID as the means to link the response to the question. See section "Answering Questions" (under ESPD Response) for more details on this.
 . Block "Is this information available electronically". This block is constant for all criteria. It has been removed from the example for brevity. See other XML examples.
 
+////
 ==== Copy the code block
 
 [source,xml]
@@ -1872,6 +1875,7 @@ NOTE: The source code can be copied from the code block below the callout sectio
 
 <!--... rest of elements removed for brevity... -->
 ----
+////
 
 == Risk indemnity insurance
 
@@ -2387,7 +2391,7 @@ _'References for a works contract' criterion_
 
 ==== Code with callouts
 
-NOTE: The source code can be copied from the code block below the callout section
+NOTE: The source code can be generated using the https://docs.ted.europa.eu/espd-demo/[ESPD Demo site]
 
 [Code with callouts]
 ----
@@ -2592,6 +2596,7 @@ The following elements can be read in the example:
 . Name of the contact point, a person in this case.
 . Contact e-mail of the recipient of the work.
 
+////
 ==== Copy the code block
 
 [source,xml]
@@ -2777,7 +2782,7 @@ The following elements can be read in the example:
         </cac:TenderingCriterion>
 
 ----
-
+////
 
 == Abilities
 
