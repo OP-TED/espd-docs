@@ -18,7 +18,7 @@ The UML diagram below provides a graphic view of the QualificationApplicationReq
 
 image:Criterion_UML_diagram.jpg[Criterion - UML diagram,width=518,height=345]
 
-_Figure 33. Criterion - UML diagram_
+_Figure 1. Criterion - UML diagram_
 
 == General behaviour
 
@@ -37,7 +37,7 @@ This XSD Schema diagram shows a global view of the UBL 2.3 cac:TenderingCriterio
 
 image:cacTenderingCriterion_XSD_Schema.jpg[cac:TenderingCriterion - XSD Schema, global view,width=500,height=700]
 
-_Figure 34. cac:TenderingCriterion - XSD Schema, global view_
+_Figure 2. cac:TenderingCriterion - XSD Schema, global view_
 
 == Expected elements
 
@@ -122,7 +122,7 @@ The XSD schema below shows, in blue, the elements of the component cac:Legislati
 
 image:cacLegislation_XSD_Schema.jpg[cac:Legislation XSD Schema,width=343,height=413]
 
-_Figure 35. cac:Legislation. XSD Schema_
+_Figure 3. cac:Legislation. XSD Schema_
 
 == Expected elements
 
@@ -228,7 +228,7 @@ This XSD diagram shows the sub-components of a group of criteria:
 
 image:cacTenderingCriterionPropertyGroup_XSD_Schema.jpg[cac:TenderingCriterionPropertyGroup - XSD Schema global view,width=566,height=305]
 
-_Figure 36. cac:TenderingCriterionPropertyGroup - XSD Schema, global view_
+_Figure 4. cac:TenderingCriterionPropertyGroup - XSD Schema, global view_
 
 One group of properties may include one or more 'sub-groups' of properties (class cac:SubsidiaryTenderingCriterionGroup).
 
@@ -236,7 +236,7 @@ One group of properties may include one or more 'sub-groups' of properties (clas
 
 image:cacSubsidiaryTenderingCriterionGroup_XSD_Schema.jpg[cac:SubsidiaryTenderingCriterionGroup- XSD Schema,width=566,height=212]
 
-_Figure 37. cac:SubsidiaryTenderingCriterionGroup- XSD Schema_
+_Figure 5. cac:SubsidiaryTenderingCriterionGroup- XSD Schema_
 
 == Expected elements
 
@@ -305,13 +305,13 @@ This other XSD diagram shows the elements of the properties of a criterion:
 
 image:cacTenderingCriterionProperty_XSD_Schema.jpg[cac:TenderingCriterionProperty - XSD Schema,width=227,height=710]
 
-_Figure 38. cac:TenderingCriterionProperty - XSD Schema_
+_Figure 6. cac:TenderingCriterionProperty - XSD Schema_
 
 *Notice that*: One sub-criterion 'is a' criterion:
 
 image:cacSubTenderingCriterion_XSD_Schema.jpg[cac:SubTenderingCriterion- XSD Schema,width=544,height=147]
 
-_Figure 39. cac:SubTenderingCriterion- XSD Schema_
+_Figure 7. cac:SubTenderingCriterion- XSD Schema_
 
 == Expected elements
 
@@ -474,7 +474,7 @@ The columns of the tables are to be interpreted as follows:
 
 image:Contributions_criterion_data_structure.jpg[Contributions' criterion data structure,width=566,height=308]
 
-_Figure 41. 'Contributions' criterion data structure_
+_Figure 8. 'Contributions' criterion data structure_
 
 We could say that the 'data structures' represented in the spread-sheets define a kind of 'meta-language' (or 'controlled vocabulary') that helps 'map' the structure of an ESPD-EDM criterion and the UBL-2.3 criterion data structure. The table below 'maps' both vocabularies. Please compare any of the data structures provided in this document with both the UBL-2.3 XSD Schemas and the XML examples provided herein.
 
@@ -580,25 +580,25 @@ The figure below illustrates how the ONTRUE and ONFALSE SUBGROUPS of a Criterion
 
 image:ONTRUE_ONFALSE_choice_control.jpg[ONTRUE/ONFALSE choice control,width=557,height=230]
 
-_Figure 42. GROUP and SUBGROUP control via the ONTRUE/ONFALSE codes_
+_Figure 9. GROUP and SUBGROUP control via the ONTRUE/ONFALSE codes_
 
 The screen-captures below illustrate how the European Commission's ESPD Service processed the GUI for the Exclusion Criterion ''Contributions'' based on this mechanism. Note that these are examples on how the GUI is processed and its behaviour taking into account the PropertyGroupType, the actual content can be outdated:
 
 image:Case1_first QUESTION_set_false.jpg[Case 1: When the first QUESTION ''Your Answer?'' is set to false:,width=561,height=104]
 
-_Figure 43. Case 1: When the first QUESTION ''Your Answer?'' is set to false:_
+_Figure 10. Case 1: When the first QUESTION ''Your Answer?'' is set to false:_
 
 image:Case2_first QUESTION_set_true.jpg[Case 2: When the first QUESTION ''Your Answer?'' is set to true,width=514,height=280]
 
-_Figure 44. Case 2: When the first QUESTION ''Your Answer?'' is set to true:_
+_Figure 11. Case 2: When the first QUESTION ''Your Answer?'' is set to true:_
 
 image:Case3_GUI_Control.jpg[Case 3: When the first QUESTION ''Your Answer?'' and the option "Has this breach of obligations been established ..." are both set to true:,width=540,height=246]
 
-_Figure 45. Case 3: When the first QUESTION ''Your Answer?'' and the option "Has this breach of obligations been established ..." are both set to true:_
+_Figure 12. Case 3: When the first QUESTION ''Your Answer?'' and the option "Has this breach of obligations been established ..." are both set to true:_
 
 image:Case4_GUI_Control.jpg[Case 4: When all the QUESTION(s) that are INDICATORS are set to true,width=513,height=324]
 
-_Figure 46. Case 4: When all the QUESTION(s) that are INDICATORS are set to true_
+_Figure 13. Case 4: When all the QUESTION(s) that are INDICATORS are set to true_
 
 == Radio-Button and Check-box controls
 
@@ -606,7 +606,7 @@ In version 2.1.0 a new code list named link:{url-tree}/codelists/gc/BooleanGUICo
 
 image:Use_code_list_BooleanGUIControlType.jpg[Use of the code list BooleanGUIControlType,width=574,height=336]
 
-_Figure 47. Use of the code list link:{url-tree}/codelists/gc/BooleanGUIControlType.gc[BooleanGUIControlType]_
+_Figure 14. Use of the code list link:{url-tree}/codelists/gc/BooleanGUIControlType.gc[BooleanGUIControlType]_
 
 Notice that:
 
@@ -1074,7 +1074,7 @@ For this, imagine that each element of the Criteria Taxonomy data structures cou
 
 image:Use_CAPTION.jpg[Annotation with processing instructions of one Criterion Data Structures,width=583,height=316]
 
-_Figure 48. Annotation with processing instructions of one Criterion Data Structures_
+_Figure 15. Annotation with processing instructions of one Criterion Data Structures_
 
 == Short Tag Name and Implicit Numbering
 
@@ -1132,10 +1132,10 @@ The following images are illustrating the use of both "short tag name" and "numb
 
 image:Short_Tag_Name_and_Numbering_for_Criterion_C1_EG_crime-org.jpg[Short Tag Name and Numbering for Criterion C1 EG crime-org,width=566,height=308]
 
-_Figure 49. Short Tag Name and Numbering for Criterion C1 EG crime-org_
+_Figure 16. Short Tag Name and Numbering for Criterion C1 EG crime-org_
 
 image:Short_Tag_Name_and_Numbering_for_Criterion_C32_SC_spec-year-to.jpg[Short Tag Name and Numbering for Criterion C32 SC spec-year-to,width=566,height=308]
 
-_Figure 50. Short Tag Name and Numbering for Criterion C32 SC spec-year-to_
+_Figure 17. Short Tag Name and Numbering for Criterion C32 SC spec-year-to_
 
 

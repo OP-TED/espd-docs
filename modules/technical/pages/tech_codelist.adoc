@@ -55,7 +55,7 @@ The figure below illustrate how these elements are organised in the code lists m
 
 image:Elements_metadata_of_ESPD_codelist.jpg[Elements and metadata of an ESPD code list,align="center",pdfwidth=50%,scaledwidth=50%]
 
-_Figure 6. Elements and metadata of an ESPD code list_
+_Figure 1. Elements and metadata of an ESPD code list_
 
 
 [NOTE]
@@ -90,7 +90,7 @@ The figure below shows the complete list of attributes for the CCT CodeType comp
 
 image:Code_attributes.jpg[Code attributes,width=226,height=306]
 
-_Figure 7. Code attributes_
+_Figure 2. Code attributes_
 
 And its corresponding definitions, as provided by OASIS UBL (ISO/IEC 19845):
 
@@ -115,7 +115,7 @@ This other figure shows the attributes for the CCT `IdentifierType`component.
 
 image:Identifier_attributes.jpg[Identifier attributes,width=274,height=237]
 
-_Figure 8. Identifier attributes_
+_Figure 3. Identifier attributes_
 
 [cols=",",options="header",]
 
@@ -189,7 +189,7 @@ The figure below shows the possible values of this code list. These codes are to
 
 image:Values_schemeID_Party_Identifiers.jpg[Values of the schemeID for Party Identifiers,width=600,height=264]
 
-_Figure 9. Values of the schemeID for Party Identifiers_
+_Figure 4. Values of the schemeID for Party Identifiers_
 
 The next fragment of XML shows how this is used in the particular case of the Criterion "Relied on entities" ("Does the economic operator rely on the capacities of other entities in order to meet the selection criteria...?").:
 
