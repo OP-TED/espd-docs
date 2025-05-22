@@ -54,7 +54,7 @@ The figure below illustrate how these elements are organised in the code lists m
 
 image:Enterprise_Architect_ESPD_codelist.jpg[Elements and metadata of an ESPD code list,align="center",pdfwidth=50%,scaledwidth=50%]
 
-_Figure 6. Elements and metadata of an ESPD code list_
+_Figure 1. Elements and metadata of an ESPD code list_
 
 
 //*_Annex I_* of this document lists all the code lists used by the ESPD and in which context or element it is used.
@@ -86,9 +86,10 @@ UBL-2.3 CCT are defined in the file CCTS_CCT_SchemaModule-2.3.xsd (see folders x
 
 The figure below shows the complete list of attributes for the CCT CodeType component.
 
-image:Code_attributes.jpg[Code attributes,width=226,height=306]
-
-_Figure 7. Code attributes_
+image::https://kroki.io/blockdiag/svg/eNrFUstOwzAQPNdfsTIXkEIfgKBSBVLVEqkXhChwQVXkxtvE1LGj2IGWqv-OnRBSOHDFB2s9M_bujncpdbzmgiWwI70e3LMEoWcxTpWImayiKNYcpTC2m9pMwiz7pYmER0xv4mQRs7YQy9Ki6b7mCRyHIikLhKsueBpa-sSnm6MFkzMFGTp8QwCqY_QuuE3hGi6Go28sRZGk1oGDswrkuGKltNFKK2vEB3rmomJIUugyhw8sdFSHO0JiLXXhNPTodhhOb8_piBDqa3rc5kjh9Aao73E2pUEdjRNU8fb3-Y5l2CCH8TMWRmhVy1VDMJWUzpv2kaeHWRPO4xQz9AC8cOFLU1rhgnxVvxKFsd_ld2jrnNOblOW-YccqjnypNwE0ng2u-oGxW-l5zkyKPIC2-Wk_HE8u6WJEOh1o8aVk8ZrWoMWNbS-EYd8tWhn7tZrsUij8gf_IWj9Wbf_mLOnsyb4ZtNogq53PHE3QDBC8MVkiCOMGa3gwEsF_DsRfH3w26Lvv238C1ZUpOg==[Code attributes,width=450,height=450]
+//image:Code_attributes.jpg[Code attributes,width=226,height=306]
+//[Edit this diagram](https://niolesk.top/#https://kroki.io/blockdiag/svg/eNrFUstOwzAQPNdfsTIXkEIfgKBSBVLVEqkXhChwQVXkxtvE1LGj2IGWqv-OnRBSOHDFB2s9M_bujncpdbzmgiWwI70e3LMEoWcxTpWImayiKNYcpTC2m9pMwiz7pYmER0xv4mQRs7YQy9Ki6b7mCRyHIikLhKsueBpa-sSnm6MFkzMFGTp8QwCqY_QuuE3hGi6Go28sRZGk1oGDswrkuGKltNFKK2vEB3rmomJIUugyhw8sdFSHO0JiLXXhNPTodhhOb8_piBDqa3rc5kjh9Aao73E2pUEdjRNU8fb3-Y5l2CCH8TMWRmhVy1VDMJWUzpv2kaeHWRPO4xQz9AC8cOFLU1rhgnxVvxKFsd_ld2jrnNOblOW-YccqjnypNwE0ng2u-oGxW-l5zkyKPIC2-Wk_HE8u6WJEOh1o8aVk8ZrWoMWNbS-EYd8tWhn7tZrsUij8gf_IWj9Wbf_mLOnsyb4ZtNogq53PHE3QDBC8MVkiCOMGa3gwEsF_DsRfH3w26Lvv238C1ZUpOg==)
+_Figure 2. Code attributes_
 
 And its corresponding definitions, as provided by OASIS UBL (ISO/IEC 19845):
 
@@ -111,9 +112,10 @@ _Table 3. UBL attributes for codes_
 
 This other figure shows the attributes for the CCT `IdentifierType`component.
 
-image:Identifier_attributes.jpg[Identifier attributes,width=274,height=237]
-
-_Figure 8. Identifier attributes_
+image::https://kroki.io/blockdiag/svg/eNq9Ut9r2zAQfo7-ikN92cDNjy50gdBCaWrIyxjrtpdSjGJdbDWyZKzzlrTkf59sx1WyQh-rB3H33Sfd6dO30jbdSCUyeGGjEXwXGcKIMM2NSoVuoyS1ErVyNMyp0LAs_uMkqkHcaCnRkForrBJBVKlVTeiGT2UGn2KV1RXCbAiBBIH0uWl9jwSuFAYK9PiWAbRp8ldJyuEKprP5K5ajynLy4OSiBSWuRa0pWVtDTj1jU5m2FZZVti7hGSubdOELY6nVtvIcfnY3ixd3X_icMR4m-7krkcP5NXCX5ljgcsGjPv4mCgzZTYYm3R3XO-SU9Rsrp6w5pi0EiV8_lgFoEniQqhnLWIOP7DD5WlWOXkcf8KCa57tclM1jfdVIlCu7jaDXa_J1HDna6aYuhctRRhAevhjHN7eX_HHOBgMI-EqLdMM7kHBL4UAcj_3iraiH1XfXyuAJftK1u6zdPlhPNtizfW-tThayXl2JLuotA3-ErhGU81aavTFB9PEWeO9LLyZj_2H7f2UPLEE=[Identifier attributes,width=450,height=350]
+//image:Identifier_attributes.jpg[Identifier attributes,width=274,height=237]
+//[Edit this diagram](https://niolesk.top/#https://kroki.io/blockdiag/svg/eNq9Ut9r2zAQfo7-ikN92cDNjy50gdBCaWrIyxjrtpdSjGJdbDWyZKzzlrTkf59sx1WyQh-rB3H33Sfd6dO30jbdSCUyeGGjEXwXGcKIMM2NSoVuoyS1ErVyNMyp0LAs_uMkqkHcaCnRkForrBJBVKlVTeiGT2UGn2KV1RXCbAiBBIH0uWl9jwSuFAYK9PiWAbRp8ldJyuEKprP5K5ajynLy4OSiBSWuRa0pWVtDTj1jU5m2FZZVti7hGSubdOELY6nVtvIcfnY3ixd3X_icMR4m-7krkcP5NXCX5ljgcsGjPv4mCgzZTYYm3R3XO-SU9Rsrp6w5pi0EiV8_lgFoEniQqhnLWIOP7DD5WlWOXkcf8KCa57tclM1jfdVIlCu7jaDXa_J1HDna6aYuhctRRhAevhjHN7eX_HHOBgMI-EqLdMM7kHBL4UAcj_3iraiH1XfXyuAJftK1u6zdPlhPNtizfW-tThayXl2JLuotA3-ErhGU81aavTFB9PEWeO9LLyZj_2H7f2UPLEE=)
+_Figure 3. Identifier attributes_
 
 [cols=",",options="header",]
 
@@ -168,7 +170,7 @@ The figure below shows the possible values of this code list. These codes are to
 
 image:Values_schemeID_Party_Identifiers.jpg[Values of the schemeID for Party Identifiers,width=600,height=264]
 
-_Figure 9. Values of the schemeID for Party Identifiers_
+_Figure 4. Values of the schemeID for Party Identifiers_
 
 The next fragment of XML shows how this is used in the particular case of the Criterion "Relied on entities" ("Does the economic operator rely on the capacities of other entities in order to meet the selection criteria...?").:
 

@@ -20,9 +20,10 @@ As suggested in section "Criteria Data Structures" criteria may be grouped in se
 
 Each branch in this 'criteria classification' corresponds to one data structure that is identical for all the leaves under that branch. 
 
-image:Exclusion_criteria_clasification.jpg[Exclusion criteria clasification,width=510,height=374]
-
-_Figure 49. Exclusion criteria classification_
+image::https://kroki.io/pikchr/svg/eNq9lV1v2jAUhu_zKyzEpH00VUgICKRdtIxWSAykBiZujWOKRbAz20D67-ckhHjEpB2TuIgUn5ycj-e1fZocfAfOvUuoFRGKOQyzddf_2uSZ5UByi-tb1nAxGM-D0XTSB0uWgNTZjxOAWMQ4cBIf9pahD1ZEWiGT-Wfn09lna-H0QQSFvMfgG_js3DlfLMg5O1TCcLbNHEEaTDKwcKwt22PAyetaAu--p2qWOJGgcaqrcQyyjCDaACjB6YtlTpLHavI828IBco2pSnigoKUI5MvCyRo-t_qA7WEEGoPp5NdoMFORg4YJQJ7NM_SvgsCcXwjFGoeggZNXG3GytWPI5R04LRHjPNYNKw53obaWWGXhmiGCO_qXA4erFUEbU4ngCM_QSYnvuXX0ul2NenL477J5JtlcTbbZy-hxfmw3xXAmT57P7ZmEcw3CxVtpLzm2JUzypgqDEMi4M07U9UIqrbsa94-k0H-9gppvouYV1ILpYPQwrsHluyZcngHXloisdEz3aicc8n4Ko2CoaozgMjXWsCzKq5DwNIj_nViPewXhrolwuyD8qC6pyTCo25Jt413SNjAWRFJ7CenmeOyyNaGCRXtM0ZtmRByHtgoPqWZkqkr9z4j8tmG4JboPFLbYibhGlLKjCr62Jsvta9ULuULHnklHv9Dx5yhQJ_vHfDCrUdI8FfwLp0U9iNFwh2S5PUMiJOOSMFqjgF5LpXX_7Gh8LIse4Ap2LeNM7WiX89NYjSJ7-mSPJrPhyzCow2i8ojsXKKZjiyA1rugqKjuMOY7PbQJSlPZcWtSj_DgWmGp0dpTjyBb4nVve0FGFZedMjBsUq2e_RknjmO0WSk4e0rlWOzLM11nXIB-FMsouZPXyziQo81a67GqML0XU3eEfcvGg7A==[Exclusion criteria clasification,width=950,height=450]
+//image:Exclusion_criteria_clasification.jpg[Exclusion criteria clasification,width=510,height=374]
+//[Edit this diagram](https://niolesk.top/#https://kroki.io/pikchr/svg/eNq9lV1v2jAUhu_zKyzEpH00VUgICKRdtIxWSAykBiZujWOKRbAz20D67-ckhHjEpB2TuIgUn5ycj-e1fZocfAfOvUuoFRGKOQyzddf_2uSZ5UByi-tb1nAxGM-D0XTSB0uWgNTZjxOAWMQ4cBIf9pahD1ZEWiGT-Wfn09lna-H0QQSFvMfgG_js3DlfLMg5O1TCcLbNHEEaTDKwcKwt22PAyetaAu--p2qWOJGgcaqrcQyyjCDaACjB6YtlTpLHavI828IBco2pSnigoKUI5MvCyRo-t_qA7WEEGoPp5NdoMFORg4YJQJ7NM_SvgsCcXwjFGoeggZNXG3GytWPI5R04LRHjPNYNKw53obaWWGXhmiGCO_qXA4erFUEbU4ngCM_QSYnvuXX0ul2NenL477J5JtlcTbbZy-hxfmw3xXAmT57P7ZmEcw3CxVtpLzm2JUzypgqDEMi4M07U9UIqrbsa94-k0H-9gppvouYV1ILpYPQwrsHluyZcngHXloisdEz3aicc8n4Ko2CoaozgMjXWsCzKq5DwNIj_nViPewXhrolwuyD8qC6pyTCo25Jt413SNjAWRFJ7CenmeOyyNaGCRXtM0ZtmRByHtgoPqWZkqkr9z4j8tmG4JboPFLbYibhGlLKjCr62Jsvta9ULuULHnklHv9Dx5yhQJ_vHfDCrUdI8FfwLp0U9iNFwh2S5PUMiJOOSMFqjgF5LpXX_7Gh8LIse4Ap2LeNM7WiX89NYjSJ7-mSPJrPhyzCow2i8ojsXKKZjiyA1rugqKjuMOY7PbQJSlPZcWtSj_DgWmGp0dpTjyBb4nVve0FGFZedMjBsUq2e_RknjmO0WSk4e0rlWOzLM11nXIB-FMsouZPXyziQo81a67GqML0XU3eEfcvGg7A==)
+_Figure 1. Exclusion criteria classification_
 
 == Convictions
 
@@ -45,7 +46,7 @@ In an initial phase, the European Commission provided an ESPD service to support
 
 image:Convictions_data_structure.jpg[Convictions data structure,width=576,height=235]
 
-_Figure 52. Data Structure for all 'Conviction' exclusion grounds_
+_Figure 2. Data Structure for all 'Conviction' exclusion grounds_
 
 === XML Example
 
@@ -238,7 +239,7 @@ This other screen-capture below represents a possible mock-up, from the buyer pe
 
 image:Payment_Taxes_REQUIREMENT_edition_CA.jpg['Payment of Taxes', REQUIREMENT edition,width=419,height=424]
 
-_Figure 58. 'Payment of Taxes', REQUIREMENT edition (Buyer Perspective)_
+_Figure 3. 'Payment of Taxes', REQUIREMENT edition (Buyer Perspective)_
 
 === Mock-ups - economic operator perspective
 
@@ -251,13 +252,13 @@ Beware that this mock-up is not showing the national criteria. For this mock-up 
 
 image:Payment_Taxes_EO_perspective.jpg['Payment of Taxes', EO perspective,width=656,height=395]
 
-_Figure 59. 'Payment of Taxes', (EO perspective)_
+_Figure 4. 'Payment of Taxes', (EO perspective)_
 
 === Data structure
 
 image:Contributions_criterion_data_structure.jpg['Contributions' criterion data structure,width=656,height=357]
 
-_Figure 60. 'Contributions' criterion data structure_
+_Figure 5. 'Contributions' criterion data structure_
 
 === XML Example
 _Payment of Taxes (PoT)_
@@ -466,7 +467,7 @@ Category ''Social'' encompasses criteria with identical data structures, classif
 
 image:Environmental_Law_criterion mock-up_CA_perspective.jpg['Environmental Law' criterion mock-up buyer perspective,width=606,height=321]
 
-_Figure 61. 'Environmental Law' criterion mock-up - buyer perspective_
+_Figure 6. 'Environmental Law' criterion mock-up - buyer perspective_
 
 === Mock-ups - economic operator perspective
 
@@ -477,13 +478,13 @@ Beware that this mock-up is not showing the national criteria. For this mock-up 
 
 image:Environmental_Law_criterion_mockup_EO perspective.jpg['Environmental Law' criterion mock-up - EO perspective,width=642,height=354]
 
-_Figure 62. 'Environmental Law' criterion mock-up - EO perspective_
+_Figure 7. 'Environmental Law' criterion mock-up - EO perspective_
 
 === Data structure
 
 image:Environmental_Law_criterion_data_structure.jpg['Environmental Law' criterion data structure,width=588,height=315]
 
-_Figure 64. 'Environmental Law' criterion data structure_
+_Figure 8. 'Environmental Law' criterion data structure_
 
 === XML Example
 
@@ -598,7 +599,7 @@ See formal requirements related to exclusion grounds in the link:http://wiki.ds.
 
 image:Bankruptcy_criterion_mockup_CA_perspective.jpg['Bankruptcy' criterion mock-up - buyer perspective,width=519,height=292]
 
-_Figure 65. 'Bankruptcy' criterion mock-up - buyer perspective_
+_Figure 9. 'Bankruptcy' criterion mock-up - buyer perspective_
 
 === Mock-ups - economic operator perspective
 
@@ -609,13 +610,13 @@ Beware that this mock-up is not showing the national criteria. For this mock-up 
 
 image:Bankruptcy_criterion_mockup_EO_perspective.jpg['Bankruptcy' criterion mock-up - economic operator perspective,width=554,height=312]
 
-_Figure 66. 'Bankruptcy' criterion mock-up - economic operator perspective_
+_Figure 10. 'Bankruptcy' criterion mock-up - economic operator perspective_
 
 === Data structure
 
 image:Bankruptcy_criterion_data_structure.jpg['Bankruptcy' criterion data structure,width=542,height=244]
 
-_Figure 68. 'Bankruptcy' criterion data structure_
+_Figure 11. 'Bankruptcy' criterion data structure_
 
 === XML Example
 
@@ -727,7 +728,7 @@ See formal requirements related to exclusion grounds in the link:http://wiki.ds.
 
 image:Professional_misconduct_criterion mockup_CA_perspective.jpg['Professional misconduct' criterion mock-up - buyer perspective,width=642,height=141]
 
-_Figure 69. 'Professional misconduct' criterion mock-up - buyer perspective_
+_Figure 12. 'Professional misconduct' criterion mock-up - buyer perspective_
 
 === Mock-ups - economic operator perspective
 
@@ -737,13 +738,13 @@ Beware that this mock-up is not showing the national criteria. For this mock-up 
 
 image:Professional_misconduct_criterion_mockup_EO_perspective.jpg['Professional misconduct' criterion mock-up - EO perspective,width=642,height=131]
 
-_Figure 70. 'Professional misconduct' criterion mock-up - economic operator perspective_
+_Figure 13. 'Professional misconduct' criterion mock-up - economic operator perspective_
 
 === Data structure
 
 image:Professional_misconduct_criterion_data_structure.jpg['Professional misconduct' criterion data structure,width=482,height=274]
 
-_Figure 72. 'Professional misconduct' criterion data structure_
+_Figure 14. 'Professional misconduct' criterion data structure_
 
 === XML Example
 _'Professional Misconduct'_
@@ -874,7 +875,7 @@ The second group, named ''Early termination'', is explained in a different secti
 
 image:Conflict_interest_criterion_mock-up_CA_perspective.jpg['Conflict of interest' criterion mock-up - buyer perspective,width=550,height=247]
 
-_Figure 73. 'Conflict of interest' criterion mock-up - buyer perspective_
+_Figure 15. 'Conflict of interest' criterion mock-up - buyer perspective_
 
 === Mock-ups - economic operator perspective
 
@@ -884,13 +885,13 @@ Beware that this mock-up is not showing the national criteria. For this mock-up 
 
 image:Conflict_interest_criterion_mockup_EO_perspective.jpg['Conflict of interest' criterion mock-up - EO perspective,width=642,height=202]
 
-_Figure 74. 'Conflict of interest' criterion mock-up - economic operator perspective_
+_Figure 16. 'Conflict of interest' criterion mock-up - economic operator perspective_
 
 === Data structure
 
 image:Conflict_interest_criterion_data_structure.jpg['Conflict of interest' criterion data structure,width=642,height=328]
 
-_Figure 76. 'Conflict of interest' criterion data structure_
+_Figure 17. 'Conflict of interest' criterion data structure_
 
 === XML Example
 
@@ -995,7 +996,7 @@ See formal requirements related to exclusion grounds in the link:http://wiki.ds.
 
 image:Early_termination_criterion_mock-up_CA_perspective.jpg['Early termination' criterion mock-up - buyer perspective,width=614,height=156]
 
-_Figure 77. 'Early termination' criterion mock-up - buyer  perspective_
+_Figure 18. 'Early termination' criterion mock-up - buyer  perspective_
 
 === Mock-ups - economic operator perspective
 
@@ -1004,13 +1005,13 @@ Beware that this mock-up is not showing the national criteria. For this mock-up 
 
 image:Early_termination_criterion_mockup_EO_perspective.jpg['Early termination' criterion mock-up - EO perspective,width=572,height=117]
 
-_Figure 78. 'Early termination' criterion mock-up - economic operator perspective_
+_Figure 19. 'Early termination' criterion mock-up - economic operator perspective_
 
 === Data structure
 
 image:Early termination_criterion_data_structure.jpg['Early termination' criterion data structure,width=476,height=254]
 
-_Figure 80. 'Early termination' criterion data structure_
+_Figure 20. 'Early termination' criterion data structure_
 
 === XML Example
 
@@ -1134,7 +1135,7 @@ See formal requirements related to exclusion grounds in the link:http://wiki.ds.
 
 image:Misrepresentation_criterion_mock-up_CA_perspective.jpg['Misrepresentation' criterion mock-up - buyer perspective,width=561,height=286]
 
-_Figure 81. 'Misrepresentation' criterion mock-up - buyer perspective_
+_Figure 21. 'Misrepresentation' criterion mock-up - buyer perspective_
 
 === Mock-ups - economic operator perspective
 
@@ -1144,7 +1145,7 @@ Beware that this mock-up is not showing the national criteria. For this mock-up 
 
 image:Misrepresentation_criterion_mock-up_EO_perspective.jpg['Misrepresentation' criterion mock-up - EO perspective,width=642,height=181]
 
-_Figure 82. 'Misrepresentation' criterion mock-up - economic operator perspective_
+_Figure 22. 'Misrepresentation' criterion mock-up - economic operator perspective_
 
 [NOTE]
 ====
@@ -1157,7 +1158,7 @@ The data structure for the criterion "Guilty of misrepresentation [...]" below u
 
 image:Misrepresentation_criterion_data_structure.jpg['Misrepresentation' criterion data structure,width=642,height=327]
 
-_Figure 84. 'Misrepresentation' criterion data structure_
+_Figure 23. 'Misrepresentation' criterion data structure_
 
 === XML Example
 _'Misrepresentation' conflict of interest_
@@ -1266,13 +1267,13 @@ The figure below shows a fragment of a list of national criteria that a software
 
 image:Purely_national_criteria_mockup_CA_perspective.jpg['Purely national criteria' mock-up - buyer perspective,width=500,height=350]
 
-_Figure 88. 'Purely natural criteria' - economic operator perspective_
+_Figure 24. 'Purely natural criteria' - economic operator perspective_
 
 === Data structure
 
 image:Purely_national_criteria_data_structure.jpg['Purely national criteria' data structure,width=500,height=150]
 
-_Figure 89. 'Purely national criteria' data structure_
+_Figure 25. 'Purely national criteria' data structure_
 
 === XML Example
 
