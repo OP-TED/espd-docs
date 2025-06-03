@@ -276,6 +276,48 @@ image:Lot_ID_schema.jpg[Lot Identifiers according to eForms schema,width=541,hei
 
 _Figure 4. Lot Identifiers according to eForms schema_
 
+[cols=","]
+|===
+
+||Comment
+
+
+[cols="1,2"]
+
+!===
+!Object !Scheme
+
+!Group of Lots 
+!GLO-XXX
+
+!Lot 
+!LOT-XXXX
+!===
+|XXXX: set of 4 digits. By default, the numbering should be increased by 1 from one object to the following one of the same category and a leading 0 should be used to satisfy the 4 digit format if required
+|===
+
+
+[cols="1,2"]
+|===
+| Col 1 | Col 2
+
+| Cell 1.1
+| Cell 1.2
+
+| Cell 2.1
+| Cell 2.2
+
+[cols="2,1"]
+!===
+! Col1 ! Col2
+
+! C11
+! C12
+
+!===
+
+|===
+
 == EU and notice publications
 
 [cols=",",]
