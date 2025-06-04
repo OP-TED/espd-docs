@@ -16,13 +16,15 @@
 |*REQUIREMENT* xref:tbr70_reqs.adoc#list_of_criteria[tbr70-009] |The ESPD request must contain information about the criteria that set the exclusion grounds as stated in directive 2014/24/EU Art. 57 and referred to in directive 2014/25/EU Art. 80 and/or according to national legislation. These should be retrieved from e-Certis.
 |===
 
-As suggested in section "Criteria Data Structures" criteria may be grouped in several different categories. The figure below is intended to identify and list these categories for the Exclusion criteria (branches in text boxes), and specific subgroups within each category (leaves in text without boxes).
+As suggested in section "Criteria Data Structures" criteria may be grouped in several different categories. The Criterion Filefigure is arranged in a tree-like structure with branches and leaves (end nodes), intended to identify and list these categories for the Exclusion criteria (branches), and specific subgroups within each category (leaves).
 
 Each branch in this 'criteria classification' corresponds to one data structure that is identical for all the leaves under that branch. 
 
-image:Exclusion_criteria_classification.jpg[Exclusion criteria classification,width=510,height=374]
+See Criterion 1 (C1) in the https://github.com/OP-TED/ESPD-EDM/blob/v4.0.0/criterion/ESPD-criterion.xlsx[Criterion File]
 
-_Figure 49. Exclusion criteria classification_
+//image:Exclusion_criteria_classification.jpg[Exclusion criteria classification,width=510,height=374]
+
+//_Figure 1. Exclusion criteria classification_
 
 == Convictions
 
@@ -43,9 +45,11 @@ In an initial phase, the European Commission provided an ESPD service to support
 
 === Data structure
 
-image:Convictions_data_structure.jpg[Convictions data structure,width=576,height=235]
+See Criterion 1 (C1) in the https://github.com/OP-TED/ESPD-EDM/blob/v4.0.0/criterion/ESPD-criterion.xlsx[Criterion File]
 
-_Figure 52. Data Structure for all 'Conviction' exclusion grounds_
+//image:Convictions_data_structure.jpg[Convictions data structure,width=576,height=235]
+
+//_Figure 2. Data Structure for all 'Conviction' exclusion grounds_
 
 === XML Example
 
@@ -370,7 +374,7 @@ This other screen-capture below represents a possible mock-up, from the buyer pe
 
 image:Payment_Taxes_REQUIREMENT_edition_CA.jpg['Payment of Taxes', REQUIREMENT edition,width=419,height=424]
 
-_Figure 58. 'Payment of Taxes', REQUIREMENT edition (Buyer Perspective)_
+_Figure 3. 'Payment of Taxes', REQUIREMENT edition (Buyer Perspective)_
 
 === Mock-ups - economic operator perspective
 
@@ -383,13 +387,15 @@ Beware that this mock-up is not showing the national criteria. For this mock-up 
 
 image:Payment_Taxes_EO_perspective.jpg['Payment of Taxes', EO perspective,width=656,height=395]
 
-_Figure 59. 'Payment of Taxes', (EO perspective)_
+_Figure 4. 'Payment of Taxes', (EO perspective)_
 
 === Data structure
 
-image:Contributions_criterion_data_structure.jpg['Contributions' criterion data structure,width=656,height=357]
+See Criterion 7 (C7) in the https://github.com/OP-TED/ESPD-EDM/blob/v4.0.0/criterion/ESPD-criterion.xlsx[Criterion File]
 
-_Figure 60. 'Contributions' criterion data structure_
+//image:Contributions_criterion_data_structure.jpg['Contributions' criterion data structure,width=656,height=357]
+
+//_Figure 5. 'Contributions' criterion data structure_
 
 === XML Example
 _Payment of Taxes (PoT)_
@@ -790,13 +796,15 @@ Beware that this mock-up is not showing the national criteria. For this mock-up 
 
 image:Environmental_Law_criterion_mockup_EO perspective.jpg['Environmental Law' criterion mock-up - EO perspective,width=642,height=354]
 
-_Figure 62. 'Environmental Law' criterion mock-up - EO perspective_
+_Figure 6. 'Environmental Law' criterion mock-up - EO perspective_
 
 === Data structure
 
-image:Environmental_Law_criterion_data_structure.jpg['Environmental Law' criterion data structure,width=588,height=315]
+See Criterion 9 (C9) in the https://github.com/OP-TED/ESPD-EDM/blob/v4.0.0/criterion/ESPD-criterion.xlsx[Criterion File]
 
-_Figure 64. 'Environmental Law' criterion data structure_
+//image:Environmental_Law_criterion_data_structure.jpg['Environmental Law' criterion data structure,width=588,height=315]
+
+//_Figure 7. 'Environmental Law' criterion data structure_
 
 === XML Example
 
@@ -911,7 +919,7 @@ See formal requirements related to exclusion grounds in the xref:bis41.adoc[BIS 
 
 image:Bankruptcy_criterion_mockup_CA_perspective.jpg['Bankruptcy' criterion mock-up - buyer perspective,width=519,height=292]
 
-_Figure 65. 'Bankruptcy' criterion mock-up - buyer perspective_
+_Figure 8. 'Bankruptcy' criterion mock-up - buyer perspective_
 
 === Mock-ups - economic operator perspective
 
@@ -922,13 +930,15 @@ Beware that this mock-up is not showing the national criteria. For this mock-up 
 
 image:Bankruptcy_criterion_mockup_EO_perspective.jpg['Bankruptcy' criterion mock-up - economic operator perspective,width=554,height=312]
 
-_Figure 66. 'Bankruptcy' criterion mock-up - economic operator perspective_
+_Figure 9. 'Bankruptcy' criterion mock-up - economic operator perspective_
 
 === Data structure
 
-image:Bankruptcy_criterion_data_structure.jpg['Bankruptcy' criterion data structure,width=542,height=244]
+See Criterion 12 (C12) in the https://github.com/OP-TED/ESPD-EDM/blob/v4.0.0/criterion/ESPD-criterion.xlsx[Criterion File]
 
-_Figure 68. 'Bankruptcy' criterion data structure_
+//image:Bankruptcy_criterion_data_structure.jpg['Bankruptcy' criterion data structure,width=542,height=244]
+
+//_Figure 10. 'Bankruptcy' criterion data structure_
 
 === XML Example
 
@@ -1040,7 +1050,7 @@ See formal requirements related to exclusion grounds in the xref:bis41.adoc[BIS 
 
 image:Professional_misconduct_criterion mockup_CA_perspective.jpg['Professional misconduct' criterion mock-up - buyer perspective,width=642,height=141]
 
-_Figure 69. 'Professional misconduct' criterion mock-up - buyer perspective_
+_Figure 11. 'Professional misconduct' criterion mock-up - buyer perspective_
 
 === Mock-ups - economic operator perspective
 
@@ -1050,13 +1060,15 @@ Beware that this mock-up is not showing the national criteria. For this mock-up 
 
 image:Professional_misconduct_criterion_mockup_EO_perspective.jpg['Professional misconduct' criterion mock-up - EO perspective,width=642,height=131]
 
-_Figure 70. 'Professional misconduct' criterion mock-up - economic operator perspective_
+_Figure 12. 'Professional misconduct' criterion mock-up - economic operator perspective_
 
 === Data structure
 
-image:Professional_misconduct_criterion_data_structure.jpg['Professional misconduct' criterion data structure,width=482,height=274]
+See Criterion 18 (C18) in the https://github.com/OP-TED/ESPD-EDM/blob/v4.0.0/criterion/ESPD-criterion.xlsx[Criterion File]
 
-_Figure 72. 'Professional misconduct' criterion data structure_
+//image:Professional_misconduct_criterion_data_structure.jpg['Professional misconduct' criterion data structure,width=482,height=274]
+
+//_Figure 13. 'Professional misconduct' criterion data structure_
 
 === XML Example
 _'Professional Misconduct'_
@@ -1187,7 +1199,7 @@ The second group, named ''Early termination'', is explained in a different secti
 
 image:Conflict_interest_criterion_mock-up_CA_perspective.jpg['Conflict of interest' criterion mock-up - buyer perspective,width=550,height=247]
 
-_Figure 73. 'Conflict of interest' criterion mock-up - buyer perspective_
+_Figure 14. 'Conflict of interest' criterion mock-up - buyer perspective_
 
 === Mock-ups - economic operator perspective
 
@@ -1197,13 +1209,15 @@ Beware that this mock-up is not showing the national criteria. For this mock-up 
 
 image:Conflict_interest_criterion_mockup_EO_perspective.jpg['Conflict of interest' criterion mock-up - EO perspective,width=642,height=202]
 
-_Figure 74. 'Conflict of interest' criterion mock-up - economic operator perspective_
+_Figure 15. 'Conflict of interest' criterion mock-up - economic operator perspective_
 
 === Data structure
 
-image:Conflict_interest_criterion_data_structure.jpg['Conflict of interest' criterion data structure,width=642,height=328]
+See Criterion 20 (C20) in the https://github.com/OP-TED/ESPD-EDM/blob/v4.0.0/criterion/ESPD-criterion.xlsx[Criterion File]
 
-_Figure 76. 'Conflict of interest' criterion data structure_
+//image:Conflict_interest_criterion_data_structure.jpg['Conflict of interest' criterion data structure,width=642,height=328]
+
+//_Figure 16. 'Conflict of interest' criterion data structure_
 
 === XML Example
 
@@ -1308,7 +1322,7 @@ See formal requirements related to exclusion grounds in the xref:bis41.adoc[BIS 
 
 image:Early_termination_criterion_mock-up_CA_perspective.jpg['Early termination' criterion mock-up - buyer perspective,width=614,height=156]
 
-_Figure 77. 'Early termination' criterion mock-up - buyer  perspective_
+_Figure 17. 'Early termination' criterion mock-up - buyer  perspective_
 
 === Mock-ups - economic operator perspective
 
@@ -1317,13 +1331,13 @@ Beware that this mock-up is not showing the national criteria. For this mock-up 
 
 image:Early_termination_criterion_mockup_EO_perspective.jpg['Early termination' criterion mock-up - EO perspective,width=572,height=117]
 
-_Figure 78. 'Early termination' criterion mock-up - economic operator perspective_
+_Figure 18. 'Early termination' criterion mock-up - economic operator perspective_
 
 === Data structure
 
-image:Early termination_criterion_data_structure.jpg['Early termination' criterion data structure,width=476,height=254]
+See Criterion 22 (C22) in the https://github.com/OP-TED/ESPD-EDM/blob/v4.0.0/criterion/ESPD-criterion.xlsx[Criterion File]
 
-_Figure 80. 'Early termination' criterion data structure_
+//_Figure 19. 'Early termination' criterion data structure_
 
 === XML Example
 
@@ -1447,7 +1461,7 @@ See formal requirements related to exclusion grounds in the lxref:bis41.adoc[BIS
 
 image:Misrepresentation_criterion_mock-up_CA_perspective.jpg['Misrepresentation' criterion mock-up - buyer perspective,width=561,height=286]
 
-_Figure 81. 'Misrepresentation' criterion mock-up - buyer perspective_
+_Figure 20. 'Misrepresentation' criterion mock-up - buyer perspective_
 
 === Mock-ups - economic operator perspective
 
@@ -1457,7 +1471,7 @@ Beware that this mock-up is not showing the national criteria. For this mock-up 
 
 image:Misrepresentation_criterion_mock-up_EO_perspective.jpg['Misrepresentation' criterion mock-up - EO perspective,width=642,height=181]
 
-_Figure 82. 'Misrepresentation' criterion mock-up - economic operator perspective_
+_Figure 21. 'Misrepresentation' criterion mock-up - economic operator perspective_
 
 [NOTE]
 ====
@@ -1468,9 +1482,12 @@ The data structure for the criterion "Guilty of misrepresentation [...]" below u
 
 === Data structure
 
-image:Misrepresentation_criterion_data_structure.jpg['Misrepresentation' criterion data structure,width=642,height=327]
+See Criterion 23 (C23) in the https://github.com/OP-TED/ESPD-EDM/blob/v4.0.0/criterion/ESPD-criterion.xlsx[Criterion File]
 
-_Figure 84. 'Misrepresentation' criterion data structure_
+//image:Misrepresentation_criterion_data_structure.jpg['Misrepresentation' criterion data structure,width=642,height=327]
+
+//_Figure 22. 'Misrepresentation' criterion data structure_
+
 
 === XML Example
 _'Misrepresentation' conflict of interest_
@@ -1579,13 +1596,15 @@ The figure below shows a fragment of a list of national criteria that a software
 
 image:Purely_national_criteria_mockup_CA_perspective.jpg['Purely national criteria' mock-up - buyer perspective,width=500,height=350]
 
-_Figure 88. 'Purely natural criteria' - economic operator perspective_
+_Figure 23. 'Purely natural criteria' - economic operator perspective_
 
 === Data structure
 
-image:Purely_national_criteria_data_structure.jpg['Purely national criteria' data structure,width=500,height=150]
+See Criterion 24 (C24) in the https://github.com/OP-TED/ESPD-EDM/blob/v4.0.0/criterion/ESPD-criterion.xlsx[Criterion File]
 
-_Figure 89. 'Purely national criteria' data structure_
+//image:Purely_national_criteria_data_structure.jpg['Purely national criteria' data structure,width=500,height=150]
+
+//_Figure 24. 'Purely national criteria' data structure_
 
 === XML Example
 

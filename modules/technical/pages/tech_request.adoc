@@ -18,7 +18,7 @@ The figure below shows a diagram representing the UBL-2.3 XSD Schema. Only the f
 
 image:Qualification_Application_Request-2.3.jpg[QualificationApplicationRequest-2.3,width=297,height=462]
 
-_Figure 11: QualificationApplicationRequest-2.3 main elements._
+_Figure 1: QualificationApplicationRequest-2.3 main elements._
 
 == ESPD Request cardinalities
 
@@ -28,7 +28,7 @@ The ESPD-EDM model, however, adds a few more restrictions regarding the cardinal
 
 image:Qualification_ApplicationRequest_UML_diagram.jpg[QualificationApplicationRequest', UML diagram,width=394,height=430]
 
-_Figure 12. ESPD-EDM 'QualificationApplicationRequest', UML diagram_
+_Figure 2. ESPD-EDM 'QualificationApplicationRequest', UML diagram_
 
 Comparing both figures, it can be observed that:
 
@@ -191,7 +191,7 @@ There is one ESPD request stating the Exclusion Criteria and the Selection Crite
 
 image:Overview_new_lot_management_approach.jpg[Overview of new lot management approach.,width=497,height=129]
 
-_Figure 13. Overview of new lot management approach._
+_Figure 3. Overview of new lot management approach._
 
 The ESPD request includes exclusion grounds that are general for all the Lots into which the procedure is divided. However, for Selection Criteria, it is different since in the procedure it is possible to have Lots with different selection criteria. Therefore, in the ESPD request the different Selection Criteria has to include the reference to the lots which applies. It will be done using the UBL 2.3 cac:ProcurementProjectLotReference that includes cbc:TenderingCriterion.
 
@@ -267,9 +267,29 @@ This version of the ESPD changes the form to identify Lots and Groups of Lots, t
 
 Up to version 2.1.1, the lots were identified with the following structure, "Lot1, Lot2, Lot3". With the new approach (eForms), the Lots identifiers will be as follows: 
 
-image:Lot_ID_schema.jpg[Lot Identifiers according to eForms schema,width=541,height=130]
+[cols="1a,2"]
+|===
 
-_Figure 14: Lot Identifiers according to eForms schema_
+|
+
+[cols="1,1"]
+
+!===
+
+!Object !Scheme
+
+!Group of Lots 
+!GLO-XXX
+
+!Lot 
+!LOT-XXXX
+
+!===
+
+a|Comment
+
+XXXX: set of 4 digits. By default, the numbering should be increased by 1 from one object to the following one of the same category and a leading 0 should be used to satisfy the 4 digit format if required
+|===
 
 == EU and notice publications
 
@@ -286,7 +306,7 @@ The Figure below is a mock-up of how to collect the data expected to reference p
 
 image:Publications_mock-up.jpg[Publications mock-up,width=500,height=459]
 
-_Figure 14. Publications, mock-up_
+_Figure 5. Publications, mock-up_
 
 === XSD Schema
 
@@ -296,13 +316,13 @@ The class used for this, cac:AdditionalDocumentReference ''is a'' cac:DocumentRe
 
 image:cacDocumentReference_XSD diagram.jpg[cac:DocumentReference, XSD diagram,width=424,height=458]
 
-_Figure 15. cac:DocumentReference, XSD diagram_
+_Figure 6. cac:DocumentReference, XSD diagram_
 
 The class cac:AdditionalDocumentReference aggregates a subclass cac:Attachment that is used by ESPD to place the URI, the name of the document, and the descriptions.
 
 image:Associated_class cacExternalReference_XSD diagram.jpg[Associated class cac:ExternalReference XSD diagram,width=531,height=308]
 
-_Figure 16. Associated class cac:ExternalReference, XSD diagram_
+_Figure 7. Associated class cac:ExternalReference, XSD diagram_
 
 === Expected elements
 
@@ -565,7 +585,7 @@ Therefore software applications may make use of the richness of UBL-2.3 to colle
 
 image:Procurer_identification_mockup.jpg[Procurer identification,width=600,height=100]
 
-_Figure 17. Data about the procurer, mock-up_
+_Figure 8. Data about the procurer, mock-up_
 
 === XSD Schema
 
@@ -573,25 +593,25 @@ The UBL-2.3 model provides a component that fits the purpose of holding data abo
 
 image:cacContractingParty_XSD_Schema_global_vision.jpg[cac:ContractingParty XSD Schema, global vision,width=400,height=286]
 
-_Figure 18. cac:ContractingParty XSD Schema, global vision_
+_Figure 9. cac:ContractingParty XSD Schema, global vision_
 
 The cac:ContractingParty class is a specialisation of cac:Party. Hence, the main data about the procurer is in this associated cac:Party component:
 
 image:cacParty_XSD_Schema_global vision.jpg[cac:Party XSD Schema, global vision,width=254,height=718]
 
-_Figure 19. cac:Party XSD Schema, global vision_
+_Figure 10. cac:Party XSD Schema, global vision_
 
 The cac:Party class in turn associates a very rich class that holds the data about the Party address, including the country (see the UBL-2.3 specification for the complete list of fields):
 
 image:cacPostalAddress,_XSD_Schema.jpg[cac:PostalAddress, XSD Schema,width=566,height=385]
 
-_Figure 20. cac:PostalAddress, XSD Schema_
+_Figure 11. cac:PostalAddress, XSD Schema_
 
 Notice also that the class associated to cac:Party to place the data about how to contact the contracting body:
 
 image:cacContact_XSD_Schema.jpg[cac:Contact, XSD Schema,width=407,height=253]
 
-_Figure 21. cac:Contact, XSD Schema_
+_Figure 12. cac:Contact, XSD Schema_
 
 === Expected elements
 
@@ -762,7 +782,7 @@ Since the 2.1.1 does not include the cac:ServiceProvider as a 'document root com
 
 image:cacServiceProvider_XSD_Schema.jpg[cac:ServiceProvider XSD Schema,width=566,height=453]
 
-_Figure 22. cac:ServiceProvider XSD Schema_
+_Figure 13. cac:ServiceProvider XSD Schema_
 
 *Notice that*:
 
@@ -772,11 +792,11 @@ _Figure 22. cac:ServiceProvider XSD Schema_
 
 image:cacServiceProvider.jpg[cac:ServiceProvider,width=514,height=217]
 
-_Figure 22. cac:ServiceProvider_
+_Figure 14. cac:ServiceProvider_
 
 image:cacServiceProvider_XSD_Schema.jpg[service provider's 'Party' elements,width=506,height=524]
 
-_Figure 23. cac:ServiceProvider/cac:Party elements expected for the service provider_
+_Figure 15. cac:ServiceProvider/cac:Party elements expected for the service provider_
 
 === Expected elements
 
