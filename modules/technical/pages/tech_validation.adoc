@@ -107,7 +107,7 @@ image:CodeList_Validation_Execution_files.jpg[Code List Validation Execution fil
 This example describes the execution of the validation process using the link:http://saxon.sourceforge.net/[Saxon library] to execute XSLT files and the XSLT provided as a basis:
 
 image:Execution_validation_process_codelists.jpg[Execution of the validation process in code lists,width=600,height=279]
-
+image:Execution_validation_process_codelists.jpg[test]
 
 == ESPD Validation Architecture
 
