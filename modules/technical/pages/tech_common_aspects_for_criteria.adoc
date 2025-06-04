@@ -628,19 +628,19 @@ The screen-captures below illustrate how the European Commission's ESPD Service 
 
 image:Case1_first QUESTION_set_false.jpg[Case 1: When the first QUESTION ''Your Answer?'' is set to false:,width=561,height=104]
 
-_Figure 43. Case 1: When the first QUESTION ''Your Answer?'' is set to false:_
+_Figure 10. Case 1: When the first QUESTION ''Your Answer?'' is set to false:_
 
 image:Case2_first QUESTION_set_true.jpg[Case 2: When the first QUESTION ''Your Answer?'' is set to true,width=514,height=280]
 
-_Figure 10. Case 2: When the first QUESTION ''Your Answer?'' is set to true:_
+_Figure 11. Case 2: When the first QUESTION ''Your Answer?'' is set to true:_
 
 image:Case3_GUI_Control.jpg[Case 3: When the first QUESTION ''Your Answer?'' and the option "Has this breach of obligations been established ..." are both set to true:,width=540,height=246]
 
-_Figure 11. Case 3: When the first QUESTION ''Your Answer?'' and the option "Has this breach of obligations been established ..." are both set to true:_
+_Figure 12. Case 3: When the first QUESTION ''Your Answer?'' and the option "Has this breach of obligations been established ..." are both set to true:_
 
 image:Case4_GUI_Control.jpg[Case 4: When all the QUESTION(s) that are INDICATORS are set to true,width=513,height=324]
 
-_Figure 12. Case 4: When all the QUESTION(s) that are INDICATORS are set to true_
+_Figure 13. Case 4: When all the QUESTION(s) that are INDICATORS are set to true_
 
 == Radio-Button and Check-box controls
 
@@ -648,7 +648,7 @@ In version 2.1.0 a new code list named link:{url-tree}/codelists/gc/BooleanGUICo
 
 image:Use_code_list_BooleanGUIControlType.jpg[Use of the code list BooleanGUIControlType,width=574,height=336]
 
-_Figure 13. Use of the code list link:{url-tree}/codelists/gc/BooleanGUIControlType.gc[BooleanGUIControlType]_
+_Figure 14. Use of the code list link:{url-tree}/codelists/gc/BooleanGUIControlType.gc[BooleanGUIControlType]_
 
 Notice that:
 
@@ -1142,7 +1142,7 @@ For this, imagine that each element of the Criteria Taxonomy data structures cou
 
 image:Use_CAPTION.jpg[Annotation with processing instructions of one Criterion Data Structures,width=583,height=316]
 
-_Figure 14. Annotation with processing instructions of one Criterion Data Structures_
+_Figure 15. Annotation with processing instructions of one Criterion Data Structures_
 
 == Short Tag Name and Implicit Numbering
 
@@ -1200,11 +1200,11 @@ The following images are illustrating the use of both "short tag name" and "numb
 
 image:Short_Tag_Name_and_Numbering_for_Criterion_C1_EG_crime-org.jpg[Short Tag Name and Numbering for Criterion C1 EG crime-org,width=566,height=308]
 
-_Figure 15. Short Tag Name and Numbering for Criterion C1 EG crime-org_
+_Figure 16. Short Tag Name and Numbering for Criterion C1 EG crime-org_
 
 image:Short_Tag_Name_and_Numbering_for_Criterion_C32_SC_spec-year-to.jpg[Short Tag Name and Numbering for Criterion C32 SC spec-year-to,width=566,height=308]
 
-_Figure 16. Short Tag Name and Numbering for Criterion C32 SC spec-year-to_
+_Figure 17. Short Tag Name and Numbering for Criterion C32 SC spec-year-to_
 
 == XML Path Like ID  
 
