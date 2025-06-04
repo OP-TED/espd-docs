@@ -20,9 +20,9 @@ As suggested in section "Criteria Data Structures" criteria may be grouped in se
 
 Each branch in this 'criteria classification' corresponds to one data structure that is identical for all the leaves under that branch. 
 
-image:Exclusion_criteria_classification.jpg[Exclusion criteria classification,width=510,height=374]
+https://github.com/OP-TED/ESPD-EDM/blob/v4.0.0/criterion/ESPD-criterion.xlsx[Exclusion criteria classification]
 
-_Figure 1. Exclusion criteria classification_
+//_Figure 1. Exclusion criteria classification_
 
 == Convictions
 
@@ -47,9 +47,11 @@ To reap the full benefit of an electronic ESPD, the integration with national eP
 
 === Data structure
 
-image:Convictions_data_structure.jpg[Convictions data structure,width=576,height=235]
+To view the criterion, consult the https://github.com/OP-TED/ESPD-EDM/blob/v3.3.0/codelists/ESPD-criterion.xlsx[Criterion File]. The information will be visible in the tab "EG-Convictions".
 
-_Figure 2. Data Structure for all 'Conviction' exclusion grounds_
+//:Convictions_data_structure.jpg[Convictions data structure,width=576,height=235]
+
+//_Figure 2. Data Structure for all 'Conviction' exclusion grounds_
 
 === XML Example
 
@@ -391,9 +393,12 @@ _Figure 4. 'Payment of Taxes', (EO perspective)_
 
 === Data structure
 
-image:Contributions_criterion_data_structure.jpg['Contributions' criterion data structure,width=656,height=357]
+To view the criterion, consult the https://github.com/OP-TED/ESPD-EDM/blob/v3.3.0/codelists/ESPD-criterion.xlsx[Criterion File]. The information will be visible in the tab "EG-Contributions".
 
-_Figure 5. 'Contributions' criterion data structure_
+//image:Contributions_criterion_data_structure.jpg['Contributions' criterion data structure,width=656,height=357]
+
+//_Figure 5. 'Contributions' criterion data structure_
+
 
 === XML Example
 _Payment of Taxes (PoT)_
@@ -801,9 +806,11 @@ _Figure 7. 'Environmental Law' criterion mock-up - EO perspective_
 
 === Data structure
 
-image:Environmental_Law_criterion_data_structure.jpg['Environmental Law' criterion data structure,width=588,height=315]
+To view the criterion, consult the https://github.com/OP-TED/ESPD-EDM/blob/v3.3.0/codelists/ESPD-criterion.xlsx[Criterion File]. The information will be visible in the tab "EG-Environ-Social-Labour_Law".
 
-_Figure 8. 'Environmental Law' criterion data structure_
+//image:Environmental_Law_criterion_data_structure.jpg['Environmental Law' criterion data structure,width=588,height=315]
+
+//_Figure 8. 'Environmental Law' criterion data structure_
 
 === XML Example
 
@@ -933,9 +940,11 @@ _Figure 10. 'Bankruptcy' criterion mock-up - economic operator perspective_
 
 === Data structure
 
-image:Bankruptcy_criterion_data_structure.jpg['Bankruptcy' criterion data structure,width=542,height=244]
+To view the criterion, consult the https://github.com/OP-TED/ESPD-EDM/blob/v3.3.0/codelists/ESPD-criterion.xlsx[Criterion File]. The information will be visible in the tab "EG-Business".
 
-_Figure 11. 'Bankruptcy' criterion data structure_
+//image:Bankruptcy_criterion_data_structure.jpg['Bankruptcy' criterion data structure,width=542,height=244]
+
+//_Figure 11. 'Bankruptcy' criterion data structure_
 
 === XML Example
 
@@ -1061,9 +1070,11 @@ _Figure 13. 'Professional misconduct' criterion mock-up - economic operator pers
 
 === Data structure
 
-image:Professional_misconduct_criterion_data_structure.jpg['Professional misconduct' criterion data structure,width=482,height=274]
+To view the criterion, consult the https://github.com/OP-TED/ESPD-EDM/blob/v3.3.0/codelists/ESPD-criterion.xlsx[Criterion File]. The information will be visible in the tab "EG-Misconduct".
 
-_Figure 14. 'Professional misconduct' criterion data structure_
+//image:Professional_misconduct_criterion_data_structure.jpg['Professional misconduct' criterion data structure,width=482,height=274]
+
+//_Figure 14. 'Professional misconduct' criterion data structure_
 
 === XML Example
 _'Professional Misconduct'_
@@ -1208,9 +1219,11 @@ _Figure 16. 'Conflict of interest' criterion mock-up - economic operator perspec
 
 === Data structure
 
-image:Conflict_interest_criterion_data_structure.jpg['Conflict of interest' criterion data structure,width=642,height=328]
+To view the criterion, consult the https://github.com/OP-TED/ESPD-EDM/blob/v3.3.0/codelists/ESPD-criterion.xlsx[Criterion File]. The information will be visible in the tab "EG-Conflict_of_interest".
 
-_Figure 17. 'Conflict of interest' criterion data structure_
+//image:Conflict_interest_criterion_data_structure.jpg['Conflict of interest' criterion data structure,width=642,height=328]
+
+//_Figure 17. 'Conflict of interest' criterion data structure_
 
 === XML Example
 
@@ -1328,9 +1341,11 @@ _Figure 19. 'Early termination' criterion mock-up - economic operator perspectiv
 
 === Data structure
 
-image:Early termination_criterion_data_structure.jpg['Early termination' criterion data structure,width=476,height=254]
+To view the criterion, consult the https://github.com/OP-TED/ESPD-EDM/blob/v3.3.0/codelists/ESPD-criterion.xlsx[Criterion File]. The information will be visible in the tab "EG-Early_termination".
 
-_Figure 20. 'Early termination' criterion data structure_
+//image:Early termination_criterion_data_structure.jpg['Early termination' criterion data structure,width=476,height=254]
+
+//_Figure 20. 'Early termination' criterion data structure_
 
 === XML Example
 
@@ -1475,9 +1490,11 @@ The data structure for the criterion "Guilty of misrepresentation [...]" below u
 
 === Data structure
 
-image:Misrepresentation_criterion_data_structure.jpg['Misrepresentation' criterion data structure,width=642,height=327]
+To view the criterion, consult the https://github.com/OP-TED/ESPD-EDM/blob/v3.3.0/codelists/ESPD-criterion.xlsx[Criterion File]. The information will be visible in the tab "EG-Misrepresentation".
 
-_Figure 23. 'Misrepresentation' criterion data structure_
+//image:Misrepresentation_criterion_data_structure.jpg['Misrepresentation' criterion data structure,width=642,height=327]
+
+//_Figure 23. 'Misrepresentation' criterion data structure_
 
 === XML Example
 _'Misrepresentation' conflict of interest_
@@ -1590,9 +1607,11 @@ _Figure 24. 'Purely natural criteria' - economic operator perspective_
 
 === Data structure
 
-image:Purely_national_criteria_data_structure.jpg['Purely national criteria' data structure,width=500,height=150]
+To view the criterion, consult the https://github.com/OP-TED/ESPD-EDM/blob/v3.3.0/codelists/ESPD-criterion.xlsx[Criterion File]. The information will be visible in the tab "EG-Purely_national".
 
-_Figure 25. 'Purely national criteria' data structure_
+//image:Purely_national_criteria_data_structure.jpg['Purely national criteria' data structure,width=500,height=150]
+
+//_Figure 25. 'Purely national criteria' data structure_
 
 === XML Example
 
