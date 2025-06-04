@@ -269,9 +269,29 @@ This version of the ESPD changes the form to identify Lots and Groups of Lots, t
 
 Up to version 2.1.1, the lots were identified with the following structure, "Lot1, Lot2, Lot3". With the new approach (eForms), the Lots identifiers will be as follows: 
 
-image:Lot_ID_schema.jpg[Lot Identifiers according to eForms schema,width=541,height=130]
+[cols="1a,2"]
+|===
 
-_Figure 4: Lot Identifiers according to eForms schema_
+|
+
+[cols="1,1"]
+
+!===
+
+!Object !Scheme
+
+!Group of Lots 
+!GLO-XXX
+
+!Lot 
+!LOT-XXXX
+
+!===
+
+a|Comment
+
+XXXX: set of 4 digits. By default, the numbering should be increased by 1 from one object to the following one of the same category and a leading 0 should be used to satisfy the 4 digit format if required
+|===
 
 == EU and notice publications
 
