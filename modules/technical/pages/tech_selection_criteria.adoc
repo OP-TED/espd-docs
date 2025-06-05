@@ -32,7 +32,7 @@ _Figure 2. cac:TenderingCriterion/cac:ProcurementProjectLotReference_
 
 The ESPD 3.0.0 allows different lots for different Selection Criteria, whereas the ESPD 4.0.0 allows in addition different lots (or set of lots) for different requirements. 
 
-See also section "xref:2.5_Lot_Management_in_ESPD_Request.adoc[2.5 Lot Management in ESPD Request]". 
+See also section "xref:tech_request.adoc#lot_management[Lot Management in ESPD Request]". 
 
 
 = Initial question for the EO to fulfil or not the criteria 
