@@ -51,11 +51,9 @@ ESPD-EDM Code list contains the following elements:
 * *Concept description*: the definition of the concept represented by the code;
 * *Multilingual descriptions*: the translations of the English definitions.
 
-The figure below illustrate how these elements are organised in the code lists maintained in spread-sheets:
+The link below takes you to the folder on Github containing the codelist file  where you will see how the codelist elements are organised:
 
-image:Elements_metadata_of_ESPD_codelist.jpg[Elements and metadata of an ESPD code list,align="center",pdfwidth=50%,scaledwidth=50%]
-
-_Figure 1. Elements and metadata of an ESPD code list_
+https://github.com/OP-TED/ESPD-EDM/tree/v3.3.0/codelists[Codelists on GitHub]
 
 
 [NOTE]
@@ -185,9 +183,9 @@ Code lists contain the code identifiers that are expected as "values" for a data
 
 However, this ESP-EDM specification also uses the code list link:{url-tree}/codelists/gc/EOIDType.gc[EOIDType] with a different purpose, "the identification of the type of scheme used to identify parties, namely Economic Operators" (but should also used to identify the schemes used to identify Buyers, Service Providers, etc.).
 
-The figure below shows the possible values of this code list. These codes are to be used as values of the schemeID attribute (attribute of the UBL-2.3 element cbc:Identifier):
+The link below takes you to the folder on Github containing the codelist file  where, in the "EOIDType" sheet, you will be able to see the possible values of this code list. These codes are to be used as values of the schemeID attribute (attribute of the UBL-2.3 element cbc:Identifier):
 
-image:Values_schemeID_Party_Identifiers.jpg[Values of the schemeID for Party Identifiers,width=600,height=264]
+https://github.com/OP-TED/ESPD-EDM/tree/v3.3.0/codelists[Codelists on GitHub]
 
 _Figure 4. Values of the schemeID for Party Identifiers_
 
