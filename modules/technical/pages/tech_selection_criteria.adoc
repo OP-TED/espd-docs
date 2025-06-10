@@ -30,7 +30,7 @@ _Figure 2. cac:TenderingCriterion/cac:ProcurementProjectLotReference_
 
 The ESPD 3.0.0 allows different lots for different Selection Criteria, whereas the ESPD 4.0.0 allows in addition different lots (or set of lots) for different requirements. 
 
-See also section "xref:2.5_Lot_Management_in_ESPD_Request.adoc[2.5 Lot Management in ESPD Request]". 
+See also section "xref:tech_request.adoc#lot_management[Lot Management in ESPD Request]".
 
 
 = Initial question for the EO to fulfil or not the criteria 
@@ -692,7 +692,7 @@ _Figure 8. 'General Yearly Turnovers' EO mock-up_
 
 === Data Structure
 
-In this this figure what it is being shown is that the buyer required three general yearly turnovers, for which it defined minimum amounts in one REQUIREMENT(s) group. Next, three groups of QUESTION(s) are provided, each one of them corresponding to the past three years. Remember that the spreadsheet used in this guide to represent the criteria data structure is also used to generate sample XML instances. So by including three groups of QUESTION(s) in the spread-sheet, the tool generating sample XML instances will automatically generate three sub-groups of properties each one with distinct UUIDs.
+//In this this figure what it is being shown is that the buyer required three general yearly turnovers, for which it defined minimum amounts in one REQUIREMENT(s) group. Next, three groups of QUESTION(s) are provided, each one of them corresponding to the past three years. Remember that the spreadsheet used in this guide to represent the criteria data structure is also used to generate sample XML instances. So by including three groups of QUESTION(s) in the spread-sheet, the tool generating sample XML instances will automatically generate three sub-groups of properties each one with distinct UUIDs.
 
 To view the criterion, consult the https://github.com/OP-TED/ESPD-EDM/blob/v4.0.0/criterion/ESPD-criterion.xlsx[Criterion File]. The information will be visible in the tab "SC-General_Yearly_Turnover".
 
@@ -1570,10 +1570,10 @@ _Figure 19. 'Financial ratio' EO mock-up_
 [cols=",",]
 [NOTE]
 ====
-REQUIREMENT(s) specified by the buyers can be place outside a group of QUESTION(s) (see any other previous criteria) or *inside* a group of *QUESTION(s)*, which is the case for financial ratios, as you can see in the data structure for this criterion, below.
+REQUIREMENT(s) specified by the buyers can be place outside a group of QUESTION(s) (see any other previous criteria) or *inside* a group of *QUESTION(s)*, which is the case for financial ratios, as you can see in the data structure for this criterion.
 ====
 
-Notice how the spreadsheet has been used to specify the three different financial ratios of the above mock-up example: the XML example below was produced using a XSL-T transformation link:{url-tree}/xml-examples/\\__xslt__/ODS-Data-Structures-to-ESPD-XML/ESPDRequest-Annotated.xslt[ESPDRequest-Annotated] that takes the link:{url-tree}/xml-examples/ESPD-criterion.xml[ESPD-criterion] and produced the link:{url-tree}/xml-examples/ESPD-Request.xml[ESPD-Request].
+//Notice how the spreadsheet has been used to specify the three different financial ratios of the above mock-up example: the XML example below was produced using a XSL-T transformation link:{url-tree}/xml-examples/\\__xslt__/ODS-Data-Structures-to-ESPD-XML/ESPDRequest-Annotated.xslt[ESPDRequest-Annotated] that takes the link:{url-tree}/xml-examples/ESPD-criterion.xml[ESPD-criterion] and produced the link:{url-tree}/xml-examples/ESPD-Request.xml[ESPD-Request].
 
 To view the criterion, consult the https://github.com/OP-TED/ESPD-EDM/blob/v4.0.0/criterion/ESPD-criterion.xlsx[Criterion File]. The information will be visible in the tab "SC-Financial_ratios".
 
@@ -1936,7 +1936,8 @@ This structure is quite particular. Notice that:
 * A sub-group of three QUESTION(s) for the economic operator to answer (amount, and two questions to be answered as "Yes" or "No"; and
 * The possibility of attaching an evidence per each insurance.
 
-The XML example below illustrates all this. The values used in the example are the same as the ones in the spread-sheet.
+The XML example below illustrates this. 
+//The values used in the example are the same as the ones in the spread-sheet.
 
 To view the criterion, consult the https://github.com/OP-TED/ESPD-EDM/blob/v4.0.0/criterion/ESPD-criterion.xlsx[Criterion File]. The information will be visible in the tab "SC-Professional_risk_insurance".
 

@@ -15,21 +15,21 @@ xref:business:business_info.adoc[Information for Business Users]
 
 ****
 [.tile]
-.The ESPD Service
+.An ESPD Implementation
 ****
-This section explains the ESPD Service
+This section explains elements of an ESPD Implementation
 
-xref:business:service.adoc[Click here to read about the ESPD service]
+xref:business:implementation.adoc[Click here to read about implementing the ESPD model]
 
 ****
 
 
 [.tile]
-.The Structure of an ESPD Service
+.The ESPD Online Form
 ****
-This section runs through the ESPD online form from both the buyer and the supplier perspectives
+This section runs through an example ESPD online form from both the buyer and the supplier perspectives
 
-xref:business:espd_form.adoc[Click here to view the ESPD online form]
+xref:business:espd_form.adoc[Click here to view an ESPD online form]
 ****
 --
 

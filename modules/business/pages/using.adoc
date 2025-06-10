@@ -5,10 +5,11 @@
 :docdate: January 2024
 
 
+To see how to fill in an online ESPD form from the perspectives of both a buyer and a supplier, click on the linked text. This will demonstrate the use of an ESPD-Service from scratch i.e.,the first time it is filled out by a supplier or buyer. (the form can then be saved and uploaded and amended for subsequent times)
 
-== The structure of an ESPD Service
+== The structure of an ESPD online form
 
-To see how to xref:espd_form.adoc[fill in a form on an online ESPD-Service from the perspectives of both a buyer and a supplier], click on the linked text. This will demonstrate the use of an ESPD-Service from scratch i.e.,the first time it is filled out by a supplier or buyer. (the form can then be saved and uploaded and amended for subsequent times)
+To see how to xref:espd_form.adoc[fill in an online  from the perspectives of both a buyer and a supplier], click on the link. This will demonstrate the use of an ESPD-Service from scratch i.e.,the first time it is filled out by a supplier or buyer. (the form can then be saved and uploaded and amended for subsequent times)
 
 ////
 
