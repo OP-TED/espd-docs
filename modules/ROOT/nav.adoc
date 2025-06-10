@@ -14,8 +14,8 @@
 
 * [.separated]#**Information for Business Users**#
 * xref:4.0.0@ESPD-EDM:business:index.adoc[Business Information]
-* xref:4.0.0@ESPD-EDM:business:service.adoc[The ESPD Service]
-* xref:4.0.0@ESPD-EDM:business:using.adoc[Using an ESPD Service]
+* xref:4.0.0@ESPD-EDM:business:implementation.adoc[An ESPD Implementation]
+* xref:4.0.0@ESPD-EDM:business:using.adoc[The Structure of an ESPD Implementation]
 //* xref:espd-bus::creating.adoc[Creating an ESPD Service]
 //* xref:espd-bus::overview_upgrades.adoc[Overview for Upgrading your Version]
 
