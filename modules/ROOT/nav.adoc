@@ -13,8 +13,8 @@
 
 * [.separated]#**Information for Business Users**#
 * xref:business:index.adoc[Business Information]
-* xref:business:service.adoc[What is an ESPD Service?]
-* xref:business:using.adoc[The Structure of an ESPD Service]
+* xref:business:implementation.adoc[An ESPD Implementation]
+* xref:business:using.adoc[The Structure of an ESPD Implementation]
 
 * [.separated]#**Technical Implementation**#
 * xref:technical:index.adoc[Technical Information]
