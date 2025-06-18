@@ -45,7 +45,7 @@
 
 == Summary OUC meeting 1^st^ April 2025
 
-* The main topics discussed in April were summarized:
+* The main topics discussed in April were summarised:
 ** ESPD-EDM modelled in Enterprise Architect (.eapx file available on GitHub).
 ** New features and tools: alignment with eCertis UUIDs and eForms code lists, the export of EA structure into JSON, JSON schema for ESPD-EDM.
 ** ESPD Demo – implemented improvements: Integrated SurveyJS and PDFMake.
@@ -74,10 +74,10 @@
 
 * The colleagues from BOSA (Belgium) presented implementation of v3.3.0.
 * Introduction and goals:
-** The tool is a customized version of EC service (EDM 1.0.2), stand-alone application with optional use (non-structured formats are also allowed).
+** The tool is a customised version of EC service (EDM 1.0.2), stand-alone application with optional use (non-structured formats are also allowed).
 ** Short-term goals: extended data model; integrate ESPD with existing pre-award flows; improvements based on users’ feedback. Long-term goals: user-friendliness for EO; integration with authentic sources; semi-automatic evaluation; align with EDM 4.0 or beyond.
 * Difficulties encountered: implementation is different from the one for eForms; a lot of DIY in validation; code lists not always aligned with eForms; need for translations; EDM allows 'national' adaptations. Choices made: JSON instead of XML (it was proposed by ESPD-EDM for future release); deviations from EDM (input types, cardinalities).
-* Appreciated: extensive and well-organized documentation, OP's responsiveness and availability, OUC meetings to "stay in the loop".
+* Appreciated: extensive and well-organised documentation, OP's responsiveness and availability, OUC meetings to "stay in the loop".
 * Could be improved: align data model with eForms, update the regulation and apply universal datamodel, enrich the business handbook with detailed information on criteria (purpose, etc.)
 * Demo has been presented exclusively.
 
