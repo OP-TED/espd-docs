@@ -64,7 +64,7 @@ See formal requirements related to 'Suitability' criteria in the xref:bis41.adoc
 
 === Suitability (enrolments)
 
-For each criteria regarding suitability, the buyer should be able to provide: the register type (Occupations code list, see ESPD-CodeLists.xlsx) in case of criterion "Enrolement in a relevant professional register", and the name and its URL and for other criteria related to registries.
+For each criteria regarding suitability, the buyer should be able to provide: the register type (Occupations code list, see ESPD-CodeLists.xlsx) in case of criterion "Enrolment in a relevant professional register", and the name and its URL and for other criteria related to registries.
 
 === Data Structure
 
@@ -77,11 +77,11 @@ Few details regarding data structure for Suitability selection criteria
 
 //(The figure below is defined in the the tab "Suitability-I of the link:{url-tree}/codelists/ESPD-criterion.xlsx[ESPD-criterion] spread-sheet).
 
-To view the criterion, consult the https://github.com/OP-TED/ESPD-EDM/blob/v4.0.0/criterion/ESPD-criterion.xlsx[Criterion File]. The information will be visible in the tab "SC-Suitability-II".
+To view the criterion, consult the https://github.com/OP-TED/ESPD-EDM/blob/v4.0.0/criterion/ESPD-criterion.xlsx[Criterion File]. The information will be visible in the tab "SC-Suitability-I".
 
 //image:SC_Suitability_enrolement.jpg[SC Suitability enrolement,width=506,height=331]
 
-_Figure 5. 'Suitability' criterion data structure (enrolments)_
+//_Figure 5. 'Suitability' criterion data structure (enrolments)_
 
 
 ==== XML Example
@@ -1577,9 +1577,9 @@ REQUIREMENT(s) specified by the buyers can be place outside a group of QUESTION(
 
 To view the criterion, consult the https://github.com/OP-TED/ESPD-EDM/blob/v4.0.0/criterion/ESPD-criterion.xlsx[Criterion File]. The information will be visible in the tab "SC-Financial_ratios".
 
-image:Financial_ratio_criterion_data_structure.jpg['Financial ratio' criterion data structure,width=526,height=293]
+//image:Financial_ratio_criterion_data_structure.jpg['Financial ratio' criterion data structure,width=526,height=293]
 
-_Figure 20. 'Financial ratio' criterion data structure_
+//_Figure 20. 'Financial ratio' criterion data structure_
 
 === XML Example
 
@@ -2862,7 +2862,7 @@ _Figure 31. 'Abilities (I)' EO mock-up_
 
 //(The figure below is defined in the the tab ''SC-Abilities_1 (Persons)'' of the link:{url-tree}/codelists/ESPD-criterion.xlsx[ESPD-criterion] spread-sheet).
 
-To view the criterion, consult the https://github.com/OP-TED/ESPD-EDM/blob/v4.0.0/criterion/ESPD-criterion.xlsx[Criterion File]. The information will be visible in the tab "SC-Abilities_1 (Persons)"."
+To view the criterion, consult the https://github.com/OP-TED/ESPD-EDM/blob/v4.0.0/criterion/ESPD-criterion.xlsx[Criterion File]. The information will be visible in the tab "SC-Abilities_1 (Persons)".
 
 //image:Abilities_Persons_criterion_data structure.jpg['Abilities (I)(Persons)' criterion data structure,width=566,height=372]
 
@@ -3107,7 +3107,7 @@ The XML example below shows the REQUIREMENT(s) and QUESTION(s).
 
 //(The figure below is defined in the the tab ''SC_Abilities_2 (Facilities,...)'' of the link:{url-tree}/codelists/ESPD-criterion.xlsx[ESPD-criterion] spread-sheet).
 
-To view the criterion, consult the https://github.com/OP-TED/ESPD-EDM/blob/v4.0.0/criterion/ESPD-criterion.xlsx[Criterion File]. The information will be visible in the tab "SC_Abilities_2 (Facilities,...)"."
+To view the criterion, consult the https://github.com/OP-TED/ESPD-EDM/blob/v4.0.0/criterion/ESPD-criterion.xlsx[Criterion File]. The information will be visible in the tab "SC_Abilities_2 (Facilities,...)".
 
 //image:Abilities_Facilities_criterion data structure.jpg['Abilities (II) (Facilities, ....)' criterion data structure,width=526,height=188]
 
