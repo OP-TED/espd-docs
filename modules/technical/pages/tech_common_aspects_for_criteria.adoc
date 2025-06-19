@@ -117,7 +117,7 @@ xref:tbr70_reqs.adoc#list_of_criteria[tbr70-009]
 See XML examples in the sections about exclusion and selection criteria.
 
 
-= Legislation
+== Legislation
 
 The XSD schema below shows, in blue, the elements of the component cac:Legislation used to point at the legislation related to the criterion.
 
@@ -257,7 +257,7 @@ _<!-- ... elements omitted for brevity -->_
 </cac:TenderingCriterion>
 ----
 
-= Groups of properties
+== Groups of properties
 
 This XSD diagram shows the sub-components of a group of criteria:
 

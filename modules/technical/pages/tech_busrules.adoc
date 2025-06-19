@@ -17,16 +17,17 @@ This guide explains how Business Rules are implemented, and which ones apply in 
 [width="100%",cols="13%,31%,11%,45%",options="header",]
 |===
 |*ID* |*Filename* |*Version* |*Description*
-a|
-.
 
-|ESPD_Testcases |01 |Identification of the different test cases for the ESPDRequest and the ESPDResponse.
-a|
-[start=2]
-.
+a|1
+|ESPD_Testcases 
+|01 
+|Identification of the different test cases for the ESPDRequest and the ESPDResponse.
 
-|XML Implementation Guide (current document) link:https://docs.ted.europa.eu/ESPD-EDM/latest/index.html[Technical HandBook] |4.0.0 |Understanding of the model underlying the implementation of the ESPD Request and ESPD Response XML documents.
-a|
+a|2
+|XML Implementation Guide (current document) link:https://docs.ted.europa.eu/ESPD-EDM/latest/index.html[Technical HandBook] 
+|4.0.0 
+|Understanding of the model underlying the implementation of the ESPD Request and ESPD Response XML documents.
+
 |===
 
 .Table 1: List of Input documents
@@ -2462,19 +2463,40 @@ ____
 
 [width="100%",cols="33%,33%,33%,33%%",options="header",]
 |===
-|*Mapping Rule ID* | | |
-|Test Case Rule ID a|
+
+|*Mapping Rule ID* 
+| 
+| 
+|
+
+|Test Case Rule ID 
+a|
 * RS-20-R50-S10
 * RS-80-R60-S10
-
-| a|
+| 
+a|
 * RS-140-R50-S10
 * RS-200-R50-S10
 
-|Rule descriptn |When the pre-qualification system the EO is registered on does not cover all the selection criteria, information about compliance of selection criteria MUST be provided. | |
-|Mapping description |Criterion responses are implemented as Tendering Criterion response components | |
-|XSD Path |/cac:TenderingCriterionResponse[0..n] | |
-|XSD Business Rule description | |XSD Business Rule Schematron |
+|Rule description 
+|When the pre-qualification system the EO is registered on does not cover all the selection criteria, information about compliance of selection criteria MUST be provided. 
+| 
+|
+
+|Mapping description 
+|Criterion responses are implemented as Tendering Criterion response components 
+| 
+|
+
+|XSD Path |/cac:TenderingCriterionResponse[0..n] 
+| 
+|
+|XSD Business Rule description 
+
+| 
+|XSD Business Rule Schematron 
+|
+|
 |*No Schematron rule can be implemented* | | |
 |===
 
@@ -2506,14 +2528,19 @@ ____
 
 [width="100%",cols="33%,33%,33%,33%",options="header",]
 |===
-|*Mapping Rule ID* | | |
+
+|*Mapping Rule ID* 
+| 
+| 
+|
+
 |Test Case Rule ID a|
 * RS-40-R50
 * RS-60-R60
 * RS-100-R60
 * RS-120-R70
-
-| a|
+| 
+a|
 * RS-160-R50
 * RS-180-R60
 * RS-220-R50
@@ -2724,7 +2751,9 @@ Then, its /cac:TenderingCriterionResponse /cbc:ResponseID must exist within /cac
 [width="100%",cols="25%,19%,18%,38%",options="header",]
 |===
 |*Mapping Rule ID* | | |
-|Test Case Rule ID a|
+
+|Test Case Rule ID 
+a|
 * RQ-50-R40
 * RQ-60-R40
 
