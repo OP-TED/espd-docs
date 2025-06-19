@@ -19,7 +19,7 @@ image::https://kroki.io/pikchr/svg/eNrVVl1vmzAUfedXWKyT9lEikhZVnbSHhNEOqSVTQqfuq
 //[Edit this diagram](https://niolesk.top/#https://kroki.io/pikchr/svg/eNrVVl1vmzAUfedXWKyT9lEikhZVnbSHhNEOqSVTQqfuqTLGCagEM-N89N_PQNIZAy5RN017SeR7r-89PvdcmxMKPgNzMIpT7U0Sp5jCsDRcWB9OqFZYtnFlGVmaNjE_gYDsQBFlZTuASEIoMHcWvAxCCyxipoWEVW7zreTW7vnuBOZsgMFH8M48Nd9rkFKybaShZFUGgiIZI-De1FZkgwGNlxEDZ4NLjpbhHQP63LlxbN-devo-SZBA9AggAxNTayvYXrFKfEKr0vcmYBFOefVtCoach2p5CNLm9rBOgz6_c_3xxL1x_R86KAibmIPiLypwDPhvC1EVkLMWnnh-WBUIYR7hEOh5gox8HTOD4qWRUbI4BTUT40iwYINrFhmrgOZRBvSW4uBAn4hbIpCj2Ef9iepiWnh8F87aujCSuuDYU29669oPV6439mx3fPMw98feF9e71stTSzxXp1PuaoAfKSTLvYNcIZ1ypHgQlHD7dzNv-t2ZKUD-DmkigmpIUIlpdMA0bFEcg2loMGIscbpv78ECN0vJkmcYdZjbFdifx3MJ88UeM-qCTCGLiQgkTnNxSXgyqpqLv3H6WsuGjUJHYRZzoeOn6bJtmixZlY791XNtPg7fZtMrZz7ntyxfPF8X3Vp9YWPjCJZSC1afmbLkmZo5V87M8WxnrkAqBjVRqefK6jVXVttcwSBO-MW5MLaEPlY9fjbl6yxLnmQjppsY4fwlyb46ce34wyPact7RlqBLVH3004YqUIMKejUl6GoKH7XFwmAYRQZiNBHYEjwSuavlihk_11CMXkBUMpzLcYcu6ELR0oHTTWM_IyTJGxikUijC6LGXMP73w9VkcIw4LzrEiSRx3o698bVz63i-Qp1iUBMXUsNCveSJ1PJ8osmTkZKS2gaBpZM_RMYqE33rAAnLgmUjX2W828XHGk5Zq3PvO0Jc_wparQXHSGPY9Z6EkjZsZ-a7V_xW8pUvSj2sCS5UYwt76SPs0kfJD_9u2HOW8_HhNgNhyrg5xJlg5zMpOHr1-PXpa1QMfwEhX7qi)
 _Figure 1. Selection criteria classification_
 
-= Lot Management approach for Selection Criteria
+== Lot Management approach for Selection Criteria
 
 For Selection Criteria, the buyer may specify the Lots that apply to each selection criteria by using the element *cac:ProcurementProjectLotReference* inside the element *cac:TenderingCriterion*. 
 
@@ -35,7 +35,7 @@ The ESPD 3.0.0 allows different lots for different Selection Criteria, whereas t
 See also section "xref:tech_request.adoc#lot_management[Lot Management in ESPD Request]". 
 
 
-= Initial question for the EO to fulfil or not the criteria 
+== Initial question for the EO to fulfil or not the criteria 
 
 In this version of ESPD, a new data structure has been added to the selection criteria to get more information about the EO and the fulfilment of the selection criteria. The UUID identifying the group is 0e50931d-4d39-4f1d-9fdc-b2cf16c0807a. It is a common structured reused over selection criteria.
 

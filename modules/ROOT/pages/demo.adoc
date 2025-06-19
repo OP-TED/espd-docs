@@ -14,7 +14,7 @@
 
 ****
 
-image::../images/espd_demo.site.png[link=https://docs.ted.europa.eu/espd-demo]
+image::../images/espd_demo_site.png[link=https://docs.ted.europa.eu/espd-demo]
 
 ****
 
