@@ -1,4 +1,4 @@
-doctitle: ESPD Exchange Data Model (ESPD-EDM)
+:doctitle: ESPD Exchange Data Model (ESPD-EDM)
 :doccode: espd-v4.0.x-prod-001
 :author: NPJ
 :authoremail: nicole-anne.paterson-jones@ext.ec.europa.eu
