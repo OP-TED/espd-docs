@@ -138,17 +138,23 @@ _Table 4. UBL attributes for identifiers and corresponding definitions, as provi
 
 This fragment of XML shows how the compulsory attributes are used for the some of the root elements of an ESPD Request document.
 
-[source,xml]
+[source,xml,linenums]
 ----
 <cbc:UBLVersionID schemeAgencyID="OASIS-UBL-TC">2.3</cbc:UBLVersionID>
 <!--1-->
 <cbc:ID schemeAgencyID="DGPE">ESPDREQ-DGPE-3b5755dfb8</cbc:ID>
 <!--2-->
-<cbc:UUID schemeID="ISO/IEC 9834-8:2008" schemeAgencyID="OP" schemeVersionID="4">0fddbf2d-1e33-4267-b04f-52b59b72ccb6</cbc:UUID>
+<cbc:UUID schemeID="ISO/IEC 9834-8:2008" schemeAgencyID="OP" schemeVersionID="4">
+  0fddbf2d-1e33-4267-b04f-52b59b72ccb6
+</cbc:UUID>
 <!--3-->
-<cbc:ContractFolderID schemeAgencyID="DGPE">PP.20170419.1024-9</cbc:ContractFolderID>
+<cbc:ContractFolderID schemeAgencyID="DGPE">
+   PP.20170419.1024-9
+</cbc:ContractFolderID>
 <!--4-->
-<cbc:VersionID schemeAgencyID="OP" schemeVersionID="5.0.0">1.0</cbc:VersionID>
+<cbc:VersionID schemeAgencyID="OP" schemeVersionID="5.0.0">
+  1.0
+</cbc:VersionID>
 <!--5-->
 ----
 <1> The Agency responsible for the maintenance of the UBL versioning is the OASIS UBL Technical Committee
@@ -176,18 +182,23 @@ The next fragment of XML shows how this is used in the particular case of the Cr
 
 _TenderingCriterionProperty (a QUESTION) asking for the identifier of the Economic Operator_
 
-[source,xml]
+[source,xml,linenums]
 ----
 <cac:TenderingCriterionProperty>
 <!--1-->
-<cbc:ID schemeID="Criterion" schemeAgencyID="OP" schemeVersionID="5.0.0">1fa05728-308f-43b0-b547-c903ffb0a8af</cbc:ID>
+<cbc:ID schemeID="Criterion" schemeAgencyID="OP" schemeVersionID="5.0.0">
+  1fa05728-308f-43b0-b547-c903ffb0a8af
+</cbc:ID>
 
 <cbc:Description>ID of the economic operator</cbc:Description>
 
-<cbc:TypeCode listID="criterion-element-type" listAgencyID="OP" listVersionID="5.0.0">QUESTION</cbc:TypeCode>
+<cbc:TypeCode listID="criterion-element-type" listAgencyID="OP" listVersionID="5.0.0">
+  QUESTION
+</cbc:TypeCode>
 <!--2-->
-<cbc:ValueDataTypeCode listID="response-data-type" listAgencyID="OP" listVersionID="5.0.0">ECONOMIC_OPERATOR_IDENTIFIER</cbc:ValueDataTypeCode>
-
+<cbc:ValueDataTypeCode listID="response-data-type" listAgencyID="OP" listVersionID="5.0.0">
+  ECONOMIC_OPERATOR_IDENTIFIER
+</cbc:ValueDataTypeCode>
 </cac:TenderingCriterionProperty>
 ----
 <1> The identifier of the property will be used in the response to map link the response to this QUESTION.
@@ -195,14 +206,20 @@ _TenderingCriterionProperty (a QUESTION) asking for the identifier of the Econom
 
 
 _TenderingCriterionResponse (the answer to the previous QUESTION)_
-[source,xml]
+[source,xml,linenums]
 ----
 <cac:TenderingCriterionResponse>
 <!--1-->
-<cbc:ID schemeID="ISO/IEC 9834-8:2008 - 4UUID" schemeAgencyID="OP" schemeVersionID="5.0.0">acb58f0e-0fe4-4372-aa08-60d0c36bfcfe</cbc:ID>
-<cbc:ValidatedCriterionPropertyID schemeID="Criterion" schemeAgencyID="OP" schemeVersionID="5.0.0">1fa05728-308f-43b0-b547-c903ffb0a8af</cbc:ValidatedCriterionPropertyID>
+<cbc:ID schemeID="ISO/IEC 9834-8:2008 - 4UUID" schemeAgencyID="OP" schemeVersionID="5.0.0">
+  acb58f0e-0fe4-4372-aa08-60d0c36bfcfe
+</cbc:ID>
+<cbc:ValidatedCriterionPropertyID schemeID="Criterion" schemeAgencyID="OP" schemeVersionID="5.0.0">
+  1fa05728-308f-43b0-b547-c903ffb0a8af
+</cbc:ValidatedCriterionPropertyID>
 <!--2-->
-<cbc:ResponseID schemeID="VAT" schemeAgencyID="ES-AEAT">B82387770</cbc:ResponseID>
+<cbc:ResponseID schemeID="VAT" schemeAgencyID="ES-AEAT">
+  B82387770
+</cbc:ResponseID>
 </cac:TenderingCriterionResponse>
 ----
 <1> Notice that this UUID is identical to the QUESTION UUID, which is the mechanism used in UBL to link the answer to the very specific QUESTION it is responding.

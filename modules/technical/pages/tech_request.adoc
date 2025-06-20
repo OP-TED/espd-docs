@@ -200,69 +200,7 @@ _Figure 3. Overview of new lot management approach._
 
 The ESPD request includes exclusion grounds that are general for all the Lots into which the procedure is divided. However, for Selection Criteria, it is different since in the procedure it is possible to have Lots with different selection criteria. Therefore, in the ESPD request the different Selection Criteria has to include the reference to the lots which applies. It will be done using the UBL 2.3 cac:ProcurementProjectLotReference that includes cbc:TenderingCriterion.
 
-The following XML example shows how it is done:
-
-[source,xml]
-----
-<!--- Root elements eliminated for the sake of brevity -->
-
-<cac:TenderingCriterion>
-<cbc:ID schemeID="criterion" schemeAgencyID="OP" schemeVersionID="3.3.0">499efc97-2ac1-4af2-9e84-323c2ca67747</cbc:ID>
-<cbc:CriterionTypeCode listID="http://publications.europa.eu/resource/authority/criterion" listAgencyID="OP" listVersionID="20230315-0">gen-year-to</cbc:CriterionTypeCode>
-<cbc:Name>General yearly turnover</cbc:Name>
-<cbc:Description>Its general yearly turnover for the number of financial years required in the relevant notice, the in the ESPD, the relevant notice or the ESPD is as follows:</cbc:Description>
-<cac:ProcurementProjectLotReference>
-<cbc:ID schemeID="Criterion" schemeAgencyID="OP" schemeVersionID="3.3.0">LOT-00000</cbc:ID>
-</cac:ProcurementProjectLotReference>
-<cac:ProcurementProjectLotReference>
-<cbc:ID schemeID="Criterion" schemeAgencyID="OP" schemeVersionID="3.3.0">LOT-00001</cbc:ID>
-</cac:ProcurementProjectLotReference>
-<cac:SubTenderingCriterion>
-<cbc:ID schemeID="criterion" schemeAgencyID="OP" schemeVersionID="3.3.0">e6b21867-95b5-4549-8180-f4673219b179</cbc:ID>
-<cbc:Name>[Name of the National Criterion]</cbc:Name>
-<cbc:Description>[Description of the National Criterion ]</cbc:Description>
-<cac:TenderingCriterionPropertyGroup>
-<cbc:ID schemeID="criterion" schemeAgencyID="OP" schemeVersionID="3.3.0">8c39b505-8abe-44fa-a3e0-f2d78b9d8224</cbc:ID>
-<cbc:PropertyGroupTypeCode listID="property-group-type" listAgencyID="OP" listVersionID="3.3.0">ON*</cbc:PropertyGroupTypeCode>
-<cac:TenderingCriterionProperty>
-<cbc:ID schemeID="criterion" schemeAgencyID="OP" schemeVersionID="3.3.0">ed2a13ed-cf3d-478e-888d-cb9b89f55020</cbc:ID>
-<cbc:Description>[Additional information; e.g. no evidences online]</cbc:Description>
-<cbc:TypeCode listID="criterion-element-type" listAgencyID="OP" listVersionID="3.3.0">CAPTION</cbc:TypeCode>
-<cbc:ValueDataTypeCode listID="response-data-type" listAgencyID="OP" listVersionID="3.3.0">NONE</cbc:ValueDataTypeCode>
-</cac:TenderingCriterionProperty>
-<cac:TenderingCriterionProperty>
-<cbc:ID schemeID="criterion" schemeAgencyID="OP" schemeVersionID="3.3.0">b21ab072-e5b6-495c-ad6e-4ead6993ede5</cbc:ID>
-<cbc:Description>Your Answer</cbc:Description>
-<cbc:TypeCode listID="criterion-element-type" listAgencyID="OP" listVersionID="3.3.0">QUESTION</cbc:TypeCode>
-<cbc:ValueDataTypeCode listID="response-data-type" listAgencyID="OP" listVersionID="3.3.0">INDICATOR</cbc:ValueDataTypeCode>
-</cac:TenderingCriterionProperty>
-</cac:TenderingCriterionPropertyGroup>
-</cac:SubTenderingCriterion>
-<cac:Legislation>
-<cbc:ID schemeID="criterion" schemeAgencyID="OP" schemeVersionID="3.3.0">635a537c-57bf-4beb-8b69-d97d49382e1f</cbc:ID>
-<cbc:Title>[Legislation title]</cbc:Title>
-<cbc:Description>[Legislation description]</cbc:Description>
-<cbc:JurisdictionLevel>EU</cbc:JurisdictionLevel>
-<cbc:Article>[Article, e.g. Article 2.I.a]</cbc:Article>
-<cbc:URI>http://eur-lex.europa.eu/</cbc:URI>
-<cac:Language>
-<cbc:LocaleCode listID="http://publications.europa.eu/resource/authority/language" listAgencyName="OP" listVersionID="20220928-0">ENG</cbc:LocaleCode>
-</cac:Language>
-</cac:Legislation>
-<cac:TenderingCriterionPropertyGroup>
-<cbc:ID schemeID="criterion" schemeAgencyID="OP" schemeVersionID="3.3.0">5ca58d66-3ef1-4145-957c-45d5b18a837f</cbc:ID>
-<cbc:PropertyGroupTypeCode listID="property-group-type" listAgencyID="OP" listVersionID="3.3.0">ON*</cbc:PropertyGroupTypeCode>
-<cac:TenderingCriterionProperty>
-<cbc:ID schemeID="criterion" schemeAgencyID="OP" schemeVersionID="3.3.0">42824f1f-3574-4e53-80ca-501d22e85ef8</cbc:ID>
-<cbc:Description>Minimum requirement</cbc:Description>
-<cbc:TypeCode listID="criterion-element-type" listAgencyID="OP" listVersionID="3.3.0">REQUIREMENT</cbc:TypeCode>
-<cbc:ValueDataTypeCode listID="response-data-type" listAgencyID="OP" listVersionID="3.3.0">AMOUNT</cbc:ValueDataTypeCode>
-<!-- No answer is expected here from the economic operator, as this is a REQUIREMENT issued by the buyer. Hence the element 'cbc:ValueDataTypeCode' contains the type of value of the requirement issued by the buyer -->
-<cbc:ExpectedAmount currencyID="EUR">100000</cbc:ExpectedAmount>
-</cac:TenderingCriterionProperty>
-
-<!--- Rest of the elements of the criterion have been eliminated for the sake of brevity -->
-----
+Please generate an ESPD Request and ESPD Response documents on https://docs.ted.europa.eu/espd-demo/[ESPD Demo Site] to see full example.
 
 From the Economic Operator's side it is different. As in the image above there will be as many ESPD Responses as Lots, or Group of Lots, the EO wishes to tender for. If the EO wishes to participate in three Lots, they will need to fill in 3 ESPD Responses. For more details on this, please see the section on the ESPD Response.
 
@@ -441,78 +379,58 @@ _Table 7. External Reference_
 
 The XML snippet below illustrates how to use the cac:AdditionalDocumentReference in the ESPDRequest XML document to refer to a Contract Notice published in TED and on a national procurement board:
 
-[source,xml]
+[source,xml,linenums]
 ----
-<!--- Root elements eliminated for the sake of brevity -->
-
-<!-- Reference to the Contract Notice published on TED -->
-
 <cac:AdditionalDocumentReference>
-
-<cbc:ID schemeAgencyID="OP">2017/S 142-293520</cbc:ID>
-
-<cbc:DocumentTypeCode listID="http://publications.europa.eu/resource/authority/docrefcontent-type" listAgencyID="OP" listVersionID="20220928-0">TED_CN</cbc:DocumentTypeCode>
-
-<cac:Attachment>
-
-<cac:ExternalReference>
-
-<!-- Beware XML URI fields may require encoded URLs -->
-
-<cbc:URI schemeAgencyID="OP">http://ted.europa.eu/udl?uri%3DTED:NOTICE:293520-2017:TEXT:EN:HTML%026src%3D0</cbc:URI>
-
-<cbc:FileName>Spain-Zamora: Repair and maintenance services</cbc:FileName>
-
-<cbc:Description>Repair and maintenance services. Real estate services.</cbc:Description>
-
-<cbc:Description>293520-2017</cbc:Description>
-
-</cac:ExternalReference>
-
-</cac:Attachment>
-
+<!--1-->
+    <cbc:ID schemeAgencyID="OP">2017/S 142-293520</cbc:ID>
+<!--2-->    
+    <cbc:DocumentTypeCode listID="http://publications.europa.eu/resource/authority/docrefcontent-type" listAgencyID="OP" listVersionID="20220928-0">
+      TED_CN
+    </cbc:DocumentTypeCode>
+    <cac:Attachment>
+        <cac:ExternalReference>
+        <!-- Beware XML URI fields may require encoded URLs -->
+<!--3-->        
+        <cbc:URI schemeAgencyID="OP">
+          http://ted.europa.eu/udl?uri%3DTED:NOTICE:293520-2017:TEXT:EN:HTML%026src%3D0
+        </cbc:URI>
+<!--4-->        
+        <cbc:FileName>Spain-Zamora: Repair and maintenance services</cbc:FileName>
+        <cbc:Description>Repair and maintenance services. Real estate services.</cbc:Description>
+        <cbc:Description>293520-2017</cbc:Description>
+        </cac:ExternalReference>
+    </cac:Attachment>
 </cac:AdditionalDocumentReference>
 
 <!-- Reference to the Contract Notice published on the Spanish Central Government eTendering Platform -->
-
 <cac:AdditionalDocumentReference>
-
 <!-- Contract Notice publishied on the Spanish Central eTendering Platform "PLACE" Plataforma de Contratación del Sector Público -->
-
-<cbc:ID schemeAgencyID="PLACE">3.17/20830.0160</cbc:ID>
-
-<!-- Contract Notice (CN) published on a National Government Official Journal -->
-
-<cbc:DocumentTypeCode listID="http://publications.europa.eu/resource/authority/docrefcontent-type" listAgencyID="OP" listVersionID="20220928-0">NOJCN</cbc:DocumentTypeCode>
-
-<cac:Attachment>
-
-<cac:ExternalReference>
-
-<!-- Beware XML URI fields may require encoded URLs -->
-
-<cbc:URI schemeAgencyID="PLACE">https://contrataciondelestado.es/wps/portal/!ut/p/b1/pY_LDoIwEEW_hQ8wM5S2wJKH5REUVEDbjenCGI3Axvj9gmFrMXF2Nzkncy8okDahHD2XMAYnUL1-3a76eRt6_Ziy4me6LqNIpAS9gxMjKeKm4ekUyQhIA5AQo5-w2WdORNu8rfghSxCzVMRFY7NR57_5-OUC_K-_t9j_CMqMkBkwTfwAhg3bdOguIEfMPQfthedkvoNluB8f5dWmrhJiI3KoQYbhEkYnLA-hUw8hhJ_dqV7pwLLeHJySpA!!/</cbc:URI>
-
-<cbc:FileName>Suministro y transporte de balasto</cbc:FileName>
-
-<cbc:Description>Suministro y transporte de balasto para el tramo Zamora — Pedralba de la Línea de Alta Velocidad Olmedo — Lubián — Ourense. Subtramo 8.</cbc:Description>
-
-</cac:ExternalReference>
-
-</cac:Attachment>
-
+<!--5-->
+<!--6-->
+    <cbc:ID schemeAgencyID="PLACE">3.17/20830.0160</cbc:ID>
+    <!-- Contract Notice (CN) published on a National Government Official Journal -->
+<!--7-->
+    <cbc:DocumentTypeCode listID="http://publications.europa.eu/resource/authority/docrefcontent-type" listAgencyID="OP" listVersionID="20220928-0">
+      NOJCN
+    </cbc:DocumentTypeCode>
+    <cac:Attachment>
+    <cac:ExternalReference>
+    <!-- Beware XML URI fields may require encoded URLs -->
+    <cbc:URI schemeAgencyID="PLACE">https://contrataciondelestado.es/wps/portal/!ut/p/b1/pY_LDoIwEEW_hQ8wM5S2wJKH5REUVEDbjenCGI3Axvj9gmFrMXF2Nzkncy8okDahHD2XMAYnUL1-3a76eRt6_Ziy4me6LqNIpAS9gxMjKeKm4ekUyQhIA5AQo5-w2WdORNu8rfghSxCzVMRFY7NR57_5-OUC_K-_t9j_CMqMkBkwTfwAhg3bdOguIEfMPQfthedkvoNluB8f5dWmrhJiI3KoQYbhEkYnLA-hUw8hhJ_dqV7pwLLeHJySpA!!/</cbc:URI>
+    <cbc:FileName>Suministro y transporte de balasto</cbc:FileName>
+    <cbc:Description>Suministro y transporte de balasto para el tramo Zamora — Pedralba de la Línea de Alta Velocidad Olmedo — Lubián — Ourense. Subtramo 8.</cbc:Description>
+    </cac:ExternalReference>
+    </cac:Attachment>
 </cac:AdditionalDocumentReference>
-
-</QualificationApplicationRequest>
 ----
-
-. For TED Notices, the Publications Office Official Journal Supplement number must be used in its original format [][][][]/S [][][]-[][][][][][], e.g. 2017/S 142-293520. Notice that the schemeAgencyID is OP (OP standing for 'Publications Office').
-. The jurisdiction scope of this document is typified in the Code List docref-content-type (see file link:{url-tree}/codelists/gc/DocRefContentType.gc[/codelists/gc/DocRefContentType.gc] in the distribution package). *Beware that the name and content of this Code List has changed from the previous ESPD-EDM version 2.1.1*.
-. The actual content is never embedded in the ESPD documents. Rather the content is always referenced from its original source (alignment with the Once-Only-Principle).
-. The title of the CN must be placed in the FileName field of the attachment. UBL does not provide a placeholder for the title of the document.
-. If publication on TED is at the ESPD Request preparation time, and the procurer does not yet have the OJS number, they can receive a temporary CN identifier (Received Notice Number). To save this number in the DocumentReference component, two cbc:Description elements must be created, and the second one used for the Received Notice Number. If you do not have a description for the CN then use dummy content for the first description, e.g. <cbc:Description>_</cbc:/Description>.
-. schemeAgencyID is used in this example to specify that the national Agency that created this reference to the national publication (e.g., "PLACE" to refer to the ID of the national electronic board where the CN was published). The pattern of the ID is the one created by the Spanish buyer.
-. In this case, the code NOJCN means 'Contract Notice (CN) published on a National Government Official Journal' (see file link:{url-tree}/codelists/gc/DocRefContentType.gc[/codelists/gc/DocRefContentType.gc] in the distribution package).
+<1> For TED Notices, the Publications Office Official Journal Supplement number must be used in its original format [][][][]/S [][][]-[][][][][][], e.g. 2017/S 142-293520. Notice that the schemeAgencyID is OP (OP standing for 'Publications Office').
+<2> The jurisdiction scope of this document is typified in the Code List docref-content-type (see file link:{url-tree}/codelists/gc/DocRefContentType.gc[/codelists/gc/DocRefContentType.gc] in the distribution package). *Beware that the name and content of this Code List has changed from the previous ESPD-EDM version 2.1.1*.
+<3> The actual content is never embedded in the ESPD documents. Rather the content is always referenced from its original source (alignment with the Once-Only-Principle).
+<4> The title of the CN must be placed in the FileName field of the attachment. UBL does not provide a placeholder for the title of the document.
+<5> If publication on TED is at the ESPD Request preparation time, and the procurer does not yet have the OJS number, they can receive a temporary CN identifier (Received Notice Number). To save this number in the DocumentReference component, two cbc:Description elements must be created, and the second one used for the Received Notice Number. If you do not have a description for the CN then use dummy content for the first description, e.g. <cbc:Description>_</cbc:/Description>.
+<6> schemeAgencyID is used in this example to specify that the national Agency that created this reference to the national publication (e.g., "PLACE" to refer to the ID of the national electronic board where the CN was published). The pattern of the ID is the one created by the Spanish buyer.
+<7> In this case, the code NOJCN means 'Contract Notice (CN) published on a National Government Official Journal' (see file link:{url-tree}/codelists/gc/DocRefContentType.gc[/codelists/gc/DocRefContentType.gc] in the distribution package).
 
 == Contracting Body
 
@@ -807,62 +725,49 @@ IdentificationCode* |Code |1 |The code that identifies the country of the servic
 
 The XML snippet below shows how an example of how to supply the expected data for the service provider.
 
-[source,xml]
+[source,xml,linenums]
 ----
-...
-
-_<!--- Root elements eliminated for the sake of brevity -->_
-
+<!--1-->
 <cac:ContractingParty>
-
-<cac:Party>
-
-<cac:PartyIdentification><cbc:ID schemeAgencyID="VIES">B82387770</cbc:ID> </cac:PartyIdentification>
-
-<cac:PartyName><cbc:Name>Ministerio de Defensa</cbc:Name></cac:PartyName>
-
-<cac:PostalAddress><cac:Country><cbc:IdentificationCode listID="http://publications.europa.eu/resource/authority/country" listAgencyID="OP" listVersionID="20220928-0">ES</cbc:IdentificationCode></cac:Country></cac:PostalAddress>
-
-<cac:ServiceProviderParty>
-
-<cac:Party>
-
-<cbc:WebsiteURI>http://www.minhafp.gob.es/es-ES/Areas%20Tematicas/Patrimonio%20del%20Estado/Contratacion%20del%20Sector%20Publico/Paginas/ROLECE.aspx</cbc:WebsiteURI>
-
-<cbc:EndpointID>http://www.minhafp.gob.es/ESPD/endpoint</cbc:EndpointID>
-
-<cac:PartyIdentification>
-
-<cbc:ID schemeAgencyID="AEAT">B36699932</cbc:ID>
-
-</cac:PartyIdentification>
-
-<cac:PartyName>
-
-<cbc:Name>Registro Oficial de Licitadores y Empresas Clasificadas (ROLECE)</cbc:Name></cac:PartyName>
-
-<cac:PostalAddress>
-
-<cac:Country><cbc:IdentificationCode listID="http://publications.europa.eu/resource/authority/country" listAgencyID="OP" listVersionID="20220928-0">ESP</cbc:IdentificationCode></cac:Country>
-
-</cac:PostalAddress>
-
-</cac:Party>
-
-</cac:ServiceProviderParty>
-
-</cac:Party>
-
+  <cac:Party>
+<!--2-->
+  <cac:PartyIdentification>
+    <cbc:ID schemeAgencyID="VIES">B82387770</cbc:ID> 
+  </cac:PartyIdentification>
+  <cac:PartyName>
+    <cbc:Name>Ministerio de Defensa</cbc:Name>
+  </cac:PartyName>
+  <cac:PostalAddress>
+    <cac:Country>
+      <cbc:IdentificationCode listID="http://publications.europa.eu/resource/authority/country" listAgencyID="OP" listVersionID="20220928-0">ES</cbc:IdentificationCode>
+    </cac:Country>
+  </cac:PostalAddress>
+  <cac:ServiceProviderParty>
+    <cac:Party>
+    <cbc:WebsiteURI>http://www.minhafp.gob.es/es-ES/Areas%20Tematicas/Patrimonio%20del%20Estado/Contratacion%20del%20Sector%20Publico/Paginas/ROLECE.aspx</cbc:WebsiteURI>
+    <cbc:EndpointID>http://www.minhafp.gob.es/ESPD/endpoint</cbc:EndpointID>
+    <cac:PartyIdentification>
+      <cbc:ID schemeAgencyID="AEAT">B36699932</cbc:ID>
+    </cac:PartyIdentification>
+<!--3-->
+    <cac:PartyName>
+      <cbc:Name>Registro Oficial de Licitadores y Empresas Clasificadas (ROLECE)</cbc:Name>
+    </cac:PartyName>
+    <cac:PostalAddress>
+<!--4-->
+      <cac:Country>
+        <cbc:IdentificationCode listID="http://publications.europa.eu/resource/authority/country" listAgencyID="OP" listVersionID="20220928-0">ESP</cbc:IdentificationCode>
+      </cac:Country>
+    </cac:PostalAddress>
+    </cac:Party>
+  </cac:ServiceProviderParty>
+  </cac:Party>
 </cac:ContractingParty>
-
-...
 ----
-
-
-. ContractingParty non-compulsory elements have been omitted for the sake of brevity.
-. The service provider VAT number. The issuer Agency is the Spanish Tax Agency (AEAT). You can use the VIES platform to verify that the VAT number exists and is correct for Spain.
-. The registered name of the service provider is mandatory.
-. The country code of the service provider (ESP) is compulsory. You will need to use this code (ESP) to verify the VAT number in the VIES service.
+<1> ContractingParty non-nandatory elements have been omitted for the sake of brevity.
+<2> The service provider VAT number. The issuer Agency is the Spanish Tax Agency (AEAT). You can use the VIES platform to verify that the VAT number exists and is correct for Spain.
+<3> The registered name of the service provider is mandatory.
+<4> The country code of the service provider (ESP) is compulsory. You will need to use this code (ESP) to verify the VAT number in the VIES service.
 
 include::partial$feedback.adoc[]
 
