@@ -30,6 +30,8 @@
 |George VERNARDOS |OP
 |===
 
+== 
+
 == Meeting Agenda
 
 [arabic]
@@ -53,43 +55,52 @@
 
 == GitHub status
 
-* There are two closed issues from the last meeting:
-** https://github.com/OP-TED/ESPD-EDM/issues/424[#424] (++[++Question++]++: Where could we find translations for SUBCRITERIONs descriptions) and https://github.com/OP-TED/ESPD-EDM/issues/422[#422] (Purely national Exclusion Ground - dynamic structure).
-** Both issues were created by colleagues from Slovenia. #424 is part of v4.1.0 release, meanwhile #422 is not applicable, as it was part of old v2 releases.
-* There are two open issues, both answered (waiting user’s feedback):
-** https://github.com/OP-TED/ESPD-EDM/issues/426[#426] (++[++Question++]++: Selection criteria) - answered in GitHub.
-** https://github.com/OP-TED/ESPD-EDM/issues/422[#422] (SUBCRITERION QUESTION should not be mandatory) - answered in GitHub, new version of Excel Criterion file is proposed.
+* Two tickets have been closed since the last meeting:
+** https://github.com/OP-TED/ESPD-EDM/issues/424[#424] (++[++Question++]++: Where could we find translations for SUBCRITERIONs descriptions), and
+** https://github.com/OP-TED/ESPD-EDM/issues/422[#422] (Purely national Exclusion Ground - dynamic structure).
 
-== What's new in the ESPD Model for Q1 and Q2 2025
+____
+Both issues were created by colleagues from Slovenia. #424 is part of v4.1.0 release, meanwhile #422 is not applicable, as it was part of old v2 releases.
+____
+
+* There are two open issues, both answered (waiting user’s feedback):
+** https://github.com/OP-TED/ESPD-EDM/issues/426[#426] (++[++Question++]++: Selection criteria).
+** https://github.com/OP-TED/ESPD-EDM/issues/422[#422] (SUBCRITERION QUESTION should not be mandatory), new version of Excel Criterion file is proposed.
+
+== What's new in the ESPD-Model for Q1 and Q2 2025
 
 * A long-term plan and achieved progress were presented:
 ** ESPD-EDM fully implemented and modelled in Enterprise Architect (EA). New way to manage ESPD-EDM: from Excel to EA, from XML to JSON.
 ** Develop tools to allow automatic extraction and processing of EA. Export structure into JSON format. JSON schema for validation.
 ** Generate full ESPD Request and Response examples on ESPD Demo site.
 ** Continue with support for ESPD-EDM Excel files.
-** Integration with eCertis and eForms, alignment with ePO and eForms. Criterion, National and EU Legislation to be retrieved from eCertis via UUIDs. Enhancement of UBL model.
+** Integration with eCertis and eForms, alignment with ePO and eForms. Criterion, National and EU Legislation to be retrieved from eCertis via UUIDs. Enhancement of the UBL model.
 ** Work on ESPD documentation, preparing the new ESPD-EDM workflow.
 
 == Insights from Belgium’s Implementation of Version 3
 
 * The colleagues from BOSA (Belgium) presented implementation of v3.3.0.
 * Introduction and goals:
-** The tool is a customised version of EC service (EDM 1.0.2), stand-alone application with optional use (non-structured formats are also allowed).
-** Short-term goals: extended data model; integrate ESPD with existing pre-award flows; improvements based on users’ feedback. Long-term goals: user-friendliness for EO; integration with authentic sources; semi-automatic evaluation; align with EDM 4.0 or beyond.
-* Difficulties encountered: implementation is different from the one for eForms; a lot of DIY in validation; code lists not always aligned with eForms; need for translations; EDM allows 'national' adaptations. Choices made: JSON instead of XML (it was proposed by ESPD-EDM for future release); deviations from EDM (input types, cardinalities).
-* Appreciated: extensive and well-organised documentation, OP's responsiveness and availability, OUC meetings to "stay in the loop".
-* Could be improved: align data model with eForms, update the regulation and apply universal datamodel, enrich the business handbook with detailed information on criteria (purpose, etc.)
-* Demo has been presented exclusively.
+** The tool is a customised version of EC service (EDM 1.0.2), a stand-alone application with optional use (non-structured formats are also allowed).
+** Short-term goals: extended data model; integrate ESPD with existing pre-award flows; improvements based on users’ feedback. Long-term goals: user-friendliness for Economic Operators; integration with authentic sources; semi-automatic evaluation; align with EDM 4.X.X or beyond.
+* Difficulties encountered: implementation is different from the one for eForms; a lot of DIY in validation; code lists not always aligned with eForms in v3; need for updated; the Model allows 'national' adaptations.
+* Choices made: JSON instead of XML (this choice has also been adopted by the ESPD-EDM Team for a future release, work ongoing); deviations from EDM (input types, cardinalities).
+* Appreciated: extensive and well-organised documentation, OP's responsiveness and availability, regular OUC meetings to "stay in the loop".
+* Could be improved: align data model with eForms, update the ESPD regulation and apply universal datamodel, enrich the business handbook with detailed information on criteria (purpose, etc.)
+* A live presentation of the new service was provided, but work is still ongoing.
 
 == Next steps
 
-* Align GitHub structure with eForms and ePO (restructuring of repositories), documentation enhancement (images as code, etc.); Align to other standards (eCertis, eForms, ePO, UBL 2.4);
-* V4.1.0 release: moving Evidence block at top level for all Criteria; Subcriterion simplification;
+* Restructure GitHub repositories to align with eForms and ePO .
+* Documentation enhancement (images as code, etc.);
+* Align to other standards (eCertis, eForms, ePO, UBL 2.4);
+* V4.1.0 release ongoing: moving Evidence block at top level for all Criteria; Subcriterion simplification;
 
 == Next meetings & AOB
 
-* The next OUC meeting is planned for the 2^nd^ of October 2025.
-* The Annual Seminar is planned again as part of Tenders Electronic Daily event for 26th-27th November 2025, with other projects in the Unit: eForms, eSenders, eProcurement Ontology, ESPD and others. More information about TED events could be find in https://ted.europa.eu/en/2025-event-calendar[event calendar].
+* The next OUC meeting is planned for the 2^nd^ October 2025.
+* The Annual Seminar is planned again as part of Tenders Electronic Daily event for 26th-27th November 2025, with other Unit’s projects: eForms, eSenders, eProcurement Ontology and others. More information about TED events can be found in https://ted.europa.eu/en/2025-event-calendar[event calendar].
 * In “other business” were presented:
-** Ontology has been moved to the next step of maintenance.
+** eProcurement Ontology has been moved to a maintenance modus.
 ** Incoming TED event: 26th of June - eSenders workshop.
+** Brief discussion about the last EXEP meeting and the proposal to modify the Procurement Directives.
