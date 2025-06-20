@@ -1,5 +1,5 @@
-:doctitle: ESPD Documentation
-:doccode: espd-main-prod-001
+doctitle: ESPD Exchange Data Model (ESPD-EDM)
+:doccode: espd-v4.0.x-prod-001
 :author: NPJ
 :authoremail: nicole-anne.paterson-jones@ext.ec.europa.eu
 :docdate: January 2024
@@ -11,24 +11,23 @@ The documentation provided here explains the ESPD Exchange Data Model (ESPD-EDM)
 The following information is provided for both business users (an overview of the ESPD), and technical users (resources for technical implementation of an ESPD Service).
 
 == Release Documentation
-* xref:3.3.0@ESPD-EDM:ROOT:release_notes.adoc[Release Notes] +
+* xref:4.0.0@ESPD-EDM:ROOT:release_notes.adoc[Release Notes] +
 The release notes for this version.
 * link:{attachmentsdir}/ESPD_CM_html/index.html[Conceptual Model] +
 The conceptual model for this version
-//* xref:espd::dist_pack.adoc[The Distribution Package]
 
 == Information for Business Users
-* xref:3.3.0@ESPD-EDM:business:index.adoc[Business Information] +
+* xref:4.0.0@ESPD-EDM:business:index.adoc[Business Information] +
 An overview of the ESPD for business users
-* xref:3.3.0@ESPD-EDM:business:service.adoc[The ESPD Service] +
-What an ESPD service is and what it looks like
-* xref:3.3.0@ESPD-EDM:business:using.adoc[Using an ESPD Service] +
+* xref:4.0.0@ESPD-EDM:business:implementation.adoc[An ESPD Implementation] +
+This section explains elements of an ESPD Implementation
+* xref:4.0.0@ESPD-EDM:business:using.adoc[The ESPD Online Form] +
 Using an online ESPD form from both buyer and supplier perspectives
 //* xref:espd-bus::creating.adoc[Creating an ESPD Service]
 //* xref:espd-bus::overview_upgrades.adoc[Overview for Upgrading your Version]
 
-== Technical Implementation of an ESPD Service
-* xref:3.3.0@ESPD-EDM:technical:index.adoc[Technical Information] +
+== Technical Implementation
+* xref:4.0.0@ESPD-EDM:technical:index.adoc[Technical Information] +
 Information for technical implementation
 //* xref:espd-tech::tech_imp_roadmap.adoc[Road Map for Implementers]
 //* xref:espd-tech::tech_upgrades.adoc[Upgrading an ESPD Version]
