@@ -60,7 +60,7 @@ _Figure 1. Elements and metadata of an ESPD code list_
 //*_Annex I_* of this document lists all the code lists used by the ESPD and in which context or element it is used.
 
 
-=== Compulsory attributes
+=== Mandatory attributes
 
 
 
@@ -140,22 +140,22 @@ This fragment of XML shows how the compulsory attributes are used for the some o
 
 [source,xml,linenums]
 ----
-<cbc:UBLVersionID schemeAgencyID="OASIS-UBL-TC">2.3</cbc:UBLVersionID>
 <!--1-->
-<cbc:ID schemeAgencyID="DGPE">ESPDREQ-DGPE-3b5755dfb8</cbc:ID>
+<cbc:UBLVersionID schemeAgencyID="OASIS-UBL-TC">2.3</cbc:UBLVersionID>
 <!--2-->
+<cbc:ID schemeAgencyID="DGPE">ESPDREQ-DGPE-3b5755dfb8</cbc:ID>
+<!--3-->
 <cbc:UUID schemeID="ISO/IEC 9834-8:2008" schemeAgencyID="OP" schemeVersionID="4">
   0fddbf2d-1e33-4267-b04f-52b59b72ccb6
 </cbc:UUID>
-<!--3-->
+<!--4-->
 <cbc:ContractFolderID schemeAgencyID="DGPE">
    PP.20170419.1024-9
 </cbc:ContractFolderID>
-<!--4-->
+<!--5-->
 <cbc:VersionID schemeAgencyID="OP" schemeVersionID="5.0.0">
   1.0
 </cbc:VersionID>
-<!--5-->
 ----
 <1> The Agency responsible for the maintenance of the UBL versioning is the OASIS UBL Technical Committee
 <2> The identifier for this document was issued by the a Spanish Central Government Directorate identified as 'DGPE'
@@ -309,26 +309,52 @@ An example of how to use this code list can be found in xref:code_list_examples.
 
 |===
 
-[[criterion-table,criterion]]
-== criterion
-An example of how to use this code list can be found in xref:code_list_examples.adoc#criterion-xml-example[criterion xml Example].
+[[selection-criterion-table,selection-criterion]]
+== selection-criterion
 
 [cols="1,2a"]
 |===
-|*Name* |*_Criterion_*
-|*Code list type* |Procurement specific
+|*Name* |*_Selection criterion_*
+|*Code list type* |Public Procurement specific
 |*Maintainer* |EU Vocabularies
-|*Description* |Contains coded exclusion and selection  criteria used for public procurement procedures.
+|*Description* |This table provides the list of condictions that are concerned for evaluation purposes. In the domain of public procurement, selection criteria are normally based on a specific legal framework. This codelist is a subset of the ESPD codelist CriterionTaxonomy. 
 |*Metadata* |
 [cols=","]
 !===
-!*ShortName* !Criterion
-!*LongName* !criterion
-!*ListID* !http://publications.europa.eu/resource/authority/criterion
-!*Version* !20230315-0 
-!*CanonicalUri* !http://publications.europa.eu/resource/dataset/criterion
-!*CanonicalVersionUri* !http://publications.europa.eu/resource/dataset/criterion/20230315-0
-!*LocationUri* !http://publications.europa.eu/resource/distribution/criterion/20230315-0/xml/gc/Criterion.gc
+!*ShortName* !SelectionCriterion
+!*LongName* !selection-criterion
+!*ListID* ! http://publications.europa.eu/resource/authority/selection-criterion
+!*Version* !20250319-0
+!*CanonicalUri* !http://publications.europa.eu/resource/dataset/selection-criterion
+!*CanonicalVersionUri* !http://publications.europa.eu/resource/dataset/selection-criterion/20250319-0
+!*LocationUri* !http://publications.europa.eu/resource/distribution/selection-criterion/20250319-0/xml/gc/SelectionCriterion.gc
+!*AgencyLongName* !Publications Office of the European Union
+!*AgencyIdentifier* !OP
+
+!===
+
+
+|===
+
+[[exclusion-ground-table,exclusion-ground]]
+== exclusion-ground
+
+[cols="1,2a"]
+|===
+|*Name* |*_Exclusion ground_*
+|*Code list type* |Public Procurement specific
+|*Maintainer* |EU Vocabularies
+|*Description* |Exclusion grounds in public procurement refer to the criteria that prevent certain entities from participating in public contracts due to criminal offenses, tax breaches, or other specified misconduct, aiming to ensure fairness and integrity in public procurement processes. 
+|*Metadata* |
+[cols=","]
+!===
+!*ShortName* !ExclusionGround
+!*LongName* !exclusion-ground
+!*ListID* ! http://publications.europa.eu/resource/authority/exclusion-ground
+!*Version* !20250319-0
+!*CanonicalUri* !http://publications.europa.eu/resource/dataset/exclusion-ground
+!*CanonicalVersionUri* !http://publications.europa.eu/resource/dataset/exclusion-ground/20250319-0
+!*LocationUri* !http://publications.europa.eu/resource/distribution/exclusion-ground/20250319-0/xml/gc/ExclusionGround.gc
 !*AgencyLongName* !Publications Office of the European Union
 !*AgencyIdentifier* !OP
 
