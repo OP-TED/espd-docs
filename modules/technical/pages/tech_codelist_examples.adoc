@@ -118,27 +118,6 @@ The following xml code is an example of use of code list xref:tech_codelist.adoc
 ----
 <1> The code list xref:tech_codelist.adoc#country-table[country] is used to define the value of element cbc:IdentificationCode in class cac:Country.
 
-[[criterion-xml-example,criterion xml Example]]
-=== criterion
-
-The following xml code is an example of use of code list xref:tech_codelist.adoc#criterion-table[criterion] in a _cac:TenderingCriterion_ element of *ESPDRequest*.
-
-
-[source,xml,linenums]
-----
-<!-- Criterion:Participation in a criminal organisation -->
-<cac:TenderingCriterion>
-<!--1-->
-        <cbc:CriterionTypeCode listID="http://publications.europa.eu/resource/authority/criterion" listAgencyID="OP" listVersionID="20230315-0">crime-org</cbc:CriterionTypeCode>
-        <cbc:Name>Participation in a criminal organisation</cbc:Name>
-        <cbc:Description>Has the economic operator itself or any person who is a member of its administrative, management or supervisory body or has powers of representation, decision or control therein been the subject of a conviction by final judgment for participation in a criminal organisation, by a conviction rendered at the most five years ago or in which an exclusion period set out directly in the conviction continues to be applicable? As defined in Article 2 of Council Framework Decision 2008/841/JHA of 24 October 2008 on the fight against organised crime (OJ L 300, 11.11.2008, p. 42).</cbc:Description>
-        <cac:SubTenderingCriterion>
-        </cac:SubTenderingCriterion>
-        <cac:Legislation>
-        </cac:Legislation>
-</cac:TenderingCriterion>
-----
-<1> The code list xref:tech_codelist.adoc#criterion-table[criterion] is used to define the value of element _cbc:CriterionTypeCode_ for any class _cac:TenderingCriterion_ present in the *ESPDRequest* document.
 
 [[criterion-element-type-xml-example,criterion-element-type xml Example]]
 === criterion-element-type

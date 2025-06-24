@@ -1,6 +1,6 @@
 :doctitle: Glossary
 :doccode: espd-tech-prod-012
-:author:
+:author: NPJ
 :authoremail: nicole-anne.paterson-jones@ext.ec.europa.eu
 :docdate: January 2024
 

@@ -10,7 +10,7 @@ Schematron is a rule-based validation language that specifies validation process
 
 === ESPD Business Rules
 
-The ESPD-EDM uses Schematron to validate business rules, the business requirements taken as input for these rules are specified in the link:http://wiki.ds.unipi.gr/display/ESPDInt[ESPDint Business Document].
+The ESPD-EDM uses Schematron to validate business rules, the business requirements taken as input for these rules are specified in the link:http://wiki.ds.unipi.gr/display/ESPDInt[ESPD Business Document].
 
 These business rules can be typified as:
 
@@ -191,13 +191,11 @@ image::https://kroki.io/pikchr/svg/eNq9mM9zqkgQx-_8FVNuDroqBQNofFV7YEBPqXpZU7u1h
 
 == UUID Criterion Validation
 
-Each Criterion is defined in e-Certis and must use the *Universally Unique Identifier (UUID)* supplied by e-Certis:
+Each Criterion is defined in e-Certis and has a *Universally Unique Identifier (UUID)* supplied by e-Certis:
 
 [arabic]
-. These UUIDs are 'constant', meaning that they are maintained by DG GROW and need to be used compulsory as they were issued by DG GROW.
-. The value of each UUID are defined in the spreadsheets:
-[loweralpha]
-.. link:{url-tree}/codelists/ESPD-criterion.xlsx[ESPD-criterion]
+. These UUIDs are mandatory and are maintained by DG GROW.
+. The value of each UUID can be found on https://docs.ted.europa.eu/espd-demo/[ESPD Demo site] tab **eCertis integration**
 
 The UUIDs defined in the ESPDRequest or ESPDResponse are fixed for the following elements:
 
@@ -205,12 +203,8 @@ The UUIDs defined in the ESPDRequest or ESPDResponse are fixed for the following
 |===
 |*Spreadsheet row* | *XSD Path*
 |{CRITERION | cac:TenderingCriterion/cbc:ID
-|{QUESTION_GROUP or {REQUIREMENT_GROUP | cac:TenderingCriterion/cac:TenderingCriterionPropertyGroup/cbc:ID
-|{QUESTION_SUBGROUP or {REQUIREMENT_SUBGROUP | cac:SubsidiaryTenderingCriterionPropertyGroup/cbc:ID 
-|{LEGISLATION | cac:TenderingCriterion/cac:Legislation/cbc:ID
 |===
 
-Every QUESTION_GROUP or QUESTION_SUBGROUP that has the same structure (meaning QUESTION or QUESTION_SUBGROUP), share the same UUID, as they are the same.
 
 === Tendering Criterion 
 
@@ -241,8 +235,9 @@ The validation of Tendering Criterion Property (cac:TenderingCriterionProperty e
 
 === Note. Replacement of UUID by XML Path Like ID 
 
-From ESPD v4.0.0, UUIDs will be replaced by XML Path Like IDs in the data structure, except for the top level Exclusion Grounds and Selection Criteria elements.
+Starting with ESPD v4.0.0, UUIDs for all elements will be replaced by XML Path Like IDs in the data structure, except for the top level Exclusion Grounds and Selection Criteria elements.
 For further details, see section, "Common Aspects for Criteria". 
+The XML Path Like ID is build programatically.
 
 === Interoperability testbed
 
