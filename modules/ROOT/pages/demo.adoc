@@ -38,7 +38,7 @@ The https://docs.ted.europa.eu/espd-demo/[ESPD Demo Site] is a collection of too
 
 A description of the tools:
 
-=== Distribution Files
+=== EXport Artifacts
 *Download Excel and XML distribution files*
 
 * The ESPD code list Excel and XML files
@@ -46,7 +46,7 @@ A description of the tools:
 
 These downloads are available for ESPD-EDM Versions 3.3.0 and 4.0.0 directly from the Demo site and downloads can be filtered by version.
 
-=== Code lists
+=== Explore Code Lists
 *Information about and download of code lists*
 
 * Information about the Code Lists used in the ESPD, name, versions, URI, agency, links to more information for each list.
@@ -54,7 +54,7 @@ These downloads are available for ESPD-EDM Versions 3.3.0 and 4.0.0 directly fro
 
 Code list information is available for versions 3.3.0 and 4.0.0 of the ESPD-EDM and can be filtered by version and code list.
 
-=== UUID
+=== eCertis integration
 *Check whether UUIDs are stored in eCertis*
 
 The UUID tool lets you enter a criterion UUID directly or search for one via the list, and then check if it is stored by eCertis by clicking on the "Check eCertis" button. The tool then queries eCertis to verify if the UUID can be found.
@@ -63,18 +63,18 @@ The list is ordered by ESPD version, then ItemID, ascending, and the list can be
 
 All criterion in all ESPD versions, from v1.0.0 onwards, can be queried.
 
-=== View
+=== View ESPD model
 *See how criteria elements might look in an online form*
 
 The ESPD Model Viewer demonstrates how a criterion in the model might be represented in HTML in an ESPD Service. Individual criteria can be filtered by version, and are then displayed in HTML on the page. 
 
 The viewer is available for v3.3.0 and v4.0.0 of the ESPD-EDM.
 
-=== Examples
+=== Generate ESPD Examples
 *Generate example XML files for testing*
 
 The Examples Generator allows developers to generate example Request and Response xml files, according to their desired scenarios, that can then be used for testing their ESPD Service development. These xml files are verified as being correct so they can be used without compounding errors in testing, and creating confusion, by being inaccurate themselves.
 
-Currently v3.3.0 example xml files can be generated. 
+Currently v3.3.0 and v4.0.0 example xml files can be generated. 
 
 include::partial$feedback.adoc[] 
