@@ -77,7 +77,7 @@ Few details regarding data structure for Suitability selection criteria
 
 //(The figure below is defined in the the tab "Suitability-I of the link:{url-tree}/codelists/ESPD-criterion.xlsx[ESPD-criterion] spread-sheet).
 
-To view the criterion, consult the https://github.com/OP-TED/ESPD-EDM/blob/v4.0.0/criterion/ESPD-criterion.xlsx[Criterion File]. The information will be visible in the tab "SC-Suitability-I".
+To view the criterion, consult the ms-excel:ofe|u|https://github.com/OP-TED/ESPD-EDM/blob/v4.0.0/criterion/ESPD-criterion.xlsx#SC-Suitability-I[Criterion File]. The information will be visible in the tab "SC-Suitability-I".
 
 //image:SC_Suitability_enrolement.jpg[SC Suitability enrolement,width=506,height=331]
 
