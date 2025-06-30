@@ -8,9 +8,9 @@
 
 '_The contracting body shall provide the exclusion grounds and selection criteria for its tendering process as structured information - via ESPD template or structured list of criteria set out in a call for tender._"
 
-This chapter on selection criteria provides details on how to implement the formal requirements set in the xref:bis41.adoc[eSens ESPD BIS 41 - Single European Document] (Version 2.0.0) document. See specifically these global requirements related to selection criteria: *_br41-002_*, *_tbr070-010_*, *_tbr070-013_*, *_tbr070-018_*.
+This topic, selection criteria, provides information on how to implement the formal requirements set in the xref:bis41.adoc[eSens ESPD BIS 41 - Single European Document] (Version 2.0.0) document. See specifically these global requirements related to selection criteria: *_br41-002_*, *_tbr070-010_*, *_tbr070-013_*, *_tbr070-018_*.
 
-As with the exclusion criteria (and following requirement xref:tbr70_reqs.adoc#list_of_criteria[tbr70-013], we have grouped the selection criteria under different categories. The figure below is intended to identify and list these categories for the selection criteria (branches in text boxes), and specific subgroups within each category.
+As with the exclusion criteria and following requirement xref:tbr70_reqs.adoc#list_of_criteria[tbr70-013], we have grouped the selection criteria under different categories. The figure below is intended to identify and list these categories for the selection criteria (branches in text boxes), and specific subgroups within each category.
 
 Each branch in this 'criteria classification' corresponds to one data structure that is identical for all the leaves under that branch (e.g. compare the names of the boxes with the tabs and ElementType column of the spreadsheets containing link:{url-tree}/codelists/ESPD-criterion.xlsx[ESPD-criterion data structures]).
 
@@ -28,26 +28,26 @@ image:TenderingCriterion_cacProcurementProjectLotReference.jpg[cac:TenderingCrit
 
 _Figure 2. cac:TenderingCriterion/cac:ProcurementProjectLotReference_
 
-The ESPD 3.0.0 allows different lots for different Selection Criteria, whereas the ESPD 4.0.0 allows in addition different lots (or set of lots) for different requirements. 
+The ESPD 3.0.0 allows different lots for different Selection Criteria, whereas the ESPD 4.0.0 allows, in addition, different lots (or set of lots) for different requirements. 
 
 See also section "xref:tech_request.adoc#lot_management[Lot Management in ESPD Request]".
 
 
-= Initial question for the EO to fulfil or not the criteria 
+== Initial question for the EO 
 
-In this version of ESPD, a new data structure has been added to the selection criteria to get more information about the EO and the fulfilment of the selection criteria. The UUID identifying the group is 0e50931d-4d39-4f1d-9fdc-b2cf16c0807a. It is a common structured reused over selection criteria.
+In this version of ESPD, a new data structure has been added to the selection criteria to collect more information about the EO and their fulfilment of the selection criteria. The UUID identifying the group is 0e50931d-4d39-4f1d-9fdc-b2cf16c0807a. It is a common structured reused over selection criteria.
 
-== Data structure
+=== Data structure
 
 //The following image shows an example of how it represented in the spread-sheets (see ESPD-Criterion)
 
-To view the criterion, consult the https://github.com/OP-TED/ESPD-EDM/blob/v4.0.0/criterion/ESPD-criterion.xlsx[Criterion File]. The information will be visible in the tab "SC-Suitability-I".
+The data structure can be viewed in the https://github.com/OP-TED/ESPD-EDM/blob/v4.0.0/criterion/ESPD-criterion.xlsx[Criterion File]. This specific criterion can be found on the tab "SC-Suitability-I".
 
 //image:Initial_Question_data_structure.jpg[Does the EO fulfil the criteria by itself? Data structure,width=566,height=369]
 
 //_Figure 3. 'Does the EO fulfil the criteria by itself? Data structure and UUID._
 
-//== Mockup - image missing!
+//== Mock-up - image missing!
 
 //image:Initial_question_Mockup.jpg[Does the EO fulfil the criteria by itself? Mock up,width=504,height=269]
 
@@ -64,7 +64,9 @@ See formal requirements related to 'Suitability' criteria in the xref:bis41.adoc
 
 === Suitability (enrolments)
 
-For each criteria regarding suitability, the buyer should be able to provide: the register type (Occupations code list, see ESPD-CodeLists.xlsx) in case of criterion "Enrolment in a relevant professional register", and the name and its URL and for other criteria related to registries.
+For each criteria regarding suitability, the buyer should be able to provide the following:
+* the register type (Occupations code list, see ESPD-CodeLists.xlsx) in case of criterion "Enrolment in a relevant professional register" and, 
+* the name and its URL and for other criteria related to registries.
 
 === Data Structure
 
@@ -72,14 +74,14 @@ Few details regarding data structure for Suitability selection criteria
 
 [arabic]
 . It allows the definition of multiple national sub-criteria (to be retrieved from e-Certis): cardinality "0..n" of the SUBCRITERION group;
-. It also allows the buyer to speciy multiple groups of REQUIREMENT(s) (in this case to specify which registers the economic operator should be registered in).
-. Regarding the groups of questions, notice that the main question is addressed to get the confirmation from the economic operator that it fulfills the criterion (if "Yes" the economic operator is registered). In case of answering "No" a sub-group of one QUESTION must be shown (the one asking the economic operator to provide the reason why it is not registered in the register specified by the buyer).
+. It also allows the buyer to specify multiple groups of REQUIREMENT(s) (in this case to specify which registers the economic operator should be registered in).
+. Regarding the groups of questions, notice that the main question is addressed to get the confirmation from the economic operator that it fulfils the criterion (if "Yes" the economic operator is registered). In case of answering "No" a sub-group of one QUESTION must be shown (the one asking the economic operator to provide the reason why it is not registered in the register specified by the buyer).
 
 //(The figure below is defined in the the tab "Suitability-I of the link:{url-tree}/codelists/ESPD-criterion.xlsx[ESPD-criterion] spread-sheet).
 
-To view the criterion, consult the ms-excel:ofe|u|https://github.com/OP-TED/ESPD-EDM/blob/v4.0.0/criterion/ESPD-criterion.xlsx#SC-Suitability-I[Criterion File]. The information will be visible in the tab "SC-Suitability-I".
+The data structure can be viewed in the https://github.com/OP-TED/ESPD-EDM/blob/v4.0.0/criterion/ESPD-criterion.xlsx#SC-Suitability-I[Criterion File]. This specific criterion can be found on the tab "SC-Suitability-I".
 
-//image:SC_Suitability_enrolement.jpg[SC Suitability enrolement,width=506,height=331]
+//image:SC_Suitability_enrolement.jpg[SC Suitability enrolment,width=506,height=331]
 
 //_Figure 5. 'Suitability' criterion data structure (enrolments)_
 
@@ -251,7 +253,7 @@ _'Enrolment in a relevant professional register' suitability criterion_
 //// 
 [NOTE]
 ====
-The code list 'occupation' is used to determine the area to which the EO should be registered in. It comes from the ESCO classification, in case the Buyer do not find the appropiate code to define the type of professional enrolement it can select code '0000.0' which stands for other. Then would be able to include the type using a text box.
+The code list 'occupation' is used to determine the area to which the EO should be registered in. It comes from the ESCO classification, in case the Buyer do not find the appropriate code to define the type of professional enrolment it can select code '0000.0' which stands for other. Then would be able to include the type using a text box.
 ====
 ////  
 
@@ -261,7 +263,7 @@ The code list 'occupation' is used to determine the area to which the EO should 
 
 // is defined in the the tab "Suitability-II" of the link:{url-tree}/codelists/ESPD-criterion.xlsx[ESPD-criterion] spread-sheet).
 
-To view the criterion, consult the https://github.com/OP-TED/ESPD-EDM/blob/v4.0.0/criterion/ESPD-criterion.xlsx[Criterion File]. The information will be visible in the tab "SC-Suitability-II".
+The data structure can be viewed in the https://github.com/OP-TED/ESPD-EDM/blob/v4.0.0/criterion/ESPD-criterion.xlsx[Criterion File]. This specific criterion can be found on the tab "SC-Suitability-II".
 
 //image:Suitability criterion_data structure_service contracts.jpg[Suitability criterion data structure (service contracts),width=566,height=438]
 
@@ -694,7 +696,7 @@ _Figure 8. 'General Yearly Turnovers' EO mock-up_
 
 //In this this figure what it is being shown is that the buyer required three general yearly turnovers, for which it defined minimum amounts in one REQUIREMENT(s) group. Next, three groups of QUESTION(s) are provided, each one of them corresponding to the past three years. Remember that the spreadsheet used in this guide to represent the criteria data structure is also used to generate sample XML instances. So by including three groups of QUESTION(s) in the spread-sheet, the tool generating sample XML instances will automatically generate three sub-groups of properties each one with distinct UUIDs.
 
-To view the criterion, consult the https://github.com/OP-TED/ESPD-EDM/blob/v4.0.0/criterion/ESPD-criterion.xlsx[Criterion File]. The information will be visible in the tab "SC-General_Yearly_Turnover".
+The data structure can be viewed in the https://github.com/OP-TED/ESPD-EDM/blob/v4.0.0/criterion/ESPD-criterion.xlsx[Criterion File]. This specific criterion can be found on the tab "SC-General_Yearly_Turnover".
 
 //image:General_Yearly_Turnovers_criterion_data_structure.jpg['General Yearly Turnovers' criterion data structure,width=566,height=448]
 
@@ -900,7 +902,7 @@ _Figure 11. 'Average yearly turnover' EO mock-up_
 
 === Data Structure
 
-To view the criterion, consult the https://github.com/OP-TED/ESPD-EDM/blob/v4.0.0/criterion/ESPD-criterion.xlsx[Criterion File]. The information will be visible in the tab "SC-General_Average_Y_Turnover".
+The data structure can be viewed in the https://github.com/OP-TED/ESPD-EDM/blob/v4.0.0/criterion/ESPD-criterion.xlsx[Criterion File]. This specific criterion can be found on the tab "SC-General_Average_Y_Turnover".
 
 //image:Average_yearly turnover_criterion_data_structure.jpg['Average yearly turnover' criterion data structure,width=522,height=427]
 
@@ -1129,7 +1131,7 @@ Notice that:
 . The buyer does also specifies the *minimum amount* required for this specific turnover.
 . The rest of the criterion are the questions for the economic operator to answer: *period* and *amount* (and *currency* in the amount attribute @currencyID).
 
-To view the criterion, consult the https://github.com/OP-TED/ESPD-EDM/blob/v4.0.0/criterion/ESPD-criterion.xlsx[Criterion File]. The information will be visible in the tab "SC-Specific_Yearly_Turnover".
+The data structure can be viewed in the https://github.com/OP-TED/ESPD-EDM/blob/v4.0.0/criterion/ESPD-criterion.xlsx[Criterion File]. This specific criterion can be found on the tab "SC-Specific_Yearly_Turnover".
 
 //image:Specific_yearly turnover_criterion_data_structure.jpg['Specific yearly turnover' criterion data structure,width=509,height=403]
 
@@ -1342,7 +1344,7 @@ _Figure 17. 'Specific average turnover' EO mock-up_
 
 Notice that this  *specific average turnover* structure is *'practically identical'* to the data structure of the *specific yearly turnover* criterion. The only difference is that the *cardinality of the amount is 1* (instead of 1..n).
 
-To view the criterion, consult the https://github.com/OP-TED/ESPD-EDM/blob/v4.0.0/criterion/ESPD-criterion.xlsx[Criterion File]. The information will be visible in the tab "SC-Specific_Average_Y_Turnover".
+The data structure can be viewed in the https://github.com/OP-TED/ESPD-EDM/blob/v4.0.0/criterion/ESPD-criterion.xlsx[Criterion File]. This specific criterion can be found on the tab "SC-Specific_Average_Y_Turnover".
 
 //image:Specific_average turnover_criterion_data_structure.jpg[Specific average turnover' criterion data structure,width=566,height=450]
 
@@ -1575,7 +1577,7 @@ REQUIREMENT(s) specified by the buyers can be place outside a group of QUESTION(
 
 //Notice how the spreadsheet has been used to specify the three different financial ratios of the above mock-up example: the XML example below was produced using a XSL-T transformation link:{url-tree}/xml-examples/\\__xslt__/ODS-Data-Structures-to-ESPD-XML/ESPDRequest-Annotated.xslt[ESPDRequest-Annotated] that takes the link:{url-tree}/xml-examples/ESPD-criterion.xml[ESPD-criterion] and produced the link:{url-tree}/xml-examples/ESPD-Request.xml[ESPD-Request].
 
-To view the criterion, consult the https://github.com/OP-TED/ESPD-EDM/blob/v4.0.0/criterion/ESPD-criterion.xlsx[Criterion File]. The information will be visible in the tab "SC-Financial_ratios".
+The data structure can be viewed in the https://github.com/OP-TED/ESPD-EDM/blob/v4.0.0/criterion/ESPD-criterion.xlsx[Criterion File]. This specific criterion can be found on the tab "SC-Financial_ratios".
 
 //image:Financial_ratio_criterion_data_structure.jpg['Financial ratio' criterion data structure,width=526,height=293]
 
@@ -1939,7 +1941,7 @@ This structure is quite particular. Notice that:
 The XML example below illustrates this. 
 //The values used in the example are the same as the ones in the spread-sheet.
 
-To view the criterion, consult the https://github.com/OP-TED/ESPD-EDM/blob/v4.0.0/criterion/ESPD-criterion.xlsx[Criterion File]. The information will be visible in the tab "SC-Professional_risk_insurance".
+The data structure can be viewed in the https://github.com/OP-TED/ESPD-EDM/blob/v4.0.0/criterion/ESPD-criterion.xlsx[Criterion File]. This specific criterion can be found on the tab "SC-Professional_risk_insurance".
 
 //image:risk_indemnity_insurance_criterion_data_structure.jpg[risk indemnity insurance' criterion data structure,width=566,height=314]
 
@@ -2149,7 +2151,7 @@ Notice the following aspects from the 'other economic or financial requirements'
 * On *true* (see the group code on the right side of the data structure) three REQUIREMENT(s) will be shown to the *economic operator*: description, minimum amount and period. For this REQUIREMENT the economic operator will see all these requirements and will have to provide an amount.
 * On *false* (see the group code on the right side of the data structure) three REQUIREMENT(s) will be shown to the *economic operator*: minimum rating and rating scheme. For this REQUIREMENT the economic operator will see all these requirements and will have to provide a rating.
 
-To view the criterion, consult the https://github.com/OP-TED/ESPD-EDM/blob/v4.0.0/criterion/ESPD-criterion.xlsx[Criterion File]. The information will be visible in the tab "SC-Other_economic_or_financial".
+The data structure can be viewed in the https://github.com/OP-TED/ESPD-EDM/blob/v4.0.0/criterion/ESPD-criterion.xlsx[Criterion File]. This specific criterion can be found on the tab "SC-Other_economic_or_financial".
 
 //image:Other_economic_financial_requirements_criterion_data_structur.jpg['Other economic or financial requirements' criterion data structure,width=566,height=337]
 
@@ -2398,7 +2400,7 @@ The data structure for references caters for:
 . One group of REQUIREMENT(s) for the buyer to specify the general requirements for this criterion (e.g. Lots the references apply to, minimum number of references);
 . Multiple groups (cardinality 1..n) of questions for the economic operator to answer; which in this case are multiple references to works about which the EO has to provide information and the lots the EO tenders to related to the references.
 
-To view the criterion, consult the https://github.com/OP-TED/ESPD-EDM/blob/v4.0.0/criterion/ESPD-criterion.xlsx[Criterion File]. The information will be visible in the tab "SC-References".
+The data structure can be viewed in the https://github.com/OP-TED/ESPD-EDM/blob/v4.0.0/criterion/ESPD-criterion.xlsx[Criterion File]. This specific criterion can be found on the tab "SC-References".
 
 //image:References_criterion_data_structure.jpg['References' criterion data structure,width=505,height=216]
 
@@ -2862,7 +2864,7 @@ _Figure 31. 'Abilities (I)' EO mock-up_
 
 //(The figure below is defined in the the tab ''SC-Abilities_1 (Persons)'' of the link:{url-tree}/codelists/ESPD-criterion.xlsx[ESPD-criterion] spread-sheet).
 
-To view the criterion, consult the https://github.com/OP-TED/ESPD-EDM/blob/v4.0.0/criterion/ESPD-criterion.xlsx[Criterion File]. The information will be visible in the tab "SC-Abilities_1 (Persons)".
+The data structure can be viewed in the https://github.com/OP-TED/ESPD-EDM/blob/v4.0.0/criterion/ESPD-criterion.xlsx[Criterion File]. This specific criterion can be found on the tab "SC-Abilities_1 (Persons)".
 
 //image:Abilities_Persons_criterion_data structure.jpg['Abilities (I)(Persons)' criterion data structure,width=566,height=372]
 
@@ -3107,7 +3109,7 @@ The XML example below shows the REQUIREMENT(s) and QUESTION(s).
 
 //(The figure below is defined in the the tab ''SC_Abilities_2 (Facilities,...)'' of the link:{url-tree}/codelists/ESPD-criterion.xlsx[ESPD-criterion] spread-sheet).
 
-To view the criterion, consult the https://github.com/OP-TED/ESPD-EDM/blob/v4.0.0/criterion/ESPD-criterion.xlsx[Criterion File]. The information will be visible in the tab "SC_Abilities_2 (Facilities,...)".
+The data structure can be viewed in the https://github.com/OP-TED/ESPD-EDM/blob/v4.0.0/criterion/ESPD-criterion.xlsx[Criterion File]. This specific criterion can be found on the tab "SC_Abilities_2 (Facilities,...)".
 
 //image:Abilities_Facilities_criterion data structure.jpg['Abilities (II) (Facilities, ....)' criterion data structure,width=526,height=188]
 
@@ -3265,7 +3267,7 @@ _Criterion "Technical facilities and measures for ensuring quality" (ESPD-Reques
 
 //(The figure below is defined in the the tab ''SC_Abilities_3 (Education)'' of the link:{url-tree}/codelists/ESPD-criterion.xlsx[ESPD-criterion] spread-sheet).
 
-To view the criterion, consult the https://github.com/OP-TED/ESPD-EDM/blob/v4.0.0/criterion/ESPD-criterion.xlsx[Criterion File]. The information will be visible in the tab "SC_Abilities_3 (Education)".
+The data structure can be viewed in the https://github.com/OP-TED/ESPD-EDM/blob/v4.0.0/criterion/ESPD-criterion.xlsx[Criterion File]. This specific criterion can be found on the tab "SC_Abilities_3 (Education)".
 
 //image:abilities-education-datastructure.png.jpg[Abilities (III) (Education)' criterion data structure,width=566,height=313]
 
@@ -3525,7 +3527,7 @@ The data structure below shows how this criterion is organised. Notice the follo
 
 //(The figure below is defined in the the tab 'SC_Abilities_4 (Checks)' of the link:{url-tree}/codelists/ESPD-criterion.xlsx[ESPD-criterion] spread-sheet).
 
-To view the criterion, consult the https://github.com/OP-TED/ESPD-EDM/blob/v4.0.0/criterion/ESPD-criterion.xlsx[Criterion File]. The information will be visible in the tab "SC_Abilities_4 (Checks)".
+The data structure can be viewed in the https://github.com/OP-TED/ESPD-EDM/blob/v4.0.0/criterion/ESPD-criterion.xlsx[Criterion File]. This specific criterion can be found on the tab "SC_Abilities_4 (Checks)".
 
 //image:Abilities_IV_Checks_criterion data_structure.jpg['Abilities (IV) (Checks)' criterion data structure,width=539,height=353]
 
@@ -3672,7 +3674,7 @@ _Allowance of checks criterion /Special requirements check_
 
 //(The figure below is defined in the the tab ''SC_Abilities_5 (Staff)'' of the link:{url-tree}/codelists/ESPD-criterion.xlsx[ESPD-criterion] spread-sheet).
 
-To view the criterion, consult the https://github.com/OP-TED/ESPD-EDM/blob/v4.0.0/criterion/ESPD-criterion.xlsx[Criterion File]. The information will be visible in the tab "SC_Abilities_5 (Staff)".
+The data structure can be viewed in the https://github.com/OP-TED/ESPD-EDM/blob/v4.0.0/criterion/ESPD-criterion.xlsx[Criterion File]. This specific criterion can be found on the tab "SC_Abilities_5 (Staff)".
 
 //image:Abilities_V_Checks_criterion data_structure.jpg['Abilities (V) (Staff)' criterion data structure,width=566,height=362]
 
@@ -3862,7 +3864,7 @@ _Figure 40. 'Subcontracting proportion' EO mock-up_
 
 //(Some columns have been hidden to enhance the readability of the image).
 
-To view the criterion, consult the https://github.com/OP-TED/ESPD-EDM/blob/v4.0.0/criterion/ESPD-criterion.xlsx[Criterion File]. The information will be visible in the tab "SC-Subcontracting_proportion".
+The data structure can be viewed in the https://github.com/OP-TED/ESPD-EDM/blob/v4.0.0/criterion/ESPD-criterion.xlsx[Criterion File]. This specific criterion can be found on the tab "SC-Subcontracting_proportion".
 
 //image:Subcontracting proportion_criterion_data_structure.jpg[Subcontracting proportion' criterion data structure,width=566,height=321]
 
@@ -4024,7 +4026,7 @@ _Figure 43. 'Samples and certificates' EO mock-up_
 
 //(Some columns have been hidden to enhance the readability of the image).
 
-To view the criterion, consult the https://github.com/OP-TED/ESPD-EDM/blob/v4.0.0/criterion/ESPD-criterion.xlsx[Criterion File]. The information will be visible in the tab "SC-Samples_certificates".
+The data structure can be viewed in the https://github.com/OP-TED/ESPD-EDM/blob/v4.0.0/criterion/ESPD-criterion.xlsx[Criterion File]. This specific criterion can be found on the tab "SC-Samples_certificates".
 
 //image:Samples_certificates_criteria_data_structure.jpg[Samples and certificates criteria data structure,width=566,height=327]
 
@@ -4188,7 +4190,7 @@ Notice the following:
 
 //(Some columns have been hidden to enhance the readability of the image).
 
-To view the criterion, consult the https://github.com/OP-TED/ESPD-EDM/blob/v4.0.0/criterion/ESPD-criterion.xlsx[Criterion File]. The information will be visible in the tab "SC-Quality_assurance".
+The data structure can be viewed in the https://github.com/OP-TED/ESPD-EDM/blob/v4.0.0/criterion/ESPD-criterion.xlsx[Criterion File]. This specific criterion can be found on the tab "SC-Quality_assurance".
 
 //image:Quality Assurance schemes_environmental_data_struc.jpg['Quality Assurance schemes and environmental management standards' criteria data structure,width=566,height=347]
 
@@ -4360,7 +4362,7 @@ However, in this version of the ESPD-EDM he behaviour of this criterion is linke
 
 //The figure below shows the data elements required to the economic operator for this criterion in the ESPD-Request:
 
-To view the criterion, consult the https://github.com/OP-TED/ESPD-EDM/blob/v4.0.0/criterion/ESPD-criterion.xlsx[Criterion File]. The information will be visible in the tab "OTHER.EO-REDUCTION-CANDIDATES".
+The data structure can be viewed in the https://github.com/OP-TED/ESPD-EDM/blob/v4.0.0/criterion/ESPD-criterion.xlsx[Criterion File]. This specific criterion can be found on the tab "OTHER.EO-REDUCTION-CANDIDATES".
 
 //image:Reduction_candidates_data_structure.jpg['Reduction of candidates' data structure,width=566,height=156]
 
