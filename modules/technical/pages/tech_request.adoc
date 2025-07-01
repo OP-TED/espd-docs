@@ -785,60 +785,12 @@ IdentificationCode* |Code |1 |The code that identifies the country of the servic
 
 === XML example
 
-The XML snippet below shows how an example of how to supply the expected data for the service provider.
+The XML snippet below shows how an example of how to supply the expected data for the service provider and is best viewed directly in the xml examples made available in release v3.3 on GitHub:
 
-==== Code with callouts
+https://github.com/OP-TED/ESPD-EDM/blob/v3.3.0/xml-examples/ESPD-Request.xml#L36
 
-NOTE: The source code can be copied from the code block below the callout section
+https://github.com/OP-TED/ESPD-EDM/blob/v3.3.0/xml-examples/ESPD-Response.xml#L36
 
-[Code with callouts]
-----
-
-_<!--- Root elements eliminated for the sake of brevity -->_
-
-<cac:ContractingParty>
-
-<cac:Party>
-
-<cac:PartyIdentification><cbc:ID schemeAgencyID="VIES">B82387770</cbc:ID> </cac:PartyIdentification>
-
-<cac:PartyName><cbc:Name>Ministerio de Defensa</cbc:Name></cac:PartyName>
-
-<cac:PostalAddress><cac:Country><cbc:IdentificationCode listID="http://publications.europa.eu/resource/authority/country" listAgencyID="OP" listVersionID="20220928-0">ES</cbc:IdentificationCode></cac:Country></cac:PostalAddress>
-
-<cac:ServiceProviderParty>
-
-<cac:Party>
-
-<cbc:WebsiteURI>http://www.minhafp.gob.es/es-ES/Areas%20Tematicas/Patrimonio%20del%20Estado/Contratacion%20del%20Sector%20Publico/Paginas/ROLECE.aspx</cbc:WebsiteURI>
-
-<cbc:EndpointID>http://www.minhafp.gob.es/ESPD/endpoint</cbc:EndpointID>
-
-<cac:PartyIdentification>
-
-<cbc:ID schemeAgencyID="AEAT">B36699932</cbc:ID>
-
-</cac:PartyIdentification>
-
-<cac:PartyName>
-
-<cbc:Name>Registro Oficial de Licitadores y Empresas Clasificadas (ROLECE)</cbc:Name></cac:PartyName>
-
-<cac:PostalAddress>
-
-<cac:Country><cbc:IdentificationCode listID="http://publications.europa.eu/resource/authority/country" listAgencyID="OP" listVersionID="20220928-0">ESP</cbc:IdentificationCode></cac:Country>
-
-</cac:PostalAddress>
-
-</cac:Party>
-
-</cac:ServiceProviderParty>
-
-</cac:Party>
-
-</cac:ContractingParty>
-
-----
 
 
 . ContractingParty non-compulsory elements have been omitted for the sake of brevity.
@@ -846,58 +798,7 @@ _<!--- Root elements eliminated for the sake of brevity -->_
 . The registered name of the service provider is mandatory.
 . The country code of the service provider (ESP) is compulsory. You will need to use this code (ESP) to verify the VAT number in the VIES service.
 
-==== Copy the code block
 
-[source,xml]
-----
-...
-
-_<!--- Root elements eliminated for the sake of brevity -->_
-
-<cac:ContractingParty>
-
-<cac:Party>
-
-<cac:PartyIdentification><cbc:ID schemeAgencyID="VIES">B82387770</cbc:ID> </cac:PartyIdentification>
-
-<cac:PartyName><cbc:Name>Ministerio de Defensa</cbc:Name></cac:PartyName>
-
-<cac:PostalAddress><cac:Country><cbc:IdentificationCode listID="http://publications.europa.eu/resource/authority/country" listAgencyID="OP" listVersionID="20220928-0">ES</cbc:IdentificationCode></cac:Country></cac:PostalAddress>
-
-<cac:ServiceProviderParty>
-
-<cac:Party>
-
-<cbc:WebsiteURI>http://www.minhafp.gob.es/es-ES/Areas%20Tematicas/Patrimonio%20del%20Estado/Contratacion%20del%20Sector%20Publico/Paginas/ROLECE.aspx</cbc:WebsiteURI>
-
-<cbc:EndpointID>http://www.minhafp.gob.es/ESPD/endpoint</cbc:EndpointID>
-
-<cac:PartyIdentification>
-
-<cbc:ID schemeAgencyID="AEAT">B36699932</cbc:ID>
-
-</cac:PartyIdentification>
-
-<cac:PartyName>
-
-<cbc:Name>Registro Oficial de Licitadores y Empresas Clasificadas (ROLECE)</cbc:Name></cac:PartyName>
-
-<cac:PostalAddress>
-
-<cac:Country><cbc:IdentificationCode listID="http://publications.europa.eu/resource/authority/country" listAgencyID="OP" listVersionID="20220928-0">ESP</cbc:IdentificationCode></cac:Country>
-
-</cac:PostalAddress>
-
-</cac:Party>
-
-</cac:ServiceProviderParty>
-
-</cac:Party>
-
-</cac:ContractingParty>
-
-...
-----
 
 include::partial$feedback.adoc[]
 
