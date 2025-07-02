@@ -19,9 +19,9 @@ The conceptual model for this version
 == Information for Business Users
 * xref:4.0.0@ESPD-EDM:business:index.adoc[Business Information] +
 An overview of the ESPD for business users
-* xref:4.0.0@ESPD-EDM:business:service.adoc[The ESPD Service] +
-What an ESPD service is and what it looks like
-* xref:4.0.0@ESPD-EDM:business:using.adoc[Using an ESPD Service] +
+* xref:4.0.0@ESPD-EDM:business:implementation.adoc[An ESPD Implementation] +
+This section explains elements of an ESPD Implementation
+* xref:4.0.0@ESPD-EDM:business:using.adoc[The ESPD Online Form] +
 Using an online ESPD form from both buyer and supplier perspectives
 //* xref:espd-bus::creating.adoc[Creating an ESPD Service]
 //* xref:espd-bus::overview_upgrades.adoc[Overview for Upgrading your Version]

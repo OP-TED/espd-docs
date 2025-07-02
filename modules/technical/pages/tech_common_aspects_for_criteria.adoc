@@ -182,77 +182,23 @@ xref:tbr70_reqs.adoc#list_of_criteria[tbr70-013]
 
 |===
 
-== XML Examples
-
-See examples in sections about exclusion and selection criteria.
 
 === XML Example
 
-==== Code with callouts
+The xml of the criterion is best viewed directly in the xml examples made available in release v4.0 on GitHub:
 
-NOTE: The source code can be copied from the code block below the callout section
+https://github.com/OP-TED/ESPD-EDM/blob/v4.0.0/xml-examples/ESPD-Request.xml#L97
 
-[Code with callouts]
-----
-<cac:TenderingCriterion>
+https://github.com/OP-TED/ESPD-EDM/blob/v4.0.0/xml-examples/ESPD-Response.xml#L111
 
-_<!-- ... elements omitted for brevity -->_
-
-<cac:Legislation>
-
-<cbc:ID schemeID="criterion" schemeAgencyID="OP" schemeVersionID="4.0.0">4ea7a10a-643e-4022-b67e-e06573b28ff5</cbc:ID>
-
-<cbc:Title>DIRECTIVE 2014/24/EU OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL of 26 February 2014 on public procurement and repealing Directive 2004/18/EC</cbc:Title>
-
-<cbc:Description>DIRECTIVE 2014/24/EU OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL of 26 February 2014 on public procurement and repealing Directive 2004/18/EC</cbc:Description>
-
-<cbc:JurisdictionLevel languageID="en">EU Directive</cbc:JurisdictionLevel>
-
-<cbc:Article>57(1)</cbc:Article>
-
-<cbc:URI>http://eur-lex.europa.eu/legal-content/ES/TXT/?uri=celex%3A32014L0024</cbc:URI>
-
-</cac:Legislation>
-
-_<!-- ... elements omitted for brevity -->_
-
-</cac:TenderingCriterion>
-----
+////
 
 . Use the UUID provided by GROW.
 . The official long title of the legislation is expected in the Title.
 . The short name that is commonly used to refer to the legislation is expected in the Description.
 
-==== Copy the code block
+////
 
-Snippet of XML to illustrate how to use the cac:Legislation component inside a criterion:
-
-[source,xml]
-----
-<cac:TenderingCriterion>
-
-_<!-- ... elements omitted for brevity -->_
-
-<cac:Legislation>
-
-<cbc:ID schemeID="criterion" schemeAgencyID="OP" schemeVersionID="4.0.0">4ea7a10a-643e-4022-b67e-e06573b28ff5</cbc:ID>
-
-<cbc:Title>DIRECTIVE 2014/24/EU OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL of 26 February 2014 on public procurement and repealing Directive 2004/18/EC</cbc:Title>
-
-<cbc:Description>DIRECTIVE 2014/24/EU OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL of 26 February 2014 on public procurement and repealing Directive 2004/18/EC</cbc:Description>
-
-<cbc:JurisdictionLevel languageID="en">EU Directive</cbc:JurisdictionLevel>
-
-<cbc:Article>57(1)</cbc:Article>
-
-<cbc:URI>http://eur-lex.europa.eu/legal-content/ES/TXT/?uri=celex%3A32014L0024</cbc:URI>
-
-</cac:Legislation>
-
-_<!-- ... elements omitted for brevity -->_
-
-</cac:TenderingCriterion>
-----
 
 = Groups of properties
 
@@ -471,7 +417,7 @@ Caption (i.e. a 'label'), specific MS or buyer requirement (e.g. 'Number of refe
 
 == Mock-ups
 
-Chapters *4 Exclusion Criteria* and *5. Selection Criteria* describe in detail the different *types* of exclusion and selection criteria defined and used in the ESPD-EDM. By *type* of criterion we refer to criteria that share common characteristics, namely how they are structured. Each type of criterion is presented from three perspectives:
+Sections *Exclusion Grounds* and *Selection Criteria* describe in detail the different *types* of exclusion and selection criteria defined and used in the ESPD-EDM. By *type* of criterion we refer to criteria that share common characteristics, namely how they are structured. Each type of criterion is presented from three perspectives:
 
 [arabic]
 . *Layout and functional*: Mock-ups are provided to explain which data are expected and, to some extent, how software applications should behave (what to show/hide, validate or process depending on variables like 'what the user answers' or 'which is the role of the user'). Mock-ups are provided for both the buyer and economic operator perspectives;
@@ -510,7 +456,7 @@ To view the an example of the data structure, consult the https://github.com/OP-
 
 //_Figure 8. 'Contributions' criterion data structure_
 
-We could say that the 'data structures' represented in the spread-sheets define a kind of 'meta-language' (or 'controlled vocabulary') that helps 'map' the structure of an ESPD-EDM criterion and the UBL-2.3 criterion data structure. The table below 'maps' both vocabularies. Please compare any of the data structures provided in this document with both the UBL-2.3 XSD Schemas and the XML examples provided herein.
+//We could say that the 'data structures' represented in the spread-sheets define a kind of 'meta-language' (or 'controlled vocabulary') that helps 'map' the structure of an ESPD-EDM criterion and the UBL-2.3 criterion data structure. The table below 'maps' both vocabularies. Please compare any of the data structures provided in this document with both the UBL-2.3 XSD Schemas and the XML examples provided herein.
 
 [cols=",",options="header",]
 
@@ -650,202 +596,7 @@ Notice that:
 
 The following fragment of XML code shows how this is expressed:
 
-=== Code with callouts
-
-NOTE: The source code can be copied from the code block below the callout section
-
-[Code with callouts]
-----
-_Use of semanticised boolean codes for REQUIREMENT processing control_
-
-_<!-- lines with '...' refer to elements that have been removed for brevity. See complete sample in folder xml-examples of this distribution -->_
-
-<cac:TenderingCriterionPropertyGroup>
-
-<cac:TenderingCriterionProperty>
-
-_<!--...-->_
-
-<Description>Lots the requirement applies to</Description>
-
-_<!--...-->_
-
-</cac:TenderingCriterionProperty>
-
-<cac:SubsidiaryTenderingCriterionPropertyGroup>
-
-_<!--...-->_
-
-<cac:TenderingCriterionProperty>
-
-_<!--...-->_
-
-<Description>Lot ID</Description>
-
-_<!--...-->_
-
-</cac:TenderingCriterionProperty>
-
-</cac:SubsidiaryTenderingCriterionPropertyGroup>
-
-<cac:SubsidiaryTenderingCriterionPropertyGroup>
-
-<ID schemeAgencyID="OP" schemeVersionID="4.0.0">26ece6a2-b360-46c1-890d-8338913b8719</ID>
-
-<PropertyGroupTypeCode listID="property-group-type" listAgencyID="OP" listVersionID="4.0.0">ON*</PropertyGroupTypeCode>
-
-<cac:TenderingCriterionProperty>
-
-<ID schemeID="criterion" schemeAgencyID="OP" schemeVersionID="4.0.0">9c62f2c7-0c51-451d-8730-427f92ed618c</ID>
-
-<Description>Select the type of requirement</Description>
-
-<TypeCode listID="criterion-element-type" listAgencyID="OP" listVersionID="4.0.0">REQUIREMENT</TypeCode>
-
-<ValueDataTypeCode listID="response-data-type" listAgencyID="OP" listVersionID="4.0.0">CODE_BOOLEAN</ValueDataTypeCode>
-
-<ExpectedCode listID="boolean-gui-control-type" listAgencyID="OP" listVersionID="4.0.0">RADIO_BUTTON_TRUE</ExpectedCode>
-
-</cac:TenderingCriterionProperty>
-
-<cac:SubsidiaryTenderingCriterionPropertyGroup>
-
-_<!--...-->_
-
-<PropertyGroupTypeCode listID="property-group-type" listAgencyID="OP" listVersionID="4.0.0">ONTRUE</PropertyGroupTypeCode>
-
-<cac:TenderingCriterionProperty>
-
-<ID schemeID="criterion" schemeAgencyID="OP" schemeVersionID="4.0.0">13728a54-21e3-4c84-8b11-48666c3d260f</ID>
-
-<Description>Specify the total invoiced amount, taxes included.</Description>
-
-<TypeCode listID="criterion-element-type" listAgencyID="OP" listVersionID="4.0.0">REQUIREMENT</TypeCode>
-
-<ValueDataTypeCode listID="response-data-type" listAgencyID="OP" listVersionID="4.0.0">DESCRIPTION</ValueDataTypeCode>
-
-<ExpectedDescription>__FinReqsDescription</ExpectedDescription>
-
-</cac:TenderingCriterionProperty>
-
-<cac:TenderingCriterionProperty>
-
-<ID schemeID="criterion" schemeAgencyID="OP" schemeVersionID="4.0.0">48c7b3bf-8d1c-4497-a915-78d53ba68089</ID>
-
-<Description>Minimum amount</Description>
-
-<TypeCode listID="criterion-element-type" listAgencyID="OP" listVersionID="4.0.0">REQUIREMENT</TypeCode>
-
-<ValueDataTypeCode listID="response-data-type" listAgencyID="OP" listVersionID="4.0.0">AMOUNT</ValueDataTypeCode>
-
-<MinimumAmount currencyID="EUR">100006</MinimumAmount>
-
-</cac:TenderingCriterionProperty>
-
-<cac:TenderingCriterionProperty>
-
-<ID schemeID="criterion" schemeAgencyID="OP" schemeVersionID="4.0.0">8b4ae4f0-2849-49ea-a64b-7bb20c60bde4</ID>
-
-<Description>Start date; End date</Description>
-
-<TypeCode listID="criterion-element-type" listAgencyID="OP" listVersionID="4.0.0">REQUIREMENT</TypeCode>
-
-<ValueDataTypeCode listID="response-data-type" listAgencyID="OP" listVersionID="4.0.0">PERIOD</ValueDataTypeCode>
-
-<cac:ApplicablePeriod>
-
-<StartDate>2000-10-10</StartDate>
-
-<EndDate>2000-10-10</EndDate>
-
-</cac:ApplicablePeriod>
-
-</cac:TenderingCriterionProperty>
-
-<cac:SubsidiaryTenderingCriterionPropertyGroup>
-
-<ID schemeAgencyID="OP" schemeVersionID="4.0.0">9b3a04ff-e36d-4d4f-b47c-82ad402b9b02</ID>
-
-<PropertyGroupTypeCode listID="property-group-type" listAgencyID="OP" listVersionID="4.0.0"></PropertyGroupTypeCode>
-
-<cac:TenderingCriterionProperty>
-
-<ID schemeID="criterion" schemeAgencyID="OP" schemeVersionID="4.0.0">1d89c188-58d2-461e-a4f6-a17f689d87f4</ID>
-
-<Description>Amount</Description>
-
-<TypeCode listID="criterion-element-type" listAgencyID="OP" listVersionID="4.0.0">QUESTION</TypeCode>
-
-<ValueDataTypeCode listID="response-data-type" listAgencyID="OP" listVersionID="4.0.0">AMOUNT</ValueDataTypeCode>
-
-</cac:TenderingCriterionProperty>
-
-</cac:SubsidiaryTenderingCriterionPropertyGroup>
-
-</cac:SubsidiaryTenderingCriterionPropertyGroup>
-
-<cac:SubsidiaryTenderingCriterionPropertyGroup>
-
-<ID schemeAgencyID="OP" schemeVersionID="4.0.0">cc96aa19-a0be-4409-af58-ff3f3812741b</ID>
-
-<PropertyGroupTypeCode listID="property-group-type" listAgencyID="OP" listVersionID="4.0.0">ONFALSE</PropertyGroupTypeCode>
-
-<cac:TenderingCriterionProperty>
-
-<ID schemeID="criterion" schemeAgencyID="OP" schemeVersionID="4.0.0">57d4160f-20b4-4b43-967b-76b038a2fa6b</ID>
-
-<Description>Minimum rating</Description>
-
-<TypeCode listID="criterion-element-type" listAgencyID="OP" listVersionID="4.0.0">REQUIREMENT</TypeCode>
-
-<ValueDataTypeCode listID="response-data-type" listAgencyID="OP" listVersionID="4.0.0">QUANTITY</ValueDataTypeCode>
-
-</cac:TenderingCriterionProperty>
-
-<cac:TenderingCriterionProperty>
-
-<ID schemeID="criterion" schemeAgencyID="OP" schemeVersionID="4.0.0">f07b5174-93ae-46dd-aa26-7f451d97f6a8</ID>
-
-<Description>Rating scheme</Description>
-
-<TypeCode listID="criterion-element-type" listAgencyID="OP" listVersionID="4.0.0">REQUIREMENT</TypeCode>
-
-<ValueDataTypeCode listID="response-data-type" listAgencyID="OP" listVersionID="4.0.0">DESCRIPTION</ValueDataTypeCode>
-
-<ExpectedDescription></ExpectedDescription>
-
-</cac:TenderingCriterionProperty>
-
-<cac:SubsidiaryTenderingCriterionPropertyGroup>
-
-<ID schemeAgencyID="OP" schemeVersionID="4.0.0">5fe93344-ed91-4f97-bcab-b6720a131798</ID>
-
-<PropertyGroupTypeCode listID="property-group-type" listAgencyID="OP" listVersionID="4.0.0"></PropertyGroupTypeCode>
-
-<cac:TenderingCriterionProperty>
-
-<ID schemeID="criterion" schemeAgencyID="OP" schemeVersionID="4.0.0">3bd1913b-c461-41eb-87c4-84e003785a56</ID>
-
-<Description>Rating</Description>
-
-<TypeCode listID="criterion-element-type" listAgencyID="OP" listVersionID="4.0.0">QUESTION</TypeCode>
-
-<ValueDataTypeCode listID="response-data-type" listAgencyID="OP" listVersionID="4.0.0">QUANTITY</ValueDataTypeCode>
-
-</cac:TenderingCriterionProperty>
-
-</cac:SubsidiaryTenderingCriterionPropertyGroup>
-
-</cac:SubsidiaryTenderingCriterionPropertyGroup>
-
-</cac:SubsidiaryTenderingCriterionPropertyGroup>
-
-<!--...-->
-
-</cac:TenderingCriterionPropertyGroup>
-
-</cac:TenderingCriterion>
-----
+////
 
 . This property (cac:TenderingCriterionProperty) can be used by the software application to help the buyer select the type of REQUIREMENT it wants to be shown to the economic operator, either an Amount limited by a threshold and a period of time or rating constrained by a threshold and a rating scheme. The expected value will be a code expressing a three-state indicator (a boolean semanticised as CODE_BOOLEAN).
 . In this example, the buyer has specified the value RADIO_BUTTON_TRUE.
@@ -855,6 +606,8 @@ _<!--...-->_
 . The economic operator (EO) will have to respond using an element of type cbc:Amount, see the next fragment of XML below for the response of the EO. The validation mechanism checks that the type of data specified by the buyer in the ESPD-Request (AMOUNT) and the type of data provided in the ESPD-Response (cbc:ResponseAmount) are coherent.
 . This SUBGROUP is never processed (e.g. shown to the economic operator) as it contains the SUBGROUP of REQUIREMENT(s) and QUESTION in case the buyer had specified RADIO_BUTTON_FALSE as an answer to the field "Select the type of requirement".
 . The QUESTION that the economic operator would have had to respond in case the buyer had selected the second SUBGROUP of REQUIREMENT(s), which is not the case in this example.
+
+////
 
 [source,xml]
 ----
@@ -1187,9 +940,9 @@ The numbering increases for element of same type (Question Group, Question Subgr
 
 The implicit numbering is more often used for terminal structural elements (Question 1, Question 2, Requirement 1, Requirement 2, etc.).
 
-The following images are illustrating the use of both "short tag name" and "numbering" on ESPD Criterion samples.
+//The following images are illustrating the use of both "short tag name" and "numbering" on ESPD Criterion samples.
 
-Criterion 1 and 32 illustrate Short Tag Name_and_Numbering
+//Criterion 1 and 32 illustrate Short Tag Name_and_Numbering
 
 //_Figure 16. Short Tag Name and Numbering for Criterion C1 EG crime-org_
 
