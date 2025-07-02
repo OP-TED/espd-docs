@@ -712,15 +712,15 @@ The numbering increases for element of same type (Question Group, Question Subgr
 
 The implicit numbering is more often used for terminal structural elements (Question 1, Question 2, Requirement 1, Requirement 2, etc.).
 
-The following images are illustrating the use of both "short tag name" and "numbering" on ESPD Criterion samples.
+//The following images are illustrating the use of both "short tag name" and "numbering" on ESPD Criterion samples.
 
-image:Short_Tag_Name_and_Numbering_for_Criterion_C1_EG_crime-org.jpg[Short Tag Name and Numbering for Criterion C1 EG crime-org,width=566,height=308]
+//image:Short_Tag_Name_and_Numbering_for_Criterion_C1_EG_crime-org.jpg[Short Tag Name and Numbering for Criterion C1 EG crime-org,width=566,height=308]
 
-_Figure 16. Short Tag Name and Numbering for Criterion C1 EG crime-org_
+//_Figure 16. Short Tag Name and Numbering for Criterion C1 EG crime-org_
 
-image:Short_Tag_Name_and_Numbering_for_Criterion_C32_SC_spec-year-to.jpg[Short Tag Name and Numbering for Criterion C32 SC spec-year-to,width=566,height=308]
+//image:Short_Tag_Name_and_Numbering_for_Criterion_C32_SC_spec-year-to.jpg[Short Tag Name and Numbering for Criterion C32 SC spec-year-to,width=566,height=308]
 
-_Figure 17. Short Tag Name and Numbering for Criterion C32 SC spec-year-to_
+//_Figure 17. Short Tag Name and Numbering for Criterion C32 SC spec-year-to_
 
 == XML Path Like ID  
 
