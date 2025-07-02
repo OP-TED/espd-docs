@@ -940,9 +940,9 @@ The numbering increases for element of same type (Question Group, Question Subgr
 
 The implicit numbering is more often used for terminal structural elements (Question 1, Question 2, Requirement 1, Requirement 2, etc.).
 
-The following images are illustrating the use of both "short tag name" and "numbering" on ESPD Criterion samples.
+//The following images are illustrating the use of both "short tag name" and "numbering" on ESPD Criterion samples.
 
-Criterion 1 and 32 illustrate Short Tag Name_and_Numbering
+//Criterion 1 and 32 illustrate Short Tag Name_and_Numbering
 
 //_Figure 16. Short Tag Name and Numbering for Criterion C1 EG crime-org_
 
