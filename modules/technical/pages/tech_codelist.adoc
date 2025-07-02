@@ -52,7 +52,7 @@ ESPD-EDM Code list contains the following elements:
 
 The figure below illustrate how these elements are organised in the code lists maintained in Enterprise Architect:
 
-image:Enterprise_Architect_ESPD_codelist.jpg[Elements and metadata of an ESPD code list,align="center",pdfwidth=50%,scaledwidth=50%]
+image:Elements_metadata_of_ESPD_codelist.jpg[Elements and metadata of an ESPD code list,align="center",pdfwidth=50%,scaledwidth=50%]
 
 _Figure 1. Elements and metadata of an ESPD code list_
 
