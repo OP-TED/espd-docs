@@ -1,15 +1,13 @@
-:doctitle: Common aspects for criteria
+:doctitle: Common Aspects for Criteria
 :doccode: espd-tech-prod-008
 :author: NPJ
 :authoremail: nicole-anne.paterson-jones@ext.ec.europa.eu
 :docdate: January 2024
 
 
-include::partial$piraeus.adoc[]
-
 [cols="<1,<4"]
 |===
-|*REQUIREMENT* xref:bs41.adoc#br[br41-002] |The contracting body shall provide the exclusion grounds and selection criteria for its tendering process as structured information - via ESPD template or structured list of criteria set out in a call for tender.
+|*REQUIREMENT* xref:bis41.adoc#br[br41-002] |The contracting body shall provide the exclusion grounds and selection criteria for its tendering process as structured information - via ESPD template or structured list of criteria set out in a call for tender.
 |===
 
 The ESPD-EDM defined a flexible structure to express data about criteria. Based on this structure UBL-2.3 defined in turn the component cac:TenderingCriterion, which is used in ESPD-EDM to implement the XML objects for exclusion and selection criteria.
@@ -25,15 +23,15 @@ _Figure 1. Criterion - UML diagram_
 *Note that*:
 
 [arabic]
-. A criterion *may* have descendent 'sub-criteria'. This is very useful, for example, to define national exclusion criteria that specialise in the EU criteria defined in the Directive;
-. A criterion *may* refer to one or several pieces of legislation (EU, national, other);
-. A criterion *must* always contain at least one group of 'properties'. Properties may be informative captions; general requirements issued by the Member State or procedure-specific requirements specified by the buyer; and questions addressed to the economic operator;
-. A group of properties *must* always specify at least one 'property';
-. A group of properties *may* contain one or several 'sub-groups' of properties.
+. One criterion *may* have descendent 'sub-criteria'. This is very useful, for example, to define national exclusion criteria that specialise in the EU criteria defined in the Directive;
+. One criterion *may* refer to one or several pieces of legislation (EU, national, other);
+. One criterion *must* always contain at least one group of 'properties'. Properties may be informative captions; general requirements issued by the Member State or procedure-specific requirements specified by the buyer; and questions addressed to the economic operator;
+. One group of properties *must* always specify at least one 'property';
+. One group of properties *may* contain one or several 'sub-groups' of properties.
 
 == XSD Schema
 
-The XSD Schema diagram here shows a global view of the UBL 2.3 cac:TenderingCriterion component:
+This XSD Schema diagram shows a global view of the UBL 2.3 cac:TenderingCriterion component:
 
 image:cacTenderingCriterion_XSD_Schema.jpg[cac:TenderingCriterion - XSD Schema, global view,width=500,height=700]
 
@@ -49,7 +47,7 @@ _Table 20. Criterion, expected elements_
 |*Definition*: a|
 A tendering criterion describes a fact or a condition that is used by the contracting body to evaluate and compare tenders by economic operators and which will be used for the exclusion and the selection of candidate tenderers to the award decision.
 
-xref:tbr70_reqs##list_of_criteria[tbr070-009]
+xref:tbr70_reqs.adoc#list_of_criteria[tbr70-009]
 
 |*Business rule(s)*: |BR-LOT-20, BR-LOT-30, BR-LOT-30-S20, Common (BR-TC-01)
 |*File*: |ubl-2.3/xsdrt/common/UBL-CommonAggregateComponents-Components-2.3.xsd.xsd
@@ -60,52 +58,53 @@ xref:tbr70_reqs##list_of_criteria[tbr070-009]
 |===
 |*Components* |*Type* |*Card* |*Description* |*Requirements*
 |*cbc:ID* |Identifier |1 |A language-independent token, e.g., a number, that allows to identify a criterion uniquely as well as allows to reference the criterion in other documents. a|
-*Information Requirement*: xref:tbr70_reqs#list_of_criteria[tbr070-010].
+*Information Requirement*: xref:tbr70_reqs.adoc#list_of_criteria[tbr70-010] .
 
-*Rule*: Each Criterion is defined in e-Certis and must use the UUID supplied by e-Certis. See also the spreadsheets link:{url-tree}/codelists/ESPD-criterion.xlsx[_ESPD-criterion_].
+*Rule*: Each Criterion is defined in e-Certis and must use the UUID supplied by e-Certis. See also the spreadsheets https://github.com/OP-TED/ESPD-EDM/blob/main/criterion/ESPD-criterion.xlsx[_ESPD-criterion_].
 
 *Rule scope*: Common (BR-TC-02, BR-TC-12, BR-TC-13, BR-OTH-02)
 
 |*cbc:CriterionTypeCode* |Code |1 |A classification code defined by the ESPD-EDM to represent the criterion in the ESPD taxonomy of criteria. a|
-*Information Requirement*: xref:tbr70_reqs##list_of_criteria[tbr070-03][_tbr070-013_]
+*Information Requirement*: xref:tbr70_reqs.adoc#list_of_criteria[tbr70-013] 
 
-*Rule*: Compulsory use of codes coming from e-Certis, which are also used in the spreadsheets link:{url-tree}/codelists/ESPD-criterion.xlsx[_ESPD-criterion_], e.g. crime-org, corruption, chain-manage)
+*Rule*: Compulsory use of codes coming from e-Certis, which are also used in the spreadsheets https://github.com/OP-TED/ESPD-EDM/blob/main/criterion/ESPD-criterion.xlsx[_ESPD-criterion_], e.g. crime-org, corruption, chain-manage
+//link:{url-tree}/codelists/ESPD-criterion.xlsx[_ESPD-criterion_], e.g. crime-org, corruption, chain-manage)
 
 *Rule scope*: Common (BR-REQ-30, BR-REQ-30-S10, BR-REQ-30-S20, BR-REQ-40, BR-TC-03, BR-TC-04, BR-OTH-01, BR-OTH-01#7, BR-OTH-03)
 
 |*cbc:Name* |Text |1 |A short and descriptive name for a criterion. a|
-*Information Requirement*: xref:tbr70_reqs.adoc#list_of_criteria[tbr70-010]
+*Information Requirement*: xref:tbr70_reqs.adoc#list_of_criteria[tbr70-010]] 
 
-*Rule*: The name should match the one from e-Certis, which should be the same as in the in the spreadsheets link:{url-tree}/codelists/ESPD-criterion.xlsx[_ESPD-criterion_]], e.g. 'Convictions', 'Corruption', 'Fraud', 'Financial ratio', 'Subcontracting proportion'etc.).
+*Rule*: The name should match the one from e-Certis, which should be the same as in the in the spreadsheets https://github.com/OP-TED/ESPD-EDM/blob/main/criterion/ESPD-criterion.xlsx[_ESPD-criterion_], e.g. 'Convictions', 'Corruption', 'Fraud', 'Financial ratio', 'Subcontracting proportion'etc.).
 
 *Rule scope*: Common (BR-TC-05)
 
 |*cbc:Description* |Text |1..n |An extended description of the criterion. a|
-*Information Requirement*: xref:tbr70_reqs.adoc#list_of_criteria[tbr70-010]
+*Information Requirement*: xref:tbr70_reqs.adoc#list_of_criteria[tbr70-010]] 
 
-*Rule*: The description should match the one from e-Certis, which should be the same as in the in the spreadsheets  link:{url-tree}/codelists/ESPD-criterion.xlsx[_ESPD-criterion_]], e.g. 'Has the economic operator itself or any person who is a member of its administrative, management or supervisory body or has powers of representation, decision or control therein been the subject of a conviction by final judgment for participation in a criminal organisation, by a conviction rendered at the most five years ago or in which an exclusion period set out directly in the conviction continues to be applicable? As defined in Article 2 of Council Framework Decision 2008/841/JHA of 24 October 2008 on the fight against organised crime (OJ L 300, 11.11.2008, p. 42).'.
+*Rule*: The description should match the one from e-Certis, which should be the same as in the in the spreadsheets  https://github.com/OP-TED/ESPD-EDM/blob/main/criterion/ESPD-criterion.xlsx[_ESPD-criterion_], e.g. 'Has the economic operator itself or any person who is a member of its administrative, management or supervisory body or has powers of representation, decision or control therein been the subject of a conviction by final judgment for participation in a criminal organisation, by a conviction rendered at the most five years ago or in which an exclusion period set out directly in the conviction continues to be applicable? As defined in Article 2 of Council Framework Decision 2008/841/JHA of 24 October 2008 on the fight against organised crime (OJ L 300, 11.11.2008, p. 42).'.
 
 *Rule scope*: Common (BR-TC-06, BR-TC-19)
 
 *Note*: The UBL specification allows always multiple lines of text for the component cbc:Description. This feature can be used to split long descriptions into multiple lines, especially when the description contains enumerations (see the criterion "Misrepresentation" for an example).
 
 |*cac:ProcurementProjectLotReference* |Class |0..n |One or more of the procurement project lots to which this criterion can be related to. a|
-*Information Requirement*: (see section <<lot_management>>)
+*Information Requirement*: (see section xref:tech_selection_criteria.adoc#_lot_management_approach_for_selection_criteria[lot management])
 
 *Rule*: This element is mandatory for all Selection Criteria with cardinality 1..n because different Selection Criteria can be associated with different procurement lots. This element is not necessary for exclusion grounds because exclusion grounds are applied to all procurements.
 
 |*cbc:SubTenderingCriterion* |Class |0..n |One or more descendant criteria used namely to define a national exclusion criterion that specialises a more generic criterion like a EU exclusion criterion defined in the Directive. a|
-*Information Requirement*: xref:tbr70_reqs.adoc#list_of_criteria[tbr70-013]
+*Information Requirement*: xref:tbr70_reqs.adoc#list_of_criteria[tbr70-013] 
 
 *Rule*: None. Beware that a sub-criterion 'is a' criterion, therefore no need to list these elements at new. See XML examples in the section about exclusion criteria about how to define a sub-criterion.
 
 |*cac:Legislation* |Class |0..n |A reference to the legislation related to the Criterion. a|
-*Information Requirement*: xref:tbr70_reqs#list_of_criteria[tbr070-13]
+*Information Requirement*: xref:tbr70_reqs.adoc#list_of_criteria[tbr70-013] 
 
 *Rule*: None. See table below with the elements of this class.
 
 |*cac:TenderingCriterionPropertyGroup* |Class |1..n |The first level group of properties and sub-groups of properties in the structure of a criterion. a|
-*Information Requirement*: xref:tbr70_reqs#list_of_criteria[tbr070-13]
+*Information Requirement*: xref:tbr70_reqs.adoc#list_of_criteria[tbr70-013] 
 
 *Rule*: None. Beware that in previous versions of the ESPD-EDM this was termed "RequirementGroup".
 
@@ -113,10 +112,10 @@ xref:tbr70_reqs##list_of_criteria[tbr070-009]
 
 == XML Examples
 
-Examples can be viewed directly in the xml files provided on https://github.com/OP-TED/ESPD-EDM/tree/v3.3.0/xml-examples[GitHub].
+See XML examples in the sections about exclusion and selection criteria.
 
 
-== Legislation
+= Legislation
 
 The XSD schema below shows, in blue, the elements of the component cac:Legislation used to point at the legislation related to the criterion.
 
@@ -134,7 +133,7 @@ _Table 21. Legislation, expected elements_
 |*Definition*: a|
 A class to make reference to the legislation related to the criterion.
 
-xref:tbr70_reqs#list_of_criteria[tbr070-13]
+xref:tbr70_reqs.adoc#list_of_criteria[tbr70-013] 
 
 |*Business rule(s)*: |Common (BR-TC-08, 2. BR-OTH-01, BR-OTH-01#9, BR-OTH-03)
 |*File*: |ubl-2.3/xsdrt/common/UBL-CommonAggregateComponents-2.3.xsd
@@ -145,84 +144,63 @@ xref:tbr70_reqs#list_of_criteria[tbr070-13]
 |===
 |*Components* |*Type* |*Card* |*Description* |*Requirements*
 |*cbc:ID* |Identifier |0..1 |An identifier to refer to the legislation. a|
-*Information Requirement*:
+*Information Requirement*: 
 
-*Rule*:
-*Rule scope*:
+*Rule*: 
+*Rule scope*: 
 
 |*cbc:Title* |Text |1..n |Title of the legislation. a|
-*Information Requirement*: xref:tbr70_reqs#list_of_criteria[tbr070-13].
+*Information Requirement*: xref:tbr70_reqs.adoc#list_of_criteria[tbr70-013] .
 
 *Rule*: The complete title of the legislation provided as in the original legal text. At a later stage it might be provided by e-CERTIS (e.g.'DIRECTIVE 2014/24/EU OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL of 26 February 2014 on public procurement and repealing Directive 2004/18/EC'). Can be provided in several languages, but if LanguageID not specified it defaults to en (English).
 
 *Rule scope*: Common (BR-TC-09)
 
 |*cbc:Description* |Text |0..n |Textual short description of the legislation. a|
-*Information Requirement*: xref:tbr70_reqs#list_of_criteria[tbr070-13]
+*Information Requirement*: xref:tbr70_reqs.adoc#list_of_criteria[tbr70-013] 
 
 *Rule*: The description of the legislation provided in the original legal text SHOULD be provided. At a later stage they might be provided by e-CERTIS. Can be provided in several languages, but if LanguageID not specified it defaults to en (English).
 
 *Rule scope*: Common (BR-TC-10)
 
 |*cbc:JurisdictionLevel* |Text |0..n |Jurisdictional level of a particular legislation. a|
-*Information Requirement*: xref:tbr70_reqs#list_of_criteria[tbr070-13]
+*Information Requirement*: xref:tbr70_reqs.adoc#list_of_criteria[tbr70-013] 
 
 *Rule*: Although this is a text. Can be provided in several languages, but if LanguageID not specified it defaults to en (English).
 
 |*cbc:Article* |Text |0..n |Textual description of the article of the legislation. a|
-*Information Requirement*: xref:tbr70_reqs#list_of_criteria[tbr070-13]
+*Information Requirement*: xref:tbr70_reqs.adoc#list_of_criteria[tbr70-013] 
 
 *Rule*: Other articles where the Criterion is referred to SHOULD also be provided. At a later stage they might be provided by eCERTIS. Can be provided in several languages, but if LanguageID not specified it defaults to en (English).
 
 *Rule scope*: Common (BR-TC-11)
 
 |*cbc:URI* |Identifier |0..1 |URI that points to a legislation related to this criterion. a|
-*Information Requirement*: xref:tbr70_reqs#list_of_criteria[tbr070-13]
+*Information Requirement*: xref:tbr70_reqs.adoc#list_of_criteria[tbr70-013] 
 
 *Rule*: In the case of European legislation, the URL MUST point at the multilingual EUR-LEX web-page; e.g. link:http://eur-lex.europa.eu/legal-content/ES/TXT/?uri=celex%3A32014L0024[Directive 2014/24/EU].
 
 |===
 
-== XML Examples
-
-See examples in sections about exclusion and selection criteria.
 
 === XML Example
 
-[source,xml]
-----
-Snippet of XML to illustrate how to use the cac:Legislation component inside a criterion:
+The xml of the criterion is best viewed directly in the xml examples made available in release v4.0 on GitHub:
 
-<cac:TenderingCriterion>
+https://github.com/OP-TED/ESPD-EDM/blob/v4.0.0/xml-examples/ESPD-Request.xml#L97
 
-_<!-- ... elements omitted for brevity -->_
+https://github.com/OP-TED/ESPD-EDM/blob/v4.0.0/xml-examples/ESPD-Response.xml#L111
 
-<cac:Legislation>
-
-<cbc:ID schemeID="criterion" schemeAgencyID="OP" schemeVersionID="3.3.0">4ea7a10a-643e-4022-b67e-e06573b28ff5</cbc:ID>
-
-<cbc:Title>DIRECTIVE 2014/24/EU OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL of 26 February 2014 on public procurement and repealing Directive 2004/18/EC</cbc:Title>
-
-<cbc:Description>DIRECTIVE 2014/24/EU OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL of 26 February 2014 on public procurement and repealing Directive 2004/18/EC</cbc:Description>
-
-<cbc:JurisdictionLevel languageID="en">EU Directive</cbc:JurisdictionLevel>
-
-<cbc:Article>57(1)</cbc:Article>
-
-<cbc:URI>http://eur-lex.europa.eu/legal-content/ES/TXT/?uri=celex%3A32014L0024</cbc:URI>
-
-</cac:Legislation>
-
-_<!-- ... elements omitted for brevity -->_
-
-</cac:TenderingCriterion>
-----
+////
 
 . Use the UUID provided by GROW.
 . The official long title of the legislation is expected in the Title.
 . The short name that is commonly used to refer to the legislation is expected in the Description.
 
-== Groups of properties
+////
+
+
+= Groups of properties
 
 This XSD diagram shows the sub-components of a group of criteria:
 
@@ -247,7 +225,7 @@ _Table 22. Groups of properties, expected elements_
 |*Definition*: a|
 The first level group of properties and sub-groups of properties in the structure of a criterion.
 
-xref:tbr70_reqs#list_of_criteria[tbr070-13]
+xref:tbr70_reqs.adoc#list_of_criteria[tbr70-013] 
 
 |*Business rule(s)*: |Common (BR-TC-07, BR-TC-16)
 |*File*: |ubl-2.3/xsdrt/common/UBL-CommonAggregateComponents-2.3.xsd
@@ -258,29 +236,29 @@ xref:tbr70_reqs#list_of_criteria[tbr070-13]
 |===
 |*Components* |*Type* |*Card* |*Description* |*Requirements*
 |*cbc:ID* |Identifier |1 |Identifies a group of requirements uniquely. a|
-*Information Requirement*: xref:tbr70_reqs#list_of_criteria[tbr070-13].
+*Information Requirement*: xref:tbr70_reqs.adoc#list_of_criteria[tbr70-013] .
 
 *Rule*: Compulsory use of the UUIDs supplied by e-Certis.
 
-See also the spreadsheet link:{url-tree}/codelists/ESPD-criterion.xlsx[ESPD-criterion].
+See also the spreadsheet https://github.com/OP-TED/ESPD-EDM/blob/main/criterion/ESPD-criterion.xlsx[_ESPD-criterion_].
 
 *Rule scope*: Common (BR-TC-12, BR-OTH-02, BR-OTH-02#01)
 
 |*cbc:PropertyGroupTypeCode* |Code |1 |Code addressed to control the behaviour of the group of criteria. a|
-*Information Requirement*: xref:tbr70_reqs#list_of_criteria[tbr070-13].
+*Information Requirement*: xref:tbr70_reqs.adoc#list_of_criteria[tbr70-013] .
 
 *Rule*: Compulsory use of the Code List PropertyGroupType. See sections below about the 'criteria data structures' and the XML examples on exclusion and selection criteria to understand the use of this code. Beware that the first element inside a group of properties (after the group ID) is always a cac:TenderingCriterionProperty. In some occasions this might entail the use of an empty CAPTION element, for instance, to produce groups of subgroups where no property does really makes sense in the first group. See also the sub-section *The ONTRUE/ONFALSE codes for GROUP and SUBGROUP control*
 
 *Rule scope*: Common (BR-TC-14, BR-TC-15, BR-OTH-01, BR-OTH-01#11, BR-OTH-03)
 
 |*cac:TenderingCriterionProperty* |Class |1..n |Caption (i.e. a 'label'), specific MS or buyer requirement (e.g. 'Number of references expected: 5' or a question addressed to the economic operator (e.g. 'Your average yearly turnover for the past three years?'. a|
-*Information Requirement*: xref:tbr70_reqs#list_of_criteria[tbr070-13].
+*Information Requirement*: xref:tbr70_reqs.adoc#list_of_criteria[tbr70-013] .
 
 *Rule*: See the rules for the class in the tables below to see the rules related to criterion properties. See also the XML examples provided in sections about exclusion and selection criteria.
 
 |*cac:SubsidiaryTenderingCriterionPropertyGroup* |Class |0..n |A second, third or n-level group inside a first level group of properties. a|
 
-*Information Requirement*: xref:tbr70_reqs#list_of_criteria[tbr070-13].
+*Information Requirement*: xref:tbr70_reqs.adoc#list_of_criteria[tbr70-013] .
 
 *Rule*: subsidiary property groups 'are' property groups (i.e. it is the same component but qualified as 'subsidiary'). Therefore all the rules applicable to property groups are also applicable to sub-groups: Compulsory use of the Code List PropertyGroupType. See sections below about the 'criteria data structures' and the XML examples on exclusion and selection criteria to understand the use of this code. Beware that the first element inside a group of properties (after the group ID) is always a cac:TenderingCriterionProperty. In some occasions this might entail the use of an empty CAPTION element, for instance, to produce groups of subgroups where no property does really makes sense in the first group.
 
@@ -291,7 +269,7 @@ See also the spreadsheet link:{url-tree}/codelists/ESPD-criterion.xlsx[ESPD-crit
 [arabic]
 . See examples in sections about exclusion and selection criteria. Study:
 * How GROUPS (cac:TenderingCriterionPropertyGroup) and SUB-GROUPs (cac:cac:SubsidiaryTenderingCriterionPropertyGroup) are organised, and
-* How the codes ON*, ONTRUE and ONFALSE are used.
+* How the codes ON*, ONTRUE and ONFALSE are used. 
 . You will notice in the examples that the elements cbc:Name and cbc:Description of groups and subgroups of properties are never used. As a common practice the ESPD documents use instead a first cac:TenderingCriterionProperty of type CAPTION (i.e. an informative property that act as a 'label').
 
 == Properties
@@ -324,7 +302,7 @@ _Table 23. Properties, expected elements_
 |*Definition*: a|
 Caption (i.e. a 'label'), specific MS or buyer requirement (e.g. 'Number of references expected: 5' or a question addressed to the economic operator (e.g. 'Your average yearly turnover for the past three years?'.
 
-*Information Requirement*: xref:tbr70_reqs#list_of_criteria[tbr070-13]
+*Information Requirement*: xref:tbr70_reqs.adoc#list_of_criteria[tbr70-013] 
 
 |*Business rule(s)*: |BR-SC-20
 |*File*: |ubl-2.3/xsdrt/common/UBL-CommonAggregateComponents-2.3.xsd
@@ -335,97 +313,97 @@ Caption (i.e. a 'label'), specific MS or buyer requirement (e.g. 'Number of refe
 |===
 |*Components* |*Type* |*Card* |*Description* |*Requirements*
 |*cbc:ID* |Identifier |1 |Identifies one specific property. a|
-*Information Requirement*: xref:tbr70_reqs#list_of_criteria[tbr070-13].
+*Information Requirement*: xref:tbr70_reqs.adoc#list_of_criteria[tbr70-013] .
 
 *Rule*: Property identifiers must use UUID numbers (version 4) automatically generated. The responses of the economic operator (in the ESPD Response document) will refer to this UUID to link the response with one, and only one, criterion property. See the section about the ESPD Response for examples.
 
 *Rule scope*: Common (BR-TC-18, BR-OTH-02)
 
 |*cbc:Description* |Text |1 |The text of the caption, requirement or question. a|
-*Information Requirement*: xref:tbr70_reqs#list_of_criteria[tbr070-13].
+*Information Requirement*: xref:tbr70_reqs.adoc#list_of_criteria[tbr70-013] .
 
 *Rule*: None.
 
 *Rule scope*: Common (BR-TC-19)
 
 |*cbc:TypeCode* |Code |1 |The type of property. Used to verify that structure of the property is correct. a|
-*Information Requirement*: xref:tbr70_reqs#list_of_criteria[tbr070-13].
+*Information Requirement*: xref:tbr70_reqs.adoc#list_of_criteria[tbr70-013] .
 
 *Rule*: Compulsory use of the link:{url-tree}/codelists/gc/CriterionElementType.gc[CriterionElementType]. Possible types are 'CAPTION, REQUIREMENT and QUESTION'. If the type is CAPTION or REQUIREMENT no answer is expected from the economic operator and therefore the cbc:ValueDataTypeCode must be set to NONE. Otherwise this value must be set to one of the values defined in the link:{url-tree}/codelists/gc/ResponseDataType.gc[ResponseDataType]
 
 *Rule scope*: BR-TC-20, BR-OTH-01, BR-OTH-01#14, BR-OTH-03
 
 |*cbc:ValueDataTypeCode* |Code |1 |The type of answer expected by the buyer in the case of a property of type QUESTION. a|
-*Information Requirement*: xref:tbr70_reqs#list_of_criteria[tbr070-13].
+*Information Requirement*: xref:tbr70_reqs.adoc#list_of_criteria[tbr70-013] .
 
 *Rule*: Compulsory use of the Code List "ResponseDataType". Verify that the value is different to NONE for properties of type QUESTION.
 
 *Rule scope*: Common (BR-TC-21, BR-OTH-01, BR-OTH-03, BR-OTH-01#12, BR-OTH-03)
 
 |*cbc:ValueUnitCode* |Code |0..1 |The unit of measure of the numeric value as a quantity or measure in the expected response from the economic operator. a|
-*Information Requirement*: xref:tbr70_reqs#list_of_criteria[tbr070-13].
+*Information Requirement*: xref:tbr70_reqs.adoc#list_of_criteria[tbr70-013] .
 
 *Rule*: Verify that the value of cac:TypeCode is set to QUESTION and that the cac:ValueTypeCode is different to NONE.
 
 *Rule scope*: BR-OTH-01
 
 |*cbc:ValueCurrencyCode* |Code |0..1 |The currency of the numeric value as an amount in the expected response from the economic operator. a|
-*Information Requirement*: xref:tbr70_reqs#list_of_criteria[tbr070-13].
+*Information Requirement*: xref:tbr70_reqs.adoc#list_of_criteria[tbr70-013] .
 
 *Rule*: Verify that the value of cac:TypeCode is set to QUESTION and that the cac:ValueTypeCode is different to NONE.
 
 *Rule scope*: BR-OTH-01
 
 |*cbc:ExpectedAmount* |Amount |0..1 |The amount in the expected response from the economic operator. a|
-*Information Requirement*: xref:tbr70_reqs#list_of_criteria[tbr070-13].
+*Information Requirement*: xref:tbr70_reqs.adoc#list_of_criteria[tbr70-013] .
 
 
 |*cbc:ExpectedID* |Identifier |0..1 |The expected identifier that the economic operator has to provide in the criterion response. a|
-*Information Requirement*: xref:tbr70_reqs#list_of_criteria[tbr070-13].
+*Information Requirement*: xref:tbr70_reqs.adoc#list_of_criteria[tbr70-013] .
 
 *Rule*: Verify that the value of cac:TypeCode is set to QUESTION and that the cac:ValueTypeCode is different to NONE.
 
 *Rule scope*: (BR-LOT-40)
 
 |*cbc:ExpectedCode* |Code |0..1 |The expected code that the economic operator has to provide in the Criterion response. a|
-*Information Requirement*: xref:tbr70_reqs#list_of_criteria[tbr070-13].
+*Information Requirement*: xref:tbr70_reqs.adoc#list_of_criteria[tbr70-013] .
 
 *Rule*: Verify that the value of cac:TypeCode is set to QUESTION and that the cac:ValueTypeCode is different to NONE.
 
 *Rule scope*:(BR-OTH-01)
 
 |*cbc:ExpectedValueNumeric* |Numeric |0..1 |The expected value that the economic operator has to provide in the Criterion response. a|
-*Information Requirement*: xref:tbr70_reqs#list_of_criteria[tbr070-13].
+*Information Requirement*: xref:tbr70_reqs.adoc#list_of_criteria[tbr70-013] .
 
 *Rule*: Verify that the value of cac:TypeCode is set to QUESTION and that the cac:ValueTypeCode is different to NONE.
 
 |*cbc:ExpectedDescription* |Text |0..1 |The description of the expected evidence that the economic operator has to provide in the Criterion response. a|
-*Information Requirement*: xref:tbr70_reqs#list_of_criteria[tbr070-13].
+*Information Requirement*: xref:tbr70_reqs.adoc#list_of_criteria[tbr70-013] .
 
 *Rule*:
 
 |*cbc:MaximumValueNumeric* |Numeric |0..1 |The maximum value the response must have. a|
-*Information Requirement*: xref:tbr70_reqs#list_of_criteria[tbr070-13].
+*Information Requirement*: xref:tbr70_reqs.adoc#list_of_criteria[tbr70-013] .
 
 *Rule*: Verify that the value of cac:TypeCode is set to QUESTION and that the cac:ValueTypeCode is different to NONE.
 
 |*cbc:MinimumValueNumeric* |Numeric |0..1 |The minimum value the response must have. a|
-*Information Requirement*: xref:tbr70_reqs#list_of_criteria[tbr070-13].
+*Information Requirement*: xref:tbr70_reqs.adoc#list_of_criteria[tbr70-013] .
 
 *Rule*: Verify that the value of cac:TypeCode is set to QUESTION and that the cac:ValueTypeCode is different to NONE.
 
 |*cbc:CertificationLevelDescription* |Text |0..1 |The description of the level of the expected certification. a|
-*Information Requirement*: xref:tbr70_reqs#list_of_criteria[tbr070-13].
+*Information Requirement*: xref:tbr70_reqs.adoc#list_of_criteria[tbr70-013] .
 
 *Rule*: Verify that the value of cac:TypeCode is set to QUESTION and that the cac:ValueTypeCode is different to NONE.
 
 |*cac:ApplicablePeriod* |Class |0..1 |The period to which this criterion property shall apply. a|
-*Information Requirement*: xref:tbr70_reqs#list_of_criteria[tbr070-13].
+*Information Requirement*: xref:tbr70_reqs.adoc#list_of_criteria[tbr70-013] .
 
 *Rule*: The ESPD-EDM does only expect start date and end date.
 
 |*cac:TemplateEvidence* |Class |0..n |A pointer to one or more evidences that support the veracity of this criterion. a|
-*Information Requirement*: xref:tbr70_reqs#list_of_criteria[tbr070-13].
+*Information Requirement*: xref:tbr70_reqs.adoc#list_of_criteria[tbr70-013] .
 
 *Rule*: None.
 
@@ -439,7 +417,7 @@ Caption (i.e. a 'label'), specific MS or buyer requirement (e.g. 'Number of refe
 
 == Mock-ups
 
-Chapters *4 Exclusion Criteria* and *5. Selection Criteria* describe in detail the different *types* of exclusion and selection criteria defined and used in the ESPD-EDM. By *type* of criterion we refer to criteria that share common characteristics, namely how they are structured. Each type of criterion is presented from three perspectives:
+Sections *Exclusion Grounds* and *Selection Criteria* describe in detail the different *types* of exclusion and selection criteria defined and used in the ESPD-EDM. By *type* of criterion we refer to criteria that share common characteristics, namely how they are structured. Each type of criterion is presented from three perspectives:
 
 [arabic]
 . *Layout and functional*: Mock-ups are provided to explain which data are expected and, to some extent, how software applications should behave (what to show/hide, validate or process depending on variables like 'what the user answers' or 'which is the role of the user'). Mock-ups are provided for both the buyer and economic operator perspectives;
@@ -472,11 +450,13 @@ The columns of the tables are to be interpreted as follows:
 ** ONTRUE, meaning "process this group only if the previous parent question (always an INDICATOR) has been answered affirmatively"
 ** ONFALSE, meaning "process this group only if the previous parent question (always an INDICATOR) has been answered negatively"
 
-image:Contributions_criterion_data_structure.jpg[Contributions' criterion data structure,width=566,height=308]
+To view the an example of the data structure, consult the https://github.com/OP-TED/ESPD-EDM/blob/v4.0.0/criterion/ESPD-criterion.xlsx[Criterion File]. The information will be visible in the tab "EG-Convictions", and others.
 
-_Figure 8. 'Contributions' criterion data structure_
+//image:Contributions_criterion_data_structure.jpg[Contributions' criterion data structure,width=566,height=308]
 
-We could say that the 'data structures' represented in the spread-sheets define a kind of 'meta-language' (or 'controlled vocabulary') that helps 'map' the structure of an ESPD-EDM criterion and the UBL-2.3 criterion data structure. The table below 'maps' both vocabularies. Please compare any of the data structures provided in this document with both the UBL-2.3 XSD Schemas and the XML examples provided herein.
+//_Figure 8. 'Contributions' criterion data structure_
+
+//We could say that the 'data structures' represented in the spread-sheets define a kind of 'meta-language' (or 'controlled vocabulary') that helps 'map' the structure of an ESPD-EDM criterion and the UBL-2.3 criterion data structure. The table below 'maps' both vocabularies. Please compare any of the data structures provided in this document with both the UBL-2.3 XSD Schemas and the XML examples provided herein.
 
 [cols=",",options="header",]
 
@@ -527,9 +507,11 @@ If you examine any of the XML examples provided in this document you will observ
 ** A REQUIREMENT_GROUP or REQUIREMENT-SUBGROUP may contain either REQUIREMENT_SUBGROUPS and/or QUESTION_SUBGROUPS;
 ** The only possibility in the UBL-2.3 model to distinguish whether a group or a subgroup of criterion properties contains REQUIREMENT(s) or QUESTION(s) is to look into the value of the cac:TenderingCriterionProperty/cbc:TypeCode. The list of possible codes are the ones of the above mentioned Code List "link:{url-tree}/codelists/gc/CriterionElementType.gc[CriterionElementType]".
 
+////
 == XML examples and tools
 
 The fact of presenting the data structures as a spread-sheet book had an additional reason: *to use the spread-sheet as an elementary prototype tool to generate the XML instances of the criteria for the ESPD Request and ESPD Response documents*.
+
 
 Thus the folder link:{url-tree}/xml-examples/\\__xslt__/ODS-Data-Structures-to-ESPD-XML[xml-examples/\\__xslt__/ODS-Data-Structures-to-ESPD-XML] contains four XSL style-sheets that facilitate the generation of the complete set of criteria required in an ESPD Request or in an ESPD Response XML file.
 
@@ -560,6 +542,7 @@ The following features *are implemented* in the second set of transformation XSL
 The following feature *is NOT implemented* in the first set of transformation XSL-T style-sheet (link:{url-tree}/xml-examples/\\__xslt__/ODS-Data-Structures-to-ESPD-XML/ESPDRequest-Annotated.xslt[ESPDRequest-Annotated.xslt]):
 
 * The Criteria from the ESPD Request *are not* copied in the ESPD Response document. But the XML examples in the link:{url-tree}/xml-examples/[xml-examples folder].
+////
 
 == GUI control elements
 
@@ -576,11 +559,11 @@ Three codes concerning the GROUPS or SUBGROUPS of REQUIREMENT(s) and QUESTION(s)
 
 These codes are used for a software application modules to know whether it has to process a concrete GROUP or SUBGROUP. If the objective of the module is, for example, to build dynamically the Graphic User Interface (GUI) - based on the ESPD-Request or an ESPD-Response XML instance-, then a GROUP or SUBGROUP marked as ONTRUE implies that the GROUP or SUBGROUP content is to be shown, whilst the one marked as ONFALSE needs to be hidden. GROUPS and SUBGROUPS marked as ON* imply that has to be always shown. You can see this mechanism as a way of implementing ''choices'' or ''switch/cases'' inside a Criterion Data Structure.
 
-The figure below illustrates how the ONTRUE and ONFALSE SUBGROUPS of a Criterion of type "Contributions (exclusion grounds)" relate to each of its ''closer QUESTION'' of type INDICATOR (see boxes and lines coloured in blue):
+The https://github.com/OP-TED/ESPD-EDM/blob/v4.0.0/criterion/ESPD-criterion.xlsx[Criterion File] illustrates how the ONTRUE and ONFALSE SUBGROUPS of a Criterion of type "Contributions (exclusion grounds)" relate to each of its ''closer QUESTION'' of type INDICATOR. See the "element code" column.
 
-image:ONTRUE_ONFALSE_choice_control.jpg[ONTRUE/ONFALSE choice control,width=557,height=230]
+//image:ONTRUE_ONFALSE_choice_control.jpg[ONTRUE/ONFALSE choice control,width=557,height=230]
 
-_Figure 9. GROUP and SUBGROUP control via the ONTRUE/ONFALSE codes_
+//_Figure 9. GROUP and SUBGROUP control via the ONTRUE/ONFALSE codes_
 
 The screen-captures below illustrate how the European Commission's ESPD Service processed the GUI for the Exclusion Criterion ''Contributions'' based on this mechanism. Note that these are examples on how the GUI is processed and its behaviour taking into account the PropertyGroupType, the actual content can be outdated:
 
@@ -594,7 +577,7 @@ _Figure 11. Case 2: When the first QUESTION ''Your Answer?'' is set to true:_
 
 image:Case3_GUI_Control.jpg[Case 3: When the first QUESTION ''Your Answer?'' and the option "Has this breach of obligations been established ..." are both set to true:,width=540,height=246]
 
-_Figure 12. Case 3: When the first QUESTION ''Your Answer?'' and the option "Has this breach of obligations been established ..." are both set to true:_
+_Figure12. Case 3: When the first QUESTION ''Your Answer?'' and the option "Has this breach of obligations been established ..." are both set to true:_
 
 image:Case4_GUI_Control.jpg[Case 4: When all the QUESTION(s) that are INDICATORS are set to true,width=513,height=324]
 
@@ -602,11 +585,7 @@ _Figure 13. Case 4: When all the QUESTION(s) that are INDICATORS are set to true
 
 == Radio-Button and Check-box controls
 
-In version 2.1.0 a new code list named link:{url-tree}/codelists/gc/BooleanGUIControlType.gc[BooleanGUIControlType] was added to help software application process REQUIREMENT(s) issued by the buyer when drafting ESPD documents. For the time being this need is only present in one Criterion of ESPD: 'Other economic or financial requirements' (finan-requ). The figure below shows the data structure for that Criterion:
-
-image:Use_code_list_BooleanGUIControlType.jpg[Use of the code list BooleanGUIControlType,width=574,height=336]
-
-_Figure 14. Use of the code list link:{url-tree}/codelists/gc/BooleanGUIControlType.gc[BooleanGUIControlType]_
+The https://github.com/OP-TED/ESPD-EDM/blob/v4.0.0/criterion/ESPD-criterion.xlsx[Criterion File], e.g., in criterion 36, demonstrates an example of the radio button class in use.
 
 Notice that:
 
@@ -617,42 +596,232 @@ Notice that:
 
 The following fragment of XML code shows how this is expressed:
 
-=== XML Example
-
-The xml structure of the TenderingCriterionPropertyGroup element can be viewed in either the examples provided on GitHub. Search either document to view the many instances of use:
-
-https://github.com/OP-TED/ESPD-EDM/blob/v3.3.0/xml-examples/ESPD-Request.xml
-
-https://github.com/OP-TED/ESPD-EDM/blob/v3.3.0/xml-examples/ESPD-Response.xml
-
-
+////
 
 . This property (cac:TenderingCriterionProperty) can be used by the software application to help the buyer select the type of REQUIREMENT it wants to be shown to the economic operator, either an Amount limited by a threshold and a period of time or rating constrained by a threshold and a rating scheme. The expected value will be a code expressing a three-state indicator (a boolean semanticised as CODE_BOOLEAN).
 . In this example, the buyer has specified the value RADIO_BUTTON_TRUE.
 . As the value of the element cbc:ExpectedCode, inside the REQUIREMENT (cac:TenderingCriterionProperty) ''Select the type of requirement'', is RADIO_BUTTON_TRUE the economic operator will see the first SUBGROUP of REQUIREMENT(s) (UUID 26ece6a2-b360-46c1-890d-8338913b8719) and will have to respond the QUESTION with the text "Amount".
 . The buyer is specifying that an amount above 100006 Euros is expected.
-. This is the QUESTION that the economic operator needs to respond to (the "Amount" corresponding to the economic of financial requirement) in this example: "Specify the total invoiced amount, taxes included" (cac:TenderingCriterionProperty UUID 13728a54-21e3-4c84-8b11-48666c3d260f).
+. This is the QUESTION that the economic operator needs to respond (the "Amount" corresponding to the economic of financial requirement (in this example: "Specify the total invoiced amount, taxes included" (cac:TenderingCriterionProperty UUID 13728a54-21e3-4c84-8b11-48666c3d260f).
 . The economic operator (EO) will have to respond using an element of type cbc:Amount, see the next fragment of XML below for the response of the EO. The validation mechanism checks that the type of data specified by the buyer in the ESPD-Request (AMOUNT) and the type of data provided in the ESPD-Response (cbc:ResponseAmount) are coherent.
 . This SUBGROUP is never processed (e.g. shown to the economic operator) as it contains the SUBGROUP of REQUIREMENT(s) and QUESTION in case the buyer had specified RADIO_BUTTON_FALSE as an answer to the field "Select the type of requirement".
 . The QUESTION that the economic operator would have had to respond in case the buyer had selected the second SUBGROUP of REQUIREMENT(s), which is not the case in this example.
 
+////
 
-Responses to any element to a requirement, are placed in a <cac:TenderingCriterionResponse>:
+[source,xml]
+----
+_Use of semanticised boolean codes for REQUIREMENT processing control_
+
+_<!-- lines with '...' refer to elements that have been removed for brevity. See complete sample in folder xml-examples of this distribution -->_
+
+<cac:TenderingCriterionPropertyGroup>
+
+<cac:TenderingCriterionProperty>
+
+_<!--...-->_
+
+<Description>Lots the requirement applies to</Description>
+
+_<!--...-->_
+
+</cac:TenderingCriterionProperty>
+
+<cac:SubsidiaryTenderingCriterionPropertyGroup>
+
+_<!--...-->_
+
+<cac:TenderingCriterionProperty>
+
+_<!--...-->_
+
+<Description>Lot ID</Description>
+
+_<!--...-->_
+
+</cac:TenderingCriterionProperty>
+
+</cac:SubsidiaryTenderingCriterionPropertyGroup>
+
+<cac:SubsidiaryTenderingCriterionPropertyGroup>
+
+<ID schemeAgencyID="OP" schemeVersionID="4.0.0">26ece6a2-b360-46c1-890d-8338913b8719</ID>
+
+<PropertyGroupTypeCode listID="property-group-type" listAgencyID="OP" listVersionID="4.0.0">ON*</PropertyGroupTypeCode>
+
+<cac:TenderingCriterionProperty>
+
+<ID schemeID="criterion" schemeAgencyID="OP" schemeVersionID="4.0.0">9c62f2c7-0c51-451d-8730-427f92ed618c</ID>
+
+<Description>Select the type of requirement</Description>
+
+<TypeCode listID="criterion-element-type" listAgencyID="OP" listVersionID="4.0.0">REQUIREMENT</TypeCode>
+
+<ValueDataTypeCode listID="response-data-type" listAgencyID="OP" listVersionID="4.0.0">CODE_BOOLEAN</ValueDataTypeCode>
+
+<ExpectedCode listID="boolean-gui-control-type" listAgencyID="OP" listVersionID="4.0.0">RADIO_BUTTON_TRUE</ExpectedCode>
+
+</cac:TenderingCriterionProperty>
+
+<cac:SubsidiaryTenderingCriterionPropertyGroup>
+
+_<!--...-->_
+
+<PropertyGroupTypeCode listID="property-group-type" listAgencyID="OP" listVersionID="4.0.0">ONTRUE</PropertyGroupTypeCode>
+
+<cac:TenderingCriterionProperty>
+
+<ID schemeID="criterion" schemeAgencyID="OP" schemeVersionID="4.0.0">13728a54-21e3-4c84-8b11-48666c3d260f</ID>
+
+<Description>Specify the total invoiced amount, taxes included.</Description>
+
+<TypeCode listID="criterion-element-type" listAgencyID="OP" listVersionID="4.0.0">REQUIREMENT</TypeCode>
+
+<ValueDataTypeCode listID="response-data-type" listAgencyID="OP" listVersionID="4.0.0">DESCRIPTION</ValueDataTypeCode>
+
+<ExpectedDescription>__FinReqsDescription</ExpectedDescription>
+
+</cac:TenderingCriterionProperty>
+
+<cac:TenderingCriterionProperty>
+
+<ID schemeID="criterion" schemeAgencyID="OP" schemeVersionID="4.0.0">48c7b3bf-8d1c-4497-a915-78d53ba68089</ID>
+
+<Description>Minimum amount</Description>
+
+<TypeCode listID="criterion-element-type" listAgencyID="OP" listVersionID="4.0.0">REQUIREMENT</TypeCode>
+
+<ValueDataTypeCode listID="response-data-type" listAgencyID="OP" listVersionID="4.0.0">AMOUNT</ValueDataTypeCode>
+
+<MinimumAmount currencyID="EUR">100006</MinimumAmount>
+
+</cac:TenderingCriterionProperty>
+
+<cac:TenderingCriterionProperty>
+
+<ID schemeID="criterion" schemeAgencyID="OP" schemeVersionID="4.0.0">8b4ae4f0-2849-49ea-a64b-7bb20c60bde4</ID>
+
+<Description>Start date; End date</Description>
+
+<TypeCode listID="criterion-element-type" listAgencyID="OP" listVersionID="4.0.0">REQUIREMENT</TypeCode>
+
+<ValueDataTypeCode listID="response-data-type" listAgencyID="OP" listVersionID="4.0.0">PERIOD</ValueDataTypeCode>
+
+<cac:ApplicablePeriod>
+
+<StartDate>2000-10-10</StartDate>
+
+<EndDate>2000-10-10</EndDate>
+
+</cac:ApplicablePeriod>
+
+</cac:TenderingCriterionProperty>
+
+<cac:SubsidiaryTenderingCriterionPropertyGroup>
+
+<ID schemeAgencyID="OP" schemeVersionID="4.0.0">9b3a04ff-e36d-4d4f-b47c-82ad402b9b02</ID>
+
+<PropertyGroupTypeCode listID="property-group-type" listAgencyID="OP" listVersionID="4.0.0"></PropertyGroupTypeCode>
+
+<cac:TenderingCriterionProperty>
+
+<ID schemeID="criterion" schemeAgencyID="OP" schemeVersionID="4.0.0">1d89c188-58d2-461e-a4f6-a17f689d87f4</ID>
+
+<Description>Amount</Description>
+
+<TypeCode listID="criterion-element-type" listAgencyID="OP" listVersionID="4.0.0">QUESTION</TypeCode>
+
+<ValueDataTypeCode listID="response-data-type" listAgencyID="OP" listVersionID="4.0.0">AMOUNT</ValueDataTypeCode>
+
+</cac:TenderingCriterionProperty>
+
+</cac:SubsidiaryTenderingCriterionPropertyGroup>
+
+</cac:SubsidiaryTenderingCriterionPropertyGroup>
+
+<cac:SubsidiaryTenderingCriterionPropertyGroup>
+
+<ID schemeAgencyID="OP" schemeVersionID="4.0.0">cc96aa19-a0be-4409-af58-ff3f3812741b</ID>
+
+<PropertyGroupTypeCode listID="property-group-type" listAgencyID="OP" listVersionID="4.0.0">ONFALSE</PropertyGroupTypeCode>
+
+<cac:TenderingCriterionProperty>
+
+<ID schemeID="criterion" schemeAgencyID="OP" schemeVersionID="4.0.0">57d4160f-20b4-4b43-967b-76b038a2fa6b</ID>
+
+<Description>Minimum rating</Description>
+
+<TypeCode listID="criterion-element-type" listAgencyID="OP" listVersionID="4.0.0">REQUIREMENT</TypeCode>
+
+<ValueDataTypeCode listID="response-data-type" listAgencyID="OP" listVersionID="4.0.0">QUANTITY</ValueDataTypeCode>
+
+</cac:TenderingCriterionProperty>
+
+<cac:TenderingCriterionProperty>
+
+<ID schemeID="criterion" schemeAgencyID="OP" schemeVersionID="4.0.0">f07b5174-93ae-46dd-aa26-7f451d97f6a8</ID>
+
+<Description>Rating scheme</Description>
+
+<TypeCode listID="criterion-element-type" listAgencyID="OP" listVersionID="4.0.0">REQUIREMENT</TypeCode>
+
+<ValueDataTypeCode listID="response-data-type" listAgencyID="OP" listVersionID="4.0.0">DESCRIPTION</ValueDataTypeCode>
+
+<ExpectedDescription></ExpectedDescription>
+
+</cac:TenderingCriterionProperty>
+
+<cac:SubsidiaryTenderingCriterionPropertyGroup>
+
+<ID schemeAgencyID="OP" schemeVersionID="4.0.0">5fe93344-ed91-4f97-bcab-b6720a131798</ID>
+
+<PropertyGroupTypeCode listID="property-group-type" listAgencyID="OP" listVersionID="4.0.0"></PropertyGroupTypeCode>
+
+<cac:TenderingCriterionProperty>
+
+<ID schemeID="criterion" schemeAgencyID="OP" schemeVersionID="4.0.0">3bd1913b-c461-41eb-87c4-84e003785a56</ID>
+
+<Description>Rating</Description>
+
+<TypeCode listID="criterion-element-type" listAgencyID="OP" listVersionID="4.0.0">QUESTION</TypeCode>
+
+<ValueDataTypeCode listID="response-data-type" listAgencyID="OP" listVersionID="4.0.0">QUANTITY</ValueDataTypeCode>
+
+</cac:TenderingCriterionProperty>
+
+</cac:SubsidiaryTenderingCriterionPropertyGroup>
+
+</cac:SubsidiaryTenderingCriterionPropertyGroup>
+
+</cac:SubsidiaryTenderingCriterionPropertyGroup>
+
+<!--...-->
+
+</cac:TenderingCriterionPropertyGroup>
+
+</cac:TenderingCriterion>
+----
+
 
 _Response of the economic operator to the REQUIREMENT "Amount"_
-[source,xml]
+
+==== Code with callouts
+
+NOTE: The source code can be copied from the code block below the callout section
+
+[Code with callouts]
 ----
 _<!-- ... -->_
 
+<cac:TenderingCriterionResponse>
 
+<ID schemeID="ISO/IEC 9834-8:2008 - 4UUID" schemeAgencyID="OP" schemeVersionID="4.0.0">76085d25-05ad-4cb3-b1e0-675558e3f43e</ID>
 
-<ID schemeID="ISO/IEC 9834-8:2008 - 4UUID" schemeAgencyID="OP" schemeVersionID="3.3.0">76085d25-05ad-4cb3-b1e0-675558e3f43e</ID>
-
-<ValidatedCriterionPropertyID schemeID="CriteriaTaxonomy" schemeAgencyID="OP" schemeVersionID="3.3.0">1d89c188-58d2-461e-a4f6-a17f689d87f4</ValidatedCriterionPropertyID>
+<ValidatedCriterionPropertyID schemeID="CriteriaTaxonomy" schemeAgencyID="OP" schemeVersionID="4.0.0">1d89c188-58d2-461e-a4f6-a17f689d87f4</ValidatedCriterionPropertyID>
 
 <cac:ResponseValue>
 
-<ID schemeID="ISO/IEC 9834-8:2008 - 4UUID" schemeAgencyID="OP" schemeVersionID="3.3.0">42245674-d305-40bf-8b58-87ba51313345</ID>
+<ID schemeID="ISO/IEC 9834-8:2008 - 4UUID" schemeAgencyID="OP" schemeVersionID="4.0.0">42245674-d305-40bf-8b58-87ba51313345</ID>
 
 <ResponseAmount currencyID="EUR">10025</ResponseAmount>
 
@@ -660,12 +829,35 @@ _<!-- ... -->_
 
 </cac:TenderingCriterionResponse>
 ----
+
 . This UUID is identical to the UUID of the cac:TenderingCriterionProperty selected by the buyer for the QUESTION "Amount:" (see XML above).
 . The element cbc:ResponseAmount is of type "AMOUNT", as expected by the validation mechanisms.
 . The value of the amount meets the REQUIREMENT, as the amount is required to be above 10006 Euros (see XML above, notice the currencyID type value, too).
-. Beware that, contrary to other numeric types of data, AMOUNT is not semanticised and mapped to cbc:ResponseMinimumAmount nor cbc:ResponseMaximumAmount`, as in the current ESPD-EDM specification all monetary thresholds are always "minimum" (and similarly for QUANTITY or QUANTITY_INTEGER, e.g. see the REQUIREMENT ''Minimum number of years'' in criterion #49 (tab _SC-Abilities_5 (Staff)_ in the link:{url-tree}/codelists/ESPD-criterion.xlsx[ESPD-criterion] spread-sheet).
+. Beware that, contrary to other numeric types of data, AMOUNT is not semanticised and mapped to cbc:ResponseMinimumAmount nor cbc:ResponseMaximumAmount`, as in the current ESPD-EDM specification all monetary thresholds are always "minimum" (and similarly for QUANTITY or QUANTITY_INTEGER, e.g. see the REQUIREMENT ''Minimum number of years'' in criterion #49 (tab _SC-Abilities_5 (Staff)_ in the https://github.com/OP-TED/ESPD-EDM/blob/main/criterion/ESPD-criterion.xlsx[_ESPD-criterion_] spread-sheet).
 
-More instances of this element can be viewed in the sample xml response file: https://github.com/OP-TED/ESPD-EDM/blob/v3.3.0/xml-examples/ESPD-Response.xml
+==== Copy the code block
+
+[source,xml]
+----
+_<!-- ... -->_
+
+<cac:TenderingCriterionResponse>
+
+<ID schemeID="ISO/IEC 9834-8:2008 - 4UUID" schemeAgencyID="OP" schemeVersionID="4.0.0">76085d25-05ad-4cb3-b1e0-675558e3f43e</ID>
+
+<ValidatedCriterionPropertyID schemeID="CriteriaTaxonomy" schemeAgencyID="OP" schemeVersionID="4.0.0">1d89c188-58d2-461e-a4f6-a17f689d87f4</ValidatedCriterionPropertyID>
+
+<cac:ResponseValue>
+
+<ID schemeID="ISO/IEC 9834-8:2008 - 4UUID" schemeAgencyID="OP" schemeVersionID="4.0.0">42245674-d305-40bf-8b58-87ba51313345</ID>
+
+<ResponseAmount currencyID="EUR">10025</ResponseAmount>
+
+</cac:ResponseValue>
+
+</cac:TenderingCriterionResponse>
+----
+
 
 
 == Use of CAPTION
@@ -690,11 +882,11 @@ The way currently used by software applications to detect whether a GROUP (or SU
 
 In future versions, the ESPD-EDM should get rid of these codes and mechanisms that couple the eProcurement Data Model to the dynamic building-up of the Graphic User Interfaces (GUIs) or to other processing needs. One possible solution could be to separate the particular software applications needs from the business data model by means of ''annotations'' that can be linked to each data element that needs it, at integration data time (i.e. when acquiring the data; e.g. just after the reception of an eBusiness Document from another system).
 
-For this, imagine that each element of the Criteria Taxonomy data structures could contain (or be preceded by) one or more instructions addressed to the software application for one particular purpose, as illustrated in the figure below (elements starting with an *@* symbol):
+For this, imagine that each element of the Criteria Taxonomy data structures could contain (or be preceded by) one or more instructions addressed to the software application for one particular purpose (elements starting with an *@* symbol).
 
-image:Use_CAPTION.jpg[Annotation with processing instructions of one Criterion Data Structures,width=583,height=316]
+//image:Use_CAPTION.jpg[Annotation with processing instructions of one Criterion Data Structures,width=583,height=316]
 
-_Figure 15. Annotation with processing instructions of one Criterion Data Structures_
+//_Figure 15. Annotation with processing instructions of one Criterion Data Structures_
 
 == Short Tag Name and Implicit Numbering
 
@@ -748,14 +940,161 @@ The numbering increases for element of same type (Question Group, Question Subgr
 
 The implicit numbering is more often used for terminal structural elements (Question 1, Question 2, Requirement 1, Requirement 2, etc.).
 
-The following images are illustrating the use of both "short tag name" and "numbering" on ESPD Criterion samples.
+//The following images are illustrating the use of both "short tag name" and "numbering" on ESPD Criterion samples.
 
-image:Short_Tag_Name_and_Numbering_for_Criterion_C1_EG_crime-org.jpg[Short Tag Name and Numbering for Criterion C1 EG crime-org,width=566,height=308]
+//Criterion 1 and 32 illustrate Short Tag Name_and_Numbering
 
-_Figure 16. Short Tag Name and Numbering for Criterion C1 EG crime-org_
+//_Figure 16. Short Tag Name and Numbering for Criterion C1 EG crime-org_
 
-image:Short_Tag_Name_and_Numbering_for_Criterion_C32_SC_spec-year-to.jpg[Short Tag Name and Numbering for Criterion C32 SC spec-year-to,width=566,height=308]
+//image:Short_Tag_Name_and_Numbering_for_Criterion_C32_SC_spec-year-to.jpg[Short Tag Name and Numbering for Criterion C32 SC spec-year-to,width=566,height=308]
 
-_Figure 17. Short Tag Name and Numbering for Criterion C32 SC spec-year-to_
+//_Figure 17. Short Tag Name and Numbering for Criterion C32 SC spec-year-to_
+
+== XML Path Like ID  
+
+
+Starting with version 4.0.0 of the ESPD, a new identifier format will be used to replace the UUID in the 
+Request or Response data structure for the descriptive elements, *criterion*, *group*, *subgroup*, *requirement*, *question*, and *caption*. The new identifier is based on the document structure and is called the *"XML Path Like ID". 
+
+
+=== UUID in the ESPD 
+
+The ESPD uses the UUID v4 standard to generate new entries. 
+
+ESPD main blocks have had UUIDs allocated to them since version 1.x.x. Of these, `CRITERION` blocks use unique fixed UUIDs for *eCertis* integration and specific national regulations are attached to the each *Selection Criteria* and *Exclusion Ground* via a unique UUID. This is used in all ESPD Service implementations to retrieve specific information from *eCertis*. So while main blocks can adopt XML Path Like IDs at any level without issue, the highest level UUIDs of the `CRITERION` element for *Selection Criteria* and *Exclusion Ground* must be retained for eCertis integration.
+
+
+=== Problem statement 
+
+The trigger for the evolution of UUIDs to XML Path Like IDs was the need to keep the link between the request and its responses consistent. It was also to provide a level of re-usability of responses that have the same content, particularly for the input elements that store the required information: `QUESTION`, and `REQUIREMENT`. For each ESPD Request and Response, those blocks were allocated new UUIDs in the past meaning that it was then not possible to identify identical blocks, nor to reuse answers having the same content from one ESPD Response to another. 
+
+This is because neither the responses, nor the number of responses in e.g., a 0..n or 1..n cardinality, can be predicted. Up to v3.3.0, any time a request is re-generated, new dynamic UUIDs are generated and hence updates also have to be made in the responses. The dynamic UUIDs of the former request have to be updated with the dynamic UUIDs of the new request for the various responses. 
+
+This dilemma prompted the evolution in the ESPD EDM, and XML Path like IDs were the chosen solution. This solution is able to identify a unique field that requires user input and its associated responses, regardless of cardinality, and maintains the element links between the Request and the Response. +
+ 
+The solution therefore satisfies the issue with an inconsistent link between the same element in the Request and Response, improves reusability, and preserves integration with eCertis.
+
+==== Specifications  
+
+The following cases for single element or group of elements that require a response may occur:
+
+* optional single occurrence, cardinality 0..1
+* mandatory single occurrence, cardinality 1
+* optional multiple occurrence, cardinality 0..n
+* mandatory multiple occurrence, cardinality 1..n  
+
+Variable cardinality (0..n) should be handled without breaking the link between the request (question/requirement) and its responses (answers, evidence/information, text/link/documents). 
+Reusability has to be ensured: within a response, within a given procedure (between a request and its responses, across lots), and across different procurement procedures (various requests and responses).  
+
+==== Requirements for solutions  
+
+When using (dynamic) UUIDs, the link should not be lost where there are several occurrences/responses for a single question or for a given subgroup of questions (same structure).  
+
+The request (dynamic) UUIDs should be re-used in the related responses.   
+
+NOTE: Identical group or subgroup structures have the same (fixed) UUID. For instance, the structure for providing pieces of evidence or EO entity information –name and ID of the entity-. In this case, the UUID is not enough to uniquely identify a given element since it can be duplicated (with the same ID) inside the criterion file. Here, the UUID has to be complemented with some additional context information like the parent node identifier, for instance.
+
+Hence, the problem statements are related to the structure and the contents as well:
+
+.Structure (UUID to describe a structure) 
+* Need to keep consistently the link (direct) between a request and its various responses  
+* Need to ensure that when structures are the same, they have the same UUID.  
+* Need to ensure no ambiguity when addressing structures represented by the same UUID.  
+
+.Contents re-usability (UUID to describe contents) 
+* Need to re-use occurrences (value provided by EO for a given element) that are created in a given Response   
+* Need to allow re-usability of occurrences across a given procedure (between a request and its various responses, across lots),  
+* Need to allow re-usability of occurrences across different procurement procedures (various requests and responses). 
+ 
+== XML Path Like ID general structure 
+
+The ESPD specific data structure allows the building of an XML path like ID that concatenates the labels of the elements on each path and the number of occurrences for each element that has multiple cardinality (0..n, 1..n). The XML Path ID construction will capture the general value type of the data that is provided in the ESPD Response.
+
+*Request* 
+
+The XML Path like ID of a Question in the ESPD Request is composed of three parts:  
+----
+{PREFIX + CRITERION_ELEMENT_CODE}/{INNER_PATH}/{TARGET_ELEMENT}
+----
+
+*Response* 
+
+For the ESPD Response, the XML PAth like ID has the same pattern for the Question and the answers, containing the occurrence number for multiple answers and the value type of the data. The general Pattern looks like:  
+
+----
+{PREFIX + CRITERION_ELEMENT_CODE}/{INNER_PATH}/{TARGET_ELEMENT}/{OCCURRENCE}
+----
+ 
+The target element can be either a question or a requirement most of the time, or any other descriptive element of the criterion (caption, legislation, etc.). +
+The last part _occurrence_ is optional if there is content or not in the target element that should, in this case, be a terminal node. This part _occurrence_ is described with the pattern *R#* that can be repeated several times according to the cardinalities of elements in the path. 
+
+=== XML Path Like ID Algorithm
+
+*Building a XML Path like ID for the ESPD Request*
+
+. Label each Criteria element using the latest version of the Criteria list (some criteria were deprecated and their number was not reused, mind the gap)
+. Label each other element inside a Criterion starting from 1 and increment by 1 for each new block
+. For each element build the XML Path like ID by concatenating all the labels of previous elements in the hierarchy
+. The ID will be used in `cac:TenderingCriterion/cbc:ID`
+
+==== Code with callouts
+
+NOTE: The source code can be copied from the code block below the callout section
+
+[Code with callouts]
+----
+<cac:TenderingCriterionProperty>
+    <cbc:ID schemeID="criterion" schemeAgencyID="XXESPD-SERVICEXXX" schemeVersionID="4.0.0">C1_EG_crime-org/QG1/QSG1/Q1</cbc:ID>
+    ...
+</cac:TenderingCriterionProperty>
+----
+*Building the XML Path like ID for ESPD Response*
+
+. All XML Path like IDs from ESPD Request are entirely reused
+. For each element that has multiple occurrences, concatenate *R#* to the end of the path
+. Add the type of the value for response: `RV`, `RES`, and `RAP`
+
+[source, xml]
+----
+<cac:TenderingCriterionProperty>
+    <cbc:ID schemeID="criterion" schemeAgencyID="XXESPD-SERVICEXXX" schemeVersionID="4.0.0">C1_EG_crime-org/QG1/QSG1/Q1</cbc:ID>
+    ...
+</cac:TenderingCriterionProperty>
+----
+
+
+
+[%header,format=csv]
+|===
+Criterion Element, UBL Element, Short Tag Name
+RESPONSE VALUE, cac:ResponseValue, RV 
+(RESPONSE) EVIDENCE SUPPLIED, cac:EvidenceSupplied, RES 
+(RESPONSE) APPLICABLE PERIOD, cac:ApplicablePeriod, RAP
+|=== 
+
+ESPD Response fragment, example of `RV` data type:
+[source, xml]
+----
+<cac:TenderingCriterionResponse> 
+    <cbc:ID schemeID = "criterion" schemeAgencyID = "XXESPD-SERVICEXXX" schemeVersionID = "4.0.0">C1_EG_crime-org/QG1/QSG1/Q1/R2</cbc:ID> 
+    <cbc:ValidatedCriterionPropertyID schemeID = "criterion" schemeAgencyID = "XXESPD-SERVICEXXX" schemeVersionID = "4.0.0">C1_EG_crime-org/QG1/QSG1/Q1</cbc:ValidatedCriterionPropertyID> 
+    <cac:ResponseValue> 
+            <cbc:ID schemeID = "criterion" schemeAgencyID = "XXESPD-SERVICEXXX" schemeVersionID = "4.0.0">C1_EG_crime-org/QG1/QSG1/Q1/R2/RV</cbc:ID> 
+            <cbc:ResponseDate>2017-01-01</cbc:ResponseDate> 
+    </cac:ResponseValue> 
+</cac:TenderingCriterionResponse>  
+----
+
+ESPD Response fragment, example of `RES` data type:
+[source, xml]
+----
+<cac:TenderingCriterionResponse> 
+    <cbc:ID schemeID = "criterion" schemeAgencyID = "XXESPD-SERVICEXXX" schemeVersionID = "4.0.0">C1_EG_crime-org/QG2/QSG1/Q1/R1</cbc:ID>  
+    <cbc:ValidatedCriterionPropertyID schemeID = "criterion" schemeAgencyID = "XXESPD-SERVICEXXX" schemeVersionID = "4.0.0">C1_EG_crime-org/QG2/QSG1/Q1</cbc:ValidatedCriterionPropertyID>  
+    <cac:EvidenceSupplied> 
+        <cbc:ID schemeAgencyID = "XXESPD-SERVICEXXX">EVIDENCE-00001/C1_EG_crime-org/QG2/QSG1/Q1/R1/RES</cbc:ID> 
+    </cac:EvidenceSupplied>  
+</cac:TenderingCriterionResponse> 
+----
 
 
