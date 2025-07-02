@@ -561,9 +561,9 @@ These codes are used for a software application modules to know whether it has t
 
 The https://github.com/OP-TED/ESPD-EDM/blob/v4.0.0/criterion/ESPD-criterion.xlsx[Criterion File] illustrates how the ONTRUE and ONFALSE SUBGROUPS of a Criterion of type "Contributions (exclusion grounds)" relate to each of its ''closer QUESTION'' of type INDICATOR. See the "element code" column.
 
-//image:ONTRUE_ONFALSE_choice_control.jpg[ONTRUE/ONFALSE choice control,width=557,height=230]
+image:ONTRUE_ONFALSE_choice_control.jpg[ONTRUE/ONFALSE choice control,width=557,height=230]
 
-//_Figure 9. GROUP and SUBGROUP control via the ONTRUE/ONFALSE codes_
+_Figure 9. GROUP and SUBGROUP control via the ONTRUE/ONFALSE codes_
 
 The screen-captures below illustrate how the European Commission's ESPD Service processed the GUI for the Exclusion Criterion ''Contributions'' based on this mechanism. Note that these are examples on how the GUI is processed and its behaviour taking into account the PropertyGroupType, the actual content can be outdated:
 
