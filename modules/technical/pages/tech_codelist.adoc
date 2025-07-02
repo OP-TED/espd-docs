@@ -1,8 +1,8 @@
 :doctitle: Code List Catalogue
 :doccode: espd-tech-prod-007
-:author: NPJ
-:authoremail: nicole-anne.paterson-jones@ext.ec.europa.eu
-:docdate: January 2024
+:author: dragos-eu
+:authoremail: Dragos-Constantin.STOICA@ext.ec.europa.eu
+:docdate: September 2024
 :sectnums:
 
 == General Information
@@ -39,7 +39,7 @@ The ESPD Exchange Data Model tries to reuse as the codes that are already used f
 
 Codes are normally maintained in "code lists". The ESPD-EDM keeps and distributes these code lists in Genericode 1.0 (link:{url-tree}/codelists/gc/[GC]) files (one *.gc file per code list).
 
-The ESPD reuses code lists from EU Vocabularies. This is to facilitate alignment between the ESPD and eForms models, ensuring maximum interoperability. The excel and ods code list files themselves are not provided, their metadata and their location in EU Vocabularies is given.
+The ESPD reuses code lists from EU Vocabularies. This is to facilitate alignment between the ESPD and eForms models, ensuring maximum interoperability. The excel and code list files themselves are not provided, their metadata and their location in EU Vocabularies is given.
 
 NOTE: For Genericodes it is different. In this version ESPD  provides the genericode (gc) files from EU Vocabularies to ensure its use and validation. In future versions of the ESPD, only the GC of the code lists used and maintained by ESPD will be provided.
 
@@ -50,17 +50,17 @@ ESPD-EDM Code list contains the following elements:
 * *Concept description*: the definition of the concept represented by the code;
 * *Multilingual descriptions*: the translations of the English definitions.
 
-The image below illustrate how these elements are organised in the code lists maintained in Enterprise Architect:
+The link below takes you to the folder on Github containing the codelist file  where you will see how the codelist elements are organised:
 
-image:Elements_metadata_of_ESPD_codelist.jpg[Elements and metadata of an ESPD code list,align="center",pdfwidth=50%,scaledwidth=50%]
+https://github.com/OP-TED/ESPD-EDM/tree/v5.0.0/codelists[Codelists on GitHub]
 
-_Figure 1. Elements and metadata of an ESPD code list_
+
 
 
 //*_Annex I_* of this document lists all the code lists used by the ESPD and in which context or element it is used.
 
 
-=== Mandatory attributes
+=== Compulsory attributes
 
 
 
@@ -86,9 +86,8 @@ UBL-2.3 CCT are defined in the file CCTS_CCT_SchemaModule-2.3.xsd (see folders x
 
 The figure below shows the complete list of attributes for the CCT CodeType component.
 
-image::https://kroki.io/blockdiag/svg/eNrFUstOwzAQPNdfsTIXkEIfgKBSBVLVEqkXhChwQVXkxtvE1LGj2IGWqv-OnRBSOHDFB2s9M_bujncpdbzmgiWwI70e3LMEoWcxTpWImayiKNYcpTC2m9pMwiz7pYmER0xv4mQRs7YQy9Ki6b7mCRyHIikLhKsueBpa-sSnm6MFkzMFGTp8QwCqY_QuuE3hGi6Go28sRZGk1oGDswrkuGKltNFKK2vEB3rmomJIUugyhw8sdFSHO0JiLXXhNPTodhhOb8_piBDqa3rc5kjh9Aao73E2pUEdjRNU8fb3-Y5l2CCH8TMWRmhVy1VDMJWUzpv2kaeHWRPO4xQz9AC8cOFLU1rhgnxVvxKFsd_ld2jrnNOblOW-YccqjnypNwE0ng2u-oGxW-l5zkyKPIC2-Wk_HE8u6WJEOh1o8aVk8ZrWoMWNbS-EYd8tWhn7tZrsUij8gf_IWj9Wbf_mLOnsyb4ZtNogq53PHE3QDBC8MVkiCOMGa3gwEsF_DsRfH3w26Lvv238C1ZUpOg==[Code attributes,width=450,height=450]
-//image:Code_attributes.jpg[Code attributes,width=226,height=306]
-//[Edit this diagram](https://niolesk.top/#https://kroki.io/blockdiag/svg/eNrFUstOwzAQPNdfsTIXkEIfgKBSBVLVEqkXhChwQVXkxtvE1LGj2IGWqv-OnRBSOHDFB2s9M_bujncpdbzmgiWwI70e3LMEoWcxTpWImayiKNYcpTC2m9pMwiz7pYmER0xv4mQRs7YQy9Ki6b7mCRyHIikLhKsueBpa-sSnm6MFkzMFGTp8QwCqY_QuuE3hGi6Go28sRZGk1oGDswrkuGKltNFKK2vEB3rmomJIUugyhw8sdFSHO0JiLXXhNPTodhhOb8_piBDqa3rc5kjh9Aao73E2pUEdjRNU8fb3-Y5l2CCH8TMWRmhVy1VDMJWUzpv2kaeHWRPO4xQz9AC8cOFLU1rhgnxVvxKFsd_ld2jrnNOblOW-YccqjnypNwE0ng2u-oGxW-l5zkyKPIC2-Wk_HE8u6WJEOh1o8aVk8ZrWoMWNbS-EYd8tWhn7tZrsUij8gf_IWj9Wbf_mLOnsyb4ZtNogq53PHE3QDBC8MVkiCOMGa3gwEsF_DsRfH3w26Lvv238C1ZUpOg==)
+image:Code_attributes.jpg[Code attributes,width=226,height=306]
+
 _Figure 2. Code attributes_
 
 And its corresponding definitions, as provided by OASIS UBL (ISO/IEC 19845):
@@ -112,9 +111,8 @@ _Table 3. UBL attributes for codes_
 
 This other figure shows the attributes for the CCT `IdentifierType`component.
 
-image::https://kroki.io/blockdiag/svg/eNq9Ut9r2zAQfo7-ikN92cDNjy50gdBCaWrIyxjrtpdSjGJdbDWyZKzzlrTkf59sx1WyQh-rB3H33Sfd6dO30jbdSCUyeGGjEXwXGcKIMM2NSoVuoyS1ErVyNMyp0LAs_uMkqkHcaCnRkForrBJBVKlVTeiGT2UGn2KV1RXCbAiBBIH0uWl9jwSuFAYK9PiWAbRp8ldJyuEKprP5K5ajynLy4OSiBSWuRa0pWVtDTj1jU5m2FZZVti7hGSubdOELY6nVtvIcfnY3ixd3X_icMR4m-7krkcP5NXCX5ljgcsGjPv4mCgzZTYYm3R3XO-SU9Rsrp6w5pi0EiV8_lgFoEniQqhnLWIOP7DD5WlWOXkcf8KCa57tclM1jfdVIlCu7jaDXa_J1HDna6aYuhctRRhAevhjHN7eX_HHOBgMI-EqLdMM7kHBL4UAcj_3iraiH1XfXyuAJftK1u6zdPlhPNtizfW-tThayXl2JLuotA3-ErhGU81aavTFB9PEWeO9LLyZj_2H7f2UPLEE=[Identifier attributes,width=450,height=350]
-//image:Identifier_attributes.jpg[Identifier attributes,width=274,height=237]
-//[Edit this diagram](https://niolesk.top/#https://kroki.io/blockdiag/svg/eNq9Ut9r2zAQfo7-ikN92cDNjy50gdBCaWrIyxjrtpdSjGJdbDWyZKzzlrTkf59sx1WyQh-rB3H33Sfd6dO30jbdSCUyeGGjEXwXGcKIMM2NSoVuoyS1ErVyNMyp0LAs_uMkqkHcaCnRkForrBJBVKlVTeiGT2UGn2KV1RXCbAiBBIH0uWl9jwSuFAYK9PiWAbRp8ldJyuEKprP5K5ajynLy4OSiBSWuRa0pWVtDTj1jU5m2FZZVti7hGSubdOELY6nVtvIcfnY3ixd3X_icMR4m-7krkcP5NXCX5ljgcsGjPv4mCgzZTYYm3R3XO-SU9Rsrp6w5pi0EiV8_lgFoEniQqhnLWIOP7DD5WlWOXkcf8KCa57tclM1jfdVIlCu7jaDXa_J1HDna6aYuhctRRhAevhjHN7eX_HHOBgMI-EqLdMM7kHBL4UAcj_3iraiH1XfXyuAJftK1u6zdPlhPNtizfW-tThayXl2JLuotA3-ErhGU81aavTFB9PEWeO9LLyZj_2H7f2UPLEE=)
+image:Identifier_attributes.jpg[Identifier attributes,width=274,height=237]
+
 _Figure 3. Identifier attributes_
 
 [cols=",",options="header",]
@@ -138,33 +136,44 @@ _Table 4. UBL attributes for identifiers and corresponding definitions, as provi
 
 This fragment of XML shows how the compulsory attributes are used for the some of the root elements of an ESPD Request document.
 
-[source,xml,linenums]
+==== Code with callouts
+
+NOTE: The source code can be copied from the code block below the callout section
+
+[Code with callouts]
 ----
-<!--1-->
+<1> 
 <cbc:UBLVersionID schemeAgencyID="OASIS-UBL-TC">2.3</cbc:UBLVersionID>
-<!--2-->
-<cbc:ID schemeAgencyID="DGPE">ESPDREQ-DGPE-3b5755dfb8</cbc:ID>
-<!--3-->
-<cbc:UUID schemeID="ISO/IEC 9834-8:2008" schemeAgencyID="OP" schemeVersionID="4">
-  0fddbf2d-1e33-4267-b04f-52b59b72ccb6
-</cbc:UUID>
-<!--4-->
-<cbc:ContractFolderID schemeAgencyID="DGPE">
-   PP.20170419.1024-9
-</cbc:ContractFolderID>
-<!--5-->
-<cbc:VersionID schemeAgencyID="OP" schemeVersionID="5.0.0">
-  1.0
-</cbc:VersionID>
+<2>
+<cbc:ID schemeAgencyID="DGPE">ESPDREQ-DGPE-3b5755dfb8</cbc:ID>  
+<cbc:UUID schemeID="ISO/IEC 9834-8:2008" schemeAgencyID="OP"
+<3> 
+          schemeVersionID="4">0fddbf2d-1e33-4267-b04f-52b59b72ccb6</cbc:UUID> 
+<4> 
+<cbc:ContractFolderID schemeAgencyID="DGPE">PP.20170419.1024-9</
+cbc:ContractFolderID> 
+<5> 
+<cbc:VersionID schemeAgencyID="OP" schemeVersionID="3.3.0">1.0</cbc:VersionID> 
 ----
 <1> The Agency responsible for the maintenance of the UBL versioning is the OASIS UBL Technical Committee
 <2> The identifier for this document was issued by the a Spanish Central Government Directorate identified as 'DGPE'
 <3> The UUID follows the ISO/IEC Scheme 9834-8:2008 Version 4 and was generated by the European Commission's Directorate General GROWTH (DG GROW)
 <4> The reference number used to identify to which procurement procedure this ESPD document belongs (PP.20170419.1024-9) has been supplied by the Spanish Directorate DGPE
-<5> Generic information, such as the content version ID, use always by default the "OP" Agnecy ID. Notice that the other additional attributes may be also used, as in this example.
+<5> Generic information, such as the content version ID, use always by default the "OP" Agency ID. Notice that the other additional attributes may be also used, as in this example.
 
-Beware that the codes may be numbers, text or combinations of both. These code labels are the ones that are specified in the codelist spreadsheets and XML Genericode files distributed jointly with this specification in the folder /codelists of the link:{url-tree}[distribution package].
+Beware that the codes may be numbers, text or combinations of both. These code labels are the ones that are specified in the codelist spreadsheets and XML Genericode files distributed jointly with this specification (in the folder /codelists of the link:{url-tree}[distribution package].
 
+==== Copy the code block
+
+[source,xml]
+----
+<cbc:UBLVersionID schemeAgencyID="OASIS-UBL-TC">2.3</cbc:UBLVersionID> 
+<cbc:ID schemeAgencyID="DGPE">ESPDREQ-DGPE-3b5755dfb8</cbc:ID>  
+<cbc:UUID schemeID="ISO/IEC 9834-8:2008" schemeAgencyID="OP"
+          schemeVersionID="4">0fddbf2d-1e33-4267-b04f-52b59b72ccb6</cbc:UUID> 
+<cbc:ContractFolderID schemeAgencyID="DGPE">PP.20170419.1024-9</cbc:ContractFolderID> 
+<cbc:VersionID schemeAgencyID="OP" schemeVersionID="3.3.0">1.0</cbc:VersionID> 
+----
 
 === Code list that IS NOT used for CODE values
 
@@ -172,58 +181,110 @@ Code lists contain the code identifiers that are expected as "values" for a data
 
 However, this ESP-EDM specification also uses the code list link:{url-tree}/codelists/gc/EOIDType.gc[EOIDType] with a different purpose, "the identification of the type of scheme used to identify parties, namely Economic Operators" (but should also used to identify the schemes used to identify Buyers, Service Providers, etc.).
 
-The image below shows the possible values of this code list. These codes are to be used as values of the schemeID attribute (attribute of the UBL-2.3 element cbc:Identifier):
+The link below takes you to the folder on Github containing the codelist file  where, in the "EOIDType" sheet, you will be able to see the possible values of this code list. These codes are to be used as values of the schemeID attribute (attribute of the UBL-2.3 element cbc:Identifier):
 
-image:Values_schemeID_Party_Identifiers.jpg[Values of the schemeID for Party Identifiers,width=600,height=264]
+https://github.com/OP-TED/ESPD-EDM/tree/v5.0.0/codelists[Codelists on GitHub]
 
-_Figure 4. Values of the schemeID for Party Identifiers_
+
+
 
 The next fragment of XML shows how this is used in the particular case of the Criterion "Relied on entities" ("Does the economic operator rely on the capacities of other entities in order to meet the selection criteria...?").:
 
 _TenderingCriterionProperty (a QUESTION) asking for the identifier of the Economic Operator_
 
-[source,xml,linenums]
+=== XML Example
+
+==== Code with callouts
+
+NOTE: The source code can be copied from the code block below the callout section
+
+[Code with callouts]
+
 ----
 <cac:TenderingCriterionProperty>
-<!--1-->
-<cbc:ID schemeID="Criterion" schemeAgencyID="OP" schemeVersionID="5.0.0">
-  1fa05728-308f-43b0-b547-c903ffb0a8af
-</cbc:ID>
-
-<cbc:Description>ID of the economic operator</cbc:Description>
-
-<cbc:TypeCode listID="criterion-element-type" listAgencyID="OP" listVersionID="5.0.0">
-  QUESTION
-</cbc:TypeCode>
-<!--2-->
-<cbc:ValueDataTypeCode listID="response-data-type" listAgencyID="OP" listVersionID="5.0.0">
-  ECONOMIC_OPERATOR_IDENTIFIER
-</cbc:ValueDataTypeCode>
+  <cbc:ID schemeID="Criterion" schemeAgencyID="OP" schemeVersionID="3.3.0">
+     1fa05728-308f-43b0-b547-c903ffb0a8af
+  <1> 
+  </cbc:ID> 
+  <cbc:Description>ID of the economic operator</cbc:Description>
+  <cbc:TypeCode listID="criterion-element-type" listAgencyID="OP" listVersionID="3.3.0">QUESTION</cbc:TypeCode>
+  <cbc:ValueDataTypeCode listID="response-data-type" listAgencyID="OP" listVersionID="3.3.0">
+    ECONOMIC_OPERATOR_IDENTIFIER
+  <2>
+  </cbc:ValueDataTypeCode>   
 </cac:TenderingCriterionProperty>
 ----
+
 <1> The identifier of the property will be used in the response to map link the response to this QUESTION.
 <2> The ECONOMIC_OPERATOR_IDENTIFIER is mapped to an element cbc:ResponseID in the response (which is based on the UBL-2.3. element cbc:Identifier).
 
+==== Copy the code block
+
+[source,xml]
+
+----
+<cac:TenderingCriterionProperty>
+  <cbc:ID schemeID="Criterion" schemeAgencyID="OP" schemeVersionID="3.3.0">
+     1fa05728-308f-43b0-b547-c903ffb0a8af
+  </cbc:ID> 
+  <cbc:Description>ID of the economic operator</cbc:Description>
+  <cbc:TypeCode listID="criterion-element-type" listAgencyID="OP" listVersionID="3.3.0">QUESTION</cbc:TypeCode>
+  <cbc:ValueDataTypeCode listID="response-data-type" listAgencyID="OP" listVersionID="3.3.0">
+    ECONOMIC_OPERATOR_IDENTIFIER
+  </cbc:ValueDataTypeCode> 
+</cac:TenderingCriterionProperty>
+
+----
+
+
 
 _TenderingCriterionResponse (the answer to the previous QUESTION)_
-[source,xml,linenums]
+
+=== XML Example
+
+==== Code with callouts
+
+NOTE: The source code can be copied from the code block below the callout section
+
+[Code with callouts]
+
 ----
+
 <cac:TenderingCriterionResponse>
-<!--1-->
-<cbc:ID schemeID="ISO/IEC 9834-8:2008 - 4UUID" schemeAgencyID="OP" schemeVersionID="5.0.0">
-  acb58f0e-0fe4-4372-aa08-60d0c36bfcfe
-</cbc:ID>
-<cbc:ValidatedCriterionPropertyID schemeID="Criterion" schemeAgencyID="OP" schemeVersionID="5.0.0">
-  1fa05728-308f-43b0-b547-c903ffb0a8af
-</cbc:ValidatedCriterionPropertyID>
-<!--2-->
-<cbc:ResponseID schemeID="VAT" schemeAgencyID="ES-AEAT">
-  B82387770
-</cbc:ResponseID>
+  <cbc:ID schemeID="ISO/IEC 9834-8:2008 - 4UUID" schemeAgencyID="OP" schemeVersionID="3.3.0">acb58f0e-0fe4-4372-aa08-60d0c36bfcfe</cbc:ID>
+  <cbc:ValidatedCriterionPropertyID schemeID="Criterion" schemeAgencyID="OP" schemeVersionID="3.3.0">
+    1fa05728-308f-43b0-b547-c903ffb0a8af
+  <1> 
+  </cbc:ValidatedCriterionPropertyID> 
+  <cbc:ResponseID schemeID="VAT" schemeAgencyID="ES-AEAT">
+    B82387770
+  <2>
+  </cbc:ResponseID>   
 </cac:TenderingCriterionResponse>
+
 ----
+
 <1> Notice that this UUID is identical to the QUESTION UUID, which is the mechanism used in UBL to link the answer to the very specific QUESTION it is responding.
 <2> The element cbc:ResponseID is of type Identifier(as defined in the Core Component Type Specification library). The value ''VAT'' assigned to the attribute schemeID, taken from the code list link:{url-tree}/codelists/gc/EOIDType.gc[EOIDType], is used to indicate that the type of identifier used is the Value Added Tax identifier issued by the Spanish Tax Agency (ES-AEAT).
+
+==== Copy the code block
+
+[source,xml]
+
+----
+
+<cac:TenderingCriterionResponse>
+  <cbc:ID schemeID="ISO/IEC 9834-8:2008 - 4UUID" schemeAgencyID="OP" schemeVersionID="3.3.0">acb58f0e-0fe4-4372-aa08-60d0c36bfcfe</cbc:ID>
+  <cbc:ValidatedCriterionPropertyID schemeID="Criterion" schemeAgencyID="OP" schemeVersionID="3.3.0">
+    1fa05728-308f-43b0-b547-c903ffb0a8af
+  </cbc:ValidatedCriterionPropertyID> 
+  <cbc:ResponseID schemeID="VAT" schemeAgencyID="ES-AEAT">
+    B82387770
+  </cbc:ResponseID>  
+</cac:TenderingCriterionResponse>  
+
+----
+
 
 [[code-list-catalogue,Annex I. Code List Catalogue]]
 
@@ -232,7 +293,7 @@ This section collects all code lists used in *ESPD-EDM* with its classification,
 
 [[access-right-table,access-right]]
 == access-right
-An example of how to use this code list can be found in xref:code_list_examples.adoc#access-right-xml-example[access-right xml Example].
+An example of how to use this code list can be found in xref:tech_codelist_examples.adoc#access-right-xml-example[access-right xml Example].
 
 [cols="1,2a"]
 |===
@@ -246,10 +307,10 @@ An example of how to use this code list can be found in xref:code_list_examples.
 !*ShortName* !AccessRight
 !*LongName* !access-right
 !*ListID* !http://publications.europa.eu/resource/authority/access-right
-!*Version* !20220316-0
+!*Version* !20240612-0
 !*CanonicalUri* !http://publications.europa.eu/resource/dataset/access-right
-!*CanonicalVersionUri* !http://publications.europa.eu/resource/dataset/access-right/20220316-0
-!*LocationUri* !https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/access-right
+!*CanonicalVersionUri* !http://publications.europa.eu/resource/dataset/access-right/20240612-0
+!*LocationUri* !http://publications.europa.eu/resource/distribution/access-right/20240612-0/xml/gc/AccessRight.gc
 !*AgencyLongName* !Publications Office of the European Union
 !*AgencyIdentifier* !OP
 
@@ -259,7 +320,7 @@ An example of how to use this code list can be found in xref:code_list_examples.
 
 [[boolean-gui-control-type-table,boolean-gui-control-type]]
 == boolean-gui-control-type 
-An example of how to use this code list can be found in xref:code_list_examples.adoc#boolean-gui-control-type-xml-example[boolean-gui-control-type xml Example].
+An example of how to use this code list can be found in xref:tech_codelist_examples.adoc#boolean-gui-control-type-xml-example[boolean-gui-control-type xml Example].
 
 [cols="1,2a"]
 |===
@@ -273,7 +334,7 @@ Contains values to be use by software implementations to display graphic control
 !===
 !*ShortName* !BooleanGUIControlType
 !*ListID* !boolean-gui-control-type 
-!*Version* !5.0.0
+!*Version* !4.0.0
 !*CanonicalUri* !https://github.com/ESPD/ESPD-EDM
 !*CanonicalVersionUri* !{url-tree}
 !*LocationUri* !{url-tree}/codelists/gc/BooleanGUIControlType.gc
@@ -284,24 +345,24 @@ Contains values to be use by software implementations to display graphic control
 
 [[country-table,country]]
 == country
-An example of how to use this code list can be found in xref:code_list_examples.adoc#country-xml-example[country xml Example].
+An example of how to use this code list can be found in xref:tech_codelist_examples.adoc#country-xml-example[country xml Example].
 
 [cols="1,2a"]
 |===
 |*Name* |*_Country_*
 |*Code list type* |Business-agnostic
 |*Maintainer* |EU Vocabularies
-|*Description* |Contains controlled vocabulary that lists concepts associated with names of countries and territories with a three letter coding.
+|*Description* |Contains controlled vocabulary that lists concepts associated with names of countries and territories with a three-letter coding.
 |*Metadata* |
 [cols=","]
 !===
 !*ShortName* !Country
 !*LongName* !country
 !*ListID* !http://publications.europa.eu/resource/authority/country
-!*Version* !20220928-0
+!*Version* !20240925-0
 !*CanonicalUri* !http://publications.europa.eu/resource/dataset/country
-!*CanonicalVersionUri* !http://publications.europa.eu/resource/dataset/country/20220928-0
-!*LocationUri* !http://publications.europa.eu/resource/distribution/country/20220928-0/xml/gc/Country.gc
+!*CanonicalVersionUri* !http://publications.europa.eu/resource/dataset/country/20240925-0
+!*LocationUri* !http://publications.europa.eu/resource/distribution/country/20240925-0/xml/gc/Country.gc
 !*AgencyLongName* !Publications Office of the European Union
 !*AgencyIdentifier* !OP
 
@@ -309,52 +370,26 @@ An example of how to use this code list can be found in xref:code_list_examples.
 
 |===
 
-[[selection-criterion-table,selection-criterion]]
-== selection-criterion
+[[criterion-table,criterion]]
+== criterion
+An example of how to use this code list can be found in xref:tech_codelist_examples.adoc#criterion-xml-example[criterion xml Example].
 
 [cols="1,2a"]
 |===
-|*Name* |*_Selection criterion_*
-|*Code list type* |Public Procurement specific
+|*Name* |*_Criterion_*
+|*Code list type* |Procurement specific
 |*Maintainer* |EU Vocabularies
-|*Description* |This table provides the list of condictions that are concerned for evaluation purposes. In the domain of public procurement, selection criteria are normally based on a specific legal framework. This codelist is a subset of the ESPD codelist CriterionTaxonomy. 
+|*Description* |Contains coded exclusion and selection  criteria used for public procurement procedures.
 |*Metadata* |
 [cols=","]
 !===
-!*ShortName* !SelectionCriterion
-!*LongName* !selection-criterion
-!*ListID* ! http://publications.europa.eu/resource/authority/selection-criterion
-!*Version* !20250319-0
-!*CanonicalUri* !http://publications.europa.eu/resource/dataset/selection-criterion
-!*CanonicalVersionUri* !http://publications.europa.eu/resource/dataset/selection-criterion/20250319-0
-!*LocationUri* !http://publications.europa.eu/resource/distribution/selection-criterion/20250319-0/xml/gc/SelectionCriterion.gc
-!*AgencyLongName* !Publications Office of the European Union
-!*AgencyIdentifier* !OP
-
-!===
-
-
-|===
-
-[[exclusion-ground-table,exclusion-ground]]
-== exclusion-ground
-
-[cols="1,2a"]
-|===
-|*Name* |*_Exclusion ground_*
-|*Code list type* |Public Procurement specific
-|*Maintainer* |EU Vocabularies
-|*Description* |Exclusion grounds in public procurement refer to the criteria that prevent certain entities from participating in public contracts due to criminal offenses, tax breaches, or other specified misconduct, aiming to ensure fairness and integrity in public procurement processes. 
-|*Metadata* |
-[cols=","]
-!===
-!*ShortName* !ExclusionGround
-!*LongName* !exclusion-ground
-!*ListID* ! http://publications.europa.eu/resource/authority/exclusion-ground
-!*Version* !20250319-0
-!*CanonicalUri* !http://publications.europa.eu/resource/dataset/exclusion-ground
-!*CanonicalVersionUri* !http://publications.europa.eu/resource/dataset/exclusion-ground/20250319-0
-!*LocationUri* !http://publications.europa.eu/resource/distribution/exclusion-ground/20250319-0/xml/gc/ExclusionGround.gc
+!*ShortName* !Criterion
+!*LongName* !criterion
+!*ListID* !http://publications.europa.eu/resource/authority/criterion
+!*Version* !20240612-0
+!*CanonicalUri* !http://publications.europa.eu/resource/dataset/criterion
+!*CanonicalVersionUri* !http://publications.europa.eu/resource/dataset/criterion/20240612-0
+!*LocationUri* !http://publications.europa.eu/resource/distribution/criterion/20240612-0/xml/gc/Criterion.gc
 !*AgencyLongName* !Publications Office of the European Union
 !*AgencyIdentifier* !OP
 
@@ -364,7 +399,7 @@ An example of how to use this code list can be found in xref:code_list_examples.
 
 [[criterion-element-type-table,criterion-element-type]]
 == criterion-element-type 
-An example of how to use this code list can be found in xref:code_list_examples.adoc#criterion-element-type-xml-example[criterion-element-type xml Example].
+An example of how to use this code list can be found in xref:tech_codelist_examples.adoc#criterion-element-type-xml-example[criterion-element-type xml Example].
 
 [cols="1,2a"]
 |===
@@ -387,7 +422,7 @@ An example of how to use this code list can be found in xref:code_list_examples.
 
 [[currency-table,currency]]
 == currency
-An example of how to use this code list can be found in xref:code_list_examples.adoc#currency-xml-example[currency xml Example].
+An example of how to use this code list can be found in xref:tech_codelist_examples.adoc#currency-xml-example[currency xml Example].
 
 [cols="1,2a"]
 |===
@@ -414,7 +449,7 @@ An example of how to use this code list can be found in xref:code_list_examples.
 
 [[docrefcontent-type-table,docrefcontent-type]]
 == docrefcontent-type 
-An example of how to use this code list can be found in xref:code_list_examples.adoc#docrefcontent-type-xml-example[docrefcontent-type xml Example].
+An example of how to use this code list can be found in xref:tech_codelist_examples.adoc#docrefcontent-type-xml-example[docrefcontent-type xml Example].
 
 [cols="1,2a"]
 |===
@@ -440,7 +475,7 @@ This code list is maintained as technical for the time being. In the future it m
 
 [[economic-operator-size-table,economic-operator-size]]
 == economic-operator-size
-An example of how to use this code list can be found in xref:code_list_examples.adoc#economic-operator-size-xml-example[economic-operator-size xml Example].
+An example of how to use this code list can be found in xref:tech_codelist_examples.adoc#economic-operator-size-xml-example[economic-operator-size xml Example].
 
 [cols="1,2a"]
 |===
@@ -454,10 +489,10 @@ An example of how to use this code list can be found in xref:code_list_examples.
 !*ShortName* !EconomicOperatorSize
 !*LongName* !economic-operator-size
 !*ListID* !http://publications.europa.eu/resource/authority/economic-operator-size
-!*Version* !20220316-0
+!*Version* !20240612-0
 !*CanonicalUri* !http://publications.europa.eu/resource/dataset/economic-operator-size
-!*CanonicalVersionUri* !http://publications.europa.eu/resource/dataset/economic-operator-size/20220316-0
-!*LocationUri* !http://publications.europa.eu/resource/distribution/economic-operator-size/20220316-0/xml/gc/EconomicOperatorSize.gc
+!*CanonicalVersionUri* !http://publications.europa.eu/resource/dataset/economic-operator-size/20240612-0
+!*LocationUri* !http://publications.europa.eu/resource/distribution/economic-operator-size/20240612-0/xml/gc/EconomicOperatorSize.gc
 !*AgencyLongName* !Publications Office of the European Union
 !*AgencyIdentifier* !OP
 
@@ -467,14 +502,14 @@ An example of how to use this code list can be found in xref:code_list_examples.
 
 [[eoid-type-table,eoid-type]]
 == eoid-type 
-An example of how to use this code list can be found in xref:code_list_examples.adoc#eoid-type-xml-example[eoid-type xml Example].
+An example of how to use this code list can be found in xref:tech_codelist_examples.adoc#eoid-type-xml-example[eoid-type xml Example].
 
 [cols="1,2a"]
 |===
 |*Name* |*_eoid-type_*
 |*Code list type* |Technical
 |*Maintainer* |ESPD Team
-|*Description* |Contains coded partys identification type used in *_cac:PartyIdentification_*.
+|*Description* |Contains coded parts identification type used in *_cac:PartyIdentification_*.
 This code list is maintained as technical for the time being. In the future it may be removed or published on EU Vocabularies.
 |*Metadata* |
 [cols=","]
@@ -491,7 +526,7 @@ This code list is maintained as technical for the time being. In the future it m
 
 [[eo-role-type-table,eo-role-type]]
 == eo-role-type
-An example of how to use this code list can be found in xref:code_list_examples.adoc#eo-role-type-xml-example[eo-role-type xml Example].
+An example of how to use this code list can be found in xref:tech_codelist_examples.adoc#eo-role-type-xml-example[eo-role-type xml Example].
 
 [cols="1,2a"]
 |===
@@ -518,7 +553,7 @@ An example of how to use this code list can be found in xref:code_list_examples.
 
 [[financial-ratio-type-table,financial-ratio-type]]
 == financial-ratio-type 
-An example of how to use this code list can be found in xref:code_list_examples.adoc#financial-ratio-type-xml-example[financial-ratio-type xml Example].
+An example of how to use this code list can be found in xref:tech_codelist_examples.adoc#financial-ratio-type-xml-example[financial-ratio-type xml Example].
 
 [cols="1,2a"]
 |===
@@ -545,7 +580,7 @@ This code list is maintained by the ESPD Team and codes are collected from Banqu
 
 [[language-table,language]]
 == language
-An example of how to use this code list can be found in xref:code_list_examples.adoc#language-xml-example[language xml Example].
+An example of how to use this code list can be found in xref:tech_codelist_examples.adoc#language-xml-example[language xml Example].
 
 [cols="1,2a"]
 |===
@@ -560,10 +595,10 @@ The concepts included are correlated with the ISO 639 international standard.
 !*ShortName* !Language
 !*LongName* !language
 !*ListID* !http://publications.europa.eu/resource/authority/language
-!*Version* !20220928-0
+!*Version* !20240925-0
 !*CanonicalUri* !http://publications.europa.eu/resource/dataset/language
-!*CanonicalVersionUri* !http://publications.europa.eu/resource/dataset/language/20220928-0
-!*LocationUri* !http://publications.europa.eu/resource/distribution/language/20220928-0/xml/gc/Language.gc
+!*CanonicalVersionUri* !http://publications.europa.eu/resource/dataset/language/20240925-0
+!*LocationUri* !http://publications.europa.eu/resource/distribution/language/20240925-0/xml/gc/Language.gc
 !*AgencyLongName* !Publications Office of the European Union
 !*AgencyIdentifier* !OP
 
@@ -573,7 +608,7 @@ The concepts included are correlated with the ISO 639 international standard.
 
 [[occupation-table,occupation]]
 == occupation
-An example of how to use this code list can be found in xref:code_list_examples.adoc#occupation-xml-example[occupation xml Example].
+An example of how to use this code list can be found in xref:tech_codelist_examples.adoc#occupation-xml-example[occupation xml Example].
 
 [cols="1,2a"]
 |===
@@ -595,11 +630,15 @@ The data type expected for this code is URL following the *ESCO* taxonomy identi
 !*LocationUri* !http://publications.europa.eu/resource/distribution/occupation/20221214-0/xml/gc/Occupation.gc
 !*AgencyLongName* !Directorate-General for Employment, Social Affairs and Inclusion
 !*AgencyIdentifier* !EMPL
+
 !===
+
 |===
 
 [[profile-execution-id-table,profile-execution-id]]
+
 == profile-execution-id 
+
 [cols="1,2a"]
 |===
 |*Name* |*_ProfileExecutionID_*
@@ -645,7 +684,7 @@ The data type expected for this code is URL following the *ESCO* taxonomy identi
 |*Name* |*_ResponseDataType_*
 |*Code list type* |Technical
 |*Maintainer* |ESPD Team
-|*Description* |Contains identifiers used to descrive data type expected in criteria elements.
+|*Description* |Contains identifiers used to describe data type expected in criteria elements.
 [cols=","]
 !===
 !*ShortName* !ResponseDataType
