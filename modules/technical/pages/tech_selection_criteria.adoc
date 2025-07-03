@@ -39,6 +39,7 @@ See also section "xref:tech_request.adoc#lot_management[Lot Management in ESPD R
 
 In this version of ESPD, a new data structure has been added to the selection criteria to get more information about the EO and the fulfilment of the selection criteria. The UUID identifying the group is 0e50931d-4d39-4f1d-9fdc-b2cf16c0807a. It is a common structured reused over selection criteria.
 
+////
 == Data structure
 
 The following image shows an example of how it represented in the spread-sheets (see ESPD-Criterion)
@@ -46,6 +47,7 @@ The following image shows an example of how it represented in the spread-sheets 
 image:Initial_Question_data_structure.jpg[Does the EO fulfil the criteria by itself? Data structure,width=566,height=369]
 
 _Figure 3. 'Does the EO fulfil the criteria by itself? Data structure and UUID._
+////
 
 == Mockup
 
@@ -68,18 +70,19 @@ For each criteria regarding suitability, the buyer should be able to provide: th
 
 === Data Structure
 
-Few details regarding data structure for Suitability selection criteria
+Regarding data structure for Suitability selection criteria
 
 [arabic]
 . It allows the definition of multiple national sub-criteria (to be retrieved from e-Certis): cardinality "0..n" of the SUBCRITERION group;
 . It also allows the buyer to speciy multiple groups of REQUIREMENT(s) (in this case to specify which registers the economic operator should be registered in).
 . Regarding the groups of questions, notice that the main question is addressed to get the confirmation from the economic operator that it fulfills the criterion (if "Yes" the economic operator is registered). In case of answering "No" a sub-group of one QUESTION must be shown (the one asking the economic operator to provide the reason why it is not registered in the register specified by the buyer).
-
+////
 (The figure below is defined in the the tab "Suitability-I of the link:{url-tree}/codelists/ESPD-criterion.xlsx[ESPD-criterion] spread-sheet).
 
 image:SC_Suitability_enrolement.jpg[SC Suitability enrolement,width=506,height=331]
 
 _Figure 5. 'Suitability' criterion data structure (enrolments)_
+////
 
 === XML Example
 
@@ -87,17 +90,18 @@ The following XML example illustrates how the ESPD would look like when the Lots
 
 _'Enrolment in a relevant professional register' suitability criterion_
 
-Please generate an ESPD Request and ESPD Response documents on https://docs.ted.europa.eu/espd-demo/[ESPD Demo Site] to see full example.
+Please generate an ESPD Request and ESPD Response documents on https://docs.ted.europa.eu/espd-demo/[ESPD Demo Site] to see a full example.
 
 //// 
 [NOTE]
 ====
-The code list 'occupation' is used to determine the area to which the EO should be registered in. It comes from the ESCO classification, in case the Buyer do not find the appropiate code to define the type of professional enrolement it can select code '0000.0' which stands for other. Then would be able to include the type using a text box.
+The code list 'occupation' is used to determine the area to which the EO should be registered in. It comes from the ESCO classification, in case the Buyer do not find the appropriate code to define the type of professional enrolment it can select code '0000.0' which stands for other. Then would be able to include the type using a text box.
 ====
 ////  
 
 === Suitability (service contracts)
 
+////
 === Data Structure (service contracts)
 
 (The figure below is defined in the the tab "Suitability-II" of the link:{url-tree}/codelists/ESPD-criterion.xlsx[ESPD-criterion] spread-sheet).
@@ -105,12 +109,13 @@ The code list 'occupation' is used to determine the area to which the EO should 
 image:Suitability criterion_data structure_service contracts.jpg[Suitability criterion data structure (service contracts),width=566,height=438]
 
 _Figure 6. 'Suitability' criterion data structure (service contracts)_
+////
 
 === XML Example (service contracts)
 
 _Example of suitability criterion_
 
-Please generate an ESPD Request and ESPD Response documents on https://docs.ted.europa.eu/espd-demo/[ESPD Demo Site] to see full example.
+Please generate an ESPD Request and ESPD Response documents on https://docs.ted.europa.eu/espd-demo/[ESPD Demo Site] to see a full example.
 
 [cols=",",options="header",]
 
@@ -118,7 +123,7 @@ Please generate an ESPD Request and ESPD Response documents on https://docs.ted.
 . As a CAPTION no value is expected to be provided by the buyer (thus the absence of a cbc:Expected... element) nor by the Economic Operator (thus the value NONE`for the element `cac:ValueDataTypeCode)
 . The name of the organisation issuing the authorisation: the Spanish food safety agency.
 . Notice the use of the attribute languageID meaning, in this example, that the name is expressed in Spanish.
-. A "choice" structure is coming now: A true/false QUESTION is asked ("Your answer" to the question contained in the Criterion "Is a particular membership of a particular organisation needed in order to be able to perform the service ...". If the user (the EO) answers "Yes" (true) then it has to provide the registration number of the authorisation. Otherwise the EO will have to provide a justification about why the authorisation is not registered.
+. A "choice" structure is coming now: A true/false QUESTION is asked "Your answer" to the question contained in the Criterion "Is a particular membership of a particular organisation needed in order to be able to perform the service ...". If the user (the EO) answers "Yes" (true) then it has to provide the registration number of the authorisation. Otherwise the EO will have to provide a justification about why the authorisation is not registered.
 . If yes... provide the registration number for the authorisation.
 . If no... provide a justification for not having this authorisation issued by the required organisation.
 
@@ -177,6 +182,7 @@ image:General_Specific_Yearly_Turnovers_ EO_mock-up.jpg['General and Specific Ye
 
 _Figure 9. 'General Yearly Turnovers' EO mock-up_
 
+////
 === Data Structure
 
 In this this figure what it is being shown is that the buyer required three general yearly turnovers, for which it defined minimum amounts in one REQUIREMENT(s) group. Next, three groups of QUESTION(s) are provided, each one of them corresponding to the past three years. Remember that the spreadsheet used in this guide to represent the criteria data structure is also used to generate sample XML instances. So by including three groups of QUESTION(s) in the spread-sheet, the tool generating sample XML instances will automatically generate three sub-groups of properties each one with distinct UUIDs.
@@ -184,12 +190,13 @@ In this this figure what it is being shown is that the buyer required three gene
 image:General_Yearly_Turnovers_criterion_data_structure.jpg['General Yearly Turnovers' criterion data structure,width=566,height=448]
 
 _Figure 10. 'General Yearly Turnovers' criterion data structure_
+////
 
 === XML Example
 
 _General yearly turnover_
 
-Please generate an ESPD Request and ESPD Response documents on https://docs.ted.europa.eu/espd-demo/[ESPD Demo Site] to see full example.
+Please generate an ESPD Request and ESPD Response documents on https://docs.ted.europa.eu/espd-demo/[ESPD Demo Site] to see a full example.
 
 === Average yearly turnover
 
@@ -220,17 +227,19 @@ image:Average_yearly turnover_EO_mockup.jpg['Average yearly turnover' EO mock-up
 
 _Figure 12. 'Average yearly turnover' EO mock-up_
 
+////
 === Data Structure
 
 image:Average_yearly turnover_criterion_data_structure.jpg['Average yearly turnover' criterion data structure,width=522,height=427]
 
 _Figure 13. 'Average yearly turnover' criterion data structure_
+////
 
 === XML Example
 
 _Average yearly turnover_
 
-Please generate an ESPD Request and ESPD Response documents on https://docs.ted.europa.eu/espd-demo/[ESPD Demo Site] to see full example.
+Please generate an ESPD Request and ESPD Response documents on https://docs.ted.europa.eu/espd-demo/[ESPD Demo Site] to see a full example.
 
 === Specific yearly turnover
 
@@ -265,9 +274,10 @@ image:EO-Specific-year-turn.jpg['specific yearly turnover' EO mock-up,width=506,
 
 _Figure 15. 'specific yearly turnover' EO mock-up_
 
+
 === Data Structure
 
-Notice that:
+Note that:
 
 [arabic]
 . The criterion may have one or more linked national sub-criteria downloaded from e-Certis (SUBCRITERON structure, cardinality 0..n);
@@ -276,15 +286,18 @@ Notice that:
 . The buyer does also specifies the *minimum amount* required for this specific turnover.
 . The rest of the criterion are the questions for the economic operator to answer: *period* and *amount* (and *currency* in the amount attribute @currencyID).
 
+////
+
 image:Specific_yearly turnover_criterion_data_structure.jpg['Specific yearly turnover' criterion data structure,width=509,height=403]
 
 _Figure 16. 'Specific yearly turnover' criterion data structure_
+////
 
 === XML Example
 
 _Specific yearly turnover_
 
-Please generate an ESPD Request and ESPD Response documents on https://docs.ted.europa.eu/espd-demo/[ESPD Demo Site] to see full example.
+Please generate an ESPD Request and ESPD Response documents on https://docs.ted.europa.eu/espd-demo/[ESPD Demo Site] to see a full example.
 
 === Specific average turnover
 
@@ -302,6 +315,7 @@ image:spec-aver-year-turn-EO.jpg['Specific average turnover' EO mock-up,width=56
 
 _Figure 18. 'Specific average turnover' EO mock-up_
 
+////
 === Data Structure
 
 Notice that this  *specific average turnover* structure is *'practically identical'* to the data structure of the *specific yearly turnover* criterion. The only difference is that the *cardinality of the amount is 1* (instead of 1..n).
@@ -309,12 +323,13 @@ Notice that this  *specific average turnover* structure is *'practically identic
 image:Specific_average turnover_criterion_data_structure.jpg[Specific average turnover' criterion data structure,width=566,height=450]
 
 _Figure 19. Specific average turnover' criterion data structure_
+////
 
 === XML Example
 
 _Specific average turnover_
 
-Please generate an ESPD Request and ESPD Response documents on https://docs.ted.europa.eu/espd-demo/[ESPD Demo Site] to see full example.
+Please generate an ESPD Request and ESPD Response documents on https://docs.ted.europa.eu/espd-demo/[ESPD Demo Site] to see a full example.
 
 
 ==  Financial ratios
@@ -346,6 +361,7 @@ image:Financial_ratio_EO_mock-up.jpg['Financial ratio' EO mock-up,width=454,heig
 
 _Figure 20. 'Financial ratio' EO mock-up_
 
+////
 === Data Structure
 
 [cols=",",]
@@ -359,11 +375,12 @@ Notice how the spreadsheet has been used to specify the three different financia
 image:Financial_ratio_criterion_data_structure.jpg['Financial ratio' criterion data structure,width=526,height=293]
 
 _Figure 21. 'Financial ratio' criterion data structure_
+////
 
 === XML Example
 
 _Financial Ratio_
-Please generate an ESPD Request and ESPD Response documents on https://docs.ted.europa.eu/espd-demo/[ESPD Demo Site] to see full example.
+Please generate an ESPD Request and ESPD Response documents on https://docs.ted.europa.eu/espd-demo/[ESPD Demo Site] to see a full example.
 
 [cols=",",options="header",]
 
@@ -429,17 +446,19 @@ This structure is quite particular. Notice that:
 * A sub-group of three QUESTION(s) for the economic operator to answer (amount, and two questions to be answered as "Yes" or "No"; and
 * The possibility of attaching an evidence per each insurance.
 
+////
 The XML example below illustrates all this. The values used in the example are the same as the ones in the spread-sheet.
 
 image:risk_indemnity_insurance_criterion_data_structure.jpg[risk indemnity insurance' criterion data structure,width=566,height=314]
 
 _Figure 25. 'risk indemnity insurance' criterion data structure_
+////
 
 === XML Example
 
 _'Risk indemnity insurance' criterion (*Procedure with Lots*)_
 
-Please generate an ESPD Request and ESPD Response documents on https://docs.ted.europa.eu/espd-demo/[ESPD Demo Site] to see full example.
+Please generate an ESPD Request and ESPD Response documents on https://docs.ted.europa.eu/espd-demo/[ESPD Demo Site] to see a full example.
 
 == Other economic or financial requirements
 
@@ -489,15 +508,16 @@ Notice the following aspects from the 'other economic or financial requirements'
 * On *true* (see the group code on the right side of the data structure) three REQUIREMENT(s) will be shown to the *economic operator*: description, minimum amount and period. For this REQUIREMENT the economic operator will see all these requirements and will have to provide an amount.
 * On *false* (see the group code on the right side of the data structure) three REQUIREMENT(s) will be shown to the *economic operator*: minimum rating and rating scheme. For this REQUIREMENT the economic operator will see all these requirements and will have to provide a rating.
 
+////
 image:Other_economic_financial_requirements_criterion_data_structur.jpg['Other economic or financial requirements' criterion data structure,width=566,height=337]
 
 _Figure 27. 'Other economic or financial requirements' criterion data structure_
-
+////
 === XML Example
 
 _'Other economic or financial requirements' criterion_
 
-Please generate an ESPD Request and ESPD Response documents on https://docs.ted.europa.eu/espd-demo/[ESPD Demo Site] to see full example.
+Please generate an ESPD Request and ESPD Response documents on https://docs.ted.europa.eu/espd-demo/[ESPD Demo Site] to see a full example.
 
 == References on similar works, deliveries or services
 
@@ -571,15 +591,17 @@ The data structure for references caters for:
 . One group of REQUIREMENT(s) for the buyer to specify the general requirements for this criterion (e.g. Lots the references apply to, minimun number of references);
 . Multiple groups (cardinality 1..n) of questions for the economic operator to answer; which in this case are multiple references to works about which the EO has to provide information and the lots the EO tenders to related to the references.
 
+////
 image:References_criterion_data_structure.jpg['References' criterion data structure,width=505,height=216]
 
 _Figure 30.'References' criterion data structure_
+////
 
 === XML Example
 
 _'References for a works contract' criterion_
 
-Please generate an ESPD Request and ESPD Response documents on https://docs.ted.europa.eu/espd-demo/[ESPD Demo Site] to see full example.
+Please generate an ESPD Request and ESPD Response documents on https://docs.ted.europa.eu/espd-demo/[ESPD Demo Site] to see a full example.
 
 The following elements can be read in the example:
 
@@ -627,7 +649,7 @@ The  ESPD, supplies data structures facilitating a greater semantic interoperabi
 ** Educational and professional qualifications (qualification)
 
 *And one more data structure to define the allowance of checks:
-** Special requierements check (spec-req-check)
+** Special requirements check (spec-req-check)
 
 * One data structure to define two abilities related to the contractor's staff:
 
@@ -655,6 +677,7 @@ image:Abilities_I_EO_mock-up.jpg['Abilities (I)' EO mock-up,width=505,height=463
 
 _Figure 32. 'Abilities (I)' EO mock-up_
 
+////
 === Data Structure
 
 (The figure below is defined in the the tab ''SC-Abilities_1 (Persons)'' of the link:{url-tree}/codelists/ESPD-criterion.xlsx[ESPD-criterion] spread-sheet).
@@ -662,10 +685,11 @@ _Figure 32. 'Abilities (I)' EO mock-up_
 image:Abilities_Persons_criterion_data structure.jpg['Abilities (I)(Persons)' criterion data structure,width=566,height=372]
 
 _Figure 33. 'Abilities (I)(Persons)' criterion data structure_
+////
 
 === XML Example
 
-Please generate an ESPD Request and ESPD Response documents on https://docs.ted.europa.eu/espd-demo/[ESPD Demo Site] to see full example.
+Please generate an ESPD Request and ESPD Response documents on https://docs.ted.europa.eu/espd-demo/[ESPD Demo Site] to see a full example.
 
 
 === Abilities (II) - Facilities
@@ -682,10 +706,11 @@ _Figure 34. 'Abilities (II) (Facilities, ....)' criterion data structure_
 
 _Criterion "Technical facilities and measures for ensuring quality" (ESPD-Request)_
 
-Please generate an ESPD Request and ESPD Response documents on https://docs.ted.europa.eu/espd-demo/[ESPD Demo Site] to see full example.
+Please generate an ESPD Request and ESPD Response documents on https://docs.ted.europa.eu/espd-demo/[ESPD Demo Site] to see a full example.
 
 === Abilities (III) - Education
 
+////
 === Data Structure
 
 (The figure below is defined in the the tab ''SC_Abilities_3 (Education)'' of the link:{url-tree}/codelists/ESPD-criterion.xlsx[ESPD-criterion] spread-sheet).
@@ -693,6 +718,7 @@ Please generate an ESPD Request and ESPD Response documents on https://docs.ted.
 image:abilitites-education-datastructure.png.jpg[Abilities (III) (Education)' criterion data structure,width=566,height=313]
 
 _Figure 35. 'Abilities (III) (Education)' criterion data structure_
+////
 
 [NOTE]
 ====
@@ -715,7 +741,7 @@ ESCO is legally supported by the link:https://eur-lex.europa.eu/legal-content/EN
 
 _Criterion "Educational and professional qualifications" ESPD-Request)_
 
-Please generate an ESPD Request and ESPD Response documents on https://docs.ted.europa.eu/espd-demo/[ESPD Demo Site] to see full example.
+Please generate an ESPD Request and ESPD Response documents on https://docs.ted.europa.eu/espd-demo/[ESPD Demo Site] to see a full example.
 
 === Abilities (IV) - Checks
 
@@ -747,23 +773,27 @@ The data structure below shows how this criterion is organised. Notice the follo
 . At least one REQUIREMENT group will always be created. If the buyer specified more than one REQUIREMENT(s), more groups of REQUIREMENT + QUESTION would be added to the ESPD Request XML instance.
 . If not specific REQUIREMENT is issued by the CA, the REQUIREMENT group should equally be created and the REQUIREMENT value should be replaced with a literal (e.g. 'No specific requirements').
 
+////
 (Some columns have been hidden to enhance the readability of the image).
 
 (The figure below is defined in the the tab 'SC_Abilities_4 (Checks)' of the link:{url-tree}/codelists/ESPD-criterion.xlsx[ESPD-criterion] spread-sheet).
 
+
 image:Abilities_IV_Checks_criterion data_structure.jpg['Abilities (IV) (Checks)' criterion data structure,width=539,height=353]
 
 _Figure 38. 'Abilities (IV) (Checks)' criterion data structure_
+////
 
 === XML Example
 
 _Allowance of checks criterion /Special requierements check_
 
-Please generate an ESPD Request and ESPD Response documents on https://docs.ted.europa.eu/espd-demo/[ESPD Demo Site] to see full example.
+Please generate an ESPD Request and ESPD Response documents on https://docs.ted.europa.eu/espd-demo/[ESPD Demo Site] to see a full example.
 
 
 === Abilities (V) - Staff
 
+////
 === Data Structure
 
 (The figure below is defined in the the tab ''SC_Abilities_5 (Staff)'' of the link:{url-tree}/codelists/ESPD-criterion.xlsx[ESPD-criterion] spread-sheet).
@@ -771,12 +801,13 @@ Please generate an ESPD Request and ESPD Response documents on https://docs.ted.
 image:Abilities_V_Checks_criterion data_structure.jpg['Abilities (V) (Staff)' criterion data structure,width=566,height=362]
 
 _Figure 39. 'Abilities (V) (Staff)' criterion data structure_
+////
 
 === XML Example
 
 _Criterion SC-Abilities (Staff) ESPD-Request_
 
-Please generate an ESPD Request and ESPD Response documents on https://docs.ted.europa.eu/espd-demo/[ESPD Demo Site] to see full example.
+Please generate an ESPD Request and ESPD Response documents on https://docs.ted.europa.eu/espd-demo/[ESPD Demo Site] to see a full example.
 
 == Subcontracting proportion
 
@@ -804,6 +835,7 @@ image:Subcontracting proportion_EO_mock-up.jpg['Subcontracting proportion' EO mo
 
 _Figure 41. 'Subcontracting proportion' EO mock-up_
 
+////
 === Data Structure
 
 (Some columns have been hidden to enhance the readability of the image).
@@ -811,12 +843,13 @@ _Figure 41. 'Subcontracting proportion' EO mock-up_
 image:Subcontracting proportion_criterion_data_structure.jpg[Subcontracting proportion' criterion data structure,width=566,height=321]
 
 _Figure 42. 'Subcontracting proportion' criterion data structure_
+////
 
 === XML Example
 
 _'Subcontracting proportion' criterion_
 
-Please generate an ESPD Request and ESPD Response documents on https://docs.ted.europa.eu/espd-demo/[ESPD Demo Site] to see full example.
+Please generate an ESPD Request and ESPD Response documents on https://docs.ted.europa.eu/espd-demo/[ESPD Demo Site] to see a full example.
 
 
 == Samples and certificates
@@ -846,6 +879,7 @@ image:Samples_certificates_EO_mock-up.jpg['Samples and certificates' EO mock-up,
 
 _Figure 44. 'Samples and certificates' EO mock-up_
 
+////
 === Data Structure
 
 (Some columns have been hidden to enhance the readability of the image).
@@ -853,12 +887,13 @@ _Figure 44. 'Samples and certificates' EO mock-up_
 image:Samples_certificates_criteria_data_structure.jpg[Samples and certificates criteria data structure,width=566,height=327]
 
 _Figure 45. 'Samples and certificates' criteria data structure_
+////
 
 === XML Example
 
 _'Samples and certificates' criterion_
 
-Please generate an ESPD Request and ESPD Response documents on https://docs.ted.europa.eu/espd-demo/[ESPD Demo Site] to see full example.
+Please generate an ESPD Request and ESPD Response documents on https://docs.ted.europa.eu/espd-demo/[ESPD Demo Site] to see a full example.
 
 == Quality assurance
 
@@ -893,17 +928,19 @@ Notice the following:
 . The ONFALSE code for the sub-group containing the sentence thats starts with 'If not, please explain why...' means: if the answer to the previous question was *No* then this sub-group must be shown/processed.
 . If ONTRUE (answer to previous QUESTION = *Yes*) then the question about the online evidences is shown/processed.
 
+////
 (Some columns have been hidden to enhance the readability of the image).
 
 image:Quality Assurance schemes_environmental_data_struc.jpg['Quality Assurance schemes and environmental management standards' criteria data structure,width=566,height=347]
 
 _Figure 48. 'Quality Assurance schemes and environmental management standards' criteria data structure_
+////
 
 === XML Example
 
 _'Certificates by quality control institutes' criterion_
 
-Please generate an ESPD Request and ESPD Response documents on https://docs.ted.europa.eu/espd-demo/[ESPD Demo Site] to see full example.
+Please generate an ESPD Request and ESPD Response documents on https://docs.ted.europa.eu/espd-demo/[ESPD Demo Site] to see a full example.
 
 
 == Other aspects of participation and selection
@@ -922,6 +959,7 @@ This ESPD-EDM specification provides a specific data structure that allows the b
 
 However, in this version of the ESPD-EDM he behaviour of this criterion is linked to eForms instantiation of the aim of using the reduction of candidates. Meaning that if in eForms CN this is not stated, it will not be part of the ESPD-Request nor Response.
 
+////
 === Data structure
 
 The figure below shows the data elements required to the economic operator for this criterion in the ESPD-Request:
@@ -929,7 +967,7 @@ The figure below shows the data elements required to the economic operator for t
 image:Reduction_candidates_data_structure.jpg['Reduction of candidates' data structure,width=566,height=156]
 
 _Figure 49. 'Reduction of candidates' data structure_
-
+////
 === XML example (ESPD-Request)
 
 The XML snippet below shows how an instance of this criterion looks like in the ESPD-Request.
@@ -937,4 +975,4 @@ The XML snippet below shows how an instance of this criterion looks like in the 
 
 _Reduction of Candidates - (QUESTION(s) in the ESPD-Request)_
 
-Please generate an ESPD Request and ESPD Response documents on https://docs.ted.europa.eu/espd-demo/[ESPD Demo Site] to see full example.
+Please generate an ESPD Request and ESPD Response documents on https://docs.ted.europa.eu/espd-demo/[ESPD Demo Site] to see a full example.

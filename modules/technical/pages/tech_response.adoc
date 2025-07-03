@@ -819,12 +819,13 @@ The simplest case is when:
 
 If the economic operator answers *Yes* the fields about the 'percentage of disabled/disadvantaged workers and the category of handicap to which they belong to should shown, validated or processed.
 
+////
 *Data structure for a sheltered workshop or social business in case of reserved procurement*:
 
 image:Sheltered_workshop_social_business.jpg[Sheltered workshop or social business,width=566,height=175]
 
 _Figure 13. Sheltered workshop or social business - data structure_
-
+////
 ===== EO registered in a (Pre)Qualification System (PQS)
 
 One of the questions asked is whether the economic operator is registered on an official list (e.g. on a national Pre-Qualification System). In the case the EO answers *Yes*, the software application should ask the EO for this other data about which the evaluators may be interested in
@@ -838,9 +839,11 @@ In case the EO is registered on several pre-qualification systems, the EO will n
 * The identifier assigned by the (pre)qualification system to the economic operator is required. This value however is placed in the element cac:QualifyingParty/cac:Party/cac:PartyIdentification/cbc:ID and therefore is not required in the data structure.
 * The name of an alternative or additional (pre)qualification system (PQS) can also be provided by the EO. In principle this is not necessary as the PQS identifier is the value of the attribute @schemeAgencyID of the element cbc:ID.
 
+////
 image:Pre-qualification_related_data_structure.jpg[Pre-qualification-related data structure,width=566,height=255]
 
 _Figure 14. Pre-qualification-related data structure_
+////
 
 *Data structure to* identify *the rest of the EOs that are members of the group*:
 
@@ -852,9 +855,11 @@ Notice that:
 . The values expected for the name and activity are texts.
 . The value expected for the EO identifier is of type Identifier. For the identifier of the EO it is also required to specify the type of identifier, and a closed list of possible types is proposed (see Code List link:{url-tree}/codelists/gc/EOIDType.gc[EOIDType]. EOs must use one of the available codes, but the preferred one is the VAT number. Beware that the data structure does not keep the type of the identifier. This is because this type code is placed in the attribute @schemeName of the cac:ResponseValue/cbc:ResponseID element (and the @schemeAgencyID attribute must be set to the default OP). See information requirements at the beginning of the section. See also next sections about the responses, XSD schemas and XML example.
 
+////
 image:Group_EO_data_structure.jpg[Group of EO, data structure,width=642,height=219]
 
 _Figure 15. Group of EO, data structure_
+
 
 Certificates about contributions to the Tax Agency and/or Social Security
 
@@ -863,6 +868,7 @@ Certificates about contributions to the Tax Agency and/or Social Security
 image:Contributions_certificates_data_structure.jpg[Contributions certificates - data structure,width=642,height=170]
 
 _Figure 16. Contributions certificates_
+////
 
 ==== Mock-up: Information about reliance on the capacities of the other entities
 
@@ -872,11 +878,13 @@ image:EO_Roles_entities_relied_on.jpg[EO Roles-entities relied on,width=600,heig
 
 _Figure 17. EO Roles-entities relied on, mock-up_
 
+////
 *Data structure for the entities upon which the EO relies on*:
 
 image:Reliedon_entities_data_structure.jpg[Relied on entities - data structure,width=642,height=207]
 
 _Figure 18. Relied on entities - data structure_
+////
 
 ==== Mock-up: Information about third parties on which the EO does not rely on
 
@@ -886,12 +894,13 @@ image:EO_Roles_entities_not_reliedon.jpg[EO Roles-entities not relied on,width=6
 
 _Figure 19. EO Roles-entities not relied on, mock-up_
 
+////
 *Data structure for the entities upon which the EO does not relies on*:
 
 image:Not_reliedon_entities_data_structure.jpg[Not relied on entities - data structure,width=642,height=207]
 
 _Figure 20. Not relied on entities - data structure_
-
+////
 ==== XML Example
 
 This example contains all the data about an economic operator. Beware that the basic identification data is placed into the cac:EconomicOperatorParty component, whilst the rest of the data (namely for statististical purposes) is structured in the data structures described above.
