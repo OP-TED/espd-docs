@@ -7,29 +7,31 @@
 * xref:espd-home::index.adoc[Home]
 
 * [.separated]#**ESPD SDK**#
-* xref:sdk::faq.adoc[FAQs-Frequently asked questions]
-* xref:business::index.adoc[Business Information]
+
+* xref:5.1.0@ESPD-EDM/business:index.adoc[Business Information]
 * xref:espd-home::history.adoc[Roadmap]
-* xref:espd-home::change.adoc[Change management]
+//* xref:espd-home::change.adoc[Change management]
 * xref:espd-home::versioning.adoc[Versioning] 
-* xref:sdk::active.adoc[Active versions]
+//* xref:sdk:active.adoc[Active versions]
 //* xref:ESPD-EDM::release_notes.adoc[Release Notes]
 //* link:{attachmentsdir}/ESPD_CM_html/index.html[Conceptual Model]
-//* https://docs.ted.europa.eu/espd-demo/[ESPD Demo]
+* https://docs.ted.europa.eu/espd-demo/[ESPD Demo]
 //* xref:espd::dist_pack.adoc[The Distribution Package]
 
 * [.separated]#**General reference**#
-* xref:ESPD-EDM::release_notes.adoc[Release Notes]
+* xref:5.1.0@ESPD-EDM:release_notes.adoc[Release Notes]
 * link:{attachmentsdir}/ESPD_CM_html/index.html[ESPD-EDM Conceptual Model HTML]
 * https://docs.ted.europa.eu/espd-demo/[ESPD Demo]
-* xref:sdk::specs.adoc[ESPD specification]
-* xref:sdk::validation.adoc[Validation]
+* xref:5.1.0@ESPD-EDM/sdk:specs.adoc[ESPD specification]
+* xref:5.1.0@ESPD-EDM/guide:bus_rules.adoc[Business rules]
+* xref:5.1.0@ESPD-EDM:sdk:validation.adoc[Validation]
 * xref:espd-home::external.adoc[External Resources]
 * xref:espd-home::laws.adoc[Laws and Directives]
+* xref:5.1.0@ESPD-EDM:sdk:faq.adoc[FAQs-Frequently asked questions]
 
-* [.separated]#**SDK contents**#
-* xref:sdk::field_data.adoc[Field data]
-* xref:sdk::codelists.adoc[Code lists]
+* [.separated]#**Boilerplate contents**#
+* xref:5.1.0@ESPD-EDM:sdk:field_data.adoc[Field data]
+* xref:5.1.0@ESPD-EDM:sdk:codelists.adoc[Code lists]
 * templates?
 * translations?
 * schemas?
@@ -48,19 +50,19 @@
 //* xref:espd-tech::demo.adoc[Demo ESPD Service Online]
 
 * [.separated]#**Developer Guide**#
-* xref:guide::start.adoc[Get started]
-* xref:guide::overview.adoc[Understanding the resources and tools]
-* xref:guide::glossary.adoc[Glossary]
-* xref:guide::workingwith.adoc[Working with the SDK]
-* xref:guide::workingwithoutadoc[Working without the SDK]
+* xref:5.1.0@ESPD-EDM:guide:start.adoc[Get started]
+* xref:5.1.0@ESPD-EDM:guide:overview.adoc[Understanding the resources and tools]
+* xref:5.1.0@ESPD-EDM:guide:glossary.adoc[Glossary]
+//* xref:guide:workingwith.adoc[Working with the SDK]
+//* xref:guide:workingwithoutadoc[Working without the SDK]
 
 //* xref:espd-home::supporting.adoc[Supporting and related projects]
 //* xref:espd-home::laws.adoc[Laws and Directives]
 
 * [.separated]#**Open User Community Reports**#
-* xref:espd-wgm::index.adoc[Upcoming Meeting Dates]
-* xref:espd-wgm::monthly.adoc[Monthly Reports]
-* xref:espd-wgm::annual.adoc[Annual Reports]
+* xref:espd-wgm:index.adoc[Upcoming Meeting Dates]
+* xref:espd-wgm:monthly.adoc[Monthly Reports]
+* xref:espd-wgm:annual.adoc[Annual Reports]
 
-* [.separated]#**ESPD service (future)**#
-* xref:service::service.adoc[ESPD Service]
+//* [.separated]#**ESPD service (future)**#
+//* xref:service:service.adoc[ESPD Service]
