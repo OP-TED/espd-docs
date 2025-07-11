@@ -19,7 +19,7 @@
 //* xref:espd::dist_pack.adoc[The Distribution Package]
 
 * [.separated]#**General reference**#
-* xref:5.1.0@ESPD-EDM:release_notes.adoc[Release Notes]
+* xref:5.1.0@ESPD-EDM:ROOT:release_notes.adoc[Release Notes]
 * link:{attachmentsdir}/ESPD_CM_html/index.html[ESPD-EDM Conceptual Model HTML]
 * https://docs.ted.europa.eu/espd-demo/[ESPD Demo]
 * xref:5.1.0@ESPD-EDM:sdk:specs.adoc[ESPD specification]
@@ -50,7 +50,7 @@
 //* xref:espd-tech::demo.adoc[Demo ESPD Service Online]
 
 * [.separated]#**Developer Guide**#
-* xref:5.1.0@ESPD-EDM:guide:start.adoc[Get started]
+* xref:guide:start.adoc[Get started]
 * xref:5.1.0@ESPD-EDM:guide:overview.adoc[Understanding the resources and tools]
 * xref:5.1.0@ESPD-EDM:guide:glossary.adoc[Glossary]
 //* xref:guide:workingwith.adoc[Working with the SDK]
