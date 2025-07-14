@@ -6,7 +6,7 @@
 
 * xref:espd-home::index.adoc[Home]
 
-* [.separated]#**ESPD SDK**#
+* [.separated]#**The ESPD**#
 
 * xref:5.1.0@ESPD-EDM:business:index.adoc[Business Information]
 * xref:espd-home::history.adoc[Roadmap]

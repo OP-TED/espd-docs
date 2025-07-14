@@ -7,20 +7,30 @@
 * xref:espd-home::index.adoc[Home]
 
 * [.separated]#**ESPD SDK**#
-* xref:dist:faq.adoc[FAQs-Frequently asked questions]
+* xref:sdk:faq.adoc[FAQs-Frequently asked questions]
 * xref:business:index.adoc[Business Information]
 * xref:espd-home:history.adoc[Roadmap]
 * xref:espd-home:change.adoc[Change management]
 * xref:espd-home:versioning.adoc[Change management] 
-* xref:dist:active.adoc[Active versions]
+* xref:sdk:active.adoc[Active versions]
+//* xref:ESPD-EDM::release_notes.adoc[Release Notes]
+//* link:{attachmentsdir}/ESPD_CM_html/index.html[Conceptual Model]
+//* https://docs.ted.europa.eu/espd-demo/[ESPD Demo]
+//* xref:espd::dist_pack.adoc[The Distribution Package]
 
 * [.separated]#**Information for Business Users**#
 * xref:business:index.adoc[Business Information]
 * xref:business:service.adoc[What is an ESPD Service?]
 * xref:business:using.adoc[The Structure of an ESPD Service]
+//* xref:espd-bus::creating.adoc[Creating an ESPD Service]
+//* xref:espd-bus::overview_upgrades.adoc[Overview for Upgrading your Version]
 
 * [.separated]#**Technical Implementation**#
 * xref:technical:index.adoc[Technical Information]
+
+//* xref:espd-tech::tech_imp_roadmap.adoc[Road Map for Implementers]
+//* xref:espd-tech::tech_upgrades.adoc[Upgrading an ESPD Version]
+//* xref:espd-tech::demo.adoc[Demo ESPD Service Online]
 
 * [.separated]#**General Reference**#
 * xref:espd-home::history.adoc[History and Planned Developments]
@@ -31,5 +41,3 @@
 * [.separated]#**Open User Community Documents**#
 * xref:espd-wgm::monthly.adoc[Regular Meetings]
 * xref:espd-wgm::annual.adoc[Annual Seminars]
-
-
