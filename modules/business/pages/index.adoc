@@ -4,6 +4,17 @@
 :authoremail: nicole-anne.paterson-jones@ext.ec.europa.eu
 :docdate: January 2024
 
+
+xref:business:business_info.adoc[Information for Business Users] +
+This section gives an overview of the ESPD for business Users.
+
+xref:business:implementation.adoc[The ESPD model] +
+Understanding the ESPD model
+
+xref:business:espd_form.adoc[The ESPD online form] +
+A mock-up of the ESPD online form
+
+////
 [.tile-container]
 --
 [.tile]
@@ -32,7 +43,7 @@ This section runs through an example ESPD online form from both the buyer and th
 xref:business:espd_form.adoc[Click here to view the ESPD online form]
 ****
 --
-////
+
 
 [.tile]
 .Using the ESPD Service

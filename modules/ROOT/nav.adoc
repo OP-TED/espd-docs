@@ -7,62 +7,38 @@
 * xref:espd-home::index.adoc[Home]
 
 * [.separated]#**The ESPD**#
-
 * xref:5.1.0@ESPD-EDM:business:index.adoc[Business Information]
 * xref:espd-home::history.adoc[Roadmap]
-//* xref:espd-home::change.adoc[Change management]
-* xref:espd-home::versioning.adoc[Versioning] 
-//* xref:sdk:active.adoc[Active versions]
-//* xref:ESPD-EDM::release_notes.adoc[Release Notes]
-//* link:{attachmentsdir}/ESPD_CM_html/index.html[Conceptual Model]
+* xref:5.1.0@ESPD-EDM:ROOT:versioning.adoc[Versioning] 
 * https://docs.ted.europa.eu/espd-demo/[ESPD Demo]
-//* xref:espd::dist_pack.adoc[The Distribution Package]
 
 * [.separated]#**General reference**#
 * xref:5.1.0@ESPD-EDM:ROOT:release_notes.adoc[Release Notes]
 * link:{attachmentsdir}/ESPD_CM_html/index.html[ESPD-EDM Conceptual Model HTML]
-* https://docs.ted.europa.eu/espd-demo/[ESPD Demo]
-* xref:5.1.0@ESPD-EDM:sdk:specs.adoc[ESPD specification]
+//* xref:5.1.0@ESPD-EDM:dist:specs.adoc[ESPD specification]
 * xref:5.1.0@ESPD-EDM:guide:bus_rules.adoc[Business rules]
-* xref:5.1.0@ESPD-EDM:sdk:validation.adoc[Validation]
+* xref:5.1.0@ESPD-EDM:dist:validation.adoc[Validation]
 * xref:espd-home::external.adoc[External Resources]
 * xref:espd-home::laws.adoc[Laws and Directives]
-* xref:5.1.0@ESPD-EDM:sdk:faq.adoc[FAQs-Frequently asked questions]
+* xref:5.1.0@ESPD-EDM:dist:faq.adoc[FAQs-Frequently asked questions]
 
 * [.separated]#**Boilerplate contents**#
-* xref:5.1.0@ESPD-EDM:sdk:field_data.adoc[Field data]
-* xref:5.1.0@ESPD-EDM:sdk:codelists.adoc[Code lists]
-* templates?
-* translations?
-* schemas?
-
-//* [.separated]#**Information for Business Users**
-//* xref:5.0.0@ESPD-EDM:business:index.adoc[Business Information]
-//* xref:5.0.0@ESPD-EDM:business:implementation.adoc[An ESPD Implementation]
-//* xref:5.0.0@ESPD-EDM:business:using.adoc[The Structure of an ESPD Implementation]
-//* xref:espd-bus::creating.adoc[Creating an ESPD Service]
-//* xref:espd-bus::overview_upgrades.adoc[Overview for Upgrading your Version]
-
-//* [.separated]#**Technical Implementation**#
-//* xref:5.0.0@ESPD-EDM:technical:index.adoc[Technical Information]
-//* xref:espd-tech::tech_imp_roadmap.adoc[Road Map for Implementers]
-//* xref:espd-tech::tech_upgrades.adoc[Upgrading an ESPD Version]
-//* xref:espd-tech::demo.adoc[Demo ESPD Service Online]
+* xref:5.1.0@ESPD-EDM:technical:tech_dist_pack.adoc[The distribution package]
+add other contents 
 
 * [.separated]#**Developer Guide**#
-* xref:guide:start.adoc[Get started]
 * xref:5.1.0@ESPD-EDM:guide:overview.adoc[Understanding the resources and tools]
-* xref:5.1.0@ESPD-EDM:guide:glossary.adoc[Glossary]
-//* xref:guide:workingwith.adoc[Working with the SDK]
-//* xref:guide:workingwithoutadoc[Working without the SDK]
-
-//* xref:espd-home::supporting.adoc[Supporting and related projects]
-//* xref:espd-home::laws.adoc[Laws and Directives]
+* xref:5.1.0@ESPD-EDM:technical:tech_architecture.adoc[Technical architecture]
+* xref:5.1.0@ESPD-EDM:technical:tech_request.adoc[The ESPD request]
+* xref:5.1.0@ESPD-EDM:technical:tech_common_aspects_for_criteria.adoc[Common aspects for criteria]
+* xref:5.1.0@ESPD-EDM:technical:tech_exclusion_criteria.adoc[Exclusion criteria]
+* xref:5.1.0@ESPD-EDM:technical:tech_selection_criteria.adoc[Selection criteria]
+* xref:5.1.0@ESPD-EDM:technical:tech_response.adoc[The ESPD Response]
+* xref:5.1.0@ESPD-EDM:dist:field_data.adoc[Field data]
+* xref:5.1.0@ESPD-EDM:technical::tech_codelist.adoc[Code lists]
+* xref:5.1.0@ESPD-EDM:technical:tech_glossary.adoc[Technical Glossary]
 
 * [.separated]#**Open User Community Reports**#
 * xref:espd-wgm:index.adoc[Upcoming Meeting Dates]
 * xref:espd-wgm:monthly.adoc[Monthly Reports]
 * xref:espd-wgm:annual.adoc[Annual Reports]
-
-//* [.separated]#**ESPD service (future)**#
-//* xref:service:service.adoc[ESPD Service]
