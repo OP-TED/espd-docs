@@ -6,33 +6,40 @@
 
 * xref:espd-home::index.adoc[Home]
 
-* [.separated]#**Release Documentation**#
-* xref:4.0.0@ESPD-EDM:ROOT:release_notes.adoc[Release Notes]
-* https://docs.ted.europa.eu/ESPD-EDM/latest/_attachments/ESPD_CM_html/index.html[Conceptual Model]
-* xref:espd-home::demo.adoc[ESPD Demo Site]
-//* xref:espd::dist_pack.adoc[The Distribution Package]
+* [.separated]#**The ESPD**#
+* xref:5.1.0@ESPD-EDM:business:index.adoc[Business Information]
+* xref:espd-home::history.adoc[Roadmap]
+* xref:5.1.0@ESPD-EDM:ROOT:versioning.adoc[Versioning] 
+* https://docs.ted.europa.eu/espd-demo/[ESPD Demo]
 
-* [.separated]#**Information for Business Users**#
-* xref:4.0.0@ESPD-EDM:business:index.adoc[Business Information]
-* xref:4.0.0@ESPD-EDM:business:service.adoc[What is an ESPD Service?]
-* xref:4.0.0@ESPD-EDM:business:using.adoc[The Structure of an ESPD Service]
-//* xref:espd-bus::creating.adoc[Creating an ESPD Service]
-//* xref:espd-bus::overview_upgrades.adoc[Overview for Upgrading your Version]
-
-* [.separated]#**Technical Implementation**#
-* xref:4.0.0@ESPD-EDM:technical:index.adoc[Technical Information]
-//* xref:espd-tech::tech_imp_roadmap.adoc[Road Map for Implementers]
-//* xref:espd-tech::tech_upgrades.adoc[Upgrading an ESPD Version]
-//* xref:espd-tech::demo.adoc[Demo ESPD Service Online]
-
-* [.separated]#**General Reference**#
-* xref:espd-home::history.adoc[History and Planned Developments]
+* [.separated]#**General reference**#
+* xref:5.1.0@ESPD-EDM:ROOT:release_notes.adoc[Release Notes]
+* link:{attachmentsdir}/ESPD_CM_html/index.html[ESPD-EDM Conceptual Model HTML]
+//* xref:5.1.0@ESPD-EDM:dist:specs.adoc[ESPD specification]
+* xref:5.1.0@ESPD-EDM:guide:bus_rules.adoc[Business rules]
+* xref:5.1.0@ESPD-EDM:technical:tech_validation.adoc[Validation]
 * xref:espd-home::external.adoc[External Resources]
-* xref:espd-home::supporting.adoc[Supporting and related projects]
 * xref:espd-home::laws.adoc[Laws and Directives]
+* xref:5.1.0@ESPD-EDM:dist:faq.adoc[FAQs-Frequently asked questions]
 
-* [.separated]#**Open User Community Documents**#
-* xref:espd-wgm::index.adoc[Upcoming Meeting Dates]
-* xref:espd-wgm::monthly.adoc[Regular Meetings]
-* xref:espd-wgm::annual.adoc[Annual Seminars]
+* [.separated]#**Boilerplate contents**#
+* xref:5.1.0@ESPD-EDM:technical:tech_dist_pack.adoc[Contents]
+* Links to other contents 
+
+* [.separated]#**Developer Guide**#
+* xref:5.1.0@ESPD-EDM:guide:overview.adoc[Understanding the resources and tools]
+* xref:5.1.0@ESPD-EDM:technical:tech_architecture.adoc[Technical architecture]
+* xref:5.1.0@ESPD-EDM:technical:tech_request.adoc[The ESPD request]
+* xref:5.1.0@ESPD-EDM:technical:tech_common_aspects_for_criteria.adoc[Common aspects for criteria]
+* xref:5.1.0@ESPD-EDM:technical:tech_exclusion_criteria.adoc[Exclusion criteria]
+* xref:5.1.0@ESPD-EDM:technical:tech_selection_criteria.adoc[Selection criteria]
+* xref:5.1.0@ESPD-EDM:technical:tech_response.adoc[The ESPD Response]
+* xref:5.1.0@ESPD-EDM:dist:field_data.adoc[Field data]
+* xref:5.1.0@ESPD-EDM:technical::tech_codelist.adoc[Code lists]
+* xref:5.1.0@ESPD-EDM:technical:tech_glossary.adoc[Technical Glossary]
+
+* [.separated]#**Open User Community Reports**#
+* xref:espd-wgm:index.adoc[Upcoming Meeting Dates]
+* xref:espd-wgm:monthly.adoc[Monthly Reports]
+* xref:espd-wgm:annual.adoc[Annual Reports]
 
