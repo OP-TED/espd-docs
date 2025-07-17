@@ -17,14 +17,14 @@
 * link:{attachmentsdir}/ESPD_CM_html/index.html[ESPD-EDM Conceptual Model HTML]
 //* xref:5.1.0@ESPD-EDM:dist:specs.adoc[ESPD specification]
 * xref:5.1.0@ESPD-EDM:guide:bus_rules.adoc[Business rules]
-* xref:5.1.0@ESPD-EDM:dist:validation.adoc[Validation]
+* xref:5.1.0@ESPD-EDM:technical:tech_validation.adoc[Validation]
 * xref:espd-home::external.adoc[External Resources]
 * xref:espd-home::laws.adoc[Laws and Directives]
 * xref:5.1.0@ESPD-EDM:dist:faq.adoc[FAQs-Frequently asked questions]
 
 * [.separated]#**Boilerplate contents**#
-* xref:5.1.0@ESPD-EDM:technical:tech_dist_pack.adoc[The distribution package]
-add other contents 
+* xref:5.1.0@ESPD-EDM:technical:tech_dist_pack.adoc[Contents]
+* Links to other contents 
 
 * [.separated]#**Developer Guide**#
 * xref:5.1.0@ESPD-EDM:guide:overview.adoc[Understanding the resources and tools]
