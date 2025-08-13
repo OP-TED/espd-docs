@@ -22,7 +22,7 @@ Next Annual Seminar:
 [.tile]
 .ESPD Open User Community Annual Seminar Documents
 ****
-The cumulative annual reports are a collation of minutes from all the ePO related meetings in a year. Reports from the years 2019 to 2023 are currently available.
+The cumulative annual reports are a collation of minutes from all the ePO related meetings in a year. Reports are currently available.
 
 xref:annual.adoc[Click here to access the annual seminar documents]
 
