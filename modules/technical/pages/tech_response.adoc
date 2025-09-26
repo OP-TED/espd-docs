@@ -940,7 +940,7 @@ As explained above, the Sole tenderer or the Leader of a group will have to prov
 
 image:EO_Roles_entities_relied_on.jpg[EO Roles-entities relied on,width=600,height=372]
 
-_Figure 16. EO Roles-entities relied on, mock-up_
+_Figure 13. EO Roles-entities relied on, mock-up_
 
 *Data structure for the entities upon which the EO relies on*:
 
@@ -956,7 +956,7 @@ The Sole contractor or the Leader of a group will have also to provide informati
 
 image:EO_Roles_entities_not_reliedon.jpg[EO Roles-entities not relied on,width=600,height=226]
 
-_Figure 18. EO Roles-entities not relied on, mock-up_
+_Figure 14. EO Roles-entities not relied on, mock-up_
 
 *Data structure for the entities upon which the EO does not relies on*:
 
