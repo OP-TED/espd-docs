@@ -193,7 +193,7 @@ Notice that as for the rest of criteria, the Member State may specify national s
 
 image:average_yearly_turnover_CA_mockup.jpg['average yearly turnover' buyer mock-up,width=623,height=180]
 
-_Figure 10. 'Average yearly turnover' Buyer mock-up_
+_Figure 6. 'Average yearly turnover' Buyer mock-up_
 
 === Mock-up - economic operator perspective
 
@@ -205,7 +205,7 @@ In turn, the economic operator:
 
 image:Average_yearly turnover_EO_mockup.jpg['Average yearly turnover' EO mock-up_EO,width=555,height=229]
 
-_Figure 11. 'Average yearly turnover' EO mock-up_
+_Figure 7. 'Average yearly turnover' EO mock-up_
 
 === Data Structure
 
@@ -237,7 +237,7 @@ For *specific yearly turnover* criterion the following fields can be required by
 
 image:Specificyaer_turnoever_CA-perspective.jpg[specific yearly turnover' buyer mock-up_,width=494,height=182]
 
-_Figure 13. 'specific yearly turnover' Buyer mock-up_
+_Figure 8. 'specific yearly turnover' Buyer mock-up_
 
 === Mock-up - economic operator perspective
 
@@ -251,7 +251,7 @@ Notice that in this example:
 
 image:EO-Specific-year-turn.jpg['specific yearly turnover' EO mock-up,width=506,height=423]
 
-_Figure 14. 'specific yearly turnover' EO mock-up_
+_Figure 9. 'specific yearly turnover' EO mock-up_
 
 === Data Structure
 
