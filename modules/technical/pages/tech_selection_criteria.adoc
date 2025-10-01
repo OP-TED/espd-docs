@@ -264,7 +264,7 @@ Notice that:
 . The buyer does also specifies the *minimum amount* required for this specific turnover.
 . The rest of the criterion are the questions for the economic operator to answer: *period* and *amount* (and *currency* in the amount attribute @currencyID).
 
-See Criterion 31 (C31) in the https://github.com/OP-TED/ESPD-EDM/blob/v4.1.0/criterion/ESPD-criterion.xlsx[Criterion File]
+See Criterion 32 (C32) in the https://github.com/OP-TED/ESPD-EDM/blob/v4.1.0/criterion/ESPD-criterion.xlsx[Criterion File]
 
 === XML Example
 
@@ -282,28 +282,28 @@ As for the specific yearly turnover, in the specific average turnover the buyer 
 
 image:Spec-aver-year-turn-CA.jpg['Specific average turnover' buyer mock-up,width=566,height=209]
 
-_Figure 16. 'Specific average turnover' Buyer mock-up_
+_Figure 10. 'Specific average turnover' Buyer mock-up_
 
 === Mock-up - economic operator perspective
 
 image:spec-aver-year-turn-EO.jpg['Specific average turnover' EO mock-up,width=566,height=204]
 
-_Figure 17. 'Specific average turnover' EO mock-up_
+_Figure 11. 'Specific average turnover' EO mock-up_
 
 === Data Structure
 
 Notice that this  *specific average turnover* structure is *'practically identical'* to the data structure of the *specific yearly turnover* criterion. The only difference is that the *cardinality of the amount is 1* (instead of 1..n).
 
-See Criterion 32 (C32) in the https://github.com/OP-TED/ESPD-EDM/blob/v4.0.0/criterion/ESPD-criterion.xlsx[Criterion File]
+See Criterion 31 (C31) in the https://github.com/OP-TED/ESPD-EDM/blob/v4.1.0/criterion/ESPD-criterion.xlsx[Criterion File]
 
 
 === XML Example
 
 The xml of the criterion is best viewed directly in the xml examples made available in release v4.0 on GitHub:
 
-https://github.com/OP-TED/ESPD-EDM/blob/v4.0.0/xml-examples/ESPD-Request.xml#L3841
+https://github.com/OP-TED/ESPD-EDM/blob/v4.1.0/xml-examples/ESPD-Request.xml#L3841
 
-https://github.com/OP-TED/ESPD-EDM/blob/v4.0.0/xml-examples/ESPD-Response.xml#L3855
+https://github.com/OP-TED/ESPD-EDM/blob/v4.1.0/xml-examples/ESPD-Response.xml#L3855
 
 
 
@@ -320,11 +320,11 @@ See formal requirements related to 'Turnover' criteria ESPD in the xref:bis41.ad
 
 === Mock-ups - buyer  perspective
 
-_'Financial ratio' buyer mock-up_
-
 The buyer  has selected the financial ratio as one of the selection criteria that will go into the ESPD Request document:
 
 image:Financial ratio_CA mockup.jpg['Financial ratio' buyer mock-up,width=623,height=137]
+
+_Figure 12. 'Financial ratio' buyer mock-up_
 
 In ESPD the buyer  specifies procurement procedure-specific requirements, see data structure below.
 
@@ -334,7 +334,7 @@ The economic operator does only have to provide the numeric value for the financ
 
 image:Financial_ratio_EO_mock-up.jpg['Financial ratio' EO mock-up,width=454,height=279]
 
-_Figure 19. 'Financial ratio' EO mock-up_
+_Figure 13. 'Financial ratio' EO mock-up_
 
 === Data Structure
 
@@ -346,16 +346,16 @@ REQUIREMENT(s) specified by the buyers can be place outside a group of QUESTION(
 
 //Notice how the spreadsheet has been used to specify the three different financial ratios of the above mock-up example: the XML example below was produced using a XSL-T transformation link:{url-tree}/xml-examples/\\__xslt__/ODS-Data-Structures-to-ESPD-XML/ESPDRequest-Annotated.xslt[ESPDRequest-Annotated] that takes the link:{url-tree}/xml-examples/ESPD-criterion.xml[ESPD-criterion] and produced the link:{url-tree}/xml-examples/ESPD-Request.xml[ESPD-Request].
 
-See Criterion 34 (C34) in the https://github.com/OP-TED/ESPD-EDM/blob/v4.0.0/criterion/ESPD-criterion.xlsx[Criterion File]
+See Criterion 34 (C34) in the https://github.com/OP-TED/ESPD-EDM/blob/v4.1.0/criterion/ESPD-criterion.xlsx[Criterion File]
 
 
 === XML Example
 
 The xml of the criterion is best viewed directly in the xml examples made available in release v4.0 on GitHub:
 
-https://github.com/OP-TED/ESPD-EDM/blob/v4.0.0/xml-examples/ESPD-Request.xml#L4261
+https://github.com/OP-TED/ESPD-EDM/blob/v4.1.0/xml-examples/ESPD-Request.xml#L4261
 
-https://github.com/OP-TED/ESPD-EDM/blob/v4.0.0/xml-examples/ESPD-Response.xml#L4275
+https://github.com/OP-TED/ESPD-EDM/blob/v4.1.0/xml-examples/ESPD-Response.xml#L4275
 
 ////
 
@@ -392,13 +392,13 @@ For both situations (Lots and Lot): The buyer can require data from the economic
 
 image:Risk_indemnity_insurance_CA_requirements_edition_oneLot.jpg['Risk indemnity insurance' Buyer REQUIREMENT(s) edition ,width=544,height=237]
 
-_Figure 21. 'Risk indemnity insurance' Buyer REQUIREMENT(s) edition (Procedure with no lots, which actually means 1 Lot)_
+_Figure 14. 'Risk indemnity insurance' Buyer REQUIREMENT(s) edition (Procedure with no lots, which actually means 1 Lot)_
 
 When the procedure is divided into Lots: The buyer can specify the Lots one particular insurance applies to.
 
 image:Risk_indemnity_insurance_CA_requirements_edition_Lots.jpg[Risk indemnity insurance' Buyer REQUIREMENT(s) edition (Procedure with more than one Lot),width=580,height=590]
 
-_Figure 22. 'Risk indemnity insurance' Buyer REQUIREMENT(s) edition (Procedure with more than one Lot)._
+_Figure 15. 'Risk indemnity insurance' Buyer REQUIREMENT(s) edition (Procedure with more than one Lot)._
 
 === Mock-up - economic operator perspective
 
@@ -406,7 +406,7 @@ The only data the economic operator needs to provide is the amount covered by th
 
 image:Economic_operator_indemnity_insurance_mock-up.jpg['Economic operator indemnity insurance' EO mock-up,width=565,height=368]
 
-_Figure 23. 'Economic operator indemnity insurance' EO mock-up_
+_Figure 16. 'Economic operator indemnity insurance' EO mock-up_
 
 Note that the EO should provide an answer (ESPD Response) for every Lot that tenders. Meaning that if the Selection Criteria applies to different Lots (as can be read in the mockup), the EO should submit the data for the number of lots that apply.
 
@@ -424,7 +424,7 @@ This structure is quite particular. Notice that:
 The XML example below illustrates this. 
 
 
-See Criterion 35 (C35) in the https://github.com/OP-TED/ESPD-EDM/blob/v4.0.0/criterion/ESPD-criterion.xlsx[Criterion File]
+See Criterion 35 (C35) in the https://github.com/OP-TED/ESPD-EDM/blob/v4.1.0/criterion/ESPD-criterion.xlsx[Criterion File]
 
 
 === XML Example
