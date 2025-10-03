@@ -7,10 +7,10 @@
 
 This section contains the OUC Meeting Reports and Annual Seminar documents. All the documentation can be accessed by expanding the different options in the navigation menu on the left.
 
-Next OUC meetings:
-
-- 2nd October 2025 (Thursday), *Confirmed*
-
+//Next OUC meetings:
+//
+//- 2nd October 2025 (Thursday), *Confirmed*
+//
 Next Annual Seminar:
 
 - 27th-28th November 2025 (Thursday-Friday), in hybrid format in Luxembourg and online, *Confirmed (link:https://ted.europa.eu/en/news#8298600[TED-together])*
