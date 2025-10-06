@@ -467,7 +467,7 @@ The economic operator, in its view, sees all the requirements defined by the buy
 
 image:Other_economic_financial_requirements_EO mock-up.jpg['Other economic or financial requirements' EO mock-up,width=587,height=278]
 
-_Figure 25. 'Other economic or financial requirements' EO mock-up_
+_Figure 17. 'Other economic or financial requirements' EO mock-up_
 
 Note that the EO should provide an answer (ESPD Response) for every Lot that tenders. Meaning that if the Selection Criteria applies to different Lots (as can be read in the mockup), the EO should submit the data for the number of lots that apply.
 
@@ -535,7 +535,7 @@ For the ESPD, the buyer can specify these REQUIREMENT(s):
 
 image:References_CA_REQUIREMENT-edition mock-up.jpg[References' buyer REQUIREMENT(s) edition mock-up,width=548,height=384]
 
-_Figure 27. 'References' buyer REQUIREMENT(s) edition mock-up_
+_Figure 18. 'References' buyer REQUIREMENT(s) edition mock-up_
 
 === Mock-ups - economic operator perspective
 
@@ -547,7 +547,7 @@ _Figure 27. 'References' buyer REQUIREMENT(s) edition mock-up_
 
 image:References_EO-mock-up.jpg[References' EO mock-up,width=431,height=484]
 
-_Figure 28. 'References' EO mock-up_
+_Figure 19. 'References' EO mock-up_
 
 
 [NOTE]
