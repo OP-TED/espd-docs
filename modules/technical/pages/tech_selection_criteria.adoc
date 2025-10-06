@@ -779,9 +779,9 @@ See Criterion 49 (C49) in the https://github.com/OP-TED/ESPD-EDM/blob/v4.1.0/cri
 
 The xml of the criterion is best viewed directly in the xml examples made available in release v4.0 on GitHub:
 
-https://github.com/OP-TED/ESPD-EDM/blob/v4.0.0/xml-examples/ESPD-Request.xml#L7095
+https://github.com/OP-TED/ESPD-EDM/blob/v4.1.0/xml-examples/ESPD-Request.xml#L7095
 
-https://github.com/OP-TED/ESPD-EDM/blob/v4.0.0/xml-examples/ESPD-Response.xml#L7109
+https://github.com/OP-TED/ESPD-EDM/blob/v4.1.0/xml-examples/ESPD-Response.xml#L7109
 
 
 
@@ -802,7 +802,7 @@ The buyer selects the criterion to be included in the ESPD Request:
 
 image:Subcontracting proportion_CA_mock-up.jpg['Subcontracting proportion' buyer mock-up,width=631,height=117]
 
-_Figure 39. 'Subcontracting proportion' buyer mock-up_
+_Figure 24. 'Subcontracting proportion' buyer mock-up_
 
 === Mock-ups - economic operator perspective
 
@@ -810,12 +810,12 @@ The economic operator has to provide a descriptive response in a free-text field
 
 image:Subcontracting proportion_EO_mock-up.jpg['Subcontracting proportion' EO mock-up,width=613,height=110]
 
-_Figure 40. 'Subcontracting proportion' EO mock-up_
+_Figure 25. 'Subcontracting proportion' EO mock-up_
 
 === Data Structure
 
-See Criterion 51 (C51) in the https://github.com/OP-TED/ESPD-EDM/blob/v4.0.0/criterion/ESPD-criterion.xlsx[Criterion File]
-https://github.com/OP-TED/ESPD-EDM/blob/v4.0.0/xml-examples/ESPD-Response.xml#L7427
+See Criterion 51 (C51) in the https://github.com/OP-TED/ESPD-EDM/blob/v4.1.0/criterion/ESPD-criterion.xlsx[Criterion File]
+https://github.com/OP-TED/ESPD-EDM/blob/v4.1.0/xml-examples/ESPD-Response.xml#L7427
 
 
 
@@ -836,7 +836,7 @@ The buyer selects the criteria that have to be included in the ESPD Request, e.g
 
 image:Samples_certificates_CA mock-up.jpg['Samples and certificates' buyer mock-up,width=642,height=134]
 
-_Figure 42. 'Samples and certificates' buyer mock-up_
+_Figure 26. 'Samples and certificates' buyer mock-up_
 
 === Mock-ups - economic operator perspective
 
@@ -844,13 +844,13 @@ The economic operator only has to answer *Yes* or *No*. The GUI does not react i
 
 image:Samples_certificates_EO_mock-up.jpg['Samples and certificates' EO mock-up,width=540,height=165]
 
-_Figure 43. 'Samples and certificates' EO mock-up_
+_Figure 27. 'Samples and certificates' EO mock-up_
 
 === Data Structure
 
 
 
-See Criterion 52 (C52) in the https://github.com/OP-TED/ESPD-EDM/blob/v4.0.0/criterion/ESPD-criterion.xlsx[Criterion File]
+See Criterion 52 (C52) in the https://github.com/OP-TED/ESPD-EDM/blob/v4.1.0/criterion/ESPD-criterion.xlsx[Criterion File]
 
 
 
@@ -858,9 +858,9 @@ See Criterion 52 (C52) in the https://github.com/OP-TED/ESPD-EDM/blob/v4.0.0/cri
 
 The xml of the criterion is best viewed directly in the xml examples made available in release v4.0 on GitHub:
 
-https://github.com/OP-TED/ESPD-EDM/blob/v4.0.0/xml-examples/ESPD-Request.xml#L7530
+https://github.com/OP-TED/ESPD-EDM/blob/v4.1.0/xml-examples/ESPD-Request.xml#L7530
 
-https://github.com/OP-TED/ESPD-EDM/blob/v4.0.0/xml-examples/ESPD-Response.xml#L7544
+https://github.com/OP-TED/ESPD-EDM/blob/v4.1.0/xml-examples/ESPD-Response.xml#L7544
 
 
 == Quality assurance
@@ -875,7 +875,7 @@ In ESPD the buyer can specify a REQUIREMENT. In this example it provides the nam
 
 image:Quality_Assurance schemes_environmental_management_stand_CA.jpg['Quality Assurance schemes and environmental management standards' buyer mock-up,width=468,height=273]
 
-_Figure 45. 'Quality Assurance schemes and environmental management standards' buyer mock-up_
+_Figure 28. 'Quality Assurance schemes and environmental management standards' buyer mock-up_
 
 === Mock-ups - economic operator perspective
 
@@ -885,7 +885,7 @@ When the EO answers *Yes* it will be asked whether online evidences are availabl
 
 image:Quality_Assurance schemes_environmental_management_stand.jpg[Quality Assurance schemes and environmental management standards' EO mock-up,width=500,height=293]
 
-_Figure 46.'Quality Assurance schemes and environmental management standards' EO mock-up_
+_Figure 29.'Quality Assurance schemes and environmental management standards' EO mock-up_
 
 === Data Structure
 
@@ -898,16 +898,16 @@ Notice the following:
 
 
 
-See Criterion 54 (C54) in the https://github.com/OP-TED/ESPD-EDM/blob/v4.0.0/criterion/ESPD-criterion.xlsx[Criterion File]
+See Criterion 54 (C54) in the https://github.com/OP-TED/ESPD-EDM/blob/v4.1.0/criterion/ESPD-criterion.xlsx[Criterion File]
 
 
 === XML Example
 
 The xml of the criterion is best viewed directly in the xml examples made available in release v4.0 on GitHub:
 
-https://github.com/OP-TED/ESPD-EDM/blob/v4.0.0/xml-examples/ESPD-Request.xml#L7764
+https://github.com/OP-TED/ESPD-EDM/blob/v4.1.0/xml-examples/ESPD-Request.xml#L7764
 
-https://github.com/OP-TED/ESPD-EDM/blob/v4.0.0/xml-examples/ESPD-Response.xml#L7778
+https://github.com/OP-TED/ESPD-EDM/blob/v4.1.0/xml-examples/ESPD-Response.xml#L7778
 
 
 
@@ -932,16 +932,13 @@ However, in this version of the ESPD-EDM he behaviour of this criterion is linke
 === Data structure
 
 
-See Criterion 57 (C57) onwards in the https://github.com/OP-TED/ESPD-EDM/blob/v4.0.0/criterion/ESPD-criterion.xlsx[Criterion File]
+See Criterion 57 (C57) onwards in the https://github.com/OP-TED/ESPD-EDM/blob/v4.1.0/criterion/ESPD-criterion.xlsx[Criterion File]
 
 === XML example (ESPD-Request)
 
 The xml of the group of criteria is best viewed directly in the xml examples made available in release v4.0 on GitHub:
 
-https://github.com/OP-TED/ESPD-EDM/blob/v4.0.0/xml-examples/ESPD-Request.xml#L8574
+https://github.com/OP-TED/ESPD-EDM/blob/v4.1.0/xml-examples/ESPD-Request.xml#L8574
 
-https://github.com/OP-TED/ESPD-EDM/blob/v4.0.0/xml-examples/ESPD-Response.xml#L8588
-
-
-
+https://github.com/OP-TED/ESPD-EDM/blob/v4.1.0/xml-examples/ESPD-Response.xml#L8588
 
