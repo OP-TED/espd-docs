@@ -646,7 +646,7 @@ Note that in this version of ESPD there are not weights to keep the model as sim
 
 image:Abilities_I_CA_req_mock-up.jpg['Abilities (I)' buyer REQUIREMENT mock-up,width=565,height=328]
 
-_Figure 30. 'Abilities (I)' buyer REQUIREMENT edition mock-up_
+_Figure 20. 'Abilities (I)' buyer REQUIREMENT edition mock-up_
 
 === Mock-ups - economic operator perspective
 
@@ -654,21 +654,21 @@ As you see from the mock-up below the economic operator can add and remove techn
 
 image:Abilities_I_EO_mock-up.jpg['Abilities (I)' EO mock-up,width=505,height=463]
 
-_Figure 31. 'Abilities (I)' EO mock-up_
+_Figure 21. 'Abilities (I)' EO mock-up_
 
 === Data Structure
 
 
-See Criterion 40 (C40) in the https://github.com/OP-TED/ESPD-EDM/blob/v4.0.0/criterion/ESPD-criterion.xlsx[Criterion File]
+See Criterion 40 (C40) in the https://github.com/OP-TED/ESPD-EDM/blob/v4.1.0/criterion/ESPD-criterion.xlsx[Criterion File]
 
 
 === XML Example
 
 The xml of the criterion is best viewed directly in the xml examples made available in release v4.0 on GitHub:
 
-https://github.com/OP-TED/ESPD-EDM/blob/v4.0.0/xml-examples/ESPD-Request.xml#L5445
+https://github.com/OP-TED/ESPD-EDM/blob/v4.1.0/xml-examples/ESPD-Request.xml#L5445
 
-https://github.com/OP-TED/ESPD-EDM/blob/v4.0.0/xml-examples/ESPD-Response.xml#L5459
+https://github.com/OP-TED/ESPD-EDM/blob/v4.1.0/xml-examples/ESPD-Response.xml#L5459
 
 
 === Abilities (II) - Facilities
@@ -676,23 +676,23 @@ https://github.com/OP-TED/ESPD-EDM/blob/v4.0.0/xml-examples/ESPD-Response.xml#L5
 === Data Structure
 
 
-See Criterion 42 (C42) in the https://github.com/OP-TED/ESPD-EDM/blob/v4.0.0/criterion/ESPD-criterion.xlsx[Criterion File]
+See Criterion 42 (C42) in the https://github.com/OP-TED/ESPD-EDM/blob/v4.1.0/criterion/ESPD-criterion.xlsx[Criterion File]
 
 
 === XML Example
 
 The xml of the criterion is best viewed directly in the xml examples made available in release v4.0 on GitHub:
 
-https://github.com/OP-TED/ESPD-EDM/blob/v4.0.0/xml-examples/ESPD-Request.xml#L5961
+https://github.com/OP-TED/ESPD-EDM/blob/v4.1.0/xml-examples/ESPD-Request.xml#L5961
 
-https://github.com/OP-TED/ESPD-EDM/blob/v4.0.0/xml-examples/ESPD-Response.xml#L5975
+https://github.com/OP-TED/ESPD-EDM/blob/v4.1.0/xml-examples/ESPD-Response.xml#L5975
 
 === Abilities (III) - Education
 
 === Data Structure
 
 
-See Criterion 47 (C47) in the https://github.com/OP-TED/ESPD-EDM/blob/v4.0.0/criterion/ESPD-criterion.xlsx[Criterion File]
+See Criterion 47 (C47) in the https://github.com/OP-TED/ESPD-EDM/blob/v4.1.0/criterion/ESPD-criterion.xlsx[Criterion File]
 
 
 
@@ -717,9 +717,9 @@ ESCO is legally supported by the link:https://eur-lex.europa.eu/legal-content/EN
 
 The xml of the criterion is best viewed directly in the xml examples made available in release v4.0 on GitHub:
 
-https://github.com/OP-TED/ESPD-EDM/blob/v4.0.0/xml-examples/ESPD-Request.xml#L6731
+https://github.com/OP-TED/ESPD-EDM/blob/v4.1.0/xml-examples/ESPD-Request.xml#L6731
 
-https://github.com/OP-TED/ESPD-EDM/blob/v4.0.0/xml-examples/ESPD-Response.xml#L6745
+https://github.com/OP-TED/ESPD-EDM/blob/v4.1.0/xml-examples/ESPD-Response.xml#L6745
 
 
 
@@ -733,15 +733,15 @@ The buyer (CA) can specify none, one or several REQUIREMENT(s). In this case a R
 
 image:Special_requirements_check_CA_mock-up.jpg['Checks' buyer REQUIREMENT mock-up,width=524,height=213]
 
-_Figure 35.  Special requirements check buyer REQUIREMENT edition mock-up_
+_Figure 22.  Special requirements check buyer REQUIREMENT edition mock-up_
 
 === Mock-ups - economic operator perspective
 
 The EO should see as many boxes (groups) of REQUIREMENT + QUESTION as REQUIREMENT(s) specified by the CA. In this case the economic operator (EO) sees one REQUIREMENT associated to one QUESTION. The expected answer is *Yes* or *No*.
 
-image:Special_requirements_check' EO_mock-up.jpg[Special requirements check' EO mock-up,width=636,height=122]
+image:Special_requirements_check_EO_mock-up.jpg[Special requirements check EO mock-up,width=636,height=122]
 
-_Figure 36. 'Special requirements check' EO mock-up_
+_Figure 23. 'Special requirements check' EO mock-up_
 
 === Data Structure
 
@@ -753,15 +753,15 @@ The data structure below shows how this criterion is organised. Notice the follo
 . At least one REQUIREMENT group will always be created. If the buyer specified more than one REQUIREMENT(s), more groups of REQUIREMENT + QUESTION would be added to the ESPD Request XML instance.
 . If not specific REQUIREMENT is issued by the CA, the REQUIREMENT group should equally be created and the REQUIREMENT value should be replaced with a literal (e.g. 'No specific requirements').
 
-See Criterion 48 (C48) in the https://github.com/OP-TED/ESPD-EDM/blob/v4.0.0/criterion/ESPD-criterion.xlsx[Criterion File]
+See Criterion 48 (C48) in the https://github.com/OP-TED/ESPD-EDM/blob/v4.1.0/criterion/ESPD-criterion.xlsx[Criterion File]
 
 === XML Example
 
 The xml of the criterion is best viewed directly in the xml examples made available in release v4.0 on GitHub:
 
-https://github.com/OP-TED/ESPD-EDM/blob/v4.0.0/xml-examples/ESPD-Request.xml#L6952
+https://github.com/OP-TED/ESPD-EDM/blob/v4.1.0/xml-examples/ESPD-Request.xml#L6952
 
-https://github.com/OP-TED/ESPD-EDM/blob/v4.0.0/xml-examples/ESPD-Response.xml#L6966
+https://github.com/OP-TED/ESPD-EDM/blob/v4.1.0/xml-examples/ESPD-Response.xml#L6966
 
 
 
@@ -772,7 +772,7 @@ https://github.com/OP-TED/ESPD-EDM/blob/v4.0.0/xml-examples/ESPD-Response.xml#L6
 
 
 
-See Criterion 49 (C49) in the https://github.com/OP-TED/ESPD-EDM/blob/v4.0.0/criterion/ESPD-criterion.xlsx[Criterion File]
+See Criterion 49 (C49) in the https://github.com/OP-TED/ESPD-EDM/blob/v4.1.0/criterion/ESPD-criterion.xlsx[Criterion File]
 
 
 === XML Example
