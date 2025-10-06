@@ -1,0 +1,101 @@
+== Open User Community Meeting Report
+
+== Publications Office – ESPD EDM
+
+[cols=","]
+|===
+|Meeting Date/Time: |2025-10-02, 10.00 - 11.00
+|===
+
+[cols=",",options="header"]
+|===
+|*Attendee Name* |*Organisation / Country*
+|Paloma ARILLO ARANDA |OP 
+|Teodor BOROV |Bulgaria
+|Marilena CRISTEA |ANAP - Romania
+|Michaël DE WINNE |BOSA - Belgium 
+|Aleksandra JESENOVEC LJUBOJEVIĆ |Slovenia 
+|Ajda KONSTANJŠEK  |Slovenia 
+|Srđan KRASIĆ |OP 
+|Ana MITKOVA |Bulgaria
+|Jil MOSAR |Luxembourg 
+|Marc Christopher SCHMIDT |DG GROW 
+|Giampaolo SELLITO |ANAC - Italy
+|Dragoș STOICA |OP 
+|===
+
+== Meeting Agenda
+
+[arabic]
+. Summary OUC 17th June 2025
+. GitHub status
+. ESPD-EDM v4.1.0
+. Business Rules - new approach
+. Open discussion: relied upon entity
+. Next steps
+. Next meetings & AOB
+
+:sectnums:
+:sectnumlevels: 4
+
+== Summary OUC meeting 17th June 2025
+
+* The main topics discussed in June were summarised:
+** What's new in the ESPD Model for Q1 and Q2 2025.
+** GitHub status: open and closed tickets.
+** Insights from Belgium’s Implementation of Version 3.
+** Next steps.
+
+== GitHub status
+
+* ESPD-EDM team informed about good news: the backlog is completely cleaned-up, there are no open tickets.
+* Three tickets have been closed since the last meeting:
+** https://github.com/OP-TED/ESPD-EDM/issues/427[#427] (++[++Question++]++: v.4.0.0, Part IV: Selection criteria, Point C: Technical and professional ability).
+** https://github.com/OP-TED/ESPD-EDM/issues/426[#426] (++[++Question++]++: Selection criteria).
+** https://github.com/OP-TED/ESPD-EDM/issues/425[#425] (++[++Question++]++: SUBCRITERION QUESTION should not be mandatory).
+* All issues are part of incoming v4.1.0 release, the solutions are incorporated in new data model. Particularly, #427 will be discussed as separated point in Open discussion: relied upon entity.
+
+== ESPD-EDM v4.1.0
+
+* The new release v4.1.0 was presented as a central part of the meeting. The list of the model changes was reviewed with details:
+** SUBCRITERION simplification is similar to LEGISLATION in ESPD-EDM.
+** For the Economic Operator the National Legislation text will be displayed.
+** Links to evidence models – if available in eCertis.
+* As an example, was presented the UI Mockup with EG Participation in a criminal organisation in Slovenian National Legislation and EU legislation extracted from eCertis.
+* Part IV Selection Criteria (C: Technical and professional ability) the relied upon entities was added in: “For works contracts: performance of works of the specified type”, “For supply contracts: performance of deliveries of the specified type.” and “For service contracts: performance of services of the specified type.”
+* Evidence block will be promoted at top level so that the Economic Operator can provide the link to the electronic evidence.
+
+== Business Rules – new approach
+
+* ESPD-EDM team presented the ongoing work on Business Rules.
+* Aligning with eForms Business Rules style.
+** Identifying common code lists from EU Vocabulary.
+** Defining Business Groups and Business Terms.
+** Identifying Fields and their UBL mapping.
+** Defining Business Rules.
+* ESPD-EDM specific rules:
+** ESPD Document structure.
+** Mapping of Criteria to ESPD Document structure.
+* OUC is invited to get involved in Business Rules creation and improvement.
+
+== Open discussion: relied upon entity
+
+* Part IV Selection Criteria and the relied upon entity.
+** Should each Selection Criterion contain the part where the relied upon entity can be specified?
+* In ESPD-EDM v4.1.0 some Selection Criteria have the block for specifying the information about relied upon entities.
+* Future versions of ESPD-EDM (v5.x.x) will systematically contain the block for relied upon entities in Selection Criteria.
+* Conclusions:
+** “Relied upon” element will be added in all criteria in a future release.
+** The 2^nd^ question (yes/no element) to be removed from the block.
+
+== Next steps
+
+* V4.1.0 release will be available for October 2025 with all announced changes included: moving Evidence block at top level for all Criteria; Subcriterion simplification; ESPD-EDM documentation.
+* GitHub restructuring repositories to align with eForms and ePO.
+* Business Rules: align with eForms.
+
+== Next meetings & AOB
+
+* The Annual Seminar will be part again of Tenders Electronic Daily event (TED Together) on 27th-28th November 2025, with other Unit’s projects: eForms, eSenders, eProcurement Ontology and others. More information about TED events can be found in https://ted.europa.eu/en/2025-event-calendar[event calendar].
+* The next OUC meeting is planned for Q1 2026.
+* During an open and dynamic discussion at the end of the meeting, OUC colleagues were interested in a new approach to Business Rules. ESPD-EDM team explained the new approach in more detail.

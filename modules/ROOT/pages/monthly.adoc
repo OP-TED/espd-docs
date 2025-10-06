@@ -8,7 +8,7 @@
 
 === 2025-10-02
 *** link:https://github.com/OP-TED/espd-docs/blob/wgm-reports/modules/ROOT/attachments/ESPD_OUC_Meetings_Slides_20251002.pdf[39th OUC Presentation] 
-//*** xref:20250617_OUC meeting report.adoc[38th OUC Report]
+*** xref:20251002_OUC meeting report.adoc[39th OUC Report]
 
 === 2025-06-17
 *** link:https://github.com/OP-TED/espd-docs/blob/wgm-reports/modules/ROOT/attachments/ESPD_OUC_Meetings_Slides_20250617.pdf[38th OUC Presentation] 
