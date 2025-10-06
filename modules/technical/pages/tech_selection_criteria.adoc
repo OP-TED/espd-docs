@@ -646,7 +646,7 @@ Note that in this version of ESPD there are not weights to keep the model as sim
 
 image:Abilities_I_CA_req_mock-up.jpg['Abilities (I)' buyer REQUIREMENT mock-up,width=565,height=328]
 
-_Figure 30. 'Abilities (I)' buyer REQUIREMENT edition mock-up_
+_Figure 20. 'Abilities (I)' buyer REQUIREMENT edition mock-up_
 
 === Mock-ups - economic operator perspective
 
@@ -654,7 +654,7 @@ As you see from the mock-up below the economic operator can add and remove techn
 
 image:Abilities_I_EO_mock-up.jpg['Abilities (I)' EO mock-up,width=505,height=463]
 
-_Figure 31. 'Abilities (I)' EO mock-up_
+_Figure 21. 'Abilities (I)' EO mock-up_
 
 === Data Structure
 
@@ -733,15 +733,15 @@ The buyer (CA) can specify none, one or several REQUIREMENT(s). In this case a R
 
 image:Special_requirements_check_CA_mock-up.jpg['Checks' buyer REQUIREMENT mock-up,width=524,height=213]
 
-_Figure 35.  Special requirements check buyer REQUIREMENT edition mock-up_
+_Figure 22.  Special requirements check buyer REQUIREMENT edition mock-up_
 
 === Mock-ups - economic operator perspective
 
 The EO should see as many boxes (groups) of REQUIREMENT + QUESTION as REQUIREMENT(s) specified by the CA. In this case the economic operator (EO) sees one REQUIREMENT associated to one QUESTION. The expected answer is *Yes* or *No*.
 
-image:Special_requirements_check' EO_mock-up.jpg[Special requirements check' EO mock-up,width=636,height=122]
+image:Special_requirements_check_EO_mock-up.jpg[Special requirements check EO mock-up,width=636,height=122]
 
-_Figure 36. 'Special requirements check' EO mock-up_
+_Figure 23. 'Special requirements check' EO mock-up_
 
 === Data Structure
 
