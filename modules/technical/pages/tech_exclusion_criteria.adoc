@@ -121,7 +121,7 @@ This other screen-capture below represents a possible mock-up, from the buyer pe
 
 image:Payment_Taxes_REQUIREMENT_edition_CA.jpg['Payment of Taxes', REQUIREMENT edition,width=419,height=424]
 
-_Figure 3. 'Payment of Taxes', REQUIREMENT edition (Buyer Perspective)_
+_Figure 2. 'Payment of Taxes', REQUIREMENT edition (Buyer Perspective)_
 
 === Mock-ups - economic operator perspective
 
@@ -134,7 +134,7 @@ This mock-up does not show the national criteria. Here it is presumed that *in a
 
 image:Payment_Taxes_EO_perspective.jpg['Payment of Taxes', EO perspective,width=656,height=395]
 
-_Figure 4. 'Payment of Taxes', (EO perspective)_
+_Figure 3. 'Payment of Taxes', (EO perspective)_
 
 === Data structure
 
@@ -178,7 +178,7 @@ Category ''Social'' encompasses criteria with identical data structures, classif
 
 image:Environmental_Law_criterion mock-up_CA_perspective.jpg['Environmental Law' criterion mock-up buyer perspective,width=606,height=321]
 
-_Figure 61. 'Environmental Law' criterion mock-up - buyer perspective_
+_Figure 4. 'Environmental Law' criterion mock-up - buyer perspective_
 
 === Mock-ups - economic operator perspective
 
@@ -189,7 +189,7 @@ This mock-up does not show the national criteria. Here it is presumed that *by a
 
 image:Environmental_Law_criterion_mockup_EO perspective.jpg['Environmental Law' criterion mock-up - EO perspective,width=642,height=354]
 
-_Figure 6. 'Environmental Law' criterion mock-up - EO perspective_
+_Figure 5. 'Environmental Law' criterion mock-up - EO perspective_
 
 === Data structure
 
@@ -219,7 +219,7 @@ See formal requirements related to exclusion grounds in the xref:bis41.adoc[BIS 
 
 image:Bankruptcy_criterion_mockup_CA_perspective.jpg['Bankruptcy' criterion mock-up - buyer perspective,width=519,height=292]
 
-_Figure 8. 'Bankruptcy' criterion mock-up - buyer perspective_
+_Figure 6. 'Bankruptcy' criterion mock-up - buyer perspective_
 
 === Mock-ups - economic operator perspective
 
@@ -230,7 +230,7 @@ This mock-up does not show the national criteria. Here it is presumed that *by a
 
 image:Bankruptcy_criterion_mockup_EO_perspective.jpg['Bankruptcy' criterion mock-up - economic operator perspective,width=554,height=312]
 
-_Figure 9. 'Bankruptcy' criterion mock-up - economic operator perspective_
+_Figure 7. 'Bankruptcy' criterion mock-up - economic operator perspective_
 
 === Data structure
 
@@ -260,7 +260,7 @@ See formal requirements related to exclusion grounds in the xref:bis41.adoc[BIS 
 
 image:Professional_misconduct_criterion mockup_CA_perspective.jpg['Professional misconduct' criterion mock-up - buyer perspective,width=642,height=141]
 
-_Figure 11. 'Professional misconduct' criterion mock-up - buyer perspective_
+_Figure 8. 'Professional misconduct' criterion mock-up - buyer perspective_
 
 === Mock-ups - economic operator perspective
 
@@ -270,7 +270,7 @@ This mock-up does not show the national criteria. Here it is presumed that *by a
 
 image:Professional_misconduct_criterion_mockup_EO_perspective.jpg['Professional misconduct' criterion mock-up - EO perspective,width=642,height=131]
 
-_Figure 12. 'Professional misconduct' criterion mock-up - economic operator perspective_
+_Figure 9. 'Professional misconduct' criterion mock-up - economic operator perspective_
 
 === Data structure
 
@@ -308,7 +308,7 @@ The second group, named ''Early termination'', is explained in a different secti
 
 image:Conflict_interest_criterion_mock-up_CA_perspective.jpg['Conflict of interest' criterion mock-up - buyer perspective,width=550,height=247]
 
-_Figure 14. 'Conflict of interest' criterion mock-up - buyer perspective_
+_Figure 10. 'Conflict of interest' criterion mock-up - buyer perspective_
 
 === Mock-ups - economic operator perspective
 
@@ -318,7 +318,7 @@ This mock-up does not show the national criteria. Here it is presumed that *by a
 
 image:Conflict_interest_criterion_mockup_EO_perspective.jpg['Conflict of interest' criterion mock-up - EO perspective,width=642,height=202]
 
-_Figure 15. 'Conflict of interest' criterion mock-up - economic operator perspective_
+_Figure 11. 'Conflict of interest' criterion mock-up - economic operator perspective_
 
 === Data structure
 
@@ -347,7 +347,7 @@ See formal requirements related to exclusion grounds in the xref:bis41.adoc[BIS 
 
 image:Early_termination_criterion_mock-up_CA_perspective.jpg['Early termination' criterion mock-up - buyer perspective,width=614,height=156]
 
-_Figure 17. 'Early termination' criterion mock-up - buyer  perspective_
+_Figure 12. 'Early termination' criterion mock-up - buyer  perspective_
 
 === Mock-ups - economic operator perspective
 
@@ -356,7 +356,7 @@ This mock-up does not show the national criteria. Here it is presumed that *by a
 
 image:Early_termination_criterion_mockup_EO_perspective.jpg['Early termination' criterion mock-up - EO perspective,width=572,height=117]
 
-_Figure 18. 'Early termination' criterion mock-up - economic operator perspective_
+_Figure 13. 'Early termination' criterion mock-up - economic operator perspective_
 
 === Data structure
 
@@ -384,7 +384,7 @@ See formal requirements related to exclusion grounds in the lxref:bis41.adoc[BIS
 
 image:Misrepresentation_criterion_mock-up_CA_perspective.jpg['Misrepresentation' criterion mock-up - buyer perspective,width=561,height=286]
 
-_Figure 20. 'Misrepresentation' criterion mock-up - buyer perspective_
+_Figure 14. 'Misrepresentation' criterion mock-up - buyer perspective_
 
 === Mock-ups - economic operator perspective
 
@@ -394,7 +394,7 @@ This mock-up does not show the national criteria. Here it is presumed that *by a
 
 image:Misrepresentation_criterion_mock-up_EO_perspective.jpg['Misrepresentation' criterion mock-up - EO perspective,width=642,height=181]
 
-_Figure 21. 'Misrepresentation' criterion mock-up - economic operator perspective_
+_Figure 15. 'Misrepresentation' criterion mock-up - economic operator perspective_
 
 [NOTE]
 ====
@@ -447,7 +447,7 @@ The figure below shows a fragment of a list of national criteria captured from e
 
 image:Purely_national_criteria_mockup_CA_perspective.jpg['Purely national criteria' mock-up - buyer perspective,width=500,height=350]
 
-_Figure 23. 'Purely natural criteria' - economic operator perspective_
+_Figure 16. 'Purely natural criteria' - economic operator perspective_
 
 === Data structure
 
