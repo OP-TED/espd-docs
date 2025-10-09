@@ -576,19 +576,19 @@ The screen-captures below illustrate how the European Commission's ESPD Service 
 
 image:Case1_first QUESTION_set_false.jpg[Case 1: When the first QUESTION ''Your Answer?'' is set to false:,width=561,height=104]
 
-_Figure 10. Case 1: When the first QUESTION ''Your Answer?'' is set to false:_
+_Figure 8. Case 1: When the first QUESTION ''Your Answer?'' is set to false_
 
 image:Case2_first QUESTION_set_true.jpg[Case 2: When the first QUESTION ''Your Answer?'' is set to true,width=514,height=280]
 
-_Figure 11. Case 2: When the first QUESTION ''Your Answer?'' is set to true:_
+_Figure 9. Case 2: When the first QUESTION ''Your Answer?'' is set to true_
 
 image:Case3_GUI_Control.jpg[Case 3: When the first QUESTION ''Your Answer?'' and the option "Has this breach of obligations been established ..." are both set to true:,width=540,height=246]
 
-_Figure12. Case 3: When the first QUESTION ''Your Answer?'' and the option "Has this breach of obligations been established ..." are both set to true:_
+_Figure 10. Case 3: When the first QUESTION ''Your Answer?'' and the option "Has this breach of obligations been established ..." are both set to true_
 
 image:Case4_GUI_Control.jpg[Case 4: When all the QUESTION(s) that are INDICATORS are set to true,width=513,height=324]
 
-_Figure 13. Case 4: When all the QUESTION(s) that are INDICATORS are set to true_
+_Figure 11. Case 4: When all the QUESTION(s) that are INDICATORS are set to true_
 
 == Radio-Button and Check-box controls
 
