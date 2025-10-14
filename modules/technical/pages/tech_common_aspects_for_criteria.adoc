@@ -187,7 +187,7 @@ xref:tbr70_reqs.adoc#list_of_criteria[tbr70-013]
 
 === XML Example
 
-The xml of the criterion is best viewed directly in the xml examples made available in release v4.0 on GitHub:
+The xml of the criterion is best viewed directly in the xml examples made available on GitHub:
 
 https://github.com/OP-TED/ESPD-EDM/blob/v4.0.0/xml-examples/ESPD-Request.xml#L97
 

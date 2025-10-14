@@ -48,7 +48,7 @@ See Criterion 1 (C1) in the https://raw.github.com/OP-TED/ESPD-EDM/v4.0.0/criter
 
 === XML Example
 
-The xml of the criterion is best viewed directly in the xml examples made available in release v4.0 on GitHub:
+The xml of the criterion is best viewed directly in the xml examples made available on GitHub:
 
 https://github.com/OP-TED/ESPD-EDM/blob/v4.0.0/xml-examples/ESPD-Request.xml#L68
 
@@ -143,7 +143,7 @@ See Criterion 7 (C7) in the https://raw.github.com/OP-TED/ESPD-EDM/v4.0.0/criter
 
 === XML Example
 
-The xml of the criterion is best viewed directly in the xml examples made available in release v4.0 on GitHub:
+The xml of the criterion is best viewed directly in the xml examples made available on GitHub:
 
 https://github.com/OP-TED/ESPD-EDM/blob/v4.0.0/xml-examples/ESPD-Request.xml#L836
 
@@ -201,7 +201,7 @@ See Criterion 9 (C9) in the https://raw.github.com/OP-TED/ESPD-EDM/v4.0.0/criter
 
 === XML Example
 
-The xml of the criterion is best viewed directly in the xml examples made available in release v4.0 on GitHub:
+The xml of the criterion is best viewed directly in the xml examples made available on GitHub:
 
 https://github.com/OP-TED/ESPD-EDM/blob/v4.0.0/xml-examples/ESPD-Request.xml#L1210
 
@@ -242,7 +242,7 @@ See Criterion 12 (C12) in the https://raw.github.com/OP-TED/ESPD-EDM/v4.0.0/crit
 
 === XML Example
 
-The xml of the criterion is best viewed directly in the xml examples made available in release v4.0 on GitHub:
+The xml of the criterion is best viewed directly in the xml examples made available on GitHub:
 
 https://github.com/OP-TED/ESPD-EDM/blob/v4.0.0/xml-examples/ESPD-Request.xml#L1498
 
@@ -282,7 +282,7 @@ See Criterion 18 (C18) in the https://raw.github.com/OP-TED/ESPD-EDM/v4.0.0/crit
 
 === XML Example
 
-The xml of the criterion is best viewed directly in the xml examples made available in release v4.0 on GitHub:
+The xml of the criterion is best viewed directly in the xml examples made available on GitHub:
 
 https://github.com/OP-TED/ESPD-EDM/blob/v4.0.0/xml-examples/ESPD-Request.xml#L2050
 
@@ -330,7 +330,7 @@ See Criterion 20 (C20) in the https://raw.github.com/OP-TED/ESPD-EDM/v4.0.0/crit
 
 === XML Example
 
-The xml of the criterion is best viewed directly in the xml examples made available in release v4.0 on GitHub:
+The xml of the criterion is best viewed directly in the xml examples made available on GitHub:
 
 https://github.com/OP-TED/ESPD-EDM/blob/v4.0.0/xml-examples/ESPD-Request.xml#L2264
 
@@ -366,7 +366,7 @@ See Criterion 22 (C22) in the https://raw.github.com/OP-TED/ESPD-EDM/v4.0.0/crit
 
 === XML Example
 
-The xml of the criterion is best viewed directly in the xml examples made available in release v4.0 on GitHub:
+The xml of the criterion is best viewed directly in the xml examples made available on GitHub:
 
 https://github.com/OP-TED/ESPD-EDM/blob/v4.0.0/xml-examples/ESPD-Request.xml#L2434
 
@@ -414,7 +414,7 @@ See Criterion 23 (C23) in the https://raw.github.com/OP-TED/ESPD-EDM/v4.0.0/crit
 
 === XML Example
 
-The xml of the criterion is best viewed directly in the xml examples made available in release v4.0 on GitHub:
+The xml of the criterion is best viewed directly in the xml examples made available on GitHub:
 
 https://github.com/OP-TED/ESPD-EDM/blob/v4.0.0/xml-examples/ESPD-Request.xml#L2541
 
@@ -459,7 +459,7 @@ See Criterion 24 (C24) in the https://raw.github.com/OP-TED/ESPD-EDM/v4.0.0/crit
 
 === XML Example
 
-The xml of the criterion is best viewed directly in the xml examples made available in release v4.0 on GitHub:
+The xml of the criterion is best viewed directly in the xml examples made available on GitHub:
 
 https://github.com/OP-TED/ESPD-EDM/blob/v4.0.0/xml-examples/ESPD-Request.xml#L2619
 
