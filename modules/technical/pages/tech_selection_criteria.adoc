@@ -40,7 +40,7 @@ In this version of ESPD, a new data structure was added to the selection criteri
 === Data structure
 
 
-To view the criteria, consult the https://github.com/OP-TED/ESPD-EDM/blob/v4.0.0/criterion/ESPD-criterion.xlsx[Criterion File]. 
+To view the criteria, consult the https://raw.github.com/OP-TED/ESPD-EDM/v4.0.0/criterion/ESPD-criterion.xlsx[Criterion File]. 
 
 == Suitability
 
@@ -63,7 +63,7 @@ A few details regarding the data structure for Suitability selection criteria:
 . It also allows the buyer to specify multiple groups of REQUIREMENT(s) (in this case to specify which registers the economic operator should be registered in).
 . Regarding the groups of questions, notice that the main question is to get confirmation from the economic operator that it fulfils the criterion (if "Yes" the economic operator is registered). In answering "No" a sub-group of one QUESTION must be shown (the one asking the economic operator to provide the reason why it is not registered in the register specified by the buyer).
 
-See Criterion 25 (C25) in the https://github.com/OP-TED/ESPD-EDM/blob/v4.0.0/criterion/ESPD-criterion.xlsx[Criterion File]
+See Criterion 25 (C25) in the https://raw.github.com/OP-TED/ESPD-EDM/v4.0.0/criterion/ESPD-criterion.xlsx[Criterion File]
 
 ==== XML Example
 
@@ -85,7 +85,7 @@ The code list 'occupation' is used to determine the area to which the EO should 
 
 === Data Structure (service contracts)
 
-See Criterion 27 (C27) in the https://github.com/OP-TED/ESPD-EDM/blob/v4.0.0/criterion/ESPD-criterion.xlsx[Criterion File]
+See Criterion 27 (C27) in the https://raw.github.com/OP-TED/ESPD-EDM/v4.0.0/criterion/ESPD-criterion.xlsx[Criterion File]
 
 ==== XML Example
 
@@ -166,7 +166,7 @@ _Figure 5. 'General Yearly Turnovers' EO mock-up_
 === Data Structure
 
 
-See Criterion 29 (C29) in the https://github.com/OP-TED/ESPD-EDM/blob/v4.0.0/criterion/ESPD-criterion.xlsx[Criterion File]
+See Criterion 29 (C29) in the https://raw.github.com/OP-TED/ESPD-EDM/v4.0.0/criterion/ESPD-criterion.xlsx[Criterion File]
 
 
 ==== XML Example
@@ -209,7 +209,7 @@ _Figure 7. 'Average yearly turnover' EO mock-up_
 
 === Data Structure
 
-See Criterion 30 (C30) in the https://github.com/OP-TED/ESPD-EDM/blob/v4.0.0/criterion/ESPD-criterion.xlsx[Criterion File]
+See Criterion 30 (C30) in the https://raw.github.com/OP-TED/ESPD-EDM/v4.0.0/criterion/ESPD-criterion.xlsx[Criterion File]
 
 
 === XML Example
@@ -264,7 +264,7 @@ Notice that:
 . The buyer does also specifies the *minimum amount* required for this specific turnover.
 . The rest of the criterion are the questions for the economic operator to answer: *period* and *amount* (and *currency* in the amount attribute @currencyID).
 
-See Criterion 32 (C32) in the https://github.com/OP-TED/ESPD-EDM/blob/v4.0.0/criterion/ESPD-criterion.xlsx[Criterion File]
+See Criterion 32 (C32) in the https://raw.github.com/OP-TED/ESPD-EDM/v4.0.0/criterion/ESPD-criterion.xlsx[Criterion File]
 
 === XML Example
 
@@ -294,7 +294,7 @@ _Figure 11. 'Specific average turnover' EO mock-up_
 
 Notice that this  *specific average turnover* structure is *'practically identical'* to the data structure of the *specific yearly turnover* criterion. The only difference is that the *cardinality of the amount is 1* (instead of 1..n).
 
-See Criterion 31 (C31) in the https://github.com/OP-TED/ESPD-EDM/blob/v4.0.0/criterion/ESPD-criterion.xlsx[Criterion File]
+See Criterion 31 (C31) in the https://raw.github.com/OP-TED/ESPD-EDM/v4.0.0/criterion/ESPD-criterion.xlsx[Criterion File]
 
 
 === XML Example
@@ -346,7 +346,7 @@ REQUIREMENT(s) specified by the buyers can be place outside a group of QUESTION(
 
 //Notice how the spreadsheet has been used to specify the three different financial ratios of the above mock-up example: the XML example below was produced using a XSL-T transformation link:{url-tree}/xml-examples/\\__xslt__/ODS-Data-Structures-to-ESPD-XML/ESPDRequest-Annotated.xslt[ESPDRequest-Annotated] that takes the link:{url-tree}/xml-examples/ESPD-criterion.xml[ESPD-criterion] and produced the link:{url-tree}/xml-examples/ESPD-Request.xml[ESPD-Request].
 
-See Criterion 34 (C34) in the https://github.com/OP-TED/ESPD-EDM/blob/v4.0.0/criterion/ESPD-criterion.xlsx[Criterion File]
+See Criterion 34 (C34) in the https://raw.github.com/OP-TED/ESPD-EDM/v4.0.0/criterion/ESPD-criterion.xlsx[Criterion File]
 
 
 === XML Example
@@ -424,7 +424,7 @@ This structure is quite particular. Notice that:
 The XML example below illustrates this. 
 
 
-See Criterion 35 (C35) in the https://github.com/OP-TED/ESPD-EDM/blob/v4.0.0/criterion/ESPD-criterion.xlsx[Criterion File]
+See Criterion 35 (C35) in the https://raw.github.com/OP-TED/ESPD-EDM/v4.0.0/criterion/ESPD-criterion.xlsx[Criterion File]
 
 
 === XML Example
@@ -484,7 +484,7 @@ Notice the following aspects from the 'other economic or financial requirements'
 * On *true* (see the group code on the right side of the data structure) three REQUIREMENT(s) will be shown to the *economic operator*: description, minimum amount and period. For this REQUIREMENT the economic operator will see all these requirements and will have to provide an amount.
 * On *false* (see the group code on the right side of the data structure) three REQUIREMENT(s) will be shown to the *economic operator*: minimum rating and rating scheme. For this REQUIREMENT the economic operator will see all these requirements and will have to provide a rating.
 
-See Criterion 36 (C36) in the https://github.com/OP-TED/ESPD-EDM/blob/v4.0.0/criterion/ESPD-criterion.xlsx[Criterion File]
+See Criterion 36 (C36) in the https://raw.github.com/OP-TED/ESPD-EDM/v4.0.0/criterion/ESPD-criterion.xlsx[Criterion File]
 
 
 
@@ -569,7 +569,7 @@ The data structure for references caters for:
 . One group of REQUIREMENT(s) for the buyer to specify the general requirements for this criterion (e.g. Lots the references apply to, minimum number of references);
 . Multiple groups (cardinality 1..n) of questions for the economic operator to answer; which in this case are multiple references to works about which the EO has to provide information and the lots the EO tenders to related to the references.
 
-See Criterion 37 (C37) in the https://github.com/OP-TED/ESPD-EDM/blob/v4.0.0/criterion/ESPD-criterion.xlsx[Criterion File]
+See Criterion 37 (C37) in the https://raw.github.com/OP-TED/ESPD-EDM/v4.0.0/criterion/ESPD-criterion.xlsx[Criterion File]
 
 
 === XML Example
@@ -659,7 +659,7 @@ _Figure 21. 'Abilities (I)' EO mock-up_
 === Data Structure
 
 
-See Criterion 40 (C40) in the https://github.com/OP-TED/ESPD-EDM/blob/v4.0.0/criterion/ESPD-criterion.xlsx[Criterion File]
+See Criterion 40 (C40) in the https://raw.github.com/OP-TED/ESPD-EDM/v4.0.0/criterion/ESPD-criterion.xlsx[Criterion File]
 
 
 === XML Example
@@ -676,7 +676,7 @@ https://github.com/OP-TED/ESPD-EDM/blob/v4.0.0/xml-examples/ESPD-Response.xml#L5
 === Data Structure
 
 
-See Criterion 42 (C42) in the https://github.com/OP-TED/ESPD-EDM/blob/v4.0.0/criterion/ESPD-criterion.xlsx[Criterion File]
+See Criterion 42 (C42) in the https://raw.github.com/OP-TED/ESPD-EDM/v4.0.0/criterion/ESPD-criterion.xlsx[Criterion File]
 
 
 === XML Example
@@ -692,7 +692,7 @@ https://github.com/OP-TED/ESPD-EDM/blob/v4.0.0/xml-examples/ESPD-Response.xml#L5
 === Data Structure
 
 
-See Criterion 47 (C47) in the https://github.com/OP-TED/ESPD-EDM/blob/v4.0.0/criterion/ESPD-criterion.xlsx[Criterion File]
+See Criterion 47 (C47) in the https://raw.github.com/OP-TED/ESPD-EDM/v4.0.0/criterion/ESPD-criterion.xlsx[Criterion File]
 
 
 
@@ -753,7 +753,7 @@ The data structure below shows how this criterion is organised. Notice the follo
 . At least one REQUIREMENT group will always be created. If the buyer specified more than one REQUIREMENT(s), more groups of REQUIREMENT + QUESTION would be added to the ESPD Request XML instance.
 . If not specific REQUIREMENT is issued by the CA, the REQUIREMENT group should equally be created and the REQUIREMENT value should be replaced with a literal (e.g. 'No specific requirements').
 
-See Criterion 48 (C48) in the https://github.com/OP-TED/ESPD-EDM/blob/v4.0.0/criterion/ESPD-criterion.xlsx[Criterion File]
+See Criterion 48 (C48) in the https://raw.github.com/OP-TED/ESPD-EDM/v4.0.0/criterion/ESPD-criterion.xlsx[Criterion File]
 
 === XML Example
 
@@ -772,7 +772,7 @@ https://github.com/OP-TED/ESPD-EDM/blob/v4.0.0/xml-examples/ESPD-Response.xml#L6
 
 
 
-See Criterion 49 (C49) in the https://github.com/OP-TED/ESPD-EDM/blob/v4.0.0/criterion/ESPD-criterion.xlsx[Criterion File]
+See Criterion 49 (C49) in the https://raw.github.com/OP-TED/ESPD-EDM/v4.0.0/criterion/ESPD-criterion.xlsx[Criterion File]
 
 
 === XML Example
@@ -814,8 +814,17 @@ _Figure 25. 'Subcontracting proportion' EO mock-up_
 
 === Data Structure
 
-See Criterion 51 (C51) in the https://github.com/OP-TED/ESPD-EDM/blob/v4.0.0/criterion/ESPD-criterion.xlsx[Criterion File]
+See Criterion 51 (C51) in the https://raw.github.com/OP-TED/ESPD-EDM/v4.0.0/criterion/ESPD-criterion.xlsx[Criterion File]
+
+
+=== XML Example
+
+The xml of the criterion is best viewed directly in the xml examples made available in release v4.0 on GitHub:
+
+https://github.com/OP-TED/ESPD-EDM/blob/v4.0.0/xml-examples/ESPD-Request.xml#L7413
+
 https://github.com/OP-TED/ESPD-EDM/blob/v4.0.0/xml-examples/ESPD-Response.xml#L7427
+
 
 
 
@@ -850,7 +859,7 @@ _Figure 27. 'Samples and certificates' EO mock-up_
 
 
 
-See Criterion 52 (C52) in the https://github.com/OP-TED/ESPD-EDM/blob/v4.0.0/criterion/ESPD-criterion.xlsx[Criterion File]
+See Criterion 52 (C52) in the https://raw.github.com/OP-TED/ESPD-EDM/v4.0.0/criterion/ESPD-criterion.xlsx[Criterion File]
 
 
 
@@ -898,7 +907,7 @@ Notice the following:
 
 
 
-See Criterion 54 (C54) in the https://github.com/OP-TED/ESPD-EDM/blob/v4.0.0/criterion/ESPD-criterion.xlsx[Criterion File]
+See Criterion 54 (C54) in the https://raw.github.com/OP-TED/ESPD-EDM/v4.0.0/criterion/ESPD-criterion.xlsx[Criterion File]
 
 
 === XML Example
@@ -932,7 +941,7 @@ However, in this version of the ESPD-EDM he behaviour of this criterion is linke
 === Data structure
 
 
-See Criterion 63 (C63) onwards in the https://github.com/OP-TED/ESPD-EDM/blob/v4.0.0/criterion/ESPD-criterion.xlsx[Criterion File]
+See Criterion 63 (C63) onwards in the https://raw.github.com/OP-TED/ESPD-EDM/v4.0.0/criterion/ESPD-criterion.xlsx[Criterion File]
 
 === XML example (ESPD-Request)
 

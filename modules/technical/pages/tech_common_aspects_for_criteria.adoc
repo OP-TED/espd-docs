@@ -62,29 +62,28 @@ xref:tbr70_reqs.adoc#list_of_criteria[tbr70-009]
 |*cbc:ID* |Identifier |1 |A language-independent token, e.g., a number, that allows to identify a criterion uniquely as well as allows to reference the criterion in other documents. a|
 *Information Requirement*: xref:tbr70_reqs.adoc#list_of_criteria[tbr70-010] .
 
-*Rule*: Each Criterion is defined in e-Certis and must use the UUID supplied by e-Certis. See also the spreadsheets https://github.com/OP-TED/ESPD-EDM/blob/main/criterion/ESPD-criterion.xlsx[_ESPD-criterion_].
+*Rule*: Each Criterion is defined in e-Certis and must use the UUID supplied by e-Certis. See also the spreadsheets https://raw.github.com/OP-TED/ESPD-EDM/v4.0.0/criterion/ESPD-criterion.xlsx[_ESPD-criterion_].
 
 *Rule scope*: Common (BR-TC-02, BR-TC-12, BR-TC-13, BR-OTH-02)
 
 |*cbc:CriterionTypeCode* |Code |1 |A classification code defined by the ESPD-EDM to represent the criterion in the ESPD taxonomy of criteria. a|
 *Information Requirement*: xref:tbr70_reqs.adoc#list_of_criteria[tbr70-013] 
 
-*Rule*: Compulsory use of codes coming from e-Certis, which are also used in the spreadsheets https://github.com/OP-TED/ESPD-EDM/blob/main/criterion/ESPD-criterion.xlsx[_ESPD-criterion_], e.g. crime-org, corruption, chain-manage
-//link:{url-tree}/codelists/ESPD-criterion.xlsx[_ESPD-criterion_], e.g. crime-org, corruption, chain-manage)
+*Rule*: Compulsory use of codes coming from e-Certis, which are also used in the spreadsheets https://raw.github.com/OP-TED/ESPD-EDM/v4.0.0/criterion/ESPD-criterion.xlsx[_ESPD-criterion_], e.g. crime-org, corruption, chain-manage
 
 *Rule scope*: Common (BR-REQ-30, BR-REQ-30-S10, BR-REQ-30-S20, BR-REQ-40, BR-TC-03, BR-TC-04, BR-OTH-01, BR-OTH-01#7, BR-OTH-03)
 
 |*cbc:Name* |Text |1 |A short and descriptive name for a criterion. a|
 *Information Requirement*: xref:tbr70_reqs.adoc#list_of_criteria[tbr70-010]] 
 
-*Rule*: The name should match the one from e-Certis, which should be the same as in the in the spreadsheets https://github.com/OP-TED/ESPD-EDM/blob/main/criterion/ESPD-criterion.xlsx[_ESPD-criterion_], e.g. 'Convictions', 'Corruption', 'Fraud', 'Financial ratio', 'Subcontracting proportion'etc.).
+*Rule*: The name should match the one from e-Certis, which should be the same as in the in the spreadsheets https://raw.github.com/OP-TED/ESPD-EDM/v4.0.0/criterion/ESPD-criterion.xlsx[_ESPD-criterion_], e.g. 'Convictions', 'Corruption', 'Fraud', 'Financial ratio', 'Subcontracting proportion'etc.).
 
 *Rule scope*: Common (BR-TC-05)
 
 |*cbc:Description* |Text |1..n |An extended description of the criterion. a|
 *Information Requirement*: xref:tbr70_reqs.adoc#list_of_criteria[tbr70-010]] 
 
-*Rule*: The description should match the one from e-Certis, which should be the same as in the in the spreadsheets  https://github.com/OP-TED/ESPD-EDM/blob/main/criterion/ESPD-criterion.xlsx[_ESPD-criterion_], e.g. 'Has the economic operator itself or any person who is a member of its administrative, management or supervisory body or has powers of representation, decision or control therein been the subject of a conviction by final judgment for participation in a criminal organisation, by a conviction rendered at the most five years ago or in which an exclusion period set out directly in the conviction continues to be applicable? As defined in Article 2 of Council Framework Decision 2008/841/JHA of 24 October 2008 on the fight against organised crime (OJ L 300, 11.11.2008, p. 42).'.
+*Rule*: The description should match the one from e-Certis, which should be the same as in the in the spreadsheets  https://raw.github.com/OP-TED/ESPD-EDM/v4.0.0/criterion/ESPD-criterion.xlsx[_ESPD-criterion_], e.g. 'Has the economic operator itself or any person who is a member of its administrative, management or supervisory body or has powers of representation, decision or control therein been the subject of a conviction by final judgment for participation in a criminal organisation, by a conviction rendered at the most five years ago or in which an exclusion period set out directly in the conviction continues to be applicable? As defined in Article 2 of Council Framework Decision 2008/841/JHA of 24 October 2008 on the fight against organised crime (OJ L 300, 11.11.2008, p. 42).'.
 
 *Rule scope*: Common (BR-TC-06, BR-TC-19)
 
@@ -245,7 +244,7 @@ xref:tbr70_reqs.adoc#list_of_criteria[tbr70-013]
 
 *Rule*: Compulsory use of the UUIDs supplied by e-Certis.
 
-See also the spreadsheet https://github.com/OP-TED/ESPD-EDM/blob/main/criterion/ESPD-criterion.xlsx[_ESPD-criterion_].
+See also the spreadsheet https://raw.github.com/OP-TED/ESPD-EDM/v4.0.0/criterion/ESPD-criterion.xlsx[_ESPD-criterion_].
 
 *Rule scope*: Common (BR-TC-12, BR-OTH-02, BR-OTH-02#01)
 
@@ -457,7 +456,7 @@ The columns of the tables are to be interpreted as follows:
 ** ONTRUE, meaning "process this group only if the previous parent question (always an INDICATOR) has been answered affirmatively"
 ** ONFALSE, meaning "process this group only if the previous parent question (always an INDICATOR) has been answered negatively"
 
-To view the an example of the data structure, consult the https://github.com/OP-TED/ESPD-EDM/blob/v4.0.0/criterion/ESPD-criterion.xlsx[Criterion File]. The information will be visible in the tab "EG-Convictions", and others.
+To view the an example of the data structure, consult the https://raw.github.com/OP-TED/ESPD-EDM/v4.0.0/criterion/ESPD-criterion.xlsx[Criterion File]. The information will be visible in the tab "EG-Convictions", and others.
 
 //image:Contributions_criterion_data_structure.jpg[Contributions' criterion data structure,width=566,height=308]
 
@@ -566,7 +565,7 @@ Three codes concerning the GROUPS or SUBGROUPS of REQUIREMENT(s) and QUESTION(s)
 
 These codes are used for a software application modules to know whether it has to process a concrete GROUP or SUBGROUP. If the objective of the module is, for example, to build dynamically the Graphic User Interface (GUI) - based on the ESPD-Request or an ESPD-Response XML instance-, then a GROUP or SUBGROUP marked as ONTRUE implies that the GROUP or SUBGROUP content is to be shown, whilst the one marked as ONFALSE needs to be hidden. GROUPS and SUBGROUPS marked as ON* imply that has to be always shown. You can see this mechanism as a way of implementing ''choices'' or ''switch/cases'' inside a Criterion Data Structure.
 
-The https://github.com/OP-TED/ESPD-EDM/blob/v4.0.0/criterion/ESPD-criterion.xlsx[Criterion File] illustrates how the ONTRUE and ONFALSE SUBGROUPS of a Criterion of type "Contributions (exclusion grounds)" relate to each of its ''closer QUESTION'' of type INDICATOR. See the "element code" column.
+The https://raw.github.com/OP-TED/ESPD-EDM/v4.0.0/criterion/ESPD-criterion.xlsx[Criterion File] illustrates how the ONTRUE and ONFALSE SUBGROUPS of a Criterion of type "Contributions (exclusion grounds)" relate to each of its ''closer QUESTION'' of type INDICATOR. See the "element code" column.
 
 //image:ONTRUE_ONFALSE_choice_control.jpg[ONTRUE/ONFALSE choice control,width=557,height=230]
 
@@ -592,7 +591,7 @@ _Figure 11. Case 4: When all the QUESTION(s) that are INDICATORS are set to true
 
 == Radio-Button and Check-box controls
 
-The https://github.com/OP-TED/ESPD-EDM/blob/v4.0.0/criterion/ESPD-criterion.xlsx[Criterion File], e.g., in criterion 36, demonstrates an example of the radio button class in use.
+The https://raw.github.com/OP-TED/ESPD-EDM/v4.0.0/criterion/ESPD-criterion.xlsx[Criterion File], e.g., in criterion 36, demonstrates an example of the radio button class in use.
 
 Notice that:
 
@@ -840,7 +839,7 @@ _<!-- ... -->_
 . This UUID is identical to the UUID of the cac:TenderingCriterionProperty selected by the buyer for the QUESTION "Amount:" (see XML above).
 . The element cbc:ResponseAmount is of type "AMOUNT", as expected by the validation mechanisms.
 . The value of the amount meets the REQUIREMENT, as the amount is required to be above 10006 Euros (see XML above, notice the currencyID type value, too).
-. Beware that, contrary to other numeric types of data, AMOUNT is not semanticised and mapped to cbc:ResponseMinimumAmount nor cbc:ResponseMaximumAmount`, as in the current ESPD-EDM specification all monetary thresholds are always "minimum" (and similarly for QUANTITY or QUANTITY_INTEGER, e.g. see the REQUIREMENT ''Minimum number of years'' in criterion #49 (tab _SC-Abilities_5 (Staff)_ in the https://github.com/OP-TED/ESPD-EDM/blob/main/criterion/ESPD-criterion.xlsx[_ESPD-criterion_] spread-sheet).
+. Beware that, contrary to other numeric types of data, AMOUNT is not semanticised and mapped to cbc:ResponseMinimumAmount nor cbc:ResponseMaximumAmount`, as in the current ESPD-EDM specification all monetary thresholds are always "minimum" (and similarly for QUANTITY or QUANTITY_INTEGER, e.g. see the REQUIREMENT ''Minimum number of years'' in criterion #49 (tab _SC-Abilities_5 (Staff)_ in the https://raw.github.com/OP-TED/ESPD-EDM/v4.0.0/criterion/ESPD-criterion.xlsx[_ESPD-criterion_] spread-sheet).
 
 ==== Copy the code block
 
