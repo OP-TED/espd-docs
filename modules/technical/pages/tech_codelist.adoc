@@ -52,9 +52,7 @@ ESPD-EDM Code list contains the following elements:
 
 The link below takes you to the folder on Github containing the codelist file  where you will see how the codelist elements are organised:
 
-https://github.com/OP-TED/ESPD-EDM/tree/v4.1.0/codelists[Codelists on GitHub]
-
-_Figure 1. Elements and metadata of an ESPD code list_
+https://github.com/OP-TED/ESPD-EDM/tree/v4.0.0/codelists[Codelists on GitHub]
 
 
 //*_Annex I_* of this document lists all the code lists used by the ESPD and in which context or element it is used.
@@ -88,7 +86,7 @@ The figure below shows the complete list of attributes for the CCT CodeType comp
 
 image:Code_attributes.jpg[Code attributes,width=226,height=306]
 
-_Figure 2. Code attributes_
+_Figure 1. Code attributes_
 
 And its corresponding definitions, as provided by OASIS UBL (ISO/IEC 19845):
 
@@ -183,7 +181,7 @@ However, this ESP-EDM specification also uses the code list link:{url-tree}/code
 
 The link below takes you to the folder on Github containing the codelist file  where, in the "EOIDType" sheet, you will be able to see the possible values of this code list. These codes are to be used as values of the schemeID attribute (attribute of the UBL-2.3 element cbc:Identifier):
 
-https://github.com/OP-TED/ESPD-EDM/tree/v4.1.0/codelists[Codelists on GitHub]
+https://github.com/OP-TED/ESPD-EDM/tree/v4.0.0/codelists[Codelists on GitHub]
 
 _Figure 4. Values of the schemeID for Party Identifiers_
 
