@@ -54,8 +54,6 @@ The link below takes you to the folder on Github containing the codelist file  w
 
 https://github.com/OP-TED/ESPD-EDM/tree/v4.1.0/codelists[Codelists on GitHub]
 
-_Figure 1. Elements and metadata of an ESPD code list_
-
 
 //*_Annex I_* of this document lists all the code lists used by the ESPD and in which context or element it is used.
 
