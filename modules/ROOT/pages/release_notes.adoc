@@ -39,7 +39,7 @@ The ESPD-EDM version 4.1.0 is a minor release which focuses on the various follo
 
 === ESPD Demo site
 
-[ESPD Demo](https://docs.ted.europa.eu/espd-demo/) site to allow User Community to test and validate latest versions of ESPD before implementing the ESPD Service. This site offers the possibility for our User Community to give feedback on ESPD-EDM. The site is provided as Open Source code and is available on GitHub [GitHub ESPD Demo repository](https://github.com/OP-TED/espd-demo), more details can be found in [README file](https://github.com/OP-TED/espd-demo/blob/main/README.md).
+https://docs.ted.europa.eu/espd-demo/[ESPD Demo] site to allow User Community to test and validate latest versions of ESPD before implementing the ESPD Service. This site offers the possibility for our User Community to give feedback on ESPD-EDM. The site is provided as Open Source code and is available on GitHub https://github.com/OP-TED/espd-demo[GitHub ESPD Demo repository], more details can be found in https://github.com/OP-TED/espd-demo/blob/main/README.md[README file].
 
 === ESPD-EDM Criterion files - Data Structure 
 
@@ -68,16 +68,16 @@ Several issues have been resolved related to the data structure of the ESPD-EDM 
 
 Following Code Lists have been updated from EU Vocabularies with the latest release version: AccessRight, Country, Criterion, EconomicOperatorSize, Language, and Occupation.  
 
-ESPD version has been updated in the technical code lists files to match the current version (specific files can be found in the folder [codelists/gc](https://github.com/OP-TED/ESPD-EDM/tree/v4.1.0/codelists/gc)), for tags: Version, CanonicalURI, CanonicalVersionURI, LocationURI. 
+ESPD version has been updated in the technical code lists files to match the current version (specific files can be found in the folder https://github.com/OP-TED/ESPD-EDM/tree/v4.1.0/codelists/gc[codelists/gc]), for tags: Version, CanonicalURI, CanonicalVersionURI, LocationURI. 
 
-The label "ESPD-EDMv4.1.0" has been added in the related sheet "ProfileExecutionID" (in the last row of the table) of the Excel file [ESPD-CodeLists.xlsx](https://github.com/OP-TED/ESPD-EDM/tree/v4.1.0/codelists/ESPD-CodeLists.xlsx). 
+The label "ESPD-EDMv4.1.0" has been added in the related sheet "ProfileExecutionID" (in the last row of the table) of the Excel file https://github.com/OP-TED/ESPD-EDM/tree/v4.1.0/codelists/ESPD-CodeLists.xlsx[ESPD-CodeLists.xlsx]. 
 
 
 === Validation - Interoperability Testbed
 
-The ESPD Team provides a new repository to generate Schematron Business Rules and XSL files necessary for validation process: [ESPD Schematron Validation](https://github.com/OP-TED/espd-validation-schematron). This repository allows the processing, transformation, and validation of ESPD XML examples, UBL 2.3 XSD files, genericode codelists, and Schematron business rules files. The resulting XSL files are used for Interoperability Testbed.
+The ESPD Team provides a new repository to generate Schematron Business Rules and XSL files necessary for validation process: https://github.com/OP-TED/espd-validation-schematron[ESPD Schematron Validation]. This repository allows the processing, transformation, and validation of ESPD XML examples, UBL 2.3 XSD files, genericode codelists, and Schematron business rules files. The resulting XSL files are used for Interoperability Testbed.
 
-Update of Interoperability Testbed [ESPD validator](https://www.itb.ec.europa.eu/espd/upload)
+Update of Interoperability Testbed https://www.itb.ec.europa.eu/espd/upload[ESPD validator]
 
 * Generating the ESPD validator, for the Request and the Response, for v4.1.0 with the latest entry files (genericode files for code lists, xml files for the ESPD Request and the ESPD Response). 
 
