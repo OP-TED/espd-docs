@@ -46,22 +46,22 @@ https://docs.ted.europa.eu/espd-demo/[ESPD Demo] site to allow User Community to
 Several issues have been resolved related to the data structure of the ESPD-EDM Criterion (taxonomy) file and criterion file can be found in the **criterion** folder.
 
 * **Evidence Group or Subgroup misplacement** 
-   * Evidence Group or Subgroup which were moved at top level.
-* **Fix GitHub issue #425- SUBCRITERION simplification**
-   * SUBCRITERION was modelled like LEGISLATION element.
+** Evidence Group or Subgroup which were moved at top level.
+* **Fix GitHub issue https://github.com/OP-TED/ESPD-EDM/issues/425[#425] - SUBCRITERION simplification**
+** SUBCRITERION was modelled like LEGISLATION element.
 * **Fix missing elements**
-   * Added SUBCRITERION block into the next exclusion ground and selection criteria:
-     - Purely national exclusion grounds
-     - Financial ratio
-   * Added REQUIREMENT_GROUP block into the next selection criteria:
-     - Subcontracting proportion
-     - For supply contracts: samples, descriptions or photographs without certification of authenticity
-     - For supply contracts: samples, descriptions or photographs with certification of authenticity  
+** Added SUBCRITERION block into the next exclusion ground and selection criteria:
+*** Purely national exclusion grounds
+*** Financial ratio
+** Added REQUIREMENT_GROUP block into the next selection criteria:
+*** Subcontracting proportion
+*** For supply contracts: samples, descriptions or photographs without certification of authenticity
+*** For supply contracts: samples, descriptions or photographs with certification of authenticity  
 * **Fix GitHub issue #427- Relied upon block**
-   * Added Relied upon block into the next selection criteria:
-     - For works contracts: performance of works of the specified type
-     - For supply contracts: performance of deliveries of the specified type
-     - For service contracts: performance of services of the specified type
+** Added Relied upon block into the next selection criteria:
+*** For works contracts: performance of works of the specified type
+*** For supply contracts: performance of deliveries of the specified type
+*** For service contracts: performance of services of the specified type
 * **ADDITIONAL_DESCRIPTION_LINE is deprecated** 
 
 === Code lists
