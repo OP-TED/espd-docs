@@ -57,7 +57,7 @@ Several issues have been resolved related to the data structure of the ESPD-EDM 
 *** Subcontracting proportion
 *** For supply contracts: samples, descriptions or photographs without certification of authenticity
 *** For supply contracts: samples, descriptions or photographs with certification of authenticity  
-* **Fix GitHub issue #427- Relied upon block**
+* **Fix GitHub issue https://github.com/OP-TED/ESPD-EDM/issues/427[#427] - Relied upon block**
 ** Added Relied upon block into the next selection criteria:
 *** For works contracts: performance of works of the specified type
 *** For supply contracts: performance of deliveries of the specified type
