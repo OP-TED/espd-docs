@@ -212,7 +212,6 @@ In the ESPD Response it is also compulsory to make reference to the ESPD Request
 == XML example
 
 The XML snippet below shows how the beginning of an ESPD Response XML instance looks like:
-
 https://github.com/OP-TED/ESPD-EDM/blob/v4.1.0/xml-examples/ESPD-Response.xml#L2-L20
 
 For a complete instance of an ESPD Response XML document see the the example files in the dist/xml folder: or link:{url-tree}/xml-examples/ESPD-Response.xml[ESPD-Response.xml].
@@ -915,6 +914,9 @@ To view the criterion, consult the https://raw.github.com/OP-TED/ESPD-EDM/v4.1.0
 
 This example contains all the data about an economic operator. Beware that the basic identification data is placed into the cac:EconomicOperatorParty component, whilst the rest of the data (namely for statistical purposes) is structured in the data structures described above.
 
+
+_Economic operator data - XML example_
+
 Please generate an ESPD Request and ESPD Response documents on https://docs.ted.europa.eu/espd-demo/[ESPD Demo Site] to see full example.
 
 
@@ -937,115 +939,6 @@ Please generate an ESPD Request and ESPD Response documents on https://docs.ted.
 . Number of employees of the EO's company. Do not use separators. The software application should take care of the formatting (for statistical purposes).
 . Indicative turnover of the EO's company (for statistical purposes).
 ====
-
-==== Copy the code block
-
-[source,xml]
-----
-<!-- The group of the name is at the root of the document -->
-
-<!-- The name of the group (Consortium, Joint Venture, etc.) if the tenderer is not a sole contractor -->
-
-<cbc:EconomicOperatorGroupName>ACME-Consortium</cbc:EconomicOperatorGroupName>
-
-<!-- Root elements removed for the sake of brevity -->
-
-<!-- Economic Operator Data -->
-
-<cac:EconomicOperatorParty>
-
-<cac:QualifyingParty>
-
-<cbc:EmployeeQuantity>12167</cbc:EmployeeQuantity>
-
-<cac:FinancialCapability>
-
-<cbc:ValueAmount currencyID="EUR">1203000000</cbc:ValueAmount>
-
-</cac:FinancialCapability>
-
-<cac:Party>
-
-<!-- This EO company is NOT an SME -->
-
-<cbc:IndustryClassificationCode listID="http://publications.europa.eu/resource/authority/economic-operator-size" listAgencyID="OP" listVersionID="20220316-0">LARGE</cbc:IndustryClassificationCode>
-
-<!-- Notice that the ID and Name of the Pre-Qualification System is in the attributes. They would be captured from e-Certis. -->
-
-<cac:PartyIdentification>
-
-<cbc:ID schemeID="VAT" schemeAgencyID="ROLECE" schemeAgencyName="Registro Oficial de Licitadores y Empresas Clasificadas del Estado">B82387770</cbc:ID>
-
-</cac:PartyIdentification>
-
-</cac:Party>
-
-</cac:QualifyingParty>
-
-<cac:EconomicOperatorRole>
-
-<cbc:RoleCode listID="http://publications.europa.eu/resource/authority/eo-role-type" listAgencyID="OP" listVersionID="20211208-0">group-lead</cbc:RoleCode>
-
-<cbc:RoleDescription>Sole entity or, in case of Consortium, Joint Venture or other types of groups, the leader of the group.</cbc:RoleDescription>
-
-</cac:EconomicOperatorRole>
-
-<cac:Party>
-
-<!--Additional Identifier not provided -->
-
-<cbc:WebsiteURI>https://everis.com/global/en</cbc:WebsiteURI>
-
-<cac:PartyIdentification>
-
-<cbc:ID schemeAgencyID="VAT" schemeAgencyName="OP" schemeID="VIES" schemeURI="link:http://ec.europa.eu/taxation_customs/vies/vieshome.do?locale=es" schemeName="VAT number">B82387770</cbc:ID>
-
-</cac:PartyIdentification>
-
-<cac:PartyName><cbc:Name>Everis, Spain, S.L.U.</cbc:Name></cac:PartyName>
-
-<cac:PostalAddress>
-
-<cbc:CityName>Madrid</cbc:CityName>
-
-<cbc:PostalZone>28050</cbc:PostalZone>
-
-<cac:AddressLine>
-
-<cbc:Line>Manoteras, 52</cbc:Line>
-
-</cac:AddressLine>
-
-<cac:Country>
-
-<cbc:IdentificationCode listID="http://publications.europa.eu/resource/authority/country" listAgencyID="OP" listVersionID="20220928-0">ES</cbc:IdentificationCode>
-
-<cbc:Name>Spain</cbc:Name>
-
-</cac:Country>
-
-</cac:PostalAddress>
-
-<cac:Contact>
-
-<cbc:Name>Xavi Ker; Ruth Gomis; Miguel Verde</cbc:Name>
-
-<cbc:Telephone>+34 91 749 00 00</cbc:Telephone>
-
-<cbc:ElectronicMail>Spain.Proposals.Office@everis.com</cbc:ElectronicMail>
-
-</cac:Contact>
-
-</cac:Party>
-
-</cac:EconomicOperatorParty>
-
-<!-- EO DATA ENDS HERE -->
-
-<!-- EXCLUSION CRITERIA START HERE -->
-
-<!-- Exclusion and selection Criteria, Responses and Evidences removed for the sake of brevity -->
-----
 
 
 ==== Economic operator representatives
