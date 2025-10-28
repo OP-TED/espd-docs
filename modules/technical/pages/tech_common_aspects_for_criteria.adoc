@@ -113,7 +113,7 @@ xref:tbr70_reqs.adoc#list_of_criteria[tbr70-009]
 
 == XML Examples
 
-See XML examples in the sections about exclusion and selection criteria.
+Please generate an ESPD Request and ESPD Response documents on https://docs.ted.europa.eu/espd-demo/[ESPD Demo Site] to see full example.
 
 
 = Legislation
@@ -599,8 +599,6 @@ Notice that:
 . The property data type used is BOOLEAN_CODE. This is a new type that has been added to the code list link:{url-tree}/codelists/gc/ResponseDataType.gc[ResponseDataType] to make obvious that the code is specifically used to identify a three state indicator (true, false or not checked). In the case of this particular Criterion it is used specify the type of value that will be provided by the buyer for this specific REQUIREMENT (see the XML example below);
 . The possible values for this property data type are defined in the code list BooleanGUIControlType, which are: RADIO_BUTTON_TRUE, RADIO_BUTTON_FALSE, RADIO_BUTTON_UNSELECTED, CHECK_BOX_TRUE, CHECK_BOX_FALSE and CHECK_BOX_UNCHECKED;
 . When the value of the CODE_BOOLEAN is RADIO_BUTTON_TRUE (true) the SUBGROUPs of REQUIREMENT(s) (UUID 26ece6a2-b360-46c1-890d-8338913b8719 ) and QUESTION(s) (UUID 9b3a04ff-e36d-4d4f-b47c-82ad402b9b02) are processed (e.g. shown by the GUI). Otherwise the software application processes the alternative SUBGROUPs of REQUIREMENT(s) (UUID cc96aa19-a0be-4409-af58-ff3f3812741b) and QUESTION(s) (UUID 5fe93344-ed91-4f97-bcab-b6720a131798).
-
-The following fragment of XML code shows how this is expressed:
 
 ////
 
