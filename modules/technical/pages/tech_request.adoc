@@ -669,7 +669,7 @@ IdentificationCode* |Code |1 |The code that identifies the country of the servic
 
 === XML example
 
-Please generate an ESPD Request and ESPD Response documents on https://docs.ted.europa.eu/espd-demo/[ESPD Demo Site] to see full example. The XML snippet below shows how an example of how to supply the expected data for the service provider:
+Please generate an ESPD Request and ESPD Response documents on https://docs.ted.europa.eu/espd-demo/[ESPD Demo Site] to see full example. The XML snippet below shows an example of how to supply the expected data for the service provider:
 
 https://github.com/OP-TED/ESPD-EDM/blob/v4.1.0/xml-examples/ESPD-Response.xml#L21-L46
 
