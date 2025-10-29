@@ -1383,7 +1383,7 @@ Having said this, imagine that the following snippet of XML code is the last cri
 
 _Reduction of Candidates - (QUESTION(s) in the ESPD-Request)_
 
-Please generate an ESPD Request and ESPD Response documents on https://docs.ted.europa.eu/espd-demo/[ESPD Demo Site] to see full exampl
+Please generate an ESPD Request and ESPD Response documents on https://docs.ted.europa.eu/espd-demo/[ESPD Demo Site] to see full example.
 
 . First QUESTION (a criterion property of type QUESTION, the type follows below).
 . The buyer  is requesting to the economic Operator that it states whether it meets the ''objective and non-discriminatory criteria or rules [..]".
