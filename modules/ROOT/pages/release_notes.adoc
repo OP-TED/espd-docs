@@ -8,6 +8,91 @@
 :sectnums:
 = Release Notes
 
+== v4.1.0 (October 2025) 
+
+The ESPD-EDM version 4.1.0 is a minor release which focuses on the various following changes, listed in order of importance:   
+
+* Evidence group misplacement fixed; 
+* Simplification of SUBCRITERION; 
+* Added SUBCRITERION block for criteria: 
+** Purely national exclusion grounds (exclusion ground)
+** Financial ratio (selection criteria)
+* Added REQUIREMENT_GROUP block for criteria:
+** Subcontracting proportion
+** For supply contracts: samples, descriptions or photographs without certification of authenticity
+** For supply contracts: samples, descriptions or photographs with certification of authenticity
+* Added relied on block for selection criteria:
+** For works contracts: performance of works of the specified type
+** For supply contracts: performance of deliveries of the specified type
+** For service contracts: performance of services of the specified type
+* Code lists general updates;
+* Validation and Schematron Rules updates; 
+* Conceptual model updates; 
+* Online documentation updates;
+* **Fix GitHub issue https://github.com/OP-TED/ESPD-EDM/issues/425[#425]**
+** Simplification of SUBCRITERION, is modelled as LEGISLATION.
+* **Fix GitHub issue https://github.com/OP-TED/ESPD-EDM/issues/426[#426]**
+** Selection criteria and national legislation.
+* **Fix GitHub issue https://github.com/OP-TED/ESPD-EDM/issues/427[#427]**
+** Adding the "Relied upon" block.
+
+
+=== ESPD Demo site
+
+https://docs.ted.europa.eu/espd-demo/[ESPD Demo] site to allow User Community to test and validate latest versions of ESPD before implementing the ESPD Service. This site offers the possibility for our User Community to give feedback on ESPD-EDM. The site is provided as Open Source code and is available on GitHub https://github.com/OP-TED/espd-demo[GitHub ESPD Demo repository], more details can be found in https://github.com/OP-TED/espd-demo/blob/main/README.md[README file].
+
+=== ESPD-EDM Criterion files - Data Structure 
+
+Several issues have been resolved related to the data structure of the ESPD-EDM Criterion (taxonomy) file and criterion file can be found in the **criterion** folder.
+
+* **Evidence Group or Subgroup misplacement** 
+** Evidence Group or Subgroup which were moved at top level.
+* **Fix GitHub issue https://github.com/OP-TED/ESPD-EDM/issues/425[#425] - SUBCRITERION simplification**
+** SUBCRITERION was modelled like LEGISLATION element.
+* **Fix missing elements**
+** Added SUBCRITERION block into the next exclusion ground and selection criteria:
+*** Purely national exclusion grounds
+*** Financial ratio
+** Added REQUIREMENT_GROUP block into the next selection criteria:
+*** Subcontracting proportion
+*** For supply contracts: samples, descriptions or photographs without certification of authenticity
+*** For supply contracts: samples, descriptions or photographs with certification of authenticity  
+* **Fix GitHub issue https://github.com/OP-TED/ESPD-EDM/issues/427[#427] - Relied upon block**
+** Added Relied upon block into the next selection criteria:
+*** For works contracts: performance of works of the specified type
+*** For supply contracts: performance of deliveries of the specified type
+*** For service contracts: performance of services of the specified type
+* **ADDITIONAL_DESCRIPTION_LINE is deprecated** 
+
+=== Code lists
+
+Following Code Lists have been updated from EU Vocabularies with the latest release version: AccessRight, Country, Criterion, EconomicOperatorSize, Language, and Occupation.  
+
+ESPD version has been updated in the technical code lists files to match the current version (specific files can be found in the folder https://github.com/OP-TED/ESPD-EDM/tree/v4.1.0/codelists/gc[codelists/gc]), for tags: Version, CanonicalURI, CanonicalVersionURI, LocationURI. 
+
+The label "ESPD-EDMv4.1.0" has been added in the related sheet "ProfileExecutionID" (in the last row of the table) of the Excel file https://github.com/OP-TED/ESPD-EDM/tree/v4.1.0/codelists/ESPD-CodeLists.xlsx[ESPD-CodeLists.xlsx]. 
+
+
+=== Validation - Interoperability Testbed
+
+The ESPD Team provides a new repository to generate Schematron Business Rules and XSL files necessary for validation process: https://github.com/OP-TED/espd-validation-schematron[ESPD Schematron Validation]. This repository allows the processing, transformation, and validation of ESPD XML examples, UBL 2.3 XSD files, genericode codelists, and Schematron business rules files. The resulting XSL files are used for Interoperability Testbed.
+
+Update of Interoperability Testbed https://www.itb.ec.europa.eu/espd/upload[ESPD validator]
+
+* Generating the ESPD validator, for the Request and the Response, for v4.1.0 with the latest entry files (genericode files for code lists, xml files for the ESPD Request and the ESPD Response). 
+
+=== Online documentation
+
+* Replacement of images with diagrams by images created by code
+* Replacement of images (snapshoots of Excel criteria) by links to the Criterion file
+* Update XML code snippets
+
+**Readme file** 
+
+The Readme file for v4.1.0 has been updated as well. 
+
+
+
 == v4.0.0 (October 2024) 
 
 The main change in ESPD-EDM version 4.0.0 is the replacement of dynamic UUIDs with XML Path like IDs. Some other minor errors were fixed in the data structure and the code lists.   
