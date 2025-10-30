@@ -44,7 +44,7 @@ A description of the tools:
 * The ESPD code list Excel and XML files
 * The Model and Data Structure Excel files
 
-These downloads are available for ESPD-EDM Versions 3.3.0 and 4.0.0 directly from the Demo site and downloads can be filtered by version.
+These downloads are available for ESPD-EDM Versions 3.3.0, 4.0.0, and 4.1.0 directly from the Demo site and downloads can be filtered by version.
 
 === Code lists
 *Information about and download of code lists*
@@ -52,7 +52,7 @@ These downloads are available for ESPD-EDM Versions 3.3.0 and 4.0.0 directly fro
 * Information about the Code Lists used in the ESPD, name, versions, URI, agency, links to more information for each list.
 * Contents of each code list i.e., the codes contained within each, translations of each code into all EU languages (if available), and an xml download of each code list.
 
-Code list information is available for versions 3.3.0 and 4.0.0 of the ESPD-EDM and can be filtered by version and code list.
+Code list information is available for versions 3.3.0, 4.0.0, and 4.1.0 of the ESPD-EDM and can be filtered by version and code list.
 
 === UUID
 *Check whether UUIDs are stored in eCertis*
@@ -68,7 +68,7 @@ All criterion in all ESPD versions, from v1.0.0 onwards, can be queried.
 
 The ESPD Model Viewer demonstrates how a criterion in the model might be represented in HTML in an ESPD Service. Individual criteria can be filtered by version, and are then displayed in HTML on the page. 
 
-The viewer is available for v3.3.0 and v4.0.0 of the ESPD-EDM.
+The viewer is available for v3.3.0, v4.0.0, and 4.1.0 of the ESPD-EDM.
 
 === Examples
 *Generate example XML files for testing*
