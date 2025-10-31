@@ -114,7 +114,7 @@ xref:tbr70_reqs.adoc#list_of_criteria[tbr70-009]
 
 == XML Examples
 
-See XML examples in the sections about exclusion and selection criteria.
+Please generate an ESPD Request and ESPD Response documents on https://docs.ted.europa.eu/espd-demo/[ESPD Demo Site] to see full example.
 
 
 == Legislation
