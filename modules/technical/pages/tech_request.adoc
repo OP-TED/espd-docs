@@ -377,53 +377,8 @@ _Table 7. External Reference_
 
 === XML Example
 
-The XML snippet below illustrates how to use the cac:AdditionalDocumentReference in the ESPDRequest XML document to refer to a Contract Notice published in TED and on a national procurement board:
+Please generate an ESPD Request and ESPD Response documents on https://docs.ted.europa.eu/espd-demo/[ESPD Demo Site] to see full example and how to use the cac:AdditionalDocumentReference in the ESPDRequest XML document to refer to a Contract Notice published in TED and on a national procurement board.
 
-[source,xml,linenums]
-----
-<cac:AdditionalDocumentReference>
-<!--1-->
-    <cbc:ID schemeAgencyID="OP">2017/S 142-293520</cbc:ID>
-<!--2-->    
-    <cbc:DocumentTypeCode listID="http://publications.europa.eu/resource/authority/docrefcontent-type" listAgencyID="OP" listVersionID="20220928-0">
-      TED_CN
-    </cbc:DocumentTypeCode>
-    <cac:Attachment>
-        <cac:ExternalReference>
-        <!-- Beware XML URI fields may require encoded URLs -->
-<!--3-->        
-        <cbc:URI schemeAgencyID="OP">
-          http://ted.europa.eu/udl?uri%3DTED:NOTICE:293520-2017:TEXT:EN:HTML%026src%3D0
-        </cbc:URI>
-<!--4-->        
-        <cbc:FileName>Spain-Zamora: Repair and maintenance services</cbc:FileName>
-        <cbc:Description>Repair and maintenance services. Real estate services.</cbc:Description>
-        <cbc:Description>293520-2017</cbc:Description>
-        </cac:ExternalReference>
-    </cac:Attachment>
-</cac:AdditionalDocumentReference>
-
-<!-- Reference to the Contract Notice published on the Spanish Central Government eTendering Platform -->
-<cac:AdditionalDocumentReference>
-<!-- Contract Notice publishied on the Spanish Central eTendering Platform "PLACE" Plataforma de Contratación del Sector Público -->
-<!--5-->
-<!--6-->
-    <cbc:ID schemeAgencyID="PLACE">3.17/20830.0160</cbc:ID>
-    <!-- Contract Notice (CN) published on a National Government Official Journal -->
-<!--7-->
-    <cbc:DocumentTypeCode listID="http://publications.europa.eu/resource/authority/docrefcontent-type" listAgencyID="OP" listVersionID="20220928-0">
-      NOJCN
-    </cbc:DocumentTypeCode>
-    <cac:Attachment>
-    <cac:ExternalReference>
-    <!-- Beware XML URI fields may require encoded URLs -->
-    <cbc:URI schemeAgencyID="PLACE">https://contrataciondelestado.es/wps/portal/!ut/p/b1/pY_LDoIwEEW_hQ8wM5S2wJKH5REUVEDbjenCGI3Axvj9gmFrMXF2Nzkncy8okDahHD2XMAYnUL1-3a76eRt6_Ziy4me6LqNIpAS9gxMjKeKm4ekUyQhIA5AQo5-w2WdORNu8rfghSxCzVMRFY7NR57_5-OUC_K-_t9j_CMqMkBkwTfwAhg3bdOguIEfMPQfthedkvoNluB8f5dWmrhJiI3KoQYbhEkYnLA-hUw8hhJ_dqV7pwLLeHJySpA!!/</cbc:URI>
-    <cbc:FileName>Suministro y transporte de balasto</cbc:FileName>
-    <cbc:Description>Suministro y transporte de balasto para el tramo Zamora — Pedralba de la Línea de Alta Velocidad Olmedo — Lubián — Ourense. Subtramo 8.</cbc:Description>
-    </cac:ExternalReference>
-    </cac:Attachment>
-</cac:AdditionalDocumentReference>
-----
 <1> For TED Notices, the Publications Office Official Journal Supplement number must be used in its original format [][][][]/S [][][]-[][][][][][], e.g. 2017/S 142-293520. Notice that the schemeAgencyID is OP (OP standing for 'Publications Office').
 <2> The jurisdiction scope of this document is typified in the Code List docref-content-type (see file link:{url-tree}/codelists/gc/DocRefContentType.gc[/codelists/gc/DocRefContentType.gc] in the distribution package). *Beware that the name and content of this Code List has changed from the previous ESPD-EDM version 2.1.1*.
 <3> The actual content is never embedded in the ESPD documents. Rather the content is always referenced from its original source (alignment with the Once-Only-Principle).
