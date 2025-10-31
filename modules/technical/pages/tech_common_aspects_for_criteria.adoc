@@ -600,8 +600,6 @@ Notice that:
 . The possible values for this property data type are defined in the code list BooleanGUIControlType, which are: RADIO_BUTTON_TRUE, RADIO_BUTTON_FALSE, RADIO_BUTTON_UNSELECTED, CHECK_BOX_TRUE, CHECK_BOX_FALSE and CHECK_BOX_UNCHECKED;
 . When the value of the CODE_BOOLEAN is RADIO_BUTTON_TRUE (true) the SUBGROUPs of REQUIREMENT(s) (UUID 26ece6a2-b360-46c1-890d-8338913b8719 ) and QUESTION(s) (UUID 9b3a04ff-e36d-4d4f-b47c-82ad402b9b02) are processed (e.g. shown by the GUI). Otherwise the software application processes the alternative SUBGROUPs of REQUIREMENT(s) (UUID cc96aa19-a0be-4409-af58-ff3f3812741b) and QUESTION(s) (UUID 5fe93344-ed91-4f97-bcab-b6720a131798).
 
-The following fragment of XML code shows how this is expressed:
-
 ////
 
 . This property (cac:TenderingCriterionProperty) can be used by the software application to help the buyer select the type of REQUIREMENT it wants to be shown to the economic operator, either an Amount limited by a threshold and a period of time or rating constrained by a threshold and a rating scheme. The expected value will be a code expressing a three-state indicator (a boolean semanticised as CODE_BOOLEAN).
