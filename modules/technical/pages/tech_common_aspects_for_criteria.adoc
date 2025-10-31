@@ -805,7 +805,7 @@ NOTE: The source code can be copied from the code block below the callout sectio
 [Code with callouts]
 ----
 <cac:TenderingCriterionProperty>
-    <cbc:ID schemeID="criterion" schemeAgencyID="XXESPD-SERVICEXXX" schemeVersionID="4.0.0">C1_EG_crime-org/QG1/QSG1/Q1</cbc:ID>
+    <cbc:ID schemeID="criterion" schemeAgencyID="XXESPD-SERVICEXXX" schemeVersionID="4.1.0">C1_EG_crime-org/QG1/QSG1/Q1</cbc:ID>
     ...
 </cac:TenderingCriterionProperty>
 ----
@@ -818,7 +818,7 @@ NOTE: The source code can be copied from the code block below the callout sectio
 [source, xml]
 ----
 <cac:TenderingCriterionProperty>
-    <cbc:ID schemeID="criterion" schemeAgencyID="XXESPD-SERVICEXXX" schemeVersionID="4.0.0">C1_EG_crime-org/QG1/QSG1/Q1</cbc:ID>
+    <cbc:ID schemeID="criterion" schemeAgencyID="XXESPD-SERVICEXXX" schemeVersionID="4.1.0">C1_EG_crime-org/QG1/QSG1/Q1</cbc:ID>
     ...
 </cac:TenderingCriterionProperty>
 ----
@@ -837,10 +837,10 @@ ESPD Response fragment, example of `RV` data type:
 [source, xml]
 ----
 <cac:TenderingCriterionResponse> 
-    <cbc:ID schemeID = "criterion" schemeAgencyID = "XXESPD-SERVICEXXX" schemeVersionID = "4.0.0">C1_EG_crime-org/QG1/QSG1/Q1/R2</cbc:ID> 
-    <cbc:ValidatedCriterionPropertyID schemeID = "criterion" schemeAgencyID = "XXESPD-SERVICEXXX" schemeVersionID = "4.0.0">C1_EG_crime-org/QG1/QSG1/Q1</cbc:ValidatedCriterionPropertyID> 
+    <cbc:ID schemeID = "criterion" schemeAgencyID = "XXESPD-SERVICEXXX" schemeVersionID = "4.1.0">C1_EG_crime-org/QG1/QSG1/Q1/R2</cbc:ID> 
+    <cbc:ValidatedCriterionPropertyID schemeID = "criterion" schemeAgencyID = "XXESPD-SERVICEXXX" schemeVersionID = "4.1.0">C1_EG_crime-org/QG1/QSG1/Q1</cbc:ValidatedCriterionPropertyID> 
     <cac:ResponseValue> 
-            <cbc:ID schemeID = "criterion" schemeAgencyID = "XXESPD-SERVICEXXX" schemeVersionID = "4.0.0">C1_EG_crime-org/QG1/QSG1/Q1/R2/RV</cbc:ID> 
+            <cbc:ID schemeID = "criterion" schemeAgencyID = "XXESPD-SERVICEXXX" schemeVersionID = "4.1.0">C1_EG_crime-org/QG1/QSG1/Q1/R2/RV</cbc:ID> 
             <cbc:ResponseDate>2017-01-01</cbc:ResponseDate> 
     </cac:ResponseValue> 
 </cac:TenderingCriterionResponse>  
@@ -850,8 +850,8 @@ ESPD Response fragment, example of `RES` data type:
 [source, xml]
 ----
 <cac:TenderingCriterionResponse> 
-    <cbc:ID schemeID = "criterion" schemeAgencyID = "XXESPD-SERVICEXXX" schemeVersionID = "4.0.0">C1_EG_crime-org/QG2/QSG1/Q1/R1</cbc:ID>  
-    <cbc:ValidatedCriterionPropertyID schemeID = "criterion" schemeAgencyID = "XXESPD-SERVICEXXX" schemeVersionID = "4.0.0">C1_EG_crime-org/QG2/QSG1/Q1</cbc:ValidatedCriterionPropertyID>  
+    <cbc:ID schemeID = "criterion" schemeAgencyID = "XXESPD-SERVICEXXX" schemeVersionID = "4.1.0">C1_EG_crime-org/QG2/QSG1/Q1/R1</cbc:ID>  
+    <cbc:ValidatedCriterionPropertyID schemeID = "criterion" schemeAgencyID = "XXESPD-SERVICEXXX" schemeVersionID = "4.1.0">C1_EG_crime-org/QG2/QSG1/Q1</cbc:ValidatedCriterionPropertyID>  
     <cac:EvidenceSupplied> 
         <cbc:ID schemeAgencyID = "XXESPD-SERVICEXXX">EVIDENCE-00001/C1_EG_crime-org/QG2/QSG1/Q1/R1/RES</cbc:ID> 
     </cac:EvidenceSupplied>  
