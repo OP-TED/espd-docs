@@ -1572,7 +1572,7 @@ _XML snippet 1.b) different evidence documents per response_
 Please generate an ESPD Request and ESPD Response documents on https://docs.ted.europa.eu/espd-demo/[ESPD Demo Site] to see full example.
 
 . ID value of the first criterion property (QUESTION) for which this response value is the answer.
-. The criteron is to be treated as 'PUBLIC': it could be published.
+. The criterion is to be treated as 'PUBLIC': it could be published.
 . Identifier of the first evidence object that is used for this criterion: it must match the value provided for the cac:Evidence/cbc:ID element of the evidence.
 . ID value of the second criterion property (QUESTION) for which this response value is the answer.
 . Confidentiality level is set to 'CONFIDENTIAL'. Therefore the evidence linked to this response will also be treated as 'CONFIDENTIAL'.
@@ -1583,7 +1583,7 @@ Please generate an ESPD Request and ESPD Response documents on https://docs.ted.
 . URL from where to get the document. The fact that the evidence MUST BE treated as CONFIDENTIAL is not inconsistent with the fact that the evidence is available online from a free-of-charge national data base.
 . The name of the issuer of the first evidenciary document.
 . ID of the second criterion property (QUESTION) for which this response value is the answer.
-. The criteron is to be treated as 'CONFIDENTIAL': addressed only to the evaluators.
+. The criterion is to be treated as 'CONFIDENTIAL': addressed only to the evaluators.
 . Verification code ID of the second evidence.
 . URL from where to get the document.
 . The name of the issuer of the second evidenciary document.

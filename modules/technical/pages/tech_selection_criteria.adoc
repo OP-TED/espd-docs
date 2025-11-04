@@ -280,7 +280,7 @@ _Figure 15. 'specific yearly turnover' EO mock-up_
 Note that:
 
 [arabic]
-. The criterion may have one or more linked national sub-criteria downloaded from e-Certis (SUBCRITERON structure, cardinality 0..n);
+. The criterion may have one or more linked national sub-criteria downloaded from e-Certis (SUBCRITERION structure, cardinality 0..n);
 . The buyer is able to specify the *number of fiscal years* (REQUIREMENT 'Number of fiscal years');
 . The description of the business area is a text-field;
 . The buyer does also specifies the *minimum amount* required for this specific turnover.
