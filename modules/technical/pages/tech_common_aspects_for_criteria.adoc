@@ -116,7 +116,7 @@ xref:tbr70_reqs.adoc#list_of_criteria[tbr70-009]
 Please generate an ESPD Request and ESPD Response documents on https://docs.ted.europa.eu/espd-demo/[ESPD Demo Site] to see full example.
 
 
-= Legislation
+== Legislation
 
 The XSD schema below shows, in blue, the elements of the component cac:Legislation used to point at the legislation related to the criterion.
 
@@ -202,7 +202,7 @@ https://github.com/OP-TED/ESPD-EDM/blob/v4.0.0/xml-examples/ESPD-Response.xml#L1
 ////
 
 
-= Groups of properties
+== Groups of properties
 
 This XSD diagram shows the sub-components of a group of criteria:
 
