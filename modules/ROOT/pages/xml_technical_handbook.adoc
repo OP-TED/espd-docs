@@ -9623,7 +9623,7 @@ The validation of Tendering Criterion Property (cac:TenderingCriterionProperty e
 . If cbc:TypeCode value is "CAPTION" or "REQUIREMENT", cbc:ValueDataTypeCode value must be "NONE".
 
 
-= Interoperability testbed
+== Interoperability testbed
 []
 
 The European Commission (EC) link:https://ec.europa.eu/isa2/awards_en[ISA2 Programme] provides an link:https://joinup.ec.europa.eu/asset/itb/description[Interoperability Testbed] where Stakeholders can freely test these validation artefacts.
