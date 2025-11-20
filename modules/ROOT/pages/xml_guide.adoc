@@ -1,3 +1,5 @@
+include::partial$attributes.adoc[]
+
 ifndef::imagesdir[:imagesdir: images]
 ifndef::downloaddir[:downloaddir: download]
 
