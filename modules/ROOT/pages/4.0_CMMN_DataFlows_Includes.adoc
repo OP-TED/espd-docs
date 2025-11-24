@@ -1,3 +1,5 @@
+include::partial$attributes.adoc[]
+
 ifndef::imagesdir[:imagesdir: images]
 
 ////
@@ -254,8 +256,7 @@ The ESPD Service applies this approach as much as possible.
 [NOTE]
 ====
 [.text-left]
-All ESPDResponse XML instances (and the ESPDRequest instances, too, for that matter) MUST always 
-include all the exclusion criterion detailed in the http://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32016R0007[Annex of the Regulation 2016] 
+All ESPDResponse XML instances (and the ESPDRequest instances, too, for that matter) MUST always include all the exclusion criterion detailed in the http://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32016R0007[Annex of the Regulation 2016] 
 and the link:{url-blob}/code_lists/xls/CriteriaTaxonomy.xlsx[criteria data flow tables] defined by COM).
 ====
 
