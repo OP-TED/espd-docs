@@ -1,3 +1,5 @@
+include::partial$attributes.adoc[]
+
 ////
 include::VII.0_ESPD_Response.adoc[]
 include::VII.1_ESPDResponse_BIZREQ.adoc[]

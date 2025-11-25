@@ -1,3 +1,4 @@
+include::partial$attributes.adoc[]
 ////
 include::II.0_The_ESPD_Semantic_Assets.adoc[]
 include::II.1_ESPD_Distribution_package.adoc[]
