@@ -2433,17 +2433,16 @@ ____
 
 === BR-RESP-70
 
-[width="100%",cols="33%,33%,33%,33%",options="header",]
+[width="100%",cols="25%,25%,25%,25%",options="header",]
 |===
 |*Mapping Rule ID* | | |
-|Test Case Rule ID a|
+|Test Case Rule ID | a|
 * RS-20-R50
 * RS-80-R60
-
 | a|
 * RS-140-R50
 * RS-200-R50
-
+|
 |Rule description |Information about compliance of selection criteria CAN be provided | |
 |Mapping description |Criterion responses are implemented as Tendering Criterion response components | |
 |XSD Path a|
@@ -2459,17 +2458,17 @@ ____
 
 ==== BR-RESP-70-S10
 
-[width="100%",cols="33%,33%,33%,33%%",options="header",]
+[width="100%",cols="25%,25%,25%,25%",options="header"]
 |===
 |*Mapping Rule ID* | | |
-|Test Case Rule ID a|
+|Test Case Rule ID | a|
 * RS-20-R50-S10
 * RS-80-R60-S10
 
 | a|
 * RS-140-R50-S10
 * RS-200-R50-S10
-
+|
 |Rule description |When the pre-qualification system the EO is registered on does not cover all the selection criteria, information about compliance of selection criteria MUST be provided. | |
 |Mapping description |Criterion responses are implemented as Tendering Criterion response components | |
 |XSD Path |/cac:TenderingCriterionResponse[0..n] | |
