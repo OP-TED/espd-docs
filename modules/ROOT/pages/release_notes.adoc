@@ -8,7 +8,7 @@
 :sectnums:
 = Release Notes
 
-== v4.1.0 (October 2024) 
+== v4.1.0 (October 2025) 
 
 The ESPD-EDM version 4.1.0 is a minor release which focuses on the various following changes, listed in order of importance:   
 
