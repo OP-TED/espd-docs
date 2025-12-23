@@ -59,7 +59,7 @@
 * Both issues were created by colleagues from Slovenia. #424 is part of v4.1.0 release, meanwhile #422 is not applicable, as it was part of old v2 releases.
 * There are two open issues, both answered (waiting user’s feedback):
 ** https://github.com/OP-TED/ESPD-EDM/issues/426[#426] (++[++Question++]++: Selection criteria).
-** https://github.com/OP-TED/ESPD-EDM/issues/422[#422] (SUBCRITERION QUESTION should not be mandatory), new version of Excel Criterion file is proposed.
+** https://github.com/OP-TED/ESPD-EDM/issues/425[#425] (SUBCRITERION QUESTION should not be mandatory), new version of Excel Criterion file is proposed.
 
 == What's new in the ESPD-Model for Q1 and Q2 2025
 

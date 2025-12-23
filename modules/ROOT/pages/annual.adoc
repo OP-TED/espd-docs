@@ -7,6 +7,13 @@
 [.tile-container]
 --
 [.tile]
+.2025 Annual Seminar Documents
+****
+The annual seminar videos and a copy of the presentation are available.
+
+xref:2025.adoc[Click here to access the documents]
+
+[.tile]
 .2024 Annual Seminar Documents
 ****
 The annual seminar videos and a copy of the presentation are available.
