@@ -9,8 +9,8 @@ This section contains the OUC Meeting Reports and Annual Seminar documents. All 
 
 Next OUC meetings:
 
-- Q2 2026 (areound April), *Planned*
-- Q3 2026 (areound October), *Planned*
+- Q2 2026 (around April), *Planned*
+- Q3 2026 (around October), *Planned*
 
 [.tile-container]
 --
