@@ -99,7 +99,7 @@ Economic Operators can play different roles, catered for in the ESPD-EDM, within
 Important to note is that ESPD forms must be *filled in per lot*:
 
 * The exclusion grounds automatically apply to all lots.
-* The selection criteris apply per lot i.e., they may be different between lots.
+* The selection criteria apply per lot i.e., they may be different between lots.
 
 Each section is filled in by one or both parties, and in the case of a response involving a offering group, the group leader must fill in information related to group members in their response: names and other identifying details, AND each party must fill in and sign an ESPD. It is the Group leader's responsibility to collect the completed ESPD Response documents from all parties *per lot* and submit them in the tender.
 
@@ -125,7 +125,7 @@ A group member might only be a member in some lots and not others.
 == Parts of the ESPD
 
 
-Each section of the ESPD form is filled in by one or both parties, and in the case of a response involving a offering group, the group leader must fill in information related to group members in the response.
+Each section of the ESPD form is filled in by one or both parties, and in the case of a response involving an offering group, the group leader must fill in information related to group members in the response.
 
 === Part 1: Buyer and procedure information
 
