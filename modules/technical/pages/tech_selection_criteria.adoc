@@ -751,8 +751,8 @@ The buyer has selected the 'allowance of checks' (in link:{url-tree}/codelists/E
 
 The buyer (CA) can specify none, one or several REQUIREMENT(s). In this case a REQUIREMENT is a descriptive text provided by the buyer where the criterion is better explained or where certain conditions relating to the criterion. In this example the buyer is specifying which type of premises it wants to check and for which reasons.
 
-image:Special_requierements_check_CA_mock-up.jpg['Checks' buyer REQUIREMENT mock-up,width=524,height=213]
-
+//image:Special_requierements_check_CA_mock-up.jpg['Checks' buyer REQUIREMENT mock-up,width=524,height=213]
+image:Special_requirements_check_CA_mock-up.jpg['Checks' buyer REQUIREMENT mock-up,width=524,height=213]
 _Figure 36.  Special requierements check buyer REQUIREMENT edition mock-up_
 
 === Mock-ups - economic operator perspective
