@@ -345,11 +345,11 @@ See formal requirements related to 'Turnover' criteria ESPD in the link:http://w
 
 === Mock-ups - buyer  perspective
 
-_'Financial ratio' buyer mock-up_
-
 The buyer  has selected the financial ratio as one of the selection criteria that will go into the ESPD Request document:
 
 image:Financial ratio_CA mockup.jpg['Financial ratio' buyer mock-up,width=623,height=137]
+
+_Figure 19. 'Financial ratio' buyer mock-up_
 
 In ESPD the buyer  specifies procurement procedure-specific requirements, see data structure below.
 
