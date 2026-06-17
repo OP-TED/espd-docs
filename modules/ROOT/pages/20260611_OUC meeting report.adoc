@@ -1,0 +1,90 @@
+== Open User Community Meeting Report
+
+== Publications Office – ESPD EDM
+
+[cols=","]
+|===
+|Meeting Date/Time: |2026-06-11, 10.00 - 11.00
+|===
+
+[cols=",",options="header"]
+|===
+|*Attendee Name* |*Organisation / Country*
+|Paloma ARILLO ARANDA |OP 
+|Christian BEIL |OP 
+|Marilena CRISTEA |ANAP - Romania
+|Michaël DE WINNE |BOSA - Belgium 
+|Paul DONOHOE |OP 
+|Ajda KONSTANJŠEK  |Slovenia 
+|Srđan KRASIĆ |OP 
+|Marc Christopher SCHMIDT |DG GROW 
+|Laurent SCHONJAANS  |DG GROW 
+|Lora VAN LOOVEREN |DG GROW
+|Sevasti YFANTI |OP 
+|===
+
+== Meeting Agenda
+
+[arabic]
+. Summary OUC 2nd October 2025
+. GitHub status
+. ESPD-EDM v5.0.0 overview
+. Restructure of repositories
+. Validation improvements
+. Next steps
+. Next meetings & AOB
+
+:sectnums:
+:sectnumlevels: 4
+
+== Summary OUC meeting 2nd October 2025
+
+* The main topics discussed in October 2025 were summarised:
+** What's new in the ESPD-EDM 4.1.0.
+** GitHub status: open and closed tickets.
+** Business Rules, new approach (aligning with eForms style).
+** Insights of an ESPD Implementation – announcement of Belgium’s case study (TED-together meeting 27-28th November 2025).
+
+== GitHub status
+
+* ESPD-EDM team informed that two tickets have been closed since the last meeting:
+** https://github.com/OP-TED/ESPD-EDM/issues/431[++#++431] (++[++Other++]++: Sole contractor / Lead entity in EORoleType.gc (2.1.1) appears to be deprecated after repo moved.).
+** https://github.com/OP-TED/ESPD-EDM/issues/356[++#++356] (Inconsistency between eCertis and ESPD ++#++interproc ++#++356).
+* ++#++431 was a clarification, the user’s question was related to old ESPD service GitHub repository and deprecated values in EORoleType.gc code list.
+* ++#++356 was also a clarification related to the current eCertis UUID values.
+
+== ESPD-EDM v5.0.0 overview
+
+* The upcoming release v5.0.0 was presented as a central part of the meeting. The list of the model changes was reviewed with details:
+** Model implemented in Enterprise Architect (moved from Excel).
+** Restructure of GitHub repositories.
+** New code lists updated to align with those used in eForms (replacement of single “criterion” with two “exclusion-ground” and “selection criterion” code lists).
+** Improvements related to validation (generation of validation scripts).
+** Change of schema to UBL 2.4.
+
+== Restructure of repositories
+
+* ESPD-EDM team presented the restructure of GitHub repositories, from conceptual model to implementation. New approach ensures consistency, reduced duplication and makes updates easier. In short, we start from conceptual layer, move to supporting tools, and finally reach the implementation layer:
+** The https://github.com/OP-TED/espd-conceptual-model[espd-conceptual-model] defines the “what” as the single source of truth.
+** The https://github.com/OP-TED/espd-tools[espd-tools] provides reusable utilities.
+** The https://github.com/OP-TED/ESPD-EDM[ESPD-EDM] is the implementation layer containing schemas, code lists, and artefacts in order to build the ESPD service.
+
+== Validation improvements
+
+* XSLT files created from schematron files to validate ESPD Request and Response forms. These are used in ITB testbed repository. Some of schematron files are hand-written, but most are generated from the code lists. All these files are kept in the repository https://github.com/OP-TED/espd-validation-schematron[https://github.com/OP-TED/espd-validation-schematron].
+* New Unix/Bash Shell script validation-schematron.sh has been created using more modern Bash. The script could be run from a larger variety of operating systems.
+* Updated schematron and XSLT files: aligned with code lists for v5.0.0, improved consistency of checks.
+* Next steps:
+** Automated generation of all schematron from code lists.
+** Improvements to readability of code.
+** Checks on the order of Exclusion Ground and Selection Criterion questions automatically generated from the data model.
+
+== Next steps
+
+* 5.0.0 release is planned for Q3 of 2026 with announced changes included: data model in JSON format (extracted from Enterprise Architect), new code lists, restructuring of GitHub repositories, improved generation of validation code, UBL 2.4.
+* Long/mid term plan: revamp of “relied-upon” block as agreed with DG GROW, improved alignment with eProcurement Ontology and eForms, UBL elements review (for “Other criteria”).
+* DG GROW commented on ongoing projects such as Business Wallet and public procurement directives.
+
+== Next meetings & AOB
+
+* The next meeting will be merged with Tenders Electronic Daily event (TED Together) on 24th-25th November 2026, with other Unit’s projects: eForms, eSenders, eProcurement Ontology and others. More information about TED events can be found in https://ted.europa.eu/en/news/2026-event-calendar[event calendar].
