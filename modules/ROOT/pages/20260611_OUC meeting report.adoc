@@ -65,9 +65,9 @@
 == Restructure of repositories
 
 * ESPD-EDM team presented the restructure of GitHub repositories, from conceptual model to implementation. New approach ensures consistency, reduced duplication and makes updates easier. In short, we start from conceptual layer, move to supporting tools, and finally reach the implementation layer:
-** The https://github.com/OP-TED/espd-conceptual-model[espd-conceptual-model] defines the “what” as the single source of truth.
-** The https://github.com/OP-TED/espd-tools[espd-tools] provides reusable utilities.
-** The https://github.com/OP-TED/ESPD-EDM[ESPD-EDM] is the implementation layer containing schemas, code lists, and artefacts in order to build the ESPD service.
+** The https://github.com/OP-TED/espd-conceptual-model[espd-conceptual-model] defines the “what” as the single source of truth.
+** The https://github.com/OP-TED/espd-tools[espd-tools] provides reusable utilities.
+** The https://github.com/OP-TED/ESPD-EDM[ESPD-EDM] is the implementation layer containing schemas, code lists, and artefacts in order to build the ESPD service.
 
 == Validation improvements
 
