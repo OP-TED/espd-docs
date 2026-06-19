@@ -7,10 +7,10 @@
 
 This section contains the OUC Meeting Reports and Annual Seminar documents. All the documentation can be accessed by expanding the different options in the navigation menu on the left.
 
-Next OUC meetings:
-
-- Q4 2026 *Planned*
-
+//Next OUC meetings:
+//
+//- Q4 2026 *Planned*
+//
 Next Annual Seminar:
 
 - 24th-25th November 2026 (Tuesday-Wednesday), *Confirmed (TED-together)*
