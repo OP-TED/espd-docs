@@ -8,6 +8,7 @@
 
 === 2026-06-11
 *** link:https://github.com/OP-TED/espd-docs/blob/wgm-reports/modules/ROOT/attachments/ESPD_OUC_Meetings_Slides_20260611.pptx[40th OUC Presentation] 
+*** link:{attachmentsdir}/ESPD_OUC_Meetings_Slides_20260611.pptx[40th OUC Presentation]
 *** xref:20260611_OUC meeting report.adoc[40th OUC Report]
 
 == 2025
