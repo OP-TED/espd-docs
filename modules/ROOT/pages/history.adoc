@@ -196,4 +196,16 @@ The main change in this version was the replacement of dynamic UUIDs with XML Pa
 
 The details of other minor changes can be found in full in the release notes.
 
+== Version 4.1.0
+
+Version 4.1.0 of the ESPD-EDM was released in October 2025 as minor release.
+
+Added relied on block for three selection criteria.
+
+Evidence group misplacement fixed.
+
+Simplification of SUBCRITERION and added SUBCRITERION block for two criteria.
+
+The details of other minor changes can be found in full in the release notes.
+
 include::partial$feedback.adoc[]
