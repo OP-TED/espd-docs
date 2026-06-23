@@ -22,11 +22,11 @@ Examples: the buyer requires a minimum of 3 references for prior works similar t
 
 == ESPD Response XSD Schema
 
-For the ESPD Response, the ESPD-EDM uses the UBL-2.3 document named QualificationApplicationResponse.xsd XSD Schema. This schema can be found under the folder link:{url-tree}/ubl-2.3/xsdrt/maindoc[ubl-2.3/xsdrt/maindoc] (or the equivalent documented xsd folder).
+For the ESPD Response, the ESPD-EDM uses the UBL-2.4 document named QualificationApplicationResponse.xsd XSD Schema. This schema can be found under the folder link:{url-tree}/ubl-2.4/xsdrt/maindoc[ubl-2.4/xsdrt/maindoc] (or the equivalent documented xsd folder).
 
-The figure below shows the XSD Schema defined by UBL-2.3 for this document, which replaces the Schema UBL 2.2. Only the first level components of the schema are shown. The inner sub-elements and sub-classes are covered in detail in the following sub-sections of this document. The ESPD Response share many elements with the ESPD Request. For those elements that have already been described in the ESPD Request please see the sections above in this document where those elements were explained.
+The figure below shows the XSD Schema defined by UBL-2.4 for this document. Only the first level components of the schema are shown. The inner sub-elements and sub-classes are covered in detail in the following sub-sections of this document. The ESPD Response share many elements with the ESPD Request. For those elements that have already been described in the ESPD Request please see the sections above in this document where those elements were explained.
 
-Notice that, in the UBL-2.3 Schema there are only four mandatory elements: cbc:IssueDate, ContractFolderID, cac:ContractingParty (the buyer) and cac:EconomicOperatorParty (the economic operator).
+Notice that, in the UBL-2.4 Schema there are only four mandatory elements: cbc:IssueDate, ContractFolderID, cac:ContractingParty (the buyer) and cac:EconomicOperatorParty (the economic operator).
 
 [NOTE]
 ====
@@ -40,9 +40,9 @@ _Figure 1. QualificationApplicationResponse XSD Schema, global view_
 
 == ESPD Response cardinalities
 
-As you can see the UBL-2.3 Schema is quite flexible as, except for a few cases, most elements are optional.
+As you can see the UBL-2.4 Schema is quite flexible as, except for a few cases, most elements are optional.
 
-The ESPD-EDM model, however, adds a few more restrictions regarding the cardinalities. These can be seen in the diagram below which presents the ESPD-EDM structure for the ESPD Response with its own cardinality restrictions. Notice that ESPD-EDM does not change anything else from the UBL-2.3 Schema.
+The ESPD-EDM model, however, adds a few more restrictions regarding the cardinalities. These can be seen in the diagram below which presents the ESPD-EDM structure for the ESPD Response with its own cardinality restrictions. Notice that ESPD-EDM does not change anything else from the UBL-2.4 Schema.
 
 image::https://kroki.io/pikchr/svg/eNqNlU1z2jAQhu_-FRomhyQkqoUxBmZ6MNB2MpNp0zTpJZODsEVQxkgeS4Skv74rIz5k7AAXZOnRu692vfJZgb4iH3e48Lx4iJ5SuRIegt9UvqNWO5kmw8fR7V9WKC7FzeSJPLdQ9rpU2i6OYSgX_B_V9et3hZzxjMGKj3HD4rd3liwb9jtTM64RF29cbR2uuJ4jsUJUo37-jgSSM5RRpbFaIUUXbONS5h83IuUJ1bKoc_L4WHc2KXRBE_1dZikr6swptWQTqpnrsc5d8Im7UuaBL1ids2-JFJDg5FfOCuP-RyGX-U9aD-_qVJtt9sblUh2BZMLSZcHGMt071rPnjYblmeAsMRwshZPFeP3fRuHlWYHmjL_MYRXbQRveq8iseOP11tbvJc34zFQB4sd5ntnhPVO5FIq1AMtSqz6y6laN4DJImVKsjI0Rhnd2MkSpBPMtuyLWKwr8EhsVJTQZbovJxcsdLfTH5th228ruY-ganftXpiUuylqOOo5MtRynafWsVuBomVxDphdMaBi-skR_MSWYMJUUPDeJOSJMsG-Fu0eEb6U-qtW1WqGj9cAEvPyQtXHBNQxOMNW3Qr0jQruyfyrY2ZYickvxxlMmku32lKo5S5tVNkXoOyoTSJVJ1D2bseJ0uWCb-oEj94e_CKoh-afK2KzD6-pTqwRCTicQHF2OiNsOHWgHmLNPa3UrzqDzzn0cXpX9d2GUp1YZrnLYGbSQWtAs22j5uHtpwu_UTCC_jACz60fbeOsYZlqsjGmyNT11Te9ttbJuiFrD12DFGCYNhrfS0wPpqSu9MUrWRmO4DDIuGJoVcoEmcIGYDx2cMSBIz5lAGZtppCUyefbiTgMdVemOoYNammBSpQNDdxvosEp3DR020IMqHRq6V0tDAv0K3TN01EBHVToydL-WDjCp0n1DDxrosEoPgPbKWhPnDo8JbNp98OuIzlEiOEp0awiML10oPAXqHUL-ARQdQu04Tbm57GnW2v-8xX34N41xBV1B4Ar8VLh_SvTBPvQfN3gTiw==[Qualification Application Response UML Diagram,width=600,height=650]
 //image:Qualification_Application_Response_UML_Diagram.jpg[Qualification Application Response UML Diagram,width=350,height=426]
@@ -52,8 +52,8 @@ _Figure 2. ESPD-EDM 'QualificationApplicationResponse', UML diagram_
 If you compare both figures you will observe that:
 
 [arabic]
-. The cardinalities of the root common basic components, such as `cbc:ID`, `cbc:UUID`, `cbc:TendererRole`, and other are different for the ESPD than for UBL-2.3;
-. Similarly, the cardinalities of aggregate components like `cac:ContractingParty`, `cac:ProcurementProjectLot` and `cac:TenderingCriterion` are different to the UBL-2.3 ones.
+. The cardinalities of the root common basic components, such as `cbc:ID`, `cbc:UUID`, `cbc:TendererRole`, and other are different for the ESPD than for UBL-2.4;
+. Similarly, the cardinalities of aggregate components like `cac:ContractingParty`, `cac:ProcurementProjectLot` and `cac:TenderingCriterion` are different to the UBL-2.4 ones.
 
 The cardinality constraints added by the ESPD are not defined in the XSD Schema. In order to control these constraints the ESPD-EDM uses link:https://schematron.com/[ISO Schematron] assertions. The ESPD-EDM distribution package provides Schematron schemata and CVA files for the validation of the XML instances (folder link:{url-tree}/validation[_/validation_]).
 
@@ -75,7 +75,7 @@ _Table 26. Class QualificationApplicationResponse, components required by the ES
 Preliminary evidence certificates in the form of a self-declaration submitted by the economic operator during the tendering phase. On awarding, the winning party has to supply the real attestations and certificates.
 
 |*Business rule(s)*: |None
-|*File*: |link:{url-tree}/ubl-2.3/xsdrt/maindoc/UBL-QualificationApplicationResponse-2.3.xsd[ubl-2.3/xsdrt/maindoc/UBL-QualificationApplicationResponse-2.3.xsd]
+|*File*: |link:{url-tree}/ubl-2.4/xsdrt/maindoc/UBL-QualificationApplicationResponse-2.4.xsd[ubl-2.4/xsdrt/maindoc/UBL-QualificationApplicationResponse-2.4.xsd]
 |===
 
 [cols=",,,,",options="header",]
@@ -84,7 +84,7 @@ Preliminary evidence certificates in the form of a self-declaration submitted by
 |*cbc:UBLVersionID* |Identifier |1 |Identifies the earliest version of the UBL 2 schema for this document type that defines all of the elements that might be encountered in the current instance. a|
 *Information Requirement*: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1-tbr92-020[_tbr92-020_].
 
-*Rule*: Use the value "2.3". Use also "OASIS-UBL-TC" for the schemeAgencyID attribute.
+*Rule*: Use the value "2.4". Use also "OASIS-UBL-TC" for the schemeAgencyID attribute.
 
 *Rule scope*: Common (BR-OTH-05, 2.BR-OTH-02)
 
@@ -158,7 +158,7 @@ Additional comments: copies of an ESPD document should be identified with same U
 |*cac:ContractingParty* |Associated class |1 |The buyer or contracting entity who is buying supplies, services or public works using a tendering procedure as described in the applicable directive (Directives 2014/24/EU, 2014/25/EU). See section xref:2.7_Contracting_Body.adoc[Contracting Body] for more specification details. a|
 *Information Requirement*: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1-tbr92-020[_tbr92-011_].
 
-*Rule*: UBL-2.3 defines multiple cardinality ContractingParties presumably to allow *joint procurements*. However the ESPD only expects data about one buyer. The decision was made that in case of joint procurement the data collected in the ESPD would be about *the leader* of the joint procurement procedure.
+*Rule*: UBL-2.4 defines multiple cardinality ContractingParties presumably to allow *joint procurements*. However the ESPD only expects data about one buyer. The decision was made that in case of joint procurement the data collected in the ESPD would be about *the leader* of the joint procurement procedure.
 
 |*cac:EconomicOperatorParty* |Associated class |1 |Any natural or legal person or public entity which offers the execution of works and/or a work, the supply of products or the provision of services on the market. Information about the party submitting the qualification. a|
 *Information Requirement*: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1-tbr92-020[_tbr92-001_].
@@ -255,7 +255,7 @@ _Table 27. Reference to the ESPD Request, expected elements_
 |*Class name*: |cac:AdditionalDocumentReference
 |*Definition*: |A reference to an additional document associated with this document.
 |*Business rule(s)*: |None
-|*File*: |ubl-2.3/xsdrt/common/UBL-CommonAggregateComponents-2.3xsd
+|*File*: |ubl-2.4/xsdrt/common/UBL-CommonAggregateComponents-2.4xsd
 |*Path*: |/QualificationApplicationResponse/cac:AdditionalDocumentReference
 |*Context of Use*: |In this case this reference points at the ESPD Request XML instance that was used to produce the ESPD Response XML document.
 |===
@@ -313,7 +313,7 @@ _Table 28. External Reference_
 |===
 |*Component name*: |*cac:ExternalReference*
 |*Definition*: |A reference to the authentic source of content of this document.
-|*File*: |ubl-2.3/xsdrt/common/UBL-CommonAggregateComponents-2.3.xsd
+|*File*: |ubl-2.4/xsdrt/common/UBL-CommonAggregateComponents-2.4.xsd
 |*Path*: |/QualificationApplicationResponse/cac:AdditionalDocumentReference/cac:Attachment/cac:ExternalReference
 |*Context of use*: |Reference to the URI location where the ESPD Request XML instance can be downloaded from.
 |===
@@ -361,7 +361,7 @@ Moreover, each EO should submit an ESPD Response per lot or group of Lots which 
 
 _Table 30. Information requirement about the identifiers of the economic operators_
 |===
-|*REQUIREMENT* |For the identification of the economic operators the UBL-2.3 element cac:PartyIdentification/cbc:ID must be used. The following two attributes of the cbc:ID element (CCT IdentifierType element) must be used: (1) @schemeID, a code from the Code List link:{url-tree}/codelists/gc/EOIDType.gc[EOIDType] must be used; (2) @schemeAgencyID, the default value "OP" must be used; (3) Optionally, the attribute @schemeName can be used to place the 'Name' of the code (see the column 'Name' in the above mentioned Code List). For the ESPD-EDM the preferred type code for the @schemID is VAT.
+|*REQUIREMENT* |For the identification of the economic operators the UBL-2.4 element cac:PartyIdentification/cbc:ID must be used. The following two attributes of the cbc:ID element (CCT IdentifierType element) must be used: (1) @schemeID, a code from the Code List link:{url-tree}/codelists/gc/EOIDType.gc[EOIDType] must be used; (2) @schemeAgencyID, the default value "OP" must be used; (3) Optionally, the attribute @schemeName can be used to place the 'Name' of the code (see the column 'Name' in the above mentioned Code List). For the ESPD-EDM the preferred type code for the @schemID is VAT.
 |===
 
 [cols=",",options="header",]
@@ -394,21 +394,21 @@ Therefore, in the context of the ESPD the definition of economic operator has be
 
 The information that the economic operator (EO) has to provide is relatively abundant, especially if the EO is the lead entity of a group. UBL does provide a class cac:EconomicOperatorParty with sufficient data elements to identify the economic operator, its role, its representatives, physical location, officially registered address and other.
 
-As the whole ESDP-EDM is based entirely on the UBL-2.3 XSD (W3C) Schemas, these schemas are to be used for ESPD.
+As the whole ESDP-EDM is based entirely on the UBL-2.4 XSD (W3C) Schemas, these schemas are to be used for ESPD.
 
-Nonetheless some data requested in the ESPD are not modeled in UBL-2.3, namely those aiming at purposes going beyond the identification of the economic operator; e.g. data with statistical purposes; or to ensure the transparency of the procurement procedure; other.
+Nonetheless some data requested in the ESPD are not modeled in UBL-2.4, namely those aiming at purposes going beyond the identification of the economic operator; e.g. data with statistical purposes; or to ensure the transparency of the procurement procedure; other.
 
 Therefore in the ESPD-EDM, the information about the economic operator is spread in two different places:
 
 [arabic]
-. The UBL-2.3 *cac:EconomicOperatorParty* component; and
-. In *criteria data structures*: following the solution adopted for Version ESPD-EDM, the ESPD-EDM defines several criteria classified as CRITERION.OTHER.EO_DATA.* (where the * refers to different branches and leaves of a different structures about the economic operator (e.g. SHELTERED_WORKSHOP, TOGETHER_WITH_OTHERS, etc.). The XML instances use criteria components (UBL-2.3 cac:TenderingCriterion) to structure these data. The sub-sections below cover both.
+. The UBL-2.4 *cac:EconomicOperatorParty* component; and
+. In *criteria data structures*: following the solution adopted for Version ESPD-EDM, the ESPD-EDM defines several criteria classified as CRITERION.OTHER.EO_DATA.* (where the * refers to different branches and leaves of a different structures about the economic operator (e.g. SHELTERED_WORKSHOP, TOGETHER_WITH_OTHERS, etc.). The XML instances use criteria components (UBL-2.4 cac:TenderingCriterion) to structure these data. The sub-sections below cover both.
 
 == XSD Schemas
 
 cac:EconomicOperatorParty
 
-The UBL-2.3 cac:EconomicOperatorParty has three common aggregate components, the XSD Schema looks like this:
+The UBL-2.4 cac:EconomicOperatorParty has three common aggregate components, the XSD Schema looks like this:
 
 image::https://kroki.io/blockdiag/svg/eNq1Ut1q2zAYvY6e4kO72UB1nC6QrmG7CHFgMFi7bjAYwcj2F1urIhlJTpOW3O8p9nB7ksl23PQnXXszXRjpnO_P53yJ1OllJngON6TfhzOeI_QdpoUSKZfNLTZoS60sBoVbSvi4fBATixqx_SjVSi9FGn8u0XCnTaxXaFYCr4KfZQ6vZyKvDMLg3SiAlKenXXwXfsaN28D3iymDXOqES6hz39RjXaADW3IFS3RGrAlA84yvROYKeA_Dk_EtVqDIC-fBwXEDZrjglXTxQitnxTXWzLBhSG50VcI1Gh231xtCUi218TH0VTSKwtmAjgmhT45L4egDUFy702-TT9HaobLCS0XhRybqKkornD-bX9PnFZdisREq3xF3KjCQPEFZTxUGwZ9fv-nLaj6kv2iJlLXc4y5zshNkIYx1t4r06MEuXzcl-nRb8LKW1AerDLNErxl0rhyPQmbdRtZ8xm2BGYO9vNPJ9G00ofMx6fVgjyeSp5e0BZ0Xdp8wm4X-0Ma63em6S6HwHn6va1us-Rywih3Wn71UQtLbkm23pO2vO-0FzdCybvlgxWWFIKxfypN_Wcf-x4TPuDQMvQfbv9qbUVE=[cac:EconomicOperatorParty XSD,width=436,height=200]
 //image:Economic_Operator_overview.jpg[EconomicOperator overview,width=436,height=161]
@@ -443,7 +443,7 @@ _Figure 6. cac:QualifyingParty element, XSD_
 
 === cac:EconomicOperatorRole
 
-The UBL-2.3 element for the role of the economic operator is quite straightforward and typical in UBL: it provides a pair *code + description* (see Code List link:{url-tree}/codelists/gc/EoRoleType.gc[EoRoleType] for the codes and descriptions; see also the XML example below).
+The UBL-2.4 element for the role of the economic operator is quite straightforward and typical in UBL: it provides a pair *code + description* (see Code List link:{url-tree}/codelists/gc/EoRoleType.gc[EoRoleType] for the codes and descriptions; see also the XML example below).
 
 image::https://kroki.io/blockdiag/svg/eNqlksFqGzEQhs_WUwzqpYX1ep0akti0B9drKBQamvZUzKKVxrtqZGmR5NZJ8L1PkYfLk0Rae2NcQhKoDov2n9E_o09TKsOvhGQV3JLBAC5YhTDwyGstOVPtrrDoGqMdprVfKfi8-ienkFFxAzR9axT2_XWD6a-mgrdzWa0twvD8PIVvIQRmCb5GQG60WUkOpkHLvLHvYu1L9OAapmGF3soNAWh_iz9S-Bo-wOhs8qjVKKvaB3F40ooCl2ytfLE02jt5gzEyaiOksmbdwA1aU-y2t4Rwo4wNOfRNfppn8yGdEEI54-N839nXfWOxawr9j0Bx48c_pl_yjUftZMBBE6C85OOY8smIkPZTyGiqjcbFS3bdyRk6bmXjg-ORQQKKlahij1ma3v-9owuyv8pSWucf79KjTxX5Ht4g-LmaNZFFyNUCRWk2CXQ4T06zxPlrFeOCuRpFAgcus-nsfT6liwnp9eCgl4rxK7oTfUByODCfZ2HRlvl-ddWV1HikH1XdmbWfV0BOnkZHeluy7YZod0NvAkiBLumGA34ztUaQLgzN2TPvk_xHHy8gH2UB6PYBv3UalA==[Role of the economic operator,width=450,height=180]
 //image:eo-role-type.jpg[Role of the economic operator,width=403,height=126]
@@ -461,27 +461,27 @@ _Figure 8. The Party of the economic party_
 
 The figures below show the `cac:QualifyingParty` sub-components `cac:BusinessClassificationScheme` and `FinancialCapability`, and `cac:CompletedTask` in a bit more of detail. At present, the ESPD-EDM only uses one field, cbc:Description for the references and classifications and `cbc:Amount`for the Turnover.
 
-image::https://kroki.io/blockdiag/svg/eNrtVc1O20AQPsdPMTIHWmlJnEBVBKJSQxIJCVUUSC8Vsjbrsb3F2bV215CAcu9T9OH6JN2NYycBCvSHnupDtJ6fL9_OzDceZZJdRpwmcOu1WnBCE4SWQZYKzmg2P4UKdS6FxmZqxhkcje_EhNxZdGvYPd7qNLfDw4xqzWPrM1yK8IylOMbmlzyBVwOeFAqhE7SbcJ4iKM5S0EYVzDi7jIHCAgY213GgxNmEWCowLhdzSwyFKd0219CJFHLMUb92dzlDAzqnAsZoFJ94APPX8JpHJoUD2Nndr20p8iQ11tjuzI0RxrTITBhLYTS_QefZ2fe8RMkihxtUMiyPt57HZGYpHYC_0X_bDwZt38b5Pmy9A59RtvexoBmPp1wkJ1SZqQ-fI-7ChRRIIKMjzFxy0Gx-__rNv7C5D2ZVcN1Cc4Far1enLM4adoX0eIKDxYnZs1XvTwwKbX3aJ_a_RmzvqFedhsPl-Zhqc4pX3IX2qMGH7Of8HptnknFIH6TBJ-v0K3j0T9j0UDPFc-f6m6TeJyjYdFnW8n1OdWH5hMrVcqULp0fVsURbMRxTkRRWhzb6925qo9a9h7a3iVQ_ndh2PbGlFGKutKll0WgA1MoYZZRdWl04o7HjtpTMYBDYx5-LbvHolOZOcJllvGY308zZI6pTjEqw-c_TN_S8RslLI5MiWiHpPxR_Ps3dvFREbLCIMBrJCYFqeXTaAVknRJbX3eh1e9v9rn-x_w_KUJbgpTRMVhRJVtRE7muDvPRck0en1LNlgJnXmHmzavuXzTLSTm6EmlRbHa5oViBwbbf9rlvVdafth3Bs52OlzQGB-tvQCWxDn7OEHx2cNzXK3R1P_rdx-lT1dlz1Zt4PY2PL8Q==[The rich structure of a UBL-2.3 Classification Scheme for the representation of taxonomies,width=650,height=600]
+image::https://kroki.io/blockdiag/svg/eNrtVc1O20AQPsdPMTIHWmlJnEBVBKJSQxIJCVUUSC8Vsjbrsb3F2bV215CAcu9T9OH6JN2NYycBCvSHnupDtJ6fL9_OzDceZZJdRpwmcOu1WnBCE4SWQZYKzmg2P4UKdS6FxmZqxhkcje_EhNxZdGvYPd7qNLfDw4xqzWPrM1yK8IylOMbmlzyBVwOeFAqhE7SbcJ4iKM5S0EYVzDi7jIHCAgY213GgxNmEWCowLhdzSwyFKd0219CJFHLMUb92dzlDAzqnAsZoFJ94APPX8JpHJoUD2Nndr20p8iQ11tjuzI0RxrTITBhLYTS_QefZ2fe8RMkihxtUMiyPt57HZGYpHYC_0X_bDwZt38b5Pmy9A59RtvexoBmPp1wkJ1SZqQ-fI-7ChRRIIKMjzFxy0Gx-__rNv7C5D2ZVcN1Cc4Far1enLM4adoX0eIKDxYnZs1XvTwwKbX3aJ_a_RmzvqFedhsPl-Zhqc4pX3IX2qMGH7Of8HptnknFIH6TBJ-v0K3j0T9j0UDPFc-f6m6TeJyjYdFnW8n1OdWH5hMrVcqULp0fVsURbMRxTkRRWhzb6925qo9a9h7a3iVQ_ndh2PbGlFGKutKll0WgA1MoYZZRdWl04o7HjtpTMYBDYx5-LbvHolOZOcJllvGY308zZI6pTjEqw-c_TN_S8RslLI5MiWiHpPxR_Ps3dvFREbLCIMBrJCYFqeXTaAVknRJbX3eh1e9v9rn-x_w_KUJbgpTRMVhRJVtRE7muDvPRck0en1LNlgJnXmHmzavuXzTLSTm6EmlRbHa5oViBwbbf9rlvVdafth3Bs52OlzQGB-tvQCWxDn7OEHx2cNzXK3R1P_rdx-lT1dlz1Zt4PY2PL8Q==[The rich structure of a UBL-2.4 Classification Scheme for the representation of taxonomies,width=650,height=600]
 //image:UBL-2.3_Classification_Scheme.jpg[UBL-2.3 'Classification Scheme',width=485,height=349]
 //[Edit this diagram](https://niolesk.top/#https://kroki.io/blockdiag/svg/eNrtVc1O20AQPsdPMTIHWmlJnEBVBKJSQxIJCVUUSC8Vsjbrsb3F2bV215CAcu9T9OH6JN2NYycBCvSHnupDtJ6fL9_OzDceZZJdRpwmcOu1WnBCE4SWQZYKzmg2P4UKdS6FxmZqxhkcje_EhNxZdGvYPd7qNLfDw4xqzWPrM1yK8IylOMbmlzyBVwOeFAqhE7SbcJ4iKM5S0EYVzDi7jIHCAgY213GgxNmEWCowLhdzSwyFKd0219CJFHLMUb92dzlDAzqnAsZoFJ94APPX8JpHJoUD2Nndr20p8iQ11tjuzI0RxrTITBhLYTS_QefZ2fe8RMkihxtUMiyPt57HZGYpHYC_0X_bDwZt38b5Pmy9A59RtvexoBmPp1wkJ1SZqQ-fI-7ChRRIIKMjzFxy0Gx-__rNv7C5D2ZVcN1Cc4Far1enLM4adoX0eIKDxYnZs1XvTwwKbX3aJ_a_RmzvqFedhsPl-Zhqc4pX3IX2qMGH7Of8HptnknFIH6TBJ-v0K3j0T9j0UDPFc-f6m6TeJyjYdFnW8n1OdWH5hMrVcqULp0fVsURbMRxTkRRWhzb6925qo9a9h7a3iVQ_ndh2PbGlFGKutKll0WgA1MoYZZRdWl04o7HjtpTMYBDYx5-LbvHolOZOcJllvGY308zZI6pTjEqw-c_TN_S8RslLI5MiWiHpPxR_Ps3dvFREbLCIMBrJCYFqeXTaAVknRJbX3eh1e9v9rn-x_w_KUJbgpTRMVhRJVtRE7muDvPRck0en1LNlgJnXmHmzavuXzTLSTm6EmlRbHa5oViBwbbf9rlvVdafth3Bs52OlzQGB-tvQCWxDn7OEHx2cNzXK3R1P_rdx-lT1dlz1Zt4PY2PL8Q==)
-_Figure 9. The rich structure of a UBL-2.3 'Classification Scheme' for the representation of taxonomies_
+_Figure 9. The rich structure of a UBL-2.4 'Classification Scheme' for the representation of taxonomies_
 
-image::https://kroki.io/blockdiag/svg/eNrVVM1O20AQPsdPMTIHWmlxjEECgVqpQCJV6iEI2h4qFK13J_aUza7lXdMElHufog_XJ-muQ5KGQkNVqVL3YNnfznzz93lyZcS1JF7AXdTtwoAXCF2HotQkuGrfhjXaymiLSenGCt6OH9gMKSC2-_7k3U6W7A1PecVzUuSmyeeqgBd9KpoaIUuzBC5LBOvqRrgAmRHcO8H2ymv7ZcjkAh3YimsYo6tpEgG0n8MvJF0Jr2D_8HiJlUhF6Ty4m7WgxBFvlBuOjHaWbjHc7B9HUVGbpoJbrM1w_noXRcIoU3uDeKt30Ev7u7G3i5MYdl5DLLg4Om-4otGUdDHgtZvG8ElSsNdGIwPFc1TBO02S71-_xVfe-VGvBV2fNNeCuFrV-0zKRz0DLU7ckW9jb-JQW_KDipmPlYujleHltMJTI3Et1NUG3kBxhlbUVDlPuzHNzWwfuGrwzdg02i1ybCHfLe0edmIjob_s3ZBELfCiqSpFKP82R94mRNIjA6zJyDZNj37E_ILcw_7dC2pEtXVLRXU6AEtR5YqLay-pADo_qJXa-v3Un7jV6_2xJa-CVhVpXMPdVAVccluinJO1jyeriaLOPB2Lwmj5U27xuih8QYuo3kRLlLmZMFj8ZLsHKVuPzla1bZ2dnO31TuKr439Q87zeP5E6-1XB7JkyZE-oiz1HIpFPFGZRZxbNFnts3k5nvGwkWrbYT3ATogJZv7cO26WzHIbfyGM_uNUkspTBcs1lqe_5o3uGPa0J9n-07_eCzPZD6bMfjyckkg==[The structure of UBL-2.3 Capability,width=650,height=350]
+image::https://kroki.io/blockdiag/svg/eNrVVM1O20AQPsdPMTIHWmlxjEECgVqpQCJV6iEI2h4qFK13J_aUza7lXdMElHufog_XJ-muQ5KGQkNVqVL3YNnfznzz93lyZcS1JF7AXdTtwoAXCF2HotQkuGrfhjXaymiLSenGCt6OH9gMKSC2-_7k3U6W7A1PecVzUuSmyeeqgBd9KpoaIUuzBC5LBOvqRrgAmRHcO8H2ymv7ZcjkAh3YimsYo6tpEgG0n8MvJF0Jr2D_8HiJlUhF6Ty4m7WgxBFvlBuOjHaWbjHc7B9HUVGbpoJbrM1w_noXRcIoU3uDeKt30Ev7u7G3i5MYdl5DLLg4Om-4otGUdDHgtZvG8ElSsNdGIwPFc1TBO02S71-_xVfe-VGvBV2fNNeCuFrV-0zKRz0DLU7ckW9jb-JQW_KDipmPlYujleHltMJTI3Et1NUG3kBxhlbUVDlPuzHNzWwfuGrwzdg02i1ybCHfLe0edmIjob_s3ZBELfCiqSpFKP82R94mRNIjA6zJyDZNj37E_ILcw_7dC2pEtXVLRXU6AEtR5YqLay-pADo_qJXa-v3Un7jV6_2xJa-CVhVpXMPdVAVccluinJO1jyeriaLOPB2Lwmj5U27xuih8QYuo3kRLlLmZMFj8ZLsHKVuPzla1bZ2dnO31TuKr439Q87zeP5E6-1XB7JkyZE-oiz1HIpFPFGZRZxbNFnts3k5nvGwkWrbYT3ATogJZv7cO26WzHIbfyGM_uNUkspTBcs1lqe_5o3uGPa0J9n-07_eCzPZD6bMfjyckkg==[The structure of UBL-2.4 Capability,width=650,height=350]
 //image:UBL-2.3_Capability.jpg[UBL-2.3 'Capability',width=454,height=207]
 //[Edit this diagram](https://niolesk.top/#https://kroki.io/blockdiag/svg/eNrVVM1O20AQPsdPMTIHWmlxjEECgVqpQCJV6iEI2h4qFK13J_aUza7lXdMElHufog_XJ-muQ5KGQkNVqVL3YNnfznzz93lyZcS1JF7AXdTtwoAXCF2HotQkuGrfhjXaymiLSenGCt6OH9gMKSC2-_7k3U6W7A1PecVzUuSmyeeqgBd9KpoaIUuzBC5LBOvqRrgAmRHcO8H2ymv7ZcjkAh3YimsYo6tpEgG0n8MvJF0Jr2D_8HiJlUhF6Ty4m7WgxBFvlBuOjHaWbjHc7B9HUVGbpoJbrM1w_noXRcIoU3uDeKt30Ev7u7G3i5MYdl5DLLg4Om-4otGUdDHgtZvG8ElSsNdGIwPFc1TBO02S71-_xVfe-VGvBV2fNNeCuFrV-0zKRz0DLU7ckW9jb-JQW_KDipmPlYujleHltMJTI3Et1NUG3kBxhlbUVDlPuzHNzWwfuGrwzdg02i1ybCHfLe0edmIjob_s3ZBELfCiqSpFKP82R94mRNIjA6zJyDZNj37E_ILcw_7dC2pEtXVLRXU6AEtR5YqLay-pADo_qJXa-v3Un7jV6_2xJa-CVhVpXMPdVAVccluinJO1jyeriaLOPB2Lwmj5U27xuih8QYuo3kRLlLmZMFj8ZLsHKVuPzla1bZ2dnO31TuKr439Q87zeP5E6-1XB7JkyZE-oiz1HIpFPFGZRZxbNFnts3k5nvGwkWrbYT3ATogJZv7cO26WzHIbfyGM_uNUkspTBcs1lqe_5o3uGPa0J9n-07_eCzPZD6bMfjyckkg==)
-_Figure 10. The structure of UBL-2.3 'Capability'_
+_Figure 10. The structure of UBL-2.4 'Capability'_
 
-image::https://kroki.io/blockdiag/svg/eNrVVE1rGzEQPXt_xbClkMDG3jiBhJgUHH9AoQfTuKcSFlkae9VopUWade0E3_sr-uP6Syqtv-KQkPbQQ3VYtG80T2_nzexEGX4vJJvBY9RqwYjNEFqEPNeSM1XvMouuNNphM6dCwcfi2ZlMBsS1vtx8Omk3z7KeKUqFhCIbM3efTY19304tTtGi5uia38oZHA3lrLII7fSsCeMcwZGtOAXITIE8sGGDHRsENjiqnN96TtgzHh8H6bdI4EqmoUCychEB1K_Zdykoh2s4v-zssBzlLCcPnrZrUOCUVYq8Vk1OPmCInNeRaGZNVcIDWpOtt49RxI3yAq4hfje4GKTD07gTRXEMJx8g5oxf7SQHxTF8FTIc1kZjAopNUIXUtNn89eNnfOczX8gJVLigK1-FwYJQO-kNiBPPP-FXXa0rprpztL7u3cJUmrahsSGmAsUhPGKWlj1WMi5puQk91XX3qoiQ3UfHrSzJa6gJ_cnBXIpQ-9uqLJVE8eZXvsrv4RFaacSW-jNyWUrU1KscmQJtLf6Z3I0tU2kd7XxpxAcXjJcl-jSXszIY6g9pgWJiFglse6J9kSaOlirEBXM5igT25vZv-meDm_iuEzUasMcnivH7eA2SN2mfMBymfsV142zW9nYlNR7gB7euyerHv7Y9-XNPk7-wJ2qsotV2DNflJePNEuiS7XjBnKkKQTo_dpdhYHbe-B9QYbR4YkyawG5I26m34IUGSv7XYr3RlOfhe1e_AUGK05I=[The structure of the UBL-2.3 Completed Task,width=450,height=300]
+image::https://kroki.io/blockdiag/svg/eNrVVE1rGzEQPXt_xbClkMDG3jiBhJgUHH9AoQfTuKcSFlkae9VopUWade0E3_sr-uP6Syqtv-KQkPbQQ3VYtG80T2_nzexEGX4vJJvBY9RqwYjNEFqEPNeSM1XvMouuNNphM6dCwcfi2ZlMBsS1vtx8Omk3z7KeKUqFhCIbM3efTY19304tTtGi5uia38oZHA3lrLII7fSsCeMcwZGtOAXITIE8sGGDHRsENjiqnN96TtgzHh8H6bdI4EqmoUCychEB1K_Zdykoh2s4v-zssBzlLCcPnrZrUOCUVYq8Vk1OPmCInNeRaGZNVcIDWpOtt49RxI3yAq4hfje4GKTD07gTRXEMJx8g5oxf7SQHxTF8FTIc1kZjAopNUIXUtNn89eNnfOczX8gJVLigK1-FwYJQO-kNiBPPP-FXXa0rprpztL7u3cJUmrahsSGmAsUhPGKWlj1WMi5puQk91XX3qoiQ3UfHrSzJa6gJ_cnBXIpQ-9uqLJVE8eZXvsrv4RFaacSW-jNyWUrU1KscmQJtLf6Z3I0tU2kd7XxpxAcXjJcl-jSXszIY6g9pgWJiFglse6J9kSaOlirEBXM5igT25vZv-meDm_iuEzUasMcnivH7eA2SN2mfMBymfsV142zW9nYlNR7gB7euyerHv7Y9-XNPk7-wJ2qsotV2DNflJePNEuiS7XjBnKkKQTo_dpdhYHbe-B9QYbR4YkyawG5I26m34IUGSv7XYr3RlOfhe1e_AUGK05I=[The structure of the UBL-2.4 Completed Task,width=450,height=300]
 //image:UBL-2.3_Completed_Task_for references.jpg[UBL-2.3 Completed Task (used for references),width=291,height=200]
 //[Edit this diagram](https://niolesk.top/#https://kroki.io/blockdiag/svg/eNrVVE1rGzEQPXt_xbClkMDG3jiBhJgUHH9AoQfTuKcSFlkae9VopUWade0E3_sr-uP6Syqtv-KQkPbQQ3VYtG80T2_nzexEGX4vJJvBY9RqwYjNEFqEPNeSM1XvMouuNNphM6dCwcfi2ZlMBsS1vtx8Omk3z7KeKUqFhCIbM3efTY19304tTtGi5uia38oZHA3lrLII7fSsCeMcwZGtOAXITIE8sGGDHRsENjiqnN96TtgzHh8H6bdI4EqmoUCychEB1K_Zdykoh2s4v-zssBzlLCcPnrZrUOCUVYq8Vk1OPmCInNeRaGZNVcIDWpOtt49RxI3yAq4hfje4GKTD07gTRXEMJx8g5oxf7SQHxTF8FTIc1kZjAopNUIXUtNn89eNnfOczX8gJVLigK1-FwYJQO-kNiBPPP-FXXa0rprpztL7u3cJUmrahsSGmAsUhPGKWlj1WMi5puQk91XX3qoiQ3UfHrSzJa6gJ_cnBXIpQ-9uqLJVE8eZXvsrv4RFaacSW-jNyWUrU1KscmQJtLf6Z3I0tU2kd7XxpxAcXjJcl-jSXszIY6g9pgWJiFglse6J9kSaOlirEBXM5igT25vZv-meDm_iuEzUasMcnivH7eA2SN2mfMBymfsV142zW9nYlNR7gB7euyerHv7Y9-XNPk7-wJ2qsotV2DNflJePNEuiS7XjBnKkKQTo_dpdhYHbe-B9QYbR4YkyawG5I26m34IUGSv7XYr3RlOfhe1e_AUGK05I=)
-_Figure 11. The structure of the UBL-2.3 Completed Task (used for references)_
+_Figure 11. The structure of the UBL-2.4 Completed Task (used for references)_
 
-UBL-2.3 provides a component to hold very specifically the data to identify the economic operator as it officially registered in a Business Register. This XSD diagram below shows the elements of this component cac:LegalEntityParty. This ESPD-EDM specification recommends to use it as an alternative (or supplementary) way to identify the economic party.
+UBL-2.4 provides a component to hold very specifically the data to identify the economic operator as it officially registered in a Business Register. This XSD diagram below shows the elements of this component cac:LegalEntityParty. This ESPD-EDM specification recommends to use it as an alternative (or supplementary) way to identify the economic party.
 
-image::https://kroki.io/blockdiag/svg/eNrtVNFu0zAUfW6-4sq8gJS1XVdpUyeQtrUVlSao6HhCU-TGt4mZEwf7BtpNfecr-Di-BMdtWrp1TLxNCD9E8bnH18fXx3eqdHwjJE_gLmi1YMwThBZhnOYy5sr_RQZtoXOLzZQyBaPsHieSFWJbH88vDzrNo-gSE66iQU6SFtGYG1o0PxcJvBzKpDQInXa3CVcpwpoPng8rPnj-q0rKBAlswXPIkIycBwB-Gn2TglJ4Dd2T0w2WokxScuBhx4MCZ7xUFM10TlbeYhXp-kiQGF0WcItGR6vfuyCItdLGcdiLwfGgPTxkp0HAYh73vBqvbyWPwcEbYDinnhM_mBPmVrrKsBBYPI17HzCRlgwnB77jGdb4hc6cysWov4_Y54T78MG8kA8Z61Re01Cb7EILZPBJyEp_rnO8_pPyfRl2Voeg-BRVVYt2s_nz-w_2ZL6JVjg2ujASSRubymKUC2cMN7kvWn4ppfBHmhCn0nrxG44ptDsvTsg58izTZU51bFgqtRhzKSYpd2bczc93y3YmhKPYOrRJ-ztnEqe4vh1HeYtcvJ_NZIz-kH9RTRfxilKtBJqHq_dVc23AmTSWNg5ssPs7XC2K6l5tyovKvY6XCxRTPQ-hfgCdbju0tFBVXHCboghh6-T-ef9ocM6uT4NGA7b4VPH4hq1AckbeLhgO224w_0rWo95dyRx38J1dV8n85_k9jUdiNf7PmTd8xJZBYxks67a6chBpZ1KBNqzbJXzlqkSQ1rXRk0eMH_6_42d7x0-0i-O2awbLX5CRsiU=[UBL-2.3 Legal Entity Party,width=450,height=550]
+image::https://kroki.io/blockdiag/svg/eNrtVNFu0zAUfW6-4sq8gJS1XVdpUyeQtrUVlSao6HhCU-TGt4mZEwf7BtpNfecr-Di-BMdtWrp1TLxNCD9E8bnH18fXx3eqdHwjJE_gLmi1YMwThBZhnOYy5sr_RQZtoXOLzZQyBaPsHieSFWJbH88vDzrNo-gSE66iQU6SFtGYG1o0PxcJvBzKpDQInXa3CVcpwpoPng8rPnj-q0rKBAlswXPIkIycBwB-Gn2TglJ4Dd2T0w2WokxScuBhx4MCZ7xUFM10TlbeYhXp-kiQGF0WcItGR6vfuyCItdLGcdiLwfGgPTxkp0HAYh73vBqvbyWPwcEbYDinnhM_mBPmVrrKsBBYPI17HzCRlgwnB77jGdb4hc6cysWov4_Y54T78MG8kA8Z61Re01Cb7EILZPBJyEp_rnO8_pPyfRl2Voeg-BRVVYt2s_nz-w_2ZL6JVjg2ujASSRubymKUC2cMN7kvWn4ppfBHmhCn0nrxG44ptDsvTsg58izTZU51bFgqtRhzKSYpd2bczc93y3YmhKPYOrRJ-ztnEqe4vh1HeYtcvJ_NZIz-kH9RTRfxilKtBJqHq_dVc23AmTSWNg5ssPs7XC2K6l5tyovKvY6XCxRTPQ-hfgCdbju0tFBVXHCboghh6-T-ef9ocM6uT4NGA7b4VPH4hq1AckbeLhgO224w_0rWo95dyRx38J1dV8n85_k9jUdiNf7PmTd8xJZBYxks67a6chBpZ1KBNqzbJXzlqkSQ1rXRk0eMH_6_42d7x0-0i-O2awbLX5CRsiU=[UBL-2.4 Legal Entity Party,width=450,height=550]
 //image:UBL-2.3_Legal_Entity_Party.jpg[UBL-2.3 Legal Entity Party,width=303,height=358]
 //[Edit this diagram](https://niolesk.top/#https://kroki.io/blockdiag/svg/eNrtVNFu0zAUfW6-4sq8gJS1XVdpUyeQtrUVlSao6HhCU-TGt4mZEwf7BtpNfecr-Di-BMdtWrp1TLxNCD9E8bnH18fXx3eqdHwjJE_gLmi1YMwThBZhnOYy5sr_RQZtoXOLzZQyBaPsHieSFWJbH88vDzrNo-gSE66iQU6SFtGYG1o0PxcJvBzKpDQInXa3CVcpwpoPng8rPnj-q0rKBAlswXPIkIycBwB-Gn2TglJ4Dd2T0w2WokxScuBhx4MCZ7xUFM10TlbeYhXp-kiQGF0WcItGR6vfuyCItdLGcdiLwfGgPTxkp0HAYh73vBqvbyWPwcEbYDinnhM_mBPmVrrKsBBYPI17HzCRlgwnB77jGdb4hc6cysWov4_Y54T78MG8kA8Z61Re01Cb7EILZPBJyEp_rnO8_pPyfRl2Voeg-BRVVYt2s_nz-w_2ZL6JVjg2ujASSRubymKUC2cMN7kvWn4ppfBHmhCn0nrxG44ptDsvTsg58izTZU51bFgqtRhzKSYpd2bczc93y3YmhKPYOrRJ-ztnEqe4vh1HeYtcvJ_NZIz-kH9RTRfxilKtBJqHq_dVc23AmTSWNg5ssPs7XC2K6l5tyovKvY6XCxRTPQ-hfgCdbju0tFBVXHCboghh6-T-ef9ocM6uT4NGA7b4VPH4hq1AckbeLhgO224w_0rWo95dyRx38J1dV8n85_k9jUdiNf7PmTd8xJZBYxks67a6chBpZ1KBNqzbJXzlqkSQ1rXRk0eMH_6_42d7x0-0i-O2awbLX5CRsiU=)
-_Figure 12. The UBL-2.3 Legal Entity Party_
+_Figure 12. The UBL-2.4 Legal Entity Party_
 
 ==== Expected elements
 
@@ -497,7 +497,7 @@ _Table 32. Economic operator, expected elements_
 |*Class name*: |cac:EconomicOperatorParty
 |*Definition*: |Any natural or legal person or public entity, including any temporary association of undertakings, which offers the execution of works and/or a work, the supply of products or the provision of services on the market. Information about the party submitting the qualification.
 |*Business rule(s)*: |Common (BR-RESP-10)
-|*File*: |ubl-2.3/xsdrt/common/UBL-CommonAggregateComponents-2.3.xsd
+|*File*: |ubl-2.4/xsdrt/common/UBL-CommonAggregateComponents-2.4.xsd
 |*Path*: |/QualificationApplicationResponse/cac:EconomicOperatorParty
 |*Context of use*: |The ESPD Response document.
 |===
@@ -531,7 +531,7 @@ _Table 33. Qualifying Party, expected elements_
 |*Class name*: |cac:QualifyingParty
 |*Definition*: |The distinctive features or characteristics qualifying an economic operator to be a party in a tendering process (e.g., number of employees, number of operating units, type of business, technical and financial capabilities, completed projects).
 |*Business rule(s)*: |(BR-RESP-10-01)
-|*File*: |ubl-2.3/xsdrt/common/UBL-CommonAggregateComponents-2.3.xsd
+|*File*: |ubl-2.4/xsdrt/common/UBL-CommonAggregateComponents-2.4.xsd
 |*Path*: |/QualificationApplicationRequest/cac:EconomicOperatorParty/cac:QualifyingParty
 |*Context of use*: |Economic Operator in the ESPD Response document.
 |===
@@ -547,7 +547,7 @@ _Table 33. Qualifying Party, expected elements_
 |*cac:BusinessClassificationScheme/cbc:Description* |Text |0..n |The text describing one official classification assigned by an official list or (pre)qualification system to the economic operator. a|
 *Information Requirement*: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1-tbr92-001[_tbr92-001_]
 
-*Rule*: Only the 'Description' is expected, but the component cac:ClassificationScheme offers other rich possibilities (see the link:{url-tree}/ubl-2.3[UBL-2.3 model in the distribution package] or in the link:http://docs.oasis-open.org/ubl/csprd01-UBL-2.3/[original source] for more details).
+*Rule*: Only the 'Description' is expected, but the component cac:ClassificationScheme offers other rich possibilities (see the link:{url-tree}/ubl-2.4[UBL-2.4 model in the distribution package] or in the link:http://docs.oasis-open.org/ubl/csprd01-UBL-2.4/[original source] for more details).
 
 *Rule*: Integer value expected.
 
@@ -577,7 +577,7 @@ _Table 34. Economic operator role, expected elements_
 |===
 |*Class name*: |cac:EconomicOperatorRole
 |*Definition*: |The function of the economic operator when bidding from a consortium (Sole tenderer, group leader, member of a group, etc.).
-|*File*: |ubl-2.3/xsdrt/common/UBL-CommonAggregateComponents-2.3.xsd
+|*File*: |ubl-2.4/xsdrt/common/UBL-CommonAggregateComponents-2.4.xsd
 |*Path*: |/QualificationApplicationRequest/cac:EconomicOperatorParty/cac:EconomicOperatorRole
 |*Context of use*: |Economic Operator in the ESPD Response document.
 |===
@@ -604,7 +604,7 @@ _Table 35. (Qualifying) economic operator party, expected elements_
 |===
 |*Class name*: |cac:Party
 |*Definition*: |Main set of data used to identify and contact the economic operator, such as official identifiers, name, address, contact person, representatives, etc.
-|*File*: |ubl-2.3/xsdrt/common/UBL-CommonAggregateComponents-2.3.xsd
+|*File*: |ubl-2.4/xsdrt/common/UBL-CommonAggregateComponents-2.4.xsd
 |*Path*: |/QualificationApplicationResponse/cac:EconomicOperatorParty/cac:Party
 |===
 
@@ -614,7 +614,7 @@ _Table 35. (Qualifying) economic operator party, expected elements_
 |*cac:PartyIdentification/cbc:ID* |Identifier |1 |An identifier that identifies the economic operator, such as the VAT number, the company registration number in a Business Register, other. a|
 *Information Requirement*: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1-tbr92-001[_tbr92-001_].
 
-*Rule*: When possible use the VAT identification of the contracting body (see the link:https://ec.europa.eu/taxation_customs/vies/[VIES] platform for a EU cross-border national VAT number verification system). When not possible a different identifier may be used. For a very complete way of identification of the Party it is highly recommended to, additionally to the cac:Party/cac:Identification/cbc:ID, use the UBL-2.3 component cac:PartyLegalEntity: this element is the perfect placeholder for the data officially registered in a Business Register (see UBL-2.3 model, and XSD diagram above).
+*Rule*: When possible use the VAT identification of the contracting body (see the link:https://ec.europa.eu/taxation_customs/vies/[VIES] platform for a EU cross-border national VAT number verification system). When not possible a different identifier may be used. For a very complete way of identification of the Party it is highly recommended to, additionally to the cac:Party/cac:Identification/cbc:ID, use the UBL-2.4 component cac:PartyLegalEntity: this element is the perfect placeholder for the data officially registered in a Business Register (see UBL-2.4 model, and XSD diagram above).
 
 *Rule scope*: Common (BR-OTH-02)
 
@@ -649,7 +649,7 @@ _Table 36. Economic operator postal address, expected elements_
 |*Class name*: |cac:PostalAddress
 |*Definition*: |Postal address information.
 |*Business rule(s)*: |None
-|*File*: |ubl-2.3/xsdrt/common/UBL-CommonAggregateComponents-2.3.xsd
+|*File*: |ubl-2.4/xsdrt/common/UBL-CommonAggregateComponents-2.4.xsd
 |*Path*: |/QualificationApplicationResponse/{zwsp}cac:EconomicOperatorParty/{zwsp}cac:Party/{zwsp}cac:PostalAddress
 |===
 
@@ -690,7 +690,7 @@ _Table 37. Contact of the economic operator, expected elements_
 |*Class name*: |cac:Contact
 |*Definition*: |Used to provide contacting information for a party in general or a person.
 |*Business rule(s)*: |None
-|*File*: |ubl-2.3/xsdrt/common/UBL-CommonAggregateComponents-2.3.xsd
+|*File*: |ubl-2.4/xsdrt/common/UBL-CommonAggregateComponents-2.4.xsd
 |*Path*: |/QualificationApplicationResponse/cac:EconomicOperatorParty/cac:Party/cac:Contact
 |===
 
@@ -725,7 +725,7 @@ _Table 38. Service provider, expected elements_
 |*Class name*: |cac:ServiceProviderParty/cac:Party
 |*Definition*: |Main information about the service provider.
 |*Business rule(s)*: |None
-|*File*: |ubl-2.3/xsdrt/common/UBL-CommonAggregateComponents-2.3.xsd
+|*File*: |ubl-2.4/xsdrt/common/UBL-CommonAggregateComponents-2.4.xsd
 |*Path*: |/QualificationApplicationResponse/cac:EconomicOperatorParty/cac:Party/cac:ServiceProviderParty/cac:Party
 |===
 
@@ -949,7 +949,7 @@ _Figure 21. EO representatives, mock-up_
 
 ==== XSD Schema
 
-In the The ESPD-EDM all the data regarding the representative of the economic operators is placed in the UBL-2.3 component cac:EconomicOperatorParty/cac:Party/cac:PowerOfAttorney. In principle the elements expected by the ESPD-EDM are very few, only the ones represented in the mock-up above. However this UBL element provides other possibilities that may be used in the future or for other purposes (or as a national extension of the ESPD).
+In the The ESPD-EDM all the data regarding the representative of the economic operators is placed in the UBL-2.4 component cac:EconomicOperatorParty/cac:Party/cac:PowerOfAttorney. In principle the elements expected by the ESPD-EDM are very few, only the ones represented in the mock-up above. However this UBL element provides other possibilities that may be used in the future or for other purposes (or as a national extension of the ESPD).
 
 Thus, additionally to the expected elements, the cac:PowerOfAttorney component caters also for, at least, two other data could be required at some point (e.g. cac:MandateDocumentReference, see figure below):
 
@@ -984,7 +984,7 @@ _Table 39. Representatives of the economic operator, expected elements_
 |*Class name*: |cac:PowerOfAttorney
 |*Definition*: |Official or legal mandate issued by an authority (e.g. an attorney or a notary) to represent the economic operator as a representative of the economic operator in public procurement procedures.
 |*Business rule(s)*: |Common (BR-RESP-20)
-|*File*: |ubl-2.3/xsdrt/common/UBL-CommonAggregateComponents-2.3.xsd
+|*File*: |ubl-2.4/xsdrt/common/UBL-CommonAggregateComponents-2.4.xsd
 |*Path*: |/QualificationApplicationResponse/cac:EconomicOperatorParty/cac:Party/cac:PowerOfAttorney
 |*Context of use*: |The economic operator in the ESPD Response document. Use this element to refer to the natural persons that represent the economic operator. See requirement link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1-tbr92-018[_tbr92-018_].
 |===
@@ -1060,7 +1060,7 @@ _Table 39. Representatives of the economic operator, expected elements_
 
 ==== Data Structure
 
-*None*, all the data is placed in the UBL-2.3 component cac:PowerOfAttorney
+*None*, all the data is placed in the UBL-2.4 component cac:PowerOfAttorney
 
 ==== XML Example
 
@@ -1100,7 +1100,7 @@ One criterion response, though, may contain a list of response values of the *sa
 |*REQUIREMENT* |If the response to a criterion property is marked as *confidential* the evidences linked to this criterion property must also be treated as confidential.
 |===
 
-The section *Data Structures* established a mapping between each data structure elements 'label' and the corresponding UBL-2.3 XML element of the cac:TenderingCriterion component. Thus:
+The section *Data Structures* established a mapping between each data structure elements 'label' and the corresponding UBL-2.4 XML element of the cac:TenderingCriterion component. Thus:
 
 * REQUIREMENT_GROUP and QUESTION_GROUP are mapped to cac:TenderingCriterionPropertyGroup;
 * REQUIREMENT_SUBGROUP and QUESTION_SUBGROUP are mapped to cac:SubsidiaryTenderingCriterionPropertyGroup; and
@@ -1111,12 +1111,12 @@ If you have a look at the data structure tables (the fragments of spread-sheets 
 In the same data structures *REQUIREMENT*(s) and *QUESTION*(s) do not have a UUID assigned. This is because the UUID for each cac:TenderingCriterionProperty element has to be generated dynamically: each criterion property needs a unique identifier. The reasons are:
 
 [arabic]
-. In the UBL-2.3 model the answers are separated from inside the criterion. This differs from the previous models of the ESPD-EDM. The motivation for this separation was to allow drafting *QualificationApplicationResponse* documents without having to copy every criterion from the *QualificationApplicationRequest*, having in mind other scenarios different to the *European* Single Procurement Document. This could be used, perhaps, by public administrations that would like to use the UBL-2.3 XSDs for "under-the-threshold contract" ESPDs. Even in that situation the *QualificationApplicationResponse* would need to refer to the specific *QualificationApplicationRequest* instance (so the UUIDs are exactly the ones that were automatically generated for that instance). Remember that this is not possible in the ESPD-EDM, as there is a specific requirement asking to *copy* every criterion from the QualificationApplicationRequest into the QualificationApplicationResponse; see this business requirement at the beginning of the section.
+. In the UBL-2.4 model the answers are separated from inside the criterion. This differs from the previous models of the ESPD-EDM. The motivation for this separation was to allow drafting *QualificationApplicationResponse* documents without having to copy every criterion from the *QualificationApplicationRequest*, having in mind other scenarios different to the *European* Single Procurement Document. This could be used, perhaps, by public administrations that would like to use the UBL-2.4 XSDs for "under-the-threshold contract" ESPDs. Even in that situation the *QualificationApplicationResponse* would need to refer to the specific *QualificationApplicationRequest* instance (so the UUIDs are exactly the ones that were automatically generated for that instance). Remember that this is not possible in the ESPD-EDM, as there is a specific requirement asking to *copy* every criterion from the QualificationApplicationRequest into the QualificationApplicationResponse; see this business requirement at the beginning of the section.
 . If the UUID of cac:TenderingCriterionProperty was 'fixed' (as are the groups and subgroups) one answer could refer to more than one REQUIREMENT or QUESTION; and this is not permissible (see business requirement above, one criterion property → one answer, one answer → one criterion property).
 
 == XSD Schema
 
-To answer a QUESTION the ESPD-EDM uses the UBL-2.3 component cac:TenderingCriterionResponse. The expected elements are highlighted in blue in the figure below:
+To answer a QUESTION the ESPD-EDM uses the UBL-2.4 component cac:TenderingCriterionResponse. The expected elements are highlighted in blue in the figure below:
 
 image::https://kroki.io/blockdiag/svg/eNrtVE1rGzEQPXt_xaBeWtjajhNISGih8QcETDFJWgolLLI03lWilRZJTu0E3_Mr-uP6Szqys-umpU1aeuihOiyjp_dmRtonTbUVV1LxHG6TTgcmPEfoBBSFUYLrdZQ59JU1HttFKDWclN9xMhUR3xFcnKOR6JTJs75TgSJrstN7dfbhbJChxhJNaF9WOTwfqXzuEHq7-20g8WGjbsS1FkgL99oXsc8zDOArbqDE4NQiAVhPs09KhgJewd7BUYMVqPIiELjTW4MSZ3yuQzazJnh1g3Fl7yhJcmfnFdygs9kmvE0S9uu-GLx8DQwX4fDd8Xi4CGg8rXqWAhNTcXgyqKO3vCTyR6kcVTPW4MXTUkftAL1wqgq0-CBFCppPUdOMddvtL3ef2W8kfc-1kjygbDgTZyt0Ybltum_NTEk6ckXksBzjNeq-lX-2EeLUCNWe47oIgW-qSpONphonUSZrfHgdSws8m0cCNji1Kcg10QkUXqIIYxtOcYYusmtW35alldR0X3Pv1YwqPOn8EmG1jQT2bLg_7I52WGOMmXI-NM5osZ_v-HxZxTPyBa-iuUhBTDm1ixRqf_YOuqkPSx3XJfcFyhS2pQfHg93hMbs4Slot2OJTzcUV24CBTLcVjEZdGmxt7_tRV9fK4AP8QdVNsvXnyTZOf7Rl-hdMlf4zJklaq2RVvzKbPxYsWUaiT-vXA65jf6A8vSoHj16B9P_pfnMFH7kYZPvVVxFxObA=[cac:TenderingCriterionResponse XSD element,width=550,height=500]
 //image:cacTendering_Criterion_Response_XSD_element.jpg[cac:TenderingCriterionResponse XSD element,width=500,height=384]
@@ -1161,7 +1161,7 @@ _Figure 29. cac:EvidenceSupplied XSD element_
 
 The answers to QUESTION(s) are provided in the example mock-ups of the previous sections about how the buyer specify REQUIREMENT(s) and QUESTION(s), and how the economic operator adds or removes instances of elements (such as data on the economic operator, references to similar works and services, etc. Please refer to those mock-ups and compare the values shown in the fields reserved for the EO to answer and compare those values with the ones in the example XML snippets below.
 
-Responses are not associated to ESPD custom data structures. All the values regarding an answer are always placed in one instance of the UBL-2.3 data element cac:TenderingCriterionResponse.
+Responses are not associated to ESPD custom data structures. All the values regarding an answer are always placed in one instance of the UBL-2.4 data element cac:TenderingCriterionResponse.
 
 == Expected Elements
 
@@ -1172,7 +1172,7 @@ _Table 40. Elements expected in an answer to a criterion property_
 |*Class name*: |cac:TenderingCriterionResponse
 |*Definition*: |A class to describe a response to a criterion property.
 |*Business rule(s)*: |BR-RESP-80, BR-RESP-80-S10, BR-RESP-80-S20, Common (BR-LEAD-10)
-|*File*: |ubl-2.3/xsdrt/common/UBL-CommonAggregateComponents-2.3.xsd
+|*File*: |ubl-2.4/xsdrt/common/UBL-CommonAggregateComponents-2.4.xsd
 |*Path*: |/QualificationApplicationResponse/cac:TenderingCriterionResponse
 |*Context of use*: |The economic operator uses it in the ESPD Response document to answer a QUESTION. link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1-tbr92-018[_tbr92-018, tbr92-007, tbr92-005, tbr92-006_].
 |===
@@ -1204,7 +1204,7 @@ _Table 40. Elements expected in an answer to a criterion property_
 |*cac:ResponseValue* |Associated class |0..n |A class to describe the criterion property response value. a|
 *Information Requirement*: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1-tbr92-018[_tbr92-018_]
 
-*Rule*: This class contains the main disjoint elements used to provide the actual answer. The UBL-2.3 model provides cardinality 0..n, this allows for building up lists of, namely, identifier and code values that are all "packaged" into one cac:TenderingCriterionResponse that in turn is linked to one cac:TenderingCriterionProperty. Beware that the cardinality is flexible (0..whatever) because some responses are not simple values, like the ones but complex ones, e.g. cac:ApplicablePeriod and cac:EvidenceSupplied).
+*Rule*: This class contains the main disjoint elements used to provide the actual answer. The UBL-2.4 model provides cardinality 0..n, this allows for building up lists of, namely, identifier and code values that are all "packaged" into one cac:TenderingCriterionResponse that in turn is linked to one cac:TenderingCriterionProperty. Beware that the cardinality is flexible (0..whatever) because some responses are not simple values, like the ones but complex ones, e.g. cac:ApplicablePeriod and cac:EvidenceSupplied).
 
 *Rule scope*: Common (BR-TCR-08, BR-TCR-04)
 
@@ -1240,7 +1240,7 @@ _Table 41. Elements expected in the 'cac:ApplicablePeriod' class_
 |*Class name*: |cac:Period
 |*Definition*: |A class to describe a period of time.
 |*Business rule(s)*: |None
-|*File*: |ubl-2.3/xsdrt/common/UBL-CommonAggregateComponents-2.3.xsd
+|*File*: |ubl-2.4/xsdrt/common/UBL-CommonAggregateComponents-2.4.xsd
 |*Path*: |/QualificationApplicationResponse/cac:TenderingCriterionResponse/cac:ApplicablePeriod
 |*Context of use*: |A class for the economic operator to specify the start date and the end-date when the expected answer to a criterion property is a lapse of time; link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1-tbr92-018[_tbr92-018_].
 |===
@@ -1266,7 +1266,7 @@ _Table 41. Elements expected in the 'cac:ApplicablePeriod' class_
 |*Class name*: |cac:EvidenceSupplied
 |*Definition*: |A reference to the evidence supporting this criterion property response.
 |*Business rule(s)*: |None
-|*File*: |ubl-2.3/xsdrt/common/UBL-CommonAggregateComponents-2.3.xsd
+|*File*: |ubl-2.4/xsdrt/common/UBL-CommonAggregateComponents-2.4.xsd
 |*Path*: |/QualificationApplicationResponse/cac:TenderingCriterionResponse/cac:EvidenceSupplied
 |*Context of use*: |Used to refer to one ore more evidences that are present in the QualificationApplicationResponse XML instance; link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1-tbr92-017[_tbr92-017_].
 |===
@@ -1292,7 +1292,7 @@ _Table 43. Elements expected in the 'cac:ResponseValue' class_
 |*Class name*: |cac:ResponseValue
 |*Definition*: |A class to describe the criterion property response value.
 |*Business rule(s)*: |Common (BR-TCR-08, BR-TCR-04)
-|*File*: |ubl-2.3/xsdrt/common/UBL-CommonAggregateComponents-2.3.xsd
+|*File*: |ubl-2.4/xsdrt/common/UBL-CommonAggregateComponents-2.4.xsd
 |*Path*: |/QualificationApplicationResponse/cac:TenderingCriterionResponse/cac:ResponseValue
 |*Context of use*: |Used to specify one value or a collection of values (in the case of a list) as a response to one, and only one, cac:TenderingCriterionProperty that is typified as a QUESTION.
 |===
@@ -1310,7 +1310,7 @@ _Table 43. Elements expected in the 'cac:ResponseValue' class_
 |*cbc:Description* |Text |0..n |A description used as a reply to the criterion property. a|
 *Information Requirement*: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1-tbr92-018[_tbr92-018_]
 
-*Rule*: *The ESPD-EDM uses this element to place a response that is a string*. UBL-2.3 instead uses cbc:Response, for this. This is something that needs to be reviewed and agreed between ESPD-EDM and future versions of the UBL. See the XML provided in this ESPD-EDM specifications for details on its usage.
+*Rule*: *The ESPD-EDM uses this element to place a response that is a string*. UBL-2.4 instead uses cbc:Response, for this. This is something that needs to be reviewed and agreed between ESPD-EDM and future versions of the UBL. See the XML provided in this ESPD-EDM specifications for details on its usage.
 
 |*cbc:ResponseAmount* |Amount |0..1 |An amount used as a reply to the criterion property. a|
 *Information Requirement*: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1-tbr92-018[_tbr92-018_]
@@ -1392,7 +1392,7 @@ Please generate an ESPD Request and ESPD Response documents on https://docs.ted.
 . The next QUESTION is enclose in a SUBGROUP because the processing instruction ONTRUE can be used only by GROUPs or SUBGROUPs of REQUIREMENTs and QUESTIONs.
 . If the previous QUESTION is answered with a true the EO will be presented with a new demand expressed in th next QUESTION.
 . The QUESTION ''Please describe them'', presented if the EO answered true to the previous QUESTION (''Your answer'').
-. The type of data expected here is a free text bythe EO (for the Response, a DESCRIPTION maps to the UBL-2.3 element cbc:Description, which is an extension of the xsd:String).
+. The type of data expected here is a free text bythe EO (for the Response, a DESCRIPTION maps to the UBL-2.4 element cbc:Description, which is an extension of the xsd:String).
 
 
 == XML example (Responses to the QUESTION(s))
@@ -1405,10 +1405,10 @@ Please generate an ESPD Request and ESPD Response documents on https://docs.ted.
 
 [cols=",",options="header",]
 
-. Notice this UUID is identical to the cac:TenderingCriterionProperty one. This is the way the UBL-2.3 Qualification Application Response document links each QUESTION(s) to one response (and only one), or viceversa.
-. The economic operator states here that it meets the criteria. Notice that the data element is the UBL-2.3 element cbc:ResponseIndicator, which is an ''semantisation'' (a specialisation) of cbc:Indicator and therefore corresponds to the type of data expected by the buyer in the Request (in cbc:ValueDataTypeCode).
+. Notice this UUID is identical to the cac:TenderingCriterionProperty one. This is the way the UBL-2.4 Qualification Application Response document links each QUESTION(s) to one response (and only one), or viceversa.
+. The economic operator states here that it meets the criteria. Notice that the data element is the UBL-2.4 element cbc:ResponseIndicator, which is an ''semantisation'' (a specialisation) of cbc:Indicator and therefore corresponds to the type of data expected by the buyer in the Request (in cbc:ValueDataTypeCode).
 . This is the UUID corresponding to the QUESTION in the Request ''Please describe them''.
-. The economic operator describes how it meets the criteria. The data element containing the explanation by the EO. Notice that the type of data is the UBL-2.3 element cbc:Description, as requested by the buyer in cbc:ValueDataTypeCode.
+. The economic operator describes how it meets the criteria. The data element containing the explanation by the EO. Notice that the type of data is the UBL-2.4 element cbc:Description, as requested by the buyer in cbc:ValueDataTypeCode.
 
 
 
@@ -1421,14 +1421,14 @@ See formal requirements related to evidence on the e-Sens site: link:http://wiki
 
 Remember that pieces of evidence are indirectly linked to responses based on the identifier of the evidence: in the response, the element cac:EvidenceSupplied/cbc:ID contains the identifier set in /QualificationApplicationResponse/cac:Evidence/cbc:ID. See XML example below; see also the example XML file link:{url-tree}/xml-examples/ESPD-Response.xml[ESPD-Response.xml] for an example.
 
-The figure below shows the XSD Diagram for the UBL-2.3 component cac:Evidence (elements in blue are the expected ones in ESPD-EDM):
+The figure below shows the XSD Diagram for the UBL-2.4 component cac:Evidence (elements in blue are the expected ones in ESPD-EDM):
 
 image::https://kroki.io/blockdiag/svg/eNrdVN2KEzEUvu48xSHeKMR2WgsuLXrRnRYKRRarIMgypJPTmbiZZJhk1naX3vsUPpxPYjLdmf6gqLt35iIkX84f5_tOVlInN1ywFO6DXg-uWIrQs5hkSiRM1qe4RFNoZbCb2VzCPD-ziYVHTC9hyfRWcFQJxp-WUeyjlizvfilSeD4TaVUiDIb9LjjDUWMJzhIeLF_4CpZowRRMQY62FJsAoL7GXwW3GbyB4cW4xTIUaWYd2B_UIMc1q6SN11pZI-7QvwzHQZCWuirgDksd74_3QUAIvHwL5LgWAp-5KJ2T0gopSLZC6W4k7HZ_fPtOroMza--PGzv6OFlMNxaVEa5LhLqgq2Q0j5pT4_BhW-Cl5tjg71h-mvKXCbxlhCYpRWFd_Mb5kikuOLO4tG7LUdnHVF9H0mrtMSuYFHa7wFuUbZlHHnNjKqHSK1ba7V-U7ZBIJ5Wv7D2usXxsgz2yYCqtnMbO0gaJltpfybPp62k465OW67UojW3J7pBjDlwUk7HCq8O9K458pTcUGoEN-iE1div9O2cmQ07hkCiaRK-mE3I9DjodOOAryZIbsget08TBYTYL3SK1Ph9Wk10KhSf4SdZ9sHp7ssrov-iIPkEX9HfM0zMmg84u2DXzvm-91Y5XjoY2cwy3TFYIwrj5vvAD2_LmPoxcK35EWkih_Q0GoaPnVEr0f-zhH3Q89G3Y_QQBT-QH[cac:Evidence XSD diagram,width=550,height=450]
 //image:cacEvidence_XSD_diagram.jpg[cac:Evidence XSD diagram,width=403,height=339]
 //[Edit this diagram](https://niolesk.top/#https://kroki.io/blockdiag/svg/eNrdVN2KEzEUvu48xSHeKMR2WgsuLXrRnRYKRRarIMgypJPTmbiZZJhk1naX3vsUPpxPYjLdmf6gqLt35iIkX84f5_tOVlInN1ywFO6DXg-uWIrQs5hkSiRM1qe4RFNoZbCb2VzCPD-ziYVHTC9hyfRWcFQJxp-WUeyjlizvfilSeD4TaVUiDIb9LjjDUWMJzhIeLF_4CpZowRRMQY62FJsAoL7GXwW3GbyB4cW4xTIUaWYd2B_UIMc1q6SN11pZI-7QvwzHQZCWuirgDksd74_3QUAIvHwL5LgWAp-5KJ2T0gopSLZC6W4k7HZ_fPtOroMza--PGzv6OFlMNxaVEa5LhLqgq2Q0j5pT4_BhW-Cl5tjg71h-mvKXCbxlhCYpRWFd_Mb5kikuOLO4tG7LUdnHVF9H0mrtMSuYFHa7wFuUbZlHHnNjKqHSK1ba7V-U7ZBIJ5Wv7D2usXxsgz2yYCqtnMbO0gaJltpfybPp62k465OW67UojW3J7pBjDlwUk7HCq8O9K458pTcUGoEN-iE1div9O2cmQ07hkCiaRK-mE3I9DjodOOAryZIbsget08TBYTYL3SK1Ph9Wk10KhSf4SdZ9sHp7ssrov-iIPkEX9HfM0zMmg84u2DXzvm-91Y5XjoY2cwy3TFYIwrj5vvAD2_LmPoxcK35EWkih_Q0GoaPnVEr0f-zhH3Q89G3Y_QQBT-QH)
 _Figure 30. cac:Evidence XSD diagram_
 
-The UBL-2.3 element cac:Evidence is a specialisation of cac:DocumentReference. This other XSD diagram shows this association and, in blue, highlights the elements expected in the ESPD-EDM:
+The UBL-2.4 element cac:Evidence is a specialisation of cac:DocumentReference. This other XSD diagram shows this association and, in blue, highlights the elements expected in the ESPD-EDM:
 
 image::https://kroki.io/blockdiag/svg/eNrlVv9q2zAQ_jt-CuEy2MBL0qyjXcsGTZOwwrqW_mIwSlCsi63Wlowkd0lL_t9T7OH2JDs5dpw0cbrBVsZmSCx_J919-nQnbhBJ_4ZxGpB7p9EgJzQA0jDgh4L7NMpGfQU6kUJDPTRxRA7jB3P63CK64VO_I_00BmFOYQgKhA99LjRn8KzVRGv3FocW_HTW6duYisb16yQgz3s8SBWQ1larTnDi7pIfMvWTGQs3BN2Q3M0LS_4MDNEJFSQGo_jIIST77H_hzITkLdna2ZthIfAgNAhutjKQwZCmkekPpTCa34G1bGUWJ1AyTcgdKNmfDu8dx5eRVDjH3ehud5u9TXfPcVyXvHxH3HmKJbK0I5d8Zty6EFKARyI6gMg6bNbr379-c6_QX8W6zOWgNJ0ZalJ9INmiz6ufdtAB7SueGC7Fo6zW-kTTvjHUD63R9abIJY0442Z8AopLVqCHWqegTqgy4wI6BY0ncDy8xIlDzKwlPoUmczGyuDAyuxftD92RAcwSzNTMI26wGw-AMWAF3zYXVI2PB9fgm6o5BRvrTQkarT6wgsqKWSsZkSLcxelhMSwivqc6LDA73o8CqbgJ4yMwYa6YJTpKuBp3qIFF5JzHM-QIx1ki5N89qWJq5pGu8CXjIpjHDkKqqI8bwQJaWM0j-EjjlWlVsfFsX7-QTnlxDbnSZlZdtVl1DSLq32Bt1QwqWtZcr9fEx-I6pImt1YgLsJ9mHNlPhjICQ6BWwwKuVSStU3Nq05gafClYScAuWyZh0Soi1vaATAatJmT_q2rYqy5O78_UmIOEpls3IVcLMrhlrPNxYjOh2CTOEVg2AznySHHBbm43vcUde6WMG51251W37V5lKlQIvFbhVRKv0DiHn-payMPlrzyfZapMOC-k1XJp7W-WtFrVx4St0LYqhfEp7f_aZect32LTgp049j974W_iTIqeY3pWRuItx0B7RS9BbmmUYueiscfYsd3B7KCxaYnxvilPudX0yKwjaTXxPBfbCK-qifD-omukskK8_yFH1pdx63V2qE_Wqazl8sZymfwAF0LOuQ==[cac:DocumentReference inside cac:Evidence XSD diagram,width=1100,height=750]
 //image:cacDocumentReference_inside cacEvidence_XSD_diagram.jpg[cac:DocumentReference inside cac:Evidence XSD diagram,width=566,height=316]
@@ -1449,7 +1449,7 @@ _Figure 32. Conviction 'Participation in criminal organisation', mock-up (EO per
 ====
 _Duplicity of the Issuer_
 
-*Beware that* the current model of UBL-2.3 provides two elements for the Issuer, one for the issuer of the evidence and another for the issuer of the document reference.
+*Beware that* the current model of UBL-2.4 provides two elements for the Issuer, one for the issuer of the evidence and another for the issuer of the document reference.
 
 The ESPD-EDM always uses the element inside the document reference to refer to the issuer of the evidence (and of the document that 'is' the evidence). Thus the element used in the ESPD is cac:Evidence/cac:DocumentReference/cac:IssuerParty/cac:PartyIdentification/cbc:ID.
 ====
@@ -1465,7 +1465,7 @@ _Table 44. Elements expected in a piece of Evidence_
 |*Class name*: |cac:Evidence
 |*Definition*: |A class to describe support for an item of evidence, for representations of capabilities or the ability to meet tendering requirements which an economic operator must provide for acceptance into a tendering process.
 |*Business rule(s)*: |None
-|*File*: |ubl-2.3/xsdrt/common/UBL-CommonAggregateComponents-2.3.xsd
+|*File*: |ubl-2.4/xsdrt/common/UBL-CommonAggregateComponents-2.4.xsd
 |*Path*: |/QualificationApplicationResponse/cac:Evidence
 |*Context of use*: |The economic operator uses it in the ESPD Response document to provide support, in the form of evidence, for one or more criteria link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1-tbr092-017[(_tbr092-017_)].
 |===
@@ -1520,7 +1520,7 @@ _Table 45. Elements expected from the 'cac:Evidence/cac:DocumentReference' eleme
 |*Class name*: |cac:DocumentReference
 |*Definition*: |A reference to the evidence document.
 |*Business rule(s)*: |None
-|*File*: |ubl-2.3/xsdrt/common/UBL-CommonAggregateComponents-2.3.xsd
+|*File*: |ubl-2.4/xsdrt/common/UBL-CommonAggregateComponents-2.4.xsd
 |*Path*: |/QualificationApplicationResponse/cac:Evidence/cac:DocumentReference
 |*Context of use*: |The economic operator uses it in the ESPD Response document to supply the URL of the evidence and the party who issued the evidence document. link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1-tbr092-017[(_tbr092-017, tbr092-022, tbr092-006, tbr092-007_)].
 |===
@@ -1602,7 +1602,7 @@ _Figure 33. Evidence for Criterion C1 EG crime-org_
 
 In the ESPD, a Response is provided for one Economic Operator (EO) and for one lot or group of lots. Hence, an EO will fill in as many ESPD Responses as there are lots or groups of lots he is participating in. 
 
-In the ESPD Response, the UBL 2.3 element *cac:ProcurementProjectLot* is used under the root element *QualificationApplicationResponse* to define the related lot or group of lots the EO is answering to for a given Response. Therefore, the corresponding list of Selection Criteria and QUESTION_SUBGROUP (of REQUIREMENT_GROUP) will be extracted from the Request accordingly. 
+In the ESPD Response, the UBL 2.4 element *cac:ProcurementProjectLot* is used under the root element *QualificationApplicationResponse* to define the related lot or group of lots the EO is answering to for a given Response. Therefore, the corresponding list of Selection Criteria and QUESTION_SUBGROUP (of REQUIREMENT_GROUP) will be extracted from the Request accordingly. 
 
 See also section "xref:2.5_Lot_Management_in_ESPD_Request.adoc[2.5 Lot Management in ESPD Request]". 
 
