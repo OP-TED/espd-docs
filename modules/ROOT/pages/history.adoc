@@ -200,11 +200,11 @@ The details of other minor changes can be found in full in the release notes.
 
 Version 4.1.0 of the ESPD-EDM was released in October 2025 as minor release.
 
-Added relied on block for three selection criteria.
+Added "relied on" block for three selection criteria.
 
 Evidence group misplacement fixed.
 
-Simplification of SUBCRITERION and added SUBCRITERION block for two criteria.
+Simplification of SUBCRITERION; Added SUBCRITERION block for two criteria.
 
 The details of other minor changes can be found in full in the release notes.
 
