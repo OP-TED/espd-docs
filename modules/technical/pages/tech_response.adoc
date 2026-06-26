@@ -89,7 +89,7 @@ Preliminary evidence certificates in the form of a self-declaration submitted by
 *Rule scope*: Common (BR-OTH-05, 2.BR-OTH-02)
 
 |*cbc:ProfileExecutionID* |Identifier |1 |The identification and version of the ESPD Exchange Data Model used to create the XML instance. The identification may include the exact version of the specification. a|
-*Information Requirement*: xref:tbr92_reqs.adoc#eo[_tbr92-002_].
+*Information Requirement*: xref:tbr92_reqs.adoc#eo[tbr92-002].
 
 *Rule*: Compulsory use of the CodeList ProfileExecutionID. Use the value "OP" for th SchemeAgencyID attribute.
 
@@ -117,7 +117,7 @@ Additional comments: copies of an ESPD document should be identified with same U
 *Rule*: Other documents, e.g. the tender, might refer to the ESPD Response using this identifier (thus its compulsoriness). Copies of a document must be identified with a different UUID. Compulsory use of schemeAgencyID attribute.
 
 |*cbc:ContractFolderID* |Identifier |1 |An identifier that is specified by the buyer and used as a reference number for all documents in the procurement process. It is also known as procurement project identifier, procurement reference number or contract folder identifier. A reference to the procurement procedure to which a Qualification request document and the delivered response documents are associated. a|
-*Information Requirement*: xref:tbr92_reqs.adoc#call_tender_refs[_tbr92-013_].
+*Information Requirement*: xref:tbr92_reqs.adoc#call_tender_refs[tbr92-013].
 
 *Rule*: Try always to use the reference number issued by the buyer. This number in combination with a registered buyer ID (e.g. the VAT number) results in a *universally unique identifier of the procurement procedure*.
 
@@ -134,7 +134,7 @@ Additional comments: copies of an ESPD document should be identified with same U
 *Rule*: Format "hh:mm:ss".
 
 |*cbc:EconomicOperatorGroupName* |Text |0..1 |The name of the group that presents a tender to which this economic operator belongs (e.g. the name of a consortium, a joint venture, etc.). a|
-*Information Requirement*: xref:tbr92_reqs.adoc#eo[_tbr92-008_].
+*Information Requirement*: xref:tbr92_reqs.adoc#eo[tbr92-008].
 
 *Rule*: The leader of the group must take care of ensuring that the name of the group is identical in all the ESPDs of the tender.
 
@@ -151,29 +151,29 @@ Additional comments: copies of an ESPD document should be identified with same U
 *Rule*: None
 
 |*cbc:ProcedureCode* |Code |1 |The type of the procurement administrative procedure according to the EU Directives. a|
-*Information Requirement*: xref:tbr92_reqs.adoc#eo[_tbr070-007_].
+*Information Requirement*: xref:tbr92_reqs.adoc#eo[tbr070-007].
 
 *Rule*: For the ESPD, this information will be linked to eForms. And ESPD should include the same procedure code as the one stated in eForms notices.
 
 |*cac:ContractingParty* |Associated class |1 |The buyer or contracting entity who is buying supplies, services or public works using a tendering procedure as described in the applicable directive (Directives 2014/24/EU, 2014/25/EU). See section xref:2.7_Contracting_Body.adoc[Contracting Body] for more specification details. a|
-*Information Requirement*: xref:tbr92_reqs.adoc#ca[_tbr92-011_].
+*Information Requirement*: xref:tbr92_reqs.adoc#ca[tbr92-011].
 
 *Rule*: UBL-2.4 defines multiple cardinality ContractingParties presumably to allow *joint procurements*. However the ESPD only expects data about one buyer. The decision was made that in case of joint procurement the data collected in the ESPD would be about *the leader* of the joint procurement procedure.
 
 |*cac:EconomicOperatorParty* |Associated class |1 |Any natural or legal person or public entity which offers the execution of works and/or a work, the supply of products or the provision of services on the market. Information about the party submitting the qualification. a|
-*Information Requirement*: xref:tbr92_reqs.adoc#eo[_tbr92-001_].
+*Information Requirement*: xref:tbr92_reqs.adoc#eo[tbr92-001].
 
 *Rule*: The ESPD Response only refers to one, and only one, economic operator.
 
 *Rule scope*: Common (BR-RESP-10)
 
 |*cac:ProcurementProject/cbc:Description* |Text |1 |Text describing this procurement project. |This element is required in the ESPD, however it should be identical to that provided in eForms. In general the corresponding eForm should feed the corresponding ESPD with the corresponding data.
-*Information Requirement*: xref:tbr92_reqs.adoc#call_tender_refs[_tbr92-013_].
+*Information Requirement*: xref:tbr92_reqs.adoc#call_tender_refs[tbr92-013].
 
 *Rule*: Use this component to identify and describe the procurement administrative procedure.
 
 |*cac:ProcurementProjectLot* |Associated class |1 |The procurement project lot or group of lots this ESPD Response tenders to. a|
-*Information Requirement*: xref:tbr92_reqs.adoc#lots[_tbr92-014_].
+*Information Requirement*: xref:tbr92_reqs.adoc#lots[tbr92-014].
 
 *Rule*: The economic operator has to specify the Procurement Project Lot the ESPD refers to.
 
@@ -190,7 +190,7 @@ Additional comments: copies of an ESPD document should be identified with same U
 *Rule*: (see examples further below in this document)
 
 |*cac:AdditionalDocumentReference* |Associated class |0..n |A reference to an additional document associated with this document. a|
-*Information Requirement*: xref:tbr92_reqs.adoc#call_tender_refs[_tbr92-013_].
+*Information Requirement*: xref:tbr92_reqs.adoc#call_tender_refs[tbr92-013].
 
 *Rules*: At least two instances of the AdditionalDocumentReference are expected:
 
