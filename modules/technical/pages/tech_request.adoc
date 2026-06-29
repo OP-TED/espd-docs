@@ -12,20 +12,20 @@ include::partial$piraeus.adoc[]
 
 == ESPD Request XSD Schema
 
-The ESPD-EDM uses the UBL-2.3 document named QualificationApplicationRequest.xsd XSD Schema. This schema can be found under the GitHub folder https://github.com/OP-TED/ESPD-EDM/tree/master/ubl-2.3/xsdrt/maindoc[ubl-2.3/xsdrt/maindoc] (or the equivalent documented xsd folder).
+The ESPD-EDM uses the UBL-2.4 document named QualificationApplicationRequest.xsd XSD Schema. This schema can be found under the GitHub folder https://github.com/OP-TED/ESPD-EDM/tree/master/ubl-2.4/xsdrt/maindoc[ubl-2.4/xsdrt/maindoc] (or the equivalent documented xsd folder).
 
-The figure below shows the XSD Schema defined by UBL-2.3 for the document "Qualification Application Request". This schema replaces the previous scheme form UBL 2.2.
+The figure below shows the XSD Schema defined by UBL-2.4 for the document "Qualification Application Request". This schema replaces the previous scheme form UBL 2.2.
 
-The figure below shows a diagram representing the UBL-2.3 XSD Schema. Only the first level components of the schema are shown. The inner sub-elements and sub-classes are covered in detail in the following sub-sections of this document.
+The figure below shows a diagram representing the UBL-2.4 XSD Schema. Only the first level components of the schema are shown. The inner sub-elements and sub-classes are covered in detail in the following sub-sections of this document.
 
-image::https://kroki.io/blockdiag/svg/eNrtVttuEzEQfd-vGC0vILm5tJWoWoFUcpEilRJ6gYeqihx7suvitRfbW5JWfecr-Di-BHujTRPa9EaEQOrb7JmZ4_HojGeHUrMvXNAELqN6Hfo0Qag7ZKkSjMrSGhj8WqB1tdRlEnrZbyEDERBb_1hQKUYeckKrwW6ey8o-mOavrdc2amd5Ai-7IikMQrO5DQtZc0lzOZBRoQAlZqicrb0KdR6iA5tTBRk6I8YRQPk5-Ca4S-ENbG7tzLAURZI6DzbXS5DjiBbSDUba04kLDJ7N4IkSo4scLtDowdS8jCKmpTY-JH7RaXS7u6_jnSiK76n6aJJjDGtvIcax2z5-t9cZO1TWB9iYQMyGLICf0ASo166wVmGdzsRFSXUN940eCYk3gM4YWbEYOsel80lP8VCXNrNDj-cDlDOUua6WHI3H4YSLcFGlFZ4-4orzZPs0wwUiApIOUYb-NWq1n99_xI-l7llbYJs6nN0xAEciC8AUudHIvsFzoQt7i0Mz5F57Lc1nhMvKCXWUcX_Smc-l-A6ZNkIl79GlmntBJZN97VbdqelR_piVFL7qAum1SnyJfWrcZBl982n0HaaVHx_2IUcTVH_nGU-8QhCQl094ibx5hsw9vcm30u1pV-rSO49Q-cn0zWoZ4byhVeXZ5VwETirbPj9kH-AIDSqGVcihSBR1nvveBkT_0yNFbnlvyD_zUJAHzDxZNqxkbu7IkoEhdymdLJUo-Xtqi66iaj9Pd7HTXnkcLan2LpxTWSAI6_fx1gPn5cSmNA-LeqjHBKolv7HeILCwxU93ntX8rOZVvp2V8PzvoGfki_prNLzgrn4B_a3fDg==[QualificationApplicationRequest-2.3,width=550,height=1000]
+image::https://kroki.io/blockdiag/svg/eNrtVttuEzEQfd-vGC0vILm5tJWoWoFUcpEilRJ6gYeqihx7suvitRfbW5JWfecr-Di-BHujTRPa9EaEQOrb7JmZ4_HojGeHUrMvXNAELqN6Hfo0Qag7ZKkSjMrSGhj8WqB1tdRlEnrZbyEDERBb_1hQKUYeckKrwW6ey8o-mOavrdc2amd5Ai-7IikMQrO5DQtZc0lzOZBRoQAlZqicrb0KdR6iA5tTBRk6I8YRQPk5-Ca4S-ENbG7tzLAURZI6DzbXS5DjiBbSDUba04kLDJ7N4IkSo4scLtDowdS8jCKmpTY-JH7RaXS7u6_jnSiK76n6aJJjDGtvIcax2z5-t9cZO1TWB9iYQMyGLICf0ASo166wVmGdzsRFSXUN940eCYk3gM4YWbEYOsel80lP8VCXNrNDj-cDlDOUua6WHI3H4YSLcFGlFZ4-4orzZPs0wwUiApIOUYb-NWq1n99_xI-l7llbYJs6nN0xAEciC8AUudHIvsFzoQt7i0Mz5F57Lc1nhMvKCXWUcX_Smc-l-A6ZNkIl79GlmntBJZN97VbdqelR_piVFL7qAum1SnyJfWrcZBl982n0HaaVHx_2IUcTVH_nGU-8QhCQl094ibx5hsw9vcm30u1pV-rSO49Q-cn0zWoZ4byhVeXZ5VwETirbPj9kH-AIDSqGVcihSBR1nvveBkT_0yNFbnlvyD_zUJAHzDxZNqxkbu7IkoEhdymdLJUo-Xtqi66iaj9Pd7HTXnkcLan2LpxTWSAI6_fx1gPn5cSmNA-LeqjHBKolv7HeILCwxU93ntX8rOZVvp2V8PzvoGfki_prNLzgrn4B_a3fDg==[QualificationApplicationRequest-2.4,width=550,height=1000]
 //image:Qualification_Application_Request-2.3.jpg[QualificationApplicationRequest-2.3,width=297,height=462]
 //[Edit this diagram](https://niolesk.top/#https://kroki.io/blockdiag/svg/eNrtVttuEzEQfd-vGC0vILm5tJWoWoFUcpEilRJ6gYeqihx7suvitRfbW5JWfecr-Di-BHujTRPa9EaEQOrb7JmZ4_HojGeHUrMvXNAELqN6Hfo0Qag7ZKkSjMrSGhj8WqB1tdRlEnrZbyEDERBb_1hQKUYeckKrwW6ey8o-mOavrdc2amd5Ai-7IikMQrO5DQtZc0lzOZBRoQAlZqicrb0KdR6iA5tTBRk6I8YRQPk5-Ca4S-ENbG7tzLAURZI6DzbXS5DjiBbSDUba04kLDJ7N4IkSo4scLtDowdS8jCKmpTY-JH7RaXS7u6_jnSiK76n6aJJjDGtvIcax2z5-t9cZO1TWB9iYQMyGLICf0ASo166wVmGdzsRFSXUN940eCYk3gM4YWbEYOsel80lP8VCXNrNDj-cDlDOUua6WHI3H4YSLcFGlFZ4-4orzZPs0wwUiApIOUYb-NWq1n99_xI-l7llbYJs6nN0xAEciC8AUudHIvsFzoQt7i0Mz5F57Lc1nhMvKCXWUcX_Smc-l-A6ZNkIl79GlmntBJZN97VbdqelR_piVFL7qAum1SnyJfWrcZBl982n0HaaVHx_2IUcTVH_nGU-8QhCQl094ibx5hsw9vcm30u1pV-rSO49Q-cn0zWoZ4byhVeXZ5VwETirbPj9kH-AIDSqGVcihSBR1nvveBkT_0yNFbnlvyD_zUJAHzDxZNqxkbu7IkoEhdymdLJUo-Xtqi66iaj9Pd7HTXnkcLan2LpxTWSAI6_fx1gPn5cSmNA-LeqjHBKolv7HeILCwxU93ntX8rOZVvp2V8PzvoGfki_prNLzgrn4B_a3fDg==)
-_Figure 1. QualificationApplicationRequest-2.3 main elements._
+_Figure 1. QualificationApplicationRequest-2.4 main elements._
 
 == ESPD Request cardinalities
 
-The UBL-2.3 Schema is quite flexible as, except for in a few cases, all the elements are optional.
+The UBL-2.4 Schema is quite flexible as, except for in a few cases, all the elements are optional.
 
 The ESPD-EDM model, however, adds a few more restrictions regarding the cardinalities of some elements. These can be seen in the diagram below, which presents the ESPD-EDM structure for the ESPD Request with its cardinality restrictions.
 
@@ -37,14 +37,14 @@ _Figure 2. ESPD-EDM 'QualificationApplicationRequest', UML diagram_
 Comparing both figures, it can be observed that:
 
 [arabic]
-. The cardinalities of the root common basic components, such as cbc:ID, cbc:UUID, differ in the ESPD from in UBL-2.3;
-. Similarly, the cardinalities of aggregate components like cac:ContractingParty and cac:TenderingCriterion also differ in the ESPD from in UBL-2.3.
+. The cardinalities of the root common basic components, such as cbc:ID, cbc:UUID, differ in the ESPD from in UBL-2.4;
+. Similarly, the cardinalities of aggregate components like cac:ContractingParty and cac:TenderingCriterion also differ in the ESPD from in UBL-2.4.
 
 The cardinality constraints added by the ESPD are not defined in the XSD Schema. To control these constraints, the ESPD-EDM uses link:https://schematron.com/[ISO Schematron] assertions. The ESPD-EDM distribution package provides Schematron schemata and CVA files for the validation of the XML instances (folder link:{url-tree}/validation[_/validation_]).
 
 == Root elements
 
-The tables below establish a mapping between the business requirements, the logic layer of the ESPD-EDM, and the UBL-2.3 physical layer. They list the elements that are expected in the ESPD Request and provide details on the cardinalities and usage of those elements.
+The tables below establish a mapping between the business requirements, the logic layer of the ESPD-EDM, and the UBL-2.4 physical layer. They list the elements that are expected in the ESPD Request and provide details on the cardinalities and usage of those elements.
 
 [cols=",",options="header",]
 
@@ -59,7 +59,7 @@ Information requirement:
 Note that *all theses documents share the same business rule identifiers* (e.g. tbrxx-yyy for Business Requirement Identifiers in ESPDInt, and BR-Type-Id#n for the Test Cases technical rules).
 ====
 
-The mapping between the business requirements, the logic layer of the ESPD-EDM, and the UBL-2.3 physical layer:
+The mapping between the business requirements, the logic layer of the ESPD-EDM, and the UBL-2.4 physical layer:
 
 _Table 5. Class QualificationApplicationRequest, components required by the ESPD-EDM_
 |===
@@ -71,7 +71,7 @@ _Table 5. Class QualificationApplicationRequest, components required by the ESPD
 Document provided by a buyer defining the exclusion and selection criteria for a given procurement procedure.
 
 |*Business rule(s)*: |None
-|*File*: |link:{url-tree}/ubl-2.3/xsd/maindoc/[/ubl-2.3/xsd/maindoc/UBL-QualificationApplicationRequest-2.3.xsd]
+|*File*: |link:{url-tree}/ubl-2.4/xsd/maindoc/[/ubl-2.4/xsd/maindoc/UBL-QualificationApplicationRequest-2.4.xsd]
 |===
 
 
@@ -84,7 +84,7 @@ s|Components|Type|Card|Description|Requirements
 |*cbc:UBLVersionID* |Identifier |1 |Identifies the earliest version of the UBL 2 schema for this document type that defines all of the elements that might be encountered in the current instance. a|
 *Information Requirement*: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1.0-tbr070-002[_tbr070-002_].
 
-*Rule*: Use the value "2.3". Use also "OASIS-UBL-TC" for the schemeAgencyID attribute.
+*Rule*: Use the value "2.4". Use also "OASIS-UBL-TC" for the schemeAgencyID attribute.
 
 *Rule scope*: Common (BR-OTH-05, 2.BR-OTH-02)
 
@@ -153,7 +153,7 @@ This number in combination with a registered buyer ID (e.g. the VAT number) resu
 |*cac:ContractingParty* |Associated class |1 |The buyer or contracting entity who is buying supplies, services or public works using a tendering procedure as described in the applicable directive (Directives 2014/24/EU, 2014/25/EU). a|
 *Information Requirement*: link:http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.1.0#BIS41-ESPDV2.1.0-tbr070-01[_tbr070-01_].
 
-*Rule*: UBL-2.3 defines multiple cardinality ContractingParties presumably to allow *joint procurements*. However the ESPD only expects data about one buyer. The decision was made that in case of joint procurement the data collected in the ESPD would be about *the leader* of the joint procurement procedure.
+*Rule*: UBL-2.4 defines multiple cardinality ContractingParties presumably to allow *joint procurements*. However the ESPD only expects data about one buyer. The decision was made that in case of joint procurement the data collected in the ESPD would be about *the leader* of the joint procurement procedure.
 
 In ESPD the contracting party information will come from eForms. Which also uses cac:ContractingParty to specify the information about buyer.
 
@@ -198,7 +198,7 @@ image::https://kroki.io/pikchr/svg/eNqtVMtu2zAQvOsrFooPsdMopBTGSIBcGqS9pAjQXnwrK
 //[Edit this diagram](https://niolesk.top/#https://kroki.io/pikchr/svg/eNqtVMtu2zAQvOsrFooPsdMopBTGSIBcGqS9pAjQXnwrKImW2TCkS1KxP7-kXpZsWcihJ0Mecmc4uzszDY-AopjLQHDJdjyvv0kQfH1d_cYPoD6oAC4_uOGpYMEKPUCFRAau4PIaRQn5giJM5oFlewshhmtY_XiBn-xvyYwNIVUih0wJpSEVNHsDausKQUC1VrsGQ3tC79OcQK52EvBipmGt1TusENgNk6B5sbEw05WuuNEVPu8zURquJBRalTI3cPnNFaNCgFDW-Ktg6DubhyD-lMYeXgJrbqcUxBGZ1pC0Gn4xwTLrNWSaW6Y5nSSrKlYFnIUVlaMZlD_SU7HdtmwvygIOJ0oL6pj92ba8a9FiSBEvxklIS_LUPAQwUJlDfMxXt_r01Eibyfl3H8saF3XXf_kZJQ00Qn_3v7xZnvEm-ZQ3yai4ZRBc5F6cH9OUF1BLdQMtC_D7aKqt7FvH_NbhyO3cHAoFuJ7SDaO5v3PfDKpD0BA5ALj_N07IOBDH5BOlhkC87NPfDu9kQhlvkNvMztemNQf_6haQriXltgoj993kEToJpCZ1okh2wWO2Sho2kTzozOJ3PmNUxxvy0TbvRdJpDOA2I8OWGLZMw_Nr1Xc_mO73Ruk2E8LvLqi2oNYec3F1SDB_vsuS8cD6B1sEy7c=)
 _Figure 3. Overview of new lot management approach._
 
-The ESPD request includes exclusion grounds that are general for all the Lots into which the procedure is divided. However, for Selection Criteria, it is different since in the procedure it is possible to have Lots with different selection criteria. Therefore, in the ESPD request the different Selection Criteria has to include the reference to the lots which applies. It will be done using the UBL 2.3 cac:ProcurementProjectLotReference that includes cbc:TenderingCriterion.
+The ESPD request includes exclusion grounds that are general for all the Lots into which the procedure is divided. However, for Selection Criteria, it is different since in the procedure it is possible to have Lots with different selection criteria. Therefore, in the ESPD request the different Selection Criteria has to include the reference to the lots which applies. It will be done using the UBL 2.4 cac:ProcurementProjectLotReference that includes cbc:TenderingCriterion.
 
 Please generate an ESPD Request and ESPD Response documents on https://docs.ted.europa.eu/espd-demo/[ESPD Demo Site] to see full example.
 
@@ -263,7 +263,7 @@ _Figure 5. Publications, mock-up_
 
 The ESPD EDM uses the UBL component cac:AdditionalDocumentReference to allow the inclusion of references to documents that might be considered relevant, amongst them the reference to the Contract Notice on the TED (for above-the-threshold contracts), and to possible Notices on national journals and boards.
 
-The class used for this, cac:AdditionalDocumentReference ''is a'' cac:DocumentReference class defined in the UBL-2.3 Common Aggregate Components library).
+The class used for this, cac:AdditionalDocumentReference ''is a'' cac:DocumentReference class defined in the UBL-2.4 Common Aggregate Components library).
 
 image::https://kroki.io/blockdiag/svg/eNrtVdtqGzEQffZ-xaBSaGFjr51AUocWkrgLhkDd3AiEYOTVeFeNVtpK2tZOyHu_oh_XL6m09q5zoUkoKXmpH4x8NHPmojPjiVDJBeM0haug04ERTRE6FpNM8oSK6jTW-LVEY9uZzQUM8zsmY-4R00loMlBJmaO0BzhFjTLB8enh4HUv8vya5u0vRQpvYp6WGqHb7cPnkgo-dSyWK7lTFGJ5PFgEXOu11yGnXAIK9Lym_dYneYgWTEEl5Gg1nwUA1c_xd85sBu9hY2u7wTLkaWYd2O1VIMMpLYUdT5Wj45fobzb8TZBqVRZwiVqNF8erIEiUUNqZkFcfozje2STbQUAIrH0A4srt7zDGfb5U3KucwBnj3lUqiSEIOkHhiaJ2-9ePn-Q8eJzAR8GZ7R_v7n-cWZTGGRoSutCTpD8c1Kc9VcyHkvnWKV2Dx8crg6ExJQ6oxVvAEc8boA5-NC9wTzEkT8zurm_NdzqiNnumDni-BmK10VBa1M7JuWs0TVf2qUxLp8ZV8fvKaXRR1BI5Qe07uTKpOQ8ttaWpTG-mfv4XzRigSTQvvP1ztcEbWUuTzF9WqTvkxM2Pc5yPUHPFarR6Xz2i2s5r6ACNU_2nqSu-Gbg7VS4HYMq1sc0EtMi9fKqHhjOT0cJPjzOUDNlEzUKoB7C3GYXGzoW_Z9RkyEJYjdJuN457XXK-HbRasMIngiYXZAFap_uVQxxH7kOq-V1-6uiCS7yF34q6IKu-XmqSwsemJHwhiYd_Vmz4b-QWtK6D66Be4AutWOXUx9CE9WKGb1SUCNy4hb3ld20jNPcnkivJbqgsCqFZ773I6ekJS_lB2b67ybhRMf6XzUvL5uE3W6-e6fo3WpjlRw==[cac:DocumentReference XSD diagram,width=600,height=750]
 //image:cacDocumentReference_XSD diagram.jpg[cac:DocumentReference, XSD diagram,width=424,height=458]
@@ -281,7 +281,7 @@ _Figure 7. Associated class cac:ExternalReference, XSD diagram_
 
 As can be seen from the XSD Schema, the cac:DocumentReference class has a rich data structure. However, to refer to publications such as the TED and national publications, the ESPD expects, at least, the following data:
 
-The mapping between the business requirements, the logic layer of the ESPD-EDM, and the UBL-2.3 physical layer:
+The mapping between the business requirements, the logic layer of the ESPD-EDM, and the UBL-2.4 physical layer:
 
 [cols=",",options="header",]
 
@@ -290,7 +290,7 @@ _Table 6. Reference to additional documents, expected elements_
 |*Class name*: |cac:AdditionalDocumentReference
 |*Definition*: |A reference to an additional document associated with this document.
 |*Business rule(s)*: |Common (BR-COM-10)
-|*File*: |ubl-2.3/xsdrt/common/UBL-CommonAggregateComponents-2.3.xsd
+|*File*: |ubl-2.4/xsdrt/common/UBL-CommonAggregateComponents-2.4.xsd
 |*Path*: |/QualificationApplicationRequest/cac:AdditionalDocumentReference
 |*Context of Use*: |In this case this reference points at a document published on the Supplement of the European Official Journal or on a national journal.
 |===
@@ -338,7 +338,7 @@ _Table 6. Reference to additional documents, expected elements_
 
 Beware that the ESPD document does not embed the content of referenced documents, instead it make a reference to its source. Thus the class 'DocumentReference' aggregates a 'cac:Attachment' class that allows for embedding the content or making reference to an external source of the content. This is the preferred way in the ESPD (see the XSD schema above):
 
-The mapping between the business requirements, the logic layer of the ESPD-EDM, and the UBL-2.3 physical layer:
+The mapping between the business requirements, the logic layer of the ESPD-EDM, and the UBL-2.4 physical layer:
 
 [cols=",",options="header",]
 
@@ -347,7 +347,7 @@ _Table 7. External Reference_
 |===
 |*Component name*: |cac:ExternalReference
 |*Definition*: |A reference to the authentic source of content of this document.
-|*File*: |ubl-2.3/xsdrt/common/UBL-CommonAggregateComponents-2.3.xsd
+|*File*: |ubl-2.4/xsdrt/common/UBL-CommonAggregateComponents-2.4.xsd
 |*Path*: |/QualificationApplicationRequest
 /cac:AdditionalDocumentReference
 /cac:Attachment/cac:ExternalReference
@@ -397,7 +397,7 @@ See formal requirements related to the contracting authorities in the e-Sens sit
 
 In principle, the ESPD-EDM asks for a few data about the procurer (i.e. the buyer, body or entity). The essential (compulsory) data for the contracting body are namely the one aimed to identify it, i.e. its official name and the country. The figure below represents a possible GUI interface for these two data. However the UBL specification provides many other data elements some of which may be interesting to include in the ESPD, notably data about the means to contact the contracting body (see below the list of elements possible in the ESPD).
 
-Therefore software applications may make use of the richness of UBL-2.3 to collect data about the buyer contact, end-point, and other possible data in the ESPD.
+Therefore software applications may make use of the richness of UBL-2.4 to collect data about the buyer contact, end-point, and other possible data in the ESPD.
 
 image:Procurer_identification_mockup.jpg[Procurer identification,width=600,height=100]
 
@@ -405,7 +405,7 @@ _Figure 8. Data about the procurer, mock-up_
 
 === XSD Schema
 
-The UBL-2.3 model provides a component that fits the purpose of holding data about the procurer: the common aggregate component cac:ContractingParty.
+The UBL-2.4 model provides a component that fits the purpose of holding data about the procurer: the common aggregate component cac:ContractingParty.
 
 image::https://kroki.io/blockdiag/svg/eNrNU9Fu0zAUfc9XXJkXkEyaVJNWOoG0wiJN4qFamTQJTZFj3yYGxw62U5pNe-cr-Di-ZE5CV1SxCXjixbKP7_E9xz4ulOGfhWQl3EaTCSxZiTDxyCstOVPDLLf4pUXn48rXCs7rg5Jc9oibcMbfGu0t417qcsms7_Kr1bt8xSusWV4qUzCVb6STRsefmhKeZ7JsLUI6iyGQ54dsCGwY2RRGOoz0F73UFXpwDdNQo7dyGwEMy_yrFL6C13A0O3nAKpRl5QOYTgdQ4Jq1yufr0NLJG-x3jk6iqLSmbeAGrcnH6W0UkUNdH7oGCXx0FWt6YqjTAkVhthR2vdNXCXW-U_2-YK5CQYEbZWxYk2eLNMumKbkODffgWZJlp8ckYITAyzdAcOvnl4v3Z1uPujftCAXCCz5ftB3apTVrqfDy4jxIEbI_QxuN1zv27y70p_B9NQXFClR9_ySOf3z7Th7jn4ZxI333j_QLbCw61J754GTQQceiQdiBhejPvdMnnNLHXdC_VhjdRbvQjY_sTVAr0NFdmGDDVIsgXQjZrL-Hh4SE71UbLX6JR0JhH8kkBOE_dPx0wqfHvey7e7eja0Q=[cac:ContractingParty XSD Schema, global vision,width=500,height=300]
 //image:cacContractingParty_XSD_Schema_global_vision.jpg[cac:ContractingParty XSD Schema global vision,width=400,height=286]
@@ -419,7 +419,7 @@ image::https://kroki.io/blockdiag/svg/eNrtld1q2zAUx-_9FMJjsIGWLwrtWjZI0wQCaVealg
 //[Edit this diagram](https://niolesk.top/#https://kroki.io/blockdiag/svg/eNrtld1q2zAUx-_9FMJjsIGWLwrtWjZI0wQCaVealg1GMYp0YmtVpEyS0zil93uKPdyeZEfOnDYtbQjbzaB39vn86_jno5Ey_EpIlpKbqF4npywFUvfAMy05U-VTYuF7Ds7XMj9RpD95EJLIYHF1zvgps75IvgyPkiHPYMKSVJkRU69bjZl00ujat2lK3vRkmlsgzfc1gjn7ZRLBJLJMomSZRZY5b4OsIXjipkyTCXgr5xEh5WtyLYXPyAeys3ewsmUg08yjsdkqjQLGLFc-GRvtnVxA8OwcRFFqTT4lC7AmWT7eRFFcijkvphCTry5j0xCNTi1AjMyckqphs9Wgzhcq-AVzGQhKuFHG4nv86rDZ67Wa8SV2uTN2G71eezdGWxyTdx9JDHO_f3E46M496HBSF1MS8xHfP2b2qsMs9LXACXtj7zvaHsM9hj_yfoaRkx4uzvqVZWBScwZjsKA59I8qc1eLqZHa31mwVu68LTqKOSfHoS526BgR5iBkOIA2Gi4r6avv1hdBTJVQlqtcJ2yynk2JYiNQYRiNWu3Xj5_xWr0B02mOJK2KGOeZagthwbmVMStcoG5g_nR8Xt45m5dQwZqyAaRMdVG3L7YR2EGAGPfPtATrHkjaULKd4vhKTU9XHYKdSQ6n1sykALuMXs3oGuynMTJhrIZi7ZTt3GfGysXjOW0Q1ZOaaS5x9pwj-s8cGD-ODNWZQvaGyF4lYGhC_jHgYkHdY6k2k4B16f_yT9At_gD6N3TTrVim65zSNSrpI-Lov-SLPsEO3Z6UKLqNqqW_3LfeIDYCHK2WOZkxlQORDhfxXiBytayxzsRocW9TNyi5uxIauJNfIHuBbMP13toNoNz-BsH-BnY=)
 _Figure 10. cac:Party XSD Schema, global vision_
 
-The cac:Party class in turn associates a very rich class that holds the data about the Party address, including the country (see the UBL-2.3 specification for the complete list of fields):
+The cac:Party class in turn associates a very rich class that holds the data about the Party address, including the country (see the UBL-2.4 specification for the complete list of fields):
 
 image::https://kroki.io/blockdiag/svg/eNrtVc1u00AQPnufYuVeQDKOE4FatQKpTWupUoGKFAlRVdbGO7GX2t6wuy5Jq9x5Ch6OJ2HWThyndVoBR_DB8vx5xt_3rWecyfiaC5bQO9Lr0XOWAO0ZiNNCxCyrniIFX0vQxk9NntHT_F5KJKxH92IWn0ttWHbIuQKtvejT6DgaxSnkzP8yTeizUCSlAjoIfIrJ-5vZFLNpnf3cTjICQ_WUFTQHo8SMUFqZ0TfBTUpf05d7B40vBZGkBp39QeXkMGFlZqKJLIwWt2AjL6sISZQsp_QWlIzqxztCYplJhTnuzkkQhoe77gEhrktfvKFuNSdTZu7SSy5sUiELuMJ4K9Iktj-ou2Azwxb6vu96WD-O998ydX1oDBRGyKLtHDIFK_s8k-aU25wJwt_OHAozH5VjLm6ERvc7lkM71LbrOT7jZE2GLAujbL19NX7VFv9Q8qbmAySt9sdCI1GxWdkXIodb7PB-MtFg7sGxBY0ax6XnTOB47TKPZmwMmWUq8P2f33-4T7xoOfzv9D6TNahDKRUXBTNPj0A2e1lSYWb2Px6dncyQTMuFpitUNqlro1nxQ5YCnQilTaNQp1HoOGPxNerTMdhirdswDPCyfp2yqdV7huBZ08wza3KmU-DocBw8BE4HBMQhTt1PQywL3jSntsReD4ewkW2D2Ni9YSpX90D2_s8cBe-hzL1NwXpbxUgQq5oZkwq1ZgkRdJfVF_OpFe0KfEwoOPCxnHl09fPs7wbeJhPemt6do34YDvruVcWO0038o8x3Ud_N_ZJ8y_6fnxlbviBWpXhfkMVqfdRfaySeXA64YZZrgd6wrAQqNK6LPfujb6DCPZij9Nc4DQKPNstlECAilUjpZbOFKt96F3hdm-C_ph_XtPcX5D-u88Ery8_iF8100Do=[cac:PostalAddress, XSD Schema,width=800,height=600]
 //image:cacPostalAddress,_XSD_Schema.jpg[cac:PostalAddress, XSD Schema,width=566,height=385]
@@ -435,7 +435,7 @@ _Figure 12. cac:Contact, XSD Schema_
 
 === Expected elements
 
-The mapping between the business requirements, the logic layer of the ESPD-EDM and the UBL-2.3 physical layer:
+The mapping between the business requirements, the logic layer of the ESPD-EDM and the UBL-2.4 physical layer:
 
 [cols=",",options="header",]
 
@@ -444,7 +444,7 @@ _Table 8. Contracting body, expected elements_
 |*Class name*: |cac:ContractingParty
 |*Definition*: |The buyer or contracting entity who is buying supplies, services or public works using a tendering procedure as described in the applicable directive (e.g. Directives 2014/24/EU, 2014/25/EU).
 |*Business rule(s)*: |Common (BR-REQ-20#1)
-|*File*: |ubl-2.3/xsdrt/common/UBL-CommonAggregateComponents-2.3.xsd
+|*File*: |ubl-2.4/xsdrt/common/UBL-CommonAggregateComponents-2.4.xsd
 |*Path*: |/QualificationApplicationRequest/cac:ContractingParty
 |===
 
@@ -458,7 +458,7 @@ _Table 8. Contracting body, expected elements_
 
 |===
 
-The mapping between the business requirements, the logic layer of the ESPD-EDM and the UBL-2.3 physical layer:
+The mapping between the business requirements, the logic layer of the ESPD-EDM and the UBL-2.4 physical layer:
 
 [cols=",",options="header",]
 
@@ -466,7 +466,7 @@ _Table 9. Contracting body party, expected elements_
 |===
 |*Class name*: |cac:Party
 |*Definition*: |Main data placeholder structure for, in this case, the contracting body.
-|*File*: |ubl-2.3/xsdrt/common/UBL-CommonAggregateComponents-2.3.xsd
+|*File*: |ubl-2.4/xsdrt/common/UBL-CommonAggregateComponents-2.4.xsd
 |*Path*: |/QualificationApplicationRequest/cac:ContractingParty/cac:Party
 |===
 
@@ -499,7 +499,7 @@ _Table 9. Contracting body party, expected elements_
 
 |===
 
-The mapping between the business requirements, the logic layer of the ESPD-EDM and the UBL-2.3 physical layer:
+The mapping between the business requirements, the logic layer of the ESPD-EDM and the UBL-2.4 physical layer:
 
 [cols=",",options="header",]
 
@@ -508,7 +508,7 @@ _Table 10. Contracting body postal address, expected elements_
 |*Class name*: |cac:PostalAddress
 |*Definition*: |Contractinng body address information.
 |*Business rule(s)*: |None
-|*File*: |ubl-2.3/xsdrt/common/UBL-CommonAggregateComponents-2.3.xsd
+|*File*: |ubl-2.4/xsdrt/common/UBL-CommonAggregateComponents-2.4.xsd
 |*Path*: |/QualificationApplicationRequest/
 cac:ContractingParty/cac:Party/cac:PostalAddress
 |===
@@ -546,7 +546,7 @@ IdentificationCode* |Code |1 |A code that identifies the country. a|
 
 |===
 
-The mapping between the business requirements, the logic layer of the ESPD-EDM and the UBL-2.3 physical layer:
+The mapping between the business requirements, the logic layer of the ESPD-EDM and the UBL-2.4 physical layer:
 
 [cols=",",options="header",]
 
@@ -554,7 +554,7 @@ _Table 11. Contact of the contracting body, expected elements_
 |===
 |*Class name*: |cac:Contact
 |*Definition*: |Used to provide contacting information for a party in general or a person.
-|*File*: |ubl-2.3/xsdrt/common/UBL-CommonAggregateComponents-2.3.xsd
+|*File*: |ubl-2.4/xsdrt/common/UBL-CommonAggregateComponents-2.4.xsd
 |*Path*: |/QualificationApplicationRequest/
 cac:ContractingParty/cac:Party/cac:Contact
 |===
@@ -596,7 +596,7 @@ Service providers are officially recognised organisations that can supply ESPD R
 
 The ESPD allows the provision of data about the service provider who produced the ESPD Request document (and equally for the ESPD Response document, on behalf of the economic operator).
 
-Since the 2.1.1 does not include the cac:ServiceProvider as a 'document root component'. Instead, it uses the UBL-2.3 cac:ContractingParty/cac:Party associated class cac:ServiceProviderParty.
+Since the 2.1.1 does not include the cac:ServiceProvider as a 'document root component'. Instead, it uses the UBL-2.4 cac:ContractingParty/cac:Party associated class cac:ServiceProviderParty.
 
 === XSD Schema
 
@@ -623,7 +623,7 @@ _Figure 15. cac:ServiceProvider/cac:Party elements expected for the service prov
 
 === Expected elements
 
-The mapping between the business requirements, the logic layer of the ESPD-EDM and the UBL-2.3 physical layer:
+The mapping between the business requirements, the logic layer of the ESPD-EDM and the UBL-2.4 physical layer:
 
 [cols=",",options="header",]
 
@@ -632,7 +632,7 @@ _Table 12. Service provider, expected elements_
 |*Class name*: |cac:Party
 |*Definition*: |Main information about the service provider.
 |*Business rule(s)*: |None
-|*File*: |ubl-2.3/xsdrt/common/UBL-CommonAggregateComponents-2.3.xsd
+|*File*: |ubl-2.4/xsdrt/common/UBL-CommonAggregateComponents-2.4.xsd
 |*Path*: |/QualificationApplicationRequest/
 cac:ContractingParty/cac:Party/cac:ServiceProviderParty/
 cac:Party
