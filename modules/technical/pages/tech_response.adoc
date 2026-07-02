@@ -280,14 +280,14 @@ _Table 27. Reference to the ESPD Request, expected elements_
 |*cbc:DocumentTypeCode* |Code |1 |The type of document being referenced, expressed as a code. a|
 *Information Requirement*: xref:tbr92_reqs.adoc#call_tender_refs[tbr92-013].
 
-*Rule*: For the ESDP-EDM it is compulsory use of the value ESPD_REQUEST from the Code List link:{url-tree}/codelists/gc/DocRefContentType.gc[_docref-content-type_]. See also the XML example below on how to specify the ESPD Request.
+*Rule*: For the ESDP-EDM it is compulsory use of the value ESPD_REQUEST from the Code List link:{url-tree}/codelists/DocRefContentType.gc[_docref-content-type_]. See also the XML example below on how to specify the ESPD Request.
 
 *Rule scope*: Common (BR-OTH-01, BR-COM-10#3, BR-OTH-01#3, BR-OTH-03)
 
 |*cbc:DocumentType* |Text |0..1 |The type of document being referenced, expressed as text. a|
 *Information Requirement*: xref:tbr92_reqs.adoc#call_tender_refs[tbr92-013].
 
-*Rule*: Optionally use the attribute languageID to indicate the language of the text. Use the Code List link:{url-tree}/codelists/gc/Language.gc[_Language_] for the value of the languageID attribute.
+*Rule*: Optionally use the attribute languageID to indicate the language of the text. Use the Code List link:{url-tree}/codelists/Language.gc[_Language_] for the value of the languageID attribute.
 
 *Rule scope*: Common (BR-OTH-01, BR-OTH-01#4, BR-OTH-03)
 
@@ -361,7 +361,7 @@ Moreover, each EO should submit an ESPD Response per lot or group of Lots which 
 
 _Table 30. Information requirement about the identifiers of the economic operators_
 |===
-|*REQUIREMENT* |For the identification of the economic operators the UBL-2.4 element cac:PartyIdentification/cbc:ID must be used. The following two attributes of the cbc:ID element (CCT IdentifierType element) must be used: (1) @schemeID, a code from the Code List link:{url-tree}/codelists/gc/EOIDType.gc[EOIDType] must be used; (2) @schemeAgencyID, the default value "OP" must be used; (3) Optionally, the attribute @schemeName can be used to place the 'Name' of the code (see the column 'Name' in the above mentioned Code List). For the ESPD-EDM the preferred type code for the @schemID is VAT.
+|*REQUIREMENT* |For the identification of the economic operators the UBL-2.4 element cac:PartyIdentification/cbc:ID must be used. The following two attributes of the cbc:ID element (CCT IdentifierType element) must be used: (1) @schemeID, a code from the Code List link:{url-tree}/codelists/EOIDType.gc[EOIDType] must be used; (2) @schemeAgencyID, the default value "OP" must be used; (3) Optionally, the attribute @schemeName can be used to place the 'Name' of the code (see the column 'Name' in the above mentioned Code List). For the ESPD-EDM the preferred type code for the @schemID is VAT.
 |===
 
 [cols=",",options="header",]
@@ -433,7 +433,7 @@ The diagram below shows the XSD element that will hold the data required by the 
 ** Similarly, this version of the ESPD-EDM, does not expect a complex representation of possible (optional) classification schemes. However the component cac:BusinessClassificationScheme, associated to cac:QualifyingParty allows complex hierarchical classifications.
 * *SME and number of employees*: The number of employees determine the classification of the company as Micro, Small, Medium or Large company. The cac:QualifyingParty component provides two place-holders that are used by this ESPD-EDM (see also mock-ups above) :
 ** *cac:QualifyingParty/cbc:EmployeeQuantity*, for the number of employees; and
-** *cac:QualifyingParty/cac:Party/cbc:IndustryClassificationCode* to indicate whether the EO is a micro, small, medium or large company (or simply an SME). This code is defined in the Code List link:{url-tree}/codelists/gc/EconomicOperatorSize.gc[economic-operator-size]. See also sections "Expected Elements" and "XML example" for more details.
+** *cac:QualifyingParty/cac:Party/cbc:IndustryClassificationCode* to indicate whether the EO is a micro, small, medium or large company (or simply an SME). This code is defined in the Code List link:{url-tree}/codelists/EconomicOperatorSize.gc[economic-operator-size]. See also sections "Expected Elements" and "XML example" for more details.
 * *Turnover*: For statistical purposes the ESPD-EDM asks this datum to reflect the financial capability of the economic operator (see mock-ups above). This datum is to be placed in cac:QualifyingParty/cac:FinancialCapability/ValueAmount.
 
 image::https://kroki.io/blockdiag/svg/eNrtVl1r2zAUfY5_xUV72UDLR1to17I95AsKg2VLBxujBEW-sbXKkpHkLmnJ-37Fftx-yWS7TtbMSQOj0MH8EJJ7r46ujs_RzVRqfhUKFsFt0GrBiEUILYc8VoIzWXybGLSpVhabsUsknCcbNRORR2zrfcakmC2EiiYjZtyi-TWN4PlQRJlB6Lw6aQJn_HRdVRQBSkxQOQqfxv0XeQtjdGBTpiBBZ8Q8ACh-Tr6J0MXwGo5OzlaxGEUUOx_sHBTBEGcsk24y08pZcYN55ugsCCKjsxRu0OhJ-fU2CLiW2vgC8mxwPGgPO8TXEQIv3wDJ-xxwrXQi-LsUDXPaFN0S-BKKfJHSCilINkWZQ7SbzZ_ff5BLj7BjbQ6Nc3f6sft2MHeorPCswj3MywcB6jh8sK19QDfTH7REILRM1uxTHfbPZmrPWSBNSyTBRcqcj47QcP_yyS6kYhEaqxWTY-GyYuF-J94OWB7SJz4jM9bXKSc8GXc9DpJU6gXiZrybWaHQ2p5k1oqZV3_ey-BahKg4yv5m3bmP5-urivNVxQWqEA0WJPd0iBXP9TuMeexNspslloPeWbLHUjYVsurcp4ZCMcVFXaqn_WnRYXjB7FUV7COXzPw91ZV0Ktw6kZHKnzNhrFsZtEFqBXuxSNG3ZGOW5vb2xZ7JcKrnFKob4uCwTa1byDwfMhtjSGHt9n63fzjoksuzoNGAdXwqGb8iZdB59a4XDIdt_5Digrl7qt2lf1n34vd2LcGKjzrf0y1mpvv7MQgaJV0WfXW45q5BNmD3oK1z_FRo20LZziuEbrsp6D_sePqoxqZ7G9S_DlgGjWWwrCZ0KRqn_a0QoqXV5IVrJjMEYf1EPsnH6Upx_j9G4iX6m0vbFFbz-6DthbVjStHHchDdprNtXGyS9l-lT0WlDwyF41xiwfIXI6ylRg==[cac:QualifyingParty element XSD,width=650,height=700]
@@ -443,7 +443,7 @@ _Figure 6. cac:QualifyingParty element, XSD_
 
 === cac:EconomicOperatorRole
 
-The UBL-2.4 element for the role of the economic operator is quite straightforward and typical in UBL: it provides a pair *code + description* (see Code List link:{url-tree}/codelists/gc/EoRoleType.gc[EoRoleType] for the codes and descriptions; see also the XML example below).
+The UBL-2.4 element for the role of the economic operator is quite straightforward and typical in UBL: it provides a pair *code + description* (see Code List link:{url-tree}/codelists/EoRoleType.gc[EoRoleType] for the codes and descriptions; see also the XML example below).
 
 image::https://kroki.io/blockdiag/svg/eNqlksFqGzEQhs_WUwzqpYX1ep0akti0B9drKBQamvZUzKKVxrtqZGmR5NZJ8L1PkYfLk0Rae2NcQhKoDov2n9E_o09TKsOvhGQV3JLBAC5YhTDwyGstOVPtrrDoGqMdprVfKfi8-ienkFFxAzR9axT2_XWD6a-mgrdzWa0twvD8PIVvIQRmCb5GQG60WUkOpkHLvLHvYu1L9OAapmGF3soNAWh_iz9S-Bo-wOhs8qjVKKvaB3F40ooCl2ytfLE02jt5gzEyaiOksmbdwA1aU-y2t4Rwo4wNOfRNfppn8yGdEEI54-N839nXfWOxawr9j0Bx48c_pl_yjUftZMBBE6C85OOY8smIkPZTyGiqjcbFS3bdyRk6bmXjg-ORQQKKlahij1ma3v-9owuyv8pSWucf79KjTxX5Ht4g-LmaNZFFyNUCRWk2CXQ4T06zxPlrFeOCuRpFAgcus-nsfT6liwnp9eCgl4rxK7oTfUByODCfZ2HRlvl-ddWV1HikH1XdmbWfV0BOnkZHeluy7YZod0NvAkiBLumGA34ztUaQLgzN2TPvk_xHHy8gH2UB6PYBv3UalA==[Role of the economic operator,width=450,height=180]
 //image:eo-role-type.jpg[Role of the economic operator,width=403,height=126]
@@ -554,7 +554,7 @@ _Table 33. Qualifying Party, expected elements_
 |*cac:FinancialCapability/cbc:ValueAmount* |Amount |0..1 |A monetary amount as a measure of this capability. a|
 *Information Requirement*: xref:tbr92_reqs.adoc#eo[tbr92-001].
 
-*Rule*: Use it to place here the general Turnover of the EO (for statistical purposes). Compulsory assignment of a value to the attribute currency. The default value should be set to 'EUR'. Compulsory use of the Code List link:{url-tree}/codelists/gc/Currency.gc[currency].
+*Rule*: Use it to place here the general Turnover of the EO (for statistical purposes). Compulsory assignment of a value to the attribute currency. The default value should be set to 'EUR'. Compulsory use of the Code List link:{url-tree}/codelists/Currency.gc[currency].
 
 *Rule scope*: (BR-OTH-01#16, BR-OTH-03)
 
@@ -566,7 +566,7 @@ _Table 33. Qualifying Party, expected elements_
 |*cac:Party/cac:PartyIdentification/cbc:ID* |Identifier |1 |The identifier of the economic operator in an official list, register or (pre)qualification system. a|
 *Information Requirement*: xref:tbr92_reqs.adoc#eo[tbr92-001].
 
-*Rule*: The attribute schemeAgencyID must hold the value retrieved from eCertis that identifies unequivocally the (pre)qualification system. If, for any reason, that value is not available use the default schemeAgencyID "OP" and the cac:EconomicOperatorParty/{zwsp}cac:QualifyingParty/{zwsp}cac:Party/{zwsp}cac:PartyIdentification/{zwsp}cbc:ID for the value of the identifier. Additionally you can use the data structure "registered" to specify an alternative or additional name, identifier and description. The code list link:{url-tree}/codelists/gc/EOIDType.gc[EOIDType] should be used to indicate the type of identifier used as a value of the schemeID attribute, e.g. schemeID="VAT").
+*Rule*: The attribute schemeAgencyID must hold the value retrieved from eCertis that identifies unequivocally the (pre)qualification system. If, for any reason, that value is not available use the default schemeAgencyID "OP" and the cac:EconomicOperatorParty/{zwsp}cac:QualifyingParty/{zwsp}cac:Party/{zwsp}cac:PartyIdentification/{zwsp}cbc:ID for the value of the identifier. Additionally you can use the data structure "registered" to specify an alternative or additional name, identifier and description. The code list link:{url-tree}/codelists/EOIDType.gc[EOIDType] should be used to indicate the type of identifier used as a value of the schemeID attribute, e.g. schemeID="VAT").
 
 *Rule scope*: (BR-RESP-80-S10, BR-RESP-80-S20), Common (BR-RESP-50, BR-OTH-02)
 
@@ -586,14 +586,14 @@ _Table 34. Economic operator role, expected elements_
 |===
 |*Components* |*Type* |*Card* |*Description* |*Requirements*
 |*cbc:RoleCode* |Code |1 |Identifies the role of the economic operator in the bid. a|
-*Information Requirement*: xref:tbr92_reqs.adoc#eo[tbr92-008] *Rule*: Compulsory use of the Code List link:{url-tree}/codelists/gc/EoRoleType.gc[EoRoleType].
+*Information Requirement*: xref:tbr92_reqs.adoc#eo[tbr92-008] *Rule*: Compulsory use of the Code List link:{url-tree}/codelists/EoRoleType.gc[EoRoleType].
 
 *Rule scope*: (BR-RESP-10-03, BR-OTH-01, BR-OTH-01#15, BR-OTH-03)
 
 |*cbc:RoleDescription* |Text |0..1 |The text describing the role of the economic operator in the bid. a|
 *Information Requirement*: xref:tbr92_reqs.adoc#eo[tbr92-008].
 
-*Rule*: Software applications should retrieve and reuse the description from the Code List link:{url-tree}/codelists/gc/EoRoleType.gc[EoRoleType].
+*Rule*: Software applications should retrieve and reuse the description from the Code List link:{url-tree}/codelists/EoRoleType.gc[EoRoleType].
 
 *Rule scope*: Common (BR-RESP-10-02)
 
@@ -674,7 +674,7 @@ _Table 36. Economic operator postal address, expected elements_
 |*cac:Country/cbc:IdentificationCode* |Code |1 |A code that identifies the country. a|
 *Information Requirement*: xref:tbr92_reqs.adoc#ca[tbr92-012].
 
-*Rule*: The country of the contracting body must always be specified. Compulsory use of the Code List link:{url-tree}/codelists/gc/Country.gc[Country].
+*Rule*: The country of the contracting body must always be specified. Compulsory use of the Code List link:{url-tree}/codelists/Country.gc[Country].
 
 *Rule scope*: Common (BR-RESP-10-07, BR-OTH-01, BR-OTH-01#5, BR-OTH-03)
 
@@ -761,7 +761,7 @@ _Table 38. Service provider, expected elements_
 |*cac:PostalAddress/cac:Country/cbc:IdentificationCode* |Code |1 |The code that identifies the country of the service provider. a|
 *Information Requirement*: xref:tbr92_reqs.adoc#service_provider[tbr92-021].
 
-*Rule*: The country of the service provider must always be specified. Compulsory use of the Code List link:{url-tree}/codelists/gc/Country.gc[Country].
+*Rule*: The country of the service provider must always be specified. Compulsory use of the Code List link:{url-tree}/codelists/Country.gc[Country].
 
 *Rule scope*: (BR-RESP-10-10, BR-OTH-01, BR-OTH-01#5, BR-OTH-03)
 
@@ -853,7 +853,7 @@ Notice that:
 
 [arabic]
 . The values expected for the name and activity are texts.
-. The value expected for the EO identifier is of type Identifier. For the identifier of the EO it is also required to specify the type of identifier, and a closed list of possible types is proposed (see Code List link:{url-tree}/codelists/gc/EOIDType.gc[EOIDType]. EOs must use one of the available codes, but the preferred one is the VAT number. Beware that the data structure does not keep the type of the identifier. This is because this type code is placed in the attribute @schemeName of the cac:ResponseValue/cbc:ResponseID element (and the @schemeAgencyID attribute must be set to the default OP). See information requirements at the beginning of the section. See also next sections about the responses, XSD schemas and XML example.
+. The value expected for the EO identifier is of type Identifier. For the identifier of the EO it is also required to specify the type of identifier, and a closed list of possible types is proposed (see Code List link:{url-tree}/codelists/EOIDType.gc[EOIDType]. EOs must use one of the available codes, but the preferred one is the VAT number. Beware that the data structure does not keep the type of the identifier. This is because this type code is placed in the attribute @schemeName of the cac:ResponseValue/cbc:ResponseID element (and the @schemeAgencyID attribute must be set to the default OP). See information requirements at the beginning of the section. See also next sections about the responses, XSD schemas and XML example.
 
 ////
 image:Group_EO_data_structure.jpg[Group of EO, data structure,width=642,height=219]
@@ -914,7 +914,7 @@ Please generate an ESPD Request and ESPD Response documents on https://docs.ted.
 [cols=",",options="header",]
 [NOTE]
 ====
-. Role of the economic operator. The values are defined in the Code List link:{url-tree}/codelists/gc/EoRoleType.gc[EoRoleType]. The selection of the value Sole Tenderer or Group Leader determines whether the data about the relied-on and not-relied-on entities is instantiated in this XML.
+. Role of the economic operator. The values are defined in the Code List link:{url-tree}/codelists/EoRoleType.gc[EoRoleType]. The selection of the value Sole Tenderer or Group Leader determines whether the data about the relied-on and not-relied-on entities is instantiated in this XML.
 . Name of the economic operator. A text field.
 . Street and number of the economic operator. Notice that the cac:AddressLine element is used instead of cbc:StreetnName and cbc:BuildingNumber. This is because name and number are not split in two fields.
 . Postcode (zip code) of the EO. A text field. Either the GUI and/or an external Schematron rule could be implemented to control the pattern of this text.
@@ -1032,7 +1032,7 @@ _Table 39. Representatives of the economic operator, expected elements_
 |*cac:PowerOfAttorney/cac:AgentParty/ cac:Person/cac:ResidenceAddress/ cac:Country/cbc:IdentificationCode* |Code |1 |A code that identifies the country. a|
 *Information Requirement*: xref:tbr92_reqs.adoc#reps_eo[tbr92-009].
 
-*Rule*: Compulsory use of the Code List link:{url-tree}/codelists/gc/Country.gc[Country].
+*Rule*: Compulsory use of the Code List link:{url-tree}/codelists/Country.gc[Country].
 
 *Rule scope*: Common (BR-RESP-20-03, BR-OTH-01, BR-OTH-01#5, BR-OTH-03)
 
@@ -1132,7 +1132,7 @@ image::https://kroki.io/blockdiag/svg/eNrtVNuO0zAQfW6-YmReQAptt9sVVSuQKGmlSiwse0
 //[Edit this diagram](https://niolesk.top/#https://kroki.io/blockdiag/svg/eNrtVNuO0zAQfW6-YmReQAptt9sVVSuQKGmlSiwse0FIaBU59jTxrmNHsQPtrvrOV_BxfAlO2rRqCkXiFfwQ2WeOj52Z44mkZvdc0BgevU4HLmiM0LHIEiUYldUszNFkWhlsJzaVMEsbnFCUiOkwyi43zPAjlQWGn66CECWmqGz7Lovh6VTERY7QOx20wdGHNb-ig6PDhv6svMwVWjAZVZCizcXCA6iW4VfBbQIvoT8YbbEERZxYB570KpDjnBbShnOtrBEPWEb6I8-Lc11k8IC5DtfTR88jB1ch8PwVEFzY4c347WRhURnhgsQHwiI2nAUEPnORO1GlFd7-VqEkB2hYLjLrBOr9NXNPxQdJI5RuRbrt9o9v38lx3Rp-nepC2ab0WCiaL99Hd8gOYm80xyYWUHuAud9sIoq7kludNwPnSI2rbBN-V6SYC9aEPxRUWWGXTfxapAcSN5ezRrI9pqUul-TJ5MWkOz0h27rORW7strAtspe662VWZtwkNCvt4EiKI4_0wofaUb2zrm_sUpZxTk2C3IfdacE4OJ2Mye3Ia7Vgh0eSsnuyBq3zzG7DdNp1g1SG3Iz6dCkU7uF7p67Fqs9RF_p_tpj_z7nFa628Vd0_1pW12nmHo_HrvgBfqo4jjOsXg189M_9_4v_imR59W_2uezmrn7KVH_k=)
 _Figure 26. cac:ResponseValue XSD element_
 
-The cac:ApplicablePeriod is used to hold the start date and the end-date provided by the economic operator to a QUESTION for which the expected data is of type 'PERIOD'. (See expected types in the Code List link:{url-tree}/codelists/gc/ResponseDataType.gc[ResponseDataType]).
+The cac:ApplicablePeriod is used to hold the start date and the end-date provided by the economic operator to a QUESTION for which the expected data is of type 'PERIOD'. (See expected types in the Code List link:{url-tree}/codelists/ResponseDataType.gc[ResponseDataType]).
 
 [cols=",",]
 [IMPORTANT]
@@ -1230,7 +1230,7 @@ _Disjointness of the elements inside cac:ResponseValue_
 
 Thus, for example, if in the ESPD Request the expected type is DESCRIPTION the cac:ResponseValue must use the element cbc:Description, if INDICATOR cbc:ResponseIndicator, if IDENTIFIER cbc:ResponseID, etc.
 
-See the codes used for cac:ValueDataTypeCode in the Code List link:{url-tree}/codelists/gc/ResponseDataType.gc[ResponseDataType]. For the different possible values in the response see the XSD diagrams above and the list of the expected elements in cac:ResponseValue in the table below.
+See the codes used for cac:ValueDataTypeCode in the Code List link:{url-tree}/codelists/ResponseDataType.gc[ResponseDataType]. For the different possible values in the response see the XSD diagrams above and the list of the expected elements in cac:ResponseValue in the table below.
 
 This disjointness rule applies to the *type* of the value, but *not to the values of the same type*. Thus, for lists of values that constitute the actual answer (e.g. the list of LotIDs the economic operator tenders to, or a list of CPV codes to describe with granularity an activity), a sequence of cac:ResponseValues shall be instantiated in the XML. See the XML examples below.
 ====
@@ -1505,7 +1505,7 @@ _Table 44. Elements expected in a piece of Evidence_
 |*cbc:ConfidentialityLevelCode* |Code |0..1 |A code specifying the confidentiality level of the item of evidence. a|
 *Information Requirement*: xref:tbr92_reqs.adoc#evidence_link[tbr92-017].
 
-*Rule*: Compulsory use of the Code List link:{url-tree}/codelists/gc/AccessRight.gc[AccessRight]. Software application should set this code to CONFIDENTIAL automatically when the confidentiality level code of at least one criterion to which the item of evidence is associated is set to CONFIDENTIAL.
+*Rule*: Compulsory use of the Code List link:{url-tree}/codelists/AccessRight.gc[AccessRight]. Software application should set this code to CONFIDENTIAL automatically when the confidentiality level code of at least one criterion to which the item of evidence is associated is set to CONFIDENTIAL.
 
 *Rule scope*: BR-TCR-02, BR-OTH-01, BR-OTH-01#18, BR-OTH-03
 
