@@ -22,7 +22,7 @@ Examples: the buyer requires a minimum of 3 references for prior works similar t
 
 == ESPD Response XSD Schema
 
-For the ESPD Response, the ESPD-EDM uses the UBL-2.4 document named QualificationApplicationResponse.xsd XSD Schema. This schema can be found under the folder link:{url-tree}/ubl-2.4/xsdrt/maindoc[ubl-2.4/xsdrt/maindoc] (or the equivalent documented xsd folder).
+For the ESPD Response, the ESPD-EDM uses the UBL-2.4 document named QualificationApplicationResponse.xsd XSD Schema. This schema is available at the following location link:https://docs.oasis-open.org/ubl/os-UBL-2.4/xsdrt/maindoc[ubl-2.4/xsdrt/maindoc] (or the equivalent documented xsd folder).
 
 The figure below shows the XSD Schema defined by UBL-2.4 for this document. Only the first level components of the schema are shown. The inner sub-elements and sub-classes are covered in detail in the following sub-sections of this document. The ESPD Response share many elements with the ESPD Request. For those elements that have already been described in the ESPD Request please see the sections above in this document where those elements were explained.
 
@@ -75,7 +75,7 @@ _Table 26. Class QualificationApplicationResponse, components required by the ES
 Preliminary evidence certificates in the form of a self-declaration submitted by the economic operator during the tendering phase. On awarding, the winning party has to supply the real attestations and certificates.
 
 |*Business rule(s)*: |None
-|*File*: |link:{url-tree}/ubl-2.4/xsdrt/maindoc/UBL-QualificationApplicationResponse-2.4.xsd[ubl-2.4/xsdrt/maindoc/UBL-QualificationApplicationResponse-2.4.xsd]
+|*File*: |link:https://docs.oasis-open.org/ubl/os-UBL-2.4/xsdrt/maindoc/UBL-QualificationApplicationResponse-2.4.xsd[os-UBL-2.4/xsdrt/maindoc/UBL-QualificationApplicationResponse-2.4.xsd]
 |===
 
 [cols=",,,,",options="header",]
@@ -547,7 +547,7 @@ _Table 33. Qualifying Party, expected elements_
 |*cac:BusinessClassificationScheme/cbc:Description* |Text |0..n |The text describing one official classification assigned by an official list or (pre)qualification system to the economic operator. a|
 *Information Requirement*: xref:tbr92_reqs.adoc#eo[tbr92-001].
 
-*Rule*: Only the 'Description' is expected, but the component cac:ClassificationScheme offers other rich possibilities (see the link:{url-tree}/ubl-2.4[UBL-2.4 model in the distribution package] or in the link:http://docs.oasis-open.org/ubl/csprd01-UBL-2.4/[original source] for more details).
+*Rule*: Only the 'Description' is expected, but the component cac:ClassificationScheme offers other rich possibilities (see the link:https://docs.oasis-open.org/ubl/os-UBL-2.4/[original source] for more details).
 
 *Rule*: Integer value expected.
 
