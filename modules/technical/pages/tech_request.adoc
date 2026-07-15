@@ -12,8 +12,6 @@ The ESPD-EDM models the business and information requirements in alignment with 
 
 The ESPD-EDM uses the UBL-2.4 document named QualificationApplicationRequest.xsd XSD Schema. This schema can be found under the GitHub folder https://github.com/OP-TED/ESPD-EDM/tree/master/ubl-2.4/xsdrt/maindoc[ubl-2.4/xsdrt/maindoc] (or the equivalent documented xsd folder).
 
-The figure below shows the XSD Schema defined by UBL-2.4 for the document "Qualification Application Request". This schema replaces the previous scheme form UBL 2.2.
-
 The figure below shows a diagram representing the UBL-2.4 XSD Schema. Only the first level components of the schema are shown. The inner sub-elements and sub-classes are covered in detail in the following sub-sections of this document.
 
 image::https://kroki.io/blockdiag/svg/eNrtVttuEzEQfd-vGC0vILm5tJWoWoFUcpEilRJ6gYeqihx7suvitRfbW5JWfecr-Di-BHujTRPa9EaEQOrb7JmZ4_HojGeHUrMvXNAELqN6Hfo0Qag7ZKkSjMrSGhj8WqB1tdRlEnrZbyEDERBb_1hQKUYeckKrwW6ey8o-mOavrdc2amd5Ai-7IikMQrO5DQtZc0lzOZBRoQAlZqicrb0KdR6iA5tTBRk6I8YRQPk5-Ca4S-ENbG7tzLAURZI6DzbXS5DjiBbSDUba04kLDJ7N4IkSo4scLtDowdS8jCKmpTY-JH7RaXS7u6_jnSiK76n6aJJjDGtvIcax2z5-t9cZO1TWB9iYQMyGLICf0ASo166wVmGdzsRFSXUN940eCYk3gM4YWbEYOsel80lP8VCXNrNDj-cDlDOUua6WHI3H4YSLcFGlFZ4-4orzZPs0wwUiApIOUYb-NWq1n99_xI-l7llbYJs6nN0xAEciC8AUudHIvsFzoQt7i0Mz5F57Lc1nhMvKCXWUcX_Smc-l-A6ZNkIl79GlmntBJZN97VbdqelR_piVFL7qAum1SnyJfWrcZBl982n0HaaVHx_2IUcTVH_nGU-8QhCQl094ibx5hsw9vcm30u1pV-rSO49Q-cn0zWoZ4byhVeXZ5VwETirbPj9kH-AIDSqGVcihSBR1nvveBkT_0yNFbnlvyD_zUJAHzDxZNqxkbu7IkoEhdymdLJUo-Xtqi66iaj9Pd7HTXnkcLan2LpxTWSAI6_fx1gPn5cSmNA-LeqjHBKolv7HeILCwxU93ntX8rOZVvp2V8PzvoGfki_prNLzgrn4B_a3fDg==[QualificationApplicationRequest-2.4,width=550,height=1000]

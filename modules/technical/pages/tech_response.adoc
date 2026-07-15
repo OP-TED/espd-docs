@@ -20,7 +20,7 @@ Examples: the buyer requires a minimum of 3 references for prior works similar t
 
 == ESPD Response XSD Schema
 
-For the ESPD Response, the ESPD-EDM uses the UBL-2.4 document named QualificationApplicationResponse.xsd XSD Schema. This schema is available at the following location link:https://docs.oasis-open.org/ubl/os-UBL-2.4/xsdrt/maindoc[ubl-2.4/xsdrt/maindoc] (or the equivalent documented xsd folder).
+For the ESPD Response, the ESPD-EDM uses the UBL-2.4 document named QualificationApplicationResponse.xsd XSD Schema. This schema is available at the following location link:https://docs.oasis-open.org/ubl/os-UBL-2.4/xsdrt/maindoc[ubl-2.4/xsdrt/maindoc].
 
 The figure below shows the XSD Schema defined by UBL-2.4 for this document. Only the first level components of the schema are shown. The inner sub-elements and sub-classes are covered in detail in the following sub-sections of this document. The ESPD Response share many elements with the ESPD Request. For those elements that have already been described in the ESPD Request please see the sections above in this document where those elements were explained.
 
@@ -209,9 +209,9 @@ In the ESPD Response it is also compulsory to make reference to the ESPD Request
 
 The XML snippet below shows how the beginning of an ESPD Response XML instance looks like:
 
-https://github.com/OP-TED/espd-validation-schematron/blob/v5.0.0/ESPDResponse/xsl/ESPD-criterion.xml#L2-L20
+https://github.com/OP-TED/espd-validation-schematron/blob/v5.0.0/common/xml/ESPD-Response-BASE.xml#L2-L20
 
-For a complete instance of an ESPD Response XML document see the the example file: https://github.com/OP-TED/espd-validation-schematron/blob/v5.0.0/ESPDResponse/xsl/ESPD-criterion.xml[ESPD-criterion.xml]
+For a complete instance of an ESPD Response XML document see the example file: https://github.com/OP-TED/espd-validation-schematron/blob/v5.0.0/common/xml/ESPD-Response-BASE.xml[ESPD-Response-BASE.xml]
 
 == Reference to publications and to the ESPD Request
 
@@ -920,7 +920,9 @@ This example contains all the data about an economic operator. Beware that the b
 
 _Economic operator data - XML example_
 
-Please generate an ESPD Request and ESPD Response documents on https://docs.ted.europa.eu/espd-demo/[ESPD Demo Site] to see full example.
+// Please generate an ESPD Request and ESPD Response documents on https://docs.ted.europa.eu/espd-demo/[ESPD Demo Site] to see full example.
+// TODO SK: clarify snippet with NM and PD as there is no cbc:EconomicOperatorGroupName in ESPD-Response-BASE.xml
+For a complete instance of an ESPD Response XML document see the example file: https://github.com/OP-TED/espd-validation-schematron/blob/v5.0.0/common/xml/ESPD-Response-BASE.xml[ESPD-Response-BASE.xml]
 
 
 [cols=",",options="header",]
@@ -961,7 +963,7 @@ _Figure 21. EO representatives, mock-up_
 
 ==== XSD Schema
 
-In the The ESPD-EDM all the data regarding the representative of the economic operators is placed in the UBL-2.4 component cac:EconomicOperatorParty/cac:Party/cac:PowerOfAttorney. In principle the elements expected by the ESPD-EDM are very few, only the ones represented in the mock-up above. However this UBL element provides other possibilities that may be used in the future or for other purposes (or as a national extension of the ESPD).
+In the ESPD-EDM all the data regarding the representative of the economic operators is placed in the UBL-2.4 component cac:EconomicOperatorParty/cac:Party/cac:PowerOfAttorney. In principle the elements expected by the ESPD-EDM are very few, only the ones represented in the mock-up above. However this UBL element provides other possibilities that may be used in the future or for other purposes (or as a national extension of the ESPD).
 
 Thus, additionally to the expected elements, the cac:PowerOfAttorney component caters also for, at least, two other data could be required at some point (e.g. cac:MandateDocumentReference, see figure below):
 
@@ -980,7 +982,7 @@ image::https://kroki.io/blockdiag/svg/eNrtVd1q2zAUvo6f4uDdbOAmadbR0rJBUyejo2tL08
 //[Edit this diagram](https://niolesk.top/#https://kroki.io/blockdiag/svg/eNrtVd1q2zAUvo6f4uDdbOAmadbR0rJBUyejo2tL08FgFKNIJ7ZWWTKS3CUtvd9T7OH2JJPs2nHKRmEXg0F9YXS-86NjfZ-O50LRa8ZJCnfBYADnJEUYWKSZ5JSIapVoNIWSBvuZzQUc549iEu4RM5icucjCBaO0xPIbNAkKzJ2VnKM2Sva_Fim8nPK01Aij12_6MDmDRymwBQ9JUCdF8HkWw4xmmJNXvsUZWjAFkZCj1XwZAFRm8o0zm8Fb2Nk7aLEMeZpZB26PKpDhgpTCJgslreG36D07B0GQalUWcItaJfXyLgjCELbeQUgJ3a87CeEL49qlSCUxAkHmKJwVDvv9n99_hFcupRvsk3Fp9z-NTyZLi9Jwd4Zh5CrO6f5x3KymXBt7SnJsAZJzseoil9yK1vjIGRPYdZ_ZDHUX8OtZuVjwZYN8UHPYqHLqTltJIrhdrVt5j5KhPlKsDRtzbbOY2E2gEIRudqBTIvltVTPGgmjrCWy8F0pgW5R0a5woWuU0niNuHSnSZLw4UqW0etV6HGGE2sacckkk5UTAIaU-coOb3zHh7WPmunJfHCta-gYvcIEaJcW_YNbbF2g48_mHjDkNm8dNUCWUN8MXk93JcLodtkpbeNJbqfXCuvLlqvCtmIwUXpnO6_hgc7WMoBH3aDiMjF0J72fEZMgiWG8Tj-PXk3F4dRD0erDG5-6sr8MatE6S64TpdOiesLobD0-zu-ASN_CNXeti1etZ5P9M5NFTOo7-IMygdx_cN8Oz1pJVTqYMTdQMRbghokTgxg3LPT_9WiG630OuJOuqMIJ2tI6GTm_d-xE9S-I_kMQTc2bXs3r_CzReokI=)
 _Figure 23. EO representatives - element Person, XSD Schema_
 
-Contact elements, such as telephone and e-mail are in the cac:Contact associated to the the cac:Person information element:
+Contact elements, such as telephone and e-mail are in the cac:Contact associated to the cac:Person information element:
 
 image::https://kroki.io/blockdiag/svg/eNrVUs1q20AQPnufYtheWlBsxQlNsGkPjmVIaeuAXSgUI1arsbTNSiu060RJ8L1P0Yfrk3QkWXYdCu2tVAcx883ft99MpI28jZVI4IkNBnAjEoSBQ5nmSgrdWGGJtjC5xX7qMg3X2bOcUNWIHQRzyiwoGXMnnLpDG6LGjLzwBktr8v7XIoGXM5VsSoTh2es-BHN4VgInsCuCK0OgdB6o3KoYoW3iwefFFBYyxUy8qikv0IEtRA4ZulJVDKBxw3sVuxTewPnleI-lqJLUEXg6bMAY12KjXbimUVY9Yh05HzOWlGZTwCOWJmzNJ8a4FHK048Th5C1wrNzo0-R9UDkkhqQQ94DLSI6up531UWTY2e9MtFRO7_0pFqJ09VM7ZElPL1KT46_AWlSdG2iUrjQk-wehNIcvsSqJck4Vq9_wawgY13aj4NylWF6ZLNvUi3PE-KiFB1pEqMnjfr__49t3vmJMGm3qBP4iuAj82Snfq7NWpXV7eXp8N3r5UCC1takoajkpnMcYR6byoNvI0Pc96x50HY-FTTH24DBnOpmeBRO-GrNeDw54pIW85S3oSPlDwWzm08ebhe6-brpWOR7hR1PbZs3vn-_S-6t1sd6Wbbujb-V0hpYXo_W6Y4Y7oTcIytKRXx5fhfe_vPMP93Ph03VsfwLUi4Fi[EO representatives - element Contact inside Person,width=500,height=450]
 //image:EO_representatives_Contact_Person.jpg[EO representatives - element Contact, inside Person,width=288,height=252]
@@ -1080,7 +1082,9 @@ Notice that this XML example contains two representatives, as in the mock-up.
 
 _Economic operator's representatives_
 
-Please generate an ESPD Request and ESPD Response documents on https://docs.ted.europa.eu/espd-demo/[ESPD Demo Site] to see full example.
+// Please generate an ESPD Request and ESPD Response documents on https://docs.ted.europa.eu/espd-demo/[ESPD Demo Site] to see full example.
+// TODO SK: clarify snippet with NM and PD as there is no cac:QualifyingParty nor cac:PowerOfAttorney in ESPD-Response-BASE.xml
+For a complete instance of an ESPD Response XML document see the example file: https://github.com/OP-TED/espd-validation-schematron/blob/v5.0.0/common/xml/ESPD-Response-BASE.xml[ESPD-Response-BASE.xml]
 
 
 . First Name of the natural person that represents the economic operator.
@@ -1396,8 +1400,8 @@ Having said this, imagine that the following snippet of XML code is the last cri
 
 _Reduction of Candidates - (QUESTION(s) in the ESPD-Request)_
 
-See the XML snippet at the following link (highlighting lines 8574-8625):
-https://github.com/OP-TED/espd-validation-schematron/blob/v5.0.0/ESPDRequest/xsl/ESPD-criterion.xml#L8574-L8625
+See the XML snippet at the following link (highlighting lines 8588-8639):
+https://github.com/OP-TED/espd-validation-schematron/blob/v5.0.0/common/xml/ESPD-Response-BASE.xml#L8588-L8639
 
 . First QUESTION (a criterion property of type QUESTION, the type follows below).
 . The buyer is requesting to the economic Operator that it states whether it meets the "objective and non-discriminatory criteria or rules [..]".
@@ -1415,8 +1419,8 @@ This other XML snippet below shows the responses to the two QUESTION(s) expresse
 
 _Reduction of Candidates - (answers in the ESPD-Response)_
 
-See the XML snippet at the following link (highlighting lines ???-???):
-https://github.com/OP-TED/espd-validation-schematron/blob/v5.0.0/ESPDResponse/xsl/ESPD-criterion.xml#L???-L???
+See the XML snippet at the following link (highlighting lines 13482-13520):
+https://github.com/OP-TED/espd-validation-schematron/blob/v5.0.0/common/xml/ESPD-Response-BASE.xml#L13482-L13520
 
 [cols=",",options="header",]
 
