@@ -1438,7 +1438,7 @@ See formal requirements related to evidence on the e-Sens site: xref:tbr92_reqs.
 
 === XSD Schema
 
-Remember that pieces of evidence are indirectly linked to responses based on the identifier of the evidence: in the response, the element cac:EvidenceSupplied/cbc:ID contains the identifier set in /QualificationApplicationResponse/cac:Evidence/cbc:ID. See XML example below; see also the example XML file link:https://github.com/OP-TED/espd-validation-schematron/blob/v5.0.0/ESPDResponse/xsl/ESPD-criterion.xml[ESPDResponse/xsl/ESPD-criterion.xml] for an example.
+Remember that pieces of evidence are indirectly linked to responses based on the identifier of the evidence: in the response, the element cac:EvidenceSupplied/cbc:ID contains the identifier set in /QualificationApplicationResponse/cac:Evidence/cbc:ID. See XML example below; see also the example XML file link:https://github.com/OP-TED/espd-validation-schematron/blob/v5.0.0/common/xml/ESPD-Response-BASE.xml[ESPD-Response-BASE.xml] for an example.
 
 The figure below shows the XSD Diagram for the UBL-2.4 component cac:Evidence (elements in blue are the expected ones in ESPD-EDM):
 

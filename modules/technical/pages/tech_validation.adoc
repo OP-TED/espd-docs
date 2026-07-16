@@ -10,7 +10,7 @@ Schematron is a rule-based validation language that specifies validation process
 
 === ESPD Business Rules
 
-The ESPD-EDM uses Schematron to validate business rules, the business requirements taken as input for these rules are specified in the link:http://wiki.ds.unipi.gr/display/ESPDInt[ESPD Business Document].
+The ESPD-EDM uses Schematron to validate business rules, the business requirements taken as input for these rules are specified in the xref:tech_busrules.adoc[Business Rules Guide].
 
 These business rules can be typified as:
 
@@ -86,7 +86,7 @@ The validation of the code lists needs an extra step on the process before execu
 [arabic]
 . The first step is the *generation of Genericode (GC) files*. These files contains information about the values and identifiers of each code list.
 [loweralpha]
-.. GC files are found in the link:{url-tree}/codelists/gc/[/codelists/gc folder].
+.. GC files are found in the link:{url-tree}/codelists/[/codelists folder].
 . *Design and implementation of the CVA files*. link:http://docs.oasis-open.org/codelist/ns/ContextValueAssociation/1.0/[CVA] stands for Context and Value Association:
 . *Execution of the implemented validations* in the CVA files:
 [loweralpha]
