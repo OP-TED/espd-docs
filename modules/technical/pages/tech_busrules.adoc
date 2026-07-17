@@ -9,7 +9,7 @@
 
 This guide explains how Business Rules are implemented, and which ones apply in each case. The guide can be used to:
 
-* Identify the business rules, and describe and map the Schematron rules with UBL-2.3 XSD, for each test case;
+* Identify the business rules, and describe and map the Schematron rules with UBL-2.4 XSD, for each test case;
 * Validate the criteria taxonomy.
 
 === Input Documents
@@ -42,8 +42,8 @@ The process to identify the business rules is the following one:
 . *List the test cases ID and test case rule ID* from [RD01]. These rules are common among the test cases; which means that each rule ID must have a unique identifier within the current document (Mapping Rule ID).
 . For each *Mapping Rule ID*:
 [loweralpha]
-.. Map each of the rules to UBL-2.3 XSD as description;
-.. Identify the whole path within UBL-2.3 XSD;
+.. Map each of the rules to UBL-2.4 XSD as description;
+.. Identify the whole path within UBL-2.4 XSD;
 .. List the business rules coming from the XML implementation guide [RD02] and those ones coming from ESPD_TestCases [RD01].
 . Identify the rules coming from Data Structures Regulated spreadsheet [RD03] and Self-contained [RD04].
 . Identify other rules coming from the XML implementation guide [RD02].
@@ -53,7 +53,7 @@ The process to identify the business rules is the following one:
 The process described above uses the following auxiliary tables.
 
 [arabic]
-. Identification of the test cases from [RD01] and mapping them to the UBL-2.3 XSD:
+. Identification of the test cases from [RD01] and mapping them to the UBL-2.4 XSD:
 
 .Test Case ID example
 [width="100%",cols="22%,11%,11%,24%,32%",options="header",]
@@ -161,6 +161,7 @@ a|<<RQ-60,RQ-60>> |1 |1 |1
 
 === Test Cases
 
+[[RQ-10]]
 ==== RQ-10
 
 .Test Case RQ-10
@@ -191,6 +192,7 @@ RQ-10-R10-S10
 
 
 
+[[RQ-20]]
 ==== RQ-20
 
 .Test Case RQ-20
@@ -220,6 +222,7 @@ RQ-20-R10-S10
 
 
 
+[[RQ-30]]
 ==== RQ-30
 
 .Test Case RQ-30
@@ -251,6 +254,7 @@ RQ-30-R10-S10
 
 
 
+[[RQ-40]]
 ==== RQ-40
 
 .Test Case RQ-40
@@ -284,6 +288,7 @@ RQ-40-R10-S10
 
 
 
+[[RQ-50]]
 ==== RQ-50
 
 .Test Case RQ-50
@@ -318,6 +323,7 @@ RQ-50-R10-S10
 
 
 
+[[RQ-60]]
 ==== RQ-60
 
 .Test Case RQ-60
@@ -465,6 +471,7 @@ ____
 
 === Test Cases
 
+[[RS-10]]
 ==== RS-10
 
 .Test Case RS-10
@@ -487,6 +494,7 @@ ____
 |===
 
 
+[[RS-20]]
 ==== RS-20
 
 .Test Case RS-20
@@ -513,6 +521,7 @@ ____
 
 
 
+[[RS-30]]
 ==== RS-30
 
 .Test Case RS-30
@@ -536,6 +545,7 @@ ____
 
 
 
+[[RS-40]]
 ==== RS-40
 
 .Test Case RS-40
@@ -562,6 +572,7 @@ ____
 
 
 
+[[RS-50]]
 ==== RS-50
 
 .Test Case RS-50
@@ -587,6 +598,7 @@ ____
 
 
 
+[[RS-60]]
 ==== RS-60
 
 .Test Case RS-60
@@ -615,6 +627,7 @@ ____
 
 
 
+[[RS-70]]
 ==== RS-70
 
 .Test Case RS-70
@@ -646,6 +659,7 @@ ____
 
 
 
+[[RS-80]]
 ==== RS-80
 
 .Test Case RS-80
@@ -680,6 +694,7 @@ ____
 
 
 
+[[RS-90]]
 ==== RS-90
 
 .Test Case RS-90
@@ -711,6 +726,7 @@ ____
 
 
 
+[[RS-100]]
 ==== RS-100
 
 .Test Case RS-100
@@ -745,6 +761,7 @@ ____
 
 
 
+[[RS-110]]
 ==== RS-110
 
 .Test Case RS-110
@@ -778,6 +795,7 @@ ____
 
 
 
+[[RS-120]]
 ==== RS-120
 
 .Test Case RS-120
@@ -814,6 +832,7 @@ ____
 
 
 
+[[RS-130]]
 ==== RS-130
 
 .Test Case RS-130
@@ -842,6 +861,7 @@ ____
 
 
 
+[[RS-140]]
 ==== RS-140
 
 .Test Case RS-140
@@ -873,6 +893,7 @@ ____
 
 
 
+[[RS-150]]
 ==== RS-150
 
 .Test Case RS-150
@@ -901,6 +922,7 @@ ____
 
 
 
+[[RS-160]]
 ==== RS-160
 
 .Test Case RS-160
@@ -932,6 +954,7 @@ ____
 
 
 
+[[RS-170]]
 ==== RS-170
 
 .Test Case RS-170
@@ -962,6 +985,7 @@ ____
 
 
 
+[[RS-180]]
 ==== RS-180
 
 .Test Case RS-180
@@ -995,6 +1019,7 @@ ____
 
 
 
+[[RS-190]]
 ==== RS-190
 
 .Test Case RS-190
@@ -1023,6 +1048,7 @@ Other entity (relied upon): Entity on which the main contractor, the group or an
 
 
 
+[[RS-200]]
 ==== RS-200
 
 .Test Case RS-200
@@ -1054,6 +1080,7 @@ Other entity (relied upon): Entity on which the main contractor, the group or an
 
 
 
+[[RS-210]]
 ==== RS-210
 
 .Test Case RS-210
@@ -1084,6 +1111,7 @@ Other entity (relied upon): Entity on which the main contractor, the group or an
 
 
 
+[[RS-220]]
 ==== RS-220
 
 .Test Case RS-220
@@ -1115,6 +1143,7 @@ Other entity (relied upon): Entity on which the main contractor, the group or an
 
 
 
+[[RS-230]]
 ==== RS-230
 
 .Test Case RS-230
@@ -1145,6 +1174,7 @@ Other entity (relied upon): Entity on which the main contractor, the group or an
 
 
 
+[[RS-240]]
 ==== RS-240
 
 .Test Case RS-240
@@ -1178,6 +1208,7 @@ Other entity (relied upon): Entity on which the main contractor, the group or an
 
 
 
+[[RS-250]]
 ==== RS-250
 
 .Test Case RS-250
@@ -1205,6 +1236,7 @@ Other entity (not relied upon): Entity on which the main contractor, the group o
 
 
 
+[[RS-260]]
 ==== RS-260
 
 .Test Case RS-260
@@ -1234,6 +1266,7 @@ Other entity (not relied upon): Entity on which the main contractor, the group o
 
 
 
+[[RS-270]]
 ==== RS-270
 
 .Test Case RS-270
@@ -1262,6 +1295,7 @@ Other entity (not relied upon): Entity on which the main contractor, the group o
 
 
 
+[[RS-280]]
 ==== RS-280
 
 .Test Case RS-280
@@ -1291,6 +1325,7 @@ Other entity (not relied upon): Entity on which the main contractor, the group o
 
 
 
+[[RS-290]]
 ==== RS-290
 
 .Test Case RS-290
@@ -1319,6 +1354,7 @@ Other entity (not relied upon): Entity on which the main contractor, the group o
 
 
 
+[[RS-300]]
 ==== RS-300
 
 .Test Case RS-300
@@ -1455,6 +1491,7 @@ ____
 
 == Common Business Rules
 
+[[BR-COM-10]]
 === BR-COM-10
 
 .BR-COM-10
@@ -1491,6 +1528,7 @@ Then
 
 
 
+[[BR-COM-10-S10]]
 ==== BR-COM-10-S10
 
 .BR-COM-10-S10
@@ -1513,6 +1551,7 @@ Then
 
 
 
+[[BR-COM-10-S20]]
 ==== BR-COM-10-S20
 
 .BR-COM-10-S20
@@ -1535,6 +1574,7 @@ Then
 
 
 
+[[BR-COM-10-S30]]
 ==== BR-COM-10-S30
 
 .BR-COM-10-S30
@@ -1559,6 +1599,7 @@ Then
 
 == Common ESPD Request Rules
 
+[[BR-REQ-20]]
 === BR-REQ-20
 
 .BR-REQ-20
@@ -1670,6 +1711,7 @@ ____
 
 
 
+[[BR-REQ-30]]
 === BR-REQ-30
 
 .BR-REQ-30
@@ -1709,6 +1751,7 @@ ____
 
 
 
+[[BR-REQ-30-S10]]
 ==== BR-REQ-30-S10
 
 .BR-REQ-30-S10
@@ -1729,6 +1772,7 @@ ____
 
 
 
+[[BR-REQ-30-S20]]
 ==== BR-REQ-30-S20
 
 .BR-REQ-30-S20
@@ -1749,6 +1793,7 @@ ____
 
 
 
+[[BR-REQ-40]]
 === BR-REQ-40
 
 .BR-REQ-40
@@ -1792,6 +1837,7 @@ ____
 
 == Common Rules
 
+[[BR-SC-10]]
 === BR-SC-10
 
 .BR-SC-10
@@ -1837,6 +1883,7 @@ ____
 
 
 
+[[BR-SC-20]]
 === BR-SC-20
 
 .BR-SC-20
@@ -1865,6 +1912,7 @@ ____
 
 
 
+[[BR-SC-30]]
 === BR-SC-30
 
 .BR-SC-30
@@ -1911,6 +1959,7 @@ ____
 
 == Two-phased Procedures Rules
 
+[[BR-2P-10]]
 === BR-2P-10
 
 .BR-2P-10
@@ -1936,6 +1985,7 @@ ____
 
 
 
+[[BR-2P-10-S10]]
 ==== BR-2P-10-S10
 
 .BR-2P-10-S10
@@ -1997,6 +2047,7 @@ Then, /cac:TenderingCriterion /cbc:EvaluationMethodTypeCode != WEIGHTED or not i
 
 
 
+[[BR-2P-10-S20]]
 ==== BR-2P-10-S20
 
 _BR-2P-10-S20
@@ -2036,6 +2087,7 @@ Then, Weight value cannot be provided: /cac:TenderingCriterion/cbc:WeightNumeric
 
 == Common ESPDResponse Rules
 
+[[BR-RESP-10]]
 === BR-RESP-10
 
 .BR-RESP-10
@@ -2242,6 +2294,7 @@ ____
 
 
 
+[[BR-RESP-20]]
 === BR-RESP-20
 
 .BR-RESP-20
@@ -2253,7 +2306,7 @@ ____
 
 |
 |Rule description |Information about representatives of the economic operator CAN be provided |
-|Mapping description |All the data regarding the representative of the economic operators is placed in the UBL-2.3 component cac:EconomicOperatorParty/cac:Party/cac:PowerOfAttorney. |
+|Mapping description |All the data regarding the representative of the economic operators is placed in the UBL-2.4 component cac:EconomicOperatorParty/cac:Party/cac:PowerOfAttorney. |
 |XSD Path a|
 * /cac:EconomicOperatorParty/cac:Party /cac:PowerOfAttorney
 
@@ -2293,6 +2346,7 @@ ____
 
 == Not registered pre-qualification system Rules
 
+[[BR-RESP-30]]
 === BR-RESP-30
 
 .BR-RESP-30
@@ -2342,6 +2396,7 @@ ____
 
 
 
+[[BR-RESP-40]]
 === BR-RESP-40 (role different to OENRON)
 
 .BR-RESP-40
@@ -2399,6 +2454,7 @@ ____
 
 == Registered pre-qualification system Rules
 
+[[BR-RESP-50]]
 === BR-RESP-50
 
 .BR-RESP-50
@@ -2439,6 +2495,7 @@ ____
 
 
 
+[[BR-RESP-60]]
 === BR-RESP-60
 
 .BR-RESP-60
@@ -2476,6 +2533,7 @@ ____
 
 
 
+[[BR-RESP-60-S10]]
 ==== BR-RESP-60-S10
 
 .BR-RESP-60-S10
@@ -2509,6 +2567,7 @@ ____
 
 
 
+[[BR-RESP-60-S20]]
 ==== BR-RESP-60-S20
 
 .BR-RESP-60-S20
@@ -2547,6 +2606,7 @@ a|
 |===
 
 
+[[BR-RESP-70]]
 === BR-RESP-70
 
 .BR-RESP-70
@@ -2593,6 +2653,7 @@ a|
 
 
 
+[[BR-RESP-70-S10]]
 ==== BR-RESP-70-S10
 
 .BR-RESP-70-S10
@@ -2617,6 +2678,7 @@ a|
 
 
 
+[[BR-RESP-70-S20]]
 ==== BR-RESP-70-S20
 
 .BR-RESP-70-S20
@@ -2640,6 +2702,7 @@ a|
 
 
 
+[[BR-RESP-80]]
 === BR-RESP-80
 
 .BR-RESP-80
@@ -2672,6 +2735,7 @@ a|
 
 
 
+[[BR-RESP-80-S10]]
 ==== BR-RESP-80-S10
 
 .BR-RESP-80-S10
@@ -2723,6 +2787,7 @@ Then, all selection criterion must have responses.
 
 
 
+[[BR-RESP-80-S20]]
 ==== BR-RESP-80-S20
 
 .BR-RESP-80-S20
@@ -2776,6 +2841,7 @@ Then, selection criterion does not need to have responses.
 
 == Lots Rules
 
+[[BR-LOT-10]]
 === BR-LOT-10
 
 .BR-LOT-10
@@ -2829,6 +2895,7 @@ Then, its /cac:TenderingCriterionResponse +
 
 
 
+[[BR-LOT-20]]
 === BR-LOT-20
 
 .BR-LOT-20
@@ -2861,6 +2928,7 @@ Then, its /cac:TenderingCriterionResponse +
 
 
 
+[[BR-LOT-30]]
 === BR-LOT-30
 
 .BR-LOT-30
@@ -2892,6 +2960,7 @@ Information about lots specified is two different sets of the XSD schema in orde
 
 
 
+[[BR-LOT-30-S10]]
 ==== BR-LOT-30-S10
 
 .BR-LOT-30-S10
@@ -2928,6 +2997,7 @@ ____
 
 
 
+[[BR-LOT-30-S20]]
 ==== BR-LOT-30-S20
 
 .BR-LOT-30-S20
@@ -2952,6 +3022,7 @@ ____
 
 
 
+[[BR-LOT-40]]
 === BR-LOT-40
 
 .BR-LOT-40
@@ -2985,6 +3056,7 @@ If, cbc:ExpectedID is included, it must be one of the Lots identified within /ca
 
 == Specific Lead Role Rules
 
+[[BR-LEAD-10]]
 === BR-LEAD-10
 
 .BR-LEAD-10
@@ -3034,6 +3106,7 @@ cac:TenderingCriterionProperty, must be answered.
 
 
 
+[[BR-LEAD-10-S10]]
 ==== BR-LEAD-10-S10
 
 .BR-LEAD-10-S10
@@ -3071,6 +3144,7 @@ going to be used as Sole contractor and not lead entity.
 
 
 
+[[BR-LEAD-10-S20]]
 ==== BR-LEAD-10-S20
 
 .BR-LEAD-10-S20
@@ -3111,6 +3185,7 @@ RELIES_ON_OTHER_CAPACITIES_
 
 
 
+[[BR-LEAD-10-S30]]
 ==== BR-LEAD-10-S30
 
 .BR-LEAD-10-S30
@@ -4006,7 +4081,7 @@ Business requirement: xref:tbr70_reqs.adoc#general[tbr70-002]
 
 Identifies the earliest version of the UBL 2 schema.
 
-Use the value "2.3". Use also "OASIS-UBL-TC" for the schemeAgencyID attribute.
+Use the value "2.4". Use also "OASIS-UBL-TC" for the schemeAgencyID attribute.
 
 a|
 * Severity: ERROR
@@ -4016,7 +4091,7 @@ a|
 . {blank}
 +
 
-/cbc:UBLVersionID is 2.3
+/cbc:UBLVersionID is 2.4
 
 . {blank}
 +
