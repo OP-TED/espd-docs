@@ -5,7 +5,6 @@
 :docdate: January 2024
 
 The latest distribution package can be found on https://github.com/OP-TED/ESPD-EDM/tree/main[OP TED GitHub].
-A brief explanation about "<> Code" and "⊙ Issues" tabs.
 
 == The Code tab
 
@@ -15,7 +14,7 @@ A brief explanation about "<> Code" and "⊙ Issues" tabs.
 
 The *main* branch contains the latest released version of the code. Only a main branch is maintained with different version tags.
 
-The wgm-reports branch is for the Open User Community presentations and reports of the meetings.
+The *wgm-reports* branch is for the Open User Community presentations and reports of the meetings.
 
 ==== README.md
 The README.md at the root level describes the contents and provides a brief overview of what can be found where in the repository.
