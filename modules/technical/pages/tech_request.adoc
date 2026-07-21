@@ -179,7 +179,7 @@ LotReference/cbc:ID* |Identifier |0..n |One or more of the procurement project l
 Reference* |Associated class |0..n |A reference to an additional document associated with this document. a|
 *Information Requirement*: xref:tech_br_request_reqs.adoc#call_for_tender[tbr70-007].
 
-*Rule*: *For procurement procedures above the threshold it is compulsory to make reference to the Contract Notice of the procedure published in TED*. See section "Reference to the Contract Notice" for a complete example.
+*Rule*: *For procurement procedures above the threshold it is compulsory to make reference to the Contract Notice of the procedure published in TED*. See section xref:tech_response.adoc#reference_to_publications[Reference to publications and to the ESPD Request] for a complete example.
 
 |===
 

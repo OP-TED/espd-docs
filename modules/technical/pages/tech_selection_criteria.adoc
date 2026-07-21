@@ -393,7 +393,7 @@ Please generate an ESPD Request and ESPD Response documents on https://docs.ted.
 . Third financial ratio block: ratio type required by the buyer  according to the example illustrated in the mock-up above.
 . Third financial ratio block: ratio definition.
 . Third financial ratio block: minimum requirement.
-. First financial ratio block: the Criterion Property used to refer to the response by the economic operator. In the ESPD Response document, the ID of this Criterion Property will be used by the element cac:ValidatedCriterionPropertyID as the means to link the response to the question. See section "Answering Questions" (under ESPD Response) for more details on this.
+. First financial ratio block: the Criterion Property used to refer to the response by the economic operator. In the ESPD Response document, the ID of this Criterion Property will be used by the element cac:ValidatedCriterionPropertyID as the means to link the response to the question. See section xref:tech_response.adoc#answering_questions[Answering QUESTIONs] (under ESPD Response) for more details on this.
 . Block "Is this information available electronically". This block is constant for all criteria. It has been removed from the example for brevity. See other XML examples.
 
 
