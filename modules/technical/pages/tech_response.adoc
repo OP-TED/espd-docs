@@ -188,8 +188,6 @@ The ESPD must contain corresponding information about the fulfilment of selectio
 *Rule*: (see examples further below in this document)
 
 |*cac:AdditionalDocumentReference* |Associated class |0..n |A reference to an additional document associated with this document. a|
-*Information Requirement*: The ESPD must contain a reference to the call for tenders, i.e. the procurement project ID, which defines the requirements (i.e. criteria) for which this document is created and submitted by the economic operator.
-
 *Rules*: At least two instances of the AdditionalDocumentReference are expected:
 
 *For procurement procedures above the threshold it is compulsory to make reference to the Contract Notice of the procedure published in TED*. See section <<reference_to_publications>> for a complete example.*
@@ -225,7 +223,7 @@ For a complete instance of an ESPD Response XML document see the example file: h
 
 [cols=",",]
 |===
-|*REQUIREMENT* |*The economic operator must include int its ESPD Response document the information from the ESPD Request about the official journals or gazettes where the procurement procedure is announced. For procurement projects above the threshold it is compulsory to refer to the Contract Notice published in link:https://ted.europa.eu/TED/[TED] by the buyer.*
+|*REQUIREMENT* |*The economic operator must include into its ESPD Response document the information from the ESPD Request about the official journals or gazettes where the procurement procedure is announced. For procurement projects above the threshold it is compulsory to refer to the Contract Notice published in link:https://ted.europa.eu/TED/[TED] by the buyer.*
 |===
 
 For EU and notice publications that need to be included in the ESPD Response see the section xref:tech_request.adoc#eu_notice_publications[EU and notice publications] where this information is presented in detail and illustrated with examples.
@@ -321,7 +319,7 @@ _Table 28. External Reference_
 |===
 |*Component name*: |*cac:ExternalReference*
 |*Definition*: |A reference to the authentic source of content of this document.
-|*File*: |ubl-2.4/xsdrt/common/UBL-CommonAggregateComponents-2.4.xsd
+|*File*: |link:https://docs.oasis-open.org/ubl/os-UBL-2.4/xsdrt/common/UBL-CommonAggregateComponents-2.4.xsd[os-UBL-2.4/xsdrt/common/UBL-CommonAggregateComponents-2.4.xsd]
 |*Path*: |/QualificationApplicationResponse/cac:AdditionalDocumentReference/cac:Attachment/cac:ExternalReference
 |*Context of use*: |Reference to the URI location where the ESPD Request XML instance can be downloaded from.
 |===
@@ -330,13 +328,11 @@ _Table 28. External Reference_
 |===
 |*Components* |*Type* |*Card* |*Description* |*Requirements*
 |*cbc:URI* |Identifier |0..1 |The Uniform Resource Identifier (URI) that identifies where the document is located. a|
-*Information Requirement*: xref:tech_br_response_reqs.adoc#call_tender_refs[tbr92-013].
+*Information Requirement*: The ESPD must contain a reference to the call for tenders, i.e. the procurement project ID, which defines the requirements (i.e. criteria) for which this document is created and submitted by the economic operator.
 
 *Rule*: If the document exists at a remote location, then the value should be the URL pointing to the document.
 
 |*cbc:FileName* |Text |0..1 |The title of the document. a|
-*Information Requirement*: xref:tech_br_response_reqs.adoc#eo[tbr92-007].
-
 *Rule*: Originally this field is the placeholder for the name of the file (e.g. PLACE-ContractNotice-2017-12452.xml. However, as the UBL component does not have a placeholder for a name or title, the ESPD documents use it for a short descriptive title of the document being referenced.
 
 |*cbc:Description* |Text |0..n |Short description of the document. a|
@@ -515,7 +511,7 @@ _Table 32. Economic operator, expected elements_
 |*Class name*: |cac:EconomicOperatorParty
 |*Definition*: |Any natural or legal person or public entity, including any temporary association of undertakings, which offers the execution of works and/or a work, the supply of products or the provision of services on the market. Information about the party submitting the qualification.
 |*Business rule(s)*: |Common (BR-RESP-10)
-|*File*: |ubl-2.4/xsdrt/common/UBL-CommonAggregateComponents-2.4.xsd
+|*File*: |link:https://docs.oasis-open.org/ubl/os-UBL-2.4/xsdrt/common/UBL-CommonAggregateComponents-2.4.xsd[os-UBL-2.4/xsdrt/common/UBL-CommonAggregateComponents-2.4.xsd]
 |*Path*: |/QualificationApplicationResponse/cac:EconomicOperatorParty
 |*Context of use*: |The ESPD Response document.
 |===
@@ -549,7 +545,7 @@ _Table 33. Qualifying Party, expected elements_
 |*Class name*: |cac:QualifyingParty
 |*Definition*: |The distinctive features or characteristics qualifying an economic operator to be a party in a tendering process (e.g., number of employees, number of operating units, type of business, technical and financial capabilities, completed projects).
 |*Business rule(s)*: |(BR-RESP-10-01)
-|*File*: |ubl-2.4/xsdrt/common/UBL-CommonAggregateComponents-2.4.xsd
+|*File*: |link:https://docs.oasis-open.org/ubl/os-UBL-2.4/xsdrt/common/UBL-CommonAggregateComponents-2.4.xsd[os-UBL-2.4/xsdrt/common/UBL-CommonAggregateComponents-2.4.xsd]
 |*Path*: |/QualificationApplicationRequest/cac:EconomicOperatorParty/cac:QualifyingParty
 |*Context of use*: |Economic Operator in the ESPD Response document.
 |===
@@ -595,7 +591,7 @@ _Table 34. Economic operator role, expected elements_
 |===
 |*Class name*: |cac:EconomicOperatorRole
 |*Definition*: |The function of the economic operator when bidding from a consortium (Sole tenderer, group leader, member of a group, etc.).
-|*File*: |ubl-2.4/xsdrt/common/UBL-CommonAggregateComponents-2.4.xsd
+|*File*: |link:https://docs.oasis-open.org/ubl/os-UBL-2.4/xsdrt/common/UBL-CommonAggregateComponents-2.4.xsd[os-UBL-2.4/xsdrt/common/UBL-CommonAggregateComponents-2.4.xsd]
 |*Path*: |/QualificationApplicationRequest/cac:EconomicOperatorParty/cac:EconomicOperatorRole
 |*Context of use*: |Economic Operator in the ESPD Response document.
 |===
@@ -622,7 +618,7 @@ _Table 35. (Qualifying) economic operator party, expected elements_
 |===
 |*Class name*: |cac:Party
 |*Definition*: |Main set of data used to identify and contact the economic operator, such as official identifiers, name, address, contact person, representatives, etc.
-|*File*: |ubl-2.4/xsdrt/common/UBL-CommonAggregateComponents-2.4.xsd
+|*File*: |link:https://docs.oasis-open.org/ubl/os-UBL-2.4/xsdrt/common/UBL-CommonAggregateComponents-2.4.xsd[os-UBL-2.4/xsdrt/common/UBL-CommonAggregateComponents-2.4.xsd]
 |*Path*: |/QualificationApplicationResponse/cac:EconomicOperatorParty/cac:Party
 |===
 
@@ -667,7 +663,7 @@ _Table 36. Economic operator postal address, expected elements_
 |*Class name*: |cac:PostalAddress
 |*Definition*: |Postal address information.
 |*Business rule(s)*: |None
-|*File*: |ubl-2.4/xsdrt/common/UBL-CommonAggregateComponents-2.4.xsd
+|*File*: |link:https://docs.oasis-open.org/ubl/os-UBL-2.4/xsdrt/common/UBL-CommonAggregateComponents-2.4.xsd[os-UBL-2.4/xsdrt/common/UBL-CommonAggregateComponents-2.4.xsd]
 |*Path*: |/QualificationApplicationResponse/{zwsp}cac:EconomicOperatorParty/{zwsp}cac:Party/{zwsp}cac:PostalAddress
 |===
 
@@ -708,7 +704,7 @@ _Table 37. Contact of the economic operator, expected elements_
 |*Class name*: |cac:Contact
 |*Definition*: |Used to provide contacting information for a party in general or a person.
 |*Business rule(s)*: |None
-|*File*: |ubl-2.4/xsdrt/common/UBL-CommonAggregateComponents-2.4.xsd
+|*File*: |link:https://docs.oasis-open.org/ubl/os-UBL-2.4/xsdrt/common/UBL-CommonAggregateComponents-2.4.xsd[os-UBL-2.4/xsdrt/common/UBL-CommonAggregateComponents-2.4.xsd]
 |*Path*: |/QualificationApplicationResponse/cac:EconomicOperatorParty/cac:Party/cac:Contact
 |===
 
@@ -743,7 +739,7 @@ _Table 38. Service provider, expected elements_
 |*Class name*: |cac:ServiceProviderParty/cac:Party
 |*Definition*: |Main information about the service provider.
 |*Business rule(s)*: |None
-|*File*: |ubl-2.4/xsdrt/common/UBL-CommonAggregateComponents-2.4.xsd
+|*File*: |link:https://docs.oasis-open.org/ubl/os-UBL-2.4/xsdrt/common/UBL-CommonAggregateComponents-2.4.xsd[os-UBL-2.4/xsdrt/common/UBL-CommonAggregateComponents-2.4.xsd]
 |*Path*: |/QualificationApplicationResponse/cac:EconomicOperatorParty/cac:Party/cac:ServiceProviderParty/cac:Party
 |===
 
@@ -1022,7 +1018,7 @@ _Table 39. Representatives of the economic operator, expected elements_
 |*Class name*: |cac:PowerOfAttorney
 |*Definition*: |Official or legal mandate issued by an authority (e.g. an attorney or a notary) to represent the economic operator as a representative of the economic operator in public procurement procedures.
 |*Business rule(s)*: |Common (BR-RESP-20)
-|*File*: |ubl-2.4/xsdrt/common/UBL-CommonAggregateComponents-2.4.xsd
+|*File*: |link:https://docs.oasis-open.org/ubl/os-UBL-2.4/xsdrt/common/UBL-CommonAggregateComponents-2.4.xsd[os-UBL-2.4/xsdrt/common/UBL-CommonAggregateComponents-2.4.xsd]
 |*Path*: |/QualificationApplicationResponse/cac:EconomicOperatorParty/cac:Party/cac:PowerOfAttorney
 |*Context of use*: |The economic operator in the ESPD Response document. Use this element to refer to the natural persons that represent the economic operator. See requirement xref:tech_br_response_reqs.adoc#eval_crit[tbr92-018].
 |===
@@ -1222,7 +1218,7 @@ _Table 40. Elements expected in an answer to a criterion property_
 |*Class name*: |cac:TenderingCriterionResponse
 |*Definition*: |A class to describe a response to a criterion property.
 |*Business rule(s)*: |BR-RESP-80, BR-RESP-80-S10, BR-RESP-80-S20, Common (BR-LEAD-10)
-|*File*: |ubl-2.4/xsdrt/common/UBL-CommonAggregateComponents-2.4.xsd
+|*File*: |link:https://docs.oasis-open.org/ubl/os-UBL-2.4/xsdrt/common/UBL-CommonAggregateComponents-2.4.xsd[os-UBL-2.4/xsdrt/common/UBL-CommonAggregateComponents-2.4.xsd]
 |*Path*: |/QualificationApplicationResponse/cac:TenderingCriterionResponse
 |*Context of use*: |The economic operator uses it in the ESPD Response document to answer a QUESTION. xref:tech_br_response_reqs.adoc#eo[tbr92-005], xref:tech_br_response_reqs.adoc#eo[tbr92-006], xref:tech_br_response_reqs.adoc#eo[tbr92-007], xref:tech_br_response_reqs.adoc#eval_crit[tbr92-018].
 |===
@@ -1290,7 +1286,7 @@ _Table 41. Elements expected in the 'cac:ApplicablePeriod' class_
 |*Class name*: |cac:Period
 |*Definition*: |A class to describe a period of time.
 |*Business rule(s)*: |None
-|*File*: |ubl-2.4/xsdrt/common/UBL-CommonAggregateComponents-2.4.xsd
+|*File*: |link:https://docs.oasis-open.org/ubl/os-UBL-2.4/xsdrt/common/UBL-CommonAggregateComponents-2.4.xsd[os-UBL-2.4/xsdrt/common/UBL-CommonAggregateComponents-2.4.xsd]
 |*Path*: |/QualificationApplicationResponse/cac:TenderingCriterionResponse/cac:ApplicablePeriod
 |*Context of use*: |A class for the economic operator to specify the start date and the end-date when the expected answer to a criterion property is a lapse of time; xref:tech_br_response_reqs.adoc#eval_crit[tbr92-018].
 |===
@@ -1317,7 +1313,7 @@ _Table 42. Elements expected in the 'cac:EvidenceSupplied' class_
 |*Class name*: |cac:EvidenceSupplied
 |*Definition*: |A reference to the evidence supporting this criterion property response.
 |*Business rule(s)*: |None
-|*File*: |ubl-2.4/xsdrt/common/UBL-CommonAggregateComponents-2.4.xsd
+|*File*: |link:https://docs.oasis-open.org/ubl/os-UBL-2.4/xsdrt/common/UBL-CommonAggregateComponents-2.4.xsd[os-UBL-2.4/xsdrt/common/UBL-CommonAggregateComponents-2.4.xsd]
 |*Path*: |/QualificationApplicationResponse/cac:TenderingCriterionResponse/cac:EvidenceSupplied
 |*Context of use*: |Used to refer to one ore more evidences that are present in the QualificationApplicationResponse XML instance; xref:tech_br_response_reqs.adoc#evidence_link[tbr92-017].
 |===
@@ -1343,7 +1339,7 @@ _Table 43. Elements expected in the 'cac:ResponseValue' class_
 |*Class name*: |cac:ResponseValue
 |*Definition*: |A class to describe the criterion property response value.
 |*Business rule(s)*: |Common (BR-TCR-08, BR-TCR-04)
-|*File*: |ubl-2.4/xsdrt/common/UBL-CommonAggregateComponents-2.4.xsd
+|*File*: |link:https://docs.oasis-open.org/ubl/os-UBL-2.4/xsdrt/common/UBL-CommonAggregateComponents-2.4.xsd[os-UBL-2.4/xsdrt/common/UBL-CommonAggregateComponents-2.4.xsd]
 |*Path*: |/QualificationApplicationResponse/cac:TenderingCriterionResponse/cac:ResponseValue
 |*Context of use*: |Used to specify one value or a collection of values (in the case of a list) as a response to one, and only one, cac:TenderingCriterionProperty that is typified as a QUESTION.
 |===
@@ -1373,7 +1369,7 @@ _Table 43. Elements expected in the 'cac:ResponseValue' class_
 |*cbc:ResponseCode* |Code |0..1 |A code used as a reply to the criterion property. a|
 *Information Requirement*: xref:tech_br_response_reqs.adoc#eval_crit[tbr92-018]
 
-*Rule*: Compulsory use of the attributes mentioned in the section "*1.5 Codes and Identifiers*" for codes.
+*Rule*: Compulsory use of the attributes mentioned in the section xref:tech_codelist.adoc#codes_and_identifiers[Codes and Identifiers] for codes.
 
 *Rule scope*: Common (BR-OTH-01)
 
@@ -1390,7 +1386,7 @@ _Table 43. Elements expected in the 'cac:ResponseValue' class_
 |*cbc:ResponseID* |Identifier |0..1 |An identifier used as a reply to the criterion property. a|
 *Information Requirement*: xref:tech_br_response_reqs.adoc#eval_crit[tbr92-018]
 
-*Rule*: Compulsory use of the attributes mentioned in the section "1.5 Codes and Identifiers" for codes.
+*Rule*: Compulsory use of the attributes mentioned in the section xref:tech_codelist.adoc#codes_and_identifiers[Codes and Identifiers] for codes.
 
 |*cbc:ResponseIndicator* |Indicator |0..1 |An indicator used as a reply to the criterion property. a|
 *Information Requirement*: xref:tech_br_response_reqs.adoc#eval_crit[tbr92-018]
@@ -1526,7 +1522,7 @@ _Table 44. Elements expected in a piece of Evidence_
 |*Class name*: |cac:Evidence
 |*Definition*: |A class to describe support for an item of evidence, for representations of capabilities or the ability to meet tendering requirements which an economic operator must provide for acceptance into a tendering process.
 |*Business rule(s)*: |None
-|*File*: |ubl-2.4/xsdrt/common/UBL-CommonAggregateComponents-2.4.xsd
+|*File*: |link:https://docs.oasis-open.org/ubl/os-UBL-2.4/xsdrt/common/UBL-CommonAggregateComponents-2.4.xsd[os-UBL-2.4/xsdrt/common/UBL-CommonAggregateComponents-2.4.xsd]
 |*Path*: |/QualificationApplicationResponse/cac:Evidence
 |*Context of use*: |The economic operator uses it in the ESPD Response document to provide support, in the form of evidence, for one or more criteria xref:tech_br_response_reqs.adoc#evidence_link[tbr92-017].
 |===
@@ -1581,7 +1577,7 @@ _Table 45. Elements expected from the 'cac:Evidence/cac:DocumentReference' eleme
 |*Class name*: |cac:DocumentReference
 |*Definition*: |A reference to the evidence document.
 |*Business rule(s)*: |None
-|*File*: |ubl-2.4/xsdrt/common/UBL-CommonAggregateComponents-2.4.xsd
+|*File*: |link:https://docs.oasis-open.org/ubl/os-UBL-2.4/xsdrt/common/UBL-CommonAggregateComponents-2.4.xsd[os-UBL-2.4/xsdrt/common/UBL-CommonAggregateComponents-2.4.xsd]
 |*Path*: |/QualificationApplicationResponse/cac:Evidence/cac:DocumentReference
 |*Context of use*: |The economic operator uses it in the ESPD Response document to supply the URL of the evidence and the party who issued the evidence document. xref:tech_br_response_reqs.adoc#evidence_link[tbr92-017], xref:tech_br_response_reqs.adoc#additional_info[tbr92-022], xref:tech_br_request_reqs.adoc#contracting_body[tbr70-006], xref:tech_br_request_reqs.adoc#call_for_tender[tbr70-007].
 |===

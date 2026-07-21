@@ -576,7 +576,7 @@ _Non-validation of text content_
 
 *_NOTICE that the EO has made a mistake and for a "Works contracts: performance of works for the specified type" it is describing a Service. The Schematron-based validation solution cannot validate this situation as the description is a textual value._*
 
-*_For details on the Schematron-based validation solution see section 7. Validation._*
+*_For details on the Schematron-based validation solution see section xref:tech_validation.adoc[Validation].*
 ====
 
 === Data Structure

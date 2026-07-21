@@ -292,7 +292,7 @@ _Table 6. Reference to additional documents, expected elements_
 |*Class name*: |cac:AdditionalDocumentReference
 |*Definition*: |A reference to an additional document associated with this document.
 |*Business rule(s)*: |Common (BR-COM-10)
-|*File*: |ubl-2.4/xsdrt/common/UBL-CommonAggregateComponents-2.4.xsd
+|*File*: |link:https://docs.oasis-open.org/ubl/os-UBL-2.4/xsdrt/common/UBL-CommonAggregateComponents-2.4.xsd[os-UBL-2.4/xsdrt/common/UBL-CommonAggregateComponents-2.4.xsd]
 |*Path*: |/QualificationApplicationRequest/cac:AdditionalDocumentReference
 |*Context of Use*: |In this case this reference points at a document published on the Supplement of the European Official Journal or on a national journal.
 |===
@@ -349,7 +349,7 @@ _Table 7. External Reference_
 |===
 |*Component name*: |cac:ExternalReference
 |*Definition*: |A reference to the authentic source of content of this document.
-|*File*: |ubl-2.4/xsdrt/common/UBL-CommonAggregateComponents-2.4.xsd
+|*File*: |link:https://docs.oasis-open.org/ubl/os-UBL-2.4/xsdrt/common/UBL-CommonAggregateComponents-2.4.xsd[os-UBL-2.4/xsdrt/common/UBL-CommonAggregateComponents-2.4.xsd]
 |*Path*: |/QualificationApplicationRequest
 /cac:AdditionalDocumentReference
 /cac:Attachment/cac:ExternalReference
@@ -447,7 +447,7 @@ _Table 8. Contracting body, expected elements_
 |*Class name*: |cac:ContractingParty
 |*Definition*: |The buyer or contracting entity who is buying supplies, services or public works using a tendering procedure as described in the applicable directive (e.g. Directives 2014/24/EU, 2014/25/EU).
 |*Business rule(s)*: |Common (BR-REQ-20#1)
-|*File*: |ubl-2.4/xsdrt/common/UBL-CommonAggregateComponents-2.4.xsd
+|*File*: |link:https://docs.oasis-open.org/ubl/os-UBL-2.4/xsdrt/common/UBL-CommonAggregateComponents-2.4.xsd[os-UBL-2.4/xsdrt/common/UBL-CommonAggregateComponents-2.4.xsd]
 |*Path*: |/QualificationApplicationRequest/cac:ContractingParty
 |===
 
@@ -469,7 +469,7 @@ _Table 9. Contracting body party, expected elements_
 |===
 |*Class name*: |cac:Party
 |*Definition*: |Main data placeholder structure for, in this case, the contracting body.
-|*File*: |ubl-2.4/xsdrt/common/UBL-CommonAggregateComponents-2.4.xsd
+|*File*: |link:https://docs.oasis-open.org/ubl/os-UBL-2.4/xsdrt/common/UBL-CommonAggregateComponents-2.4.xsd[os-UBL-2.4/xsdrt/common/UBL-CommonAggregateComponents-2.4.xsd]
 |*Path*: |/QualificationApplicationRequest/cac:ContractingParty/cac:Party
 |===
 
@@ -511,7 +511,7 @@ _Table 10. Contracting body postal address, expected elements_
 |*Class name*: |cac:PostalAddress
 |*Definition*: |Contractinng body address information.
 |*Business rule(s)*: |None
-|*File*: |ubl-2.4/xsdrt/common/UBL-CommonAggregateComponents-2.4.xsd
+|*File*: |link:https://docs.oasis-open.org/ubl/os-UBL-2.4/xsdrt/common/UBL-CommonAggregateComponents-2.4.xsd[os-UBL-2.4/xsdrt/common/UBL-CommonAggregateComponents-2.4.xsd]
 |*Path*: |/QualificationApplicationRequest/
 cac:ContractingParty/cac:Party/cac:PostalAddress
 |===
@@ -557,7 +557,7 @@ _Table 11. Contact of the contracting body, expected elements_
 |===
 |*Class name*: |cac:Contact
 |*Definition*: |Used to provide contacting information for a party in general or a person.
-|*File*: |ubl-2.4/xsdrt/common/UBL-CommonAggregateComponents-2.4.xsd
+|*File*: |link:https://docs.oasis-open.org/ubl/os-UBL-2.4/xsdrt/common/UBL-CommonAggregateComponents-2.4.xsd[os-UBL-2.4/xsdrt/common/UBL-CommonAggregateComponents-2.4.xsd]
 |*Path*: |/QualificationApplicationRequest/
 cac:ContractingParty/cac:Party/cac:Contact
 |===
@@ -636,7 +636,7 @@ _Table 12. Service provider, expected elements_
 |*Class name*: |cac:Party
 |*Definition*: |Main information about the service provider.
 |*Business rule(s)*: |None
-|*File*: |ubl-2.4/xsdrt/common/UBL-CommonAggregateComponents-2.4.xsd
+|*File*: |link:https://docs.oasis-open.org/ubl/os-UBL-2.4/xsdrt/common/UBL-CommonAggregateComponents-2.4.xsd[os-UBL-2.4/xsdrt/common/UBL-CommonAggregateComponents-2.4.xsd]
 |*Path*: |/QualificationApplicationRequest/
 cac:ContractingParty/cac:Party/cac:ServiceProviderParty/
 cac:Party
