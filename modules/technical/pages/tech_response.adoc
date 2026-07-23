@@ -351,8 +351,8 @@ _Table 28. External Reference_
 
 The economic operator must be able to include all information necessary for identification: Party Name, Party Identification, endpoint id. It must be able to indicate if he is participating together with others (e.g. with subcontractors or with other partners). If so, he must be able to provide: a) the role of the economic operator in the group (leader, responsible for specific tasks, etc.); b) the identification of the other economic operators participating in the procurement procedure; c) (where applicable) name of the participating group.
 
-[cols="1,4",options="header"]
 _Table 29. Information requirement about the ESPD Response and the economic operators_ 
+[cols="1,4",options="header"]
 |===
 |*REQUIREMENT* a|
 *One ESPD Response per economic operator*. The ESPD-EDM, as all the previous versions of the ESPD, requires that every economic operator that participates in one tender provide its own ESDP Response document. This affects sole traders that rely on other entities for the execution of the contract (e.g. subcontractors) and groups of economic operators, e.g. a Joint Venture or a Consortium, and all the sub-contractors on which each economic operator of the group relies on to meet the selection criteria.
@@ -361,23 +361,20 @@ Moreover, each EO should submit an ESPD Response per lot or group of Lots which 
 
 |===
 
-[cols="1,4",options="header"]
-
 _Table 30. Information requirement about the identifiers of the economic operators_
+[cols="1,4",options="header"]
 |===
 |*REQUIREMENT* |For the identification of the economic operators the UBL-2.4 element cac:PartyIdentification/cbc:ID must be used. The following two attributes of the cbc:ID element (CCT IdentifierType element) must be used: (1) @schemeID, a code from the Code List link:{url-tree}/codelists/EOIDType.gc[EOIDType] must be used; (2) @schemeAgencyID, the default value "OP" must be used; (3) Optionally, the attribute @schemeName can be used to place the 'Name' of the code (see the column 'Name' in the above mentioned Code List). For the ESPD-EDM the preferred type code for the @schemID is VAT.
 |===
 
-[cols="1,4",options="header"]
-
 _Table 31. Information requirement about the groups of economic operators_
+[cols="1,4",options="header"]
 |===
 |*REQUIREMENT* |All economic operators belonging to a group (e.g. a Joint Venture, a Consortium, etc.) must specify the name of the group exactly with the same spelling (and respecting capital and lower cases, punctuation, and symbols) in each of their ESPD Responses.
 |===
 
 [IMPORTANT]
 ==== 
-| a|
 _About the definition of economic operator_
 
 *Beware* that this ESPD-EDM specification defines economic operator based on the one provided by the 2014 Directives, where an economic operator is "any natural or legal person or public entity, including any temporary association of undertakings, which offers the execution of works and/or a work, the supply of products or the provision of services on the market. Information about the party submitting the qualification".
@@ -503,6 +500,7 @@ Please, remember that the elements cac:ContractingAuthority, cac:ProcurementProj
 *Remember* that if the economic operator belongs to a group (i.e. it is not a sole contractor), the element /cac:QualificationApplicationResponse/cbc:EconomicOperatorGroupName becomes *compulsory* and that *the spelling of the name must be identical for lead entity, all the members of the group and all the entities that participate in the procedure*.
 ====
 _Table 32. Economic operator, expected elements_
+[cols="1,4",options="header"]
 |===
 |*Class name*: |cac:EconomicOperatorParty
 |*Definition*: |Any natural or legal person or public entity, including any temporary association of undertakings, which offers the execution of works and/or a work, the supply of products or the provision of services on the market. Information about the party submitting the qualification.
@@ -516,8 +514,6 @@ _Table 32. Economic operator, expected elements_
 |===
 |*Components* |*Type* |*Card* |*Description* |*Requirements*
 |*cac:QualifyingParty* |Associated class |1 |The distinctive features or characteristics qualifying an economic operator to be a party in a tendering process (e.g., number of employees, number of operating units, type of business, technical and financial capabilities, completed projects). a|
-*Information Requirement*: xref:tech_br_response_reqs.adoc#eo[tbr92-001].
-
 *Rule*: This element is compulsory in the ESPD-EDM as it is the natural placeholder for several relevant data about the Economic Operator.
 
 *Rule scope*: BR-RESP-10-01
@@ -550,32 +546,22 @@ _Table 33. Qualifying Party, expected elements_
 |===
 |*Components* |*Type* |*Card* |*Description* |*Requirements*
 |*cbc:EmployeeQuantity* |Quantity |0..1 |The number of people employed by the economic operator participating in the tender. a|
-*Information Requirement*: xref:tech_br_response_reqs.adoc#eo[tbr92-001].
-
 *Rule*: Integer value expected.
 
 |*cac:BusinessClassificationScheme/cbc:Description* |Text |0..n |The text describing one official classification assigned by an official list or (pre)qualification system to the economic operator. a|
-*Information Requirement*: xref:tech_br_response_reqs.adoc#eo[tbr92-001].
-
 *Rule*: Only the 'Description' is expected, but the component cac:ClassificationScheme offers other rich possibilities (see the link:https://docs.oasis-open.org/ubl/os-UBL-2.4/[original source] for more details).
 
 *Rule*: Integer value expected.
 
 |*cac:FinancialCapability/cbc:ValueAmount* |Amount |0..1 |A monetary amount as a measure of this capability. a|
-*Information Requirement*: xref:tech_br_response_reqs.adoc#eo[tbr92-001].
-
 *Rule*: Use it to place here the general Turnover of the EO (for statistical purposes). Compulsory assignment of a value to the attribute currency. The default value should be set to 'EUR'. Compulsory use of the Code List link:{url-tree}/codelists/Currency.gc[currency].
 
 *Rule scope*: (BR-OTH-01#16, BR-OTH-03)
 
 |*cac:CompletedTask/cbc:Description* |Text |0..1 |Text describing the works, supplies or services executed, delivered or performed in a procurement project (normally used as a reference for the classification of the economic operator. a|
-*Information Requirement*: xref:tech_br_response_reqs.adoc#eo[tbr92-001].
-
 *Rule*: Use it to place here the references that were used in the (pre)qualification system to get the specific classification related to those references.
 
 |*cac:Party/cac:PartyIdentification/cbc:ID* |Identifier |1 |The identifier of the economic operator in an official list, register or (pre)qualification system. a|
-*Information Requirement*: xref:tech_br_response_reqs.adoc#eo[tbr92-001].
-
 *Rule*: The attribute schemeAgencyID must hold the value retrieved from eCertis that identifies unequivocally the (pre)qualification system. If, for any reason, that value is not available use the default schemeAgencyID "OP" and the cac:EconomicOperatorParty/{zwsp}cac:QualifyingParty/{zwsp}cac:Party/{zwsp}cac:PartyIdentification/{zwsp}cbc:ID for the value of the identifier. Additionally you can use the data structure "registered" to specify an alternative or additional name, identifier and description. The code list link:{url-tree}/codelists/EOIDType.gc[EOIDType] should be used to indicate the type of identifier used as a value of the schemeID attribute, e.g. schemeID="VAT").
 
 *Rule scope*: (BR-RESP-80-S10, BR-RESP-80-S20), Common (BR-RESP-50, BR-OTH-02)
@@ -596,13 +582,13 @@ _Table 34. Economic operator role, expected elements_
 |===
 |*Components* |*Type* |*Card* |*Description* |*Requirements*
 |*cbc:RoleCode* |Code |1 |Identifies the role of the economic operator in the bid. a|
-*Information Requirement*: xref:tech_br_response_reqs.adoc#eo[tbr92-008] *Rule*: Compulsory use of the Code List link:{url-tree}/codelists/EoRoleType.gc[EoRoleType].
+*Information Requirement*: The economic operator must be able to indicate if he is participating together with others (e.g. with subcontractors or with other partners). If so, he must be able to provide: a) the role of the economic operator in the group (leader, responsible for specific tasks, etc.); b) the identification of the other economic operators participating in the procurement procedure; c) (where applicable) name of the participating group.
+
+*Rule*: Compulsory use of the Code List link:{url-tree}/codelists/EoRoleType.gc[EoRoleType].
 
 *Rule scope*: (BR-RESP-10-03, BR-OTH-01, BR-OTH-01#15, BR-OTH-03)
 
 |*cbc:RoleDescription* |Text |0..1 |The text describing the role of the economic operator in the bid. a|
-*Information Requirement*: xref:tech_br_response_reqs.adoc#eo[tbr92-008].
-
 *Rule*: Software applications should retrieve and reuse the description from the Code List link:{url-tree}/codelists/EoRoleType.gc[EoRoleType].
 
 *Rule scope*: Common (BR-RESP-10-02)
@@ -622,39 +608,31 @@ _Table 35. (Qualifying) economic operator party, expected elements_
 |===
 |*Components* |*Type* |*Card* |*Description* |*Requirements*
 |*cac:PartyIdentification/cbc:ID* |Identifier |1 |An identifier that identifies the economic operator, such as the VAT number, the company registration number in a Business Register, other. a|
-*Information Requirement*: xref:tech_br_response_reqs.adoc#eo[tbr92-001].
-
 *Rule*: When possible use the VAT identification of the contracting body (see the link:https://ec.europa.eu/taxation_customs/vies/[VIES] platform for a EU cross-border national VAT number verification system). When not possible a different identifier may be used. For a very complete way of identification of the Party it is highly recommended to, additionally to the cac:Party/cac:Identification/cbc:ID, use the UBL-2.4 component cac:PartyLegalEntity: this element is the perfect placeholder for the data officially registered in a Business Register (see UBL-2.4 model, and XSD diagram above).
 
 *Rule scope*: Common (BR-OTH-02)
 
 |*cbc:EndPointID* |Identifier |0..1 |Electronic address of the contracting body. a|
-*Information Requirement*: xref:tech_br_response_reqs.adoc#eo[tbr92-001].
-
 *Rule*: Use it for online services (e.g. Web Services, REST services, Delivery ID, ftp, etc. For the official web site of the Party use always the cac:Party/cbc:WebsiteURI). An end-point identifier MUST have a scheme identifier attribute (e.g.eSENSParty Identifier Scheme). Should be considered for all actors (buyer, service provider, economic operator) as an eDeliveryID.
 
 *Rule scope*: Common (BR-RESP-10-08)
 
 |*cac:PartyName/cbc:Name* |Text |1 |The name of the economic operator. a|
-*Information Requirement*: xref:tech_br_response_reqs.adoc#eo[tbr92-001].
-
 *Rule*: Use the official name of the Party as officially registered. Be accurate in its spelling.
 
 |*cbc:IndustryClassificationCode* |Code |1 |Used to indicate whether the company is a micro, small, medium or large enterprise. a|
-*Information Requirement*: xref:tech_br_response_reqs.adoc#eo[tbr92-004].
+*Information Requirement*: The economic operator must be able to indicate, whether he is a micro, a small or a medium-sized enterprise (SME).
 
 *Rule*: Used only for statistical purposes. Compulsory use of code list economic-operator-size, to determine EO's company is micro, small, medium or large.
 
 |*cbc:WebsiteURI* |Identifier |0..1 |The website of the economic operator. a|
-*Information Requirement*: xref:tech_br_response_reqs.adoc#ca[tbr92-012].
 
 *Rule*: Use it for the official web site of the service provider.
 
 |===
 
-[cols="1,4",options="header"]
-
 _Table 36. Economic operator postal address, expected elements_
+[cols="1,4",options="header"]
 |===
 |*Class name*: |cac:PostalAddress
 |*Definition*: |Postal address information.
@@ -667,35 +645,28 @@ _Table 36. Economic operator postal address, expected elements_
 |===
 |*Components* |*Type* |*Card* |*Description* |*Requirements*
 |*cac:AddressLine/cbc:Line* |Text |0..1 |The main address line in an address. Usually the street name and number or post office box. a|
-*Information Requirement*: xref:tech_br_response_reqs.adoc#ca[tbr92-012].
+*Information Requirement*: The ESPD should contain contact information of the contracting authority: Postal address, telephone number, fax number, e-mail address, contact person(s).
 
 *Rule*: None.
 
 |*cbc:CityName* |Text |0..1 |The common name of a city where the address is located. a|
-*Information Requirement*: xref:tech_br_response_reqs.adoc#ca[tbr92-012].
 
 *Rule*: None.
 
 |*cbc:PostalZone* |Text |0..1 |The identifier for an addressable group of properties according to the relevant postal service, such as a ZIP code or Post Code. a|
-*Information Requirement*: xref:tech_br_response_reqs.adoc#ca[tbr92-012].
-
 *Rule*: None.
 
 |*cac:Country/cbc:IdentificationCode* |Code |1 |A code that identifies the country. a|
-*Information Requirement*: xref:tech_br_response_reqs.adoc#ca[tbr92-012].
-
 *Rule*: The country of the contracting body must always be specified. Compulsory use of the Code List link:{url-tree}/codelists/Country.gc[Country].
 
 *Rule scope*: Common (BR-RESP-10-07, BR-OTH-01, BR-OTH-01#5, BR-OTH-03)
 
 |*cac:Country/cbc:Name* |Text |0..1 |The name of the country. a|
-*Information Requirement*: xref:tech_br_response_reqs.adoc#ca[tbr92-012].
-
 *Rule*: None.
 |===
 
-[cols="1,4",options="header"]
 _Table 37. Contact of the economic operator, expected elements_
+[cols="1,4",options="header"]
 |===
 |*Class name*: |cac:Contact
 |*Definition*: |Used to provide contacting information for a party in general or a person.
@@ -708,23 +679,15 @@ _Table 37. Contact of the economic operator, expected elements_
 |===
 |*Components* |*Type* |*Card* |*Description* |*Requirements*
 |*cbc:Name* |Text |0..1 |The name of the contact point. a|
-*Information Requirement*: xref:tech_br_response_reqs.adoc#ca[tbr92-012].
-
 *Rule*: None.
 
 |*cbc:Telephone* |Text |0..1 |A phone number for the contact point. a|
-*Information Requirement*: xref:tech_br_response_reqs.adoc#ca[tbr92-012].
-
 *Rule*: None.
 
 |*cbc:Telefax* |Text |0..1 |A fax number for the contact point. a|
-*Information Requirement*: xref:tech_br_response_reqs.adoc#ca[tbr92-012].
-
 *Rule*: None.
 
 |*cbc:ElectronicMail* |Text |0..1 |An e-mail address for the contact point. a|
-*Information Requirement*: xref:tech_br_response_reqs.adoc#ca[tbr92-012].
-
 *Rule*: None.
 
 |===
@@ -743,34 +706,26 @@ _Table 38. Service provider, expected elements_
 |===
 |*Components* |*Type* |*Card* |*Description* |*Requirements*
 |*cbc:WebsiteURI* |Identifier |0..1 |The website of the service provider. a|
-*Information Requirement*: xref:tech_br_response_reqs.adoc#service_provider[tbr92-021].
+*Information Requirement*: The ESPD may reflect information about the issuing service that was used to create the ESPD itself.
 
 *Rule*: Use it for the official web site of the service provider. Reserve the EndPointID for online services (e.g. web, REST, ftp services, etc.)
 
 |*cbc:EndpointID* |Identifier |0..1 |Electronic address of the service provider. a|
-*Information Requirement*: xref:tech_br_response_reqs.adoc#service_provider[tbr92-021].
-
 *Rule*: Use it for online services (e.g. Web Services, REST services, Delivery ID, ftp, etc. For the official web site of the Party use always the cac:Party/cbc:WebsiteURI). An end-point identifier MUST have a scheme identifier attribute (e.g.eSENSParty Identifier Scheme). Should be considered for all actors (buyer, service provider, economic operator) as an eDeliveryID.
 
 *Rule scope*: Common (BR-RESP-10-08)
 
 |*cac:PartyIdentification/cbc:ID* |Identifier |1 |The national identifier of a service provider as it is legally registered (e.g. VAT identification). a|
-*Information Requirement*: xref:tech_br_response_reqs.adoc#service_provider[tbr92-021].
-
 *Rule*: An identifier for the service provider must always be provided. Compulsory use of the attribute SchemeAgencyID. When possible use the VAT identification of the service provider (see the VIES platform for a EU cross-border national VAT number verification system). See XML example below.
 
 *Rule scope*: Common (BR-RESP-10-11, BR-OTH-02)
 
 |*cac:PartyName/cbc:Name* |Text |1 |The name of the service provider. a|
-*Information Requirement*: xref:tech_br_response_reqs.adoc#service_provider[tbr92-021].
-
 *Rule*: The name of the service provider must always be specified. Supply the official registered name of the service provider.
 
 *Rule scope*: Common (BR-RESP-10-09)
 
 |*cac:PostalAddress/cac:Country/cbc:IdentificationCode* |Code |1 |The code that identifies the country of the service provider. a|
-*Information Requirement*: xref:tech_br_response_reqs.adoc#service_provider[tbr92-021].
-
 *Rule*: The country of the service provider must always be specified. Compulsory use of the Code List link:{url-tree}/codelists/Country.gc[Country].
 
 *Rule scope*: (BR-RESP-10-10, BR-OTH-01, BR-OTH-01#5, BR-OTH-03)
@@ -1005,82 +960,63 @@ _Figure 24. EO representatives - element Contact, inside Person, XSD Schema_
 [[reps_expected_elements]]
 ==== Expected Elements
 
-[cols="1,4",options="header"]
-
 _Table 39. Representatives of the economic operator, expected elements_
+[cols="1,4",options="header"]
 |===
 |*Class name*: |cac:PowerOfAttorney
 |*Definition*: |Official or legal mandate issued by an authority (e.g. an attorney or a notary) to represent the economic operator as a representative of the economic operator in public procurement procedures.
 |*Business rule(s)*: |Common (BR-RESP-20)
 |*File*: |link:https://docs.oasis-open.org/ubl/os-UBL-2.4/xsdrt/common/UBL-CommonAggregateComponents-2.4.xsd[os-UBL-2.4/xsdrt/common/UBL-CommonAggregateComponents-2.4.xsd]
 |*Path*: |/QualificationApplicationResponse/cac:EconomicOperatorParty/cac:Party/cac:PowerOfAttorney
-|*Context of use*: |The economic operator in the ESPD Response document. Use this element to refer to the natural persons that represent the economic operator. See requirement xref:tech_br_response_reqs.adoc#eval_crit[tbr92-018].
+|*Context of use*: |The economic operator in the ESPD Response document. Use this element to refer to the natural persons that represent the economic operator.
 |===
 
 [cols="3,1,1,5,5",options="header"]
 |===
 |*Components* |*Type* |*Card* |*Description* |*Requirements*
 |*cac:PowerOfAttorney/cac:AgentParty/ cac:Person/cbc:FirstName* |Text |1 |Name of the natural person. a|
-*Information Requirement*: xref:tech_br_response_reqs.adoc#reps_eo[tbr92-009] *Rule*: Name of the natural person is mandatory.
+*Information Requirement*: The economic operator must be able to name a natural person that is acting as the representative of the economic operator and to include the personal information necessary for identifying this natural person (e.g. Identifier, name, nationality, address, place of birth, date of birth).
+
+*Rule*: Name of the natural person is mandatory.
 
 *Rule scope*: Common (BR-RESP-20-01)
 
 |*cac:PowerOfAttorney/cac:AgentParty/ cac:Person/cbc:FamilyName* |Text |1 |Family Name of the natural person. a|
-*Information Requirement*: xref:tech_br_response_reqs.adoc#reps_eo[tbr92-009].
-
 *Rule*: Family Name of the natural person is mandatory.
 
 *Rule scope*: Common (BR-RESP-20-02)
 
 |*cac:PowerOfAttorney/cac:AgentParty/ cac:Person/cbc:BirthDate* |Date |0..1 |Date of birth of the natural person. a|
-*Information Requirement*: xref:tech_br_response_reqs.adoc#reps_eo[tbr92-009].
-
 *Rule*: None.
 
 |*cac:PowerOfAttorney/cac:AgentParty/ cac:Person/cbc:BirthplaceName* |Text |0..1 |Place of birth of the natural person. a|
-*Information Requirement*: xref:tech_br_response_reqs.adoc#reps_eo[tbr92-009].
-
 *Rule*: None.
 
 |*cac:PowerOfAttorney/cac:AgentParty/ cac:Person/cac:ResidenceAddress/cac:AddressLine* |Text |0..1 |The main address line in an address. Usually the street name and number or post office box. a|
-*Information Requirement*: xref:tech_br_response_reqs.adoc#reps_eo[tbr92-009].
-
 *Rule*: Use it to specify the street name and number of the building of the representative natural person in one line. *Beware that specifying the address of a natural person might enter in conflict with the current Data Protection rules.*
 
 |*cac:PowerOfAttorney/cac:AgentParty/ cac:Person/cac:ResidenceAddress/cbc:PostalZone* |Text |0..1 |The identifier for an addressable group of properties according to the relevant postal service, such as a ZIP code or Post Code. a|
-*Information Requirement*: xref:tech_br_response_reqs.adoc#reps_eo[tbr92-009].
-
 *Rule*: None.
 
 |*cac:PowerOfAttorney/cac:AgentParty/ cac:Person/cac:ResidenceAddress/cbc:CityName* |Text |0..1 |The common name of a city where the address is located. a|
-*Information Requirement*: xref:tech_br_response_reqs.adoc#reps_eo[tbr92-009].
-
 *Rule*: None.
 
 |*cac:PowerOfAttorney/cac:AgentParty/ cac:Person/cac:ResidenceAddress/ cac:Country/cbc:IdentificationCode* |Code |1 |A code that identifies the country. a|
-*Information Requirement*: xref:tech_br_response_reqs.adoc#reps_eo[tbr92-009].
-
 *Rule*: Compulsory use of the Code List link:{url-tree}/codelists/Country.gc[Country].
 
 *Rule scope*: Common (BR-RESP-20-03, BR-OTH-01, BR-OTH-01#5, BR-OTH-03)
 
 |*cac:PowerOfAttorney/cac:AgentParty/ cac:Person/cac:ResidenceAddress/ cac:Country/cbc:Name* |Text |0..1 |The name of the country. a|
-*Information Requirement*: xref:tech_br_response_reqs.adoc#reps_eo[tbr92-009].
-
 *Rule*: Try to use the name provided in the Code List Country and in the language of the user.
 
 |*cac:PowerOfAttorney/cac:AgentParty/ cac:Person/cac:Contact/cbc:ElectronicMail* |Text |0..1 |An e-mail address for the contact point. a|
-*Information Requirement*: xref:tech_br_response_reqs.adoc#reps_eo[tbr92-009].
-
 *Rule*: None.
 
 |*cac:PowerOfAttorney/cac:AgentParty/ cac:Person/cac:Contact/cbc:Telephone* |Text |0..1 |A phone number for the contact point. a|
-*Information Requirement*: xref:tech_br_response_reqs.adoc#reps_eo[tbr92-009].
-
 *Rule*: None.
 
 |*cac:PowerOfAttorney/cbc:Description* |Text |0..n |The short description for the role of the economic operstors representative and other detailed information on the representation. a|
-*Information Requirement*: xref:tech_br_response_reqs.adoc#reps_eo[tbr92-010].
+*Information Requirement*: The economic operator must also be able to specify the position (acting capacity) the natural person takes in the company in the qualification/tendering phase. If needed, the economic operator shall be able to provide detailed information on the representation (its forms, extent, purpose, etc.).
 
 *Rule*: Use line 1 of the description to describe the role of the representative. Use line 2 to provide detailed information on the representation (its forms, extent, purpose, etc.)
 
@@ -1204,64 +1140,53 @@ Responses are not associated to ESPD custom data structures. All the values rega
 [[response_expected_elements]]
 == Expected Elements
 
-[cols="1,4",options="header"]
-
 _Table 40. Elements expected in an answer to a criterion property_
+[cols="1,4",options="header"]
 |===
 |*Class name*: |cac:TenderingCriterionResponse
 |*Definition*: |A class to describe a response to a criterion property.
 |*Business rule(s)*: |BR-RESP-80, BR-RESP-80-S10, BR-RESP-80-S20, Common (BR-LEAD-10)
 |*File*: |link:https://docs.oasis-open.org/ubl/os-UBL-2.4/xsdrt/common/UBL-CommonAggregateComponents-2.4.xsd[os-UBL-2.4/xsdrt/common/UBL-CommonAggregateComponents-2.4.xsd]
 |*Path*: |/QualificationApplicationResponse/cac:TenderingCriterionResponse
-|*Context of use*: |The economic operator uses it in the ESPD Response document to answer a QUESTION. xref:tech_br_response_reqs.adoc#eo[tbr92-005], xref:tech_br_response_reqs.adoc#eo[tbr92-006], xref:tech_br_response_reqs.adoc#eo[tbr92-007], xref:tech_br_response_reqs.adoc#eval_crit[tbr92-018].
+|*Context of use*: |The economic operator uses it in the ESPD Response document to answer a QUESTION.
 |===
 
 [cols="3,1,1,5,5",options="header"]
 |===
 |*Components* |*Type* |*Card* |*Description* |*Requirements*
 |*cbc:ID* |Identifier |0..1 |A language-independent token, e.g., a number, that allows to identify a criterion response uniquely as well as allows to reference the criterion response in other documents. A criterion response describes how an economic operators fulfills an specific criterion. a|
-*Information Requirement*: xref:tech_br_response_reqs.adoc#eo[tbr92-005], xref:tech_br_response_reqs.adoc#eo[tbr92-006], xref:tech_br_response_reqs.adoc#eo[tbr92-007], xref:tech_br_response_reqs.adoc#eval_crit[tbr92-018]
+*Information Requirement*: In case of reserved procurement, the economic operator must be able to indicate that he is in a sheltered program (e.g. sheltered workshop, social business, etc.). If so, he must be able to indicate the corresponding percentage of disabled or disadvantaged workers and details on whether the employees concerned belong to a specific category. 
+If the economic operator is registered on an official list of approved economic operators or is in possession of an equivalent certificate (e.g. under a national (pre)qualification system), he must be able to provide: a) the relevant registration or certification number, b) in case the certificate is available electronically: the web address, issuing body, and precise reference of the documentation; c) the references on which the registration or certification is based, as well as the classification obtained in the official list; d) whether the registration or certification covers all the required exclusion grounds and selection criteria.
 
 *Rule*: This ID SHOULD be provided by the EO or the service provider that instantiates the ESPDResponse XML document.
 
 *Rule scope*: Common (BR-TCR-05, BR-OTH-02)
 
 |*cbc:ValidatedCriterionPropertyID* |Identifier |1 |A cross-reference to the criterion propertys which is validated thorugh this response expressed as an identifier. a|
-*Information Requirement*: xref:tech_br_response_reqs.adoc#eo[tbr92-005], xref:tech_br_response_reqs.adoc#eo[tbr92-006], xref:tech_br_response_reqs.adoc#eo[tbr92-007], xref:tech_br_response_reqs.adoc#eval_crit[tbr92-018]
-
 *Rule*: This ID MUST point at one of the TenderingCriterionProperty/cbc:ID that were included in the Request document.
 
 *Rule scope*: Common (BR-RESP-30, BR-RESP-40, BR-RESP-60, BR-RESP-60-S10, BR-RESP-60-S20, BR-TCR-01, BR-TCR-03, BR-LEAD-10-S20, BR-LEAD-10-S30)
 
 |*cbc:ConfidentialityLevelCode* |Code |0..1 |A code specifying the confidentiality level of the given response for this criterion. a|
-*Information Requirement*: xref:tech_br_response_reqs.adoc#eo[tbr92-005], xref:tech_br_response_reqs.adoc#eo[tbr92-006], xref:tech_br_response_reqs.adoc#eo[tbr92-007], xref:tech_br_response_reqs.adoc#eval_crit[tbr92-018]
-
 *Rule*: If the value is true, all the evidences associated to this response becomes also confidential.
 
 *Rule scope*: BR-TCR-02, BR-OTH-01, BR-OTH-01#19, BR-OTH-03
 
 |*cac:ResponseValue* |Associated class |0..n |A class to describe the criterion property response value. a|
-*Information Requirement*: xref:tech_br_response_reqs.adoc#eval_crit[tbr92-018]
-
 *Rule*: This class contains the main disjoint elements used to provide the actual answer. The UBL-2.4 model provides cardinality 0..n, this allows for building up lists of, namely, identifier and code values that are all "packaged" into one cac:TenderingCriterionResponse that in turn is linked to one cac:TenderingCriterionProperty. Beware that the cardinality is flexible (0..whatever) because some responses are not simple values, like the ones but complex ones, e.g. cac:ApplicablePeriod and cac:EvidenceSupplied).
 
 *Rule scope*: Common (BR-TCR-08, BR-TCR-04)
 
 |*cac:ApplicablePeriod* |Associated class |0..1 |A class for the economic operator to specify the start date and the end-date when the expected answer to a criterion property is a lapse of time. a|
-*Information Requirement*: xref:tech_br_response_reqs.adoc#eval_crit[tbr92-018]
-
 *Rule*: The ESPD-EDM does only expect start date and end date. Software applications may take leverage of the richness of this class though for other purposes beyond the scope of this specification.
 
 |*cac:EvidenceSupplied* |Associated class |0..1 |A reference to the evidence supporting this criterion property response. a|
-*Information Requirement*: xref:tech_br_response_reqs.adoc#evidence_link[tbr92-017].
-
 *Rule*: Used to point at an instance of the cac:Evidence.
 
 |===
 
 [NOTE]
 ====
-| a|
 _Disjointness of the elements inside cac:ResponseValue_
 
 *Beware* that *one* cac:ResponseValue element contains the complete list of possible values for *one* answer to a criterion property. Only one *type* of element can be used to answer a criterion property, and that element MUST be of the same type as the one specified as expected in the ESPD Request (element cac:TenderingCriterionProperty/cac:ValueDataTypeCode).
@@ -1280,20 +1205,16 @@ _Table 41. Elements expected in the 'cac:ApplicablePeriod' class_
 |*Business rule(s)*: |None
 |*File*: |link:https://docs.oasis-open.org/ubl/os-UBL-2.4/xsdrt/common/UBL-CommonAggregateComponents-2.4.xsd[os-UBL-2.4/xsdrt/common/UBL-CommonAggregateComponents-2.4.xsd]
 |*Path*: |/QualificationApplicationResponse/cac:TenderingCriterionResponse/cac:ApplicablePeriod
-|*Context of use*: |A class for the economic operator to specify the start date and the end-date when the expected answer to a criterion property is a lapse of time; xref:tech_br_response_reqs.adoc#eval_crit[tbr92-018].
+|*Context of use*: |A class for the economic operator to specify the start date and the end-date when the expected answer to a criterion property is a lapse of time.
 |===
 
 [cols="3,1,1,5,5",options="header"]
 |===
 |*Components* |*Type* |*Card* |*Description* |*Requirements*
 |*cbc:StartDate* |Date |0..1 |The date on which this period begins. a|
-*Information Requirement*: xref:tech_br_response_reqs.adoc#eval_crit[tbr92-018]
-
 *Rule*: Expected format 'YYYY-MM-DD'.
 
 |*cbc:EndDate* |Date |0..1 |The date on which this period ends. a|
-*Information Requirement*: xref:tech_br_response_reqs.adoc#eval_crit[tbr92-018]
-
 *Rule*: Expected format 'YYYY-MM-DD'.
 
 |===
@@ -1307,15 +1228,13 @@ _Table 42. Elements expected in the 'cac:EvidenceSupplied' class_
 |*Business rule(s)*: |None
 |*File*: |link:https://docs.oasis-open.org/ubl/os-UBL-2.4/xsdrt/common/UBL-CommonAggregateComponents-2.4.xsd[os-UBL-2.4/xsdrt/common/UBL-CommonAggregateComponents-2.4.xsd]
 |*Path*: |/QualificationApplicationResponse/cac:TenderingCriterionResponse/cac:EvidenceSupplied
-|*Context of use*: |Used to refer to one ore more evidences that are present in the QualificationApplicationResponse XML instance; xref:tech_br_response_reqs.adoc#evidence_link[tbr92-017].
+|*Context of use*: |Used to refer to one ore more evidences that are present in the QualificationApplicationResponse XML instance.
 |===
 
 [cols="3,1,1,5,5",options="header"]
 |===
 |*Components* |*Type* |*Card* |*Description* |*Requirements*
 |*cbc:ID* |Identifier |1 |The identifier of the referenced evidence. a|
-*Information Requirement*: xref:tech_br_response_reqs.adoc#eval_crit[tbr92-018]
-
 *Rule*: The expected identifier must match the value of a cac:Evidence/cbc:ID present in the XML document.
 
 *Rule scope*: Common (BR-TCR-09, BR-OTH-0)
@@ -1324,9 +1243,8 @@ _Table 42. Elements expected in the 'cac:EvidenceSupplied' class_
 
 The table below lists the elements expected in the sub-class cac:ResponseValue. Remember that the elements of distinct types are all *disjoint* amongst themselves: i.e. you cannot associate one amount AND one indicator to the same cac:TenderingCriterionProperty element (but several values for elements of one type may be used to build up lists, e.g. lists of Lots and lists of CPV codes).
 
-[cols="1,4",options="header"]
-
 _Table 43. Elements expected in the 'cac:ResponseValue' class_
+[cols="1,4",options="header"]
 |===
 |*Class name*: |cac:ResponseValue
 |*Definition*: |A class to describe the criterion property response value.
@@ -1340,72 +1258,48 @@ _Table 43. Elements expected in the 'cac:ResponseValue' class_
 |===
 |*Components* |*Type* |*Card* |*Description* |*Requirements*
 |*cbc:ID* |Identifier |0..1 |An identifier to refer to this criterion response value. a|
-*Information Requirement*: xref:tech_br_response_reqs.adoc#eval_crit[tbr92-018]
-
 *Rule*: Recommendation: use a UUDI-version 4 number.
 
 *Rule scope*: BR-TCR-05
 
 |*cbc:Description* |Text |0..n |A description used as a reply to the criterion property. a|
-*Information Requirement*: xref:tech_br_response_reqs.adoc#eval_crit[tbr92-018]
-
 *Rule*: *The ESPD-EDM uses this element to place a response that is a string*. UBL-2.4 instead uses cbc:Response, for this. This is something that needs to be reviewed and agreed between ESPD-EDM and future versions of the UBL. See the XML provided in this ESPD-EDM specifications for details on its usage.
 
 |*cbc:ResponseAmount* |Amount |0..1 |An amount used as a reply to the criterion property. a|
-*Information Requirement*: xref:tech_br_response_reqs.adoc#eval_crit[tbr92-018]
-
 *Rule*: The currencyID attribute is MANDATORY (e.g. "EUR"). Compulsory use of the code list "ISO 4217 3A:2015". BEWARE that amounts can use decimal separators (e.g. 14134,95 but not hundred or thousand separators).
 
 *Rule scope*: Common (BR-OTH-01, BR-OTH-01#17, BR-OTH-03)
 
 |*cbc:ResponseCode* |Code |0..1 |A code used as a reply to the criterion property. a|
-*Information Requirement*: xref:tech_br_response_reqs.adoc#eval_crit[tbr92-018]
-
 *Rule*: Compulsory use of the attributes mentioned in the section xref:tech_codelist.adoc#codes_and_identifiers[Codes and Identifiers] for codes.
 
 *Rule scope*: Common (BR-OTH-01)
 
 |*cbc:ResponseDate* |Date |0..1 |A date used as a reply to the criterion property. a|
-*Information Requirement*: xref:tech_br_response_reqs.adoc#eval_crit[tbr92-018]
-
 *Rule*: Format 'YYYY-MM-DD'.
 
 |*cbc:ResponseTime* |Time |0..1 |A time used as a reply to the criterion property. a|
-*Information Requirement*: xref:tech_br_response_reqs.adoc#eval_crit[tbr92-018]
-
 *Rule*: Format 'HH:MM:SS'.
 
 |*cbc:ResponseID* |Identifier |0..1 |An identifier used as a reply to the criterion property. a|
-*Information Requirement*: xref:tech_br_response_reqs.adoc#eval_crit[tbr92-018]
-
 *Rule*: Compulsory use of the attributes mentioned in the section xref:tech_codelist.adoc#codes_and_identifiers[Codes and Identifiers] for codes.
 
 |*cbc:ResponseIndicator* |Indicator |0..1 |An indicator used as a reply to the criterion property. a|
-*Information Requirement*: xref:tech_br_response_reqs.adoc#eval_crit[tbr92-018]
-
 *Rule*: The only possible values are False and True.
 
 *Rule scope*: Common (BR-TCR-06, BR-TCR-07)
 
 |*cbc:ResponseMeasure* |Measure |0..1 |A measure used as a reply to the criterion property. a|
-*Information Requirement*: xref:tech_br_response_reqs.adoc#eval_crit[tbr92-018]
-
 *Rule*: None.
 
 |*cbc:ResponseNumeric* |Numeric |0..1 |A number used as a reply to the criterion property. 
 More precisely, a number, rate or percent used as a reply to the criterion requirement. a|
-*Information Requirement*: xref:tech_br_response_reqs.adoc#eval_crit[tbr92-018]
-
 *Rule*: Do not format the percentage with the "%" symbol, just provide a float value like in the example (e.g. 0.4).
 
 |*cbc:ResponseQuantity* |Quantity |0..1 |A quantity used as a reply to the criterion property. a|
-*Information Requirement*: xref:tech_br_response_reqs.adoc#eval_crit[tbr92-018]
-
 *Rule*: BEWARE that different types of Quantities can be required, some of them with a special attribute. Up to three different types of Quantities can be specified: (1) QUANTITY_INTEGER, a number representing a quantity in a specific unit of measure. The unit has to be specified (e.g. number of workers); (2) QUANTITY_YEAR, a non-negative integer (i.e. a natural number) representing a year. The unit has to be specified as YEAR, and (3) QUANTITY, a number representing a generic quantity with no unit specified (e.g. a ratio). Beware that in the case of QUANTITY_INTEGER and QUANTITY_YEAR the attribute unitCode MUST be always specified.
 
 |*cbc:ResponseURI* |URI |0..1 |A URI used as a reply to the criterion property. a|
-*Information Requirement*: xref:tech_br_response_reqs.adoc#eval_crit[tbr92-018]
-
 *Rule*: None.
 
 |===
@@ -1507,53 +1401,40 @@ The ESPD-EDM always uses the element inside the document reference to refer to t
 
 This list below enumerates the elements of cac:Evidence that could be used in (that make sense for) an ESPD Response. Notice though that the current versions of the ESPD-EDM only use the few elements mentioned above: ID, URL, Reference/Code, Confidentiality level and Issuer.
 
-[cols="1,4",options="header"]
-
 _Table 44. Elements expected in a piece of Evidence_
+[cols="1,4",options="header"]
 |===
 |*Class name*: |cac:Evidence
 |*Definition*: |A class to describe support for an item of evidence, for representations of capabilities or the ability to meet tendering requirements which an economic operator must provide for acceptance into a tendering process.
 |*Business rule(s)*: |None
 |*File*: |link:https://docs.oasis-open.org/ubl/os-UBL-2.4/xsdrt/common/UBL-CommonAggregateComponents-2.4.xsd[os-UBL-2.4/xsdrt/common/UBL-CommonAggregateComponents-2.4.xsd]
 |*Path*: |/QualificationApplicationResponse/cac:Evidence
-|*Context of use*: |The economic operator uses it in the ESPD Response document to provide support, in the form of evidence, for one or more criteria xref:tech_br_response_reqs.adoc#evidence_link[tbr92-017].
+|*Context of use*: |The economic operator uses it in the ESPD Response document to provide support, in the form of evidence, for one or more criteria.
 |===
 
 [cols="3,1,1,5,5",options="header"]
 |===
 |*Components* |*Type* |*Card* |*Description* |*Requirements*
 |*cbc:ID* |Identifier |1 |An identifier for a piece of supporting evidence a|
-*Information Requirement*: xref:tech_br_response_reqs.adoc#evidence_link[tbr92-017].
-
 *Rule*: The Evidence ID MUST be unique in the ESPD Response XML instance (i.e. two items of evidence cannot have the same ID value). It is recommended to use always a UUID UUID of version 4 (random generated UUID).
 
 *Rule scope*: Common (BR-TCR-09, BR-OTH-0)
 
 |*cbc:EvidenceTypeCode* |Code |0..1 |A code signifying the type of evidence. a|
-*Information Requirement*: xref:tech_br_response_reqs.adoc#eo[tbr92-006], xref:tech_br_response_reqs.adoc#eo[tbr92-007], xref:tech_br_response_reqs.adoc#evidence_link[tbr92-017]
-
 *Rule*: A code signifying the type of evidence. Could be used in the future in alignment to e-Certis.
 
 *Rule scope*: BR-OTH-01
 
 |*cbc:Name* |Text |0..1 |The name of the item of evidence. a|
-*Information Requirement*: xref:tech_br_response_reqs.adoc#eo[tbr92-006], xref:tech_br_response_reqs.adoc#eo[tbr92-007], xref:tech_br_response_reqs.adoc#evidence_link[tbr92-017]
-
 *Rule*: None. Could be used in the future in alignment to e-Certis.
 
 |*cbc:Description* |Text |0..1 |The text description of this item of evidence. a|
-*Information Requirement*: xref:tech_br_response_reqs.adoc#eo[tbr92-006], xref:tech_br_response_reqs.adoc#eo[tbr92-007], xref:tech_br_response_reqs.adoc#evidence_link[tbr92-017]
-
 *Rule*: *Use this field to keep the Reference/Code of the Evidence*.
 
 |*cbc:CandidateStatement* |Text |0..1 |Information about a candidate statement that the buyer accepts as a sufficient response. a|
-*Information Requirement*: xref:tech_br_response_reqs.adoc#eo[tbr92-006], xref:tech_br_response_reqs.adoc#eo[tbr92-007], xref:tech_br_response_reqs.adoc#evidence_link[tbr92-017]
-
 *Rule*: None. No rule is applied.
 
 |*cbc:ConfidentialityLevelCode* |Code |0..1 |A code specifying the confidentiality level of the item of evidence. a|
-*Information Requirement*: xref:tech_br_response_reqs.adoc#evidence_link[tbr92-017].
-
 *Rule*: Compulsory use of the Code List link:{url-tree}/codelists/AccessRight.gc[AccessRight]. Software application should set this code to CONFIDENTIAL automatically when the confidentiality level code of at least one criterion to which the item of evidence is associated is set to CONFIDENTIAL.
 
 *Rule scope*: BR-TCR-02, BR-OTH-01, BR-OTH-01#18, BR-OTH-03
@@ -1562,48 +1443,37 @@ _Table 44. Elements expected in a piece of Evidence_
 
 This other table lists the elements from cac:Evidence/cac:DocumentReference used in the ESPD-EDM:
 
-[cols="1,4",options="header"]
-
 _Table 45. Elements expected from the 'cac:Evidence/cac:DocumentReference' element_
+[cols="1,4",options="header"]
 |===
 |*Class name*: |cac:DocumentReference
 |*Definition*: |A reference to the evidence document.
 |*Business rule(s)*: |None
 |*File*: |link:https://docs.oasis-open.org/ubl/os-UBL-2.4/xsdrt/common/UBL-CommonAggregateComponents-2.4.xsd[os-UBL-2.4/xsdrt/common/UBL-CommonAggregateComponents-2.4.xsd]
 |*Path*: |/QualificationApplicationResponse/cac:Evidence/cac:DocumentReference
-|*Context of use*: |The economic operator uses it in the ESPD Response document to supply the URL of the evidence and the party who issued the evidence document. xref:tech_br_response_reqs.adoc#evidence_link[tbr92-017], xref:tech_br_response_reqs.adoc#additional_info[tbr92-022], xref:tech_br_request_reqs.adoc#contracting_body[tbr70-006], xref:tech_br_request_reqs.adoc#call_for_tender[tbr70-007].
+|*Context of use*: |The economic operator uses it in the ESPD Response document to supply the URL of the evidence and the party who issued the evidence document.
 |===
 
 [cols="3,1,1,5,5",options="header"]
 |===
 |*Components* |*Type* |*Card* |*Description* |*Requirements*
 |*cbc:ID* |Identifier |1 |An identifier for the referenced document. a|
-*Information Requirement*: xref:tech_br_response_reqs.adoc#evidence_link[tbr92-017], xref:tech_br_response_reqs.adoc#additional_info[tbr92-022], xref:tech_br_request_reqs.adoc#contracting_body[tbr70-006], xref:tech_br_request_reqs.adoc#call_for_tender[tbr70-007]
-
 *Rule*: *If the reference or verification code is provided for the evidence use this element to place it.* This 'code' is used in some countries (e.g. Spain) to check that the document is authentic. If a verification code is supplied you can use an official 'end-point' to retrieve an image (or a PDF) of the document and check that the evidence is authentic.
 
 *Rule scope*: BR-OTH-02
 
 |*cac:Attachment/cac:ExternalReference/cbc:URI* |Identifier |1 |The Uniform Resource Identifier (URI) that identifies the external object as an Internet resource. a|
-*Information Requirement*: xref:tech_br_response_reqs.adoc#evidence_link[tbr92-017], xref:tech_br_response_reqs.adoc#additional_info[tbr92-022], xref:tech_br_request_reqs.adoc#contracting_body[tbr70-006], xref:tech_br_request_reqs.adoc#call_for_tender[tbr70-007]
-
 *Rule*: None. No rule is applied.
 
 |*cac:IssuerParty/cac:PartyIdentification/cbc:ID* |Identifier |0..1 |The identifier of the party issuer of the documentary evidence. a|
-*Information Requirement*: xref:tech_br_response_reqs.adoc#eo[tbr92-006], xref:tech_br_response_reqs.adoc#eo[tbr92-007], xref:tech_br_response_reqs.adoc#evidence_link[tbr92-017]
-
 *Rule*: Not currently used in ESPD, but if you decide to use it try to use the VAT number whenever possible.
 
 *Rule scope*: BR-OTH-02
 
 |*cac:IssuerParty/cac:PartyName/cbc:Name* |Text |0..1 |The name of the party issuer of the documentary evidence. a|
-*Information Requirement*: xref:tech_br_response_reqs.adoc#eo[tbr92-006], xref:tech_br_response_reqs.adoc#eo[tbr92-007], xref:tech_br_response_reqs.adoc#evidence_link[tbr92-017]
-
 *Rule*: ESPD-EDM uses this element to keep the name of the evidence issuer in the ESPD Response XML instance.
 
 |*cac:IssuerParty/cbc:WebsiteURI* |URI |0..1 |The website of the party issuer of the documentary evidence. a|
-*Information Requirement*: xref:tech_br_response_reqs.adoc#eo[tbr92-006], xref:tech_br_response_reqs.adoc#eo[tbr92-007], xref:tech_br_response_reqs.adoc#evidence_link[tbr92-017]
-
 *Rule*: None. No rule is applied.
 
 |===
