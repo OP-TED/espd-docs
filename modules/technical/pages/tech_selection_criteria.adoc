@@ -336,7 +336,7 @@ Please generate an ESPD Request and ESPD Response documents on https://docs.ted.
 
 See formal requirements related to 'Turnover' criteria ESPD in the link:http://wiki.ds.unipi.gr/pages/viewpage.action?pageId=44367916[BIS 41 - European Single Procurement Document (Version 2.0.0)], and more specifically the requirement link:http://wiki.ds.unipi.gr/pages/viewpage.action?pageId=44367916#tbr070-013[_tbr070-013_]
 
-[cols=",",]
+[cols="1,4"]",]
 |===
 |*REQUIREMENT* |The buyer  must use the link:https://www.bach.banque-france.fr/[BACH Banque France] Code List for the specification of financial ratios.
 |===
@@ -362,7 +362,6 @@ _Figure 20. 'Financial ratio' EO mock-up_
 ////
 === Data Structure
 
-[cols=",",]
 [NOTE]
 ====
 REQUIREMENT(s) specified by the buyers can be place outside a group of QUESTION(s) (see any other previous criteria) or *inside* a group of *QUESTION(s)*, which is the case for financial ratios, as you can see in the data structure for this criterion, below.
@@ -528,8 +527,6 @@ There are three criteria with the same data structure (works, supplies and servi
 * qa-certif-inst
 * qu-certif-indep
 * envir-certif-indep
-
-[cols=",",]
 
 [NOTE]
 ====

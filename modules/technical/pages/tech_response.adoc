@@ -67,7 +67,7 @@ The European Commission (EC) link:https://ec.europa.eu/isa2/awards_en[ISA2 Progr
 
 The table below lists the elements that are expected in the ESPD Response and provides details on the cardinalities and usage of those elements.
 
-[cols=",",options="header",]
+[cols="1,4",options="header"]
 
 _Table 26. Class QualificationApplicationResponse, components required by the ESPD-EDM_ 
 |===
@@ -81,7 +81,7 @@ Preliminary evidence certificates in the form of a self-declaration submitted by
 |*File*: |link:https://docs.oasis-open.org/ubl/os-UBL-2.4/xsdrt/maindoc/UBL-QualificationApplicationResponse-2.4.xsd[os-UBL-2.4/xsdrt/maindoc/UBL-QualificationApplicationResponse-2.4.xsd]
 |===
 
-[cols=",,,,",options="header",]
+[cols="3,1,1,5,5",options="header"]
 |===
 |*Components* |*Type* |*Card* |*Description* |*Requirements*
 |*cbc:UBLVersionID* |Identifier |1 |Identifies the earliest version of the UBL 2 schema for this document type that defines all of the elements that might be encountered in the current instance. a|
@@ -221,14 +221,14 @@ For a complete instance of an ESPD Response XML document see the example file: h
 [[reference_to_publications]]
 == Reference to publications and to the ESPD Request
 
-[cols=",",]
+[cols="1,4"]
 |===
 |*REQUIREMENT* |*The economic operator must include into its ESPD Response document the information from the ESPD Request about the official journals or gazettes where the procurement procedure is announced. For procurement projects above the threshold it is compulsory to refer to the Contract Notice published in link:https://ted.europa.eu/TED/[TED] by the buyer.*
 |===
 
 For EU and notice publications that need to be included in the ESPD Response see the section xref:tech_request.adoc#eu_notice_publications[EU and notice publications] where this information is presented in detail and illustrated with examples.
 
-[cols=",",]
+[cols="1,4"]
 |===
 |*REQUIREMENT* |**The economic operator must include in its ESPD Response document a reference to the ESPD Request. For this, the values of the two identifiers **cbc:ID** and **cbc:UUID** of the ESPD Request must be used as the values for the **cbc:ID** and **cbc:UUID* in the ESPD Response cac:AdditionalDocumentReference (to refer to that ESDP Request).*
 |===
@@ -258,7 +258,7 @@ In the ESPD Response you may also add references to:
 [[expected_elements_publications]]
 == Expected elements
 
-[cols=",",options="header",]
+[cols="1,4",options="header"]
 
 _Table 27. Reference to the ESPD Request, expected elements_
 |===
@@ -270,7 +270,7 @@ _Table 27. Reference to the ESPD Request, expected elements_
 |*Context of Use*: |In this case this reference points at the ESPD Request XML instance that was used to produce the ESPD Response XML document.
 |===
 
-[cols=",,,,",options="header",]
+[cols="3,1,1,5,5",options="header"]
 |===
 |*Components* |*Type* |*Card* |*Description* |*Requirements*
 |*cbc:ID* |Identifier |1 |The identifier for the referenced document, generally issued by the entity responsible for the document. a|
@@ -292,7 +292,7 @@ _Table 27. Reference to the ESPD Request, expected elements_
 
 |*cbc:DocumentType* |Text |0..1 |The type of document being referenced, expressed as text. a|
 *Rule*: Optionally use the attribute languageID to indicate the language of the text. Use the Code List link:{url-tree}/codelists/Language.gc[_language_] for the value of the languageID attribute.
-
+28
 *Rule scope*: Common (BR-OTH-01, BR-OTH-01#4, BR-OTH-03)
 
 |*cbc:IssueDate* |Date |0..1 |Date when the document was issued by the buyer. a|
@@ -313,7 +313,7 @@ Beware that the ESPD document does not embed the content of referenced documents
 
 In the case of the reference to the ESPD Request from the ESPD Response, the only data expected here is the URI where the ESPD Request XML instance was published:
 
-[cols=",",options="header",]
+[cols="1,4",options="header"]
 
 _Table 28. External Reference_ 
 |===
@@ -324,7 +324,7 @@ _Table 28. External Reference_
 |*Context of use*: |Reference to the URI location where the ESPD Request XML instance can be downloaded from.
 |===
 
-[cols=",,,,",options="header",]
+[cols="3,1,1,5,5",options="header"]
 |===
 |*Components* |*Type* |*Card* |*Description* |*Requirements*
 |*cbc:URI* |Identifier |0..1 |The Uniform Resource Identifier (URI) that identifies where the document is located. a|
@@ -336,8 +336,6 @@ _Table 28. External Reference_
 *Rule*: Originally this field is the placeholder for the name of the file (e.g. PLACE-ContractNotice-2017-12452.xml. However, as the UBL component does not have a placeholder for a name or title, the ESPD documents use it for a short descriptive title of the document being referenced.
 
 |*cbc:Description* |Text |0..n |Short description of the document. a|
-*Information Requirement*: xref:tech_br_response_reqs.adoc#eo[tbr92-007].
-
 *Rule*: If the document being referenced is a Notice being published on TED, use two description lines. Use the second description line to place therein the temporary number received from TED. See example and comments below.
 
 *Rule scope*: Common (BR-COM-10#2, BR-COM-10-S10, BR-COM-10-S20, BR-COM-10-S30)
@@ -351,9 +349,9 @@ _Table 28. External Reference_
 [[eo_related_information_requirements]]
 == Related information requirements
 
-See formal requirements related to the economic operators in the e-Sens site: xref:tech_br_response_reqs.adoc#eo[tbr92-001], xref:tech_br_response_reqs.adoc#eo[tbr92-008].
+The economic operator must be able to include all information necessary for identification: Party Name, Party Identification, endpoint id. It must be able to indicate if he is participating together with others (e.g. with subcontractors or with other partners). If so, he must be able to provide: a) the role of the economic operator in the group (leader, responsible for specific tasks, etc.); b) the identification of the other economic operators participating in the procurement procedure; c) (where applicable) name of the participating group.
 
-[cols=",",options="header",]
+[cols="1,4",options="header"]
 _Table 29. Information requirement about the ESPD Response and the economic operators_ 
 |===
 |*REQUIREMENT* a|
@@ -363,21 +361,20 @@ Moreover, each EO should submit an ESPD Response per lot or group of Lots which 
 
 |===
 
-[cols=",",options="header",]
+[cols="1,4",options="header"]
 
 _Table 30. Information requirement about the identifiers of the economic operators_
 |===
 |*REQUIREMENT* |For the identification of the economic operators the UBL-2.4 element cac:PartyIdentification/cbc:ID must be used. The following two attributes of the cbc:ID element (CCT IdentifierType element) must be used: (1) @schemeID, a code from the Code List link:{url-tree}/codelists/EOIDType.gc[EOIDType] must be used; (2) @schemeAgencyID, the default value "OP" must be used; (3) Optionally, the attribute @schemeName can be used to place the 'Name' of the code (see the column 'Name' in the above mentioned Code List). For the ESPD-EDM the preferred type code for the @schemID is VAT.
 |===
 
-[cols=",",options="header",]
+[cols="1,4",options="header"]
 
 _Table 31. Information requirement about the groups of economic operators_
 |===
 |*REQUIREMENT* |All economic operators belonging to a group (e.g. a Joint Venture, a Consortium, etc.) must specify the name of the group exactly with the same spelling (and respecting capital and lower cases, punctuation, and symbols) in each of their ESPD Responses.
 |===
 
-[cols=",",]
 [IMPORTANT]
 ==== 
 | a|
@@ -501,7 +498,6 @@ _Figure 12. The UBL-2.4 Legal Entity Party_
 
 Please, remember that the elements cac:ContractingAuthority, cac:ProcurementProject, cac:ProcurementProjectLot and cac:AdditionalDocumentReference are expected in the ESPD Request, too. However, for the sake of brevity, and as they are taken from the ESPD Request and 'copied' in the ESPD Response, they have not been re-explained in this section about the ESPD Response. Therefore for details on those elements please refer to the section *The ESPD Request document*.
 
-[cols=",",options="header",]
 [IMPORTANT]
 ====
 *Remember* that if the economic operator belongs to a group (i.e. it is not a sole contractor), the element /cac:QualificationApplicationResponse/cbc:EconomicOperatorGroupName becomes *compulsory* and that *the spelling of the name must be identical for lead entity, all the members of the group and all the entities that participate in the procedure*.
@@ -516,7 +512,7 @@ _Table 32. Economic operator, expected elements_
 |*Context of use*: |The ESPD Response document.
 |===
 
-[cols=",,,,",options="header",]
+[cols="3,1,1,5,5",options="header"]
 |===
 |*Components* |*Type* |*Card* |*Description* |*Requirements*
 |*cac:QualifyingParty* |Associated class |1 |The distinctive features or characteristics qualifying an economic operator to be a party in a tendering process (e.g., number of employees, number of operating units, type of business, technical and financial capabilities, completed projects). a|
@@ -538,7 +534,7 @@ _Table 32. Economic operator, expected elements_
 
 |===
 
-[cols=",",options="header",]
+[cols="1,4",options="header"]
 
 _Table 33. Qualifying Party, expected elements_
 |===
@@ -550,7 +546,7 @@ _Table 33. Qualifying Party, expected elements_
 |*Context of use*: |Economic Operator in the ESPD Response document.
 |===
 
-[cols=",,,,",options="header",]
+[cols="3,1,1,5,5",options="header"]
 |===
 |*Components* |*Type* |*Card* |*Description* |*Requirements*
 |*cbc:EmployeeQuantity* |Quantity |0..1 |The number of people employed by the economic operator participating in the tender. a|
@@ -586,7 +582,7 @@ _Table 33. Qualifying Party, expected elements_
 
 |===
 
-[cols=",",options="header",]
+[cols="1,4",options="header"]
 _Table 34. Economic operator role, expected elements_
 |===
 |*Class name*: |cac:EconomicOperatorRole
@@ -596,7 +592,7 @@ _Table 34. Economic operator role, expected elements_
 |*Context of use*: |Economic Operator in the ESPD Response document.
 |===
 
-[cols=",,,,",options="header",]
+[cols="3,1,1,5,5",options="header"]
 |===
 |*Components* |*Type* |*Card* |*Description* |*Requirements*
 |*cbc:RoleCode* |Code |1 |Identifies the role of the economic operator in the bid. a|
@@ -622,7 +618,7 @@ _Table 35. (Qualifying) economic operator party, expected elements_
 |*Path*: |/QualificationApplicationResponse/cac:EconomicOperatorParty/cac:Party
 |===
 
-[cols=",,,,",options="header",]
+[cols="3,1,1,5,5",options="header"]
 |===
 |*Components* |*Type* |*Card* |*Description* |*Requirements*
 |*cac:PartyIdentification/cbc:ID* |Identifier |1 |An identifier that identifies the economic operator, such as the VAT number, the company registration number in a Business Register, other. a|
@@ -656,7 +652,7 @@ _Table 35. (Qualifying) economic operator party, expected elements_
 
 |===
 
-[cols=",",options="header",]
+[cols="1,4",options="header"]
 
 _Table 36. Economic operator postal address, expected elements_
 |===
@@ -667,7 +663,7 @@ _Table 36. Economic operator postal address, expected elements_
 |*Path*: |/QualificationApplicationResponse/{zwsp}cac:EconomicOperatorParty/{zwsp}cac:Party/{zwsp}cac:PostalAddress
 |===
 
-[cols=",,,,",options="header",]
+[cols="3,1,1,5,5",options="header"]
 |===
 |*Components* |*Type* |*Card* |*Description* |*Requirements*
 |*cac:AddressLine/cbc:Line* |Text |0..1 |The main address line in an address. Usually the street name and number or post office box. a|
@@ -698,7 +694,7 @@ _Table 36. Economic operator postal address, expected elements_
 *Rule*: None.
 |===
 
-[cols=",",options="header",]
+[cols="1,4",options="header"]
 _Table 37. Contact of the economic operator, expected elements_
 |===
 |*Class name*: |cac:Contact
@@ -708,7 +704,7 @@ _Table 37. Contact of the economic operator, expected elements_
 |*Path*: |/QualificationApplicationResponse/cac:EconomicOperatorParty/cac:Party/cac:Contact
 |===
 
-[cols=",,,,",options="header",]
+[cols="3,1,1,5,5",options="header"]
 |===
 |*Components* |*Type* |*Card* |*Description* |*Requirements*
 |*cbc:Name* |Text |0..1 |The name of the contact point. a|
@@ -733,7 +729,7 @@ _Table 37. Contact of the economic operator, expected elements_
 
 |===
 
-[cols=",",options="header",]
+[cols="1,4",options="header"]
 _Table 38. Service provider, expected elements_
 |===
 |*Class name*: |cac:ServiceProviderParty/cac:Party
@@ -743,7 +739,7 @@ _Table 38. Service provider, expected elements_
 |*Path*: |/QualificationApplicationResponse/cac:EconomicOperatorParty/cac:Party/cac:ServiceProviderParty/cac:Party
 |===
 
-[cols=",,,,",options="header",]
+[cols="3,1,1,5,5",options="header"]
 |===
 |*Components* |*Type* |*Card* |*Description* |*Requirements*
 |*cbc:WebsiteURI* |Identifier |0..1 |The website of the service provider. a|
@@ -940,7 +936,6 @@ _Economic operator data - XML example_
 For a complete instance of an ESPD Response XML document see the example file: https://github.com/OP-TED/espd-validation-schematron/blob/v5.0.0/common/xml/ESPD-Response-BASE.xml[ESPD-Response-BASE.xml]
 
 
-[cols=",",options="header",]
 [NOTE]
 ====
 . Role of the economic operator. The values are defined in the Code List link:{url-tree}/codelists/EoRoleType.gc[EoRoleType]. The selection of the value Sole Tenderer or Group Leader determines whether the data about the relied-on and not-relied-on entities is instantiated in this XML.
@@ -966,8 +961,7 @@ For a complete instance of an ESPD Response XML document see the example file: h
 [[reps_related_requirements]]
 ==== Related information requirements
 
-See formal requirements related to the representatives of the economic operator in the e-Sens site: xref:tech_br_response_reqs.adoc#service_provider[tbr92-021].
-
+The economic operator must be able to name a natural person that is acting as the representative of the economic operator and to include the personal information necessary for identifying this natural person (e.g. Identifier, name, nationality, address, place of birth, date of birth). It must also be able to specify the position (acting capacity) the natural person takes in the company in the qualification/tendering phase. If needed, the economic operator shall be able to provide detailed information on the representation (its forms, extent, purpose, etc.).
 *Notice that the economic operator may specify more than one representative*.
 
 [[reps_mockup]]
@@ -1011,7 +1005,7 @@ _Figure 24. EO representatives - element Contact, inside Person, XSD Schema_
 [[reps_expected_elements]]
 ==== Expected Elements
 
-[cols=",",options="header",]
+[cols="1,4",options="header"]
 
 _Table 39. Representatives of the economic operator, expected elements_
 |===
@@ -1023,7 +1017,7 @@ _Table 39. Representatives of the economic operator, expected elements_
 |*Context of use*: |The economic operator in the ESPD Response document. Use this element to refer to the natural persons that represent the economic operator. See requirement xref:tech_br_response_reqs.adoc#eval_crit[tbr92-018].
 |===
 
-[cols=",,,,",options="header",]
+[cols="3,1,1,5,5",options="header"]
 |===
 |*Components* |*Type* |*Card* |*Description* |*Requirements*
 |*cac:PowerOfAttorney/cac:AgentParty/ cac:Person/cbc:FirstName* |Text |1 |Name of the natural person. a|
@@ -1126,7 +1120,7 @@ For a complete instance of an ESPD Response XML document see the example file: h
 [[answering_questions]]
 == Answering QUESTIONs
 
-[cols=",",]
+[cols="1,4",options="header"]
 |===
 |*REQUIREMENT* a|
 The ESPD Response must include one criterion response (one answer), and only one, linked to one, and only one, criterion property (one QUESTION) copied from the ESPD Request into the ESPD Response document; and to each criterion property added by the economic operator to the ESDP Response.
@@ -1135,7 +1129,7 @@ One criterion response, though, may contain a list of response values of the *sa
 
 |===
 
-[cols=",",]
+[cols="1,4",options="header"]
 |===
 |*REQUIREMENT* |If the response to a criterion property is marked as *confidential* the evidences linked to this criterion property must also be treated as confidential.
 |===
@@ -1176,7 +1170,6 @@ _Figure 26. cac:ResponseValue XSD element_
 
 The cac:ApplicablePeriod is used to hold the start date and the end-date provided by the economic operator to a QUESTION for which the expected data is of type 'PERIOD'. (See expected types in the Code List link:{url-tree}/codelists/ResponseDataType.gc[ResponseDataType]).
 
-[cols=",",]
 [IMPORTANT]
 ====
 _Note for the future_
@@ -1211,7 +1204,7 @@ Responses are not associated to ESPD custom data structures. All the values rega
 [[response_expected_elements]]
 == Expected Elements
 
-[cols=",",options="header",]
+[cols="1,4",options="header"]
 
 _Table 40. Elements expected in an answer to a criterion property_
 |===
@@ -1223,7 +1216,7 @@ _Table 40. Elements expected in an answer to a criterion property_
 |*Context of use*: |The economic operator uses it in the ESPD Response document to answer a QUESTION. xref:tech_br_response_reqs.adoc#eo[tbr92-005], xref:tech_br_response_reqs.adoc#eo[tbr92-006], xref:tech_br_response_reqs.adoc#eo[tbr92-007], xref:tech_br_response_reqs.adoc#eval_crit[tbr92-018].
 |===
 
-[cols=",,,,",options="header",]
+[cols="3,1,1,5,5",options="header"]
 |===
 |*Components* |*Type* |*Card* |*Description* |*Requirements*
 |*cbc:ID* |Identifier |0..1 |A language-independent token, e.g., a number, that allows to identify a criterion response uniquely as well as allows to reference the criterion response in other documents. A criterion response describes how an economic operators fulfills an specific criterion. a|
@@ -1266,7 +1259,6 @@ _Table 40. Elements expected in an answer to a criterion property_
 
 |===
 
-[cols=",",options="header",]
 [NOTE]
 ====
 | a|
@@ -1291,7 +1283,7 @@ _Table 41. Elements expected in the 'cac:ApplicablePeriod' class_
 |*Context of use*: |A class for the economic operator to specify the start date and the end-date when the expected answer to a criterion property is a lapse of time; xref:tech_br_response_reqs.adoc#eval_crit[tbr92-018].
 |===
 
-[cols=",,,,",options="header",]
+[cols="3,1,1,5,5",options="header"]
 |===
 |*Components* |*Type* |*Card* |*Description* |*Requirements*
 |*cbc:StartDate* |Date |0..1 |The date on which this period begins. a|
@@ -1308,7 +1300,7 @@ _Table 41. Elements expected in the 'cac:ApplicablePeriod' class_
 
 
 _Table 42. Elements expected in the 'cac:EvidenceSupplied' class_
-[cols=",",options="header",]
+[cols="1,4",options="header"]
 |===
 |*Class name*: |cac:EvidenceSupplied
 |*Definition*: |A reference to the evidence supporting this criterion property response.
@@ -1318,7 +1310,7 @@ _Table 42. Elements expected in the 'cac:EvidenceSupplied' class_
 |*Context of use*: |Used to refer to one ore more evidences that are present in the QualificationApplicationResponse XML instance; xref:tech_br_response_reqs.adoc#evidence_link[tbr92-017].
 |===
 
-[cols=",,,,",options="header",]
+[cols="3,1,1,5,5",options="header"]
 |===
 |*Components* |*Type* |*Card* |*Description* |*Requirements*
 |*cbc:ID* |Identifier |1 |The identifier of the referenced evidence. a|
@@ -1332,7 +1324,7 @@ _Table 42. Elements expected in the 'cac:EvidenceSupplied' class_
 
 The table below lists the elements expected in the sub-class cac:ResponseValue. Remember that the elements of distinct types are all *disjoint* amongst themselves: i.e. you cannot associate one amount AND one indicator to the same cac:TenderingCriterionProperty element (but several values for elements of one type may be used to build up lists, e.g. lists of Lots and lists of CPV codes).
 
-[cols=",",options="header",]
+[cols="1,4",options="header"]
 
 _Table 43. Elements expected in the 'cac:ResponseValue' class_
 |===
@@ -1344,7 +1336,7 @@ _Table 43. Elements expected in the 'cac:ResponseValue' class_
 |*Context of use*: |Used to specify one value or a collection of values (in the case of a list) as a response to one, and only one, cac:TenderingCriterionProperty that is typified as a QUESTION.
 |===
 
-[cols=",,,,",options="header",]
+[cols="3,1,1,5,5",options="header"]
 |===
 |*Components* |*Type* |*Card* |*Description* |*Requirements*
 |*cbc:ID* |Identifier |0..1 |An identifier to refer to this criterion response value. a|
@@ -1469,7 +1461,7 @@ https://github.com/OP-TED/espd-validation-schematron/blob/v5.0.0/common/xml/ESPD
 [[evidence_related_requirements]]
 === Related information requirements
 
-See formal requirements related to evidence on the e-Sens site: xref:tech_br_response_reqs.adoc#evidence_link[tbr92-017].
+The economic operator must be able to add the internet address of a national database (including any identification data and, where applicable, the necessary declaration of consent cf. Art. 59 of 2014/24/EC) from which a buyer can directly retrieve any evidence documents and certificates or supporting documents which prove the EO’s compliance to the requested criteria defined in the call for tender and stated in the ESPD.
 
 [[evidence_xsd_schema]]
 === XSD Schema
@@ -1515,7 +1507,7 @@ The ESPD-EDM always uses the element inside the document reference to refer to t
 
 This list below enumerates the elements of cac:Evidence that could be used in (that make sense for) an ESPD Response. Notice though that the current versions of the ESPD-EDM only use the few elements mentioned above: ID, URL, Reference/Code, Confidentiality level and Issuer.
 
-[cols=",",options="header",]
+[cols="1,4",options="header"]
 
 _Table 44. Elements expected in a piece of Evidence_
 |===
@@ -1527,7 +1519,7 @@ _Table 44. Elements expected in a piece of Evidence_
 |*Context of use*: |The economic operator uses it in the ESPD Response document to provide support, in the form of evidence, for one or more criteria xref:tech_br_response_reqs.adoc#evidence_link[tbr92-017].
 |===
 
-[cols=",,,,",options="header",]
+[cols="3,1,1,5,5",options="header"]
 |===
 |*Components* |*Type* |*Card* |*Description* |*Requirements*
 |*cbc:ID* |Identifier |1 |An identifier for a piece of supporting evidence a|
@@ -1570,7 +1562,7 @@ _Table 44. Elements expected in a piece of Evidence_
 
 This other table lists the elements from cac:Evidence/cac:DocumentReference used in the ESPD-EDM:
 
-[cols=",",options="header",]
+[cols="1,4",options="header"]
 
 _Table 45. Elements expected from the 'cac:Evidence/cac:DocumentReference' element_
 |===
@@ -1582,7 +1574,7 @@ _Table 45. Elements expected from the 'cac:Evidence/cac:DocumentReference' eleme
 |*Context of use*: |The economic operator uses it in the ESPD Response document to supply the URL of the evidence and the party who issued the evidence document. xref:tech_br_response_reqs.adoc#evidence_link[tbr92-017], xref:tech_br_response_reqs.adoc#additional_info[tbr92-022], xref:tech_br_request_reqs.adoc#contracting_body[tbr70-006], xref:tech_br_request_reqs.adoc#call_for_tender[tbr70-007].
 |===
 
-[cols=",,,,",options="header",]
+[cols="3,1,1,5,5",options="header"]
 |===
 |*Components* |*Type* |*Card* |*Description* |*Requirements*
 |*cbc:ID* |Identifier |1 |An identifier for the referenced document. a|

@@ -118,7 +118,7 @@ image::https://kroki.io/blockdiag/svg/eNq9Ut9r2zAQfo7-ikN92cDNjy50gdBCaWrIyxjrtp
 //[Edit this diagram](https://niolesk.top/#https://kroki.io/blockdiag/svg/eNq9Ut9r2zAQfo7-ikN92cDNjy50gdBCaWrIyxjrtpdSjGJdbDWyZKzzlrTkf59sx1WyQh-rB3H33Sfd6dO30jbdSCUyeGGjEXwXGcKIMM2NSoVuoyS1ErVyNMyp0LAs_uMkqkHcaCnRkForrBJBVKlVTeiGT2UGn2KV1RXCbAiBBIH0uWl9jwSuFAYK9PiWAbRp8ldJyuEKprP5K5ajynLy4OSiBSWuRa0pWVtDTj1jU5m2FZZVti7hGSubdOELY6nVtvIcfnY3ixd3X_icMR4m-7krkcP5NXCX5ljgcsGjPv4mCgzZTYYm3R3XO-SU9Rsrp6w5pi0EiV8_lgFoEniQqhnLWIOP7DD5WlWOXkcf8KCa57tclM1jfdVIlCu7jaDXa_J1HDna6aYuhctRRhAevhjHN7eX_HHOBgMI-EqLdMM7kHBL4UAcj_3iraiH1XfXyuAJftK1u6zdPlhPNtizfW-tThayXl2JLuotA3-ErhGU81aavTFB9PEWeO9LLyZj_2H7f2UPLEE=)
 _Figure 2. Identifier attributes_
 
-[cols=",",options="header",]
+[cols="1,4",options="header"]
 
 _Table 4. UBL attributes for identifiers and corresponding definitions, as provided by OASIS UBL (ISO/IEC 19845)_:
 [cols="1,2"]

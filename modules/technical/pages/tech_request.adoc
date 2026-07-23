@@ -7,7 +7,7 @@
 [[espd_request_business_requirements]]
 == ESPD Request Business Requirements
 
-The ESPD-EDM models the business and information requirements in alignment with the works developed by e-Sens, which uses the identifier *Trdm070* to refer to the business requirements regarding the ESPD Request transaction. See formal information requirements related to the ESPD Request transaction in the document xref:tech_br_espd_profile.adoc[_Business Requirements: ESPD request transaction (Trdm070)_], by e-Sens.
+The ESPD-EDM models the business and information requirements for the ESPD Request transaction based on Directive 2014/24/EU (Article 59) and Regulation (EU) 2016/7.
 
 [[espd_request_xsd_schema]]
 == ESPD Request XSD Schema
@@ -52,7 +52,7 @@ The tables below establish a mapping between the business requirements, the logi
 ====
 _A note about the Business Rules identifiers_
 
-From this point in the document, the tables defining classes and its properties refer frequently to business rules. As stated in the xref:tech_br_espd_profile.adoc[e-Sens BIS document], "[..] business rules are sets of rules that clarify the content of instances by stating mandatory fields, fixed values (like code lists), dependency between fields in the same object, and dependency between different objects".
+From this point in the document, the tables defining classes and its properties refer frequently to business rules as sets of rules that clarify the content of instances by stating mandatory fields, fixed values (like code lists), dependency between fields in the same object, and dependency between different objects.
 
 Information requirement:
 
@@ -246,7 +246,7 @@ _Figure 4. Lot Identifiers according to eForms schema_
 [[eu_notice_publications]]
 == EU and notice publications
 
-[cols=",",]
+[cols="1,4",options="header"]
 |===
 |*REQUIREMENT* xref:tech_br_request_reqs.adoc#call_for_tender[tbr70-007] |*The Buyer must be able to provide information about official journals or gazettes where the procurement procedure is announced. For procurement projects above the threshold it is compulsory to refer to the Contract Notice published in link:https://ted.europa.eu/TED/[TED].*
 |===
@@ -285,7 +285,7 @@ As can be seen from the XSD Schema, the cac:DocumentReference class has a rich d
 
 The mapping between the business requirements, the logic layer of the ESPD-EDM, and the UBL-2.4 physical layer:
 
-[cols=",",options="header",]
+[cols="1,4",options="header"]
 
 _Table 6. Reference to additional documents, expected elements_
 |===
@@ -297,7 +297,7 @@ _Table 6. Reference to additional documents, expected elements_
 |*Context of Use*: |In this case this reference points at a document published on the Supplement of the European Official Journal or on a national journal.
 |===
 
-[cols=",,,,",options="header",]
+[cols="3,1,1,5,5",options="header"]
 |===
 |*Components* |*Type* |*Card* |*Description* |*Requirements*
 |*cbc:ID* |Identifier |1 |The identifier for the referenced document, generally issued by the entity responsible for the document. a|
@@ -342,7 +342,7 @@ Beware that the ESPD document does not embed the content of referenced documents
 
 The mapping between the business requirements, the logic layer of the ESPD-EDM, and the UBL-2.4 physical layer:
 
-[cols=",",options="header",]
+[cols="1,4",options="header"]
 
 
 _Table 7. External Reference_
@@ -355,7 +355,7 @@ _Table 7. External Reference_
 /cac:Attachment/cac:ExternalReference
 |===
 
-[cols="1,1,1,3,3"]
+[cols="3,1,1,5,5",options="header"]
 |===
 |*Components* |*Type* |*Card* |*Description* |*Requirements*
 |*cbc:URI* |Identifier |0..1 |The Uniform Resource Identifier (URI) that identifies where the document is located. a|
@@ -394,7 +394,7 @@ Please generate an ESPD Request and ESPD Response documents on https://docs.ted.
 
 === Related information requirements
 
-See formal requirements related to the contracting authorities in the e-Sens site: xref:tech_br_request_reqs.adoc#contracting_body[tbr70-001]*
+The contracting body must be identified, hence information about the party is required, such as party name, identification, endpoint id, buyer profile and country.
 
 === Mock-up
 
@@ -440,7 +440,7 @@ _Figure 12. cac:Contact, XSD Schema_
 
 The mapping between the business requirements, the logic layer of the ESPD-EDM and the UBL-2.4 physical layer:
 
-[cols=",",options="header",]
+[cols="1,4",options="header"]
 
 _Table 8. Contracting body, expected elements_
 |===
@@ -451,7 +451,7 @@ _Table 8. Contracting body, expected elements_
 |*Path*: |/QualificationApplicationRequest/cac:ContractingParty
 |===
 
-[cols="1,1,1,3,3"]
+[cols="3,1,1,5,5",options="header"]
 |===
 |*Components* |*Type* |*Card* |*Description* |*Requirements*
 |*cbc:BuyerProfileURI* |Identifier |0..1 |URL of the web section, in the contracting body web site, that contains information about the contracting body, the norms applied when contracting, published calls for tenders, Prior Information Notices and Contract Notices as well as the related procurement documents, contract award notices, etc. a|
@@ -463,7 +463,7 @@ _Table 8. Contracting body, expected elements_
 
 The mapping between the business requirements, the logic layer of the ESPD-EDM and the UBL-2.4 physical layer:
 
-[cols=",",options="header",]
+[cols="1,4",options="header"]
 
 _Table 9. Contracting body party, expected elements_
 |===
@@ -473,7 +473,7 @@ _Table 9. Contracting body party, expected elements_
 |*Path*: |/QualificationApplicationRequest/cac:ContractingParty/cac:Party
 |===
 
-[cols="1,1,1,3,3"]
+[cols="3,1,1,5,5",options="header"]
 |===
 |*Components* |*Type* |*Card* |*Description* |*Requirements*
 |*cac:PartyIdentification/cbc:ID* |Identifier |1 |The national identifier of a contracting body as it is legally registered (e.g. VAT identification). a|
@@ -504,7 +504,7 @@ _Table 9. Contracting body party, expected elements_
 
 The mapping between the business requirements, the logic layer of the ESPD-EDM and the UBL-2.4 physical layer:
 
-[cols=",",options="header",]
+[cols="1,4",options="header"]
 
 _Table 10. Contracting body postal address, expected elements_
 |===
@@ -516,7 +516,7 @@ _Table 10. Contracting body postal address, expected elements_
 cac:ContractingParty/cac:Party/cac:PostalAddress
 |===
 
-[cols="1,1,1,3,3"]
+[cols="3,1,1,5,5",options="header"]
 |===
 |*Components* |*Type* |*Card* |*Description* |*Requirements*
 |*cbc:StreetName* |Text |0..1 |The main address line in an address. Usually the street name and number or post office box. a|
@@ -551,7 +551,7 @@ IdentificationCode* |Code |1 |A code that identifies the country. a|
 
 The mapping between the business requirements, the logic layer of the ESPD-EDM and the UBL-2.4 physical layer:
 
-[cols=",",options="header",]
+[cols="1,4",options="header"]
 
 _Table 11. Contact of the contracting body, expected elements_
 |===
@@ -562,7 +562,7 @@ _Table 11. Contact of the contracting body, expected elements_
 cac:ContractingParty/cac:Party/cac:Contact
 |===
 
-[cols="1,11,3,3,"]
+[cols="3,1,1,5,5",options="header"]
 |===
 |*Components* |*Type* |*Card* |*Description* |*Requirements*
 |*cbc:Name* |Text |0..1 |The name of the contact point. a|
@@ -591,7 +591,7 @@ cac:ContractingParty/cac:Party/cac:Contact
 [[service_provider]]
 == Service Provider
 
-[cols=",",]
+[cols="1,4",options="header"]
 |===
 |*REQUIREMENT* xref:tech_br_request_reqs.adoc#service_provider[tbr70-011] |*The ESPD request may contain information of identification regarding an ESPD service provider: Name, Party Identification, Endpoint ID.*
 |===
@@ -629,7 +629,7 @@ _Figure 15. cac:ServiceProvider/cac:Party elements expected for the service prov
 
 The mapping between the business requirements, the logic layer of the ESPD-EDM and the UBL-2.4 physical layer:
 
-[cols=",",options="header",]
+[cols="1,4",options="header"]
 
 _Table 12. Service provider, expected elements_
 |===
@@ -642,7 +642,7 @@ cac:ContractingParty/cac:Party/cac:ServiceProviderParty/
 cac:Party
 |===
 
-[cols="1,1,1,3,3",options="header",]
+[cols="3,1,1,5,5",options="header"]
 |===
 |*Components* |*Type* |*Card* |*Description* |*Requirements*
 |*cbc:WebsiteURI* |Identifier |0..1 |The website of the service provider. a|

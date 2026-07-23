@@ -41,7 +41,7 @@ _Figure 2. cac:TenderingCriterion - XSD Schema, global view_
 
 == Expected elements
 
-[cols=",",options="header",]
+[cols="1,4",options="header"]
 
 _Table 20. Criterion, expected elements_
 |===
@@ -56,7 +56,7 @@ xref:tech_br_request_reqs.adoc#list_of_criteria[tbr70-009]
 |*Path*: |/QualificationApplicationRequest/cac:TenderingCriterion
 |===
 
-[cols=",,,,",options="header",]
+[cols="3,1,1,5,5",options="header"]
 |===
 |*Components* |*Type* |*Card* |*Description* |*Requirements*
 |*cbc:ID* |Identifier |1 |A language-independent token, e.g., a number, that allows to identify a criterion uniquely as well as allows to reference the criterion in other documents. a|
@@ -128,7 +128,7 @@ _Figure 3. cac:Legislation. XSD Schema_
 
 == Expected elements
 
-[cols=",",options="header",]
+[cols="1,4",options="header"]
 
 _Table 21. Legislation, expected elements_
 |===
@@ -143,7 +143,7 @@ xref:tech_br_request_reqs.adoc#list_of_criteria[tbr70-013]
 |*Path*: |/QualificationApplicationRequest/cac:TenderingCriterion/cac:Legislation
 |===
 
-[cols=",,,,",options="header",]
+[cols="3,1,1,5,5",options="header"]
 |===
 |*Components* |*Type* |*Card* |*Description* |*Requirements*
 |*cbc:ID* |Identifier |0..1 |An identifier to refer to the legislation. a|
@@ -233,7 +233,7 @@ _Figure 5. cac:SubsidiaryTenderingCriterionGroup - XSD Schema_
 
 == Expected elements
 
-[cols=",",options="header",]
+[cols="1,4",options="header"]
 _Table 22. Groups of properties, expected elements_
 |===
 |*Class name*: |cac:TenderingCriterionPropertyGroup
@@ -247,7 +247,7 @@ xref:tech_br_request_reqs.adoc#list_of_criteria[tbr70-013]
 |*Path*: |/QualificationApplicationRequest/cac:TenderingCriterion/cac:TenderingCriterionPropertyGroup
 |===
 
-[cols=",,,,",options="header",]
+[cols="3,1,1,5,5",options="header"]
 |===
 |*Components* |*Type* |*Card* |*Description* |*Requirements*
 |*cbc:ID* |Identifier |1 |Identifies a group of requirements uniquely. a|
@@ -289,7 +289,7 @@ See also the spreadsheet https://github.com/OP-TED/ESPD-EDM/blob/main/criterion/
 
 == Properties
 
-[cols=",",]
+[cols="1,4"]
 |===
 |*REQUIREMENT* |The buyer needs to be able to specify the type of the value it expects from the economic operator in a response; e.g. DESCRIPTION, INDICATOR, QUANTITY, URL, etc.). The economic operator must provide a value for the response that is consistent with the type specified by the buyer.
 |===
@@ -312,7 +312,7 @@ _Figure 7. cac:SubTenderingCriterion- XSD Schema_
 
 The following table lists the elements of a criterion property. Beware that the majority of the elements are the possible types of responses that the buyer can specify. The economic operator, in the ESPDResponse, must provide values that are consistent with the type specified by the buyer.
 
-[cols=",",options="header",]
+[cols="1,4",options="header"]
 _Table 23. Properties, expected elements_
 |===
 |*Class name*: |cac:TenderingCriterionProperty
@@ -326,7 +326,7 @@ Caption (i.e. a 'label'), specific MS or buyer requirement (e.g. 'Number of refe
 |*Path*: |/QualificationApplicationRequest/cac:TenderingCriterion/cac:TenderingCriterionProperty
 |===
 
-[cols=",,,,",options="header",]
+[cols="3,1,1,5,5",options="header"]
 |===
 |*Components* |*Type* |*Card* |*Description* |*Requirements*
 |*cbc:ID* |Identifier |1 |Identifies one specific property. a|
@@ -473,7 +473,7 @@ The columns of the tables are to be interpreted as follows:
 
 //We could say that the 'data structures' represented in the spread-sheets define a kind of 'meta-language' (or 'controlled vocabulary') that helps 'map' the structure of an ESPD-EDM criterion and the UBL-2.3 criterion data structure. The table below 'maps' both vocabularies. Please compare any of the data structures provided in this document with both the UBL-2.3 XSD Schemas and the XML examples provided herein.
 
-[cols=",",options="header",]
+[cols="1,4",options="header"]
 
 _Table 24. Mapping between the ESPD-EDM criterion data structure spread-sheets and the UBL-2.3 vocabulary_
 |===
@@ -669,7 +669,7 @@ Tags are also very useful for documentation purposes. They are like shortcuts to
 
 The following table is describing the correspondence between "criterion element", "UBL element" and "Short Tag Name".
 
-[cols=",,",options="header",]
+[cols="1,4",options="header"]
 
 _Table 25. Correspondence between "criterion element", "UBL element" and "Short Tag Name"_
 |===
