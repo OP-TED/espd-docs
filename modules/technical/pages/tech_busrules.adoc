@@ -3300,7 +3300,9 @@ Business requirement: xref:tech_br_request_reqs.adoc#list_of_criteria[tbr70-009]
 
 | |
 a|
-. {blank}
+[[BR-TC-01]]
+[start=1]
+. BR-TC-01
 
 |At least one TenderingCriterion is expected. a|
 * {blank}
@@ -3315,9 +3317,9 @@ ____
 ____
 
 a|
+[[BR-TC-02]]
 [start=2]
-. {blank}
-
+. BR-TC-02
 a|
 Business requirement: xref:tech_br_request_reqs.adoc#list_of_criteria[tbr70-010]
 
@@ -3341,8 +3343,9 @@ ____
 ____
 
 a|
+[[BR-TC-03]]
 [start=3]
-. {blank}
+. BR-TC-03
 
 a|
 Business requirement: http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr070-013[_[.underline]#tbr070-013#_]
@@ -3362,8 +3365,9 @@ ____
 ____
 
 a|
+[[BR-TC-04]]
 [start=4]
-. {blank}
+. BR-TC-04
 
 a|
 Business requirement: http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr070-013[_[.underline]#tbr070-013#_]
@@ -3383,8 +3387,9 @@ ____
 ____
 
 a|
+[[BR-TC-05]]
 [start=5]
-. {blank}
+. BR-TC-05
 
 a|
 Business requirement: http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr070-010[_[.underline]#tbr070-010#_]
@@ -3414,8 +3419,9 @@ ____
 ____
 
 a|
+[[BR-TC-06]]
 [start=6]
-. {blank}
+. BR-TC-06
 
 a|
 Business requirement: http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr070-010[_[.underline]#tbr070-010#_]
@@ -3445,8 +3451,9 @@ ____
 ____
 
 a|
+[[BR-TC-07]]
 [start=7]
-. {blank}
+. BR-TC-07
 
 a|
 Business requirement: http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0#BIS41-ESPDV2.0-tbr070-013[_[.underline]#tbr070-013#_]
@@ -3483,13 +3490,15 @@ Business requirement: xref:tech_br_request_reqs.adoc#list_of_criteria[tbr70-013]
 
 | |
 a|
+[[BR-TC-08]]
 [start=8]
-. {blank}
+. BR-TC-08
 
 |The reference to the legislation related to the Criterion is optional. |No Schematron rule is needed as Legislation is already optional.
 a|
+[[BR-TC-09]]
 [start=9]
-. {blank}
+. BR-TC-09
 
 |Title of the legislation is mandatory. a|
 * {blank}
@@ -3504,8 +3513,9 @@ ____
 ____
 
 a|
+[[BR-TC-10]]
 [start=10]
-. {blank}
+. BR-TC-10
 
 |The description of the legislation provided in the original legal text SHOULD be provided. a|
 * {blank}
@@ -3520,8 +3530,9 @@ ____
 ____
 
 a|
+[[BR-TC-11]]
 [start=11]
-. {blank}
+. BR-TC-11
 
 |Other articles where the Criterion is referred to SHOULD also be provided. a|
 * {blank}
@@ -3555,8 +3566,9 @@ Business requirement: xref:tech_br_request_reqs.adoc#list_of_criteria[tbr70-013]
 
 | |
 a|
+[[BR-TC-12]]
 [start=12]
-. {blank}
+. BR-TC-12
 
 |The ID which identifies one specific property is mandatory. a|
 * {blank}
@@ -3571,8 +3583,9 @@ ____
 ____
 
 a|
+[[BR-TC-13]]
 [start=13]
-. {blank}
+. BR-TC-13
 
 |Each Criterion is defined in e-Certis and must use the UUID supplied by e-Certis. a|
 * {blank}
@@ -3587,8 +3600,9 @@ ____
 ____
 
 a|
+[[BR-TC-14]]
 [start=14]
-. {blank}
+. BR-TC-14
 
 |Code addressed to control the behaviour of the group of criteria is mandatory. a|
 * {blank}
@@ -3603,8 +3617,9 @@ ____
 ____
 
 a|
+[[BR-TC-15]]
 [start=15]
-. {blank}
+. BR-TC-15
 
 |Compulsory use of the group of criteria supplied by e-Certis. a|
 * {blank}
@@ -3619,8 +3634,9 @@ ____
 ____
 
 a|
+[[BR-TC-16]]
 [start=16]
-. {blank}
+. BR-TC-16
 
 |Properties related to the tendering criterion must be the ones supplied by e-Certis. a|
 * {blank}
@@ -3635,8 +3651,9 @@ The number of ../cac:TenderingCriterionProperty must match the number of QUESTIO
 ____
 
 a|
+[[BR-TC-17]]
 [start=17]
-. {blank}
+. BR-TC-17
 
 |A second, third or n-level group inside a first level group of properties. a|
 * {blank}
@@ -3668,8 +3685,9 @@ Business requirement: xref:tech_br_request_reqs.adoc#list_of_criteria[tbr70-013]
 
 | |
 a|
+[[BR-TC-18]]
 [start=18]
-. {blank}
+. BR-TC-18
 
 |The ID which identifies one specific property is mandatory. And it must use UUID numbers (version 4) automatically generated. a|
 * {blank}
@@ -3684,8 +3702,9 @@ ____
 ____
 
 a|
+[[BR-TC-19]]
 [start=19]
-. {blank}
+. BR-TC-19
 
 |The text of the caption, requirement or question is mandatory. a|
 * {blank}
@@ -3700,8 +3719,9 @@ ____
 ____
 
 a|
+[[BR-TC-20]]
 [start=20]
-. {blank}
+. BR-TC-20
 
 |The type of property is mandatory and it should match the one from e-Certis. a|
 * {blank}
@@ -3726,8 +3746,9 @@ ____
 ____
 
 a|
+[[BR-TC-21]]
 [start=21]
-. {blank}
+. BR-TC-21
 
 |The type of answer expected by the contracting authority in the case of a property of type QUESTION, is mandatory and it should match the one from e-Certis. a|
 * {blank}
