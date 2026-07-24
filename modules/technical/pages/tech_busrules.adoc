@@ -2657,23 +2657,26 @@ a|
 ==== BR-RESP-70-S10
 
 .BR-RESP-70-S10
-[width="100%",cols="33%,33%,33%,33%%",options="header",]
+[width="100%",cols="33%,67%",options="header",]
 |===
-|*Mapping Rule ID* | 
-|Test Case Rule ID a|
-* RS-20-R50-S10
-* RS-80-R60-S10
+|*Mapping Rule ID* |Test Case Rule ID
 
 | a|
+* RS-20-R50-S10
+* RS-80-R60-S10
 * RS-140-R50-S10
 * RS-200-R50-S10
 
 |Rule description 
-|When the pre-qualification system the EO is registered on does not cover all the selection criteria, information about compliance of selection criteria MUST be provided. | 
-|Mapping description |Criterion responses are implemented as Tendering Criterion response components | |
-|XSD Path |/cac:TenderingCriterionResponse[0..n] | |
-|XSD Business Rule description | |XSD Business Rule Schematron |
-|*No Schematron rule can be implemented* | | |
+|When the pre-qualification system the EO is registered on does not cover all the selection criteria, information about compliance of selection criteria MUST be provided.
+
+|Mapping description |Criterion responses are implemented as Tendering Criterion response components
+
+|XSD Path |/cac:TenderingCriterionResponse[0..n]
+
+|XSD Business Rule description |XSD Business Rule Schematron
+
+|*No Schematron rule can be implemented* |
 |===
 
 
@@ -3946,8 +3949,7 @@ If /cac:TenderingCriterionResponse /cac:ResponseValue /cbc:ResponseIndicator = f
 +
 Then, its /cac: SubsidiaryTenderingCriterionPropertyGroup /cbc:ID must exist within /cac:TenderingCriterionResponse /cbc:ValidatedCriterionPropertyID
 
-a|
-[start=8]
+| | a|
 * {blank}
 +
 Severity: ERROR

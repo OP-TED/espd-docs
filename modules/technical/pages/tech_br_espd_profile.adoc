@@ -287,7 +287,7 @@ his TenderNed client via eDelivery to e-Vergabe.
 Procurement is a complex domain with several key processes, some of
 which are illustrated in the following figure.
 
-image:bis1.png[image,width=650,height=670]
+image::bis1.png[image,width=650,height=670]
 
 Figure 1 — Procurement
 
@@ -315,7 +315,7 @@ operator or of a service provider.
 ESPD.
 |===
 
-image:bis2.png[image,width=641,height=279]
+image::bis2.png[image,width=641,height=279]
 
 Figure 2 — ESPD process
 
@@ -326,7 +326,7 @@ implemented by the profile. The choreography of business collaborations
 defines the sequence of interactions when the profile is run within its
 context.
 
-image:bis3.png[image,width=494,height=433]
+image::bis3.png[image,width=494,height=433]
 
 Figure 3 — ESPD business process
 
@@ -527,7 +527,7 @@ complementary information such as liability statements.
 
 ===== Trdm070 ESPD request transaction model
 
-image:bis4.png[image,width=683,height=554]
+image::bis4.png[image,width=683,height=554]
 
 Figure 4 — ESPD request transaction model
 
@@ -1593,7 +1593,7 @@ to digitally sign the ESPD.
 
 ===== Trdm092 ESPD transaction model
 
-image:bis5.png[image,width=650,height=577]
+image::bis5.png[image,width=650,height=577]
 
 Figure 5 — ESPD transaction model
 

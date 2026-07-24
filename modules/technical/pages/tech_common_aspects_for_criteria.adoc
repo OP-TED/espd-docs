@@ -7,7 +7,7 @@
 
 [cols="<1,<4"]
 |===
-|*REQUIREMENT* xref:bis41.adoc#br[br41-002] |The contracting body shall provide the exclusion grounds and selection criteria for its tendering process as structured information - via ESPD template or structured list of criteria set out in a call for tender.
+|*REQUIREMENT* br41-002 |The contracting body shall provide the exclusion grounds and selection criteria for its tendering process as structured information - via ESPD template or structured list of criteria set out in a call for tender.
 |===
 
 The ESPD-EDM defined a flexible structure to express data about criteria. Based on this structure UBL-2.3 defined in turn the component cac:TenderingCriterion, which is used in ESPD-EDM to implement the XML objects for exclusion and selection criteria.

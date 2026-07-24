@@ -1516,7 +1516,7 @@ An item of evidence is provided as proof for a given QUESTION answer or QUESTION
 the related answer should be maintained in the data structure. For example, in the figure below, 
 the evidence is included inside the QUESTION_SUBGROUP related to a specific occurrence of conviction. 
 
-image:Evidence_for_Criterion_C1_EG_crime-org.jpg[Evidence for Criterion C1 EG crime-org,width=650,height=500]
+image::Evidence_for_Criterion_C1_EG_crime-org.jpg[Evidence for Criterion C1 EG crime-org,width=650,height=500]
 
 _Figure 33. Evidence for Criterion C1 EG crime-org_
 
