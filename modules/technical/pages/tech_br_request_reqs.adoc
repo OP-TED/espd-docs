@@ -20,7 +20,7 @@ and the transaction should be identified as well.
 |*ID* |*Requirement*
 |tbr070-001 |The contracting body must be identified, hence information
 about the party is required, such as party name, identification,
-endpoint id-, buyer profile  and country- .
+endpoint id, buyer profile and country.
 
 |tbr070-006 |The qualification document should contain contact
 information of the contracting body: Postal address, telephone number,

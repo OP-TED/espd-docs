@@ -1617,98 +1617,38 @@ Then
 |XSD Business Rule description | |XSD Business Rule Schematron
 |Information about the procurer MUST be provided. | |No Schematron rule can be implemented, as Contracting party is already compulsory.
 |The ESPD only expects data about one buyer. | a|
-* {blank}
-+
-____
-Severity: WARNING
-____
-* {blank}
-+
-____
+Severity: WARNING +
 Only one /cac:ContractingParty is expected.
-____
-
 |Use the official name of the contracting body. Mandatory. | a|
-* {blank}
-+
-____
-Severity: ERROR
-____
-* {blank}
-+
-____
+Severity: ERROR +
 /cac:ContractingParty/cac:Party /cac:PartyName/cbc:Name[1] is mandatory.
-____
-
 a|
 Business requirement: xref:tech_br_request_reqs.adoc#contracting_body[tbr70-006]
 
 The country of the contracting body must always be specified.
 
 | a|
-* {blank}
-+
-____
-Severity: ERROR
-____
-* {blank}
-+
-____
+Severity: ERROR +
 /cac:ContractingParty/cac:Party /cac:PostalAddress/cac:Country /cbc:IdentificationCode is mandatory.
-____
 
 |More than one identifier can be specified. When possible use the VAT identification of the contracting body. | a|
-* {blank}
-+
-____
-Severity: WARNING
-____
-* {blank}
-+
-____
+Severity: WARNING +
 If at least one element: /cac:ContractingParty/cac:Party /cac:PartyIdentification/cbc:ID is not present, there is a warning.
-____
 
 |_/cac:ContractingParty/cac:Party/cac:ServiceProviderParty[0..n]_ | |
 |Business requirement: xref:tech_br_request_reqs.adoc#service_provider[tbr70-011] | |
 |An identifier for the service provider must always be provided. | a|
-* {blank}
-+
-____
-Severity: ERROR
-____
-* {blank}
-+
-____
+Severity: ERROR +
 /cac:ContractingParty/cac:Party /cac:ServiceProviderParty /cac:Party /cac:PartyIdentification/cbc:ID is mandatory.
-____
-
 |The name of the service provider must always be specified. | a|
-* {blank}
-+
-____
-Severity: ERROR
-____
-* {blank}
-+
-____
+Severity: ERROR +
 /cac:ContractingParty/cac:Party /cac:ServiceProviderParty /cac:Party/cac:PartyName /cbc:Name is mandatory.
-____
 
 |The country of the service provider must always be specified. | a|
-* {blank}
-+
-____
-Severity: ERROR
-____
-* {blank}
-+
-____
+Severity: ERROR +
 /cac:ContractingParty/cac:Party /cac:ServiceProviderParty /cac:Party/cac:PostalAddress /cac:Country /cbc:IdentificationCode is mandatory.
-____
 
 |===
-
 
 
 [[BR-REQ-30]]
@@ -1735,16 +1675,8 @@ And,
 |Business requirement |xref:tech_br_request_reqs.adoc#list_of_criteria[tbr70-009] |
 |XSD Business Rule description | |XSD Business Rule Schematron
 |Exclusion grounds MUST be retrieved from e-Certis. | a|
-* {blank}
-+
-____
-Severity: ERROR
-____
-* {blank}
-+
-____
+Severity: ERROR +
 All criterion code starting CRITERION.EXCLUSION. from [RD03] must be implemented within /cac:TenderingCriterion.
-____
 
 |The Business Rules listed within 14 Tendering Criterion General Rules are general to all TenderingCriterion. | |
 |===
@@ -1817,16 +1749,8 @@ And,
 |Business requirement |xref:tech_br_request_reqs.adoc#list_of_criteria[tbr70-010] |
 |XSD Business Rule description | |XSD Business Rule Schematron
 |Selection criteria CAN be provided. | a|
-* {blank}
-+
-____
-Severity: WARNING
-____
-* {blank}
-+
-____
+Severity: WARNING +
 All criterion code starting CRITERION.SELECTION. from [RD03] must be implemented within /cac:TenderingCriterion.
-____
 
 |The Business Rules listed within 14 Tendering Criterion General Rules are general to all TenderingCriterion. | |
 |===
@@ -1865,22 +1789,12 @@ a|
 * The type of the procurement administrative procedure according to the EU Directives.
 
 | a|
-* {blank}
-+
-____
-Severity: ERROR
-____
-* {blank}
-+
-____
+Severity: ERROR +
 The following element is mandatory:
-____
 
 * /cbc:ProcedureCode
-
 |
 |===
-
 
 
 [[BR-SC-20]]
@@ -2012,39 +1926,20 @@ Specific information about weighting within each criteria is implemented as Tend
 |Business requirement |xref:tech_br_response_reqs.adoc#crit_list[tbr92-016] |
 |XSD Business Rule description | |XSD Business Rule Schematron
 |For two stage procedures it [.underline]#should be possible# to weight the "Technical and professional ability". Weighting can be done either using percentage or points for one procedure. The CA should have a free text where they can describe the scoring methodology. | a|
-* {blank}
-+
-____
-Severity: ERROR
-____
-* {blank}
-+
-____
+Severity: ERROR +
 If /cac:TenderingCriterion /cbc:CriterionTypeCode is within 'CRITERION.SELECTION.TECHNICAL_PROFESSIONAL_ABILITY.TECHNICAL.*' group
-____
 +
 And, /cac:TenderingCriterion /cbc:EvaluationMethodTypeCode = WEIGHTED
-
-____
++
 Then, it is mandatory to provide a numeric Weight value: /cac:TenderingCriterion /cbc:WeightNumeric
-____
 
 |The rest of selection criteria should be always PASS/FAIL. | a|
-* {blank}
-+
-____
-Severity: ERROR
-____
-* {blank}
-+
-____
+Severity: ERROR +
 If /cac:TenderingCriterion /cbc:CriterionTypeCode is *NOT* within 'CRITERION.SELECTION.TECHNICAL_PROFESSIONAL_ABILITY.TECHNICAL.*' group
-____
 +
 Then, /cac:TenderingCriterion /cbc:EvaluationMethodTypeCode != WEIGHTED or not included.
 
 |===
-
 
 
 [[BR-2P-10-S20]]
@@ -2068,21 +1963,12 @@ _BR-2P-10-S20
 |Business requirement |xref:tech_br_response_reqs.adoc#crit_list[tbr92-016] |
 |XSD Business Rule description | |XSD Business Rule Schematron
 |If evaluation method is pass/fail, weighting is not required. | a|
-* {blank}
-+
-____
-Severity: ERROR
-____
-* {blank}
-+
-____
+Severity: ERROR +
 If, /cac:TenderingCriterion /cbc:EvaluationMethodTypeCode != WEIGHTED
-____
 +
 Then, Weight value cannot be provided: /cac:TenderingCriterion/cbc:WeightNumeric
 
 |===
-
 
 
 == Common ESPDResponse Rules
@@ -2106,97 +1992,43 @@ Then, Weight value cannot be provided: /cac:TenderingCriterion/cbc:WeightNumeric
 |
 |XSD Business Rule description | |XSD Business Rule Schematron
 |The economic operator must include in its ESPD Response document a reference to the ESPD Request. | a|
-* {blank}
-+
-____
 See BR-COM-10
-____
 
 |_/cac:EconomicOperatorParty/cac:QualifyingParty_ | |
 |Business requirement: xref:tech_br_response_reqs.adoc#eo[tbr92-001] | |
 |*Qualifying party* is *compulsory* in the ESPD-EDM V4.0.0 as it is the natural placeholder for several relevant data about the Economic Operator. | a|
-* {blank}
-+
-____
-Severity: ERROR
-____
-* {blank}
-+
-____
+Severity: ERROR +
 Qualifying party is mandatory:
-____
-
-____
++
 /cac:EconomicOperatorParty /cac:QualifyingParty
-____
 
 |*Qualifying party / Party identifier*: The attribute schemeAgencyID must hold the value retrieved from eCertis that identifies unequivocally the (pre)qualification system. If, for any reason, that value is not available use the default schemeAgencyID "EU-COM-GROW" and the cac:EconomicOperatorParty /cac:PartyIdentification /cbc:ID for the value of the identifier. Additionally you can use the data structure CRITERION.OTHER.EO_DATA.REGISTERED_IN_OFFICIAL_LIST to specify an alternative or additional name, identifier and description. | a|
-* {blank}
-+
-____
-Severity NONE
-____
-* {blank}
-+
-____
+Severity NONE +
 schemeAgencyID attribute from Party identifier is always mandatory. The current version of eCertis does not allow for this feature yet. Therefore, the logic expected schemeAgencyID defaults to "OP". This will not be validated in version 2.0.2.
-____
 
 |_/cac:EconomicOperatorParty/cac:EconomicOperatorRole_ | |
 |Business requirement: xref:tech_br_response_reqs.adoc#eo[tbr92-008]| |
 |This element is compulsory in the ESPD-EDM V4.0.0 because depending on it different sets of data will be required or not, shown or hidden, processed or skipped. | a|
-* {blank}
-+
-____
-Severity: ERROR
-____
-* {blank}
-+
-____
+Severity: ERROR +
 Economic operator role is mandatory:
-____
 +
 /cac:EconomicOperatorParty /cac:EconomicOperatorRole
 
 |Identifies the role of the economic operator in the bid. | a|
-* {blank}
-+
-____
-Severity: ERROR
-____
-* {blank}
-+
-____
+Severity: ERROR +
 Economic operator role is mandatory:
-____
 +
 /cac:EconomicOperatorParty /cac:EconomicOperatorRole /cbc:RoleCode
 
 |_/cac:EconomicOperatorParty/cac:Party_ | |
 |Business requirement: xref:tech_br_response_reqs.adoc#eo[tbr92-001] | |
 |An identifier that identifies the economic operator is mandatory. | a|
-* {blank}
-+
-____
-Severity: ERROR
-____
-* {blank}
-+
-____
+Severity: ERROR +
 Compulsory use of the element: /cac:PartyIdentification/cbc:ID
-____
 
 |The name of the economic operator is mandatory. | a|
-* {blank}
-+
-____
-Severity: ERROR
-____
-* {blank}
-+
-____
+Severity: ERROR +
 Compulsory use of the element: /cac:PartyName/cbc:Name
-____
 
 a|
 Business requirement: xref:tech_br_response_reqs.adoc#eo[tbr92-004]
@@ -2204,16 +2036,8 @@ Business requirement: xref:tech_br_response_reqs.adoc#eo[tbr92-004]
 *Industrial classification*: Compulsory use of the element.
 
 | a|
-* {blank}
-+
-____
-Severity: ERROR
-____
-* {blank}
-+
-____
+Severity: ERROR +
 Compulsory use of the element: /cbc:IndustryClassificationCode
-____
 
 a|
 Business requirement: xref:tech_br_response_reqs.adoc#ca[tbr92-012]
@@ -2221,77 +2045,34 @@ Business requirement: xref:tech_br_response_reqs.adoc#ca[tbr92-012]
 *Country*: The country of the contracting body must always be specified.
 
 | a|
-* {blank}
-+
-____
-Severity: ERROR
-____
-* {blank}
-+
-____
+Severity: ERROR +
 Country of the contracting body is mandatory: /cac:EconomicOperatorParty /cac:Party/cac:PostalAddress /cac:Country /cbc:IdentificationCode
-____
 
 |_/cac:EconomicOperatorParty/cac:Party/cac:ServiceProviderParty/cac:Party_ | |
 |Business requirement: xref:tech_br_response_reqs.adoc#service_provider[tbr92-021] | |
 |*End point identifier*: An end-point identifier MUST have a scheme identifier attribute. | a|
-* {blank}
-+
-____
-Severity: ERROR
-____
-* {blank}
-+
-____
+Severity: ERROR +
 Compulsory use of the attribute schemeID: /cbc:EndpointID/@schemeID
-____
 
 |*Name*: The name of the service provider must always be specified. | a|
-* {blank}
-+
-____
-Severity: ERROR
-____
-* {blank}
-+
-____
+Severity: ERROR +
 The name of the service provided is mandatory:
-____
-
-____
+ +
 /cac:PartyName/cbc:Name
-____
 
 |*Country*: The country of the service provider must always be specified. | a|
-* {blank}
-+
-____
-Severity: ERROR
-____
-* {blank}
-+
-____
+Severity: ERROR +
 The country of the service provided is mandatory:
-____
 +
 /cac:PostalAddress/cac:Country /cbc:IdentificationCode
 
 |*Identifier*: An identifier for the service provider must always be provided. | a|
-* {blank}
-+
-____
-Severity: ERROR
-____
-* {blank}
-+
-____
+Severity: ERROR +
 The identifier of the service provided is mandatory:
-____
 +
 /cac:PartyIdentification/cbc:ID
 
 |===
-
 
 
 [[BR-RESP-20]]
@@ -2314,34 +2095,16 @@ ____
 |Business requirement | xref:tech_br_response_reqs.adoc#reps_eo[tbr92-009]|
 |XSD Business Rule description | |XSD Business Rule Schematron
 |Name, Family name and country of the natural person are mandatory | a|
-* {blank}
-+
-____
-Severity: ERROR
-____
-* {blank}
-+
-____
+Severity: ERROR +
 /cac:EconomicOperatorParty/cac:Party /cac:PowerOfAttorney is an optional element. If it is used, the following sub-elements are mandatory:
-____
-** {blank}
 +
-____
 /cac:AgentParty/cac:Person /cbc:FirstName
-____
-** {blank}
 +
-____
 /cac:AgentParty/cac:Person /cbc:FamilyName
-____
-** {blank}
 +
-____
 /cac:AgentParty/cac:Person /cac:ResidenceAddress/cac:Country /cbc:IdentificationCode
-____
 
 |===
-
 
 
 == Not registered pre-qualification system Rules
@@ -2380,20 +2143,11 @@ ____
 | |
 |XSD Business Rule description | |XSD Business Rule Schematron |
 |Information about compliance of exclusion grounds MUST be provided | a|
-* {blank}
-+
-____
-Severity: ERROR
-____
-* {blank}
-+
-____
+Severity: ERROR +
 All /cac:TenderingCriterion /cbc:CriterionTypeCode starts with CRITERION.EXCLUSION. (They are exclusion criteria) must have its /cbc:ID as response within /cac:TenderingCriterionResponse /cbc:ValidatedCriterionPropertyID
-____
 
 |
 |===
-
 
 
 [[BR-RESP-40]]
@@ -2434,16 +2188,8 @@ Response to the specific requirements related to selection criteria of the ESPDR
  | |
 |XSD Business Rule description | |XSD Business Rule Schematron |
 |Information about compliance of selection criteria MUST be provided. | a|
-* {blank}
-+
-____
-Severity: WARNING
-____
-* {blank}
-+
-____
+Severity: WARNING +
 All /cac:TenderingCriterion /cbc:CriterionTypeCode starts with CRITERION.SELECTION. (They are selection criteria) must have its /cbc:ID as response within /cac:TenderingCriterionResponse /cbc:ValidatedCriterionPropertyID
-____
 
 |
 |===
@@ -2981,16 +2727,8 @@ Information about lots specified is two different sets of the XSD schema in orde
 |Business requirement |xref:tech_br_request_reqs.adoc[#procurement_lots[tbr70-008] | |
 |XSD Business Rule description | |XSD Business Rule Schematron |
 |Convention: Lots should always be identified with a sequential number, as in the examples: Lot1, Lot2 Lot7. | a|
-* {blank}
-+
-____
-Severity: WARNING
-____
-* {blank}
-+
-____
+Severity: WARNING +
 /cac:ProcurementProjectLot /cbc:ID must be unique in the XML instance.
-____
 
 |
 |===
@@ -3305,16 +3043,8 @@ a|
 . BR-TC-01
 
 |At least one TenderingCriterion is expected. a|
-* {blank}
-+
-____
-Severity: ERROR
-____
-* {blank}
-+
-____
+Severity: ERROR +
 /cac:TenderingCriterion is mandatory.
-____
 
 a|
 [[BR-TC-02]]
@@ -3326,21 +3056,10 @@ Business requirement: xref:tech_br_request_reqs.adoc#list_of_criteria[tbr70-010]
 Each Criterion is defined in e-Certis and must use the UUID supplied by e-Certis.
 
 a|
-* {blank}
-+
-____
-Severity: ERROR
-____
-* {blank}
-+
-____
+Severity: ERROR +
 /cac:TenderingCriterion/cbc:ID is mandatory.
-____
-* {blank}
 +
-____
 /cac:TenderingCriterion/cbc:ID must match the Element UUID column from [RD03].
-____
 
 a|
 [[BR-TC-03]]
@@ -3353,16 +3072,8 @@ Business requirement: http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0
 Classification code defined by the ESPD-EDM to represent the criterion in the ESPD taxonomy of criteria is mandatory.
 
 a|
-* {blank}
-+
-____
-Severity: ERROR
-____
-* {blank}
-+
-____
+Severity: ERROR +
 /cac:TenderingCriterion /cbc:CriterionTypeCode is mandatory.
-____
 
 a|
 [[BR-TC-04]]
@@ -3375,16 +3086,8 @@ Business requirement: http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0
 Compulsory use of codes coming from e-Certis.
 
 a|
-* {blank}
-+
-____
-Severity: ERROR
-____
-* {blank}
-+
-____
+Severity: ERROR +
 /cac:TenderingCriterion /cbc:CriterionTypeCode must match the Element Code column from [RD03].
-____
 
 a|
 [[BR-TC-05]]
@@ -3397,26 +3100,12 @@ Business requirement: http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0
 The name should match the one from e-Certis.
 
 a|
-* {blank}
-+
-____
-Severity: ERROR
-____
-* {blank}
-+
-____
+Severity: ERROR +
 /cac:TenderingCriterion/cbc:Name is mandatory.
-____
-* {blank}
 +
-____
 No Schematron is implemented in the following requirement, as it is a too strict rule:
-____
-* {blank}
 +
-____
 /cac:TenderingCriterion/cbc:Name should match the Name column from [RD03].
-____
 
 a|
 [[BR-TC-06]]
@@ -3429,26 +3118,12 @@ Business requirement: http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0
 The description should match the one from e-Certis.
 
 a|
-* {blank}
-+
-____
-Severity: ERROR
-____
-* {blank}
-+
-____
+Severity: ERROR +
 /cac:TenderingCriterion/cbc:Description is mandatory.
-____
-* {blank}
 +
-____
 No Schematron is implemented in the following requirement, as it is a too strict rule:
-____
-* {blank}
 +
-____
 /cac:TenderingCriterion /cbc:Description should match the Description column from [RD03].
-____
 
 a|
 [[BR-TC-07]]
@@ -3461,16 +3136,8 @@ Business requirement: http://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0
 The first level group of properties and sub-groups of properties in the structure of a criterion.
 
 a|
-* {blank}
-+
-____
-Severity: ERROR
-____
-* {blank}
-+
-____
+Severity: ERROR +
 The number of /cac:TenderingCriterion/cac:TenderingCriterionPropertyGroup must match the number of QUESTION_GROUP from [RD03].
-____
 
 |===
 
@@ -3501,16 +3168,8 @@ a|
 . BR-TC-09
 
 |Title of the legislation is mandatory. a|
-* {blank}
-+
-____
-Severity: ERROR
-____
-* {blank}
-+
-____
+Severity: ERROR +
 ../cac:Legislation /cbc:Title is mandatory.
-____
 
 a|
 [[BR-TC-10]]
@@ -3518,16 +3177,8 @@ a|
 . BR-TC-10
 
 |The description of the legislation provided in the original legal text SHOULD be provided. a|
-* {blank}
-+
-____
-Severity: WARNING
-____
-* {blank}
-+
-____
+Severity: WARNING +
 ../cac:Legislation /cbc:Description is highly recommended.
-____
 
 a|
 [[BR-TC-11]]
@@ -3535,16 +3186,8 @@ a|
 . BR-TC-11
 
 |Other articles where the Criterion is referred to SHOULD also be provided. a|
-* {blank}
-+
-____
-Severity: WARNING
-____
-* {blank}
-+
-____
+Severity: WARNING +
 ../cac:Legislation/cbc:Article is highly recommended.
-____
 
 |===
 
@@ -3571,16 +3214,8 @@ a|
 . BR-TC-12
 
 |The ID which identifies one specific property is mandatory. a|
-* {blank}
-+
-____
-Severity: ERROR
-____
-* {blank}
-+
-____
+Severity: ERROR +
 ../cbc:ID is mandatory.
-____
 
 a|
 [[BR-TC-13]]
@@ -3588,16 +3223,8 @@ a|
 . BR-TC-13
 
 |Each Criterion is defined in e-Certis and must use the UUID supplied by e-Certis. a|
-* {blank}
-+
-____
-Severity: ERROR
-____
-* {blank}
-+
-____
+Severity: ERROR +
 ../cbc:ID must match the Element UUID column from [RD03].
-____
 
 a|
 [[BR-TC-14]]
@@ -3605,16 +3232,8 @@ a|
 . BR-TC-14
 
 |Code addressed to control the behaviour of the group of criteria is mandatory. a|
-* {blank}
-+
-____
-Severity: ERROR
-____
-* {blank}
-+
-____
+Severity: ERROR +
 ../cbc:PropertyGroupTypeCode is mandatory.
-____
 
 a|
 [[BR-TC-15]]
@@ -3622,16 +3241,8 @@ a|
 . BR-TC-15
 
 |Compulsory use of the group of criteria supplied by e-Certis. a|
-* {blank}
-+
-____
-Severity: ERROR
-____
-* {blank}
-+
-____
+Severity: ERROR +
 ../cbc:PropertyGroupTypeCode must match the Element Code column from [RD03].
-____
 
 a|
 [[BR-TC-16]]
@@ -3639,16 +3250,8 @@ a|
 . BR-TC-16
 
 |Properties related to the tendering criterion must be the ones supplied by e-Certis. a|
-* {blank}
-+
-____
-Severity: ERROR
-____
-* {blank}
-+
-____
+Severity: ERROR +
 The number of ../cac:TenderingCriterionProperty must match the number of QUESTION from [RD03].
-____
 
 a|
 [[BR-TC-17]]
@@ -3656,16 +3259,8 @@ a|
 . BR-TC-17
 
 |A second, third or n-level group inside a first level group of properties. a|
-* {blank}
-+
-____
-Severity: ERROR
-____
-* {blank}
-+
-____
+Severity: ERROR +
 The number of ../cac:SubsidiaryTenderingCriterionPropertyGroup must match the number of QUESTION_SUBGROUP from [RD03].
-____
 
 |===
 
@@ -3690,16 +3285,8 @@ a|
 . BR-TC-18
 
 |The ID which identifies one specific property is mandatory. And it must use UUID numbers (version 4) automatically generated. a|
-* {blank}
-+
-____
-Severity: ERROR
-____
-* {blank}
-+
-____
+Severity: ERROR +
 ../cbc:ID is mandatory.
-____
 
 a|
 [[BR-TC-19]]
@@ -3707,16 +3294,8 @@ a|
 . BR-TC-19
 
 |The text of the caption, requirement or question is mandatory. a|
-* {blank}
-+
-____
-Severity: ERROR
-____
-* {blank}
-+
-____
+Severity: ERROR +
 ../cbc:Description is mandatory.
-____
 
 a|
 [[BR-TC-20]]
@@ -3724,26 +3303,11 @@ a|
 . BR-TC-20
 
 |The type of property is mandatory and it should match the one from e-Certis. a|
-* {blank}
-+
-____
-Severity: ERROR
-____
-* {blank}
-+
-____
+Severity: ERROR +
 ../cbc:TypeCode is mandatory.
-____
-* {blank}
 +
-____
-Severity: ERROR
-____
-* {blank}
-+
-____
+Severity: ERROR +
 ../cbc:TypeCode must match the Element Code column from [RD03].
-____
 
 a|
 [[BR-TC-21]]
@@ -3751,32 +3315,14 @@ a|
 . BR-TC-21
 
 |The type of answer expected by the contracting authority in the case of a property of type QUESTION, is mandatory and it should match the one from e-Certis. a|
-* {blank}
-+
-____
-Severity: ERROR
-____
-* {blank}
-+
-____
+Severity: ERROR +
 ../cbc:ValueDataTypeCode is mandatory.
-____
-* {blank}
 +
-____
 ../cbc:ValueDataTypeCode must match the Element Code column from [RD03].
-____
-* {blank}
 +
-____
-Severity: ERROR
-____
-* {blank}
-+
-____
+Severity: ERROR +
 If ../cbc:TypeCode is CAPTION or REQUIREMENT, +
 Then, ../cbc:ValueDataTypeCode MUST be NONE.
-____
 
 |===
 
@@ -3827,50 +3373,31 @@ _Level 1: /cac:TenderingCriterionResponse_
 Business requirement: xref:tech_br_response_reqs.adoc#eo[tbr92-005], xref:tech_br_response_reqs.adoc#eo[tbr92-006], xref:tech_br_response_reqs.adoc#eo[tbr92-007], xref:tech_br_response_reqs.adoc#eval_crit[tbr92-018]
 | |
 a|
-. {blank}
+[[BR-TCR-01]]
+. BR-TCR-01
 
 |Validated Criterion Property ID MUST point at one of the TenderingCriterionProperty /cbc:ID that were included in the Request document. a|
-* {blank}
-+
-____
-Severity: ERROR
-____
-* {blank}
-+
-____
+Severity: ERROR +
 /cac:TenderingCriterionResponse /cbc:ValidatedCriterionPropertyID is mandatory.
-____
-* {blank}
 +
-____
 /cac:TenderingCriterionResponse /cbc:ValidatedCriterionPropertyID must match one of the IDs within /cac:TenderingCriterionProperty /cbc:ID
-____
-* {blank}
 +
-____
 /cac:TenderingCriterionProperty /cbc:ID must have 0 or 1 /cac:TenderingCriterionResponse /cbc:ValidatedCriterionPropertyID
-____
 
 a|
+[[BR-TCR-02]]
 [start=2]
-. {blank}
+. BR-TCR-02
 
 |If Confidentiality value is true, all the evidences associated to this response becomes also confidential. |*No Schematron rule can be implemented.*
 a|
+[[BR-TCR-03]]
 [start=3]
-. {blank}
+. BR-TCR-03
 
 |The current structure for the response allows responding values inside the cac:ResponseValue element or in other elements of the cac:TenderingCriterionResponse, like cac:ApplicablePeriod and cac:EvidenceSupplied a|
-* {blank}
-+
-____
-Severity: ERROR
-____
-* {blank}
-+
-____
+Severity: ERROR +
 Only one of the /cac:TenderingCriterionResponse sub elements (/cac:ResponseValue, /cac:ApplicablePeriod or /cac:EvidenceSupplied) is mandatory.
-____
 
 |===
 
@@ -3892,68 +3419,45 @@ Business requirement: xref:tech_br_response_reqs.adoc#eval_crit[tbr92-018]
 | |
 
 a|
+[[BR-TCR-04]]
 [start=4]
-. {blank}
+. BR-TCR-04
 |One cac:ResponseValue element contains the complete list of possible values for one answer to a criterion property. Only *one type of element can be used to answer a criterion property*, and that element MUST be of the *same type as the one specified as expected in the ESPD Request* (element cac:TenderingCriterionProperty /cac:ValueDataTypeCode). 
 a|
-* {blank}
-+
-____
-Severity: ERROR
-____
-* {blank}
-+
-____
+Severity: ERROR +
 Only one sub-element within /cac:TenderingCriterionResponse /cac:ResponseValue is admitted at the same time.
-____
-* {blank}
 +
-____
 The mandatory sub-element within /cac:TenderingCriterionResponse /cac:ResponseValue depends on /cac:TenderingCriterion /cac:TenderingCriterionPropertyGroup /cac:TenderingCriterionProperty /cac:ValueDataTypeCode (see the relationship on _Table 95: Matching between data type and response_)
-____
 
 a|
+[[BR-TCR-05]]
 [start=5]
-. {blank}
+. BR-TCR-05
 |Recommendation: use a UUID-version 4 number on Response value identifier. 
 |*No Schematron rule can be implemented.*
 
 a|
+[[BR-TCR-06]]
 [start=6]
-. {blank}
+. BR-TCR-06
 
 |Groups codified as ONTRUE must be processed if response is True 
 a|
-* {blank}
-+
-____
-Severity: ERROR
-____
-* {blank}
-+
-____
+Severity: ERROR +
 If /cac:TenderingCriterionResponse /cac:ResponseValue /cbc:ResponseIndicator = true and /cac:TenderingCriterionResponse /cbc:ValidatedCriterionPropertyID matches one of the IDs within /cac:TenderingCriterionGroupPropertyGroup /cbc:ID, and its /cbc:PropertyGroupTypeCode = ONTRUE
-____
 +
 Then, its /cac: SubsidiaryTenderingCriterionPropertyGroup /cbc:ID must exist within /cac:TenderingCriterionResponse /cbc:ValidatedCriterionPropertyID
 
 | | a|
-* {blank}
-+
-____
-Severity: ERROR
-____
-* {blank}
-+
-____
+Severity: ERROR +
 If /cac:TenderingCriterionResponse /cac:ResponseValue /cbc:ResponseIndicator = false and /cac:TenderingCriterionResponse /cbc:ValidatedCriterionPropertyID matches one of the IDs within /cac:TenderingCriterionGroupPropertyGroup /cbc:ID, and its /cbc:PropertyGroupTypeCode = ONTRUE
-____
 +
 Then, its /cac: SubsidiaryTenderingCriterionPropertyGroup /cbc:ID cannot exist within /cac:TenderingCriterionResponse /cbc:ValidatedCriterionPropertyID
 
 a|
+[[BR-TCR-07]]
 [start=7]
-. {blank}
+. BR-TCR-07
 
 |Groups codified as ONFALSE must be processed if response is False a|
 * {blank}
@@ -3968,8 +3472,9 @@ If /cac:TenderingCriterionResponse /cac:ResponseValue /cbc:ResponseIndicator = f
 Then, its /cac: SubsidiaryTenderingCriterionPropertyGroup /cbc:ID must exist within /cac:TenderingCriterionResponse /cbc:ValidatedCriterionPropertyID
 
 a|
+[[BR-TCR-08]]
 [start=8]
-* {blank}
+. BR-TCR-08
 +
 Severity: ERROR
 
@@ -3984,7 +3489,8 @@ Then, its /cac: SubsidiaryTenderingCriterionPropertyGroup /cbc:ID cannot exist w
 
 
 
-[start=8]
+[[BR-TCR-09]]
+[start=9]
 . This table lists the relationship between data type and response data type:
 
 .Matching between data type and response
@@ -4062,40 +3568,45 @@ This is the list of rules common to all elements of both, ESPDRequest and ESPDRe
 |===
 |Identifier |XSD Business Rule description |XSD Business Rule Schematron
 a|
-. {blank}
-
+[[BR-OTH-01]]
+[start=1]
+. BR-OTH-01
 
 |For codes, this ESPD V2.0.2 specification requires always three mandatory attributes: listID, listAgencyID, and listVersionID. a|
 * Severity: ERROR
 * Elements which are codes (its type is CodeType), the attributes listID, listAgencyID and listVersionID are mandatory.
 
 a|
+[[BR-OTH-02]]
 [start=2]
-. {blank}
+. BR-OTH-02
 
 |For identifiers, this ESPD V2.0.2 specification requires at least (and always) the mandatory attribute schemeAgencyID. a|
 * Severity: ERROR
 * Elements which are identifiers (its type is IdentifierType) the attribute schemeAgencyID is mandatory.
 
 a|
+[[BR-OTH-03]]
 [start=3]
-. {blank}
+. BR-OTH-03
 
 |Compulsory use of the code list identified within the document [RD02]. a|
 * Severity: ERROR
 * Compulsory use of the code list identified within the 18 Annex I: XSDs elements and Code Lists
 
 a|
+[[BR-OTH-04]]
 [start=4]
-. {blank}
+. BR-OTH-04
 
 |There are cardinality constraints added by the ESPD which are not defined in the XSD Schema. a|
 * Severity: ERROR
 * Compulsory use of the elements listed within 19 Annex II: Compulsory XSDs elements
 
 a|
+[[BR-OTH-05]]
 [start=5]
-. {blank}
+. BR-OTH-05
 
 a|
 Business requirement: xref:tech_br_request_reqs.adoc#general[tbr70-002]
