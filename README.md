@@ -4,6 +4,8 @@ This repository is the source for the human-readable [ESPD-EDM documentation pub
 
 Versioned technical release artefacts (XML schemas, criteria definitions, code lists, validation rules) are maintained in the [OP-TED/ESPD-EDM](https://github.com/OP-TED/ESPD-EDM) repository.
 
+An acceptance testing version of the documentation is available at: https://docs.acceptance.ted.europa.eu/ESPD-EDM/latest/index.html
+
 For guidance on content ownership, authoring practices, and the relationship between these repositories, see [DOCUMENTATION_GUIDELINES.md](DOCUMENTATION_GUIDELINES.md).
 
 ## Workspace Setup
