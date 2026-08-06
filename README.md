@@ -1,4 +1,10 @@
-# Documentation for ESPD
+# Documentation for ESPD-EDM
+
+This repository is the source for the human-readable [ESPD-EDM documentation published on TED Developer Docs](https://docs.ted.europa.eu/ESPD-EDM/latest/index.html). It contains the Antora-based content modules (business and technical) that are built and published to the TED documentation site.
+
+Versioned technical release artefacts (XML schemas, criteria definitions, code lists, validation rules) are maintained in the [OP-TED/ESPD-EDM](https://github.com/OP-TED/ESPD-EDM) repository.
+
+For guidance on content ownership, authoring practices, and the relationship between these repositories, see [DOCUMENTATION_GUIDELINES.md](DOCUMENTATION_GUIDELINES.md).
 
 ## Workspace Setup
 
