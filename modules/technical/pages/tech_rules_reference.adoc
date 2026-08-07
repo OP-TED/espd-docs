@@ -1,0 +1,61 @@
+:doctitle: Business Rules Reference
+:doccode: espd-tech-prod-030
+:author: CBE
+:docdate: August 2026
+
+== Business Rules Reference
+
+This page provides the complete catalogue of validation rules enforced by the ESPD Schematron. It is auto-generated from the `.sch` source files in the link:https://github.com/OP-TED/espd-validation-schematron[espd-validation-schematron] repository and reflects the current implementation.
+
+=== How to read this table
+
+[cols="1,3"]
+|===
+| Column | Meaning
+
+| *Rule ID*
+| Unique identifier of the assertion in the Schematron (the `@id` attribute on `<assert>`).
+
+| *Severity*
+| `fatal` = document is invalid; `error` = significant problem; `warning` = informational, document still valid.
+
+| *Scope*
+| Whether the rule applies to ESPD Request, ESPD Response, or both (Common).
+
+| *Category*
+| Validation layer: Code list, Cardinality, Criterion (structure/cross-reference), Other (general), or Specific (role/domain).
+
+| *Description*
+| The human-readable assertion message shown when validation fails. This text comes directly from the `<assert>` element in the Schematron source.
+
+| *Source File*
+| The `.sch` file where the rule is defined.
+|===
+
+=== Validation layers
+
+The rules are organised in numbered layers that execute in sequence:
+
+[cols="1,3",options="header"]
+|===
+| Layer | What it checks
+
+| `01-*`
+| Code list values and attributes — correct codes from EU Vocabularies and ESPD-specific lists.
+
+| `02-*`
+| Cardinality — mandatory elements beyond what XSD enforces.
+
+| `03-*`
+| Criterion structure — UUIDs, property groups, and data types match the e-Certis reference.
+
+| `04-*`
+| Other general rules — identifier attributes, document references, format constraints.
+
+| `05-*`
+| Specific rules — lot assignment, economic operator roles, qualification, procurer.
+|===
+
+=== Complete rules register
+
+include::partial$business-rules-register.adoc[]
