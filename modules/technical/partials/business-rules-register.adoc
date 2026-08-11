@@ -62,7 +62,7 @@ a| Information about all the entities the EO relies on MUST be provided (criteri
 | Response
 | Specific
 a| The lot the EO tenders for MUST be provided.
-| ESPDResponse/sch/05-ESPD-resp-specific-br.sch
+| link:https://github.com/OP-TED/espd-validation-schematron/blob/v4.1.0/ESPDResponse/sch/05-ESPD-resp-specific-br.sch[05-ESPD-resp-specific-br.sch^]
 
 | BR-LOT-40
 | fatal
