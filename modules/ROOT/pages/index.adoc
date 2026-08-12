@@ -29,8 +29,6 @@ Using an online ESPD form from both buyer and supplier perspectives
 == Technical Implementation of an ESPD Service
 * xref:technical:index.adoc[Technical Information] +
 Information for technical implementation
-//* xref:espd-tech::tech_imp_roadmap.adoc[Road Map for Implementers]
-//* xref:espd-tech::tech_upgrades.adoc[Upgrading an ESPD Version]
 //* xref:espd-tech::demo.adoc[Demo ESPD Service Online]
 
 include::partial$feedback.adoc[]

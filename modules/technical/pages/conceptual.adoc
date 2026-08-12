@@ -1,9 +1,0 @@
-:doctitle: Conceptual Model
-:doccode: espd-tech-prod-003
-:author: NPJ
-:authoremail: nicole-anne.paterson-jones@ext.ec.europa.eu
-:docdate: October 2023
-
-
-link:{attachmentsdir}/ESPD_CM_html/index.html[The Conceptual Model can be accessed via this link]
-
