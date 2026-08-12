@@ -7,30 +7,16 @@
 
 This page provides the complete catalogue of validation rules enforced by the ESPD Schematron. It is auto-generated from the `.sch` source files in the link:https://github.com/OP-TED/espd-validation-schematron[espd-validation-schematron] repository and reflects the current implementation.
 
-=== How to read this table
+=== How to read the rule entries
 
-[cols="1,3"]
-|===
-| Column | Meaning
+Each rule is rendered as a block containing the following information:
 
-| *Rule ID*
-| Unique identifier of the assertion in the Schematron (the `@id` attribute on `<assert>`).
-
-| *Severity*
-| `fatal` = document is invalid; `error` = significant problem; `warning` = informational, document still valid.
-
-| *Scope*
-| Whether the rule applies to ESPD Request, ESPD Response, or both (Common).
-
-| *Category*
-| Validation layer: Code list, Cardinality, Criterion (structure/cross-reference), Other (general), or Specific (role/domain).
-
-| *Description*
-| The human-readable assertion message shown when validation fails. This text comes directly from the `<assert>` element in the Schematron source.
-
-| *Source File*
-| The `.sch` file where the rule is defined.
-|===
+Rule ID:: Unique identifier of the assertion in the Schematron (the `@id` attribute on `<assert>`).
+Severity:: 🔴 `fatal` = document is invalid; 🟠 `error` = significant problem; 🟡 `warning` = informational, document still valid.
+Scope:: Whether the rule applies to ESPD Request, ESPD Response, or both (Common).
+Category:: Validation layer: Code list, Cardinality, Criterion (structure/cross-reference), Other (general), or Specific (role/domain).
+Description:: The human-readable assertion message shown when validation fails. This text comes directly from the `<assert>` element in the Schematron source.
+Source:: The `.sch` file where the rule is defined, linked directly to the GitHub repository.
 
 === Validation layers
 
