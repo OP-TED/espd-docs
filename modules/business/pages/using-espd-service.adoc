@@ -1,0 +1,58 @@
+:doctitle: Using the ESPD Service
+:doccode: espd-bus-prod-023
+:author: ESPD Team
+:docdate: July 2026
+
+== What is an ESPD Service?
+
+An ESPD Service is an implementation of the ESPD-EDM model that provides an online platform where public buyers and economic operators can create, edit, export and import ESPD documents in XML format. It enforces compliance with EU procurement legislation and streamlines the qualification process, enabling participation in public procurement by different types of suppliers.
+
+== Available ESPD Services
+
+There are a number of ESPD Services available, provided by EU Member States or commercial service providers. An updated list of ESPD Service providers can be found at the https://single-market-economy.ec.europa.eu/single-market/public-procurement/digital-procurement/european-single-procurement-document-and-ecertis_en[European Commission's ESPD page].
+
+NOTE: Currently, the European Commission does not maintain a centralised ESPD Service. It is up to Member States to implement the latest ESPD version available.
+
+== How to use an ESPD Service
+
+=== For buyers (Contracting Authorities)
+
+[arabic]
+. Access an ESPD Service platform provided by your Member State or a commercial provider.
+. Create an ESPD Request by defining the exclusion grounds and selection criteria for your procurement procedure.
+. Link the ESPD Request to your Contract Notice using the eForms notice publication reference number.
+. Publish the ESPD Request alongside your Contract Notice.
+. After the tender deadline, review the ESPD Responses submitted by Economic Operators.
+
+For detailed guidance on what to fill in, see xref:for-contracting-authorities.adoc[For Contracting Authorities].
+
+=== For offering parties (Economic Operators)
+
+[arabic]
+. Find the procurement procedure you wish to participate in (the ESPD Request is published alongside the Contract Notice).
+. Access the ESPD Service platform indicated by the buyer.
+. Fill in the ESPD Response, answering the exclusion grounds and selection criteria defined by the buyer.
+. Provide references to evidence supporting your responses.
+. Download and submit the completed ESPD Response as part of your tender.
+
+For detailed guidance on what to fill in, see xref:for-economic-operators.adoc[For Economic Operators].
+
+== Starting from scratch or reusing a previous ESPD
+
+You have two options when using an ESPD Service:
+
+* *From scratch:* fill in all information for the first time. Once completed, the document can be saved locally for future reuse.
+* *Upload and edit:* upload a previously saved ESPD XML document and only change the details that differ from the previous procedure. This applies to both buyers and suppliers.
+
+This makes the process significantly more efficient over time, as most information (company identity, standard criteria responses, etc.) remains the same across procedures.
+
+== Linking to an eForms notice
+
+The information in the ESPD Service is linked to an eForms notice by the publication reference number generated when a buyer publishes their Contract Notice on TED. The buyer fills in the ESPD Request as a subsequent step in the procurement process, and prospective suppliers find the relevant ESPD Request by searching the tender notices.
+
+== Further information
+
+* For an overview of the ESPD parts, see xref:espd-parts.adoc[ESPD Parts].
+* For technical details on the ESPD Service Reference Implementation, see xref:reference-implementation-guide.adoc[Reference Implementation Guide].
+
+include::partial$feedback.adoc[]

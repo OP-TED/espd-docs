@@ -1,0 +1,122 @@
+:doctitle: ESPD Parts
+:doccode: espd-bus-prod-022
+:author: ESPD Team
+:docdate: July 2026
+
+== Overview of the ESPD Parts
+
+The ESPD is structured into six parts. The first part covers procedure identification, parts 2 through 5 cover the substantive qualification content, and part 6 contains legal declarations.
+
+Each part is filled in by the Contracting Authority (buyer), the Economic Operator (offering party), or both, depending on the ESPD document type (Request or Response) and the role of the participant.
+
+== Part 1: Procedure Information
+
+*Buyer fills in:* Information concerning the procurement procedure and the Contracting Authority — the publication reference (Contract Notice), the identity of the procurer, and the procurement procedure details.
+
+*Offering party fills in:* Information identifying the ESPD Request to which it is responding, by referencing the publication, the identity of the procurer, and the procurement procedure.
+
+== Part 2: Economic Operator Information
+
+NOTE: The buyer does not fill in this section.
+
+*The offering party fills in:*
+
+* Information about the economic operator (identity, size, registration status, group participation);
+* Information about representatives of the economic operator;
+* Information about reliance on the capacities of other entities;
+* Information concerning subcontractors on whose capacity the economic operator does not rely.
+
+== Part 3: Exclusion Grounds
+
+*Buyer fills in:* Defines which exclusion grounds apply to the procedure:
+
+* *Part 3A* — Grounds relating to criminal convictions (Article 57(1) of Directive 2014/24/EU) — mandatory;
+* *Part 3B* — Grounds relating to the payment of taxes or social security contributions (Article 57(2)) — mandatory;
+* *Part 3C* — Grounds relating to insolvency, conflicts of interests or professional misconduct (Article 57(4)) — discretionary, buyer selects which apply;
+* *Part 3D* — Purely national exclusion grounds — depend on the regulation of each country, buyer manually selects.
+
+*Offering party fills in:* Responds to all applicable exclusion grounds, declaring compliance and providing explanations where relevant.
+
+NOTE: The offering party must respond to all exclusion grounds selected by the buyer.
+
+== Part 4: Selection Criteria
+
+*Buyer fills in:* Indicates which selection criteria apply, organised by category:
+
+* *Part 4A* — Suitability (Article 58(2));
+* *Part 4B* — Economic and financial standing (Article 58(3));
+* *Part 4C* — Technical and professional ability (Article 58(4));
+* *Part 4D* — Quality assurance schemes and environmental management standards (Article 62(2)).
+
+The buyer may also specify requirements and thresholds for each criterion, and associate criteria with specific lots.
+
+*Offering party fills in:* Responds to each applicable selection criterion, providing the required information and evidence references.
+
+== Part 5: Reduction of Qualified Candidates
+
+NOTE: The buyer does not fill in this section.
+
+*The offering party fills in:* Information where the buyer has specified objective and non-discriminatory criteria or rules to limit the number of candidates invited to tender or to participate in a dialogue within a two-phased procedure.
+
+This part does not apply when the Economic Operator is a subcontractor that the lead entity does not rely on in order to meet the selection criteria.
+
+== Part 6: Concluding Statements
+
+*The offering party declares that:*
+
+* The information submitted under Parts 2–5 is accurate and true;
+* It is able to provide certificates and/or other forms of documentary evidence listed;
+* It consents to grant the buyer access to where the documentary evidence is stored.
+
+== Information per Role
+
+The table below summarises which sections each EO role must fill in the ESPD Response:
+
+[cols="4,1,1,1,1",options="header"]
+|===
+|Section |Sole Tenderer / Group Leader |Group Member |Other Entity (relied upon) |Subcontractor
+
+|*Part 1* — Procedure information
+|X |X |X |X
+
+|*Part 2* — Economic operator information
+|X |X |X |X
+
+|Part 2 — Representatives
+|X |X |X |X
+
+|Part 2 — Reliance on other entities
+|X | | |
+
+|Part 2 — Subcontractors (not relied upon)
+|X | | |
+
+|*Part 3* — Exclusion grounds
+|X |X |X |X
+
+|*Part 4* — Selection criteria
+|X |X |X |
+
+|*Part 5* — Reduction of candidates
+|Ad hoc |Ad hoc |Ad hoc |
+
+|*Part 6* — Concluding statements
+|X |X |X |X
+
+|===
+
+_Table: Information to provide in the ESPD Response per role_
+
+=== Key rules
+
+* Exclusion grounds apply to *all lots* automatically.
+* Selection criteria apply *per lot* and may differ between lots.
+* Each participating party must fill in *one ESPD Response per lot* (or group of lots) they tender for.
+* It is the *Group Leader's responsibility* to collect the completed ESPD Responses from all group members and submit them with the tender.
+
+=== Further information
+
+* For buyer-specific guidance, see xref:for-contracting-authorities.adoc[For Contracting Authorities].
+* For offering party-specific guidance, see xref:for-economic-operators.adoc[For Economic Operators].
+
+include::partial$feedback.adoc[]

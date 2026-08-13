@@ -1,0 +1,31 @@
+:doctitle: Reference Implementation Guide
+:doccode: espd-bus-prod-024
+:author: ESPD Team
+:docdate: July 2026
+
+== ESPD Service Reference Implementation
+
+[NOTE]
+====
+This page is a placeholder. Content will be added when the ESPD Service Reference Implementation reaches stable release.
+====
+
+The ESPD Service Reference Implementation provides a working example of an ESPD Service built on the ESPD-EDM v5.0.0 model. It demonstrates the complete workflow for creating, validating, and exchanging ESPD Request and Response documents.
+
+=== What it provides
+
+* A working ESPD Service deployment that Member States and vendors can use as a reference;
+* End-to-end workflow coverage: from creating an ESPD Request linked to an eForms notice, through filling the ESPD Response, to validation against Schematron rules;
+* Integration with the JSON-based criterion model (`espd-edm.json`);
+* Source code and documentation for developers building their own ESPD Services.
+
+=== Where to find it
+
+The reference implementation is being developed in the https://github.com/OP-TED/espd-service-sandbox[espd-service-sandbox] repository.
+
+=== Further information
+
+* For guidance on using an ESPD Service, see xref:using-espd-service.adoc[Using the ESPD Service].
+* For the technical data model documentation, see the xref:technical:index.adoc[Technical Implementation] section.
+
+include::partial$feedback.adoc[]

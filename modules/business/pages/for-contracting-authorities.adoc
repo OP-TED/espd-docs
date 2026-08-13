@@ -1,0 +1,120 @@
+:doctitle: For Contracting Authorities
+:doccode: espd-bus-prod-020
+:author: ESPD Team
+:docdate: July 2026
+
+== Preparing the ESPD Request
+
+Contracting Authorities (buyers) use the ESPD Request to define the exclusion grounds and selection criteria that Economic Operators (offering parties) must satisfy in order to participate in a procurement procedure.
+
+The ESPD process from the buyer perspective:
+
+image::espd_bus_buyer.png[]
+
+The buyer prepares the ESPD Request as part of the procurement procedure documentation. The ESPD Request is published alongside the Contract Notice and is linked to it via the notice publication reference number.
+
+=== Key responsibilities
+
+As a Contracting Authority you are responsible for:
+
+* Defining which exclusion grounds apply to the procedure (mandatory grounds from Article 57(1) and (2) are pre-selected; discretionary grounds from Article 57(4) can be added or removed);
+* Selecting the applicable selection criteria (suitability, economic and financial standing, technical and professional ability, quality assurance);
+* Specifying any requirements or thresholds for selection criteria (e.g. minimum turnover, number of years of experience);
+* Associating selection criteria with the relevant lots (exclusion grounds apply to all lots automatically);
+* Publishing the ESPD Request together with the Contract Notice.
+
+=== What the buyer fills in
+
+==== Part 1: Procedure information
+
+The buyer provides information about the publication (Contract Notice reference), the identity of the procurer, and the procurement procedure.
+
+image::form/of2.png[]
+
+_Information about publication_
+
+image::form/of3.png[]
+
+_Identity of the procurer_
+
+image::form/of4.png[]
+
+_Information about the procurement procedure_
+
+==== Part 3: Exclusion grounds
+
+The buyer reviews the exclusion grounds. Grounds relating to criminal convictions (Article 57(1)) and payment of taxes or social security (Article 57(2)) are mandatory and pre-selected:
+
+image::form/of9.png[]
+
+_Part 3A: Grounds relating to criminal convictions (mandatory, all ticked by default)_
+
+image::form/of11.png[]
+
+_Part 3B: Grounds relating to payment of taxes or social security contributions (mandatory, all ticked by default)_
+
+Grounds relating to insolvency, conflicts of interests or professional misconduct (Article 57(4)) can be selectively applied:
+
+image::form/of13.png[]
+
+_Part 3C: Grounds relating to insolvency, conflicts of interests or professional misconduct (CA can remove ticks)_
+
+Purely national exclusion grounds depend on the regulation of each country. By default they are not selected; the buyer must manually choose which to include:
+
+image::form/of15.png[]
+
+_Part 3D: Purely national exclusion grounds (CA manually selects)_
+
+==== Part 4: Selection criteria
+
+The buyer selects which selection criteria to apply. All options are ticked by default, but the buyer can remove those not required for the specific procedure.
+
+image::form/of17.png[]
+
+_Part 4A: Suitability (Article 58(2))_
+
+image::form/of19.png[]
+
+_Part 4B: Economic and financial standing (Article 58(3))_
+
+image::form/of21.png[]
+
+_Part 4C: Technical and professional ability (Article 58(4))_
+
+image::form/of23.png[]
+
+_Part 4D: Quality assurance schemes and environmental management standards (Article 62(2))_
+
+Alternatively, the buyer may use a global indication for all selection criteria:
+
+image::form/of25.png[]
+
+_Global indication for all selection criteria_
+
+=== Lots and criteria
+
+Important considerations when working with lots:
+
+* Exclusion grounds apply automatically to *all lots* in the procedure.
+* Selection criteria apply *per lot* and may differ between lots.
+* Each Economic Operator must submit a separate ESPD Response per lot or group of lots they tender for.
+
+=== Evaluating responses
+
+After receiving ESPD Responses, the buyer reviews the responses and supporting evidence provided by Economic Operators. The "Overview" option allows reviewing all information from a single page:
+
+image::form/of28.png[]
+
+_Options available after completing the ESPD form_
+
+=== Reuse of ESPD Requests
+
+It is not necessary to create an ESPD Request from scratch for each procedure. ESPD documents can be downloaded, edited, and reused in further procurement procedures, making the process more efficient.
+
+=== Further information
+
+* For details on the ESPD parts and what each role fills in, see xref:espd-parts.adoc[ESPD Parts].
+* For technical implementation details, see the xref:technical:tech_request.adoc[ESPD Request] technical guide.
+* A list of current ESPD Service providers can be found at https://single-market-economy.ec.europa.eu/single-market/public-procurement/digital-procurement/european-single-procurement-document-and-ecertis_en[the European Commission's ESPD page].
+
+include::partial$feedback.adoc[]
