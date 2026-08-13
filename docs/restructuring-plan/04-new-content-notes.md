@@ -46,7 +46,7 @@
 #### legal-framework.md
 - **Priority**: Medium
 - **Persona**: All
-- **Scope**: Summarises the EU legal basis for the ESPD: Directive 2014/24/EU (Article 59), Implementing Regulation (EU) 2016/7, and the relationship to eForms Regulation. Explains the mandatory use of the ESPD in EU above-threshold procurement and notes member-state implementation latitude. Links to the full directive/regulation texts.
+- **Scope**: Summarises the EU legal basis for the ESPD: Directive 2014/24/EU (Article 59), Implementing Regulation (EU) 2016/7, and the relationship to eForms Regulation. Explains the mandatory use of the ESPD in EU above-threshold procurement and notes Member State implementation latitude. Links to the full directive/regulation texts.
 - **Partial Sources**: business/pages/business_info.adoc (legal references in lines 50–80, mentions directives), technical/tech_request.adoc (legal basis line ~10)
 - **Notes**: Legal references are currently one-line mentions embedded in other pages. This page consolidates them into an authoritative summary. Keep language accessible — no legal jargon beyond what is necessary.
 
@@ -61,7 +61,7 @@
 - **Partial Sources**: business/pages/index.adoc (rewritten from tile layout)
 - **Notes**: Same situation as Introduction index.md — the existing tile layout provides no reusable prose. Effectively new content.
 
-#### espd-parts-and-criteria.md
+#### espd-parts.md
 - **Priority**: Medium
 - **Persona**: Procurement policy officer
 - **Scope**: Overview of the ESPD's five parts (Part I: Procedure information, Part II: EO information, Part III: Exclusion grounds, Part IV: Selection criteria, Part V: Reduction of candidates / Conclusion) and how criteria are organised across these parts. Explains which parts the CA controls in the Request and which the EO completes in the Response. Aimed at non-technical readers.
@@ -81,28 +81,28 @@
 
 #### index.md
 - **Priority**: High
-- **Persona**: Member-state developer, Commercial ESPD vendor
+- **Persona**: Member State developer, Commercial ESPD vendor
 - **Scope**: Navigation landing page for the Technical Implementation section. Brief paragraph orienting developers to the implementation guides available: getting started, document model, Request and Response guides, lot management, and common concepts. Links to all sub-pages.
 - **Partial Sources**: technical/pages/index.adoc (rewritten from tile layout; structural inspiration only)
 - **Notes**: Current technical index is 112 lines of tile layout linking to monolithic pages. The new version links to the reorganised sub-pages and uses a different navigational structure.
 
 #### getting-started.md
 - **Priority**: High
-- **Persona**: Member-state developer, Commercial ESPD vendor
+- **Persona**: Member State developer, Commercial ESPD vendor
 - **Scope**: Quick-start guide for new implementers. Covers: what the ESPD-EDM distribution package contains, repository layout (ESPD-EDM GitHub repo structure), prerequisites for building an ESPD service, and first steps (download package, validate an example instance, understand the schemas). Acts as the entry point for all technical readers.
 - **Partial Sources**: technical/tech_architecture.adoc (lines 1–45: architecture overview, distribution package context), technical/tech_dist_pack.adoc (70 lines: distribution package description), ESPD-EDM/README.md
 - **Notes**: tech_architecture.adoc contributes partial content (mapped as split → getting-started.md), but the "getting started" framing — prerequisites, step-by-step first actions — is new. tech_dist_pack.adoc is mapped with disposition "rewrite" to distribution-tooling.md, not to this page; however its overview of the package structure provides useful input.
 
 #### document-model-ubl.md
 - **Priority**: Medium
-- **Persona**: Member-state developer, Commercial ESPD vendor
+- **Persona**: Member State developer, Commercial ESPD vendor
 - **Scope**: Explains the UBL 2.4 foundation underlying the ESPD-EDM: the QualificationApplicationRequest and QualificationApplicationResponse document types, how ESPD-EDM extends UBL with additional constraints, and the relationship between the UBL schemas and the ESPD Schematron rules. Provides context for understanding the element tables in Model Reference pages.
 - **Partial Sources**: technical/tech_request.adoc (XSD Schema section, lines 13–24), technical/tech_response.adoc (XSD Schema section, lines 23–41), ESPD-EDM/schematron/ (schema references)
 - **Notes**: UBL foundation information is currently embedded as small subsections within the monolithic Request and Response pages. A dedicated page consolidating the "why UBL" and "how ESPD-EDM uses UBL" narrative is new content. Important for implementers unfamiliar with UBL.
 
 #### common-concepts.md
 - **Priority**: Medium
-- **Persona**: Member-state developer, Commercial ESPD vendor
+- **Persona**: Member State developer, Commercial ESPD vendor
 - **Scope**: Shared technical patterns used across both ESPD Request and Response: identifier schemes (UUIDs, SchemeIDs), party structure patterns, document references and additional document references, the general Schematron validation approach, and content shared between Request/Response. Avoids duplicating patterns in both the Request and Response guides.
 - **Partial Sources**: technical/tech_validation.adoc (lines 1–140: general Schematron validation approach, execution files), technical/tech_request.adoc (identifier patterns scattered throughout), technical/tech_response.adoc (common party structures)
 - **Notes**: tech_validation.adoc's general validation content (split → common-concepts.md) provides partial input. The rest — identifier schemes, party patterns, document reference patterns — must be synthesised from patterns repeated across the monolithic pages. Requires careful extraction and de-duplication.
@@ -113,28 +113,28 @@
 
 #### index.md
 - **Priority**: Medium
-- **Persona**: Member-state developer, Commercial ESPD vendor
+- **Persona**: Member State developer, Commercial ESPD vendor
 - **Scope**: Navigation landing page for the Criteria section. Brief paragraph explaining that this section covers everything about ESPD criteria: how they work, the data model, exclusion and selection categories, validation, and tooling. Links to all Criteria sub-pages.
 - **Partial Sources**: None
 - **Notes**: No existing page serves as a criteria section landing. Entirely new content (brief paragraph + navigation links).
 
 #### criterion-data-model-json.md
 - **Priority**: High
-- **Persona**: Member-state developer, Commercial ESPD vendor
+- **Persona**: Member State developer, Commercial ESPD vendor
 - **Scope**: Documents the `espd-edm.json` file that is the canonical source for all ESPD criterion definitions in v5. Covers: the JSON schema structure (criterion → requirement groups → requirements → properties), how to read and traverse the JSON tree, field semantics (IDs, names, descriptions, property data types, response types), versioning approach, and how implementers should consume the file programmatically (parsing guidance, rendering criterion forms, mapping responses).
 - **Partial Sources**: ESPD-EDM/criterion/espd-edm.json (the source file itself), ESPD-EDM/criterion/README.md (brief format description), espd-service-sandbox/js/codelists.js (demonstrates programmatic consumption patterns)
 - **Notes**: This is the most critical new-content page for v5. The JSON criterion format replaces the deprecated Excel-based `ESPD-criterion.xlsx` workflow. No existing documentation describes this format. All pages previously referencing the Excel format must redirect readers here (flagged in Migration Mapping). See also [Criterion JSON Entry](#criterion-data-model-json-entry) below.
 
 #### reference-data.md
 - **Priority**: Medium
-- **Persona**: Member-state developer, Commercial ESPD vendor
+- **Persona**: Member State developer, Commercial ESPD vendor
 - **Scope**: Documents the code lists specifically used by criteria: exclusion ground codes (ExclusionGround.gc), selection criterion codes (SelectionCriterion.gc), response data types (ResponseDataType.gc), property group types (PropertyGroupType.gc), criterion element types (CriterionElementType.gc), and boolean GUI control types (BooleanGUIControlType.gc). Explains their maintenance lifecycle and relationship to the criterion JSON structure.
 - **Partial Sources**: ESPD-EDM/codelists/ directory (genericode files), technical/tech_codelist.adoc (general code list structure — but mapped to Model Reference code-lists.md, not here)
 - **Notes**: The unified code-lists.md in Model Reference covers ALL code lists. This page focuses specifically on criteria-related code lists with usage context and linkage to the criterion data model. Avoids duplication by cross-referencing code-lists.md for detailed value tables.
 
 #### distribution-tooling.md
 - **Priority**: Medium
-- **Persona**: Member-state developer, Commercial ESPD vendor
+- **Persona**: Member State developer, Commercial ESPD vendor
 - **Scope**: Describes the distribution package's criterion artefacts (espd-edm.json, genericode files, Schematron files), tooling for generating or transforming criterion structures (EAtoJSON pipeline, validation tools), and integration guidance for consuming the distribution package in an ESPD implementation. Replaces the old dist_pack documentation with a criterion-tooling focus.
 - **Partial Sources**: technical/tech_dist_pack.adoc (70 lines — mapped as rewrite → distribution-tooling.md), ESPD-EDM/criterion/README.md, espd-tools/EAtoJSON/ (tooling pipeline)
 - **Notes**: tech_dist_pack.adoc is mapped as "rewrite" to this target, providing partial input. However, the rewrite scope is extensive: pivot from general distribution package description to criterion-focused tooling documentation reflecting the JSON workflow. Effectively new content built on a skeleton of existing material.
@@ -145,21 +145,21 @@
 
 #### index.md
 - **Priority**: Low
-- **Persona**: Member-state developer, Commercial ESPD vendor, Technical support engineer
+- **Persona**: Member State developer, Commercial ESPD vendor, Technical support engineer
 - **Scope**: Navigation landing page for the Model Reference section. Brief paragraph explaining that this section provides detailed data model reference material for look-up: element tables, business rules, code list catalogues, and the conceptual model. Links to all sub-pages.
 - **Partial Sources**: None
 - **Notes**: No existing page serves as a model reference landing. Entirely new content (brief paragraph + navigation links).
 
 #### conceptual-model.md
 - **Priority**: Medium
-- **Persona**: Member-state developer, Commercial ESPD vendor
+- **Persona**: Member State developer, Commercial ESPD vendor
 - **Scope**: Presents the ESPD Conceptual Model (maintained in Enterprise Architect): entity relationships, core concepts (Criterion, TenderingCriterionProperty, RequirementGroup, Response), and how the conceptual model maps to the UBL implementation layer. Provides or embeds the HTML export of the conceptual model diagrams.
 - **Partial Sources**: espd-conceptual-model/documentation-integration/index.html (EA-exported HTML documentation), espd-conceptual-model/conceptual-model/ESPD_CM.eapx (EA project file), espd-conceptual-model/documentation-integration/README.md
 - **Notes**: The conceptual model HTML export exists as an attachment/integration in the espd-conceptual-model repository. It has never been integrated as a documentation page in espd-docs. This page brings it into the documentation proper — either embedding the diagrams or providing a curated narrative with links to the full export.
 
 #### criteria-catalogue.md
 - **Priority**: Medium
-- **Persona**: Member-state developer, Commercial ESPD vendor
+- **Persona**: Member State developer, Commercial ESPD vendor
 - **Scope**: Complete catalogue of all ESPD criterion definitions with their property trees, organised by part (exclusion grounds, selection criteria). Drawn from the espd-edm.json data. Provides a navigable reference for looking up specific criteria by ID, name, or category. Cross-references the criterion-data-model-json.md page for format documentation.
 - **Partial Sources**: technical/tech_common_aspects_for_criteria.adoc (lines 501–867: criterion classification tables, data structure diagrams — mapped as split → criteria-catalogue.md), ESPD-EDM/criterion/espd-edm.json
 - **Notes**: The split from tech_common_aspects_for_criteria.adoc provides reference tables and taxonomy content. However, the "complete catalogue" aspect — listing all criteria from the JSON file with their property trees — is new content that builds on the split material. Requires generating or curating content from espd-edm.json.
@@ -177,7 +177,7 @@
 
 #### migration-breaking-changes.md
 - **Priority**: High
-- **Persona**: Member-state developer, Commercial ESPD vendor, Technical support engineer
+- **Persona**: Member State developer, Commercial ESPD vendor, Technical support engineer
 - **Scope**: Step-by-step migration guidance from ESPD-EDM v4 to v5. Covers: breaking changes (schema changes, removed elements, renamed elements), new features requiring implementation updates (JSON criterion format, eForms lot alignment), deprecated features (Excel criterion file, demo site), and a migration checklist for implementers.
 - **Partial Sources**: ROOT/pages/release_notes.adoc (mentions v5 changes at a high level), ESPD-EDM/CHANGELOG.md (detailed change log)
 - **Notes**: The release notes page (mapped to current-release-v5.md) covers what changed but not how to migrate. The CHANGELOG.md provides raw change data. A structured migration guide with breaking changes, required actions, and a checklist is new content. Critical for implementers upgrading existing systems.

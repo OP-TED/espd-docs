@@ -17,7 +17,7 @@ ESPD-EDM Documentation
 │   ├── index.md                      [landing]
 │   ├── for-contracting-authorities.md
 │   ├── for-economic-operators.md
-│   ├── espd-parts-and-criteria.md
+│   ├── espd-parts.md
 │   ├── using-espd-service.md
 │   └── reference-implementation-guide.md  [placeholder]
 │
@@ -74,7 +74,7 @@ ESPD-EDM Documentation
 
 | Persona | Primary Sections | Description |
 |---------|-----------------|-------------|
-| Member-state developer | Technical Implementation, Criteria, Model Reference | Builds ESPD services integrated into national e-procurement platforms |
+| Member State developer | Technical Implementation, Criteria, Model Reference | Builds ESPD services integrated into national e-procurement platforms |
 | Commercial ESPD vendor | Technical Implementation, Criteria, Model Reference | Develops commercial ESPD software products for multiple buyers/operators |
 | Procurement policy officer | Introduction, Business Guide | Needs to understand the ESPD in the procurement lifecycle without technical depth |
 | Technical support engineer | Model Reference, Further Information, Releases | Troubleshoots ESPD implementations, validates instances, checks version changes |
@@ -101,7 +101,7 @@ ESPD-EDM Documentation
 | index.md | Business Guide | Landing page linking to business-oriented guidance topics | navigation | Procurement policy officer |
 | for-contracting-authorities.md | For Contracting Authorities | Guidance for buyers on preparing ESPD Requests, selecting criteria, and evaluating responses | content | Procurement policy officer |
 | for-economic-operators.md | For Economic Operators | Guidance for suppliers on completing the ESPD Response, providing evidence, and handling multi-lot bids | content | Procurement policy officer |
-| espd-parts-and-criteria.md | ESPD Parts and Criteria | Overview of the ESPD's five parts (procedure info, exclusion, selection, reduction, conclusion) and how criteria map to them | content | Procurement policy officer |
+| espd-parts.md | ESPD Parts | Overview of the ESPD's five parts (procedure info, exclusion, selection, reduction, conclusion) and how criteria map to them | content | Procurement policy officer |
 | using-espd-service.md | Using the ESPD Service | How to access and use the ESPD Service reference implementation for creating and managing ESPDs | content | Procurement policy officer |
 | reference-implementation-guide.md | Reference Implementation Guide | Placeholder for the ESPD Service reference implementation overview, linking to live deployment and documentation authored in espd-service-sandbox | content | All |
 
@@ -109,38 +109,38 @@ ESPD-EDM Documentation
 
 | Page | Title | Scope | Type | Persona(s) |
 |------|-------|-------|------|------------|
-| index.md | Technical Implementation | Landing page linking to implementation-oriented content for developers | navigation | Member-state developer, Commercial ESPD vendor |
-| getting-started.md | Getting Started | Quick-start guide covering the distribution package contents, repository structure, and first steps for implementers | content | Member-state developer, Commercial ESPD vendor |
-| document-model-ubl.md | Document Model (UBL) | Explains the UBL 2.4 foundation, QualificationApplicationRequest and QualificationApplicationResponse schemas, and how ESPD-EDM extends UBL | content | Member-state developer, Commercial ESPD vendor |
-| common-concepts.md | Common Concepts | Shared technical patterns: identifiers, party structures, document references, additional document references, and Schematron validation approach | content | Member-state developer, Commercial ESPD vendor |
-| espd-request.md | ESPD Request | Technical guide to the ESPD Request document: business requirements, XSD schema overview, cardinality constraints, root elements, contracting party, service provider, and procurement project | content | Member-state developer, Commercial ESPD vendor |
-| espd-response.md | ESPD Response | Technical guide to the ESPD Response document: business requirements, XSD schema overview, cardinality constraints, EO party, criterion responses, evidence, and XML examples | content | Member-state developer, Commercial ESPD vendor |
-| lots-management.md | Lots Management | Detailed treatment of lot management in both Request and Response, eForms alignment, and multi-lot response patterns | content | Member-state developer, Commercial ESPD vendor |
+| index.md | Technical Implementation | Landing page linking to implementation-oriented content for developers | navigation | Member State developer, Commercial ESPD vendor |
+| getting-started.md | Getting Started | Quick-start guide covering the distribution package contents, repository structure, and first steps for implementers | content | Member State developer, Commercial ESPD vendor |
+| document-model-ubl.md | Document Model (UBL) | Explains the UBL 2.4 foundation, QualificationApplicationRequest and QualificationApplicationResponse schemas, and how ESPD-EDM extends UBL | content | Member State developer, Commercial ESPD vendor |
+| common-concepts.md | Common Concepts | Shared technical patterns: identifiers, party structures, document references, additional document references, and Schematron validation approach | content | Member State developer, Commercial ESPD vendor |
+| espd-request.md | ESPD Request | Technical guide to the ESPD Request document: business requirements, XSD schema overview, cardinality constraints, root elements, contracting party, service provider, and procurement project | content | Member State developer, Commercial ESPD vendor |
+| espd-response.md | ESPD Response | Technical guide to the ESPD Response document: business requirements, XSD schema overview, cardinality constraints, EO party, criterion responses, evidence, and XML examples | content | Member State developer, Commercial ESPD vendor |
+| lots-management.md | Lots Management | Detailed treatment of lot management in both Request and Response, eForms alignment, and multi-lot response patterns | content | Member State developer, Commercial ESPD vendor |
 
 ## Section 4: Criteria
 
 | Page | Title | Scope | Type | Persona(s) |
 |------|-------|-------|------|------------|
-| index.md | Criteria | Landing page linking to all criteria-related documentation | navigation | Member-state developer, Commercial ESPD vendor |
-| how-criteria-work.md | How Criteria Work | Explains the criterion–property–response chain, property group types, requirement/question distinction, and how responses link to criterion properties | content | Member-state developer, Commercial ESPD vendor |
-| criterion-data-model-json.md | Criterion Data Model (JSON) | Documents the `espd-edm.json` structure, its schema, and how implementers should consume and render criterion definitions (replaces deprecated Excel format) | content | Member-state developer, Commercial ESPD vendor |
-| exclusion-grounds.md | Exclusion Grounds | Covers all exclusion criteria categories (criminal convictions, taxes, environmental/social/labour law, etc.) with data structures and response patterns | content | Member-state developer, Commercial ESPD vendor |
-| selection-criteria.md | Selection Criteria | Covers selection criteria categories (suitability, economic/financial standing, technical/professional ability) with data structures and response patterns | content | Member-state developer, Commercial ESPD vendor |
-| validation-conformance.md | Validation and Conformance | Schematron rules, CVA constraints, and conformance testing for criterion-related content in ESPD instances | content | Member-state developer, Commercial ESPD vendor, Technical support engineer |
-| reference-data.md | Reference Data | Code lists used by criteria (exclusion ground codes, selection criterion codes, response data types, property group types) and their maintenance | content | Member-state developer, Commercial ESPD vendor |
-| distribution-tooling.md | Distribution and Tooling | The distribution package criterion artefacts, tooling for generating criterion structures, and integration guidance | content | Member-state developer, Commercial ESPD vendor |
+| index.md | Criteria | Landing page linking to all criteria-related documentation | navigation | Member State developer, Commercial ESPD vendor |
+| how-criteria-work.md | How Criteria Work | Explains the criterion–property–response chain, property group types, requirement/question distinction, and how responses link to criterion properties | content | Member State developer, Commercial ESPD vendor |
+| criterion-data-model-json.md | Criterion Data Model (JSON) | Documents the `espd-edm.json` structure, its schema, and how implementers should consume and render criterion definitions (replaces deprecated Excel format) | content | Member State developer, Commercial ESPD vendor |
+| exclusion-grounds.md | Exclusion Grounds | Covers all exclusion criteria categories (criminal convictions, taxes, environmental/social/labour law, etc.) with data structures and response patterns | content | Member State developer, Commercial ESPD vendor |
+| selection-criteria.md | Selection Criteria | Covers selection criteria categories (suitability, economic/financial standing, technical/professional ability) with data structures and response patterns | content | Member State developer, Commercial ESPD vendor |
+| validation-conformance.md | Validation and Conformance | Schematron rules, CVA constraints, and conformance testing for criterion-related content in ESPD instances | content | Member State developer, Commercial ESPD vendor, Technical support engineer |
+| reference-data.md | Reference Data | Code lists used by criteria (exclusion ground codes, selection criterion codes, response data types, property group types) and their maintenance | content | Member State developer, Commercial ESPD vendor |
+| distribution-tooling.md | Distribution and Tooling | The distribution package criterion artefacts, tooling for generating criterion structures, and integration guidance | content | Member State developer, Commercial ESPD vendor |
 
 ## Section 5: Model Reference
 
 | Page | Title | Scope | Type | Persona(s) |
 |------|-------|-------|------|------------|
-| index.md | Model Reference | Landing page linking to detailed data model reference material | navigation | Member-state developer, Commercial ESPD vendor, Technical support engineer |
-| conceptual-model.md | Conceptual Model | The ESPD Conceptual Model (from EA), entity relationships, and how the conceptual model maps to the UBL implementation | content | Member-state developer, Commercial ESPD vendor |
-| request-model-reference.md | Request Model Reference | Detailed element-by-element reference tables for the ESPD Request document (cardinalities, data types, business rules per element) | content | Member-state developer, Commercial ESPD vendor, Technical support engineer |
-| response-model-reference.md | Response Model Reference | Detailed element-by-element reference tables for the ESPD Response document (cardinalities, data types, business rules per element) | content | Member-state developer, Commercial ESPD vendor, Technical support engineer |
-| criteria-catalogue.md | Criteria Catalogue | Complete catalogue of all criterion definitions with their property trees, drawn from espd-edm.json | content | Member-state developer, Commercial ESPD vendor |
-| code-lists.md | Code Lists | Full reference for all ESPD code lists (genericode files), their values, and usage contexts | content | Member-state developer, Commercial ESPD vendor, Technical support engineer |
-| business-rules.md | Business Rules | Complete list of Schematron business rules, their scope, severity, and the elements they constrain | content | Member-state developer, Commercial ESPD vendor, Technical support engineer |
+| index.md | Model Reference | Landing page linking to detailed data model reference material | navigation | Member State developer, Commercial ESPD vendor, Technical support engineer |
+| conceptual-model.md | Conceptual Model | The ESPD Conceptual Model (from EA), entity relationships, and how the conceptual model maps to the UBL implementation | content | Member State developer, Commercial ESPD vendor |
+| request-model-reference.md | Request Model Reference | Detailed element-by-element reference tables for the ESPD Request document (cardinalities, data types, business rules per element) | content | Member State developer, Commercial ESPD vendor, Technical support engineer |
+| response-model-reference.md | Response Model Reference | Detailed element-by-element reference tables for the ESPD Response document (cardinalities, data types, business rules per element) | content | Member State developer, Commercial ESPD vendor, Technical support engineer |
+| criteria-catalogue.md | Criteria Catalogue | Complete catalogue of all criterion definitions with their property trees, drawn from espd-edm.json | content | Member State developer, Commercial ESPD vendor |
+| code-lists.md | Code Lists | Full reference for all ESPD code lists (genericode files), their values, and usage contexts | content | Member State developer, Commercial ESPD vendor, Technical support engineer |
+| business-rules.md | Business Rules | Complete list of Schematron business rules, their scope, severity, and the elements they constrain | content | Member State developer, Commercial ESPD vendor, Technical support engineer |
 
 ## Section 6: Releases
 
@@ -148,7 +148,7 @@ ESPD-EDM Documentation
 |------|-------|-------|------|------------|
 | index.md | Releases | Landing page linking to release documentation and downloads | navigation | All |
 | current-release-v5.md | Current Release (v5) | Release notes for ESPD-EDM v5.x: what changed, new features, known issues | content | All |
-| migration-breaking-changes.md | Migration and Breaking Changes | Step-by-step migration guidance from v4 to v5, breaking changes, and compatibility notes | content | Member-state developer, Commercial ESPD vendor, Technical support engineer |
+| migration-breaking-changes.md | Migration and Breaking Changes | Step-by-step migration guidance from v4 to v5, breaking changes, and compatibility notes | content | Member State developer, Commercial ESPD vendor, Technical support engineer |
 | previous-versions-downloads.md | Previous Versions and Downloads | Links to v4.x and earlier documentation snapshots, distribution packages, and archived artefacts | content | All |
 
 ## Section 7: Further Information
