@@ -191,12 +191,12 @@
 
 ---
 
-### Section 7: Reference
+### Section 7: Further Information
 
 #### index.md
 - **Priority**: Low
 - **Persona**: All
-- **Scope**: Navigation landing page for the Reference section. Brief paragraph explaining that this section provides supplementary look-up material: glossary, standards references, related systems, and download links. Links to all sub-pages.
+- **Scope**: Navigation landing page for the Further Information section. Brief paragraph explaining that this section provides supplementary look-up material: glossary, standards references, related systems, and download links. Links to all sub-pages.
 - **Partial Sources**: None
 - **Notes**: No existing page serves as a reference section landing. Entirely new content (brief paragraph + navigation links).
 

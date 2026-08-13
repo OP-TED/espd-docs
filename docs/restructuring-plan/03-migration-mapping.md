@@ -59,13 +59,13 @@
 | 10 | pages/tech_validation.adoc | split | Criteria, Technical Implementation | validation-conformance.md, common-concepts.md | 250 lines; criteria-specific validation (CVA constraints) → Criteria validation-conformance.md; general Schematron approach → Tech Impl common-concepts.md | ⚠️ images (Validation_Process.jpg, ESPD_Schematron_life-cycle.jpg, Architecture_codelist_validation.jpg, Architecture_non-codelist_validation.jpg, Execution_files.jpg, Execution_validation_process_codelists.jpg, CodeList_Validation_Execution_files.jpg, SCH_file_example.jpg, CVA_example.jpg), demo site xrefs |
 | 11 | pages/tech_codelist.adoc | merge | Model Reference | code-lists.md | 701 lines; merge with bus_codelist.adoc and tech_codelist_examples.adoc into unified code lists reference | ⚠️ images (Elements_metadata_of_ESPD_codelist.jpg, Code_attributes.jpg, Identifier_attributes.jpg, Values_schemeID_Party_Identifiers.jpg, Codelist_business_rules.jpg, Non-codelist_business_rules.jpg, eo-role-type.jpg) |
 | 12 | pages/tech_busrules.adoc | merge | Model Reference | business-rules.md | 75 lines; merge with tech_rules_reference.adoc into Model Reference business-rules.md | — |
-| 13 | pages/tech_glossary.adoc | move-as-is | Reference | glossary.md | 145 lines; move to Reference section with minimal editing | — |
+| 13 | pages/tech_glossary.adoc | move-as-is | Further Information | glossary.md | 145 lines; move to Further Information section with minimal editing | — |
 | 14 | pages/bus_codelist.adoc | merge | Model Reference | code-lists.md | 56 lines; merge with tech_codelist.adoc and tech_codelist_examples.adoc into unified code lists reference | — |
 | 15 | pages/tech_br_espd_profile.adoc | TBD | Model Reference | business-rules.md | 2740 lines — very large. Content is BII41 profile rules. Decision needed: how much to retain vs. remove (see [TBD Items](#tbd-items)). If retained, becomes sub-content or linked appendix within business-rules.md. | ⚠️ images (bis1–5.png) |
 | 16 | pages/tech_br_request_reqs.adoc | move-as-is | Model Reference | request-model-reference.md | 148 lines; move as requirements sub-section within request model reference page | — |
 | 17 | pages/tech_br_response_reqs.adoc | move-as-is | Model Reference | response-model-reference.md | 135 lines; move as requirements sub-section within response model reference page | — |
 | 18 | pages/tech_codelist_examples.adoc | merge | Model Reference | code-lists.md | 394 lines of XML examples; merge into code-lists.md as examples sub-section | — |
-| 19 | pages/tech_external_resources.adoc | move-as-is | Reference | related-systems.md | 14 lines; move to Reference section as starting content for related-systems.md | — |
+| 19 | pages/tech_external_resources.adoc | move-as-is | Further Information | related-systems.md | 14 lines; move to Further Information section as starting content for related-systems.md | — |
 
 ---
 

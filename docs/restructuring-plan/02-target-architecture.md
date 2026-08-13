@@ -14,7 +14,7 @@
 | Member-state developer | Technical Implementation, Criteria, Model Reference | Builds ESPD services integrated into national e-procurement platforms |
 | Commercial ESPD vendor | Technical Implementation, Criteria, Model Reference | Develops commercial ESPD software products for multiple buyers/operators |
 | Procurement policy officer | Introduction, Business Guide | Needs to understand the ESPD in the procurement lifecycle without technical depth |
-| Technical support engineer | Model Reference, Reference, Releases | Troubleshoots ESPD implementations, validates instances, checks version changes |
+| Technical support engineer | Model Reference, Further Information, Releases | Troubleshoots ESPD implementations, validates instances, checks version changes |
 
 ---
 
@@ -88,11 +88,11 @@
 | migration-breaking-changes.md | Migration and Breaking Changes | Step-by-step migration guidance from v4 to v5, breaking changes, and compatibility notes | content | Member-state developer, Commercial ESPD vendor, Technical support engineer |
 | previous-versions-downloads.md | Previous Versions and Downloads | Links to v4.x and earlier documentation snapshots, distribution packages, and archived artefacts | content | All |
 
-## Section 7: Reference
+## Section 7: Further Information
 
 | Page | Title | Scope | Type | Persona(s) |
 |------|-------|-------|------|------------|
-| index.md | Reference | Landing page linking to look-up and supplementary reference material | navigation | All |
+| index.md | Further Information | Landing page linking to look-up and supplementary reference material | navigation | All |
 | glossary.md | Glossary | Definitions of key terms used throughout the documentation (ESPD, UBL, Schematron, EDM, eForms, etc.) | content | All |
 | standards-specifications.md | Standards and Specifications | Links to and summaries of referenced standards: UBL 2.4, genericode, ISO Schematron, EU Directives, eForms | content | All |
 | related-systems.md | Related Systems | Overview of related EU systems (TED, eForms, e-Certis, BRIS) and their interaction with ESPD | content | Procurement policy officer, Technical support engineer |
