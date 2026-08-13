@@ -1,5 +1,68 @@
 # Target Architecture
 
+## Page Hierarchy Tree
+
+```
+ESPD-EDM Documentation
+├── 1. Introduction/
+│   ├── index.md                      [landing]
+│   ├── what-is-espd.md
+│   ├── procurement-process.md
+│   ├── request-response-concepts.md
+│   ├── actors-and-roles.md
+│   ├── lots-overview.md
+│   └── legal-framework.md
+│
+├── 2. Business Guide/
+│   ├── index.md                      [landing]
+│   ├── for-contracting-authorities.md
+│   ├── for-economic-operators.md
+│   ├── espd-parts-and-criteria.md
+│   ├── using-espd-service.md
+│   └── reference-implementation-guide.md  [placeholder]
+│
+├── 3. Technical Implementation/
+│   ├── index.md                      [landing]
+│   ├── getting-started.md
+│   ├── document-model-ubl.md
+│   ├── common-concepts.md
+│   ├── espd-request.md
+│   ├── espd-response.md
+│   └── lots-management.md
+│
+├── 4. Criteria/
+│   ├── index.md                      [landing]
+│   ├── how-criteria-work.md
+│   ├── criterion-data-model-json.md
+│   ├── exclusion-grounds.md
+│   ├── selection-criteria.md
+│   ├── validation-conformance.md
+│   ├── reference-data.md
+│   └── distribution-tooling.md
+│
+├── 5. Model Reference/
+│   ├── index.md                      [landing]
+│   ├── conceptual-model.md
+│   ├── request-model-reference.md
+│   ├── response-model-reference.md
+│   ├── criteria-catalogue.md
+│   ├── code-lists.md
+│   └── business-rules.md
+│
+├── 6. Releases/
+│   ├── index.md                      [landing]
+│   ├── current-release-v5.md
+│   ├── migration-breaking-changes.md
+│   └── previous-versions-downloads.md
+│
+└── 7. Further Information/
+    ├── index.md                      [landing]
+    ├── glossary.md
+    ├── standards-specifications.md
+    ├── related-systems.md
+    └── repositories-downloads.md
+```
+
 ## Design Principles
 
 - **Goal-oriented organisation** — Content is structured around what users need to accomplish (understand ESPD, implement a service, look up a data model element) rather than around internal repository modules or document artefacts.

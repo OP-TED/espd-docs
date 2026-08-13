@@ -1,5 +1,45 @@
 # Current-State Inventory
 
+## Page Hierarchy Tree
+
+```
+espd-docs/modules/
+├── ROOT/pages/
+│   ├── index.adoc                 ← Home (ESPD Exchange Data Model)
+│   ├── release_notes.adoc         ← Release Notes
+│   ├── demo.adoc                  ← ESPD Demo Development Tools
+│   └── home.adoc                  ← ESPD Version 4.0.x (not in nav)
+│
+├── business/pages/
+│   ├── index.adoc                 ← Business users landing
+│   ├── implementation.adoc        ← An ESPD Implementation
+│   ├── using.adoc                 ← How to use the ESPD
+│   ├── business_info.adoc         ← The European Single Procurement Document (not in nav)
+│   ├── espd_form.adoc             ← Filling in the ESPD online form (not in nav)
+│   └── _creating.adoc             ← [orphaned partial]
+│
+└── technical/pages/
+    ├── index.adoc                 ← Technical Implementers landing
+    ├── tech_rules_reference.adoc  ← Business Rules Reference
+    ├── tech_dist_pack.adoc        ← The Distribution Package
+    ├── tech_architecture.adoc     ← Architecture & Procedure Steps
+    ├── tech_request.adoc          ← The ESPD Request (731 lines)
+    ├── tech_response.adoc         ← The ESPD Response (1450 lines)
+    ├── tech_common_aspects_for_criteria.adoc ← Common Aspects for Criteria (867 lines)
+    ├── tech_exclusion_criteria.adoc ← Exclusion grounds (430 lines)
+    ├── tech_selection_criteria.adoc ← Selection criteria (973 lines)
+    ├── tech_validation.adoc       ← Validation
+    ├── tech_codelist.adoc         ← Code List Catalogue (701 lines)
+    ├── tech_busrules.adoc         ← Business Rules
+    ├── tech_glossary.adoc         ← Glossary
+    ├── bus_codelist.adoc          ← Codelists Overview
+    ├── tech_br_espd_profile.adoc  ← BII41 Profile (2740 lines)
+    ├── tech_br_request_reqs.adoc  ← Contracting Body Requirements
+    ├── tech_br_response_reqs.adoc ← Economic Operator Requirements
+    ├── tech_codelist_examples.adoc ← XML Code List Examples
+    └── tech_external_resources.adoc ← External Resources
+```
+
 ## Summary
 
 - Total page files: 29
