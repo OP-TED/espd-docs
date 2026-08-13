@@ -32,7 +32,7 @@
 | # | Source File | Disposition | Target Section | Target Page(s) | Notes | Assets |
 |---|------------|-------------|----------------|----------------|-------|--------|
 | 1 | pages/index.adoc | rewrite | Business Guide | index.adoc | Rewrite as Business Guide navigation landing; current tile layout replaced by structured links to new Business Guide sub-pages | — |
-| 2 | pages/business_info.adoc | split | Introduction, Business Guide | what-is-espd.adoc, procurement-process.adoc, for-contracting-authorities.adoc, for-economic-operators.adoc | 240 lines covering ESPD overview, legal framework, process diagrams, and buyer/supplier guidance. Intro content → Introduction section; business guidance → Business Guide. See [Split Details](#businessinfoadoc--multiple-pages). | ⚠️ images (espd_bus_buyer.png, espd_bus_supplier.png), kroki diagrams |
+| 2 | pages/business_info.adoc | split | Introduction, Business Guide | what-is-espd.adoc, procurement-process.adoc, for-contracting-authorities.adoc, for-economic-operators.adoc | 240 lines covering ESPD overview, legal framework, process diagrams, and buyer/supplier guidance. Intro content → Introduction section; business guidance → Business Guide. See [Split Details](#split-business_info). | ⚠️ images (espd_bus_buyer.png, espd_bus_supplier.png), kroki diagrams |
 | 3 | pages/implementation.adoc | merge | Business Guide | using-espd-service.adoc | Merge with using.adoc; rewrite to reference new ESPD Service Reference Implementation instead of deprecated demo | — |
 | 4 | pages/using.adoc | merge | Business Guide | using-espd-service.adoc | Merge with implementation.adoc; combined content describes how to access and use an ESPD service | — |
 | 5 | pages/espd_form.adoc | rewrite | Business Guide | for-contracting-authorities.adoc, for-economic-operators.adoc | 157 lines of form screenshots; rewrite as Business Guide example content (not specification). Screenshots may be replaced by reference implementation screenshots. | ⚠️ images (form/of1.png–of29.png, form/testbed.png — 30 images) |
@@ -50,10 +50,10 @@
 | 1 | pages/index.adoc | rewrite | Technical Implementation | index.adoc | Rewrite as Technical Implementation navigation landing; current tile layout links to monolithic pages that will be split | — |
 | 2 | pages/tech_rules_reference.adoc | merge | Model Reference | business-rules.adoc | Merge with tech_busrules.adoc and tech_br_espd_profile.adoc into unified business rules reference | — |
 | 3 | pages/tech_dist_pack.adoc | rewrite | Criteria | distribution-tooling.adoc | Rewrite to focus on criterion artefacts and tooling; update all references from Excel-based workflow to JSON-based workflow (espd-edm.json). See [Rewrite Rationale](#rewrite-rationale). | — |
-| 4 | pages/tech_architecture.adoc | split | Technical Implementation, Introduction | getting-started.adoc, procurement-process.adoc | Architecture overview → Tech Impl getting-started.adoc; procurement procedure steps → Introduction procurement-process.adoc. See [Split Details](#tech_architectureadoc--2-pages). | ⚠️ images (ESPD_Architecture_Overview.jpg, ESPD_Buyer_*.jpg, ESPD_EO_Response.jpg) |
-| 5 | pages/tech_request.adoc | split | Technical Implementation, Model Reference | espd-request.adoc, lots-management.adoc, request-model-reference.adoc | 731 lines split per architecture rationale. See [Split Details](#tech_requestadoc--3-pages). | ⚠️ images (Qualification_Application_Request-2.3.jpg, Qualification_ApplicationRequest_UML_diagram.jpg, Lot_ID_schema.jpg, Overview_new_lot_management_approach.jpg, Procurer_identification_mockup.jpg, Publications_mock-up.jpg, cacContractingParty_*.jpg, cacServiceProvider*.jpg) |
-| 6 | pages/tech_response.adoc | split | Technical Implementation, Model Reference, Criteria | espd-response.adoc, lots-management.adoc, response-model-reference.adoc, how-criteria-work.adoc | 1450 lines split per architecture rationale. See [Split Details](#tech_responseadoc--4-pages). | ⚠️ images (Qualification_Application_Response*.jpg, Economic_Operator_overview.jpg, EO_*.jpg, Party__economic party.jpg, cacEvidence*.jpg, cacTendering*.jpg, cacResponse_Value*.jpg, Reference_ESPD_Request.jpg, URI_Reference_ESPD_Request.jpg) |
-| 7 | pages/tech_common_aspects_for_criteria.adoc | split | Criteria, Model Reference | how-criteria-work.adoc, criteria-catalogue.adoc | 867 lines; guide content (criterion structure, property groups, response patterns) → Criteria how-criteria-work.adoc; reference tables (criterion classification, data structures) → Model Reference criteria-catalogue.adoc. See [Split Details](#tech_common_aspects_for_criteriaadoc--2-pages). | ⚠️ images (Criterion_UML_diagram.jpg, Initial_Question_data_structure.jpg, Initial_question_Mockup.jpg, ONTRUE_ONFALSE_choice_control.jpg, Case1–4*.jpg, Use_CAPTION.jpg, Use_code_list_BooleanGUIControlType.jpg), demo site xrefs |
+| 4 | pages/tech_architecture.adoc | split | Technical Implementation, Introduction | getting-started.adoc, procurement-process.adoc | Architecture overview → Tech Impl getting-started.adoc; procurement procedure steps → Introduction procurement-process.adoc. See [Split Details](#split-tech_architecture). | ⚠️ images (ESPD_Architecture_Overview.jpg, ESPD_Buyer_*.jpg, ESPD_EO_Response.jpg) |
+| 5 | pages/tech_request.adoc | split | Technical Implementation, Model Reference | espd-request.adoc, lots-management.adoc, request-model-reference.adoc | 731 lines split per architecture rationale. See [Split Details](#split-tech_request). | ⚠️ images (Qualification_Application_Request-2.3.jpg, Qualification_ApplicationRequest_UML_diagram.jpg, Lot_ID_schema.jpg, Overview_new_lot_management_approach.jpg, Procurer_identification_mockup.jpg, Publications_mock-up.jpg, cacContractingParty_*.jpg, cacServiceProvider*.jpg) |
+| 6 | pages/tech_response.adoc | split | Technical Implementation, Model Reference, Criteria | espd-response.adoc, lots-management.adoc, response-model-reference.adoc, how-criteria-work.adoc | 1450 lines split per architecture rationale. See [Split Details](#split-tech_response). | ⚠️ images (Qualification_Application_Response*.jpg, Economic_Operator_overview.jpg, EO_*.jpg, Party__economic party.jpg, cacEvidence*.jpg, cacTendering*.jpg, cacResponse_Value*.jpg, Reference_ESPD_Request.jpg, URI_Reference_ESPD_Request.jpg) |
+| 7 | pages/tech_common_aspects_for_criteria.adoc | split | Criteria, Model Reference | how-criteria-work.adoc, criteria-catalogue.adoc | 867 lines; guide content (criterion structure, property groups, response patterns) → Criteria how-criteria-work.adoc; reference tables (criterion classification, data structures) → Model Reference criteria-catalogue.adoc. See [Split Details](#split-tech_common_aspects_for_criteria). | ⚠️ images (Criterion_UML_diagram.jpg, Initial_Question_data_structure.jpg, Initial_question_Mockup.jpg, ONTRUE_ONFALSE_choice_control.jpg, Case1–4*.jpg, Use_CAPTION.jpg, Use_code_list_BooleanGUIControlType.jpg), demo site xrefs |
 | 8 | pages/tech_exclusion_criteria.adoc | move-as-is | Criteria | exclusion-grounds.adoc | 430 lines; move to Criteria section with path/xref updates. Update demo site references to point to reference implementation. | ⚠️ images (Convictions_data_structure.jpg, Payment_Taxes*.jpg, Environmental_Law*.jpg, Bankruptcy*.jpg, Professional_misconduct*.jpg, Conflict_interest*.jpg, Early_termination*.jpg, Misrepresentation*.jpg, Purely_national*.jpg, Contributions*.jpg), demo site xrefs |
 | 9 | pages/tech_selection_criteria.adoc | move-as-is | Criteria | selection-criteria.adoc | 973 lines; move to Criteria section with path/xref updates. Contains extensive demo site references (20+ occurrences) requiring update. | ⚠️ images (Selection_criteria_classification.jpg, SC_Suitability*.jpg, Average_yearly_turnover*.jpg, Specific_average_turnover*.jpg, Financial_ratio*.jpg, Risk_indemnity*.jpg, Other_economic*.jpg, References_*.jpg, Abilities_*.jpg, Subcontracting*.jpg, Samples_certificates*.jpg, Quality_Assurance*.jpg, Reduction_candidates*.jpg, EO-Specific-year-turn.jpg, Spec-aver-year-turn*.jpg, General_*.jpg, Suitability*.jpg, Sheltered_workshop*.jpg, Special_requirements*.jpg, Group_EO*.jpg, Economic_operator_indemnity*.jpg), demo site xrefs |
 | 10 | pages/tech_validation.adoc | split | Criteria, Technical Implementation | validation-conformance.adoc, common-concepts.adoc | 250 lines; criteria-specific validation (CVA constraints) → Criteria validation-conformance.adoc; general Schematron approach → Tech Impl common-concepts.adoc | ⚠️ images (Validation_Process.jpg, ESPD_Schematron_life-cycle.jpg, Architecture_codelist_validation.jpg, Architecture_non-codelist_validation.jpg, Execution_files.jpg, Execution_validation_process_codelists.jpg, CodeList_Validation_Execution_files.jpg, SCH_file_example.jpg, CVA_example.jpg), demo site xrefs |
@@ -71,7 +71,7 @@
 
 ## Split Details
 
-### tech_request.adoc → 3 pages
+### Split: tech_request
 
 Source: [Inventory technical #5](./01-current-state-inventory.md) — 731 lines
 
@@ -81,7 +81,7 @@ Source: [Inventory technical #5](./01-current-state-inventory.md) — 731 lines
 | 187–244 (Lot Management) | Technical Implementation | lots-management.adoc | Lot management is a cross-cutting concern shared between Request and Response. Extracting it avoids duplication. Merges with Response lot content (lines 1440–1451 of tech_response.adoc). |
 | 45–185 (Root Elements detailed tables) + 392–589 (Contracting Body element tables) + 591–731 (Service Provider element tables) | Model Reference | request-model-reference.adoc | Granular element-by-element reference tables (cardinalities, data types, business rules per element). Separating them keeps the implementation guide readable while providing comprehensive look-up. Also receives content from tech_br_request_reqs.adoc (148 lines). |
 
-### tech_response.adoc → 4 pages
+### Split: tech_response
 
 Source: [Inventory technical #9](./01-current-state-inventory.md) — 1450 lines
 
@@ -92,7 +92,7 @@ Source: [Inventory technical #9](./01-current-state-inventory.md) — 1450 lines
 | 1001–1083 (Answering QUESTIONs, Response XSD Schema for TenderingCriterionResponse, Mock-ups and Data Structures) | Criteria | how-criteria-work.adoc | The criterion–property–response linking mechanism is conceptual criteria content relevant across both Request and Response. Placing it in the Criteria section gives it a single home. |
 | 1440–1451 (Lot Management in the ESPD Response) | Technical Implementation | lots-management.adoc | Merged with Request lot management content (tech_request.adoc lines 187–244) into a unified lots page. |
 
-### tech_common_aspects_for_criteria.adoc → 2 pages
+### Split: tech_common_aspects_for_criteria
 
 Source: [Inventory technical #6](./01-current-state-inventory.md) — 867 lines
 
@@ -101,7 +101,7 @@ Source: [Inventory technical #6](./01-current-state-inventory.md) — 867 lines
 | 1–500 (Criterion structure explanation, Property groups, ONTRUE/ONFALSE logic, GUI control types, Response patterns, Initial questions) | Criteria | how-criteria-work.adoc | Guide content explaining how the criterion–property–response chain works, property group types (ONTRUE, ONFALSE), requirement vs. question distinction, and response linking patterns. |
 | 501–867 (Criterion classification tables, data structure diagrams, reference tables, XML examples) | Model Reference | criteria-catalogue.adoc | Reference material: complete criterion taxonomy, data structure definitions, and example XML. Provides the look-up resource for criterion definitions. |
 
-### business_info.adoc → multiple pages
+### Split: business_info
 
 Source: [Inventory business #4](./01-current-state-inventory.md) — 240 lines
 
@@ -112,7 +112,7 @@ Source: [Inventory business #4](./01-current-state-inventory.md) — 240 lines
 | 80–160 (Buyer process, ESPD from CA perspective) | Business Guide | for-contracting-authorities.adoc | Guidance for buyers on preparing ESPD Requests, selecting criteria. Includes process diagram (espd_bus_buyer.png). |
 | 160–240 (Supplier process, ESPD from EO perspective) | Business Guide | for-economic-operators.adoc | Guidance for suppliers on completing the ESPD Response, providing evidence. Includes process diagram (espd_bus_supplier.png). |
 
-### tech_architecture.adoc → 2 pages
+### Split: tech_architecture
 
 Source: [Inventory technical #4](./01-current-state-inventory.md) — 87 lines
 
@@ -121,7 +121,7 @@ Source: [Inventory technical #4](./01-current-state-inventory.md) — 87 lines
 | 1–45 (Architecture overview, distribution package context, repository structure) | Technical Implementation | getting-started.adoc | Quick-start context for implementers: what the ESPD-EDM architecture looks like, where to find artefacts. |
 | 46–87 (Procurement Procedure Steps diagram and explanation) | Introduction | procurement-process.adoc | The step-by-step procurement procedure flow (Plan → Request → Response) is conceptual content belonging in Introduction, not Technical Implementation. Complements content from business_info.adoc. |
 
-### tech_validation.adoc → 2 pages
+### Split: tech_validation
 
 Source: [Inventory technical #10](./01-current-state-inventory.md) — 250 lines
 
