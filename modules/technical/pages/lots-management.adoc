@@ -1,0 +1,98 @@
+:doctitle: Lots Management
+:doccode: espd-tech-prod-034
+:author: ESPD Team
+:docdate: July 2026
+
+== Lots Management in ESPD
+
+The ESPD includes a specific approach to lot management, aligned with eForms. This page describes the unified lot handling logic across both ESPD Request and ESPD Response documents.
+
+== Overview
+
+In ESPD-EDM v5.0.0, the lot management follows this logic:
+
+* There is *one ESPD Request* per procurement procedure, containing the exclusion grounds and selection criteria.
+* Exclusion grounds are *general* — they apply to all lots in the procedure.
+* Selection criteria are *lot-specific* — different lots may have different selection criteria. Each selection criterion includes a reference to the lot(s) it applies to via `cac:ProcurementProjectLotReference`.
+* On the Economic Operator's side, there are *as many ESPD Responses as lots* (or groups of lots) the EO tenders for.
+
+image::https://kroki.io/pikchr/svg/eNqtVMtu2zAQvOsrFooPsdMopBTGSIBcGqS9pAjQXnwrKImW2TCkS1KxP7-kXpZsWcihJ0Mecmc4uzszDY-AopjLQHDJdjyvv0kQfH1d_cYPoD6oAC4_uOGpYMEKPUCFRAau4PIaRQn5giJM5oFlewshhmtY_XiBn-xvyYwNIVUih0wJpSEVNHsDausKQUC1VrsGQ3tC79OcQK52EvBipmGt1TusENgNk6B5sbEw05WuuNEVPu8zURquJBRalTI3cPnNFaNCgFDW-Ktg6DubhyD-lMYeXgJrbqcUxBGZ1pC0Gn4xwTLrNWSaW6Y5nSSrKlYFnIUVlaMZlD_SU7HdtmwvygIOJ0oL6pj92ba8a9FiSBEvxklIS_LUPAQwUJlDfMxXt_r01Eibyfl3H8saF3XXf_kZJQ00Qn_3v7xZnvEm-ZQ3yai4ZRBc5F6cH9OUF1BLdQMtC_D7aKqt7FvH_NbhyO3cHAoFuJ7SDaO5v3PfDKpD0BA5ALj_N07IOBDH5BOlhkC87NPfDu9kQhlvkNvMztemNQf_6haQriXltgoj993kEToJpCZ1okh2wWO2Sho2kTzozOJ3PmNUxxvy0TbvRdJpDOA2I8OWGLZMw_Nr1Xc_mO73Ruk2E8LvLqi2oNYec3F1SDB_vsuS8cD6B1sEy7c==[ESPD lot management overview,500,130]
+
+_Figure 1. Overview of the lot management approach_
+
+== Lots in the ESPD Request
+
+The ESPD Request includes selection criteria with a reference to the lots they apply to, using the UBL-2.4 element `cac:ProcurementProjectLotReference`:
+
+[source,xml]
+----
+<cac:TenderingCriterion>
+  <cbc:ID>...</cbc:ID>
+  <cbc:CriterionTypeCode>...</cbc:CriterionTypeCode>
+  <!-- ... -->
+  <cac:ProcurementProjectLotReference>
+    <cbc:ID>LOT-0001</cbc:ID>
+  </cac:ProcurementProjectLotReference>
+  <cac:ProcurementProjectLotReference>
+    <cbc:ID>LOT-0002</cbc:ID>
+  </cac:ProcurementProjectLotReference>
+</cac:TenderingCriterion>
+----
+
+*Rules:*
+
+* This element is mandatory for all selection criteria with cardinality `1..n` because different selection criteria can be associated with different procurement lots.
+* This element is not necessary for exclusion grounds because exclusion grounds apply to all lots automatically.
+* Rule scope: BR-LOT-40 (Lots apply only to Selection Criteria; Exclusion Criteria cannot have Lot associated), BR-LOT-41 (All Selection Criteria must have associated LOT).
+
+== Lot Identifiers
+
+This version of the ESPD uses the eForms lot identifier format. Lot identifiers follow the pattern:
+
+image::https://kroki.io/pikchr/svg/eNqNkMFOwzAQRO_5ilFOcHESSITokbQgLigSH2BtjessdezKdSH8PU5KpSonbrO7M29XWxToyGgUUavesSI7K0lB9ZxUPAUt-jhYvA4Ln-Spcyw2791aPp1-dJCdJSc-DwY3z2xSElUpSWAeYho6duY2y6IeI_K5vcqhvPUBW0tqnw3-SyOw6SNK0bDLNi_VCls_ItAHmsOI_MK5BMuxerxr6xY7tjZVdf1w3zapipe0SpRnGi1wbz6y0sd_0M5XL9d_T38CRST2n2WBvHbQLwuieKs=[Lot Identifiers,540,130]
+
+_Figure 2. Lot Identifiers according to eForms schema_
+
+Examples: `LOT-0001`, `LOT-0002`, `GLO-0001` (for groups of lots).
+
+== Lots in the ESPD Response
+
+On the Economic Operator's side:
+
+* If the EO wants to participate in 3 lots, the EO must fill in *3 separate ESPD Responses*.
+* Each ESPD Response indicates which lot it refers to via `cac:ProcurementProjectLotReference`.
+* The EO must respond to *all exclusion grounds* in every response (they apply to all lots).
+* The EO must respond to the *selection criteria applicable to the specific lot*.
+
+*Rule scope:* BR-LOT-10 (The lot the EO tenders for MUST be provided).
+
+== Summary
+
+[cols="1,2,2",options="header"]
+|===
+|Aspect |ESPD Request |ESPD Response
+
+|Number of documents
+|1 per procedure
+|1 per lot (or group of lots) per EO
+
+|Exclusion grounds
+|Apply to all lots (no lot reference needed)
+|Must be answered in every response
+
+|Selection criteria
+|Must reference applicable lot(s) via `cac:ProcurementProjectLotReference`
+|Only criteria for the targeted lot must be answered
+
+|Lot identifier format
+|eForms format: `LOT-0001`, `GLO-0001`
+|Same identifiers as in the Request
+
+|===
+
+== Further information
+
+* For ESPD Request details, see xref:tech_request.adoc[ESPD Request].
+* For ESPD Response details, see xref:tech_response.adoc[ESPD Response].
+
+include::partial$feedback.adoc[]

@@ -1,0 +1,128 @@
+:doctitle: Glossary
+:doccode: espd-tech-prod-012
+:author: ESPD Team
+:docdate: July 2026
+
+// This is a move-as-is of tech_glossary.adoc with minimal updates.
+// Target section: Further Information
+
+[[abies,Aggregate Business Information Entities (ABIEs)]]
+*Aggregate Business Information Entities (ABIEs).* +
+ Root nodes and top-level structures of UBL documents. Children of document ABIEs may be <<bbies>> or <<asbies>>, never ABIEs. All UBL document ABIEs (and only UBL document ABIEs) are defined within individual namespaces specific to each document as both elements and types. (https://docs.oasis-open.org/ubl/os-UBL-2.3/UBL-2.3.html#S-BUSINESS-INFORMATION-ENTITIES)
+
+[[asbies,Association Business Information Entities (ASBIEs)]]
+*Association Business Information Entities (ASBIEs).*  +
+Substructures of a UBL document. Children of ASBIEs may be <<bbies>> or other ASBIEs, never <<abies>>. All UBL ASBIEs (and only UBL ASBIEs) are members as elements of the UBL common aggregate components namespace, denoted in UBL schemas by the cac: prefix. (https://docs.oasis-open.org/ubl/os-UBL-2.3/UBL-2.3.html#S-BUSINESS-INFORMATION-ENTITIES)
+
+[[bbies,Basic Business Information Entities (BBIEs)]]
+*Basic Business Information Entities (BBIEs).*  +
+Leaf nodes of every UBL document structure. These are ordinary data fields such as one would expect to find in any business form, and they are realized in the schemas as individual XML elements at the bottom level of the document tree with simple content representing amounts, codes, quantities, and so on. All UBL BBIE elements (and only UBL BBIE elements) are members of the UBL common basic components namespace, conventionally denoted in UBL schemas by the cbc: prefix. (https://docs.oasis-open.org/ubl/os-UBL-2.3/UBL-2.3.html#S-BUSINESS-INFORMATION-ENTITIES)
+
+[[CodeLists, Code Lists]]
+*Code lists* +
+A code list is an artifact listing the codes relevant to specific terms, grouped by semantic meaning, e.g., a code list for country or language. See xref:tech_codelist.adoc[Code Lists Catalogue].
+
+[[code-list-document,code list document]]
+*code list document.*  +
+A code list document has the root element <gc:CodeList>. It contains metadata describing the code list as a whole, as well as explicit code list data. (http://docs.oasis-open.org/codelist/approved/genericode/oasis-code-list-representation-genericode.html)
+
+[[cva,CVA]]
+*Context/value association (CVA).*  +
+File that specifies the relationship from information items found in different document contexts to one or more external genericode files for each item. (http://docs.oasis-open.org/codelist/ContextValueAssociation/doc/context-value-association.html)
+
+[[Criterion, Criterion]]
+*Criteria*, in the context of the ESPD, either selection or exclusion, are those applied to each supplier on application to tender to validate qualification. Buyers stipulate criteria, and suppliers provide evidence that they comply to them.
+
+[[Components, Components]]
+*Components* prefixed with cac: and cbc::
+
+* cbc: common basic component is a leaf element / data node corresponding to the UBL specification Basic Business Information Entity (BBIE).
+* cac: common aggregate component is one that can contain more cac or cbc elements, corresponding to the UBL specification Aggregate Business Information Entity (ABIE).
+
+[[ecertis,eCertis]]
+*eCertis.*  +
+Information system that helps identify different certificates requested in procurement procedures across the EU. (https://ec.europa.eu/tools/ecertis/#/about)
+
+[[eo,Economic Operator (EO)]]
+*Economic Operator (EO).*  +
+Business or other organisation which supplies goods, works or services within the context of market operations. The term is used in public procurement to cover suppliers, contractors and service providers.
+
+[[eforms,eForms]]
+*eForms.*  +
+EU legislative open standard for publishing public procurement data. Standard forms used by public buyers to publish notices on Tenders Electronic Daily. (https://single-market-economy.ec.europa.eu/single-market/public-procurement/digital-procurement/eforms_en)
+
+[[esco,European Skills, Competence, Qualifications and Occupations (ESCO)]]
+*European Skills, Competence, Qualifications and Occupations (ESCO).*  +
+European Commission project classifying professional occupations and skills relevant for the EU labour market. (https://ec.europa.eu/esco/portal)
+
+[[eu-vocs,EU Vocabularies]]
+*EU Vocabularies.*  +
+Multilingual, multidisciplinary thesaurus covering the activities of the EU. (https://op.europa.eu/en/web/eu-vocabularies)
+
+[[espd,European Single Procurement Document (ESPD)]]
+*European Single Procurement Document (ESPD).*  +
+Self-declaration document intended for preliminary evidence in a public procurement procedure, introduced in Article 59 of Directive 2014/24/EC. (https://github.com/OP-TED/ESPD-EDM)
+
+[[espd-edm,European Single Procurement Document Exchange Data Model (ESPD-EDM)]]
+*European Single Procurement Document Exchange Data Model (ESPD-EDM).*  +
+Data model developed by the European Commission to define the exchange of ESPD documents between procurement stakeholders' systems. (https://github.com/OP-TED/ESPD-EDM)
+
+[[gc,genericode]]
+*genericode.*  +
+Single model and XML format defined by OASIS that can encode a broad range of code list information. (http://docs.oasis-open.org/codelist/approved/genericode/oasis-code-list-representation-genericode.html)
+
+[[ICT_Standards_for_Procurement,ICT Standards for Procurement]]
+The *ICT Standards for Procurement* prescribe the standards for EU interoperable solutions. (https://joinup.ec.europa.eu/collection/ict-standards-procurement)
+
+[[Joinup,Joinup]]
+*The Joinup platform*  +
+The European Commission's one-stop shop for interoperable, open, and free digital government ICT solutions. (https://joinup.ec.europa.eu)
+
+[[Namespace Prefixes, Namespace Prefixes]]
+*Namespace prefixes*  +
+Used in XML to avoid element name conflicts. See the https://www.w3schools.com/XML/xml_namespaces.asp[W3schools definition].
+
+[[oasis,Organization for the Advancement of Structured Information Standards (OASIS)]]
+*Organization for the Advancement of Structured Information Standards (OASIS).*  +
+Standards body offering standardization and de jure approval for reference in international policy and procurement. (https://www.oasis-open.org/org/)
+
+[[ouc,Open User Community (OUC)]]
+*Open User Community (OUC).*  +
+Group of users that participate or work with the ESPD-EDM.
+
+[[op,The Publications Office of the European Union (OP)]]
+*The Publications Office of the European Union (OP).* Interinstitutional office whose task is to publish the publications of the institutions of the European Union. (https://op.europa.eu/en/home)
+
+[[sch,Schematron]]
+*Schematron.*  +
+Rule-based validation language for making assertions about the presence or absence of patterns in XML trees. (https://www.schematron.com/)
+
+[[ted,TED]]
+*Tenders Electronic Daily (TED).*  +
+Online version of the 'Supplement to the Official Journal' of the EU, dedicated to European public procurement. (https://ted.europa.eu/)
+
+[[Testbed, Testbed]]
+*Testbed.* +
+The https://www.itb.ec.europa.eu/espd/upload[Interoperability Testbed] is an online tool for developers of ESPD Services that enables them to validate their XML ESPD Request and Response documents against schematron rules.
+
+[[ubl,UBL (Universal Business Language)]]
+*UBL (Universal Business Language).*  +
+Royalty-free library of standard XML business documents supporting digitization of commercial and logistical processes. ESPD-EDM v5.0.0 uses UBL 2.4. (https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=ubl#overview)
+
+[[uri,Universal Resource Identifier (URI)]]
+*Universal Resource Identifier (URI).*  +
+Syntax to define a way to encapsulate a name in any registered namespace. (https://www.ietf.org/rfc/rfc2396.txt)
+
+[[xml,XML (Extensible Markup Language)]]
+*XML (Extensible Markup Language).*  +
+Simple, flexible text format derived from SGML, playing an important role in the exchange of data on the Web. (https://www.w3.org/XML/)
+
+[[xslt,XSLT (Extensible Stylesheet Language Transformations)]]
+*XSLT (Extensible Stylesheet Language Transformations).*  +
+Language for transforming XML documents into other XML documents or other formats. (https://www.w3.org/TR/xslt-30/)
+
+[[ebXML_CCTS_ISO_TS_15000-5:2005,ebXML CCTS ISO/TS 15000-5:2005]]
+*ISO/TS 15000-5:2005*  +
+Forms the basis for standards development work using UN/CEFACT Core Component Library. Latest version ISO 15000-5:2014. (https://www.iso.org/standard/61433.html)
+
+include::partial$feedback.adoc[]

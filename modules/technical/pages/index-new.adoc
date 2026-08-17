@@ -1,0 +1,72 @@
+:doctitle: Technical Implementation (New)
+:doccode: espd-tech-prod-001-new
+:author: ESPD Team
+:docdate: July 2026
+
+== Technical Implementation
+
+This section provides technical documentation for developers implementing ESPD Services based on the ESPD-EDM v5.0.0 model.
+
+=== Getting Started
+
+* xref:getting-started.adoc[Getting Started] +
+Architecture overview, distribution package contents, repository structure, and first steps for implementers.
+
+=== ESPD Documents
+
+* xref:tech_request.adoc[ESPD Request] +
+Technical guide to the ESPD Request document: schema, cardinality constraints, root elements, contracting party, and service provider.
+
+* xref:tech_response.adoc[ESPD Response] +
+Technical guide to the ESPD Response document: schema, economic operator party, criterion responses, and evidence.
+
+* xref:lots-management.adoc[Lots Management] +
+How lots are handled in both Request and Response, eForms alignment, and multi-lot response patterns.
+
+=== Criteria
+
+* xref:tech_common_aspects_for_criteria.adoc[How Criteria Work] +
+The criterion-property-response chain, property group types (ONTRUE/ONFALSE), and response linking patterns.
+
+* xref:tech_exclusion_criteria.adoc[Exclusion Grounds] +
+All exclusion criteria categories with data structures and response patterns.
+
+* xref:tech_selection_criteria.adoc[Selection Criteria] +
+All selection criteria categories with data structures and response patterns.
+
+=== Validation and Rules
+
+* xref:tech_validation.adoc[Validation] +
+Schematron validation process, execution files, and code list validation architecture.
+
+* xref:tech_rules_reference.adoc[Business Rules Reference] +
+Complete catalogue of Schematron business rules with severity and element constraints.
+
+* xref:tech_busrules.adoc[Business Rules Guide] +
+Overview of validation layers and regulatory basis.
+
+=== Reference
+
+* xref:tech_codelist.adoc[Code Lists Catalogue] +
+All ESPD code lists with metadata, versions, and usage contexts.
+
+* xref:tech_dist_pack.adoc[Distribution Package] +
+Contents and structure of the ESPD-EDM distribution package.
+
+* xref:tech_glossary.adoc[Glossary] +
+Definitions of key technical terms.
+
+* link:{attachmentsdir}/ESPD_CM_html/index.html[Conceptual Model (HTML)]
+
+---
+
+=== Legacy pages (to be removed after review)
+
+The following pages are from the previous structure and will be replaced by the pages above:
+
+* xref:tech_architecture.adoc[Technical Architecture] (old — content moved to Getting Started)
+* xref:tech_br_espd_profile.adoc[BIS 41 ESPD Profile] (old — TBD, may be removed or merged into Business Rules)
+* xref:tech_br_request_reqs.adoc[Request Requirements] (old — to be merged into Request Model Reference)
+* xref:tech_br_response_reqs.adoc[Response Requirements] (old — to be merged into Response Model Reference)
+
+include::partial$feedback.adoc[]
