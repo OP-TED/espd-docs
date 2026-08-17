@@ -1,0 +1,145 @@
+:doctitle: Validation and Conformance
+:doccode: espd-tech-prod-036
+:author: ESPD Team
+:docdate: July 2026
+
+// Split from: tech_validation.adoc (lines 141-250 — criteria-specific validation)
+// Target section: Criteria
+
+== ESPD Validation Steps
+
+Depending on the type of application (ESPD Request or ESPD Response), different types of validations are executed:
+
+image::https://kroki.io/pikchr/svg/eNq9mM9zqkgQx-_8FVNuDroqBQNofFV7YEBPqXpZU7u1h3dBJHFqCfgAo--_35lh-DlDEjBrDimkx-5vf6Z7hL5LwB9AUyGOlN_AMU5xhuMIxM_AS5L4DHAEdvgF7OJLkCp33pEs1tUlVGx9943eBYm3B9bxAkbrp0cXbIOfpyDNRuxLfhzGCdAujmUhXQfPOAzJp7W7dA36KQNnvM8OQLd-v0vAIcAvhwxAcq1kwSWTOfQyQOJyv-cDzgJFQV1C0mMcpUEvJcS5ml9xNfQGv_yhnDExqGeuQg3AFIw11bRm2qSpuB6ZLEZtyTb0vwEfJ34YgOyA_X8b_zkUyqQlu5AQFRJSJmE211RjouzjcwSUfNfotxXbaJP558kFf3sh3nt0k0dgNP4LPcz_PJFbz9hnN-3jMeSXHP0cqoZ6SfeTEREgB7lBa8tdMpBUYxPlnFSXWe3qtRpo6sauRKOvoGM6pAy-gin6kCm6mmleHAOhGhzqQJZCbJqzDKZ5amXpxPsAPOA0S8l-kpBkU8D2FJL_Y00HtO7nPlkSkhXzN2ZW_TdvkvdAZ4abDXTcRobjPfEwZnnOiDI1mEyIrehGo6Mb6fJy26yiG6_STMmYJ5GM9Q4ZO8sSvDtlJAI6pTgK0nZA4MSvr-R4dR5qi9XUP_QnRdTxBuvFR1c1CZ_rlVNelsjLXrT7xfGSPY5IhWa_yhAQFGc9qJvRlgfowuKu1_ZmIW-RvliqshkgkHpbSPqoX_bp8ZbpowHpdymk7mT5L8VuYVVUHVq0N52E_Cwm9LFDKD6jWXzVwu0numYNN5q7-oqugfWu-R8yoPyWku65F-rnw0CsRsUoPRgNbCFYq6GhKqnLe0kdDeJAi_VWINBwEHKZ1KeMxOpTHfU9OwSJGNNs1CJf9JlOci3XWS--opOMDzppqHLKayXpIF1rl877EWhhttz3gDKwdYyqYnqrY68C2k6Sud6jaazK_2MS-6fktgDMWlUMFMk46DIOsM3h6Rj49AH53QjVoltiKOtgoEZGAUrOjf590O_4vA4CGtYM3UenrCOQ2BHr7-_wJd6p_XaZ17qgjzCWry7Ld0jlE-e3Kn00uPSlIhkHae0LL-2PSTD_WX9NloZovEjfEoZVFcJVShkR2fu9bnZWxjYOA2kMZrgpBLEiPimO5W1KfgugVk2JJDOhciDIUmlNiNLicC1HRLq6mCjoap9Uam3sRHwqCL-g-KJXe6TTTfqhAPrXHrBNWTxu5FTzOQqdZ0UzqlBNJ-ThirzmkaWTyhGbfDHymsq8eLv4LQA29HNB9MVwpqmGVX5nFxxwtGdjWH6HZcYmmzznl8T7VaQAWylweTy_qgZqiRW2omRqUvMa4XY-f4Uzrb-4fKL3nMSvrBRTkMXsgTYikMZ33pGOdGtrqCmtTGy11b3aElbbC7IRjaiLIuqy289S9HPf9nNf-Fl1-1mJfsjvY8sRvZPmNl2w6aUNCjZY2GiZNWyoiXbajXYqop12o22ubqNFTbTTbrRNP220qIl22o226UdAi0q0SECLSrRIQItKtPQQb9tKtvT0aNnMwsa25D9ratpK[Validation Process,width=600,height=650]
+
+_Figure 1. ESPD Validation Process_
+
+=== ESPD Request Validation
+
+[arabic]
+. *XSD Validation* against QualificationApplicationRequest-2.4.xsd
+. *Code list validations* (common for both Request and Response):
+[loweralpha]
+.. Validation of the code list values: `01-ESPD-codelist-values.cva`
+.. Validation of the identification of the code list: `01-ESPD-Common-CL-Attributes.sch`
+. Business rules related to the *cardinality* of the schema: `02-ESPD-req-cardinality-br.sch`
+. Business rules used to validate the *criteria data structure*:
+[loweralpha]
+.. Validations common for Request and Response: `03-ESPD-common-criterion-br.sch`
+.. Validations specific for Request: `03-ESPD-req-criterion-br.sch`
+. *Other* business rules:
+[loweralpha]
+.. Common validations (schemeAgencyID for identifiers): `04-ESPD-common-other-br.sch`
+.. Specific business rules for Request: `04-ESPD-req-other-br.sch`
+.. Business rules related to the procurer: `05-ESPD-req-procurer-br.sch`
+.. Specific business rules: `05-ESPD-req-specific-br.sch`
+
+=== ESPD Response Validation
+
+[arabic]
+. *XSD Validation* against QualificationApplicationResponse-2.4.xsd
+. *Code list validations* (common for both Request and Response):
+[loweralpha]
+.. Validation of the code list values: `01-ESPD-codelist-values.cva`
+.. Validation of the identification of the code list: `01-ESPD-Common-CL-Attributes.sch`
+. Business rules related to the *cardinality* of the schema: `02-ESPD-resp-cardinality-br.sch`
+. Business rules used to validate the *criteria data structure*:
+[loweralpha]
+.. Validations common for Request and Response: `03-ESPD-common-criterion-br.sch`
+.. Validations specific for Response: `03-ESPD-resp-criterion-br.sch`
+. *Other* business rules:
+[loweralpha]
+.. Common validations: `04-ESPD-common-other-br.sch`
+.. Specific business rules for Response: `04-ESPD-resp-other-br.sch`
+.. Business rules related to the economic operator: `05-ESPD-resp-eo-br.sch`
+.. Response-specific business rules: `05-ESPD-resp-specific-br.sch`
+.. Pre-qualification system rules: `05-ESPD-resp-qualification-br.sch`
+.. Role-dependent business rules: `05-ESPD-resp-role-br.sch`
+
+== UUID Criterion Validation
+
+Each criterion is defined in e-Certis and has a *Universally Unique Identifier (UUID)* supplied by e-Certis:
+
+[arabic]
+. These UUIDs are mandatory and are maintained by the Publications Office.
+. The criterion UUIDs can be found in the link:{url-tree}/criterion/espd-edm.json[espd-edm.json] file.
+
+The UUIDs defined in the ESPDRequest or ESPDResponse are validated for the following elements:
+
+[cols="1,3",options="header"]
+|===
+|Element |XSD Path
+
+|Criterion
+|`cac:TenderingCriterion/cbc:ID`
+
+|Property Group
+|`cac:TenderingCriterionPropertyGroup/cbc:ID`
+
+|Property
+|`cac:TenderingCriterionProperty/cbc:ID`
+|===
+
+=== Tendering Criterion Validation
+
+The validation of each criterion (`cac:TenderingCriterion` element) checks:
+
+[arabic]
+. `cbc:ID`, `cbc:CriterionTypeCode`, `cbc:Name` and `cbc:Description` are mandatory;
+. `cbc:ID` values match with the ones supplied by e-Certis;
+. `cac:TenderingCriterionPropertyGroup` structure matches the expected QUESTION_GROUP or REQUIREMENT_GROUP.
+
+=== Tendering Criterion Property Group and Subgroup
+
+The same validations are executed for the first level group of properties and sub-groups of properties:
+
+[arabic]
+. The `cbc:ID` and `cbc:PropertyGroupTypeCode` are mandatory;
+. `cac:SubsidiaryTenderingCriterionPropertyGroup` matches with QUESTION_SUBGROUP or REQUIREMENT_SUBGROUP;
+. `cac:TenderingCriterionProperty` structure matches with QUESTION or REQUIREMENT or CAPTION.
+
+=== Tendering Criterion Property
+
+The validation of `cac:TenderingCriterionProperty` checks:
+
+[arabic]
+. `cbc:TypeCode` and `cbc:ValueDataTypeCode` are mandatory elements;
+. `cbc:ID` and `cbc:Description` elements are mandatory (values not validated);
+. If `cbc:TypeCode` value is "CAPTION", `cbc:ValueDataTypeCode` value must be "NONE".
+
+=== XML Path Like ID
+
+Starting with ESPD v4.0.0, UUIDs for all sub-elements are replaced by XML Path Like IDs in the data structure, except for the top-level Exclusion Grounds and Selection Criteria elements. For further details, see xref:tech_common_aspects_for_criteria.adoc[How Criteria Work]. The XML Path Like ID is built programmatically.
+
+== Code List Validation (CVA)
+
+Business rules related to code lists validate values and their mandatory attributes. This uses an extra step before the Schematron process: link:https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=codelist[Genericode] (GC) files as input.
+
+The process:
+
+[arabic]
+. *Generation of Genericode (GC) files* — found in the link:{url-tree}/codelists/[codelists folder].
+. *Design and implementation of the CVA file* (Context and Value Association) — specifies the association between XML elements and code list files.
+. *Execution*:
+[loweralpha]
+.. Transformation of CVA files into SCH files.
+.. Transformation of SCH files into XSLT.
+.. Execution of the validations and generation of the final report.
+
+image::https://kroki.io/pikchr/svg/eNqVls9zmzoQx-_8FTtMD03TUATGxOmPGbDdTi6vM22mp14wyLZSDB6BYzun_gE9vuPrpX_a-0u6AglsNS4mM4mJ0fezu9rVrp5xeAu25bDMSPJtZhgBuYFZvgMeJeCtd2CO84RCyooSwk3BMloUwDcpLUyYsQUuTROI8zTnsF2yksKcpSnYO_u9Nxh5sGVJuQTivXjGEe3cQEl3JZifaBqVLM9gRsstpRkQZCgzUZYAeXUJNKUrmpXFjQnp_QZffDVqQ_aOjJzxYIxfRCU67yEmzbcQELiE51fE8l7aF0bgKmv_f_8Fd0uqgGgqKyOWFZBnFPI5lPjuIUo3tFD_ceEfTVqnXnf5cK374FQ-DA59CMqSs9mmbO2oECHitPoCPSqgWNOYzRlNrL9bJRZ50qoR-JGy-8YEJXVCJxz6KN0yzIm1BUQEBD-v4Ln9EnftwuBssSxRPlPycb7JSr5vIcOJY5OpBvEji1YUiwyqsP1YAcTmBQuaxfvbSUsJbdd1bZ0yayh1Av1EUd5-NTvi8GNdTJX49vPHVuyP3IlDdHHSiOu0-XMl7jZMG61daxeHsX-hvMBC7w5-rruw7BH8ohH7tZgpsWPZrbgpniPxshETIVY1cH_-FrBjQuB_O9yCf6IV7Yr-XhHsUU1Ie0T_TU_96iD14JLh8Ip0bUKqM7Lzw1_p2lxp33VJM33n1o3rd11Fm-vaXXPoX3XZXevafc8Tv9PL9fHsmPfHto1QThwTTvxIl8Qgutuv6allJhSrCIdPNZLk4HFw8MCSipIGIp5rT7KmbxWy_dnW8AI7MI7B0JHuyLaVYIMW3ZjrfDF5XoTYQPER8fiEfw_5-A3i5UCckGkwndYmKnzVlmpigSfECF1pV7aM_uYcYY5lD6xgs1QAI0kkogkcmhrIF5-XOZfns68x92-xHWTsz_2rXMCsq7Rr6X0ijd7TWZRJfMR6uhT1hKcPh5jMImnSOFFEEQyabYN6ImOnUhYSlZ5g2oen54SorQ_e98G4J93yFO9DH95Ad2uoMLd9MN5Jt3zJsyzrj9rqog51564lTPTE853zTzo3UsF-7MO7PnbLGGMBx4zHKcXWY6qOYzltgcZqPMbG2Dlz8Vosds9ajAdcLB6ctxj9jw0j4hzvi3Oer2CMtQ5lDmPXotXO4C315w8Toln-gFfg6uJZXfHVb3vV5zQ5ImGV0wo1ELslWf_9q1gnKAuOV3_D-A0izaAt[Code list business rules,width=650,height=350]
+
+_Figure 2. Code list validation architecture_
+
+== Testing with the Interoperability Testbed
+
+The https://www.itb.ec.europa.eu/espd/upload[Interoperability Testbed] allows developers and integrators to test the validity of their ESPD XML instances by uploading them and launching the validation online.
+
+All the ESPD-EDM artefacts necessary to perform the validation are set up in the testbed — no local installation is required.
+
+== Further information
+
+* For the general Schematron architecture, see xref:common-concepts.adoc[Common Concepts].
+* For the complete list of business rules, see xref:business-rules.adoc[Business Rules].
+* For code list details, see xref:code-lists.adoc[Code Lists].
+
+include::partial$feedback.adoc[]

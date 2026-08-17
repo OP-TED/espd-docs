@@ -1,0 +1,99 @@
+:doctitle: Distribution and Tooling
+:doccode: espd-tech-prod-033
+:author: ESPD Team
+:docdate: July 2026
+
+// Rewrite of: tech_dist_pack.adoc
+// Target section: Criteria
+// Focus on criterion artefacts and tooling, updated from Excel to JSON workflow
+
+== Distribution Package
+
+The ESPD-EDM distribution package is available at https://github.com/OP-TED/ESPD-EDM[OP-TED/ESPD-EDM on GitHub].
+
+=== Repository Structure
+
+The *main* branch contains the latest released version. Only a main branch is maintained with different version tags.
+
+The repository has the following folder structure:
+
+[cols="1,3",options="header"]
+|===
+|Folder |Content
+
+|`codelists/`
+|Code list files in Genericode (`.gc`) format + `codelists.json` metadata reference. Used in conjunction with the UBL XML structure and the ESPD Model to generate and validate ESPD documents.
+
+|`criterion/`
+|Criterion structure definition. The file `espd-edm.json` contains the data structure of all ESPD-EDM Exclusion Grounds and Selection Criteria in JSON format.
+
+|`schemas/`
+|OASIS UBL 2.4 distribution package: +
+- `common/`: common elements and structures. +
+- `maindoc/`: XSD schemas for the ESPD Request and Response.
+
+|`validation/`
+|ESPD-EDM validation files (Schematron and XSL). Created following the procedure in the https://github.com/OP-TED/espd-validation-schematron[ESPD Validation Schematron repository]. +
+Sub-folders: +
+- `common/cva/`: CVA file for code lists +
+- `common/sch/`: Schematron files for common validation +
+- `ESPDRequest/sch/`: Schematron for ESPD Request +
+- `ESPDRequest/xsl/`: Compiled XSL for ESPD Request +
+- `ESPDResponse/sch/`: Schematron for ESPD Response +
+- `ESPDResponse/xsl/`: Compiled XSL for ESPD Response
+
+|===
+
+NOTE: The `conceptual-model` folder and `ubl-2.3` folder from previous versions have been removed. The UBL 2.4 schema is now in the `schemas` folder. The Conceptual Model is accessible via the documentation site.
+
+== Criterion Data Model (JSON)
+
+Starting with ESPD-EDM v5.0.0, the canonical source for criterion definitions is the JSON file `espd-edm.json`, replacing the deprecated Excel-based `ESPD-criterion.xlsx` workflow.
+
+=== Location
+
+`https://github.com/OP-TED/ESPD-EDM/tree/v5.0.0/criterion/espd-edm.json`
+
+=== What it contains
+
+The `espd-edm.json` file defines:
+
+* All Exclusion Ground criteria (with their UUIDs, type codes, names, descriptions)
+* All Selection Criteria (same structure)
+* The property group tree for each criterion (QUESTION_GROUP, REQUIREMENT_GROUP, QUESTION_SUBGROUP, etc.)
+* Individual properties (QUESTION, REQUIREMENT, CAPTION) with their expected data types
+* UUIDs harmonised with e-Certis
+
+=== JSON Schema
+
+A JSON schema file is provided alongside `espd-edm.json` to validate exports from Enterprise Architect and ensure structural consistency.
+
+=== Migration from Excel
+
+In previous versions, criterion structures were maintained in `ESPD-criterion.xlsx` (one tab per criterion). In v5.0.0:
+
+* The Excel file is deprecated (it may still exist for reference but is not the source of truth)
+* All tooling should consume `espd-edm.json` instead
+* XSLT transformations generate ESPD UBL XML from the JSON data
+
+== Release Notes
+
+Release notes for each release are available on https://github.com/OP-TED/ESPD-EDM/releases[GitHub Releases]. The distribution package for each release is attached to the corresponding release and the source code is tagged in the GitHub repository.
+
+== Issues and Community
+
+The https://github.com/OP-TED/ESPD-EDM/issues[Issues tab] on GitHub contains all questions and issues submitted to the ESPD Team by the Open User Community:
+
+* Document requests
+* Clarification on the distribution package or implementation issues
+* Feature requests proposing changes to the model
+
+The ESPD Team also raises issues to inform the community of decisions and to open discussion for topics that cannot wait for a monthly meeting.
+
+== Further information
+
+* For code list details, see xref:code-lists.adoc[Code Lists].
+* For validation details, see xref:common-concepts.adoc[Common Concepts].
+* For the complete Schematron rules catalogue, see xref:business-rules.adoc[Business Rules].
+
+include::partial$feedback.adoc[]

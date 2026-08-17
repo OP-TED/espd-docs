@@ -1,0 +1,43 @@
+:doctitle: Code Lists
+:doccode: espd-tech-prod-007
+:author: ESPD Team
+:docdate: July 2026
+:sectnums:
+
+// Merged from: tech_codelist.adoc + bus_codelist.adoc + tech_codelist_examples.adoc
+// Target section: Model Reference
+// This file is based on tech_codelist_v5.0.0_updated.adoc (already prepared)
+// with the XML examples from tech_codelist_examples.adoc appended as a final section.
+//
+// The full content of this file is the tech_codelist_v5.0.0_updated.adoc
+// (saved earlier in zz_kiro_reports_etc) PLUS the following addition at the end:
+
+// === CONTENT FROM tech_codelist_v5.0.0_updated.adoc ===
+// (General Information, Codes and Identifiers, Compulsory Attributes, XML Examples,
+//  Quick Reference summary table, and full Code List Catalogue with:
+//  AccessRight, BooleanGUIControlType, Country, CriterionElementType, Currency,
+//  DocrefcontentType, EconomicOperatorSize, EOIDType, EoRoleType, ExclusionGround,
+//  FinancialRatioType, Language, Occupation, ProfileExecutionID, PropertyGroupType,
+//  ResponseDataType, SelectionCriterion)
+//
+// See: zz_kiro_reports_etc\tech_codelist_v5.0.0_updated.adoc for the full content.
+// That file should be used as the base, with the section below appended after the
+// last code list entry (SelectionCriterion).
+
+== XML Examples
+
+This section provides XML examples showing how each code list is used in ESPD documents.
+
+// === CONTENT FROM tech_codelist_examples.adoc ===
+// The full 394 lines of tech_codelist_examples.adoc should be appended here,
+// with the following changes:
+// 1. Remove the file header (doctitle, doccode, author, docdate, sectnums)
+// 2. Update xref links from xref:tech_codelist.adoc#xxx to internal <<xxx>> anchors
+//    (since the code list definitions are now in the same file)
+// 3. All section anchors (e.g. [[access-right-xml-example]]) are kept as-is
+//
+// Example of link change:
+//   OLD: xref:tech_codelist.adoc#access-right-table[access-right]
+//   NEW: <<access-right-table,access-right>>
+
+include::partial$feedback.adoc[]

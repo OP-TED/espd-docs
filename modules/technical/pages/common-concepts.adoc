@@ -1,0 +1,85 @@
+:doctitle: Common Concepts
+:doccode: espd-tech-prod-035
+:author: ESPD Team
+:docdate: July 2026
+
+// Split from: tech_validation.adoc (lines 1-140 — general Schematron approach)
+// Target section: Technical Implementation
+
+== ISO Schematron
+
+Schematron is a rule-based validation language that specifies validation processes against XML documents. ISO Schematron is an ISO (ISO/IEC 19757-3:2006) and open standard. Please visit the link:http://www.schematron.com/[ISO Schematron] web-site for the technical specification and details.
+
+== ESPD Business Rules Overview
+
+The ESPD-EDM uses Schematron to validate business rules. These business rules can be typified as:
+
+[arabic]
+. *Semantic validations*: e.g. The `cac:TenderingCriterionResponse` in a Response document MUST match one, and only one, of the `cac:TenderingCriterionProperty` elements in the XML instance of the corresponding ESPD-Request;
+. *Assertions* about the presence or absence of patterns in XML documents: e.g. all business rules that apply to identifier nodes: mandatory attributes, structure of the identifier, etc.;
+. *Code lists* validations: e.g. values and attributes for each code list element;
+. *Other validations* that an XSD cannot do: e.g. validates that one of the nodes has at least 1 child.
+
+image::https://kroki.io/pikchr/svg/eNqdVNtu2kAUfPdXHFl5SJrg7C4Y4zSNZC6p8tAQpWn6UKrKlzVsZbzIXgd467f00_olPTbYBoLktKwQsHjnzJmdOScJfABiMBFrgVzGmubQK_DkChI3AHOxAv1exq2BDDhEIlXQz1IR8zSFJIt4qoMnpvh4FIAvI5nAciYUh1BEEZAVuTU7tglLEagZUPPdSYLw7AoUXynQ__z6DWMvElNXCRmDkpClHGSM7wTmMuHAIz7nsUoh4AseByKe4t8g1YwnWA438oPpex2inxlSm2gbDmRFbTboDHDDVdibBR6P5BIcCudw2iKGeUHONKe9S-RpxuHFjTKeQigjfDoFFxauUjyJGwpQgxwv0Nkt4CiVCC9TZZlG0PZxUHMX9D6be6iFDGupFol8EQEPGvG7R_E1x3LLCte-51_dDXUoAVif9bsWAiwFXqixBARyKH624BQtZF4wg55piZjOFOJ4JU7qz5CcM-Wxv74bfqjxbmnfsQcHeJZr8A0gtYuOLb8EmuijL63B-FNr_DDRaxjLbg8ZPYTxShi2Ec4KSpib-mglyd5Rf59BkQvH4uV5Rqh1-QC0w1rMbpuMENKAWGnUJqgRM2uRwkrsy43aNw1yW3y_L22EeeVRJBYYHh0aXnqxjiPSAtHIMfvbGaDDc27WKhKYvDIUmMkQB0EA3jrfrt2mw0OGqfaLVKcwDkPho3Tfvm_W5eft11a5ky9j9_w4jtYgQsgFGUo_y439tF7wYgiJFCb602j4Y3A_0fFYMXuEcrHiK8N32z2r3y2n0ci8pbdD_KUOBOhg_-d5_3n7aGAtwsYgTOQc-vnN4WQaUQO31Ayn5NYOvSomcH2M6FtTUziiNkSvSk0-bZvT0qvSwlhh895OWpDTIw8HMlZbYo2p6R2kZtusXTeb03prlPebtKombe9Voj8-jr82srPdo-wo2af3zJMUvfev_LoVP0p2CBJmEEwFaWSHNA5GDiXVZdxsLNs0J0itP9lCBPsT4tBnTfMCORyI1mdluI_79lii9Dx3czcOXCWTtaH_b9QKuxZZs3IyfwEaPHCr[Non-code list business rules,width=600,height=300]
+
+_Figure 1. Examples of non-code list business rules_
+
+For the complete catalogue of business rules, see xref:business-rules.adoc[Business Rules].
+
+== Schematron Architecture
+
+ISO Schematron executes the validations in two stages:
+
+[arabic]
+. *Design and implementation of the SCH files*. SCH stands for Schematron Schema and contains the set of rules to be validated within the XML document.
+. *Execution of the implemented validations* in the SCH files:
+[loweralpha]
+.. Transformation of SCH files into XSLT files in order to be able to execute the validations against the XML.
+.. Execution of the validations using the XSLT files to get the final report.
+
+image::https://kroki.io/pikchr/svg/eNqtVV1v2jAUfc-vuIo6CQpEsSHtQNokSkGbRNVp8NCHvYRggqUQI8cZ6X79ru0ESCr6oQ2EhH19zzm-X76S8AV8j_LUWcWRSIRZF7PZxPd9xxmTEaxEATJcA9kX4C4m31zYMh5vFRAvuL6ScOBrtQVqFxbCL8iQTgYT2PAkOcKBE0opDtD76ozpCCIuo4RZ6EBju5e87_UXV-oMoN8QNskzJXb8D1u74D4t5r3lh-AG_6onaOj5yfbibQD45djwjYln_nR8j_AUt8sYt9Bg_7Y7CU8ZHur5Xl9nxh-BYoUCl7hInaxhxWPzs6SrJGcGHtG9FEKlOTLoQcvvYsLbGoJUEN8Xj1AGzW0tmdzxNFRCtl1EaNyhDklPkH0DSSvIp4d59qb7oOFOwxHYmPL0N8_4ChOyFocU-v4n2Eixs5fAk8WlkyR4cbSStIi2bBcqKVIYy2jLFYtULpl7FrULOkkZOoz9bdDFhiGo1tKXVARPKmECUjfQ0oBXdZyqRHR9lRlGlUUH3QpMPUVa0B9bFK2qKqADBLurfTIfpWHgrsvCgFRI3BcbjZk6zh2P70Rh67Ik-6x7tMZBB7Utg3vQwJoQErZRFeDBZMojXV2ARykrtuXpGg9UG1WN92d0RkChtQxtLMNnx5ljzWm9p7gd8HYV7q2vgWOB1zLjZMvCNU9jIDcB7qstSwGNw3PT0D-zkMtOddP74JoqApw7x7aj72y7-antsGimtDlS3foErQ_XV-epSX-AKUiw3Coa6g27pj6nlP4HJjuqakx7yX5zkWfIZzJn5kmgCfvHKYpcx0H6NjJ9Ce04y-lxljyEaR4myTOsWcbjVM_4BqiNtylcjLDH0Ltfef-QImJZBo-52ufqdVdqXAcN19d9-h4rSzgwKV5Ogw-MZqZBbKtaHILh6PaoTqEFuTeXhhDbjO_2CduxVGFjMcDHWEeTZZ4LZ2DIXzUVxdRYSTcfLVuNYhNsMcqHoiZgFaoIxxT6C1zifMJBxwoW5QqFYJb1mUyxfWbEx8x6bfBxSUDiAylVU_lNpXxgWP8CxFZ7nw==[Architecture for non-code list validation,width=600,height=300]
+
+_Figure 2. Architecture for non-code list validation_
+
+=== What does the SCH file contain?
+
+[arabic]
+. *Set of rules* specifying the context (the element(s) and/or attribute(s) which the assertions affect);
+. Each rule has a *set of assertions* with the tests that must be evaluated in the context.
+
+image::https://kroki.io/plantuml/svg/eNq9Vl1v2jAUfW5-hZU-0D4kTgTTBgpuC120SZ06rUyaNO3BOA6JcGxkOwVp9L_PCWEqBPeDffgpur733HPPta9zqTSWuiyYk-UJBakQeipWjprnfIElLsBPB4AxlslIyITKSZaTOadKgcDYR5jMZ1KUPBkLJiRYZrmmlb323dimzDgZWyy4fmx5cB4lISZBncmOuYt6GseBWRVKHUu-O1FqMgwKwYVaYEITFJHKdXDa6_Z7VzGKLlYFA_dUqlzwoRv6gQsoJyLJ-Wzofp3E3jv3AkWwjkJ2uLDbjd8bOEUyWuCtP9hux-Hoqj9GJhdXw-3udvN69KYXBMjNtF4MIFyUkvmCMOILOYOJShjcoGopuNuCbgqpoQcrxfbRm9TPZV0ul_6yW6cM-_0-_HZ3AycSc5UKWbj7wU25TwjTtpzsa7XAWlPJ_6dYDXSeWHFHX7zx7SfvdvLhiKIbT1l9ThHYWesITpEFMpIlozayxCShK21lTKZkAD5LkeaMfrz-l6xfHnpH9W5oq_lYKSq1rWZNlb3gSo2z82Gn54cda4tThmdWhBRrzI48HeZkeMFbLwifVbqx15MNdao2_e5SBxSl0qBUFOiMgnvMSroXttV0XYsp0uMaYQIPN2LDyjUauuBshxsYgo7tnNZEvYrMYekUZZTYO-fva9bgwtbFaEQ7921M4OYAIYtqL1hrsIEwg18dI251Z9XBa_0KEn--jryhrdAT3_f_4kSDlTxP8GoNBNg8B694bJtRj5wfziXliflf-QV3ibFn[SCH file example,width=700,height=180]
+
+_Figure 3. SCH file structure_
+
+=== Execution
+
+As a basis of the implementation, the Schematron "skeleton" implementation in link:https://github.com/SCHEMATRON[XSLT] is used.
+
+image::https://kroki.io/pikchr/svg/eNq1k0Fu2zAQRfc8xUDIIk5tgZTtuDaahWLEaAB3pS66MGDQFi2xpciAZCAve5YcLSfpUFQcpwVSoEA3AsUR__z3h7qwcAM0zaQmpWk1ITlbgBdHD8nXWjrYJHkB98UmgR13-C71Xj2WwiWgvj86T_Ls5fPnn0_wrVjDQSrhwBvwlmt3MLZZ9B_DhuyNMhbokc2z5WSJG9yH7rATyrSQMxjB5Qg3hjSlAzQzPlcvlp-DLjb5m-D1q-AHuKTpdBjUyBrZlNQCDtY0kI9T0fVjKRuGpnSA5yuD5ydXFxZqwUupK8imU9z3tdCAxey8xD7Ss9K7534rMvpvoniOEG4twr1CdIyY2SDEs-6YkYcNIezUUscHISvkD-OBpMtwZ1TZB-UartSbZwy2sgJttLL0NTqZRyeyqj1gaOFtQ1qJtRRDxeTXLCx6OxA8YOxxgF-Ec7wSo2Jfi4Z7a_TIC9tIzb2x6dGpBKJSG4RWLM4mUCDEy5Sz2eRuNkOQ7D-DYH_Xg8w7kPH4RCKd2boTxdb9EEp4XOBV3yKHZ3_SZO_S5BZx4ky7QSWfUGAhmwdjfRLHHPxA-EHjVekuh-3s48RRvj37FXrZaPaNFFrBXqf-89vr1Yz-AvghLqo=[Execution files,width=600,height=150]
+
+_Figure 4. Execution files_
+
+== Validation Life-cycle
+
+The validation of an ESPD XML document follows this life-cycle:
+
+image::https://kroki.io/mermaid/svg/eNqlkk1rwkAQhu_7K4aem0PMzUJpkjVioghaSg-9rNkRQ5cd2az0UPrfGzdrYyUExQSGvLPvMx9ht4q-yp0wFt45g-aJX76h3ok9jqGsTKnwEZTYoBrDQ_P-PDlT0pkMHbRE2blSg8IirHBPxjaEA9IB4H3N4U2oSgpbkT4RPOyQLZnPzp81CshATtWfezJQP9aa7HGk-lCWWNcf2tLFeNk1OBpDpo-eDv0Nkqiq2vZtOLplw9lAk2TVUz6_ayce3TJcMdBrjVpeFJ_fNdqio-VGBcdb-v-OMhZDEDxD4mLqIg8ZD5svWBZOT1yctmcjxkdnZzMvi6WTeZtsrRFjPDrzFl5679wnfTOfzU7Zlln8ApglA0Y=[ESPD Schematron life-cycle,width=450,height=750]
+
+_Figure 5. ESPD Schematron life-cycle_
+
+The validation starts by ensuring the input XML follows the structure defined by the XSD schema. If XSD validation passes, code list validations and business rules are executed. All errors found (if any) are listed in the report.
+
+== Interoperability Testbed
+
+The European Commission (EC) link:https://ec.europa.eu/isa2/awards_en[ISA2 Programme] provides an link:https://joinup.ec.europa.eu/asset/itb/description[Interoperability Testbed] where Stakeholders can freely test these validation artefacts.
+
+All the ESPD-EDM artefacts necessary to perform the validation are set up in the testbed. Thus developers and integrators can test the validity of the ESPD-Request and ESPD-Response XML instances by uploading the instances in the testbed and launching the validation.
+
+Use this URL to upload and execute the validations: link:https://www.itb.ec.europa.eu/espd/upload[Upload].
+
+== Further information
+
+* For the complete list of business rules, see xref:business-rules.adoc[Business Rules].
+* For code list details, see xref:code-lists.adoc[Code Lists].
+
+include::partial$feedback.adoc[]

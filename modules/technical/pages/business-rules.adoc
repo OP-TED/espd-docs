@@ -1,0 +1,91 @@
+:doctitle: Business Rules
+:doccode: espd-tech-prod-005
+:author: ESPD Team
+:docdate: July 2026
+
+// Merged from: tech_busrules.adoc + tech_rules_reference.adoc
+// Target section: Model Reference
+
+== Overview
+
+Business rules define the constraints that an ESPD document must satisfy beyond basic XML schema (XSD) compliance. They are implemented as link:https://www.schematron.com/[ISO Schematron] assertions and enforced during validation of ESPD Request and ESPD Response documents.
+
+== Validation Layers
+
+Business rules are organised in numbered layers that execute in sequence after XSD validation passes:
+
+[cols="1,1,4",options="header"]
+|===
+| Layer | File prefix | What it checks
+
+| 1. Code lists
+| `01-*`
+| Validates that elements carrying code values use codes from the correct EU Vocabularies or ESPD-specific lists, and that mandatory attributes (`listID`, `listAgencyID`, `listVersionID`) are present.
+
+| 2. Cardinality
+| `02-*`
+| Enforces mandatory elements that the UBL XSD defines as optional but the ESPD-EDM requires (e.g. `cbc:UBLVersionID`, `cbc:ID`, `cbc:UUID`, `cac:TenderingCriterion`).
+
+| 3. Criterion structure
+| `03-*`
+| Validates that tendering criteria, property groups, and properties match the canonical structure defined in e-Certis — correct UUIDs, type codes, expected cardinalities, and data types.
+
+| 4. Other
+| `04-*`
+| General constraints: document reference format (TED Contract Notice ID pattern), mandatory `schemeAgencyID` on identifiers, UBL version value, and endpoint scheme requirements.
+
+| 5. Specific
+| `05-*`
+| Domain-specific rules that depend on the document type or participant role: mandatory procurer fields (Request), economic operator fields (Response), lot assignment logic, pre-qualification system rules, and EO role constraints.
+|===
+
+== What the Schematron Does NOT Validate
+
+Some ESPD requirements cannot be enforced by static XML validation because they depend on runtime context or external information. ESPD service implementations must handle these in application logic:
+
+[cols="2,3",options="header"]
+|===
+| Requirement area | Why it cannot be automated
+
+| Pre-qualification system coverage
+| Whether a national pre-qualification system covers all exclusion or selection criteria depends on registry data external to the ESPD document.
+
+| Weighting correctness
+| For two-phased procedures, weighting values must sum correctly and apply to the right criteria. The Schematron can check presence of weighting elements but not mathematical correctness across the full criterion tree.
+
+| Cross-document consistency
+| Whether an ESPD Response correctly mirrors the structure of its corresponding ESPD Request requires comparing two documents. Schematron validates each document in isolation.
+
+| National exclusion grounds completeness
+| Whether all applicable national exclusion grounds from e-Certis are present depends on the procurer's country and the current state of the e-Certis registry at the time of document creation.
+|===
+
+== Regulatory Basis
+
+The ESPD business rules derive from:
+
+* *Directive 2014/24/EU* (Public Procurement Directive) — defines the legal requirements for exclusion grounds and selection criteria.
+* *Implementing Regulation (EU) 2016/7* — establishes the standard form for the European Single Procurement Document.
+* *e-Certis* — the EU registry of criteria, evidences, and their structure. The Schematron validates criterion UUIDs and structures against e-Certis reference data.
+* *UBL 2.4* (OASIS) — provides the base XML schema. ESPD-EDM adds business rules on top of this schema.
+
+== Source of Truth
+
+The Schematron source files in the link:https://github.com/OP-TED/espd-validation-schematron[espd-validation-schematron] repository are the authoritative definition of what is validated. The validation pipeline (how Schematron files are compiled and executed) is described in xref:tech_validation.adoc[Validation].
+
+== Complete Rules Register
+
+This section provides the complete catalogue of validation rules enforced by the ESPD Schematron. It is auto-generated from the `.sch` source files in the link:https://github.com/OP-TED/espd-validation-schematron[espd-validation-schematron] repository and reflects the current implementation.
+
+=== How to read the rule entries
+
+Rule ID:: Unique identifier of the assertion in the Schematron (the `@id` attribute on `<assert>`).
+Severity:: `fatal` = document is invalid; `error` = significant problem; `warning` = informational, document still valid.
+Scope:: Whether the rule applies to ESPD Request, ESPD Response, or both (Common).
+Category:: Validation layer: Code list, Cardinality, Criterion (structure/cross-reference), Other (general), or Specific (role/domain).
+Description:: The human-readable assertion message shown when validation fails. This text comes directly from the `<assert>` element in the Schematron source.
+Source:: The `.sch` file where the rule is defined, linked directly to the GitHub repository.
+
+include::partial$business-rules-register.adoc[]
+
+include::partial$feedback.adoc[]

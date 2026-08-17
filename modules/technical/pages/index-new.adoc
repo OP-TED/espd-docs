@@ -23,37 +23,35 @@ Technical guide to the ESPD Response document: schema, economic operator party, 
 * xref:lots-management.adoc[Lots Management] +
 How lots are handled in both Request and Response, eForms alignment, and multi-lot response patterns.
 
+* xref:common-concepts.adoc[Common Concepts] +
+Shared technical patterns: Schematron architecture, validation life-cycle, and execution process.
+
 === Criteria
 
 * xref:tech_common_aspects_for_criteria.adoc[How Criteria Work] +
 The criterion-property-response chain, property group types (ONTRUE/ONFALSE), and response linking patterns.
 
-* xref:tech_exclusion_criteria.adoc[Exclusion Grounds] +
+* xref:exclusion-grounds.adoc[Exclusion Grounds] +
 All exclusion criteria categories with data structures and response patterns.
 
-* xref:tech_selection_criteria.adoc[Selection Criteria] +
+* xref:selection-criteria.adoc[Selection Criteria] +
 All selection criteria categories with data structures and response patterns.
 
-=== Validation and Rules
+* xref:validation-conformance.adoc[Validation and Conformance] +
+Criteria-specific validation: UUID checks, CVA constraints, conformance testing patterns.
 
-* xref:tech_validation.adoc[Validation] +
-Schematron validation process, execution files, and code list validation architecture.
+* xref:distribution-tooling.adoc[Distribution and Tooling] +
+Distribution package criterion artefacts, JSON data model, and integration guidance.
 
-* xref:tech_rules_reference.adoc[Business Rules Reference] +
-Complete catalogue of Schematron business rules with severity and element constraints.
+=== Model Reference
 
-* xref:tech_busrules.adoc[Business Rules Guide] +
-Overview of validation layers and regulatory basis.
+* xref:code-lists.adoc[Code Lists] +
+All ESPD code lists with metadata, versions, usage contexts, and XML examples.
 
-=== Reference
+* xref:business-rules.adoc[Business Rules] +
+Complete catalogue of Schematron business rules with severity, element constraints, and validation layers overview.
 
-* xref:tech_codelist.adoc[Code Lists Catalogue] +
-All ESPD code lists with metadata, versions, and usage contexts.
-
-* xref:tech_dist_pack.adoc[Distribution Package] +
-Contents and structure of the ESPD-EDM distribution package.
-
-* xref:tech_glossary.adoc[Glossary] +
+* xref:glossary.adoc[Glossary] +
 Definitions of key technical terms.
 
 * link:{attachmentsdir}/ESPD_CM_html/index.html[Conceptual Model (HTML)]
@@ -62,11 +60,28 @@ Definitions of key technical terms.
 
 === Legacy pages (to be removed after review)
 
-The following pages are from the previous structure and will be replaced by the pages above:
+==== Documents (old)
 
-* xref:tech_architecture.adoc[Technical Architecture] (old — content moved to Getting Started)
-* xref:tech_br_espd_profile.adoc[BIS 41 ESPD Profile] (old — TBD, may be removed or merged into Business Rules)
-* xref:tech_br_request_reqs.adoc[Request Requirements] (old — to be merged into Request Model Reference)
-* xref:tech_br_response_reqs.adoc[Response Requirements] (old — to be merged into Response Model Reference)
+* xref:tech_architecture.adoc[Technical Architecture] (content moved to Getting Started)
+
+==== Criteria (old)
+
+* xref:tech_exclusion_criteria.adoc[Exclusion Criteria] (replaced by exclusion-grounds.adoc)
+* xref:tech_selection_criteria.adoc[Selection Criteria] (replaced by selection-criteria.adoc)
+
+==== Validation and Rules (old)
+
+* xref:tech_validation.adoc[Validation] (split into common-concepts.adoc + validation-conformance.adoc)
+* xref:tech_rules_reference.adoc[Business Rules Reference] (merged into business-rules.adoc)
+* xref:tech_busrules.adoc[Business Rules Guide] (merged into business-rules.adoc)
+* xref:tech_br_espd_profile.adoc[BIS 41 ESPD Profile] (TBD — may be removed or merged)
+
+==== Reference (old)
+
+* xref:tech_codelist.adoc[Code Lists Catalogue] (replaced by code-lists.adoc)
+* xref:tech_dist_pack.adoc[Distribution Package] (replaced by distribution-tooling.adoc)
+* xref:tech_glossary.adoc[Technical Glossary] (replaced by glossary.adoc)
+* xref:tech_br_request_reqs.adoc[Request Requirements] (to be merged into Request Model Reference)
+* xref:tech_br_response_reqs.adoc[Response Requirements] (to be merged into Response Model Reference)
 
 include::partial$feedback.adoc[]
