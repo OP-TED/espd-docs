@@ -1,29 +1,71 @@
 :doctitle: Navigation
-:doccode: espd-v4.0.x-prod-004
-:author: NPJ
-:authoremail: nicole-anne.paterson-jones@ext.ec.europa.eu
-:docdate: October 2023
+:doccode: espd-v5.0.x-prod-004
+:author: ESPD Team
+:docdate: July 2026
+
+* xref:ROOT:index-new.adoc[Home]
+
+* [.separated]#**Business Guide**#
+* xref:business:index-new.adoc[Business Guide]
+* xref:business:for-contracting-authorities.adoc[For Contracting Authorities]
+* xref:business:for-economic-operators.adoc[For Economic Operators]
+* xref:business:espd-parts.adoc[ESPD Parts]
+* xref:business:using-espd-service.adoc[Using the ESPD Service]
+
+* [.separated]#**Technical Implementation**#
+* xref:technical:index-new.adoc[Technical Implementation]
+* xref:technical:getting-started.adoc[Getting Started]
+* xref:technical:espd-request.adoc[ESPD Request]
+* xref:technical:espd-response.adoc[ESPD Response]
+* xref:technical:lots-management.adoc[Lots Management]
+* xref:technical:common-concepts.adoc[Common Concepts]
+
+* [.separated]#**Criteria**#
+* xref:technical:how-criteria-work.adoc[How Criteria Work]
+* xref:technical:exclusion-grounds.adoc[Exclusion Grounds]
+* xref:technical:selection-criteria.adoc[Selection Criteria]
+* xref:technical:validation-conformance.adoc[Validation and Conformance]
+* xref:technical:distribution-tooling.adoc[Distribution and Tooling]
+
+* [.separated]#**Model Reference**#
+* xref:technical:request-model-reference.adoc[Request Model Reference]
+* xref:technical:response-model-reference.adoc[Response Model Reference]
+* xref:technical:criteria-catalogue.adoc[Criteria Catalogue]
+* xref:technical:code-lists.adoc[Code Lists]
+* xref:technical:business-rules.adoc[Business Rules]
+
+* [.separated]#**Releases**#
+* xref:ROOT:release_notes.adoc[Release Notes]
+* link:{attachmentsdir}/ESPD_CM_html/index.html[Conceptual Model]
+
+* [.separated]#**Further Information**#
+* xref:technical:glossary.adoc[Glossary]
+
+* [.separated]#**Open User Community Documents**#
+* xref:espd-wgm::index.adoc[Open User Community Meetings]
+* xref:espd-wgm::monthly.adoc[Regular Meetings]
+* xref:espd-wgm::annual.adoc[Annual Seminars]
+
+////
+OLD NAVIGATION (kept for reference, to be removed after migration is complete)
 
 * xref:ROOT:index.adoc[Home]
 
 * [.separated]#**Release Documentation**#
 * xref:ROOT:release_notes.adoc[Release Notes]
 * link:{attachmentsdir}/ESPD_CM_html/index.html[Conceptual Model]
-//* xref:ROOT:demo.adoc[ESPD Demo Site]
 
 * [.separated]#**Information for Business Users**#
 * xref:business:index.adoc[Business Information]
 * xref:business:implementation.adoc[An ESPD Implementation]
 * xref:business:using.adoc[The Structure of an ESPD Implementation]
-//* xref:espd-bus::creating.adoc[Creating an ESPD Service]
-//* xref:espd-bus::overview_upgrades.adoc[Overview for Upgrading your Version]
 
 * [.separated]#**Technical Implementation**#
 * xref:technical:index.adoc[Technical Information]
 * xref:technical:tech_rules_reference.adoc[Business Rules Reference]
-//* xref:espd-tech::demo.adoc[Demo ESPD Service Online]
 
 * [.separated]#**Open User Community Documents**#
 * xref:espd-wgm::index.adoc[Open User Community Meetings]
 * xref:espd-wgm::monthly.adoc[Regular Meetings]
 * xref:espd-wgm::annual.adoc[Annual Seminars]
+////
