@@ -1,0 +1,116 @@
+:doctitle: ESPD-EDM Documentation (New)
+:doccode: espd-main-prod-001-new
+:author: ESPD Team
+:docdate: July 2026
+
+== ESPD-EDM Documentation
+
+The European Single Procurement Document Exchange Data Model (ESPD-EDM) provides a standardised model for the exchange of ESPD documents between procurement stakeholders. This documentation covers the ESPD-EDM v5.0.0.
+
+=== Business Guide
+
+Guidance for buyers and offering parties on using the ESPD in public procurement procedures.
+
+* xref:business:index-new.adoc[Business Guide] +
+Overview of the ESPD for business users.
+
+* xref:business:for-contracting-authorities.adoc[For Contracting Authorities] +
+How buyers prepare ESPD Requests, define criteria, and evaluate responses.
+
+* xref:business:for-economic-operators.adoc[For Economic Operators] +
+How offering parties complete the ESPD Response and provide evidence.
+
+* xref:business:espd-parts.adoc[ESPD Parts] +
+Overview of the six parts of the ESPD and which roles fill in each section.
+
+* xref:business:using-espd-service.adoc[Using the ESPD Service] +
+How to access and use an ESPD Service.
+
+=== Technical Implementation
+
+Technical documentation for developers implementing ESPD Services.
+
+* xref:technical:index-new.adoc[Technical Implementation] +
+Full technical documentation landing page.
+
+* xref:technical:getting-started.adoc[Getting Started] +
+Architecture overview, distribution package, repository structure.
+
+* xref:technical:espd-request.adoc[ESPD Request] +
+Technical guide to the ESPD Request document.
+
+* xref:technical:espd-response.adoc[ESPD Response] +
+Technical guide to the ESPD Response document.
+
+* xref:technical:lots-management.adoc[Lots Management] +
+How lots are handled in Request and Response.
+
+=== Criteria
+
+How criteria are structured, defined, and validated in the ESPD-EDM.
+
+* xref:technical:how-criteria-work.adoc[How Criteria Work] +
+The criterion-property-response chain and ONTRUE/ONFALSE logic.
+
+* xref:technical:exclusion-grounds.adoc[Exclusion Grounds] +
+All exclusion criteria categories.
+
+* xref:technical:selection-criteria.adoc[Selection Criteria] +
+All selection criteria categories.
+
+* xref:technical:validation-conformance.adoc[Validation and Conformance] +
+Criteria-specific validation and conformance testing.
+
+* xref:technical:distribution-tooling.adoc[Distribution and Tooling] +
+JSON criterion data model and distribution package artefacts.
+
+=== Model Reference
+
+Detailed look-up reference for data model elements, code lists, and business rules.
+
+* xref:technical:request-model-reference.adoc[Request Model Reference] +
+Element-by-element tables for the ESPD Request.
+
+* xref:technical:response-model-reference.adoc[Response Model Reference] +
+Element-by-element tables for the ESPD Response.
+
+* xref:technical:criteria-catalogue.adoc[Criteria Catalogue] +
+Reference tables for criterion, legislation, property group, and property elements.
+
+* xref:technical:code-lists.adoc[Code Lists] +
+All ESPD code lists with metadata and XML examples.
+
+* xref:technical:business-rules.adoc[Business Rules] +
+Complete Schematron business rules catalogue.
+
+=== Releases
+
+* xref:ROOT:release_notes.adoc[Release Notes] +
+Release notes for the current version.
+
+* link:{attachmentsdir}/ESPD_CM_html/index.html[Conceptual Model (HTML)]
+
+=== Further Information
+
+* xref:technical:glossary.adoc[Glossary] +
+Definitions of key technical terms.
+
+* xref:technical:common-concepts.adoc[Common Concepts] +
+Schematron architecture and validation process.
+
+* xref:espd-wgm::index.adoc[Open User Community Meetings] +
+Regular meetings and annual seminars.
+
+---
+
+=== Legacy pages
+
+The following pages are from the previous structure:
+
+* xref:ROOT:index.adoc[Home (old)] — current tile layout landing page
+* xref:ROOT:demo.adoc[ESPD Demo Site (old)] — deprecated, to be removed
+* xref:business:index.adoc[Business Information (old)]
+* xref:business:business_info.adoc[Information for Business Users (old)]
+* xref:technical:index.adoc[Technical Information (old)]
+
+include::partial$feedback.adoc[]
