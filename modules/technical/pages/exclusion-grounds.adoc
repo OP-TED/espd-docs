@@ -1,63 +1,438 @@
-:doctitle: Exclusion Grounds
+﻿:doctitle: Exclusion Grounds
 :doccode: espd-tech-prod-010
 :author: ESPD Team
 :docdate: July 2026
 
-// Move-as-is from tech_exclusion_criteria.adoc
+// Generated from tech_exclusion_criteria.adoc
 // Target section: Criteria
-// Changes: removed eSens/BIS41 links, updated demo site references
 
-== Exclusion Grounds
-
-[cols="1,4"]
-|===
-|*REQUIREMENT* |*The contracting body shall provide the exclusion grounds and selection criteria for its tendering process as structured information — via ESPD template or structured list of criteria set out in a call for tender.*
-|===
+:doccode: espd-tech-prod-010
+:author: NPJ
+:authoremail: nicole-anne.paterson-jones@ext.ec.europa.eu
+:docdate: January 2024
 
 [cols="1,4"]
 |===
-|*REQUIREMENT* |The ESPD request must contain information about the criteria that set the exclusion grounds as stated in Directive 2014/24/EU Art. 57 and referred to in Directive 2014/25/EU Art. 80 and/or according to national legislation. These should be retrieved from e-Certis.
+|*REQUIREMENT*  |*The contracting body shall provide the exclusion grounds and selection criteria for its tendering process as structured information - via ESPD template or structured list of criteria set out in a call for tender.*
 |===
 
-Criteria are grouped under different categories. The figure below identifies and lists these categories for the exclusion criteria (branches in text boxes), and specific subgroups within each category (leaves in text without boxes).
+[cols="1,4"]
+|===
+|*REQUIREMENT*  |The ESPD request must contain information about the criteria that set the exclusion grounds as stated in directive 2014/24/EU Art. 57 and referred to in directive 2014/25/EU Art. 80 and/or according to national legislation. These should be retrieved from e-Certis.
+|===
 
-Each branch in this 'criteria classification' corresponds to one data structure that is identical for all the leaves under that branch.
+As suggested in section "Criteria Data Structures" criteria may be grouped in several different categories. The figure below is intended to identify and list these categories for the Exclusion criteria (branches in text boxes), and specific subgroups within each category (leaves in text without boxes).
 
-image::https://kroki.io/pikchr/svg/eNq9lV1v2jAUhu_zKyzEpH00VUgICKRdtIxWSAykBiZujWOKRbAz20D67-ckhHjEpB2TuIgUn5ycj-e1fZocfAfOvUuoFRGKOQyzddf_2uSZ5UByi-tb1nAxGM-D0XTSB0uWgNTZjxOAWMQ4cBIf9pahD1ZEWiGT-Wfn09lna-H0QQSFvMfgG_js3DlfLMg5O1TCcLbNHEEaTDKwcKwt22PAyetaAu--p2qWOJGgcaqrcQyyjCDaACjB6YtlTpLHavI828IBco2pSnigoKUI5MvCyRo-t_qA7WEEGoPp5NdoMFORg4YJQJ7NM_SvgsCcXwjFGoeggZNXG3GytWPI5R04LRHjPNYNKw53obaWWGXhmiGCO_qXA4erFUEbU4ngCM_QSYnvuXX0ul2NenL477J5JtlcTbbZy-hxfmw3xXAmT57P7ZmEcw3CxVtpLzm2JUzypgqDEMi4M07U9UIqrbsa94-k0H-9gppvouYV1ILpYPQwrsHluyZcngHXloisdEz3aicc8n4Ko2CoaozgMjXWsCzKq5DwNIj_nViPewXhrolwuyD8qC6pyTCo25Jt413SNjAWRFJ7CenmeOyyNaGCRXtM0ZtmRByHtgoPqWZkqkr9z4j8tmG4JboPFLbYibhGlLKjCr62Jsvta9ULuULHnklHv9Dx5yhQJ_vHfDCrUdI8FfwLp0U9iNFwh2S5PUMiJOOSMFqjgF5LpXX_7Gh8LIse4Ap2LeNM7WiX89NYjSJ7-mSPJrPhyzCow2i8ojsXKKZjiyA1rugqKjuMOY7PbQJSlPZcWtSj_DgWmGp0dpTjyBb4nVve0FGFZedMjBsUq2e_RknjmO0WSk4e0rlWOzLM11nXIB-FMsouZPXyziQo81a67GqML0XU3eEfcvGg7A==[Exclusion criteria classification,width=950,height=450]
+Each branch in this 'criteria classification' corresponds to one data structure that is identical for all the leaves under that branch. 
 
+image::https://kroki.io/pikchr/svg/eNq9lV1v2jAUhu_zKyzEpH00VUgICKRdtIxWSAykBiZujWOKRbAz20D67-ckhHjEpB2TuIgUn5ycj-e1fZocfAfOvUuoFRGKOQyzddf_2uSZ5UByi-tb1nAxGM-D0XTSB0uWgNTZjxOAWMQ4cBIf9pahD1ZEWiGT-Wfn09lna-H0QQSFvMfgG_js3DlfLMg5O1TCcLbNHEEaTDKwcKwt22PAyetaAu--p2qWOJGgcaqrcQyyjCDaACjB6YtlTpLHavI828IBco2pSnigoKUI5MvCyRo-t_qA7WEEGoPp5NdoMFORg4YJQJ7NM_SvgsCcXwjFGoeggZNXG3GytWPI5R04LRHjPNYNKw53obaWWGXhmiGCO_qXA4erFUEbU4ngCM_QSYnvuXX0ul2NenL477J5JtlcTbbZy-hxfmw3xXAmT57P7ZmEcw3CxVtpLzm2JUzypgqDEMi4M07U9UIqrbsa94-k0H-9gppvouYV1ILpYPQwrsHluyZcngHXloisdEz3aicc8n4Ko2CoaozgMjXWsCzKq5DwNIj_nViPewXhrolwuyD8qC6pyTCo25Jt413SNjAWRFJ7CenmeOyyNaGCRXtM0ZtmRByHtgoPqWZkqkr9z4j8tmG4JboPFLbYibhGlLKjCr62Jsvta9ULuULHnklHv9Dx5yhQJ_vHfDCrUdI8FfwLp0U9iNFwh2S5PUMiJOOSMFqjgF5LpXX_7Gh8LIse4Ap2LeNM7WiX89NYjSJ7-mSPJrPhyzCow2i8ojsXKKZjiyA1rugqKjuMOY7PbQJSlPZcWtSj_DgWmGp0dpTjyBb4nVve0FGFZedMjBsUq2e_RknjmO0WSk4e0rlWOzLM11nXIB-FMsouZPXyziQo81a67GqML0XU3eEfcvGg7A==[Exclusion criteria clasification,width=950,height=450]
+//image:Exclusion_criteria_clasification.jpg[Exclusion criteria clasification,width=510,height=374]
+//[Edit this diagram](https://niolesk.top/#https://kroki.io/pikchr/svg/eNq9lV1v2jAUhu_zKyzEpH00VUgICKRdtIxWSAykBiZujWOKRbAz20D67-ckhHjEpB2TuIgUn5ycj-e1fZocfAfOvUuoFRGKOQyzddf_2uSZ5UByi-tb1nAxGM-D0XTSB0uWgNTZjxOAWMQ4cBIf9pahD1ZEWiGT-Wfn09lna-H0QQSFvMfgG_js3DlfLMg5O1TCcLbNHEEaTDKwcKwt22PAyetaAu--p2qWOJGgcaqrcQyyjCDaACjB6YtlTpLHavI828IBco2pSnigoKUI5MvCyRo-t_qA7WEEGoPp5NdoMFORg4YJQJ7NM_SvgsCcXwjFGoeggZNXG3GytWPI5R04LRHjPNYNKw53obaWWGXhmiGCO_qXA4erFUEbU4ngCM_QSYnvuXX0ul2NenL477J5JtlcTbbZy-hxfmw3xXAmT57P7ZmEcw3CxVtpLzm2JUzypgqDEMi4M07U9UIqrbsa94-k0H-9gppvouYV1ILpYPQwrsHluyZcngHXloisdEz3aicc8n4Ko2CoaozgMjXWsCzKq5DwNIj_nViPewXhrolwuyD8qC6pyTCo25Jt413SNjAWRFJ7CenmeOyyNaGCRXtM0ZtmRByHtgoPqWZkqkr9z4j8tmG4JboPFLbYibhGlLKjCr62Jsvta9ULuULHnklHv9Dx5yhQJ_vHfDCrUdI8FfwLp0U9iNFwh2S5PUMiJOOSMFqjgF5LpXX_7Gh8LIse4Ap2LeNM7WiX89NYjSJ7-mSPJrPhyzCow2i8ojsXKKZjiyA1rugqKjuMOY7PbQJSlPZcWtSj_DgWmGp0dpTjyBb4nVve0FGFZedMjBsUq2e_RknjmO0WSk4e0rlWOzLM11nXIB-FMsouZPXyziQo81a67GqML0XU3eEfcvGg7A==)
 _Figure 1. Exclusion criteria classification_
 
 == Convictions
 
-=== Related information requirements
+*Information requirement*
 
-The exclusion grounds relating to criminal convictions are based on Article 57(1) of Directive 2014/24/EU. They are mandatory — the buyer cannot remove them.
+See formal requirements related to exclusion grounds in the , and more specifically *_tbr070-009_*, *_tbr070-004_*, *_tbr070-013_*.
 
-The criteria in this category are:
+The label ''Convictions'' groups all the criteria with identical data structures classified as:
 
-* Participation in a criminal organisation
-* Corruption
-* Fraud
-* Terrorist offences or offences linked to terrorist activities
-* Money laundering or terrorist financing
-* Child labour and other forms of trafficking in human beings
+''participation in a criminal organisation'', ''corruption'', ''fraud'', ''terrorist offences linked to terrorist activities'', ''money laundering or terrorist financing'', ''child labour and other forms of trafficking in human beings''.
+
+[NOTE]
+_Note about the ESPD Service_
+
+In an initial phase, the European Commission provided an ESPD service to support the ESPDâ€™s uptake. As announced in 2018, on 2 May 2019, the Commissionâ€™s ESPD service has been turned off. To reap the full benefit of an electronic ESPD, the integration with national eProcurement services and national databases is necessary. This will enable data reusability, default form pre-filling and data interexchange among different databases. In turn, buyers and suppliers will benefit from the automatism, making the application of the ESPD much easier and decreasing the data errors rates.
+
+////
+=== Data structure
+
+image:Convictions_data_structure.jpg[Convictions data structure,width=576,height=235]
+
+_Figure 2. Data Structure for all 'Conviction' exclusion grounds_
+////
 
 === XML Example
 
+The fragment of XML code below illustrates how a 'Convictions' criterion looks like in *ESPD Request*. See comments beneath the example.
+
 _'Participation in a criminal organisation' conviction_
 
-Please generate an ESPD Request and ESPD Response documents on the https://github.com/OP-TED/ESPD-EDM/tree/v5.0.0/xml-examples[ESPD-EDM XML examples] to see a full example.
+Please generate an ESPD Request and ESPD Response documents on https://github.com/OP-TED/ESPD-EDM/tree/v5.0.0/xml-examples[ESPD-EDM XML examples] to see a full example.
 
-// NOTE: The remainder of this file should contain the full content from
-// tech_exclusion_criteria.adoc lines 57 onwards, with the following changes applied:
-// 1. All "https://docs.ted.europa.eu/espd-demo/[ESPD Demo Site]" links replaced with
-//    "https://github.com/OP-TED/ESPD-EDM/tree/v5.0.0/xml-examples[ESPD-EDM XML examples]"
-// 2. All eSens/BIS41 wiki links (wiki.ds.unipi.gr) removed
-// 3. All references to "tbr070-xxx" and "tbr092-xxx" removed from REQUIREMENT boxes
-//    (keep the requirement text itself)
-//
-// Due to the large size (430 lines), the full content is not reproduced here.
-// Apply the substitutions above to the original tech_exclusion_criteria.adoc to produce
-// the complete file.
+[cols=",",options="header",]
+
+. Date of conviction. Mandatory format 'YYYY-MM-DD'
+. The reason of convictions. A descriptive text.
+. The natural person or legal entity convicted. A text.
+. Length of the period of exclusion. A cac:Period will be used in the response by the economic operator. The EO may specify a starting date and an end-date or, alternatively, a text to commenting the length. See XML example in the ESPD Response section.
+. If the answer is *No* the QUESTION 'Please describe them' should not be shown.
+. Text box to describe the measures to demonstrate the economic operator's reliability.
+. A whole group related to one conviction can be repeated multiple times (or deleted).
+. If answered as *No* the group of QUESTION(s) relating the online evidence should not be shown. Beware that the ESPD Response behaves totally differently as far as evidences are concerned. The data concerning the evidence in the ESPDRequest document is placed in the ESPD Response document in a component cac:Evidence in a different manner. See the section ESPD Response for more details on this. See also the XML examples.
+. The URL where to access the evidence. Will be placed in an element of the object cac:Evidence. See section xref:tech_response.adoc#evidences[Evidences].
+. By specifying that the value of the expected data type is an evidence identifier (code EVIDENCE_IDENTIFIER of the Code List ResponseDataType`) the Response will have to contain an evidence supplied in an element of the object cac:Evidence, at the end of the XML Instance. See section xref:tech_response.adoc#evidences[Evidences].
+. The issuer party of this evidence (e.g. a base registry). Will be placed in the element cac:Evidence/cac:DocumentReference/cac:Attachment/cac:IssuerParty. Some countries use verification codes associated to evidences. To specify these verification codes you can use the Evidence ID, as in the end the code identifies uniquely the Evidence in the issuer system (see this XML example, look for 'Verification code' inside the example, bullet number 6).
+. National criterion defined by the MS in e-Certis (this example corresponds to Finland) related to the EU criterion on this conviction.
+. An additional specification for this national criterion, in this case related to the evidence that will be required by this Member State.
+. UUID supplied by e-Certis. See also the criterion spread-sheet.
+. Exclusion criteria taxonomy code defined in the criterion spread-sheet.
+. Compulsory name and description for the criterion as defined in e-Certis. See also link:{url-tree}/codelists/ESPD-criterion.xlsx[ESPD-criterion spreadsheet]. Beware that UBL-2.3 allows '0..n' description lines!
+. This property is a caption, a mere 'label'. See Code List link:{url-tree}/codelists/gc/CriterionElementType.gc[CriterionElementType] for the complete list of possible options. Beware that when a property is of type CAPTION the cbc:ValueDataType must be set to NONE.
+. As the property is a CAPTION no response is expected from the economic operator. See Code List 'ResponseDataType' for the complete list of possible options.
+. Notice that in the ESPD Request the criterion properties never use its element cbc:Name.
+. EU legislation data related to this criterion. Notice that all the textual fields have multiple cardinality and *may* specify the language (attribute languageID. This can be used to express the same content in different languages. No language specified defaults to en (English).
+. The complete title as published in Eurlex or in a national official electronic bulletin board is expected for this field.
+. A quick reference name to refer to the legislation is expected for this field.
+. The jurisdiction level (or scope) covered by this legislation.
+. One or more articles from this legislation where the criterion is defined and referred to. Beware that the cardinality of this field is multiple.
+. Groups codified as ON* must be processed always (e.g. all its elements shown on a GUI or automatically parsed and saved, etc.).
+. Pay attention to this type of QUESTION(s). It is intended to act as a *decision point*. If answered with *yes* (INDICATOR value = true) some additional questions will be asked to the economic operator. Thus the value of the code of the next sub-group (set to ONTRUE).
+. This property is a QUESTION, therefore a specific type of value will be expected from the economic operator in the ESPD Response (an INDICATOR, i.e. a 'boolean' value true/false, in this case).
+. The cbc:ValueDataType indicates the type of value that the buyer requires for this QUESTION. Therefore, in its answer (inside the ESPD Request document) the economic operator will have to use also an INDICATOR value (true/false). Otherwise the mechanism used to validate the ESPD Response should consider the XML instance as invalid (should be treated as a FATAL error).
+. Data structures defined by GROW are *re-usable*. This is specially the case (but not uniquelly) of the structure 'Is this information available electronically?' Notice that the UUID that identifies this structure is always the same in all the criteria that include it. Similarly structures that are reused in different criteria do have the same UUID (as they are the same). Beware that the group of properties (URI, Reference/Code, Issuer) will only be shown if the answer is 'Yes', thus the sub-group code ONTRUE.
+
+[NOTE]
+====
+_Note for the future: Cross-border/cross-sector codes_
+
+Some relevant trans-European initiatives like ECRIS, BRIS, EESSI, and other, have defined Code Lists and other reference data that could be used in e-Procurement, and specifically by the ESPD. This would enhance the cross-border and cross-sector semantic and technical interoperability.
+Thus, in the case of Convictions, a new requirement could be introduced in G1 (see figures above) asking for the ECRIS Code corresponding to the offence that will be specified in the Response in case the Economic Operator answered ''yes'' to the first Requirement. The ECRIS Codes can be consulted in the Annex to the COUNCIL DECISION 2009/316/JHA of 6 April 2009 on the establishment of the European Criminal Records Information System (ECRIS) in application of Article 11 of Framework Decision 2009/315/JHA.
+==== 
+
+== Contributions
+
+=== Related information requirements
+
+See formal requirements related to exclusion grounds in the , and more specifically *_tbr070-009_*, *_tbr070-004_*, *_tbr070-013_*.
+
+[cols="1,4"]
+|===
+|*REQUIREMENT* |*The buyer needs to be able to specify national exclusion criteria linked to one EU criterion as well as criteria particular for the procurement procedure. The economic operator, in the ESPD Response document, will have to responde "Yes" or "No" to each national criterion thus confirming that it in breach of the Law.*
+|===
+
+See also the REQUIREMENT  about economic thresholds regarding unpaid taxes or social security obligations.
+
+=== Mock-ups - buyer perspective
+
+This other screen-capture below represents a possible mock-up, from the buyer perspective, for the edition of requirements in 'Contributions' criterion (Payment of Taxes).
+
+image:Payment_Taxes_REQUIREMENT_edition_CA.jpg['Payment of Taxes', REQUIREMENT edition,width=419,height=424]
+
+_Figure 3. 'Payment of Taxes', REQUIREMENT edition (Buyer Perspective)_
+
+=== Mock-ups - economic operator perspective
+
+This other mock-up illustrates what the economic operator sees.
+
+[NOTE]
+====
+Beware that this mock-up is not showing the national criteria. For this mock-up it is presumed that *by answering 'Yes' to the general EU criterion all the national criteria QUESTION 'Your answer' will be also set to 'Yes'*.
+====
+
+image:Payment_Taxes_EO_perspective.jpg['Payment of Taxes', EO perspective,width=656,height=395]
+
+_Figure 4. 'Payment of Taxes', (EO perspective)_
+
+////
+=== Data structure
+
+image:Contributions_criterion_data_structure.jpg['Contributions' criterion data structure,width=656,height=357]
+
+_Figure 5. 'Contributions' criterion data structure_
+////
+=== XML Example
+_Payment of Taxes (PoT)_
+
+Please generate an ESPD Request and ESPD Response documents on https://github.com/OP-TED/ESPD-EDM/tree/v5.0.0/xml-examples[ESPD-EDM XML examples] to see a full example.
+
+[cols=",",options="header",]
+
+. The MS defined this national 'Payment of Taxes' criterion in e-Certis.
+. Reference to the EU Legislation. This reusable structure is identical for all the exclusion criteria.
+. For this *ESPD Request Payment of Taxes* criterion, the Member State defined in e-Certis a *national REQUIREMENT* consisting in the specification of the '_threshold amount of debt that an economic operator have with the national Tax Agency_' (50 Euros in this example).
+. Notice that type of property used is REQUIREMENT. This entails that: a cbc:ValueDataType will be present indicating the type of value the buyer uses for this REQUIREMENT (e.g. AMOUNT, INDICATOR, DESCRIPTION, etc.; see the link:{url-tree}/codelists/gc/ResponseDataType.gc[Code List ResponseDataType], the values are the same for buyers REQUIREMENT(s) than for economic operator response values).
+. Beware that No answer is expected here from the economic operator (do not get confused by the presence of the cbc:ValueDataType, as said it is used by both the Buyer and the EO.
+. The value supplied by the buyer for this requirement (50 Euros, in this example). Notice that the currency is specified in the attibute currencyID of the cbc:Amount component.
+. The MS also allows the buyer the possibility of adding multiple additional textual requirements (in this case the Buyer uses this to explain that ''Beware that the national Tax Agency won't permit the existence of a debt, even if minimial, for two consecutive years'').
+. Again, no answer is expected here from the economic operator, as this is a REQUIREMENT issued by the buyer. Hence the element 'cbc:ValueDataTypeCode' contains the type of value of the requirement issued by the buyer.
+
+
+== Environment, Social, Labour Law
+
+=== Related information requirements
+
+See formal requirements related to exclusion grounds in the , more specifically *_tbr070-009_*, *_tbr070-004_*, *_tbr070-013_*.
+
+Category ''Social'' encompasses criteria with identical data structures, classified as:
+
+''breaching of obligations in the fields of environmental law'', ''breaching of obligations in the fields of social law'' and ''breaching of obligations in the fields of labour law''.
+
+=== Mock-ups - buyer perspective
+
+image:Environmental_Law_criterion mock-up_CA_perspective.jpg['Environmental Law' criterion mock-up buyer perspective,width=606,height=321]
+
+_Figure 6. 'Environmental Law' criterion mock-up - buyer perspective_
+
+=== Mock-ups - economic operator perspective
+
+[NOTE]
+====
+Beware that this mock-up is not showing the national criteria. For this mock-up it is presumed that *by answering 'Yes' to the general EU criterion all the national criteria QUESTION 'Your answer' will be also set to 'Yes'*.
+====
+
+image:Environmental_Law_criterion_mockup_EO perspective.jpg['Environmental Law' criterion mock-up - EO perspective,width=642,height=354]
+
+_Figure 7. 'Environmental Law' criterion mock-up - EO perspective_
+
+////
+=== Data structure
+
+image:Environmental_Law_criterion_data_structure.jpg['Environmental Law' criterion data structure,width=588,height=315]
+
+_Figure 8. 'Environmental Law' criterion data structure_
+
+////
+
+=== XML Example
+
+_'Environmental Law'_
+
+Please generate an ESPD Request and ESPD Response documents on https://github.com/OP-TED/ESPD-EDM/tree/v5.0.0/xml-examples[ESPD-EDM XML examples] to see a full example.
+
+
+== Business
+
+=== Related information requirements
+
+See formal requirements related to exclusion grounds in the , and more specifically *_tbr070-009_*, *_tbr070-004_*, *_tbr070-013_*.
+
+=== Mock-ups - buyer perspective
+
+image:Bankruptcy_criterion_mockup_CA_perspective.jpg['Bankruptcy' criterion mock-up - buyer perspective,width=519,height=292]
+
+_Figure 9. 'Bankruptcy' criterion mock-up - buyer perspective_
+
+=== Mock-ups - economic operator perspective
+
+
+[IMPORTANT]
+Beware that this mock-up is not showing the national criteria. For this mock-up it is presumed that *by answering 'Yes' to the general EU criterion all the national criteria QUESTION 'Your answer' will be also set to 'Yes'*.
+
+
+image:Bankruptcy_criterion_mockup_EO_perspective.jpg['Bankruptcy' criterion mock-up - economic operator perspective,width=554,height=312]
+
+_Figure 10. 'Bankruptcy' criterion mock-up - economic operator perspective_
+
+////
+=== Data structure
+
+image:Bankruptcy_criterion_data_structure.jpg['Bankruptcy' criterion data structure,width=542,height=244]
+
+_Figure 11. 'Bankruptcy' criterion data structure_
+////
+
+=== XML Example
+
+_'Bankruptcy'_
+
+Please generate an ESPD Request and ESPD Response documents on https://github.com/OP-TED/ESPD-EDM/tree/v5.0.0/xml-examples[ESPD-EDM XML examples] to see a full example.
+
+
+== Misconduct
+
+=== Related information requirements
+
+See formal requirements related to exclusion grounds in the , and more specifically *_tbr070-009_*, *_tbr070-004_*, *_tbr070-013_*.
+
+=== Mock-ups - buyer perspective
+
+image:Professional_misconduct_criterion mockup_CA_perspective.jpg['Professional misconduct' criterion mock-up - buyer perspective,width=642,height=141]
+
+_Figure 12. 'Professional misconduct' criterion mock-up - buyer perspective_
+
+=== Mock-ups - economic operator perspective
+
+[IMPORTANT]
+Beware that this mock-up is not showing the national criteria. For this mock-up it is presumed that *by answering 'Yes' to the general EU criterion all the national criteria QUESTION 'Your answer' will be also set to 'Yes'*.
+
+
+image:Professional_misconduct_criterion_mockup_EO_perspective.jpg['Professional misconduct' criterion mock-up - EO perspective,width=642,height=131]
+
+_Figure 13. 'Professional misconduct' criterion mock-up - economic operator perspective_
+
+////
+=== Data structure
+
+image:Professional_misconduct_criterion_data_structure.jpg['Professional misconduct' criterion data structure,width=482,height=274]
+
+_Figure 14. 'Professional misconduct' criterion data structure_
+
+////
+
+=== XML Example
+_'Professional Misconduct'_
+Please generate an ESPD Request and ESPD Response documents on https://github.com/OP-TED/ESPD-EDM/tree/v5.0.0/xml-examples[ESPD-EDM XML examples] to see a full example.
+
+== Conflict of interest
+
+=== Related information requirements
+
+See formal requirements related to exclusion grounds in the , and more specifically *_tbr070-009_*, *_tbr070-004_*, *_tbr070-013_*.
+
+We have divided the conflict of interest criteria in two groups, this first group is composed of two criteria with the same structure:
+
+* partic-confl: Conflict of interest due to ''direct or indirect involvement in the preparation of this procurement procedure'';
+* prep-confl: Conflict of interest due to ''participation in the procurement procedure''.
+
+The second group, named ''Early termination'', is explained in a different section. See section <<early_termination>>.
+
+=== Mock-ups - buyer perspective
+
+image:Conflict_interest_criterion_mock-up_CA_perspective.jpg['Conflict of interest' criterion mock-up - buyer perspective,width=550,height=247]
+
+_Figure 15. 'Conflict of interest' criterion mock-up - buyer perspective_
+
+=== Mock-ups - economic operator perspective
+
+[IMPORTANT]
+Beware that this mock-up is not showing the national criteria. For this mock-up it is presumed that *by answering 'Yes' to the general EU criterion all the national criteria QUESTION 'Your answer' will be also set to 'Yes'*.
+
+
+image:Conflict_interest_criterion_mockup_EO_perspective.jpg['Conflict of interest' criterion mock-up - EO perspective,width=642,height=202]
+
+_Figure 16. 'Conflict of interest' criterion mock-up - economic operator perspective_
+
+////
+=== Data structure
+
+image:Conflict_interest_criterion_data_structure.jpg['Conflict of interest' criterion data structure,width=642,height=328]
+
+_Figure 17. 'Conflict of interest' criterion data structure_
+////
+
+=== XML Example
+
+_'Participation in the procurement procedure' conflict of interest_
+Please generate an ESPD Request and ESPD Response documents on https://github.com/OP-TED/ESPD-EDM/tree/v5.0.0/xml-examples[ESPD-EDM XML examples] to see a full example.
+
+
+[[early_termination]]
+== Early termination
+
+=== Related information requirements
+
+See formal requirements related to exclusion grounds in the , more specifically *_tbr070-009_*, *_tbr070-004_*, *_tbr070-013_*.
+
+=== Mock-ups - buyer  perspective
+
+image:Early_termination_criterion_mock-up_CA_perspective.jpg['Early termination' criterion mock-up - buyer perspective,width=614,height=156]
+
+_Figure 18. 'Early termination' criterion mock-up - buyer  perspective_
+
+=== Mock-ups - economic operator perspective
+
+[IMPORTANT]
+Beware that this mock-up is not showing the national criteria. For this mock-up it is presumed that *by answering 'Yes' to the general EU criterion all the national criteria QUESTION 'Your answer' will be also set to 'Yes'*.
+
+image:Early_termination_criterion_mockup_EO_perspective.jpg['Early termination' criterion mock-up - EO perspective,width=572,height=117]
+
+_Figure 19. 'Early termination' criterion mock-up - economic operator perspective_
+////
+=== Data structure
+
+image:Early termination_criterion_data_structure.jpg['Early termination' criterion data structure,width=476,height=254]
+
+_Figure 20. 'Early termination' criterion data structure_
+////
+=== XML Example
+
+_Early termination conflict of interest_
+Please generate an ESPD Request and ESPD Response documents on https://github.com/OP-TED/ESPD-EDM/tree/v5.0.0/xml-examples[ESPD-EDM XML examples] to see a full example.
+
+
+== Misrepresentation
+
+=== Related information requirements
+
+See formal requirements related to exclusion grounds in the , and more specifically *_tbr070-009_*, *_tbr070-004_*, *_tbr070-013_*.
+
+=== Mock-ups - buyer perspective
+
+image:Misrepresentation_criterion_mock-up_CA_perspective.jpg['Misrepresentation' criterion mock-up - buyer perspective,width=561,height=286]
+
+_Figure 21. 'Misrepresentation' criterion mock-up - buyer perspective_
+
+=== Mock-ups - economic operator perspective
+
+[IMPORTANT]
+Beware that this mock-up is not showing the national criteria. For this mock-up it is presumed that *by answering 'Yes' to the general EU criterion all the national criteria QUESTION 'Your answer' will be also set to 'Yes'*.
+
+
+image:Misrepresentation_criterion_mock-up_EO_perspective.jpg['Misrepresentation' criterion mock-up - EO perspective,width=642,height=181]
+
+_Figure 22. 'Misrepresentation' criterion mock-up - economic operator perspective_
+
+[NOTE]
+====
+The UBL specification allows always multiple lines of text for the component cbc:Description. This feature can be used to split long descriptions into multiple lines, specially when the description contains enumerations.
+
+The data structure for the criterion "Guilty of misrepresentation [...]" below uses the feature to divide four possible cases into different lines. Software and transformation solutions can also use it to generate an XML instance where the enumeration is split in multiple cbc:Description lines. See screen-captures below representing the data structures of this criterion for the model.
+====
+////
+=== Data structure
+
+image:Misrepresentation_criterion_data_structure.jpg['Misrepresentation' criterion data structure,width=642,height=327]
+
+_Figure 23. 'Misrepresentation' criterion data structure_
+////
+=== XML Example
+_'Misrepresentation' conflict of interest_
+
+Please generate an ESPD Request and ESPD Response documents on https://github.com/OP-TED/ESPD-EDM/tree/v5.0.0/xml-examples[ESPD-EDM XML examples] to see a full example.
+
+== Purely national criteria
+
+=== Related information requirements
+
+See formal requirements related to exclusion grounds in the , and more specifically *_tbr070-009_*, *_tbr070-004_*, *_tbr070-013_*.
+
+Other requirements related specifically to purely national criteria are:
+
+[cols="1,4"]
+|===
+|*REQUIREMENT* |The Member State must be able to specify in e-Certis individual national criteria, and the economic operator must be able to answer *to each individual purely national exclusion grounds criterion*.
+|===
+
+[cols="1,4"]
+|===
+|*REQUIREMENT* |For the purely national exclusion grounds that have evidences related in e-Certis, the required evidences should be displayed. When the criterion has no related evidences, the text "No evidence required for this criterion" should be displayed. Per each national criterion the EO needs to be able to provide one or more evidences.
+|===
+
+The ESPD-EDM V2.1.1 *Extended ESPD* introduced and important feature: the MS can specify and save in the XML individual national criteria. The mock-ups, data structure and XML example below show how. In the ESPD-EDM, it is kept as the only version of the ESPD is the equivalent to the EXTENDED that was introduced in V2.1.1.
+
+=== Mock-up - economic operator perspective
+
+The figure below shows a fragment of a list of national criteria that a software application has captured from e-Certis. *Per each criterion* the economic operator has to specify whether it fulfills the Criterion or not and eventually provide references to online evidences.
+
+image:Purely_national_criteria_mockup_CA_perspective.jpg['Purely national criteria' mock-up - buyer perspective,width=500,height=350]
+
+_Figure 24. 'Purely natural criteria' - economic operator perspective_
+
+////
+=== Data structure
+
+image:Purely_national_criteria_data_structure.jpg['Purely national criteria' data structure,width=500,height=150]
+
+_Figure 25. 'Purely national criteria' data structure_
+////
+=== XML Example
+
+_'Purely national criteria'_
+
+Please generate an ESPD Request and ESPD Response documents on https://github.com/OP-TED/ESPD-EDM/tree/v5.0.0/xml-examples[ESPD-EDM XML examples] to see a full example.
 
 include::partial$feedback.adoc[]
+
+
