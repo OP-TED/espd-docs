@@ -138,7 +138,7 @@ It is not necessary to create an ESPD Response from scratch for each procedure. 
 === Further information
 
 * For details on the ESPD parts and what each role fills in, see xref:espd-parts.adoc[ESPD Parts].
-* For technical implementation details, see the xref:technical:tech_response.adoc[ESPD Response] technical guide.
+* For technical implementation details, see the xref:technical:espd-response.adoc[ESPD Response] technical guide.
 * A list of current ESPD Service providers can be found at https://single-market-economy.ec.europa.eu/single-market/public-procurement/digital-procurement/european-single-procurement-document-and-ecertis_en[the European Commission's ESPD page].
 
 include::partial$feedback.adoc[]

@@ -90,9 +90,9 @@ The ESPD-EDM project uses several GitHub repositories:
 
 == Next Steps
 
-* To understand the ESPD Request document, see xref:tech_request.adoc[ESPD Request].
-* To understand criteria structure, see xref:tech_common_aspects_for_criteria.adoc[How Criteria Work].
-* To validate your implementation, see xref:tech_validation.adoc[Validation].
+* To understand the ESPD Request document, see xref:espd-request.adoc[ESPD Request].
+* To understand criteria structure, see xref:how-criteria-work.adoc[How Criteria Work].
+* To validate your implementation, see xref:validation-conformance.adoc[Validation and Conformance].
 * To test your XML files online, use the https://www.itb.ec.europa.eu/espd/upload[Interoperability Testbed].
 
 include::partial$feedback.adoc[]

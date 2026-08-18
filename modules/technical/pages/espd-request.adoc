@@ -74,7 +74,7 @@ For detailed element tables, see xref:request-model-reference.adoc[Request Model
 
 * For detailed element tables, see xref:request-model-reference.adoc[Request Model Reference].
 * For lot management details, see xref:lots-management.adoc[Lots Management].
-* For the ESPD Response, see xref:tech_response.adoc[ESPD Response].
+* For the ESPD Response, see xref:espd-response.adoc[ESPD Response].
 * For criteria details, see xref:how-criteria-work.adoc[How Criteria Work].
 
 include::partial$feedback.adoc[]

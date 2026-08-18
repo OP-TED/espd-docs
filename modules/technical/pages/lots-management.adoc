@@ -92,7 +92,7 @@ On the Economic Operator's side:
 
 == Further information
 
-* For ESPD Request details, see xref:tech_request.adoc[ESPD Request].
-* For ESPD Response details, see xref:tech_response.adoc[ESPD Response].
+* For ESPD Request details, see xref:espd-request.adoc[ESPD Request].
+* For ESPD Response details, see xref:espd-response.adoc[ESPD Response].
 
 include::partial$feedback.adoc[]
