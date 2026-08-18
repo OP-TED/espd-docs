@@ -14,10 +14,10 @@ Architecture overview, distribution package contents, repository structure, and 
 
 === ESPD Documents
 
-* xref:tech_request.adoc[ESPD Request] +
-Technical guide to the ESPD Request document: schema, cardinality constraints, root elements, contracting party, and service provider.
+* xref:espd-request.adoc[ESPD Request] +
+Technical guide to the ESPD Request document: schema, cardinality constraints, lot management, contracting party, and service provider.
 
-* xref:tech_response.adoc[ESPD Response] +
+* xref:espd-response.adoc[ESPD Response] +
 Technical guide to the ESPD Response document: schema, economic operator party, criterion responses, and evidence.
 
 * xref:lots-management.adoc[Lots Management] +
@@ -28,7 +28,7 @@ Shared technical patterns: Schematron architecture, validation life-cycle, and e
 
 === Criteria
 
-* xref:tech_common_aspects_for_criteria.adoc[How Criteria Work] +
+* xref:how-criteria-work.adoc[How Criteria Work] +
 The criterion-property-response chain, property group types (ONTRUE/ONFALSE), and response linking patterns.
 
 * xref:exclusion-grounds.adoc[Exclusion Grounds] +
@@ -44,6 +44,15 @@ Criteria-specific validation: UUID checks, CVA constraints, conformance testing 
 Distribution package criterion artefacts, JSON data model, and integration guidance.
 
 === Model Reference
+
+* xref:request-model-reference.adoc[Request Model Reference] +
+Detailed element tables for the ESPD Request (cardinalities, data types, business rules per element).
+
+* xref:response-model-reference.adoc[Response Model Reference] +
+Detailed element tables for the ESPD Response (cardinalities, data types, business rules per element).
+
+* xref:criteria-catalogue.adoc[Criteria Catalogue] +
+Complete reference tables for criterion, legislation, property group, and property elements.
 
 * xref:code-lists.adoc[Code Lists] +
 All ESPD code lists with metadata, versions, usage contexts, and XML examples.
@@ -62,10 +71,13 @@ Definitions of key technical terms.
 
 ==== Documents (old)
 
+* xref:tech_request.adoc[ESPD Request] (replaced by espd-request.adoc + request-model-reference.adoc)
+* xref:tech_response.adoc[ESPD Response] (replaced by espd-response.adoc + response-model-reference.adoc)
 * xref:tech_architecture.adoc[Technical Architecture] (content moved to Getting Started)
 
 ==== Criteria (old)
 
+* xref:tech_common_aspects_for_criteria.adoc[Common Aspects for Criteria] (split into how-criteria-work.adoc + criteria-catalogue.adoc)
 * xref:tech_exclusion_criteria.adoc[Exclusion Criteria] (replaced by exclusion-grounds.adoc)
 * xref:tech_selection_criteria.adoc[Selection Criteria] (replaced by selection-criteria.adoc)
 
@@ -81,7 +93,7 @@ Definitions of key technical terms.
 * xref:tech_codelist.adoc[Code Lists Catalogue] (replaced by code-lists.adoc)
 * xref:tech_dist_pack.adoc[Distribution Package] (replaced by distribution-tooling.adoc)
 * xref:tech_glossary.adoc[Technical Glossary] (replaced by glossary.adoc)
-* xref:tech_br_request_reqs.adoc[Request Requirements] (to be merged into Request Model Reference)
-* xref:tech_br_response_reqs.adoc[Response Requirements] (to be merged into Response Model Reference)
+* xref:tech_br_request_reqs.adoc[Request Requirements] (merged into request-model-reference.adoc)
+* xref:tech_br_response_reqs.adoc[Response Requirements] (merged into response-model-reference.adoc)
 
 include::partial$feedback.adoc[]

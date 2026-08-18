@@ -1,0 +1,93 @@
+:doctitle: ESPD Response
+:doccode: espd-tech-prod-016
+:author: ESPD Team
+:docdate: July 2026
+
+// Split from: tech_response.adoc (narrative/guide portions)
+// Target section: Technical Implementation
+
+== Business Requirements Specification
+
+The ESPD-EDM models the business and information requirements for the ESPD Response transaction in accordance with Directive 2014/24/EU (Article 59) and Regulation (EU) 2016/7. The formal information requirements are defined in the xref:response-model-reference.adoc[Response Model Reference].
+
+[cols="1,2"]
+|===
+|*BUSINESS REQUIREMENT* |*The ESPD Response document must include all the criteria that are present in the ESPD Request. For certain selection criteria the economic operator can add additional properties so it can include more responses than the minimum required by the buyer.*
+|===
+
+== ESPD Response XSD Schema
+
+The ESPD-EDM uses the UBL-2.4 document `QualificationApplicationResponse.xsd`. This schema is available at https://docs.oasis-open.org/ubl/os-UBL-2.4/xsdrt/maindoc[ubl-2.4/xsdrt/maindoc].
+
+image::https://kroki.io/blockdiag/svg/eNrtVt1O2zAYvW6ewspuNskrLSABQ5sEtJ0qMdZR2CYxVLnO18Tg2JntlBbG_Z5iD7cnmZ22abvSFSGgQyIXkXP82T75_o7bXNLzgJEQXXkrK6hBQkArBmgkGCU8G7UU6EQKDcXIxBzV479sWswheuX4sN46hA4oEBRa1WajYj-_p6BN8SwJ0csaC1MFqLxVLqJPKeGsY5cbJsVOkvDh8HB4FPrarKAmjSAmGIVctglHXQYXrxzJJhikEyJQDEaxnodQ9tm6YIGJ0Fu0vrmdYxGwMDIWLK9mYAAdknLT6khhNLsEN7OezXihkmmCLkHJ1mB45XlUcqmsjf-iulEt1cr-tuf5i8h_E0f9BNCPhX_pzHz0-h3yoWfeHO_uV3sGhLYW2sfIp23qwM-gHFSvjLC9VBsZs8tsrzHcULLDOMwA1R7QdNp0Yi-Z9OsicMSkyg89njQQRhFqapIHoCyOTgLmXCKkgNMHccbksQckhqkjMeKkDdzFpFQs_v75y384EnWtU6gQA7nfHHDEYgcMkCqVwsaCfkxAORe-d5mTkR4umYleQ0GXyVTfMCEpBLZE9mSQL59H2BHN7B4nHF-yMmpSqZgIP4CJZGArI-wfSLO88AxIWUKP7Izl_TQZF4b97QZRpp8lCplNxMHkHJblh2bpctlmcgzC2OEZUPMYsbnx4H1pRj46AmF7mPXcnmLGDqRYWhhnqYzslhaznSBgbpbwivWh82Cu5nmSdVkw-d1koSDG-nuhH4fq2mFKm1xeC_7tGJ7oiCROqu0667agLXsYjdR-rVTC2vS5mw-IjiDAaCzbld3KWnXX8p0S_NNtr1BAY7M2J_TcH4DGavF4fa1Wso-f3RCGz4gMZwKm8CkSg82y11NSd3yD_OKno4b4FnKFUWGOfOCJ_o7v0m7x3O6H79ae8MJuge-heL3CtXc9ulkP6spIW8oBaDy6MaMu4Skgpu1NevPee9A_K3x1q4RRfpHfKE0X86ot5ucKe66w_7rCFkqYTeLrP_ZrZ6I=[QualificationApplicationResponse XSD Schema,width=500,height=1100]
+
+_Figure 1. QualificationApplicationResponse XSD Schema, global view_
+
+NOTE: This section does not cover elements already described in the xref:espd-request.adoc[ESPD Request] (such as `cac:ContractingParty`, `cac:ProcurementProject`, `cac:AdditionalDocumentReference`), unless a Response-specific clarification is needed.
+
+== ESPD Response Cardinalities
+
+The UBL-2.4 Schema is flexible — most elements are optional. The ESPD-EDM adds cardinality restrictions enforced via ISO Schematron assertions.
+
+For detailed element tables with all cardinalities, data types, and business rules, see xref:response-model-reference.adoc[Response Model Reference].
+
+== Economic Operator
+
+The economic operator information is spread in two places:
+
+[arabic]
+. The UBL-2.4 *cac:EconomicOperatorParty* component (identification, role, party data);
+. *Criteria data structures* classified as `CRITERION.OTHER.EO_DATA.*` (e.g. sheltered workshop, together with others, relied-on entities, subcontractors).
+
+=== Key requirements
+
+* *One ESPD Response per economic operator* — every participant in a tender must provide its own ESPD Response.
+* *One ESPD Response per lot* — each EO submits a separate response per lot (or group of lots) they tender for.
+* *Group name consistency* — all economic operators in a group must use the exact same group name spelling.
+
+=== Roles
+
+The role of the economic operator is specified via `cac:EconomicOperatorRole/cbc:RoleCode` using code list link:{url-tree}/codelists/EoRoleType.gc[EoRoleType]:
+
+* Sole tenderer
+* Group leader
+* Group member (not leader)
+* Other entity (relied upon)
+* Subcontractor
+
+For detailed element tables, see xref:response-model-reference.adoc[Response Model Reference].
+
+== Answering QUESTIONs
+
+The ESPD Response uses `cac:TenderingCriterionResponse` to answer each QUESTION from the Request. Key rules:
+
+* Each response is linked to one, and only one, criterion property via `cbc:ValidatedCriterionPropertyID` (matching the UUID from the Request).
+* One response may contain a list of `cac:ResponseValue` elements of the same type.
+* If confidential, linked evidences must also be treated as confidential.
+* Response data types must match the `cbc:ValueDataTypeCode` specified by the buyer in the Request.
+
+For the criterion-property-response linking mechanism, see xref:how-criteria-work.adoc[How Criteria Work].
+
+== Evidence
+
+Economic operators can reference evidence documents that prove compliance with criteria. Evidence is linked indirectly to responses: `cac:EvidenceSupplied/cbc:ID` in the response references `cac:Evidence/cbc:ID` at document level.
+
+Key elements:
+* `cac:Evidence/cbc:ID` — unique identifier for the evidence
+* `cac:Evidence/cbc:ConfidentialityLevelCode` — access right (PUBLIC, CONFIDENTIAL)
+* `cac:Evidence/cac:DocumentReference` — contains the URI, verification code, and issuer
+
+For detailed element tables, see xref:response-model-reference.adoc[Response Model Reference].
+
+== Lot Management in the Response
+
+In the ESPD Response, `cac:ProcurementProjectLot` under the root element defines which lot(s) the EO is answering for. See xref:lots-management.adoc[Lots Management] for full details.
+
+== Further information
+
+* For detailed element tables, see xref:response-model-reference.adoc[Response Model Reference].
+* For lot management details, see xref:lots-management.adoc[Lots Management].
+* For the ESPD Request, see xref:espd-request.adoc[ESPD Request].
+* For criteria details, see xref:how-criteria-work.adoc[How Criteria Work].
+
+include::partial$feedback.adoc[]

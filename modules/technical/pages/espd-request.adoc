@@ -1,0 +1,80 @@
+:doctitle: ESPD Request
+:doccode: espd-tech-prod-015
+:author: ESPD Team
+:docdate: July 2026
+
+// Split from: tech_request.adoc (narrative/guide portions)
+// Target section: Technical Implementation
+// Content: business requirements, schema overview, cardinalities, lot management reference,
+//          EU/notice publications overview, contracting body overview, service provider overview
+
+== ESPD Request Business Requirements
+
+The ESPD-EDM models the business and information requirements for the ESPD Request transaction based on Directive 2014/24/EU (Article 59) and Regulation (EU) 2016/7.
+
+== ESPD Request XSD Schema
+
+The ESPD-EDM uses the UBL-2.4 document named `QualificationApplicationRequest.xsd`. This schema can be found under the GitHub folder https://github.com/OP-TED/ESPD-EDM/tree/v5.0.0/schemas/maindoc[schemas/maindoc].
+
+image::https://kroki.io/blockdiag/svg/eNrtVttuEzEQfd-vGC0vILm5tJWoWoFUcpEilRJ6gYeqihx7suvitRfbW5JWfecr-Di-BHujTRPa9EaEQOrb7JmZ4_HojGeHUrMvXNAELqN6Hfo0Qag7ZKkSjMrSGhj8WqB1tdRlEnrZbyEDERBb_1hQKUYeckKrwW6ey8o-mOavrdc2amd5Ai-7IikMQrO5DQtZc0lzOZBRoQAlZqicrb0KdR6iA5tTBRk6I8YRQPk5-Ca4S-ENbG7tzLAURZI6DzbXS5DjiBbSDUba04kLDJ7N4IkSo4scLtDowdS8jCKmpTY-JH7RaXS7u6_jnSiK76n6aJJjDGtvIcax2z5-t9cZO1TWB9iYQMyGLICf0ASo166wVmGdzsRFSXUN940eCYk3gM4YWbEYOcel80lP8VCXNrNDj-cDlDOUua6WHI3H4YSLcFGlFZ4-4orzZPs0wwUiApIOUYb-NWq1n99_xI-l7llbYJs6nN0xAEciC8AUudHIvsFzoQt7i0Mz5F57Lc1nhMvKCXWUcX_Smc-l-A6ZNkIl79GlmntBJZN97VbdqelR_piVFL7qAum1SnyJfWrcZBl982n0HaaVHx_2IUcTVH_nGU-8QhCQl094ibx5hsw9vcm30u1pV-rSO49Q-cn0zWoZ4byhVeXZ5VwETirbPj9kH-AIDSqGVcihSBR1nvveBkT_0yNFbnlvyD_zUJAHzDxZNqxkbu7IkoEhdymdLJUo-Xtqi66iaj9Pd7HTXnkcLan2LpxTWSAI6_fx1gPn5cSmNA-LeqjHBKolv7HeILCwxU93ntX8rOZVvp2V8PzvoGfki_prNLzgrn4B_a3fDg==[QualificationApplicationRequest-2.4,width=550,height=1000]
+
+_Figure 1. QualificationApplicationRequest-2.4 main elements._
+
+== ESPD Request Cardinalities
+
+The UBL-2.4 Schema is flexible — except for in a few cases, all elements are optional. The ESPD-EDM model adds restrictions regarding the cardinalities of some elements.
+
+image::https://kroki.io/pikchr/svg/eNqNlUFP4zAQhe_5FVbEAcpi4jQpbKU9pO2uhIRWLAt7QRzcZEKNUrtrOxT-PePGLaRNgV6a2s_fex5P3ANNfpCIxkIGQTYkd4VayoDgZ6qeSXicT_Ph7ejyH2gjlLyY3LH7kFSPtbF-8kqrUlTw8xny2nZLWkOlsETIJ2E2JkthZ0QuCbfkfPFMJFElqbix1CyJ4XPwlLFavFzIQuTcKn0XUbptc3vb4T1W0mqe21-qKkB_IPiNTl3UC2NqmHAL7T10pWfxB_FXnBvRbfJW3o7JKw1PQtXmE5HKoag1jFXxLup9EIyGq5yYL8OwBabNaPN9TJLegSYzEA8znKXNQzBuFoR_al6J0tUbXbPFovKP1_C_BmNDVFWFR4480rMYTR15VRtqnPeIYn9NhqRQmDj0M7KZMRiSeVOS83y4ORQhH664ti_rvfplS78OyAk5jL659j1aHcoobmFcUbAkc5AWHx8ht6euVhMwuRYLt5dPwQMP7rfANyCxmzDdWAuLD5-CGI08KPkiKDx1gt0dXCp7DSVokDmcNm9XuN818a5py3WCUIfcgNamBTczKPbjvnvcoIX7Kx4ktxjza5iY9hsMnnrEPQlBrYZi9Kw3Yu2uirGrcMz_augeDtjMhxFN3ZGdpUeOPPVkvL2cZUjMnFfVmhXRpOfs32jOKFo54Gjz0_dv4-GG5dKFZpvQ03bod0s9tm3RGfgEo7jAbE_gDXq6g5620eugrAma4TtVCQmk1GpOJvgeursd99hnxM5AkgpKS6wirs5BFu9Rn22rY6fud6oZZdvqvlMne9Tp-ZY6ceq0Ux3TaJudOvVgjzrZVg9QHawqzFoXUMZw0dvfUpci7lBQ2muL-ruiaEeU7IqOs6IQ7jLi1a72Q1j6FcfBe9ErDZh0tg==[QualificationApplicationRequest UML diagram,width=600,height=550]
+
+_Figure 2. ESPD-EDM 'QualificationApplicationRequest', UML diagram_
+
+The cardinality constraints added by the ESPD are not defined in the XSD Schema. To control these constraints, the ESPD-EDM uses link:https://schematron.com/[ISO Schematron] assertions. The ESPD-EDM distribution package provides Schematron schemata and CVA files for the validation of the XML instances (folder link:{url-tree}/validation[_/validation_]).
+
+For the detailed element-by-element reference with all cardinalities, data types, and business rules, see xref:request-model-reference.adoc[Request Model Reference].
+
+== Lot Management
+
+For details on how lots are managed in the ESPD Request, see xref:lots-management.adoc[Lots Management].
+
+Key points:
+
+* Exclusion grounds are general — they apply to all lots in the procedure.
+* Selection criteria are lot-specific — each must reference the applicable lot(s) via `cac:ProcurementProjectLotReference`.
+* On the Economic Operator's side, there are as many ESPD Responses as lots the EO tenders for.
+
+== EU and Notice Publications
+
+For procurement procedures above the threshold, it is compulsory to reference the Contract Notice published in link:https://ted.europa.eu/[TED].
+
+The ESPD uses the UBL component `cac:AdditionalDocumentReference` to include references to relevant documents, including TED and national publications.
+
+Key rules:
+
+* If the document referenced is a Contract Notice published on TED, the ID must follow the Publications Office format: `[][][][]/S [][][]-[][][][][][]` (e.g. `2017/S 142-293520`).
+* If at the time of drafting the notice has not yet been published, use `0000/S 000-000000` and include the temporary "Received Notice Number" in a second `cbc:Description` element.
+* Use the Code List link:{url-tree}/codelists/DocrefcontentType.gc[DocrefcontentType] for `cbc:DocumentTypeCode`.
+
+For detailed element tables, see xref:request-model-reference.adoc[Request Model Reference].
+
+== Contracting Party
+
+The ESPD expects data about one buyer. In case of joint procurement, the data collected is about the leader of the joint procurement procedure.
+
+The contracting party information will come from eForms, which also uses `cac:ContractingParty`.
+
+For detailed element tables, see xref:request-model-reference.adoc[Request Model Reference].
+
+== Service Provider
+
+The Buyer may use a Service Provider to manage the publication of the ESPD Request. Service Provider data is optional.
+
+For detailed element tables, see xref:request-model-reference.adoc[Request Model Reference].
+
+== Further information
+
+* For detailed element tables, see xref:request-model-reference.adoc[Request Model Reference].
+* For lot management details, see xref:lots-management.adoc[Lots Management].
+* For the ESPD Response, see xref:tech_response.adoc[ESPD Response].
+* For criteria details, see xref:how-criteria-work.adoc[How Criteria Work].
+
+include::partial$feedback.adoc[]

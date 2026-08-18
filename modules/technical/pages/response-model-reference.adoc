@@ -1,0 +1,95 @@
+:doctitle: Response Model Reference
+:doccode: espd-tech-prod-040
+:author: ESPD Team
+:docdate: July 2026
+
+// Split from: tech_response.adoc (detailed element tables)
+// Also receives content from: tech_br_response_reqs.adoc (135 lines)
+// Target section: Model Reference
+
+== Response Model Reference
+
+This page provides the detailed element-by-element reference tables for the ESPD Response document, including cardinalities, data types, and business rules per element.
+
+For the narrative/guide overview, see xref:espd-response.adoc[ESPD Response].
+
+// NOTE: The content below should contain the detailed element tables from
+// tech_response.adoc, specifically:
+//
+// 1. Root Elements table (Table 26 in tech_response.adoc, lines ~82-204)
+//    - All elements of QualificationApplicationResponse with Type, Card, Description, Requirements
+//    - cbc:UBLVersionID, cbc:ProfileExecutionID, cbc:ID, cbc:CopyIndicator, cbc:UUID,
+//      cbc:ContractFolderID, cbc:IssueDate, cbc:IssueTime, cbc:EconomicOperatorGroupName,
+//      cbc:VersionID, cbc:PreviousVersionID, cbc:ProcedureCode,
+//      cac:EconomicOperatorParty, cac:TenderingCriterion, cac:TenderingCriterionResponse,
+//      cac:Evidence, cac:AdditionalDocumentReference, cac:ProcurementProjectLot
+//
+// 2. Reference to Publications and ESPD Request (lines ~206-319)
+//    - How the Response references the Request and notices
+//    - Expected elements table for cac:AdditionalDocumentReference in Response context
+//
+// 3. Economic Operator element tables (lines ~383-999)
+//    - Table 33: cac:EconomicOperatorParty
+//    - Table 34: cac:EconomicOperatorRole
+//    - Table 35: cac:Party (EO)
+//    - Table 36: cac:PostalAddress (EO)
+//    - Table 37: cac:Country
+//    - Table 38: cac:Contact (EO)
+//    - Table for cac:QualifyingParty
+//    - Table for cac:PowerOfAttorney / cac:AgentParty / cac:Person
+//
+// 4. Criterion Response element tables (lines ~1085-1233)
+//    - Table for cac:TenderingCriterionResponse
+//    - Table for cac:ResponseValue
+//    - Table for cac:ApplicablePeriod
+//    - Table for cac:EvidenceSupplied
+//
+// 5. Evidence element tables (lines ~1280-1438)
+//    - Table for cac:Evidence
+//    - Table for cac:DocumentReference inside cac:Evidence
+//
+// 6. Requirements from tech_br_response_reqs.adoc (135 lines)
+//    - Appended as a "Business Requirements" sub-section
+//
+// Changes to apply:
+// - Remove "https://docs.ted.europa.eu/espd-demo/[ESPD Demo Site]" references
+//   → replace with "https://github.com/OP-TED/ESPD-EDM/tree/v5.0.0/xml-examples[ESPD-EDM XML examples]"
+//   or link to specific GitHub XML file
+// - Remove eSens/BIS41 wiki links (wiki.ds.unipi.gr)
+// - Update "UBL-2.3" → "UBL-2.4" where it still appears
+// - Update xref links to point to new page names
+
+== Root Elements
+
+_Table: Class QualificationApplicationResponse, components required by the ESPD-EDM_
+
+// INSERT: Root elements table from tech_response.adoc lines ~82-204
+
+== Reference to Publications and ESPD Request
+
+// INSERT: Document reference tables from tech_response.adoc lines ~206-319
+
+== Economic Operator Party
+
+// INSERT: EO Party tables from tech_response.adoc lines ~383-999
+// (cac:EconomicOperatorParty, cac:EconomicOperatorRole, cac:Party,
+//  cac:QualifyingParty, cac:PostalAddress, cac:Country, cac:Contact,
+//  cac:PowerOfAttorney, cac:Person)
+
+== Criterion Response
+
+// INSERT: Response tables from tech_response.adoc lines ~1085-1233
+// (cac:TenderingCriterionResponse, cac:ResponseValue, cac:ApplicablePeriod,
+//  cac:EvidenceSupplied)
+
+== Evidence
+
+// INSERT: Evidence tables from tech_response.adoc lines ~1280-1438
+// (cac:Evidence, cac:DocumentReference inside Evidence)
+
+== Business Requirements
+
+// INSERT: Full content of tech_br_response_reqs.adoc (135 lines)
+// This provides the formal information requirements referenced by the element tables above.
+
+include::partial$feedback.adoc[]

@@ -1,0 +1,98 @@
+:doctitle: How Criteria Work
+:doccode: espd-tech-prod-037
+:author: ESPD Team
+:docdate: July 2026
+
+// Split from: tech_common_aspects_for_criteria.adoc (lines 1-~500)
+// Target section: Criteria
+// Content: criterion structure explanation, property groups, properties,
+//          ONTRUE/ONFALSE logic, GUI control types, mock-ups
+
+== Criterion Structure
+
+The ESPD-EDM defines a flexible structure to express data about criteria. Based on this structure, UBL-2.4 defines the component `cac:TenderingCriterion`, which is used in ESPD-EDM to implement the XML objects for exclusion and selection criteria.
+
+image::https://kroki.io/pikchr/svg/eNqlVsGSmzgQvfMVKm8OsSdDIQHJjKv2YI93t6bKtZVNMrkkOQiQbaUYyYtE7MnXb0vIGAzYrqwvFnT366dW9xOvCvQ7CnzChefNpuhLJnfCQ_BL5B6NbtIknT7Nl59ZobgUj4sv-NsI5d9LpZ3xAZbymf-kut_-vpArnjOwBL4_YPxjz9JyIL71asU14uIHVzXDHdcbJHaIanS33SOB5ArlVGlf7ZCiz-zAUm5fHkXGU6pl0cfk6alvb1Logqb6T5lnrDjj8Ddk6kN9VKpkC6pZew997DE5Q9_ifOL9SY5n01th9oPLUl1wkinLyoI9yKxB9ZvnzaeWJ_CbAdkM2M786v8GRZNXBdowvt6A1a8W3kMVMPqnpDlfmXpD1tl2m7vlB_ZvyZQegVeeOci5g3RY2I8Nsq2Nr0zuuQ_NuZiiTALjkbOIyqKAJHZJU5pO6zPhYv2eFvql9t-5AIZu0evgjWn6sT2NOWnGm2JAKZ6Z0LD8zlJ9BuGtQwibCJ-YgHaB_A8F17CQYhAB-4FDiJoIC6BgCHxgK1YwkbIRyqhasGwYJ3I4cRPnI18LqmE3l-PvqngoZkCPEO1zwu2DIhN449YVroNl0B2vAz82FYrHBjJxkCAliPjhCKlnmucHoMCPJibvEcxkgdjqbfXo-qFKYV6LnWGLa7bJKds61MG2U_TyvQUqhjAeIFxDJx3opA19IIorojPo0ZwLhlaFfEYL6GsjtLDHEOkNEyhnK420tDX2ZmTA-d2JMzHOYa8z9vGJc2icowHn-MQ5Ms7xgPP9iXMMzp4tF25N5wxDzFGz-zxI1wMEatJ2CrtON7Ms40ZQaN71PQsWXZMxbjl5v2WF3JlNo4SvES3MU6lgwm19lLdsFgoK7RoqfBP4QTxGa3kQtQ2jmQm7D6oSgiVoW44G7JOmAYfxkImQ-Bq4loG8a1KI2jFpLkEa4GrOUbAnZI6jBcwawZdVzsxEOOkOCJl0R6RSoaUvmnpxP4b2x9nUVbmgGYrhZqwqSzCUtnCa4San3Jo9NzqyHpPGhMHXDaDSQVRldbBiAIp8DCeHMTpkjSo0-wgluXB1LGVTw516kBMdNS_c0rBMLrEkHZb4AssL1xOQ3TK4Kv8qZLm9giawDIdYhv_nhEI6iDq49zrN0N7pdZu_bt84PXM6N7_GsHX1L9maq9x-K42qG3lAomBIDjpjU-JxRyM_lkk3ZlcVMrSXXTi-rIUwN-Y2s5mwjeqmwj1RSR1FBqL6cqUXo3pyhZYh7OvWUhwqhuIZp3DuL6fhyaEqkc1JrmEKQbXMn2b05nw9l_vqXG2jBNAp9SeYaS7ytvH5jO_Mw1ev8VWyPB6ubaevXipzWVg9vgujxX97pidp[Criterion - UML diagram,width=900,height=500]
+
+_Figure 1. Criterion - UML diagram_
+
+=== General behaviour
+
+[arabic]
+. One criterion *may* have descendent 'sub-criteria'. This is useful to define national exclusion criteria that specialise EU criteria;
+. One criterion *may* refer to one or several pieces of legislation (EU, national, other);
+. One criterion *must* always contain at least one group of 'properties'. Properties may be informative captions, general requirements issued by the Member State, procedure-specific requirements specified by the buyer, or questions addressed to the economic operator;
+. One group of properties *must* always specify at least one 'property';
+. One group of properties *may* contain one or several 'sub-groups' of properties.
+
+== Groups of Properties
+
+One group of properties may include one or more 'sub-groups' of properties (class `cac:SubsidiaryTenderingCriterionPropertyGroup`).
+
+A sub-group of properties 'is a' group of criteria — it is the same component but qualified as 'subsidiary'. Therefore all the rules applicable to property groups are also applicable to sub-groups.
+
+=== PropertyGroupTypeCode
+
+Three codes defined in the code list link:{url-tree}/codelists/PropertyGroupType.gc[PropertyGroupType] control the behaviour of groups and subgroups:
+
+[arabic]
+. *ON**: the GROUP or SUBGROUP has to be processed always;
+. *ONTRUE*: the GROUP or SUBGROUP has to be processed only *if the value of the closest parent QUESTION of type INDICATOR* is true;
+. *ONFALSE*: the GROUP or SUBGROUP must be processed only *if the value of the closest parent QUESTION of type INDICATOR* is false.
+
+These codes implement a "choice" or "switch/case" mechanism inside a Criterion Data Structure. Software applications building the GUI dynamically should show ONTRUE groups when the answer is true, hide them when false, and vice versa for ONFALSE groups. Groups marked as ON* are always shown.
+
+== Properties
+
+[cols="1,4"]
+|===
+|*REQUIREMENT* |The buyer needs to be able to specify the type of the value it expects from the economic operator in a response; e.g. DESCRIPTION, INDICATOR, QUANTITY, URL, etc. The economic operator must provide a value for the response that is consistent with the type specified by the buyer.
+|===
+
+=== Types of Properties
+
+The differences between REQUIREMENT, CAPTION and QUESTION:
+
+[arabic]
+. A *REQUIREMENT* is a condition, restriction or rule established by the Member State (for all procedures) or the buyer (for the specific procedure). REQUIREMENTs are not intended to be responded by the economic operator, but the economic operator must comply with them. Examples: 'Provide at least three references to similar works', 'The expected lowest general yearly turnover is 1,000,000 EUR'.
+. A *CAPTION* is a label normally used to introduce a group of REQUIREMENTs or QUESTIONs; e.g. 'Lots the EO tenders to'.
+. A *QUESTION* is a direct request for a specific datum by the MS or the Buyer addressed to the EO. The EO has to respond with a value of the expected type.
+
+=== ValueDataTypeCode
+
+The type of answer expected by the buyer is specified in `cbc:ValueDataTypeCode`, using codes from the link:{url-tree}/codelists/ResponseDataType.gc[ResponseDataType] code list. If the property type is CAPTION or REQUIREMENT, the data type must be `NONE`.
+
+== GUI Control Elements
+
+=== ONTRUE/ONFALSE in practice
+
+The screen captures below illustrate how the ONTRUE/ONFALSE mechanism works in an ESPD Service GUI for the Exclusion Criterion "Contributions":
+
+image:Case1_first QUESTION_set_false.jpg[Case 1: first QUESTION set to false,width=561,height=104]
+
+_Figure 2. Case 1: When the first QUESTION "Your Answer?" is set to false_
+
+image:Case2_first QUESTION_set_true.jpg[Case 2: first QUESTION set to true,width=514,height=280]
+
+_Figure 3. Case 2: When the first QUESTION "Your Answer?" is set to true_
+
+image:Case3_GUI_Control.jpg[Case 3: both questions set to true,width=540,height=246]
+
+_Figure 4. Case 3: When both INDICATOR questions are set to true_
+
+image:Case4_GUI_Control.jpg[Case 4: all INDICATORS set to true,width=513,height=324]
+
+_Figure 5. Case 4: When all INDICATOR questions are set to true_
+
+=== Radio-Button and Check-box controls
+
+For the special criterion 'Other economic or financial requirements' (_finan-requ_), an additional GUI control mechanism is provided via the link:{url-tree}/codelists/BooleanGUIControlType.gc[BooleanGUIControlType] code list. Values `RADIO_BUTTON_TRUE` and `RADIO_BUTTON_FALSE` instruct the application to display radio buttons or check boxes to toggle between ONTRUE/ONFALSE subgroups.
+
+== Further information
+
+* For detailed element reference tables (Criterion, Legislation, Property Group, Property), see xref:criteria-catalogue.adoc[Criteria Catalogue].
+* For exclusion criteria details, see xref:exclusion-grounds.adoc[Exclusion Grounds].
+* For selection criteria details, see xref:selection-criteria.adoc[Selection Criteria].
+* For validation rules on criteria, see xref:validation-conformance.adoc[Validation and Conformance].
+
+include::partial$feedback.adoc[]

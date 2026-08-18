@@ -1,0 +1,81 @@
+:doctitle: Request Model Reference
+:doccode: espd-tech-prod-039
+:author: ESPD Team
+:docdate: July 2026
+
+// Split from: tech_request.adoc (detailed element tables)
+// Also receives content from: tech_br_request_reqs.adoc (148 lines)
+// Target section: Model Reference
+
+== Request Model Reference
+
+This page provides the detailed element-by-element reference tables for the ESPD Request document, including cardinalities, data types, and business rules per element.
+
+For the narrative/guide overview, see xref:espd-request.adoc[ESPD Request].
+
+// NOTE: The content below should contain the detailed element tables from
+// tech_request.adoc, specifically:
+//
+// 1. Root Elements table (Table 5 in tech_request.adoc, lines ~68-185)
+//    - All elements of QualificationApplicationRequest with Type, Card, Description, Requirements
+//
+// 2. Additional Document Reference table (Table 6, lines ~246-390)
+//    - Elements of cac:AdditionalDocumentReference
+//
+// 3. Contracting Body tables (lines ~392-589)
+//    - Table for cac:ContractingParty and sub-elements
+//    - Table for cac:Party inside ContractingParty
+//    - Table for cac:PostalAddress, cac:Country, cac:Contact
+//
+// 4. Service Provider tables (lines ~591-731)
+//    - Table for cac:ServiceProviderParty and sub-elements
+//
+// 5. Requirements from tech_br_request_reqs.adoc (148 lines)
+//    - Appended as a "Business Requirements" sub-section
+//
+// Changes to apply:
+// - Remove "https://docs.ted.europa.eu/espd-demo/[ESPD Demo Site]" references
+//   → replace with "https://github.com/OP-TED/ESPD-EDM/tree/v5.0.0/xml-examples[ESPD-EDM XML examples]"
+// - Remove eSens/BIS41 wiki links (wiki.ds.unipi.gr)
+// - Update "UBL-2.3" → "UBL-2.4" in element descriptions
+// - Update xref links to point to new page names where applicable
+
+== Root Elements
+
+_Table: Class QualificationApplicationRequest, components required by the ESPD-EDM_
+
+// INSERT: Root elements table from tech_request.adoc lines ~68-185
+// (cbc:UBLVersionID, cbc:ProfileExecutionID, cbc:ID, cbc:CopyIndicator,
+//  cbc:UUID, cbc:ContractFolderID, cbc:IssueDate, cbc:IssueTime,
+//  cbc:VersionID, cbc:PreviousVersionID, cbc:ProcedureCode,
+//  cac:ContractingParty, cac:ProcurementProject, cac:TenderingCriterion,
+//  cac:AdditionalDocumentReference)
+
+== Additional Document Reference
+
+_Table: Reference to additional documents, expected elements_
+
+// INSERT: Document reference table from tech_request.adoc lines ~246-390
+// (cbc:ID, cbc:DocumentTypeCode, cac:Attachment/cac:ExternalReference elements)
+
+== Contracting Party
+
+_Table: Contracting Party, expected elements_
+
+// INSERT: Contracting party tables from tech_request.adoc lines ~392-589
+// (cac:ContractingParty, cac:Party, cac:PartyIdentification, cac:PartyName,
+//  cac:PostalAddress, cac:Country, cac:Contact)
+
+== Service Provider
+
+_Table: Service Provider Party, expected elements_
+
+// INSERT: Service provider tables from tech_request.adoc lines ~591-731
+// (cac:ServiceProviderParty, cac:Party sub-elements)
+
+== Business Requirements
+
+// INSERT: Full content of tech_br_request_reqs.adoc (148 lines)
+// This provides the formal information requirements referenced by the element tables above.
+
+include::partial$feedback.adoc[]
