@@ -1,0 +1,61 @@
+:doctitle: Legal Framework
+:doccode: espd-tech-prod-048
+:author: ESPD Team
+:docdate: August 2026
+
+== Legal Framework
+
+This page summarises the EU legislation that forms the legal basis for the ESPD.
+
+=== Primary legislation
+
+[cols="1,3",options="header"]
+|===
+|Legislation |Relevance to ESPD
+
+|link:https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32014L0024[Directive 2014/24/EU]
+|Public Procurement Directive. *Article 59* introduces the ESPD concept. *Article 57* defines exclusion grounds. *Article 58* defines selection criteria. *Article 4* defines thresholds.
+
+|link:https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32014L0025[Directive 2014/25/EU]
+|Utilities Directive. Extends public procurement rules to water, energy, transport and postal services sectors. Refers to ESPD via Article 80.
+
+|link:https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32016R0007[Regulation (EU) 2016/7]
+|Implementing Regulation establishing the standard form for the European Single Procurement Document.
+
+|===
+
+=== eForms alignment
+
+The ESPD-EDM v5.0.0 is aligned with the eForms notification standard:
+
+* Lot identification format (`LOT-XXXX`, `GLO-XXXX`)
+* Shared code lists via EU Vocabularies
+* Contract Notice reference linkage
+* Procedure code consistency
+
+More information: https://single-market-economy.ec.europa.eu/single-market/public-procurement/digital-procurement/eforms_en[eForms at the European Commission]
+
+=== Key legal requirements implemented in ESPD-EDM
+
+* Mandatory exclusion grounds (Art. 57(1) and (2)) cannot be removed by the buyer
+* Discretionary exclusion grounds (Art. 57(4)) can be selected/deselected
+* Selection criteria must be linked to specific lots
+* Each economic operator must submit its own ESPD
+* Only the winning tenderer provides full evidence before award
+* The ESPD must reference the Contract Notice published on TED (above threshold)
+
+=== e-Certis
+
+link:https://ec.europa.eu/tools/ecertis/[e-Certis] is the EU registry of criteria, evidences, and their structure. The ESPD-EDM validates criterion UUIDs and structures against e-Certis reference data.
+
+=== UBL 2.4
+
+The ESPD-EDM is based on link:https://docs.oasis-open.org/ubl/UBL-2.4/UBL-2.4.html[OASIS UBL 2.4]. The adoption of UBL is supported by link:https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32014D0771&from=EN[Commission Decision 2014/771/EU] identifying UBL for referencing in public procurement.
+
+=== Further information
+
+* xref:what-is-espd.adoc[What is the ESPD?]
+* xref:standards-specifications.adoc[Standards and Specifications]
+* xref:related-systems.adoc[Related Systems]
+
+include::partial$feedback.adoc[]

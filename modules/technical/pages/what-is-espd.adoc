@@ -1,0 +1,46 @@
+:doctitle: What is the ESPD?
+:doccode: espd-tech-prod-044
+:author: ESPD Team
+:docdate: August 2026
+
+== What is the ESPD?
+
+The European Single Procurement Document (ESPD) is a self-declaration form used in EU public procurement as preliminary evidence that an economic operator meets the requirements to participate in a procurement procedure.
+
+=== Two-part structure
+
+The ESPD consists of two XML documents:
+
+* *ESPD Request* — prepared by the buyer (Contracting Authority). It defines the exclusion grounds and selection criteria that economic operators must satisfy.
+* *ESPD Response* — prepared by the economic operator (offering party). It contains the self-declarations and evidence references responding to the criteria defined in the Request.
+
+=== Role in pre-qualification
+
+The ESPD replaces the need for economic operators to produce large volumes of physical certificates and documentation at the tendering stage. Instead, operators provide self-declarations via the ESPD, and only the winning tenderer is required to supply full documentary evidence before contract award.
+
+=== Key benefits
+
+* Reduces administrative burden for both buyers and suppliers
+* Facilitates cross-border participation in public procurement
+* Supports small and medium-sized enterprises (SMEs)
+* Standardises the pre-qualification process across EU Member States
+* Enables electronic exchange of qualification data
+
+=== Legal basis
+
+The ESPD is introduced by *Article 59 of Directive 2014/24/EU* and further specified by *Implementing Regulation (EU) 2016/7*. See xref:legal-framework.adoc[Legal Framework] for details.
+
+=== The ESPD-EDM
+
+The ESPD Exchange Data Model (ESPD-EDM) is the technical specification that defines how ESPD documents are structured, exchanged, and validated. It is based on UBL 2.4 and maintained by the Publications Office of the European Union.
+
+* Current version: v5.0.0
+* Repository: https://github.com/OP-TED/ESPD-EDM[OP-TED/ESPD-EDM]
+
+=== Further information
+
+* xref:procurement-process.adoc[The Procurement Process]
+* xref:request-response-concepts.adoc[Request and Response Concepts]
+* xref:actors-and-roles.adoc[Actors and Roles]
+
+include::partial$feedback.adoc[]

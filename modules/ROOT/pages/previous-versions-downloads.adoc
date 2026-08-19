@@ -1,0 +1,60 @@
+:doctitle: Previous Versions and Downloads
+:doccode: espd-main-prod-052
+:author: ESPD Team
+:docdate: August 2026
+
+== Previous Versions and Downloads
+
+This page provides links to previous versions of the ESPD-EDM documentation and distribution packages.
+
+=== Current version
+
+* *v5.0.0* — https://github.com/OP-TED/ESPD-EDM/tree/v5.0.0[GitHub] | https://docs.ted.europa.eu/ESPD-EDM/5.0.0/index.html[Documentation]
+
+=== Previous versions
+
+[cols="1,2,2",options="header"]
+|===
+|Version |Distribution Package |Documentation
+
+|v4.1.0
+|https://github.com/OP-TED/ESPD-EDM/tree/v4.1.0[GitHub]
+|https://docs.ted.europa.eu/ESPD-EDM/4.1.0/index.html[Docs]
+
+|v4.0.0
+|https://github.com/OP-TED/ESPD-EDM/tree/v4.0.0[GitHub]
+|https://docs.ted.europa.eu/ESPD-EDM/4.0.0/index.html[Docs]
+
+|v3.3.0
+|https://github.com/OP-TED/ESPD-EDM/tree/v3.3.0[GitHub]
+|https://docs.ted.europa.eu/ESPD-EDM/3.3.0/index.html[Docs]
+
+|v3.2.0
+|https://github.com/OP-TED/ESPD-EDM/tree/v3.2.0[GitHub]
+|https://docs.ted.europa.eu/ESPD-EDM/3.2.0/index.html[Docs]
+
+|v3.1.0
+|https://github.com/OP-TED/ESPD-EDM/tree/v3.1.0[GitHub]
+|https://docs.ted.europa.eu/ESPD-EDM/3.1.0/index.html[Docs]
+
+|v3.0.0
+|https://github.com/OP-TED/ESPD-EDM/tree/v3.0.0[GitHub]
+|https://docs.ted.europa.eu/ESPD-EDM/3.0.0/index.html[Docs]
+
+|v2.1.x
+|https://github.com/OP-TED/ESPD-EDM/tree/v2.1.x[GitHub]
+|https://docs.ted.europa.eu/ESPD-EDM/2.1.0/index.html[Docs]
+
+|===
+
+=== All releases on GitHub
+
+https://github.com/OP-TED/ESPD-EDM/releases[OP-TED/ESPD-EDM Releases]
+
+=== Version selector
+
+The TED Developer Docs portal provides a version selector in the navigation that allows switching between documentation versions:
+
+https://docs.ted.europa.eu/ESPD-EDM/latest/index.html[Latest documentation]
+
+include::partial$feedback.adoc[]

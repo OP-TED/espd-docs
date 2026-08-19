@@ -1,0 +1,66 @@
+:doctitle: Actors and Roles
+:doccode: espd-tech-prod-047
+:author: ESPD Team
+:docdate: August 2026
+
+== Actors and Roles
+
+This page defines the actors involved in the ESPD exchange and their roles.
+
+=== Contracting Authority (Buyer)
+
+The entity that initiates the procurement procedure and publishes the ESPD Request. Defined in Article 2 of Directive 2014/24/EU as state, regional or local authorities, bodies governed by public law, or associations formed by such authorities.
+
+*Responsibilities in ESPD:*
+
+* Defines exclusion grounds and selection criteria
+* Publishes the ESPD Request with the Contract Notice
+* Evaluates ESPD Responses
+* Requests full evidence from the winning tenderer
+
+=== Economic Operator (Offering Party)
+
+Any natural or legal person or public entity that offers the execution of works, supply of products, or provision of services on the market. Each economic operator participating in a tender must provide its own ESPD Response.
+
+*Roles in the ESPD-EDM:*
+
+[cols="1,3",options="header"]
+|===
+|Role |Description
+
+|Sole Tenderer
+|Single economic operator participating alone.
+
+|Group Leader
+|Leader of a Consortium, Joint Venture or other group. Point of contact with the buyer.
+
+|Group Member (not leader)
+|Member of a group that supplies a percentage of the contract.
+
+|Other Entity (relied upon)
+|Entity upon which the main contractor relies to meet selection criteria.
+
+|Subcontractor
+|Entity upon which the main contractor does not rely to meet selection criteria.
+|===
+
+The role is specified via `cac:EconomicOperatorRole/cbc:RoleCode` using the link:{url-tree}/codelists/EoRoleType.gc[EoRoleType] code list.
+
+=== Service Provider
+
+An optional actor that provides the ESPD Service platform used by both buyer and economic operator to create and manage ESPD documents. Service Provider data is optional in the ESPD documents.
+
+=== Key rules per role
+
+* *One ESPD Response per economic operator* — each participant submits their own
+* *One ESPD Response per lot* — each EO submits a separate response per lot they tender for
+* *Group Leader's responsibility* — collects all group members' ESPDs and submits with the tender
+* *Subcontractors* do not need to respond to selection criteria
+
+=== Further information
+
+* xref:business:for-contracting-authorities.adoc[For Contracting Authorities]
+* xref:business:for-economic-operators.adoc[For Economic Operators]
+* xref:business:espd-parts.adoc[ESPD Parts] — which sections each role fills in
+
+include::partial$feedback.adoc[]

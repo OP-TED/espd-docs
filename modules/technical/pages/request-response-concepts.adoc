@@ -1,0 +1,61 @@
+:doctitle: Request and Response Concepts
+:doccode: espd-tech-prod-046
+:author: ESPD Team
+:docdate: August 2026
+
+== Request and Response Concepts
+
+The ESPD data exchange is based on two complementary XML documents that together form the qualification dialogue between buyer and offering party.
+
+=== ESPD Request
+
+The ESPD Request is created by the *buyer* (Contracting Authority) and defines:
+
+* The exclusion grounds applicable to the procedure (mandatory + discretionary)
+* The selection criteria the economic operator must meet
+* Requirements and thresholds for selection criteria
+* References to the Contract Notice and procurement procedure
+* Lot associations for selection criteria
+
+The Request uses the UBL 2.4 document type `QualificationApplicationRequest`.
+
+=== ESPD Response
+
+The ESPD Response is created by the *economic operator* and provides:
+
+* Self-declarations answering each exclusion ground and selection criterion
+* Response values matching the data types specified in the Request
+* References to evidence documents proving compliance
+* Economic operator identification and role information
+* Lot indication (which lot(s) the EO tenders for)
+
+The Response uses the UBL 2.4 document type `QualificationApplicationResponse`.
+
+=== Relationship between Request and Response
+
+* The Response *must include all criteria* from the Request
+* Each Response answer is linked to a specific criterion property via UUID (`cbc:ValidatedCriterionPropertyID`)
+* The Response references the Request via `cac:AdditionalDocumentReference`
+* One ESPD Response per economic operator per lot
+
+=== Data flow
+
+```
+Buyer → ESPD Request → published with Contract Notice
+                              ↓
+Economic Operator → retrieves Request
+                              ↓
+Economic Operator → creates ESPD Response
+                              ↓
+                    submits with tender
+                              ↓
+Buyer → evaluates Responses → selects candidates
+```
+
+=== Further information
+
+* For technical Request details, see xref:espd-request.adoc[ESPD Request]
+* For technical Response details, see xref:espd-response.adoc[ESPD Response]
+* For criteria linking mechanism, see xref:how-criteria-work.adoc[How Criteria Work]
+
+include::partial$feedback.adoc[]

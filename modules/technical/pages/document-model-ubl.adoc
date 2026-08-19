@@ -1,0 +1,85 @@
+:doctitle: Document Model (UBL)
+:doccode: espd-tech-prod-049
+:author: ESPD Team
+:docdate: August 2026
+
+== Document Model (UBL)
+
+The ESPD-EDM v5.0.0 is based on *UBL 2.4* (Universal Business Language), a royalty-free library of standard XML business documents developed by link:https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=ubl[OASIS].
+
+=== UBL document types used
+
+The ESPD uses two document types from UBL 2.4:
+
+[cols="1,3",options="header"]
+|===
+|Document |Purpose
+
+|`QualificationApplicationRequest`
+|ESPD Request — defines exclusion grounds and selection criteria for a procurement procedure.
+
+|`QualificationApplicationResponse`
+|ESPD Response — provides the economic operator's self-declarations and evidence references.
+|===
+
+=== UBL libraries
+
+UBL 2.4 distributes XSD schemas in two formats:
+
+* `xsd/` — fully documented schemas (with definitions, examples)
+* `xsdrt/` — runtime schemas (lightweight, for production use)
+
+The ESPD-EDM uses components from two main libraries:
+
+* *Common Aggregate Components* (`cac:`) — complex elements like `cac:TenderingCriterion`, `cac:ContractingParty`, `cac:EconomicOperatorParty`
+* *Common Basic Components* (`cbc:`) — simple elements like `cbc:ID`, `cbc:Name`, `cbc:Description`
+
+=== How ESPD-EDM extends UBL
+
+The ESPD-EDM does *not* modify the UBL schema. Instead it adds constraints on top:
+
+* *Cardinality restrictions* — elements that UBL defines as optional are made mandatory by the ESPD (enforced via Schematron)
+* *Business rules* — additional semantic validation (e.g. criterion UUIDs must match e-Certis)
+* *Code lists* — specific code list values required for ESPD-specific elements
+
+=== Key standards in the UBL ecosystem
+
+[cols="1,3",options="header"]
+|===
+|Standard |Role
+
+|link:http://docs.oasis-open.org/codelist/approved/genericode/oasis-code-list-representation-genericode.html[Genericode 1.0]
+|Format for code list files (`.gc`)
+
+|link:https://www.schematron.com/[ISO Schematron]
+|Rule-based XML validation beyond XSD
+
+|link:https://docs.oasis-open.org/ubl/UBL-conformance-to-CCTS/v1.0/UBL-conformance-to-CCTS-v1.0.html[ebXML CCTS]
+|Core Component types (CodeType, IdentifierType with their attributes)
+|===
+
+=== Attributes for codes and identifiers
+
+UBL elements of type Code require mandatory attributes: `listID`, `listAgencyID`, `listVersionID`.
+
+UBL elements of type Identifier require at minimum: `schemeAgencyID`.
+
+For full details on attributes and their usage, see xref:code-lists.adoc[Code Lists].
+
+=== Distribution
+
+The UBL 2.4 schema files are included in the ESPD-EDM distribution package under the `schemas/` folder:
+
+* `schemas/common/` — common elements and structures
+* `schemas/maindoc/` — main document XSD schemas
+
+Source: https://github.com/OP-TED/ESPD-EDM/tree/v5.0.0/schemas[ESPD-EDM schemas on GitHub]
+
+=== Further information
+
+* xref:getting-started.adoc[Getting Started]
+* xref:espd-request.adoc[ESPD Request]
+* xref:espd-response.adoc[ESPD Response]
+* xref:standards-specifications.adoc[Standards and Specifications]
+
+include::partial$feedback.adoc[]

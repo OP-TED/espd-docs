@@ -1,9 +1,22 @@
 :doctitle: Navigation
 :doccode: espd-v5.0.x-prod-004
 :author: ESPD Team
-:docdate: July 2026
+:docdate: August 2026
 
 * xref:ROOT:index-new.adoc[Home]
+
+* [.separated]#**Introduction**#
+* xref:technical:what-is-espd.adoc[What is the ESPD?]
+* xref:technical:procurement-process.adoc[The Procurement Process]
+* xref:technical:request-response-concepts.adoc[Request and Response Concepts]
+* xref:technical:actors-and-roles.adoc[Actors and Roles]
+* xref:technical:legal-framework.adoc[Legal Framework]
+
+* [.separated]#**Releases**#
+* xref:ROOT:release_notes.adoc[Release Notes]
+* xref:ROOT:migration-breaking-changes.adoc[Migration and Breaking Changes]
+* xref:ROOT:previous-versions-downloads.adoc[Previous Versions and Downloads]
+* link:{attachmentsdir}/ESPD_CM_html/index.html[Conceptual Model]
 
 * [.separated]#**Business Guide**#
 * xref:business:index-new.adoc[Business Guide]
@@ -12,9 +25,10 @@
 * xref:business:espd-parts.adoc[ESPD Parts]
 * xref:business:using-espd-service.adoc[Using the ESPD Service]
 
-* [.separated]#**Technical Implementation**#
+* [.separated]#**Technical Guide**#
 * xref:technical:index-new.adoc[Technical Implementation]
 * xref:technical:getting-started.adoc[Getting Started]
+* xref:technical:document-model-ubl.adoc[Document Model (UBL)]
 * xref:technical:espd-request.adoc[ESPD Request]
 * xref:technical:espd-response.adoc[ESPD Response]
 * xref:technical:lots-management.adoc[Lots Management]
@@ -22,24 +36,24 @@
 
 * [.separated]#**Criteria**#
 * xref:technical:how-criteria-work.adoc[How Criteria Work]
+* xref:technical:criterion-data-model-json.adoc[Criterion Data Model (JSON)]
 * xref:technical:exclusion-grounds.adoc[Exclusion Grounds]
 * xref:technical:selection-criteria.adoc[Selection Criteria]
 * xref:technical:validation-conformance.adoc[Validation and Conformance]
 * xref:technical:distribution-tooling.adoc[Distribution and Tooling]
 
-* [.separated]#**Model Reference**#
-* xref:technical:request-model-reference.adoc[Request Model Reference]
-* xref:technical:response-model-reference.adoc[Response Model Reference]
+* [.separated]#**Implementation Reference Model**#
+* xref:technical:request-model-reference.adoc[Request Reference Model]
+* xref:technical:response-model-reference.adoc[Response Reference Model]
 * xref:technical:criteria-catalogue.adoc[Criteria Catalogue]
 * xref:technical:code-lists.adoc[Code Lists]
 * xref:technical:business-rules.adoc[Business Rules]
 
-* [.separated]#**Releases**#
-* xref:ROOT:release_notes.adoc[Release Notes]
-* link:{attachmentsdir}/ESPD_CM_html/index.html[Conceptual Model]
-
 * [.separated]#**Further Information**#
 * xref:technical:glossary.adoc[Glossary]
+* xref:technical:standards-specifications.adoc[Standards and Specifications]
+* xref:technical:related-systems.adoc[Related Systems]
+* xref:technical:repositories-downloads.adoc[Repositories and Downloads]
 
 * [.separated]#**Open User Community Documents**#
 * xref:espd-wgm::index.adoc[Open User Community Meetings]
@@ -51,10 +65,6 @@ OLD NAVIGATION (kept for reference, to be removed after migration is complete)
 
 * xref:ROOT:index.adoc[Home]
 
-* [.separated]#**Release Documentation**#
-* xref:ROOT:release_notes.adoc[Release Notes]
-* link:{attachmentsdir}/ESPD_CM_html/index.html[Conceptual Model]
-
 * [.separated]#**Information for Business Users**#
 * xref:business:index.adoc[Business Information]
 * xref:business:implementation.adoc[An ESPD Implementation]
@@ -63,9 +73,4 @@ OLD NAVIGATION (kept for reference, to be removed after migration is complete)
 * [.separated]#**Technical Implementation**#
 * xref:technical:index.adoc[Technical Information]
 * xref:technical:tech_rules_reference.adoc[Business Rules Reference]
-
-* [.separated]#**Open User Community Documents**#
-* xref:espd-wgm::index.adoc[Open User Community Meetings]
-* xref:espd-wgm::monthly.adoc[Regular Meetings]
-* xref:espd-wgm::annual.adoc[Annual Seminars]
 ////

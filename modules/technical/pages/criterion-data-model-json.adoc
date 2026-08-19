@@ -1,0 +1,156 @@
+:doctitle: Criterion Data Model (JSON)
+:doccode: espd-tech-prod-050
+:author: ESPD Team
+:docdate: August 2026
+
+== Criterion Data Model (JSON)
+
+Starting with ESPD-EDM v5.0.0, the canonical source for criterion and document structure definitions is the JSON file `espd-edm.json`, replacing the deprecated Excel-based `ESPD-criterion.xlsx` workflow.
+
+=== Location
+
+https://github.com/OP-TED/ESPD-EDM/tree/v5.0.0/criterion/espd-edm.json[criterion/espd-edm.json]
+
+=== What it defines
+
+The `espd-edm.json` file provides the complete structural definition of the ESPD document content, organised by ESPD parts and sections:
+
+* *Part I* — Procedure information (publications, buyer, procedure data)
+* *Part II* — Economic operator information
+* *Part III* — Exclusion grounds criteria
+* *Part IV* — Selection criteria
+* *Part V* — Reduction of candidates
+* *Part VI* — Concluding statements
+
+Each part contains sections, and each section contains one or more criteria with their component trees.
+
+=== JSON structure overview
+
+The top-level structure is an array of parts, each containing sections and criteria:
+
+```json
+[
+  {
+    "part": "partI",
+    "sections": [
+      {
+        "section": "A",
+        "criteria": [
+          {
+            "tag": "I68",
+            "type": "INFORMATION",
+            "uuid": "5B3E9A4C-...",
+            "code": "info-pub",
+            "cardinality": "1",
+            "name": "I68_info-pub",
+            "description": "...",
+            "requestpath": "I68_info-pub",
+            "responsepath": "I68_info-pub",
+            "components": [...]
+          }
+        ]
+      }
+    ]
+  }
+]
+```
+
+=== Criterion element properties
+
+Each criterion or component element has the following properties:
+
+[cols="1,3",options="header"]
+|===
+|Property |Description
+
+|`tag`
+|Short identifier tag for the element (e.g. `I68`, `ADR1`, `CP1`, `PAR1`)
+
+|`type`
+|The type of the element: `INFORMATION`, `CRITERION`, `ADDITIONAL_DOCUMENT_REFERENCE`, `CONTRACTING_PARTY`, `PARTY`, `PARTY_IDENTIFICATION`, `PARTY_NAME`, `POSTAL_ADDRESS`, `COUNTRY`, `CONTACT`, `ATTACHMENT`, `QUESTION`, `REQUIREMENT`, `CAPTION`, etc.
+
+|`uuid`
+|Universally unique identifier (for top-level criteria, from e-Certis)
+
+|`code`
+|Criterion type code (e.g. `info-pub`, `info-buyer`, `crime-org`, `prof-regist`)
+
+|`cardinality`
+|Expected cardinality (`1`, `0..1`, `1..n`, `0..n`)
+
+|`name`
+|Element name combining tag and code (e.g. `I68_info-pub`)
+
+|`description`
+|Human-readable description
+
+|`requestpath`
+|XML path-like identifier for the ESPD Request context
+
+|`responsepath`
+|XML path-like identifier for the ESPD Response context
+
+|`components`
+|Array of nested child elements (recursive tree structure)
+
+|===
+
+=== Component tree
+
+Each criterion contains a `components` array that defines the nested structure of sub-elements. Components can contain further components, forming a recursive tree that maps to the UBL XML structure:
+
+```json
+{
+  "tag": "ADR1",
+  "type": "ADDITIONAL_DOCUMENT_REFERENCE",
+  "cardinality": "1..n",
+  "requestpath": "I68_info-pub/ADR1",
+  "responsepath": "I68_info-pub/ADR1",
+  "components": [
+    {
+      "tag": "ATT1",
+      "type": "ATTACHMENT",
+      "cardinality": "1",
+      "requestpath": "I68_info-pub/ADR1/ATT1",
+      "responsepath": "I68_info-pub/ADR1/ATT1"
+    }
+  ]
+}
+```
+
+=== Path identifiers
+
+The `requestpath` and `responsepath` properties provide XML Path-like identifiers that uniquely locate each element within the ESPD document structure. These paths are constructed by concatenating parent tags from root to leaf (e.g. `I69_info-buyer/CP1/PAR1/PA1/CTR1`).
+
+These path IDs replace the UUID-based identification for sub-elements (since v4.0.0), while top-level criterion UUIDs are preserved from e-Certis.
+
+=== Migration from Excel
+
+In previous versions, criterion structures were maintained in `ESPD-criterion.xlsx` (one tab per criterion type). In v5.0.0:
+
+* The Excel file is *deprecated* (may still exist for reference but is not the source of truth)
+* All tooling should consume `espd-edm.json` instead
+* The JSON is extracted from the Enterprise Architect UML model
+* XSLT transformations generate ESPD UBL XML from the JSON data
+
+=== How implementers use it
+
+[arabic]
+. Parse `espd-edm.json` to obtain the complete ESPD document structure
+. Navigate the part/section/criteria/components tree
+. Use `type` to determine the UBL element to generate
+. Use `cardinality` to enforce mandatory/optional rules
+. Use `requestpath` / `responsepath` to build and validate XML instances
+. Use `uuid` and `code` for top-level criterion identification
+
+=== JSON Schema
+
+A JSON schema file is provided alongside `espd-edm.json` to validate the structural consistency of the data model.
+
+=== Further information
+
+* xref:how-criteria-work.adoc[How Criteria Work]
+* xref:distribution-tooling.adoc[Distribution and Tooling]
+* xref:validation-conformance.adoc[Validation and Conformance]
+
+include::partial$feedback.adoc[]

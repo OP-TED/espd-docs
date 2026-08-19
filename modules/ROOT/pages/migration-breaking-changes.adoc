@@ -1,0 +1,69 @@
+:doctitle: Migration and Breaking Changes
+:doccode: espd-main-prod-051
+:author: ESPD Team
+:docdate: August 2026
+
+== Migration from v4 to v5
+
+This page provides guidance for migrating ESPD Service implementations from ESPD-EDM v4.x to v5.0.0.
+
+=== Summary of breaking changes
+
+[cols="1,3",options="header"]
+|===
+|Area |Change
+
+|UBL version
+|Upgraded from UBL 2.3 to *UBL 2.4*. Schema folder renamed from `ubl-2.3/` to `schemas/`.
+
+|Criterion code lists
+|The single `Criterion` code list is *replaced* by two separate lists: `ExclusionGround` and `SelectionCriterion` (from EU Vocabularies).
+
+|Criterion data format
+|Excel-based `ESPD-criterion.xlsx` is *deprecated*. The canonical source is now `espd-edm.json` (JSON format).
+
+|Code list versions
+|All ESPD-managed code lists updated from version `4.0.0` to `5.0.0`. EU Vocabularies code lists updated to latest published versions.
+
+|Schematron validation
+|`listVersionID` validation now checks for prefix `5.` (was `3.` or `4.`). Rule `BR-OTH-01-40` enforces this.
+
+|UBLVersionID value
+|Must be `"2.4"` (was `"2.3"`). Rule `BR-OTH-05-01` enforces this.
+
+|Repository structure
+|`conceptual-model/` and `ubl-2.3/` folders removed. UBL 2.4 schema in `schemas/`. Added `codelists.json` metadata file.
+
+|e-Certis harmonisation
+|Criterion UUIDs harmonised with e-Certis. Some UUIDs changed. Deprecated criteria: C27 (authorisation) and C28 (membership) replaced by C66 (`slc-suit-auth-mbrshp`).
+
+|New criteria
+|Added EG C67 (`exg-mis-unrel-sec`) and SC C66 (`slc-suit-auth-mbrshp`).
+
+|===
+
+=== Migration steps
+
+[arabic]
+. Update XSD schema references from UBL 2.3 to UBL 2.4
+. Replace `Criterion` code list usage with `ExclusionGround` + `SelectionCriterion`
+. Update `cbc:UBLVersionID` value to `"2.4"`
+. Update `listVersionID` attributes to `"5.0.0"` for ESPD-managed code lists
+. Migrate criterion data consumption from Excel to JSON (`espd-edm.json`)
+. Re-run Schematron validation against v5.0.0 rules
+. Verify criterion UUIDs against updated e-Certis
+
+=== Backwards compatibility
+
+* UBL 2.4 is backwards compatible with UBL 2.3 at the schema level
+* The ESPD Response still copies all criteria from the Request
+* The property group structure (ONTRUE/ONFALSE logic) is unchanged
+* BR rule IDs are preserved (same IDs, some extended)
+
+=== Further information
+
+* xref:ROOT:release_notes.adoc[Release Notes]
+* https://github.com/OP-TED/ESPD-EDM/releases[GitHub Releases]
+* xref:technical:getting-started.adoc[Getting Started]
+
+include::partial$feedback.adoc[]

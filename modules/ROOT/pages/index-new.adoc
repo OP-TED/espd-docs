@@ -1,15 +1,43 @@
 :doctitle: ESPD-EDM Documentation (New)
 :doccode: espd-main-prod-001-new
 :author: ESPD Team
-:docdate: July 2026
+:docdate: August 2026
 
 == ESPD-EDM Documentation
 
 The European Single Procurement Document Exchange Data Model (ESPD-EDM) provides a standardised model for the exchange of ESPD documents between procurement stakeholders. This documentation covers the ESPD-EDM v5.0.0.
 
-=== Business Guide
+=== Introduction
 
-Guidance for buyers and offering parties on using the ESPD in public procurement procedures.
+* xref:technical:what-is-espd.adoc[What is the ESPD?] +
+The ESPD concept, its two-part structure, and role in pre-qualification.
+
+* xref:technical:procurement-process.adoc[The Procurement Process] +
+Where the ESPD fits within the EU public procurement lifecycle.
+
+* xref:technical:request-response-concepts.adoc[Request and Response Concepts] +
+The ESPD Request and Response documents and their relationship.
+
+* xref:technical:actors-and-roles.adoc[Actors and Roles] +
+Contracting Authority, Economic Operator, Service Provider, and EO roles.
+
+* xref:technical:legal-framework.adoc[Legal Framework] +
+EU Directives, Regulations, and eForms alignment.
+
+=== Releases
+
+* xref:ROOT:release_notes.adoc[Release Notes] +
+Release notes for the current version.
+
+* xref:ROOT:migration-breaking-changes.adoc[Migration and Breaking Changes] +
+Step-by-step migration guidance from v4 to v5.
+
+* xref:ROOT:previous-versions-downloads.adoc[Previous Versions and Downloads] +
+Links to previous documentation and distribution packages.
+
+* link:{attachmentsdir}/ESPD_CM_html/index.html[Conceptual Model (HTML)]
+
+=== Business Guide
 
 * xref:business:index-new.adoc[Business Guide] +
 Overview of the ESPD for business users.
@@ -26,15 +54,16 @@ Overview of the six parts of the ESPD and which roles fill in each section.
 * xref:business:using-espd-service.adoc[Using the ESPD Service] +
 How to access and use an ESPD Service.
 
-=== Technical Implementation
-
-Technical documentation for developers implementing ESPD Services.
+=== Technical Guide
 
 * xref:technical:index-new.adoc[Technical Implementation] +
-Full technical documentation landing page.
+Landing page for technical documentation.
 
 * xref:technical:getting-started.adoc[Getting Started] +
 Architecture overview, distribution package, repository structure.
+
+* xref:technical:document-model-ubl.adoc[Document Model (UBL)] +
+UBL 2.4 foundation, schemas, and how ESPD-EDM extends UBL.
 
 * xref:technical:espd-request.adoc[ESPD Request] +
 Technical guide to the ESPD Request document.
@@ -45,12 +74,16 @@ Technical guide to the ESPD Response document.
 * xref:technical:lots-management.adoc[Lots Management] +
 How lots are handled in Request and Response.
 
-=== Criteria
+* xref:technical:common-concepts.adoc[Common Concepts] +
+Shared technical patterns: Schematron architecture, validation life-cycle.
 
-How criteria are structured, defined, and validated in the ESPD-EDM.
+=== Criteria
 
 * xref:technical:how-criteria-work.adoc[How Criteria Work] +
 The criterion-property-response chain and ONTRUE/ONFALSE logic.
+
+* xref:technical:criterion-data-model-json.adoc[Criterion Data Model (JSON)] +
+The `espd-edm.json` structure and how to consume it.
 
 * xref:technical:exclusion-grounds.adoc[Exclusion Grounds] +
 All exclusion criteria categories.
@@ -62,16 +95,14 @@ All selection criteria categories.
 Criteria-specific validation and conformance testing.
 
 * xref:technical:distribution-tooling.adoc[Distribution and Tooling] +
-JSON criterion data model and distribution package artefacts.
+Distribution package criterion artefacts and tooling.
 
-=== Model Reference
+=== Implementation Reference Model
 
-Detailed look-up reference for data model elements, code lists, and business rules.
-
-* xref:technical:request-model-reference.adoc[Request Model Reference] +
+* xref:technical:request-model-reference.adoc[Request Reference Model] +
 Element-by-element tables for the ESPD Request.
 
-* xref:technical:response-model-reference.adoc[Response Model Reference] +
+* xref:technical:response-model-reference.adoc[Response Reference Model] +
 Element-by-element tables for the ESPD Response.
 
 * xref:technical:criteria-catalogue.adoc[Criteria Catalogue] +
@@ -83,20 +114,21 @@ All ESPD code lists with metadata and XML examples.
 * xref:technical:business-rules.adoc[Business Rules] +
 Complete Schematron business rules catalogue.
 
-=== Releases
-
-* xref:ROOT:release_notes.adoc[Release Notes] +
-Release notes for the current version.
-
-* link:{attachmentsdir}/ESPD_CM_html/index.html[Conceptual Model (HTML)]
-
 === Further Information
 
 * xref:technical:glossary.adoc[Glossary] +
 Definitions of key technical terms.
 
-* xref:technical:common-concepts.adoc[Common Concepts] +
-Schematron architecture and validation process.
+* xref:technical:standards-specifications.adoc[Standards and Specifications] +
+Links to referenced standards (UBL, Schematron, Genericode, EU Directives).
+
+* xref:technical:related-systems.adoc[Related Systems] +
+Overview of TED, eForms, e-Certis, EU Vocabularies, and their interaction with ESPD.
+
+* xref:technical:repositories-downloads.adoc[Repositories and Downloads] +
+Direct links to all GitHub repos, distribution packages, and tools.
+
+=== Open User Community Documents
 
 * xref:espd-wgm::index.adoc[Open User Community Meetings] +
 Regular meetings and annual seminars.
@@ -105,12 +137,8 @@ Regular meetings and annual seminars.
 
 === Legacy pages
 
-The following pages are from the previous structure:
-
-* xref:ROOT:index.adoc[Home (old)] — current tile layout landing page
-* xref:ROOT:demo.adoc[ESPD Demo Site (old)] — deprecated, to be removed
+* xref:ROOT:index.adoc[Home (old)]
 * xref:business:index.adoc[Business Information (old)]
-* xref:business:business_info.adoc[Information for Business Users (old)]
 * xref:technical:index.adoc[Technical Information (old)]
 
 include::partial$feedback.adoc[]
