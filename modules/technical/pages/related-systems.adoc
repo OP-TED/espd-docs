@@ -1,0 +1,96 @@
+:doctitle: Related Systems
+:doccode: espd-tech-prod-042
+:author: ESPD Team
+:docdate: July 2026
+
+== Related Systems
+
+This page provides an overview of EU systems that interact with or are related to the ESPD.
+
+=== TED (Tenders Electronic Daily)
+
+TED is the online version of the Supplement to the Official Journal of the EU, dedicated to European public procurement. Contract Notices published on TED are referenced from ESPD Request documents.
+
+[cols="1,3"]
+|===
+|Portal |https://ted.europa.eu/[ted.europa.eu]
+|Role in ESPD |The ESPD Request references the Contract Notice published on TED via `cac:AdditionalDocumentReference`. The notice ID follows the format `YYYY/S NNN-NNNNNN`.
+|===
+
+=== eForms
+
+eForms is the EU notification standard for public procurement procedures. The ESPD-EDM v5.0.0 is aligned with eForms for:
+
+* Lot identification format (`LOT-XXXX`, `GLO-XXXX`)
+* Code lists (shared via EU Vocabularies)
+* Contract Notice linkage
+
+[cols="1,3"]
+|===
+|Documentation |https://docs.ted.europa.eu/eforms/latest/schema/introduction.html[eForms SDK Documentation]
+|SDK repository |https://github.com/OP-TED/eForms-SDK[OP-TED/eForms-SDK]
+|Regulation |https://single-market-economy.ec.europa.eu/single-market/public-procurement/digital-procurement/eforms_en[eForms at EC]
+|===
+
+=== e-Certis
+
+e-Certis is the EU information system that helps identify different certificates and evidences requested in procurement procedures across Member States. The ESPD-EDM uses e-Certis as the authoritative source for:
+
+* Criterion UUIDs
+* Criterion structures (property groups, properties)
+* Criterion type codes
+
+[cols="1,3"]
+|===
+|Portal |https://ec.europa.eu/tools/ecertis/[e-Certis]
+|Role in ESPD |Schematron validation checks that criterion IDs and structures match the canonical definitions from e-Certis.
+|===
+
+=== EU Vocabularies
+
+EU Vocabularies (formerly EuroVoc) provides multilingual controlled vocabularies, authority tables, and code lists used across EU institutions. The ESPD-EDM reuses code lists from EU Vocabularies for:
+
+* Country codes
+* Currency codes
+* Economic operator size
+* EO role types
+* Exclusion grounds and selection criteria type codes
+* Document reference content types
+
+[cols="1,3"]
+|===
+|Portal |https://op.europa.eu/en/web/eu-vocabularies[EU Vocabularies]
+|ESPD code lists |See xref:code-lists.adoc[Code Lists] for details on each code list and its EU Vocabularies source.
+|===
+
+=== Interoperability Testbed (ITB)
+
+The Interoperability Testbed is an online tool provided by the European Commission (ISA2 Programme) that enables developers to validate ESPD XML instances against Schematron business rules without any local installation.
+
+[cols="1,3"]
+|===
+|Validation tool |https://www.itb.ec.europa.eu/espd/upload[ITB ESPD Validation]
+|About |https://joinup.ec.europa.eu/asset/itb/description[Interoperability Testbed on Joinup]
+|===
+
+=== ESCO (European Skills, Competences, Qualifications and Occupations)
+
+ESCO provides the classification of professional occupations used in the ESPD for the `Occupation` code list (criterion "Enrolment in a relevant professional register").
+
+[cols="1,3"]
+|===
+|Portal |https://ec.europa.eu/esco/portal[ESCO Portal]
+|Role in ESPD |Provides occupation codes used as values in `cbc:ExpectedCode` for suitability criteria.
+|===
+
+=== Joinup
+
+The European Commission's platform for interoperable digital government solutions. Hosts documentation about ISA2 Programme semantic assets, Core Vocabularies, and the Interoperability Testbed.
+
+[cols="1,3"]
+|===
+|Portal |https://joinup.ec.europa.eu[Joinup]
+|ICT Standards |https://joinup.ec.europa.eu/collection/ict-standards-procurement[ICT Standards for Procurement]
+|===
+
+include::partial$feedback.adoc[]

@@ -1,0 +1,102 @@
+:doctitle: Repositories and Downloads
+:doccode: espd-tech-prod-043
+:author: ESPD Team
+:docdate: July 2026
+
+== Repositories and Downloads
+
+This page provides direct links to all ESPD-EDM GitHub repositories, distribution packages, and related tooling.
+
+=== Main Repositories
+
+[cols="1,3",options="header"]
+|===
+|Repository |Purpose
+
+|https://github.com/OP-TED/ESPD-EDM[OP-TED/ESPD-EDM]
+|Main repository containing the ESPD-EDM distribution package: UBL 2.4 schemas, code lists (Genericode), criterion data (JSON), validation artefacts (Schematron/XSL), and XML examples.
+
+|https://github.com/OP-TED/espd-docs[OP-TED/espd-docs]
+|This documentation site (Antora-based AsciiDoc sources). Branch `v5.0.x` contains the current version.
+
+|https://github.com/OP-TED/espd-validation-schematron[OP-TED/espd-validation-schematron]
+|Schematron source files for ESPD business rules validation. Contains all `.sch` files organised by validation layer.
+
+|===
+
+=== Distribution Package (v5.0.0)
+
+The distribution package for each release is available as a tagged version on GitHub:
+
+* *Latest release:* https://github.com/OP-TED/ESPD-EDM/tree/v5.0.0[ESPD-EDM v5.0.0]
+* *All releases:* https://github.com/OP-TED/ESPD-EDM/releases[GitHub Releases]
+
+==== Package contents
+
+[cols="1,3",options="header"]
+|===
+|Folder |Contents
+
+|`codelists/`
+|Genericode (`.gc`) files for all code lists + `codelists.json` metadata reference.
+
+|`criterion/`
+|Criterion definitions in JSON format (`espd-edm.json`) + JSON schema for validation.
+
+|`schemas/`
+|Official OASIS UBL 2.4 distribution (XSD schemas for Request and Response).
+
+|`validation/`
+|Schematron source files (`.sch`) and compiled XSL files for ESPD Request and Response validation.
+
+|`xml-examples/`
+|Sample ESPD Request and Response XML documents.
+
+|===
+
+=== Online Tools
+
+[cols="1,3",options="header"]
+|===
+|Tool |URL
+
+|Interoperability Testbed (ESPD validation)
+|https://www.itb.ec.europa.eu/espd/upload
+
+|e-Certis (criteria and evidences registry)
+|https://ec.europa.eu/tools/ecertis/
+
+|VIES (VAT number verification)
+|https://ec.europa.eu/taxation_customs/vies/
+
+|===
+
+=== Related Documentation Sites
+
+[cols="1,3",options="header"]
+|===
+|Site |URL
+
+|TED Developer Docs (all OP-TED documentation)
+|https://docs.ted.europa.eu/
+
+|eForms SDK Documentation
+|https://docs.ted.europa.eu/eforms/latest/schema/introduction.html
+
+|eProcurement Ontology (ePO)
+|https://docs.ted.europa.eu/epo-home/index.html
+
+|===
+
+=== ESPD Service Providers
+
+A list of ESPD Service implementations provided by EU Member States and commercial providers:
+
+https://single-market-economy.ec.europa.eu/single-market/public-procurement/digital-procurement/european-single-procurement-document-and-ecertis_en[European Commission — ESPD and e-Certis page]
+
+=== Community
+
+* *Issues and questions:* https://github.com/OP-TED/ESPD-EDM/issues[ESPD-EDM GitHub Issues]
+* *Open User Community meetings:* xref:espd-wgm::index.adoc[Meeting reports and presentations]
+
+include::partial$feedback.adoc[]

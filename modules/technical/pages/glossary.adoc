@@ -20,7 +20,7 @@ Leaf nodes of every UBL document structure. These are ordinary data fields such 
 
 [[CodeLists, Code Lists]]
 *Code lists* +
-A code list is an artifact listing the codes relevant to specific terms, grouped by semantic meaning, e.g., a code list for country or language. See xref:tech_codelist.adoc[Code Lists Catalogue].
+A code list is an artifact listing the codes relevant to specific terms, grouped by semantic meaning, e.g., a code list for country or language. See xref:code-lists.adoc[Code Lists].
 
 [[code-list-document,code list document]]
 *code list document.*  +

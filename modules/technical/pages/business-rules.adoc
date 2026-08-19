@@ -71,7 +71,7 @@ The ESPD business rules derive from:
 
 == Source of Truth
 
-The Schematron source files in the link:https://github.com/OP-TED/espd-validation-schematron[espd-validation-schematron] repository are the authoritative definition of what is validated. The validation pipeline (how Schematron files are compiled and executed) is described in xref:tech_validation.adoc[Validation].
+The Schematron source files in the link:https://github.com/OP-TED/espd-validation-schematron[espd-validation-schematron] repository are the authoritative definition of what is validated. The validation pipeline (how Schematron files are compiled and executed) is described in xref:common-concepts.adoc[Common Concepts].
 
 == Complete Rules Register
 

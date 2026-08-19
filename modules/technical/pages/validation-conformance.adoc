@@ -109,7 +109,7 @@ The validation of `cac:TenderingCriterionProperty` checks:
 
 === XML Path Like ID
 
-Starting with ESPD v4.0.0, UUIDs for all sub-elements are replaced by XML Path Like IDs in the data structure, except for the top-level Exclusion Grounds and Selection Criteria elements. For further details, see xref:tech_common_aspects_for_criteria.adoc[How Criteria Work]. The XML Path Like ID is built programmatically.
+Starting with ESPD v4.0.0, UUIDs for all sub-elements are replaced by XML Path Like IDs in the data structure, except for the top-level Exclusion Grounds and Selection Criteria elements. For further details, see xref:how-criteria-work.adoc[How Criteria Work]. The XML Path Like ID is built programmatically.
 
 == Code List Validation (CVA)
 

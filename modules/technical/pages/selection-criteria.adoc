@@ -33,7 +33,7 @@ _Figure 2. cac:TenderingCriterion/cac:ProcurementProjectLotReference_
 
 The ESPD 3.0.0 allows different lots for different Selection Criteria, whereas the ESPD 4.0.0 allows in addition different lots (or set of lots) for different requirements. 
 
-See also section "xref:tech_request.adoc#lot_management[Lot Management in ESPD Request]". 
+See also section "xref:lots-management.adoc[Lots Management]". 
 
 
 == Initial question for the EO to fulfil or not the criteria 
@@ -395,7 +395,7 @@ Please generate an ESPD Request and ESPD Response documents on https://github.co
 . Third financial ratio block: ratio type required by the buyer  according to the example illustrated in the mock-up above.
 . Third financial ratio block: ratio definition.
 . Third financial ratio block: minimum requirement.
-. First financial ratio block: the Criterion Property used to refer to the response by the economic operator. In the ESPD Response document, the ID of this Criterion Property will be used by the element cac:ValidatedCriterionPropertyID as the means to link the response to the question. See section xref:tech_response.adoc#answering_questions[Answering QUESTIONs] (under ESPD Response) for more details on this.
+. First financial ratio block: the Criterion Property used to refer to the response by the economic operator. In the ESPD Response document, the ID of this Criterion Property will be used by the element cac:ValidatedCriterionPropertyID as the means to link the response to the question. See section xref:espd-response.adoc[ESPD Response] for more details on this.
 . Block "Is this information available electronically". This block is constant for all criteria. It has been removed from the example for brevity. See other XML examples.
 
 
@@ -576,7 +576,7 @@ _Non-validation of text content_
 
 *_NOTICE that the EO has made a mistake and for a "Works contracts: performance of works for the specified type" it is describing a Service. The Schematron-based validation solution cannot validate this situation as the description is a textual value._*
 
-*_For details on the Schematron-based validation solution see section xref:tech_validation.adoc[Validation].*
+*_For details on the Schematron-based validation solution see section xref:validation-conformance.adoc[Validation and Conformance].*
 ====
 
 === Data Structure

@@ -84,7 +84,7 @@ Additional comments: copies of an ESPD document should be identified with same U
 |*cbc:ProcedureCode* |Code |1 |The type of the procurement administrative procedure according to the EU Directives. a|
 *Rule*: For the ESPD, this information will be linked to eForms. And ESPD should include the same procedure code as the one stated in eForms notices.
 
-|*cac:ContractingParty* |Associated class |1 |The buyer who is buying supplies, services or public works using a tendering procedure as described in the applicable directive (Directives 2014/24/EU, 2014/25/EU). See section xref:tech_request.adoc#contracting_body[Contracting Body] for more specification details. a|
+|*cac:ContractingParty* |Associated class |1 |The buyer who is buying supplies, services or public works using a tendering procedure as described in the applicable directive (Directives 2014/24/EU, 2014/25/EU). See section xref:request-model-reference.adoc[Request Model Reference] for more specification details. a|
 *Information Requirement*: The buyer must be identified, hence information about the party are required, such as party name, country, identification, endpoint id.
 
 *Rule*: UBL-2.4 defines multiple cardinality ContractingParties presumably to allow *joint procurements*. However the ESPD only expects data about one buyer. The decision was made that in case of joint procurement the data collected in the ESPD would be about *the leader* of the joint procurement procedure.
@@ -154,7 +154,7 @@ For a complete instance of an ESPD Response XML document see the example file: h
 |*REQUIREMENT* |*The economic operator must include into its ESPD Response document the information from the ESPD Request about the official journals or gazettes where the procurement procedure is announced. For procurement projects above the threshold it is compulsory to refer to the Contract Notice published in link:https://ted.europa.eu/TED/[TED] by the buyer.*
 |===
 
-For EU and notice publications that need to be included in the ESPD Response see the section xref:tech_request.adoc#eu_notice_publications[EU and notice publications] where this information is presented in detail and illustrated with examples.
+For EU and notice publications that need to be included in the ESPD Response see the section xref:request-model-reference.adoc[Request Model Reference] where this information is presented in detail and illustrated with examples.
 
 [cols="1,4"]
 |===
@@ -1126,7 +1126,7 @@ _Table 43. Elements expected in the 'cac:ResponseValue' class_
 |===
 |*Class name*: |cac:ResponseValue
 |*Definition*: |A class to describe the criterion property response value.
-|*Business rule(s)*: |Common (xref:tech_busrules.adoc#BR-TCR-08[BR-TCR-08], xref:tech_busrules.adoc#BR-TCR-04[BR-TCR-04])
+|*Business rule(s)*: |Common (xref:business-rules.adoc[BR-TCR-08], xref:business-rules.adoc[BR-TCR-04])
 |*File*: |link:https://docs.oasis-open.org/ubl/os-UBL-2.4/xsdrt/common/UBL-CommonAggregateComponents-2.4.xsd[os-UBL-2.4/xsdrt/common/UBL-CommonAggregateComponents-2.4.xsd]
 |*Path*: |/QualificationApplicationResponse/cac:TenderingCriterionResponse/cac:ResponseValue
 |*Context of use*: |Used to specify one value or a collection of values (in the case of a list) as a response to one, and only one, cac:TenderingCriterionProperty that is typified as a QUESTION.
