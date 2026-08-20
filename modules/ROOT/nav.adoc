@@ -19,14 +19,12 @@
 * link:{attachmentsdir}/ESPD_CM_html/index.html[Conceptual Model]
 
 * [.separated]#**Business Guide**#
-* xref:business:index-new.adoc[Business Guide]
 * xref:business:for-contracting-authorities.adoc[For Contracting Authorities]
 * xref:business:for-economic-operators.adoc[For Economic Operators]
 * xref:business:espd-parts.adoc[ESPD Parts]
 * xref:business:using-espd-service.adoc[Using the ESPD Service]
 
 * [.separated]#**Technical Guide**#
-* xref:technical:index-new.adoc[Technical Implementation]
 * xref:technical:getting-started.adoc[Getting Started]
 * xref:technical:document-model-ubl.adoc[Document Model (UBL)]
 * xref:technical:espd-request.adoc[ESPD Request]
