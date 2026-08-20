@@ -14,7 +14,7 @@ This section provides the detailed element-by-element reference tables for crite
 
 === XSD Schema Overview
 
-This XSD Schema diagram shows a global view of the UBL 2.3 cac:TenderingCriterion component:
+This XSD Schema diagram shows a global view of the UBL 2.4 cac:TenderingCriterion component:
 
 image::https://kroki.io/blockdiag/svg/eNrdVMtu2zAQvOsrFuqlBRi_YiCJg_bgV2HADYI6RQsUgUCRa4kpRQokldgJcu9X9OP6JSXlyolrwAF66KG3FXdmdrQcKZWafeOCZvAQtdtwSTOEtkOWK8GorKuEaY5SWNfKXSFhVvyBSUQ4sW1G2RUqjkaobGSE84VWyZfFOFmwHAvauikzeD0VWWUQjvst8ITBPgOOwHNgwyGQSZ1SCbcC794Ehwt0YEuqoEBnxCoCqB-TO8FdDm-hf3q-PctRZLnzh91efchxSSvpkqVWzop7DJ1-3Ykyo6sS7tHoZFM-RBHTUhuPiV9NTiadaTc-j6J43_DVusQYvtqclkHRsz2Cp3pFoDHVPesQ69Yy9Dm1OXICT-rj4fh4Moyvg3wMR-8gxpUbfBrOJyuHyvoRNiYQs5QNZuOm2hk_8jfkLXARBJVWeN0oBegFLbChjdEyI0rniTsEApKmKIOfTqv18_uPeEfic73Ji6rwI1mjNa3kUsgClZsp7qPgtDnQ2vr8DZncUlnRYOQDulzzl99jYyKs3m9E-Fuo2c_fKEj7UF0azXzIwnhf3iBzc-0-4hINKoYNaqSLQnPh1iNJrRXLYPOZyKJK9--6ac4xE1bu4PfBfnaJxq3fh0C9uO3osYn3JjVOeyhHS5rYQlgYgrA-zqdhL9vI-e-30Io_5a3XIbANf6_jk_V3kSKHA0T-fTjI_xGFQz-L3lm4sMdf013l5w==[cac:TenderingCriterion - XSD Schema global view,width=650,height=900]
 
@@ -29,7 +29,7 @@ _Figure 1. cac:TenderingCriterion - XSD Schema, global view_
 |*Class name*: |cac:TenderingCriterion
 |*Definition*: |A tendering criterion describes a fact or a condition that is used by the contracting body to evaluate and compare tenders by economic operators and which will be used for the exclusion and the selection of candidate tenderers to the award decision.
 |*Business rule(s)*: |BR-LOT-20, BR-LOT-30, BR-LOT-30-S20, Common (BR-TC-01)
-|*File*: |ubl-2.4/xsdrt/common/UBL-CommonAggregateComponents-2.4.xsd
+|*File*: |link:https://docs.oasis-open.org/ubl/os-UBL-2.4/xsdrt/common/UBL-CommonAggregateComponents-2.4.xsd[os-UBL-2.4/xsdrt/common/UBL-CommonAggregateComponents-2.4.xsd]
 |*Path*: |/QualificationApplicationRequest/cac:TenderingCriterion
 |===
 
@@ -44,16 +44,12 @@ _Figure 1. cac:TenderingCriterion - XSD Schema, global view_
 a|
 *Rule*: Each Criterion is defined in e-Certis and must use the UUID supplied by e-Certis. See also link:{url-tree}/criterion/espd-edm.json[espd-edm.json].
 
-*Rule scope*: Common (BR-TC-02, BR-TC-12, BR-TC-13, BR-OTH-02)
-
 |*cbc:CriterionTypeCode*
 |Code
 |1
 |A classification code defined by the ESPD-EDM to represent the criterion in the ESPD taxonomy.
 a|
 *Rule*: Compulsory use of codes from e-Certis (e.g. crime-org, corruption, chain-manage).
-
-*Rule scope*: Common (BR-REQ-30, BR-TC-03, BR-TC-04, BR-OTH-01, BR-OTH-03)
 
 |*cbc:Name*
 |Text
@@ -62,16 +58,12 @@ a|
 a|
 *Rule*: The name should match the one from e-Certis.
 
-*Rule scope*: Common (BR-TC-05)
-
 |*cbc:Description*
 |Text
 |1..n
 |An extended description of the criterion.
 a|
 *Rule*: The description should match the one from e-Certis.
-
-*Rule scope*: Common (BR-TC-06, BR-TC-19)
 
 |*cac:ProcurementProjectLotReference*
 |Class
@@ -100,8 +92,6 @@ a|
 |1..n
 |The first level group of properties and sub-groups of properties.
 a|
-*Rule scope*: Common (BR-TC-07, BR-TC-16)
-
 |===
 
 [[legislation]]
@@ -132,15 +122,11 @@ _Figure 2. cac:Legislation XSD Schema_
 a|
 *Rule*: The complete title as in the original legal text.
 
-*Rule scope*: Common (BR-TC-09)
-
 |*cbc:Description*
 |Text
 |0..n
 |Textual short description of the legislation.
 a|
-*Rule scope*: Common (BR-TC-10)
-
 |*cbc:JurisdictionLevel*
 |Text
 |0..n
@@ -152,8 +138,6 @@ a|
 |0..n
 |The article of the legislation.
 a|
-*Rule scope*: Common (BR-TC-11)
-
 |*cbc:URI*
 |Identifier
 |0..1
@@ -176,16 +160,12 @@ a|
 a|
 *Rule*: Compulsory use of the UUIDs supplied by e-Certis.
 
-*Rule scope*: Common (BR-TC-12, BR-OTH-02)
-
 |*cbc:PropertyGroupTypeCode*
 |Code
 |1
 |Code to control group behaviour (ON*, ONTRUE, ONFALSE).
 a|
 *Rule*: Compulsory use of the Code List link:{url-tree}/codelists/PropertyGroupType.gc[PropertyGroupType].
-
-*Rule scope*: Common (BR-TC-14, BR-TC-15, BR-OTH-01)
 
 |*cac:TenderingCriterionProperty*
 |Class
@@ -216,15 +196,11 @@ a|
 a|
 *Rule*: UUID version 4 numbers, automatically generated. Responses reference this UUID.
 
-*Rule scope*: Common (BR-TC-18, BR-OTH-02)
-
 |*cbc:Description*
 |Text
 |1
 |The text of the caption, requirement or question.
 a|
-*Rule scope*: Common (BR-TC-19)
-
 |*cbc:TypeCode*
 |Code
 |1
@@ -232,16 +208,12 @@ a|
 a|
 *Rule*: Use code list link:{url-tree}/codelists/CriterionElementType.gc[CriterionElementType]. If CAPTION or REQUIREMENT, then `cbc:ValueDataTypeCode` must be NONE.
 
-*Rule scope*: BR-TC-20, BR-OTH-01
-
 |*cbc:ValueDataTypeCode*
 |Code
 |1
 |The type of answer expected by the buyer.
 a|
 *Rule*: Use code list link:{url-tree}/codelists/ResponseDataType.gc[ResponseDataType]. Must be different from NONE for QUESTION properties.
-
-*Rule scope*: Common (BR-TC-21, BR-OTH-01, BR-OTH-03)
 
 |*cbc:ValueUnitCode*
 |Code
@@ -266,8 +238,6 @@ a|
 |0..1
 |Expected identifier (e.g. Lot ID).
 a|
-*Rule scope*: (BR-LOT-40)
-
 |*cbc:ExpectedCode*
 |Code
 |0..1

@@ -8,15 +8,15 @@
 
 [[abies,Aggregate Business Information Entities (ABIEs)]]
 *Aggregate Business Information Entities (ABIEs).* +
- Root nodes and top-level structures of UBL documents. Children of document ABIEs may be <<bbies>> or <<asbies>>, never ABIEs. All UBL document ABIEs (and only UBL document ABIEs) are defined within individual namespaces specific to each document as both elements and types. (https://docs.oasis-open.org/ubl/os-UBL-2.3/UBL-2.3.html#S-BUSINESS-INFORMATION-ENTITIES)
+ Root nodes and top-level structures of UBL documents. Children of document ABIEs may be <<bbies>> or <<asbies>>, never ABIEs. All UBL document ABIEs (and only UBL document ABIEs) are defined within individual namespaces specific to each document as both elements and types. (https://docs.oasis-open.org/ubl/os-UBL-2.4/UBL-2.4.html#S-BUSINESS-INFORMATION-ENTITIES)
 
 [[asbies,Association Business Information Entities (ASBIEs)]]
 *Association Business Information Entities (ASBIEs).*  +
-Substructures of a UBL document. Children of ASBIEs may be <<bbies>> or other ASBIEs, never <<abies>>. All UBL ASBIEs (and only UBL ASBIEs) are members as elements of the UBL common aggregate components namespace, denoted in UBL schemas by the cac: prefix. (https://docs.oasis-open.org/ubl/os-UBL-2.3/UBL-2.3.html#S-BUSINESS-INFORMATION-ENTITIES)
+Substructures of a UBL document. Children of ASBIEs may be <<bbies>> or other ASBIEs, never <<abies>>. All UBL ASBIEs (and only UBL ASBIEs) are members as elements of the UBL common aggregate components namespace, denoted in UBL schemas by the cac: prefix. (https://docs.oasis-open.org/ubl/os-UBL-2.4/UBL-2.4.html#S-BUSINESS-INFORMATION-ENTITIES)
 
 [[bbies,Basic Business Information Entities (BBIEs)]]
 *Basic Business Information Entities (BBIEs).*  +
-Leaf nodes of every UBL document structure. These are ordinary data fields such as one would expect to find in any business form, and they are realized in the schemas as individual XML elements at the bottom level of the document tree with simple content representing amounts, codes, quantities, and so on. All UBL BBIE elements (and only UBL BBIE elements) are members of the UBL common basic components namespace, conventionally denoted in UBL schemas by the cbc: prefix. (https://docs.oasis-open.org/ubl/os-UBL-2.3/UBL-2.3.html#S-BUSINESS-INFORMATION-ENTITIES)
+Leaf nodes of every UBL document structure. These are ordinary data fields such as one would expect to find in any business form, and they are realized in the schemas as individual XML elements at the bottom level of the document tree with simple content representing amounts, codes, quantities, and so on. All UBL BBIE elements (and only UBL BBIE elements) are members of the UBL common basic components namespace, conventionally denoted in UBL schemas by the cbc: prefix. (https://docs.oasis-open.org/ubl/os-UBL-2.4/UBL-2.4.html#S-BUSINESS-INFORMATION-ENTITIES)
 
 [[CodeLists, Code Lists]]
 *Code lists* +

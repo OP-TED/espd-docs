@@ -24,7 +24,7 @@ _Figure 1. Selection criteria classification_
 
 For Selection Criteria, the buyer may specify the Lots that apply to each selection criteria by using the element *cac:ProcurementProjectLotReference* inside the element *cac:TenderingCriterion*. 
 
-The image below shows the UBL-2.3 schema for TenderingCriterion:
+The image below shows the UBL-2.4 schema for TenderingCriterion:
 
 image::https://kroki.io/blockdiag/svg/eNrtVMtuEzEUXWe-wjIbkIZk0oICiWCRF6oUqooWsUDVyLHvzLj12CPbU5JW2fMVfBxfgj3J5EFKirpACDGL6Obe4-Nj-9w7FYpeM05SdBe0WuiMpIBaFmgmOSWiimINplDSQDOzuUAn-U-YmPuMaV2AZKC5TAeaWxcoGVNCz7SipYYcpHXhFVA7UfYDJKBBUmheFSl6Ouapg6DX7SZyK7r7RC2fPsz0zMs_B4tMQSTKwWo-CxCq_sZfOLMZeoM6L3vrXAY8zaxLto-qJIOElMLGiZLW8FvwlRdVJUi1Kgt0C1rFy_AuCKgSSjsMfjLqjKJxG_eCAN-vHqPnbxGGme1-7E9GMwvSuKzBIcJ0Srsnwzpar7iYFzBQDDD6zLjfRSoJl4f5PcEpyaEmG4Khmhe2AmzRhEiQKQgvPWo2v3_9hn-D-FN1Wadl7vK03mFcioQL_x4nkjkrWKUPlNZnWkFGN0SUxMt7DzZT7LFnXkrzNXen3MEqzu3T-w0f9E-NGqg8V4zb-UAQY3jixW-RnJfTe8SsihNIuRE7-H2w27sAbefvvJMefJmV9xKujV2br4H3af31OTaTkcJb1yEdgk3VLES1-486UWjsXPg6IyYDFqKNjYf94fGo73TvNMBlL2g00AY2FYRe42XSOktv1o_Hkftw1TGrrxYjuISd_I6IJVn187gmCQ-bP_zzFg7_BWsGjUWwqKfq0kNWOaMyMGE9LZG_AUDcuCn66pe9Gv5_2L9r5hyaEsdR5Jp-8QNaPcW1[cac:TenderingCriterion/cac:ProcurementProjectLotReference,width=650,height=700]
 //image:TenderingCriterion_cacProcurementProjectLotReference.jpg[cac:TenderingCriterion/cac:ProcurementProjectLotReference,width=448,height=490]
@@ -503,7 +503,7 @@ Notice the following aspects from the 'other economic or financial requirements'
 . It allows for capturing multiple national criteria;
 . It specifies the Legislation component for the EU parent criterion. So far so good, no differences until now;
 . There's a group of REQUIREMENT(s) and QUESTION(s).
-. The group of REQUIREMENT(s) defines a caption that is kep empty (no name, no description, no value. You will have noticed this also in other criteria. The reason for having this dummy CAPTION is that the UBL-2.3 model requires always at least one cac:TenderingCriterionProperty element instance inside a group or sub-group of properties;
+. The group of REQUIREMENT(s) defines a caption that is kep empty (no name, no description, no value. You will have noticed this also in other criteria. The reason for having this dummy CAPTION is that the UBL-2.4 model requires always at least one cac:TenderingCriterionProperty element instance inside a group or sub-group of properties;
 . The most important part comes now: You have a kind of choice here: one of the two subgroups the data will be shown (or not) depending on the answer of the *buyer * to the REQUIREMENT: *Select the type of requirement*. If the CA's answer was *economic or financial requirement* the application takes it as a *true*; otherwise it is considered *false*:
 * On *true* (see the group code on the right side of the data structure) three REQUIREMENT(s) will be shown to the *economic operator*: description, minimum amount and period. For this REQUIREMENT the economic operator will see all these requirements and will have to provide an amount.
 * On *false* (see the group code on the right side of the data structure) three REQUIREMENT(s) will be shown to the *economic operator*: minimum rating and rating scheme. For this REQUIREMENT the economic operator will see all these requirements and will have to provide a rating.
