@@ -1,4 +1,4 @@
-:doctitle: The Procurement Process
+﻿:doctitle: The Procurement Process
 :doccode: espd-tech-prod-045
 :author: ESPD Team
 :docdate: August 2026
@@ -12,9 +12,9 @@ This page outlines where the ESPD fits within the EU public procurement lifecycl
 The three main phases of the public procurement process are:
 
 [arabic]
-. *Pre-tendering* — preparation and planning of the procedure
-. *Tendering* — publication, submission, qualification, evaluation, and award
-. *Post-tendering* — contract implementation
+. *Pre-tendering* â€” preparation and planning of the procedure
+. *Tendering* â€” publication, submission, qualification, evaluation, and award
+. *Post-tendering* â€” contract implementation
 
 The ESPD is specifically concerned with the *qualification* step within the tendering phase.
 
@@ -22,15 +22,27 @@ The ESPD is specifically concerned with the *qualification* step within the tend
 
 image::https://kroki.io/pikchr/svg/eNqNkMFOwzAQRO_5ilFOcHESSITokbQgLigSH2BtjessdezKdSH8PU5KpSonbrO7M29XWxToyGgUUavesSI7K0lB9ZxUPAUt-jhYvA4Ln-Spcyw2791aPp1-dJCdJSc-DwY3z2xSElUpSWAeYho6duY2y6IeI_K5vcqhvPUBW0tqnw3-SyOw6SNK0bDLNi_VCls_ItAHmsOI_MK5BMuxerxr6xY7tjZVdf1w3zapipe0SpRnGi1wbz6y0sd_0M5XL9d_T38CRST2n2WBvHbQLwuieKs=[Buyer Planning,450,50]
 
+//image:ESPD_Buyer_Plan.jpg[Buyer Planning,align="center",width=450,height=50]
+//[Edit this diagram](https://niolesk.top/#https://kroki.io/pikchr/svg/eNqNkMFOwzAQRO_5ilFOcHESSITokbQgLigSH2BtjessdezKdSH8PU5KpSonbrO7M29XWxToyGgUUavesSI7K0lB9ZxUPAUt-jhYvA4Ln-Spcyw2791aPp1-dJCdJSc-DwY3z2xSElUpSWAeYho6duY2y6IeI_K5vcqhvPUBW0tqnw3-SyOw6SNK0bDLNi_VCls_ItAHmsOI_MK5BMuxerxr6xY7tjZVdf1w3zapite0SpRnGi1wbz6y0sd_0M5XL9d_T38CRST2n2WBvHbQLwuieKs=)
 _Step 1: The Buyer plans the procurement procedure._
 
 image::https://kroki.io/pikchr/svg/eNqtksFOwzAMhu99CqsSElzaDlqh7Ug7ELeKPUDltG4bSJeROqzw9KSFoWmapk3iZsf2__1xEoaQY0MQMpXtWpaopqhAU7bSRWwNBS13Cp67g75Cjid9uFzlWfFgP8kUL_RuqefgddPA9aNs3DDMokIEMNXht37jeUwDgz-dLnwotdIGhMLyzev0B4GRTcsQBYlce8un2QKEHsBgBclmAH8k7rQgoxqtYh_8DBlhxcZOrneq0TCb36ZxCrVUymVxfH-XJi5jD43RW2cwuvrrTXAuqmRk4iloanvWnfyi6t-54hQ3t0LJvqUKajeGDp4bXTpqR2tXdTFV53n4eYCLNrkdfwQgg3N5bP6MpexL4DGNCy-4rye-AS-A678=[Buyer Request,700,50]
 
+//image:ESPD_Buyer_Request.jpg[Buyer Request,align="center",width=650,height=500]
+//[Edit this diagram](https://niolesk.top/#https://kroki.io/pikchr/svg/eNqtksFOwzAMhu99CqsSElzaDlqh7Ug7ELeKPUDltG4bSJeROqzw9KSFoWmapk3iZsf2__1xEoaQY0MQMpXtWpaopqhAU7bSRWwNBS13Cp67g75Cjid9uFzlWfFgP8kUL_RuqefgddPA9aNs3DDMokIEMNXht37jeUwDgz-dLnwotdIGhMLyzev0B4GRTcsQBYlce8un2QKEHsBgBclmAH8k7rQgoxqtYh_8DBlhxcZOrneq0TCb36ZxCrVUymVxfH-XJi5jD43RW2cwuvrrTXAuqmRk4iloanvWnfyi6t-54hQ3t0LJvqUKajeGDp4bXTpqR2tXdTFV53n4eYCLNrkdfwQgg3N5bP6MpexL4DGNCy-4rye-AS-A678=)
 _Step 2: The Buyer creates and publishes the ESPD Request alongside the Contract Notice._
 
 image::https://kroki.io/pikchr/svg/eNqtklFrg0AMx9_9FEEYtC9qt8poX60be2pZP4DEM9XbTk_OuMo-_WJZSxmltLC35Eh-__yTC0PYYEkQMqmq0QrNIcrQqUpLxL2joOLawFv9py7T40sXptvNKkvX2Tt1rW06Cj7aEiYvupRWmEWZCiBVtrG1VrBuySFbB5N0PYVjx9TzmAYG_3Ld0gdljSS5QfXp1faLwOmyYoiCWDde-jpbQm4HcFhA3A7CkZFOdFjRDnvDPvgrZIQtu_7g64iNhtniMZknsNPGSDafPz8lsWTsoXN2Lyaih1NtjIu8iEdRvKqa9B2Ll28q_l04vyq87fNaM1MBO-lDUd84q0S2poZhjKm4bYjfo9y1zP34bQAZZM6LgBv2cs7Ai5A7PZ4D8x8f5PjN[Economic Operator Response,900,50]
 
+//image:ESPD_EO_Response.jpg[EO Response,align="center",width=650,height=500]
+//[Edit this diagram](https://niolesk.top/#https://kroki.io/pikchr/svg/eNqtklFrg0AMx9_9FEEYtC9qt8poX60be2pZP4DEM9XbTk_OuMo-_WJZSxmltLC35Eh-__yTC0PYYEkQMqmq0QrNIcrQqUpLxL2joOLawFv9py7T40sXptvNKkvX2Tt1rW06Cj7aEiYvupRWmEWZCiBVtrG1VrBuySFbB5N0PYVjx9TzmAYG_3Ld0gdljSS5QfXp1faLwOmyYoiCWDde-jpbQm4HcFhA3A7CkZFOdFjRDnvDPvgrZIQtu_7g64iNhtniMZknsNPGSDafPz8lsWTsoXN2Lyaih1NtjIu8iEdRvKqa9B2Ll28q_l04vyq87fNaM1MBO-lDUd84q0S2poZhjKm4bYjfo9y1zP34bQAZZM6LgBv2cs7Ai5A7PZ4D8x8f5PjN)
 _Step 3: The Economic Operator fills in the ESPD Response and submits it with the tender._
+
+image::https://kroki.io/pikchr/svg/eNqlkE0OgjAQRvecYtJEl6YojQFX2hCXLjzBFKo2FkrqKPX2oiEGcWPicjLve_NDOhCwzfWuPUyxalaQ7zIGlwqthcJZ50FZLM5R5W4avDmeCPhMmDrKt3EGygXwWIJoArC9trog42rWJ3mI07lMJBxMZ-MhSZYLKbqKIvTetRBzPnmzAlNViqcXR-J1i778V6pGUulq8ljQD156PenrvPZkSAMSdPae-dh02MceGE8dMuoB4mB8YA==[Buyer and EO,600,50]
+
+//image:ESPD_Buyer_EO.jpg[Buyer and EO,align="center",width=650,height=500]
+//[Edit this diagram](https://niolesk.top/#https://kroki.io/pikchr/svg/eNqlkE0OgjAQRvecYtJEl6YojQFX2hCXLjzBFKo2FkrqKPX2oiEGcWPicjLve_NDOhCwzfWuPUyxalaQ7zIGlwqthcJZ50FZLM5R5W4avDmeCPhMmDrKt3EGygXwWIJoArC9trog42rWJ3mI07lMJBxMZ-MhSZYLKbqKIvTetRBzPnmzAlNViqcXR-J1i778V6pGUulq8ljQD156PenrvPZkSAMSdPae-dh02MceGE8dMuoB4mB8YA==)
+_Step 4: The Buyer and the EO interact to conclude the procurement procedure._
 
 === Qualification workflow
 
