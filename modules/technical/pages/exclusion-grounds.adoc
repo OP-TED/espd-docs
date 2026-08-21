@@ -34,7 +34,7 @@ _Figure 1. Exclusion criteria classification_
 
 *Information requirement*
 
-See formal requirements related to exclusion grounds in the , and more specifically *_tbr070-009_*, *_tbr070-004_*, *_tbr070-013_*.
+The formal requirements for exclusion grounds are defined in Directive 2014/24/EU Article 57 and enforced via ESPD-EDM business rules (BR-TC-*, BR-REQ-*). Criteria definitions are maintained in e-Certis.
 
 The label ''Convictions'' groups all the criteria with identical data structures classified as:
 
@@ -105,7 +105,7 @@ Thus, in the case of Convictions, a new requirement could be introduced in G1 (s
 
 === Related information requirements
 
-See formal requirements related to exclusion grounds in the , and more specifically *_tbr070-009_*, *_tbr070-004_*, *_tbr070-013_*.
+The formal requirements for exclusion grounds are defined in Directive 2014/24/EU Article 57 and enforced via ESPD-EDM business rules (BR-TC-*, BR-REQ-*). Criteria definitions are maintained in e-Certis.
 
 [cols="1,4"]
 |===
@@ -163,7 +163,7 @@ Please generate an ESPD Request and ESPD Response documents on https://github.co
 
 === Related information requirements
 
-See formal requirements related to exclusion grounds in the , more specifically *_tbr070-009_*, *_tbr070-004_*, *_tbr070-013_*.
+The formal requirements for exclusion grounds are defined in Directive 2014/24/EU Article 57 and enforced via ESPD-EDM business rules (BR-TC-*, BR-REQ-*). Criteria definitions are maintained in e-Certis.
 
 Category ''Social'' encompasses criteria with identical data structures, classified as:
 
@@ -206,7 +206,7 @@ Please generate an ESPD Request and ESPD Response documents on https://github.co
 
 === Related information requirements
 
-See formal requirements related to exclusion grounds in the , and more specifically *_tbr070-009_*, *_tbr070-004_*, *_tbr070-013_*.
+The formal requirements for exclusion grounds are defined in Directive 2014/24/EU Article 57 and enforced via ESPD-EDM business rules (BR-TC-*, BR-REQ-*). Criteria definitions are maintained in e-Certis.
 
 === Mock-ups - buyer perspective
 
@@ -244,7 +244,7 @@ Please generate an ESPD Request and ESPD Response documents on https://github.co
 
 === Related information requirements
 
-See formal requirements related to exclusion grounds in the , and more specifically *_tbr070-009_*, *_tbr070-004_*, *_tbr070-013_*.
+The formal requirements for exclusion grounds are defined in Directive 2014/24/EU Article 57 and enforced via ESPD-EDM business rules (BR-TC-*, BR-REQ-*). Criteria definitions are maintained in e-Certis.
 
 === Mock-ups - buyer perspective
 
@@ -279,7 +279,7 @@ Please generate an ESPD Request and ESPD Response documents on https://github.co
 
 === Related information requirements
 
-See formal requirements related to exclusion grounds in the , and more specifically *_tbr070-009_*, *_tbr070-004_*, *_tbr070-013_*.
+The formal requirements for exclusion grounds are defined in Directive 2014/24/EU Article 57 and enforced via ESPD-EDM business rules (BR-TC-*, BR-REQ-*). Criteria definitions are maintained in e-Certis.
 
 We have divided the conflict of interest criteria in two groups, this first group is composed of two criteria with the same structure:
 
@@ -323,7 +323,7 @@ Please generate an ESPD Request and ESPD Response documents on https://github.co
 
 === Related information requirements
 
-See formal requirements related to exclusion grounds in the , more specifically *_tbr070-009_*, *_tbr070-004_*, *_tbr070-013_*.
+The formal requirements for exclusion grounds are defined in Directive 2014/24/EU Article 57 and enforced via ESPD-EDM business rules (BR-TC-*, BR-REQ-*). Criteria definitions are maintained in e-Certis.
 
 === Mock-ups - buyer  perspective
 
@@ -356,7 +356,7 @@ Please generate an ESPD Request and ESPD Response documents on https://github.co
 
 === Related information requirements
 
-See formal requirements related to exclusion grounds in the , and more specifically *_tbr070-009_*, *_tbr070-004_*, *_tbr070-013_*.
+The formal requirements for exclusion grounds are defined in Directive 2014/24/EU Article 57 and enforced via ESPD-EDM business rules (BR-TC-*, BR-REQ-*). Criteria definitions are maintained in e-Certis.
 
 === Mock-ups - buyer perspective
 
@@ -396,7 +396,7 @@ Please generate an ESPD Request and ESPD Response documents on https://github.co
 
 === Related information requirements
 
-See formal requirements related to exclusion grounds in the , and more specifically *_tbr070-009_*, *_tbr070-004_*, *_tbr070-013_*.
+The formal requirements for exclusion grounds are defined in Directive 2014/24/EU Article 57 and enforced via ESPD-EDM business rules (BR-TC-*, BR-REQ-*). Criteria definitions are maintained in e-Certis.
 
 Other requirements related specifically to purely national criteria are:
 
