@@ -12,8 +12,8 @@ The ESPD includes a specific approach to lot management, aligned with eForms. Th
 In ESPD-EDM v5.0.0, the lot management follows this logic:
 
 * There is *one ESPD Request* per procurement procedure, containing the exclusion grounds and selection criteria.
-* Exclusion grounds are *general* â€” they apply to all lots in the procedure.
-* Selection criteria are *lot-specific* â€” different lots may have different selection criteria. Each selection criterion includes a reference to the lot(s) it applies to via `cac:ProcurementProjectLotReference`.
+* Exclusion grounds are *general* — they apply to all lots in the procedure.
+* Selection criteria are *lot-specific* — different lots may have different selection criteria. Each selection criterion includes a reference to the lot(s) it applies to via `cac:ProcurementProjectLotReference`.
 * On the Economic Operator's side, there are *as many ESPD Responses as lots* (or groups of lots) the EO tenders for.
 
 image::https://kroki.io/pikchr/svg/eNqtVMtu2zAQvOsrFooPsdMopBTGSIBcGqS9pAjQXnwrKImW2TCkS1KxP7-kXpZsWcihJ0Mecmc4uzszDY-AopjLQHDJdjyvv0kQfH1d_cYPoD6oAC4_uOGpYMEKPUCFRAau4PIaRQn5giJM5oFlewshhmtY_XiBn-xvyYwNIVUih0wJpSEVNHsDausKQUC1VrsGQ3tC79OcQK52EvBipmGt1TusENgNk6B5sbEw05WuuNEVPu8zURquJBRalTI3cPnNFaNCgFDW-Ktg6DubhyD-lMYeXgJrbqcUxBGZ1pC0Gn4xwTLrNWSaW6Y5nSSrKlYFnIUVlaMZlD_SU7HdtmwvygIOJ0oL6pj92ba8a9FiSBEvxklIS_LUPAQwUJlDfMxXt_r01Eibyfl3H8saF3XXf_kZJQ00Qn_3v7xZnvEm-ZQ3yai4ZRBc5F6cH9OUF1BLdQMtC_D7aKqt7FvH_NbhyO3cHAoFuJ7SDaO5v3PfDKpD0BA5ALj_N07IOBDH5BOlhkC87NPfDu9kQhlvkNvMztemNQf_6haQriXltgoj993kEToJpCZ1okh2wWO2Sho2kTzozOJ3PmNUxxvy0TbvRdJpDOA2I8OWGLZMw_Nr1Xc_mO73Ruk2E8LvLqi2oNYec3F1SDB_vsuS8cD6B1sEy7c=[ESPD lot management overview,900,250]

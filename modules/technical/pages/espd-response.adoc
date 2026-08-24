@@ -37,8 +37,6 @@ image::https://kroki.io/pikchr/svg/eNqNlU1v4jAQhu_5FRbqoYXWGyeEANIeAnRXlardbrfdS
 //[Edit this diagram](https://niolesk.top/#https://kroki.io/pikchr/svg/eNqNlU1v4jAQhu_5FRbqoYXWGyeEANIeAnRXlardbrfdS9WDSUxxFewoNqXtr99xMB8JSYELjt34ndczGecsR9-Riz0uHCcaoqdEroSD4DeV76jViafx8HF0-4_liktxM3kizy2Uvi6VtotjGMoF_6S6fv0ulzOeMlhxMW5YvH5n8bJhf2lqxjXi4o2rrcMV13MkVohq1M_ekUByhlKqNFYrpOiCbVzK7ONGJDymWuZ1Th4f684mhc5prH_INGF5nTmllmxCNSt7rHPnf-GukHngC1bn7DqWAhIc_85Ybtz_zOUy-0Xr4V2darPN3rhcqiOQjFmyzNlYJnvHenac0bA4E5wlgoMlcLIIr_87KGif5WjO-MscVrEddOC9Cs2KM15vbf1Z0pTPTBUgfpRlqR3eM5VJoVgLsDSx6iOrbtUILoIUKcXK2BhheGcnQ5RIMN-yK2K9osAvsVFRTOPhtphcvNzRXH9sjm23rew-hq7QuXtpWuKiqOXIK8lUy3GaVs9q-SUtk2vI9IIJDcNXFutvpgQTpuKcZyYxR4QJdq1w94jwrdRHtbpWKyhpPTABLz9kbZxzDYMTTPWtUO-I0K7sXwp621KE5VK88YSJeLs9oWrOkmaVTRH6JZUJpMok6p7NWH66nL9N_aAk95e_CKoh-afK2KzD6-pSqwRCpU4gOGyPSLkdPGgHmLNPa3UrzqDzzl0cXBb9d2GUp1YZrnLY2W0htaBputFycbdtwu_UTCC3iACz60fbeOsYZlqsjGmyNT0tm97bamXLIWoNX4EVY5g0GN5KTw-kp2XpjVGyNhrBZZBywdAslws0gQvEfOjgjD5Bes4EStlMIy2RybMTeQ10WKU9Q_u1NMGkSvuG7jbQQZXuGjpooAdVOjB0r5b2sO9W6J6hwwY6rNKhofu1tI9Jle4betBAB1V6ALRT1JqU7vCIwKbdB7-O8I4S_lGiW0Ng3C5DwSlQ7xByD6DwEOpEScLNZU_T1v7nLerDv2mMS-gKAlfgl8L9U6IP9qH_PtMTjQ==)
 _Figure 2. ESPD-EDM 'QualificationApplicationResponse', UML diagram_
 
-For detailed element tables with all cardinalities, data types, and business rules, see xref:response-model-reference.adoc[Response Model Reference]. â€” most elements are optional. The ESPD-EDM adds cardinality restrictions enforced via ISO Schematron assertions.
-
 For detailed element tables with all cardinalities, data types, and business rules, see xref:response-model-reference.adoc[Response Model Reference].
 
 == Economic Operator
@@ -51,9 +49,9 @@ The economic operator information is spread in two places:
 
 === Key requirements
 
-* *One ESPD Response per economic operator* â€” every participant in a tender must provide its own ESPD Response.
-* *One ESPD Response per lot* â€” each EO submits a separate response per lot (or group of lots) they tender for.
-* *Group name consistency* â€” all economic operators in a group must use the exact same group name spelling.
+* *One ESPD Response per economic operator* — every participant in a tender must provide its own ESPD Response.
+* *One ESPD Response per lot* — each EO submits a separate response per lot (or group of lots) they tender for.
+* *Group name consistency* — all economic operators in a group must use the exact same group name spelling.
 
 === Roles
 
@@ -83,9 +81,9 @@ For the criterion-property-response linking mechanism, see xref:how-criteria-wor
 Economic operators can reference evidence documents that prove compliance with criteria. Evidence is linked indirectly to responses: `cac:EvidenceSupplied/cbc:ID` in the response references `cac:Evidence/cbc:ID` at document level.
 
 Key elements:
-* `cac:Evidence/cbc:ID` â€” unique identifier for the evidence
-* `cac:Evidence/cbc:ConfidentialityLevelCode` â€” access right (PUBLIC, CONFIDENTIAL)
-* `cac:Evidence/cac:DocumentReference` â€” contains the URI, verification code, and issuer
+* `cac:Evidence/cbc:ID` — unique identifier for the evidence
+* `cac:Evidence/cbc:ConfidentialityLevelCode` — access right (PUBLIC, CONFIDENTIAL)
+* `cac:Evidence/cac:DocumentReference` — contains the URI, verification code, and issuer
 
 For detailed element tables, see xref:response-model-reference.adoc[Response Model Reference].
 

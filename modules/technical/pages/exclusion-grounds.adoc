@@ -43,7 +43,7 @@ The label ''Convictions'' groups all the criteria with identical data structures
 [NOTE]
 _Note about the ESPD Service_
 
-In an initial phase, the European Commission provided an ESPD service to support the ESPDâ€™s uptake. As announced in 2018, on 2 May 2019, the Commissionâ€™s ESPD service has been turned off. To reap the full benefit of an electronic ESPD, the integration with national eProcurement services and national databases is necessary. This will enable data reusability, default form pre-filling and data interexchange among different databases. In turn, buyers and suppliers will benefit from the automatism, making the application of the ESPD much easier and decreasing the data errors rates.
+In an initial phase, the European Commission provided an ESPD service to support the ESPD’s uptake. As announced in 2018, on 2 May 2019, the Commission’s ESPD service has been turned off. To reap the full benefit of an electronic ESPD, the integration with national eProcurement services and national databases is necessary. This will enable data reusability, default form pre-filling and data interexchange among different databases. In turn, buyers and suppliers will benefit from the automatism, making the application of the ESPD much easier and decreasing the data errors rates.
 
 ////
 === Data structure

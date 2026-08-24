@@ -31,7 +31,7 @@ _Figure 1. Criterion - UML diagram_
 
 One group of properties may include one or more 'sub-groups' of properties (class `cac:SubsidiaryTenderingCriterionPropertyGroup`).
 
-A sub-group of properties 'is a' group of criteria â€” it is the same component but qualified as 'subsidiary'. Therefore all the rules applicable to property groups are also applicable to sub-groups.
+A sub-group of properties 'is a' group of criteria — it is the same component but qualified as 'subsidiary'. Therefore all the rules applicable to property groups are also applicable to sub-groups.
 
 === PropertyGroupTypeCode
 

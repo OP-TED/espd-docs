@@ -38,7 +38,7 @@ The ESPD Exchange Data Model tries to reuse as the codes that are already used f
 . *Business domain-related*, maintained by international or European authorities, e.g. the ones defined by UNECE (as unit codes), or by the Publications Office of the European Union (OP), e.g. types of procurement procedures (based on the EU Directives);
 . *Project-specific* (or application-specific), i.e. those codes that are particular of the project. Types (taxonomy) of exclusion and selection criteria, types of evaluation method, etc. in the case of the ESPD-EDM.
 
-Codes are normally maintained in "code lists". The ESPD-EDM keeps and distributes these code lists in Genericode 1.0 (link:{url-tree}/codelists/gc/[GC]) files (one *.gc file per code list).
+Codes are normally maintained in "code lists". The ESPD-EDM keeps and distributes these code lists in Genericode 1.0 (link:{url-tree}/codelists/[GC]) files (one *.gc file per code list).
 
 The ESPD reuses code lists from EU Vocabularies. This is to facilitate alignment between the ESPD and eForms models, ensuring maximum interoperability. The excel and code list files themselves are not provided, their metadata and their location in EU Vocabularies is given.
 
@@ -73,7 +73,7 @@ _Table 1. ESPD Requirement regarding codes_
 _Table 2. ESPD Requirement regarding identifiers_
 [cols="1,2"]
 |===
-|*REQUIREMENT*: |**For identifiers, this ESPD specification requires at least (and always) the mandatory attribute **schemeAgencyID. When identifying parties, like the Economic Operator, the Buyer, etc., the attribute schemeID SHOULD also be used (for this use the code list link:{url-tree}/codelists/gc/EOIDType.gc[EOIDType]).
+|*REQUIREMENT*: |**For identifiers, this ESPD specification requires at least (and always) the mandatory attribute **schemeAgencyID. When identifying parties, like the Economic Operator, the Buyer, etc., the attribute schemeID SHOULD also be used (for this use the code list link:{url-tree}/codelists/EOIDType.gc[EOIDType]).
 |===
 
 In UBL Codes and identifiers are based on ebXML Core components (UBL conforms to link:https://docs.oasis-open.org/ubl/UBL-conformance-to-CCTS/v1.0/UBL-conformance-to-CCTS-v1.0.html[ebXML CCTS ISO/TS 15000-5:2005] currently maintained by UN/CEFACT).

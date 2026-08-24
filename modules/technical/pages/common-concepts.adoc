@@ -3,7 +3,7 @@
 :author: ESPD Team
 :docdate: July 2026
 
-// Split from: tech_validation.adoc (lines 1-140 â€” general Schematron approach)
+// Split from: tech_validation.adoc (lines 1-140 — general Schematron approach)
 // Target section: Technical Implementation
 
 == ISO Schematron

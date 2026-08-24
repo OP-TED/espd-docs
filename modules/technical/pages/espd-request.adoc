@@ -24,7 +24,7 @@ _Figure 1. QualificationApplicationRequest-2.4 main elements._
 
 == ESPD Request Cardinalities
 
-The UBL-2.4 Schema is flexible â€” except for in a few cases, all elements are optional. The ESPD-EDM model adds restrictions regarding the cardinalities of some elements.
+The UBL-2.4 Schema is flexible — except for in a few cases, all elements are optional. The ESPD-EDM model adds restrictions regarding the cardinalities of some elements.
 
 image::https://kroki.io/pikchr/svg/eJyNlUFP4zAQhe_5FaOIA5TFxGlS2Ep7SNtdCQmtWBb2gji4iUONUrtrOxT-PePGLaRNgV6a2s_fex5P3AMNPyAisZBBkA3hrlBLGQB-puoZwuN8mg9vR5f_uDZCyYvJHb0PoXqsjfWTV1qVouI_n3le225Ja6gUFoR8EmZjshR2BnIJzML54hkkqBIqZiwxSzBszj1lrBYvF7IQObNK30WEbNvc3nZ4j5W0muX2l6oKrj8Q_EanLuqFMTWfMMvbe-hKT-MP4q84N6Lb5K28HZNXmj8JVZtPRCrnRa35WBXvot4HwWi4yon5MgxbYNqMNN_HkPQONMy4eJjhLGkegnGzIPxTs0qUrt7omi0WlX-85v9rbmyIqqrwyJFHehYlqSOvakOM8x4R7K_JEAqFiUM_I5sZgyGpN4Wc5cPNoQj5cMW0fVnv1S9b-nUcTuAw-uba92h1KKO4hXFFwZLMubT4-Mhze-pqNeEm12Lh9vIpeODB_Rb4hkvsJkw31sLiw6cgSiIPSr4ICk-dYHcHl8pe85JrLnN-2rxd4X7XxLumLdcJQh1yA1qbFszMeLEf993jBi3cX_EgmcWYX8PEpN9g8NQj5kkIajUUJWe9EW13VYxdhWP-V0P3cI7NfBiR1B3ZWXrkyFNPxtsLVyYhmDmrqjUrIknP2b_RnFG0csDR5qfv38bDDculC003oaft0O-WemzbojPwCUZxgemewBv0dAc9baPXQWkTNMN3qhKSQ6nVHCb4Hrq7HffYp2BnXELFSwtWgatzkMV71Gfb6tip-51qSui2uu_UyR51er6lTpw67VTHJNpmp0492KNOttUDVAerCtPWBZRRXPT2t9SliDsUhPTaov6uKNoRJbui46wohLuMWLWr_RCWfsVx8F70ChL1dLg[QualificationApplicationRequest UML diagram,width=600,height=550]
 
@@ -42,8 +42,8 @@ For details on how lots are managed in the ESPD Request, see xref:lots-managemen
 
 Key points:
 
-* Exclusion grounds are general â€” they apply to all lots in the procedure.
-* Selection criteria are lot-specific â€” each must reference the applicable lot(s) via `cac:ProcurementProjectLotReference`.
+* Exclusion grounds are general — they apply to all lots in the procedure.
+* Selection criteria are lot-specific — each must reference the applicable lot(s) via `cac:ProcurementProjectLotReference`.
 * On the Economic Operator's side, there are as many ESPD Responses as lots the EO tenders for.
 
 == EU and Notice Publications

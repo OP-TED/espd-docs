@@ -12,9 +12,9 @@ This page outlines where the ESPD fits within the EU public procurement lifecycl
 The three main phases of the public procurement process are:
 
 [arabic]
-. *Pre-tendering* â€” preparation and planning of the procedure
-. *Tendering* â€” publication, submission, qualification, evaluation, and award
-. *Post-tendering* â€” contract implementation
+. *Pre-tendering* — preparation and planning of the procedure
+. *Tendering* — publication, submission, qualification, evaluation, and award
+. *Post-tendering* — contract implementation
 
 The ESPD is specifically concerned with the *qualification* step within the tendering phase.
 
