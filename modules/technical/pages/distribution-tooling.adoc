@@ -76,6 +76,75 @@ In previous versions, criterion structures were maintained in `ESPD-criterion.xl
 * All tooling should consume `espd-edm.json` instead
 * XSLT transformations generate ESPD UBL XML from the JSON data
 
+For detailed documentation of the JSON format, field semantics, and traversal patterns, see xref:criterion-data-model-json.adoc[Criterion Data Model (JSON)].
+
+== Tooling Pipeline
+
+=== EAtoJSON: Enterprise Architect to JSON
+
+The `espd-edm.json` file is generated from the ESPD Conceptual Model maintained in Enterprise Architect (EA). The generation pipeline (`EAtoJSON`) extracts the criterion tree from the EA model and produces the canonical JSON representation.
+
+*Pipeline steps:*
+
+[arabic]
+. Maintain criterion definitions in Enterprise Architect (ESPD Conceptual Model)
+. Run the EAtoJSON export pipeline (`espd-tools/EAtoJSON/`)
+. Validate the output JSON against the JSON schema
+. Commit the resulting `espd-edm.json` to the `ESPD-EDM/criterion/` folder
+
+NOTE: Only the ESPD Team runs this pipeline. Implementers consume the output (`espd-edm.json`) — they do not need to run the generation pipeline themselves.
+
+=== Validation Schematron Pipeline
+
+The ESPD validation artefacts (Schematron rules compiled to XSL) are produced in the https://github.com/OP-TED/espd-validation-schematron[espd-validation-schematron] repository.
+
+*Pipeline steps:*
+
+[arabic]
+. Clone the `espd-validation-schematron` repository
+. Copy external data from `ESPD-EDM` into the schematron repository:
+  * `codelists/gc` -> `gc/` (code list files)
+  * `criterion/espd-edm.json` -> criterion input
+  * `schemas/` -> `common/xsdrt/` (UBL XSD schemas)
+. Run `espd-schematron-gc.bat` (Windows) to:
+  * Transform Schematron (`.sch`) files into XSLT (`.xsl`) validators
+  * Validate code lists against CVA rules
+  * Produce validation reports in the `logs/` folder
+. The resulting XSL files are copied back to `ESPD-EDM/validation/` for distribution
+
+*Prerequisites:* Java JDK 1.8+, Git client.
+
+*Output:* XSL files for Request validation (`ESPDRequest/xsl/`), Response validation (`ESPDResponse/xsl/`), and common validation (`common/`).
+
+== Integration Guidance
+
+=== Consuming the Distribution Package
+
+Implementers building an ESPD Service should:
+
+[arabic]
+. *Download the distribution package* from the https://github.com/OP-TED/ESPD-EDM/releases[ESPD-EDM GitHub Releases] page (or clone the repository at the appropriate version tag).
+. *Parse `criterion/espd-edm.json`* to build the criterion catalogue for your service — render forms, generate XML criterion sections, and map property data types.
+. *Reference `codelists/`* for all code list values used in ESPD documents (genericode `.gc` files). The `codelists.json` metadata file provides code list identifiers, versions, and agency information.
+. *Use `schemas/maindoc/`* for XSD validation of generated ESPD Request and Response XML instances.
+. *Apply `validation/` XSL files* for Schematron-based business rule validation (either locally or via the https://www.itb.ec.europa.eu/espd/upload[Interoperability Testbed]).
+
+=== Validation Options
+
+[cols="1,3",options="header"]
+|===
+|Option |Description
+
+|*Online (Testbed)*
+|Upload ESPD XML instances to the https://www.itb.ec.europa.eu/espd/upload[Interoperability Testbed] for validation. No local setup needed.
+
+|*Local (Saxon)*
+|Use the http://saxon.sourceforge.net/[Saxon XSLT Processor] (or equivalent) to execute the XSL validation files against your XML instances locally. Requires Java.
+
+|*Integrated*
+|Embed the XSL validation step in your service pipeline — apply the Request or Response XSL to each generated document before publishing/submitting.
+|===
+
 == Release Notes
 
 Release notes for each release are available on https://github.com/OP-TED/ESPD-EDM/releases[GitHub Releases]. The distribution package for each release is attached to the corresponding release and the source code is tagged in the GitHub repository.
