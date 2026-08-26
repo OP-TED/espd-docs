@@ -60,6 +60,77 @@ This page provides guidance for migrating ESPD Service implementations from ESPD
 * The property group structure (ONTRUE/ONFALSE logic) is unchanged
 * BR rule IDs are preserved (same IDs, some extended)
 
+=== New features requiring implementation updates
+
+[cols="1,3",options="header"]
+|===
+|Feature |Impact on Implementers
+
+|*JSON criterion data model*
+|Services must consume `espd-edm.json` instead of the Excel file. The JSON provides a hierarchical part/section/criteria/components tree. See xref:technical:criterion-data-model-json.adoc[Criterion Data Model (JSON)].
+
+|*eForms lot identifiers*
+|Lot identifiers now follow the eForms pattern: `LOT-0001`, `LOT-0002`, `GLO-0001`. Services generating lot references must use this format.
+
+|*Code list metadata (codelists.json)*
+|A new `codelists.json` file provides machine-readable metadata for all code lists (identifiers, versions, agencies). Services managing code lists dynamically should consume this file.
+
+|*Criterion UUID changes*
+|Some criterion UUIDs changed due to e-Certis harmonisation. Services that hard-code UUIDs must update them. Deprecated criteria C27/C28 are replaced by C66.
+
+|===
+
+=== Deprecated features
+
+The following features are deprecated in v5.0.0 and should no longer be used:
+
+[cols="1,3",options="header"]
+|===
+|Feature |Replacement
+
+|`ESPD-criterion.xlsx` (Excel criterion file)
+|`criterion/espd-edm.json` (JSON format)
+
+|`ubl-2.3/` folder
+|`schemas/` folder (UBL 2.4)
+
+|`conceptual-model/` folder in ESPD-EDM
+|Separate https://github.com/OP-TED/espd-conceptual-model[espd-conceptual-model] repository
+
+|ESPD Demo Site (`docs.ted.europa.eu/espd-demo/`)
+|https://github.com/OP-TED/espd-service-sandbox[ESPD Service Reference Implementation] (in development)
+
+|Single `Criterion` code list
+|Split into `ExclusionGround` + `SelectionCriterion` (EU Vocabularies)
+
+|===
+
+=== Migration checklist
+
+Use this checklist to verify your migration is complete:
+
+* [ ] XSD schemas updated to UBL 2.4 (`schemas/maindoc/`)
+* [ ] `cbc:UBLVersionID` set to `"2.4"` in generated documents
+* [ ] `cbc:CustomizationID` updated to reference ESPD-EDM v5.0.0
+* [ ] All `listVersionID` attributes updated to `"5.0.0"` for ESPD-managed code lists
+* [ ] Criterion data sourced from `espd-edm.json` (not Excel)
+* [ ] Code list references split: `ExclusionGround` + `SelectionCriterion` (not single `Criterion` list)
+* [ ] Lot identifiers use eForms format (`LOT-0001`)
+* [ ] Criterion UUIDs verified against e-Certis (check C27, C28 -> C66 migration)
+* [ ] Schematron validation passes against v5.0.0 XSL rules
+* [ ] ESPD Request and Response validated on https://www.itb.ec.europa.eu/espd/upload[Interoperability Testbed]
+
+=== Verifying the migration
+
+After completing the migration steps:
+
+[arabic]
+. Generate a sample ESPD Request and Response with your updated service
+. Validate both documents against the v5.0.0 Schematron XSL files (locally or via the Testbed)
+. Verify that no `BR-OTH-01-40` errors appear (code list version mismatch)
+. Verify that no `BR-OTH-05-01` errors appear (UBL version mismatch)
+. Cross-check criterion UUIDs in your documents against `espd-edm.json`
+
 === Further information
 
 * xref:ROOT:release_notes.adoc[Release Notes]

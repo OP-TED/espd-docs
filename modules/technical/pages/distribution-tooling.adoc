@@ -103,7 +103,7 @@ The ESPD validation artefacts (Schematron rules compiled to XSL) are produced in
 [arabic]
 . Clone the `espd-validation-schematron` repository
 . Copy external data from `ESPD-EDM` into the schematron repository:
-  * `codelists/gc` -> `gc/` (code list files)
+  * `codelists/` -> `gc` (code list files in genericode format)
   * `criterion/espd-edm.json` -> criterion input
   * `schemas/` -> `common/xsdrt/` (UBL XSD schemas)
 . Run `espd-schematron-gc.bat` (Windows) to:

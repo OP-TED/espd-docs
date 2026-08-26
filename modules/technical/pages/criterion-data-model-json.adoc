@@ -143,6 +143,88 @@ In previous versions, criterion structures were maintained in `ESPD-criterion.xl
 . Use `requestpath` / `responsepath` to build and validate XML instances
 . Use `uuid` and `code` for top-level criterion identification
 
+=== Traversal Patterns
+
+To render an ESPD form or generate XML, walk the JSON tree recursively:
+
+[source,pseudocode]
+----
+for each part in espd-edm.json:
+  for each section in part.sections:
+    for each criterion in section.criteria:
+      render_criterion(criterion)
+
+function render_criterion(element):
+  // Use element.type to determine what to render
+  switch element.type:
+    case "CRITERION":       render criterion header (name, description)
+    case "QUESTION":        render form input based on element's data type
+    case "REQUIREMENT":     render read-only value set by the buyer
+    case "CAPTION":         render label text (no input)
+    case "CONTRACTING_PARTY", "PARTY", etc.: render structured party fields
+  
+  // Recurse into child components
+  if element.components:
+    for each child in element.components:
+      render_criterion(child)
+----
+
+For ONTRUE/ONFALSE conditional logic (used in exclusion/selection criteria), check the `PropertyGroupTypeCode` of each group. Show ONTRUE groups when the parent INDICATOR question is `true`; show ONFALSE groups when `false`.
+
+=== Response Data Type Mapping
+
+When the element type is `QUESTION`, the expected answer data type is determined by the `ValueDataTypeCode` (from code list link:{url-tree}/codelists/ResponseDataType.gc[ResponseDataType.gc]):
+
+[cols="1,3",options="header"]
+|===
+|Data Type |Expected Input
+
+|`INDICATOR`
+|Boolean (true/false) — typically a radio button or checkbox
+
+|`DESCRIPTION`
+|Free text
+
+|`AMOUNT`
+|Numeric value + currency code
+
+|`QUANTITY`
+|Numeric value + unit code
+
+|`DATE`
+|Date value (ISO format)
+
+|`URL`
+|Web address (URI)
+
+|`IDENTIFIER`
+|Identifier string (with optional scheme)
+
+|`CODE`
+|Code value from a specific code list
+
+|`EVIDENCE_IDENTIFIER`
+|Reference to an evidence document (by ID)
+
+|`NONE`
+|No response expected (used for CAPTION and REQUIREMENT)
+|===
+
+=== Generating ESPD XML from JSON
+
+To produce a valid ESPD Request or Response XML:
+
+[arabic]
+. Walk the JSON tree following `requestpath` (for Request) or `responsepath` (for Response)
+. Map each element `type` to the corresponding UBL XML element:
+  * `CRITERION` -> `cac:TenderingCriterion`
+  * `QUESTION` / `REQUIREMENT` / `CAPTION` -> `cac:TenderingCriterionProperty`
+  * `ADDITIONAL_DOCUMENT_REFERENCE` -> `cac:AdditionalDocumentReference`
+  * `CONTRACTING_PARTY` -> `cac:ContractingParty`
+  * etc.
+. Apply `cardinality` rules to enforce mandatory elements
+. For the Response: add `cac:TenderingCriterionResponse` elements linking each answer to its QUESTION property via `cbc:ValidatedCriterionPropertyID`
+
 === JSON Schema
 
 A JSON schema file is provided alongside `espd-edm.json` to validate the structural consistency of the data model.

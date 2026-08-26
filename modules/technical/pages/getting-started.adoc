@@ -7,6 +7,36 @@
 
 The ESPD Exchange Data Model (ESPD-EDM) assists developers in building ESPD Services. It provides a model that ensures the ESPD Request and ESPD Response XML files produced across all services are consistent and comply with EU procurement legislation.
 
+=== Prerequisites
+
+To implement an ESPD Service based on ESPD-EDM v5.0.0, you need:
+
+* A development environment with *Java JDK 1.8+* (for XSD/Schematron validation via Saxon)
+* An *XML editor or IDE* capable of working with XSD schemas and XSLT (e.g. VS Code, IntelliJ, Oxygen XML)
+* *Git client* to clone the ESPD-EDM repository
+* Familiarity with *UBL 2.4 XML* document structures
+* Optionally: *Node.js 18+* (only if you plan to work with the criterion generation tooling)
+
+=== Quick Start
+
+[arabic]
+. *Clone the repository*:
++
+[source,bash]
+----
+git clone https://github.com/OP-TED/ESPD-EDM.git
+cd ESPD-EDM
+git checkout v5.0.0
+----
+
+. *Explore the structure*: review `criterion/espd-edm.json` (criterion definitions), `codelists/` (code lists), and `schemas/` (UBL XSD schemas).
+
+. *Validate an example*: submit one of the sample XML files from `validation/` to the https://www.itb.ec.europa.eu/espd/upload[Interoperability Testbed] to see the validation in action.
+
+. *Understand the schemas*: open `schemas/maindoc/UBL-QualificationApplicationRequest-2.4.xsd` and `UBL-QualificationApplicationResponse-2.4.xsd` to see the document structures your service must produce.
+
+. *Read the criterion JSON*: parse `criterion/espd-edm.json` to understand the criterion tree your service needs to render as a form and serialise as XML.
+
 == Architecture Overview
 
 image::https://kroki.io/pikchr/svg/eNq1Vu9vokoU_c5fcdPNJpoVOiCsth9eAgNumnTTvto2m7xsGpRR5wXBN6B2__t3h1GXIqD7K34Qr8O5955z7oXLS7gP5wwuczZdJHwaxsXVSyimC45X-VowY5EvY7hZVs69cBnJLoPxvf_ils6_3G2Y2HC2Nf5dzaEz4nMMgkkMkEehfBT2R7uaew3_uOY1TNJXEGEEzuoVLp4-317AhbxND_zP-gPLVmmSMd27e76AaRqnAsireWVRm8KMxzH-ch35wV-5FgqRbkH_63BS_ae51plpHs9Kg3jhNahkPNnwjE9iBlG6TcAi72Em0iW4ppGB5vZ_a3-CzxctXdq_s8uvmpeKiAmFmS94Alse5QtwjeL7AzEcjC2YrAmD6mIXDWVkypKcCU2TxOyKNk3k57hyzUMvaJ595AbvFjp37vhmDE8JR-dkYQzeOuMJyzK4DZP5Gh3ZxSb_Xocxn6FNc54m7moV7y4f2H9rluXGaxY1tTwgrm9_LPgtVeq8LVQdwhKtP1CikuXMGrWvqAPKYDDFMoMP0LF7pAtNgnl1gnlHgnkHwahUg5pVNYph3hGK_fhhHsI4F-tisJsqt-1Bn7a61wmvJpGD-az2fF-km08maYavjuKX8e0jjHjMOpmUB84Gbxp5ZEzOPKZy6jtROv8J6j6eSPir3A1-nbuT5DmSPGoO61qhacRi_gO282w6CM7j7upEwhbuSlka8S1yzF1BXRtvJeDDvBdDOuMiyyUekqVDh_SIMWyefFo3-fRo8ulh8n05-f4nu230Qa48JGXXxGnli626TDcMLOe9RLfa3PrD8GXkfpuW8IklTPApUB6xAj5rxC8JUMavPmGfcaVHxRZHNW4kh-mKiXDCY55_g0fJlseixiwj27OGVo3MHn7hWieG1QPdNIZOFxpF9utE9o9E9vciv6t7fOjEMNFHWiANEFhH-j-hV5_TaThZx6HgkriGjkaUEIIIVY0ZZSLnJ-6TJZlQDCykM1gJtuHpOkO4qrDs_u5noaoaslEqlj9dWHXVPwZ-E9TQ7lNCCyjDqgWrrvEHNke-pb1OLIrG8gY1A4FSjuVL-JSd0bRh1-C-8SpVq0i3DNIDs9tk06DOpsGRTYPDLlIbtXg44BuMtCmaFFPgUOA45GlhXrkDZVBX0crrWhOEXotxGiJTQ0l63wF8I1EA5tVZVWT7MiynhEJVGSosYewSjNp1ZRiqxladxnp2lWxVJSpokjaEQC0Yvf8GgqoOceMconuI3WDXQFi1EIdOyoQcg_h7Tp0yqYEiFavrS12qAP8D5_Bd0g==[ESPD Architecture Overview,650,450]
