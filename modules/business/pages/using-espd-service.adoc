@@ -24,7 +24,7 @@ NOTE: Currently, the European Commission does not maintain a centralised ESPD Se
 . Publish the ESPD Request alongside your Contract Notice.
 . After the tender deadline, review the ESPD Responses submitted by Economic Operators.
 
-For detailed guidance on what to fill in, see xref:for-contracting-authorities.adoc[For Contracting Authorities].
+For detailed guidance on what to fill in, see xref:for-buyers.adoc[For Contracting Authorities (Buyers)].
 
 === For offering parties (Economic Operators)
 

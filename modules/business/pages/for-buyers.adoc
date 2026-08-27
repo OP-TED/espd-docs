@@ -1,4 +1,4 @@
-:doctitle: For Contracting Authorities
+:doctitle: For Contracting Authorities (Buyers)
 :doccode: espd-bus-prod-020
 :author: ESPD Team
 :docdate: July 2026
@@ -15,7 +15,7 @@ The buyer prepares the ESPD Request as part of the procurement procedure documen
 
 === Key responsibilities
 
-As a Contracting Authority you are responsible for:
+As a buyer you are responsible for:
 
 * Defining which exclusion grounds apply to the procedure (mandatory grounds from Article 57(1) and (2) are pre-selected; discretionary grounds from Article 57(4) can be added or removed);
 * Selecting the applicable selection criteria (suitability, economic and financial standing, technical and professional ability, quality assurance);
@@ -57,13 +57,13 @@ Grounds relating to insolvency, conflicts of interests or professional misconduc
 
 image::form/of13.png[]
 
-_Part 3C: Grounds relating to insolvency, conflicts of interests or professional misconduct (CA can remove ticks)_
+_Part 3C: Grounds relating to insolvency, conflicts of interests or professional misconduct (buyer can remove ticks)_
 
 Purely national exclusion grounds depend on the regulation of each country. By default they are not selected; the buyer must manually choose which to include:
 
 image::form/of15.png[]
 
-_Part 3D: Purely national exclusion grounds (CA manually selects)_
+_Part 3D: Purely national exclusion grounds (buyer manually selects)_
 
 ==== Part 4: Selection criteria
 

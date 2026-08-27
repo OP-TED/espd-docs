@@ -30,7 +30,7 @@ Release notes, migration guidance, and links to previous versions.
 
 Guidance for buyers and offering parties on using the ESPD in public procurement procedures.
 
-* xref:business:for-contracting-authorities.adoc[For Contracting Authorities]
+* xref:business:for-buyers.adoc[For Contracting Authorities (Buyers)]
 * xref:business:for-economic-operators.adoc[For Economic Operators]
 * xref:business:espd-parts.adoc[ESPD Parts]
 * xref:business:using-espd-service.adoc[Using the ESPD Service]

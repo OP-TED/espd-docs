@@ -19,7 +19,7 @@
 * link:{attachmentsdir}/ESPD_CM_html/index.html[Conceptual Model]
 
 * [.separated]#**Business Guide**#
-* xref:business:for-contracting-authorities.adoc[For Contracting Authorities]
+* xref:business:for-buyers.adoc[For Contracting Authorities (Buyers)]
 * xref:business:for-economic-operators.adoc[For Economic Operators]
 * xref:business:espd-parts.adoc[ESPD Parts]
 * xref:business:using-espd-service.adoc[Using the ESPD Service]

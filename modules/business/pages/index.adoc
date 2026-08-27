@@ -1,69 +1,31 @@
-:doctitle: ESPD Documentation for Business users
-:doccode: epo-bus-prod-002
-:author: NPJ
-:authoremail: nicole-anne.paterson-jones@ext.ec.europa.eu
-:docdate: January 2024
+:doctitle: Business Guide
+:doccode: espd-bus-prod-002
+:author: ESPD Team
+:docdate: July 2026
 
-[.tile-container]
---
-[.tile]
-.Introduction to the ESPD for Business Users
-****
-This section gives an overview of the ESPD for business Users.
+== Business Guide
 
-xref:business:business_info.adoc[Information for Business Users]
+This section provides guidance on the ESPD from a business perspective — what it is, how it is structured, and how to use it as a buyer or offering party.
 
-****
-[.tile]
-.An ESPD Implementation
-****
-This section explains elements of an ESPD Implementation
+=== Guidance by role
 
-xref:business:implementation.adoc[Click here to read about implementing the ESPD model]
+* xref:for-buyers.adoc[For Contracting Authorities (Buyers)] +
+How buyers prepare ESPD Requests, define criteria, and evaluate responses.
 
-****
+* xref:for-economic-operators.adoc[For Economic Operators] +
+How offering parties complete the ESPD Response, provide evidence, and handle multi-lot bids.
 
+=== Understanding the ESPD
 
-[.tile]
-.The ESPD Online Form
-****
-This section runs through an example ESPD online form from both the buyer and the supplier perspectives
+* xref:espd-parts.adoc[ESPD Parts] +
+Overview of the six parts of the ESPD and which roles fill in each section.
 
-xref:business:espd_form.adoc[Click here to view the ESPD online form]
-****
---
-////
+=== Using an ESPD Service
 
-[.tile]
-.Using the ESPD Service
-****
-This section describes how to the ESPD is used by buyers and suppliers for a tender
+* xref:using-espd-service.adoc[Using the ESPD Service] +
+How to access and use an ESPD Service for creating and managing ESPDs.
 
-xref:using.adoc[See how to use an ESPD Service]
-****
-
-[.tile]
-.Creating an ESPD Service
-****
-This section gives a rationale for creating an ESPD service and explains the advantages
-
-xref:creating.adoc[See the advantages of creating an ESPD Service]
-****
-
-[.tile]
-.Upgrading an ESPD Service version
-****
-A business overview for upgrading your ESPD Service version
-
-xref:overview_upgrades.adoc[Click here for upgrading your ESPD version]
-****
-
-////
+* xref:reference-implementation-guide.adoc[Reference Implementation Guide] +
+Overview of the ESPD Service Reference Implementation for developers and Member States.
 
 include::partial$feedback.adoc[]
-
-
-
-
-
-

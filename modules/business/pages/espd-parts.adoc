@@ -116,7 +116,7 @@ _Table: Information to provide in the ESPD Response per role_
 
 === Further information
 
-* For buyer-specific guidance, see xref:for-contracting-authorities.adoc[For Contracting Authorities].
+* For buyer-specific guidance, see xref:for-buyers.adoc[For Contracting Authorities (Buyers)].
 * For offering party-specific guidance, see xref:for-economic-operators.adoc[For Economic Operators].
 
 include::partial$feedback.adoc[]
