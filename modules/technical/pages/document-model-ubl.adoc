@@ -66,6 +66,53 @@ UBL elements of type Identifier require at minimum: `schemeAgencyID`.
 
 For full details on attributes and their usage, see xref:code-lists.adoc[Code Lists].
 
+=== Namespace prefixes
+
+The following namespace prefixes are used throughout the ESPD-EDM documentation and XML instances:
+
+[cols="1,2,3",options="header"]
+|===
+|Prefix |Namespace |Description
+
+|`cac:`
+|`urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2`
+|Complex elements composed of other elements (e.g. `cac:TenderingCriterion`, `cac:ContractingParty`, `cac:EconomicOperatorParty`)
+
+|`cbc:`
+|`urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2`
+|Simple leaf elements with data values (e.g. `cbc:ID`, `cbc:Name`, `cbc:Description`, `cbc:TypeCode`)
+
+|`ext:`
+|`urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2`
+|UBL extension components (`ext:UBLExtensions`)
+|===
+
+=== How to read the element reference tables
+
+The xref:request-reference-model.adoc[Request Reference Model] and xref:response-reference-model.adoc[Response Reference Model] pages contain detailed element tables. Here is how to read them:
+
+[cols="1,3",options="header"]
+|===
+|Column |Meaning
+
+|*Components*
+|The element name with its namespace prefix (e.g. `cbc:ID`, `cac:Party`). Nested elements are listed under their parent.
+
+|*Type*
+|Data type: `Identifier`, `Code`, `Text`, `Amount`, `Date`, `Indicator`, or `Associated class` (for complex `cac:` elements).
+
+|*Card* (Cardinality)
+|How many times the element may appear: `1` (mandatory, exactly once), `0..1` (optional, at most once), `1..n` (mandatory, one or more), `0..n` (optional, zero or more).
+
+|*Description*
+|What the element represents in the ESPD context.
+
+|*Requirements*
+|Business rules (BR-*) that apply, code list references, and implementation notes.
+|===
+
+NOTE: Cardinalities shown in the element tables are ESPD-EDM constraints, which may be stricter than the underlying UBL schema. The UBL schema itself is more permissive — the ESPD-specific cardinalities are enforced via Schematron validation.
+
 === Distribution
 
 The UBL 2.4 schema files are included in the ESPD-EDM distribution package under the `schemas/` folder:

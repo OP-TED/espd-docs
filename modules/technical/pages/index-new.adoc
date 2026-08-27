@@ -30,8 +30,8 @@ Shared technical patterns: Schematron architecture, validation life-cycle, and e
 
 === Legacy pages (to be removed after review)
 
-* xref:tech_request.adoc[ESPD Request (old)] — replaced by espd-request.adoc + request-model-reference.adoc
-* xref:tech_response.adoc[ESPD Response (old)] — replaced by espd-response.adoc + response-model-reference.adoc
+* xref:tech_request.adoc[ESPD Request (old)] — replaced by espd-request.adoc + request-reference-model.adoc
+* xref:tech_response.adoc[ESPD Response (old)] — replaced by espd-response.adoc + response-reference-model.adoc
 * xref:tech_architecture.adoc[Technical Architecture (old)] — content moved to getting-started.adoc
 * xref:tech_common_aspects_for_criteria.adoc[Common Aspects for Criteria (old)] — split into how-criteria-work.adoc + criteria-catalogue.adoc
 * xref:tech_validation.adoc[Validation (old)] — split into common-concepts.adoc + validation-conformance.adoc

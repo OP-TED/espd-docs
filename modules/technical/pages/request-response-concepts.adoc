@@ -52,6 +52,29 @@ Economic Operator → creates ESPD Response
 Buyer → evaluates Responses → selects candidates
 ```
 
+=== Self-contained vs regulated ESPD
+
+The ESPD-EDM supports two usage patterns depending on the procurement context:
+
+[cols="1,3",options="header"]
+|===
+|Variant |Description
+
+|*Regulated (above threshold)*
+|For procurement procedures above the EU thresholds defined in Article 4 of Directive 2014/24/EU. The ESPD Request *must* reference a Contract Notice published on TED. Exclusion grounds from Article 57(1) and (2) are mandatory. The full set of ESPD-EDM business rules applies, including lot management via eForms-aligned identifiers.
+
+|*Self-contained (below threshold)*
+|For procedures below the threshold or where Member State legislation permits simplified use. The buyer may include all necessary procedure information directly in the ESPD Request without a TED publication reference. The ESPD document is "self-contained" — it carries the procedure context within itself.
+|===
+
+In both variants the XML structure is the same (`QualificationApplicationRequest` / `QualificationApplicationResponse`). The difference lies in:
+
+* Whether `cac:AdditionalDocumentReference` references an external TED publication or not
+* Which exclusion grounds are mandatory vs optional
+* Whether lot identifiers follow the eForms format
+
+The `cbc:ProfileExecutionID` element in the root of the document identifies which profile is in use.
+
 === Further information
 
 * For technical Request details, see xref:espd-request.adoc[ESPD Request]

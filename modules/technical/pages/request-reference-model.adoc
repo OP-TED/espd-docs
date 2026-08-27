@@ -104,7 +104,7 @@ In ESPD the contracting party information will come from eForms. Which also uses
 cbc:Description* 
 |Text |1 |Text describing this procurement project. |This element is required in the ESPD, however it should be identical to that provided in eForms. In general the corresponding eForm should feed the corresponding ESPD with the corresponding data.
 
-|*cac:TenderingCriterion* |Associated class |1..n |A tendering criterion describes a rule or a condition that is used by the contracting body to evaluate and compare tenders by economic operators and which will be used for the exclusion and the selection of candidates to the award decision. a|
+|*cac:TenderingCriterion* |Associated class |1..n |A tendering criterion describes a rule or a condition that is used by the buyer to evaluate and compare tenders by economic operators and which will be used for the exclusion and the selection of candidates to the award decision. a|
 *Information Requirement*: , 
 
 *Rule*: (see examples further below in this document)
@@ -121,7 +121,7 @@ LotReference/cbc:ID* |Identifier |0..n |One or more of the procurement project l
 Reference* |Associated class |0..n |A reference to an additional document associated with this document. a|
 *Information Requirement*: 
 
-*Rule*: *For procurement procedures above the threshold it is compulsory to make reference to the Contract Notice of the procedure published in TED*. See section xref:response-model-reference.adoc[Response Model Reference] for a complete example.
+*Rule*: *For procurement procedures above the threshold it is compulsory to make reference to the Contract Notice of the procedure published in TED*. See section xref:response-reference-model.adoc[Response Reference Model] for a complete example.
 
 |===
 
@@ -324,15 +324,15 @@ Please generate an ESPD Request and ESPD Response documents on https://github.co
 . In this case, the code NOJCN means 'Contract Notice (CN) published on a National Government Official Journal' (see file link:{url-tree}/codelists/DocRefContentType.gc[/codelists/DocRefContentType.gc] in the distribution package).
 
 [[contracting_body]]
-== Contracting Body
+== Buyer (Contracting Body)
 
 === Related information requirements
 
-The contracting body must be identified, hence information about the party is required, such as party name, identification, endpoint id, buyer profile and country.
+The buyer must be identified, hence information about the party is required, such as party name, identification, endpoint id, buyer profile and country.
 
 === Mock-up
 
-In principle, the ESPD-EDM asks for a few data about the procurer (i.e. the buyer, body or entity). The essential (compulsory) data for the contracting body are namely the one aimed to identify it, i.e. its official name and the country. The figure below represents a possible GUI interface for these two data. However the UBL specification provides many other data elements some of which may be interesting to include in the ESPD, notably data about the means to contact the contracting body (see below the list of elements possible in the ESPD).
+In principle, the ESPD-EDM asks for a few data about the procurer (i.e. the buyer, body or entity). The essential (compulsory) data for the buyer are namely the one aimed to identify it, i.e. its official name and the country. The figure below represents a possible GUI interface for these two data. However the UBL specification provides many other data elements some of which may be interesting to include in the ESPD, notably data about the means to contact the buyer (see below the list of elements possible in the ESPD).
 
 Therefore software applications may make use of the richness of UBL-2.4 to collect data about the buyer contact, end-point, and other possible data in the ESPD.
 
@@ -363,7 +363,7 @@ image::https://kroki.io/blockdiag/svg/eNrtVc1u00AQPnufYuVeQDKOE4FatQKpTWupUoGKFA
 //[Edit this diagram](https://niolesk.top/#https://kroki.io/blockdiag/svg/eNrtVc1u00AQPnufYuVeQDKOE4FatQKpTWupUoGKFAlRVdbGO7GX2t6wuy5Jq9x5Ch6OJ2HWThyndVoBR_DB8vx5xt_3rWecyfiaC5bQO9Lr0XOWAO0ZiNNCxCyrniIFX0vQxk9NntHT_F5KJKxH92IWn0ttWHbIuQKtvejT6DgaxSnkzP8yTeizUCSlAjoIfIrJ-5vZFLNpnf3cTjICQ_WUFTQHo8SMUFqZ0TfBTUpf05d7B40vBZGkBp39QeXkMGFlZqKJLIwWt2AjL6sISZQsp_QWlIzqxztCYplJhTnuzkkQhoe77gEhrktfvKFuNSdTZu7SSy5sUiELuMJ4K9Iktj-ou2Azwxb6vu96WD-O998ydX1oDBRGyKLtHDIFK_s8k-aU25wJwt_OHAozH5VjLm6ERvc7lkM71LbrOT7jZE2GLAujbL19NX7VFv9Q8qbmAySt9sdCI1GxWdkXIodb7PB-MtFg7sGxBY0ax6XnTOB47TKPZmwMmWUq8P2f33-4T7xoOfzv9D6TNahDKRUXBTNPj0A2e1lSYWb2Px6dncyQTMuFpitUNqlro1nxQ5YCnQilTaNQp1HoOGPxNerTMdhirdswDPCyfp2yqdV7huBZ08wza3KmU-DocBw8BE4HBMQhTt1PQywL3jSntsReD4ewkW2D2Ni9YSpX90D2_s8cBe-hzL1NwXpbxUgQq5oZkwq1ZgkRdJfVF_OpFe0KfEwoOPCxnHl09fPs7wbeJhPemt6do34YDvruVcWO0038o8x3Ud_N_ZJ8y_6fnxlbviBWpXhfkMVqfdRfaySeXA64YZZrgd6wrAQqNK6LPfujb6DCPZij9Nc4DQKPNstlECAilUjpZbOFKt96F3hdm-C_ph_XtPcX5D-u88Ery8_iF8100Do=)
 _Figure 11. cac:PostalAddress, XSD Schema_
 
-Notice also that the class associated to cac:Party to place the data about how to contact the contracting body:
+Notice also that the class associated to cac:Party to place the data about how to contact the buyer:
 
 image::https://kroki.io/blockdiag/svg/eNrVVNtq20AQfdZ-xaC-tKDasggkOLTQxBak9BKwC4USxEoaS9ustKp23doJfu9X9OP6JZ2VLPmStPStVE87Zw5zOTOjWKrkNhU8g3s2HMI1zxCGBpO8FAmXzSuq8csStRnkppBwVRxRImERPUx4cqlKwxMTfZxNolmSY8EHn6sMnoYiW9YIwWgAxBpvaR4QD1reM5t8hgZ0xUso0NRixQAaM_omUpPDCzg5O--xHEWWGwJHQQOmuOBLaaIFxdbiDq3npPGwrFbLCu6wVlH7vGcsUVLVxHGfTP0wfHXqnjPmuvD8Jbi2wmtem7ULn1JhSaUq8Yb8e56OuG3lUWrvs2RcmfGHizfTlcFSC1Vq16MIcTK-mnSvd7zA7v1axXNhZG9PsKLEBZamQ-Yoscop3T6w4KvOnEpMTK1oRm-5kEcFPqyvKUCZNho535sc60tVFEs7ZUMVH4TwQPIYpVXQHwx-fv_hUtetugtRa9Mr7fRKx5Int6SzY0iLnf5h6NNncZ3zys5NihKtadbSminXOaYEOA4N0zkonTnMaTNpTFSZ7tJasrulzdcVUvVdfKKUKaaxWnnQrdbo1PcOE3qwq_FiFIbByL2hfbJx7fewLev5XWvWd9ReAz3eYlP7v14Y7692glk5NszZsE13wa2kRtGepKi97jLhK5dLBKHpYs_srfXzoL9PQbPbDSPwPejvO_BJ9r3T8w4Pz_tflPrz_gUnts3NL0kRt4w=[cac:Contact, XSD Schema,width=800,height=500]
 //image:cacContact_XSD_Schema.jpg[cac:Contact XSD Schema,width=407,height=253]
@@ -376,7 +376,7 @@ The mapping between the business requirements, the logic layer of the ESPD-EDM a
 
 [cols="1,4",options="header"]
 
-_Table 8. Contracting body, expected elements_
+_Table 8. Buyer (Contracting Party), expected elements_
 |===
 |*Class name*: |cac:ContractingParty
 |*Definition*: |The buyer or contracting entity who is buying supplies, services or public works using a tendering procedure as described in the applicable directive (e.g. Directives 2014/24/EU, 2014/25/EU).
@@ -388,7 +388,7 @@ _Table 8. Contracting body, expected elements_
 [cols="3,1,1,5,5",options="header"]
 |===
 |*Components* |*Type* |*Card* |*Description* |*Requirements*
-|*cbc:BuyerProfileURI* |Identifier |0..1 |URL of the web section, in the contracting body web site, that contains information about the contracting body, the norms applied when contracting, published calls for tenders, Prior Information Notices and Contract Notices as well as the related procurement documents, contract award notices, etc. a|
+|*cbc:BuyerProfileURI* |Identifier |0..1 |URL of the web section, in the buyer's web site, that contains information about the buyer, the norms applied when contracting, published calls for tenders, Prior Information Notices and Contract Notices as well as the related procurement documents, contract award notices, etc. a|
 *Information Requirement*: 
 
 *Rule*: Notices published at national level shall not contain information other than that contained in the notices dispatched to the Publications Office of the European Union or published on a buyer profile, but shall indicate the date of dispatch of the notice to the Publications Office of the European Union or its publication on the buyer profile (Directive link:https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32014L0024&from=ES[2014/24/EU, Art. 52.2]).
@@ -399,10 +399,10 @@ The mapping between the business requirements, the logic layer of the ESPD-EDM a
 
 [cols="1,4",options="header"]
 
-_Table 9. Contracting body party, expected elements_
+_Table 9. Buyer (Contracting Party), expected elements_
 |===
 |*Class name*: |cac:Party
-|*Definition*: |Main data placeholder structure for, in this case, the contracting body.
+|*Definition*: |Main data placeholder structure for, in this case, the buyer.
 |*File*: |link:https://docs.oasis-open.org/ubl/os-UBL-2.4/xsdrt/common/UBL-CommonAggregateComponents-2.4.xsd[os-UBL-2.4/xsdrt/common/UBL-CommonAggregateComponents-2.4.xsd]
 |*Path*: |/QualificationApplicationRequest/cac:ContractingParty/cac:Party
 |===
@@ -410,25 +410,25 @@ _Table 9. Contracting body party, expected elements_
 [cols="3,1,1,5,5",options="header"]
 |===
 |*Components* |*Type* |*Card* |*Description* |*Requirements*
-|*cac:PartyIdentification/cbc:ID* |Identifier |1 |The national identifier of a contracting body as it is legally registered (e.g. VAT identification). a|
+|*cac:PartyIdentification/cbc:ID* |Identifier |1 |The national identifier of a buyer as it is legally registered (e.g. VAT identification). a|
 *Information Requirement*: 
 
-*Rule*: When possible, use the VAT identification of the contracting body (see the link:https://ec.europa.eu/taxation_customs/vies/[VIES] platform for a EU cross-border national VAT number verification system). When not possible, a different identifier may be used. The code list link:{url-tree}/codelists/EOIDType.gc[EOIDType] may be used to indicate the type of identifier used as a value of the schemeID attribute, e.g. schemeID="VAT").
+*Rule*: When possible, use the VAT identification of the buyer (see the link:https://ec.europa.eu/taxation_customs/vies/[VIES] platform for a EU cross-border national VAT number verification system). When not possible, a different identifier may be used. The code list link:{url-tree}/codelists/EOIDType.gc[EOIDType] may be used to indicate the type of identifier used as a value of the schemeID attribute, e.g. schemeID="VAT").
 
-|*cbc:WebsiteURI* |Identifier |0..1 |The website of the contracting body. a|
+|*cbc:WebsiteURI* |Identifier |0..1 |The website of the buyer. a|
 *Information Requirement*: 
 
 *Rule*: For online services (e.g. Web Services, REST services, etc. use the component cac:EndPointID.
 
-|*cbc:EndPointID* |Identifier |0..1 |Electronic address of the contracting body. a|
+|*cbc:EndPointID* |Identifier |0..1 |Electronic address of the buyer. a|
 *Information Requirement*: 
 
 *Rule*: Use it for online services (e.g. Web Services, REST services, Delivery ID, ftp, etc. For the official web site of the Party use always the cac:Party/cbc:WebsiteURI). An end-point identifier MUST have a scheme identifier attribute (e.g.eSENSParty Identifier Scheme). Should be considered for all actors (buyer, service provider, economic operator) as an eDeliveryID.
 
-|*cac:PartyName/cbc:Name* |Text |1 |The name of the contracting body as it is registered. a|
+|*cac:PartyName/cbc:Name* |Text |1 |The name of the buyer as it is registered. a|
 *Information Requirement*: 
 
-*Rule*: Mandatory. Use the official name of the contracting body. The PartyName class has an associated basic element "cbc:Name". See XML example below.
+*Rule*: Mandatory. Use the official name of the buyer. The PartyName class has an associated basic element "cbc:Name". See XML example below.
 
 |===
 
@@ -436,10 +436,10 @@ The mapping between the business requirements, the logic layer of the ESPD-EDM a
 
 [cols="1,4",options="header"]
 
-_Table 10. Contracting body postal address, expected elements_
+_Table 10. Buyer (Contracting Party) postal address, expected elements_
 |===
 |*Class name*: |cac:PostalAddress
-|*Definition*: |Contractinng body address information.
+|*Definition*: |Buyer address information.
 |*Business rule(s)*: |None
 |*File*: |link:https://docs.oasis-open.org/ubl/os-UBL-2.4/xsdrt/common/UBL-CommonAggregateComponents-2.4.xsd[os-UBL-2.4/xsdrt/common/UBL-CommonAggregateComponents-2.4.xsd]
 |*Path*: |/QualificationApplicationRequest/
@@ -468,7 +468,7 @@ cac:ContractingParty/cac:Party/cac:PostalAddress
 IdentificationCode* |Code |1 |A code that identifies the country. a|
 *Information Requirement*: 
 
-*Rule*: The country of the contracting body must always be specified. Compulsory use of the code list Country from EU Vocabularies).
+*Rule*: The country of the buyer must always be specified. Compulsory use of the code list Country from EU Vocabularies).
 
 |*cac:Country/cbc:Name* |Text |0..1 |The name of the country. a|
 *Information Requirement*: 
@@ -481,7 +481,7 @@ The mapping between the business requirements, the logic layer of the ESPD-EDM a
 
 [cols="1,4",options="header"]
 
-_Table 11. Contact of the contracting body, expected elements_
+_Table 11. Contact of the buyer (contracting party), expected elements_
 |===
 |*Class name*: |cac:Contact
 |*Definition*: |Used to provide contacting information for a party in general or a person.
@@ -524,7 +524,7 @@ cac:ContractingParty/cac:Party/cac:Contact
 |*REQUIREMENT*  |*The ESPD request may contain information of identification regarding an ESPD service provider: Name, Party Identification, Endpoint ID.*
 |===
 
-Service providers are officially recognised organisations that can supply ESPD Request documents (on behalf of the contracting body) with pre-filled information about the contracting body and additional information (e.g. liability statements, see )
+Service providers are officially recognised organisations that can supply ESPD Request documents (on behalf of the buyer) with pre-filled information about the buyer and additional information (e.g. liability statements, see )
 
 The ESPD allows the provision of data about the service provider who produced the ESPD Request document (and equally for the ESPD Response document, on behalf of the economic operator).
 

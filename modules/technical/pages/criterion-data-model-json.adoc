@@ -9,7 +9,7 @@ Starting with ESPD-EDM v5.0.0, the canonical source for criterion and document s
 
 === Location
 
-https://github.com/OP-TED/ESPD-EDM/tree/v5.0.0/criterion/espd-edm.json[criterion/espd-edm.json]
+https://github.com/OP-TED/ESPD-EDM/tree/v5.0.0/criterion/espd-edm.json[criterion/espd-edm.json^]
 
 === What it defines
 

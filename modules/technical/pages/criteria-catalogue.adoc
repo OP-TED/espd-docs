@@ -27,7 +27,7 @@ _Figure 1. cac:TenderingCriterion - XSD Schema, global view_
 [cols="1,4",options="header"]
 |===
 |*Class name*: |cac:TenderingCriterion
-|*Definition*: |A tendering criterion describes a fact or a condition that is used by the contracting body to evaluate and compare tenders by economic operators and which will be used for the exclusion and the selection of candidate tenderers to the award decision.
+|*Definition*: |A tendering criterion describes a fact or a condition that is used by the buyer to evaluate and compare tenders by economic operators and which will be used for the exclusion and the selection of candidate tenderers to the award decision.
 |*Business rule(s)*: |BR-LOT-20, BR-LOT-30, BR-LOT-30-S20, Common (BR-TC-01)
 |*File*: |link:https://docs.oasis-open.org/ubl/os-UBL-2.4/xsdrt/common/UBL-CommonAggregateComponents-2.4.xsd[os-UBL-2.4/xsdrt/common/UBL-CommonAggregateComponents-2.4.xsd]
 |*Path*: |/QualificationApplicationRequest/cac:TenderingCriterion

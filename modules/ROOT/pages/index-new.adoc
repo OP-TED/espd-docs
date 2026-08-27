@@ -61,8 +61,8 @@ How criteria are structured, defined, and validated in the ESPD-EDM. Covers the 
 
 Detailed look-up reference for data model elements, code lists, and business rules.
 
-* xref:technical:request-model-reference.adoc[Request Reference Model]
-* xref:technical:response-model-reference.adoc[Response Reference Model]
+* xref:technical:request-reference-model.adoc[Request Reference Model]
+* xref:technical:response-reference-model.adoc[Response Reference Model]
 * xref:technical:criteria-catalogue.adoc[Criteria Catalogue]
 * xref:technical:code-lists.adoc[Code Lists]
 * xref:technical:business-rules.adoc[Business Rules]

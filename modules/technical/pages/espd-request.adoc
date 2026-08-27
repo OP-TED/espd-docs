@@ -34,7 +34,7 @@ _Figure 2. ESPD-EDM 'QualificationApplicationRequest', UML diagram_
 
 The cardinality constraints added by the ESPD are not defined in the XSD Schema. To control these constraints, the ESPD-EDM uses link:https://schematron.com/[ISO Schematron] assertions. The ESPD-EDM distribution package provides Schematron schemata and CVA files for the validation of the XML instances (folder link:{url-tree}/validation[_/validation_]).
 
-For the detailed element-by-element reference with all cardinalities, data types, and business rules, see xref:request-model-reference.adoc[Request Model Reference].
+For the detailed element-by-element reference with all cardinalities, data types, and business rules, see xref:request-reference-model.adoc[Request Reference Model].
 
 == Lot Management
 
@@ -58,7 +58,7 @@ Key rules:
 * If at the time of drafting the notice has not yet been published, use `0000/S 000-000000` and include the temporary "Received Notice Number" in a second `cbc:Description` element.
 * Use the Code List link:{url-tree}/codelists/DocrefcontentType.gc[DocrefcontentType] for `cbc:DocumentTypeCode`.
 
-For detailed element tables, see xref:request-model-reference.adoc[Request Model Reference].
+For detailed element tables, see xref:request-reference-model.adoc[Request Reference Model].
 
 == Contracting Party
 
@@ -66,17 +66,17 @@ The ESPD expects data about one buyer. In case of joint procurement, the data co
 
 The contracting party information will come from eForms, which also uses `cac:ContractingParty`.
 
-For detailed element tables, see xref:request-model-reference.adoc[Request Model Reference].
+For detailed element tables, see xref:request-reference-model.adoc[Request Reference Model].
 
 == Service Provider
 
 The Buyer may use a Service Provider to manage the publication of the ESPD Request. Service Provider data is optional.
 
-For detailed element tables, see xref:request-model-reference.adoc[Request Model Reference].
+For detailed element tables, see xref:request-reference-model.adoc[Request Reference Model].
 
 == Further information
 
-* For detailed element tables, see xref:request-model-reference.adoc[Request Model Reference].
+* For detailed element tables, see xref:request-reference-model.adoc[Request Reference Model].
 * For lot management details, see xref:lots-management.adoc[Lots Management].
 * For the ESPD Response, see xref:espd-response.adoc[ESPD Response].
 * For criteria details, see xref:how-criteria-work.adoc[How Criteria Work].

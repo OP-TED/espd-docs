@@ -1,0 +1,141 @@
+:doctitle: Conceptual Model
+:doccode: espd-tech-prod-052
+:author: ESPD Team
+:docdate: August 2026
+
+== ESPD Conceptual Model
+
+The ESPD Conceptual Model is the authoritative source for the ESPD-EDM data structure. It is maintained as an Enterprise Architect (EA) project file (`ESPD_CM.eapx`) in the https://github.com/OP-TED/espd-conceptual-model[espd-conceptual-model^] repository.
+
+Starting with ESPD-EDM v5.0.0, the conceptual model follows a *Model-Driven Architecture* — all artefacts (criterion JSON, code lists, validation rules) are derived from this single source of truth.
+
+== Core Concepts
+
+The conceptual model defines the following core entities and their relationships:
+
+[cols="1,3",options="header"]
+|===
+|Concept |Description
+
+|*Criterion*
+|A fact or condition used by the buyer to evaluate tenders. Maps to `cac:TenderingCriterion` in UBL. Each criterion has a UUID from e-Certis, a type code, name, and description.
+
+|*Requirement Group*
+|A first-level grouping of properties within a criterion. Maps to `cac:TenderingCriterionPropertyGroup`. Controls conditional display via `PropertyGroupTypeCode` (ON*, ONTRUE, ONFALSE).
+
+|*Requirement Subgroup*
+|A nested grouping within a group. Maps to `cac:SubsidiaryTenderingCriterionPropertyGroup`. Same structure as a group — groups can be nested to arbitrary depth.
+
+|*Property*
+|A leaf element within a group: a CAPTION (label), REQUIREMENT (buyer-set condition), or QUESTION (EO must answer). Maps to `cac:TenderingCriterionProperty`. Each property has a `ValueDataTypeCode` defining the expected response type.
+
+|*Response*
+|The economic operator's answer to a QUESTION property. Maps to `cac:TenderingCriterionResponse`. Linked to the property via `cbc:ValidatedCriterionPropertyID`.
+
+|*Evidence*
+|A document proving compliance. Maps to `cac:Evidence`. Linked to responses via `cac:EvidenceSupplied`.
+
+|*Legislation*
+|A reference to the legal basis for a criterion. Maps to `cac:Legislation`. Contains title, article, jurisdiction level, and URI.
+|===
+
+== Entity Relationships
+
+The core entities form a hierarchical tree:
+
+```
+Criterion
+  ├── Legislation (0..n)
+  ├── SubCriterion (0..n) — national criteria specialising EU criteria
+  ├── ProcurementProjectLotReference (0..n) — lot associations
+  └── RequirementGroup (1..n)
+        ├── Property (1..n) — CAPTION, REQUIREMENT, or QUESTION
+        └── RequirementSubgroup (0..n)
+              ├── Property (1..n)
+              └── RequirementSubgroup (0..n) — recursive nesting
+```
+
+In the ESPD Response, an additional layer links answers to questions:
+
+```
+TenderingCriterionResponse
+  ├── ValidatedCriterionPropertyID — links to the QUESTION property UUID
+  └── ResponseValue (1..n) — the actual answer (amount, date, indicator, etc.)
+        linked to → Evidence (0..n) — supporting documents
+```
+
+== Mapping to UBL 2.4
+
+The conceptual model maps to two UBL 2.4 document types:
+
+[cols="1,2,2",options="header"]
+|===
+|Conceptual Entity |UBL Request Element |UBL Response Element
+
+|Criterion
+|`cac:TenderingCriterion`
+|`cac:TenderingCriterion` (copied from Request)
+
+|Requirement Group
+|`cac:TenderingCriterionPropertyGroup`
+|`cac:TenderingCriterionPropertyGroup`
+
+|Property
+|`cac:TenderingCriterionProperty`
+|`cac:TenderingCriterionProperty`
+
+|Response
+|_(not present in Request)_
+|`cac:TenderingCriterionResponse`
+
+|Evidence
+|_(not present in Request)_
+|`cac:Evidence`
+
+|Legislation
+|`cac:Legislation`
+|`cac:Legislation`
+|===
+
+== Repository Structure
+
+The https://github.com/OP-TED/espd-conceptual-model[espd-conceptual-model^] repository contains:
+
+[cols="1,3",options="header"]
+|===
+|Folder |Content
+
+|`conceptual-model/`
+|The Enterprise Architect project file (`ESPD_CM.eapx`) — the source of truth
+
+|`documentation-integration/`
+|HTML export of the conceptual model diagrams for integration into documentation
+
+|`external-sources/`
+|Source data for external code lists (EU Vocabularies)
+
+|`mock-ups/`
+|Microsoft Visio UI mock-ups of ESPD criterion forms (archival, not actively maintained)
+|===
+
+== Generation Pipeline
+
+The conceptual model feeds into the https://github.com/OP-TED/espd-tools[espd-tools^] pipeline:
+
+[arabic]
+. *Enterprise Architect* model is maintained by the ESPD Team
+. *espd-tools* extracts criteria and code lists from the EA model
+. *espd-edm.json* is generated as the criterion definition file
+. *Genericode (.gc)* files are generated for code lists
+. These artefacts are committed to the *ESPD-EDM* distribution package
+
+For details on the tooling pipeline, see xref:distribution-tooling.adoc[Distribution and Tooling].
+
+== Further information
+
+* xref:criterion-data-model-json.adoc[Criterion Data Model (JSON)] — the JSON output of the conceptual model
+* xref:how-criteria-work.adoc[How Criteria Work] — how criteria structure works in practice
+* xref:document-model-ubl.adoc[Document Model (UBL)] — the UBL foundation
+* xref:distribution-tooling.adoc[Distribution and Tooling] — the generation pipeline
+
+include::partial$feedback.adoc[]

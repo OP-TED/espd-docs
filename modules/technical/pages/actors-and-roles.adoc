@@ -7,7 +7,7 @@
 
 This page defines the actors involved in the ESPD exchange and their roles.
 
-=== Contracting Authority (Buyer)
+=== Buyer (Contracting Authority)
 
 The entity that initiates the procurement procedure and publishes the ESPD Request. Defined in Article 2 of Directive 2014/24/EU as state, regional or local authorities, bodies governed by public law, or associations formed by such authorities.
 

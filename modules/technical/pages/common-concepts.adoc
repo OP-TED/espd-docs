@@ -6,6 +6,89 @@
 // Split from: tech_validation.adoc (lines 1-140 — general Schematron approach)
 // Target section: Technical Implementation
 
+== Shared Technical Patterns
+
+This section describes patterns that are common to both the ESPD Request and Response documents. Understanding these patterns helps avoid duplication when reading the Request and Response reference pages.
+
+=== Identifier Schemes
+
+All ESPD documents use standardised identifier patterns:
+
+[cols="1,2,3",options="header"]
+|===
+|Element |Scheme |Example
+
+|`cbc:ID` (document)
+|Issuing organisation's scheme (`schemeAgencyID`)
+|`schemeAgencyID="OP"` for Publications Office identifiers
+
+|`cbc:UUID` (document)
+|UUID v4
+|Globally unique; copies share the same UUID, new documents get a new one
+
+|`cbc:ID` (criterion)
+|e-Certis UUID
+|Each criterion has a UUID assigned by e-Certis (e.g. `005eb9ed-1347-...`)
+
+|`cbc:ID` (property group)
+|UUID v4
+|Each property group has a unique UUID from e-Certis
+
+|`cbc:ID` (property)
+|UUID v4
+|Generated per property instance; used by the Response to link answers via `cbc:ValidatedCriterionPropertyID`
+
+|`cbc:ID` (lot)
+|eForms pattern
+|`LOT-0001`, `LOT-0002`, `GLO-0001` (groups of lots)
+|===
+
+Key rules for identifiers:
+
+* `schemeAgencyID` is mandatory on all `cbc:ID` elements — it identifies who issued the identifier
+* `cbc:UUID` is mandatory on both Request and Response root elements — the Response UUID links back to the Request
+* Criterion UUIDs must match e-Certis values (enforced by rule `BR-TC-02`)
+
+=== Party Structure Pattern
+
+Both Request and Response documents share the same UBL party structure for identifying organisations:
+
+```
+cac:ContractingParty / cac:EconomicOperatorParty / cac:ServiceProviderParty
+  └── cac:Party
+        ├── cac:PartyIdentification/cbc:ID    (national ID, VAT number)
+        ├── cbc:WebsiteURI                     (official website)
+        ├── cbc:EndpointID                     (electronic address for eDelivery)
+        ├── cac:PartyName/cbc:Name             (official registered name)
+        ├── cac:PostalAddress                  (address, city, postal zone, country)
+        └── cac:Contact                        (name, phone, fax, email)
+```
+
+The `cac:Party` component is reused identically for the buyer (inside `cac:ContractingParty`), the economic operator (inside `cac:EconomicOperatorParty`), and the service provider (inside `cac:ServiceProviderParty`). Only the wrapper element and cardinalities differ.
+
+=== Document Reference Pattern
+
+The `cac:AdditionalDocumentReference` component is used in both Request and Response to reference external documents:
+
+* *In the Request*: references the Contract Notice (TED publication and/or national journal publication)
+* *In the Response*: references the ESPD Request that is being answered, plus optionally other supporting documents
+
+Key elements:
+
+```
+cac:AdditionalDocumentReference
+  ├── cbc:ID                          (publication number, e.g. OJS number)
+  ├── cbc:UUID                        (optional unique identifier)
+  ├── cbc:DocumentTypeCode            (from DocRefContentType code list)
+  ├── cac:Attachment
+  │     └── cac:ExternalReference
+  │           ├── cbc:URI             (URL to the document)
+  │           └── cbc:FileName        (title of the referenced document)
+  └── cac:IssuerParty                 (who issued the reference)
+```
+
+The `cbc:DocumentTypeCode` uses the code list link:{url-tree}/codelists/DocRefContentType.gc[DocRefContentType] to distinguish between TED notices, national notices, ESPD Requests, and other document types.
+
 == ISO Schematron
 
 Schematron is a rule-based validation language that specifies validation processes against XML documents. ISO Schematron is an ISO (ISO/IEC 19757-3:2006) and open standard. Please visit the link:http://www.schematron.com/[ISO Schematron] web-site for the technical specification and details.

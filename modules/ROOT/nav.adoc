@@ -41,9 +41,10 @@
 * xref:technical:distribution-tooling.adoc[Distribution and Tooling]
 
 * [.separated]#**Implementation Reference Model**#
-* xref:technical:request-model-reference.adoc[Request Reference Model]
-* xref:technical:response-model-reference.adoc[Response Reference Model]
+* xref:technical:request-reference-model.adoc[Request Reference Model]
+* xref:technical:response-reference-model.adoc[Response Reference Model]
 * xref:technical:criteria-catalogue.adoc[Criteria Catalogue]
+* xref:technical:conceptual-model.adoc[Conceptual Model]
 * xref:technical:code-lists.adoc[Code Lists]
 * xref:technical:business-rules.adoc[Business Rules]
 

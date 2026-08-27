@@ -5,7 +5,7 @@
 
 == Completing the ESPD Response
 
-Economic Operators (offering parties) use the ESPD Response to demonstrate that they are eligible and capable of participating in a procurement procedure by responding to the exclusion grounds and selection criteria set by the Contracting Authority in the ESPD Request.
+Economic Operators (offering parties) use the ESPD Response to demonstrate that they are eligible and capable of participating in a procurement procedure by responding to the exclusion grounds and selection criteria set by the buyer in the ESPD Request.
 
 The ESPD process from the offering party perspective:
 
@@ -59,7 +59,7 @@ NOTE: Part 2 applies only to the ESPD Response document.
 
 ==== Part 3: Exclusion grounds
 
-The Economic Operator responds to the exclusion grounds defined by the Contracting Authority, declaring whether any grounds apply and providing explanations where relevant.
+The Economic Operator responds to the exclusion grounds defined by the buyer, declaring whether any grounds apply and providing explanations where relevant.
 
 image::form/of10.png[]
 
