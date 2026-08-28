@@ -20,6 +20,9 @@ How offering parties complete the ESPD Response, provide evidence, and handle mu
 * xref:espd-parts.adoc[ESPD Parts] +
 Overview of the six parts of the ESPD and which roles fill in each section.
 
+* xref:lots-overview.adoc[Lots in Public Procurement] +
+What procurement lots are and how they affect the ESPD for buyers and offering parties.
+
 === Using an ESPD Service
 
 * xref:using-espd-service.adoc[Using the ESPD Service] +

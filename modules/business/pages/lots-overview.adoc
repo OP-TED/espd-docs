@@ -1,0 +1,81 @@
+:doctitle: Lots in Public Procurement
+:doccode: espd-bus-prod-025
+:author: ESPD Team
+:docdate: July 2026
+
+== Lots in Public Procurement
+
+A procurement procedure may be divided into *lots* — separate portions of the contract that economic operators can tender for individually. Lots allow buyers to split large contracts into smaller parts, making them accessible to a wider range of suppliers, including small and medium-sized enterprises (SMEs).
+
+The ESPD supports multi-lot procedures through a structured approach that distinguishes how exclusion grounds and selection criteria are applied across lots.
+
+=== What are lots?
+
+A lot represents a distinct portion of a procurement procedure. For example, a buyer procuring IT services might divide the contract into:
+
+* *LOT-0001* — Software development
+* *LOT-0002* — Infrastructure maintenance
+* *LOT-0003* — Help desk support
+
+Each lot may have its own technical requirements and selection criteria, while exclusion grounds apply uniformly to all lots.
+
+Lot identifiers follow the eForms format: `LOT-0001`, `LOT-0002`, etc. Groups of lots use the prefix `GLO-` (e.g. `GLO-0001`).
+
+=== How lots affect the ESPD
+
+==== For buyers
+
+When preparing the ESPD Request:
+
+* There is *one ESPD Request per procedure*, regardless of how many lots the procedure contains.
+* *Exclusion grounds* are defined once and apply to all lots — no lot-specific configuration is needed.
+* *Selection criteria* are linked to specific lots. Different lots may require different qualification criteria. For example, Lot 1 might require a minimum annual turnover while Lot 2 requires specific technical certifications.
+
+==== For offering parties
+
+When completing the ESPD Response:
+
+* The economic operator submits *one ESPD Response per lot* they wish to tender for.
+* Each response must address *all exclusion grounds* (since they apply to all lots).
+* Each response must address only the *selection criteria applicable to that specific lot*.
+* If an economic operator wants to participate in 3 lots, they must submit 3 separate ESPD Responses.
+
+=== Summary
+
+[cols="1,2,2",options="header"]
+|===
+|Aspect |Buyer (ESPD Request) |Offering Party (ESPD Response)
+
+|Number of documents
+|1 per procedure
+|1 per lot per economic operator
+
+|Exclusion grounds
+|Defined once, apply to all lots
+|Must be answered in every response
+
+|Selection criteria
+|Linked to specific lot(s)
+|Only criteria for the targeted lot
+
+|===
+
+=== Roles within a lot
+
+Each participating economic operator must fill in their own ESPD Response for each lot. Group members (in a consortium or joint venture) each submit a separate ESPD, indicating their role:
+
+* Sole tenderer
+* Group leader
+* Group member
+* Subcontractor
+* Other entity relied upon
+
+See xref:for-economic-operators.adoc[For Economic Operators] for details on group participation.
+
+=== Further information
+
+* xref:technical:lots-management.adoc[Lots Management] — technical implementation details for developers (XML elements, business rules, eForms alignment)
+* xref:espd-parts.adoc[ESPD Parts] — which parts of the ESPD each role fills in
+* xref:for-economic-operators.adoc[For Economic Operators] — detailed guidance on responding to multi-lot procedures
+
+include::partial$feedback.adoc[]

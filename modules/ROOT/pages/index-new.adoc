@@ -33,6 +33,7 @@ Guidance for buyers and offering parties on using the ESPD in public procurement
 * xref:business:for-buyers.adoc[For Contracting Authorities (Buyers)]
 * xref:business:for-economic-operators.adoc[For Economic Operators]
 * xref:business:espd-parts.adoc[ESPD Parts]
+* xref:business:lots-overview.adoc[Lots in Public Procurement]
 * xref:business:using-espd-service.adoc[Using the ESPD Service]
 
 === Technical Guide
@@ -52,6 +53,7 @@ How criteria are structured, defined, and validated in the ESPD-EDM. Covers the 
 
 * xref:technical:how-criteria-work.adoc[How Criteria Work]
 * xref:technical:criterion-data-model-json.adoc[Criterion Data Model (JSON)]
+* xref:technical:reference-data.adoc[Criteria Reference Data]
 * xref:technical:exclusion-grounds.adoc[Exclusion Grounds]
 * xref:technical:selection-criteria.adoc[Selection Criteria]
 * xref:technical:validation-conformance.adoc[Validation and Conformance]

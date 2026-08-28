@@ -1,0 +1,305 @@
+:doctitle: Criteria Reference Data
+:doccode: espd-tech-prod-053
+:author: ESPD Team
+:docdate: July 2026
+
+== Criteria Reference Data
+
+This page documents the code lists that are specific to ESPD criteria — defining criterion types, property behaviours, response data types, and GUI controls. These code lists are integral to the criterion data model and are consumed alongside the `espd-edm.json` criterion definitions.
+
+For the complete catalogue of all ESPD code lists (including document-level, party, and procurement code lists), see xref:code-lists.adoc[Code Lists].
+
+=== Overview
+
+The criteria-related code lists serve three purposes:
+
+[arabic]
+. *Classify criteria* — identify whether a criterion is an exclusion ground or a selection criterion.
+. *Define the criterion tree structure* — specify element types (criterion, group, property) and group behaviour (conditional logic).
+. *Control response data* — determine what type of answer the economic operator must provide.
+
+All code lists are distributed as Genericode (`.gc`) files in the link:{url-tree}/codelists/gc[gc] folder of the distribution package.
+
+=== Criterion Classification Code Lists
+
+These code lists classify the criteria used in the ESPD.
+
+==== ExclusionGround
+
+Identifies the type of exclusion ground. Values are drawn from the EU Vocabularies authority table for exclusion grounds.
+
+[cols="1,3",options="header"]
+|===
+|Property |Value
+
+|Source |EU Vocabularies (`at-voc:exclusion-ground`)
+|File |link:{url-tree}/codelists/gc/ExclusionGround.gc[ExclusionGround.gc]
+|Used in |`cac:TenderingCriterion/cbc:CriterionTypeCode` (ESPD Request)
+|===
+
+Used to categorise exclusion criteria by the specific ground they address (e.g. participation in a criminal organisation, corruption, fraud, terrorist offences, money laundering, child labour, payment of taxes, payment of social security contributions, breaching of obligations in the fields of environmental, social and labour law, bankruptcy, etc.).
+
+NOTE: In ESPD-EDM v5.0.0, this code list replaces the former single `Criterion` code list (which combined exclusion and selection codes). See xref:ROOT:migration-breaking-changes.adoc[Migration and Breaking Changes].
+
+==== SelectionCriterion
+
+Identifies the type of selection criterion. Values are drawn from the EU Vocabularies authority table for selection criteria.
+
+[cols="1,3",options="header"]
+|===
+|Property |Value
+
+|Source |EU Vocabularies (`at-voc:selection-criterion`)
+|File |link:{url-tree}/codelists/gc/SelectionCriterion.gc[SelectionCriterion.gc]
+|Used in |`cac:TenderingCriterion/cbc:CriterionTypeCode` (ESPD Request)
+|===
+
+Categorises selection criteria by type: suitability to pursue the professional activity, economic and financial standing, technical and professional ability, and quality assurance standards.
+
+=== Criterion Structure Code Lists
+
+These code lists define the internal structure of the criterion tree.
+
+==== CriterionElementType
+
+Defines the type of each element in the criterion property tree.
+
+[cols="1,3",options="header"]
+|===
+|Property |Value
+
+|Source |ESPD-EDM
+|File |link:{url-tree}/codelists/gc/CriterionElementType.gc[CriterionElementType.gc]
+|Used in |`cac:TenderingCriterionProperty/cbc:TypeCode`
+|===
+
+[cols="1,3",options="header"]
+|===
+|Code |Meaning
+
+|`CRITERION`
+|Top-level criterion element.
+
+|`REQUIREMENT_GROUP`
+|A group of requirements/questions (controls conditional logic via PropertyGroupTypeCode).
+
+|`REQUIREMENT`
+|A value set by the buyer in the ESPD Request (e.g. a threshold amount). No response expected from the economic operator.
+
+|`QUESTION`
+|A property that requires an answer from the economic operator in the ESPD Response. The expected data type is defined by `ValueDataTypeCode`.
+
+|`CAPTION`
+|A label or heading — purely informational, no data value. When used, `ValueDataTypeCode` must be `NONE`.
+
+|===
+
+==== PropertyGroupType
+
+Controls the conditional display/processing logic for groups within a criterion.
+
+[cols="1,3",options="header"]
+|===
+|Property |Value
+
+|Source |ESPD-EDM
+|File |link:{url-tree}/codelists/gc/PropertyGroupType.gc[PropertyGroupType.gc]
+|Used in |`cac:SubsidiaryTenderingCriterionPropertyGroup/cbc:PropertyGroupTypeCode`
+|===
+
+[cols="1,3",options="header"]
+|===
+|Code |Meaning
+
+|`ON*`
+|The group is always displayed/processed, regardless of the parent answer.
+
+|`ONTRUE`
+|The group is displayed/processed only when the parent INDICATOR question is answered `true`.
+
+|`ONFALSE`
+|The group is displayed/processed only when the parent INDICATOR question is answered `false`.
+
+|===
+
+This is the mechanism that drives the conditional criterion forms — e.g. showing "Please explain" fields only when the economic operator answers "Yes" to an exclusion ground.
+
+For a detailed explanation of the conditional logic, see xref:how-criteria-work.adoc[How Criteria Work].
+
+=== Response Data Type Code Lists
+
+==== ResponseDataType
+
+Defines the type of data expected in the economic operator's response to a QUESTION property.
+
+[cols="1,3",options="header"]
+|===
+|Property |Value
+
+|Source |ESPD-EDM
+|File |link:{url-tree}/codelists/gc/ResponseDataType.gc[ResponseDataType.gc]
+|Used in |`cac:TenderingCriterionProperty/cbc:ValueDataTypeCode`
+|===
+
+[cols="1,2,2",options="header"]
+|===
+|Code |Description |Response element
+
+|`INDICATOR`
+|Boolean true/false answer
+|`cbc:ResponseIndicator`
+
+|`DESCRIPTION`
+|Free-text description
+|`cbc:Description`
+
+|`AMOUNT`
+|Monetary amount with currency
+|`cbc:ResponseAmount`
+
+|`QUANTITY`
+|Numeric quantity with optional unit
+|`cbc:ResponseQuantity`
+
+|`QUANTITY_INTEGER`
+|Integer quantity (e.g. number of years)
+|`cbc:ResponseQuantity`
+
+|`QUANTITY_YEAR`
+|Year value
+|`cbc:ResponseQuantity`
+
+|`PERCENTAGE`
+|Percentage value
+|`cbc:ResponseNumeric`
+
+|`PERIOD`
+|Date range (start–end)
+|`cac:ApplicablePeriod`
+
+|`DATE`
+|Single date value
+|`cbc:ResponseDate`
+
+|`CODE`
+|Code value from a specific code list
+|`cbc:ResponseCode`
+
+|`CODE_COUNTRY`
+|Country code
+|`cbc:ResponseCode`
+
+|`IDENTIFIER`
+|Identifier value
+|`cbc:ResponseID`
+
+|`URL`
+|Web address
+|`cbc:ResponseURI`
+
+|`EVIDENCE_IDENTIFIER`
+|Reference to evidence
+|`cac:EvidenceSupplied`
+
+|`ECONOMIC_OPERATOR_IDENTIFIER`
+|Reference to another economic operator
+|`cbc:ResponseID`
+
+|`LOT_IDENTIFIER`
+|Reference to a procurement lot
+|`cbc:ResponseID`
+
+|`WEIGHT_INDICATOR`
+|Weighted indicator for reduction of candidates
+|`cbc:ResponseIndicator`
+
+|`NONE`
+|No data expected (used with CAPTION and REQUIREMENT elements)
+|_(none)_
+
+|===
+
+For response mapping guidance, see xref:criterion-data-model-json.adoc#_response_data_type_mapping[Response Data Type Mapping] in the Criterion Data Model page.
+
+=== GUI Control Code Lists
+
+==== BooleanGUIControlType
+
+Provides additional GUI rendering hints for special criterion forms.
+
+[cols="1,3",options="header"]
+|===
+|Property |Value
+
+|Source |ESPD-EDM
+|File |link:{url-tree}/codelists/gc/BooleanGUIControlType.gc[BooleanGUIControlType.gc]
+|Used in |`cbc:ExpectedCode` (within REQUIREMENT properties of the special "Other economic or financial requirements" criterion)
+|===
+
+[cols="1,3",options="header"]
+|===
+|Code |Meaning
+
+|`RADIO_BUTTON_TRUE`
+|Render as a radio button representing the `true` option.
+
+|`RADIO_BUTTON_FALSE`
+|Render as a radio button representing the `false` option.
+
+|===
+
+These codes instruct the ESPD Service to display radio buttons (or check boxes) to toggle between ONTRUE/ONFALSE subgroups within the special financial requirements criterion (`finan-requ`). See xref:how-criteria-work.adoc[How Criteria Work] for the full explanation.
+
+=== Maintenance lifecycle
+
+Criteria code lists follow two maintenance paths:
+
+[cols="1,2,3",options="header"]
+|===
+|Code list |Maintainer |Update cycle
+
+|ExclusionGround
+|EU Vocabularies
+|Updated when EU legislation changes (e.g. new exclusion grounds added by amending directives). ESPD-EDM adopts new versions via `listVersionID` updates.
+
+|SelectionCriterion
+|EU Vocabularies
+|Same as ExclusionGround.
+
+|CriterionElementType
+|ESPD-EDM team
+|Updated per ESPD-EDM release when new element types are needed. Stable across minor versions.
+
+|PropertyGroupType
+|ESPD-EDM team
+|Stable — changes only if new conditional logic patterns are introduced.
+
+|ResponseDataType
+|ESPD-EDM team
+|Updated per release when new response types are needed (e.g. `WEIGHT_INDICATOR` added in v4.0.0).
+
+|BooleanGUIControlType
+|ESPD-EDM team
+|Stable — specific to the financial requirements criterion.
+
+|===
+
+=== Relationship to espd-edm.json
+
+The criterion definitions in link:{url-tree}/criterion/espd-edm.json[espd-edm.json] reference these code lists by their code values:
+
+* `CriterionTypeCode` → ExclusionGround or SelectionCriterion
+* `TypeCode` on each property → CriterionElementType
+* `PropertyGroupTypeCode` on each group → PropertyGroupType
+* `ValueDataTypeCode` on each property → ResponseDataType
+
+When building an ESPD Service, implementers should load both the JSON criterion data and the Genericode files to resolve code values to their display labels and descriptions. See xref:criterion-data-model-json.adoc[Criterion Data Model (JSON)] for traversal guidance.
+
+=== Further information
+
+* xref:code-lists.adoc[Code Lists] — complete catalogue of all ESPD code lists
+* xref:criterion-data-model-json.adoc[Criterion Data Model (JSON)] — the JSON criterion file format and consumption guidance
+* xref:how-criteria-work.adoc[How Criteria Work] — criterion tree structure and conditional logic
+* xref:criteria-catalogue.adoc[Criteria Catalogue] — UBL element reference for criterion components
+
+include::partial$feedback.adoc[]

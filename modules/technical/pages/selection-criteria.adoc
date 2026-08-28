@@ -350,7 +350,7 @@ The buyer  has selected the financial ratio as one of the selection criteria tha
 
 image:Financial ratio_CA mockup.jpg['Financial ratio' buyer mock-up,width=623,height=137]
 
-_Figure 19. 'Financial ratio' buyer mock-up_
+_Figure 20. 'Financial ratio' buyer mock-up_
 
 In ESPD the buyer  specifies procurement procedure-specific requirements, see data structure below.
 
@@ -360,7 +360,7 @@ The economic operator does only have to provide the numeric value for the financ
 
 image:Financial_ratio_EO_mock-up.jpg['Financial ratio' EO mock-up,width=454,height=279]
 
-_Figure 20. 'Financial ratio' EO mock-up_
+_Figure 21. 'Financial ratio' EO mock-up_
 
 ////
 === Data Structure
@@ -374,7 +374,7 @@ Notice how the spreadsheet has been used to specify the three different financia
 
 image:Financial_ratio_criterion_data_structure.jpg['Financial ratio' criterion data structure,width=526,height=293]
 
-_Figure 21. 'Financial ratio' criterion data structure_
+_Figure 22. 'Financial ratio' criterion data structure_
 ////
 
 === XML Example
@@ -417,13 +417,13 @@ For both situations (Lots and Lot): The buyer can require data from the economic
 
 image:Risk_indemnity_insurance_CA_requirements_edition_oneLot.jpg['Risk indemnity insurance' Buyer REQUIREMENT(s) edition ,width=544,height=237]
 
-_Figure 22. 'Risk indemnity insurance' Buyer REQUIREMENT(s) edition (Procedure with no lots, which actually means 1 Lot)_
+_Figure 23. 'Risk indemnity insurance' Buyer REQUIREMENT(s) edition (Procedure with no lots, which actually means 1 Lot)_
 
 When the procedure is divided into Lots: The buyer can specify the Lots one particular insurance applies to.
 
 image:Risk_indemnity_insurance_CA_requirements_edition_Lots.jpg[Risk indemnity insurance' Buyer REQUIREMENT(s) edition (Procedure with more than one Lot),width=580,height=590]
 
-_Figure 23. 'Risk indemnity insurance' Buyer REQUIREMENT(s) edition (Procedure with more than one Lot)._
+_Figure 24. 'Risk indemnity insurance' Buyer REQUIREMENT(s) edition (Procedure with more than one Lot)._
 
 === Mock-up - economic operator perspective
 
@@ -431,7 +431,7 @@ The only data the economic operator needs to provide is the amount covered by th
 
 image:Economic_operator_indemnity_insurance_mock-up.jpg['Economic operator indemnity insurance' EO mock-up,width=565,height=368]
 
-_Figure 24. 'Economic operator indemnity insurance' EO mock-up_
+_Figure 25. 'Economic operator indemnity insurance' EO mock-up_
 
 Note that the EO should provide an answer (ESPD Response) for every Lot that tenders. Meaning that if the Selection Criteria applies to different Lots (as can be read in the mockup), the EO should sumbit the data for the number of lots that apply.
 
@@ -451,7 +451,7 @@ The XML example below illustrates all this. The values used in the example are t
 
 image:risk_indemnity_insurance_criterion_data_structure.jpg[risk indemnity insurance' criterion data structure,width=566,height=314]
 
-_Figure 25. 'risk indemnity insurance' criterion data structure_
+_Figure 26. 'risk indemnity insurance' criterion data structure_
 ////
 
 === XML Example
@@ -491,7 +491,7 @@ The economic operator, in its view, sees all the requirements defined by the buy
 
 image:Other_economic_financial_requirements_EO mock-up.jpg['Other economic or financial requirements' EO mock-up,width=587,height=278]
 
-_Figure 26. 'Other economic or financial requirements' EO mock-up_
+_Figure 27. 'Other economic or financial requirements' EO mock-up_
 
 Note that the EO should provide an answer (ESPD Response) for every Lot that tenders. Meaning that if the Selection Criteria applies to different Lots (as can be read in the mockup), the EO should sumbit the data for the number of lots that apply.
 
@@ -511,7 +511,7 @@ Notice the following aspects from the 'other economic or financial requirements'
 ////
 image:Other_economic_financial_requirements_criterion_data_structur.jpg['Other economic or financial requirements' criterion data structure,width=566,height=337]
 
-_Figure 27. 'Other economic or financial requirements' criterion data structure_
+_Figure 28. 'Other economic or financial requirements' criterion data structure_
 ////
 === XML Example
 
@@ -555,7 +555,7 @@ For the ESPD, the buyer can specify these REQUIREMENT(s):
 
 image:References_CA_REQUIREMENT-edition mock-up.jpg[References' buyer REQUIREMENT(s) edition mock-up,width=548,height=384]
 
-_Figure 28. 'References' buyer REQUIREMENT(s) edition mock-up_
+_Figure 29. 'References' buyer REQUIREMENT(s) edition mock-up_
 
 === Mock-ups - economic operator perspective
 
@@ -567,7 +567,7 @@ _Figure 28. 'References' buyer REQUIREMENT(s) edition mock-up_
 
 image:References_EO-mock-up.jpg[References' EO mock-up,width=431,height=484]
 
-_Figure 29. 'References' EO mock-up_
+_Figure 30. 'References' EO mock-up_
 
 
 [NOTE]
@@ -592,7 +592,7 @@ The data structure for references caters for:
 ////
 image:References_criterion_data_structure.jpg['References' criterion data structure,width=505,height=216]
 
-_Figure 30.'References' criterion data structure_
+_Figure 31.'References' criterion data structure_
 ////
 
 === XML Example
@@ -665,7 +665,7 @@ Note that in this version of ESPD there are not weights to keep the model as sim
 
 image:Abilities_I_CA_req_mock-up.jpg['Abilities (I)' buyer REQUIREMENT mock-up,width=565,height=328]
 
-_Figure 31. 'Abilities (I)' buyer REQUIREMENT edition mock-up_
+_Figure 32. 'Abilities (I)' buyer REQUIREMENT edition mock-up_
 
 === Mock-ups - economic operator perspective
 
@@ -673,7 +673,7 @@ As you see from the mock-up below the economic operator can add and remove techn
 
 image:Abilities_I_EO_mock-up.jpg['Abilities (I)' EO mock-up,width=505,height=463]
 
-_Figure 32. 'Abilities (I)' EO mock-up_
+_Figure 33. 'Abilities (I)' EO mock-up_
 
 ////
 === Data Structure
@@ -682,7 +682,7 @@ _Figure 32. 'Abilities (I)' EO mock-up_
 
 image:Abilities_Persons_criterion_data structure.jpg['Abilities (I)(Persons)' criterion data structure,width=566,height=372]
 
-_Figure 33. 'Abilities (I)(Persons)' criterion data structure_
+_Figure 34. 'Abilities (I)(Persons)' criterion data structure_
 ////
 
 === XML Example
@@ -698,7 +698,7 @@ Please generate an ESPD Request and ESPD Response documents on https://github.co
 
 image:Abilities_Facilities_criterion data structure.jpg['Abilities (II) (Facilities, ....)' criterion data structure,width=526,height=188]
 
-_Figure 34. 'Abilities (II) (Facilities, ....)' criterion data structure_
+_Figure 35. 'Abilities (II) (Facilities, ....)' criterion data structure_
 
 === XML Example
 
@@ -715,7 +715,7 @@ Please generate an ESPD Request and ESPD Response documents on https://github.co
 
 image:abilitites-education-datastructure.png.jpg[Abilities (III) (Education)' criterion data structure,width=566,height=313]
 
-_Figure 35. 'Abilities (III) (Education)' criterion data structure_
+_Figure 36. 'Abilities (III) (Education)' criterion data structure_
 ////
 
 [NOTE]
@@ -751,7 +751,7 @@ The buyer (CA) can specify none, one or several REQUIREMENT(s). In this case a R
 
 //image:Special_requierements_check_CA_mock-up.jpg['Checks' buyer REQUIREMENT mock-up,width=524,height=213]
 image:Special_requirements_check_CA_mock-up.jpg['Checks' buyer REQUIREMENT mock-up,width=524,height=213]
-_Figure 36.  Special requierements check buyer REQUIREMENT edition mock-up_
+_Figure 37.  Special requierements check buyer REQUIREMENT edition mock-up_
 
 === Mock-ups - economic operator perspective
 
@@ -759,7 +759,7 @@ The EO should see as many boxes (groups) of REQUIREMENT + QUESTION as REQUIREMEN
 
 image:Special_requierements_check' EO_mock-up.jpg[Special requierements check' EO mock-up,width=636,height=122]
 
-_Figure 37. 'Special requierements check' EO mock-up_
+_Figure 38. 'Special requierements check' EO mock-up_
 
 === Data Structure
 
@@ -779,7 +779,7 @@ The data structure below shows how this criterion is organised. Notice the follo
 
 image:Abilities_IV_Checks_criterion data_structure.jpg['Abilities (IV) (Checks)' criterion data structure,width=539,height=353]
 
-_Figure 38. 'Abilities (IV) (Checks)' criterion data structure_
+_Figure 39. 'Abilities (IV) (Checks)' criterion data structure_
 ////
 
 === XML Example
@@ -798,7 +798,7 @@ Please generate an ESPD Request and ESPD Response documents on https://github.co
 
 image:Abilities_V_Checks_criterion data_structure.jpg['Abilities (V) (Staff)' criterion data structure,width=566,height=362]
 
-_Figure 39. 'Abilities (V) (Staff)' criterion data structure_
+_Figure 40. 'Abilities (V) (Staff)' criterion data structure_
 ////
 
 === XML Example
@@ -823,7 +823,7 @@ The buyer selects the criterion to be included in the ESPD Request:
 
 image:Subcontracting proportion_CA_mock-up.jpg['Subcontracting proportion' buyer mock-up,width=631,height=117]
 
-_Figure 40. 'Subcontracting proportion' buyer mock-up_
+_Figure 41. 'Subcontracting proportion' buyer mock-up_
 
 === Mock-ups - economic operator perspective
 
@@ -831,7 +831,7 @@ The economic operator has to provide a descriptive response in a free-text field
 
 image:Subcontracting proportion_EO_mock-up.jpg['Subcontracting proportion' EO mock-up,width=613,height=110]
 
-_Figure 41. 'Subcontracting proportion' EO mock-up_
+_Figure 42. 'Subcontracting proportion' EO mock-up_
 
 ////
 === Data Structure
@@ -840,7 +840,7 @@ _Figure 41. 'Subcontracting proportion' EO mock-up_
 
 image:Subcontracting proportion_criterion_data_structure.jpg[Subcontracting proportion' criterion data structure,width=566,height=321]
 
-_Figure 42. 'Subcontracting proportion' criterion data structure_
+_Figure 43. 'Subcontracting proportion' criterion data structure_
 ////
 
 === XML Example
@@ -867,7 +867,7 @@ The buyer selects the criteria that have to be included in the ESPD Request, e.g
 
 image:Samples_certificates_CA mock-up.jpg['Samples and certificates' buyer mock-up,width=642,height=134]
 
-_Figure 43. 'Samples and certificates' buyer mock-up_
+_Figure 44. 'Samples and certificates' buyer mock-up_
 
 === Mock-ups - economic operator perspective
 
@@ -875,7 +875,7 @@ The economic operator only has to answer *Yes* or *No*. The GUI does not react i
 
 image:Samples_certificates_EO_mock-up.jpg['Samples and certificates' EO mock-up,width=540,height=165]
 
-_Figure 44. 'Samples and certificates' EO mock-up_
+_Figure 45. 'Samples and certificates' EO mock-up_
 
 ////
 === Data Structure
@@ -884,7 +884,7 @@ _Figure 44. 'Samples and certificates' EO mock-up_
 
 image:Samples_certificates_criteria_data_structure.jpg[Samples and certificates criteria data structure,width=566,height=327]
 
-_Figure 45. 'Samples and certificates' criteria data structure_
+_Figure 46. 'Samples and certificates' criteria data structure_
 ////
 
 === XML Example
@@ -905,7 +905,7 @@ In ESPD the buyer can specify a REQUIREMENT. In this example it provides the nam
 
 image:Quality_Assurance schemes_environmental_management_stand_CA.jpg['Quality Assurance schemes and environmental management standards' buyer mock-up,width=468,height=273]
 
-_Figure 46. 'Quality Assurance schemes and environmental management standards' buyer mock-up_
+_Figure 47. 'Quality Assurance schemes and environmental management standards' buyer mock-up_
 
 === Mock-ups - economic operator perspective
 
@@ -915,7 +915,7 @@ When the EO answers *Yes* it will be asked whether online evidences are availabl
 
 image:Quality_Assurance schemes_environmental_management_stand.jpg[Quality Assurance schemes and environmental management standards' EO mock-up,width=500,height=293]
 
-_Figure 47.'Quality Assurance schemes and environmental management standards' EO mock-up_
+_Figure 48.'Quality Assurance schemes and environmental management standards' EO mock-up_
 
 === Data Structure
 
@@ -931,7 +931,7 @@ Notice the following:
 
 image:Quality Assurance schemes_environmental_data_struc.jpg['Quality Assurance schemes and environmental management standards' criteria data structure,width=566,height=347]
 
-_Figure 48. 'Quality Assurance schemes and environmental management standards' criteria data structure_
+_Figure 49. 'Quality Assurance schemes and environmental management standards' criteria data structure_
 ////
 
 === XML Example
@@ -964,7 +964,7 @@ The figure below shows the data elements required to the economic operator for t
 
 image:Reduction_candidates_data_structure.jpg['Reduction of candidates' data structure,width=566,height=156]
 
-_Figure 49. 'Reduction of candidates' data structure_
+_Figure 50. 'Reduction of candidates' data structure_
 ////
 === XML example (ESPD-Request)
 
