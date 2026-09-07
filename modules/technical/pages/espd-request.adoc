@@ -6,7 +6,7 @@
 // Split from: tech_request.adoc (narrative/guide portions)
 // Target section: Technical Implementation
 // Content: business requirements, schema overview, cardinalities, lot management reference,
-//          EU/notice publications overview, contracting body overview, service provider overview
+//          EU/notice publications overview, buyer overview, service provider overview
 
 == ESPD Request Business Requirements
 

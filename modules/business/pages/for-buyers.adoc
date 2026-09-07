@@ -1,11 +1,11 @@
-:doctitle: For Contracting Authorities (Buyers)
+:doctitle: For Buyers (Contracting Authorities)
 :doccode: espd-bus-prod-020
 :author: ESPD Team
 :docdate: July 2026
 
 == Preparing the ESPD Request
 
-Contracting Authorities (buyers) use the ESPD Request to define the exclusion grounds and selection criteria that Economic Operators (offering parties) must satisfy in order to participate in a procurement procedure.
+Buyers (Contracting Authorities) use the ESPD Request to define the exclusion grounds and selection criteria that Economic Operators (offering parties) must satisfy in order to participate in a procurement procedure.
 
 The ESPD process from the buyer perspective:
 

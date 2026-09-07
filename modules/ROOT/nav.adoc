@@ -19,7 +19,7 @@
 * link:{attachmentsdir}/ESPD_CM_html/index.html[Conceptual Model]
 
 * [.separated]#**Business Guide**#
-* xref:business:for-buyers.adoc[For Contracting Authorities (Buyers)]
+* xref:business:for-buyers.adoc[For Buyers (Contracting Authorities)]
 * xref:business:for-economic-operators.adoc[For Economic Operators]
 * xref:business:espd-parts.adoc[ESPD Parts]
 * xref:business:lots-overview.adoc[Lots in Public Procurement]

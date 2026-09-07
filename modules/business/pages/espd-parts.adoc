@@ -7,7 +7,7 @@
 
 The ESPD is structured into six parts. The first part covers procedure identification, parts 2 through 5 cover the substantive qualification content, and part 6 contains legal declarations.
 
-Each part is filled in by the buyer (Contracting Authority), the Economic Operator (offering party), or both, depending on the ESPD document type (Request or Response) and the role of the participant.
+Each part is filled in by the buyer, the Economic Operator (offering party), or both, depending on the ESPD document type (Request or Response) and the role of the participant.
 
 == Part 1: Procedure Information
 
@@ -116,7 +116,7 @@ _Table: Information to provide in the ESPD Response per role_
 
 === Further information
 
-* For buyer-specific guidance, see xref:for-buyers.adoc[For Contracting Authorities (Buyers)].
+* For buyer-specific guidance, see xref:for-buyers.adoc[For Buyers (Contracting Authorities)].
 * For offering party-specific guidance, see xref:for-economic-operators.adoc[For Economic Operators].
 
 include::partial$feedback.adoc[]

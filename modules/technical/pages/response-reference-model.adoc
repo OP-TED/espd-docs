@@ -129,7 +129,7 @@ In the ESPD Response it is also compulsory to make reference to the ESPD Request
 
 If the call for tender demands a certificate with regard to the payment of social security contributions and taxes, the economic operator must be able to indicate if he can provide such a certificate. And if so, in the case the certificate can be retrieved free of charge electronically: the web address, issuing body, and precise reference of the documentation.
 
-The economic operator must be able to add the internet address of a national database (including any identification data and, where applicable, the necessary declaration of consent cf. Art. 59 of 2014/24/EC) from which a contracting authority can directly retrieve any evidence documents and certificates or supporting documents which prove the EO’s compliance to the requested criteria defined in the call for tender and stated in the ESPD.
+The economic operator must be able to add the internet address of a national database (including any identification data and, where applicable, the necessary declaration of consent cf. Art. 59 of 2014/24/EC) from which a buyer can directly retrieve any evidence documents and certificates or supporting documents which prove the EO’s compliance to the requested criteria defined in the call for tender and stated in the ESPD.
 
 *Rule*: Used to point at an instance of the cac:Evidence.
 
@@ -549,7 +549,7 @@ _Table 36. Economic operator postal address, expected elements_
 |===
 |*Components* |*Type* |*Card* |*Description* |*Requirements*
 |*cac:AddressLine/cbc:Line* |Text |0..1 |The main address line in an address. Usually the street name and number or post office box. a|
-*Information Requirement*: The ESPD should contain contact information of the contracting authority: Postal address, telephone number, fax number, e-mail address, contact person(s).
+*Information Requirement*: The ESPD should contain contact information of the buyer: Postal address, telephone number, fax number, e-mail address, contact person(s).
 
 *Rule*: None.
 
@@ -561,7 +561,7 @@ _Table 36. Economic operator postal address, expected elements_
 *Rule*: None.
 
 |*cac:Country/cbc:IdentificationCode* |Code |1 |A code that identifies the country. a|
-*Rule*: The country of the contracting body must always be specified. Compulsory use of the Code List link:{url-tree}/codelists/Country.gc[Country].
+*Rule*: The country of the buyer must always be specified. Compulsory use of the Code List link:{url-tree}/codelists/Country.gc[Country].
 
 |*cac:Country/cbc:Name* |Text |0..1 |The name of the country. a|
 *Rule*: None.

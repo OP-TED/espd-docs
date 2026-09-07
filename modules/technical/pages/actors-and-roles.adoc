@@ -59,7 +59,7 @@ An optional actor that provides the ESPD Service platform used by both buyer and
 
 === Further information
 
-* xref:business:for-buyers.adoc[For Contracting Authorities (Buyers)]
+* xref:business:for-buyers.adoc[For Buyers (Contracting Authorities)]
 * xref:business:for-economic-operators.adoc[For Economic Operators]
 * xref:business:espd-parts.adoc[ESPD Parts] — which sections each role fills in
 
