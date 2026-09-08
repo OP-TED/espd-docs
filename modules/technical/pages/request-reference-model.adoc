@@ -1,4 +1,4 @@
-﻿:doctitle: Request Model Reference
+﻿:doctitle: Request Reference Model
 :doccode: espd-tech-prod-039
 :author: ESPD Team
 :docdate: July 2026
@@ -6,7 +6,7 @@
 // Generated from tech_request.adoc — element tables for the ESPD Request
 // Target section: Model Reference
 
-== Request Model Reference
+== Request Reference Model
 
 This page provides the detailed element-by-element reference tables for the ESPD Request document.
 

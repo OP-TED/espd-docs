@@ -1,8 +1,7 @@
-﻿:doctitle: Code List Catalogue
+﻿:doctitle: Code Lists
 :doccode: espd-tech-prod-007
-:author: dragos-eu
-:authoremail: Dragos-Constantin.STOICA@ext.ec.europa.eu
-:docdate: September 2024
+:author: ESPD Team
+:docdate: July 2026
 :sectnums:
 
 == General Information

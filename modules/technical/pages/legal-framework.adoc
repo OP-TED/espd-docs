@@ -17,10 +17,13 @@ This page summarises the EU legislation that forms the legal basis for the ESPD.
 |Public Procurement Directive. *Article 59* introduces the ESPD concept. *Article 57* defines exclusion grounds. *Article 58* defines selection criteria. *Article 4* defines thresholds.
 
 |link:https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32014L0025[Directive 2014/25/EU]
-|Utilities Directive. Extends public procurement rules to water, energy, transport and postal services sectors. Refers to ESPD via Article 80.
+|Utilities Directive. Extends public procurement rules to the water, energy, transport and postal services sectors. Provides the legal basis for the ESPD in these sectors via *Article 80(3)*.
+
+|link:https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32014L0023[Directive 2014/23/EU]
+|Concessions Directive. The ESPD is *not mandated* for concessions; Member States may allow its use for concession contracts (per Regulation (EU) 2016/7, Annex 1).
 
 |link:https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32016R0007[Regulation (EU) 2016/7]
-|Implementing Regulation establishing the standard form for the European Single Procurement Document.
+|Implementing Regulation establishing the standard form for the European Single Procurement Document. Adopted under Article 59(2) of Directive 2014/24/EU and Article 80(3) of Directive 2014/25/EU.
 
 |===
 
@@ -50,7 +53,7 @@ link:https://ec.europa.eu/tools/ecertis/[e-Certis] is the EU registry of criteri
 
 === UBL 2.4
 
-The ESPD-EDM is based on link:https://docs.oasis-open.org/ubl/UBL-2.4/UBL-2.4.html[OASIS UBL 2.4]. The adoption of UBL is supported by link:https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32014D0771&from=EN[Commission Decision 2014/771/EU] identifying UBL for referencing in public procurement.
+The ESPD-EDM is based on link:https://docs.oasis-open.org/ubl/os-UBL-2.4/UBL-2.4.html[OASIS UBL 2.4]. The adoption of UBL is supported by link:https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32014D0771[Commission Decision 2014/771/EU] identifying UBL for referencing in public procurement.
 
 === Further information
 

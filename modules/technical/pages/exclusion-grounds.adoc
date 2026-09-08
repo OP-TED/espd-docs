@@ -6,11 +6,6 @@
 // Generated from tech_exclusion_criteria.adoc
 // Target section: Criteria
 
-:doccode: espd-tech-prod-010
-:author: NPJ
-:authoremail: nicole-anne.paterson-jones@ext.ec.europa.eu
-:docdate: January 2024
-
 [cols="1,4"]
 |===
 |*REQUIREMENT*  |*The buyer shall provide the exclusion grounds and selection criteria for its tendering process as structured information - via ESPD template or structured list of criteria set out in a call for tender.*

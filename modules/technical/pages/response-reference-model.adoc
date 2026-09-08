@@ -1,4 +1,4 @@
-﻿:doctitle: Response Model Reference
+﻿:doctitle: Response Reference Model
 :doccode: espd-tech-prod-040
 :author: ESPD Team
 :docdate: July 2026
@@ -6,7 +6,7 @@
 // Generated from tech_response.adoc - element tables for the ESPD Response
 // Target section: Model Reference
 
-== Response Model Reference
+== Response Reference Model
 
 This page provides the detailed element-by-element reference tables for the ESPD Response document.
 
