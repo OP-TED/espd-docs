@@ -9,17 +9,15 @@ This page provides links to previous versions of the ESPD-EDM documentation and 
 
 === Current version
 
-* *v5.0.0* — https://github.com/OP-TED/ESPD-EDM/tree/v5.0.0[GitHub] | https://docs.ted.europa.eu/ESPD-EDM/5.0.0/index.html[Documentation]
+* *v4.1.0* (current production release) — https://github.com/OP-TED/ESPD-EDM/tree/v4.1.0[GitHub] | https://docs.ted.europa.eu/ESPD-EDM/latest/index.html[Documentation]
+
+NOTE: *v5.0.0* is the version described by this documentation. It is currently available on the acceptance environment and will be published to production in due course — https://github.com/OP-TED/ESPD-EDM/tree/v5.0.0[GitHub].
 
 === Previous versions
 
 [cols="1,2,2",options="header"]
 |===
 |Version |Distribution Package |Documentation
-
-|v4.1.0
-|https://github.com/OP-TED/ESPD-EDM/tree/v4.1.0[GitHub]
-|https://docs.ted.europa.eu/ESPD-EDM/4.1.0/index.html[Docs]
 
 |v4.0.0
 |https://github.com/OP-TED/ESPD-EDM/tree/v4.0.0[GitHub]
@@ -37,13 +35,13 @@ This page provides links to previous versions of the ESPD-EDM documentation and 
 |https://github.com/OP-TED/ESPD-EDM/tree/v3.1.0[GitHub]
 |https://docs.ted.europa.eu/ESPD-EDM/3.1.0/index.html[Docs]
 
-|v3.0.0
-|https://github.com/OP-TED/ESPD-EDM/tree/v3.0.0[GitHub]
-|https://docs.ted.europa.eu/ESPD-EDM/3.0.0/index.html[Docs]
+|v3.0.1
+|https://github.com/OP-TED/ESPD-EDM/tree/v3.0.1[GitHub]
+|https://docs.ted.europa.eu/ESPD-EDM/3.0.1/index.html[Docs]
 
-|v2.1.x
-|https://github.com/OP-TED/ESPD-EDM/tree/v2.1.x[GitHub]
-|https://docs.ted.europa.eu/ESPD-EDM/2.1.0/index.html[Docs]
+|v2.1.1
+|https://github.com/OP-TED/ESPD-EDM/tree/v2.1.1[GitHub]
+|https://docs.ted.europa.eu/ESPD-EDM/2.1.1/index.html[Docs]
 
 |===
 

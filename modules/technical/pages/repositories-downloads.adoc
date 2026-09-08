@@ -14,7 +14,7 @@ This page provides direct links to all ESPD-EDM GitHub repositories, distributio
 |Repository |Purpose
 
 |https://github.com/OP-TED/ESPD-EDM[OP-TED/ESPD-EDM]
-|Main repository containing the ESPD-EDM distribution package: UBL 2.4 schemas, code lists (Genericode), criterion data (JSON), validation artefacts (Schematron/XSL), and XML examples.
+|Main repository containing the ESPD-EDM distribution package: UBL 2.4 schemas, code lists (Genericode), criterion data (JSON), and validation artefacts (Schematron/XSL).
 
 |https://github.com/OP-TED/espd-docs[OP-TED/espd-docs]
 |This documentation site (Antora-based AsciiDoc sources). Branch `v5.0.x` contains the current version.
@@ -41,16 +41,13 @@ The distribution package for each release is available as a tagged version on Gi
 |Genericode (`.gc`) files for all code lists + `codelists.json` metadata reference.
 
 |`criterion/`
-|Criterion definitions in JSON format (`espd-edm.json`) + JSON schema for validation.
+|Criterion definitions in JSON format (`espd-edm.json`) — the Exclusion Grounds and Selection Criteria.
 
 |`schemas/`
-|Official OASIS UBL 2.4 distribution (XSD schemas for Request and Response).
+|Official OASIS UBL 2.4 distribution. Contains `common/` (shared UBL element definitions) and `maindoc/` (`UBL-QualificationApplicationRequest-2.4.xsd` and `UBL-QualificationApplicationResponse-2.4.xsd`).
 
 |`validation/`
-|Schematron source files (`.sch`) and compiled XSL files for ESPD Request and Response validation.
-
-|`xml-examples/`
-|Sample ESPD Request and Response XML documents.
+|Schematron source files and compiled XSL files for ESPD Request and Response validation.
 
 |===
 

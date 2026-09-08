@@ -730,8 +730,8 @@ The reason why the expected type of data is a URL is because in ESCO taxonomy ea
 
 ESCO is legally supported by the link:https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv%3AOJ.L_.2016.107.01.0001.01.ENG[REGULATION (EU) 2016/589] of 13 April 2016 (the EURES Regulation) and two Implementing Decisions:
 
-* link:https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32018D1020&from=EN[Commission Implementing Decision No 2018/1020] establishes the list of skills, competences and occupations of the European classification (ESCO) to be used for the operation of the EURES common IT platform as provided for in Article 19 of Regulation (EU) 2016/589 and lays down the procedures to update and review this list.
-* link:https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32018D1021&from=EN[Commission Implementing Decision No 2018/1021] lays down the technical standards and formats necessary for the operation of the automated matching through the common IT platform using the European classification (ESCO) and the interoperability between national systems and the European classification.
+* link:https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32018D1020[Commission Implementing Decision No 2018/1020] establishes the list of skills, competences and occupations of the European classification (ESCO) to be used for the operation of the EURES common IT platform as provided for in Article 19 of Regulation (EU) 2016/589 and lays down the procedures to update and review this list.
+* link:https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32018D1021[Commission Implementing Decision No 2018/1021] lays down the technical standards and formats necessary for the operation of the automated matching through the common IT platform using the European classification (ESCO) and the interoperability between national systems and the European classification.
 
 ====
 
@@ -949,7 +949,7 @@ Please generate an ESPD Request and ESPD Response documents on https://github.co
 
 In restricted procedures, competitive procedures with negotiation, competitive dialogue procedures and innovation partnerships, buyers may limit the number of candidates meeting the selection criteria that they will invite to tender or to conduct a dialogue.
 
-To cover this possibility, the link:https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32016R0007&from=EN[ESPD Regulation] introduces a section named "Reduction of the number of qualified candidates" with one criterion that reads as follows:
+To cover this possibility, the link:https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32016R0007[ESPD Regulation] introduces a section named "Reduction of the number of qualified candidates" with one criterion that reads as follows:
 
 "The economic operator declares that it meets the objective and non-discriminatory criteria or rules to be applied in order to limit the number of candidates in the following way:".
 

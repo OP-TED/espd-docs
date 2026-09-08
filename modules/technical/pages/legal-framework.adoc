@@ -27,17 +27,6 @@ This page summarises the EU legislation that forms the legal basis for the ESPD.
 
 |===
 
-=== eForms alignment
-
-The ESPD-EDM v5.0.0 is aligned with the eForms notification standard:
-
-* Lot identification format (`LOT-XXXX`, `GLO-XXXX`)
-* Shared code lists via EU Vocabularies
-* Contract Notice reference linkage
-* Procedure code consistency
-
-More information: https://single-market-economy.ec.europa.eu/single-market/public-procurement/digital-procurement/eforms_en[eForms at the European Commission]
-
 === Key legal requirements implemented in ESPD-EDM
 
 * Mandatory exclusion grounds (Art. 57(1) and (2)) cannot be removed by the buyer

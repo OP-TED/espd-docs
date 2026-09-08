@@ -9,7 +9,7 @@ The ESPD data exchange is based on two complementary XML documents that together
 
 === ESPD Request
 
-The ESPD Request is created by the *buyer* (Contracting Authority) and defines:
+The ESPD Request is created by the *buyer* and defines:
 
 * The exclusion grounds applicable to the procedure (mandatory + discretionary)
 * The selection criteria the economic operator must meet
@@ -47,33 +47,32 @@ Economic Operator → retrieves Request
                               ↓
 Economic Operator → creates ESPD Response
                               ↓
-                    submits with tender
+                    submits with the tender (open procedure) or with the
+                    request to participate (multi-stage procedures)
                               ↓
 Buyer → evaluates Responses → selects candidates
 ```
 
-=== Self-contained vs regulated ESPD
+NOTE: In open procedures the ESPD Response is submitted together with the tender. In multi-stage procedures (restricted, competitive procedure with negotiation, competitive dialogue, innovation partnership) it is submitted with the request to participate — before any tender exists.
 
-The ESPD-EDM supports two usage patterns depending on the procurement context:
+=== Above-threshold and below-threshold use
+
+The same ESPD documents are used regardless of the value of the procurement, but some obligations differ depending on whether the procedure is above or below the EU thresholds defined in Article 4 of Directive 2014/24/EU:
 
 [cols="1,3",options="header"]
 |===
-|Variant |Description
+|Context |What differs
 
-|*Regulated (above threshold)*
-|For procurement procedures above the EU thresholds defined in Article 4 of Directive 2014/24/EU. The ESPD Request *must* reference a Contract Notice published on TED. Exclusion grounds from Article 57(1) and (2) are mandatory. The full set of ESPD-EDM business rules applies, including lot management via eForms-aligned identifiers.
+|*Above the threshold*
+|The ESPD Request *must* reference the Contract Notice published on TED (via `cac:AdditionalDocumentReference`). Exclusion grounds under Article 57(1) and (2) are mandatory.
 
-|*Self-contained (below threshold)*
-|For procedures below the threshold or where Member State legislation permits simplified use. The buyer may include all necessary procedure information directly in the ESPD Request without a TED publication reference. The ESPD document is "self-contained" — it carries the procedure context within itself.
+|*Below the threshold*
+|National rules apply (respecting the general principles of EU law). The buyer may identify the procedure directly in the ESPD Request without a TED publication reference.
 |===
 
-In both variants the XML structure is the same (`QualificationApplicationRequest` / `QualificationApplicationResponse`). The difference lies in:
+In both cases the XML structure is identical (`QualificationApplicationRequest` / `QualificationApplicationResponse`). The `cbc:ProfileExecutionID` element in the root of the document identifies the ESPD-EDM version in use (for v5.0.0, `ESPD-EDMv5.0.0`).
 
-* Whether `cac:AdditionalDocumentReference` references an external TED publication or not
-* Which exclusion grounds are mandatory vs optional
-* Whether lot identifiers follow the eForms format
-
-The `cbc:ProfileExecutionID` element in the root of the document identifies which profile is in use.
+NOTE: Earlier versions of the ESPD-EDM distinguished separate document profiles — "Regulated" and "Self-Contained" (renamed "Basic" and "Extended" from v2.1.1). From v3.0.0 onward these profile variants were removed: there is a single profile per version, and the above/below-threshold difference is a matter of which information and business rules apply, not a separate document type.
 
 === Further information
 
