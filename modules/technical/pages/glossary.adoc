@@ -61,7 +61,7 @@ Multilingual, multidisciplinary thesaurus covering the activities of the EU. (ht
 
 [[espd,European Single Procurement Document (ESPD)]]
 *European Single Procurement Document (ESPD).*  +
-Self-declaration document intended for preliminary evidence in a public procurement procedure, introduced in Article 59 of Directive 2014/24/EC. (https://github.com/OP-TED/ESPD-EDM)
+Self-declaration document intended for preliminary evidence in a public procurement procedure, introduced in Article 59 of Directive 2014/24/EU. (https://github.com/OP-TED/ESPD-EDM)
 
 [[espd-edm,European Single Procurement Document Exchange Data Model (ESPD-EDM)]]
 *European Single Procurement Document Exchange Data Model (ESPD-EDM).*  +
@@ -80,7 +80,7 @@ The European Commission's one-stop shop for interoperable, open, and free digita
 
 [[Namespace Prefixes, Namespace Prefixes]]
 *Namespace prefixes*  +
-Used in XML to avoid element name conflicts. See the https://www.w3schools.com/XML/xml_namespaces.asp[W3schools definition].
+Used in XML to avoid element name conflicts. See the https://www.w3.org/TR/xml-names/[W3C "Namespaces in XML" specification].
 
 [[oasis,Organization for the Advancement of Structured Information Standards (OASIS)]]
 *Organization for the Advancement of Structured Information Standards (OASIS).*  +
@@ -109,9 +109,9 @@ The https://www.itb.ec.europa.eu/espd/upload[Interoperability Testbed] is an onl
 *UBL (Universal Business Language).*  +
 Royalty-free library of standard XML business documents supporting digitization of commercial and logistical processes. ESPD-EDM v5.0.0 uses UBL 2.4. (https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=ubl#overview)
 
-[[uri,Universal Resource Identifier (URI)]]
-*Universal Resource Identifier (URI).*  +
-Syntax to define a way to encapsulate a name in any registered namespace. (https://www.ietf.org/rfc/rfc2396.txt)
+[[uri,Uniform Resource Identifier (URI)]]
+*Uniform Resource Identifier (URI).*  +
+A compact sequence of characters that identifies an abstract or physical resource. Defined by RFC 3986 (which obsoletes the earlier RFC 2396). (https://www.rfc-editor.org/rfc/rfc3986)
 
 [[xml,XML (Extensible Markup Language)]]
 *XML (Extensible Markup Language).*  +
