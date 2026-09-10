@@ -35,30 +35,12 @@ When preparing the ESPD Request:
 
 When completing the ESPD Response:
 
-* The economic operator submits *one ESPD Response per lot* they wish to tender for.
+* The economic operator submits *one ESPD Response per lot (or group of lots)* they wish to tender for.
 * Each response must address *all exclusion grounds* (since they apply to all lots).
 * Each response must address only the *selection criteria applicable to that specific lot*.
 * If an economic operator wants to participate in 3 lots, they must submit 3 separate ESPD Responses.
 
-=== Summary
-
-[cols="1,2,2",options="header"]
-|===
-|Aspect |Buyer (ESPD Request) |Offering Party (ESPD Response)
-
-|Number of documents
-|1 per procedure
-|1 per lot per economic operator
-
-|Exclusion grounds
-|Defined once, apply to all lots
-|Must be answered in every response
-
-|Selection criteria
-|Linked to specific lot(s)
-|Only criteria for the targeted lot
-
-|===
+For a side-by-side comparison of how lots affect the ESPD Request and Response, see the xref:technical:lots-management.adoc#_summary[Lots Management summary] in the Technical Guide.
 
 === Roles within a lot
 

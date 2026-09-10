@@ -111,6 +111,7 @@ On the Economic Operator's side:
 
 == Further information
 
+* For a non-technical introduction to lots in public procurement, see xref:business:lots-overview.adoc[Lots in Public Procurement].
 * For ESPD Request details, see xref:espd-request.adoc[ESPD Request].
 * For ESPD Response details, see xref:espd-response.adoc[ESPD Response].
 
