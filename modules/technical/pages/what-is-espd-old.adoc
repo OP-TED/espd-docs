@@ -5,23 +5,14 @@
 
 == What is the ESPD?
 
-The European Single Procurement Document (ESPD) is a self-declaration by an economic operator, used as preliminary evidence that it is not in any of the situations giving rise to exclusion and that it meets the selection criteria set by the buyer for a specific procurement. It replaces, at the tendering stage, the certificates and documents normally issued by public authorities or third parties.
+The European Single Procurement Document (ESPD) is a self-declaration form used in EU public procurement as preliminary evidence that an economic operator meets the requirements to participate in a procurement procedure.
 
-[NOTE]
-====
-In the legal sense (Article 59 of Directive 2014/24/EU; Implementing Regulation (EU) 2016/7, Annex 1) and in the *eProcurement Ontology (ePO)*, "the ESPD" is the *economic operator's self-declaration* — that is, what the economic operator submits. In ESPD-EDM terms this self-declaration is carried by the *ESPD Response*.
+=== Two-part structure
 
-The *ESPD Request* is the buyer's expression of the exclusion grounds and selection criteria. It is not, in itself, "an ESPD"; it is the specification that the economic operator responds to.
-====
+The ESPD consists of two XML documents:
 
-=== ESPD and the ESPD-EDM documents
-
-The *ESPD-EDM* (the technical exchange model) defines two electronic (XML) documents used to exchange this information:
-
-* *ESPD Request* — prepared by the buyer (Contracting Authority). It expresses the exclusion grounds and selection criteria for the procurement. It enables the economic operator to produce its ESPD, but is not itself the ESPD.
-* *ESPD Response* — prepared by the economic operator (offering party). It carries the actual ESPD self-declaration: the answers to each exclusion ground and selection criterion, together with references to the evidence.
-
-TIP: Strictly, "the ESPD" is the economic operator's self-declaration (the Response). "ESPD Request" and "ESPD Response" are the two documents defined by the ESPD-EDM to exchange the qualification data electronically. The ESPD-EDM guide sometimes refers to both loosely as "ESPD documents".
+* *ESPD Request* — prepared by the buyer (Contracting Authority). It defines the exclusion grounds and selection criteria that economic operators must satisfy.
+* *ESPD Response* — prepared by the economic operator (offering party). It contains the self-declarations and evidence references responding to the criteria defined in the Request.
 
 === Role in pre-qualification
 
@@ -37,7 +28,7 @@ The ESPD replaces the need for economic operators to produce large volumes of ph
 
 === Legal basis
 
-The ESPD is introduced by *Article 59 of Directive 2014/24/EU* and further specified by *Implementing Regulation (EU) 2016/7*, which establishes the standard form: Annex 1 contains the instructions for its use, and Annex 2 contains the standard form itself. See xref:legal-framework.adoc[Legal Framework] for details.
+The ESPD is introduced by *Article 59 of Directive 2014/24/EU* and further specified by *Implementing Regulation (EU) 2016/7*. See xref:legal-framework.adoc[Legal Framework] for details.
 
 === The ESPD-EDM
 
