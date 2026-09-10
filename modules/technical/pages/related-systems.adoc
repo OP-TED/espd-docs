@@ -21,8 +21,8 @@ TED is the online version of the Supplement to the Official Journal of the EU, d
 
 eForms is the EU notification standard for public procurement procedures. The ESPD-EDM v5.0.0 is aligned with eForms for:
 
-* Lot identification format (`LOT-XXXX`, `GLO-XXXX`)
 * Code lists (shared via EU Vocabularies)
+* Lot identification format (`LOT-XXXX`, `GLO-XXXX`)
 * Contract Notice linkage
 
 [cols="1,3"]

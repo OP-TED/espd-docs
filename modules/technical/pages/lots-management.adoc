@@ -49,13 +49,30 @@ The ESPD Request includes selection criteria with a reference to the lots they a
 
 == Lot Identifiers
 
-This version of the ESPD uses the eForms lot identifier format. Lot identifiers follow the pattern:
+To keep the ESPD aligned with the notice it belongs to, this version of the ESPD adopts the eForms lot identifier format instead of defining its own. The same identifiers used in the eForms Contract Notice are reused, unchanged, in the ESPD Request and ESPD Response. This guarantees that a selection criterion associated with `LOT-0002` in the ESPD refers to exactly the same lot as `LOT-0002` in the notice.
 
-image::https://kroki.io/pikchr/svg/eNqNkMFOwzAQRO_5ilFOcHESSITokbQgLigSH2BtjessdezKdSH8PU5KpSonbrO7M29XWxToyGgUUavesSI7K0lB9ZxUPAUt-jhYvA4Ln-Spcyw2791aPp1-dJCdJSc-DwY3z2xSElUpSWAeYho6duY2y6IeI_K5vcqhvPUBW0tqnw3-SyOw6SNK0bDLNi_VCls_ItAHmsOI_MK5BMuxerxr6xY7tjZVdf1w3zapite0SpRnGi1wbz6y0sd_0M5XL9d_T38CRST2n2WBvHbQLwuieKs=[Lot Identifiers,540,130]
+Identifiers follow a fixed prefix + zero-padded sequence number pattern:
 
-_Figure 2. Lot Identifiers according to eForms schema_
+[cols="1,2,2",options="header"]
+|===
+|Identifier |Pattern |Meaning
 
-Examples: `LOT-0001`, `LOT-0002`, `GLO-0001` (for groups of lots).
+|Single lot
+|`LOT-nnnn`
+|An individual lot in the procedure (e.g. `LOT-0001`, `LOT-0002`).
+
+|Group of lots
+|`GLO-nnnn`
+|A group of lots that are tendered for and awarded together (e.g. `GLO-0001`).
+
+|Whole procedure
+|`LOT-0000`
+|Used when the procedure is not divided into lots — a single, procedure-wide lot.
+|===
+
+The four-digit sequence is zero-padded (`0001`, not `1`) and numbering starts at `0001` for lots and groups. A procedure that is not split into lots still carries one lot, conventionally `LOT-0000`.
+
+These identifiers are the values carried by `cac:ProcurementProjectLotReference/cbc:ID` in both ESPD documents. Because the format is defined by eForms rather than the ESPD-EDM, the authoritative rules for allowed values live in the eForms specification; the ESPD simply consumes them.
 
 == Lots in the ESPD Response
 
