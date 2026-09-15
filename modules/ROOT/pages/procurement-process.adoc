@@ -1,4 +1,4 @@
-﻿:doctitle: The Procurement Process
+:doctitle: The Procurement Process
 :doccode: espd-tech-prod-045
 :author: ESPD Team
 :docdate: August 2026
@@ -62,6 +62,6 @@ Article 4 of Directive 2014/24/EU defines value thresholds. Procedures above the
 
 * xref:what-is-espd.adoc[What is the ESPD?]
 * xref:actors-and-roles.adoc[Actors and Roles]
-* xref:lots-management.adoc[Lots Management]
+* xref:technical:lots-management.adoc[Lots Management]
 
 include::partial$feedback.adoc[]

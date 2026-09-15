@@ -47,7 +47,7 @@ The ESPD-EDM is based on link:https://docs.oasis-open.org/ubl/os-UBL-2.4/UBL-2.4
 === Further information
 
 * xref:what-is-espd.adoc[What is the ESPD?]
-* xref:standards-specifications.adoc[Standards and Specifications]
-* xref:related-systems.adoc[Related Systems]
+* xref:technical:standards-specifications.adoc[Standards and Specifications]
+* xref:technical:related-systems.adoc[Related Systems]
 
 include::partial$feedback.adoc[]

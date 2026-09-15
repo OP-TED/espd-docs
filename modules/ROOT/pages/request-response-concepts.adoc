@@ -76,8 +76,8 @@ NOTE: Earlier versions of the ESPD-EDM distinguished separate document profiles 
 
 === Further information
 
-* For technical Request details, see xref:espd-request.adoc[ESPD Request]
-* For technical Response details, see xref:espd-response.adoc[ESPD Response]
-* For criteria linking mechanism, see xref:how-criteria-work.adoc[How Criteria Work]
+* For technical Request details, see xref:technical:espd-request.adoc[ESPD Request]
+* For technical Response details, see xref:technical:espd-response.adoc[ESPD Response]
+* For criteria linking mechanism, see xref:technical:how-criteria-work.adoc[How Criteria Work]
 
 include::partial$feedback.adoc[]

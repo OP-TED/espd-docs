@@ -11,11 +11,11 @@ The European Single Procurement Document Exchange Data Model (ESPD-EDM) provides
 
 General overview of the ESPD, its role in the procurement process, and the legal framework.
 
-* xref:technical:what-is-espd.adoc[What is the ESPD?]
-* xref:technical:procurement-process.adoc[The Procurement Process]
-* xref:technical:request-response-concepts.adoc[Request and Response Concepts]
-* xref:technical:actors-and-roles.adoc[Actors and Roles]
-* xref:technical:legal-framework.adoc[Legal Framework]
+* xref:ROOT:what-is-espd.adoc[What is the ESPD?]
+* xref:ROOT:procurement-process.adoc[The Procurement Process]
+* xref:ROOT:request-response-concepts.adoc[Request and Response Concepts]
+* xref:ROOT:actors-and-roles.adoc[Actors and Roles]
+* xref:ROOT:legal-framework.adoc[Legal Framework]
 
 === Releases
 
@@ -71,7 +71,6 @@ Detailed look-up reference for data model elements, code lists, and business rul
 
 === Further Information
 
-* xref:technical:glossary.adoc[Glossary]
 * xref:technical:standards-specifications.adoc[Standards and Specifications]
 * xref:technical:related-systems.adoc[Related Systems]
 * xref:technical:repositories-downloads.adoc[Repositories and Downloads]
