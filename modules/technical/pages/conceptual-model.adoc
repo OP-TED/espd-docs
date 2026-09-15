@@ -9,6 +9,8 @@ The ESPD Conceptual Model is the authoritative source for the ESPD-EDM data stru
 
 Starting with ESPD-EDM v5.0.0, the conceptual model follows a *Model-Driven Architecture* — all artefacts (criterion JSON, code lists, validation rules) are derived from this single source of truth.
 
+The rendered diagrams can be browsed directly: link:{attachmentsdir}/ESPD_CM_html/index.html[ESPD Conceptual Model (HTML export)^]. See <<conceptual-model-diagrams,Conceptual Model Diagrams>> below for all available views.
+
 == Core Concepts
 
 The conceptual model defines the following core entities and their relationships:
@@ -130,6 +132,15 @@ The conceptual model feeds into the https://github.com/OP-TED/espd-tools[espd-to
 . These artefacts are committed to the *ESPD-EDM* distribution package
 
 For details on the tooling pipeline, see xref:distribution-tooling.adoc[Distribution and Tooling].
+
+[[conceptual-model-diagrams]]
+== Conceptual Model Diagrams
+
+The ESPD Conceptual Model can be viewed via the following link:
+
+* ESPD-EDM Conceptual Model: link:{attachmentsdir}/ESPD_CM_html/index.html[HTML^]
+
+Alternatively, the conceptual model can be opened in its source format: the Enterprise Architect project file (`ESPD_CM.eapx`) is available in the https://github.com/OP-TED/espd-conceptual-model[espd-conceptual-model^] repository. This file requires a compatible version of Enterprise Architect to open.
 
 == Further information
 

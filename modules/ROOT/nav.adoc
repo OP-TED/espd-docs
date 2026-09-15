@@ -17,7 +17,6 @@
 * xref:ROOT:release_notes.adoc[Release Notes]
 * xref:ROOT:migration-breaking-changes.adoc[Migration and Breaking Changes]
 * xref:ROOT:previous-versions-downloads.adoc[Previous Versions and Downloads]
-* link:{attachmentsdir}/ESPD_CM_html/index.html[Conceptual Model]
 
 * [.separated]#**Business Guide**#
 * xref:business:for-buyers.adoc[For Buyers (Contracting Authorities)]
