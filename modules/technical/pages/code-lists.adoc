@@ -200,13 +200,10 @@ _TenderingCriterionResponse (the answer to the previous QUESTION)_
 [[code-list-catalogue]]
 == Code List Catalogue
 
-
-This section collects all code lists used in *ESPD-EDM* with its classification, description and meta-data.
-
 [[code-list-summary]]
-=== Quick Reference
+This section collects all code lists used in *ESPD-EDM* with their classification, description and meta-data.
 
-The table below provides a summary of all code lists used in ESPD documents and the XSD elements where they are applied. Detailed metadata for each code list follows in the sections below.
+The table below provides a *quick reference* summary of all code lists used in ESPD documents and the XSD elements where they are applied. Detailed metadata for each code list follows in the sections below.
 
 NOTE: In ESPD-EDM v5.0.0, the old _Criterion_ code list was replaced by two separate code lists: _ExclusionGround_ and _SelectionCriterion_, aligning with eForms and EU Vocabularies. For more details on changes in the code lists, consult the Release Notes.
 
@@ -756,9 +753,7 @@ The following xml code is an example of use of code list <<access-right-table,ac
 ----
 <cac:Evidence>
     <cbc:ID schemeAgencyID="OP">EVIDENCE-00001</cbc:ID>
-<!--1-->
-<!--2-->    
-    <cbc:ConfidentialityLevelCode listID="http://publications.europa.eu/resource/authority/access-right" listAgencyID="OP" listVersionID="20220316-0">CONFIDENTIAL</cbc:ConfidentialityLevelCode>
+    <cbc:ConfidentialityLevelCode listID="http://publications.europa.eu/resource/authority/access-right" listAgencyID="OP" listVersionID="20220316-0">CONFIDENTIAL</cbc:ConfidentialityLevelCode> <1> <2>
     <cac:DocumentReference>
         <cbc:ID schemeAgencyID="OP">SAT-11121233</cbc:ID>
         <cac:Attachment>

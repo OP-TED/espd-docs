@@ -1,12 +1,8 @@
 :doctitle: Release Notes
 :doccode: espd-v5.0.x-prod-003
-:author: NPJ
-:authoremail: nicole-anne.paterson-jones@ext.ec.europa.eu
-:docdate: January 2024
-
-
+:author: ESPD Team
+:docdate: August 2026
 :sectnums:
-= Release Notes
 
 == v5.0.0 (July 2026) 
 
@@ -14,7 +10,7 @@ The release v5.0.0 and its corresponding technical files can be found in https:/
 
 This release aligns with ePO model and with eForms from criterion code lists.
 
-The data model is migrated from Excel to JSON allowing seamless integration development tools for ESPD Service implementors.
+The data model is migrated from Excel to JSON, allowing seamless integration of development tools for ESPD Service implementors.
 
 Main new features:
 
