@@ -5,8 +5,8 @@
 
 // Split from: tech_common_aspects_for_criteria.adoc (lines ~45-200 tables + lines ~450-867)
 // Target section: Model Reference
-// Content: XSD schemas, element reference tables, data structure mapping,
-//          criterion vocabulary definitions, short tag names,
+// Content: XSD schemas, element reference tables,
+//          data structure vocabulary (UBL-2.4 mapping + short tags),
 //          criteria taxonomy (ExclusionGround / SelectionCriterion, EU Vocabularies)
 
 == Criterion Elements Reference
@@ -292,51 +292,30 @@ a|
 
 == Data Structure Vocabulary
 
-The ESPD-EDM data structure vocabulary maps to UBL-2.4 elements as follows:
+The ESPD-EDM data structure vocabulary maps each criterion element to its UBL-2.4 element and to a *short tag* — an abbreviation built from the capital letters of the element's full name. The short tags are the building blocks of the XML Path-like identifiers that link an ESPD Response back to its ESPD Request (for example `C1_EG_crime-org/QG1/QSG1/Q1`; see xref:how-criteria-work.adoc[How Criteria Work]).
 
-[cols="1,3",options="header"]
+[cols="2,3,1",options="header"]
 |===
-|ESPD-EDM Vocabulary |UBL-2.4 Element
-
-|CRITERION |`cac:TenderingCriterion`
-|SUBCRITERION |`cac:SubTenderingCriterion`
-|REQUIREMENT_GROUP |`cac:TenderingCriterionPropertyGroup`
-|QUESTION_GROUP |`cac:TenderingCriterionPropertyGroup`
-|REQUIREMENT_SUBGROUP |`cac:SubsidiaryTenderingCriterionPropertyGroup`
-|QUESTION_SUBGROUP |`cac:SubsidiaryTenderingCriterionPropertyGroup`
-|CAPTION |`cac:TenderingCriterionProperty` (TypeCode=CAPTION)
-|REQUIREMENT |`cac:TenderingCriterionProperty` (TypeCode=REQUIREMENT)
-|QUESTION |`cac:TenderingCriterionProperty` (TypeCode=QUESTION)
-|ADDITIONAL_DESCRIPTION_LINE |`cbc:Description` (in `cac:TenderingCriterion`)
-|LEGISLATION |`cac:Legislation`
-|===
-
-The vocabulary is defined in the code list link:{url-tree}/codelists/CriterionElementType.gc[CriterionElementType].
-
-== Short Tag Name Reference
-
-Each criterion structural element has a short tag name — an abbreviation built from the capital letters of its full name. Short tags are used as building blocks of the XML Path-like identifiers that link an ESPD Response back to its ESPD Request (see xref:how-criteria-work.adoc[How Criteria Work]).
-
-[cols="3,3,1",options="header"]
-|===
-|ESPD-EDM Criterion Element |UBL-2.4 Element |Short Tag
+|ESPD-EDM Vocabulary |UBL-2.4 Element |Short Tag
 
 |CRITERION |`cac:TenderingCriterion` |`C`
-|ADDITIONAL_DESCRIPTION_LINE |`cbc:Description` |`ADL`
 |SUBCRITERION |`cac:SubTenderingCriterion` |`SBC`
+|ADDITIONAL_DESCRIPTION_LINE |`cbc:Description` (in `cac:TenderingCriterion`) |`ADL`
 |LEGISLATION |`cac:Legislation` |`L`
 |REQUIREMENT_GROUP |`cac:TenderingCriterionPropertyGroup` |`RG`
 |QUESTION_GROUP |`cac:TenderingCriterionPropertyGroup` |`QG`
 |REQUIREMENT_SUBGROUP |`cac:SubsidiaryTenderingCriterionPropertyGroup` |`RSG`
 |QUESTION_SUBGROUP |`cac:SubsidiaryTenderingCriterionPropertyGroup` |`QSG`
-|CAPTION |`cac:TenderingCriterionProperty` |`CA`
-|REQUIREMENT |`cac:TenderingCriterionProperty` |`RQ`
-|QUESTION |`cac:TenderingCriterionProperty` |`Q`
+|CAPTION |`cac:TenderingCriterionProperty` (TypeCode=CAPTION) |`CA`
+|REQUIREMENT |`cac:TenderingCriterionProperty` (TypeCode=REQUIREMENT) |`RQ`
+|QUESTION |`cac:TenderingCriterionProperty` (TypeCode=QUESTION) |`Q`
 |RESPONSE (occurrence) |`cac:TenderingCriterionResponse` |`R`
 |RESPONSE VALUE |`cac:ResponseValue` |`RV`
 |(RESPONSE) EVIDENCE SUPPLIED |`cac:EvidenceSupplied` |`RES`
 |(RESPONSE) APPLICABLE PERIOD |`cac:ApplicablePeriod` |`RAP`
 |===
+
+The vocabulary (the `TypeCode` values used for properties) is defined in the code list link:{url-tree}/codelists/CriterionElementType.gc[CriterionElementType].
 
 == Criteria Catalogue
 
