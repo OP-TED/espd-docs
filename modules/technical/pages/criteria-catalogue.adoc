@@ -6,7 +6,8 @@
 // Split from: tech_common_aspects_for_criteria.adoc (lines ~45-200 tables + lines ~450-867)
 // Target section: Model Reference
 // Content: XSD schemas, element reference tables, data structure mapping,
-//          criterion vocabulary definitions
+//          criterion vocabulary definitions, short tag names,
+//          criteria taxonomy (ExclusionGround / SelectionCriterion, EU Vocabularies)
 
 == Criterion Elements Reference
 
@@ -311,6 +312,71 @@ The ESPD-EDM data structure vocabulary maps to UBL-2.4 elements as follows:
 |===
 
 The vocabulary is defined in the code list link:{url-tree}/codelists/CriterionElementType.gc[CriterionElementType].
+
+== Short Tag Name Reference
+
+Each criterion structural element has a short tag name — an abbreviation built from the capital letters of its full name. Short tags are used as building blocks of the XML Path-like identifiers that link an ESPD Response back to its ESPD Request (see xref:how-criteria-work.adoc[How Criteria Work]).
+
+[cols="3,3,1",options="header"]
+|===
+|ESPD-EDM Criterion Element |UBL-2.4 Element |Short Tag
+
+|CRITERION |`cac:TenderingCriterion` |`C`
+|ADDITIONAL_DESCRIPTION_LINE |`cbc:Description` |`ADL`
+|SUBCRITERION |`cac:SubTenderingCriterion` |`SBC`
+|LEGISLATION |`cac:Legislation` |`L`
+|REQUIREMENT_GROUP |`cac:TenderingCriterionPropertyGroup` |`RG`
+|QUESTION_GROUP |`cac:TenderingCriterionPropertyGroup` |`QG`
+|REQUIREMENT_SUBGROUP |`cac:SubsidiaryTenderingCriterionPropertyGroup` |`RSG`
+|QUESTION_SUBGROUP |`cac:SubsidiaryTenderingCriterionPropertyGroup` |`QSG`
+|CAPTION |`cac:TenderingCriterionProperty` |`CA`
+|REQUIREMENT |`cac:TenderingCriterionProperty` |`RQ`
+|QUESTION |`cac:TenderingCriterionProperty` |`Q`
+|RESPONSE (occurrence) |`cac:TenderingCriterionResponse` |`R`
+|RESPONSE VALUE |`cac:ResponseValue` |`RV`
+|(RESPONSE) EVIDENCE SUPPLIED |`cac:EvidenceSupplied` |`RES`
+|(RESPONSE) APPLICABLE PERIOD |`cac:ApplicablePeriod` |`RAP`
+|===
+
+== Criteria Catalogue
+
+An ESPD criterion is identified by the code carried in `cac:TenderingCriterion/cbc:CriterionTypeCode`. In ESPD-EDM v5.0.0 these codes are drawn from two EU Vocabularies code lists, replacing the deprecated single _Criterion_ list:
+
+* link:{url-tree}/codelists/gc/ExclusionGround.gc[ExclusionGround] — exclusion grounds (Part III), derived from Directive 2014/24/EU Article 57;
+* link:{url-tree}/codelists/gc/SelectionCriterion.gc[SelectionCriterion] — selection criteria (Part IV), derived from Directive 2014/24/EU Articles 58-64.
+
+Both code lists are maintained by the Publications Office (EU Vocabularies) so that the ESPD, eForms and TED stay aligned. The authoritative code values, English names, multilingual labels and definitions live in EU Vocabularies; this page does not reproduce them, because they evolve with the EU Vocabularies release cycle rather than with the ESPD-EDM. For the metadata (list identifiers, versions and locations) see xref:code-lists.adoc[Code Lists]; for the full value tables consult the genericode files linked above.
+
+=== Taxonomy
+
+The criterion codes are organised as a two-level taxonomy: each leaf criterion sits under a broader category concept.
+
+.ExclusionGround categories
+[cols="1,3",options="header"]
+|===
+|Category concept |Scope
+
+|`exg-crim` |Criminal convictions (participation in a criminal organisation, corruption, fraud, terrorist offences, money laundering, human trafficking)
+|`exg-pmt` |Breach of obligations relating to the payment of taxes or social security contributions
+|`exg-mis` |Environmental, social and labour law breaches, competition-distorting agreements, conflicts of interest, professional misconduct, misrepresentation and comparable situations
+|`exg-sitn` |Insolvency and business-situation grounds (bankruptcy, insolvency, arrangement with creditors, administration by a liquidator, suspension of activities)
+|`exg-natl` |Purely national exclusion grounds
+|===
+
+.SelectionCriterion categories
+[cols="1,3",options="header"]
+|===
+|Category concept |Scope
+
+|`sui-act` (`slc-suit`) |Suitability to pursue the professional activity (enrolment in professional or trade registers, authorisations, memberships)
+|`ef-stand` (`slc-stand`) |Economic and financial standing (turnover figures, financial ratios, professional risk indemnity insurance, other requirements)
+|`tp-abil` (`slc-abil`) |Technical and professional ability (references, technical staff and facilities, qualifications, environmental management, tools and equipment, quality/environmental certificates)
+|`slc-sec` / `slc-sche` |Reduction of the number of qualified candidates and related scheme information
+|===
+
+NOTE: The category concepts and their leaf codes are the authoritative source of the taxonomy. The exact code strings (for example the `exg-crim-*` leaves under `exg-crim`) and their labels are published and versioned in EU Vocabularies — always resolve them against the linked genericode files rather than transcribing them here.
+
+For the structure behind each criterion (its property groups, requirements and questions), see xref:criterion-data-model-json.adoc[Criterion Data Model (JSON)], which documents the canonical `espd-edm.json` source. For the response patterns, see xref:exclusion-grounds.adoc[Exclusion Grounds] and xref:selection-criteria.adoc[Selection Criteria].
 
 == Criterion Data Source
 
