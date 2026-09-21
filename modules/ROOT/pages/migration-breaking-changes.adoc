@@ -49,10 +49,9 @@ This page provides guidance for migrating ESPD Service implementations from ESPD
 
 === Backwards compatibility
 
-* UBL 2.4 is backwards compatible with UBL 2.3 at the schema level
+* UBL 2.4 is largely additive over UBL 2.3; the elements used by the ESPD-EDM remain available
 * The ESPD Response still copies all criteria from the Request
 * The property group structure (ONTRUE/ONFALSE logic) is unchanged
-* BR rule IDs are preserved (same IDs, some extended)
 
 === New features requiring implementation updates
 
@@ -105,7 +104,7 @@ Use this checklist to verify your migration is complete:
 
 * [ ] XSD schemas updated to UBL 2.4 (`schemas/maindoc/`)
 * [ ] `cbc:UBLVersionID` set to `"2.4"` in generated documents
-* [ ] `cbc:CustomizationID` updated to reference ESPD-EDM v5.0.0
+* [ ] Version identifier in the document root updated to reference ESPD-EDM v5.0.0
 * [ ] All `listVersionID` attributes updated to `"5.0.0"` for ESPD-managed code lists
 * [ ] Criterion data sourced from `espd-edm.json` (not Excel)
 * [ ] Code list references split: `ExclusionGround` + `SelectionCriterion` (not single `Criterion` list)

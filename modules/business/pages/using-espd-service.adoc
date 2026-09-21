@@ -29,7 +29,7 @@ For detailed guidance on what to fill in, see xref:for-buyers.adoc[For Buyers (C
 === For offering parties (Economic Operators)
 
 [arabic]
-. Find the procurement procedure you wish to participate in (the ESPD Request is published alongside the Contract Notice).
+. Find the procurement procedure you wish to participate in (if published, the ESPD Request is available alongside the Contract Notice; otherwise the criteria are in the procurement documents).
 . Access the ESPD Service platform indicated by the buyer.
 . Fill in the ESPD Response, answering the exclusion grounds and selection criteria defined by the buyer.
 . Provide references to evidence supporting your responses.

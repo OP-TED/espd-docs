@@ -9,9 +9,9 @@ The European Single Procurement Document (ESPD) is a self-declaration by an econ
 
 The diagram below shows where the ESPD fits within the public procurement lifecycle: the buyer prepares the *ESPD Request* to enable access to the competition, and the economic operator submits its *ESPD* (carried by the *ESPD Response*) with the tender. Both are used by the buyer at the qualification/evaluation stage.
 
-image::https://kroki.io/blockdiag/svg/eJytlN9v0zAQx9_7V1jlBaTRJf2xaapAmkom8UTVPfBA0eQkt8YiuTO2026g_e87J23mboAUtD6k9tfnj-27r52WlP3IldyI3wMhcriVdelubCE1iA8ipbt5IN8SOqt--ZE49gNIOdzsVO4KL42jTitAbQrH4nTqNasldnGTqJOewmbzAYunp2JpKKsNVIBO6EJasKwvY_GtlCmUHDpclhJR4WZ4IjIqyXjtTRRNJhcXLDm4c528K5SD4Xe_3nIcIBZUaXDKKcI1XmYZWNuTNglo13VaKWsZ1hMyDSDJVpa1dP0hswByuZMm7zn_7Cgv6IzMXE9ETs4GlNFoxNEHDw3ZXRWh39bBAePoRHSl950-i50_q2MJfZPWGu0zbpVVaQnCUO3YT41zecx3IVgkPAsSQnCQODhH_AdypXJNip28R3P_v8F8B95_ZBvvzczt_UZz5Y_nAU2CWtWHTvZO9e3p3nDcbjbxbJLXfNis-Z4136aqvnF-OFhyvfzk34TmTq4E_wL_-rEV_KzBujW-Te9FWt-DeXdUmMUiia6u2kKuwOqX860mtNACkoyQKpWt8YsGIx39g5Zsj3bzVSGCEdrQVuVg1wj-HzP4C4AJG06cbl5BIcgofn-a28iBmgzfCuXmzdiL6a28eqrOwyvQfHK6Gr4CkPPTlr7lPQweAZ6-ufE[The ESPD in the public procurement process,width=900,height=260]
+image::https://kroki.io/blockdiag/svg/eJytlE1v2zAMhu_5FUJ26bAudb5aFMEGFFkK7LIF6WGHeShkm4mF2aQmyUnXof99lJ24SrsePDQHR3pFPRLFV0oKSn9mSm7En54QGaxlVbhbm0sN4oNI6G4WyGtCZ9W9HxkO_QBSBrc7lbncS6Oo1XJQm9yxOJl4zWqJbdw4aqXHsOmsx-LZmVgaSisDJaATOpcWLOvLofheyAQKDu0vC4mocNM_FSkVZLz2JorG48tLlhzcuVbe5cpB_4dfbzkKEHMqNTjlFGGMV2kK1nakjQPaTZWUylqGdYRMAshiK4tKuu6QaQC52kmTdZx_fnQu6IxMXUdERs4GlMFgwNEHD_XZXSWh39bBAaPoVLSl950ui108qWMBXQ-tMdpn3CqrkgKEocqxn2rn8pjvQrBImAsSQpDIMMhj-A9yqTJNip28R3P_v8F8B95_ZBvvzczt_UYz5dPzgPqAGtWHjvdO9e3J3nDcrjfxZJLXfNi0_p7X37qqvnFxSGxxs_zk34T6Tq4E_55bR3whp1KI8V0TvoJfFVgX44laC10lhbI5ZG-P6jWfL6Lr66a-K7A6vBYNw2pCy9CT5LdYpIRUqjTGrxqMdGRepi22R5v8phDBCG1oqzKwMYL_xxReADBhw-ep68dRCDKKn6X6knKgJsMZKzerx55Nb-TVY9EeXoHmD6ct7SsA-XwaRzS8h95fu7vCUw[The ESPD in the public procurement process,width=900,height=260]
 
-//[Edit this diagram](https://niolesk.top/#https://kroki.io/blockdiag/svg/eJytlN9v0zAQx9_7V1jlBaTRJf2xaapAmkom8UTVPfBA0eQkt8YiuTO2026g_e87J23mboAUtD6k9tfnj-27r52WlP3IldyI3wMhcriVdelubCE1iA8ipbt5IN8SOqt--ZE49gNIOdzsVO4KL42jTitAbQrH4nTqNasldnGTqJOewmbzAYunp2JpKKsNVIBO6EJasKwvY_GtlCmUHDpclhJR4WZ4IjIqyXjtTRRNJhcXLDm4c528K5SD4Xe_3nIcIBZUaXDKKcI1XmYZWNuTNglo13VaKWsZ1hMyDSDJVpa1dP0hswByuZMm7zn_7Cgv6IzMXE9ETs4GlNFoxNEHDw3ZXRWh39bBAePoRHSl950-i50_q2MJfZPWGu0zbpVVaQnCUO3YT41zecx3IVgkPAsSQnCQODhH_AdypXJNip28R3P_v8F8B95_ZBvvzczt_UZz5Y_nAU2CWtWHTvZO9e3p3nDcbjbxbJLXfNis-Z4136aqvnF-OFhyvfzk34TmTq4E_wL_-rEV_KzBujW-Te9FWt-DeXdUmMUiia6u2kKuwOqX860mtNACkoyQKpWt8YsGIx39g5Zsj3bzVSGCEdrQVuVg1wj-HzP4C4AJG06cbl5BIcgofn-a28iBmgzfCuXmzdiL6a28eqrOwyvQfHK6Gr4CkPPTlr7lPQweAZ6-ufE)
+//[Edit this diagram](https://niolesk.top/#https://kroki.io/blockdiag/svg/eJytlE1v2zAMhu_5FUJ26bAudb5aFMEGFFkK7LIF6WGHeShkm4mF2aQmyUnXof99lJ24SrsePDQHR3pFPRLFV0oKSn9mSm7En54QGaxlVbhbm0sN4oNI6G4WyGtCZ9W9HxkO_QBSBrc7lbncS6Oo1XJQm9yxOJl4zWqJbdw4aqXHsOmsx-LZmVgaSisDJaATOpcWLOvLofheyAQKDu0vC4mocNM_FSkVZLz2JorG48tLlhzcuVbe5cpB_4dfbzkKEHMqNTjlFGGMV2kK1nakjQPaTZWUylqGdYRMAshiK4tKuu6QaQC52kmTdZx_fnQu6IxMXUdERs4GlMFgwNEHD_XZXSWh39bBAaPoVLSl950ui108qWMBXQ-tMdpn3CqrkgKEocqxn2rn8pjvQrBImAsSQpDIMMhj-A9yqTJNip28R3P_v8F8B95_ZBvvzczt_UYz5dPzgPqAGtWHjvdO9e3J3nDcrjfxZJLXfNi0_p7X37qqvnFxSGxxs_zk34T6Tq4E_55bR3whp1KI8V0TvoJfFVgX44laC10lhbI5ZG-P6jWfL6Lr66a-K7A6vBYNw2pCy9CT5LdYpIRUqjTGrxqMdGRepi22R5v8phDBCG1oqzKwMYL_xxReADBhw-ep68dRCDKKn6X6knKgJsMZKzerx55Nb-TVY9EeXoHmD6ct7SsA-XwaRzS8h95fu7vCUw)
 _The ESPD in the public procurement process_
 
 The following diagram illustrates the overall ESPD process, including how economic operators participate across lots:
@@ -39,6 +39,11 @@ The *ESPD-EDM* (the technical exchange model) defines two electronic (XML) docum
 * *ESPD Response* — prepared by the economic operator (offering party). It carries the actual ESPD self-declaration: the answers to each exclusion ground and selection criterion, together with references to the evidence.
 
 TIP: Strictly, "the ESPD" is the economic operator's self-declaration (the Response). "ESPD Request" and "ESPD Response" are the two documents defined by the ESPD-EDM to exchange the qualification data electronically. The ESPD-EDM guide sometimes refers to both loosely as "ESPD documents".
+
+[NOTE]
+====
+The Contract Notice is published on TED, and the *ESPD Request* may be published alongside it. If no ESPD Request is published, the exclusion grounds and selection criteria are stated only in the procurement documents (specifications), and the economic operator prepares its ESPD Response based on those.
+====
 
 === Role in pre-qualification
 

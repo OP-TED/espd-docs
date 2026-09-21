@@ -11,7 +11,7 @@ NOTE: Strictly, "the ESPD" is the economic operator's self-declaration — the d
 
 === ESPD Request
 
-The ESPD Request is created by the *buyer* and defines:
+The ESPD Request is created by the *buyer*. It is the buyer's specification of what the economic operator must declare — not, in itself, an ESPD — and it enables the economic operator to produce its ESPD (the Response). It defines:
 
 * The exclusion grounds applicable to the procedure (mandatory + discretionary)
 * The selection criteria the economic operator must meet
@@ -23,7 +23,7 @@ The Request uses the UBL 2.4 document type `QualificationApplicationRequest`.
 
 === ESPD Response
 
-The ESPD Response is created by the *economic operator* and provides:
+The ESPD Response is created by the *economic operator*. It carries the actual ESPD — the economic operator's self-declaration — in response to the buyer's Request. It provides:
 
 * Self-declarations answering each exclusion ground and selection criterion
 * Response values matching the data types specified in the Request
@@ -43,9 +43,9 @@ The Response uses the UBL 2.4 document type `QualificationApplicationResponse`.
 === Data flow
 
 ```
-Buyer → ESPD Request → published with Contract Notice
+Buyer → publishes Contract Notice on TED
                               ↓
-Economic Operator → retrieves Request
+Economic Operator → retrieves the ESPD Request (if published)
                               ↓
 Economic Operator → creates ESPD Response
                               ↓
@@ -54,6 +54,8 @@ Economic Operator → creates ESPD Response
                               ↓
 Buyer → evaluates Responses → selects candidates
 ```
+
+NOTE: If no ESPD Request is published, the exclusion grounds and selection criteria are stated only in the procurement documents (specifications), and the economic operator prepares its ESPD Response based on those. See xref:what-is-espd.adoc[What is the ESPD?].
 
 NOTE: In open procedures the ESPD Response is submitted together with the tender. In multi-stage procedures (restricted, competitive procedure with negotiation, competitive dialogue, innovation partnership) it is submitted with the request to participate — before any tender exists.
 

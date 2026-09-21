@@ -47,8 +47,8 @@ _Step 4: The Buyer and the EO interact to conclude the procurement procedure._
 === Qualification workflow
 
 [arabic]
-. Buyer publishes Contract Notice on TED + ESPD Request
-. Economic Operator retrieves the ESPD Request
+. Buyer publishes the Contract Notice on TED, and may publish an ESPD Request alongside it
+. Economic Operator retrieves the ESPD Request (if published; otherwise the criteria are in the procurement documents)
 . Economic Operator fills in the ESPD Response (self-declarations + evidence references)
 . Economic Operator submits ESPD Response as part of the tender
 . Buyer evaluates ESPD Responses during qualification

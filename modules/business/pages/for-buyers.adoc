@@ -9,9 +9,12 @@ Buyers (Contracting Authorities) use the ESPD Request to define the exclusion gr
 
 The ESPD process from the buyer perspective:
 
-image::espd_bus_buyer.png[]
+image::https://kroki.io/blockdiag/svg/eJydk01P4zAQhu_9FVb3wmqhSpsUhKJFglLO0XLcIuQk02aEO87aE4oW8d_XTpZgPnpIL6Pk9cwzzsybXOnioUS5Ec8jIUpYy0bxva1kDeKnyPVTGshrTWzxrz-ZTv0B6RLud1hy5aVZ1GsV4KZiJyaJ12wtqc-Lo156S5unIydmU_FbyRyUk8aZkkRIm_GxKLTSxmvfoiiOz8-dxPDEvbyrkGF857nZLEAs9LYGRkZNK7osCrB2IC0OaLdNvkVrHWwgJAkgy0epGsnDIfMAcrmTphxYf_puLsRGFjwQUWq2AWUymbjsV6-MnYu2mvy1Xjc9i45Fv2L_MqTZ2Yc9Khg6tM5QJxfeEz7GbUzaOG_jaRvbz_IPZ03NVWjCa1gjwYoK46AG5bv-i8Uyurnp7nsV-i5rcoW2cv8CY-Gqf4jlbXYtfsGfBiyv6AjXou5yoPy-n_mFcRzNgK01WbD7C0Oz_O8q4BFLIH-dox0SgdnX2AE2Rje1eBbaIBC3dnVJtTbONsjp57LUj83PcJqKlwMB3ZZmhwO61SaHAzpXzD3gZfQPFW6Anw[The ESPD process from the buyer perspective,width=900,height=300]
+//image::espd_bus_buyer.png[]
+//[Edit this diagram](https://niolesk.top/#https://kroki.io/blockdiag/svg/eJydk01P4zAQhu_9FVb3wmqhSpsUhKJFglLO0XLcIuQk02aEO87aE4oW8d_XTpZgPnpIL6Pk9cwzzsybXOnioUS5Ec8jIUpYy0bxva1kDeKnyPVTGshrTWzxrz-ZTv0B6RLud1hy5aVZ1GsV4KZiJyaJ12wtqc-Lo156S5unIydmU_FbyRyUk8aZkkRIm_GxKLTSxmvfoiiOz8-dxPDEvbyrkGF857nZLEAs9LYGRkZNK7osCrB2IC0OaLdNvkVrHWwgJAkgy0epGsnDIfMAcrmTphxYf_puLsRGFjwQUWq2AWUymbjsV6-MnYu2mvy1Xjc9i45Fv2L_MqTZ2Yc9Khg6tM5QJxfeEz7GbUzaOG_jaRvbz_IPZ03NVWjCa1gjwYoK46AG5bv-i8Uyurnp7nsV-i5rcoW2cv8CY-Gqf4jlbXYtfsGfBiyv6AjXou5yoPy-n_mFcRzNgK01WbD7C0Oz_O8q4BFLIH-dox0SgdnX2AE2Rje1eBbaIBC3dnVJtTbONsjp57LUj83PcJqKlwMB3ZZmhwO61SaHAzpXzD3gZfQPFW6Anw)
+_The ESPD process from the buyer perspective_
 
-The buyer prepares the ESPD Request as part of the procurement procedure documentation. The ESPD Request is published alongside the Contract Notice and is linked to it via the notice publication reference number.
+The buyer prepares the ESPD Request as part of the procurement procedure documentation. When published, the ESPD Request is made available alongside the Contract Notice and is linked to it via the notice publication reference number. If it is not published, the exclusion grounds and selection criteria are stated in the procurement documents (specifications) instead.
 
 === Key responsibilities
 
@@ -21,13 +24,13 @@ As a buyer you are responsible for:
 * Selecting the applicable selection criteria (suitability, economic and financial standing, technical and professional ability, quality assurance);
 * Specifying any requirements or thresholds for selection criteria (e.g. minimum turnover, number of years of experience);
 * Associating selection criteria with the relevant lots (exclusion grounds apply to all lots automatically);
-* Publishing the ESPD Request together with the Contract Notice.
+* Making the exclusion grounds and selection criteria available to economic operators — by publishing the ESPD Request together with the Contract Notice, or by stating them in the procurement documents (specifications).
 
 === What the buyer fills in
 
 ==== Part 1: Procedure information
 
-The buyer provides information about the publication (Contract Notice reference), the identity of the procurer, and the procurement procedure.
+The buyer provides information about the publication (Contract Notice reference), the identity of the buyer, and the procurement procedure.
 
 image::form/of2.png[]
 
@@ -35,11 +38,13 @@ _Information about publication_
 
 image::form/of3.png[]
 
-_Identity of the procurer_
+_Identity of the buyer_
 
 image::form/of4.png[]
 
 _Information about the procurement procedure_
+
+NOTE: Part 2 (Economic Operator information) is completed by the economic operator in the ESPD Response, not by the buyer. That is why it does not appear among the parts the buyer fills in.
 
 ==== Part 3: Exclusion grounds
 
