@@ -5,7 +5,9 @@
 
 == Request and Response Concepts
 
-The ESPD data exchange is based on two complementary XML documents that together form the qualification dialogue between buyer and offering party.
+The ESPD data exchange is based on two complementary XML documents that together form the qualification dialogue between buyer and economic operator: the *ESPD Request* and the *ESPD Response*.
+
+NOTE: Strictly, "the ESPD" is the economic operator's self-declaration — the document the economic operator submits — which in ESPD-EDM terms is carried by the *ESPD Response*. The *ESPD Request* is the buyer's specification of the exclusion grounds and selection criteria; it is not, in itself, an ESPD. See xref:what-is-espd.adoc[What is the ESPD?] for the full definition. On this page, "ESPD documents" refers loosely to both, as they are commonly handled together.
 
 === ESPD Request
 

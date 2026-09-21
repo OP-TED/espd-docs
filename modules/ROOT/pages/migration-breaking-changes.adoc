@@ -14,31 +14,25 @@ This page provides guidance for migrating ESPD Service implementations from ESPD
 |Area |Change
 
 |UBL version
-|Upgraded from UBL 2.3 to *UBL 2.4*. Schema folder renamed from `ubl-2.3/` to `schemas/`.
+|Upgraded from UBL 2.3 to *UBL 2.4*. `cbc:UBLVersionID` must be `"2.4"` (was `"2.3"`).
 
-|Criterion code lists
-|The single `Criterion` code list is *replaced* by two separate lists: `ExclusionGround` and `SelectionCriterion` (from EU Vocabularies).
+|Repository structure
+|`ubl-2.3/` and `conceptual-model/` folders removed. UBL 2.4 schema now in `schemas/`. Added `codelists.json` metadata file. The conceptual model moved to the separate https://github.com/OP-TED/espd-conceptual-model[espd-conceptual-model] repository.
 
 |Criterion data format
 |Excel-based `ESPD-criterion.xlsx` is *deprecated*. The canonical source is now `espd-edm.json` (JSON format).
 
+|Criterion code lists
+|The single `Criterion` code list is *replaced* by two separate lists: `ExclusionGround` and `SelectionCriterion` (from EU Vocabularies).
+
 |Code list versions
-|All ESPD-managed code lists updated from version `4.0.0` to `5.0.0`. EU Vocabularies code lists updated to latest published versions.
+|All ESPD-managed code lists updated from version `4.0.0` to `5.0.0`. EU Vocabularies code lists updated to their latest published versions.
+
+|Criteria content (e-Certis)
+|Criterion UUIDs harmonised with e-Certis (some UUIDs changed). Criteria C27 (authorisation) and C28 (membership) deprecated and replaced by C66 (`slc-suit-auth-mbrshp`); new criterion C67 (`exg-mis-unrel-sec`) added.
 
 |Schematron validation
-|`listVersionID` validation now checks for prefix `5.` (was `3.` or `4.`). Rule `BR-OTH-01-40` enforces this.
-
-|UBLVersionID value
-|Must be `"2.4"` (was `"2.3"`). Rule `BR-OTH-05-01` enforces this.
-
-|Repository structure
-|`conceptual-model/` and `ubl-2.3/` folders removed. UBL 2.4 schema in `schemas/`. Added `codelists.json` metadata file.
-
-|e-Certis harmonisation
-|Criterion UUIDs harmonised with e-Certis. Some UUIDs changed. Deprecated criteria: C27 (authorisation) and C28 (membership) replaced by C66 (`slc-suit-auth-mbrshp`).
-
-|New criteria
-|Added EG C67 (`exg-mis-unrel-sec`) and SC C66 (`slc-suit-auth-mbrshp`).
+|Validation rules updated for v5.0.0: `listVersionID` for ESPD-managed code lists must use the `5.` prefix, and `cbc:UBLVersionID` must be `"2.4"`.
 
 |===
 
