@@ -16,7 +16,7 @@ The entity that initiates the procurement procedure and publishes the ESPD Reque
 * Defines exclusion grounds and selection criteria
 * Publishes the ESPD Request with the Contract Notice
 * Evaluates ESPD Responses
-* Requests full evidence from the winning tenderer
+* Requests full evidence from the winning tenderer (and may request supporting documents from any tenderer or candidate at any moment during the procedure)
 
 === Economic Operator (Offering Party)
 

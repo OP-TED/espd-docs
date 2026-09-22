@@ -33,7 +33,7 @@ This page summarises the EU legislation that forms the legal basis for the ESPD.
 * Discretionary exclusion grounds (Art. 57(4)) can be selected/deselected
 * Selection criteria must be linked to specific lots
 * Each economic operator must submit its own ESPD
-* Only the winning tenderer provides full evidence before award
+* The winning tenderer must provide full evidence before award; in addition, the buyer may request supporting documents from any tenderer or candidate at any moment during the procedure (Article 59(4))
 * The ESPD must reference the Contract Notice published on TED (above threshold)
 
 === e-Certis
