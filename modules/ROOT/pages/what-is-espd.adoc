@@ -47,7 +47,7 @@ The *ESPD-EDM* (the technical exchange model) defines two electronic (XML) docum
 
 === Role in pre-qualification
 
-The ESPD replaces the need for economic operators to produce large volumes of physical certificates and documentation at the tendering stage. Instead, operators provide self-declarations via the ESPD, and only the winning tenderer is required to supply full documentary evidence before contract award.
+The ESPD replaces the need for economic operators to produce large volumes of physical certificates and documentation at the tendering stage. Instead, operators provide self-declarations via the ESPD, and the winning tenderer supplies full documentary evidence before contract award. The buyer may also request supporting documents from any tenderer or candidate at any moment during the procedure (Article 59(4) of Directive 2014/24/EU).
 
 === Key benefits
 
