@@ -26,6 +26,6 @@ The reference implementation is being developed in the https://github.com/OP-TED
 === Further information
 
 * For guidance on using an ESPD Service, see xref:using-espd-service.adoc[Using the ESPD Service].
-* For the technical data model documentation, see the xref:technical:index.adoc[Technical Implementation] section.
+* For the technical data model documentation, see xref:technical:getting-started.adoc[Getting Started].
 
 include::partial$feedback.adoc[]

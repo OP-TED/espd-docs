@@ -43,7 +43,7 @@ NOTE: Different EO parties might have different roles in different lots, hence t
 The *ESPD-EDM* (the technical exchange model) defines two electronic (XML) documents used to exchange this information:
 
 * *ESPD Request* — prepared by the buyer (Contracting Authority). It expresses the exclusion grounds and selection criteria for the procurement. It enables the economic operator to produce its ESPD, but is not itself the ESPD.
-* *ESPD Response* — prepared by the economic operator (offering party). It carries the actual ESPD self-declaration: the answers to each exclusion ground and selection criterion, together with references to the evidence.
+* *ESPD Response* — prepared by the economic operator. It carries the actual ESPD self-declaration: the answers to each exclusion ground and selection criterion, together with references to the evidence.
 
 === Role in pre-qualification
 

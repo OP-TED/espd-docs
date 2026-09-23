@@ -18,7 +18,7 @@ The entity that initiates the procurement procedure and publishes the ESPD Reque
 * Evaluates ESPD Responses
 * Requests full evidence from the winning tenderer (and may request supporting documents from any tenderer or candidate at any moment during the procedure)
 
-=== Economic Operator (Offering Party)
+=== Economic Operator
 
 Any natural or legal person or public entity that offers the execution of works, supply of products, or provision of services on the market. Each economic operator participating in a tender must provide its own ESPD Response.
 

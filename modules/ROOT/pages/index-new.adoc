@@ -28,7 +28,7 @@ Release notes, migration guidance, and links to previous versions.
 
 === Business Guide
 
-Guidance for buyers and offering parties on using the ESPD in public procurement procedures.
+Guidance for buyers and economic operators on using the ESPD in public procurement procedures.
 
 * xref:business:for-buyers.adoc[For Buyers (Contracting Authorities)]
 * xref:business:for-economic-operators.adoc[For Economic Operators]
