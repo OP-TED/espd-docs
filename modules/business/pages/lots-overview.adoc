@@ -31,7 +31,7 @@ When preparing the ESPD Request:
 * *Exclusion grounds* are defined once and apply to all lots — no lot-specific configuration is needed.
 * *Selection criteria* are linked to specific lots. Different lots may require different qualification criteria. For example, Lot 1 might require a minimum annual turnover while Lot 2 requires specific technical certifications.
 
-==== For offering parties
+==== For economic operators
 
 When completing the ESPD Response:
 

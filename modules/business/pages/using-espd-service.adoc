@@ -26,7 +26,7 @@ NOTE: Currently, the European Commission does not maintain a centralised ESPD Se
 
 For detailed guidance on what to fill in, see xref:for-buyers.adoc[For Buyers (Contracting Authorities)].
 
-=== For offering parties (Economic Operators)
+=== For economic operators
 
 [arabic]
 . Find the procurement procedure you wish to participate in (if published, the ESPD Request is available alongside the Contract Notice; otherwise the criteria are in the procurement documents).
