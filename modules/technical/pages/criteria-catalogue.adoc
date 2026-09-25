@@ -13,6 +13,8 @@
 
 This section provides the detailed element-by-element reference tables for criterion components.
 
+NOTE: The cardinalities shown in the *Card* column are the ESPD-EDM cardinalities (as defined in the criterion data model, `espd-edm.json`, and enforced by the Schematron business rules) — not the raw UBL 2.4 XSD cardinalities. In the UBL 2.4 schema almost all of these elements are optional (`0..1` / `0..n`); the ESPD tightens them (for example making `cbc:ID` and at least one `cac:TenderingCriterionPropertyGroup` mandatory). The UBL 2.4 `cac:TenderingCriterion` type also defines further child elements (for example `cbc:WeightNumeric`, `cbc:FulfilmentIndicator`, `cac:CommodityClassification`) that the ESPD does not use; only the ESPD-relevant elements are listed here.
+
 === XSD Schema Overview
 
 This XSD Schema diagram shows a global view of the UBL 2.4 cac:TenderingCriterion component:
@@ -50,7 +52,7 @@ a|
 |1
 |A classification code defined by the ESPD-EDM to represent the criterion in the ESPD taxonomy.
 a|
-*Rule*: Compulsory use of codes from e-Certis (e.g. crime-org, corruption, chain-manage).
+*Rule*: Compulsory use of codes from the ExclusionGround / SelectionCriterion code lists, aligned with e-Certis (for example `exg-crim-part`, `exg-crim-corrpt`, `slc-suit-reg-prof`).
 
 |*cbc:Name*
 |Text
@@ -239,6 +241,11 @@ a|
 |0..1
 |Expected identifier (e.g. Lot ID).
 a|
+|*cbc:ExpectedIndicator*
+|Indicator
+|0..1
+|The expected boolean (true/false) value, used when the property expects an INDICATOR response.
+a|
 |*cbc:ExpectedCode*
 |Code
 |0..1
@@ -321,8 +328,8 @@ The vocabulary (the `TypeCode` values used for properties) is defined in the cod
 
 An ESPD criterion is identified by the code carried in `cac:TenderingCriterion/cbc:CriterionTypeCode`. In ESPD-EDM v5.0.0 these codes are drawn from two EU Vocabularies code lists, replacing the deprecated single _Criterion_ list:
 
-* link:{url-tree}/codelists/gc/ExclusionGround.gc[ExclusionGround] — exclusion grounds (Part III), derived from Directive 2014/24/EU Article 57;
-* link:{url-tree}/codelists/gc/SelectionCriterion.gc[SelectionCriterion] — selection criteria (Part IV), derived from Directive 2014/24/EU Articles 58-64.
+* link:{url-tree}/codelists/ExclusionGround.gc[ExclusionGround] — exclusion grounds (Part III), derived from Directive 2014/24/EU Article 57;
+* link:{url-tree}/codelists/SelectionCriterion.gc[SelectionCriterion] — selection criteria (Part IV), derived from Directive 2014/24/EU Articles 58-64.
 
 Both code lists are maintained by the Publications Office (EU Vocabularies) so that the ESPD, eForms and TED stay aligned. The authoritative code values, English names, multilingual labels and definitions live in EU Vocabularies; this page does not reproduce them, because they evolve with the EU Vocabularies release cycle rather than with the ESPD-EDM. For the metadata (list identifiers, versions and locations) see xref:code-lists.adoc[Code Lists]; for the full value tables consult the genericode files linked above.
 

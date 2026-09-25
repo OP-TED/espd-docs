@@ -22,12 +22,21 @@ The ESPD uses two document types from UBL 2.4:
 |ESPD Response — provides the economic operator's self-declarations and evidence references.
 |===
 
+Each document type is defined by one main-document schema in `schemas/maindoc/`:
+
+* `UBL-QualificationApplicationRequest-2.4.xsd`
+* `UBL-QualificationApplicationResponse-2.4.xsd`
+
+Both import the shared UBL libraries from `schemas/common/`. At the top level, a `QualificationApplicationRequest` carries the root identifiers (`cbc:UBLVersionID`, `cbc:ID`, `cbc:UUID`, `cbc:ContractFolderID`, `cbc:VersionID`, `cbc:ProfileExecutionID`), the `cac:ContractingParty`, an optional `cac:ProcurementProject` and `cac:ProcurementProjectLot` (`0..n`), the `cac:TenderingCriterion` elements (`0..n`), and `cac:AdditionalDocumentReference` (`0..n`, used to reference the Contract Notice). The `QualificationApplicationResponse` mirrors these and adds `cac:EconomicOperatorParty` and `cac:TenderingCriterionResponse` elements. The full element tables are in the xref:request-reference-model.adoc[Request Reference Model] and xref:response-reference-model.adoc[Response Reference Model].
+
 === UBL libraries
 
-UBL 2.4 distributes XSD schemas in two formats:
+The upstream OASIS UBL 2.4 distribution provides its XSD schemas in two forms:
 
-* `xsd/` — fully documented schemas (with definitions, examples)
-* `xsdrt/` — runtime schemas (lightweight, for production use)
+* `xsd/` — the *normative*, annotated schemas (carrying the CCTS documentation of each element)
+* `xsdrt/` — non-normative "runtime" copies with the annotations stripped out, provided for implementation convenience
+
+(The ESPD-EDM distribution carries the schemas under `schemas/common/` and `schemas/maindoc/` — see <<_distribution,Distribution>> below.)
 
 The ESPD-EDM uses components from two main libraries:
 
@@ -36,27 +45,20 @@ The ESPD-EDM uses components from two main libraries:
 
 === How ESPD-EDM extends UBL
 
-The ESPD-EDM does *not* modify the UBL schema. Instead it adds constraints on top:
+The ESPD-EDM does *not* modify or subset the UBL schema — it uses the unaltered UBL 2.4 XSDs. All ESPD-specific tightening is layered *on top* of the schema:
 
-* *Cardinality restrictions* — elements that UBL defines as optional are made mandatory by the ESPD (enforced via Schematron)
-* *Business rules* — additional semantic validation (e.g. criterion UUIDs must match e-Certis)
-* *Code lists* — specific code list values required for ESPD-specific elements
+* *Cardinality restrictions* — the UBL XSD is deliberately permissive: nearly every element is optional (`0..1` / `0..n`), including document-root children such as `cac:TenderingCriterion` and `cac:ContractingParty`. The ESPD makes the elements it needs mandatory (for example a Request must carry at least one `cac:TenderingCriterion`; a criterion must carry a `cbc:ID` and at least one property group). These stricter cardinalities are expressed as Schematron assertions, not in the XSD.
+* *Business rules* — additional semantic checks that XSD cannot express, e.g. a criterion `cbc:ID` must be a UUID harmonised with eCertis, a selection criterion must reference the lots it applies to, and code values must belong to the expected code list. These are the `BR-*` rules.
+* *Code-list constraints* — the allowed values for ESPD code elements are constrained via a CVA file compiled into the Schematron validation.
 
-=== Key standards in the UBL ecosystem
+[IMPORTANT]
+====
+A consequence for implementers: *XSD-valid is not the same as ESPD-valid*. An instance can satisfy the UBL 2.4 schema and still be rejected by the ESPD business rules. A conforming ESPD Service must validate against **both** layers — the UBL XSD and the ESPD Schematron (which includes the compiled CVA code-list checks). See xref:validation-conformance.adoc[Validation and Conformance].
+====
 
-[cols="1,3",options="header"]
-|===
-|Standard |Role
+=== Related standards
 
-|link:http://docs.oasis-open.org/codelist/approved/genericode/oasis-code-list-representation-genericode.html[Genericode 1.0]
-|Format for code list files (`.gc`)
-
-|link:https://www.schematron.com/[ISO Schematron]
-|Rule-based XML validation beyond XSD
-
-|link:https://docs.oasis-open.org/ubl/UBL-conformance-to-CCTS/v1.0/UBL-conformance-to-CCTS-v1.0.html[ebXML CCTS]
-|Core Component types (CodeType, IdentifierType with their attributes)
-|===
+UBL sits alongside several other standards in the ESPD-EDM stack — Genericode (code lists), ISO Schematron (business-rule validation), and ebXML CCTS (the Code and Identifier type foundation). These are catalogued, with their specifications and roles, in xref:standards-specifications.adoc[Standards and Specifications].
 
 === Attributes for codes and identifiers
 
@@ -115,10 +117,12 @@ NOTE: Cardinalities shown in the element tables are ESPD-EDM constraints, which 
 
 === Distribution
 
-The UBL 2.4 schema files are included in the ESPD-EDM distribution package under the `schemas/` folder:
+The UBL 2.4 schema files are included in the ESPD-EDM distribution package under the `schemas/` folder (the ESPD-EDM ships the normative schema set; there is no separate `xsdrt/` copy):
 
-* `schemas/common/` — common elements and structures
-* `schemas/maindoc/` — main document XSD schemas
+* `schemas/maindoc/` — the two main document schemas to validate an instance against (`UBL-QualificationApplicationRequest-2.4.xsd`, `UBL-QualificationApplicationResponse-2.4.xsd`)
+* `schemas/common/` — the shared UBL libraries these import (`UBL-CommonAggregateComponents-2.4.xsd`, `UBL-CommonBasicComponents-2.4.xsd`, `UBL-CommonExtensionComponents-2.4.xsd`, plus datatype and signature modules)
+
+To validate an ESPD instance: first validate against the matching `maindoc` XSD (structural/type checks), then run the ESPD Schematron from the `validation/` folder for the business rules and code-list checks.
 
 Source: https://github.com/OP-TED/ESPD-EDM/tree/v5.0.0/schemas[ESPD-EDM schemas on GitHub]
 
@@ -127,6 +131,7 @@ Source: https://github.com/OP-TED/ESPD-EDM/tree/v5.0.0/schemas[ESPD-EDM schemas 
 * xref:getting-started.adoc[Getting Started]
 * xref:espd-request.adoc[ESPD Request]
 * xref:espd-response.adoc[ESPD Response]
+* xref:validation-conformance.adoc[Validation and Conformance]
 * xref:standards-specifications.adoc[Standards and Specifications]
 
 include::partial$feedback.adoc[]
