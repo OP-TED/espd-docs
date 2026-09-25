@@ -166,8 +166,8 @@ Simple, flexible text format derived from SGML, playing an important role in the
 *XSLT (Extensible Stylesheet Language Transformations)*  +
 Language for transforming XML documents into other XML documents or other formats. (https://www.w3.org/TR/xslt-30/)
 
-[[ebXML_CCTS_ISO_TS_15000-5:2005,ebXML CCTS ISO/TS 15000-5:2005]]
-*ISO/TS 15000-5:2005*  +
-Forms the basis for standards development work using UN/CEFACT Core Component Library. Latest version ISO 15000-5:2014. (https://www.iso.org/standard/61433.html)
+[[iso-15000-5,ISO 15000-5:2014 (ebXML Core Components Specification)]]
+*ISO 15000-5:2014 (ebXML Core Components Specification)*  +
+The ebXML Core Components Specification, providing the data-typing foundation used by UBL. It supersedes the earlier ISO/TS 15000-5:2005 Technical Specification and builds on the UN/CEFACT Core Component Library. (https://www.iso.org/standard/61433.html)
 
 include::partial$feedback.adoc[]

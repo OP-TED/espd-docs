@@ -45,13 +45,37 @@ ISO Schematron (ISO/IEC 19757-3) is a rule-based validation language for making 
 
 === XSLT 3.0
 
-XSLT (Extensible Stylesheet Language Transformations) is used in the ESPD-EDM to compile Schematron into executable XSL and to generate ESPD XML from criterion data.
+XSLT (Extensible Stylesheet Language Transformations) is used in the ESPD-EDM validation pipeline to compile Schematron rules (and the Schematron generated from CVA files) into the executable XSL that validates ESPD Request and Response instances.
 
 [cols="1,3"]
 |===
 |Specification |https://www.w3.org/TR/xslt-30/[W3C XSLT 3.0]
 |Reference implementation |https://www.saxonica.com/[Saxon XSLT Processor]
 |===
+
+=== Data Format Foundations (XSD, XPath, JSON)
+
+Beyond the procurement-specific standards above, the ESPD-EDM relies on several general-purpose data-format and query technologies:
+
+* *XML Schema (XSD)* — the schema language that defines the structure and data types of the UBL 2.4 ESPD documents. The UBL 2.4 schemas are authored against XSD 1.0. XSD provides the first validation layer; Schematron adds the business rules that XSD cannot express (such as ESPD-specific cardinalities).
+* *XPath* — the expression language used to address parts of an XML document. Schematron assertions and XSLT transformations in the ESPD validation pipeline are written in XPath.
+* *JSON* — the format of the criterion data model. From ESPD-EDM v5.0.0, the criterion and document-structure definitions are distributed as `espd-edm.json`, and code-list metadata as `codelists.json`, replacing the deprecated Excel-based workflow.
+
+[cols="1,3",options="header"]
+|===
+|Technology |Specification
+
+|XML Schema (XSD)
+|https://www.w3.org/TR/xmlschema-1/[W3C XML Schema 1.0] (used by the UBL 2.4 schemas)
+
+|XPath
+|https://www.w3.org/TR/xpath-31/[W3C XPath 3.1]
+
+|JSON
+|https://www.rfc-editor.org/rfc/rfc8259[RFC 8259] / https://ecma-international.org/publications-and-standards/standards/ecma-404/[ECMA-404]
+|===
+
+For the criterion data model itself, see xref:criterion-data-model-json.adoc[Criterion Data Model (JSON)].
 
 === EU Directives and Regulations
 
@@ -87,7 +111,7 @@ CVA files specify the relationship between XML elements and their associated cod
 
 === ebXML CCTS
 
-The Core Component Technical Specification (ISO/TS 15000-5) provides the data typing foundation for UBL elements (codes and identifiers with their attributes like `listID`, `schemeAgencyID`, etc.).
+The ebXML Core Components Specification (ISO 15000-5:2014, which supersedes the earlier ISO/TS 15000-5:2005) provides the data typing foundation for UBL elements (codes and identifiers with their attributes like `listID`, `schemeAgencyID`, etc.).
 
 [cols="1,3"]
 |===
