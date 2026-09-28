@@ -8,7 +8,16 @@ node_modules
 yarn.lock
 .idea
 branches
-scripts
+
+# Ignore build/dependency output inside scripts/, but keep the maintained
+# tooling (gulpfile, package.json, playbook, run.sh, link checker) tracked.
+scripts/*
+!scripts/gulpfile.js
+!scripts/package.json
+!scripts/antora-playbook.yml
+!scripts/run.sh
+!scripts/check-external-links.js
+
 .asciidoctor
 .asciidoctorconfig
 /modules/ROOT/pages/archive/
@@ -19,3 +28,4 @@ modules/supplemental-ui/img/ted-logo-long.svg
 modules/supplemental-ui/img/ted-logo.svg
 modules/supplemental-ui/partials/footer-content.hbs
 modules/supplemental-ui/partials/header-content.hbs
+external-links-report.csv

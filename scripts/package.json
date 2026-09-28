@@ -3,7 +3,8 @@
   "scripts": {
     "build": "gulp generate",
     "preview": "gulp generate && gulp serve",
-    "live-preview": "gulp generate && cross-env LIVERELOAD=true gulp serve"
+    "live-preview": "gulp generate && cross-env LIVERELOAD=true gulp serve",
+    "check-links": "node check-external-links.js"
   },
   "devDependencies": {
     "@antora/asciidoc-loader": "^3.1.1",
