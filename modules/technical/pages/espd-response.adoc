@@ -45,7 +45,9 @@ The economic operator information is spread in two places:
 
 [arabic]
 . The UBL-2.4 *cac:EconomicOperatorParty* component (identification, role, party data);
-. *Criteria data structures* classified as `CRITERION.OTHER.EO_DATA.*` (e.g. sheltered workshop, together with others, relied-on entities, subcontractors).
+. *Criteria data structures* — the "Other" (`code` `OT`) criteria (`type` `CRITERION`) that carry economic-operator information, such as SME status (`OT65`) and sheltered workshop (`OT57`), together with the questions on group participation, reliance on the capacities of other entities, and subcontracting.
+
+NOTE: The economic operator's party data is modelled by the `info-eo` *INFORMATION* structure (`ECONOMIC_OPERATOR_PARTY`), which maps to the UBL `cac:EconomicOperatorParty` component described above.
 
 === Key requirements
 
@@ -69,7 +71,7 @@ For detailed element tables, see xref:response-reference-model.adoc[Response Ref
 
 The ESPD Response uses `cac:TenderingCriterionResponse` to answer each QUESTION from the Request. Key rules:
 
-* Each response is linked to one, and only one, criterion property via `cbc:ValidatedCriterionPropertyID` (matching the UUID from the Request).
+* Each response is linked to one, and only one, criterion property via `cbc:ValidatedCriterionPropertyID`, which carries the ID of that property from the Request. (In `espd-edm.json` the same linkage is expressed through the `responsepath` / `contentpath` values; top-level criterion UUIDs — harmonised with e-Certis — identify the criterion, not the individual property.)
 * One response may contain a list of `cac:ResponseValue` elements of the same type.
 * If confidential, linked evidences must also be treated as confidential.
 * Response data types must match the `cbc:ValueDataTypeCode` specified by the buyer in the Request.

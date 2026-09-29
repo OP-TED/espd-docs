@@ -19,7 +19,7 @@
 * xref:ROOT:previous-versions-downloads.adoc[Previous Versions and Downloads]
 
 * [.separated]#**Business Guide**#
-* xref:business:for-buyers.adoc[For Buyers (Contracting Authorities)]
+* xref:business:for-buyers.adoc[For Buyers]
 * xref:business:for-economic-operators.adoc[For Economic Operators]
 * xref:business:espd-parts.adoc[ESPD Parts]
 * xref:business:lots-overview.adoc[Lots in Public Procurement]

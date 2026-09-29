@@ -9,7 +9,7 @@ This section provides guidance on the ESPD from a business perspective — what 
 
 === Guidance by role
 
-* xref:for-buyers.adoc[For Buyers (Contracting Authorities)] +
+* xref:for-buyers.adoc[For Buyers] +
 How buyers prepare ESPD Requests, define criteria, and evaluate responses.
 
 * xref:for-economic-operators.adoc[For Economic Operators] +

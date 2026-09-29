@@ -1,4 +1,4 @@
-:doctitle: For Buyers (Contracting Authorities)
+:doctitle: For Buyers
 :doccode: espd-bus-prod-020
 :author: ESPD Team
 :docdate: July 2026

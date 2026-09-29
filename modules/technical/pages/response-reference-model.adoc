@@ -319,8 +319,8 @@ Nonetheless some data requested in the ESPD are not modeled in UBL-2.4, namely t
 Therefore in the ESPD-EDM, the information about the economic operator is spread in two different places:
 
 [arabic]
-. The UBL-2.4 *cac:EconomicOperatorParty* component; and
-. In *criteria data structures*: following the solution adopted for Version ESPD-EDM, the ESPD-EDM defines several criteria classified as CRITERION.OTHER.EO_DATA.* (where the * refers to different branches and leaves of a different structures about the economic operator (e.g. SHELTERED_WORKSHOP, TOGETHER_WITH_OTHERS, etc.). The XML instances use criteria components (UBL-2.4 cac:TenderingCriterion) to structure these data. The sub-sections below cover both.
+. The UBL-2.4 *cac:EconomicOperatorParty* component (the economic operator's party data is modelled by the `info-eo` `INFORMATION` structure, `ECONOMIC_OPERATOR_PARTY`); and
+. In *criteria data structures*: the ESPD-EDM defines several "Other" criteria (`code` `OT`, `type` `CRITERION`) that carry economic-operator information (e.g. SME status `OT65`, sheltered workshop `OT57`, and the questions on group participation, reliance on the capacities of other entities, and subcontracting). The XML instances use criteria components (UBL-2.4 `cac:TenderingCriterion`) to structure these data. The sub-sections below cover both.
 
 
 [[eo_xsd_schemas]]
