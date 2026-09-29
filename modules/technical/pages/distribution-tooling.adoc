@@ -62,7 +62,7 @@ The `espd-edm.json` file defines:
 * All Selection Criteria (same structure)
 * The property group tree for each criterion (QUESTION_GROUP, REQUIREMENT_GROUP, QUESTION_SUBGROUP, etc.)
 * Individual properties (QUESTION, REQUIREMENT, CAPTION) with their expected data types
-* UUIDs harmonised with e-Certis
+* UUIDs harmonised with eCertis
 
 === JSON Schema
 

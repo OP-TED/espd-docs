@@ -27,12 +27,12 @@ All ESPD documents use standardised identifier patterns:
 |Globally unique; copies share the same UUID, new documents get a new one
 
 |`cbc:ID` (criterion)
-|e-Certis UUID
-|Each criterion has a UUID assigned by e-Certis (e.g. `005eb9ed-1347-...`)
+|eCertis UUID
+|Each criterion has a UUID assigned by eCertis (e.g. `005eb9ed-1347-...`)
 
 |`cbc:ID` (property group)
 |UUID v4
-|Each property group has a unique UUID from e-Certis
+|Each property group has a unique UUID from eCertis
 
 |`cbc:ID` (property)
 |UUID v4
@@ -47,7 +47,7 @@ Key rules for identifiers:
 
 * `schemeAgencyID` is mandatory on all `cbc:ID` elements — it identifies who issued the identifier
 * `cbc:UUID` is mandatory on both Request and Response root elements — the Response UUID links back to the Request
-* Criterion UUIDs must match e-Certis values (enforced by rule `BR-TC-02`)
+* Criterion UUIDs must match eCertis values (enforced by rule `BR-TC-02`)
 
 === Party Structure Pattern
 

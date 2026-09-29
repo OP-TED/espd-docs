@@ -45,28 +45,28 @@ _Figure 1. cac:TenderingCriterion - XSD Schema, global view_
 |1
 |A language-independent token that allows to identify a criterion uniquely.
 a|
-*Rule*: Each Criterion is defined in e-Certis and must use the UUID supplied by e-Certis. See also link:{url-tree}/criterion/espd-edm.json[espd-edm.json].
+*Rule*: Each Criterion is defined in eCertis and must use the UUID supplied by eCertis. See also link:{url-tree}/criterion/espd-edm.json[espd-edm.json].
 
 |*cbc:CriterionTypeCode*
 |Code
 |1
 |A classification code defined by the ESPD-EDM to represent the criterion in the ESPD taxonomy.
 a|
-*Rule*: Compulsory use of codes from the ExclusionGround / SelectionCriterion code lists, aligned with e-Certis (for example `exg-crim-part`, `exg-crim-corrpt`, `slc-suit-reg-prof`).
+*Rule*: Compulsory use of codes from the ExclusionGround / SelectionCriterion code lists, aligned with eCertis (for example `exg-crim-part`, `exg-crim-corrpt`, `slc-suit-reg-prof`).
 
 |*cbc:Name*
 |Text
 |1
 |A short and descriptive name for a criterion.
 a|
-*Rule*: The name should match the one from e-Certis.
+*Rule*: The name should match the one from eCertis.
 
 |*cbc:Description*
 |Text
 |1..n
 |An extended description of the criterion.
 a|
-*Rule*: The description should match the one from e-Certis.
+*Rule*: The description should match the one from eCertis.
 
 |*cac:ProcurementProjectLotReference*
 |Class
@@ -161,7 +161,7 @@ a|
 |1
 |Identifies a group of requirements uniquely.
 a|
-*Rule*: Compulsory use of the UUIDs supplied by e-Certis.
+*Rule*: Compulsory use of the UUIDs supplied by eCertis.
 
 |*cbc:PropertyGroupTypeCode*
 |Code

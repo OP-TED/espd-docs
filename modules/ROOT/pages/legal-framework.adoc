@@ -36,9 +36,9 @@ This page summarises the EU legislation that forms the legal basis for the ESPD.
 * The winning tenderer must provide full evidence before award; in addition, the buyer may request supporting documents from any tenderer or candidate at any moment during the procedure (Article 59(4))
 * The ESPD must reference the Contract Notice published on TED (above threshold)
 
-=== e-Certis
+=== eCertis
 
-link:https://ec.europa.eu/tools/ecertis/[e-Certis] is the EU registry of criteria, evidences, and their structure. The ESPD-EDM validates criterion UUIDs and structures against e-Certis reference data.
+link:https://ec.europa.eu/tools/ecertis/[eCertis] is the EU registry of criteria, evidences, and their structure. The ESPD-EDM validates criterion UUIDs and structures against eCertis reference data.
 
 === UBL 2.4
 

@@ -58,7 +58,7 @@ _Figure 1. ESPD Validation Process_
 
 == UUID Criterion Validation
 
-Each criterion is defined in e-Certis and has a *Universally Unique Identifier (UUID)* supplied by e-Certis:
+Each criterion is defined in eCertis and has a *Universally Unique Identifier (UUID)* supplied by eCertis:
 
 [arabic]
 . These UUIDs are mandatory and are maintained by the Publications Office.
@@ -86,7 +86,7 @@ The validation of each criterion (`cac:TenderingCriterion` element) checks:
 
 [arabic]
 . `cbc:ID`, `cbc:CriterionTypeCode`, `cbc:Name` and `cbc:Description` are mandatory;
-. `cbc:ID` values match with the ones supplied by e-Certis;
+. `cbc:ID` values match with the ones supplied by eCertis;
 . `cac:TenderingCriterionPropertyGroup` structure matches the expected QUESTION_GROUP or REQUIREMENT_GROUP.
 
 === Tendering Criterion Property Group and Subgroup

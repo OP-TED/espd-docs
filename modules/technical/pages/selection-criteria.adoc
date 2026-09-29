@@ -74,7 +74,7 @@ For each criteria regarding suitability, the buyer should be able to provide: th
 Regarding data structure for Suitability selection criteria
 
 [arabic]
-. It allows the definition of multiple national sub-criteria (to be retrieved from e-Certis): cardinality "0..n" of the SUBCRITERION group;
+. It allows the definition of multiple national sub-criteria (to be retrieved from eCertis): cardinality "0..n" of the SUBCRITERION group;
 . It also allows the buyer to speciy multiple groups of REQUIREMENT(s) (in this case to specify which registers the economic operator should be registered in).
 . Regarding the groups of questions, notice that the main question is addressed to get the confirmation from the economic operator that it fulfills the criterion (if "Yes" the economic operator is registered). In case of answering "No" a sub-group of one QUESTION must be shown (the one asking the economic operator to provide the reason why it is not registered in the register specified by the buyer).
 ////
@@ -167,7 +167,7 @@ The contracting can specify the number of the past recent years for which it wil
 
 === Mock-up - buyer perspective
 
-Notice that the buyer can add and remove as many groups of minimum required amounts as needed (in the example below the software application limits the number to five, see tool-tip next to the button "Add"). These requirements are, of course, particular to this procurement procedure and were not defined by the Member State in e-Certis.
+Notice that the buyer can add and remove as many groups of minimum required amounts as needed (in the example below the software application limits the number to five, see tool-tip next to the button "Add"). These requirements are, of course, particular to this procurement procedure and were not defined by the Member State in eCertis.
 
 image:General_Yearly Turnovers_CA mock-up_ common_threshold.jpg[General Yearly Turnovers buyer mock-up for common threshold,width=564,height=210]
 
@@ -210,7 +210,7 @@ For criteria of type "average yearly turnover", the following fields can be spec
 . The *minimum amount* for which the EO's average yearly turnover must be equal or greater;
 . The *currency*;
 
-Notice that as for the rest of criteria, the Member State may specify national sub-criteria in e-Certis for this criterion.
+Notice that as for the rest of criteria, the Member State may specify national sub-criteria in eCertis for this criterion.
 
 image:average_yearly_turnover_CA_mockup.jpg['average yearly turnover' buyer mock-up,width=623,height=180]
 
@@ -281,7 +281,7 @@ _Figure 15. 'specific yearly turnover' EO mock-up_
 Note that:
 
 [arabic]
-. The criterion may have one or more linked national sub-criteria downloaded from e-Certis (SUBCRITERION structure, cardinality 0..n);
+. The criterion may have one or more linked national sub-criteria downloaded from eCertis (SUBCRITERION structure, cardinality 0..n);
 . The buyer is able to specify the *number of fiscal years* (REQUIREMENT 'Number of fiscal years');
 . The description of the business area is a text-field;
 . The buyer does also specifies the *minimum amount* required for this specific turnover.
@@ -584,7 +584,7 @@ _Non-validation of text content_
 The data structure for references caters for:
 
 [arabic]
-. The definition of multiple national criteria associated to the EU criterion specified in e-Certis;
+. The definition of multiple national criteria associated to the EU criterion specified in eCertis;
 . The creation of the Legislation component associated to the EU criterion;
 . One group of REQUIREMENT(s) for the buyer to specify the general requirements for this criterion (e.g. Lots the references apply to, minimun number of references);
 . Multiple groups (cardinality 1..n) of questions for the economic operator to answer; which in this case are multiple references to works about which the EO has to provide information and the lots the EO tenders to related to the references.

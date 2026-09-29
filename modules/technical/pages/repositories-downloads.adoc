@@ -60,7 +60,7 @@ The distribution package for each release is available as a tagged version on Gi
 |Interoperability Testbed (ESPD validation)
 |https://www.itb.ec.europa.eu/espd/upload
 
-|e-Certis (criteria and evidences registry)
+|eCertis (criteria and evidences registry)
 |https://ec.europa.eu/tools/ecertis/
 
 |VIES (VAT number verification)
@@ -89,7 +89,7 @@ The distribution package for each release is available as a tagged version on Gi
 
 A list of ESPD Service implementations provided by EU Member States and commercial providers:
 
-https://single-market-economy.ec.europa.eu/single-market/public-procurement/digital-procurement/european-single-procurement-document-and-ecertis_en[European Commission — ESPD and e-Certis page]
+https://single-market-economy.ec.europa.eu/single-market/public-procurement/digital-procurement/european-single-procurement-document-and-ecertis_en[European Commission — ESPD and eCertis page]
 
 === Community
 

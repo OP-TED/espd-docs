@@ -28,8 +28,8 @@ This page provides guidance for migrating ESPD Service implementations from ESPD
 |Code list versions
 |All ESPD-managed code lists updated from version `4.0.0` to `5.0.0`. EU Vocabularies code lists updated to their latest published versions.
 
-|Criteria content (e-Certis)
-|Criterion UUIDs harmonised with e-Certis (some UUIDs changed). Criteria C27 (authorisation) and C28 (membership) deprecated and replaced by C66 (`slc-suit-auth-mbrshp`); new criterion C67 (`exg-mis-unrel-sec`) added.
+|Criteria content (eCertis)
+|Criterion UUIDs harmonised with eCertis (some UUIDs changed). Criteria C27 (authorisation) and C28 (membership) deprecated and replaced by C66 (`slc-suit-auth-mbrshp`); new criterion C67 (`exg-mis-unrel-sec`) added.
 
 |Schematron validation
 |Validation rules updated for v5.0.0: `listVersionID` for ESPD-managed code lists must use the `5.` prefix, and `cbc:UBLVersionID` must be `"2.4"`.
@@ -45,7 +45,7 @@ This page provides guidance for migrating ESPD Service implementations from ESPD
 . Update `listVersionID` attributes to `"5.0.0"` for ESPD-managed code lists
 . Migrate criterion data consumption from Excel to JSON (`espd-edm.json`)
 . Re-run Schematron validation against v5.0.0 rules
-. Verify criterion UUIDs against updated e-Certis
+. Verify criterion UUIDs against updated eCertis
 
 === Backwards compatibility
 
@@ -69,7 +69,7 @@ This page provides guidance for migrating ESPD Service implementations from ESPD
 |A new `codelists.json` file provides machine-readable metadata for all code lists (identifiers, versions, agencies). Services managing code lists dynamically should consume this file.
 
 |*Criterion UUID changes*
-|Some criterion UUIDs changed due to e-Certis harmonisation. Services that hard-code UUIDs must update them. Deprecated criteria C27/C28 are replaced by C66.
+|Some criterion UUIDs changed due to eCertis harmonisation. Services that hard-code UUIDs must update them. Deprecated criteria C27/C28 are replaced by C66.
 
 |===
 
@@ -109,7 +109,7 @@ Use this checklist to verify your migration is complete:
 * [ ] Criterion data sourced from `espd-edm.json` (not Excel)
 * [ ] Code list references split: `ExclusionGround` + `SelectionCriterion` (not single `Criterion` list)
 * [ ] Lot identifiers use eForms format (`LOT-0001`)
-* [ ] Criterion UUIDs verified against e-Certis (check C27, C28 -> C66 migration)
+* [ ] Criterion UUIDs verified against eCertis (check C27, C28 -> C66 migration)
 * [ ] Schematron validation passes against v5.0.0 XSL rules
 * [ ] ESPD Request and Response validated on https://www.itb.ec.europa.eu/espd/upload[Interoperability Testbed]
 

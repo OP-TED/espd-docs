@@ -72,7 +72,7 @@ Each element in the tree (a criterion or one of its components) may carry the fo
 |Meaning depends on the node. On a `CRITERION` it is the criterion type code (e.g. `OT`, `exg-crim-part`, `slc-suit-reg-prof`). On a group it is the group-behaviour code (`ON*`, `ONTRUE`, `ONFALSE`). On a property (`QUESTION` / `REQUIREMENT` / `CAPTION`) it repeats the element role.
 
 |`uuid`
-|Universally unique identifier. Present on top-level criteria (harmonised with e-Certis).
+|Universally unique identifier. Present on top-level criteria (harmonised with eCertis).
 
 |`cardinality`
 |Expected cardinality (`1`, `0..1`, `1..n`, `0..n`).
@@ -148,7 +148,7 @@ The group's `code` (`ON*` / `ONTRUE` / `ONFALSE`) carries the conditional-displa
 
 The `requestpath` and `responsepath` properties provide XML Path-like identifiers that uniquely locate each element within the ESPD document structure. These paths are built by concatenating parent tags from the criterion root to the leaf. The root segment combines the criterion tag and code (e.g. `C01_exg-crim-part`), and each descendant appends its own tag (e.g. `C01_exg-crim-part/QG1/Q1`). The `responsepath` extends this with a response occurrence (`/R1`), and `contentpath` with the response value (`/R1/RV`).
 
-These path IDs replace the UUID-based identification for sub-elements (since v4.0.0), while top-level criterion UUIDs are preserved from e-Certis.
+These path IDs replace the UUID-based identification for sub-elements (since v4.0.0), while top-level criterion UUIDs are preserved from eCertis.
 
 === Migration from Excel
 

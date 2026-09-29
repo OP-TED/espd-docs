@@ -20,7 +20,7 @@ The conceptual model defines the following core entities and their relationships
 |Concept |Description
 
 |*Criterion*
-|A fact or condition used by the buyer to evaluate tenders. Maps to `cac:TenderingCriterion` in UBL. Each criterion has a UUID from e-Certis, a type code, name, and description.
+|A fact or condition used by the buyer to evaluate tenders. Maps to `cac:TenderingCriterion` in UBL. Each criterion has a UUID from eCertis, a type code, name, and description.
 
 |*Requirement Group*
 |A first-level grouping of properties within a criterion. Maps to `cac:TenderingCriterionPropertyGroup`. Controls conditional display via `PropertyGroupTypeCode` (ON*, ONTRUE, ONFALSE).
