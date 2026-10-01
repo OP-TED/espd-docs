@@ -13,7 +13,7 @@ The ESPD-EDM distribution package is available at https://github.com/OP-TED/ESPD
 
 === Repository Structure
 
-The *main* branch contains the latest released version. Only a main branch is maintained with different version tags.
+The *main* branch contains the latest released version, with each release marked by a version tag. A development branch (named after the target version) is branched from `main` when work on a new patch, minor, or major release begins, and is merged back on release.
 
 The repository has the following folder structure:
 
@@ -52,7 +52,7 @@ Starting with ESPD-EDM v5.0.0, the canonical source for criterion definitions is
 
 === Location
 
-`https://github.com/OP-TED/ESPD-EDM/tree/v5.0.0/criterion/espd-edm.json`
+The criterion data is at `criterion/espd-edm.json` in the https://github.com/OP-TED/ESPD-EDM[OP-TED/ESPD-EDM^] repository. For the full field-level documentation, see xref:criterion-data-model-json.adoc[Criterion Data Model (JSON)].
 
 === What it contains
 
@@ -105,10 +105,10 @@ The ESPD validation artefacts (Schematron rules compiled to XSL) are produced in
 [arabic]
 . Clone the `espd-validation-schematron` repository
 . Copy external data from `ESPD-EDM` into the schematron repository:
-  * `codelists/` -> `gc` (code list files in genericode format)
+  * `codelists/` (the genericode `.gc` files) -> the schematron repository's code list input
   * `criterion/espd-edm.json` -> criterion input
-  * `schemas/` -> `common/xsdrt/` (UBL XSD schemas)
-. Run `espd-schematron-gc.bat` (Windows) to:
+  * `schemas/` (UBL XSD run-time schemas) -> `common/xsdrt/`
+. Run the batch script in the repository root (Windows) to:
   * Transform Schematron (`.sch`) files into XSLT (`.xsl`) validators
   * Validate code lists against CVA rules
   * Produce validation reports in the `logs/` folder
@@ -117,6 +117,8 @@ The ESPD validation artefacts (Schematron rules compiled to XSL) are produced in
 *Prerequisites:* Java JDK 1.8+, Git client.
 
 *Output:* XSL files for Request validation (`ESPDRequest/xsl/`), Response validation (`ESPDResponse/xsl/`), and common validation (`common/`).
+
+NOTE: From ESPD-EDM v5.0.0 the code list `.gc` files live directly in `codelists/` and the UBL run-time schemas live under `schemas/`. The separate `gc/` code list folder and the `ubl-2.3` / `ubl-2.4` folders used in earlier versions are no longer used.
 
 == Integration Guidance
 

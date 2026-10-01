@@ -21,7 +21,8 @@ _Figure 1. ESPD Validation Process_
 . *Code list validations* (common for both Request and Response):
 [loweralpha]
 .. Validation of the code list values: `01-ESPD-codelist-values.cva`
-.. Validation of the identification of the code list: `01-ESPD-Common-CL-Attributes.sch`
+.. Validation of the identification of the code list: `01-ESPD-common-cl-attributes.sch`
+.. Restrictions on code list attribute values: `01-ESPD-common-cl-values-restrictions.sch`
 . Business rules related to the *cardinality* of the schema: `02-ESPD-req-cardinality-br.sch`
 . Business rules used to validate the *criteria data structure*:
 [loweralpha]
@@ -41,7 +42,8 @@ _Figure 1. ESPD Validation Process_
 . *Code list validations* (common for both Request and Response):
 [loweralpha]
 .. Validation of the code list values: `01-ESPD-codelist-values.cva`
-.. Validation of the identification of the code list: `01-ESPD-Common-CL-Attributes.sch`
+.. Validation of the identification of the code list: `01-ESPD-common-cl-attributes.sch`
+.. Restrictions on code list attribute values: `01-ESPD-common-cl-values-restrictions.sch`
 . Business rules related to the *cardinality* of the schema: `02-ESPD-resp-cardinality-br.sch`
 . Business rules used to validate the *criteria data structure*:
 [loweralpha]
@@ -56,29 +58,34 @@ _Figure 1. ESPD Validation Process_
 .. Pre-qualification system rules: `05-ESPD-resp-qualification-br.sch`
 .. Role-dependent business rules: `05-ESPD-resp-role-br.sch`
 
-== UUID Criterion Validation
+== Criterion Identifier Validation
 
-Each criterion is defined in eCertis and has a *Universally Unique Identifier (UUID)* supplied by eCertis:
+Each top-level criterion is defined in eCertis and has a *Universally Unique Identifier (UUID)* supplied by eCertis:
 
 [arabic]
-. These UUIDs are mandatory and are maintained by the Publications Office.
+. The criterion UUID is mandatory and is maintained by the Publications Office.
 . The criterion UUIDs can be found in the link:{url-tree}/criterion/espd-edm.json[espd-edm.json] file.
 
-The UUIDs defined in the ESPDRequest or ESPDResponse are validated for the following elements:
+The `cbc:ID` of each of the following elements is validated against the eCertis reference data (matched by identifier, and checked for the expected structure):
 
 [cols="1,3",options="header"]
 |===
-|Element |XSD Path
+|Element |Path |Identifier form
 
 |Criterion
 |`cac:TenderingCriterion/cbc:ID`
+|eCertis *UUID*
 
 |Property Group
 |`cac:TenderingCriterionPropertyGroup/cbc:ID`
+|XML Path Like ID
 
 |Property
 |`cac:TenderingCriterionProperty/cbc:ID`
+|XML Path Like ID
 |===
+
+NOTE: Only the top-level criterion `cbc:ID` is a UUID. The property groups and properties nested below it carry *XML Path Like IDs* (see <<_xml_path_like_id,XML Path Like ID>> below), not UUIDs — although their `cbc:ID` values are still validated against the eCertis reference structure.
 
 === Tendering Criterion Validation
 

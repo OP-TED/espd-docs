@@ -56,6 +56,12 @@ https://github.com/OP-TED/ESPD-EDM/tree/v5.0.0/codelists[Codelists on GitHub]
 
 The link:{url-tree}/codelists/codelists.json[codelists.json] file provides a machine-readable reference of all code lists used by the ESPD-EDM, including their identifiers, versions, and the agency responsible for their maintenance.
 
+=== How code lists are produced and validated
+
+Code lists have one source and one enforcement point, documented on dedicated pages:
+
+* *Production* — the code lists maintained by the ESPD Team (for example `response-data-type`, `criterion-element-type`, `eoid-type`) are defined in the ESPD Conceptual Model and the Genericode files are generated from it, alongside `espd-edm.json`. The code lists maintained by EU Vocabularies are reused as published authority tables. See xref:conceptual-model.adoc[Conceptual Model] and xref:distribution-tooling.adoc[Distribution and Tooling] for the generation pipeline.
+* *Validation* — code *values* are not checked by the XSD; they are checked by Schematron rules generated from a Context/Value Association (CVA) file that associates each XML element with its code list. See xref:validation-conformance.adoc[Validation and Conformance] for the code list validation architecture.
 
 === Compulsory attributes
 
