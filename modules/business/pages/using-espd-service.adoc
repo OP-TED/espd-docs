@@ -22,7 +22,7 @@ NOTE: Currently, the European Commission does not maintain a centralised ESPD Se
 . Create an ESPD Request by defining the exclusion grounds and selection criteria for your procurement procedure.
 . Link the ESPD Request to your Contract Notice using the eForms notice publication reference number.
 . Publish the ESPD Request alongside your Contract Notice.
-. After the tender deadline, review the ESPD Responses submitted by Economic Operators.
+. After the tender deadline, review the ESPD Responses submitted by economic operators.
 
 For detailed guidance on what to fill in, see xref:for-buyers.adoc[For Buyers].
 

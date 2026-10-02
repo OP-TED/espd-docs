@@ -22,7 +22,7 @@ The repository has the following folder structure:
 |Folder |Content
 
 |`codelists/`
-|Code list files in Genericode (`.gc`) format + `codelists.json` metadata reference. Used in conjunction with the UBL XML structure and the ESPD Model to generate and validate ESPD documents.
+|Code list files in Genericode (`.gc`) format + `codelists.json` metadata reference. Used in conjunction with the UBL XML structure and the ESPD-EDM to generate and validate ESPD documents.
 
 |`criterion/`
 |Criterion structure definition. The file `espd-edm.json` contains the data structure of all ESPD-EDM Exclusion Grounds and Selection Criteria in JSON format.

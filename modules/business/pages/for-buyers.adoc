@@ -5,10 +5,11 @@
 
 == Preparing the ESPD Request
 
-Buyers (Contracting Authorities) use the ESPD Request to define the exclusion grounds and selection criteria that Economic Operators must satisfy in order to participate in a procurement procedure.
+Buyers use the ESPD Request to define the exclusion grounds and selection criteria that economic operators must satisfy in order to participate in a procurement procedure.
 
-The ESPD process from the buyer perspective:
-
+// REVIEW NOTE (management): this diagram shows where the ESPD fits into the procurement
+// process rather than the data a buyer provides. It should be MOVED to what-is-espd.adoc
+// (or the procurement-process page), not kept here. Left in place pending that move.
 image::https://kroki.io/blockdiag/svg/eJydk01P4zAQhu_9FVb3sivYKm1SEIpYCUo5R3CEFXKSaTPCHWftCUUg_jt2sgTz0UN6GSWvZ55xZt7kShf3Jcq1eB4JUcJKNorvbCVrEKci149pIK80scUnfzKd-gPSJdxtseTKS7Oo1yrAdcVOTBKv2VpSnxdHvfSeNk9HTsym4kbJHJSTxpmSREjr8aEotNLGaz-iKI5PTpzE8Mi9vK2QYfzXc7NZgFjoTQ2MjJpu6awowNqBtDigXTf5Bq11sIGQJIAsH6RqJA-HzAPI2VaacmD90Ye5EBtZ8EBEqdkGlMlk4rLfvDJ2Ltpo8td62_QsOhT9iv3LkGbHn_aoYOjQOkP9_uM94WPcxqSN8zYetbH9LP9w3Nachya8gBUS3FJhHNSg_NB_sVhGl5fdfc9D32VNrtBW7l9gLFz1gVheZxfiCv41YHk34xujuGoDttZkwe4uDM3xv4uAByyBfPufWyQC82tHvQOsjW5q8Sy0QSBu7emSam2cTZDTr2WpH5Of2TQVL3sCuq3M9gd0q0z2B3QumHvAy-gVkx161Q[The ESPD process from the buyer perspective,width=900,height=300]
 //image::espd_bus_buyer.png[]
 //[Edit this diagram](https://niolesk.top/#https://kroki.io/blockdiag/svg/eJydk01P4zAQhu_9FVb3sivYKm1SEIpYCUo5R3CEFXKSaTPCHWftCUUg_jt2sgTz0UN6GSWvZ55xZt7kShf3Jcq1eB4JUcJKNorvbCVrEKci149pIK80scUnfzKd-gPSJdxtseTKS7Oo1yrAdcVOTBKv2VpSnxdHvfSeNk9HTsym4kbJHJSTxpmSREjr8aEotNLGaz-iKI5PTpzE8Mi9vK2QYfzXc7NZgFjoTQ2MjJpu6awowNqBtDigXTf5Bq11sIGQJIAsH6RqJA-HzAPI2VaacmD90Ye5EBtZ8EBEqdkGlMlk4rLfvDJ2Ltpo8td62_QsOhT9iv3LkGbHn_aoYOjQOkP9_uM94WPcxqSN8zYetbH9LP9w3Nachya8gBUS3FJhHNSg_NB_sVhGl5fdfc9D32VNrtBW7l9gLFz1gVheZxfiCv41YHk34xujuGoDttZkwe4uDM3xv4uAByyBfPufWyQC82tHvQOsjW5q8Sy0QSBu7emSam2cTZDTr2WpH5Of2TQVL3sCuq3M9gd0q0z2B3QumHvAy-gVkx161Q)
@@ -18,7 +19,7 @@ The buyer prepares the ESPD Request as part of the procurement procedure documen
 
 === Key responsibilities
 
-As a buyer you are responsible for:
+The buyer is responsible for:
 
 * Defining which exclusion grounds apply to the procedure (mandatory grounds from Article 57(1) and (2) are pre-selected; discretionary grounds from Article 57(4) can be added or removed);
 * Selecting the applicable selection criteria (suitability, economic and financial standing, technical and professional ability, quality assurance);
@@ -26,7 +27,7 @@ As a buyer you are responsible for:
 * Associating selection criteria with the relevant lots (exclusion grounds apply to all lots automatically);
 * Making the exclusion grounds and selection criteria available to economic operators — by publishing the ESPD Request together with the Contract Notice, or by stating them in the procurement documents (specifications).
 
-=== What the buyer fills in
+=== Data provided by the buyer
 
 ==== Part 1: Procedure information
 
@@ -44,35 +45,35 @@ image::form/of4.png[]
 
 _Information about the procurement procedure_
 
-NOTE: Part 2 (Economic Operator information) is completed by the economic operator in the ESPD Response, not by the buyer. That is why it does not appear among the parts the buyer fills in.
+NOTE: Part 2 (economic operator information) is provided by the economic operator in the ESPD Response, not by the buyer. That is why it does not appear among the parts the buyer provides.
 
 ==== Part 3: Exclusion grounds
 
-The buyer reviews the exclusion grounds. Grounds relating to criminal convictions (Article 57(1)) and payment of taxes or social security (Article 57(2)) are mandatory and pre-selected:
+The buyer specifies which exclusion grounds apply. Grounds relating to criminal convictions (Article 57(1)) and payment of taxes or social security (Article 57(2)) are mandatory and selected by default:
 
 image::form/of9.png[]
 
-_Part 3A: Grounds relating to criminal convictions (mandatory, all ticked by default)_
+_Part 3A: Grounds relating to criminal convictions (mandatory, selected by default)_
 
 image::form/of11.png[]
 
-_Part 3B: Grounds relating to payment of taxes or social security contributions (mandatory, all ticked by default)_
+_Part 3B: Grounds relating to payment of taxes or social security contributions (mandatory, selected by default)_
 
-Grounds relating to insolvency, conflicts of interests or professional misconduct (Article 57(4)) can be selectively applied:
+Grounds relating to insolvency, conflicts of interests or professional misconduct (Article 57(4)) can be applied selectively:
 
 image::form/of13.png[]
 
-_Part 3C: Grounds relating to insolvency, conflicts of interests or professional misconduct (buyer can remove ticks)_
+_Part 3C: Grounds relating to insolvency, conflicts of interests or professional misconduct (buyer may deselect)_
 
-Purely national exclusion grounds depend on the regulation of each country. By default they are not selected; the buyer must manually choose which to include:
+Purely national exclusion grounds depend on the regulation of each country. By default they are not selected; the buyer specifies which to include:
 
 image::form/of15.png[]
 
-_Part 3D: Purely national exclusion grounds (buyer manually selects)_
+_Part 3D: Purely national exclusion grounds (buyer selects which apply)_
 
 ==== Part 4: Selection criteria
 
-The buyer selects which selection criteria to apply. All options are ticked by default, but the buyer can remove those not required for the specific procedure.
+The buyer specifies which selection criteria to apply. All criteria are selected by default; the buyer can deselect those not required for the specific procedure.
 
 image::form/of17.png[]
 
@@ -90,7 +91,7 @@ image::form/of23.png[]
 
 _Part 4D: Quality assurance schemes and environmental management standards (Article 62(2))_
 
-Alternatively, the buyer may use a global indication for all selection criteria:
+Alternatively, the buyer may provide a global indication for all selection criteria:
 
 image::form/of25.png[]
 
@@ -102,11 +103,11 @@ Important considerations when working with lots:
 
 * Exclusion grounds apply automatically to *all lots* in the procedure.
 * Selection criteria apply *per lot* and may differ between lots.
-* Each Economic Operator must submit a separate ESPD Response per lot or group of lots they tender for.
+* Each economic operator submits a separate ESPD Response per lot or group of lots they tender for.
 
 === Evaluating responses
 
-After receiving ESPD Responses, the buyer reviews the responses and supporting evidence provided by Economic Operators. The "Overview" option allows reviewing all information from a single page:
+After receiving ESPD Responses, the buyer reviews the responses and supporting evidence provided by economic operators. The "Overview" option allows reviewing all information from a single page:
 
 image::form/of28.png[]
 
@@ -114,11 +115,11 @@ _Options available after completing the ESPD form_
 
 === Reuse of ESPD Requests
 
-It is not necessary to create an ESPD Request from scratch for each procedure. ESPD documents can be downloaded, edited, and reused in further procurement procedures, making the process more efficient.
+It is not necessary to create an ESPD Request from scratch for each procedure. An ESPD Request can be downloaded, edited, and reused in further procurement procedures, making the process more efficient.
 
 === Further information
 
-* For details on the ESPD parts and what each role fills in, see xref:espd-parts.adoc[ESPD Parts].
+* For details on the ESPD parts and what each role provides, see xref:espd-parts.adoc[ESPD Parts].
 * For technical implementation details, see the xref:technical:espd-request.adoc[ESPD Request] technical guide.
 * A list of current ESPD Service providers can be found at https://single-market-economy.ec.europa.eu/single-market/public-procurement/digital-procurement/european-single-procurement-document-and-ecertis_en[the European Commission's ESPD page].
 

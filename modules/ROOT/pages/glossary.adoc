@@ -18,9 +18,9 @@ Substructures of a UBL document. Children of ASBIEs may be <<bbies>> or other AS
 *Basic Business Information Entities (BBIEs)*  +
 Leaf nodes of every UBL document structure. These are ordinary data fields such as one would expect to find in any business form, and they are realized in the schemas as individual XML elements at the bottom level of the document tree with simple content representing amounts, codes, quantities, and so on. All UBL BBIE elements (and only UBL BBIE elements) are members of the UBL common basic components namespace, conventionally denoted in UBL schemas by the cbc: prefix. (https://docs.oasis-open.org/ubl/os-UBL-2.4/UBL-2.4.html#S-BUSINESS-INFORMATION-ENTITIES)
 
-[[buyer,Buyer (Contracting Authority)]]
-*Buyer (Contracting Authority)*  +
-The state, regional or local authority, body governed by public law, or association of such authorities or bodies, that runs a procurement procedure. In the ESPD the buyer defines the exclusion grounds and selection criteria, prepares the <<espd-request,ESPD Request>>, and evaluates the <<espd-response,ESPD Responses>>. "Buyer" is the standard term; "contracting authority" is the equivalent term used in Directive 2014/24/EU. See xref:actors-and-roles.adoc[Actors and Roles].
+[[buyer,Buyer]]
+*Buyer*  +
+The organisation that runs a procurement procedure. In the ESPD the buyer defines the exclusion grounds and selection criteria, prepares the <<espd-request,ESPD Request>>, and evaluates the <<espd-response,ESPD Responses>>. "Buyer" is the general term; a *contracting authority* (a state, regional or local authority, body governed by public law, or association of such authorities or bodies, as defined in Directive 2014/24/EU) is one type of buyer. See xref:actors-and-roles.adoc[Actors and Roles].
 
 [[candidate,Candidate]]
 *Candidate*  +
@@ -81,7 +81,7 @@ The economic operator's self-declaration, used as preliminary evidence in a publ
 
 [[espd-edm,European Single Procurement Document Exchange Data Model (ESPD-EDM)]]
 *European Single Procurement Document Exchange Data Model (ESPD-EDM)*  +
-Data model developed by the European Commission to define the exchange of ESPD documents between procurement stakeholders' systems. Version 5.0.0 is based on UBL 2.4 and defines the ESPD Request and ESPD Response documents. (https://github.com/OP-TED/ESPD-EDM)
+The technical model developed by the European Commission that defines how the ESPD Request and ESPD Response are structured, exchanged electronically, and validated between procurement systems. Version 5.0.0 is based on UBL 2.4. (https://github.com/OP-TED/ESPD-EDM)
 
 [[espd-request,ESPD Request]]
 *ESPD Request*  +

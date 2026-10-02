@@ -177,7 +177,7 @@ image::https://kroki.io/blockdiag/svg/eNrdVV9v0zAQf04-xSm8gBTSP1RsbAJpW1Oxh6FpG0
 //[Edit this diagram](https://niolesk.top/#https://kroki.io/blockdiag/svg/eNrdVV9v0zAQf04-xSm8gBTSP1RsbAJpW1Oxh6FpG09oilz7mpg5dnBcaDf1nU_Bh-OTYLdN0q4dHYiXEamp_bvzne_ud7mhUPSGcZLCnd9qwTlJEVoGaSY5JWK-SjSWhZIlRpnJBZzm93QS7pCy9fHiNLnAEWqUFJP48rxvt1_GWJroc5HC8wFPxxqh8-Z1BFYX1AhMhuAUYan4wt3hEg2UBZGQo9F84gPMt8k3zkwGb6G3f1hjGfI0MxbsdOcgwxEZC5OMlDQlv0Un6c0lfqrVuIBb1CpZLO98nyqhtNUJnsV7cXvQCQ59Pwjg5TsIKKEHR4xxw5Ukoq_oOEdp6vgC-MS4OyqVxBAEGaJwhtpR9PP7j-Da322g9mIMoZkTrhmtTKxI5yeG9CDOh8gYssroMZdET6Mo-lsDjzpnsXhiUNtotqdheXCLUuXXlj0IF8vK9XtSZhXm1kciVZqbLD9DkylWieJJwfW0TwyuI1c8r5Ezuz5RrN4PlM6JWUViSRXjMl3FTjKiCbVXtrxbO80FfiD5n4bYx5JqXriq7-TIkpMjrktTk9KrSTkUhN5YSnoGJ6ah6mDQto_Dy4wUjuKCS3RbMxVuy2wakVnA8yzvvfvV9D3fWzgrkSrJGs9e0KhdTQsXeuXCqkhLmKGahFA1YmevHa77DKG5Zv-4_yo-Dq6X99iMyqEPReZk96KbQ9sjdO8djRE-QPzwIWL71uwiMSbjejVJXrCh_SSStZKnJ9mH4WaD-S4imNk_-5v5s2p8LJJulO08hmVYjQX4SsQYgZd2XOy7D31dMTsBc9sKTbm67RDq4dJt28I8YiL8rv7dvcZI04vhP-dt-H9VeEdSey6ps18Ggck0)
 _Figure 2. URI of the ESPD Request_
 
-In the ESPD Response you may also add references to:
+The ESPD Response may also include references to:
 
 * Evidences that are global for the whole Response. This is not recommended though. Evidences should be as much particular of the Criterion as possible.
 * Other documents, e.g. maps, diagrams, or descriptive documents to complement the references about works, supplies or services.
@@ -351,7 +351,7 @@ The diagram below shows the XSD element that will hold the data required by the 
 ** The (pre)qualification system is perfectly identified (and trusted, as it is registered in eCertis); and
 ** The economic operator, identified with the number used in that (pre)qualification system, is linked inequivocally to that (pre)qualification system.
 * *References and classification*: The references linked to the classification of the EO are place in the component cac:QualifyingParty/cac:CompletedTask.
-** For this version of the ESPD the only expected data about the reference is a short description identifying the task as described in the (pre)qualification system. However if you take a look at this common aggregate component you will observe that it caters for other relevant data.
+** For this version of the ESPD the only expected data about the reference is a short description identifying the task as described in the (pre)qualification system. However, this common aggregate component also caters for other relevant data.
 ** Similarly, this version of the ESPD-EDM, does not expect a complex representation of possible (optional) classification schemes. However the component cac:BusinessClassificationScheme, associated to cac:QualifyingParty allows complex hierarchical classifications.
 * *SME and number of employees*: The number of employees determine the classification of the company as Micro, Small, Medium or Large company. The cac:QualifyingParty component provides two place-holders that are used by this ESPD-EDM (see also mock-ups above) :
 ** *cac:QualifyingParty/cbc:EmployeeQuantity*, for the number of employees; and
@@ -476,7 +476,7 @@ _Table 33. Qualifying Party, expected elements_
 *Rule*: Use it to place here the references that were used in the (pre)qualification system to get the specific classification related to those references.
 
 |*cac:Party/cac:PartyIdentification/cbc:ID* |Identifier |1 |The identifier of the economic operator in an official list, register or (pre)qualification system. a|
-*Rule*: The attribute schemeAgencyID must hold the value retrieved from eCertis that identifies unequivocally the (pre)qualification system. If, for any reason, that value is not available use the default schemeAgencyID "OP" and the cac:EconomicOperatorParty/{zwsp}cac:QualifyingParty/{zwsp}cac:Party/{zwsp}cac:PartyIdentification/{zwsp}cbc:ID for the value of the identifier. Additionally you can use the data structure "registered" to specify an alternative or additional name, identifier and description. The code list link:{url-tree}/codelists/EOIDType.gc[EOIDType] should be used to indicate the type of identifier used as a value of the schemeID attribute, e.g. schemeID="VAT").
+*Rule*: The attribute schemeAgencyID must hold the value retrieved from eCertis that identifies unequivocally the (pre)qualification system. If, for any reason, that value is not available use the default schemeAgencyID "OP" and the cac:EconomicOperatorParty/{zwsp}cac:QualifyingParty/{zwsp}cac:Party/{zwsp}cac:PartyIdentification/{zwsp}cbc:ID for the value of the identifier. Additionally, the data structure "registered" can be used to specify an alternative or additional name, identifier and description. The code list link:{url-tree}/codelists/EOIDType.gc[EOIDType] should be used to indicate the type of identifier used as a value of the schemeID attribute, e.g. schemeID="VAT").
 
 |===
 
@@ -629,7 +629,7 @@ _Table 38. Service provider, expected elements_
 [arabic]
 . The value expected for the EO identifier is of type Identifier. For the identifier of the EO it is also required to specify the type of identifier, and a closed list of possible types is proposed. EOs must use one of the available values, but the preferred one is the VAT number. Beware that the data structure does not keep the type of the identifier. This is because the this type code is placed in the attribute @schemeID of the cac:ResponseValue/cbc:ResponseID element (and the @schemeAgencyID attribute must be set to the default OP). See the information requirement about the identifiers of the economic operators at the beginning of the section. See also next sections about the responses, XSD schemas and XML example.
 
-As you will see next, the information required about the economic operators varies depending on several factors:
+The information required about the economic operators varies depending on several factors:
 
 [arabic]
 . Is the economic operator a sole trader or does it belong to a group?
@@ -964,7 +964,7 @@ The section *Data Structures* established a mapping between each data structure 
 * REQUIREMENT_SUBGROUP and QUESTION_SUBGROUP are mapped to cac:SubsidiaryTenderingCriterionPropertyGroup; and
 * REQUIREMENT and QUESTION are mapped to cac:TenderingCriterionProperty.
 
-If you have a look at the data structure tables (the fragments of spread-sheets in previous chapters), you will observe that all groups and subgroups have a UUID associated. These UUID are generated by eCertis and identify the structure inside the group or subgroup.
+In the data structure tables (the fragments of spread-sheets in previous chapters), all groups and subgroups have a UUID associated. These UUID are generated by eCertis and identify the structure inside the group or subgroup.
 
 In the same data structures *REQUIREMENT*(s) and *QUESTION*(s) do not have a UUID assigned. This is because the UUID for each cac:TenderingCriterionProperty element has to be generated dynamically: each criterion property needs a unique identifier. The reasons are:
 
@@ -1119,7 +1119,7 @@ _Table 42. Elements expected in the 'cac:EvidenceSupplied' class_
 
 |===
 
-The table below lists the elements expected in the sub-class cac:ResponseValue. Remember that the elements of distinct types are all *disjoint* amongst themselves: i.e. you cannot associate one amount AND one indicator to the same cac:TenderingCriterionProperty element (but several values for elements of one type may be used to build up lists, e.g. lists of Lots and lists of CPV codes).
+The table below lists the elements expected in the sub-class cac:ResponseValue. Remember that the elements of distinct types are all *disjoint* amongst themselves: i.e. one amount AND one indicator cannot be associated with the same cac:TenderingCriterionProperty element (but several values for elements of one type may be used to build up lists, e.g. lists of Lots and lists of CPV codes).
 
 _Table 43. Elements expected in the 'cac:ResponseValue' class_
 [cols="1,4",options="header"]
@@ -1184,7 +1184,7 @@ The first thing to take into account is that the responses go at the end of the 
 
 The second important thing is to keep in mind is that each response is linked to one, and only one, QUESTION via the identifier of that QUESTION.
 
-Having said this, imagine that the following snippet of XML code is the last criterion from the ESPD-Request that has been instantiated in your ESPD-Response (pay attention to the bullets and comments under the example).
+The following snippet of XML code is the last criterion from the ESPD Request as instantiated in the ESPD Response (pay attention to the bullets and comments under the example).
 
 _Reduction of Candidates - (QUESTION(s) in the ESPD-Request)_
 
@@ -1322,13 +1322,13 @@ _Table 45. Elements expected from the 'cac:Evidence/cac:DocumentReference' eleme
 |===
 |*Components* |*Type* |*Card* |*Description* |*Requirements*
 |*cbc:ID* |Identifier |1 |An identifier for the referenced document. a|
-*Rule*: *If the reference or verification code is provided for the evidence use this element to place it.* This 'code' is used in some countries (e.g. Spain) to check that the document is authentic. If a verification code is supplied you can use an official 'end-point' to retrieve an image (or a PDF) of the document and check that the evidence is authentic.
+*Rule*: *If the reference or verification code is provided for the evidence use this element to place it.* This 'code' is used in some countries (e.g. Spain) to check that the document is authentic. If a verification code is supplied, an official 'end-point' can be used to retrieve an image (or a PDF) of the document and check that the evidence is authentic.
 
 |*cac:Attachment/cac:ExternalReference/cbc:URI* |Identifier |1 |The Uniform Resource Identifier (URI) that identifies the external object as an Internet resource. a|
 *Rule*: None. No rule is applied.
 
 |*cac:IssuerParty/cac:PartyIdentification/cbc:ID* |Identifier |0..1 |The identifier of the party issuer of the documentary evidence. a|
-*Rule*: Not currently used in ESPD, but if you decide to use it try to use the VAT number whenever possible.
+*Rule*: Not currently used in ESPD; where used, the VAT number should be used whenever possible.
 
 |*cac:IssuerParty/cac:PartyName/cbc:Name* |Text |0..1 |The name of the party issuer of the documentary evidence. a|
 *Rule*: ESPD-EDM uses this element to keep the name of the evidence issuer in the ESPD Response XML instance.

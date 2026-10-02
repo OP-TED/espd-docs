@@ -5,22 +5,23 @@
 
 == Completing the ESPD Response
 
-Economic Operators use the ESPD Response to demonstrate that they are eligible and capable of participating in a procurement procedure by responding to the exclusion grounds and selection criteria set by the buyer in the ESPD Request.
+Economic operators use the ESPD Response to demonstrate that they are eligible and capable of participating in a procurement procedure by responding to the exclusion grounds and selection criteria set by the buyer in the ESPD Request.
 
-The ESPD process from the economic operator perspective:
-
+// REVIEW NOTE (management): this diagram shows where the ESPD fits into the procurement
+// process rather than the data an economic operator provides. It should be MOVED to
+// what-is-espd.adoc (or the procurement-process page), not kept here. Left in place pending that move.
 image::https://kroki.io/blockdiag/svg/eJydksFOwzAMhu97imhcQILRrRsIVSCh0Z0rODKE0sZbLTKnNC5DIN6dJNNKAXEoF6v9Y39x7D_XpnhSKNfifSCEgpVsND_aUlYgLkVuXpOOvDLEFt_8yXjsD8goeNyi4tJLk6jVSsB1yU6cTr1mK0ltXhy10lfaLBk4MRuLey1z0E4aZloSIa2Hx6Iw2tReO4iiOL64cBLDK7fytkSG4YPnZpMOYm42FTAyGlrSdVGAtT1pcYd21-QbtNbBekKmHUj6InUjuT9k1oFcb2WtetaffZsLcS0L7olQhm2HMhqNXPbeK0Pnoo0h39Z-05PoWLQr9j99Ljv_sUcNfYe2M9TJlfeEj3GI0xBnIZ6FGJ7lP85DTdp10AJJOUszFrCkU5HeZTfiFp4bsLykQ1yJqsk12hLU0bfW5vM0Wix2T0l_mYgDaEm3YCtDFv4u7W49q80LKhDgI_mGfANbJIL6r9sdY12bphLvwtQIxMF6LqkytbMAcvK7LPEjCGNLxMc_AbtZx_8H7BY084CPwSdYx1zb[The ESPD process from the economic operator perspective,width=900,height=300]
 //image::espd_bus_supplier.png[]
 //[Edit this diagram](https://niolesk.top/#https://kroki.io/blockdiag/svg/eJydksFOwzAMhu97imhcQILRrRsIVSCh0Z0rODKE0sZbLTKnNC5DIN6dJNNKAXEoF6v9Y39x7D_XpnhSKNfifSCEgpVsND_aUlYgLkVuXpOOvDLEFt_8yXjsD8goeNyi4tJLk6jVSsB1yU6cTr1mK0ltXhy10lfaLBk4MRuLey1z0E4aZloSIa2Hx6Iw2tReO4iiOL64cBLDK7fytkSG4YPnZpMOYm42FTAyGlrSdVGAtT1pcYd21-QbtNbBekKmHUj6InUjuT9k1oFcb2WtetaffZsLcS0L7olQhm2HMhqNXPbeK0Pnoo0h39Z-05PoWLQr9j99Ljv_sUcNfYe2M9TJlfeEj3GI0xBnIZ6FGJ7lP85DTdp10AJJOUszFrCkU5HeZTfiFp4bsLykQ1yJqsk12hLU0bfW5vM0Wix2T0l_mYgDaEm3YCtDFv4u7W49q80LKhDgI_mGfANbJIL6r9sdY12bphLvwtQIxMF6LqkytbMAcvK7LPEjCGNLxMc_AbtZx_8H7BY084CPwSdYx1zb)
 _The ESPD process from the economic operator perspective_
 
-The Economic Operator retrieves the ESPD Request, if one is published alongside the Contract Notice, fills in the ESPD Response on an ESPD service platform, and submits it as part of their tender.
+The economic operator retrieves the ESPD Request, if one is published alongside the Contract Notice, provides its ESPD Response on an ESPD Service platform, and submits it as part of its tender.
 
-NOTE: If no ESPD Request is published, the exclusion grounds and selection criteria are stated only in the procurement documents (specifications), and the Economic Operator prepares its ESPD Response based on those.
+NOTE: If no ESPD Request is published, the exclusion grounds and selection criteria are stated only in the procurement documents (specifications), and the economic operator prepares its ESPD Response based on those.
 
-=== Roles of the Economic Operator
+=== Roles of the economic operator
 
-Economic Operators can participate in a procurement procedure in different roles:
+An economic operator can participate in a procurement procedure in different roles:
 
 * *Sole Tenderer:* sole economic operator participating by itself;
 * *Group Leader:* the leader of a Consortium, Joint Venture or other type of group. The Group Leader is the point of contact with the buyer and speaks on behalf of the group;
@@ -28,13 +29,13 @@ Economic Operators can participate in a procurement procedure in different roles
 * *Other entity (relied upon):* an entity upon which the main contractor, the group, or another subcontractor relies in order to meet the selection criteria;
 * *Subcontractor:* an entity upon which the main contractor, the group, or another subcontractor does not rely in order to meet the selection criteria, and which is not a group member.
 
-NOTE: Each participating party must fill in and sign their own ESPD Response. It is the Group Leader's responsibility to collect the completed ESPD Response documents from all parties and submit them in the tender.
+NOTE: Each participating party provides and signs its own ESPD Response. It is the Group Leader's responsibility to collect the completed ESPD Response documents from all parties and submit them in the tender.
 
-=== What the economic operator fills in
+=== Data provided by the economic operator
 
 ==== Part 1: Procedure information
 
-The Economic Operator identifies the ESPD Request to which it is responding, by providing information about the publication, the identity of the procurer, and the procurement procedure.
+The economic operator identifies the ESPD Request to which it is responding, by providing information about the publication, the identity of the buyer, and the procurement procedure.
 
 image::form/of1.png[]
 
@@ -42,7 +43,7 @@ _Progress tracking: the form shows completed and remaining sections_
 
 ==== Part 2: Economic Operator information
 
-The Economic Operator provides information about itself, including whether it is a Micro, Small or Medium-Sized Enterprise, whether it is registered on an official list of approved operators, and whether it participates together with others.
+The economic operator provides information about itself, including whether it is a Micro, Small or Medium-sized Enterprise, whether it is registered on an official list of approved operators, and whether it participates together with others.
 
 image::form/of5.png[]
 
@@ -58,13 +59,13 @@ _Information about reliance on the capacities of other entities_
 
 image::form/of8.png[]
 
-_Information concerning subcontractors on whose capacity the EO does not rely_
+_Information concerning subcontractors on whose capacity the economic operator does not rely_
 
 NOTE: Part 2 applies only to the ESPD Response document.
 
 ==== Part 3: Exclusion grounds
 
-The Economic Operator responds to the exclusion grounds defined by the buyer, declaring whether any grounds apply and providing explanations where relevant.
+The economic operator responds to the exclusion grounds defined by the buyer, declaring whether any grounds apply and providing explanations where relevant.
 
 image::form/of10.png[]
 
@@ -84,7 +85,7 @@ _Part 3D: Response to purely national exclusion grounds_
 
 ==== Part 4: Selection criteria
 
-The Economic Operator responds to the selection criteria set by the buyer, providing the required information and evidence references.
+The economic operator responds to the selection criteria set by the buyer, providing the required information and evidence references.
 
 image::form/of18.png[]
 
@@ -104,17 +105,17 @@ _Part 4D: Quality assurance schemes and environmental management standards respo
 
 ==== Part 5: Reduction of qualified candidates
 
-The Economic Operator provides information where the buyer has specified objective criteria to limit the number of candidates invited to tender in a two-phased procedure.
+The economic operator provides information where the buyer has specified objective criteria to limit the number of candidates invited to tender in a two-phased procedure.
 
 image::form/of26.png[]
 
 _Part 5: Reduction of the number of qualified candidates_
 
-NOTE: Part 5 does not apply when the Economic Operator is a subcontractor that the lead entity does not rely on in order to meet the selection criteria.
+NOTE: Part 5 does not apply when the economic operator is a subcontractor that the lead entity does not rely on in order to meet the selection criteria.
 
 ==== Part 6: Concluding statements
 
-The Economic Operator declares that the information submitted is accurate, that it is able to provide certificates and documentary evidence, and consents to grant the buyer access to supporting documentation.
+The economic operator declares that the information submitted is accurate, that it is able to provide certificates and documentary evidence, and consents to grant the buyer access to supporting documentation.
 
 image::form/of27.png[]
 
@@ -122,7 +123,7 @@ _Part 6: Concluding statements_
 
 === Completing and downloading
 
-Once the form is filled in, the Economic Operator can review all information provided via the "Overview" option and download the completed ESPD Response:
+Once the ESPD Response is complete, the economic operator can review all information provided via the "Overview" option and download the completed ESPD Response:
 
 image::form/of29.png[]
 
@@ -130,19 +131,19 @@ _Overview and download of the completed ESPD Response_
 
 === Lots
 
-Important considerations for Economic Operators regarding lots:
+Important considerations for economic operators regarding lots:
 
-* Each Economic Operator must submit a *separate ESPD Response per lot* (or group of lots) they tender for.
-* Different EO parties might have different roles in different lots (e.g. a relied-on entity in some lots, a subcontractor in others).
+* Each economic operator submits a *separate ESPD Response per lot* (or group of lots) they tender for.
+* Different parties might have different roles in different lots (e.g. a relied-on entity in some lots, a subcontractor in others).
 * The exclusion grounds apply to all lots; selection criteria may differ per lot.
 
 === Reuse of ESPD Responses
 
-It is not necessary to create an ESPD Response from scratch for each procedure. Completed ESPD documents can be downloaded, saved locally, and uploaded in subsequent procedures. Only the information that differs from the previous procedure needs to be changed, making the process more efficient over time.
+It is not necessary to create an ESPD Response from scratch for each procedure. A completed ESPD Response can be downloaded, saved locally, and uploaded in subsequent procedures. Only the information that differs from the previous procedure needs to be changed, making the process more efficient over time.
 
 === Further information
 
-* For details on the ESPD parts and what each role fills in, see xref:espd-parts.adoc[ESPD Parts].
+* For details on the ESPD parts and what each role provides, see xref:espd-parts.adoc[ESPD Parts].
 * For technical implementation details, see the xref:technical:espd-response.adoc[ESPD Response] technical guide.
 * A list of current ESPD Service providers can be found at https://single-market-economy.ec.europa.eu/single-market/public-procurement/digital-procurement/european-single-procurement-document-and-ecertis_en[the European Commission's ESPD page].
 

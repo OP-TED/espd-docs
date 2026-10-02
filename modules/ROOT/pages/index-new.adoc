@@ -5,7 +5,9 @@
 
 == ESPD-EDM Documentation
 
-The European Single Procurement Document Exchange Data Model (ESPD-EDM) provides a standardised model for the exchange of ESPD documents between procurement stakeholders. This documentation covers the ESPD-EDM v5.0.0.
+The European Single Procurement Document (ESPD) is a self-declaration by an economic operator, used as preliminary evidence in a public procurement procedure that it is not in a situation of exclusion and that it meets the buyer's selection criteria.
+
+This site documents the *ESPD Exchange Data Model (ESPD-EDM) v5.0.0* — the technical model, based on UBL 2.4, that defines how the ESPD Request and ESPD Response are structured, exchanged electronically, and validated.
 
 === Introduction
 
