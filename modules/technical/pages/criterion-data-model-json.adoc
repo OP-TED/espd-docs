@@ -7,52 +7,144 @@
 
 Starting with ESPD-EDM v5.0.0, the canonical source for criterion and document structure definitions is the JSON file `espd-edm.json`, replacing the deprecated Excel-based `ESPD-criterion.xlsx` workflow.
 
+The `espd-edm.json` file is *generated from the ESPD Conceptual Model* (maintained in Enterprise Architect); it is not edited by hand.
+
 === Location
 
-https://github.com/OP-TED/ESPD-EDM/tree/v5.0.0/criterion/espd-edm.json[criterion/espd-edm.json^]
+The criterion data model is published as a single file, `espd-edm.json`, in the `criterion/` folder of the https://github.com/OP-TED/ESPD-EDM[OP-TED/ESPD-EDM^] repository. It is distributed with every ESPD-EDM release and is the artefact that ESPD Service implementers consume to build the criterion catalogue.
+
+[cols="1,3"]
+|===
+|Repository |https://github.com/OP-TED/ESPD-EDM[OP-TED/ESPD-EDM^]
+|Path |`criterion/espd-edm.json`
+|Format |JSON (generated from the ESPD Conceptual Model)
+|===
 
 === What it defines
 
-The `espd-edm.json` file provides the structural definition of the ESPD criteria and their content trees — each criterion with its property groups, sub-groups, requirements and questions.
+The `espd-edm.json` file provides the structural definition of the ESPD criteria and their content trees — each criterion with its property groups, sub-groups, requirements and questions — as well as the document-context information nodes (buyer, economic operator, signature, etc.).
 
-The file is *not* organised by ESPD Part and Section. There are no `part` or `section` wrappers; ESPD Part membership is implied by the criterion `code` / `tag` prefix:
+The file *is* organised by ESPD Part and Section. The top-level array holds one object per ESPD Part (`partI`–`partVI`); each Part lists its `sections`, and each section lists the `criteria` it contains:
 
-* `OT…` (code `OT`) — "Other"/procedure-level criteria used in Part II;
-* `exg-…` (criteria `C01`–`C24`, `C67`) — exclusion grounds (Part III);
-* `slc-…` (criteria `C25`–`C56`, `C66`) — selection criteria (Part IV).
+[cols="1,3",options="header"]
+|===
+|Part |Contents
+
+|`partI`
+|Procedure / publication information (`INFORMATION` nodes: `info-pub`, `info-buyer`, `info-pp`).
+
+|`partII`
+|Information concerning the economic operator (`INFORMATION` node `info-eo`, power-of-attorney `info-poa`, and the `OT…` procedure-level criteria — SME, sheltered workshop, reliance on other entities, subcontracting, etc.).
+
+|`partIII`
+|Exclusion grounds (criteria `C01`–`C24`, `C67`; criterion type codes `exg-…`).
+
+|`partIV`
+|Selection criteria (criteria `C25`–`C56`, `C66`; criterion type codes `slc-…`).
+
+|`partV`
+|Reduction of the number of qualified candidates.
+
+|`partVI`
+|Concluding statements / signature (`INFORMATION` node `info-signature`).
+|===
 
 === JSON structure overview
 
-The top-level structure is a flat *array of criterion objects*. Each criterion carries its own metadata and a recursive `components` tree:
+The top-level structure is an *array of Part objects*. Each Part carries a `part` identifier and a `sections` array; each section carries a `section` letter and a `criteria` array. Each criterion then carries its own metadata and a recursive `components` tree:
 
 ```json
 [
   {
-    "tag": "OT65",
-    "type": "CRITERION",
-    "uuid": "ede30cb7-70c2-4ead-ba11-22d0cac5ab7a",
-    "code": "OT",
-    "cardinality": "1",
-    "components": [ ... ],
-    "name": "Economic Operator Micro, Small or Medium-sized Enterprise",
-    "description": "Is the economic operator a Micro, a Small or Medium-sized Enterprise?",
-    "requestpath": "OT65_OT",
-    "responsepath": "OT65_OT"
-  },
-  {
-    "tag": "C01",
-    "type": "CRITERION",
-    "uuid": "005eb9ed-1347-4ca3-bb29-9bc0db64e1ab",
-    "code": "exg-crim-part",
-    "cardinality": "1",
-    "components": [ ... ],
-    "name": "Participation in a criminal organisation",
-    "description": "...",
-    "requestpath": "C01_exg-crim-part",
-    "responsepath": "C01_exg-crim-part"
+    "part": "partIII",
+    "sections": [
+      {
+        "section": "A",
+        "criteria": [
+          {
+            "tag": "C01",
+            "type": "CRITERION",
+            "uuid": "005eb9ed-1347-4ca3-bb29-9bc0db64e1ab",
+            "code": "exg-crim-part",
+            "cardinality": "1",
+            "components": [ ... ],
+            "name": "Participation in a criminal organisation",
+            "description": "The economic operator itself or any person ...",
+            "requestpath": "C01_exg-crim-part",
+            "responsepath": "C01_exg-crim-part"
+          }
+        ]
+      }
+    ]
   }
 ]
 ```
+
+Part I also contains `INFORMATION` nodes (rather than `CRITERION` nodes) that describe document-context structures. For example:
+
+```json
+{
+  "part": "partI",
+  "sections": [
+    {
+      "section": "A",
+      "criteria": [
+        {
+          "tag": "I68",
+          "type": "INFORMATION",
+          "uuid": "5B3E9A4C-6740-4338-A1E1-855E90029E74",
+          "code": "info-pub",
+          "cardinality": "1",
+          "components": [
+            {
+              "tag": "ADR1",
+              "type": "ADDITIONAL_DOCUMENT_REFERENCE",
+              "cardinality": "1..n",
+              "components": [
+                { "tag": "ATT1", "type": "ATTACHMENT", "cardinality": "1",
+                  "requestpath": "I68_info-pub/ADR1/ATT1",
+                  "responsepath": "I68_info-pub/ADR1/ATT1" }
+              ],
+              "requestpath": "I68_info-pub/ADR1",
+              "responsepath": "I68_info-pub/ADR1"
+            }
+          ],
+          "name": "I68_info-pub",
+          "description": "",
+          "requestpath": "I68_info-pub",
+          "responsepath": "I68_info-pub"
+        }
+      ]
+    }
+  ]
+}
+```
+
+NOTE: On a `CRITERION` node the `name` and `description` are human-readable (e.g. "Participation in a criminal organisation"). On an `INFORMATION` node the `name` is the `tag_code` string (e.g. `I68_info-pub`) and `description` is empty — these nodes are structural, not questions.
+
+=== Element types
+
+Each node carries a `type`. The types fall into two families.
+
+*Content types* (criteria and their question/requirement trees):
+
+* `CRITERION`, `SUBCRITERION` — a criterion and its optional sub-criterion;
+* `LEGISLATION` — the legislative reference of an exclusion ground;
+* `QUESTION_GROUP`, `QUESTION_SUBGROUP` — groupings of questions (the subgroup carries conditional-display behaviour);
+* `REQUIREMENT_GROUP`, `REQUIREMENT_SUBGROUP` — groupings of requirements (values stated by the buyer);
+* `QUESTION` — a question answered by the economic operator;
+* `REQUIREMENT` — a value stated by the buyer;
+* `CAPTION` — label text, no input;
+* `LOT_REFERENCE` — a reference to a procurement lot.
+
+*Context / information types* (document-level structures, mostly under Part I, Part II and Part VI):
+
+* `INFORMATION` — a document-context information node;
+* `ADDITIONAL_DOCUMENT_REFERENCE`, `ATTACHMENT` — references to external documents;
+* `CONTRACTING_PARTY`, `ECONOMIC_OPERATOR_PARTY`, `QUALIFYING_PARTY`, `SIGNATORY_PARTY`, `PARTY` — the parties involved;
+* `PARTY_IDENTIFICATION`, `PARTY_NAME`, `POSTAL_ADDRESS`, `COUNTRY`, `CONTACT`, `PHYSICAL_LOCATION` — party detail structures;
+* `PROCUREMENT_PROJECT`, `PROCUREMENT_PROJECT_LOT` — the procurement project and its lots;
+* `POWER_OF_ATTORNEY`, `SIGNATURE` — power of attorney and the document signature.
 
 === Element properties
 
@@ -63,25 +155,25 @@ Each element in the tree (a criterion or one of its components) may carry the fo
 |Property |Description
 
 |`tag`
-|Short identifier tag for the element within its criterion (e.g. `C01`, `OT65`, `QG1`, `QSG1`, `Q1`, `RG1`, `SBC1`, `L1`).
+|Short identifier tag for the element within its criterion (e.g. `C01`, `OT65`, `I68`, `QG1`, `QSG1`, `Q1`, `RG1`, `SBC1`, `L1`).
 
 |`type`
-|The structural type of the element. Values used: `CRITERION`, `SUBCRITERION`, `LEGISLATION`, `QUESTION_GROUP`, `QUESTION_SUBGROUP`, `REQUIREMENT_GROUP`, `REQUIREMENT_SUBGROUP`, `QUESTION`, `REQUIREMENT`, `CAPTION`.
+|The structural type of the element (see <<_element_types,Element types>>).
 
 |`code`
-|Meaning depends on the node. On a `CRITERION` it is the criterion type code (e.g. `OT`, `exg-crim-part`, `slc-suit-reg-prof`). On a group it is the group-behaviour code (`ON*`, `ONTRUE`, `ONFALSE`). On a property (`QUESTION` / `REQUIREMENT` / `CAPTION`) it repeats the element role.
+|Meaning depends on the node. On a `CRITERION` / `INFORMATION` it is the type code (e.g. `OT`, `exg-crim-part`, `slc-suit-reg-prof`, `info-pub`). On a group it is the group-behaviour code (`ON*`, `ONTRUE`, `ONFALSE`). On a property (`QUESTION` / `REQUIREMENT` / `CAPTION`) it repeats the element role.
 
 |`uuid`
-|Universally unique identifier. Present on top-level criteria (harmonised with eCertis).
+|Universally unique identifier. Present on top-level criteria and information nodes (criterion UUIDs are harmonised with eCertis).
 
 |`cardinality`
 |Expected cardinality (`1`, `0..1`, `1..n`, `0..n`).
 
 |`name`
-|Human-readable criterion name (present on top-level criteria, e.g. "Participation in a criminal organisation"). Note: it is the `requestpath` / `responsepath` values, not `name`, that combine tag and code (e.g. `C01_exg-crim-part`).
+|On a `CRITERION`, the human-readable criterion name (e.g. "Participation in a criminal organisation"). On an `INFORMATION` node it is the `tag_code` string (e.g. `I68_info-pub`).
 
 |`description`
-|Human-readable description or question/requirement text.
+|Human-readable description or question/requirement text (empty on structural nodes).
 
 |`propertydatatype`
 |On `QUESTION` / `REQUIREMENT` nodes, the expected data type of the value (e.g. `INDICATOR`, `DESCRIPTION`, `AMOUNT`, `QUANTITY_INTEGER`, `EVIDENCE_IDENTIFIER`, `NONE`). See <<_data_type_values,Data type values>> below.
@@ -96,18 +188,18 @@ Each element in the tree (a criterion or one of its components) may carry the fo
 |XML Path-like identifier locating the element in the ESPD Response context.
 
 |`contentpath`
-|Present on response-bearing nodes (`QUESTION` / `REQUIREMENT`); the path to the response value, ending in `/RV` (e.g. `OT65_OT/QG1/Q1/R1/RV`).
+|Present on response-bearing nodes (`QUESTION` / `REQUIREMENT`); the path to the response value, ending in `/RV` (e.g. `C01_exg-crim-part/QG1/Q1/R1/RV`).
 
 |`components`
 |Array of nested child elements (recursive tree structure).
 
 |===
 
-NOTE: The generated file is not perfectly uniform — a few nodes deviate (for example a group missing its `code`, or a `QUESTION` node carrying `code` = `CAPTION`). Consuming code should be defensive rather than assuming every node of a given type has an identical property set.
+NOTE: The generated file is not perfectly uniform — a few nodes deviate. For example some `QUESTION` nodes carry `code` = `QUESTION` while others omit `code` entirely, and a small number of groups carry descriptive `code` values such as `[Economic or Financial]`, `[Rating]` or `[Descriptive]` instead of `ON*` / `ONTRUE` / `ONFALSE`. Consuming code should be defensive rather than assuming every node of a given type has an identical property set.
 
 === Component tree
 
-Each criterion contains a `components` array that defines the nested structure of sub-elements. Groups can contain sub-groups and properties, forming a recursive tree. The fragment below (from criterion `OT65`) shows a `QUESTION_GROUP` holding a `QUESTION` and a conditional `QUESTION_SUBGROUP`:
+Each criterion contains a `components` array that defines the nested structure of sub-elements. Groups can contain sub-groups and properties, forming a recursive tree. The fragment below (from criterion `C01`) shows a `QUESTION_GROUP` holding a `QUESTION` and a conditional `QUESTION_SUBGROUP`:
 
 ```json
 {
@@ -115,8 +207,8 @@ Each criterion contains a `components` array that defines the nested structure o
   "type": "QUESTION_GROUP",
   "cardinality": "1",
   "code": "ON*",
-  "requestpath": "OT65_OT/QG1",
-  "responsepath": "OT65_OT/QG1",
+  "requestpath": "C01_exg-crim-part/QG1",
+  "responsepath": "C01_exg-crim-part/QG1",
   "components": [
     {
       "tag": "Q1",
@@ -125,17 +217,17 @@ Each criterion contains a `components` array that defines the nested structure o
       "code": "QUESTION",
       "description": "Your answer?",
       "propertydatatype": "INDICATOR",
-      "requestpath": "OT65_OT/QG1/Q1",
-      "responsepath": "OT65_OT/QG1/Q1/R1",
-      "contentpath": "OT65_OT/QG1/Q1/R1/RV"
+      "requestpath": "C01_exg-crim-part/QG1/Q1",
+      "responsepath": "C01_exg-crim-part/QG1/Q1/R1",
+      "contentpath": "C01_exg-crim-part/QG1/Q1/R1/RV"
     },
     {
       "tag": "QSG1",
       "type": "QUESTION_SUBGROUP",
-      "cardinality": "1",
+      "cardinality": "0..n",
       "code": "ONTRUE",
-      "requestpath": "OT65_OT/QG1/QSG1",
-      "responsepath": "OT65_OT/QG1/QSG1",
+      "requestpath": "C01_exg-crim-part/QG1/QSG1",
+      "responsepath": "C01_exg-crim-part/QG1/QSG1",
       "components": [ ... ]
     }
   ]
@@ -146,9 +238,9 @@ The group's `code` (`ON*` / `ONTRUE` / `ONFALSE`) carries the conditional-displa
 
 === Path identifiers
 
-The `requestpath` and `responsepath` properties provide XML Path-like identifiers that uniquely locate each element within the ESPD document structure. These paths are built by concatenating parent tags from the criterion root to the leaf. The root segment combines the criterion tag and code (e.g. `C01_exg-crim-part`), and each descendant appends its own tag (e.g. `C01_exg-crim-part/QG1/Q1`). The `responsepath` extends this with a response occurrence (`/R1`), and `contentpath` with the response value (`/R1/RV`).
+The `requestpath` and `responsepath` properties provide XML Path-like identifiers that uniquely locate each element within the ESPD document structure. These paths are built by concatenating parent tags from the criterion root to the leaf — the `part` / `section` wrappers are *not* part of the path. The root segment combines the criterion tag and code (e.g. `C01_exg-crim-part`), and each descendant appends its own tag (e.g. `C01_exg-crim-part/QG1/Q1`). The `responsepath` extends this with a response occurrence (`/R1`), and `contentpath` with the response value (`/R1/RV`).
 
-These path IDs replace the UUID-based identification for sub-elements (since v4.0.0), while top-level criterion UUIDs are preserved from eCertis.
+These path IDs identify sub-elements; only the top-level criterion (and information) node carries a UUID, which for criteria is preserved from eCertis.
 
 === Migration from Excel
 
@@ -157,12 +249,13 @@ In previous versions, criterion structures were maintained in `ESPD-criterion.xl
 * The Excel file is *deprecated* (may still exist for reference but is not the source of truth)
 * All tooling should consume `espd-edm.json` instead
 * The JSON is generated from the ESPD Conceptual Model (Enterprise Architect)
-* An ESPD service builds the ESPD Request and Response UBL XML from the `espd-edm.json` criterion data
+* An ESPD service builds the ESPD Request and Response UBL XML from the `espd-edm.json` data
 
 === How implementers use it
 
 [arabic]
-. Parse `espd-edm.json` to obtain the array of criteria
+. Parse `espd-edm.json` to obtain the array of Parts
+. For each Part, walk its `sections`, and for each section walk its `criteria`
 . Walk each criterion's `components` tree recursively
 . Use `type` to determine the UBL element to generate and how to render the node
 . Use `code` on groups (`ON*` / `ONTRUE` / `ONFALSE`) to apply conditional-display logic
@@ -176,13 +269,16 @@ To render an ESPD form or generate XML, walk the JSON tree recursively:
 
 [source,pseudocode]
 ----
-for each criterion in espd-edm.json:   // the file is a flat array of criteria
-  render_element(criterion)
+for each part in espd-edm.json:          // the file is an array of Part objects
+  for each section in part.sections:
+    for each criterion in section.criteria:
+      render_element(criterion)
 
 function render_element(element):
   // Use element.type to determine what to render
   switch element.type:
     case "CRITERION", "SUBCRITERION": render criterion header (name, description)
+    case "INFORMATION":               render / map the document-context structure
     case "LEGISLATION":               render the legislation reference
     case "QUESTION":                  render form input based on element.propertydatatype
     case "REQUIREMENT":               render read-only value set by the buyer
@@ -190,6 +286,8 @@ function render_element(element):
     case "QUESTION_GROUP", "QUESTION_SUBGROUP",
          "REQUIREMENT_GROUP", "REQUIREMENT_SUBGROUP":
                                       apply element.code display logic, then recurse
+    default:                          // context types (PARTY, POSTAL_ADDRESS, LOT_REFERENCE, ...)
+                                      map to the corresponding UBL structure, then recurse
 
   // Recurse into child components
   if element.components:
@@ -255,13 +353,14 @@ NOTE: This granular set (for example `QUANTITY_INTEGER`, `CODE_COUNTRY`, `MINIMU
 To produce a valid ESPD Request or Response XML:
 
 [arabic]
-. Walk each criterion's `components` tree, following `requestpath` (for the Request) or `responsepath` / `contentpath` (for the Response)
+. Walk each Part -> section -> criterion, then each criterion's `components` tree, following `requestpath` (for the Request) or `responsepath` / `contentpath` (for the Response)
 . Map each element `type` to the corresponding UBL XML element:
   * `CRITERION` / `SUBCRITERION` -> `cac:TenderingCriterion` / `cac:SubTenderingCriterion`
   * `LEGISLATION` -> `cac:Legislation`
   * `QUESTION_GROUP` / `REQUIREMENT_GROUP` -> `cac:TenderingCriterionPropertyGroup`
   * `QUESTION_SUBGROUP` / `REQUIREMENT_SUBGROUP` -> `cac:SubsidiaryTenderingCriterionPropertyGroup`
   * `QUESTION` / `REQUIREMENT` / `CAPTION` -> `cac:TenderingCriterionProperty`
+  * context types (`INFORMATION`, `CONTRACTING_PARTY`, `ECONOMIC_OPERATOR_PARTY`, `PARTY`, `POSTAL_ADDRESS`, `LOT_REFERENCE`, `PROCUREMENT_PROJECT`, `SIGNATURE`, ...) -> the corresponding UBL `cac:` document structures
 . Apply `cardinality` rules to enforce mandatory elements
 . For the Response: add a `cac:TenderingCriterionResponse` for each answered question. In the UBL XML the response is linked to its question via `cbc:ValidatedCriterionPropertyID` (which carries the question property's ID). Note this UBL linking element is not itself a field in `espd-edm.json` — the JSON expresses the linkage through the `responsepath` / `contentpath` values.
 

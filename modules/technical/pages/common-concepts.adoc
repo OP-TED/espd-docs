@@ -23,8 +23,8 @@ All ESPD documents use standardised identifier patterns:
 |`schemeAgencyID="OP"` for Publications Office identifiers
 
 |`cbc:UUID` (document)
-|UUID v4
-|Globally unique; copies share the same UUID, new documents get a new one
+|ISO/IEC 9834-8 UUID (`schemeID="ISO/IEC 9834-8:2008 - 4UUID"`)
+|Globally unique, e.g. `ab731d5a-f07e-48e6-96b9-7f04471e0c27`; each document instance gets its own UUID
 
 |`cbc:ID` (criterion)
 |eCertis UUID
@@ -47,7 +47,7 @@ Key rules for identifiers:
 
 * `schemeAgencyID` is mandatory on all `cbc:ID` elements — it identifies who issued the identifier
 * `cbc:UUID` is mandatory on both Request and Response root elements — the Response UUID links back to the Request
-* Within a criterion, only the criterion's own `cbc:ID` is a UUID — its eCertis identifier, used to retrieve the criterion's `cbc:Name` and `cbc:Description` from eCertis (matched by rule `BR-TC-02`). Property groups and properties below it use XPath-like IDs, not UUIDs (see xref:criterion-data-model-json.adoc[Criterion Data Model (JSON)])
+* Within a criterion, only the criterion's own `cbc:ID` is a UUID — its eCertis identifier, used to retrieve the criterion's `cbc:Name` and `cbc:Description` from eCertis. Property groups and properties below it use XPath-like IDs, not UUIDs (see xref:criterion-data-model-json.adoc[Criterion Data Model (JSON)])
 
 === Party Structure Pattern
 

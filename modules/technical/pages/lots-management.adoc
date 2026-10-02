@@ -45,7 +45,6 @@ The ESPD Request includes selection criteria with a reference to the lots they a
 
 * This element is mandatory for all selection criteria with cardinality `1..n` because different selection criteria can be associated with different procurement lots.
 * This element is not necessary for exclusion grounds because exclusion grounds apply to all lots automatically.
-* Rule scope: BR-LOT-40 (Lots apply only to Selection Criteria; Exclusion Criteria cannot have Lot associated), BR-LOT-41 (All Selection Criteria must have associated LOT).
 
 == Lot Identifiers
 
@@ -70,9 +69,11 @@ Identifiers follow a fixed prefix + zero-padded sequence number pattern:
 |Used when the procedure is not divided into lots — a single, procedure-wide lot.
 |===
 
-The four-digit sequence is zero-padded (`0001`, not `1`) and numbering starts at `0001` for lots and groups. A procedure that is not split into lots still carries one lot, conventionally `LOT-0000`.
+The four-digit sequence is zero-padded (`0001`, not `1`) and numbering starts at `0001` for lots and groups. A procedure that is not divided into lots is still treated as having exactly one "technical" lot, whose identifier is `LOT-0000`.
 
-These identifiers are the values carried by `cac:ProcurementProjectLotReference/cbc:ID` in both ESPD documents. Because the format is defined by eForms rather than the ESPD-EDM, the authoritative rules for allowed values live in the eForms specification; the ESPD simply consumes them.
+These identifiers are the values carried by `cac:ProcurementProjectLotReference/cbc:ID` in both ESPD documents. In line with the ESPD-EDM's alignment with eForms, these identifiers follow the eForms format, and the authoritative rules for allowed values live in the eForms specification; the ESPD reuses them unchanged.
+
+NOTE: In line with the ESPD-EDM's alignment with eForms, the lot, group-of-lots and `LOT-0000` identifier rules follow the eForms specification. See the eForms documentation on https://docs.ted.europa.eu/eforms/latest/schema/procedure-lot-part-information.html[Procedure, Group of Lots, Lot & Part related information^] for the authoritative rules (including the use of `LOT-0000` for a procedure without lots).
 
 == Lots in the ESPD Response
 
@@ -82,8 +83,6 @@ On the Economic Operator's side:
 * Each ESPD Response indicates which lot it refers to via `cac:ProcurementProjectLotReference`.
 * The EO must respond to *all exclusion grounds* in every response (they apply to all lots).
 * The EO must respond to the *selection criteria applicable to the specific lot*.
-
-*Rule scope:* BR-LOT-10 (The lot the EO tenders for MUST be provided).
 
 == Summary
 
