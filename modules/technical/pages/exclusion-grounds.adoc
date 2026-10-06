@@ -61,7 +61,7 @@ Please generate an ESPD Request and ESPD Response documents on https://github.co
 . Date of conviction. Mandatory format 'YYYY-MM-DD'
 . The reason of convictions. A descriptive text.
 . The natural person or legal entity convicted. A text.
-. Length of the period of exclusion. A cac:Period will be used in the response by the economic operator. The EO may specify a starting date and an end-date or, alternatively, a text to commenting the length. See XML example in the ESPD Response section.
+. Length of the period of exclusion. A cac:Period will be used in the response by the economic operator (EO). The EO may specify a starting date and an end-date or, alternatively, a text to commenting the length. See XML example in the ESPD Response section.
 . If the answer is *No* the QUESTION 'Please describe them' should not be shown.
 . Text box to describe the measures to demonstrate the economic operator's reliability.
 . A whole group related to one conviction can be repeated multiple times (or deleted).

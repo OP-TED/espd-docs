@@ -5,7 +5,7 @@
 
 == What is an ESPD Service?
 
-An ESPD Service is an implementation of the ESPD-EDM model that provides an online platform where public buyers and economic operators can create, edit, export and import the ESPD Request and ESPD Response as XML documents. It enforces compliance with EU procurement legislation and streamlines the qualification process, enabling participation in public procurement by different types of suppliers.
+An ESPD Service is an implementation of the ESPD-EDM model that provides an online platform where public buyers and economic operators can create, edit, export and import the ESPD Request and ESPD Response as XML documents. It enforces compliance with EU procurement legislation and streamlines the qualification process, enabling participation in public procurement by different types of economic operators.
 
 An ESPD Service also validates the documents it produces, so that the exported ESPD Request and ESPD Response conform to the ESPD-EDM rules before they are used in a procedure.
 
@@ -44,7 +44,7 @@ For detailed guidance on what to provide, see xref:for-economic-operators.adoc[F
 You have two options when using an ESPD Service:
 
 * *From scratch:* fill in all information for the first time. Once completed, the document can be saved locally for future reuse.
-* *Upload and edit:* upload a previously saved ESPD XML document and only change the details that differ from the previous procedure. This applies to both buyers and suppliers.
+* *Upload and edit:* upload a previously saved ESPD XML document and only change the details that differ from the previous procedure. This applies to both buyers and economic operators.
 
 This makes the process significantly more efficient over time, as most information (company identity, standard criteria responses, etc.) remains the same across procedures.
 

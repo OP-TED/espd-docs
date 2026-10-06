@@ -18,7 +18,7 @@ The qualification steps, in order:
 [arabic]
 . Buyer publishes the Contract Notice on TED, and may publish an ESPD Request alongside it
 . Economic Operator retrieves the ESPD Request (if published; otherwise the criteria are in the procurement documents)
-. Economic Operator fills in the ESPD Response (self-declarations + evidence references)
+. Economic Operator prepares the ESPD Response (self-declarations + evidence references)
 . Economic Operator submits the ESPD Response as part of the tender
 . Buyer evaluates the ESPD Responses during qualification
 . Before awarding the contract, the buyer requires the winning tenderer to submit full documentary evidence

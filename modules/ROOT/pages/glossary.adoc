@@ -104,7 +104,7 @@ The European Commission's one-stop shop for interoperable, open, and free digita
 
 [[lot,Lot]]
 *Lot*  +
-A subdivision of a procurement procedure that can be tendered for and awarded separately. In the ESPD, forms are filled in per lot: exclusion grounds automatically apply to all lots, whereas selection criteria apply per lot and may differ between lots. An economic operator tendering for several lots submits one ESPD Response per lot. Lot identifiers follow the eForms format (for example `LOT-0001`). See xref:business:lots-overview.adoc[Lots Overview].
+A subdivision of a procurement procedure that can be tendered for and awarded separately. In the ESPD, a separate response is provided per lot: exclusion grounds automatically apply to all lots, whereas selection criteria apply per lot and may differ between lots. An economic operator tendering for several lots submits one ESPD Response per lot. Lot identifiers follow the eForms format (for example `LOT-0001`). See xref:business:lots-overview.adoc[Lots Overview].
 
 [[oasis,Organization for the Advancement of Structured Information Standards (OASIS)]]
 *Organization for the Advancement of Structured Information Standards (OASIS)*  +

@@ -11,7 +11,9 @@ The ESPD Exchange Data Model (ESPD-EDM) assists developers in building ESPD Serv
 
 To implement an ESPD Service based on ESPD-EDM v5.0.0, you need:
 
-* A development environment with *Java JDK 1.8+* (for XSD/Schematron validation via Saxon)
+* A *Java runtime* for XSD/Schematron validation via Saxon:
+** *Minimum:* Java 8 (the shipped Saxon-HE 12.5 and xjparse 3.0.0 are compiled for Java 8)
+** *Recommended:* Java 17 or Java 21 (LTS)
 * An *XML editor or IDE* capable of working with XSD schemas and XSLT (e.g. VS Code, IntelliJ, Oxygen XML)
 * *Git client* to clone the ESPD-EDM repository
 * Familiarity with *UBL 2.4 XML* document structures

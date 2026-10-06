@@ -114,7 +114,7 @@ The ESPD validation artefacts (Schematron rules compiled to XSL) are produced in
   * Produce validation reports in the `logs/` folder
 . The resulting XSL files are copied back to `ESPD-EDM/validation/` for distribution
 
-*Prerequisites:* Java JDK 1.8+, Git client.
+*Prerequisites:* a Java runtime (minimum Java 8; Java 17 or 21 LTS recommended) and a Git client.
 
 *Output:* XSL files for Request validation (`ESPDRequest/xsl/`), Response validation (`ESPDResponse/xsl/`), and common validation (`common/`).
 

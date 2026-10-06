@@ -144,7 +144,7 @@ The ESPD request includes exclusion grounds that are general for all the Lots in
 
 Please generate an ESPD Request and ESPD Response documents on https://github.com/OP-TED/ESPD-EDM/tree/v5.0.0/xml-examples[ESPD-EDM XML examples] to see full example.
 
-From the Economic Operator's side it is different. As in the image above there will be as many ESPD Responses as Lots, or Group of Lots, the EO wishes to tender for. If the EO wishes to participate in three Lots, they will need to fill in 3 ESPD Responses. For more details on this, please see the section on the ESPD Response.
+From the Economic Operator's side it is different. As in the image above there will be as many ESPD Responses as Lots, or Group of Lots, the EO wishes to tender for. If the EO wishes to participate in three Lots, they will need to provide 3 ESPD Responses. For more details on this, please see the section on the ESPD Response.
 
 [[lot_identifiers]]
 === Lot identifiers

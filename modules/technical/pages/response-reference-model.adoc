@@ -19,7 +19,7 @@ _Table 26. Class QualificationApplicationResponse, components required by the ES
 |*Definition*: a|
 A structured electronic business document for providing qualification information in a simplified way through an ESPD when responding to a Call for Tender.
 
-Preliminary evidence certificates in the form of a self-declaration submitted by the economic operator during the tendering phase. On awarding, the winning party has to supply the real attestations and certificates.
+Preliminary evidence certificates in the form of a self-declaration submitted by the economic operator (EO) during the tendering phase. On awarding, the winning party has to supply the real attestations and certificates.
 
 |*Business rule(s)*: |None
 |*File*: |link:https://docs.oasis-open.org/ubl/os-UBL-2.4/xsdrt/maindoc/UBL-QualificationApplicationResponse-2.4.xsd[os-UBL-2.4/xsdrt/maindoc/UBL-QualificationApplicationResponse-2.4.xsd]
@@ -1383,7 +1383,7 @@ _Figure 30. Evidence for Criterion C1 EG crime-org_
 [[lot_management_response]]
 == Lot Management in the ESPD Response
 
-In the ESPD, a Response is provided for one Economic Operator (EO) and for one lot or group of lots. Hence, an EO will fill in as many ESPD Responses as there are lots or groups of lots he is participating in. 
+In the ESPD, a Response is provided for one Economic Operator (EO) and for one lot or group of lots. Hence, an EO will provide as many ESPD Responses as there are lots or groups of lots it is participating in. 
 
 In the ESPD Response, the UBL 2.4 element *cac:ProcurementProjectLot* is used under the root element *QualificationApplicationResponse* to define the related lot or group of lots the EO is answering to for a given Response. Therefore, the corresponding list of Selection Criteria and QUESTION_SUBGROUP (of REQUIREMENT_GROUP) will be extracted from the Request accordingly. 
 

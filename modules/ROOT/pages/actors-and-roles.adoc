@@ -18,9 +18,9 @@ The organisation that initiates the procurement procedure and publishes the ESPD
 * Evaluates ESPD Responses
 * Requests full evidence from the winning tenderer (and may request supporting documents from any tenderer or candidate at any moment during the procedure)
 
-=== Economic Operator
+=== Economic Operator (EO)
 
-Any natural or legal person or public entity that offers the execution of works, supply of products, or provision of services on the market. Each economic operator participating in a tender must provide its own ESPD Response.
+Any natural or legal person or public entity that offers the execution of works, supply of products, or provision of services on the market. Each economic operator (hereafter also *EO*) participating in a tender must provide its own ESPD Response.
 
 *Roles in the ESPD-EDM:*
 
@@ -61,6 +61,6 @@ An optional actor that provides the ESPD Service platform used by both buyer and
 
 * xref:business:for-buyers.adoc[For Buyers]
 * xref:business:for-economic-operators.adoc[For Economic Operators]
-* xref:business:espd-parts.adoc[ESPD Parts] — which sections each role fills in
+* xref:business:espd-parts.adoc[ESPD Parts] — which sections each role provides
 
 include::partial$feedback.adoc[]

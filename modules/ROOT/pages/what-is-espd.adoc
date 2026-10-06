@@ -36,7 +36,7 @@ image::https://kroki.io/pikchr/svg/eNrFlU-P2jAQxe_5FKN0D_2zRMEORarUQ-nSXrbaVXvtJ
 
 _ESPD global process_
 
-NOTE: Different EO parties might have different roles in different lots, hence the requirement for each participating party to fill in one ESPD Response per lot.
+NOTE: Different economic operators might have different roles in different lots, hence the requirement for each participating party to provide one ESPD Response per lot.
 
 === ESPD and the ESPD-EDM documents
 
