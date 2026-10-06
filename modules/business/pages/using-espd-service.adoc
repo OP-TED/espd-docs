@@ -5,7 +5,9 @@
 
 == What is an ESPD Service?
 
-An ESPD Service is an implementation of the ESPD-EDM model that provides an online platform where public buyers and economic operators can create, edit, export and import ESPD documents in XML format. It enforces compliance with EU procurement legislation and streamlines the qualification process, enabling participation in public procurement by different types of suppliers.
+An ESPD Service is an implementation of the ESPD-EDM model that provides an online platform where public buyers and economic operators can create, edit, export and import the ESPD Request and ESPD Response as XML documents. It enforces compliance with EU procurement legislation and streamlines the qualification process, enabling participation in public procurement by different types of suppliers.
+
+An ESPD Service also validates the documents it produces, so that the exported ESPD Request and ESPD Response conform to the ESPD-EDM rules before they are used in a procedure.
 
 == Available ESPD Services
 
@@ -24,7 +26,7 @@ NOTE: Currently, the European Commission does not maintain a centralised ESPD Se
 . Publish the ESPD Request alongside your Contract Notice.
 . After the tender deadline, review the ESPD Responses submitted by economic operators.
 
-For detailed guidance on what to fill in, see xref:for-buyers.adoc[For Buyers].
+For detailed guidance on what to provide, see xref:for-buyers.adoc[For Buyers].
 
 === For economic operators
 
@@ -35,7 +37,7 @@ For detailed guidance on what to fill in, see xref:for-buyers.adoc[For Buyers].
 . Provide references to evidence supporting your responses.
 . Download and submit the completed ESPD Response as part of your tender.
 
-For detailed guidance on what to fill in, see xref:for-economic-operators.adoc[For Economic Operators].
+For detailed guidance on what to provide, see xref:for-economic-operators.adoc[For Economic Operators].
 
 == Starting from scratch or reusing a previous ESPD
 
@@ -48,7 +50,7 @@ This makes the process significantly more efficient over time, as most informati
 
 == Linking to an eForms notice
 
-The information in the ESPD Service is linked to an eForms notice by the publication reference number generated when a buyer publishes their Contract Notice on TED. The buyer fills in the ESPD Request as a subsequent step in the procurement process, and prospective suppliers find the relevant ESPD Request by searching the tender notices.
+The information in the ESPD Service is linked to an eForms notice by the publication reference number generated when a buyer publishes their Contract Notice on TED. The buyer prepares the ESPD Request as a subsequent step in the procurement process, and economic operators find the relevant ESPD Request by searching the tender notices.
 
 == Further information
 

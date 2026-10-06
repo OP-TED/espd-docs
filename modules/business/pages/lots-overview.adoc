@@ -21,6 +21,8 @@ Each lot may have its own technical requirements and selection criteria, while e
 
 Lot identifiers follow the eForms format: `LOT-0001`, `LOT-0002`, etc. Groups of lots use the prefix `GLO-` (e.g. `GLO-0001`).
 
+A procedure may also have no lots at all, in which case it is treated as a single, whole procedure (`LOT-0000`).
+
 === How lots affect the ESPD
 
 ==== For buyers
@@ -44,7 +46,7 @@ For a side-by-side comparison of how lots affect the ESPD Request and Response, 
 
 === Roles within a lot
 
-Each participating economic operator must fill in their own ESPD Response for each lot. Group members (in a consortium or joint venture) each submit a separate ESPD, indicating their role:
+Each participating economic operator provides its own ESPD Response for each lot. Group members (in a consortium or joint venture) each submit a separate ESPD, indicating their role:
 
 * Sole tenderer
 * Group leader
@@ -57,7 +59,7 @@ See xref:for-economic-operators.adoc[For Economic Operators] for details on grou
 === Further information
 
 * xref:technical:lots-management.adoc[Lots Management] — technical implementation details for developers (XML elements, business rules, eForms alignment)
-* xref:espd-parts.adoc[ESPD Parts] — which parts of the ESPD each role fills in
+* xref:espd-parts.adoc[ESPD Parts] — which parts of the ESPD each role provides
 * xref:for-economic-operators.adoc[For Economic Operators] — detailed guidance on responding to multi-lot procedures
 
 include::partial$feedback.adoc[]

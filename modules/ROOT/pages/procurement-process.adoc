@@ -25,7 +25,25 @@ The qualification steps, in order:
 
 NOTE: Under Article 59(4) of Directive 2014/24/EU, in addition to requiring evidence from the winner before award, the buyer may ask any tenderer or candidate to submit all or part of the supporting documents at any moment during the procedure, where this is needed to ensure the procedure is conducted properly.
 
-For the full lifecycle, including the diagram showing where the ESPD Request and ESPD Response fit across these phases, see xref:what-is-espd.adoc[What is the ESPD?].
+=== Buyer and economic operator perspectives
+
+The same qualification steps can be viewed from either side of the exchange. The buyer drives the first part of the process — defining the criteria and, where an ESPD Request is published, making it available alongside the Contract Notice — while the economic operator drives the second part, responding to those criteria and submitting the ESPD Response. The two diagrams below show the same lifecycle from each perspective.
+
+From the *buyer's* perspective, the process centres on preparing and publishing the ESPD Request and, later, evaluating the responses received:
+
+image::https://kroki.io/blockdiag/svg/eJydk01P4zAQhu_9FVb3sivYKm1SEIpYCUo5R3CEFXKSaTPCHWftCUUg_jt2sgTz0UN6GSWvZ55xZt7kShf3Jcq1eB4JUcJKNorvbCVrEKci149pIK80scUnfzKd-gPSJdxtseTKS7Oo1yrAdcVOTBKv2VpSnxdHvfSeNk9HTsym4kbJHJSTxpmSREjr8aEotNLGaz-iKI5PTpzE8Mi9vK2QYfzXc7NZgFjoTQ2MjJpu6awowNqBtDigXTf5Bq11sIGQJIAsH6RqJA-HzAPI2VaacmD90Ye5EBtZ8EBEqdkGlMlk4rLfvDJ2Ltpo8td62_QsOhT9iv3LkGbHn_aoYOjQOkP9_uM94WPcxqSN8zYetbH9LP9w3Nachya8gBUS3FJhHNSg_NB_sVhGl5fdfc9D32VNrtBW7l9gLFz1gVheZxfiCv41YHk34xujuGoDttZkwe4uDM3xv4uAByyBfPufWyQC82tHvQOsjW5q8Sy0QSBu7emSam2cTZDTr2WpH5Of2TQVL3sCuq3M9gd0q0z2B3QumHvAy-gVkx161Q[The ESPD process from the buyer perspective,width=900,height=300]
+//image::espd_bus_buyer.png[]
+//[Edit this diagram](https://niolesk.top/#https://kroki.io/blockdiag/svg/eJydk01P4zAQhu_9FVb3sivYKm1SEIpYCUo5R3CEFXKSaTPCHWftCUUg_jt2sgTz0UN6GSWvZ55xZt7kShf3Jcq1eB4JUcJKNorvbCVrEKci149pIK80scUnfzKd-gPSJdxtseTKS7Oo1yrAdcVOTBKv2VpSnxdHvfSeNk9HTsym4kbJHJSTxpmSREjr8aEotNLGaz-iKI5PTpzE8Mi9vK2QYfzXc7NZgFjoTQ2MjJpu6awowNqBtDigXTf5Bq11sIGQJIAsH6RqJA-HzAPI2VaacmD90Ye5EBtZ8EBEqdkGlMlk4rLfvDJ2Ltpo8td62_QsOhT9iv3LkGbHn_aoYOjQOkP9_uM94WPcxqSN8zYetbH9LP9w3Nachya8gBUS3FJhHNSg_NB_sVhGl5fdfc9D32VNrtBW7l9gLFz1gVheZxfiCv41YHk34xujuGoDttZkwe4uDM3xv4uAByyBfPufWyQC82tHvQOsjW5q8Sy0QSBu7emSam2cTZDTr2WpH5Of2TQVL3sCuq3M9gd0q0z2B3QumHvAy-gVkx161Q)
+_Figure 1. The ESPD process from the buyer perspective_
+
+From the *economic operator's* perspective, the process centres on retrieving the ESPD Request, preparing the ESPD Response, and submitting it with the tender:
+
+image::https://kroki.io/blockdiag/svg/eJydksFOwzAMhu97imhcQILRrRsIVSCh0Z0rODKE0sZbLTKnNC5DIN6dJNNKAXEoF6v9Y39x7D_XpnhSKNfifSCEgpVsND_aUlYgLkVuXpOOvDLEFt_8yXjsD8goeNyi4tJLk6jVSsB1yU6cTr1mK0ltXhy10lfaLBk4MRuLey1z0E4aZloSIa2Hx6Iw2tReO4iiOL64cBLDK7fytkSG4YPnZpMOYm42FTAyGlrSdVGAtT1pcYd21-QbtNbBekKmHUj6InUjuT9k1oFcb2WtetaffZsLcS0L7olQhm2HMhqNXPbeK0Pnoo0h39Z-05PoWLQr9j99Ljv_sUcNfYe2M9TJlfeEj3GI0xBnIZ6FGJ7lP85DTdp10AJJOUszFrCkU5HeZTfiFp4bsLykQ1yJqsk12hLU0bfW5vM0Wix2T0l_mYgDaEm3YCtDFv4u7W49q80LKhDgI_mGfANbJIL6r9sdY12bphLvwtQIxMF6LqkytbMAcvK7LPEjCGNLxMc_AbtZx_8H7BY084CPwSdYx1zb[The ESPD process from the economic operator perspective,width=900,height=300]
+//image::espd_bus_supplier.png[]
+//[Edit this diagram](https://niolesk.top/#https://kroki.io/blockdiag/svg/eJydksFOwzAMhu97imhcQILRrRsIVSCh0Z0rODKE0sZbLTKnNC5DIN6dJNNKAXEoF6v9Y39x7D_XpnhSKNfifSCEgpVsND_aUlYgLkVuXpOOvDLEFt_8yXjsD8goeNyi4tJLk6jVSsB1yU6cTr1mK0ltXhy10lfaLBk4MRuLey1z0E4aZloSIa2Hx6Iw2tReO4iiOL64cBLDK7fytkSG4YPnZpMOYm42FTAyGlrSdVGAtT1pcYd21-QbtNbBekKmHUj6InUjuT9k1oFcb2WtetaffZsLcS0L7olQhm2HMhqNXPbeK0Pnoo0h39Z-05PoWLQr9j99Ljv_sUcNfYe2M9TJlfeEj3GI0xBnIZ6FGJ7lP85DTdp10AJJOUszFrCkU5HeZTfiFp4bsLykQ1yJqsk12hLU0bfW5vM0Wix2T0l_mYgDaEm3YCtDFv4u7W49q80LKhDgI_mGfANbJIL6r9sdY12bphLvwtQIxMF6LqkytbMAcvK7LPEjCGNLxMc_AbtZx_8H7BY084CPwSdYx1zb)
+_Figure 2. The ESPD process from the economic operator perspective_
+
+For how the ESPD Request and ESPD Response fit across the full lifecycle, see also xref:what-is-espd.adoc[What is the ESPD?].
 
 === Above and below the threshold
 
