@@ -11,7 +11,7 @@ TIP: Strictly, "the ESPD" is the economic operator's self-declaration (the Respo
 
 [NOTE]
 ====
-In the legal sense (Article 59 of Directive 2014/24/EU; Implementing Regulation (EU) 2016/7, Annex 1) and in the https://docs.ted.europa.eu/EPO/latest/index.html[eProcurement Ontology (ePO)^], "the ESPD" is the *economic operator's self-declaration* — that is, what the economic operator submits. In ESPD-EDM terms this self-declaration is carried by the *ESPD Response*.
+In the legal sense (Article 59 of Directive 2014/24/EU; Annex 2 to Commission Implementing Regulation (EU) 2016/7) and in the https://docs.ted.europa.eu/EPO/latest/index.html[eProcurement Ontology (ePO)^], "the ESPD" is the *economic operator's self-declaration* — that is, what the economic operator submits. In ESPD-EDM terms this self-declaration is carried by the *ESPD Response*.
 
 The *ESPD Request* is the buyer's expression of the exclusion grounds and selection criteria. It is not, in itself, "an ESPD"; it is the specification that the economic operator responds to.
 ====
@@ -59,7 +59,7 @@ The ESPD replaces the need for economic operators to produce large volumes of ph
 
 === Legal basis
 
-The ESPD is introduced by *Article 59 of Directive 2014/24/EU* and further specified by *Implementing Regulation (EU) 2016/7*, which establishes the standard form: Annex 1 contains the instructions for its use, and Annex 2 contains the standard form itself. See xref:legal-framework.adoc[Legal Framework] for details.
+The ESPD is introduced by *Article 59 of Directive 2014/24/EU* and further specified by *Regulation (EU) 2016/7*, which establishes the standard form: Annex 1 contains the instructions for its use, and Annex 2 contains the standard form itself. See xref:legal-framework.adoc[Legal Framework] for details.
 
 === The ESPD-EDM
 

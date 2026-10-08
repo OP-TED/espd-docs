@@ -8,7 +8,7 @@
 
 == Business Requirements Specification
 
-The ESPD-EDM models the business and information requirements for the ESPD Response transaction in accordance with Directive 2014/24/EU (Article 59) and Regulation (EU) 2016/7. The formal information requirements are defined in the xref:response-reference-model.adoc[Response Reference Model].
+The ESPD-EDM models the business and information requirements for the ESPD Response transaction in accordance with Directive 2014/24/EU (Article 59) and Commission Implementing Regulation (EU) 2016/7. The formal information requirements are defined in the xref:response-reference-model.adoc[Response Reference Model].
 
 [cols="1,2"]
 |===

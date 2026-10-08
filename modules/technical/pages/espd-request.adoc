@@ -10,7 +10,7 @@
 
 == ESPD Request Business Requirements
 
-The ESPD-EDM models the business and information requirements for the ESPD Request transaction based on Directive 2014/24/EU (Article 59) and Regulation (EU) 2016/7.
+The ESPD-EDM models the business and information requirements for the ESPD Request transaction based on Directive 2014/24/EU (Article 59) and Commission Implementing Regulation (EU) 2016/7.
 
 NOTE: The ESPD Request is the *buyer's specification* of the exclusion grounds and selection criteria for a procedure. It is not, in itself, an ESPD — it enables the economic operator to produce its ESPD (the Response). See xref:request-response-concepts.adoc[Request and Response Concepts] for the conceptual distinction.
 

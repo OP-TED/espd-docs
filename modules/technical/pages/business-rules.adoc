@@ -65,7 +65,7 @@ Some ESPD requirements cannot be enforced by static XML validation because they 
 The ESPD business rules derive from:
 
 * *Directive 2014/24/EU* (Public Procurement Directive) — defines the legal requirements for exclusion grounds and selection criteria.
-* *Implementing Regulation (EU) 2016/7* — establishes the standard form for the European Single Procurement Document.
+* *Commission Implementing Regulation (EU) 2016/7* — establishes the standard form for the European Single Procurement Document.
 * *eCertis* — the EU registry of criteria, evidences, and their structure. The Schematron validates criterion UUIDs and structures against eCertis reference data.
 * *UBL 2.4* (OASIS) — provides the base XML schema. ESPD-EDM adds business rules on top of this schema.
 

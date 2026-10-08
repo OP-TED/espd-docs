@@ -7,7 +7,7 @@
 
 This page outlines where the ESPD fits within the EU public procurement lifecycle.
 
-The ESPD is used within procurement procedures governed by *Directive 2014/24/EU* (Article 59) and *Implementing Regulation (EU) 2016/7*. For the legal basis in detail, see xref:legal-framework.adoc[Legal Framework].
+The ESPD is used within procurement procedures governed by *Directive 2014/24/EU* (Article 59) and *Commission Implementing Regulation (EU) 2016/7*. For the legal basis in detail, see xref:legal-framework.adoc[Legal Framework].
 
 === Procurement lifecycle phases
 

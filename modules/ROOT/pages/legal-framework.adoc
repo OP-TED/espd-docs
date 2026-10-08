@@ -20,17 +20,17 @@ This page summarises the EU legislation that forms the legal basis for the ESPD.
 |Utilities Directive. Extends public procurement rules to the water, energy, transport and postal services sectors. Provides the legal basis for the ESPD in these sectors via *Article 80(3)*.
 
 |link:https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32014L0023[Directive 2014/23/EU]
-|Concessions Directive. The ESPD is *not mandated* for concessions; Member States may allow its use for concession contracts (per Regulation (EU) 2016/7, Annex 1).
+|Concessions Directive. The ESPD is *not mandated* for concessions; Member States may allow its use for concession contracts (per Annex 1 to Commission Implementing Regulation (EU) 2016/7).
 
-|link:https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32016R0007[Regulation (EU) 2016/7]
-|Implementing Regulation establishing the standard form for the European Single Procurement Document. Adopted under Article 59(2) of Directive 2014/24/EU and Article 80(3) of Directive 2014/25/EU.
+|link:https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32016R0007[Commission Implementing Regulation (EU) 2016/7]
+|Establishes the standard form for the European Single Procurement Document. Adopted under Article 59(2) of Directive 2014/24/EU and Article 80(3) of Directive 2014/25/EU.
 
 |===
 
 === Key legal requirements implemented in ESPD-EDM
 
-* Mandatory exclusion grounds (Art. 57(1) and (2)) cannot be removed by the buyer
-* Discretionary exclusion grounds (Art. 57(4)) can be selected/deselected
+* Mandatory exclusion grounds (Article 57(1) and (2)) cannot be removed by the buyer
+* Discretionary exclusion grounds (Article 57(4)) can be selected/deselected
 * Selection criteria must be linked to specific lots
 * Each economic operator must submit its own ESPD
 * The winning tenderer must provide full evidence before award; in addition, the buyer may request supporting documents from any tenderer or candidate at any moment during the procedure (Article 59(4))

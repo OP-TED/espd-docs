@@ -7,9 +7,9 @@
 
 Buyers use the ESPD Request to define the exclusion grounds and selection criteria that economic operators must satisfy in order to participate in a procurement procedure.
 
-For where the ESPD Request and ESPD Response fit within the procurement lifecycle, see xref:ROOT:procurement-process.adoc[The Procurement Process].
-
 The buyer prepares the ESPD Request as part of the procurement procedure documentation. When published, the ESPD Request is made available alongside the Contract Notice and is linked to it via the notice publication reference number. If it is not published, the exclusion grounds and selection criteria are stated in the procurement documents (specifications) instead.
+
+For where the ESPD Request and ESPD Response fit within the procurement lifecycle, see xref:ROOT:procurement-process.adoc[The Procurement Process].
 
 === Key responsibilities
 

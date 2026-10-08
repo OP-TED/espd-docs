@@ -18,7 +18,7 @@ _Table 5. Class QualificationApplicationRequest, components required by the ESPD
 |*Document name:* |*QualificationApplicationRequest*
 +
 |*Definition 1*: a|
-A structured electronic business document for requesting qualification information through an ESPD (conform to an ESPD template). Directive 2014/24/EU, Art. 59.
+A structured electronic business document for requesting qualification information through an ESPD (conform to an ESPD template). Directive 2014/24/EU, Article 59.
 
 Document provided by a buyer defining the exclusion and selection criteria for a given procurement procedure.
 
@@ -391,7 +391,7 @@ _Table 8. Buyer (Contracting Party), expected elements_
 |*cbc:BuyerProfileURI* |Identifier |0..1 |URL of the web section, in the buyer's web site, that contains information about the buyer, the norms applied when contracting, published calls for tenders, Prior Information Notices and Contract Notices as well as the related procurement documents, contract award notices, etc. a|
 *Information Requirement*: 
 
-*Rule*: Notices published at national level shall not contain information other than that contained in the notices dispatched to the Publications Office of the European Union or published on a buyer profile, but shall indicate the date of dispatch of the notice to the Publications Office of the European Union or its publication on the buyer profile (Directive link:https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32014L0024&from=ES[2014/24/EU, Art. 52.2]).
+*Rule*: Notices published at national level shall not contain information other than that contained in the notices dispatched to the Publications Office of the European Union or published on a buyer profile, but shall indicate the date of dispatch of the notice to the Publications Office of the European Union or its publication on the buyer profile (Directive link:https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32014L0024&from=ES[Directive 2014/24/EU, Article 52(2)]).
 
 |===
 

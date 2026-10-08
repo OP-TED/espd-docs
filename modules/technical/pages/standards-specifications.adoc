@@ -86,13 +86,13 @@ The ESPD-EDM implements requirements from the following EU legislation:
 |Legislation |Relevance to ESPD
 
 |link:https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32014L0024[Directive 2014/24/EU]
-|Public Procurement Directive — Article 59 introduces the ESPD concept. Defines exclusion grounds (Art. 57) and selection criteria (Art. 58).
+|Public Procurement Directive — Article 59 introduces the ESPD concept. Defines exclusion grounds (Article 57) and selection criteria (Article 58).
 
 |link:https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32014L0025[Directive 2014/25/EU]
 |Utilities Directive — extends public procurement rules to water, energy, transport and postal services sectors.
 
-|link:https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32016R0007[Regulation (EU) 2016/7]
-|Implementing Regulation establishing the standard form for the European Single Procurement Document.
+|link:https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32016R0007[Commission Implementing Regulation (EU) 2016/7]
+|Establishes the standard form for the European Single Procurement Document.
 
 |link:https://single-market-economy.ec.europa.eu/single-market/public-procurement/digital-procurement/eforms_en[eForms Regulation]
 |Defines the notification standard for EU public procurement. The ESPD-EDM aligns with eForms for lot management, code lists, and notice references.
