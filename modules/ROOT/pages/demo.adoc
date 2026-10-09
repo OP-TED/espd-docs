@@ -1,84 +1,101 @@
 :doctitle: ESPD Demo Development Tools
 :doccode: espd-main-prod-015
-:author: NPJ
-:authoremail: nicole-anne.paterson-jones@ext.ec.europa.eu
-:docdate: January 2024
+:author: ESPD Team
+:docdate: October 2026
 
 == The ESPD Demo Site
 
-The ESPD Demo Site is a collection of tools designed to help developers who are in the process of creating an ESPD Service. Click on the image below to access the tools.
+The ESPD Demo Site is a collection of tools designed to help developers who are creating or maintaining an ESPD Service. It lets you explore the ESPD-EDM, download its artefacts, and generate example ESPD Requests and ESPD Responses for testing.
+
+[NOTE]
+====
+The ESPD Demo Site is provided for educational and testing purposes only. It is *not* an ESPD Service: Member States must use the officially implemented and agreed ESPD services for their country.
+====
+
+=== Which demo site should I use?
+
+There are two demo sites, each covering different ESPD-EDM versions. Choose the one that matches the version you are working with:
 
 [.tile-container]
 --
 
 [.tile]
-.Demo Site
+.ESPD Demo Site
 
 ****
 
-image::espd_demo_site.png[link=https://docs.ted.europa.eu/espd-demo,width=220]
-//image::endpoint.png[link=https://publications.europa.eu/webapi/rdf/sparql,width=220]
+https://docs.ted.europa.eu/espd-demo/[Open the ESPD Demo Site]
 
 ****
 
 [.tile]
-.Tools available
+.ESPD Demo Site v4
 
 ****
-* Export the ESPD Distribution Files
-* View XML Code List files
-* Check UUIDs against eCertis
-* View a model of the ESPD form
-* Generate and download XML files for testing
+
+https://docs.ted.europa.eu/espd-demo-v4/[Open the ESPD Demo Site v4]
+
+Covers ESPD-EDM versions *4.1.0*, *4.0.0*, and *3.3.0*.
 
 ****
 --
 
+If you are working with ESPD-EDM versions 4.1.0, 4.0.0, or 3.3.0, use the https://docs.ted.europa.eu/espd-demo-v4/[ESPD Demo Site v4]. For other versions, use the https://docs.ted.europa.eu/espd-demo/[ESPD Demo Site].
 
+== Tools available
 
-//Watch the info video below about the tools available.
+Both demo sites offer the same families of tools. Click a demo site above to access them.
 
-//#Insert video#
+[.tile-container]
+--
+
+[.tile]
+.What you can do
+
+****
+* Export the ESPD distribution files
+* Explore and download the ESPD code lists
+* Check criterion UUIDs against eCertis
+* View a model of the ESPD form
+* Generate and download example ESPD Request and ESPD Response files for testing
+****
+--
 
 A description of the tools:
 
-=== Distribution files
-*Download distribution files in Excel or XML format*
+=== Export artefacts
+*Download the ESPD distribution files in Excel or XML format*
 
 * The ESPD code list Excel and XML files
-* The Model and Data Structure Excel files
+* The model and data structure Excel files
 
-These downloads are available for ESPD-EDM Versions 3.3.0, 4.0.0, and 4.1.0 directly from the Demo site and downloads can be filtered by version.
+The downloads can be filtered by ESPD-EDM version.
 
 === Code lists
-*Information about and download of code lists*
+*Browse and download the code lists*
 
-* Information about the code lists used in the ESPD, name, versions, URI, agency, links to more information for each list.
-* Contents of each code list i.e., the codes contained within each, translations of each code into all EU languages (if available), and an xml download of each code list.
+* Information about the code lists used in the ESPD: name, version, URI, agency, and links to more information for each list.
+* The contents of each code list, i.e. the codes it contains, translations of each code into all EU languages (where available), and an XML download of each code list.
 
-Code list information is available for versions 3.3.0, 4.0.0, and 4.1.0 of the ESPD-EDM and can be filtered by version and code list.
+Code list information can be filtered by version and by code list.
 
-=== UUID
-*Check whether UUIDs are stored in eCertis*
+=== eCertis integration
+*Check whether criterion UUIDs are stored in eCertis*
 
-The UUID tool lets you enter a criterion UUID directly or search for one via the list, and then check if it is stored by eCertis by clicking on the "Check eCertis" button. The tool then queries eCertis to verify if the UUID can be found.
+The UUID tool lets you enter a criterion UUID directly, or search for one via the list, and then check whether it is stored in eCertis by clicking the "Check eCertis" button. The tool queries eCertis to verify whether the UUID can be found.
 
-The list is ordered by ESPD version, then ItemID, ascending, and the list can be scrolled through to find the desired version and UUID.
+The list is ordered by ESPD version, then by ItemID, ascending, and can be scrolled through to find the version and UUID you need.
 
-All criterion in all ESPD versions, from v1.0.0 onwards, can be queried.
+Every criterion in every ESPD version, from v1.0.0 onwards, can be queried.
 
-=== View
+=== View the ESPD model
 *See how criteria elements might look in an online form*
 
-The ESPD Model Viewer demonstrates how a criterion in the model might be represented in HTML in an ESPD Service. Individual criteria can be filtered by version, and are then displayed in HTML on the page. 
+The ESPD Model Viewer demonstrates how a criterion in the model might be represented in HTML within an ESPD Service. Individual criteria can be filtered by version and are then displayed in HTML on the page.
 
-The viewer is available for v3.3.0, v4.0.0, and 4.1.0 of the ESPD-EDM.
-
-=== Examples
+=== Generate ESPD examples
 *Generate example XML files for testing*
 
-The Examples Generator allows developers to generate example Request and Response xml files, according to their desired scenarios, that can then be used for testing their ESPD Service development. These xml files are verified as being correct so they can be used without compounding errors in testing, and creating confusion, by being inaccurate themselves.
+The Examples Generator lets developers produce example ESPD Request and ESPD Response XML files for their chosen scenarios, which they can then use to test their ESPD Service development. These files are verified as correct, so they can be used without introducing errors of their own into testing.
 
-Currently v3.3.0 example xml files can be generated. 
-
-include::partial$feedback.adoc[] 
+include::partial$feedback.adoc[]
