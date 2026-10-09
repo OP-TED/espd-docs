@@ -198,7 +198,7 @@ _Figure 3. Overview of new lot management approach_
 
 The ESPD request includes exclusion grounds that are general for all the Lots into which the procedure is divided. However, for Selection Criteria, it is different since in the procedure it is possible to have Lots with different selection criteria. Therefore, in the ESPD request the different Selection Criteria has to include the reference to the lots which applies. It will be done using the UBL 2.3 cac:ProcurementProjectLotReference that includes cbc:TenderingCriterion.
 
-Please generate an ESPD Request and ESPD Response documents on https://docs.ted.europa.eu/espd-demo/[ESPD Demo Site] to see full example.
+Please generate an ESPD Request and ESPD Response documents on https://docs.ted.europa.eu/espd-demo-v4/[ESPD Demo Site] to see full example.
 
 From the Economic Operator's side it is different. As in the image above there will be as many ESPD Responses as Lots, or Group of Lots, the EO wishes to tender for. If the EO wishes to participate in three Lots, they will need to fill in 3 ESPD Responses. For more details on this, please see the section on the ESPD Response.
 
@@ -367,7 +367,7 @@ _Table 7. External Reference_
 
 === XML Example
 
-Please generate an ESPD Request and ESPD Response documents on https://docs.ted.europa.eu/espd-demo/[ESPD Demo Site] to see full example and how to use the cac:AdditionalDocumentReference in the ESPDRequest XML document to refer to a Contract Notice published in TED and on a national procurement board.
+Please generate an ESPD Request and ESPD Response documents on https://docs.ted.europa.eu/espd-demo-v4/[ESPD Demo Site] to see full example and how to use the cac:AdditionalDocumentReference in the ESPDRequest XML document to refer to a Contract Notice published in TED and on a national procurement board.
 
 . For TED Notices, the Publications Office Official Journal Supplement number must be used in its original format [][][][]/S [][][]-[][][][][][], e.g. 2017/S 142-293520. Notice that the schemeAgencyID is OP (OP standing for 'Publications Office').
 . The jurisdiction scope of this document is typified in the Code List docref-content-type (see file link:{url-tree}/codelists/gc/DocRefContentType.gc[/codelists/gc/DocRefContentType.gc] in the distribution package). *Beware that the name and content of this Code List has changed from the previous ESPD-EDM version 2.1.1*.
@@ -669,7 +669,7 @@ IdentificationCode* |Code |1 |The code that identifies the country of the servic
 
 === XML example
 
-Please generate an ESPD Request and ESPD Response documents on https://docs.ted.europa.eu/espd-demo/[ESPD Demo Site] to see full example. The XML snippet below shows an example of how to supply the expected data for the service provider:
+Please generate an ESPD Request and ESPD Response documents on https://docs.ted.europa.eu/espd-demo-v4/[ESPD Demo Site] to see full example. The XML snippet below shows an example of how to supply the expected data for the service provider:
 
 https://github.com/OP-TED/ESPD-EDM/blob/v4.1.0/xml-examples/ESPD-Response.xml#L21-L46
 
