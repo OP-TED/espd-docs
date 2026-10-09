@@ -918,7 +918,7 @@ This example contains all the data about an economic operator. Beware that the b
 
 _Economic operator data - XML example_
 
-Please generate an ESPD Request and ESPD Response documents on https://docs.ted.europa.eu/espd-demo/[ESPD Demo Site] to see full example.
+Please generate an ESPD Request and ESPD Response documents on https://docs.ted.europa.eu/espd-demo-v4/[ESPD Demo Site] to see full example.
 
 
 [cols=",",options="header",]
@@ -1079,7 +1079,7 @@ Notice that this XML example contains two representatives, as in the mock-up.
 
 _Economic operator's representatives_
 
-Please generate an ESPD Request and ESPD Response documents on https://docs.ted.europa.eu/espd-demo/[ESPD Demo Site] to see full example.
+Please generate an ESPD Request and ESPD Response documents on https://docs.ted.europa.eu/espd-demo-v4/[ESPD Demo Site] to see full example.
 
 . First Name of the natural person that represents the economic operator.
 . Data of birth of the natural person that represents the economic operator.
@@ -1394,7 +1394,7 @@ Having said this, imagine that the following snippet of XML code is the last cri
 
 _Reduction of Candidates - (QUESTION(s) in the ESPD-Request)_
 
-Please generate an ESPD Request and ESPD Response documents on https://docs.ted.europa.eu/espd-demo/[ESPD Demo Site] to see full example.
+Please generate an ESPD Request and ESPD Response documents on https://docs.ted.europa.eu/espd-demo-v4/[ESPD Demo Site] to see full example.
 
 . First QUESTION (a criterion property of type QUESTION, the type follows below).
 . The buyer  is requesting to the economic Operator that it states whether it meets the ''objective and non-discriminatory criteria or rules [..]".
@@ -1411,7 +1411,7 @@ This other XML snippet below shows the responses to the two QUESTION(s) expresse
 
 _Reduction of Candidates - (answers in the ESPD-Response)_
 
-Please generate an ESPD Request and ESPD Response documents on https://docs.ted.europa.eu/espd-demo/[ESPD Demo Site] to see full example.
+Please generate an ESPD Request and ESPD Response documents on https://docs.ted.europa.eu/espd-demo-v4/[ESPD Demo Site] to see full example.
 
 [cols=",",options="header",]
 
@@ -1579,7 +1579,7 @@ The following snippet uses the same two criteria shown in the XML example snippe
 
 _XML snippet 1.b) different evidence documents per response_
 
-Please generate an ESPD Request and ESPD Response documents on https://docs.ted.europa.eu/espd-demo/[ESPD Demo Site] to see full example.
+Please generate an ESPD Request and ESPD Response documents on https://docs.ted.europa.eu/espd-demo-v4/[ESPD Demo Site] to see full example.
 
 . ID value of the first criterion property (QUESTION) for which this response value is the answer.
 . The criterion is to be treated as 'PUBLIC': it could be published.
