@@ -1,7 +1,7 @@
 :doctitle: Navigation
 :doccode: espd-v5.0.x-prod-004
 :author: ESPD Team
-:docdate: August 2026
+:docdate: October 2026
 
 * xref:ROOT:index-new.adoc[Home]
 
@@ -54,23 +54,9 @@
 * xref:technical:standards-specifications.adoc[Standards and Specifications]
 * xref:technical:related-systems.adoc[Related Systems]
 * xref:technical:repositories-downloads.adoc[Repositories and Downloads]
+* xref:ROOT:demo.adoc[ESPD Service Reference Implementation]
 
 * [.separated]#**Open User Community Documents**#
 * xref:espd-wgm::index.adoc[Open User Community Meetings]
 * xref:espd-wgm::monthly.adoc[Regular Meetings]
 * xref:espd-wgm::annual.adoc[Annual Seminars]
-
-////
-OLD NAVIGATION (kept for reference, to be removed after migration is complete)
-
-* xref:ROOT:index.adoc[Home]
-
-* [.separated]#**Information for Business Users**#
-* xref:business:index.adoc[Business Information]
-* xref:business:implementation.adoc[An ESPD Implementation]
-* xref:business:using.adoc[The Structure of an ESPD Implementation]
-
-* [.separated]#**Technical Implementation**#
-* xref:technical:index.adoc[Technical Information]
-* xref:technical:tech_rules_reference.adoc[Business Rules Reference]
-////

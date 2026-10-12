@@ -38,7 +38,7 @@ _ESPD global process_
 
 NOTE: Different economic operators might have different roles in different lots, hence the requirement for each participating party to provide one ESPD Response per lot.
 
-=== ESPD and the ESPD-EDM documents
+=== ESPD-EDM technical documents
 
 The *ESPD-EDM* (the technical exchange model) defines two electronic (XML) documents used to exchange this information:
 
