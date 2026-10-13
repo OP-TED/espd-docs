@@ -55,6 +55,6 @@ The information in the ESPD Service is linked to an eForms notice by the publica
 == Further information
 
 * For an overview of the ESPD parts, see xref:espd-parts.adoc[ESPD Parts].
-* For technical details on the ESPD Service Reference Implementation, see xref:reference-implementation-guide.adoc[Reference Implementation Guide].
+* To explore the ESPD hands-on, see the xref:reference-implementation-guide.adoc[ESPD Demo Site].
 
 include::partial$feedback.adoc[]

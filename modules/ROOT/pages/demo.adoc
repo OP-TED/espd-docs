@@ -1,18 +1,18 @@
-:doctitle: ESPD Service Reference Implementation
+:doctitle: ESPD Demo Site
 :doccode: espd-main-prod-015
 :author: ESPD Team
 :docdate: October 2026
 
 // New v5.0.x page. Replaces the orphaned demo.adoc that pointed at espd-demo-v4.
-// Covers the new ESPD Service Reference Implementation (formerly "ESPD Demo Site").
+// Covers the current ESPD Demo Site (OP-TED/espd-demo).
 
-== ESPD Service Reference Implementation
+== ESPD Demo Site
 
-The https://docs.ted.europa.eu/espd-demo/[ESPD Service Reference Implementation] is a reference application for developers building or maintaining an ESPD Service. It demonstrates how to work with the ESPD-EDM: exploring the model, downloading distribution artefacts, and generating example ESPD Request and ESPD Response XML files for testing.
+The https://docs.ted.europa.eu/espd-demo/[ESPD Demo Site] is a collection of online tools for developers who are building or maintaining an ESPD Service. It demonstrates how to work with the ESPD-EDM: exploring the model, downloading distribution artefacts, and generating example ESPD Request and ESPD Response XML files for testing.
 
 [NOTE]
 ====
-The Reference Implementation is provided for educational and reference purposes only. It is *not* a production ESPD Service: Member States must use the officially implemented ESPD services for their country.
+The ESPD Demo Site is provided for educational and testing purposes only. It is *not* a production ESPD Service: Member States must use the officially implemented ESPD services for their country.
 ====
 
 == What it offers
@@ -39,7 +39,7 @@ The Reference Implementation is provided for educational and reference purposes 
 
 == Source code
 
-The Reference Implementation is open source:
+The ESPD Demo Site is open source:
 
 * *Repository:* https://github.com/OP-TED/espd-demo[OP-TED/espd-demo]
 * *Licence:* European Union Public Licence (EUPL) v. 1.2
