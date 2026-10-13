@@ -1,0 +1,63 @@
+:doctitle: ESPD Exchange Data Model (ESPD-EDM)
+:doccode: espd-v4.0.x-prod-001
+:author: NPJ
+:authoremail: nicole-anne.paterson-jones@ext.ec.europa.eu
+:docdate: January 2024
+
+The European Single Procurement Document (ESPD) is a mandatory electronic form, in two parts, used by buyers to assess the suitability of suppliers tendering in a public procurement procedure. 
+
+The documentation provided here explains the ESPD Exchange Data Model (ESPD-EDM) and covers the resources provided by the Publications Office, to help member states and commercial entities create an ESPD service. The service is the electronic online form which enables both parties in a procurement procedure to manage eligibility of a supplier in a procurement process.
+
+The following information is provided for both business users (an overview of the ESPD), and technical users (resources for technical implementation of an ESPD Service).
+
+== Release Documentation
+* xref:ROOT:release_notes.adoc[Release Notes] +
+The release notes for this version.
+* link:{attachmentsdir}/ESPD_CM_html/index.html[Conceptual Model] +
+The conceptual model for this version
+
+== Information for Business Users
+* xref:business:index-old.adoc[Business Information] +
+An overview of the ESPD for business users
+* xref:business:implementation.adoc[An ESPD Implementation] +
+This section explains elements of an ESPD Implementation
+* xref:business:using.adoc[The ESPD Online Form] +
+Using an online ESPD form from both buyer and supplier perspectives
+//* xref:espd-bus::creating.adoc[Creating an ESPD Service]
+//* xref:espd-bus::overview_upgrades.adoc[Overview for Upgrading your Version]
+
+== Technical Implementation of an ESPD Service
+* xref:technical:index.adoc[Technical Information] +
+Information for technical implementation
+//* xref:espd-tech::demo.adoc[Demo ESPD Service Online]
+
+== Legacy pages (to be removed)
+
+=== Business (old)
+
+* xref:business:index-old.adoc[Business Information]
+* xref:business:business_info.adoc[Information for Business Users]
+* xref:business:implementation.adoc[An ESPD Implementation]
+* xref:business:espd_form.adoc[The ESPD Online Form]
+* xref:business:using.adoc[How to use the ESPD]
+
+=== Technical (old)
+
+* xref:technical:index.adoc[Technical Information]
+* xref:technical:tech_architecture.adoc[Technical Architecture]
+* xref:technical:tech_request.adoc[ESPD Request (old)]
+* xref:technical:tech_response.adoc[ESPD Response (old)]
+* xref:technical:tech_common_aspects_for_criteria.adoc[Common Aspects for Criteria]
+* xref:technical:tech_exclusion_criteria.adoc[Exclusion Criteria (old)]
+* xref:technical:tech_selection_criteria.adoc[Selection Criteria (old)]
+* xref:technical:tech_validation.adoc[Validation (old)]
+* xref:technical:tech_codelist.adoc[Code Lists Catalogue (old)]
+* xref:technical:tech_dist_pack.adoc[Distribution Package (old)]
+* xref:technical:tech_glossary.adoc[Technical Glossary (old)]
+* xref:technical:tech_busrules.adoc[Business Rules Guide (old)]
+* xref:technical:tech_rules_reference.adoc[Business Rules Reference (old)]
+* xref:technical:tech_br_espd_profile.adoc[BIS 41 ESPD Profile (old)]
+* xref:technical:tech_br_request_reqs.adoc[Request Requirements (old)]
+* xref:technical:tech_br_response_reqs.adoc[Response Requirements (old)]
+
+include::partial$feedback.adoc[]

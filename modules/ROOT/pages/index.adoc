@@ -1,34 +1,84 @@
-:doctitle: ESPD Exchange Data Model (ESPD-EDM)
-:doccode: espd-v4.0.x-prod-001
-:author: NPJ
-:authoremail: nicole-anne.paterson-jones@ext.ec.europa.eu
-:docdate: January 2024
+:doctitle: ESPD-EDM Documentation
+:doccode: espd-main-prod-001
+:author: ESPD Team
+:docdate: August 2026
 
-The European Single Procurement Document (ESPD) is a mandatory electronic form, in two parts, used by buyers to assess the suitability of suppliers tendering in a public procurement procedure. 
+== ESPD-EDM Documentation
 
-The documentation provided here explains the ESPD Exchange Data Model (ESPD-EDM) and covers the resources provided by the Publications Office, to help member states and commercial entities create an ESPD service. The service is the electronic online form which enables both parties in a procurement procedure to manage eligibility of a supplier in a procurement process.
+The European Single Procurement Document (ESPD) is a self-declaration by an economic operator, used as preliminary evidence in a public procurement procedure that it is not in a situation of exclusion and that it meets the buyer's selection criteria.
 
-The following information is provided for both business users (an overview of the ESPD), and technical users (resources for technical implementation of an ESPD Service).
+This site documents the *ESPD Exchange Data Model (ESPD-EDM) v5.0.0* — the technical model, based on UBL 2.4, that defines how the ESPD Request and ESPD Response are structured, exchanged electronically, and validated.
 
-== Release Documentation
-* xref:ROOT:release_notes.adoc[Release Notes] +
-The release notes for this version.
-* link:{attachmentsdir}/ESPD_CM_html/index.html[Conceptual Model] +
-The conceptual model for this version
+=== Introduction
 
-== Information for Business Users
-* xref:business:index.adoc[Business Information] +
-An overview of the ESPD for business users
-* xref:business:implementation.adoc[An ESPD Implementation] +
-This section explains elements of an ESPD Implementation
-* xref:business:using.adoc[The ESPD Online Form] +
-Using an online ESPD form from both buyer and supplier perspectives
-//* xref:espd-bus::creating.adoc[Creating an ESPD Service]
-//* xref:espd-bus::overview_upgrades.adoc[Overview for Upgrading your Version]
+General overview of the ESPD, its role in the procurement process, and the legal framework.
 
-== Technical Implementation of an ESPD Service
-* xref:technical:index.adoc[Technical Information] +
-Information for technical implementation
-//* xref:espd-tech::demo.adoc[Demo ESPD Service Online]
+* xref:ROOT:what-is-espd.adoc[What is the ESPD?]
+* xref:ROOT:procurement-process.adoc[The Procurement Process]
+* xref:ROOT:request-response-concepts.adoc[Request and Response Concepts]
+* xref:ROOT:actors-and-roles.adoc[Actors and Roles]
+* xref:ROOT:legal-framework.adoc[Legal Framework]
+
+=== Releases
+
+Release notes, migration guidance, and links to previous versions.
+
+* xref:ROOT:release_notes.adoc[Release Notes]
+* xref:ROOT:migration-breaking-changes.adoc[Migration and Breaking Changes]
+* xref:ROOT:previous-versions-downloads.adoc[Previous Versions and Downloads]
+* link:{attachmentsdir}/ESPD_CM_html/index.html[Conceptual Model (HTML)]
+
+=== Business Guide
+
+Guidance for buyers and economic operators on using the ESPD in public procurement procedures.
+
+* xref:business:for-buyers.adoc[For Buyers]
+* xref:business:for-economic-operators.adoc[For Economic Operators]
+* xref:business:espd-parts.adoc[ESPD Parts]
+* xref:business:lots-overview.adoc[Lots in Public Procurement]
+* xref:business:using-espd-service.adoc[Using the ESPD Service]
+
+=== Technical Guide
+
+Technical documentation for developers implementing ESPD Services based on the ESPD-EDM v5.0.0 model. Covers the architecture, document model, ESPD Request and Response, lot management, and validation concepts.
+
+* xref:technical:getting-started.adoc[Getting Started]
+* xref:technical:document-model-ubl.adoc[Document Model (UBL)]
+* xref:technical:espd-request.adoc[ESPD Request]
+* xref:technical:espd-response.adoc[ESPD Response]
+* xref:technical:lots-management.adoc[Lots Management]
+* xref:technical:common-concepts.adoc[Common Concepts]
+
+=== Criteria
+
+How criteria are structured, defined, and validated in the ESPD-EDM. Covers the criterion-property-response chain, JSON data model, exclusion grounds, selection criteria, and conformance testing.
+
+* xref:technical:how-criteria-work.adoc[How Criteria Work]
+* xref:technical:criterion-data-model-json.adoc[Criterion Data Model (JSON)]
+* xref:technical:reference-data.adoc[Criteria Reference Data]
+* xref:technical:exclusion-grounds.adoc[Exclusion Grounds]
+* xref:technical:selection-criteria.adoc[Selection Criteria]
+* xref:technical:validation-conformance.adoc[Validation and Conformance]
+* xref:technical:distribution-tooling.adoc[Distribution and Tooling]
+
+=== Implementation Reference Model
+
+Detailed look-up reference for data model elements, code lists, and business rules.
+
+* xref:technical:request-reference-model.adoc[Request Reference Model]
+* xref:technical:response-reference-model.adoc[Response Reference Model]
+* xref:technical:criteria-catalogue.adoc[Criteria Catalogue]
+* xref:technical:code-lists.adoc[Code Lists]
+* xref:technical:business-rules.adoc[Business Rules]
+
+=== Further Information
+
+* xref:technical:standards-specifications.adoc[Standards and Specifications]
+* xref:technical:related-systems.adoc[Related Systems]
+* xref:technical:repositories-downloads.adoc[Repositories and Downloads]
+
+=== Open User Community Documents
+
+* xref:espd-wgm::index.adoc[Open User Community Meetings]
 
 include::partial$feedback.adoc[]

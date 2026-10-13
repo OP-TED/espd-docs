@@ -5,7 +5,7 @@
 
 == Business Guide
 
-This section provides guidance on the ESPD from a business perspective — what it is, how it is structured, and how to use it as a buyer or offering party.
+This section provides guidance on the ESPD from a business perspective — what it is, how it is structured, and how to use it as a buyer or economic operator.
 
 === Guidance by role
 
@@ -13,7 +13,7 @@ This section provides guidance on the ESPD from a business perspective — what 
 How buyers prepare ESPD Requests, define criteria, and evaluate responses.
 
 * xref:for-economic-operators.adoc[For Economic Operators] +
-How offering parties complete the ESPD Response, provide evidence, and handle multi-lot bids.
+How economic operators complete the ESPD Response, provide evidence, and handle multi-lot bids.
 
 === Understanding the ESPD
 
@@ -24,8 +24,5 @@ Overview of the six parts of the ESPD and which roles fill in each section.
 
 * xref:using-espd-service.adoc[Using the ESPD Service] +
 How to access and use an ESPD Service for creating and managing ESPDs.
-
-* xref:reference-implementation-guide.adoc[Reference Implementation Guide] +
-Overview of the ESPD Service Reference Implementation for developers and Member States.
 
 include::partial$feedback.adoc[]

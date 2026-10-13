@@ -90,8 +90,8 @@ The following features are deprecated in v5.0.0 and should no longer be used:
 |`conceptual-model/` folder in ESPD-EDM
 |Separate https://github.com/OP-TED/espd-conceptual-model[espd-conceptual-model] repository
 
-|ESPD Demo Site (`docs.ted.europa.eu/espd-demo/`)
-|https://github.com/OP-TED/espd-service-sandbox[ESPD Service Reference Implementation] (in development)
+|ESPD Demo Site v4 (`docs.ted.europa.eu/espd-demo-v4/`) — ESPD-EDM 3.3.0 / 4.0.0 / 4.1.0
+|ESPD Demo Site for v5.0.0 onward: https://docs.ted.europa.eu/espd-demo/[docs.ted.europa.eu/espd-demo] (repository https://github.com/OP-TED/espd-demo[OP-TED/espd-demo])
 
 |Single `Criterion` code list
 |Split into `ExclusionGround` + `SelectionCriterion` (EU Vocabularies)
