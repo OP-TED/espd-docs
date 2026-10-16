@@ -9,6 +9,10 @@ Economic operators use the ESPD Response to demonstrate that they are eligible a
 
 For where the ESPD Request and ESPD Response fit within the procurement lifecycle, see xref:ROOT:procurement-process.adoc[The Procurement Process].
 
+image::espd_bus_economic_operator.png[The ESPD process from the economic operator's perspective,width=900]
+
+_Figure 1. The ESPD process from the economic operator's perspective_
+
 The economic operator retrieves the ESPD Request, if one is published alongside the Contract Notice, provides its ESPD Response on an ESPD Service platform, and submits it as part of its tender.
 
 NOTE: If no ESPD Request is published, the exclusion grounds and selection criteria are stated only in the procurement documents (specifications), and the economic operator prepares its ESPD Response based on those.
@@ -33,7 +37,7 @@ The economic operator identifies the ESPD Request to which it is responding, by 
 
 image::form/of1.png[]
 
-_Progress tracking: the form shows completed and remaining sections_
+_Figure 2. Progress tracking: the form shows completed and remaining sections_
 
 ==== Part 2: Economic Operator information
 
@@ -41,19 +45,19 @@ The economic operator provides information about itself, including whether it is
 
 image::form/of5.png[]
 
-_Information about the economic operator_
+_Figure 3. Information about the economic operator_
 
 image::form/of6.png[]
 
-_Information about representatives of the economic operator_
+_Figure 4. Information about representatives of the economic operator_
 
 image::form/of7.png[]
 
-_Information about reliance on the capacities of other entities_
+_Figure 5. Information about reliance on the capacities of other entities_
 
 image::form/of8.png[]
 
-_Information concerning subcontractors on whose capacity the economic operator does not rely_
+_Figure 6. Information concerning subcontractors on whose capacity the economic operator does not rely_
 
 NOTE: Part 2 applies only to the ESPD Response document.
 
@@ -63,19 +67,19 @@ The economic operator responds to the exclusion grounds defined by the buyer, de
 
 image::form/of10.png[]
 
-_Part 3A: Response to criminal conviction grounds_
+_Figure 7. Part 3A: Response to criminal conviction grounds_
 
 image::form/of12.png[]
 
-_Part 3B: Response to payment of taxes or social security contributions_
+_Figure 8. Part 3B: Response to payment of taxes or social security contributions_
 
 image::form/of14.png[]
 
-_Part 3C: Response to insolvency, conflicts of interests or professional misconduct_
+_Figure 9. Part 3C: Response to insolvency, conflicts of interests or professional misconduct_
 
 image::form/of16.png[]
 
-_Part 3D: Response to purely national exclusion grounds_
+_Figure 10. Part 3D: Response to purely national exclusion grounds_
 
 ==== Part 4: Selection criteria
 
@@ -83,19 +87,19 @@ The economic operator responds to the selection criteria set by the buyer, provi
 
 image::form/of18.png[]
 
-_Part 4A: Suitability response_
+_Figure 11. Part 4A: Suitability response_
 
 image::form/of20.png[]
 
-_Part 4B: Economic and financial standing response_
+_Figure 12. Part 4B: Economic and financial standing response_
 
 image::form/of22.png[]
 
-_Part 4C: Technical and professional ability response_
+_Figure 13. Part 4C: Technical and professional ability response_
 
 image::form/of24.png[]
 
-_Part 4D: Quality assurance schemes and environmental management standards response_
+_Figure 14. Part 4D: Quality assurance schemes and environmental management standards response_
 
 ==== Part 5: Reduction of qualified candidates
 
@@ -103,7 +107,7 @@ The economic operator provides information where the buyer has specified objecti
 
 image::form/of26.png[]
 
-_Part 5: Reduction of the number of qualified candidates_
+_Figure 15. Part 5: Reduction of the number of qualified candidates_
 
 NOTE: Part 5 does not apply when the economic operator is a subcontractor that the lead entity does not rely on in order to meet the selection criteria.
 
@@ -113,7 +117,7 @@ The economic operator declares that the information submitted is accurate, that 
 
 image::form/of27.png[]
 
-_Part 6: Concluding statements_
+_Figure 16. Part 6: Concluding statements_
 
 === Completing and downloading
 
@@ -121,7 +125,7 @@ Once the ESPD Response is complete, the economic operator can review all informa
 
 image::form/of29.png[]
 
-_Overview and download of the completed ESPD Response_
+_Figure 17. Overview and download of the completed ESPD Response_
 
 === Lots
 

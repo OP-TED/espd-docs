@@ -11,6 +11,10 @@ The buyer prepares the ESPD Request as part of the procurement procedure documen
 
 For where the ESPD Request and ESPD Response fit within the procurement lifecycle, see xref:ROOT:procurement-process.adoc[The Procurement Process].
 
+image::espd_bus_buyer.png[The ESPD process from the buyer's perspective,width=900]
+
+_Figure 1. The ESPD process from the buyer's perspective_
+
 === Key responsibilities
 
 The buyer is responsible for:
@@ -29,15 +33,15 @@ The buyer provides information about the publication (Contract Notice reference)
 
 image::form/of2.png[]
 
-_Information about publication_
+_Figure 2. Information about publication_
 
 image::form/of3.png[]
 
-_Identity of the buyer_
+_Figure 3. Identity of the buyer_
 
 image::form/of4.png[]
 
-_Information about the procurement procedure_
+_Figure 4. Information about the procurement procedure_
 
 NOTE: Part 2 (economic operator information) is provided by the economic operator in the ESPD Response, not by the buyer. That is why it does not appear among the parts the buyer provides.
 
@@ -47,23 +51,23 @@ The buyer specifies which exclusion grounds apply. Grounds relating to criminal 
 
 image::form/of9.png[]
 
-_Part 3A: Grounds relating to criminal convictions (mandatory, selected by default)_
+_Figure 5. Part 3A: Grounds relating to criminal convictions (mandatory, selected by default)_
 
 image::form/of11.png[]
 
-_Part 3B: Grounds relating to payment of taxes or social security contributions (mandatory, selected by default)_
+_Figure 6. Part 3B: Grounds relating to payment of taxes or social security contributions (mandatory, selected by default)_
 
 Grounds relating to insolvency, conflicts of interests or professional misconduct (Article 57(4)) can be applied selectively:
 
 image::form/of13.png[]
 
-_Part 3C: Grounds relating to insolvency, conflicts of interests or professional misconduct (buyer may deselect)_
+_Figure 7. Part 3C: Grounds relating to insolvency, conflicts of interests or professional misconduct (buyer may deselect)_
 
 Purely national exclusion grounds depend on the regulation of each country. By default they are not selected; the buyer specifies which to include:
 
 image::form/of15.png[]
 
-_Part 3D: Purely national exclusion grounds (buyer selects which apply)_
+_Figure 8. Part 3D: Purely national exclusion grounds (buyer selects which apply)_
 
 ==== Part 4: Selection criteria
 
@@ -71,25 +75,25 @@ The buyer specifies which selection criteria to apply. All criteria are selected
 
 image::form/of17.png[]
 
-_Part 4A: Suitability (Article 58(2))_
+_Figure 9. Part 4A: Suitability (Article 58(2))_
 
 image::form/of19.png[]
 
-_Part 4B: Economic and financial standing (Article 58(3))_
+_Figure 10. Part 4B: Economic and financial standing (Article 58(3))_
 
 image::form/of21.png[]
 
-_Part 4C: Technical and professional ability (Article 58(4))_
+_Figure 11. Part 4C: Technical and professional ability (Article 58(4))_
 
 image::form/of23.png[]
 
-_Part 4D: Quality assurance schemes and environmental management standards (Article 62(2))_
+_Figure 12. Part 4D: Quality assurance schemes and environmental management standards (Article 62(2))_
 
 Alternatively, the buyer may provide a global indication for all selection criteria:
 
 image::form/of25.png[]
 
-_Global indication for all selection criteria_
+_Figure 13. Global indication for all selection criteria_
 
 === Lots and criteria
 
@@ -105,7 +109,7 @@ After receiving ESPD Responses, the buyer reviews the responses and supporting e
 
 image::form/of28.png[]
 
-_Options available after completing the ESPD form_
+_Figure 14. Options available after completing the ESPD form_
 
 === Reuse of ESPD Requests
 

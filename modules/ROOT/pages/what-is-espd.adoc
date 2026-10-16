@@ -11,7 +11,7 @@ TIP: Strictly, "the ESPD" is the economic operator's self-declaration (the Respo
 
 [NOTE]
 ====
-In the legal sense (Article 59 of Directive 2014/24/EU; Annex 2 to Commission Implementing Regulation (EU) 2016/7) and in the https://docs.ted.europa.eu/EPO/latest/index.html[eProcurement Ontology (ePO)^], "the ESPD" is the *economic operator's self-declaration* — that is, what the economic operator submits. In ESPD-EDM terms this self-declaration is carried by the *ESPD Response*.
+In the legal sense (Article 59 of Directive 2014/24/EU; Annex 1 to Commission Implementing Regulation (EU) 2016/7) and in the https://docs.ted.europa.eu/EPO/latest/index.html[eProcurement Ontology (ePO)^], "the ESPD" is the *economic operator's self-declaration* — that is, what the economic operator submits. In ESPD-EDM terms this self-declaration is carried by the *ESPD Response*.
 
 The *ESPD Request* is the buyer's expression of the exclusion grounds and selection criteria. It is not, in itself, "an ESPD"; it is the specification that the economic operator responds to.
 ====

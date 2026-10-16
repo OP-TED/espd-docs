@@ -13,7 +13,7 @@ This chapter on selection criteria provides details on how to implement the form
 
 As with the exclusion criteria, we have grouped the selection criteria under different categories. The figure below is intended to identify and list these categories for the selection criteria (branches in text boxes), and specific subgroups within each category.
 
-Each branch in this 'criteria classification' corresponds to one data structure that is identical for all the leaves under that branch (e.g. compare the names of the boxes with the tabs and ElementType column of the spreadsheets containing link:{url-tree}/codelists/ESPD-criterion.xlsx[ESPD-criterion data structures]).
+Each branch in this 'criteria classification' corresponds to one data structure that is identical for all the leaves under that branch. The canonical source for the criterion definitions and their structure is the JSON file link:https://github.com/OP-TED/ESPD-EDM/tree/v5.0.0/criterion/espd-edm.json[espd-edm.json] (the Excel-based `ESPD-criterion.xlsx` used up to v4.1.0 is deprecated).
 
 image::https://kroki.io/pikchr/svg/eNrVVl1vmzAUfedXWKyT9lEikhZVnbSHhNEOqSVTQqfuqTLGCagEM-N89N_PQNIZAy5RN017SeR7r-89PvdcmxMKPgNzMIpT7U0Sp5jCsDRcWB9OqFZYtnFlGVmaNjE_gYDsQBFlZTuASEIoMHcWvAxCCyxipoWEVW7zreTW7vnuBOZsgMFH8M48Nd9rkFKybaShZFUGgiIZI-De1FZkgwGNlxEDZ4NLjpbhHQP63LlxbN-devo-SZBA9AggAxNTayvYXrFKfEKr0vcmYBFOefVtCoach2p5CNLm9rBOgz6_c_3xxL1x_R86KAibmIPiLypwDPhvC1EVkLMWnnh-WBUIYR7hEOh5gox8HTOD4qWRUbI4BTUT40iwYINrFhmrgOZRBvSW4uBAn4hbIpCj2Ef9iepiWnh8F87aujCSuuDYU29669oPV6439mx3fPMw98feF9e71stTSzxXp1PuaoAfKSTLvYNcIZ1ypHgQlHD7dzNv-t2ZKUD-DmkigmpIUIlpdMA0bFEcg2loMGIscbpv78ECN0vJkmcYdZjbFdifx3MJ88UeM-qCTCGLiQgkTnNxSXgyqpqLv3H6WsuGjUJHYRZzoeOn6bJtmixZlY791XNtPg7fZtMrZz7ntyxfPF8X3Vp9YWPjCJZSC1afmbLkmZo5V87M8WxnrkAqBjVRqefK6jVXVttcwSBO-MW5MLaEPlY9fjbl6yxLnmQjppsY4fwlyb46ce34wyPact7RlqBLVH3004YqUIMKejUl6GoKH7XFwmAYRQZiNBHYEjwSuavlihk_11CMXkBUMpzLcYcu6ELR0oHTTWM_IyTJGxikUijC6LGXMP73w9VkcIw4LzrEiSRx3o698bVz63i-Qp1iUBMXUsNCveSJ1PJ8osmTkZKS2gaBpZM_RMYqE33rAAnLgmUjX2W828XHGk5Zq3PvO0Jc_wparQXHSGPY9Z6EkjZsZ-a7V_xW8pUvSj2sCS5UYwt76SPs0kfJD_9u2HOW8_HhNgNhyrg5xJlg5zMpOHr1-PXpa1QMfwEhX7qi[Selection criteria classification,width=1000,height=500]
 //image:Selection_criteria_classification.jpg[Selection criteria classification,width=464,height=465]
@@ -67,7 +67,7 @@ See formal requirements related to 'Suitability' criteria in the , and more spec
 
 === Suitability (enrolments)
 
-For each criteria regarding suitability, the buyer should be able to provide: the register type (Occupations code list, see ESPD-CodeLists.xlsx) in case of criterion "Enrolement in a relevant professional register", and the name and its URL and for other criteria related to registries.
+For each criterion regarding suitability, the buyer should be able to provide: the register type (from the Occupations code list) in case of criterion "Enrolment in a relevant professional register", and the name and its URL for other criteria related to registries.
 
 === Data Structure
 
@@ -745,7 +745,7 @@ Please generate an ESPD Request and ESPD Response documents on https://github.co
 
 === Mock-ups - buyer perspective
 
-The buyer has selected the 'allowance of checks' (in link:{url-tree}/codelists/ESPD-criterion.xlsx[ESPD-criterion] will be shown as "Special requierements check", spec-req-check) option in a ESPD Request builder software application GUI. This software application will create a criterion of this in the ESPD Request XML instance with zero, one or more REQUIREMENT(s) by the EO.
+The buyer has selected the 'allowance of checks' criterion (shown as "Special requirements check", code `spec-req-check`, in the criterion data model link:https://github.com/OP-TED/ESPD-EDM/tree/v5.0.0/criterion/espd-edm.json[espd-edm.json]) option in an ESPD Request builder software application GUI. This software application will create a criterion of this in the ESPD Request XML instance with zero, one or more REQUIREMENT(s) by the EO.
 
 The buyer (CA) can specify none, one or several REQUIREMENT(s). In this case a REQUIREMENT is a descriptive text provided by the buyer where the criterion is better explained or where certain conditions relating to the criterion. In this example the buyer is specifying which type of premises it wants to check and for which reasons.
 
@@ -767,7 +767,7 @@ The data structure below shows how this criterion is organised. Notice the follo
 
 [arabic]
 . The Member State can associate one or more national criteria to this EU criterion (element sub-criterion, cardinality 0..n).
-. The criterion can be associated to one or more pieces of legislation (this spread-sheet does not focus on the edition of the legislation element; the transformation style-sheet will generate dummy values for this element).
+. The criterion can be associated to one or more pieces of legislation.
 . At least one REQUIREMENT group will always be created. If the buyer specified more than one REQUIREMENT(s), more groups of REQUIREMENT + QUESTION would be added to the ESPD Request XML instance.
 . If not specific REQUIREMENT is issued by the CA, the REQUIREMENT group should equally be created and the REQUIREMENT value should be replaced with a literal (e.g. 'No specific requirements').
 

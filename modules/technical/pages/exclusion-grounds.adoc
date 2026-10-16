@@ -71,9 +71,9 @@ Please generate an ESPD Request and ESPD Response documents on https://github.co
 . The issuer party of this evidence (e.g. a base registry). Will be placed in the element cac:Evidence/cac:DocumentReference/cac:Attachment/cac:IssuerParty. Some countries use verification codes associated to evidences. To specify these verification codes you can use the Evidence ID, as in the end the code identifies uniquely the Evidence in the issuer system (see this XML example, look for 'Verification code' inside the example, bullet number 6).
 . National criterion defined by the MS in eCertis (this example corresponds to Finland) related to the EU criterion on this conviction.
 . An additional specification for this national criterion, in this case related to the evidence that will be required by this Member State.
-. UUID supplied by eCertis. See also the criterion spread-sheet.
-. Exclusion criteria taxonomy code defined in the criterion spread-sheet.
-. Compulsory name and description for the criterion as defined in eCertis. See also link:{url-tree}/codelists/ESPD-criterion.xlsx[ESPD-criterion spreadsheet]. Beware that UBL-2.4 allows '0..n' description lines!
+. UUID supplied by eCertis. See also the criterion data model link:https://github.com/OP-TED/ESPD-EDM/tree/v5.0.0/criterion/espd-edm.json[espd-edm.json].
+. Exclusion criteria taxonomy code defined in the criterion data model link:https://github.com/OP-TED/ESPD-EDM/tree/v5.0.0/criterion/espd-edm.json[espd-edm.json].
+. Compulsory name and description for the criterion as defined in eCertis. See also the criterion data model link:https://github.com/OP-TED/ESPD-EDM/tree/v5.0.0/criterion/espd-edm.json[espd-edm.json]. Beware that UBL-2.4 allows '0..n' description lines!
 . This property is a caption, a mere 'label'. See Code List link:{url-tree}/codelists/CriterionElementType.gc[CriterionElementType] for the complete list of possible options. Beware that when a property is of type CAPTION the cbc:ValueDataType must be set to NONE.
 . As the property is a CAPTION no response is expected from the economic operator. See Code List 'ResponseDataType' for the complete list of possible options.
 . Notice that in the ESPD Request the criterion properties never use its element cbc:Name.
