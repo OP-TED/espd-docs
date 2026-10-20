@@ -63,7 +63,7 @@ The figure above is an example of how this information should be displayed. Ther
 
 === Related information requirements
 
-See formal requirements related to 'Suitability' criteria in the , and more specifically the requirement 
+The formal requirements for 'Suitability' criteria are defined in Directive 2014/24/EU and maintained in eCertis.
 
 === Suitability (enrolments)
 
@@ -133,7 +133,7 @@ Please generate an ESPD Request and ESPD Response documents on https://github.co
 
 === Related information requirements
 
-See formal requirements related to 'Turnover' criteria ESPD in the , and more specifically the requirement 
+The formal requirements for 'Turnover' criteria are defined in Directive 2014/24/EU and maintained in eCertis.
 
 ==== Differences between 'general and specific' and 'yearly and average' turnovers
 
@@ -337,7 +337,7 @@ Please generate an ESPD Request and ESPD Response documents on https://github.co
 
 === Related information requirements
 
-See formal requirements related to 'Turnover' criteria ESPD in the , and more specifically the requirement 
+The formal requirements for 'Turnover' criteria are defined in Directive 2014/24/EU and maintained in eCertis.
 
 [cols="1,4"]",]
 |===
@@ -403,7 +403,7 @@ Please generate an ESPD Request and ESPD Response documents on https://github.co
 
 === Related information requirements
 
-See formal requirements related to selection criteria in the .
+The formal requirements for selection criteria are defined in Directive 2014/24/EU and maintained in eCertis.
 
 The only criterion defined under this data structure is classified with the code:
 
@@ -464,7 +464,7 @@ Please generate an ESPD Request and ESPD Response documents on https://github.co
 
 === Related information requirements
 
-See formal requirements related to selection criteria in the .
+The formal requirements for selection criteria are defined in Directive 2014/24/EU and maintained in eCertis.
 
 The only criterion defined is classified with the code:
 
@@ -523,7 +523,7 @@ Please generate an ESPD Request and ESPD Response documents on https://github.co
 
 === Related information requirements
 
-See formal requirements related to selection criteria in the .
+The formal requirements for selection criteria are defined in Directive 2014/24/EU and maintained in eCertis.
 
 There are three criteria with the same data structure (works, supplies and services references):
 
@@ -538,8 +538,8 @@ _Difference between 'total amount' and 'specific amount' in a reference_
 The total amount refers to the amount of the contract, the specific refers to the amount of the contract a concrete reference is linked to. Two examples could be:
 
 [arabic]
-. A contract for the acquisition of printers (Lot1) and the maintenance of the printers (Lot2). Your reference is about the maintenance only. Total amount: 1,000,000 â‚¬ (Lot1 + Lot 2). Specific amount: 700,000.00 (Lot2, maintenance).
-. Building of a bridge. Total amount: 20,000,000 â‚¬. The reference is only about the asphalt provided for the bridge: specific amount 1,351,145.89 â‚¬.
+. A contract for the acquisition of printers (Lot 1) and the maintenance of the printers (Lot 2). The reference is about the maintenance only. Total amount: EUR 1 000 000 (Lot 1 + Lot 2). Specific amount: EUR 700 000 (Lot 2, maintenance).
+. Building of a bridge. Total amount: EUR 20 000 000. The reference is only about the asphalt provided for the bridge: specific amount EUR 1 351 145.89.
 ====
 
 
@@ -623,7 +623,7 @@ The following elements can be read in the example:
 
 === Related information requirements
 
-See formal requirements related to selection criteria in the .
+The formal requirements for selection criteria are defined in Directive 2014/24/EU and maintained in eCertis.
 
 The  ESPD, supplies data structures facilitating a greater semantic interoperability:
 
@@ -811,7 +811,7 @@ Please generate an ESPD Request and ESPD Response documents on https://github.co
 
 === Related information requirements
 
-See formal requirements related to selection criteria in the .
+The formal requirements for selection criteria are defined in Directive 2014/24/EU and maintained in eCertis.
 
 There is only one criterion with a simple data structure, classified as:
 
@@ -854,7 +854,7 @@ Please generate an ESPD Request and ESPD Response documents on https://github.co
 
 == Related information requirements
 
-See formal requirements related to selection criteria in the .
+The formal requirements for selection criteria are defined in Directive 2014/24/EU and maintained in eCertis.
 
 There are two criteria that share the same data structure, classified as:
 
@@ -897,7 +897,7 @@ Please generate an ESPD Request and ESPD Response documents on https://github.co
 
 === Related information requirements
 
-See formal requirements related to selection criteria in the .
+The formal requirements for selection criteria are defined in Directive 2014/24/EU and maintained in eCertis.
 
 === Mock-ups - buyer perspective
 

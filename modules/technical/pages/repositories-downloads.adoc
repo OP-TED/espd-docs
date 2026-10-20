@@ -1,7 +1,7 @@
 :doctitle: Repositories and Downloads
 :doccode: espd-tech-prod-043
 :author: ESPD Team
-:docdate: July 2026
+:docdate: October 2026
 
 == Repositories and Downloads
 
@@ -21,6 +21,12 @@ This page provides direct links to all ESPD-EDM GitHub repositories, distributio
 
 |https://github.com/OP-TED/espd-validation-schematron[OP-TED/espd-validation-schematron]
 |Schematron source files for ESPD business rules validation. Contains all `.sch` files organised by validation layer.
+
+|https://github.com/OP-TED/espd-conceptual-model[OP-TED/espd-conceptual-model]
+|The ESPD conceptual model (Enterprise Architect project). The source from which `espd-edm.json` and the code lists are generated.
+
+|https://github.com/OP-TED/espd-demo[OP-TED/espd-demo]
+|Source code of the ESPD Demo Site — the online tools for exploring the ESPD-EDM and generating example ESPD Request and Response documents.
 
 |===
 
@@ -56,6 +62,9 @@ The distribution package for each release is available as a tagged version on Gi
 [cols="1,3",options="header"]
 |===
 |Tool |URL
+
+|ESPD Demo Site (explore the model, generate example documents)
+|https://docs.ted.europa.eu/espd-demo/
 
 |Interoperability Testbed (ESPD validation)
 |https://www.itb.ec.europa.eu/espd/upload
