@@ -11,4 +11,4 @@
 ** <<AnnexI.Code_list_used_in_ESPD.adoc#, Codelists used in ESPD>>
 * link:{attachmentsdir}/ESPD_CM_html/index.html[Conceptual Model HTML]
 * <<release_notes.adoc#, Release Notes>>
-* xref:espd-ouc::index.adoc[Open User Community Documents]
+* xref:espd-wgm::index.adoc[Open User Community Documents]
