@@ -14,4 +14,4 @@
 * link:{attachmentsdir}/ESPD_CM_html/index.html[Conceptual Model HTML]
 ////
 * xref::release_notes.adoc[Release Notes]
-* xref:espd-ouc::index.adoc[Open User Community Documents]
+* xref:espd-wgm::index.adoc[Open User Community Documents]
