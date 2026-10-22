@@ -13,4 +13,4 @@
 //* link:https://docs.ted.europa.eu/ESPD-EDM/3.2.0/_attachments/ESPD_CM_html/index.html[ESPD-EDM Conceptual Model HTML] 
 //* xref:attachments$ESPD_CM_html/index.html[ESPD-EDM Conceptual Model HTML] 
 * <<release_notes.adoc#, Release Notes>>
-* xref:espd-ouc::index.adoc[Open User Community Documents]
+* xref:espd-wgm::index.adoc[Open User Community Documents]
