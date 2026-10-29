@@ -27,12 +27,8 @@ The organisation that runs a procurement procedure. In the ESPD the buyer define
 An economic operator that has sought an invitation, or has been invited, to take part in a restricted procedure, competitive procedure with negotiation, competitive dialogue or innovation partnership. Under Article 59(4) of Directive 2014/24/EU the buyer may request supporting documents from any candidate at any moment during the procedure.
 
 [[CodeLists, Code Lists]]
-*Code lists* +
+*Code list* +
 A code list is an artifact listing the codes relevant to specific terms, grouped by semantic meaning, e.g., a code list for country or language. See xref:technical:code-lists.adoc[Code Lists].
-
-[[code-list-document,code list document]]
-*code list document*  +
-A code list document has the root element <gc:CodeList>. It contains metadata describing the code list as a whole, as well as explicit code list data. (http://docs.oasis-open.org/codelist/approved/genericode/oasis-code-list-representation-genericode.html)
 
 [[cva,CVA]]
 *Context/value association (CVA)*  +
@@ -65,7 +61,7 @@ Any natural or legal person, or public entity, or group of such persons or entit
 
 [[eforms,eForms]]
 *eForms*  +
-EU legislative open standard for publishing public procurement data. Standard forms used by public buyers to publish notices on Tenders Electronic Daily. (https://single-market-economy.ec.europa.eu/single-market/public-procurement/digital-procurement/eforms_en)
+EU legislative open standard for publishing public procurement data. Digital standard forms used by public buyers to publish notices on Tenders Electronic Daily. (https://single-market-economy.ec.europa.eu/single-market/public-procurement/digital-procurement/eforms_en)
 
 [[esco,European Skills, Competences, Qualifications and Occupations (ESCO)]]
 *European Skills, Competences, Qualifications and Occupations (ESCO)*  +
@@ -77,7 +73,7 @@ Multilingual, multidisciplinary thesaurus covering the activities of the EU. (ht
 
 [[espd,European Single Procurement Document (ESPD)]]
 *European Single Procurement Document (ESPD)*  +
-The economic operator's self-declaration, used as preliminary evidence in a public procurement procedure that the operator is not in a situation giving rise to exclusion and meets the selection criteria. Introduced in Article 59 of Directive 2014/24/EU and specified by Commission Implementing Regulation (EU) 2016/7. Strictly, "the ESPD" is the economic operator's self-declaration, carried by the <<espd-response,ESPD Response>>; the <<espd-request,ESPD Request>> is the buyer's specification and is not itself an ESPD. (https://github.com/OP-TED/ESPD-EDM)
+The economic operator's self-declaration, used as preliminary evidence in a public procurement procedure that the operator is not in a situation giving rise to exclusion and meets the selection criteria. Introduced in Article 59 of Directive 2014/24/EU and specified by Commission Implementing Regulation (EU) 2016/7. Strictly, "the ESPD" is the economic operator's self-declaration, carried by the <<espd-response,ESPD Response>>; the <<espd-request,ESPD Request>> is the buyer's specification and is not itself an ESPD.
 
 [[espd-edm,European Single Procurement Document Exchange Data Model (ESPD-EDM)]]
 *European Single Procurement Document Exchange Data Model (ESPD-EDM)*  +
@@ -96,10 +92,10 @@ The document prepared by the <<eo,economic operator>> that carries the actual ES
 Single model and XML format defined by OASIS that can encode a broad range of code list information. (http://docs.oasis-open.org/codelist/approved/genericode/oasis-code-list-representation-genericode.html)
 
 [[ICT_Standards_for_Procurement,ICT Standards for Procurement]]
-The *ICT Standards for Procurement* prescribe the standards for EU interoperable solutions. (https://joinup.ec.europa.eu/collection/ict-standards-procurement)
+*ICT Standards for Procurement* prescribe the standards for EU interoperable solutions. (https://joinup.ec.europa.eu/collection/ict-standards-procurement)
 
 [[Joinup,Joinup]]
-*The Joinup platform*  +
+*Joinup platform*  +
 The European Commission's one-stop shop for interoperable, open, and free digital government ICT solutions. (https://joinup.ec.europa.eu)
 
 [[lot,Lot]]
@@ -114,8 +110,8 @@ Standards body offering standardization and de jure approval for reference in in
 *Open User Community (OUC)*  +
 Group of users that participate or work with the ESPD-EDM.
 
-[[op,The Publications Office of the European Union (OP)]]
-*The Publications Office of the European Union (OP)* +
+[[op,Publications Office of the European Union (OP)]]
+*Publications Office of the European Union (OP)* +
 Interinstitutional office whose task is to publish the publications of the institutions of the European Union. (https://op.europa.eu/en/home)
 
 [[qar,QualificationApplicationRequest]]

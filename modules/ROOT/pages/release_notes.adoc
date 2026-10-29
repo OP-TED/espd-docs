@@ -4,7 +4,7 @@
 :docdate: August 2026
 :sectnums:
 
-== v5.0.0 (July 2026) 
+== v5.0.0 (December 2026) 
 
 The release v5.0.0 and its corresponding technical files can be found in https://github.com/OP-TED/ESPD-EDM[ESPD-EDM].
 
