@@ -5,6 +5,10 @@
 
 * xref:ROOT:index.adoc[Home]
 
+* [.separated]#**ESPD Demo Site**#
+* https://docs.ted.europa.eu/espd-demo/[Open the Demo Site]
+* xref:ROOT:demo.adoc[About the Demo Site]
+
 * [.separated]#**Introduction**#
 * xref:ROOT:what-is-espd.adoc[What is the ESPD?]
 * xref:ROOT:procurement-process.adoc[The Procurement Process]
@@ -49,10 +53,6 @@
 * xref:technical:conceptual-model.adoc[Conceptual Model]
 * xref:technical:code-lists.adoc[Code Lists]
 * xref:technical:business-rules.adoc[Business Rules]
-
-* [.separated]#**ESPD Demo Site**#
-* https://docs.ted.europa.eu/espd-demo/[Open the Demo Site]
-* xref:ROOT:demo.adoc[About the Demo Site]
 
 * [.separated]#**Further Information**#
 * xref:technical:standards-specifications.adoc[Standards and Specifications]
